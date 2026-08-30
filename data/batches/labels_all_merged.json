@@ -1,0 +1,5578 @@
+[
+ {
+  "id": 1,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 2,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 3,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 4,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 5,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 6,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 7,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 8,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 9,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 10,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 11,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 12,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "의견형/사건형 경계 - 열기가 식음은 은유적 평가이나 관찰가능한 트렌드이기도 함"
+ },
+ {
+  "id": 13,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 14,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 15,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 16,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 17,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 18,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 19,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 20,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 21,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 22,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 23,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 24,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 25,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 26,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 27,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/예정형 경계 - 규제 강화는 진행형 과정이며 최종 확정 여부 불명"
+ },
+ {
+  "id": 28,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 29,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 30,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "의견형/사건형 경계 - 중요성 증가는 평가적 표현이나 시장 데이터로 뒷받침 가능"
+ },
+ {
+  "id": 31,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 32,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 33,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 34,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 35,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 36,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 37,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 38,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 39,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 40,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 41,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 42,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 43,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 44,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/예정형 경계 - 테스트는 진행중이나 정식 도입 여부는 미정"
+ },
+ {
+  "id": 45,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 46,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 47,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 48,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 49,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 50,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 51,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 52,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 53,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 54,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 55,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 56,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 57,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 58,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 59,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 60,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 61,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 62,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 63,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 64,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 65,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "수치형/의견형 경계 - 175억달러 수치 포함하나 가능성 표현이라 의견형 우선"
+ },
+ {
+  "id": 66,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 67,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 68,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 69,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 70,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 71,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/의견형 경계 — 인수라는 사건에 대한 목적 부여 서술이라 해석적 진술에 가까움"
+ },
+ {
+  "id": 72,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 73,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 74,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 75,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 76,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 77,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 78,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 79,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 80,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 81,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/의견형 경계 — '실사용 시험대에 올랐다'는 의미부여 표현이 핵심"
+ },
+ {
+  "id": 82,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 83,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 84,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 85,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 86,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 87,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 88,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/예정형 경계 — 기술 확대가 진행 중 사실인지 투자에 따른 기대 효과인지 불명확"
+ },
+ {
+  "id": 89,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/예정형 경계 — 펀드 출시는 확정이나 예금 증가 목표는 미실현 미래"
+ },
+ {
+  "id": 90,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 91,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 92,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 93,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 94,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 95,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 96,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 97,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 98,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 99,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 100,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "수치형/사건형 경계 — 주가 하락 서술이나 구체적 수치 미포함이라 사건형 처리"
+ },
+ {
+  "id": 101,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 102,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 103,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 104,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/의견형 경계 — 경쟁이 '활발하다'는 시장 상태 평가가 핵심"
+ },
+ {
+  "id": 105,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 106,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 107,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 108,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 109,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 110,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/의견형 경계 — 우려 재부상 보도는 관찰 서술이나 내용은 시장 심리 평가"
+ },
+ {
+  "id": 111,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 112,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 113,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 114,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 115,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 116,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "수치형/의견형 경계 — 6만~7만 달러 수치 포함이나 애널리스트의 바닥 형성 해석이 핵심"
+ },
+ {
+  "id": 117,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 118,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 119,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 120,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/의견형 경계 — 주가 하락은 사실이나 '투자자 관심 지속'은 해석적 서술"
+ },
+ {
+  "id": 121,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 122,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 123,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 124,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 125,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 126,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 127,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 128,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 129,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/예정형 경계 — 규제 당국의 주장·추진 행위는 확정이나 요구사항 도입은 미실현"
+ },
+ {
+  "id": 130,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 131,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 132,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/예정형 경계 — 제안 행위는 확정이나 토큰 자체는 미실현 구상"
+ },
+ {
+  "id": 133,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/예정형 경계 — 제안 내용의 서술이나 토큰 기능 자체는 미실현"
+ },
+ {
+  "id": 134,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 135,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 136,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 137,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 138,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 139,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 140,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 141,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 142,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 143,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "의견형/사건형 경계 — 인과관계를 사실처럼 단정하나 실제로는 해석적 판단"
+ },
+ {
+  "id": 144,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 145,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 146,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 147,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 148,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 149,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 150,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 151,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 152,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "수치형/사건형 경계 — 지수 순위(1위)라 수치이자 사건적 서술"
+ },
+ {
+  "id": 153,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 154,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 155,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 156,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 157,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 158,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 159,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 160,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 161,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 162,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 163,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 164,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 165,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 166,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 167,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 168,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 169,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 170,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 171,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 172,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 173,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 174,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 175,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 176,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 177,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 178,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 179,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 180,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 181,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 182,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 183,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 184,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 185,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 186,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 187,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 188,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 189,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 190,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 191,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 192,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": true,
+  "ambiguous_note": "예정형/사건형 경계 — 목적 서술이나 컨소시엄 합류 자체는 완료된 사건"
+ },
+ {
+  "id": 193,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 194,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 195,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 196,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 197,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/의견형 경계 — 이미 출시된 기능 설명이나 가능성 표현으로도 읽힘"
+ },
+ {
+  "id": 198,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 199,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 200,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": true,
+  "ambiguous_note": "트리비얼 경계 — 널리 알려진 배경사실 반복인지 새 정보인지 판단 갈림"
+ },
+ {
+  "id": 201,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 202,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": true,
+  "ambiguous_note": "트리비얼 경계 — 출처 보도 사실 자체가 순환적 정보인지 판단 갈림"
+ },
+ {
+  "id": 203,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 204,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 205,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 206,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/예정형 경계 — '목표로 한다'가 현재 속성인지 미래계획인지 불분명"
+ },
+ {
+  "id": 207,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 208,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 209,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 210,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 211,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 212,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 213,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/수치형 경계 — 구조조정 사건에 수치(15%) 포함"
+ },
+ {
+  "id": 214,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 215,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 216,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 217,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 218,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 219,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 220,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 221,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 222,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 223,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 224,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "수치형/의견형 경계 — '부진한 성적'은 평가적 표현이지만 근거가 주가 수치임"
+ },
+ {
+  "id": 225,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 226,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 227,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 228,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 229,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 230,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 231,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 232,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 233,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 234,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 235,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 236,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 237,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 238,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 239,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 240,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 241,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 242,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 243,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 244,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/의견형 경계 — '생태계 발전'이라는 표현이 지나치게 추상적"
+ },
+ {
+  "id": 245,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 246,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 247,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 248,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 249,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 250,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 251,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 252,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 253,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 254,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 255,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 256,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 257,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 258,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 259,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 260,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 261,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 262,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 263,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 264,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 265,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 266,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 267,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 268,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 269,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 270,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 271,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 272,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 273,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 274,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 275,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 276,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 277,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 278,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 279,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 280,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 281,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 282,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 283,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 284,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 285,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 286,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 287,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 288,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 289,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 290,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 291,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 292,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 293,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 294,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 295,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 296,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 297,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 298,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 299,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 300,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 301,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 302,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 303,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 304,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 305,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 306,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 307,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 308,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 309,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/의견형 경계 — 경쟁 우려 제기는 사실 보도이자 해석적 평가가 섞여있음"
+ },
+ {
+  "id": 310,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 311,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 312,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 313,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 314,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 315,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 316,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 317,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 318,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 319,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 320,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 321,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 322,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 323,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 324,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 325,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 326,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 327,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 328,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 329,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 330,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 331,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 332,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 333,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 334,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 335,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 336,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 337,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 338,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 339,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 340,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 341,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 342,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 343,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 344,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/의견형 경계 — 통합 사실 자체는 사건이나 '진전되었다'는 정도 평가가 핵심"
+ },
+ {
+  "id": 345,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 346,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 347,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 348,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 349,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 350,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 351,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 352,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 353,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 354,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 355,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/의견형 경계 — 분석가의 공개 반박은 보도된 행위이나 내용 자체는 평가적 판단"
+ },
+ {
+  "id": 356,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 357,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 358,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 359,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 360,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 361,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 362,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 363,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 364,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 365,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 366,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 367,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 368,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 369,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 370,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 371,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 372,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 373,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 374,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 375,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 376,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 377,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 378,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 379,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 380,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/예정형 경계 — 지분 매각 시도가 보도되었으나 완료 여부 불명"
+ },
+ {
+  "id": 381,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 382,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 383,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 384,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 385,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 386,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 387,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 388,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 389,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 390,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 391,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 392,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 393,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 394,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 395,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 396,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 397,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 398,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 399,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 400,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 401,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 402,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 403,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 404,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 405,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 406,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 407,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 408,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 409,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 410,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 411,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 412,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 413,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 414,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 415,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 416,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 417,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 418,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 419,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 420,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 421,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 422,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 423,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/의견형 경계 — 비트코인 강세는 관찰 가능한 시장상태이나 구체 수치 없이 해석적으로 서술됨"
+ },
+ {
+  "id": 424,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 425,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 426,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 427,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 428,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 429,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 430,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 431,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 432,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 433,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 434,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/예정형 경계 — 원문 기사 제목은 '탐색 중'(explores)이나 이 주장 문구는 '도입하고 있다'로 진행형 표현"
+ },
+ {
+  "id": 435,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 436,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 437,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 438,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 439,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 440,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 441,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 442,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 443,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 444,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 445,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 446,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 447,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 448,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 449,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 450,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 451,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 452,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 453,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 454,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 455,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 456,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 457,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 458,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 459,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 460,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 461,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 462,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 463,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 464,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 465,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 466,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 467,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 468,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 469,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 470,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 471,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 472,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 473,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "의견형/예정형 경계 — '규제 대상이 될 수 있다'는 확정된 계획이 아닌 가능성 언급"
+ },
+ {
+  "id": 474,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 475,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 476,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 477,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 478,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 479,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 480,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 481,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 482,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 483,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 484,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 485,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 486,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 487,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "예정형/수치형 경계 — 3% 수익률이라는 구체 수치가 있으나 아직 출시 전 계획 단계"
+ },
+ {
+  "id": 488,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 489,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 490,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 491,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "수치형/의견형 경계 — 2033년까지 도달 예상치라는 미래 전망 수치라 현재 시장데이터로 검증 불가능해 의견형 우선"
+ },
+ {
+  "id": 492,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 493,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 494,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 495,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 496,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 497,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 498,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 499,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 500,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 501,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 502,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 503,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 504,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 505,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 506,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 507,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 508,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 509,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 510,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 511,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 512,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 513,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 514,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 515,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 516,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 517,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 518,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 519,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 520,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 521,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 522,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 523,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 524,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 525,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 526,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 527,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 528,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 529,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 530,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 531,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "예정형/의견형 경계 — 공식 계획 발표가 아니라 언론의 전망/기대 표현이라 의견형 우선"
+ },
+ {
+  "id": 532,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 533,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 534,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 535,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 536,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 537,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 538,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 539,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 540,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 541,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 542,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 543,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 544,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 545,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 546,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 547,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 548,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 549,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 550,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 551,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 552,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 553,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 554,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 555,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 556,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 557,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 558,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 559,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 560,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 561,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 562,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 563,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 564,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 565,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 566,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 567,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 568,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 569,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 570,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 571,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 572,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 573,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 574,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 575,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 576,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 577,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 578,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 579,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 580,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 581,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "수치형/의견형 경계 — USDC 발행 증가라는 수치 근거가 있으나 핵심 주장은 전망 유지라는 해석"
+ },
+ {
+  "id": 582,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 583,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 584,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 585,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 586,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 587,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 588,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 589,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 590,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 591,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 592,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 593,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 594,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 595,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 596,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 597,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 598,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 599,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 600,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 601,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": true,
+  "ambiguous_note": "수치형/예정형 경계 — 특정 GDP 수치 목표에 아직 도달 전인 초읽기 단계"
+ },
+ {
+  "id": 602,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": true,
+  "ambiguous_note": "수치형/예정형 경계 — '예상된다'는 표현으로 미래 전망 성격도 있음"
+ },
+ {
+  "id": 603,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 604,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 605,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 606,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 607,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 608,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 609,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 610,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 611,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 612,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 613,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 614,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 615,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 616,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 617,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 618,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 619,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 620,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 621,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 622,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 623,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 624,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 625,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 626,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 627,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 628,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 629,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 630,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 631,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 632,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 633,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/예정형 경계 - 마련 중은 진행상태이나 세부규정 완성은 미래라 예정형 우선"
+ },
+ {
+  "id": 634,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 635,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/예정형 경계 - 제도화는 현재진행형이나 완성은 미래"
+ },
+ {
+  "id": 636,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "사건형/의견형 경계 - 표류중은 평가적 뉘앙스 포함하나 상태서술로 판단"
+ },
+ {
+  "id": 637,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 638,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 639,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 640,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 641,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 642,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 643,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 644,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 645,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 646,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 647,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 648,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 649,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 650,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 651,
+  "type": "수치형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 652,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 653,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 654,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 655,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "의견형/예정형 경계 - 추구하고 있다는 목표지향 서술"
+ },
+ {
+  "id": 656,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "예정형/의견형 경계 - 돕고자 한다는 기업 의도 서술"
+ },
+ {
+  "id": 657,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": true,
+  "ambiguous_note": "수치형/의견형 경계 - 1조달러 수치 포함하나 예상된다는 미래전망이라 의견형 우선"
+ },
+ {
+  "id": 658,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 659,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 660,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 661,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 662,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 663,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 664,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 665,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 666,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 667,
+  "type": "예정형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 668,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 669,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 670,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 671,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 672,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 673,
+  "type": "의견형",
+  "trivial": true,
+  "trivial_reason": "파편",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 674,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 675,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 676,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 677,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 678,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 679,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 680,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 681,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 682,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 683,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 684,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 685,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 686,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 687,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 688,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 689,
+  "type": "의견형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 690,
+  "type": "예정형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 691,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 692,
+  "type": "사건형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 693,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "동어반복",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 694,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 695,
+  "type": "수치형",
+  "trivial": false,
+  "trivial_reason": "",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 696,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ },
+ {
+  "id": 697,
+  "type": "사건형",
+  "trivial": true,
+  "trivial_reason": "주제외",
+  "ambiguous": false,
+  "ambiguous_note": ""
+ }
+]

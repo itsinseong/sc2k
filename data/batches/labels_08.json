@@ -1,0 +1,562 @@
+[
+{
+"id": 491,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": true,
+"ambiguous_note": "수치형/의견형 경계 — 2033년까지 도달 예상치라는 미래 전망 수치라 현재 시장데이터로 검증 불가능해 의견형 우선"
+},
+{
+"id": 492,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 493,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 494,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 495,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 496,
+"type": "예정형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 497,
+"type": "의견형",
+"trivial": true,
+"trivial_reason": "파편",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 498,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 499,
+"type": "의견형",
+"trivial": true,
+"trivial_reason": "동어반복",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 500,
+"type": "사건형",
+"trivial": true,
+"trivial_reason": "동어반복",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 501,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 502,
+"type": "수치형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 503,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 504,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 505,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 506,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 507,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 508,
+"type": "의견형",
+"trivial": true,
+"trivial_reason": "파편",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 509,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 510,
+"type": "수치형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 511,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 512,
+"type": "예정형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 513,
+"type": "예정형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 514,
+"type": "예정형",
+"trivial": true,
+"trivial_reason": "파편",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 515,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 516,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 517,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 518,
+"type": "예정형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 519,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 520,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 521,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 522,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 523,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 524,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 525,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 526,
+"type": "사건형",
+"trivial": true,
+"trivial_reason": "파편",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 527,
+"type": "수치형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 528,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 529,
+"type": "수치형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 530,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 531,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": true,
+"ambiguous_note": "예정형/의견형 경계 — 공식 계획 발표가 아니라 언론의 전망/기대 표현이라 의견형 우선"
+},
+{
+"id": 532,
+"type": "수치형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 533,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 534,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 535,
+"type": "예정형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 536,
+"type": "예정형",
+"trivial": true,
+"trivial_reason": "파편",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 537,
+"type": "예정형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 538,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 539,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 540,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 541,
+"type": "사건형",
+"trivial": true,
+"trivial_reason": "동어반복",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 542,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 543,
+"type": "수치형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 544,
+"type": "수치형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 545,
+"type": "사건형",
+"trivial": true,
+"trivial_reason": "주제외",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 546,
+"type": "사건형",
+"trivial": true,
+"trivial_reason": "주제외",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 547,
+"type": "사건형",
+"trivial": true,
+"trivial_reason": "주제외",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 548,
+"type": "수치형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 549,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 550,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 551,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 552,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 553,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 554,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 555,
+"type": "의견형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 556,
+"type": "수치형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 557,
+"type": "예정형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 558,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 559,
+"type": "예정형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+},
+{
+"id": 560,
+"type": "사건형",
+"trivial": false,
+"trivial_reason": "",
+"ambiguous": false,
+"ambiguous_note": ""
+}
+]

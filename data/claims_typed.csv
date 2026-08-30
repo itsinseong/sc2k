@@ -1,0 +1,698 @@
+id,date,source,lang,type,trivial,trivial_reason,ambiguous,confidence,verdict,claim
+1,2026-06-03,CoinDesk,en,사건형,False,,False,0.7,supported,Mastercard는 온체인(on-chain) 결제를 확장하고 있다.
+2,2026-06-03,CoinDesk,en,의견형,True,파편,False,0.2,uncertain,이러한 확장은 스테이블코인과 상시 금융(always-on finance)에 대한 마스터카드의 투자를 의미한다.
+3,2026-06-03,CoinDesk,en,수치형,False,,False,0.5,uncertain,"비트코인 가격이 66,000달러로 하락하는 중이다."
+4,2026-06-03,CoinDesk,en,의견형,False,,False,0.5,uncertain,비트코인 가격 하락이 디지털 달러(스테이블코인)로의 전환을 가속화하고 있다.
+5,2026-06-03,CoinDesk,en,사건형,False,,False,0.3,uncertain,영국 상원 위원회가 영국 중앙은행에 요청했다.
+6,2026-06-03,CoinDesk,en,의견형,True,파편,False,0.5,uncertain,이 요청은 스테이블코인 규제와 관련이 있다.
+7,2026-06-03,CoinDesk,en,사건형,False,,False,0.9,uncertain,위원회는 영국 중앙은행이 제안된 스테이블코인 규제를 재고할 것을 요구하고 있다.
+8,2026-06-03,CoinDesk,en,사건형,False,,False,0.3,uncertain,프랭클린 템플턴이 문페이와 협력한다.
+9,2026-06-03,CoinDesk,en,사건형,True,파편,False,0.4,uncertain,이 협력은 대규모 투자자들이 스테이블코인을 교환하여 수익을 얻을 수 있게 한다.
+10,2026-06-03,CoinDesk,en,사건형,True,파편,False,0.8,supported,해당 서비스는 24시간 연중무휴로 제공된다.
+11,2026-06-03,CoinDesk,en,사건형,False,,False,0.8,supported,스테이블코인 결제로의 전환이 이루어지고 있다.
+12,2026-06-03,CoinDesk,en,의견형,False,,True,0.3,uncertain,레이어2 기술의 열기가 식고 있다.
+13,2026-06-03,CoinDesk,en,수치형,False,,False,0.6,supported,Bullish crypto bets가 16억 달러의 손실을 보았다
+14,2026-06-03,CoinDesk,en,수치형,False,,False,0.6,uncertain,"ETH, SOL, DOGE의 가격이 9% 하락했다"
+15,2026-06-03,CoinTelegraph,en,수치형,False,,False,0.6,supported,Zama의 1250만 달러相当의 USDC 동결이 해제되었다
+16,2026-06-03,CoinTelegraph,en,사건형,False,,False,0.6,supported,Zama의 컴플라이언스(규제준수)가 가속화되었다
+17,2026-06-03,CoinTelegraph,en,사건형,False,,False,0.8,supported,MoneyGram이 Stellar 네트워크에서 MGUSD 스테이블코인을 출시했다
+18,2026-06-03,CoinTelegraph,en,사건형,False,,False,0.8,supported,MGUSD 스테이블코인은 미국 달러와 페그된다
+19,2026-06-03,CoinTelegraph,en,사건형,True,동어반복,False,0.8,supported,Stellar 네트워크는 분산원장 기술을 기반으로 한다
+20,2026-06-03,Decrypt,en,사건형,False,,False,0.6,uncertain,뉴욕의 암호화폐 감시 기관이 스테이블코인을 감시하기 위해 EU와 협력하고 있다.
+21,2026-06-03,Decrypt,en,사건형,False,,False,0.6,uncertain,뉴욕의 감시 기관은 스테이블코인 규제에 대한 협력을 강화하고 있다.
+22,2026-06-03,Decrypt,en,예정형,False,,False,0.6,uncertain,EU와의 협력을 통해 글로벌 스테이블코인 규제 기준을 마련하고자 한다.
+23,2026-06-03,토큰포스트,ko,수치형,True,주제외,False,0.4,uncertain,월드코인 거래대금 937억 돌파
+24,2026-06-03,토큰포스트,ko,의견형,True,주제외,False,0.2,contradicted,월드코인 강세
+25,2026-06-03,토큰포스트,ko,사건형,True,주제외,False,0.4,uncertain,월드코인 탐욕지수 최상위 진입
+26,2026-06-03,토큰포스트,ko,사건형,False,,False,0.8,supported,영국 상원이 스테이블코인 규제를 속도 내라고 주문했다
+27,2026-06-03,토큰포스트,ko,예정형,False,,True,0.7,supported,영국은 파운드화와 연계된 스테이블코인의 경쟁력을 높이기 위해 규제를 강화하고 있다
+28,2026-06-03,토큰포스트,ko,사건형,False,,False,0.6,supported,국내 금융·IT업계가 원화 스테이블코인 시장 선점을 위해 협력하고 있다.
+29,2026-06-03,토큰포스트,ko,사건형,False,,False,0.6,supported,원화 스테이블코인 시장은 국내 금융·IT업계의 협력으로 가속화되고 있다.
+30,2026-06-03,토큰포스트,ko,의견형,False,,True,0.6,supported,국내에서 원화 스테이블코인 시장의 중요성이 증가하고 있다.
+31,2026-06-03,TheBlock,en,사건형,False,,False,0.2,uncertain,Coinbase는 ProShares가 발행한 스테이블코인 예금 ETF에 투자했다
+32,2026-06-03,TheBlock,en,사건형,True,동어반복,False,0.8,supported,ProShares는 ETF를 발행한 회사다
+33,2026-06-03,TheBlock,en,사건형,True,동어반복,False,0.6,uncertain,Coinbase는 스테이블코인 예금에 투자하는 회사다
+34,2026-06-03,TheBlock,en,예정형,False,,False,0.6,uncertain,Movement가 새로운 Layer 1로의 전환을 시도하고 있다
+35,2026-06-03,TheBlock,en,예정형,False,,False,0.6,uncertain,토큰 덤프 스캔들 이후 Movement가 새로운 방향을 모색하고 있다
+36,2026-06-03,Blockworks,en,의견형,False,,False,0.6,uncertain,베네수엘라의 제재는 스테이블코인의 검증을 보여준다
+37,2026-06-03,Blockworks,en,의견형,False,,False,0.8,supported,스테이블코인은 제재를 피하는 수단으로 사용될 수 있다
+38,2026-06-03,Blockworks,en,의견형,False,,False,0.6,supported,베네수엘라의 경우는 스테이블코인의 실제 사용 사례를 제공한다
+39,2026-06-06,CoinDesk,en,예정형,False,,False,0.4,uncertain,"JPMorgan, Bank of America, Citi가 블록체인 공세를 시작할 것이다."
+40,2026-06-06,CoinDesk,en,예정형,True,파편,False,0.6,uncertain,이 공세는 공유 토큰화된 네트워크를 활용할 것이다.
+41,2026-06-06,CoinTelegraph,en,사건형,False,,False,0.0,uncertain,Travala 플랫폼에서 AI 에이전트가 호텔을 예약할 수 있다.
+42,2026-06-06,CoinTelegraph,en,사건형,True,파편,False,0.4,uncertain,호텔 예약 결제 수단으로 USDC를 사용한다.
+43,2026-06-06,CoinTelegraph,en,사건형,True,파편,False,0.5,uncertain,해당 서비스는 Base 블록체인 위에서 운영된다.
+44,2026-06-06,CoinTelegraph,en,사건형,False,,True,0.3,uncertain,Visa는 비공개 스테이블코인 결제를 테스트하고 있다.
+45,2026-06-06,CoinTelegraph,en,사건형,True,파편,False,0.4,uncertain,이 테스트는 Brale 및 Canton과 함께 진행된다.
+46,2026-06-06,Decrypt,en,사건형,False,,False,0.8,supported,한 국회의원이 정부의 스테이블코인 지불에 대해 경고했다.
+47,2026-06-06,Decrypt,en,사건형,False,,False,0.8,supported,국회의원은 정부의 스테이블코인 지불이 '조세 회피 경제'를 부추길 수 있다고 주장했다.
+48,2026-06-06,Decrypt,en,사건형,False,,False,0.75,supported,정부의 스테이블코인 활용이 세금 회피 문제를 야기할 수 있다는 우려가 제기되었다.
+49,2026-06-06,Decrypt,en,수치형,False,,False,0.4,uncertain,Looksmaxxing 트렌드가 비트코인과 스테이블코인을 통해 1억 달러의 회색시장을 창출했다
+50,2026-06-06,Decrypt,en,사건형,True,파편,False,0.8,supported,Chainalysis가 해당 트렌드와 관련된 회색시장에 대해 보고했다
+51,2026-06-06,Decrypt,en,수치형,True,주제외,False,1.0,uncertain,Farage의 Reform UK에 940만 달러를 기부했다
+52,2026-06-06,Decrypt,en,사건형,True,주제외,False,0.3,uncertain,기부 금액은 1분기에 발생했다
+53,2026-06-06,Decrypt,en,사건형,True,주제외,False,0.1,uncertain,기부자는 암호화폐 억만장자이다
+54,2026-06-06,Decrypt,en,사건형,False,,False,0.6,uncertain,Tether는 토큰화된 금 기반 스테이블코인 비자 카드를 출시했다.
+55,2026-06-06,Decrypt,en,사건형,True,파편,False,0.6,supported,이 비자 카드는 암호화폐 보상을 지급한다.
+56,2026-06-06,토큰포스트,ko,수치형,False,,False,0.4,uncertain,"비트코인 가격이 61,000달러 선을 회복했다."
+57,2026-06-06,토큰포스트,ko,수치형,True,주제외,False,0.4,uncertain,HYPE가 65 USDT를 일시 하회했다
+58,2026-06-06,토큰포스트,ko,수치형,True,주제외,False,0.6,uncertain,HYPE의 가격이 24시간 기준 11% 넘게 하락했다
+59,2026-06-16,CoinDesk,en,사건형,False,,False,0.2,uncertain,트럼프와 관련된 스테이블코인이 화이트하우스 UFC 대회에서 보너스 지급에 사용되었다
+60,2026-06-16,CoinDesk,en,사건형,False,,False,0.4,uncertain,화이트하우스 UFC 대회에서 스테이블코인을 사용한 보너스 지급이 확인되었다
+61,2026-06-16,CoinDesk,en,사건형,False,,False,0.2,uncertain,트럼프와 관련된 스테이블코인의 사용이 화이트하우스 UFC 대회에서 확인되었다
+62,2026-06-16,CoinTelegraph,en,사건형,False,,False,0.7,supported,트럼프의 암호화폐 회사에서 발행한 스테이블코인이 UFC 이벤트 보너스에 사용되고 있다
+63,2026-06-16,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,트럼프의 암호화폐 회사는 USD1 스테이블코인을 발행했다
+64,2026-06-16,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,UFC 이벤트 보너스에서 스테이블코인이 사용된다
+65,2026-06-16,토큰포스트,ko,의견형,False,,True,0.6,uncertain,EU에서 테더 USDT의 미카 미준수가 문제시되어 175억 달러가 퇴출될 가능성이 있다
+66,2026-06-16,토큰포스트,ko,의견형,True,파편,False,0.7,supported,한국의 스테이블코인 입법에 영향을 줄 수 있다
+67,2026-06-16,토큰포스트,ko,사건형,False,,False,0.6,supported,테더 USDT의 규제 문제가 글로벌하게 확대되고 있다
+68,2026-06-16,토큰포스트,ko,의견형,False,,False,0.4,uncertain,써클의 USDC 사업 확장이 기대되고 있다
+69,2026-06-16,토큰포스트,ko,수치형,False,,False,0.6,supported,써클의 주가가 10% 넘게 급등했다
+70,2026-06-16,토큰포스트,ko,사건형,True,주제외,False,0.5,uncertain,세일즈포스가 고객지원 AI '핀'을 인수했다
+71,2026-06-16,토큰포스트,ko,의견형,True,주제외,True,0.6,supported,에이전트포스를 강화하기 위한 목적이다
+72,2026-06-16,토큰포스트,ko,수치형,True,주제외,False,0.2,uncertain,시드릴이 7억달러 회사채로 차환한다
+73,2026-06-16,토큰포스트,ko,수치형,True,주제외,False,0.2,uncertain,시드릴이 8.375% 고금리 채무를 상환한다
+74,2026-06-16,토큰포스트,ko,사건형,False,,False,0.4,uncertain,게이트가 USDT를 통해 홍콩 증시와 연결되었습니다.
+75,2026-06-16,토큰포스트,ko,의견형,False,,False,0.7,supported,스테이블코인의 활용 범위가 넓어질 것으로 예상됩니다.
+76,2026-06-16,토큰포스트,ko,의견형,False,,False,0.6,supported,홍콩 증시와의 연결은 게이트의 스테이블코인 활용을 강화합니다.
+77,2026-06-16,토큰포스트,ko,사건형,True,주제외,False,0.2,uncertain,줌이 아프리카 언어를 지원하기 위해 엔케네와 업무 제휴를 맺었다
+78,2026-06-16,토큰포스트,ko,예정형,True,주제외,False,0.5,uncertain,엔케네는 소외된 아프리카 언어의 AI 인프라 구축을 목표로 한다
+79,2026-06-16,토큰포스트,ko,의견형,True,주제외,False,0.6,supported,줌의 지원으로 엔케네의 아프리카 언어 지원 인프라가 강화될 수 있다
+80,2026-06-16,토큰포스트,ko,사건형,False,,False,0.7,supported,UFC 보너스에 스테이블코인이 등장했다
+81,2026-06-16,토큰포스트,ko,의견형,False,,True,0.7,supported,스테이블코인이 실사용 시험대에 올랐다
+82,2026-06-16,토큰포스트,ko,사건형,True,동어반복,False,0.8,supported,USD1은 스테이블코인의 하나이다
+83,2026-06-17,CoinDesk,en,사건형,False,,False,0.8,supported,미국 상원 의원들이 GENIUS Act 스테이블코인 과정에서 주정부를 배제하지 말라고 재무부에 촉구했다
+84,2026-06-17,CoinDesk,en,사건형,True,동어반복,False,0.6,uncertain,GENIUS Act는 스테이블코인 발행과 관련된 법안이다
+85,2026-06-17,CoinDesk,en,사건형,True,동어반복,False,0.8,supported,재무부는 스테이블코인 규제와 관련된 주요 기관이다
+86,2026-06-17,CoinDesk,en,사건형,False,,False,0.5,uncertain,Ripple이 Flutterwave에 투자했다
+87,2026-06-17,CoinDesk,en,사건형,False,,False,0.6,uncertain,Ripple의 스테이블코인과 XRP Ledger가 아프리카의 결제 시스템에 사용된다
+88,2026-06-17,CoinDesk,en,사건형,False,,True,0.6,uncertain,아프리카의 결제 시스템에서 Ripple의 기술이 확대된다
+89,2026-06-17,CoinDesk,en,사건형,False,,True,0.4,uncertain,State Street는 새로운 머니 마켓 펀드를 출시하여 스테이블코인 예금 증가를 목표로 한다.
+90,2026-06-17,CoinDesk,en,의견형,False,,False,0.6,supported,새로운 펀드는 스테이블코인 예금을 위한 새로운 기회를 제공할 수 있다.
+91,2026-06-17,CoinDesk,en,사건형,False,,False,0.6,uncertain,State Street는 스테이블코인 시장의 성장에 대응하여 새로운 서비스를 제공하고 있다.
+92,2026-06-17,CoinDesk,en,사건형,False,,False,0.6,supported,Bybit에 테더 골드 전용 옵션 시장 출시
+93,2026-06-17,CoinDesk,en,사건형,False,,False,0.6,uncertain,테더 골드 옵션 거래 가능
+94,2026-06-17,CoinDesk,en,사건형,False,,False,0.6,uncertain,Bybit에서 테더 골드 거래 지원
+95,2026-06-17,CoinTelegraph,en,사건형,True,동어반복,False,0.6,supported,크립토 시장에서 오늘 무슨 일이 일어났는지 요약한다.
+96,2026-06-17,CoinTelegraph,en,사건형,False,,False,0.8,supported,트럼프의 암호화폐 회사에서 발행한 스테이블코인이 UFC 이벤트 보너스에 사용된다
+97,2026-06-17,CoinTelegraph,en,사건형,False,,False,0.8,supported,트럼프의 암호화폐 회사의 스테이블코인은 USD1을 백링으로 한다
+98,2026-06-17,Decrypt,en,의견형,False,,False,0.6,supported,나이지리아의 스테이블코인 채택 규모가 리스크를 더 뚜렷하게 만들었다
+99,2026-06-17,Decrypt,en,사건형,False,,False,0.6,supported,IMF가 나이지리아의 스테이블코인 채택에 대한 우려를 표명했다
+100,2026-06-17,토큰포스트,ko,사건형,False,,True,0.2,contradicted,서클의 주가가 하락했다
+101,2026-06-17,토큰포스트,ko,사건형,True,파편,False,0.6,supported,신규 기관 자금이 유입되었다
+102,2026-06-17,토큰포스트,ko,사건형,True,파편,False,0.6,uncertain,목표가와 현재 주가가 큰 격차를 보이고 있다
+103,2026-06-18,CoinDesk,en,사건형,False,,False,0.8,supported,Fidelity가 스테이블코인 준비금 관리 경쟁에 참여한다.
+104,2026-06-18,CoinDesk,en,의견형,False,,True,0.8,supported,월스트리트 기업들 사이에서 스테이블코인 준비금 관리 경쟁이 활발하다.
+105,2026-06-18,CoinTelegraph,en,수치형,False,,False,0.4,uncertain,Altcoin 판매액은 2660억 달러에 달한다
+106,2026-06-18,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,자본이 암호화폐에서 회전하고 있다
+107,2026-06-18,CoinTelegraph,en,의견형,False,,False,0.6,supported,Altseason이 멸종된 것으로 보인다
+108,2026-06-18,CoinTelegraph,en,수치형,False,,False,0.6,supported,"Trace Finance는 크로스보더 스테이블코인 결제 확장에 3,200만 달러를 투자받았다."
+109,2026-06-18,CoinTelegraph,en,수치형,False,,False,0.6,uncertain,비트코인 가격이 64.5K의 주간 최저치에 도달했다
+110,2026-06-18,CoinTelegraph,en,의견형,False,,True,0.6,supported,전략적 매도 우려가 재등장했다
+111,2026-06-18,CoinTelegraph,en,사건형,False,,False,0.5,uncertain,Ready USDC 카드가 발급자 변경 후 비-EEA 서비스를 중단했다
+112,2026-06-18,CoinTelegraph,en,사건형,True,파편,False,0.8,supported,사용자들이 문제를 보고했다
+113,2026-06-18,CoinTelegraph,en,사건형,False,,False,0.6,supported,중국은 스테이블코인의 국경 간 역할 확대에 주목하고 있다
+114,2026-06-18,CoinTelegraph,en,의견형,False,,False,0.75,supported,중국은 스테이블코인에 대한 규제를 강화할 수 있다
+115,2026-06-18,CoinTelegraph,en,사건형,False,,False,0.6,supported,스테이블코인의 국경 간 사용이 증가하고 있다
+116,2026-06-18,CoinTelegraph,en,의견형,False,,True,0.6,uncertain,비트코인의 의미 있는 바닥은 6만~7만 달러 범위에 형성되고 있다.
+117,2026-06-18,Decrypt,en,수치형,False,,False,0.6,uncertain,"CoinFund와 Coinbase가 스테이블코인 결제 스타트업 Trace Finance에 3,200만 달러를 투자했다."
+118,2026-06-18,Decrypt,en,사건형,True,동어반복,False,0.9,supported,Trace Finance는 스테이블코인 결제 솔루션을 제공한다.
+119,2026-06-18,Decrypt,en,의견형,False,,False,0.8,supported,CoinFund와 Coinbase의 투자는 스테이블코인 결제 시장의 성장 잠재력을 보여준다.
+120,2026-06-18,토큰포스트,ko,의견형,False,,True,0.7,supported,써클 인터넷 그룹 주가 하락세에도 투자자 관심이 지속되고 있다
+121,2026-06-18,토큰포스트,ko,의견형,False,,False,0.6,supported,써클 인터넷 그룹의 스테이블코인인 USDC의 준비금이 충분하다는 평가가 있다
+122,2026-06-18,토큰포스트,ko,의견형,False,,False,0.8,supported,그러나 스테이블코인에 대한 규제 및 리스크에 대한 우려도 존재한다
+123,2026-06-19,CoinDesk,en,예정형,False,,False,0.8,supported,미국 기관들이 스테이블코인에 대한 고객 식별 규칙을 추진하고 있다.
+124,2026-06-19,CoinDesk,en,의견형,True,파편,False,0.8,supported,이 규칙들은 은행에 적용되는 것과 유사하다.
+125,2026-06-19,CoinDesk,en,사건형,True,파편,False,0.7,supported,이는 새로운 GENIUS 법안 제안의 일환이다.
+126,2026-06-19,CoinDesk,en,의견형,False,,False,0.6,uncertain,다음 불황은 더 느리고 덜 변동적일 것
+127,2026-06-19,CoinDesk,en,의견형,True,파편,False,0.6,supported,투자자의 암호화폐에 대한 식욕이 진화함에 따라
+128,2026-06-19,CoinDesk,en,사건형,False,,False,0.4,uncertain,비트와이즈의 CIO는 다음 불황에 대한 예측을 함
+129,2026-06-19,CoinTelegraph,en,예정형,False,,True,0.8,supported,미국 규제 당국은 스테이블코인 발행자가 은행과 유사한 사용자 ID 요구 사항을 충족해야 한다고 주장
+130,2026-06-19,CoinTelegraph,en,의견형,True,파편,False,0.8,supported,이는 스테이블코인 발행자에게 추가적인 규제 부담을 가할 수 있음
+131,2026-06-19,CoinTelegraph,en,사건형,False,,False,0.8,supported,미국 규제 당국은 스테이블코인에 대한 규제 강화에 관심을 보임
+132,2026-06-19,CoinTelegraph,en,사건형,False,,True,0.5,uncertain,Custodia와 Vantage가 새로운 토큰을 제안했다.
+133,2026-06-19,CoinTelegraph,en,예정형,True,파편,True,0.5,uncertain,제안된 토큰은 은행 예금과 스테이블코인 사이를 전환(toggles)할 수 있다.
+134,2026-06-19,CoinTelegraph,en,예정형,False,,False,0.7,supported,Ledn이 테더 골드(Tether Gold)를 대출 담보로 추가할 것
+135,2026-06-19,CoinTelegraph,en,예정형,True,파편,False,0.6,supported,비트코인 기반 대출 모델을 확장할 것
+136,2026-06-19,CoinTelegraph,en,사건형,False,,False,0.2,contradicted,테더의 금 지원 파생 스테이블코인 aUSDT가 종료되었다
+137,2026-06-19,CoinTelegraph,en,사건형,True,동어반복,False,0.8,supported,aUSDT는 테더의 금 지원 스테이블코인 중 하나였다
+138,2026-06-19,CoinTelegraph,en,의견형,False,,False,0.6,uncertain,테더의 금 지원 스테이블코인 중 일부가 종료되는 것으로 보인다
+139,2026-06-19,Decrypt,en,사건형,False,,False,0.4,uncertain,제롬 파월이 연방준비제도(Fed)의 새로운 스테이블코인 정책을 지지했다
+140,2026-06-19,Decrypt,en,사건형,False,,False,0.6,uncertain,케빈 워시 의장이 투표에서 기권했다
+141,2026-06-19,토큰포스트,ko,사건형,False,,False,0.6,supported,Circle의 주가가 급락했다.
+142,2026-06-19,토큰포스트,ko,사건형,False,,False,0.6,uncertain,연준이 스테이블코인 규제안을 제안했다.
+143,2026-06-19,토큰포스트,ko,의견형,False,,True,0.6,uncertain,연준의 스테이블코인 규제안이 Circle 주가 급락의 원인이다.
+144,2026-06-19,토큰포스트,ko,의견형,False,,False,0.6,supported,한국의 디지털자산 규제로 인해 스테이블코인 경쟁이 가속화되고 있다.
+145,2026-06-19,토큰포스트,ko,의견형,False,,False,0.8,supported,규제 강화로 스테이블코인 발행사들이 준비금 및 리스크 관리에 대한 관심이 높아지고 있다.
+146,2026-06-19,토큰포스트,ko,예정형,False,,False,0.8,supported,미국에서 스테이블코인 발행사를 은행처럼 규제할 계획이다.
+147,2026-06-19,토큰포스트,ko,의견형,False,,False,0.7,supported,미국 규제 당국은 스테이블코인 발행사에 대한 규제 강화로 2차 시장 확대가 예상된다.
+148,2026-06-20,CoinTelegraph,en,사건형,False,,False,0.5,uncertain,AllUnity가 SEKAU라는 스테이블코인을 출시했다.
+149,2026-06-20,CoinTelegraph,en,사건형,False,,False,0.5,uncertain,SEKAU는 스웨덴 크로나에 의해 뒷받침되는 스테이블코인이다.
+150,2026-06-20,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,SEKAU는 완전 준비금(fully reserved) 방식으로 운영된다.
+151,2026-06-20,토큰포스트,ko,수치형,False,,False,0.6,uncertain,메테오라가 11% 급등했다
+152,2026-06-20,토큰포스트,ko,수치형,False,,True,0.4,uncertain,메테오라의 탐욕지수가 1위다
+153,2026-06-20,토큰포스트,ko,사건형,False,,False,0.6,supported,엑시인피니티와 지토도 강세를 보였다
+154,2026-06-20,토큰포스트,ko,수치형,False,,False,0.6,uncertain,플루언트가 188% 급등했다
+155,2026-06-20,토큰포스트,ko,사건형,False,,False,0.6,supported,지토·월드코인·에어로드롬이 업비트 강세 종목이다
+156,2026-06-20,토큰포스트,ko,수치형,False,,False,0.6,uncertain,"Alberta 투자운용사가 써클에 2,503만 달러를 신규 투자했다."
+157,2026-06-20,토큰포스트,ko,사건형,True,주제외,False,0.5,uncertain,카카오게임즈의 최대주주가 교체되었다
+158,2026-06-20,토큰포스트,ko,예정형,True,주제외,False,0.6,supported,카카오게임즈가 글로벌 사업을 강화할 계획이다
+159,2026-06-20,토큰포스트,ko,사건형,False,,False,0.6,uncertain,리플 스웰 2026 발표에 XRP 커뮤니티가 반발하고 있다
+160,2026-06-20,토큰포스트,ko,사건형,False,,False,0.6,uncertain,RLUSD 쏠림 논란이 발생했다
+161,2026-06-20,TheBlock,en,사건형,False,,False,0.5,uncertain,Fidelity는 스테이블코인 발행자를 위한 GENIUS와 일치하는 머니 마켓 펀드를 출시했다
+162,2026-06-20,TheBlock,en,사건형,True,파편,False,0.8,supported,이 펀드는 스테이블코인 발행자의 자금을 관리하기 위한 것이다
+163,2026-06-20,TheBlock,en,사건형,False,,False,0.5,uncertain,GENIUS는 Fidelity의 자금 관리 플랫폼이다
+164,2026-06-20,TheBlock,en,수치형,False,,False,0.6,uncertain,비트코인 미세거래가 일일 거래의 80%를 차지한다
+165,2026-06-20,TheBlock,en,사건형,False,,False,0.8,supported,CryptoQuant의 보고서에 따르면 비트코인 미세거래가 증가했다
+166,2026-06-21,CoinTelegraph,en,의견형,False,,False,0.9,supported,암호화폐 산업이 스테이블코인에 주목하고 있다.
+167,2026-06-21,CoinTelegraph,en,예정형,False,,False,0.9,supported,암호화폐 산업은 MiCA 2.0에서 DeFi 개정안을 검토하고 있다.
+168,2026-06-21,CoinTelegraph,en,사건형,False,,False,0.8,supported,MiCA 2.0은 스테이블코인 및 DeFi 관련 규제 개정을 다루고 있다.
+169,2026-06-21,토큰포스트,ko,수치형,True,주제외,False,0.6,supported,풀 서클 리튬(FCLI)이 500만 달러를 조달했다
+170,2026-06-21,토큰포스트,ko,예정형,True,주제외,False,0.6,uncertain,조달금은 배터리 화재 대응 제품인 FCL-X의 생산 확대에 사용될 예정이다
+171,2026-06-21,BeInCrypto,en,사건형,False,,False,0.6,uncertain,Main Street msUSD 스테이블코인이 달러와의 페그를 잃었다
+172,2026-06-21,BeInCrypto,en,수치형,False,,False,0.2,uncertain,msUSD 스테이블코인의 가격이 90% 하락했다
+173,2026-06-22,CoinDesk,en,수치형,False,,False,0.55,uncertain,이더리움의 가장 큰 '샌드위치' 봇이 750만 달러 규모의 손실을 입었다.
+174,2026-06-22,CoinDesk,en,사건형,True,파편,False,0.2,uncertain,해당 손실은 익스플로잇으로 인해 발생했다.
+175,2026-06-22,토큰포스트,ko,수치형,False,,False,0.8,supported,서클(CRCL)의 주가가 IPO 대비 27% 하락했다
+176,2026-06-22,토큰포스트,ko,의견형,False,,False,0.6,supported,서클(CRCL)의 하락이 스테이블코인 시장에 영향을 미칠 수 있다
+177,2026-06-22,토큰포스트,ko,사건형,True,주제외,False,0.4,uncertain,한국 경제의 중소기업 대출 연체율이 급등하고 있다
+178,2026-06-22,토큰포스트,ko,의견형,True,주제외,False,0.6,uncertain,중소기업 대출 연체율의 급등은 경제 양극화의 심화 우려를 가져온다
+179,2026-06-22,블록미디어,ko,의견형,False,,False,0.5,uncertain,스테이블코인과 RWA가 주요 키워드로 부상하고 있다.
+180,2026-06-22,블록미디어,ko,사건형,True,주제외,False,1.0,uncertain,AI 통제에 대한 논란이 확산되고 있다.
+181,2026-06-24,CoinDesk,en,수치형,False,,False,0.4,uncertain,체인링크가 47개의 한국과 유럽 은행과 협력했다
+182,2026-06-24,CoinDesk,en,사건형,True,파편,False,0.7,supported,국제 송금을 가속화하기 위한 협력이다
+183,2026-06-24,CoinDesk,en,의견형,False,,False,0.6,supported,체인링크의 기술을 이용하여 송금 속도를 향상시킬 수 있다
+184,2026-06-24,CoinDesk,en,사건형,False,,False,0.8,supported,전 로빈후드 크립토 최고운영책임자(COO) 타냐 데니소바가 스테이블코인 발행사 아고라에 합류했습니다.
+185,2026-06-24,CoinDesk,en,사건형,False,,False,0.2,uncertain,아고라는 스테이블코인 발행사입니다.
+186,2026-06-24,CoinDesk,en,사건형,False,,False,0.2,uncertain,타냐 데니소바는 아고라에서 운영 책임자 직책을 맡습니다.
+187,2026-06-24,CoinDesk,en,사건형,False,,False,0.8,supported,ECB 디지털 유로가 유럽 의회 투표에서 승리하여 발전 단계에 접어들었다
+188,2026-06-24,CoinDesk,en,사건형,False,,False,0.6,uncertain,유럽 의회는 디지털 유로의 발행을 승인했다
+189,2026-06-24,CoinDesk,en,의견형,False,,False,0.8,supported,디지털 유로의 도입은 ECB의 디지털화폐 전략의 일부이다
+190,2026-06-24,CoinDesk,en,사건형,False,,False,0.6,supported,Ripple이 EU를 타겟으로 하여 Luxembourg 금융 규제 기관으로부터 MiCA 예비 승인을 받았다.
+191,2026-06-24,CoinTelegraph,en,사건형,False,,False,0.6,supported,Chainlink는 유럽과 한국 은행 컨소시엄에 합류했다
+192,2026-06-24,CoinTelegraph,en,예정형,True,파편,True,0.8,supported,외환 결제 네트워크를 개발하기 위한 목적이다
+193,2026-06-24,CoinTelegraph,en,예정형,False,,False,0.7,supported,은행 컨소시엄은 Chainlink의 기술을 활용할 계획이다
+194,2026-06-24,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,전 BIS 책임자가 스테이블코인에 대한 입장을 완화했다
+195,2026-06-24,CoinTelegraph,en,의견형,False,,False,0.6,supported,스테이블코인이 법정화폐와 공존할 수 있을 것이라는 의견을 밝혔다
+196,2026-06-24,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,Opera의 MiniPay가 Visa 데бит 카드를 출시했다
+197,2026-06-24,CoinTelegraph,en,사건형,True,파편,True,0.8,supported,데бит 카드를 통해 스테이블코인을 사용할 수 있다
+198,2026-06-24,CoinTelegraph,en,사건형,False,,False,0.5,uncertain,"Bitmine, Sharplink, Joe Lubin이 이더리움 연구 비영리 단체를 지원한다"
+199,2026-06-24,CoinTelegraph,en,사건형,True,동어반복,False,0.8,supported,이더리움 연구 비영리 단체의 목적은 이더리움 기술 개발 및 연구에 기여하는 것이다
+200,2026-06-24,CoinTelegraph,en,사건형,True,동어반복,True,0.9,supported,Joe Lubin은 이더리움의 공동 설립자이다
+201,2026-06-24,Decrypt,en,의견형,True,주제외,False,0.2,uncertain,마크 저커버그가 예측 시장에 관심을 가지고 있다
+202,2026-06-24,Decrypt,en,사건형,True,동어반복,True,0.6,supported,뉴욕 타임즈(NYT)가 관련 기사를 보도했다
+203,2026-06-24,Decrypt,en,사건형,False,,False,0.2,contradicted,잉글랜드 은행은 스테이블코인 규제를 완화했다
+204,2026-06-24,Decrypt,en,수치형,False,,False,0.6,uncertain,스테이블코인 발행사에 대한 보유한도 대신 400억 파운드의 가드레일을 도입했다
+205,2026-06-27,CoinDesk,en,사건형,False,,False,0.85,supported,자산 관리 대기업 인베스코가 토큰화된 펀드를 신청했다.
+206,2026-06-27,CoinDesk,en,사건형,True,파편,True,0.9,supported,이 펀드는 스테이블코인 준비금 시장을 목표로 한다.
+207,2026-06-27,CoinTelegraph,en,수치형,False,,False,0.6,supported,Framework Ventures가 4억 달러를 투자하기 위해 모금했다
+208,2026-06-27,CoinTelegraph,en,사건형,False,,False,0.3,uncertain,Framework Ventures의 투자 대상은 암호화폐를 넘어서 있다
+209,2026-06-27,CoinTelegraph,en,사건형,False,,False,0.75,supported,비트코인 ETF의 6월最大 일일 유출이 발생했다
+210,2026-06-27,CoinTelegraph,en,수치형,False,,False,0.9,contradicted,비트코인 가격이 6만 달러 아래로 떨어졌다
+211,2026-06-27,CoinTelegraph,en,사건형,False,,False,0.8,contradicted,테더 스테이블코인이 시가총액 면에서 이더를 넘어섰다.
+212,2026-06-27,CoinTelegraph,en,수치형,False,,False,0.6,uncertain,"이더리움 가격이 1,500달러까지 폭락했다."
+213,2026-06-27,CoinTelegraph,en,사건형,False,,True,0.7,supported,BitGo는 직원 15%를 감원하여 AI와 스테이블코인에 집중
+214,2026-06-27,CoinTelegraph,en,사건형,False,,False,0.7,supported,BitGo는 AI와 스테이블코인에 대한 집중도를 높이기 위해 구조조정을 실시
+215,2026-06-27,CoinTelegraph,en,의견형,False,,False,0.6,supported,BitGo의 구조조정은 회사 경쟁력 강화에 도움이 될 것
+216,2026-06-27,토큰포스트,ko,수치형,False,,False,0.6,supported,서클의 주가가 급등했다.
+217,2026-06-27,토큰포스트,ko,사건형,False,,False,0.7,uncertain,서클이 노무라와 외환 거래(FX) 협력을 발표했다.
+218,2026-06-27,토큰포스트,ko,의견형,False,,False,0.8,supported,스테이블코인이 해킹 위험을 넘어 제재 회피 인프라로 진화하고 있다.
+219,2026-06-27,토큰포스트,ko,사건형,False,,False,0.8,supported,서틱(CertiK)이 A7A5 리스크에 대해 경고했다.
+220,2026-06-28,CoinDesk,en,수치형,False,,False,0.2,contradicted,테더는 230억 달러 규모의 금 준비금을 보유하고 있다.
+221,2026-06-28,CoinDesk,en,사건형,False,,False,0.7,uncertain,테더는 금 준비금을 활용하여 금 담보 대출을 제공하고 있다.
+222,2026-06-28,CoinTelegraph,en,수치형,False,,False,0.8,supported,Coinbase와 Circle의 주가가 하락하고 있다
+223,2026-06-28,CoinTelegraph,en,수치형,False,,False,0.6,uncertain,크립토 스톡의 하락세가 지속되고 있다
+224,2026-06-28,CoinTelegraph,en,수치형,False,,True,0.6,uncertain,Big Tech와의 비교에서 Coinbase와 Circle이 부진한 성적을 보이고 있다
+225,2026-06-28,Decrypt,en,수치형,False,,False,0.85,supported,스테이블코인 발행자와 거래량의 지리적 분포가 일치하지 않는다
+226,2026-06-28,Decrypt,en,수치형,False,,False,0.6,supported,스테이블코인 거래량의 대부분이 미국과 아시아에서 발생한다
+227,2026-06-28,Decrypt,en,수치형,False,,False,0.6,uncertain,스테이블코인 발행자의 대부분이 미국에 있지만 거래량은 아시아에서 집중된다
+228,2026-06-28,토큰포스트,ko,사건형,False,,False,0.6,uncertain,바이낸스가 초고위험 레버리지 상품을 제공하고 있다.
+229,2026-06-28,토큰포스트,ko,사건형,False,,False,0.9,supported,이로 인해 국내 투자자 보호 논란이 일고 있다.
+230,2026-06-28,토큰포스트,ko,수치형,False,,False,0.6,uncertain,리플(XRP)이 1달러 초반대에 머물며 52주 저점에 근접했다.
+231,2026-06-28,토큰포스트,ko,예정형,False,,False,0.6,supported,리플은 RLUSD로 글로벌 시장 확장을 추진하고 있다.
+232,2026-06-28,토큰포스트,ko,의견형,False,,False,0.6,uncertain,스테이블코인이 은행을 흔들고 있다
+233,2026-06-28,토큰포스트,ko,의견형,False,,False,0.6,uncertain,예금토큰이 은행을 살릴 수 있다
+234,2026-06-28,토큰포스트,ko,사건형,False,,False,0.8,supported,BIS는 스테이블코인을 화폐로 인정하지 않는다
+235,2026-06-28,토큰포스트,ko,의견형,False,,False,0.6,supported,토큰화의 2단계 시스템이 중요하다고 강조한다
+236,2026-06-28,TheBlock,en,수치형,False,,False,0.7,supported,비트코인 가격의 하방 지지대가 깨졌다는 분석이 나왔다
+237,2026-06-28,TheBlock,en,의견형,False,,False,0.7,supported,미 연준의 매파적 입장과 ETF 투자자들의 출금이 비트코인 가격에 부정적인 영향을 미치고 있다
+238,2026-06-28,TheBlock,en,사건형,True,동어반복,False,0.6,uncertain,GENIUS Act는 미국의 스테이블코인 법률을 다룬다
+239,2026-06-28,TheBlock,en,사건형,True,동어반복,False,0.4,uncertain,GENIUS Act는 스테이블코인의 규제에 관한 법률이다
+240,2026-06-28,TheBlock,en,의견형,True,동어반복,False,0.4,uncertain,미국에서 스테이블코인 법률을 이해하기 위해서는 GENIUS Act를 알아야 한다
+241,2026-06-29,CoinTelegraph,en,사건형,False,,False,0.8,supported,BIS는 스테이블코인에 대해 경고했다
+242,2026-06-29,CoinTelegraph,en,의견형,False,,False,0.9,contradicted,스테이블코인은 전 세계 금융 시스템을 분열시킬 위험이 있다
+243,2026-06-29,토큰포스트,ko,수치형,False,,False,0.6,supported,Circle 주가 반등
+244,2026-06-29,토큰포스트,ko,의견형,False,,True,0.6,supported,USDC 생태계 발전
+245,2026-06-29,토큰포스트,ko,의견형,False,,False,0.6,uncertain,규제 발전으로 성장 전망
+246,2026-06-29,토큰포스트,ko,수치형,False,,False,0.4,uncertain,유로넷 월드와이드의 매출은 11% 증가했다
+247,2026-06-29,토큰포스트,ko,수치형,False,,False,0.8,supported,유로넷 월드와이드의 EPS는 40% 증가했다
+248,2026-06-29,토큰포스트,ko,의견형,False,,False,0.2,uncertain,유로넷 월드와이드의 스테이블코인 확대에 따른 부채 부담이 변수로 작용할 수 있다
+249,2026-06-29,토큰포스트,ko,수치형,False,,False,0.3,uncertain,이더리움 블록 생성 주체 중 상위 3곳이 전체의 93%를 점유했다.
+250,2026-06-29,토큰포스트,ko,의견형,False,,False,0.6,uncertain,비트코인과 달러는 모두 믿음에 의존하는 거품이다
+251,2026-06-29,토큰포스트,ko,의견형,False,,False,0.8,supported,스테이블코인은 준비금 비율이 낮아 위험하다
+252,2026-06-29,토큰포스트,ko,의견형,False,,False,0.6,uncertain,스테이블코인의 위험성은 규제로 해결될 수 있다
+253,2026-06-29,TheBlock,en,의견형,False,,False,0.8,supported,스테이블코인이 현금으로 사용되기에는 부족하다
+254,2026-06-29,TheBlock,en,의견형,False,,False,0.9,supported,스테이블코인이 신흥 시장에 위험을 초래할 수 있다
+255,2026-06-29,TheBlock,en,사건형,False,,False,0.9,supported,BIS는 스테이블코인에 대한 규제와 준비금에 대한 경고를 했다
+256,2026-06-29,BeInCrypto,en,의견형,True,주제외,False,0.6,uncertain,Barclays는 기관에서 AI가 필수적이라고 판단한다
+257,2026-06-29,BeInCrypto,en,사건형,True,주제외,False,0.6,uncertain,Andreessen은 그리드 준비도에 대해 질문을 제기한다
+258,2026-06-30,CoinDesk,en,사건형,False,,False,0.6,supported,BNY는 스테이블코인 서비스를 기관 대상으로 확대한다.
+259,2026-06-30,CoinDesk,en,사건형,False,,False,0.6,supported,첫 서비스 대상은 Circle의 USDC다.
+260,2026-06-30,CoinDesk,en,사건형,False,,False,0.6,uncertain,기존에는 개인 투자자만 서비스를 제공했다.
+261,2026-06-30,CoinDesk,en,수치형,False,,False,0.6,uncertain,테더의 USDT가 인도에서 8.5% 프리미엄에 거래되고 있다.
+262,2026-06-30,CoinDesk,en,사건형,True,파편,False,0.6,uncertain,이 프리미엄은 암호화폐 결제 단속 이후 발생했다.
+263,2026-06-30,CoinTelegraph,en,사건형,False,,False,0.8,supported,BNY는 기관고객을 위한 자산보관 플랫폼에서 USDC 발행 및 상환 서비스를 추가했다
+264,2026-06-30,CoinTelegraph,en,수치형,True,동어반복,False,0.9,supported,"USDC는 스테이블코인 중 하나로, 미국 달러와 1:1로 교환될 수 있다"
+265,2026-06-30,CoinTelegraph,en,의견형,False,,False,0.8,supported,BNY의 이 서비스는 기관투자자들이 스테이블코인을 더 쉽게 사용할 수 있도록 해준다
+266,2026-06-30,CoinTelegraph,en,사건형,False,,False,0.6,supported,Breez가 30개 이상의 블록체인에서 비트코인-스테이블코인 결제를 출시했다
+267,2026-06-30,CoinTelegraph,en,의견형,False,,False,0.6,supported,Breez의 기술은 여러 블록체인에서 원활한 결제를 가능하게 한다
+268,2026-06-30,CoinTelegraph,en,사건형,False,,False,0.6,supported,스테이블코인 결제가 30개 이상의 블록체인에서 지원된다
+269,2026-06-30,Decrypt,en,수치형,False,,False,0.4,uncertain,비트코인이 6만 달러를 회복하기 위해 싸우고 있다
+270,2026-06-30,Decrypt,en,의견형,True,동어반복,False,0.4,uncertain,현재 비트코인 가격은 차트 분석을 통해 예측할 수 있다
+271,2026-06-30,Decrypt,en,수치형,False,,False,0.6,uncertain,우크라이나가 처음으로 830만 달러 상당의 암호화폐를 국가 관리하에 두었다
+272,2026-06-30,Decrypt,en,사건형,False,,False,0.2,uncertain,우크라이나 정부가 암호화폐를 국가 자산으로 관리하는 첫 사례이다
+273,2026-06-30,Decrypt,en,사건형,False,,False,0.6,supported,우크라이나의 암호화폐 규제 및 관리 체계가 구축되고 있다
+274,2026-06-30,토큰포스트,ko,사건형,False,,False,0.6,uncertain,Circle과 BNY는 스테이블코인 파트너십을 확대했다
+275,2026-06-30,토큰포스트,ko,수치형,True,파편,False,0.6,uncertain,러셀지수 제외 후 반등했다
+276,2026-06-30,토큰포스트,ko,사건형,True,주제외,False,0.2,uncertain,비트마인이 이더리움 보유 현황을 공개했다
+277,2026-06-30,토큰포스트,ko,의견형,True,주제외,False,0.6,uncertain,비트마인은 상장사로서의 전략을 강조했다
+278,2026-06-30,블록미디어,ko,의견형,False,,False,0.6,supported,스테이블코인이 보험업계의 차세대 인프라로 떠올라 결제부터 심사까지 원스톱 서비스를 제공할 수 있다.
+279,2026-06-30,TheBlock,en,사건형,False,,False,0.8,supported,영국은 랜드마크 암호화폐 프레임워크에서 자본 및 시장 남용 규칙을 설정했다
+280,2026-06-30,TheBlock,en,사건형,True,파편,False,0.6,uncertain,이 규칙은 암호화폐 시장에 대한 영국의 첫 번째 주요 규제이다
+281,2026-06-30,TheBlock,en,사건형,True,파편,False,0.6,supported,이 프레임워크는 암호화폐 산업에 대한 영국의 입장을 명확히 한다
+282,2026-07-01,CoinDesk,en,의견형,False,,False,0.6,supported,OpenUSD는 Circle의 스테이블코인과 경쟁할 수 있다
+283,2026-07-01,CoinDesk,en,의견형,False,,False,0.7,supported,OpenUSD의 도입은 아직 많은 장애물이 있다
+284,2026-07-01,CoinDesk,en,사건형,False,,False,0.6,uncertain,Circle의 주가는 OpenUSD의 등장으로 하락했다
+285,2026-07-01,CoinDesk,en,수치형,False,,False,0.8,supported,Circle의 가치/성과가 17% 하락했다.
+286,2026-07-01,CoinDesk,en,사건형,False,,False,0.9,contradicted,"Stripe, Coinbase, BlackRock이 Circle의 경쟁 스테이블코인 네트워크를 지원하고 있다."
+287,2026-07-01,CoinDesk,en,사건형,False,,False,0.6,uncertain,MetaMask가 'Money Account'를 출시했다.
+288,2026-07-01,CoinDesk,en,사건형,True,파편,False,0.6,supported,이 계좌는 스테이블코인 수익을 제공한다.
+289,2026-07-01,CoinDesk,en,사건형,True,파편,False,0.6,uncertain,이 계좌는 하나의 지갑에서 스테이블코인 지출을 가능하게 한다.
+290,2026-07-01,CoinDesk,en,예정형,False,,False,0.6,supported,영국은 스테이블코인에 대한 자본 준비금을 낮출 계획이다
+291,2026-07-01,CoinDesk,en,의견형,True,파편,False,0.6,uncertain,이 규제는 EU의 MiCA 요구사항보다 낮은 수준이다
+292,2026-07-01,CoinDesk,en,수치형,False,,False,0.6,supported,인도에서 테더가 7%에서 10%의 프리미엄으로 거래되고 있다
+293,2026-07-01,CoinDesk,en,의견형,True,파편,False,0.9,supported,거래소들은 이것이 공급과 수요의 문제라고 말하고 있다
+294,2026-07-01,CoinTelegraph,en,사건형,False,,False,0.7,supported,금융 회사들이 미국 달러 스테이블코인을 위해 협력하고 있다
+295,2026-07-01,CoinTelegraph,en,사건형,True,파편,False,0.6,supported,이 스테이블코인은 준비금을 보유하고 있다
+296,2026-07-01,CoinTelegraph,en,사건형,True,파편,False,0.7,supported,이 협력은 미국 달러 스테이블코인 발행을 위한 공동 노력이다
+297,2026-07-01,CoinTelegraph,en,의견형,False,,False,0.6,supported,스테이블코인의 비즈니스 사용이 급증할 것
+298,2026-07-01,CoinTelegraph,en,의견형,True,동어반복,False,0.6,supported,Cybrid 리포트에서 스테이블코인 사용 증가 예측
+299,2026-07-01,CoinTelegraph,en,의견형,True,동어반복,False,0.6,uncertain,스테이블코인이 금융 시스템에서 중요한 역할을 할 것
+300,2026-07-01,CoinTelegraph,en,사건형,False,,False,0.8,supported,MetaMask이 스테이블코인 수익 계좌를 출시했다
+301,2026-07-01,CoinTelegraph,en,사건형,True,파편,False,0.7,supported,계좌는 카드 지출 기능을 제공한다
+302,2026-07-01,CoinTelegraph,en,사건형,False,,False,0.4,uncertain,Spiko는 EU 규제下的 T-bill 펀드를 Coinbase 스테이블코인 레일에 연결했다
+303,2026-07-01,CoinTelegraph,en,의견형,False,,False,0.6,uncertain,Coinbase 스테이블코인은 규제된 유럽의 자금을 지원할 수 있다
+304,2026-07-01,CoinTelegraph,en,의견형,True,파편,False,0.6,supported,Spiko의 이 연결은 규제된 자금의 이동성을 높일 수 있다
+305,2026-07-01,Decrypt,en,사건형,False,,False,0.4,contradicted,"Circle의 스테이블코인 Open USD를 Coinbase, BlackRock, Visa가 지원한다"
+306,2026-07-01,Decrypt,en,사건형,True,동어반복,False,0.6,supported,Open USD는 새로운 스테이블코인이다
+307,2026-07-01,Decrypt,en,사건형,False,,False,0.7,supported,Circle의 주가가 하락했다
+308,2026-07-02,CoinDesk,en,사건형,False,,False,0.8,supported,제프리스는 서클에 대한 저점 매수를 경고했다.
+309,2026-07-02,CoinDesk,en,의견형,False,,True,0.8,supported,오픈 USD가 서클에 대한 새로운 경쟁 우려를 제기하고 있다.
+310,2026-07-02,CoinDesk,en,사건형,False,,False,0.2,contradicted,프랑스 은행 거대 기업 Crédit Agricole이 유로 스테이블코인 EURXT를 출시했다.
+311,2026-07-02,CoinDesk,en,사건형,False,,False,0.5,uncertain,EURXT는 유로와 1:1으로 고정된다.
+312,2026-07-02,CoinDesk,en,의견형,True,파편,False,0.8,supported,이 스테이블코인은 금융 거래의 효율성을 높이고 비용을 절감할 수 있다.
+313,2026-07-02,CoinDesk,en,사건형,False,,False,0.6,uncertain,유럽의 랜드마크 규제인 MiCA가 7월 1일 기한을 넘기고 있다
+314,2026-07-02,CoinDesk,en,예정형,False,,False,0.8,supported,MiCA 규제는 유럽의 암호화폐 시장에 큰 영향을 미칠 예정이다
+315,2026-07-02,CoinDesk,en,사건형,False,,False,0.8,supported,유럽은 MiCA 규제를 재작성하고 있다
+316,2026-07-02,CoinTelegraph,en,사건형,False,,False,0.9,supported,Circle CEO는 USDC의 네트워크 이점을 강조한다.
+317,2026-07-02,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,OUSD라는 스테이블코인이 새롭게 부상하고 있다.
+318,2026-07-02,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,대만 입법부가 암호화폐 규제를 통과시켰다.
+319,2026-07-02,CoinTelegraph,en,사건형,True,동어반복,False,0.6,supported,대만 입법부가 스테이블코인 규제를 통과시켰다.
+320,2026-07-02,Decrypt,en,의견형,False,,False,0.6,uncertain,CRCL의 판매가 과도하다고 분석가들이 말하고 있다
+321,2026-07-02,Decrypt,en,사건형,False,,False,0.6,uncertain,Circle CEO가 Open USD 위협에 대해 언급했다
+322,2026-07-02,Decrypt,en,의견형,True,동어반복,False,0.3,uncertain,CRCL의 판매 과도성은 분석가들의 의견이다
+323,2026-07-02,Decrypt,en,사건형,False,,False,0.6,uncertain,새 스테이블코인이 출시되었다
+324,2026-07-02,Decrypt,en,의견형,False,,False,0.8,supported,새 스테이블코인이 기존 스테이블코인에 영향을 미칠 수 있다
+325,2026-07-02,Decrypt,en,사건형,False,,False,0.9,supported,대만에서 암호화폐 관련 법안이 통과되었다
+326,2026-07-02,Decrypt,en,사건형,True,파편,False,0.8,supported,라이센스 및 스테이블코인 규칙이 포함되어 있다
+327,2026-07-02,Decrypt,en,사건형,False,,False,0.8,supported,메타마스크가 Monad에서 수익을 제공하는 머니 어카운트를 출시했다
+328,2026-07-02,Decrypt,en,사건형,True,동어반복,False,0.2,uncertain,Monad는 블록체인 플랫폼이다
+329,2026-07-02,Decrypt,en,사건형,True,동어반복,False,0.8,supported,메타마스크는 크립토 월렛이다
+330,2026-07-03,CoinDesk,en,사건형,False,,False,0.8,supported,미 재무부가 ISIS-K와 관련된 100개 이상의 암호화폐 주소를 제재했다
+331,2026-07-03,CoinDesk,en,수치형,False,,False,0.8,supported,제재된 주소들이 140만 달러 이상의 자금을 이동했다
+332,2026-07-03,CoinTelegraph,en,예정형,False,,False,0.6,supported,러시아는 9월 1일 디지털 루블을 출시할 계획이다
+333,2026-07-03,CoinTelegraph,en,예정형,False,,False,0.6,supported,중앙은행 총재가 디지털 루블 출시 계획을 확인했다
+334,2026-07-03,CoinTelegraph,en,수치형,False,,False,0.2,contradicted,"비트코인 가격이 7월ใหม로운 고점인 62,000달러 이상으로 상승했다"
+335,2026-07-03,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,미국의 취업 데이터가 약세를 보였다
+336,2026-07-03,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,영국이 지급결제 청사진을 발표했다.
+337,2026-07-03,CoinTelegraph,en,사건형,True,파편,False,0.6,supported,해당 청사진은 토큰화된 지급결제를 포함한다.
+338,2026-07-03,CoinTelegraph,en,예정형,True,파편,False,0.6,uncertain,이 청사진은 '다중 화폐 생태계'를 구축하는 것을 목표로 한다.
+339,2026-07-03,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,Aave는 Monad에 V3 대출과 GHO 스테이블코인을 출시했다
+340,2026-07-03,CoinTelegraph,en,사건형,True,동어반복,False,0.6,uncertain,GHO는 Aave의 새로운 스테이블코인이다
+341,2026-07-03,CoinTelegraph,en,사건형,True,동어반복,False,0.6,supported,Monad는 Aave의 V3 대출과 GHO 스테이블코인을 지원한다
+342,2026-07-03,CoinTelegraph,en,사건형,False,,False,0.8,supported,Standard Chartered와 Circle이 USDC 발행을 은행 시스템에 통합했다
+343,2026-07-03,CoinTelegraph,en,사건형,True,동어반복,False,0.8,supported,은행 시스템을 통해 USDC 발행이 가능해졌다
+344,2026-07-03,CoinTelegraph,en,의견형,False,,True,0.3,uncertain,Standard Chartered와 Circle의 협력으로 디지털 자산과 전통 금융 시스템의 통합이 진전되었다
+345,2026-07-03,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,이자를 지급하는 스테이블코인의 성장세가 둔화되고 있다.
+346,2026-07-03,CoinTelegraph,en,사건형,True,파편,False,0.6,uncertain,이번 둔화는 암호화폐 기반 이자 지급 상품의 3년간 이어져 온 성장을 마감하는 것이다.
+347,2026-07-03,CoinTelegraph,en,사건형,False,,False,0.8,supported,영향을 받는 상품은 암호화폐 생태계 내에서 시작된 것들이다.
+348,2026-07-03,CoinTelegraph,en,사건형,False,,False,0.8,supported,OFAC는 134개의 ISIS-K 크립토 월렛 주소를 제재했다
+349,2026-07-03,CoinTelegraph,en,사건형,True,파편,False,0.6,uncertain,테더는 해당 자금을 동결했다
+350,2026-07-03,Decrypt,en,사건형,False,,False,0.8,supported,미 재무부가 ISIS 관련 130개 이상의 트론 암호화폐 지갑에 제재를 가했다.
+351,2026-07-03,Decrypt,en,사건형,False,,False,0.8,supported,Standard Chartered는 직접 USDC 접근을 제공한다.
+352,2026-07-03,Decrypt,en,사건형,False,,False,0.8,supported,Standard Chartered는 기관에 직접 USDC 접근을 제공하는 최초의 글로벌 은행이다.
+353,2026-07-04,CoinDesk,en,사건형,False,,False,0.9,supported,러시아 스테이블코인은 제재 대상이다.
+354,2026-07-04,CoinDesk,en,수치형,False,,False,0.5,uncertain,해당 스테이블코인은 수십억 달러를 처리한다고 주장한다.
+355,2026-07-04,CoinDesk,en,의견형,False,,True,0.4,uncertain,블록체인 분석가들은 해당 주장에 동의하지 않는다.
+356,2026-07-04,CoinTelegraph,en,수치형,False,,False,0.6,uncertain,US 스폿 비트코인 ETF의 일일 유입액이 2억 달러를 초과했다
+357,2026-07-04,CoinTelegraph,en,사건형,True,파편,False,0.2,uncertain,이 기록은 5월 이후 처음이다
+358,2026-07-04,Decrypt,en,사건형,False,,False,0.6,uncertain,파라지(Farage)가 암호화폐 로비 行위로 영국 표준 감시기관에 보고되었다
+359,2026-07-04,Decrypt,en,의견형,False,,False,0.6,supported,파라지의 로비 행위는 암호화폐 규제와 관련이 있다
+360,2026-07-04,Decrypt,en,예정형,False,,False,0.85,supported,영국 표준 감시기관은 파라지의 로비 행위에 대한 조사를 진행할 예정이다
+361,2026-07-04,토큰포스트,ko,사건형,False,,False,0.8,supported,Circle은 파트너십을 확대하고 있다.
+362,2026-07-04,토큰포스트,ko,의견형,True,파편,False,0.8,supported,파트너십 확대는 USDC의 경쟁력을 강화하기 위함이다.
+363,2026-07-04,토큰포스트,ko,사건형,True,파편,False,0.6,uncertain,이러한 경쟁력 강화 노력은 시장의 급락 속에서 이루어지고 있다.
+364,2026-07-04,토큰포스트,ko,사건형,True,주제외,False,0.6,uncertain,미국 고용 지표가 부진했다.
+365,2026-07-04,토큰포스트,ko,수치형,True,주제외,False,0.9,uncertain,원/달러 환율이 30원 급락했다.
+366,2026-07-04,토큰포스트,ko,사건형,False,,False,0.6,uncertain,인도 중앙은행(RBI)이 암호자산 및 민간 스테이블코인에 사실상 금지 수준의 통제를 권고했다.
+367,2026-07-04,토큰포스트,ko,사건형,False,,False,0.8,supported,인도 중앙은행은 암호자산과 민간 스테이블코인의 위험성에 대해 경고했다.
+368,2026-07-04,토큰포스트,ko,수치형,False,,False,0.6,uncertain,XRP 가격이 1.11달러로 회복되었다
+369,2026-07-04,토큰포스트,ko,의견형,False,,False,0.4,uncertain,XRP의 반등세가 이더리움보다 강하다
+370,2026-07-04,TheBlock,en,사건형,False,,False,0.8,supported,삼성과 두나무는 OUSD 스테이블코인 컨소시엄 회원으로 등재되었다고 주장했다.
+371,2026-07-04,TheBlock,en,사건형,False,,False,0.6,uncertain,삼성과 두나무는 공식 협의 없이 컨소시엄 회원으로 등재되었다고 밝혔다.
+372,2026-07-04,TheBlock,en,사건형,False,,False,0.8,supported,러시아 중앙은행 총재는 디지털 루블의 대규모 사용을 위한 모든 준비가 완료되었다고 말했다
+373,2026-07-04,TheBlock,en,예정형,False,,False,0.7,supported,디지털 루블은 9월에 출시될 예정이다
+374,2026-07-04,TheBlock,en,사건형,True,동어반복,False,0.7,supported,러시아는 디지털 루블의 사용을 확대하기 위한 모든 준비를 완료했다
+375,2026-07-04,BeInCrypto,en,의견형,False,,False,0.7,supported,나이젤 파라지의 암호화폐 로비 활동이 12개월 규칙으로 인해 문제에 직면할 수 있다
+376,2026-07-04,BeInCrypto,en,사건형,False,,False,0.7,supported,나이젤 파라지는 암호화폐 관련 로비 활동을 하고 있다
+377,2026-07-04,BeInCrypto,en,의견형,False,,False,0.6,uncertain,12개월 규칙은 암호화폐 관련 로비 활동에 영향을 미칠 수 있다
+378,2026-07-09,CoinDesk,en,사건형,False,,False,0.6,uncertain,Vanguard는 디지털 자산 부문 리더를 채용 중이다.
+379,2026-07-09,CoinDesk,en,의견형,True,파편,False,0.2,uncertain,이는 Vanguard의 암호화폐 전략이 진화하고 있음을 시사한다.
+380,2026-07-09,CoinDesk,en,사건형,False,,True,0.4,uncertain,테더의 전 투자 책임자가 테더 지분 일부를 매도하려 하고 있다
+381,2026-07-09,CoinDesk,en,의견형,True,동어반복,False,0.6,supported,테더는 스테이블코인 거대 기업이다
+382,2026-07-09,CoinTelegraph,en,예정형,False,,False,0.6,supported,EU 당국은 MiCA 규제를 개정하여 非EU 발행 스테이블코인을 覆盖할 계획이다
+383,2026-07-09,CoinTelegraph,en,예정형,False,,False,0.8,supported,개정된 규제는 非EU 발행 스테이블코인 발행자에게도 적용될 수 있다
+384,2026-07-09,CoinTelegraph,en,사건형,False,,False,0.9,supported,EU 당국은 스테이블코인 발행과 관련된 리스크를 관리하기 위해 규제를 강화하고 있다
+385,2026-07-09,CoinTelegraph,en,수치형,False,,False,0.7,uncertain,스테이블코인으로 결제된 전통 금융(TradFi) 영구 선물 거래액이 1.1조 달러를 넘어섰다.
+386,2026-07-09,CoinTelegraph,en,사건형,True,파편,False,0.6,supported,이 통계는 바이낸스 리서치에 의해 발표되었다.
+387,2026-07-09,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,영국 중앙은행 총재는 네이선 파라지의 로비가 CBDC 정책에 영향을 미치지 않았다고 말했다
+388,2026-07-09,CoinTelegraph,en,예정형,False,,False,0.6,supported,영국은행은 CBDC 도입을 검토 중이다
+389,2026-07-09,CoinTelegraph,en,사건형,False,,False,0.4,uncertain,파라지는 CBDC 도입에 반대하는 운동을 주도하고 있다
+390,2026-07-09,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,모바일 앱 Toss와 블록체인 Optimism이 한국 원화 스테이블코인에 대한 시험을 진행한다
+391,2026-07-09,CoinTelegraph,en,의견형,True,파편,False,0.4,uncertain,이 시험은 한국 원화 스테이블코인의 가능성을 검증하기 위한 목적이다
+392,2026-07-09,CoinTelegraph,en,예정형,False,,False,0.6,supported,Toss와 Optimism은 이 시험을 통해 한국 원화 스테이블코인의 발행과 사용을 위한 기술적 가능성을 탐색할 계획이다
+393,2026-07-09,CoinTelegraph,en,예정형,True,주제외,False,0.4,uncertain,Berachain에서 하드 포크가 발생할 것
+394,2026-07-09,CoinTelegraph,en,예정형,True,주제외,False,0.6,uncertain,하드 포크로 듀얼 토큰 모델이 대체될 것
+395,2026-07-09,CoinTelegraph,en,예정형,True,주제외,False,0.6,uncertain,WBERA 리워드가 도입될 것
+396,2026-07-09,CoinTelegraph,en,예정형,False,,False,0.2,uncertain,Base는 B20 표준을 활성화할 예정이다.
+397,2026-07-09,CoinTelegraph,en,예정형,False,,False,0.2,uncertain,B20 표준은 스테이블코인에 적용될 것이다.
+398,2026-07-09,CoinTelegraph,en,예정형,False,,False,0.2,uncertain,B20 표준은 실물자산(RWA) 및 기타 토큰에도 적용될 것이다.
+399,2026-07-09,Decrypt,en,수치형,False,,False,0.6,uncertain,파라지에게 테더의 억만장자로부터 500만 파운드의 선물이 보고되었다
+400,2026-07-09,Decrypt,en,수치형,False,,False,0.6,uncertain,은행가들이 파라지의 500만 파운드 선물에 대해 의심스러운 활동 보고서를 제출했다
+401,2026-07-09,Decrypt,en,수치형,False,,False,0.6,uncertain,테더의 억만장자가 파라지에게 500만 파운드의 선물을 주었다
+402,2026-07-09,Decrypt,en,수치형,False,,False,0.5,uncertain,"테더가 Mercado Bitcoin에 2,000만 달러를 투자했다"
+403,2026-07-09,Decrypt,en,예정형,False,,False,0.5,uncertain,Mercado Bitcoin은 라틴아메리카 전역에서 확장할 계획이다
+404,2026-07-09,Decrypt,en,의견형,False,,False,0.4,uncertain,테더의 투자는 라틴아메리카의 암호화폐 시장 성장에 기여할 수 있다
+405,2026-07-10,CoinDesk,en,사건형,False,,False,0.2,uncertain,Aave는 볼트 상품을 출시합니다.
+406,2026-07-10,CoinDesk,en,사건형,False,,False,0.8,supported,이 볼트 상품은 높은 수익을 추구하는 핀테크 투자자들을 대상으로 합니다.
+407,2026-07-10,CoinDesk,en,사건형,False,,False,0.6,supported,Sony는 미국에서 스테이블코인 신탁 은행을 설립하기 위한 조건부 승인을 얻었다.
+408,2026-07-10,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,Sony Bank는 미국 규제 기관으로부터 스테이블코인을 발행할 수 있는 허가를 받았다
+409,2026-07-10,CoinTelegraph,en,의견형,False,,False,0.8,supported,미국 규제 기관의 승인은 Sony Bank의 스테이블코인 발행 계획을 위한 중요한 단계이다
+410,2026-07-10,CoinTelegraph,en,사건형,False,,False,0.8,supported,Revolut은 USDT를 EEA와 스위스에서 제외시킴
+411,2026-07-10,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,EEA와 스위스에서 USDT 제외는 Revolut의 자체 결정임
+412,2026-07-10,CoinTelegraph,en,사건형,False,,False,0.9,supported,Revolut은 USDT 제외에 대한 자세한 이유를 공개하지 않음
+413,2026-07-10,CoinTelegraph,en,사건형,False,,False,0.8,uncertain,한국은행은 은행 주도형 스테이블코인 도입을 강하게 주장하고 있다
+414,2026-07-10,CoinTelegraph,en,사건형,False,,False,0.6,supported,한국은행은 예금 토큰 시범 사업을 진행 중이다
+415,2026-07-10,CoinTelegraph,en,의견형,False,,False,0.8,supported,한국은행의 스테이블코인 도입은 금융 규제와 준비금 관리와 관련이 있다
+416,2026-07-10,Decrypt,en,예정형,False,,False,0.7,supported,EU는 2027년에 MiCA를 개정하여 외국 스테이블코인 발행자를 규제할 계획이다.
+417,2026-07-10,Decrypt,en,예정형,False,,False,0.8,supported,새로운 규제는 외국 스테이블코인 발행자에게도 적용될 예정이다.
+418,2026-07-10,Decrypt,en,의견형,False,,False,0.8,supported,EU의 규제 개정은 글로벌 스테이블코인 시장에 영향을 미칠 수 있다.
+419,2026-07-10,Decrypt,en,사건형,False,,False,0.8,supported,"Sony Bank는 OCC 허가를 받았고, 달러 스테이블코인을 발행할 수 있게 되었다."
+420,2026-07-10,Decrypt,en,사건형,True,동어반복,False,0.8,supported,OCC 허가는 미국의 주요 은행 규제 기관이다.
+421,2026-07-10,Decrypt,en,사건형,True,동어반복,False,0.8,supported,Sony Bank는 일본의 소니 그룹 계열사이다.
+422,2026-07-10,토큰포스트,ko,수치형,False,,False,0.6,uncertain,1억 1260만 달러 규모의 숏 포지션 청산이 발생했다.
+423,2026-07-10,토큰포스트,ko,의견형,False,,True,0.6,supported,비트코인이 강세를 보이고 있다.
+424,2026-07-10,토큰포스트,ko,수치형,False,,False,0.6,supported,미국 규제 협상 및 2.9억 USDT 이동이 주목받고 있다.
+425,2026-07-10,토큰포스트,ko,의견형,True,동어반복,False,0.8,supported,블록체인 기술은 신뢰할 수 있는 거래를 위한 기반을 제공한다
+426,2026-07-10,토큰포스트,ko,의견형,False,,False,0.8,supported,AI와 양자 컴퓨팅의 발전은 블록체인의 보안에 대한 새로운 도전을 제기한다
+427,2026-07-10,토큰포스트,ko,의견형,True,동어반복,False,0.8,supported,블록체인 기술은 지속적으로 발전하여 새로운 기술적 도전에 대응해야 한다
+428,2026-07-10,토큰포스트,ko,의견형,True,주제외,False,0.6,uncertain,한국씨티은행이 한국은행의 연말까지 금리 3.5%를 전망했다
+429,2026-07-10,토큰포스트,ko,의견형,True,주제외,False,0.8,supported,한국은행의 금리 결정은 경제 성장과 물가에 영향을 미친다
+430,2026-07-10,토큰포스트,ko,의견형,True,주제외,False,0.6,uncertain,한국씨티은행의 전망은 금융 시장의 리스크와 불확실성을 반영한다
+431,2026-07-11,CoinDesk,en,사건형,False,,False,0.6,uncertain,현대차는 내부 스테이블코인 전송을 도입한 최초의 주요 한국 기업이다.
+432,2026-07-11,CoinDesk,en,사건형,False,,False,0.6,supported,Circle이 미국 신뢰 은행 승인을 획득했다
+433,2026-07-11,CoinDesk,en,의견형,False,,False,0.7,supported,신뢰 은행 승인으로 암호화폐 확장에 기여할 수 있다
+434,2026-07-11,CoinDesk,en,사건형,False,,True,0.6,uncertain,Metaplanet는 일본에서 비트코인 지원 디지털 신용을 도입하고 있다
+435,2026-07-11,CoinDesk,en,예정형,False,,False,0.6,uncertain,일본의 디지털 금융 시장에서 비트코인 기반 신용 서비스를 제공할 계획이다
+436,2026-07-11,CoinTelegraph,en,의견형,False,,False,0.6,supported,스테이블코인이 자리 잡는 데 성공했다
+437,2026-07-11,CoinTelegraph,en,의견형,True,동어반복,False,0.7,supported,스테이블코인이 암호화폐 시장에서 중요한 역할을 하고 있다
+438,2026-07-11,CoinTelegraph,en,의견형,True,동어반복,False,0.8,supported,스테이블코인의 안정성이 중요하다
+439,2026-07-11,CoinTelegraph,en,사건형,False,,False,0.8,supported,USDC 발행사인 Circle이 미국 내 전국 신뢰 은행 차터 최종 승인을 받았다.
+440,2026-07-11,CoinTelegraph,en,예정형,False,,False,0.8,supported,Metaplanet는 일본에서 JPYC와 비트코인 지원 디지털 신용을 탐색하고 있다.
+441,2026-07-11,CoinTelegraph,en,사건형,True,동어반복,False,0.6,supported,JPYC는 일본의 스테이블코인이다.
+442,2026-07-11,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,Metaplanet는 비트코인 지원 디지털 신용을 일본에서 처음 도입하고 있다.
+443,2026-07-11,Decrypt,en,사건형,False,,False,0.8,supported,Circle이 최종 연방은행 차터 승인을 받았다
+444,2026-07-11,Decrypt,en,사건형,True,동어반복,False,0.8,supported,Circle은 스테이블코인 발행업체이다
+445,2026-07-11,Decrypt,en,사건형,False,,False,0.8,supported,승인으로 Circle의 주가가 상승했다
+446,2026-07-11,Decrypt,en,사건형,False,,False,0.9,contradicted,로빈후드 체인이 암호화폐 시장에 등장했다.
+447,2026-07-11,토큰포스트,ko,수치형,False,,False,0.4,uncertain,서클 주가가 7% 급등했다
+448,2026-07-11,토큰포스트,ko,의견형,False,,False,0.6,uncertain,연방은행 승인이 스테이블코인 신뢰도에 긍정적 영향을 미쳤다
+449,2026-07-12,CoinTelegraph,en,의견형,False,,False,0.4,uncertain,달러 스테이블코인이 외환 접근성을 개선할 수 있다
+450,2026-07-12,CoinTelegraph,en,의견형,False,,False,0.7,supported,달러 스테이블코인이 통화도피를 증폭시킬 수 있다
+451,2026-07-12,CoinTelegraph,en,사건형,False,,False,0.6,supported,IMF는 스테이블코인에 대한 연구를 진행하고 있다
+452,2026-07-12,TheBlock,en,사건형,False,,False,0.8,supported,Stablecoin 회사인 Circle이 전국 신뢰 은행을 열기 위한 최종 OCC 승인을 받았다.
+453,2026-07-12,TheBlock,en,사건형,True,동어반복,False,0.8,supported,OCC 승인은 미국에서 전국 은행을 운영하는 것을 허용한다.
+454,2026-07-12,TheBlock,en,사건형,False,,False,0.8,supported,Circle은 Stablecoin을 지원하기 위한 준비금을 보유하고 있다.
+455,2026-07-12,TheBlock,en,수치형,False,,False,0.8,supported,"Cathie Wood의 Ark Invest가 1,400만 달러 상당의 Circle 주식을 매입했다"
+456,2026-07-12,TheBlock,en,사건형,False,,False,0.4,uncertain,Ark Invest가 로빈후드 주식을 매도했다
+457,2026-07-12,BeInCrypto,en,의견형,False,,False,0.7,supported,IMF는 스테이블코인이 통화 위기를 유발할 수 있다고 경고했다
+458,2026-07-12,BeInCrypto,en,의견형,False,,False,0.7,supported,달러와 연계된 스테이블코인이 통화 불안정성을 증가시킬 수 있다
+459,2026-07-12,BeInCrypto,en,의견형,False,,False,0.8,supported,IMF는 스테이블코인에 대한 규제와 감독을 강화할 필요성을 강조했다
+460,2026-07-13,CoinDesk,en,수치형,False,,False,0.6,uncertain,스테이블코인 시가총액은 5월 이후 100억 달러 감소했다.
+461,2026-07-13,CoinDesk,en,의견형,False,,False,0.6,uncertain,분석가는 스테이블코인 시가총액 감소에 대해 패닉할 이유가 없다고 본다.
+462,2026-07-13,토큰포스트,ko,수치형,False,,False,0.6,supported,Circle의 OCC 신탁은행 인가 후 주가 5% 상승
+463,2026-07-13,토큰포스트,ko,사건형,False,,False,0.8,supported,USDC 규제 인프라 강화
+464,2026-07-13,토큰포스트,ko,사건형,True,동어반복,False,0.8,supported,OCC 신탁은행 인가는 미국 금융 당국의 승인
+465,2026-07-13,토큰포스트,ko,사건형,True,주제외,False,0.2,uncertain,엔씨소프트가 리니지W 관련 소송에서 패소했다
+466,2026-07-13,토큰포스트,ko,사건형,True,주제외,False,0.2,uncertain,게임업계 관습과 관련된 소송이었다
+467,2026-07-13,토큰포스트,ko,사건형,False,,False,0.6,supported,아시아 최대 Web3 행사 'WebX 2026'이 도쿄에서 개막했다
+468,2026-07-13,토큰포스트,ko,예정형,False,,False,0.7,supported,"행사에서 AI, 스테이블코인, RWA(Right-to-Use Asset) 미래에 대한 조망이 이루어질 예정이다"
+469,2026-07-13,토큰포스트,ko,의견형,True,주제외,False,0.6,uncertain,하반기 환율 안정 조짐
+470,2026-07-13,토큰포스트,ko,사건형,True,주제외,False,0.6,uncertain,SK하이닉스 대규모 달러 조달
+471,2026-07-13,BeInCrypto,en,사건형,False,,False,0.6,uncertain,태국에서 USDT 거래를 감시하기 시작했다
+472,2026-07-13,BeInCrypto,en,사건형,False,,False,0.6,uncertain,태국 정부는 불법 거래를 막기 위해 감시를 강화하고 있다
+473,2026-07-13,BeInCrypto,en,의견형,False,,True,0.8,supported,USDT와 같은 스테이블코인은 규제 대상이 될 수 있다
+474,2026-07-14,CoinDesk,en,의견형,False,,False,0.8,supported,미즈호는 서클의 은행 승인이 USDC 성장 문제를 해결하지 못한다고 주장한다.
+475,2026-07-14,CoinDesk,en,의견형,False,,False,0.8,supported,미즈호는 서클의 은행 승인이 스테이블코인 경쟁 리스크를 해소하지 못한다고 주장한다.
+476,2026-07-14,CoinDesk,en,예정형,False,,False,0.6,uncertain,볼리비아가 테더의 USDT를 국가 결제 시스템에 추가하는 것을 고려하고 있다
+477,2026-07-14,CoinDesk,en,사건형,True,동어반복,False,0.8,supported,"USDT는 스테이블코인으로, 미국 달러와 1:1로 고정되어 있다"
+478,2026-07-14,CoinDesk,en,의견형,False,,False,0.7,supported,국가 결제 시스템에 스테이블코인을 추가하는 것은 볼리비아의 디지털 통화 정책에 대한 중요한 변화가 될 수 있다
+479,2026-07-14,CoinDesk,en,사건형,False,,False,0.2,uncertain,SBI Holdings는 블록체인 이니셔티브를 솔라나로 전환했다
+480,2026-07-14,CoinDesk,en,사건형,False,,False,0.2,uncertain,솔라나는 토큰화와 스테이블코인 발행을 지원한다
+481,2026-07-14,CoinDesk,en,예정형,False,,False,0.2,uncertain,SBI Holdings는 솔라나를 통해 새로운 블록체인 서비스를 제공할 계획이다
+482,2026-07-14,CoinTelegraph,en,예정형,False,,False,0.7,supported,볼리비아는 USDT를 결제 통화로 인정하는 것을 고려하고 있다.
+483,2026-07-14,CoinTelegraph,en,사건형,False,,False,0.8,supported,볼리비아는 현재 달러 부족을 겪고 있다.
+484,2026-07-14,CoinTelegraph,en,사건형,False,,False,0.3,uncertain,현대차가 USDT를 활용한 재무 결제 파일럿 프로그램을 완료했습니다.
+485,2026-07-14,CoinTelegraph,en,사건형,True,파편,False,0.2,uncertain,이 파일럿은 미국과 멕시코 간의 결제를 대상으로 했습니다.
+486,2026-07-14,CoinTelegraph,en,예정형,False,,False,0.6,uncertain,Japan의 SBI에서 일본 엔화에 기반한 스테이블코인을 발행할 예정이다
+487,2026-07-14,CoinTelegraph,en,예정형,False,,True,0.4,uncertain,"발행된 스테이블코인에 대한 대출 서비스를 제공하며, 3%의 수익률을 제공할 예정이다"
+488,2026-07-14,CoinTelegraph,en,사건형,False,,False,0.6,supported,일본의 로슨이 스테이블코인 결제 시범을 시작했다
+489,2026-07-14,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,넷스타즈가 스테이블코인 결제 서비스를 출시했다
+490,2026-07-14,CoinTelegraph,en,의견형,True,동어반복,False,0.7,supported,일본에서 스테이블코인 결제가 발전하고 있다
+491,2026-07-14,CoinTelegraph,en,의견형,False,,True,0.6,supported,AI 마이크로 비즈니스가 2033년까지 스테이블코인 거래량을 2620억 달러로 끌어올릴 수 있다
+492,2026-07-14,CoinTelegraph,en,의견형,False,,False,0.6,supported,스와이프트克斯의 예측에 따르면 AI 마이크로 비즈니스의 성장으로 스테이블코인 거래량이 증가할 수 있다
+493,2026-07-14,CoinTelegraph,en,사건형,False,,False,0.7,supported,태국 중앙은행은 불법 자금 흐름을 막기 위해 스테이블코인 USDT를 규제한다
+494,2026-07-14,CoinTelegraph,en,사건형,False,,False,0.8,supported,태국은 불법 자금 흐름을 막기 위해 새로운 규제를 시행한다
+495,2026-07-14,CoinTelegraph,en,의견형,False,,False,0.8,supported,USDT와 같은 스테이블코인은 불법 자금 흐름에 사용될 수 있다
+496,2026-07-14,Decrypt,en,예정형,False,,False,0.6,supported,볼리비아는 테더의 USDT 스테이블코인을 국가 결제 시스템에 추가하는 것을 고려하고 있다
+497,2026-07-14,Decrypt,en,의견형,True,파편,False,0.8,supported,이 결정은 볼리비아의 디지털 통화 및 결제 시스템에 영향을 미칠 수 있다
+498,2026-07-15,CoinDesk,en,사건형,False,,False,0.6,supported,바이낸스(Binance)가 스테이블코인 기반의 성장을 위해 슈퍼앱(super app)으로의 변신을 시도하고 있다.
+499,2026-07-15,CoinDesk,en,의견형,True,동어반복,False,0.8,supported,스테이블코인은 암호화폐 시장의 성장에 영향을 미치고 있다.
+500,2026-07-15,CoinDesk,en,사건형,True,동어반복,False,0.8,supported,바이낸스는 다양한 금융 서비스를 제공하는 플랫폼으로 발전하고 있다.
+501,2026-07-15,CoinDesk,en,사건형,False,,False,0.7,supported,Mizuho는 Circle의 등급을 하향 조정했다
+502,2026-07-15,CoinDesk,en,수치형,False,,False,0.8,supported,Mizuho는 Circle의 목표 주가를 50달러로 낮췄다
+503,2026-07-15,CoinDesk,en,의견형,False,,False,0.7,supported,Open USD가 Circle에 위협이 될 수 있다
+504,2026-07-15,CoinDesk,en,의견형,False,,False,0.6,supported,JPMorgan은 Hyperliquid의 상승이 Circle의 USDC 경제학을 위협한다
+505,2026-07-15,CoinDesk,en,의견형,False,,False,0.7,supported,Hyperliquid의 성장으로 USDC의 시장 지배력이 약화될 수 있다
+506,2026-07-15,CoinDesk,en,의견형,False,,False,0.6,uncertain,JPMorgan은 스테이블코인 시장의 경쟁이 심화할 것으로 예상한다
+507,2026-07-15,CoinDesk,en,사건형,False,,False,0.8,supported,"일본 최대 카드 네트워크가 스테이블코인을 4,000만 개의 상점에 도입하기 위해 Circle과 협력하고 있다."
+508,2026-07-15,CoinDesk,en,의견형,True,파편,False,0.8,supported,이 협력은 일본의 디지털 결제 시스템에 큰 변화를 가져올 수 있다.
+509,2026-07-15,CoinDesk,en,의견형,False,,False,0.7,supported,스테이블코인의 도입은 일본의 전자상거래 시장에 긍정적인 영향을 미칠 수 있다.
+510,2026-07-15,CoinTelegraph,en,수치형,False,,False,0.8,supported,"Velocity는 스테이블코인 자산 관리 인프라 구축을 위해 3,800만 달러를 투자받았다"
+511,2026-07-15,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,Velocity의 자산 관리 인프라는 기업을 대상으로 한다
+512,2026-07-15,CoinTelegraph,en,예정형,False,,False,0.7,supported,Velocity의 투자금은 스테이블코인 관련 기술 개발에 사용될 예정이다
+513,2026-07-15,CoinTelegraph,en,예정형,False,,False,0.6,supported,미국과 영국의 재무부는 스테이블코인과 토큰화에 대한 규칙을 조정할 것
+514,2026-07-15,CoinTelegraph,en,예정형,True,파편,False,0.6,uncertain,이 규칙은 양국 간의 금융 규제를統一하기 위해 시행될 것
+515,2026-07-15,CoinTelegraph,en,의견형,False,,False,0.6,uncertain,스테이블코인과 토큰화 규칙의 통일은 글로벌 금융시장에 긍정적인 영향을 미칠 수 있음
+516,2026-07-15,CoinTelegraph,en,사건형,False,,False,0.8,supported,JCB와 Circle이 일본에서 스테이블코인 결제 테스트를 위해 MOU를 체결했다.
+517,2026-07-15,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,ABA와 주 은행 그룹이 스테이블코인 수익 규정에 반대한다
+518,2026-07-15,CoinTelegraph,en,예정형,False,,False,0.7,supported,CLARITY Act에서 스테이블코인 관련 규제가 논의되고 있다
+519,2026-07-15,CoinTelegraph,en,사건형,False,,False,0.7,supported,은행 그룹은 스테이블코인 규제로 인한 리스크에 우려를 표명했다
+520,2026-07-15,Decrypt,en,사건형,False,,False,0.8,supported,태국은행은 불법적인 스테이블코인 거래를 조사하고 있다
+521,2026-07-15,Decrypt,en,사건형,False,,False,0.8,supported,태국은행은 불법 경제 활동을 막기 위해 스테이블코인 거래를 감시하고 있다
+522,2026-07-15,Decrypt,en,사건형,False,,False,0.7,supported,태국은행은 스테이블코인 거래의 비정상적인 패턴을 발견했다
+523,2026-07-15,토큰포스트,ko,사건형,False,,False,0.6,uncertain,Circle의 주가가 OCC 승인 이후 조정세를 보이고 있다.
+524,2026-07-15,토큰포스트,ko,사건형,False,,False,0.4,uncertain,미즈호가 Circle에 대해 '매도' 의견을 제시했다.
+525,2026-07-16,CoinDesk,en,의견형,False,,False,0.6,uncertain,Open USD는 Circle의 USDC에 가장 큰 위협이 된다고 한다.
+526,2026-07-16,CoinDesk,en,사건형,True,파편,False,0.6,uncertain,이러한 평가는 CoinShares에 의해 제기되었다.
+527,2026-07-16,CoinTelegraph,en,수치형,False,,False,0.6,supported,Cathie Wood의 ARK가 Circle 주식 22만 주를 추가로 매수했다
+528,2026-07-16,CoinTelegraph,en,사건형,False,,False,0.8,supported,ARK의 Circle 주식 매수에도 불구하고 주가가 하락했다
+529,2026-07-16,CoinTelegraph,en,수치형,False,,False,0.8,supported,미국이 이란과 관련된 1.31억 달러의 암호화폐를 동결했다
+530,2026-07-16,CoinTelegraph,en,의견형,False,,False,0.8,uncertain,중동에서의 긴장이 높아지고 있다
+531,2026-07-16,CoinTelegraph,en,의견형,False,,True,0.7,supported,이란과 관련된 암호화폐에 대한 규제 강화가 예상된다
+532,2026-07-16,Decrypt,en,수치형,False,,False,0.8,supported,미 재무부가 이란과 관련된 암호화폐 지갑에 동결된 금액은 1억3천1백만 달러이다.
+533,2026-07-16,Decrypt,en,사건형,False,,False,0.2,contradicted,Crypto 가격이 상승했다
+534,2026-07-16,Decrypt,en,사건형,False,,False,0.2,contradicted,CPI(CPI: 소비자 물가 지수)가 하락했다
+535,2026-07-16,Decrypt,en,예정형,False,,False,0.8,supported,미국과 영국은 스테이블코인과 토큰화 규칙을 일치시키기 위한 권고안을 발표했다.
+536,2026-07-16,Decrypt,en,예정형,True,파편,False,0.8,supported,이 권고안은 스테이블코인과 토큰화 규칙을 국제적으로 일치시키는 것을 목표로 한다.
+537,2026-07-16,Decrypt,en,예정형,False,,False,0.6,supported,미국과 영국은 스테이블코인과 토큰화 규칙을 일치시키기 위해 공동으로 노력하고 있다.
+538,2026-07-16,토큰포스트,ko,의견형,False,,False,0.6,uncertain,서클 주가 상승에도 투자자 불안이 지속되고 있다
+539,2026-07-16,토큰포스트,ko,사건형,False,,False,0.8,supported,미즈호가 서클에 대한 매도 의견과 목표가를 하향 조정했다
+540,2026-07-16,토큰포스트,ko,사건형,False,,False,0.8,supported,미국 6개 기관이 GENIUS 법 스테이블코인 규정 마련에 착수했다.
+541,2026-07-16,토큰포스트,ko,사건형,True,동어반복,False,0.8,supported,GENIUS 법은 스테이블코인에 대한 규제를 강화하는 법안이다.
+542,2026-07-16,토큰포스트,ko,의견형,False,,False,0.7,supported,미국에서 스테이블코인의 제도권 편입이 가속화될 수 있다.
+543,2026-07-16,토큰포스트,ko,수치형,False,,False,0.2,uncertain,스트라이프와 어드벤트가 페이팔 인수 제안을 했음
+544,2026-07-16,토큰포스트,ko,수치형,False,,False,0.5,uncertain,인수 제안 금액은 530억달러임
+545,2026-07-16,TheBlock,en,사건형,True,주제외,False,0.2,uncertain,Jesse Pollak이 Base 앱의 리더십을 Cobie에게 넘긴다
+546,2026-07-16,TheBlock,en,사건형,True,주제외,False,0.5,uncertain,Jesse Pollak은 소셜 베팅이 기대에 못 미친다고 인정했다
+547,2026-07-16,TheBlock,en,사건형,True,주제외,False,0.5,uncertain,Coinbase의 Base 앱은 새로운 리더십으로 진행된다
+548,2026-07-17,CoinDesk,en,수치형,False,,False,0.6,supported,Stripe가 PayPal에 530억 달러의 입찰을 제시했다
+549,2026-07-17,CoinDesk,en,의견형,False,,False,0.7,supported,Stripe의 입찰은 디지털 결제 미래를 장악하기 위한 고위험 도전이다
+550,2026-07-17,CoinDesk,en,사건형,False,,False,0.8,supported,Visa가 새로운 스테이블코인 플랫폼 Open USD를 지원하고 있다.
+551,2026-07-17,CoinDesk,en,사건형,False,,False,0.7,supported,Circle은 새로운 경쟁을 직면하고 있다.
+552,2026-07-17,CoinDesk,en,의견형,False,,False,0.8,supported,Visa의 지원은 스테이블코인 시장에 영향을 미칠 수 있다.
+553,2026-07-17,CoinDesk,en,사건형,False,,False,0.6,uncertain,Galaxy는 기관 투자자를 대상으로 새로운 DeFi 보관소(vaults)를 출시했다
+554,2026-07-17,CoinDesk,en,사건형,False,,False,0.8,supported,新的 DeFi 보관소는 스테이블코인 수익을 목표로 한다
+555,2026-07-17,CoinDesk,en,의견형,False,,False,0.6,supported,Galaxy의 새로운 제품은 기관 투자자에게 더 많은 수익을 제공할 수 있을 것이라고 기대된다
+556,2026-07-17,CoinDesk,en,수치형,False,,False,0.6,supported,Tether는 아르헨티나 네오뱅크 Ualá에 2천만 달러를 투자했다.
+557,2026-07-17,CoinDesk,en,예정형,False,,False,0.8,supported,Tether는 라틴 아메리카 시장 확장을 추진하고 있다.
+558,2026-07-17,CoinTelegraph,en,사건형,False,,False,0.6,supported,BitPay가 MiCA하에서 네덜란드 라이센스를 획득했다
+559,2026-07-17,CoinTelegraph,en,예정형,False,,False,0.6,supported,BitPay가 스테이블코인 결제 확장을 계획하고 있다
+560,2026-07-17,CoinTelegraph,en,사건형,False,,False,0.8,supported,FATF는 암호화폐에 대한 더 빠른 자금 세탁 방지(AML) 시행을 촉구하고 있다.
+561,2026-07-17,CoinTelegraph,en,사건형,False,,False,0.6,supported,스테이블코인 관련 범죄가 증가하고 있다.
+562,2026-07-17,CoinTelegraph,en,사건형,False,,False,0.8,supported,FATF는 암호화폐 규제 강화 필요성을 강조하고 있다.
+563,2026-07-17,Decrypt,en,사건형,False,,False,0.8,supported,Visa가 스테이블코인 플랫폼을 발표했다
+564,2026-07-17,Decrypt,en,사건형,True,파편,False,0.8,supported,이 플랫폼은 은행과 핀테크 회사들을 대상으로 한다
+565,2026-07-17,Decrypt,en,의견형,False,,False,0.8,supported,스테이블코인 플랫폼은 금융 거래를 용이하게 할 수 있다
+566,2026-07-17,Decrypt,en,사건형,True,주제외,False,0.8,supported,Base가 앱을 Cobie에게 넘긴다.
+567,2026-07-18,CoinTelegraph,en,의견형,False,,False,0.1,contradicted,특정 상황에서 달러가 사라지면 스테이블코인이 대체할 수 있다
+568,2026-07-18,CoinTelegraph,en,의견형,False,,False,0.7,supported,스테이블코인은 전통적인 통화의 대안으로 사용될 수 있다
+569,2026-07-18,CoinTelegraph,en,의견형,False,,False,0.7,supported,스테이블코인의 사용은 금융 리스크를 줄일 수 있다
+570,2026-07-18,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,OKX Europe에서 USDT를 MiCA 규정 준수하는 USDC로 변환할 수 있다
+571,2026-07-18,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,MiCA 규정 준수를 위해 스테이블코인 변환 서비스를 제공한다
+572,2026-07-18,CoinTelegraph,en,사건형,False,,False,0.8,supported,ECB의 Cipollone은 스테이블코인이 성장하면 은행 예금이 감소할 것이라고 말함
+573,2026-07-18,CoinTelegraph,en,의견형,False,,False,0.8,supported,스테이블코인 성장은 전통적인 금융 시스템에 영향을 미칠 수 있음
+574,2026-07-18,CoinTelegraph,en,의견형,False,,False,0.8,supported,은행 예금의 감소는 금융 시스템의 안정성에 리스크를 초래할 수 있음
+575,2026-07-18,Decrypt,en,사건형,False,,False,0.8,supported,ECB는 스테이블코인이 은행 예금을 감소시킬 수 있다고 경고했다
+576,2026-07-18,Decrypt,en,의견형,False,,False,0.8,supported,스테이블코인은 전통적인 은행 시스템에 위협이 될 수 있다
+577,2026-07-18,Decrypt,en,의견형,False,,False,0.8,supported,ECB는 스테이블코인에 대한 규제를 강화할 필요가 있다
+578,2026-07-18,토큰포스트,ko,수치형,False,,False,0.6,uncertain,Circle Internet Group의 주가가 경쟁 심화로 급락했다
+579,2026-07-18,토큰포스트,ko,의견형,True,파편,False,0.9,supported,미래 전망이 엇갈려 있다
+580,2026-07-18,토큰포스트,ko,수치형,True,주제외,False,0.6,uncertain,솔라나(SOL) 가격이 74달러 지지선 테스트를 받았다
+581,2026-07-18,토큰포스트,ko,의견형,False,,True,0.6,uncertain,USDC 발행 증가로 중기 전망이 유지되고 있다
+582,2026-07-18,토큰포스트,ko,의견형,True,주제외,False,0.6,uncertain,솔라나의 기술 업그레이드가 중기 전망에 긍정적 영향을 미칠 수 있다
+583,2026-07-18,토큰포스트,ko,수치형,True,주제외,False,0.8,supported,미국 스타트업 투자에서 AI 관련 투자가 증가하고 있다
+584,2026-07-18,토큰포스트,ko,사건형,True,주제외,False,0.6,uncertain,휴가철에도 대형 투자 라운드가 잇따르고 있다
+585,2026-07-18,토큰포스트,ko,의견형,True,주제외,False,0.6,supported,AI 관련 스타트업에 대한 투자가 활발하다
+586,2026-07-18,토큰포스트,ko,예정형,False,,False,0.8,supported,볼리비아는 달러 부족으로 인해 USDT 결제를 검토하고 있다
+587,2026-07-18,토큰포스트,ko,의견형,True,주제외,False,0.6,uncertain,채굴사 AI 전환은 지분 매각에 대한 경계가 필요하다
+588,2026-07-18,토큰포스트,ko,수치형,True,주제외,False,0.6,uncertain,리퀴드 풀 수요가 커지고 있다
+589,2026-07-18,토큰포스트,ko,수치형,True,주제외,False,0.6,uncertain,스프레드파이 자금 유입이 확대되고 있다
+590,2026-07-18,토큰포스트,ko,사건형,True,주제외,False,0.6,uncertain,변동성 장세에 따라 리스크가 증가하고 있다
+591,2026-07-18,토큰포스트,ko,사건형,False,,False,0.8,supported,OKX 유럽에서 USDT를 USDC로 전환 지원한다
+592,2026-07-18,토큰포스트,ko,사건형,False,,False,0.7,supported,미카 규제 대응을 본격화한다
+593,2026-07-18,토큰포스트,ko,의견형,False,,False,0.8,supported,스테이블코인 전환 지원은 규제 대응의 일환이다
+594,2026-07-19,CoinDesk,en,사건형,False,,False,0.2,uncertain,브라질에서 달러 스테이블코인이 결제 시스템을 조용히 장악하고 있다.
+595,2026-07-19,CoinDesk,en,사건형,False,,False,0.2,uncertain,도널드 트럼프는 브라질의 결제 시스템을 주시하고 있다.
+596,2026-07-19,토큰포스트,ko,수치형,True,주제외,False,0.6,uncertain,원화 강세로 인해 달러 가치가 급락했다
+597,2026-07-19,토큰포스트,ko,수치형,True,주제외,False,0.6,supported,"환율이 1,470원대로 회복되었다"
+598,2026-07-19,토큰포스트,ko,수치형,True,주제외,False,0.5,uncertain,솔라나 가격이 박스권에서 움직이고 있다
+599,2026-07-19,토큰포스트,ko,수치형,False,,False,0.8,supported,USDC 유입이 증가하고 있다
+600,2026-07-19,토큰포스트,ko,의견형,True,주제외,False,0.5,uncertain,기관 ETF 기대감이 높아지고 있다
+601,2026-07-19,토큰포스트,ko,수치형,True,주제외,True,0.6,uncertain,한국의 1인당 GDP가 4만 달러 진입 초읽기에 들어섰다
+602,2026-07-19,토큰포스트,ko,수치형,True,주제외,True,0.6,supported,"한국의 경제 규모가 3,000조 원을 돌파할 것으로 예상된다"
+603,2026-07-19,토큰포스트,ko,사건형,True,주제외,False,0.8,supported,바이낸스가 36번째 BNB 소각을 완료했다
+604,2026-07-19,토큰포스트,ko,수치형,True,주제외,False,0.5,uncertain,BNB 소각 규모는 1조3880억원이다
+605,2026-07-19,토큰포스트,ko,수치형,True,주제외,False,0.6,uncertain,BNB 소각으로 공급이 축소되었다
+606,2026-07-19,토큰포스트,ko,사건형,False,,False,0.6,uncertain,심바이오시스에서 트론 기반 USDT 프라이빗 스왑을 출시했다
+607,2026-07-19,토큰포스트,ko,사건형,False,,False,0.7,supported,스테이블코인 감시 논쟁이 커지고 있다
+608,2026-07-19,토큰포스트,ko,의견형,False,,False,0.6,uncertain,트론 기반의 프라이빗 스왑은 기존의 스왑과 다르게 작동한다
+609,2026-07-19,토큰포스트,ko,사건형,False,,False,0.7,supported,스테이블코인이 확산되면서 전통적인 은행 시스템의 필요성이 줄어들고 있다
+610,2026-07-19,토큰포스트,ko,의견형,False,,False,0.6,supported,은행 없는 세대가 현실화할 수 있는 가능성이 열려 있다
+611,2026-07-19,토큰포스트,ko,의견형,False,,False,0.8,supported,스테이블코인의 확산은 금융 시스템에 새로운 리스크를 가져올 수 있다
+612,2026-07-19,토큰포스트,ko,수치형,False,,False,0.8,supported,미 재무부가 USDT 1억3100만달러를 동결했다
+613,2026-07-19,토큰포스트,ko,의견형,False,,False,0.7,supported,트론의 위상이 흔들리고 있다
+614,2026-07-19,토큰포스트,ko,사건형,False,,False,0.8,supported,미 재무부의 제재가 발생했다
+615,2026-07-19,토큰포스트,ko,수치형,True,주제외,False,0.6,supported,솔라나의 가격이 74달러 지지선 사수전을 하고 있다
+616,2026-07-19,토큰포스트,ko,수치형,True,주제외,False,0.6,uncertain,Pump.fun 매도에도 불구하고 DEX 거래량 1위를 기록했다
+617,2026-07-20,CoinDesk,en,사건형,False,,False,0.9,contradicted,'The GENIUS Act'이라는 법안이 존재한다.
+618,2026-07-20,CoinDesk,en,사건형,False,,False,0.9,contradicted,해당 법안이 제정 1주년을 맞이했다.
+619,2026-07-20,CoinDesk,en,의견형,True,파편,False,0.4,uncertain,기사는 암호화폐의 현재 상황을 다룬다.
+620,2026-07-20,CoinDesk,en,사건형,False,,False,0.5,uncertain,Tether의 USDT는 2년간의 감시를 받고 있다
+621,2026-07-20,CoinDesk,en,의견형,False,,False,0.6,uncertain,USDT는 미국의 크립토 플랫폼에서 사용이 제한될 수 있다
+622,2026-07-20,CoinDesk,en,사건형,False,,False,0.8,supported,Tether의 준비금 문제가 논란이 되고 있다
+623,2026-07-20,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,GENIUS Act 마감일을 놓친 미국 기관
+624,2026-07-20,CoinTelegraph,en,사건형,False,,False,0.7,supported,최종 스테이블코인 규칙을 발표하지 못함
+625,2026-07-20,토큰포스트,ko,사건형,False,,False,0.9,supported,한국은행이 '프로젝트 한강' 2단계를 통해 디지털 예금 혁신을 가속화한다.
+626,2026-07-20,토큰포스트,ko,사건형,False,,False,0.6,uncertain,디지털자산기본법이 국회 통과 지연되고 있다
+627,2026-07-20,토큰포스트,ko,의견형,False,,False,0.6,uncertain,금융안정과 산업육성을 동시에 달성하기 어렵다는 딜레마가 존재한다
+628,2026-07-20,토큰포스트,ko,수치형,True,주제외,False,0.6,supported,솔라나의 가격은 75~76달러를 유지하고 있다
+629,2026-07-20,토큰포스트,ko,사건형,True,주제외,False,0.3,uncertain,비자와 SBI의 솔라나 도입 소식이 주목을 받고 있다
+630,2026-07-20,토큰포스트,ko,수치형,True,주제외,False,0.6,uncertain,5억7810만 달러의 청산이 발생했다
+631,2026-07-20,토큰포스트,ko,사건형,False,,False,0.6,uncertain,롱 베팅 붕괴가 발생했다
+632,2026-07-20,토큰포스트,ko,사건형,False,,False,0.6,uncertain,스테이블코인 대기자금이 확대되었다
+633,2026-07-20,토큰포스트,ko,예정형,False,,True,0.8,supported,미국 규제당국은 GENIUS법 시행 1년이 지나도 스테이블코인에 대한 세부 규정을 마련 중이다.
+634,2026-07-20,토큰포스트,ko,사건형,False,,False,0.8,supported,GENIUS법이 1년이 지났음
+635,2026-07-20,토큰포스트,ko,예정형,False,,True,0.6,supported,스테이블코인 제도화가 진행 중임
+636,2026-07-20,토큰포스트,ko,사건형,False,,True,0.6,uncertain,클래리티법이 표류 중임
+637,2026-07-21,CoinDesk,en,예정형,False,,False,0.8,supported,아마존 재팬 공급업체인 AZ-Com Maruwa가 엔화 스테이블코인 JPYC를 도입할 예정이다.
+638,2026-07-21,CoinDesk,en,예정형,False,,False,0.8,supported,JPYC는 결제 용도로 사용될 예정이다.
+639,2026-07-21,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,테더 골드가 아부다비 금융 센터에서 인정된 스포트 코모디티로 인정됨
+640,2026-07-21,CoinTelegraph,en,예정형,False,,False,0.7,supported,일본의 물류 회사에서 JPYC 스테이블코인을 사용하여 운전자에게 급여를 지불할 계획이다.
+641,2026-07-21,Decrypt,en,사건형,False,,False,0.6,uncertain,Allbridge의 크로스체인 프로토콜이 일시 중단되었다.
+642,2026-07-21,Decrypt,en,수치형,False,,False,0.6,uncertain,플래시 론 공격으로 165만 달러의 손실이 발생했다.
+643,2026-07-21,토큰포스트,ko,수치형,True,주제외,False,0.6,uncertain,칼데라 코인이 하루 새 60원 급등했다
+644,2026-07-21,토큰포스트,ko,사건형,True,주제외,False,0.6,uncertain,칼데라 코인이 매우 탐욕 1위에 올랐다
+645,2026-07-21,토큰포스트,ko,사건형,True,주제외,False,0.6,supported,칼데라 코인에 강한 매수세가 부각되었다
+646,2026-07-21,토큰포스트,ko,사건형,True,주제외,False,0.6,uncertain,알레아 리서치가 하반기 시장 승부처를 진단했다
+647,2026-07-21,토큰포스트,ko,의견형,True,주제외,False,0.6,uncertain,안도 랠리보다 유통이 먼저라는 분석이 나왔다
+648,2026-07-21,토큰포스트,ko,수치형,False,,False,0.6,uncertain,이더리움 USDT 담보 계좌가 4.45%p 감소했다
+649,2026-07-21,토큰포스트,ko,의견형,True,파편,False,0.6,uncertain,포지션 변동은 제한적이다
+650,2026-07-21,토큰포스트,ko,수치형,True,주제외,False,0.6,supported,이캐시와 펌프펀은 주간 30%대 급등했다
+651,2026-07-21,토큰포스트,ko,수치형,True,주제외,False,0.6,uncertain,카이토는 1개월간 104% 상승했다
+652,2026-07-21,토큰포스트,ko,수치형,False,,False,0.6,supported,솔라나의 스테이블코인 시총이 150억달러를 돌파했다
+653,2026-07-21,토큰포스트,ko,사건형,False,,False,0.6,supported,솔라나의 스테이블코인 실사용 유동성이 커졌다
+654,2026-07-21,토큰포스트,ko,수치형,False,,False,0.6,uncertain,솔라나의 대안 스테이블코인의 총 가치가 48억달러를 넘었다.
+655,2026-07-21,토큰포스트,ko,의견형,False,,True,0.7,supported,솔라나의 스테이블코인은 유동성 다변화를 추구하고 있다.
+656,2026-07-24,CoinDesk,en,예정형,False,,True,0.8,supported,Tassat는 소형 은행이 스테이블코인 붐에 참여할 수 있도록 도와주고자 한다
+657,2026-07-24,CoinDesk,en,의견형,False,,True,0.7,supported,스테이블코인 시장이 1조 달러에 달할 것으로 예상된다
+658,2026-07-24,CoinDesk,en,의견형,False,,False,0.7,supported,월 스트리트의 대형 은행들이 스테이블코인 시장에 진출하여 소형 은행을 배제할 가능성이 있다
+659,2026-07-24,CoinDesk,en,사건형,False,,False,0.4,uncertain,골드만삭스 CEO가 클래러티 액트를 지지한다
+660,2026-07-24,CoinDesk,en,사건형,False,,False,0.8,supported,은행 산업이 스테이블코인 규칙에 대해 우려를 표명한다
+661,2026-07-24,CoinDesk,en,수치형,False,,False,0.6,uncertain,"Arbitrum-based AFX Trade에서 2,400만 달러가 손실되었다"
+662,2026-07-24,CoinDesk,en,사건형,False,,False,0.6,supported,손실의 이유는 브릿지 키의 취약점 때문이다
+663,2026-07-24,CoinTelegraph,en,사건형,False,,False,0.5,uncertain,Coinbase에서 기업들이 AI 에이전트로부터 USDC 결제를 받을 수 있다.
+664,2026-07-24,CoinTelegraph,en,사건형,True,동어반복,False,0.8,supported,USDC는 스테이블코인이다.
+665,2026-07-24,CoinTelegraph,en,사건형,True,동어반복,False,0.8,supported,Coinbase는 암호화폐 거래소이다.
+666,2026-07-24,CoinTelegraph,en,사건형,False,,False,0.7,supported,카카오가 원화 스테이블코인 결제 인프라 구축을 위해 Circle과 협력한다.
+667,2026-07-24,CoinTelegraph,en,예정형,True,파편,False,0.8,supported,카카오의 이 협력은 원화 스테이블코인 결제 시스템 개발을 목표로 한다.
+668,2026-07-24,CoinTelegraph,en,사건형,True,동어반복,False,0.8,supported,Circle은 스테이블코인 및 결제 솔루션 전문 회사이다.
+669,2026-07-24,Decrypt,en,사건형,False,,False,0.6,uncertain,골드만삭스 CEO가 암호화폐 관련 규제 법안을 지지했다
+670,2026-07-24,Decrypt,en,사건형,True,파편,False,0.8,supported,월스트리트의 다른 금융기관들과의 의견이 다르다
+671,2026-07-24,Decrypt,en,사건형,True,동어반복,False,0.6,supported,Crypto Clarity Act라는 이름의 법안이다
+672,2026-07-24,Decrypt,en,사건형,True,주제외,False,0.6,uncertain,브라질 농민들이 암소에 토큰을 부여하여 농장 대출을 받고 있다
+673,2026-07-24,Decrypt,en,의견형,True,파편,False,0.6,supported,이 방법이 효과를 나타내고 있다
+674,2026-07-24,Decrypt,en,사건형,True,주제외,False,0.6,uncertain,토큰화된 암소가 농장 대출의 담보로 사용되고 있다
+675,2026-07-24,Decrypt,en,수치형,False,,False,0.2,uncertain,Augustus는 1.8억 달러를 투자받았다
+676,2026-07-24,Decrypt,en,예정형,False,,False,0.6,uncertain,Augustus는 Stablecoin-Ready 'Global Dollar Bank'를 구축할 계획이다
+677,2026-07-24,Decrypt,en,사건형,False,,False,0.5,uncertain,Jack Mallers가 Twenty One Capital에서 사임했다
+678,2026-07-24,Decrypt,en,사건형,False,,False,0.6,uncertain,Tether의 비트코인 합병이 무산되었다
+679,2026-07-24,토큰포스트,ko,수치형,False,,False,0.6,supported,서클 인터넷 그룹(CRCL) 주가가 62달러로 떨어졌다
+680,2026-07-24,토큰포스트,ko,사건형,False,,False,0.6,uncertain,기관 매수에도 주가 하락세가 지속되고 있다
+681,2026-07-25,CoinDesk,en,사건형,False,,False,0.5,uncertain,Ripple의 RLUSD 스테이블코인에 두 가지 긍정적 발전이 있었다
+682,2026-07-25,CoinDesk,en,수치형,False,,False,0.6,uncertain,해당 스테이블코인의 전송량은 25% 감소했다
+683,2026-07-25,CoinDesk,en,예정형,False,,False,0.6,uncertain,미래에셋이 코빗을 한국에서 본 적 없는 것으로 만들 계획이다
+684,2026-07-25,CoinDesk,en,사건형,True,동어반복,False,0.8,supported,코빗은 한국의 주요 암호화폐 거래소 중 하나이다
+685,2026-07-25,CoinDesk,en,예정형,False,,False,0.6,uncertain,미래에셋은 코빗을 통해 새로운 금융 서비스를 제공할 계획이다
+686,2026-07-25,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,Crypto advocacy groups support CLARITY passage
+687,2026-07-25,CoinTelegraph,en,사건형,False,,False,0.7,supported,ethics rules face pushback
+688,2026-07-25,CoinTelegraph,en,예정형,False,,False,0.6,supported,삼성페이가 스테이블코인을 지원할 계획이다.
+689,2026-07-25,CoinTelegraph,en,의견형,False,,False,0.8,supported,스테이블코인 지원은 디지털 결제 확장의 일환이다.
+690,2026-07-25,CoinTelegraph,en,예정형,False,,False,0.6,uncertain,필리핀 은행 BPI가 스테이블코인 결제 시범 운영을 계획하고 있다.
+691,2026-07-25,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,Ripple이 Mint를 출시했다
+692,2026-07-25,CoinTelegraph,en,사건형,False,,False,0.6,uncertain,Mint는 기관의 RLUSD 접근을 확대한다
+693,2026-07-25,CoinTelegraph,en,사건형,True,동어반복,False,0.7,supported,RLUSD는 스테이블코인이다
+694,2026-07-25,토큰포스트,ko,수치형,False,,False,0.8,supported,써클 인터넷 그룹의 주가가 6% 급락했다.
+695,2026-07-25,토큰포스트,ko,수치형,False,,False,0.6,uncertain,ARK는 8백만 달러 상당의 써클 인터넷 그룹 주식을 매수했다.
+696,2026-07-25,토큰포스트,ko,사건형,True,주제외,False,0.7,supported,캘러닉의 물리 AI 아톰스가 미국 주간 투자유치 1위로 올라갔다.
+697,2026-07-25,토큰포스트,ko,사건형,True,주제외,False,0.6,uncertain,캘러닉은 최근 아톰스와 관련된 투자유치에서 성공을 거뒀다.
