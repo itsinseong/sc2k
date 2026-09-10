@@ -61,13 +61,13 @@
   "doc": "bill:2212298",
   "article": "제32조제1항",
   "date": "2025-08-21",
-  "quote": "발행인은 매월 말일을 기준으로",
+  "quote": "발행인은 매월 말일을 기준으로 대통령령으로 정하는 내용의 준비자산에 관한 보고서를 작성하여",
   "value": "월 말일",
   "url": null,
   "verified": true,
   "verified_by": "PDF pdftotext",
   "confirmed": false,
-  "note": "말일이 휴일일 때 규정은 미확인"
+  "note": "기준일은 월 말일. 공시기한과 휴일 조정은 R10 간선 참조"
  },
  {
   "axis": "K04",
@@ -124,5 +124,19 @@
   "verified_by": "PDF pdftotext 2026-09-09",
   "confirmed": false,
   "note": "해외 실측 사례. 말일이 토요일이라 기준일을 당김"
+ },
+ {
+  "axis": "R10",
+  "layer": 2,
+  "doc": "bill:2212298",
+  "article": "제32조제1항",
+  "date": "2025-08-21",
+  "quote": "다음 달 5일(그 날이 토요일 또는 공휴일인 경우 그 이후에 처음으로 도래하는 영업일)까지 금융감독원에 제출하고, 홈페이지에 공시해야 한다.",
+  "value": "다음 달 5일, 휴일이면 다음 영업일",
+  "url": null,
+  "verified": true,
+  "verified_by": "PDF pdftotext",
+  "confirmed": false,
+  "note": "적대검증 2차 #16이 지적한 누락. R10 한국 2층 후보값. 기준일(월 말일)과 공시기한(다음 달 5일)과 휴일 조정이 각각 다른 기능"
  }
 ]
