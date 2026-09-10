@@ -1,66 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>StableWatch 아이디어 발표</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap">
 <style>
 :root{
-  --ink:#0C1718; --ink-2:#485C5D; --ink-3:#849696;
-  --paper:#FCFDFD; --band:#EFF3F2; --rule:#D6E0DE;
-  --accent:#0F5257; --accent-soft:#DCEAE9;
+  --ink:#0A1516; --ink-2:#44585A; --ink-3:#8A9B9B;
+  --paper:#FBFCFC; --band:#EDF2F1; --rule:#D4DFDD;
+  --accent:#0E4F54; --accent-2:#12707A; --accent-soft:#D7E8E7;
+  --warn:#B4472F;
   --sans:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
   --mono:'IBM Plex Mono','IBM Plex Sans KR',ui-monospace,monospace;
 }
 *{box-sizing:border-box}
-body{margin:0;background:#5A6A6B;font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
+body{margin:0;background:#4E5E5F;font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
 .hint{max-width:1040px;margin:0 auto;padding:14px 4px 10px;color:#E6ECEB;font-size:13px;line-height:1.6}
 .hint b{color:#fff;font-weight:600}
 .deck{max-width:1040px;margin:0 auto;padding:0 4px 40px;display:flex;flex-direction:column;gap:18px}
 .slide{
   container-type:inline-size;position:relative;aspect-ratio:16/9;
   background:var(--paper);color:var(--ink);border-radius:3px;overflow:hidden;
-  box-shadow:0 10px 30px -12px rgba(0,0,0,.55);
-  padding:5cqw 5.4cqw 4cqw;display:flex;flex-direction:column;
+  box-shadow:0 12px 34px -14px rgba(0,0,0,.6);
+  padding:5cqw 5.4cqw 4.2cqw;display:flex;flex-direction:column;
 }
-/* section header, 선배 자료의 얇은 규칙선 형태 */
-.sec{display:flex;align-items:baseline;gap:1.1cqw;border-bottom:1px solid var(--rule);padding-bottom:1.1cqw}
-.sec h2{font-size:2.9cqw;font-weight:700;margin:0;letter-spacing:-.02em}
-.sec .n{margin-left:auto;font-family:var(--mono);font-size:1.05cqw;color:var(--ink-3);letter-spacing:.14em}
-.body{flex:1;display:flex;flex-direction:column;justify-content:center;gap:2.4cqw;padding-bottom:1cqw}
-.no{position:absolute;right:4cqw;bottom:2.6cqw;font-family:var(--mono);font-size:1.05cqw;color:var(--ink-3)}
+.sec{display:flex;align-items:baseline;gap:1.2cqw}
+.sec h2{font-size:2.6cqw;font-weight:700;margin:0;letter-spacing:-.02em}
+.sec .n{margin-left:auto;font-family:var(--mono);font-size:1.05cqw;color:var(--ink-3);letter-spacing:.18em}
+.sec::after{content:"";position:absolute;left:5.4cqw;right:5.4cqw;top:9.6cqw;height:2px;background:var(--accent)}
+.body{flex:1;display:flex;flex-direction:column;justify-content:center;gap:2.2cqw;padding:1.6cqw 0 1cqw}
+.no{position:absolute;right:4.2cqw;bottom:2.6cqw;font-family:var(--mono);font-size:1.05cqw;color:var(--ink-3)}
 svg{display:block;width:100%;height:auto;color:var(--ink-2)}
 
-/* cover */
-.cover{justify-content:center;background:linear-gradient(180deg,#F2F6F5 0%,#FCFDFD 55%)}
-.kicker{font-size:1.35cqw;color:var(--ink-2);letter-spacing:.02em}
-h1{font-size:6.8cqw;font-weight:700;letter-spacing:-.035em;margin:1.6cqw 0 0;line-height:1.02}
-.sub{font-size:2.4cqw;font-weight:400;color:var(--accent);margin:1cqw 0 0}
-.thesis{font-size:1.62cqw;color:var(--ink-2);line-height:1.65;margin:2.6cqw 0 0;border-left:.3cqw solid var(--accent);padding-left:1.4cqw}
-.thesis b{color:var(--ink);font-weight:600}
-.who{margin-top:3.4cqw;font-size:1.5cqw;color:var(--ink-2);line-height:1.7;text-align:right}
-.who b{display:block;color:var(--ink);font-weight:600;font-family:var(--mono);letter-spacing:.02em}
-.field{position:absolute;top:5cqw;right:5.4cqw;font-family:var(--mono);font-size:1.15cqw;font-weight:600;letter-spacing:.16em;color:var(--paper);background:var(--accent);padding:.5cqw 1cqw;border-radius:2px}
+/* 1 표지 */
+.cover{background:var(--accent);color:#EAF3F2;justify-content:flex-end;padding:5cqw 5.4cqw 5cqw}
+.cover .kicker{font-family:var(--mono);font-size:1.15cqw;letter-spacing:.2em;color:#8FC4C2;margin:0}
+.cover h1{font-size:9.4cqw;font-weight:700;letter-spacing:-.045em;margin:auto 0 0;line-height:.92;color:#fff}
+.cover .sub{font-size:2.5cqw;font-weight:400;margin:1.4cqw 0 0;color:#A9D3D0}
+.cover .thesis{font-size:1.9cqw;line-height:1.5;margin:3.4cqw 0 0;color:#fff;font-weight:500;max-width:56cqw}
+.cover .who{position:absolute;right:5.4cqw;bottom:5cqw;text-align:right;font-size:1.4cqw;color:#8FC4C2;line-height:1.7;margin:0}
+.cover .who b{display:block;color:#fff;font-family:var(--mono);font-weight:600;font-size:1.5cqw}
+.cover .field{position:absolute;top:5cqw;right:5.4cqw;font-family:var(--mono);font-size:1.15cqw;font-weight:600;letter-spacing:.2em;color:var(--accent);background:#fff;padding:.5cqw 1.1cqw;border-radius:2px}
 
-/* big statement */
-.hero{font-size:3.7cqw;font-weight:700;line-height:1.28;letter-spacing:-.02em;text-wrap:balance}
-.hero em{font-style:normal;color:var(--accent)}
+/* 2 배경 */
+.lead{font-size:2.3cqw;font-weight:600;line-height:1.4;letter-spacing:-.015em;text-wrap:balance}
+.lead em{font-style:normal;color:var(--warn)}
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4cqw}
+.four div{border-top:2px solid var(--rule);padding-top:1cqw;font-size:1.32cqw;line-height:1.5;color:var(--ink-2)}
+.four div b{display:block;font-family:var(--mono);font-size:1.05cqw;color:var(--accent);margin-bottom:.5cqw;letter-spacing:.1em}
 
-/* two column bullets */
-.pts{display:grid;grid-template-columns:1fr 1fr;gap:1.8cqw 3.4cqw}
-.pt{display:flex;gap:1.1cqw;align-items:flex-start}
-.pt i{font-family:var(--mono);font-style:normal;font-size:1.25cqw;font-weight:600;color:var(--accent);padding-top:.25cqw}
-.pt span{font-size:1.62cqw;line-height:1.5;color:var(--ink)}
+/* 3 내용 */
+.hero{font-size:4.6cqw;font-weight:700;line-height:1.24;letter-spacing:-.03em;text-wrap:balance;margin:0}
+.hero em{font-style:normal;color:var(--accent-2)}
+.trip{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6cqw}
+.trip div{background:var(--band);border-radius:3px;padding:1.7cqw 1.8cqw}
+.trip b{display:block;font-size:1.6cqw;font-weight:600;margin-bottom:.6cqw}
+.trip span{font-size:1.28cqw;line-height:1.5;color:var(--ink-2)}
 
-/* list rows */
-.rows{display:flex;flex-direction:column;gap:1.9cqw}
-.row{display:grid;grid-template-columns:15cqw 1fr;gap:2.2cqw;align-items:baseline}
-.row dt{font-size:1.75cqw;font-weight:600;color:var(--ink)}
-.row dd{margin:0;font-size:1.5cqw;color:var(--ink-2);line-height:1.55}
-.row.ours dt{color:var(--accent)}
-.row.ours dd{color:var(--ink)}
+/* 4 어떻게 */
+.nums{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border-radius:3px;overflow:hidden}
+.nums div{padding:1.9cqw 2cqw;background:var(--band)}
+.nums div:last-child{background:var(--accent);color:#fff}
+.nums .lab{font-size:1.15cqw;color:var(--ink-2);line-height:1.45;display:block;min-height:3.2cqw}
+.nums div:last-child .lab{color:#A9D3D0}
+.nums .v{font-family:var(--mono);font-size:4.6cqw;font-weight:700;line-height:1;letter-spacing:-.03em;color:var(--accent)}
+.nums div:last-child .v{color:#fff}
 
-.note{font-size:1.32cqw;color:var(--ink-3);line-height:1.55}
-.ex{background:var(--band);border-left:.3cqw solid var(--accent);border-radius:0 3px 3px 0;padding:1.7cqw 2cqw}
-.ex .lab{font-family:var(--mono);font-size:1.05cqw;letter-spacing:.12em;color:var(--accent);font-weight:600}
-.ex p{margin:.7cqw 0 0;font-size:1.55cqw;line-height:1.6;color:var(--ink)}
-.ex b{font-family:var(--mono);font-weight:600;color:var(--accent)}
+/* 5 관련 사례 */
+.cmp{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4cqw}
+.cmp div{border-radius:3px;padding:1.8cqw 1.6cqw;background:var(--band);display:flex;flex-direction:column;gap:.9cqw}
+.cmp div.us{background:var(--accent);color:#fff}
+.cmp b{font-size:1.5cqw;font-weight:600;letter-spacing:-.01em}
+.cmp span{font-size:1.24cqw;line-height:1.5;color:var(--ink-2)}
+.cmp div.us span{color:#BFDEDC}
+.cmp .tag{margin-top:auto;font-family:var(--mono);font-size:1.02cqw;letter-spacing:.08em;color:var(--ink-3)}
+.cmp div.us .tag{color:#8FC4C2}
+
+/* 6 사회진출 */
+.stack{display:flex;flex-direction:column;gap:1.3cqw}
+.stack div{display:grid;grid-template-columns:16cqw 1fr;gap:2.4cqw;align-items:center;background:var(--band);border-radius:3px;padding:1.6cqw 1.9cqw}
+.stack b{font-size:1.75cqw;font-weight:600;color:var(--accent)}
+.stack span{font-size:1.42cqw;line-height:1.55;color:var(--ink-2)}
+.note{font-size:1.22cqw;color:var(--ink-3);line-height:1.5}
 
 @media print{
   @page{size:297mm 167mm;margin:0}
@@ -72,125 +95,132 @@ h1{font-size:6.8cqw;font-weight:700;letter-spacing:-.035em;margin:1.6cqw 0 0;lin
 }
 </style>
 
+</head>
+<body>
+
 <p class="hint">인쇄(Cmd+P)하면 6장짜리 PDF가 됩니다. 여백 없음, 배경 그래픽 켜기. <b>제출은 PPT 포맷만 인정되므로 pptx로 변환해야 합니다.</b></p>
 
 <div class="deck">
 
-<!-- 1 표지 -->
+<!-- 1 -->
 <section class="slide cover">
   <span class="field">APP</span>
   <p class="kicker">2026-2 미디어프로젝트 아이디어</p>
   <h1>StableWatch</h1>
   <p class="sub">원화 스테이블코인 준비금 공시 판정기</p>
-  <p class="thesis">해외 규제와 실제 발행사 데이터를 근거로<br><b>한국의 공시 기준을 직접 제안한다</b></p>
+  <p class="thesis">해외 규제와 실제 발행사 데이터를 근거로<br>한국의 공시 기준을 직접 제안한다</p>
   <p class="who">디지털미디어학과<b>202127158 강인성</b></p>
 </section>
 
-<!-- 2 배경 -->
+<!-- 2 -->
 <section class="slide">
   <div class="sec"><h2>배경</h2><span class="n">01</span></div>
   <div class="body">
-    <svg viewBox="0 0 940 132" role="img" aria-label="국회 계류 법안 여덟 건이 환매 기한을 3일에서 10일까지 서로 다르게 정하고 있고 정부안은 아직 없다">
+    <p class="lead">은행이 원화 스테이블코인을 발행하면 매달 준비금을 공시해야 한다.<br><em>그런데 무엇을 어떻게 공시할지가 아직 없다.</em></p>
+    <svg viewBox="0 0 940 118" role="img" aria-label="국회 계류 법안 여덟 건이 환매 기한을 3일에서 10일까지 서로 다르게 정하고 있고 정부안은 아직 없다">
       <g font-family="IBM Plex Sans KR, sans-serif">
-        <text x="0" y="14" font-size="15" fill="var(--ink-3)">국회에 올라온 법안 8건이 정한 환매 기한</text>
-        <g fill="none" stroke="var(--rule)" stroke-width="1.6">
-          <rect x="0" y="36" width="150" height="60" rx="30"/>
-          <rect x="166" y="36" width="170" height="60" rx="30"/>
-          <rect x="352" y="36" width="150" height="60" rx="30"/>
-          <rect x="518" y="36" width="170" height="60" rx="30"/>
-          <rect x="704" y="36" width="150" height="60" rx="30"/>
+        <text x="0" y="12" font-size="14" fill="var(--ink-3)">국회에 올라온 법안 8건이 정한 환매 기한</text>
+        <g fill="none" stroke="var(--rule)" stroke-width="1.8">
+          <rect x="0" y="34" width="152" height="64" rx="32"/>
+          <rect x="168" y="34" width="174" height="64" rx="32"/>
+          <rect x="358" y="34" width="152" height="64" rx="32"/>
+          <rect x="526" y="34" width="174" height="64" rx="32"/>
+          <rect x="716" y="34" width="152" height="64" rx="32"/>
         </g>
-        <g font-family="IBM Plex Mono, monospace" font-size="23" font-weight="600" fill="var(--ink)" text-anchor="middle">
-          <text x="75" y="74">3일</text><text x="251" y="74">3영업일</text><text x="427" y="74">5일</text><text x="603" y="74">5영업일</text><text x="779" y="74">10일</text>
+        <g font-family="IBM Plex Mono, monospace" font-size="25" font-weight="600" fill="var(--ink)" text-anchor="middle">
+          <text x="76" y="74">3일</text><text x="255" y="74">3영업일</text><text x="434" y="74">5일</text><text x="613" y="74">5영업일</text><text x="792" y="74">10일</text>
         </g>
-        <circle cx="908" cy="66" r="30" fill="var(--accent)"/>
-        <text x="908" y="77" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="33" font-weight="600" fill="var(--paper)">?</text>
-        <text x="908" y="122" text-anchor="middle" font-size="13" fill="var(--accent)" font-weight="600">정부안</text>
+        <circle cx="908" cy="66" r="31" fill="var(--warn)"/>
+        <text x="908" y="78" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="34" font-weight="700" fill="#fff">?</text>
+        <text x="908" y="112" text-anchor="middle" font-size="12" fill="var(--warn)" font-weight="600">정부안 없음</text>
       </g>
     </svg>
-    <div class="pts">
-      <div class="pt"><i>1</i><span>은행이 원화 스테이블코인을 발행하는 시대가 온다</span></div>
-      <div class="pt"><i>2</i><span>발행하면 매달 준비금을 공시해야 한다</span></div>
-      <div class="pt"><i>3</i><span>그런데 한국은 무엇을 어떻게 공시할지 정해진 것이 없다</span></div>
-      <div class="pt"><i>4</i><span>국회 법안 8건은 값이 제각각이고, 정부안은 아직 없다</span></div>
+    <div class="four">
+      <div><b>01</b>은행 직접 발행이 현실이 됐다</div>
+      <div><b>02</b>발행하면 공시 의무가 따라온다</div>
+      <div><b>03</b>한국은 서식도 기준값도 없다</div>
+      <div><b>04</b>법안 8건은 값이 제각각이다</div>
     </div>
   </div>
   <span class="no">2 / 6</span>
 </section>
 
-<!-- 3 내용 -->
+<!-- 3 -->
 <section class="slide">
   <div class="sec"><h2>내용</h2><span class="n">02</span></div>
   <div class="body">
     <p class="hero">규정이 아직 없으니<br><em>내가 기준을 만들어 제안한다</em></p>
-    <div class="pts" style="grid-template-columns:1fr 1fr 1fr">
-      <div class="pt"><i>1</i><span>무엇을 제안하나<br><span class="note">매달 공시할 항목과 값, 기준일과 주기, 검증 수준을 정한 서식 한 장</span></span></div>
-      <div class="pt"><i>2</i><span>근거는 어디서<br><span class="note">해외 4개 관할권 규제와 한국의 법령, 국회 법안, 업계 관행</span></span></div>
-      <div class="pt"><i>3</i><span>타당한지 어떻게 보나<br><span class="note">실제 발행사가 낸 공시 자료를 넣어 그 값이 지켜질 수 있는지 확인</span></span></div>
+    <div class="trip">
+      <div><b>무엇을</b><span>매달 공시할 항목과 값, 기준일과 주기, 검증 수준을 정한 서식 한 장</span></div>
+      <div><b>무엇을 근거로</b><span>해외 4개 관할권 규제와 한국의 법령, 국회 법안, 업계 관행</span></div>
+      <div><b>타당한지 어떻게</b><span>실제 발행사가 낸 공시 자료를 넣어 그 값이 지켜질 수 있는지 확인</span></div>
     </div>
   </div>
   <span class="no">3 / 6</span>
 </section>
 
-<!-- 4 방법 -->
+<!-- 4 -->
 <section class="slide">
   <div class="sec"><h2>어떻게</h2><span class="n">03</span></div>
   <div class="body">
-    <svg viewBox="0 0 940 116" role="img" aria-label="해외 규제에서 규칙을 뽑고 한국 근거를 붙여 빈칸을 찾은 뒤 값을 정해 서식을 만들고 실제 자료로 확인하는 세 단계">
+    <svg viewBox="0 0 940 92" role="img" aria-label="해외 규제에서 규칙을 뽑고 한국에 없는 칸을 찾은 뒤 값을 정해 제안하고 데이터로 확인하는 세 단계">
       <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="currentColor"/></marker></defs>
-      <g fill="none" stroke="var(--rule)" stroke-width="1.6">
-        <rect x="0" y="20" width="276" height="76" rx="4"/>
-        <rect x="332" y="20" width="276" height="76" rx="4"/>
+      <g fill="none" stroke="var(--rule)" stroke-width="1.8">
+        <rect x="0" y="8" width="278" height="72" rx="4"/><rect x="331" y="8" width="278" height="72" rx="4"/>
       </g>
-      <rect x="664" y="20" width="276" height="76" rx="4" fill="var(--accent)"/>
-      <g fill="none" stroke="currentColor" stroke-width="1.6" marker-end="url(#ar)">
-        <line x1="276" y1="58" x2="328" y2="58"/><line x1="608" y1="58" x2="660" y2="58"/>
+      <rect x="662" y="8" width="278" height="72" rx="4" fill="var(--accent)"/>
+      <g fill="none" stroke="currentColor" stroke-width="1.8" marker-end="url(#ar)">
+        <line x1="278" y1="44" x2="327" y2="44"/><line x1="609" y1="44" x2="658" y2="44"/>
       </g>
       <g font-family="IBM Plex Sans KR, sans-serif" text-anchor="middle">
-        <text x="138" y="53" font-size="18" font-weight="600" fill="var(--ink)">해외 규제에서 규칙을 뽑고</text>
-        <text x="138" y="78" font-size="14" fill="var(--ink-2)">미국, EU, 홍콩, 싱가포르</text>
-        <text x="470" y="53" font-size="18" font-weight="600" fill="var(--ink)">한국에 없는 칸을 찾고</text>
-        <text x="470" y="78" font-size="14" fill="var(--ink-2)">법령, 법안, 정부 자료, 관행</text>
-        <text x="802" y="53" font-size="18" font-weight="600" fill="var(--paper)">값을 정해 제안하고</text>
-        <text x="802" y="78" font-size="14" fill="var(--paper)" opacity=".85">데이터로 타당한지 확인한다</text>
+        <text x="139" y="40" font-size="18" font-weight="600" fill="var(--ink)">해외 규제에서 규칙을 뽑고</text>
+        <text x="139" y="63" font-size="13" fill="var(--ink-2)">미국, EU, 홍콩, 싱가포르</text>
+        <text x="470" y="40" font-size="18" font-weight="600" fill="var(--ink)">한국에 없는 칸을 찾고</text>
+        <text x="470" y="63" font-size="13" fill="var(--ink-2)">법령, 법안, 정부 자료, 관행</text>
+        <text x="801" y="40" font-size="18" font-weight="600" fill="#fff">값을 정해 제안한다</text>
+        <text x="801" y="63" font-size="13" fill="#A9D3D0">데이터로 타당한지 확인</text>
       </g>
     </svg>
-    <div class="ex">
-      <span class="lab">근거를 대는 방식, 예를 들면</span>
-      <p>미국은 현금성 자산을 <b>30%</b> 이상 두라고 한다. 그런데 세계 최대 발행사의 4개월 공시를 계산해 보니 실제로는 <b>14%</b>였다. 그래서 한국 제안값은 30%가 아니라 <b>15%</b>로 잡고, 그 이유를 기록에 남긴다.</p>
+    <div class="nums">
+      <div><span class="lab">미국이 정한 현금성 자산 최저 비율</span><span class="v">30%</span></div>
+      <div><span class="lab">세계 최대 발행사의 넉 달치 실측</span><span class="v">14%</span></div>
+      <div><span class="lab">그래서 내가 잡은 한국 제안값</span><span class="v">15%</span></div>
     </div>
-    <p class="note">제안한 서식과 판정을 웹 화면 두 개로 만든다. 담당자가 보는 판정 화면과 고객이 보는 안내 화면.</p>
+    <p class="note">근거를 대는 방식이 이렇다. 해외 규정을 그대로 옮기지 않고, 실제로 지켜지는 수준을 계산해서 값을 정하고 이유를 기록으로 남긴다.</p>
   </div>
   <span class="no">4 / 6</span>
 </section>
 
-<!-- 5 관련 사례 -->
+<!-- 5 -->
 <section class="slide">
   <div class="sec"><h2>관련 사례</h2><span class="n">04</span></div>
   <div class="body">
-    <dl class="rows">
-      <div class="row"><dt>Tessera</dt><dd>미국 규칙으로 발행사 보고서를 판정한다. 미국만 다루고 한국은 없다.</dd></div>
-      <div class="row"><dt>stablecoinstatus</dt><dd>국회 법안 8건을 비교해 보여준다. 법안만 있고 판정도 서식도 없다.</dd></div>
-      <div class="row"><dt>로펌 보고서</dt><dd>해외 제도와 법안을 글로 정리한다. 값을 정해 서식으로 만들지는 않는다.</dd></div>
-      <div class="row ours"><dt>StableWatch</dt><dd>한국이 쓸 기준을 값까지 정해 제안하고, 실제 발행사 자료로 그 값이 타당한지 확인한다.</dd></div>
-    </dl>
+    <div class="cmp">
+      <div><b>Tessera</b><span>미국 규칙으로 발행사 보고서를 판정한다</span><span class="tag">미국만, 한국 없음</span></div>
+      <div><b>stablecoinstatus</b><span>국회 법안 8건을 비교해 보여준다</span><span class="tag">법안만, 판정 없음</span></div>
+      <div><b>로펌 보고서</b><span>해외 제도와 법안을 글로 정리한다</span><span class="tag">서식 없음</span></div>
+      <div class="us"><b>StableWatch</b><span>한국이 쓸 기준을 값까지 정해 제안하고 실제 자료로 확인한다</span><span class="tag">제안하는 곳은 없었다</span></div>
+    </div>
     <p class="note">앞의 셋은 있는 규정을 정리하거나 판정한다. 없는 규정에 값을 정해 제안하는 곳은 확인한 범위에서 없었다. 세계 최초라는 주장은 아니다.</p>
   </div>
   <span class="no">5 / 6</span>
 </section>
 
-<!-- 6 사회진출 -->
+<!-- 6 -->
 <section class="slide">
   <div class="sec"><h2>사회진출 활용계획</h2><span class="n">05</span></div>
   <div class="body">
-    <dl class="rows">
-      <div class="row"><dt>은행 디지털 기획</dt><dd>규제가 정해지기 전에 서비스를 설계해야 하는 자리다. 이 프로젝트가 그 일을 작게 한 번 해 본 기록이 된다.</dd></div>
-      <div class="row"><dt>금융 규제 대응</dt><dd>법 조문을 화면과 데이터로 옮기는 일. 은행과 거래소, 핀테크에 같은 업무가 있다.</dd></div>
-      <div class="row"><dt>남길 것</dt><dd>서비스 기획 한 쪽, 공시안 한 장, 실제로 도는 공개 웹, 확인하고 고친 기록.</dd></div>
-    </dl>
+    <div class="stack">
+      <div><b>은행 디지털 기획</b><span>규제가 정해지기 전에 서비스를 설계해야 하는 자리다. 이 프로젝트가 그 일을 작게 한 번 해 본 기록이 된다.</span></div>
+      <div><b>금융 규제 대응</b><span>법 조문을 화면과 데이터로 옮기는 일. 은행과 거래소, 핀테크에 같은 업무가 있다.</span></div>
+      <div><b>남길 것</b><span>서비스 기획 한 쪽, 공시안 한 장, 실제로 도는 공개 웹, 확인하고 고친 기록.</span></div>
+    </div>
     <p class="note">스테이블코인과 금융경제구조를 학생설계 부전공으로 이수 중이다.</p>
   </div>
   <span class="no">6 / 6</span>
 </section>
 
 </div>
+
+</body>
+</html>
