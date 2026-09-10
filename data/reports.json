@@ -1,0 +1,155 @@
+{
+ "generated": "2026-09-10",
+ "source": "Circle USDC 월간 examination report, pdftotext -layout",
+ "note": "회계법인명은 서명 이미지라 자동 추출되지 않는다. 서식 항목 D1은 수동 확인.",
+ "reports": [
+  {
+   "source_file": "data/samples/Circle_USDC_Examination_2026-01.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "USDC",
+   "report_dates": [
+    "2026-01-16",
+    "2026-01-30"
+   ],
+   "as_of": "2026-01-30",
+   "month": "2026-01",
+   "as_of_time": "23:59 UTC",
+   "circulation": 69954717486,
+   "fair_value": 70022091915,
+   "components": {
+    "circle_reserve_fund": 59816982895,
+    "other": 10205109020
+   },
+   "reconciliation": {
+    "covers_circulation": {
+     "surplus": 67374429,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00096311,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-02-26",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_USDC_Examination_2026-03.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "USDC",
+   "report_dates": [
+    "2026-03-11",
+    "2026-03-31"
+   ],
+   "as_of": "2026-03-31",
+   "month": "2026-03",
+   "as_of_time": "23:59 UTC",
+   "circulation": 77049290538,
+   "fair_value": 77125330954,
+   "components": {
+    "circle_reserve_fund": 66467038905,
+    "other": 10658292049
+   },
+   "reconciliation": {
+    "covers_circulation": {
+     "surplus": 76040416,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00098691,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-04-29",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_USDC_Examination_2026-04.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "USDC",
+   "report_dates": [
+    "2026-04-06",
+    "2026-04-30"
+   ],
+   "as_of": "2026-04-30",
+   "month": "2026-04",
+   "as_of_time": "23:59 UTC",
+   "circulation": 77047590794,
+   "fair_value": 77123668726,
+   "components": {
+    "circle_reserve_fund": 66367076329,
+    "other": 10756592397
+   },
+   "reconciliation": {
+    "covers_circulation": {
+     "surplus": 76077932,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00098741,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-05-28",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_USDC_Examination_2026-07.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "USDC",
+   "report_dates": [
+    "2026-07-08",
+    "2026-07-31"
+   ],
+   "as_of": "2026-07-31",
+   "month": "2026-07",
+   "as_of_time": "23:59 UTC",
+   "circulation": 71826453410,
+   "fair_value": 71904101332,
+   "components": {
+    "circle_reserve_fund": 60717246965,
+    "other": 11186854367
+   },
+   "reconciliation": {
+    "covers_circulation": {
+     "surplus": 77647922,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00108105,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-08-27",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": true,
+    "scan_suspected": false
+   }
+  }
+ ]
+}
