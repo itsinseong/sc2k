@@ -1,0 +1,185 @@
+<title>코인 뉴스 거름망</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --paper:#f3f6f1; --card:#ffffff; --ink:#1b2a20; --sub:#5b6b60; --line:#d8e0d6;
+    --green:#1e7a4f; --green-soft:#ddeee3;
+    --amber:#b07417; --amber-soft:#f3e7cd;
+    --red:#b0402f; --red-soft:#f4ded9;
+    --blue:#2c5d8d; --blue-soft:#dde8f2;
+    --display:'Jua', 'Apple SD Gothic Neo', sans-serif;
+    --body:'IBM Plex Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#101812; --card:#18231b; --ink:#e9f1ea; --sub:#9db2a4; --line:#2c3a30;
+      --green:#4cba85; --green-soft:#1c3427;
+      --amber:#d9a04a; --amber-soft:#37290f;
+      --red:#d97a67; --red-soft:#3a1f19;
+      --blue:#7aa8d4; --blue-soft:#1d2e3f;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#101812; --card:#18231b; --ink:#e9f1ea; --sub:#9db2a4; --line:#2c3a30;
+    --green:#4cba85; --green-soft:#1c3427;
+    --amber:#d9a04a; --amber-soft:#37290f;
+    --red:#d97a67; --red-soft:#3a1f19;
+    --blue:#7aa8d4; --blue-soft:#1d2e3f;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--paper); color:var(--ink); font-family:var(--body); margin:0; line-height:1.6;}
+  main{max-width:720px; margin:0 auto; padding:48px 20px 80px; display:flex; flex-direction:column; gap:72px;}
+  h1,h2{font-family:var(--display); font-weight:400; line-height:1.25; text-wrap:balance; margin:0;}
+  h1{font-size:clamp(34px,7vw,52px);}
+  h2{font-size:clamp(24px,5vw,32px);}
+  p{margin:0;}
+  .scene{display:flex; flex-direction:column; gap:20px; align-items:center; text-align:center;}
+  .kicker{font-size:13px; letter-spacing:.14em; color:var(--sub); font-weight:700;}
+  .lead{font-size:19px; max-width:34ch;}
+  .note{font-size:15px; color:var(--sub); max-width:38ch;}
+  .big{font-size:64px; line-height:1;}
+
+  /* hero */
+  .hero-badge{display:inline-flex; align-items:center; gap:10px; background:var(--green-soft); color:var(--green);
+    border-radius:999px; padding:8px 18px; font-family:var(--display); font-size:18px;}
+
+  /* scene 1: noisy news */
+  .newsgrid{display:flex; flex-wrap:wrap; gap:10px; justify-content:center; max-width:420px;}
+  .news{width:64px; height:64px; border-radius:12px; background:var(--card); border:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center; font-size:30px;}
+  .news.bad{background:var(--red-soft); border-color:transparent; position:relative;}
+  .news.bad::after{content:"✕"; position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+    font-size:34px; font-weight:700; color:var(--red);}
+  .news.bad span{opacity:.35;}
+
+  /* scene 2: funnel */
+  .funnel-wrap{display:flex; flex-direction:column; align-items:center; gap:0; width:100%;}
+  .funnel-top{font-size:34px; letter-spacing:6px;}
+  .funnel{width:min(320px,80%); height:110px; background:var(--blue-soft); border:2px solid var(--blue);
+    clip-path:polygon(0 0,100% 0,62% 100%,38% 100%); display:flex; align-items:flex-start; justify-content:center;
+    padding-top:14px; font-family:var(--display); color:var(--blue); font-size:20px; margin-top:8px;}
+  .drop{width:2px; height:26px; background:var(--blue); margin:0 auto;}
+  .fact-card{background:var(--green-soft); color:var(--green); border-radius:14px; padding:12px 22px;
+    font-family:var(--display); font-size:20px; margin-top:6px;}
+
+  /* scene 3: 5 steps */
+  .steps{display:flex; flex-direction:column; gap:10px; width:100%; max-width:460px; text-align:left;}
+  .step{display:flex; align-items:center; gap:14px; background:var(--card); border:1px solid var(--line);
+    border-radius:14px; padding:12px 16px;}
+  .dot{width:44px; height:44px; border-radius:50%; flex:none; display:flex; align-items:center; justify-content:center;
+    font-size:22px; font-family:var(--display); color:#fff;}
+  .step b{font-size:17px; display:block;}
+  .step small{color:var(--sub); font-size:13px;}
+  .s1 .dot{background:var(--green);} .s2 .dot{background:var(--green); opacity:.75;}
+  .s3 .dot{background:var(--amber);} .s4 .dot{background:var(--amber); opacity:.75;}
+  .s5 .dot{background:var(--red);}
+
+  /* scene 4: robot vs rule */
+  .duo{display:flex; gap:16px; flex-wrap:wrap; justify-content:center;}
+  .duo-card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px 20px; width:220px;
+    display:flex; flex-direction:column; gap:8px; align-items:center;}
+  .duo-card .big{font-size:48px;}
+  .duo-card b{font-family:var(--display); font-weight:400; font-size:19px;}
+  .duo-card p{font-size:14px; color:var(--sub);}
+
+  /* scene 5: screens */
+  .screens{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; width:100%; max-width:560px;}
+  .screen{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 12px;
+    display:flex; flex-direction:column; gap:6px; align-items:center;}
+  .screen .big{font-size:36px;}
+  .screen b{font-family:var(--display); font-weight:400; font-size:16px;}
+  .screen small{color:var(--sub); font-size:12.5px;}
+
+  /* scene 6: numbers */
+  .nums{display:flex; gap:14px; flex-wrap:wrap; justify-content:center;}
+  .num{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 20px; min-width:130px;}
+  .num b{font-family:var(--display); font-weight:400; font-size:34px; font-variant-numeric:tabular-nums; display:block;}
+  .num span{font-size:13px; color:var(--sub);}
+  .num.warn b{color:var(--red);}
+
+  footer{text-align:center; color:var(--sub); font-size:13px; border-top:1px solid var(--line); padding-top:24px;}
+  @media (prefers-reduced-motion: no-preference){
+    .scene{animation:rise .5s ease both;}
+    @keyframes rise{from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:none;}}
+  }
+</style>
+<main>
+
+  <section class="scene">
+    <span class="hero-badge">스테이블워치 StableWatch</span>
+    <h1>코인 뉴스<br>거름망</h1>
+    <p class="lead">은행 사람이 보고서를 쓰기 전,<br><b>진짜 사실만 골라주는 체.</b></p>
+  </section>
+
+  <section class="scene">
+    <span class="kicker">문제</span>
+    <h2>코인 뉴스 10개 중<br>3~4개는 엉뚱한 얘기</h2>
+    <div class="newsgrid">
+      <div class="news">📰</div><div class="news">📰</div><div class="news bad"><span>📰</span></div>
+      <div class="news">📰</div><div class="news bad"><span>📰</span></div><div class="news">📰</div>
+      <div class="news">📰</div><div class="news bad"><span>📰</span></div><div class="news">📰</div>
+      <div class="news">📰</div>
+    </div>
+    <p class="note">직접 52일 모아서 세어봤더니 그랬어요. 같은 사건을 정반대로 쓴 기사도 있고, AI 요약이 명백히 틀린 것도 18번 있었어요.</p>
+  </section>
+
+  <section class="scene">
+    <span class="kicker">해결</span>
+    <h2>뉴스를 붓고, 걸러요</h2>
+    <div class="funnel-wrap">
+      <div class="funnel-top">📰📰📰📰📰</div>
+      <div class="funnel">거름망</div>
+      <div class="drop"></div>
+      <div class="fact-card">✓ 근거 있는 사실</div>
+    </div>
+    <p class="note">걸러진 뉴스도 숨기지 않고 "오늘 몇 개를 왜 걸렀는지" 보여줘요.</p>
+  </section>
+
+  <section class="scene">
+    <span class="kicker">판정</span>
+    <h2>참 / 거짓이 아니라<br>5칸으로 나눠요</h2>
+    <div class="steps">
+      <div class="step s1"><span class="dot">1</span><span><b>숫자로 확인됨</b><small>시장 데이터와 대조해서 맞음</small></span></div>
+      <div class="step s2"><span class="dot">2</span><span><b>여러 신문이 말함</b><small>서로 다른 곳 2군데 이상</small></span></div>
+      <div class="step s3"><span class="dot">3</span><span><b>한 신문만 말함</b><small>아직 조심해야 함</small></span></div>
+      <div class="step s4"><span class="dot">4</span><span><b>"~할 예정"일 뿐</b><small>아직 일어난 일이 아님</small></span></div>
+      <div class="step s5"><span class="dot">5</span><span><b>그냥 의견</b><small>사실 검증 대상이 아님</small></span></div>
+    </div>
+    <p class="note">아직 안 일어난 일과 누군가의 생각을 "확인된 사실"처럼 말하지 않는 게 핵심이에요.</p>
+  </section>
+
+  <section class="scene">
+    <span class="kicker">규칙</span>
+    <h2>도장은 규칙이 찍고,<br>AI는 심부름만</h2>
+    <div class="duo">
+      <div class="duo-card"><span class="big">🤖</span><b>AI가 하는 일</b><p>관련 기사를 찾아오고 요약하기</p></div>
+      <div class="duo-card"><span class="big">📏</span><b>규칙이 하는 일</b><p>몇 칸인지 판정 도장 찍기 — 언제 해도 같은 답</p></div>
+    </div>
+    <p class="note">AI가 마음대로 판정하면 못 믿으니까, 판정 코드에는 AI가 아예 못 들어가게 만들어요.</p>
+  </section>
+
+  <section class="scene">
+    <span class="kicker">화면</span>
+    <h2>화면은 4개</h2>
+    <div class="screens">
+      <div class="screen"><span class="big">☀️</span><b>아침 브리핑</b><small>오늘 통과한 사실 + 걸러진 것</small></div>
+      <div class="screen"><span class="big">🗺️</span><b>규제 지도</b><small>미국·EU·한국 어디까지 왔나</small></div>
+      <div class="screen"><span class="big">❓</span><b>물어보기</b><small>"삼성 발행 확정?" → 30초 안에 판정+근거</small></div>
+      <div class="screen"><span class="big">📊</span><b>AI 성적표</b><small>어떤 신문이, AI가 어디서 틀렸나</small></div>
+    </div>
+  </section>
+
+  <section class="scene">
+    <span class="kicker">재료</span>
+    <h2>상상이 아니라<br>진짜 데이터로 만들어요</h2>
+    <div class="nums">
+      <div class="num"><b>310</b><span>모은 기사</span></div>
+      <div class="num"><b>697</b><span>검증한 주장</span></div>
+      <div class="num"><b>52일</b><span>직접 수집</span></div>
+      <div class="num warn"><b>18</b><span>AI가 틀린 횟수 — 공개함</span></div>
+    </div>
+    <p class="note">AI가 틀린 것까지 보여주는 이유: 은행은 "AI를 쓰되 통제되는 것"을 원하니까요.</p>
+  </section>
+
+  <footer>미디어프로젝트 2026-2 · 스테이블워치</footer>
+</main>

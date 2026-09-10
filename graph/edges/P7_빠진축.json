@@ -1,0 +1,58 @@
+[
+ {
+  "axis": "K06",
+  "layer": 1,
+  "doc": "law:예금자보호법:277269",
+  "article": "제29조제2항과 제3항",
+  "date": "2026-01-02",
+  "quote": "부보금융회사는 공사가 정하는 바에 따라 제1항에 따른 보험관계의 성립 여부와 그 내용을 표시하여야 한다. ③ 부보금융회사는 금융거래 계약을 체결하는 경우에는 공사가 정하는 바에 따라 다음 각 호의 사항을 상대방(...)에게 설명하여야 한다. 1. 제1항에 따른 보험관계 성립 여부 2. 제32조제2항에 따른 보험금의 한도",
+  "value": null,
+  "url": "https://www.law.go.kr/법령/예금자보호법/제29조",
+  "verified": true,
+  "verified_by": "law.go.kr DRF XML",
+  "confirmed": false,
+  "note": "퍼플렉시티는 미확인이라 했으나 조문 존재. 은행 발행 시 \"예금 아님\" 고지의 법적 뿌리"
+ },
+ {
+  "axis": "K06",
+  "layer": 1,
+  "doc": "law:금융소비자보호에관한법률:277247",
+  "article": "제19조제3항",
+  "date": "2026-01-02",
+  "quote": "왜곡(불확실한 사항에 대하여 단정적 판단을 제공하거나 확실하다고 오인하게 할 소지가 있는 내용을 알리는 행위를 말한다)하여 설명하거나 대통령령으로 정하는 중요한 사항을 빠뜨려서는 아니 된다.",
+  "value": null,
+  "url": "https://www.law.go.kr/법령/금융소비자보호에관한법률/제19조",
+  "verified": true,
+  "verified_by": "law.go.kr DRF XML",
+  "confirmed": false,
+  "note": "퍼플렉시티는 제20조제1항제1호라고 했으나 현행법에서 그 문구는 제19조제3항"
+ },
+ {
+  "axis": "K07",
+  "layer": 3,
+  "doc": "gov:fsc:87592",
+  "article": "본문",
+  "date": "2026-08-26",
+  "quote": "가상자산거래소 대주주 지분 상한은 확정된 바 없습니다.",
+  "value": null,
+  "url": "https://www.fsc.go.kr/no010102/87592",
+  "verified": true,
+  "verified_by": "WebFetch 2026-09-10",
+  "confirmed": false,
+  "note": "헤럴드경제 2026-08-26 \"대주주 지분 상한 20%\" 보도에 대한 설명. 거래소 규제이며 발행사 적용 여부는 원문에 없음. 매니페스트_v2가 인용한 87598은 국내증시 설명자료(2026-08-27)"
+ },
+ {
+  "axis": "K07",
+  "layer": null,
+  "doc": null,
+  "article": null,
+  "date": "2026-09-09",
+  "quote": null,
+  "value": null,
+  "url": null,
+  "verified": false,
+  "verified_by": null,
+  "confirmed": false,
+  "note": "잔존만기 3개월 이하 국고채와 통화안정증권 잔액(ECOS), 은행 발행 시 BIS와 LCR 처리 자료, 한은의 결제 인프라 기반 효용 논증: 전부 확인 범위에서 없음"
+ }
+]

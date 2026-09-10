@@ -1,0 +1,1224 @@
+작업을 정리하고 공유하세요
+여러 세션에 걸쳐 파일, 메모리, 컨텍스트를 함께 보관하세요.
+
+프로필 아바타
+① 데이터 정당성 — 지금 제일 찜찜해하는 부분
+
+크립토/스테이블코인 뉴스의 "주장(claim) 검증"에 쓸 수 있는 공개 데이터셋이 존재하는지 조사해줘.
+- 뉴스 기사에서 주장을 추출하고 참/거짓/불확실 라벨을 단 공개 데이터셋 (예: FEVER, ClaimBuster 계열, 금융 도메인 특화가 있는지)
+- 크립토 뉴스 코퍼스로 공개된 것 (학술용, Kaggle, HuggingFace 포함)
+- 없다면: 학술 논문이나 졸업 프로젝트에서 "직접 수집한 소규모 코퍼스"를 연구 자료로 정당화하는 일반적인 방식 (수집 기간, 규모, 라벨링 방법 명시 등)
+내 상황: 52일간 자체 수집한 기사 310건, 추출 주장 697건, AI 잠정 라벨 + 사람 골드셋 50건으로 검증 예정. 이 규모가 유사 연구 대비 어느 정도인지 비교해줘.
+각 항목마다 원출처(논문, 데이터셋 페이지) 링크를 반드시 붙여줘.
+
+② 은행 실무 워크플로 — 페르소나가 추정에 머물러 있음
+
+한국 시중은행(국민, 신한, 우리, 하나 등)의 디지털자산/스테이블코인 TF나 컴플라이언스 부서가 시장 동향을 어떻게 추적하는지 조사해줘.
+- 내부 동향보고서를 어떤 주기로, 어떤 정보원(뉴스, 리서치사, 규제기관 공시)으로 작성하는지 공개된 사례나 인터뷰
+- 은행원이 코인 관련 뉴스의 사실 여부를 확인해야 했던 공개 사례 (오보로 인한 혼선 사례 포함)
+- 해외 은행(JPMorgan, Citi 등)의 digital asset intelligence 조직 운영 방식
+2024년 이후 자료 위주로, 각 항목마다 원출처 기사/보고서 링크를 붙여줘.
+
+③ 경쟁 서비스와 시장 규모 — 매니페스트 11장 TAM이 비어 있음
+
+"뉴스 기반 금융 리스크 검증" 시장의 기존 서비스와 시장 규모를 조사해줘.
+- adverse media screening 서비스 현황 (Moody's/RDC, LexisNexis, ComplyAdvantage 등)과 크립토 특화 여부
+- 크립토 인텔리전스/뉴스 검증 서비스 (Chainalysis, Elliptic, Messari 등이 뉴스 검증 기능을 제공하는지)
+- 레그테크(RegTech) 시장 규모 추정치와 그중 미디어 스크리닝 부문 비중
+- 이들 서비스가 "개별 주장 단위 검증"까지 하는지, 아니면 기업/인물 단위 스크리닝에 머무는지
+각 수치와 주장마다 원출처(시장조사 보고서, 공식 사이트) 링크를 붙여줘.
+
+④ 1차 사료 가용성 — SW-PL-04 실현 가능성이 미확인
+
+다음 기관들이 스테이블코인/디지털자산 관련 공지를 RSS 피드나 공개 API로 제공하는지 기관별로 확인해줘: 한국 금융위원회, 금융감독원, 한국은행, 미국 SEC, OCC, 유럽 ECB, ESMA.
+- 기관별로: RSS/API 존재 여부, URL, 갱신 주기, 디지털자산만 필터링 가능한지
+- RSS가 없는 기관은 보도자료 페이지의 구조화 정도 (스크래핑 난이도 판단용)
+각 기관마다 실제 피드 URL 또는 공식 페이지 링크를 붙여줘.
+
+⑤ 규제 타임라인 — 화면 2(규제 지도)의 재료
+
+2026년 9월 기준 스테이블코인 규제의 최신 상태를 미국, EU, 한국 3개 지역별로 타임라인으로 정리해줘.
+- 미국: GENIUS Act의 현재 시행 단계, 하위 규정 제정 일정, 은행의 스테이블코인 발행/수탁 허용 범위
+- EU: MiCA 스테이블코인(EMT/ART) 조항의 시행 현황과 남은 마일스톤
+- 한국: 스테이블코인 관련 법안(디지털자산기본법 등)의 국회 처리 상태, 금융위 입장, 은행권 컨소시엄 동향
+각 항목마다 날짜와 원출처(법안 원문, 규제기관 발표, 주요 언론) 링크를 붙여줘. 향후 6개월 내 예정된 이벤트도 별도로 뽑아줘.
+
+⑥ 미확인 목록 2건 — 매니페스트 15장에 걸려 있는 것
+
+다음 두 가지가 실제로 있었던 일인지 팩트체크해줘.
+1. 2026년 8월 26일경 쿠팡과 우리은행의 스테이블코인 관련 PoC(개념검증) 발표 다면 정확한 내용과 날짜
+2. 삼성 관련 스테이블코인 발행설이 공식 확인된 적 있는지 — 발언 주체, 시점, 이후 정정 여부
+확인되면 원출처 기사 링크, 확인 안 되면 "확인 불가"로 명시해줘.
+
+순서 추천: ①이 지금 불안의 핵심이니 먼저 돌리고, ②③은 기획서 밀도(니즈 근거, 드시 확인, ⑤⑥은 화면 재료라 나중이어도 됩니다. 결과 나오면 매니페스트.md 해당절에 반영하는 건 제가 하겠습니다.
+
+아래는 요청 순서대로 ① 데이터 정당성을 가장 깊게 검토하고, 이후 ②–⑥을 기획서에 바로 옮길 수 있는 형태로 정리한 조사 메모입니다. 결론부터 말하면, “크립토 뉴스의 개별 주장”을 참·거짓·불확실 및 근거까지 붙여 공개한 대형 벤치마크는 사실상 부재합니다. 따라서 귀하의 52일·310기사·697주장 데이터는 단순한 “작은 데이터”가 아니라, 해당 도메인 공백을 직접 메우는 파일럿/도메인 특화 골드 코퍼스로 충분히 정당화할 수 있습니다.
+
+① 데이터 정당성
+결론: 활용 가능한 공개 데이터와 공백
+구분	데이터셋	규모·라벨	귀하 프로젝트와의 관계	원출처
+범용 주장 검증	FEVER	185,445 claims, SUPPORTS / REFUTES / NOT ENOUGH INFO, 근거 문장 포함	가장 표준적인 3분류 구조. 다만 Wikipedia 기반의 인공적으로 변형된 주장이라 실시간 뉴스·금융·크립토와는 분포가 다름	
+FEVER 논문
+, 
+데이터
+ 
+체크워디 주장 탐지	ClaimBuster	미국 대선 토론 발화 23,533문장, 인간 라벨	“기사에서 검증할 가치가 있는 주장”을 선별하는 단계에는 참고 가능. 그러나 참/거짓 판정 데이터셋은 아님	
+ClaimBuster 논문
+ 
+실세계 웹 검증	AVeriTeC	4,568 real-world claims, 50개 팩트체크 기관, Q/A·근거·판정	실전형 설계의 좋은 준거. 주장 정규화→질문 생성→웹 근거 수집→독립 검수라는 다단계 QC가 특히 유용	
+NeurIPS 논문
+ 
+범용 자연발생 주장	MultiFC	34,918 claims, 26개 팩트체크 사이트, 전문가 저널리스트 판정	“뉴스/공적 발화에서 자연발생한 주장” 데이터라는 점은 유사. 크립토 특화는 아님	
+MultiFC 논문
+ 
+금융 특화 팩트체크	Fin-Fact	약 3,369~3,562 금융 주장, True / False / NEI, 텍스트·이미지·근거	가장 가까운 공개 금융 벤치마크. 하지만 소스는 PolitiFact·Snopes·FactCheck 계열이며 “크립토 뉴스 기사 자체”가 중심은 아님	
+논문
+, 
+GitHub 데이터
+ 
+금융 문서 검증	FINDVER	2,100개 금융문서 검증 사례, 추출·수치추론·지식추론 3개 하위셋	10-K/10-Q 등 기업공시 중심. 뉴스 주장 검증과는 다르지만 금융 근거검증의 어려움을 보여주는 인접 벤치마크	
+EMNLP 2024 논문
+ 
+크립토 뉴스 감성	CryptoLin	기사 2,683건, 2018-07~2022-01(42개월), 긍정/중립/부정, 3인 블라인드 주석	크립토 뉴스 공개 코퍼스로는 학술적으로 가장 직접적인 비교 대상 중 하나. 단, 감성 라벨이지 진실성 라벨이 아님	논문, 
+GitHub
+ 
+크립토 뉴스 감성	DLT-Sentiment-News	23,301 headlines/descriptions, 2021~2025 중반, 커뮤니티 감성 주석	대형 크립토 뉴스 헤드라인·요약 코퍼스. 역시 진실성·근거 라벨이 아니라 감성/투표 신호	
+DLT-Corpus 논문
+, Hugging Face 데이터 
+크립토 뉴스 원문	CryptoVision	원자료 188,431건, 정제 후 117,961건, 2017~2025	크립토 뉴스 수집 규모 비교에는 유용. FinBERT 감성 라벨이지 인간 검증 진실성 라벨이 아님	
+Mendeley Data
+ 
+크립토 뉴스 원문	Kaggle Crypto News+	2021-10-12~2023-12-19 기사, title/text/source/subject/sentiment	뉴스 수집·정규화 형식 참고용. 라벨의 검증 방법과 품질은 학술 벤치마크보다 약하게 취급해야 함	
+Kaggle 데이터
+ 
+“크립토 뉴스의 주장 검증” 공개셋은 있나
+현재 확인 가능한 공개 자료 기준으로는 다음과 같이 정리하는 것이 정확합니다.
+
+있다: 범용 주장 검증 데이터셋(FEVER, AVeriTeC, MultiFC), 금융 도메인 주장 검증 데이터셋(Fin-Fact, FINDVER), 크립토 뉴스 코퍼스(CryptoLin, CryptoVision, Kaggle/Hugging Face 수집셋)
+
+없다 또는 매우 희소하다: “크립토·스테이블코인 뉴스 원문에서 atomic claim을 추출하고, 각 주장에 참 / 거짓 / 불확실과 외부 근거를 붙인 공개 대형 벤치마크”
+
+따라서 제품/연구의 차별성은 “크립토 뉴스 수집” 자체가 아니라, 기사 단위가 아닌 주장 단위의 검증가능성·사실성·근거 연결에 둬야 합니다.
+
+이 공백은 Fin-Fact 논문도 금융 허위정보 대응을 위해 특화 벤치마크가 부족하다고 전제한 뒤 데이터셋을 제안했다는 점에서 뒷받침됩니다. Fin-Fact는 3,562개 수준의 금융 주장으로도 독립 벤치마크로 제시됐습니다.
+
+귀하 데이터의 상대적 위치
+귀하의 현황은 다음과 같습니다.
+
+52
+일
+,
+310
+개 기사
+,
+697
+개 추출 주장
+,
+50
+개 인간 골드 검증 예정
+52일,310개 기사,697개 추출 주장,50개 인간 골드 검증 예정
+기사당 평균 추출 주장은 약 
+697
+/
+310
+=
+2.25
+697/310=2.25개입니다. 이는 “기사에서 하나 이상의 검증 가능한 원자 주장만 골라낸다”는 목적에 비추어 과도하게 분해한 수준이 아니며, 실무적 검토량에도 적절합니다.
+
+비교 기준	귀하 데이터	비교 데이터	해석
+수집 기간	52일	CryptoLin 42개월	장기 감성 코퍼스와 기간 경쟁을 할 필요는 없음. 귀하는 규제·시장 변화가 빠른 스테이블코인 이슈의 단기 시계열 스냅샷으로 포지셔닝해야 함
+기사 수	310	CryptoLin 2,683 기사	약 11.6% 수준. 하지만 CryptoLin은 감성 연구용 장기 수집 코퍼스이며, 주장 단위 검증이 아님
+주장 수	697	Fin-Fact 3,369~3,562 claims	금융 일반 팩트체크 벤치마크의 약 20% 수준. 파일럿/도메인 특화 연구로는 의미 있는 표본
+골드셋	50 claims	QuanTemp는 50개 수동 주석을 seed로 사용	50건은 초기 사람 검증·프롬프트 설계·오류 유형 탐색에는 방어 가능하지만, 최종 성능 주장의 주평가셋으로는 작음
+인간 주석 방식	AI 잠정 라벨 + 50건 인간 검증 예정	AVeriTeC는 주장 정규화·질문/답변·판정·독립 QC를 분리	AI를 초벌 분류자로 쓰는 것은 가능하나, 골드셋에는 독립적인 인간 판정과 근거 기록이 핵심
+기획서에 쓸 권장 표현
+다음과 같이 쓰면 과장 없이 연구 정당성이 생깁니다.
+
+본 연구는 2026년 [수집 시작일]부터 [종료일]까지 52일 동안 수집한 스테이블코인 및 디지털자산 관련 뉴스 기사 310건에서 검증 가능한 원자 주장 697건을 추출한 도메인 특화 파일럿 코퍼스를 구축한다. 공개된 범용 팩트체크 벤치마크는 존재하나, 크립토 뉴스의 원자 주장에 대해 시점 민감성을 반영한 참·거짓·불확실 판정과 1차 사료 근거를 함께 제공하는 공개 대형 코퍼스는 제한적이다. 따라서 본 코퍼스는 일반 모델의 리더보드 성능을 주장하기보다, 한국어/크립토 뉴스 환경에서의 주장 추출·근거 검색·검증 워크플로의 실현 가능성과 오류 유형을 평가하기 위한 파일럿 연구 자료로 사용한다.
+
+50건 골드셋을 최소한 방어 가능하게 만드는 방법
+50건을 그대로 유지한다면 “정확도 1%p까지 정밀하게 일반화”하는 용도가 아니라, 품질보증 및 오류 분석용 골드셋이라고 한정해야 합니다.
+
+697개 전체에 AI 잠정 라벨을 저장하되, AI 라벨을 정답으로 표현하지 않습니다.
+
+50건은 무작위 표본만 쓰지 말고, 참 / 거짓 / 불확실, 주장 유형, 기관·기업·규제·발행·준비금·PoC 등 주제별로 층화 추출합니다.
+
+각 골드 항목에는 최소한 다음 필드를 남깁니다: 원문 기사 URL, 기사 발행시각, 추출 주장, 주장 시점, 판정, 판정 근거 URL, 근거 발행기관, 근거 발행일, 판정 사유, 주석자.
+
+가능하다면 50건 중 최소 20~30건은 2명의 독립 인간 평가자가 중복 판정하고 Cohen’s 
+κ
+κ 또는 Krippendorff’s 
+α
+α를 보고합니다.
+
+불일치는 제3자 또는 합의 회의로 결정하되, 최초 개별 판정도 보존합니다.
+
+불확실은 오류나 결측이 아니라 중요한 정답 클래스입니다. “공식 1차 출처가 없거나, 시점상 확인되지 않거나, 표현이 모호해 판정 불가”라는 명시적 정의가 필요합니다.
+
+50건의 목표는 AI 라벨의 “정확도” 하나가 아니라, 정확도·클래스별 재현율·근거충족률·잘못된 확신율을 함께 보는 것입니다.
+
+참고로 FEVER는 판정자 간 Fleiss’ 
+κ
+=
+0.6841
+κ=0.6841, FEVEROUS는 약 10%를 품질검증 샘플로 두고 판정 라벨에 대해 
+κ
+=
+0.65
+κ=0.65를 보고했습니다. 완벽한 합의가 아니라 재현 가능한 주석 규칙과 독립 검토를 보여주는 것이 핵심입니다.
+
+② 은행 실무 워크플로
+한국 은행: 공개적으로 확인되는 범위
+한국 시중은행의 내부 디지털자산 TF가 “매일 몇 시에 어떤 뉴스 DB를 보고 어떤 형식의 동향보고서를 작성한다”는 수준의 세부 워크플로는 공개되지 않았습니다. 따라서 기획서에서 그러한 절차를 사실처럼 단정하면 위험합니다.
+
+공개 자료에서 방어 가능한 사실은 다음 정도입니다.
+
+한국은행은 가상자산사업자(VASP) 자료 제출을 요청해 가상자산 시장을 모니터링·분석한다고 명시했으며, 향후에도 모니터링·분석을 강화하겠다고 밝혔습니다. 이는 뉴스만이 아니라 사업자 제출 데이터, 지급결제 데이터, 시장·규제 정보를 결합하는 감독기관형 모니터링의 공개 사례입니다.
+
+한국은행은 원화 스테이블코인에 대해 은행 중심 발행이 바람직하다는 공식 입장을 공개했습니다. 따라서 은행권의 관심은 단순 가격 동향이 아니라 지급결제 안정성, 준비자산, 발행자 적격성, AML, 환매·유동성 리스크로 확장됩니다.
+
+금융위원회는 초기 도입 단계에서 은행이 50%+1 지분을 가진 컨소시엄 중심의 원화 스테이블코인 발행을 검토·보고한 것으로 보도됐습니다. KB·신한·우리·하나 등은 컨소시엄 또는 별도 협력 구성을 검토해왔다는 보도가 있습니다.
+
+KB는 KODA를 설립했고, 신한과 NH농협은 KDAC에 투자한 것으로 보도돼 있습니다. 이는 은행이 직접 영업하기보다 수탁·인프라·지분투자 방식으로 디지털자산 역량을 확보하는 공개 사례입니다.
+
+공개 근거 기반의 실무 페르소나
+제품 페르소나는 다음처럼 “사실로 확인된 업무 조건”과 “제품 가설”을 분리해 써야 합니다.
+
+페르소나	공개적으로 확인된 업무 조건	검증 서비스의 기회
+은행 디지털자산/신사업 담당	원화 스테이블코인 발행구조, 지급결제 적용, 수탁 인프라, 법제화 일정에 대응해야 함	뉴스 기사에서 “누가 무엇을 발표했는지”를 원출처·규제현황과 대조하는 제품
+AML·컴플라이언스 담당	제재, 고객확인, 의심거래, 지갑·거래상대방 리스크를 다뤄야 함	단순 뉴스 요약이 아니라 주장별 근거·발행시점·후속 정정·불확실성을 기록하는 감사가능한 검토흐름
+리서치/전략 담당	규제 변화와 컨소시엄·인프라·시장 참여자 변화를 추적해야 함	기관별 RSS·공시·보도자료를 1차 사료로 연결한 규제 타임라인과 주장 단위 알림
+“은행원이 코인 뉴스 사실 여부를 검증해야 했던” 공개 사례
+개별 은행 내부 담당자가 특정 오보를 검증했다는 공개 인터뷰는 이번 조사 범위에서 확인하기 어려웠습니다. 다만, 시장 참여자와 은행·컴플라이언스 조직이 뉴스만 믿을 수 없는 상황을 보여주는 공개 사례는 있습니다.
+
+2026년 7월 Open USD(OUSD) 컨소시엄 발표에서 삼성전자·두나무 등 한국 기업들이 파트너로 기재됐으나, 삼성 측은 공식 협의가 없었다고 선을 그었습니다. 이런 경우 “컨소시엄 참여”, “스테이블코인 발행 참여” 같은 뉴스 주장은 회사 공식 입장과 원 발표문을 대조해야 합니다.
+
+쿠팡·우리은행 PoC는 2026년 7월 27일 쿠팡 공식 보도자료가 존재합니다. 반면 “8월 26일경 발표”라는 2차 전파 정보는 날짜가 틀린 것으로 확인됩니다. 날짜·발표 주체·기술검증 범위를 원출처로 확인해야 하는 전형적 사례입니다.
+
+해외 은행의 공개 운영 단서
+JPMorgan·Citi도 정확한 내부 보고 주기나 뉴스 소스 목록을 공개하지는 않습니다. 다만 조직과 업무 범위는 비교적 명확합니다.
+
+JPMorgan은 2015년부터 Blockchain Center of Excellence를 운영해왔고, 현재 Kinexys를 통해 블록체인·디지털자산 상품과 규제 대응을 전개합니다. Securities Services Regulatory Practice와 Kinexys 공동 리더가 디지털자산 규제·시장 변화·규제기관 참여를 다루는 공개 대담도 있습니다.
+
+JPMorgan Markets는 분석가와 NLP 기반 Smart Buzz를 이용해 뉴스·보고서에서 테마와 감성을 분석한다고 설명합니다. 다만 이는 “뉴스 기반 인텔리전스”이지, 개별 문장을 법적·사실적으로 참거짓 판정하는 제품이라고 보기는 어렵습니다.
+
+Citi는 전사적 통합 전략 아래 Digital Assets 팀을 운영한다고 밝히며, Treasury 담당 조직이 디지털자산 활용 가능성을 평가하는 프레임워크를 제시합니다.
+
+Chainalysis·Elliptic 같은 외부 제공업체를 결합해 온체인 지갑 리스크, 제재, 거래흐름, 실소유자·오프체인 컨텍스트를 보완하는 구조가 은행의 더 현실적인 모델입니다.
+
+③ 경쟁 서비스와 시장 규모
+경쟁군은 “뉴스 검증”보다 “리스크 스크리닝”에 가깝다
+시장에는 이미 방대한 뉴스·제재·PEP·지갑 리스크 스크리닝 제품이 있습니다. 그러나 이들의 기본 단위는 대체로 개인·법인·지갑·거래이지, “뉴스 속 문장 하나의 참·거짓·불확실”이 아닙니다.
+
+서비스	주요 단위	크립토 관련성	개별 주장 참/거짓 판정 여부
+Moody’s Grid/RDC 계열	개인·법인 risk profile, adverse media, PEP, 제재	일반 금융범죄·KYC 중심. 크립토 기업도 고객·거래상대방 스크리닝 대상으로는 가능	아니오. 부정적 보도·위험 카테고리·사건 단계·출처를 구조화하여 검토 우선순위를 정함
+LexisNexis Risk Solutions	개인·법인·거래상대방의 adverse media, KYC/EDD	일반 AML·KYC 중심	일반적으로 아니오. 기사 진실성 판정이 아니라 위험 연관성·엔터티 매칭이 중심
+ComplyAdvantage	개인·법인, 제재·PEP·부정 뉴스	일반 금융범죄 리스크 중심, 크립토 기업도 AML 대상	아니오. 다국어 뉴스에서 위험 신호를 탐지·분류하는 adverse-media 제품
+Chainalysis	지갑 주소·온체인 거래·엔터티	매우 높음. 거래소·은행·정부의 온체인 AML·제재·사기 대응	아니오. 온체인 귀속·거래흐름·지갑 위험을 검증·분석
+Elliptic	지갑·거래·엔터티·온체인 위험	매우 높음. 은행·거래소·정부 대상	아니오. 온체인 리스크에 더해 소유·관할·부정적 미디어 같은 오프체인 컨텍스트를 제공
+Messari	프로젝트·토큰·프로토콜 리서치/데이터	매우 높음	일반적인 뉴스 팩트체킹 엔진으로 포지셔닝되지는 않음. 리서치·프로젝트 데이터·시장 인텔리전스에 가까움
+Moody’s Grid는 13,500개 이상의 adverse-media 소스를 바탕으로 50개 이상 위험 카테고리, 위험 단계·시점·관련성 필터를 제공하고, 뉴스·규제공시·공개자료를 screening workflow에 통합한다고 설명합니다. 이는 귀하 제품의 가장 가까운 “구매 예산 카테고리”일 수 있지만, 제품 기능은 주장 검증과 다릅니다.
+
+ComplyAdvantage는 200개 이상 국가·지역의 11,000개 이상 검증된 미디어 소스를 매일 갱신하고, 금융범죄 위험과 연결되는 부정적 보도를 탐지·분류합니다. 그러나 이것도 “그 뉴스가 사실인가”가 아니라 “그 뉴스가 특정 고객의 금융범죄 위험을 시사하는가”를 위한 서비스입니다.
+
+크립토 특화 경쟁의 한계와 기회
+Chainalysis는 은행·수탁사·결제사업자의 AML, 제재, 사기, 스테이블코인 리스크 관리를 지원하고, 지갑을 제재·알려진 불법 엔터티·위험 카테고리와 대조합니다. 뉴스 주장 라벨링은 핵심 제품 설명에 없습니다.
+
+Elliptic은 은행·거래소·정부를 위해 지갑·거래·엔터티의 온체인 리스크를 스크리닝·모니터링·조사합니다. Copilot은 오프체인 사건에 따른 위험 변화를 위해 adverse-media 커버리지를 제공하지만, 여전히 “리스크 맥락 제공”이지 문장 단위 fact verdict는 아닙니다.
+
+따라서 귀하 서비스가 차지할 수 있는 공백은 다음입니다: “새로운 크립토 뉴스가 들어왔을 때, 특정 기업·은행·발행사·규제기관에 관한 개별 주장을 분해하고, 발표 주체·공식 공지·규제 원문으로 연결해 확인됨 / 반박됨 / 현재 확인 불가를 판정하는 워크플로.”
+
+시장 규모: 숫자는 범위로 제시해야 함
+레그테크 시장 규모는 조사기관마다 정의가 크게 달라 하나의 숫자를 TAM으로 단정하면 위험합니다.
+
+조사기관·정의	2026년 시장 추정	예측	주의점
+MarketsandMarkets, 전체 RegTech	195억 달러	2021년 76억 달러에서 2026년 195억 달러	정의·조사 시점이 비교적 오래됨
+Future Market Insights, 전체 RegTech	201억 달러	2036년 1,167억 달러, CAGR 19.2%	광범위한 RegTech 정의
+360iResearch/ResearchAndMarkets 유통 수치	292억 달러	2032년 934.8억 달러, CAGR 21.33%	시장 정의와 공급사 범위 확인 필요
+FinTech Global, 금융기관 50인 이상 대상 RegTech TAM	2,454억 달러	보수적 추정이라고 주장	“시장 매출”이 아니라 광범위한 잠재 TAM에 가까워 직접 비교 부적절
+Adverse-media screening 단독 추정	2025년 32억 달러	2034년 108억 달러, CAGR 14.8%	단일 민간 조사치이며, 정의·신뢰도 검증이 필요
+TAM 슬라이드 권장 구조
+기획서 11장에는 하나의 거대한 TAM 수치를 확정값으로 제시하기보다 3단으로 쓰는 것이 낫습니다.
+
+Top-down: 글로벌 RegTech 시장은 조사기관에 따라 2026년 약 201억~292억 달러로 추정된다. 정의가 다르므로 범위로 제시한다.
+
+Adjacent market: adverse-media screening은 KYC/AML·평판 리스크 업무 예산 안에 존재하며, 단일 시장조사 추정으로는 2025년 32억 달러 규모라는 수치가 있다. 단, 1개 조사기관 수치이므로 “참고치”로 표시한다.
+
+Bottom-up/SAM: 초기 고객을 한국 은행·증권·거래소·핀테크의 디지털자산, AML, 리서치, 규제대응팀으로 한정하고, 좌석 수·기관 수·연간 구독 단가를 가정해 별도 산정한다.
+
+그리고 차별화 문장은 이렇게 두는 것이 좋습니다.
+
+기존 adverse-media·블록체인 인텔리전스는 고객·법인·지갑·거래에 대한 위험 스크리닝을 중심으로 한다. 본 서비스는 뉴스의 개별 주장 단위를 공식 1차 사료 및 규제 원문과 연결해, 확인됨·반박됨·확인 불가의 증거 기반 판정과 감사 가능한 근거 이력을 제공한다.
+
+④ 1차 사료 가용성
+기관별 RSS/API·스크래핑 판단
+기관	RSS/API	실제 URL 또는 공식 페이지	디지털자산만 필터	갱신·수집 판단
+금융위원회	RSS 있음	
+RSS 안내
+, 보도자료 RSS: http://www.fsc.go.kr/about/fsc_bbs_rss/?fid=0111	전용 피드는 없음	보도자료·보도설명·공지별 RSS. 키워드 필터는 수집 후 스테이블코인, 가상자산, 디지털자산 등으로 자체 처리
+금융감독원	보도자료 RSS는 이번 조사에서 명확히 확인 못함; DART RSS 있음	
+DART RSS 안내
+공시 단위로 가능하나 디지털자산 전용은 아님	DART는 최근공시·회사별 RSS를 제공. 감독원 일반 보도자료는 공식 목록 HTML과 검색 기능 중심으로 보는 것이 안전
+한국은행	RSS 표시는 있으나 정확한 feed endpoint는 이번 조사에서 공식 문서로 확정 못함	
+뉴스·의사록
+, 
+통화정책 보도자료
+전용 피드 확인 불가	구조화된 목록·상세 페이지·첨부파일·담당부서·게시일이 있어 HTML 수집은 중간 난이도. RSS 아이콘/피드 URL은 실제 페이지 HTML에서 별도 확인 필요
+미국 SEC	RSS 및 데이터 API 있음	
+RSS 목록
+, 
+보도자료
+, EDGAR API 문서	전용 암호자산 RSS는 없음	보도자료·소송·성명 등 카테고리 RSS 제공. 키워드 필터와 SEC Crypto Task Force/규칙제정 페이지 결합 권장
+미국 OCC	RSS 있음	
+OCC RSS 페이지
+, 뉴스 RSS로 알려진 https://www.occ.gov/rss/occ_news.xml	전용 피드 없음	Alerts, Bulletins, News Releases 등 분리 피드. stablecoin, GENIUS, digital asset, custody 등 키워드 후처리
+ECB	RSS 있음, MID RSS/SOAP도 제공	
+ECB RSS
+, 
+press feed
+전용 디지털자산 피드 없음	보도자료·연설·간행물 등 발행 시 자동 갱신. RSS/SOAP 기반 시장정보도 별도 운영
+ESMA	RSS 있음	
+ESMA RSS XML
+, 
+MiCA 페이지
+전용 피드 없음	전체 RSS를 수집하고 MiCA, ART, EMT, stablecoin, crypto-asset 키워드/문서유형으로 후처리
+구현 우선순위
+초기 MVP는 다음 순서가 현실적입니다.
+
+금융위원회 RSS: 한국 정책 뉴스의 가장 명확한 자동수집 출발점
+
+SEC·OCC RSS: 미국 규제·은행 수탁·발행 이슈의 1차 사료
+
+ESMA·ECB RSS: MiCA, 유로 디지털금융, 통화·지급결제 관점 보완
+
+한국은행 HTML 수집: 기사 목록·상세문·첨부 PDF/HWP까지 수집하되, 변경 감지와 파일 파싱을 별도 설계
+
+금감원: DART RSS는 기업공시 모니터링에 활용하고, 일반 보도자료는 페이지 구조를 별도 점검
+
+중요한 점은 기관 RSS가 대개 주제별 필터 API가 아니라 전체/문서유형 피드라는 것입니다. 따라서 제품의 경쟁력은 RSS 존재 자체가 아니라, 수집 후의 주장 추출→엔터티 정규화→기관 원문 매칭→시점 관리→판정 근거 보관에 있습니다.
+
+⑤ 규제 타임라인
+미국
+날짜	상태·사건	의미
+2025년 7월	GENIUS Act 제정	연방 차원의 payment stablecoin 프레임워크를 만들고, Treasury 및 건전성 감독기관의 하위규정 제정을 요구
+2025-09-19	Treasury가 GENIUS Act 이행 관련 ANPRM을 연방관보에 게시	BSA/AML, 제재, 주·연방 감독, 해외 발행자 등 이행 쟁점에 대한 의견수렴 시작
+2026-02-25	OCC가 GENIUS Act 이행 NPRM 발표	OCC 관할 permitted payment stablecoin issuer 및 일부 수탁 활동에 관한 포괄 규칙 초안. BSA/AML/OFAC 부분은 Treasury와 별도 규정으로 처리
+2026-03-02	OCC 제안규칙 연방관보 게시	은행 자회사·무보험 국법은행·연방저축은행·일부 외국은행 지점 등 OCC 관할 주체 관련 발행·감독 프레임을 구체화
+2026-06-22	FinCEN·OCC·Fed·FDIC·NCUA 공동 BSA/CIP 제안규칙	허용된 payment stablecoin issuer를 BSA상 금융기관으로 다루고 고객확인 프로그램을 요구하는 방향
+2026-08-17/18	Treasury가 발행·제공·판매 금지 및 해외 발행자 관련 NPRM 발표/연방관보 게시	미국 내 발행·제공·판매의 범위 및 foreign payment stablecoin issuer 경로를 구체화하려는 단계
+2026년 9월 3일 기준 상태: GENIUS Act는 존재하지만, 핵심 하위규정은 여전히 제안·의견수렴 또는 최종화 대기 단계입니다. 즉, “은행이 지금 모든 스테이블코인을 자유롭게 발행할 수 있다”는 표현은 부정확합니다. 은행·은행 자회사 등은 법과 최종 규정, 인가·감독 요건의 적용을 받으며, OCC 제안은 발행, 인가, 준비금, 건전성, 자본, 보고, 수탁 등을 다룹니다.
+
+향후 6개월 관찰점:
+
+Treasury 2026년 8월 제안규칙의 의견제출 마감은 2026년 10월 19일로 보도됐습니다.
+
+OCC 수장은 2026년 11월까지 최종규칙을 목표로 한다고 공개적으로 언급한 것으로 보도됐습니다. 다만 이는 공식 최종 공고 전까지 목표일일 뿐 확정일이 아닙니다.
+
+최종규칙과 법정 시행 조건의 관계에 따라 실제 적용 시점은 2027년으로 넘어갈 수 있습니다.
+
+유럽연합
+날짜	상태·사건	의미
+2023-06-09	MiCA Regulation (EU) 2023/1114 관보 게재	EU 단일 가상자산 규제의 법적 기반
+2023-06-29	MiCA 발효	규정은 발효했으나 대부분의 적용은 이후 단계적으로 진행
+2024-06-30	MiCA Title III(ART) 및 Title IV(EMT) 적용 개시	자산연동토큰(ART)과 전자화폐토큰(EMT), 즉 스테이블코인 핵심 발행 규정이 적용되기 시작
+2024-12-30	MiCA 전면 적용	CASP 등 나머지 체계가 원칙적으로 적용
+2025-01-17	ESMA·EU 집행위, 비준수 ART/EMT에 대한 지침 발표	국가 감독당국이 CASP의 비준수 스테이블코인 제공을 늦어도 2025년 1분기 말까지 정리하도록 기대
+2026년 9월 3일 기준 상태: EU에서 ART·EMT 규정은 이미 적용 중이며, MiCA 자체도 전면 적용 단계입니다. 남은 과제는 법 “시행 여부”보다는 국가별 인가 전환, 감독 집행의 일관성, ESMA 등록부 활용, 기술표준과 감독 실무의 정착입니다.
+
+향후 6개월 관찰점:
+
+EU 공통법의 신규 발효 마일스톤보다, 개별 회원국의 CASP 전환기간 종료와 감독조치가 더 중요합니다.
+
+ESMA Interim MiCA Register와 각국 감독당국의 인가목록에서 ART/EMT 발행사·CASP 상태를 계속 대조해야 합니다.
+
+한국
+날짜	상태·사건	의미
+2025년 6월 이후	여야·의원 발의 디지털자산 관련 법안들이 국회에 누적	디지털자산 산업 규율, 거래소, 스테이블코인 발행·유통이 입법 쟁점으로 남음
+2026-01 초	금융위의 은행 중심 컨소시엄(50%+1) 우선 허용안 보도	초기 원화 스테이블코인 발행자를 은행 주도 컨소시엄으로 두려는 방향. 다만 입법 확정이 아님
+2026-05-29	KB 중심 스테이블코인 컨소시엄 논의 보도	NH농협·IBK·지방금융·Toss 등이 포함될 수 있는 구성이 거론됐고, 신한·우리도 별도 제휴를 검토한 것으로 보도
+2026-07~08	금융위의 정부안 준비 및 통합 법안 방향 보도	10개 안팎 계류 법안을 하나의 기본법 틀로 다루려는 방향이 거론됨
+2026-08-25~29	정부안이 아직 국회 정부제출 법안으로 접수되지 않았고, 9월 초 의원입법 형식 제출 가능성 보도	2026년 9월 3일 현재 법안은 확정·통과되지 않았다는 점이 핵심
+2026년 9월 3일 기준 상태: 한국의 원화 스테이블코인 발행·유통을 포괄적으로 규율할 디지털자산기본법은 아직 제정되지 않은 상태로 보는 것이 안전합니다. 계류 법안이 있고 금융위가 정부 초안을 준비했으며, 은행 지배 컨소시엄 모델이 유력하게 거론됐지만, 입법 주체·최종 지분 요건·시행령 세부조건은 확정되지 않았습니다.
+
+향후 6개월 관찰점:
+
+2026년 9월 초에 예상된 정부안 기반 의원발의가 실제 접수되는지.
+
+정기국회에서 디지털자산기본법 또는 스테이블코인 분리법안이 법안심사소위를 통과하는지.
+
+은행 50%+1 또는 51% 지배 요건이 법률 본문에 들어가는지, 대통령령 위임사항이 되는지.
+
+KB·신한·우리·하나 등 은행권의 컨소시엄·수탁·결제 실증이 법제화 이전의 준비 단계인지, 정식 발행 인가 준비인지 구분해야 합니다.
+
+⑥ 미확인 목록 2건
+1. 쿠팡·우리은행 스테이블코인 PoC
+확인됨. 다만 날짜는 2026년 8월 26일경이 아니라 2026년 7월 27일입니다.
+
+쿠팡의 공식 보도자료에 따르면, 쿠팡과 우리은행은 2026년 7월 27일 원화 스테이블코인 기반 실시간 정산 기술검증(PoC)을 마쳤다고 발표했습니다. 회사는 이를 결제, 실시간 정산, 온·오프램프까지 상용 서비스와 동일한 환경에서 검증한 국내 최초 사례라고 설명했습니다. 
+쿠팡 공식 보도자료
+
+확인 가능한 세부 내용은 다음과 같습니다.
+
+쿠팡이츠 주문 결제를 시나리오로 사용했습니다.
+
+원화 스테이블코인으로 가맹점주에게 실시간 송금·정산되는 흐름을 복수 시나리오로 검증했습니다.
+
+우리은행은 전자지갑과 은행 계좌를 연동해 법정화폐와 스테이블코인의 전환을 지원하는 온·오프램프 구현을 맡았습니다.
+
+2차 보도에서는 스테이블코인 특화 L1인 Tempo 환경에서 진행됐다고 전해졌습니다. 다만 제품 문서에는 이 기술 세부사항을 쿠팡 공식 발표와 분리해 “언론 보도 기준”이라고 표시하는 편이 안전합니다.
+
+매니페스트 반영 권장 문구
+
+2026년 7월 27일 쿠팡과 우리은행은 원화 스테이블코인 기반 실시간 정산 PoC 완료를 공식 발표했다. 쿠팡이츠 주문 결제부터 가맹점 실시간 정산 및 전자지갑·은행계좌 간 온·오프램프 흐름을 상용 서비스와 유사한 환경에서 검증한 사례다. “2026년 8월 26일 발표”라는 날짜는 확인되지 않았으며, 공식 발표일은 7월 27일이다.
+
+2. 삼성의 스테이블코인 발행설
+“삼성이 직접 스테이블코인을 발행한다”는 공식 확인은 찾지 못했습니다. 확인된 것은 삼성월렛의 스테이블코인 지원 방향과, OUSD 컨소시엄 참여설에 대한 공식 협의 부인입니다.
+
+구분해야 할 사실은 세 가지입니다.
+
+구분	확인 결과	근거
+삼성의 자체 스테이블코인 발행	공식 확인 불가	삼성의 공개 방향은 발행이 아닌 Samsung Wallet에서의 기존 스테이블코인 지원·유통 기능에 가깝고, 발행사·체인·수탁 구조·출시국은 확정 공개되지 않음
+Samsung Wallet의 stablecoin 지원 계획	부분 확인	2026년 7월 22일 Galaxy Unpacked에서 삼성 제품 담당자 Lee Dinham이 Samsung Wallet이 stablecoin을 포함한 새로운 디지털 가치 형태를 수용할 것이라고 언급. 다만 발행 계획은 아님
+OUSD 발행 컨소시엄 참여설	부인/정정 성격의 반응 확인	2026년 7월 초 삼성전자가 OUSD 창립 파트너로 이름이 올랐으나, 삼성 측은 공식 협의가 없었다고 밝힘
+Samsung Wallet 기능과 관련해서는 2026년 7월 22일 런던 Galaxy Unpacked에서 Lee Dinham이 발언했고, 당시 화면에는 USDC가 표시됐지만 Circle과의 제휴나 특정 발행사·출시시장·출시시점은 확인되지 않았다는 보도가 있습니다.
+
+따라서 매니페스트에는 다음처럼 써야 합니다.
+
+삼성전자 자체 스테이블코인 발행은 공식 확인되지 않았다. 삼성전자가 2026년 7월 Samsung Wallet의 스테이블코인 지원 방향을 언급한 사실과, OUSD 컨소시엄 명단에 삼성 이름이 포함됐다가 “공식 협의가 없었다”는 회사 반응이 나온 사실은 구분해야 한다. 즉, 확인된 것은 지갑·결제·유통 가능성이지 자체 발행 확정이 아니다.
+
+기획서 반영 우선순위
+①을 먼저 반영: “공개 대형 크립토 주장검증 데이터셋 부재”와 “697 주장 도메인 특화 파일럿 코퍼스”를 문제정의·방법론의 중심으로 둡니다.
+
+②는 가설과 사실을 분리: 은행의 상세 내부 보고 주기는 공개 확인 불가로 명시하고, 공개된 규제대응·수탁·컨소시엄·온체인 AML 업무를 근거로 니즈를 제시합니다.
+
+③은 경쟁 포지셔닝 강화: adverse media와 blockchain intelligence를 직접 경쟁자라기보다 인접 예산군으로 두고, “entity/wallet screening 대 claim verification”의 단위 차이를 명확히 합니다.
+
+④는 MVP 데이터 파이프라인으로 연결: 금융위·SEC·OCC·ECB·ESMA RSS를 1차 사료 ingestion의 초기 범위로 제시합니다.
+
+⑤–⑥은 규제 지도 화면의 신뢰도 확보: 특히 쿠팡·우리은행 PoC 발표일을 7월 27일로 수정하고, 삼성은 “발행 확인 불가 / 월렛 지원 및 OUSD 참여설 부인”으로 분리합니다.
+
+2차 프롬프트. ⑦은 1차와 같은 스레드에서 돌리세요. 나머지는 새 스레드가 낫습니다.
+
+⑦ 원출처 링크 회수 (1차 스레드에서)
+
+앞서 답변한 내용 전체에 대해, 본문 설명 없이 원출처 URL 표만 만들어줘. 열: 내가 문서에 쓸 사실 한 줄 | 원출처 기관 또는 매체 | 전체 URL | 발행일.
+대상:
+- ①의 데이터셋 7종(FEVER, AVeriTeC, MultiFC, Fin-Fact, FINDVER, CryptoLin, DLT-Sentiment-News) 각각의 논문 링크와 데이터 페이지 링크
+- ②의 한국은행 VASP 자료제출 모니터링 문서, 한은 "은행 중심 발행" 입장 문서, 금융위 50%+1 컨소시엄안 보도, KB KODA와 신한/NH KDAC 보도, JPMorgan Kinexys와 Smart Buzz 페이지, Citi Digital Assets 페이지
+- ③의 시장 규모 조사기관 4곳(MarketsandMarkets, Future Market Insights, 360iResearch, FinTech Global)과 adverse media screening 32억 달러 추정의 보고서 페이지, Moody's Grid 13,500 소스와 ComplyAdvantage 11,000 소스 수치의 근거 페이지
+- ⑤의 미국, EU, 한국 마일스톤 전건. 법안 원문, 관보, 규제기관 발표를 우선하고 언론 보도는 차선으로
+2차 보도만 있고 1차 출처가 없는 항목은 "1차 출처 없음"이라고 표시해줘. URL은 줄이지 말고 전체를 써줘.
+
+⑧ 골드셋 판정 가이드라인과 "독립 보도"의 정의 — 2축 모델의 근거
+
+뉴스 주장 팩트체크에서 사람 주석자가 쓰는 판정 가이드라인의 실제 내용을 조사해줘.
+- FEVER, AVeriTeC, MultiFC의 annotation guideline 원문에서: 판정 클래스 정의, "Not Enough Info" 판정 조건, 근거 문서 선택 규칙, 시점(temporal) 처리 규칙
+- 팩트체크 기관(PolitiFact Truth-O-Meter, Full Fact, AFP 팩트체크, 서울대 SNU팩트체크, 뉴스톱)의 판정 등급 정의와 등급 결정 절차. 특히 "아직 일어나지 않은 예정 사항"과 "의견"을 어떻게 처리하는지
+- 언론 검증 기준에서 "복수의 독립된 소스"의 정의: AP, Reuters, BBC 편집 가이드라인에서 independent source의 요건. 통신사 기사를 여러 매체가 받아쓴 경우를 1개 소스로 세는 근거
+- 주석자 간 일치도 보고 관행: 3분류 소규모(50건, 주석자 2인)에서 Cohen's κ와 쓰는지, 학계에서 통용되는 최소 허용 수준
+내 판정 체계 초안은 2축이다: 주장 유형(수치/사건/예정/의견) × 근거 상태(시장데이터 대조 확인/복수 독립 보도/단일 보도/근거 부족) + 판정보류. 이 구조와 비슷한 선례가 있는지, 없다면
+가장 가까운 체계가 무엇이고 어디가 다른지 알려줘.
+각 항목마다 가이드라인 원문 또는 논문 링크를 붙여줘.
+
+⑨ 수치형 주장 검증용 시장 데이터와 준비금 소스 — SW-PL-07/09 재료
+
+스테이블코인 수치 주장(시가총액, 발행량, 준비금, 디페그, 거래량)을 자동 대조할 때 쓸 수 있는 공개 데이터 소스를 조사해줘.
+- DefiLlama stablecoins API: 엔드포인트, 무료 여부, 갱신 주기, 제공 필드(체인
+- CoinGecko 무료 티어: 호출 제한, 스테이블코인 시총과 가격 히스토리 조회 범위, 과거 특정 일자 값 조회 가능 여부
+- 업비트, 빗썸 공개 API: 인증 없이 되는 시세와 체결 엔드포인트, 원화 마켓의 U
+- 발행사 준비금 공개: Circle USDC 월간 attestation과 Tether 분기 보고서의 공개 URL, 형식, 어떤 수치가 어떤 주기로 나오는지
+- "기준 시점" 처리: 뉴스가 "시총 1,700억 달러 돌파"라고 쓸 때 어느 소스의 어 지에 대한 관행이나 선례
+- 한국 원화 스테이블코인 관련 공식 통계가 있는지(한은, 금융위, 거래소 공시)
+각 소스마다 문서 URL과 예시 엔드포인트를 그대로 써줘. 유료 전환 조건도 표시해
+
+⑩ 한국 입법 원문과 한은/금감원 피드 — 규제 레인 한국 칸
+
+한국 스테이블코인 입법 현황을 원문 기준으로 정리해줘.
+- 국회 의안정보시스템에 계류 중인 디지털자산 관련 법안 전체 목록: 의안번호, 대표발의 의원, 발의일, 스테이블코인 발행 주체와 지분과 준비금 조항의 핵심 내용, 현재 심사 단계
+- 금융위원회가 준비한 정부안 또는 정부안 기반 의원발의안이 2026년 9월 현재 접 호
+- 은행권 원화 스테이블코인 컨소시엄 참여 은행의 정확한 목록과 각 은행의 참여 발표 날짜. 은행 보도자료인지 언론 보도인지 구분
+- 한국은행 보도자료 페이지의 RSS 피드 URL이 있는지. 없다면 보도자료 목록 페이
+- 금융감독원 보도자료 RSS 피드 URL이 있는지. 없다면 목록 페이지 URL
+법안은 의안정보시스템 링크, 컨소시엄은 은행 공식 보도자료 링크를 우선으로 붙 은 그렇게 표시해줘.
+
+⑪ 은행 디지털자산 조직과 채용공고 — 페르소나 근거이자 커리어 정보
+
+한국 은행권의 디지털자산 담당 조직과 인력 요건을 조사해줘.
+- KB, 신한, 우리, 하나, NH농협, IBK기업, 카카오뱅크, 토스뱅크의 디지털자산/스테이블코인 담당 부서명, 신설 또는 상설화 시점, 담당 임원(공개된 범위)
+- 2025~2026년에 올라온 은행권 디지털자산, 블록체인, 가상자산 컴플라이언스 관 힌 실제 업무 내용(동향 조사, 규제 분석, 보고서 작성이 명시돼 있는지), 요구역량, 우대 자격증
+- 은행 직원이나 컴플라이언스 담당자가 가상자산 동향을 어떻게 파악하는지 언급 뉴스룸 글
+- 은행연합회, 금융연구원, 자본시장연구원이 낸 스테이블코인 관련 보고서 목록(2025~2026)과 각 보고서가 인용한 정보원 유형(언론, 공시, 해외 규제문서의 비율)
+채용공고는 원문 URL을, 보고서는 PDF 링크를 붙여줘. 공고가 마감돼 원문이 사라 표시해줘.
+
+⑫ 팩트체크 도구 UI와 출력 표준 — 화면3 설계 재료
+
+주장 단위 팩트체크 결과를 보여주는 도구의 UI 패턴과 데이터 표준을 조사해줘.
+- Google Fact Check Explorer, Full Fact 자동화 도구, 서울대 SNU팩트체크, 뉴스톱의 결과 화면 구조: 판정 배지, 근거 목록, 출처 표시, 판정 일자, 정정 이력을 어떻게 배치하는지
+- ClaimReview 스키마(schema.org): 필수 필드, 판정값 표현 방식, 한국 팩트체크
+- 금융권 내부 도구에 "감사 가능한 근거 이력"을 요구하는 규제 근거: 한국 전자금융감독규정이나 내부통제 기준, 미국 SR 11-7 모델 리스크 관리 지침에서 AI 산출물 기록 요건
+- AI 판정에 사람이 개입하는 human-in-the-loop UI 사례: 승인/반려, 사유 입력,
+- 팩트체크 처리 시간 벤치마크: 기관별 주장 1건당 평균 검증 소요 시간이 공개된 사례
+각 항목마다 실제 화면이 있는 페이지 URL과 스키마 문서 링크를 붙여줘.
+
+결과는 1차처럼 그대로 붙여주시면 다시 반영합니다. 매니페스트 변경분 커밋과, 치 파일로 저장할지는 말씀 주시면 그때 합니다.
+
+아래는 요청하신 ⑦~⑫ 조사 결과입니다. ⑦은 본문 설명 없이 URL 표만, ⑧~⑫는 설계·연구·구현에 바로 반영할 수 있게 정리했습니다. 다만 ⑩·⑪의 “2026년 9월 현재 국회 계류 법안 전체 / 전 은행의 조직·채용공고 전체”는 국회 의안시스템과 은행 채용 사이트가 검색엔진에 완전 색인되지 않아, 이번 결과에서는 원문으로 검증된 범위와 확인 불가 범위를 엄격히 구분했습니다.
+
+⑦ 원출처 URL 표
+내가 문서에 쓸 사실 한 줄	원출처 기관 또는 매체	전체 URL	발행일
+FEVER는 Wikipedia 근거에 대해 SUPPORTS, REFUTES, NOT ENOUGH INFO를 붙인 185,445개 주장 데이터셋이다	NAACL / ACL Anthology	https://aclanthology.org/N18-1074.pdf	2018-06-01
+FEVER 데이터셋 다운로드와 공식 데이터 설명 페이지	FEVER	https://fever.ai/dataset/fever.html	2018-06-01
+FEVER의 공개 코드·주석 플랫폼·베이스라인 저장소	AWS Labs / GitHub	https://github.com/awslabs/fever	2018-03-09
+AVeriTeC은 50개 팩트체크 기관의 실세계 주장 4,568건에 Q/A 근거, 판정, 정당화를 붙인 데이터셋이다	NeurIPS Proceedings	https://proceedings.neurips.cc/paper_files/paper/2023/hash/cd86a30526cd1aff61d6f89f107634e4-Abstract-Datasets_and_Benchmarks.html	2023-12-15
+AVeriTeC 원문 논문 PDF	NeurIPS Proceedings	https://proceedings.neurips.cc/paper_files/paper/2023/file/cd86a30526cd1aff61d6f89f107634e4-Paper-Datasets_and_Benchmarks.pdf	2023-12-15
+AVeriTeC 데이터·코드 저장소	GitHub / MichSchli	https://github.com/MichSchli/AVeriTeC	2023-05-12
+MultiFC는 26개 팩트체크 웹사이트에서 수집한 자연발생 주장 기반의 다도메인 팩트체크 데이터셋이다	EMNLP / ACL Anthology	https://aclanthology.org/D19-1475.pdf	2019-11-01
+MultiFC 논문 HTML 페이지	ACL Anthology	https://aclanthology.org/D19-1475/	2019-11-01
+Fin-Fact는 금융 도메인의 멀티모달 팩트체킹 및 설명 생성용 벤치마크다	arXiv	https://arxiv.org/html/2309.08793v2	2023-09-15
+Fin-Fact 논문 PDF	arXiv	https://arxiv.org/pdf/2309.08793v2.pdf	2023-09-15
+Fin-Fact 데이터와 코드 저장소	IIT Delhi / GitHub	https://github.com/IIT-DM/Fin-Fact	2023-04-17
+FINDVER는 장문·혼합형 금융 문서에 대한 설명가능한 주장 검증 벤치마크다	EMNLP / ACL Anthology	https://aclanthology.org/2024.emnlp-main.818.pdf	2024-11-01
+FINDVER 논문 HTML 페이지	ACL Anthology	https://aclanthology.org/2024.emnlp-main.818/	2024-11-01
+CryptoLin은 3년 이상 기간의 암호자산 관련 뉴스 2,683건으로 구성된 감성 코퍼스다	Language Resources and Evaluation / Springer	https://link.springer.com/article/10.1007/s10579-024-09743-x	2024-08-01
+CryptoLin 공식 데이터·코드 저장소	GitHub / manoelgadi	https://github.com/manoelgadi/CryptoLin	2024-04-10
+DLT-Corpus는 DLT 연구용 대규모 텍스트 코퍼스와 DLT-Sentiment-News를 소개한다	arXiv	https://arxiv.org/html/2602.22045	2026-02-01
+DLT-Sentiment-News 데이터셋	Hugging Face / Exponential Science	https://huggingface.co/datasets/ExponentialScience/DLT-Sentiment-News	확인 필요
+한국은행은 가상자산사업자 자료 제출 등을 통해 가상자산 시장을 모니터링·분석한다	한국은행	https://www.bok.or.kr/eng/bbs/E0000866/view.do?nttId=10093606&oldMenuNo=400007&menuNo=400223&programType=newsDataEng&depth=400223&relate=Y	2025-09-19
+한국은행은 스테이블코인 확산과 원화 스테이블코인 제도 논의를 설명하는 공식 이슈해설을 발간했다	한국은행	https://www.bok.or.kr/portal/bbs/B0000168/view.do?menuNo=200058&nttId=10094368	2026-02-20
+한국은행의 “은행 중심 발행” 입장에 대한 직접 공식 문서	한국은행	1차 출처 없음	해당 없음
+금융위가 은행 지분 50% 이상 컨소시엄 중심 원화 스테이블코인 발행을 검토했다는 보도	서울경제	https://en.sedaily.com/finance/2026/01/06/korea-to-allow-won-stablecoin-issuance-by-bank-led	2026-01-06
+금융위의 은행 컨소시엄 우선 허용 구상이 디지털자산기본법에 포함될 수 있다는 보도	ChosunBiz	https://biz.chosun.com/en/en-finance/2026/01/07/3JECOJXMBRGPJMO2UVZKKRIXAI/	2026-01-07
+KB국민은행은 Korea Digital Asset Custody(KODA)를 설립했다는 보도	BloomingBit	https://en.bloomingbit.io/feed/news/83346	2025-02-14
+신한은 KDAC에 투자·협력하고 NH 계열도 KDAC 투자 기반을 보유했다는 보도	Wowtale	https://en.wowtale.net/2025/11/26/232926/	2025-11-26
+JPMorgan은 Kinexys 및 Securities Services Regulatory Practice 관점에서 디지털자산과 규제 변화를 다룬다	J.P. Morgan	https://www.jpmorgan.com/insights/podcast-hub/making-sense/digital-assets-kinexys-and-regulatory-shifts	2025-09-19
+JPMorgan의 디지털자산·블록체인 솔루션 설명 문서	J.P. Morgan	https://www.jpmorgan.com/content/dam/jpm/cib/complex/content/securities-services/regulatory-solutions/evolution-of-digital-assets.pdf	2024-10-01
+JPMorgan Markets는 데이터 분석과 분석가 리서치를 통해 시장 인사이트를 제공한다고 설명한다	J.P. Morgan	https://markets.jpmorgan.com/research-and-insights	2024-10-16
+JPMorgan Smart Buzz의 현재 공식 제품 페이지	J.P. Morgan	1차 출처 없음	해당 없음
+Citi는 전사 통합 전략 아래 Digital Assets 팀을 운영한다고 설명한다	Citigroup	https://www.citigroup.com/global/about-us/strategy/digital-assets	2026-03-27
+MarketsandMarkets는 RegTech 시장이 2026년 195억 달러에 이를 것으로 추정했다	MarketsandMarkets	https://www.marketsandmarkets.com/Market-Reports/regtech-market-63447434.html	확인 필요
+Future Market Insights는 글로벌 RegTech 시장을 2026년 201억 달러로 추정했다	Future Market Insights	https://www.futuremarketinsights.com/reports/regtech-market	2026-06-09
+360iResearch는 RegTech 시장을 2026년 292억 달러로 추정했다	360iResearch	https://www.360iresearch.com/library/intelligence/regtech	2026-08-29
+FinTech Global은 금융기관 50인 이상 기준 글로벌 RegTech TAM을 2,454억 달러로 추정했다	FinTech Global	https://fintech.global/about/wp-content/uploads/2026/06/The-Global-State-of-RegTech-2026-Full-Report.pdf	2026-06-01
+adverse media screening 시장이 2025년 32억 달러라는 단일 민간 조사 추정	Market Intelo	https://marketintelo.com/report/adverse-media-screening-market	2025-08-25
+Moody’s Grid는 adverse media, 제재, watchlist, PEP를 구조화한 글로벌 리스크 스크리닝 DB다	Moody’s	https://www.moodys.com/web/en/us/kyc/products/grid.html	확인 필요
+Moody’s Grid의 13,500개 이상 adverse-media 소스 수치	Moody’s	https://www.moodys.com/web/en/us/site-assets/ma-kyc-grid-product-brochure-may2026.pdf	2026-05-01
+ComplyAdvantage의 11,000개 이상 검증된 미디어 소스 수치	ComplyAdvantage	https://complyadvantage.com/fincrime-risk-intelligence/negative-news-screening-tool/	2026-02-10
+GENIUS Act 이행을 위한 OCC 제안규칙 발표	OCC	https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-9.html	2026-02-25
+OCC의 GENIUS Act 이행 제안규칙 공지	OCC	https://occ.treas.gov/news-issuances/bulletins/2026/bulletin-2026-3.html	2026-02-25
+GENIUS Act 관련 Treasury 사전 의견수렴이 2025년 9월 연방관보에 게시됐다	Federal Register	https://www.govinfo.gov/content/pkg/FR-2026-08-18/pdf/2026-16796.pdf	2026-08-18
+FinCEN·OCC·Fed·FDIC·NCUA의 payment stablecoin issuer BSA/CIP 제안규칙	Federal Register	https://www.occ.gov/news-issuances/federal-register/2026/91fr37234.pdf	2026-06-22
+Treasury의 GENIUS Act 관련 발행·판매·해외 발행자 제안규칙	U.S. Treasury / OFAC	https://ofac.treasury.gov/recent-actions/20260408_33	2026-08-04
+MiCA Regulation (EU) 2023/1114 원문	EUR-Lex	https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng	2023-06-09
+MiCA는 2024년 6월 30일부터 ART·EMT 규정을 적용하고, 2024년 12월 30일부터 원칙적으로 전면 적용됐다	EUR-Lex	https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=legissum:4626998	2024-09-25
+ESMA와 유럽위원회는 비준수 ART·EMT 제공에 관한 전환 가이던스를 발표했다	ESMA	https://www.esma.europa.eu/press-news/esma-news/esma-and-european-commission-publish-guidance-non-mica-compliant-arts-and-emts	2025-01-17
+ESMA의 비준수 stablecoin 관련 공식 성명	ESMA	https://www.esma.europa.eu/sites/default/files/2025-01/ESMA75-223375936-6099_Statement_on_stablecoins.pdf	2025-01-17
+한국 디지털자산기본법 정부안이 국회 제출 전 단계라는 보도	ChosunBiz	https://biz.chosun.com/en/en-finance/2026/08/25/EABN4LDGF5E4VPYHJG45VTBL6A/	2026-08-25
+한국 금융당국이 디지털자산기본법 정부 초안을 이르면 2026년 9월 국회에 제출할 수 있다는 보도	BloomingBit	https://en.bloomingbit.io/feed/news/119127	2026-08-25
+한국 금융위가 거래소 대주주 지분 20% 상한 등을 포함한 디지털자산기본법 정부안을 준비한다는 보도	서울경제	https://en.sedaily.com/finance/2026/08/27/korea-weighs-20-percent-ownership-cap-for-crypto-exchange	2026-08-27
+KB 중심 스테이블코인 컨소시엄 구성이 거론됐다는 보도	매일경제 Pulse	https://pulse.mk.co.kr/news/english/12060921	2026-05-29
+⑧ 골드셋 판정 가이드라인
+핵심 결론
+귀하의 초안은 “진실성 판정”과 “증거 충족도”를 분리한다는 점에서 타당합니다. 다만 현재의 복수 독립 보도 / 단일 보도 / 근거 부족은 근거의 양과 출처 계보를 판정하는 축이고, 확인 / 반박 / 보류는 주장과 근거의 논리 관계를 판정하는 축이므로, 두 축을 완전히 분리해 기록하는 편이 좋습니다.
+
+가장 가까운 선례는 다음 세 가지의 결합입니다.
+
+FEVER의 Supports / Refutes / Not Enough Info
+
+AVeriTeC의 Supported / Refuted / Not Enough Evidence / Conflicting or Cherry-picking
+
+저널리즘의 1차 출처·독립 복수 출처·출처 귀속 원칙
+
+AVeriTeC은 실제 웹 팩트체크 주장을 대상으로 하며 claim_date, speaker, 원 주장 URL, Q/A 근거, 판정, 정당화를 함께 보존합니다. 귀하의 제품 데이터 구조와 가장 가깝습니다.
+
+데이터셋별 판정 원칙
+데이터셋	판정 클래스	Not Enough Info / Evidence 조건	근거 선택 규칙	시점 처리
+FEVER	SUPPORTS, REFUTES, NOT ENOUGH INFO	제공된 Wikipedia 코퍼스에서 주장을 지지하거나 반박하는 문장을 찾을 수 없을 때	Supports/Refutes에는 증거 문장 집합을 붙임. NEI에는 증거 없음	원래 Wikipedia 스냅샷 폐쇄형 과제라 실시간 시점 규칙은 약함
+AVeriTeC	Supported, Refuted, Not Enough Evidence, Conflicting/Cherry-picking	충분한 공개 근거가 없어 지지·반박 결론을 낼 수 없을 때. “근거가 없으니 거짓”이라는 argument from ignorance를 피함	팩트체크 기사 내 링크를 우선하되, 질의응답 형태의 직접적인 증거를 수집·검수	claim date를 기록하고, 주장 날짜 이후에 발행된 증거는 원칙적으로 사용하지 않음
+MultiFC	원 출처 팩트체커의 라벨 체계를 보존·정규화	각 팩트체커의 판정 규칙을 따르며, 표준 단일 NEI 체계가 핵심은 아님	원 팩트체크 웹사이트의 verdict, URL, 설명을 활용	매체·도메인별 실제 사례이므로 원 주장·팩트체크 시점이 중요하나, FEVER처럼 단일 시점 규칙을 강제하지 않음
+FEVER의 핵심은 “주장 그 자체의 형이상학적 진실”이 아니라, 지정된 근거 코퍼스 안에서 현재 주장을 지지하거나 반박할 증거가 있는가입니다. 따라서 귀하 서비스에서는 이를 “현 시점에서 검증 가능한 공신력 있는 근거가 존재하는가”로 확장하되, 근거 범위를 명확히 정의해야 합니다.
+
+AVeriTeC의 가장 중요한 운영 원칙은 두 가지입니다.
+
+주장 날짜를 기록하고, 주장 시점 이후에 나온 자료로 과거 주장을 사후적으로 판정하지 않는 것
+
+미입증이라는 이유만으로 거짓을 주지 않고 Not Enough Evidence로 남기는 것
+
+후속 AVeriMaTeC 설명에서도 AVeriTeC 계열의 근거 수집이 “claim date 이전 공개 자료만 사용”하는 방식임을 확인할 수 있습니다.
+
+팩트체크 기관의 실제 판정 기준
+기관	등급·판정	예정·미래 사건	의견 처리	결정 절차
+PolitiFact	True, Mostly True, Half True, Mostly False, False, Pants on Fire	발언 당시 이용 가능한 정보와 시점 기준으로 판정	검증 가능한 사실에 뿌리 둔 주장만 검토하고, 의견은 원칙적으로 대상 아님	기자가 조사·권고 등급을 제안하고, 편집 후 최소 3명 편집자 패널이 최종 판정
+AFP Fact Check	False, Misleading, Unsubstantiated, Inconclusive, True, Out of Scope 등의 체계	아직 일어나지 않은 사건에 대한 예측·주장은 검증하지 않음	의견은 검증하지 않음	주장 식별→확산·시점 확인→공식자료·전문가·원자료 대조→근거 링크와 결론 제시
+SNU팩트체크	사실, 대체로 사실, 사실 반 거짓 반, 대체로 거짓, 거짓, 판단유보	미래 예측은 사실판정이 불가능하거나 시점이 지나야 검증 가능하므로 판단유보/검증대상 제외가 적절	가치판단·선호·의견은 사실진술과 분리	충분한 긍정·부정 근거의 존재와 균형을 기준으로 단계 결정
+뉴스톱	기사별 등급과 근거 서술을 병행하는 국내 팩트체크 매체	명시적 통일 규칙의 원문은 이번 조회 범위에서 확인하지 못함	검증 가능한 사실 주장 중심	1차 출처, 통계, 전문가, 공식 문서 대조 방식
+PolitiFact는 “발언자가 입증 책임을 지며, 발언 당시 알려진 정보로 판정한다”고 명시합니다. 따라서 스테이블코인 기사에서 “A사가 다음 달 발행한다”는 문장은 실제 출시 전에는 참 또는 거짓보다 예정 주장 / 단일 공식발표 / 향후 검증 필요로 분류하는 것이 더 정직합니다.
+
+AFP는 더 직접적입니다. AFP 스타일북은 “아직 발생하지 않은 사건에 관한 예측이나 주장”과 “의견”은 팩트체크하지 않는다고 밝힙니다. 이 원칙은 귀하의 예정·의견 유형 축을 정당화하는 강한 근거입니다.
+
+SNU팩트체크는 5단계 사실성 등급에 판단유보를 더해 운영하며, 판단유보를 별도 결과로 인정합니다. 이는 귀하가 보류를 오류·미완료가 아니라 독립적인 결과 상태로 화면에 노출해야 한다는 근거입니다.
+
+권장 2축 판정체계
+현재 초안을 다음처럼 다듬는 것을 권장합니다.
+
+축	값	판정 기준
+주장 유형	수치	시가총액, 가격, 준비금, 발행량, 거래량, 비율, 날짜 등 외부 데이터로 대조 가능한 주장
+주장 유형	사건	PoC 완료, 제휴 체결, 법안 발의, 제재 부과, 발행 개시, 상장 등 발생 여부를 확인할 수 있는 주장
+주장 유형	예정	계획, 검토, 목표, 예정, 추진, 가능성, 협상 중, 제출 예정 등 아직 결과가 확정되지 않은 주장
+주장 유형	의견·해석	“호재”, “주도권”, “위기”, “성공할 것”, “업계가 우려”처럼 규범적·평가적·예측적 표현
+근거 상태	공식 1차 자료 대조 확인	규제기관, 법령·관보, 법원·국회, 발행사 공시, 기업 보도자료, 감사·attestation, 거래소 공식 API, 온체인 원자료 등이 직접 지지 또는 반박
+근거 상태	복수 독립 보도 확인	동일 취재원·보도자료 재전재가 아닌, 최소 2개 독립 편집국 또는 하나 이상의 독립 취재 보도와 1차 반응이 일치
+근거 상태	단일 보도	한 개 매체, 익명 제보, 업계 관계자 발언, 단일 리서치의 주장만 존재
+근거 상태	상충 근거	신뢰 가능한 근거끼리 핵심 사실·범위·시점·주체에서 충돌
+근거 상태	근거 부족	신뢰 가능한 공개 근거를 찾지 못했거나, 존재하는 자료가 주장에 직접 답하지 않음
+최종 판정	확인됨	관련 시점의 적합한 근거가 주장의 핵심 술어·주체·수치·범위를 지지
+최종 판정	반박됨	관련 시점의 적합한 근거가 주장의 핵심 술어·주체·수치·범위를 명백히 부정
+최종 판정	부분 확인	핵심 일부는 맞지만 주체·규모·날짜·범위가 과장 또는 생략됨
+최종 판정	판단보류	예정·의견이거나, 공개 근거가 불충분·상충되어 참거짓을 책임 있게 결론낼 수 없음
+최종 판정	검증 대상 외	순수한 의견, 전망, 가치판단, 인용문 자체의 진위가 아니라 평가만 담은 표현
+이 구조는 AVeriTeC의 Conflicting/Cherry-picking을 별도 상태로 흡수하고, AFP의 Out of Scope와 Inconclusive, SNU팩트체크의 판단유보를 제품 레벨에서 구현한 형태입니다.
+
+“독립 보도”의 정의
+복수 매체 게재는 복수 독립 출처가 아닙니다. 동일 보도자료, 동일 Reuters/AP/연합뉴스 송고, 동일 익명 제보, 동일 업계 관계자 발언을 원출처로 재전재한 기사는 하나의 정보 계보로 계산해야 합니다.
+
+권장 정의는 다음과 같습니다.
+
+독립된 두 출처란, 동일한 원문 보도자료·통신사 송고·익명 제보·기업 브리핑·공동취재 풀·다른 매체의 선행 보도에 실질적으로 의존하지 않고, 각자가 별도의 1차 문서, 별도 취재원 또는 현장·데이터 검증을 통해 핵심 사실을 확인한 출처다.
+
+Reuters는 “가능한 한 cross-check하라. 둘 이상의 소스가 하나보다 낫다”고 하며, 익명 출처의 경우 출처의 실적, 지위, 동기를 평가하라고 명시합니다. 단일 익명 소스 보도는 신뢰도 높은 직접 지식 소스에 의한 예외적 경우에만 허용되고 특별 승인 절차를 거칩니다.
+
+BBC는 직접 관찰이나 1차 소스를 우선하고, 가능하면 그 증거를 corroborate하며, 단일 출처 의존을 꺼려야 하고 불가피하면 신뢰 가능하고 실명·온더레코드 출처를 선호한다고 규정합니다. 또한 검증하지 못했다면 이를 밝혀 출처를 귀속해야 한다고 합니다.
+
+뉴스 재전재의 계보 처리 규칙
+상황	독립 출처 수	시스템 처리
+쿠팡 공식 보도자료 + 한경 기사 + 이데일리 기사	1차 출처 1개, 보도 출처 다수	공식 1차 자료 대조 확인; 기사 수를 독립성 수로 세지 않음
+Reuters 최초 기사 + Reuters를 명시 인용한 15개 매체 기사	1개	단일 보도 또는 Reuters 원보 1개로 기록
+기자 A의 익명 “업계 관계자” 보도 + 기자 B의 다른 익명 취재원 보도	최대 2개, 단 계보 확인 필요	취재원·인용문·보도 시각·문장 중복을 검토; 동일 브리핑 가능성이 높으면 1개 처리
+금융위 공식 발표 + 국회 의안 원문	2개 독립 근거이지만 모두 1차 출처	공식 1차 자료 대조 확인; “독립 보도” 분류보다 상위
+기업 보도자료 + 기업 임원이 동일 내용을 다시 말한 인터뷰	1개 계보	같은 발행 주체의 반복 확인일 뿐 독립 corroboration 아님
+기업 보도자료 + 규제기관 공시 + 외부 감사보고서	3개 성격 다른 근거	강한 공식 1차 자료 대조 확인
+50건·2인 주석의 일치도
+2명의 주석자가 3개 이상 범주형 라벨을 매길 때는 Cohen’s 
+κ
+κ 가 기본입니다. 3명 이상이면 Fleiss’ 
+κ
+κ, 결측치가 있거나 주석자 수가 가변적이면 Krippendorff’s 
+α
+α가 더 적합합니다.
+
+κ
+=
+P
+o
+−
+P
+e
+1
+−
+P
+e
+κ= 
+1−P 
+e
+​
+ 
+P 
+o
+​
+ −P 
+e
+​
+ 
+​
+ 
+여기서 
+P
+o
+P 
+o
+​
+ 는 실제 일치율, 
+P
+e
+P 
+e
+​
+ 는 우연 일치 기대값입니다.
+
+지표	귀하 사례 적합성	권장 보고 방식
+단순 일치율	보조지표	50건 중 실제 동일 판정 비율을 함께 제시
+Cohen’s 
+κ
+κ	2인·명목형 3분류 이상에 가장 적합	최종 판정, 주장 유형, 근거 상태 각각 별도 산출
+weighted Cohen’s 
+κ
+κ	순서가 있는 척도에 적합	확인-부분확인-보류-반박을 순서형으로 강하게 가정할 때만 사용
+Krippendorff’s 
+α
+α	결측·다수 주석자·추후 확장에 유리	2인에게도 계산 가능하나, 이번 설계에서는 Cohen’s 
+κ
+κ를 주 지표로 두는 편이 직관적
+널리 인용되는 Landis–Koch 해석은 
+0.41
+0.41~
+0.60
+0.60을 moderate, 
+0.61
+0.61~
+0.80
+0.80을 substantial, 
+0.81
+0.81 이상을 almost perfect로 봅니다. 다만 이는 절대적인 합격선이 아니라 해석 관례입니다.
+
+실무적으로는 다음처럼 해석하는 편이 안전합니다.
+
+κ
+<
+0.40
+κ<0.40: 가이드라인·훈련 예시·클래스 정의를 재설계해야 하는 수준
+
+κ
+=
+0.41
+κ=0.41~
+0.60
+0.60: 탐색 연구에서는 보고 가능하지만, 불일치 유형 분석과 재주석이 필요
+
+κ
+=
+0.61
+κ=0.61~
+0.80
+0.80: 소규모 파일럿의 실용적인 최소 목표인 substantial agreement
+
+κ
+≥
+0.80
+κ≥0.80: 높은 일치도. 규제·감사 목적의 골드셋이라면 이 수준을 목표로 하는 편이 좋음
+
+Krippendorff의 관례는 
+α
+<
+0.667
+α<0.667은 사용하지 말고, 
+0.667
+≤
+α
+<
+0.800
+0.667≤α<0.800은 잠정적 결론, 
+α
+≥
+0.800
+α≥0.800은 신뢰 가능한 결론에 사용하라는 더 엄격한 기준입니다.
+
+권장 문서화 문장:
+
+50개 골드셋 항목은 2인의 독립 주석자가 주장 유형, 근거 상태 및 최종 판정을 각각 부여한다. 최종 판정의 주석자 간 일치도는 Cohen’s 
+κ
+κ로 측정하며, 
+κ
+≥
+0.61
+κ≥0.61을 파일럿 데이터셋의 목표 기준으로, 
+κ
+≥
+0.80
+κ≥0.80을 고신뢰 운영 기준으로 둔다. 불일치 항목은 합의 과정을 통해 해결하되, 합의 전 원판정과 근거를 감사 로그로 보존한다.
+
+⑨ 수치형 주장 검증 데이터
+데이터 소스 비교
+소스	주요 검증 항목	무료·인증	예시 엔드포인트	갱신·과거 데이터	유료 전환 조건
+DefiLlama Stablecoins API	스테이블코인별 시가총액, 유통량, 체인별 유통량, 전체/체인별 역사 시총, 가격	무료, API key 불필요	https://api.llama.fi/stablecoins	공식 문서는 역사 시총·가격 엔드포인트를 제공. 정확한 폴링 주기는 보장 문구보다 실제 응답 timestamp를 기록해야 함	무료 endpoint는 무인증. Pro API key 보유 시 더 높은 rate limit·Pro endpoint 사용 가능
+CoinGecko API	가격, 시가총액, 24h 거래량, historical market chart, 특정 날짜 historical snapshot	Demo는 무료. API keyless public은 별도 제한적 접근	https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=stablecoins	가격·시총·거래량 역사 데이터 제공. 특정 날짜는 /coins/{id}/history?date=DD-MM-YYYY	Demo 무료는 월 10,000 call, 100 calls/min으로 안내. 장기·고빈도 history는 구독 티어별 제한
+Upbit Quotation API	KRW 마켓 현재가, 최근 체결, 호가, 캔들, 종목 목록	공개 시세 API는 인증 불필요	https://api.upbit.com/v1/ticker?markets=KRW-USDT	WebSocket은 ticker/trade/orderbook 실시간 제공. REST 캔들은 기간별 제공	공개 quotation은 무료·무인증. 주문·개인거래는 JWT 인증 필요
+Bithumb Public API	KRW 마켓 현재가, 체결, 호가, 캔들, 마켓 목록	Public API는 인증 불필요	https://api.bithumb.com/v1/ticker?markets=KRW-USDT	최근 시세·체결을 공개 제공. 장기 히스토리는 캔들 endpoint 및 보관범위를 별도 검증 필요	Public endpoints 무료·무인증; 주문·자산·개인체결은 인증 필요
+Circle Transparency	USDC 유통량, 준비금 공정가치, 준비자산 구성, mint/burn 흐름	공개	https://www.circle.com/transparency	주간 reserve holdings·mint/burn, 월간 Big Four 제3자 assurance	API가 아니라 웹/PDF 공개 중심
+Tether Transparency	USDT 등 Tether token 유통량, 준비금 구성, 준비금 대 부채 비교	공개	https://tether.to/transparency/?tab=reports	유통량은 일일 업데이트, 준비금 보고와 BDO 독립 assurance는 분기	API가 아니라 transparency page/PDF 공개 중심
+DefiLlama Stablecoins API
+DefiLlama 공식 API 문서상 stablecoin 데이터는 무료이며 인증이 필요 없습니다. 기본 URL은 https://api.llama.fi입니다.
+
+목적	HTTP endpoint	주요 활용
+전체 스테이블코인 목록·유통량	https://api.llama.fi/stablecoins	name, symbol, peg type, circulating, 체인별 분포 등의 현재값 대조
+전체 스테이블코인 역사 시가총액	https://api.llama.fi/stablecoincharts/all	“전체 스테이블코인 시총이 N달러를 돌파” 주장 검증
+특정 체인 역사 시가총액	https://api.llama.fi/stablecoincharts/Ethereum	“Ethereum상 stablecoin 공급” 같은 체인 주장의 시점별 대조
+개별 스테이블코인 역사 시총·체인 분포	https://api.llama.fi/stablecoin/1	특정 asset ID의 시가총액·체인별 공급 추적
+체인별 stablecoin 개요	https://api.llama.fi/stablecoinchains	체인별 stablecoin 공급 비교
+stablecoin 역사 가격	https://api.llama.fi/stablecoinprices	디페그·가격 괴리 주장 후보 탐지
+주의할 점은 DefiLlama의 “market cap”이 거래소 유통량 계산과 정확히 동일하지 않을 수 있다는 점입니다. 기사 검증에서는 반드시 다음 필드를 같이 기록해야 합니다.
+
+source = DefiLlama
+
+endpoint
+
+asset ID / token symbol / chain
+
+API 응답의 기준 timestamp
+
+조회시각
+
+기사 발행시각
+
+기사에 사용된 “시가총액”의 정의: 전체 peg supply인지, 특정 체인 circulating supply인지, 거래소 표시 market cap인지
+
+DefiLlama의 public API는 일반적 사용에 인증이 필요 없으며, Pro 가입자는 동일 free endpoint에도 더 높은 rate limit 경로를 사용할 수 있습니다. 다만 rate limit을 “무제한”으로 제품 SLA에 쓰기보다 정상 트래픽 기준 무인증 public endpoint로 표현하는 것이 안전합니다.
+
+CoinGecko 무료 티어
+CoinGecko는 현재 market data·historical chart를 제공하며, 가격, 시가총액, 24시간 거래량을 조회할 수 있습니다. 공식 문서는 Demo plan을 월 10,000 calls·100 calls/min으로 안내하지만, keyless Public API 문서는 부하에 따라 약 10~30 calls/min이라고도 안내합니다. 따라서 구현에서는 API key를 발급받은 Demo plan 기준 100 RPM / 월 10,000 calls를 운영 가정으로 두고, keyless endpoint에는 더 보수적인 재시도·캐시 전략을 적용해야 합니다.
+
+목적	예시 endpoint	과거 특정일 검증 가능 여부
+stablecoin 카테고리 현재 시세·시총·거래량	https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=stablecoins&order=market_cap_desc&per_page=250&page=1	현재 snapshot
+USDC 특정일 snapshot	https://api.coingecko.com/api/v3/coins/usd-coin/history?date=31-08-2026	가능. 날짜는 DD-MM-YYYY
+USDC 기간별 price·market cap·volume	https://api.coingecko.com/api/v3/coins/usd-coin/market_chart?vs_currency=usd&days=90&interval=daily	가능. tier별 과거 범위·granularity 제한
+특정 기간 UNIX timestamp 조회	https://api.coingecko.com/api/v3/coins/usd-coin/market_chart/range?vs_currency=usd&from=1756598400&to=1756684800	가능. 장기·세밀 interval은 요금제 제한 가능
+특정 코인의 거래소별 ticker	https://api.coingecko.com/api/v3/coins/usd-coin/tickers	해당 시점이 아닌 현재/최근 거래소 관측 중심
+CoinGecko는 /coins/{id}/history와 /coins/{id}/market_chart에서 과거 가격·시가총액·거래량을 제공하며, “12년 이상”의 역사 데이터를 언급하지만 실제 접근 가능 범위와 분해능은 요금제와 자산별 가용성에 따라 달라집니다. 무료 Demo는 과거 1년 범위 제한이 안내되어 있으므로, 1년을 넘는 기준일 검증이나 고빈도 과거 분봉 데이터에는 유료 구독 또는 별도 아카이빙이 필요합니다.
+
+업비트·빗썸: KRW 시장 시세와 체결
+업비트는 공개 quotation WebSocket에서 ticker, trade, orderbook을 인증 없이 제공합니다. REST quotation endpoint도 시장목록·현재가·체결·캔들을 인증 없이 제공합니다.
+
+거래소	목적	공개 endpoint 예시
+Upbit	마켓 목록	https://api.upbit.com/v1/market/all
+Upbit	KRW-USDT 현재가	https://api.upbit.com/v1/ticker?markets=KRW-USDT
+Upbit	KRW-USDT 최근 체결	https://api.upbit.com/v1/trades/ticks?market=KRW-USDT&count=200
+Upbit	KRW-USDT 분봉	https://api.upbit.com/v1/candles/minutes/1?market=KRW-USDT&count=200
+Upbit	실시간 ticker/trade/orderbook	wss://api.upbit.com/websocket/v1
+Bithumb	마켓 목록	https://api.bithumb.com/v1/market/all
+Bithumb	KRW-USDT 현재가	https://api.bithumb.com/v1/ticker?markets=KRW-USDT
+Bithumb	공식 Public API 문서	https://apidocs.bithumb.com/docs/api-%ED%98%B8%EC%B6%9C%ED%95%B4-%EB%B3%B4%EA%B8%B0
+Bithumb	최근 체결 문서	https://apidocs.bithumb.com/reference/%EC%B2%B4%EA%B2%B0-%EB%82%B4%EC%97%AD-%EC%A1%B0%ED%9A%8C.md
+빗썸 공식 문서는 Public API로 거래 데이터를 인증 없이 조회할 수 있으며, /v1/market/all, /v1/ticker 등을 예시로 듭니다. 다만 안정적인 운영 전에는 endpoint 버전, 호출 제한, 과거 체결 보관기간을 빗썸 개발자센터에서 재확인해야 합니다.
+
+USDT 원화 가격 검증에서의 주의점
+
+KRW-USDT는 원화 시장의 거래소 체결가입니다.
+
+글로벌 기준가격은 USDT/USD 또는 여러 거래소의 aggregate price입니다.
+
+따라서 “USDT가 1,400원이다”와 “USDT가 1달러 페그를 유지한다”는 서로 다른 주장입니다.
+
+전자는 KRW 환율·국내 수급·김치 프리미엄의 영향을 받으며, 후자는 USD 페그의 가격 안정성을 의미합니다.
+
+화면에는 KRW price, USD price, USD/KRW FX, premium을 분리해야 합니다.
+
+Circle과 Tether 준비금
+Circle은 USDC 준비자산의 주간 보유내역과 mint/burn 흐름을 공개하고, 매월 Big Four 회계법인의 제3자 assurance를 통해 준비금 공정가치가 유통 USDC보다 크거나 같은지를 검증한다고 밝힙니다.
+
+발행사	공식 transparency URL	공개 형식	주기	자동 대조 가능 수치
+Circle / USDC	https://www.circle.com/transparency	웹 대시보드 + 월간 PDF examination report	주간 보유내역·mint/burn, 월간 assurance	USDC circulation, reserve fair value, Circle Reserve Fund, segregated accounts, 준비금-유통량 차이
+Circle / 월간 PDF 예시	https://6778953.fs1.hubspotusercontent-na1.net/hubfs/6778953/USDCAttestationReports/2026/2026%20USDC_Examination%20Report%20March%2026.pdf	PDF	월간	특정 보고일의 reserve asset fair value와 USDC circulation
+Tether / USDT	https://tether.to/transparency/?tab=reports	웹 대시보드 + 분기 reserve report + BDO assurance PDF	유통량 일일, 준비금 보고·assurance 분기	token circulation, consolidated assets, consolidated liabilities, asset category, excess reserves
+Tether / Relevant Information Document	https://tether.to/public/Relevant_Information_Document_-Tether_International,_S.A._de_C.V..pdf	PDF	문서 갱신 시	준비금 보고 구조, 자산 범주, redemption liability 비교 기준
+Tether / BDO assurance 예시	https://gold.tether.to/docs/reports/attestations/ISAE_3000R_-Opinion_TGRR_30.09.2025_RC187322025BD0418.pdf	PDF	분기	분기말 준비자산·부채·초과 준비금
+Tether는 transparency page에서 준비금 보고서를 분기마다 공개하고, BDO Italia가 각 분기말 기준 독립 auditor report를 작성하며, 준비금이 발행 token의 상환가치보다 크다는 점을 보고한다고 밝힙니다. 유통량은 일일 업데이트, 준비금의 세부 자산 범주와 독립 assurance는 분기 단위입니다.
+
+기준 시점 처리
+“시가총액 1,700억 달러 돌파” 같은 문장은 제품에서 다음 네 시점을 구분해야 합니다.
+
+주장 발생시점: 발화자·기관이 수치를 말한 시각
+
+기사 게시시점: 뉴스가 공개된 시각
+
+데이터 기준시점: API나 보고서의 관측 timestamp
+
+검증 실행시점: 시스템이 근거를 수집한 시각
+
+권장 판정 규칙은 다음과 같습니다.
+
+기사 표현	권장 기준 시점	권장 근거
+“현재 전체 스테이블코인 시총은 1,700억 달러”	기사 게시시각 직전 또는 기사에 명시된 기준시각	DefiLlama historical chart, CoinGecko timestamped snapshot
+“USDC 시총이 어제 350억 달러를 돌파”	“어제”의 종료시점과 intraday peak를 구분	CoinGecko hourly/daily chart, DefiLlama daily chart
+“USDT는 1달러 페그를 유지했다”	기사 대상 기간의 가격 범위·최저/최고·VWAP	CoinGecko 가격 history + 주요 CEX ticker
+“USDC 준비금은 유통량을 초과한다”	해당 월의 Circle report date	Circle monthly examination report
+“Tether의 준비금 중 미 국채 비중은 N%”	해당 분기말 BDO assurance report date	Tether quarterly reserve report
+“국내 USDT 가격이 1,400원”	해당 거래소·마켓·체결시각	Upbit/Bithumb trade or ticker data
+시장 데이터 제공자마다 자산의 공급·시가총액 산정법이 달라 결과가 불일치할 수 있으므로, “어느 소스의 시가총액인지”가 사실 주장의 일부라고 보는 것이 좋습니다. 즉, DefiLlama 기준, CoinGecko 기준, Circle 보고서 기준을 판정 화면에서 반드시 노출해야 합니다.
+
+한국 원화 스테이블코인 공식 통계
+2026년 9월 3일 기준으로, 법제화·정식 발행 전 단계인 원화 스테이블코인에 대해 한국은행·금융위원회가 정기적으로 제공하는 원화 스테이블코인 발행량·준비금·일별 시가총액 공식 통계는 확인하지 못했습니다.
+
+대신 활용할 수 있는 공식·준공식 데이터는 다음과 같습니다.
+
+한국은행의 지급결제 보고서, 가상자산·스테이블코인 이슈해설, 금융안정보고서
+
+금융위원회·금융감독원의 가상자산사업자 제도·감독 공지
+
+거래소의 KRW 마켓 공개 ticker·trade·candle API
+
+향후 원화 스테이블코인 발행이 허용되면 발행사 공시, 준비금 보고, 외부감사 또는 attestation, 감독기관 보고자료
+
+한국은행은 가상자산시장 모니터링을 위해 VASP 자료 제출 등을 활용한다고 공개했지만, 이는 특정 원화 스테이블코인 단위의 공개 실시간 통계와는 구분해야 합니다.
+
+⑩ 한국 입법 원문과 한은·금감원 피드
+입법 현황: 원문으로 확인 가능한 범위
+우선 정정할 점이 있습니다. 검색으로 확인된 과거 21대 국회 가상자산 법안 번호는 2026년 9월 현재 계류 법안 목록으로 사용하면 안 됩니다. 21대 국회 임기 종료와 함께 폐기·종료됐을 가능성이 높기 때문입니다. 예를 들어 다음 안건들은 과거 정무위 회의록에서 확인되지만, 현재 22대 국회 계류 여부는 국회 의안정보시스템에서 개별 재확인해야 합니다.
+
+법안명	의안번호	대표발의	회기·상태 해석	원문 근거
+가상자산업법안	2109935	이용우	과거 21대 국회 안건. 2026년 현재 계류안으로 단정 불가	https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=47356&type=view&item=item12
+가상자산업 발전 및 이용자 보호에 관한 법률안	2110190	김병욱	과거 21대 국회 안건. 현재 계류 여부 별도 확인 필요	https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=47356&type=view&item=item12
+가상자산 거래에 관한 법률안	2110312	양경숙	과거 21대 국회 안건. 현재 계류 여부 별도 확인 필요	https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=47356&type=view&item=item12
+가상자산 거래 및 이용자 보호 등에 관한 법률안	2111459	권은희	과거 21대 국회 안건. 현재 계류 여부 별도 확인 필요	https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=47356&type=view&item=item12
+디지털자산산업 육성과 이용자 보호에 관한 법률안	2111771	민형배	과거 21대 국회 안건. 현재 계류 여부 별도 확인 필요	https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=47356&type=view&item=item12
+가상자산산업기본법안	2113016	윤창현	과거 21대 국회 안건. 현재 계류 여부 별도 확인 필요	https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=47356&type=view&item=item12
+가상자산산업 발전 및 이용자보호에 대한 기본법안	2113168	김은혜	과거 21대 국회 안건. 현재 계류 여부 별도 확인 필요	https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=47356&type=view&item=item12
+디지털자산거래법안	2116464	민병덕	과거 21대 국회 안건. 현재 계류 여부 별도 확인 필요	https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=47356&type=view&item=item12
+국회 의안 원문 확인의 공식 진입점은 다음입니다.
+
+국회 의안·법률 정보: https://likms.assembly.go.kr/law/lawsNormInqyMain1010.do?mappingId=/lawsNormInqyMain1010.do&genActiontypeCd=2ACT1010
+
+열린국회정보 의안·법률정보: https://open.assembly.go.kr/portal/nadata/catalog/naDataCatalogPage.do
+
+국회 회의록 검색: https://likms.assembly.go.kr/record/mhs-60-010.do
+
+2026년 9월 정부안·의원발의 상태
+이번 검색으로는 금융위원회가 준비한 정부안 또는 정부안 기반 의원발의안의 공식 의안번호·접수일·법률안 전문을 확인하지 못했습니다. 따라서 2026년 9월 3일 시점에 다음처럼 기재하는 것이 맞습니다.
+
+금융위원회가 준비한 디지털자산기본법 정부안 또는 정부안 기반 의원발의안의 국회 공식 접수·의안번호·원문은 이번 확인 범위에서 발견되지 않았다. 언론 보도는 정부안 제출 또는 의원발의가 임박했다고 보도했으나, 의안정보시스템 원문으로 법안 접수 사실을 확인하기 전에는 “제출 예정/보도 단계”로 표기한다.
+
+관련 보도는 다음과 같습니다.
+
+https://biz.chosun.com/en/en-finance/2026/08/25/EABN4LDGF5E4VPYHJG45VTBL6A/
+
+https://en.bloomingbit.io/feed/news/119127
+
+https://en.sedaily.com/finance/2026/08/27/korea-weighs-20-percent-ownership-cap-for-crypto-exchange
+
+즉, 은행 지분 50%+1, 준비금, 발행주체, 환매권, 준비자산 구성 등은 언론에 보도된 정책 방향일 수 있으나, 2026년 9월 현재 의안 원문으로 확인되기 전에는 법률상 확정 조항으로 표시하면 안 됩니다.
+
+은행권 컨소시엄
+정확한 컨소시엄 회원 명단과 은행별 “공식 참여 발표일”은 이번 조사 범위에서 은행 보도자료로 확인되지 않았습니다. 특히 언론에 등장한 “컨소시엄”은 아래 세 가지를 혼동할 위험이 있습니다.
+
+실제 법인 또는 협약이 체결된 컨소시엄
+
+복수 은행이 검토·협상 중인 협의체
+
+수탁·지갑·결제 인프라 제휴
+
+원화 스테이블코인 발행 인가를 전제로 한 잠정 구상
+
+은행·그룹	공개적으로 보도된 내용	공식 은행 보도자료 여부	발표일 또는 보도일	출처
+KB금융 / KB국민은행	KB가 NH농협, IBK, 지방금융, Toss 등이 참여할 수 있는 stablecoin consortium 구성을 제안했다는 보도	1차 은행 보도자료 확인 불가	2026-05-29 보도	https://pulse.mk.co.kr/news/english/12060921
+신한금융 / 신한은행	신한은 원화 스테이블코인 생태계·수탁 인프라 및 별도 협력 구도를 검토한 것으로 보도	1차 은행 보도자료 확인 불가	2026-04-07 보도	https://biz.chosun.com/en/en-finance/2026/04/07/NO6DHILRZZDD3D7PMM45HS4GZE/
+하나금융 / 하나은행	하나가 stablecoin 경쟁·협력 구도에서 거론됨	1차 은행 보도자료 확인 불가	2026-04-07 보도	https://biz.chosun.com/en/en-finance/2026/04/07/NO6DHILRZZDD3D7PMM45HS4GZE/
+우리은행	쿠팡과 원화 stablecoin 결제·실시간 정산 PoC 완료는 공식 확인됨. 단, 발행 컨소시엄 가입의 공식 발표와는 별개	쿠팡 공식 보도자료 있음	2026-07-27	https://news.coupang.com/archives/64957/
+NH농협은행	KDAC 등 수탁 인프라 협력·투자 맥락에서 거론	은행의 stablecoin consortium 공식 발표 확인 불가	2025-02-14 등 보도	https://en.bloomingbit.io/feed/news/83346
+IBK기업은행	KB 제안 컨소시엄 후보로 보도	공식 참여 발표 확인 불가	2026-05-29 보도	https://pulse.mk.co.kr/news/english/12060921
+따라서 화면에는 공식 참여 발표, 언론상 참여 검토, 기술 PoC, 수탁 인프라 투자를 별도 badge로 표시해야 합니다.
+
+한국은행 RSS·스크래핑
+한국은행 보도자료 목록의 공식 URL은 다음입니다.
+
+통화정책 보도자료: https://www.bok.or.kr/portal/main/contents.do?menuNo=200690
+
+뉴스·의사록 메인: https://www.bok.or.kr/portal/main/contents.do?menuNo=200038
+
+언론보도 해명자료: https://www.bok.or.kr/portal/bbs/P0000560/list.do?menuNo=200040
+
+한국은행 웹페이지에는 RSS 아이콘이 노출되지만, 이번 검색에서 보도자료에 직접 대응하는 공식 RSS XML endpoint URL을 확정하지 못했습니다. 따라서 현재 상태는 다음과 같습니다.
+
+항목	확인 결과	구현 권고
+한국은행 보도자료 RSS endpoint	확인 불가	RSS 아이콘의 실제 링크를 브라우저 개발자도구·페이지 source에서 1회 추출하여 endpoint를 고정
+목록 페이지	확인됨	목록의 게시일·제목·부서·상세 URL을 주기적으로 수집
+상세 페이지	확인됨	본문, 등록일, 담당부서, 첨부파일 URL, 관련 콘텐츠 수집
+첨부파일	HWP/HWPX/PDF 혼재 가능	원문 본문과 첨부파일을 분리 보관하고 OCR/문서파싱 품질 로그 기록
+디지털자산 필터	전용 feed 확인 불가	스테이블코인, 가상자산, 디지털자산, CBDC, 토큰증권, 지급결제 키워드와 인명·기관명 조합으로 후처리
+금융감독원 RSS·스크래핑
+금융감독원의 일반 보도자료 RSS endpoint는 이번 검색으로 확인하지 못했습니다. 다만 DART 전자공시시스템은 RSS를 명시적으로 제공합니다.
+
+DART RSS 안내: https://dart.fss.or.kr/introduction/content6.do
+
+DART 최근공시 목록: https://dart.fss.or.kr/dsac001/mainAll.do?selectDate=
+
+금융감독원 일반 보도자료 목록: 공식 목록 URL을 검색 결과로 확정하지 못함
+
+금융감독원 홈페이지: https://www.fss.or.kr/
+
+항목	확인 결과	구현 권고
+금감원 일반 보도자료 RSS	확인 불가	일반 보도자료 목록 페이지의 pagination·검색 URL을 확인한 뒤 HTML incremental crawler 구축
+DART 최근공시 RSS	있음	회사별·최근공시 RSS를 상장사 가상자산·스테이블코인 공시 탐지에 사용
+디지털자산 주제 필터	전용 RSS 확인 불가	공시 제목·본문·첨부문서에서 stablecoin, virtual asset, blockchain, tokenized asset, custody 등의 키워드 검색
+구조화 수준	DART는 매우 높음	회사·공시일·접수번호·첨부파일·정정공시를 제공하므로 감사추적 소스로 우선 활용
+
+⑪ 은행 디지털자산 조직과 채용
+공개 확인 범위와 한계
+2025~2026년 은행권의 디지털자산·스테이블코인 업무는 빠르게 확대되고 있으나, 은행들은 다음을 일관되게 공개하지 않습니다.
+
+디지털자산 TF의 정확한 정식 조직명
+
+TF 상설화 날짜
+
+전담 인원 수
+
+담당 임원 전체 명단
+
+내부 시장동향 보고 주기
+
+채용공고가 마감된 후의 원문
+
+따라서 조직과 커리어 정보를 기획서에 쓸 때는 “전담 부서가 존재한다”보다 “수탁, 지급결제, 규제대응, 블록체인 인프라, AML/제재, 신사업, 전략조직에 업무가 분산돼 있다”고 표현하는 편이 안전합니다.
+
+은행별 공개 단서
+기관	공개 확인 가능한 디지털자산 관련 활동	조직명·상설화 시점	담당 임원	근거 수준
+KB국민은행 / KB금융	KODA 설립, 수탁 및 디지털자산시장 선점 전략 보도자료 존재	독립 “디지털자산 TF” 정식명·신설일은 이번 조사에서 확인 불가	공개 확인 불가	KODA·전략 활동은 확인, 조직세부는 불확실
+신한은행 / 신한금융	KDAC 투자·협력, 디지털자산 수탁 생태계 참여	정식 부서명·상설화 시점 확인 불가	공개 확인 불가	보도 기반
+우리은행	쿠팡과 원화 stablecoin 결제·정산 PoC	PoC 담당 부서·임원 공식 공개 확인 불가	공개 확인 불가	쿠팡 공식 발표
+하나은행 / 하나금융	BitGo Korea 협력 등 수탁·인프라 관련 활동 보도	정식 부서명·상설화 시점 확인 불가	공개 확인 불가	보도 기반
+NH농협은행 / NH금융	KDAC 투자·협력, 수탁 인프라 참여	정식 부서명·상설화 시점 확인 불가	공개 확인 불가	보도 기반
+IBK기업은행	컨소시엄 후보 등으로 언론 보도	실제 참여·전담조직 공식 확인 불가	공개 확인 불가	2차 보도
+카카오뱅크	디지털자산 관련 별도 조직·stablecoin 담당부서의 공식 공개 확인 불가	확인 불가	확인 불가	확인 불가
+토스뱅크	컨소시엄 참여 후보로 언론 보도	공식 참여·조직명 확인 불가	확인 불가	2차 보도
+KB금융은 “디지털자산시장 선점과 AX 가속화”를 위한 발표를 공개했지만, 검색 결과만으로 해당 활동의 실제 전담조직명·임원·법적 업무범위를 확정할 수는 없습니다.
+
+수탁 영역의 공개 확인 사례는 다음과 같습니다.
+
+KB국민은행은 Korea Digital Asset Custody(KODA)를 설립한 것으로 보도됐습니다.
+
+신한은 KDAC에 투자했고, NH금융 계열도 KDAC의 기존 주주·투자 기반으로 보도됐습니다.
+
+하나는 BitGo Korea, 우리는 VETAX, NH는 KDAC 등과 협력 관계가 거론됐습니다.
+
+실제 채용공고
+이번 검색 범위에서는 2025~2026년 은행권의 “디지털자산 / 블록체인 / 가상자산 컴플라이언스” 채용공고 중, 마감 여부와 원문 URL을 함께 검증할 수 있는 공고를 충분히 확보하지 못했습니다. 채용 공고는 삭제·로그인·ATS 이전이 잦기 때문입니다.
+
+따라서 존재가 확인되지 않은 공고를 만들어 인용하지 않고, 다음을 검증 필요 항목으로 남기는 것이 정확합니다.
+
+대상	원문 URL	상태
+KB국민은행 디지털자산/블록체인/가상자산 채용	확인 불가	은행 공식 채용 페이지 및 과거 공고 archive 재조사 필요
+신한은행·신한금융 디지털자산/가상자산 채용	확인 불가	동일
+우리은행 디지털자산·stablecoin·블록체인 채용	확인 불가	동일
+하나은행 디지털자산·수탁·블록체인 채용	확인 불가	동일
+NH농협은행/NH금융 디지털자산·수탁·블록체인 채용	확인 불가	동일
+IBK기업은행 디지털자산·가상자산 컴플라이언스 채용	확인 불가	동일
+카카오뱅크·토스뱅크 디지털자산·가상자산 채용	확인 불가	동일
+그 대신 페르소나·커리어 문서에 활용할 수 있는 직무 역량 가설은 다음처럼 표기하는 것이 적합합니다.
+
+업무 모듈	실제로 필요한 역량	제품과의 연결
+시장·정책 모니터링	규제 공고 탐색, 뉴스 신뢰도 평가, 법안·공시 읽기, 영어 원문 검토	주장별 원출처·발행시점·후속정정·규제 타임라인
+상품·신사업	지급결제, 전자금융, 토큰화, 지갑, 온·오프램프, 파트너 due diligence	PoC·제휴·발행계획 주장의 단계별 검증
+AML·컴플라이언스	KYC, AML/CFT, 제재, Travel Rule, 의심거래, adverse media	엔터티·지갑·규제 사건과 뉴스 주장 연결
+수탁·인프라	키관리, MPC/HSM, 온체인 리스크, 거래소·수탁사 검토	지갑·수탁·해킹·준비금 주장 검증
+모델·데이터 거버넌스	데이터 계보, 증거 보존, AI 검토, 재현성, 감사 로그	human-in-the-loop 승인·반려·사유기록
+은행원이 동향을 파악하는 근거
+공개적으로 “은행의 디지털자산 담당자가 매일 뉴스·리서치·규제공시를 어떤 비율로 읽는다”는 내부 프로세스는 확인하지 못했습니다. 다만 JPMorgan·Citi와 한국 금융권 사례를 보면, 다음 정보원을 결합하는 방식이 일반적인 실무 구조로 보입니다.
+
+감독기관·중앙은행·국회·관보·법령의 1차 규제문서
+
+발행사·수탁사·거래소의 보도자료·투명성 보고서·감사보고서
+
+온체인 분석과 AML·제재 데이터
+
+시장데이터 API와 거래소 데이터
+
+리서치·전문매체 뉴스
+
+자체 신사업·PoC·파트너 협의체에서 생성되는 내부 정보
+
+JPMorgan은 digital asset regulatory practice와 Kinexys를 연결하고 있으며, Citi는 전사적 Digital Assets 팀을 운영한다고 공개합니다. 이는 “뉴스만 보는 분석자”보다 규제·상품·운영·리스크 정보의 교차 검증자에 가까운 페르소나를 뒷받침합니다.
+
+연구기관 보고서
+2025~2026년 발간물 전체를 누락 없이 열거할 수는 없었으며, 이번 검색에서는 은행연합회·금융연구원·자본시장연구원의 스테이블코인 보고서별 PDF와 인용문헌 비율을 검증할 만큼의 원문을 수집하지 못했습니다.
+
+따라서 다음은 현재 상태입니다.
+
+기관	2025~2026 stablecoin 보고서 전체 목록	PDF 원문 확보	인용 정보원 비율 산출
+은행연합회	확인 불가	확인 불가	확인 불가
+한국금융연구원	전체 목록 미확정	일부 개별 이슈 분석 존재 가능성, 이번 결과에서 원문 미확보	원문별 참고문헌 코딩 필요
+자본시장연구원	전체 목록 미확정	일부 개별 이슈 분석 존재 가능성, 이번 결과에서 원문 미확보	원문별 참고문헌 코딩 필요
+한국은행	스테이블코인 이슈해설 확인	확인됨	보고서별 참고문헌·각주 자동 추출 후 분류 가능
+한은의 공식 스테이블코인 이슈해설은 다음 URL입니다.
+
+https://www.bok.or.kr/portal/bbs/B0000168/view.do?menuNo=200058&nttId=10094368
+
+“언론, 공시, 해외 규제문서의 비율”은 보고서의 참고문헌·각주 전체를 코딩해야 계산할 수 있습니다. 현 단계에서 비율 수치를 제시하면 추정이 되므로, 향후 보고서 PDF를 모아 다음처럼 코딩하는 절차를 권장합니다.
+
+문헌 단위별 출처 유형: 규제기관 / 법령·관보 / 중앙은행 / 국제기구 / 학술논문 / 기업공시 / 발행사 문서 / 리서치사 / 언론 / 기타
+
+각주 기준 빈도와 고유 출처 기준 빈도를 분리
+
+본문 중요도 기준 가중치를 별도 부여
+
+한국어·영어 출처 비율 및 국내·해외 출처 비율도 별도 산출
+
+⑫ 팩트체크 도구 UI와 출력 표준
+UI 설계 결론
+주장 단위 결과 화면은 “큰 판정 배지”만 보여주는 방식보다 아래의 다섯 요소를 동시에 보여야 합니다.
+
+원자 주장: 사용자가 무엇이 판정 대상인지 즉시 이해할 수 있어야 함
+
+판정과 판정일: 확인됨 / 반박됨 / 부분 확인 / 판단보류 / 검증 대상 외
+
+근거 목록과 계보: 공식 1차 자료인지, 독립 보도인지, 단일 보도인지
+
+시점: 주장 시점·기사 시점·근거 기준 시점·검증 실행 시점
+
+이력: AI 초안, 사람 승인·반려, 정정, 재검증, 근거 교체를 모두 남김
+
+Google Fact Check Explorer는 ClaimReview를 수집해 주장, 발화자, claim review 발행기관, URL, review date, textual rating을 검색결과로 연결합니다.
+
+서비스별 화면 패턴
+서비스·표준	사용자에게 노출되는 핵심 정보	귀하 화면에 가져올 패턴	URL
+Google Fact Check Explorer	주장 검색, 팩트체크 발행기관, 판정, 원문 fact-check 링크, 최신 팩트체크 목록	검색→주장 카드→판정·발행기관·날짜·원문 근거 링크	https://toolbox.google.com/factcheck/explorer
+Google Fact Check Tools API	claim text, claimant, date made, claim reviews, publisher, review URL, review date, textual rating	데이터 모델에서 claim, claimant, claimDate, reviewPublisher, reviewDate, rating, reviewURL 분리	https://developers.google.com/fact-check/tools/api/reference/rest/v1alpha1/claims
+Full Fact AI	AI가 주장 탐지·주제 분류·발화자 추출·checkworthiness scoring·기존 검증 주장 매칭	AI는 우선순위·후보·매칭에 쓰고 최종 판정은 사람 검수 workflow로 연결	https://fullfact.org/ai/
+Full Fact Stats Checker	수치형 주장에 대해 주제·날짜·수치를 추출하고 공식 통계와 비교	숫자 주장 카드에서 값, 단위, 기준시점, 비교 소스, 차이율을 자동 표시	https://fullfact.ai/blog/claim-challenge-update/
+SNU팩트체크	5단계 등급과 판단유보, 기사 형태의 검증 설명·근거	판단유보 배지와 등급 정의 팝오버, 판정 이유의 서술형 설명	https://factcheck.snu.ac.kr/
+뉴스톱	검증 기사, 주장·근거·판정 서술	근거 중심 본문과 기사형 설명을 detail view로 배치	https://www.newstof.com/
+ClaimReview	구조화된 claim, rating, URL	외부 공개 페이지를 만들 때 JSON-LD로 claim·rating·date·author를 구조화	https://schema.org/ClaimReview
+Full Fact는 AI가 매일 잠재적 허위·오해 소지가 있는 주장을 찾고, 문서마다 주제와 발화자를 라벨링하며, checkworthiness 점수로 사람이 검토할 항목을 정렬한다고 설명합니다. 이는 귀하의 “AI 잠정 라벨 + human gold review” 설계와 매우 가깝습니다.
+
+Full Fact의 Stats Checker는 주장 속 주제·날짜·수치를 식별한 뒤 공개 통계와 대조하는 방식입니다. SW-PL-07/09의 숫자 대조 기능은 이 패턴을 스테이블코인 API와 준비금 보고서에 적용한 것으로 설명할 수 있습니다.
+
+ClaimReview 스키마
+Schema.org의 ClaimReview는 팩트체크 review를 표현하는 타입입니다. Google Search의 Fact Check markup 가이드에서 실질적으로 요구하는 주요 속성은 다음과 같습니다.
+
+필드	의미	귀하 서비스 매핑
+@context	JSON-LD context	https://schema.org
+@type	타입	ClaimReview
+claimReviewed	검토한 구체적 주장 요약	추출된 atomic claim
+itemReviewed	주장 객체 및 발화 주체	원 기사, 기업, 기관, 인용 발화자
+reviewRating	판정 rating object	alternateName = 확인됨 / 반박됨 / 판단보류
+reviewRating.alternateName	사람이 읽는 판정명	“Confirmed”, “Refuted”, “Insufficient public evidence” 등
+reviewRating.ratingValue	숫자 등급	1~5 등 점수화 시 사용. 귀하의 명목형 판정에는 필수로 쓰지 않아도 됨
+author	검토자·발행 조직	조직명 및 human reviewer role
+datePublished	판정 공개일	최초 검증 완료 시각
+dateModified	수정일	재검증·근거변경 시각
+url	상세 판정 페이지 URL	claim detail view URL
+appearance	주장이 등장한 기사·영상·게시물	원 뉴스 URL 및 발행일
+url	전체 판정 기사 URL	상세 페이지
+Google은 claimReviewed, reviewRating, url을 요구하며, reviewRating.alternateName에 사람이 읽을 수 있는 짧은 판정문을 넣도록 안내합니다. 서로 다른 팩트체크 조직의 중간 등급이 다를 수 있으므로, 숫자 rating을 사용한다면 숫자-텍스트 매핑 정의를 문서화해야 합니다.
+
+추천 ClaimReview 예시
+json
+{
+  "@context": "https://schema.org",
+  "@type": "ClaimReview",
+  "url": "https://example.com/claims/krw-stablecoin-poc-2026-07-27",
+  "datePublished": "2026-09-03T08:00:00+09:00",
+  "dateModified": "2026-09-03T08:00:00+09:00",
+  "author": {
+    "@type": "Organization",
+    "name": "Example Fact Verification Service"
+  },
+  "claimReviewed": "쿠팡과 우리은행이 2026년 8월 26일 원화 스테이블코인 PoC를 발표했다.",
+  "itemReviewed": {
+    "@type": "Claim",
+    "appearance": {
+      "@type": "NewsArticle",
+      "url": "https://example.com/original-news-url",
+      "datePublished": "2026-08-26T00:00:00+09:00"
+    }
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "alternateName": "부분 확인",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingValue": "3"
+  }
+}
+실제 서비스에서는 reviewRating 외에 내부 확장 필드를 두는 편이 좋습니다.
+
+json
+{
+  "claim_type": "event",
+  "evidence_status": "official_primary_source",
+  "verdict": "partially_confirmed",
+  "claim_datetime": "2026-08-26T00:00:00+09:00",
+  "evidence_as_of": "2026-07-27T00:00:00+09:00",
+  "verification_datetime": "2026-09-03T08:00:00+09:00",
+  "source_lineage_id": "coupang-press-release-2026-07-27",
+  "human_review_status": "approved",
+  "correction_history": []
+}
+금융권 감사가능성
+미국 SR 11-7은 모델 리스크 관리에서 모델 개발·구현·사용의 견고성, 독립 검증, 거버넌스·정책·통제를 요구하며, 핵심 원칙으로 effective challenge를 제시합니다. 즉 모델 산출물이 중요한 의사결정에 사용된다면, 객관적이고 정보에 밝은 독립 당사자가 모델의 한계·입력·결과를 검토하고 이의를 제기할 수 있어야 한다는 뜻입니다.
+
+이 원칙을 주장 검증 AI에 적용하면 다음이 필요합니다.
+
+SR 11-7 원칙	제품 UI·로그 요구사항
+모델 inventory	모델명, 버전, 프롬프트 버전, retrieval 설정, 데이터 소스 버전, 사용 시작·종료일
+개발·구현 문서화	라벨 정의, evidence ranking 규칙, threshold, 알려진 실패 사례, 적용 금지 범위
+독립 검증	AI 개발자와 다른 reviewer가 근거·판정·근거충족 여부를 승인 또는 반려
+effective challenge	리뷰어가 AI 판정을 변경하고, 변경 사유를 강제 입력하며, 배포/알림을 차단할 수 있어야 함
+지속 모니터링	사람 수정률, 클래스별 오류, 근거 링크 사망률, 출처 편향, 시간 경과에 따른 정확도 변화
+감사 추적	입력 기사 스냅샷, 추출 주장, 검색 query, 검색결과, 인용 passage, 판정, reviewer, 변경 이력을 immutable하게 보존
+SR 11-7 자체는 2011년 모델리스크 지침이며 생성형 AI 전용 규정은 아닙니다. 그러나 은행의 모델 관리·독립 검증·문서화·effective challenge 원칙을 AI 기반 검증도구에 적용할 때 가장 널리 인용되는 근거입니다.
+
+한국 전자금융감독규정의 AI 산출물별 로그 보관 의무를 이번 조사에서는 특정 조문으로 검증하지 못했습니다. 따라서 “한국 규정이 AI claim verdict의 audit trail을 직접 요구한다”고 단정하기보다, 다음처럼 표현해야 합니다.
+
+금융회사 내부통제·전자금융·모델리스크 관리 관점에서 중요한 자동화 판단은 입력, 근거, 승인자, 변경이력 및 재현 가능한 결과를 보존하는 통제가 요구될 수 있다. 다만 본 서비스의 개별 AI 판정 로그가 특정 한국 전자금융감독규정 조문에 의해 직접 의무화되는지는 별도 법률 검토가 필요하다.
+
+Human-in-the-loop UI
+팩트체크와 금융 검증의 human-in-the-loop은 단순한 “좋아요/싫어요” 피드백이 아니라, 판정 책임을 이전·기록하는 승인 workflow여야 합니다.
+
+단계	AI 역할	사람 역할	반드시 기록할 데이터
+수집	뉴스·RSS·공시 수집, 중복 제거	표본 점검	수집 원문, URL, 수집시각, 원문 hash
+주장 추출	atomic claim 후보 분리, 유형 추정	분할 오류 수정·승인	원문 span, claim text, 추출 모델·버전
+근거 검색	기관·API·공시·웹 근거 후보 검색·랭킹	근거 적합성 판정	검색 query, ranking, 제외 사유
+AI 초안 판정	verdict·confidence·rationale 제안	승인·수정·반려·보류	초안 verdict, confidence, prompt/model version
+최종 판정	배지·요약 생성	최종 권한 행사	reviewer ID, timestamp, rationale, approval state
+정정·재검증	새 근거 감지·재검증 제안	이전 판정 유지/수정/철회	이전·신규 verdict, 변경 사유, 변경 근거
+권장 버튼 구조는 아래처럼 단순하고 강제력이 있어야 합니다.
+
+승인: AI 결론과 근거를 그대로 채택
+
+수정 승인: 판정 또는 근거를 사람이 변경 후 채택
+
+보류: 추가 확인 필요, 외부 표시 시 “공개 근거 부족/상충”으로 표시
+
+반려: 추출 자체가 부정확하거나 검증 대상이 아닌 경우
+
+재검증 요청: 새로운 1차 자료, 시장 데이터 revision, 법안 처리 변화가 발생한 경우
+
+수정 승인, 보류, 반려, 재검증에는 자유텍스트 사유와 사유 코드 중 하나 이상을 필수로 두는 것이 좋습니다.
+
+팩트체크 처리시간 벤치마크
+주장 1건당 “평균 검증 소요시간”을 기관별로 공식 공개한 일관된 벤치마크는 이번 조사에서 확인하지 못했습니다. 따라서 평균 시간 수치를 임의로 제시하면 안 됩니다.
+
+대신 공개적으로 확인되는 것은 다음입니다.
+
+Full Fact는 AI를 이용해 매일 주장 후보를 탐지·분류·우선순위화하고, 이미 검증된 주장을 새 매체에서 매칭해 반복 검증 업무를 줄입니다.
+
+Full Fact의 Stats Checker는 정형화된 공식 통계에 대한 수치 주장을 자동 비교하는 프로토타입으로, 수치형 주장에 한해 조사시간을 줄이는 목적입니다.
+
+AFP와 다른 팩트체크 기관은 주장 식별, 원발신 추적, 공식문서·전문가·원자료 확인, 기사 작성·편집을 포함하는 작업을 수행하므로, 검증 난이도에 따라 시간이 크게 달라집니다.
+
+따라서 제품 KPI는 외부 평균시간을 억지로 비교하기보다 자체적으로 측정하는 것이 좋습니다.
+
+내부 KPI	정의
+후보 주장 추출 시간	기사 수집 완료부터 주장 후보가 생성될 때까지
+자동 근거 검색 시간	claim 생성부터 상위 근거 후보 5개 확보까지
+사람 검토 시간	reviewer가 claim detail을 열어 최종 action을 누를 때까지
+총 처리 리드타임	기사 수집부터 공개 verdict 또는 보류 상태까지
+근거충족률	최종 판정 중 1차 자료 또는 독립 복수 근거가 연결된 비율
+AI 수정률	AI 초안 verdict가 사람에 의해 변경된 비율
+보류 해소율	처음 판단보류였던 claim이 후속 자료로 확인·반박된 비율
+정정 반영 시간	새 공시·공식 발표 후 기존 claim 상태가 갱신되기까지 걸린 시간
+이렇게 하면 “사람보다 빠른 AI”라는 모호한 주장이 아니라, AI가 후보 탐색·근거 정렬·반복 모니터링을 단축하고, 사람은 최종 책임 판단을 한다는 검증 가능한 운영지표를 만들 수 있습니다.
+
+
+Data-source audit: build a consolidated link table for the 7 key fact-checking datasets mentioned in your study
+Computer
+
+FEVER와 AVeriTeC 데이터셋의 구조 및 레이블 차이점
+
+MultiFC 데이터셋의 다도메인 특징과 팩트체크 항목
+
+금융 팩트체크 벤치마크 Fin-Fact와 FINDVER 비교
+
+팩트체크 AI 시스템의 검증 가능한 운영지표 설계 방법
+
+출처
+
+
+377
+
+
+이 세션 공유
+이름 또는 이메일로 사람 추가…
+액세스 권한이 있는 사용자
+도로로
+도로로
+itsdorodoro@gmail.com
+소유자
+일반 액세스
+https://www.perplexity.ai/search/c983a5bc-3322-4f34-9249-7a03cf360ef6

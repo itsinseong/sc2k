@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!--
+      Google Tag Manager — head 최상단에 위치해야 dataLayer 이벤트 손실 없음.
+      Hostname 가드: production apex(`manyfast.io` / `www.manyfast.io`)에서만 로더 실행.
+      staging/preview/localhost 등은 IIFE 가 early return 하므로 `gtm.js` 네트워크 요청도 발생하지 않음
+      → 환경 변수 / 빌드 타임 플레이스홀더 없이도 분석 데이터 오염을 차단. 도메인 변경 시 PROD_HOSTS 만 갱신.
+    -->
+    <script>(function(w,d,s,l,i){
+    var PROD_HOSTS = ['manyfast.io', 'www.manyfast.io'];
+    if (PROD_HOSTS.indexOf(location.hostname) === -1) return;
+    w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PLT35QR7');</script>
+    <!-- End Google Tag Manager -->
+
+    <!--
+      Paddle.js 정적 로드 — Paddle Retain 설치 검증 대비.
+      Retain 온보딩의 설치 체크가 정적 HTML 에서 스니펫 태그를 찾는 경우를 커버한다
+      (JS 실행형 체크는 앱 번들의 initializePaddle 이 커버).
+      URL 은 @paddle/paddle-js 래퍼가 querySelector 로 재사용 판정하는 값과
+      정확히 일치해야 이중 로드가 없다: cdn.paddle.com/paddle/v2/paddle.js
+    -->
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js" async></script>
+
+    <!-- 폰트 로딩 (인라인 스크립트 없이 로드해 CSP/스크립트 차단 환경에서도 동작) -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+    <!-- 기본 파비콘 -->
+    <link rel="icon" href="/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png" />
+    
+    <!-- Apple 기기용 파비콘 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png" />
+    <link rel="apple-touch-icon" href="/favicons/apple-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="/favicons/apple-icon-precomposed.png" />
+    
+    <!-- Android 기기용 파비콘 -->
+    <link rel="icon" type="image/png" sizes="36x36" href="/favicons/android-icon-36x36.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicons/android-icon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="72x72" href="/favicons/android-icon-72x72.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/android-icon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="144x144" href="/favicons/android-icon-144x144.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png" />
+    
+    <!-- Windows 타일 아이콘 -->
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png" />
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+
+    <!-- 테마 컬러 -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- 검색 엔진 소유 확인 — MF-2663 후속 작업으로 발급 토큰 입력 -->
+    <meta name="google-site-verification" content="" />
+    <meta name="naver-site-verification" content="f902e2918445440b3fe45266a0faaaef5e6e049d" />
+
+    <!-- SEO 메타 태그 -->
+    <meta name="application-name" content="Manyfast" />
+    <meta name="description" content="매니패스트는 PRD부터 와이어프레임까지 만들어주는 소프트웨어 기획 AI입니다." />
+    <meta name="keywords" content="AI planning editor, PRD, feature specification, information architecture, IA, MCP, real-time collaboration, product management, AI agent, manyfast, AI 기획 에디터, 기능명세서, 정보구조도, 실시간 협업, 제품 기획, 매니패스트" />
+    <link rel="canonical" href="https://manyfast.io/share/1ikU6vijF9eYSXEbf6OeZTAQhCSKsVpVS5ODcsXbYa50DTgm-JkGSYPLYLTTLdAZ" />
+
+    <!-- hreflang 다국어 지원 — prerender 시 ko/en URL 페어로 치환 -->
+    
+
+    <!-- Open Graph 메타 태그 -->
+    <meta property="og:title" content="미디어프로젝트 — 소프트웨어 기획 AI 매니패스트 (Manyfast)" />
+    <meta property="og:description" content="매니패스트는 PRD부터 와이어프레임까지 만들어주는 소프트웨어 기획 AI입니다." />
+    <meta property="og:image" content="https://manyfast.io/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Manyfast - AI Planning Editor for Product Teams" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://manyfast.io/share/1ikU6vijF9eYSXEbf6OeZTAQhCSKsVpVS5ODcsXbYa50DTgm-JkGSYPLYLTTLdAZ" />
+    <meta property="og:site_name" content="Manyfast" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter Card 메타 태그 — twitter:site/creator 는 MF-2663 후속 작업으로 공식 핸들 입력 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <meta name="twitter:title" content="미디어프로젝트 — 소프트웨어 기획 AI 매니패스트 (Manyfast)" />
+    <meta name="twitter:description" content="매니패스트는 PRD부터 와이어프레임까지 만들어주는 소프트웨어 기획 AI입니다." />
+    <meta name="twitter:image" content="https://manyfast.io/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Manyfast - AI Planning Editor for Product Teams" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>미디어프로젝트 — 소프트웨어 기획 AI 매니패스트 (Manyfast)</title>
+
+    <!-- 구조화 데이터 (JSON-LD) — `scripts/inject-jsonld.mjs` 가 빌드 시 ko/en 별로 4종 schema 인라인 -->
+    <!-- JSON-LD-INJECT -->
+    <script type="module" crossorigin src="/assets/index-siP-NnGx.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-core-dPxNBjUk.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-editor-CLGqqqVo.js">
+    <link rel="modulepreload" crossorigin href="/assets/landing-BOSUI2Ie.js">
+    <link rel="stylesheet" crossorigin href="/assets/landing-DeLByzpR.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-Xlm2GzL7.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+  <body>
+    <!-- Google Tag Manager (noscript) — JS 비활성 환경 폴백 -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLT35QR7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+  </body>
+</html>

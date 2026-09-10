@@ -1,0 +1,10 @@
+ey | https://www.ey.com/content/dam/ey-unified-site/ey-com/en-us/technical/accountinglink/documents/ey-cl30826-261us-05-01-2026.pdf
+occ | https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-24.html
+연방관보 91 FR 10202–10303 / GovInfo | https://www.govinfo.gov/app/details/FR-2026-03-02/2026-04089
+OCC Bulletin 2026-3 원문 | https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-3.html
+AICPA 의견서 | https://assets.ctfassets.net/rb9cdnjh59cm/5yb5uBqXdJlAzWV3pg5aY5/0662dded940f8614d96e93f1f7f783c4/AICPA_Comment_Letter_OCC_2025_GENIUS_Act_FINAL_04292026.pdf
+Treasury §3 NPRM 각주 30 | https://home.treasury.gov/system/files/136/GENIUS%20Section%203%20NPRM.pdf
+Federal Register 공고 | https://www.federalregister.gov/documents/2026/08/18/2026-16796/genius-act-regulations-on-payment-stablecoin-issuance-offer-and-sale
+Federal Register 원문 PDF, 91 FR 37234 | https://www.occ.gov/news-issuances/federal-register/2026/91fr37234.pdf
+OCC Bulletin 2026-28 | https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-28.html
+occ-gov.cms.awsdev.treasury | https://occ-gov.cms.awsdev.treasury.gov/news-issuances/bulletins/2026/bulletin-2026-3/

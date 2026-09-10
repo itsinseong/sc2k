@@ -1,0 +1,17 @@
+PYUSD 안내 | https://www.paypal.com/us/digital-wallet/manage-money/crypto/pyusd
+공식 단계별 설명 | https://developer.paypal.com/community/blog/pyusd-on-stellar/
+USDC 도입 발표 | https://international.nubank.com.br/consumers/nubank-partners-with-circle-to-offer-experiences-with-digital-dollars/
+Swap 발표 | https://international.nubank.com.br/consumers/nubank-launches-cryptocurrency-swap-tool-in-its-app/
+단계별 UX 안내 | https://www.usdc.com/learn/how-to-buy-usdc-nubank
+USDC 안내 | https://www.coinbase.com/usdc
+Wallet 매수·스왑 절차 | https://help.coinbase.com/en/wallet/managing-account/usdc-coinbase-wallet
+fintechobserver | https://www.fintechobserver.com/japanese-yen-stablecoin-jpyc-and-issuance-redemption-platform-jpyc-ex/
+paypal | https://www.paypal.com/us/cshelp/article/what-can-i-do-with-crypto-on-paypal-help893
+paypal | https://www.paypal.com/us/legalhub/paypal/cryptocurrencies-tnc
+paypal | https://www.paypal.com/us/cshelp/article/what-is-paypal-usd-pyusd-help1005
+news.coupang | https://news.coupang.com/archives/64957/
+hkma.gov | https://www.hkma.gov.hk/media/eng/doc/key-functions/ifc/stablecoin-issuers/Explanatory_Notes_on_Licensing_of_Stablecoin_Issuers_eng.pdf
+japaneselawtranslation.go | https://www.japaneselawtranslation.go.jp/en/laws/view/3078/en
+reports.tiger-research | https://reports.tiger-research.com/p/korea-crypto-market-a-guide-to-the-eng
+hkma.gov | https://www.hkma.gov.hk/media/eng/doc/key-functions/ifc/stablecoin-issuers/Guideline_on_supervision_of_licensed_stablecoin_issuers_eng.pdf
+law | https://www.law.go.kr/LSW/lsRvsDocListP.do?lsId=001565&chrClsCd=010202&lsRvsGubun=all

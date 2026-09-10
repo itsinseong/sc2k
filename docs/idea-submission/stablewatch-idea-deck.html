@@ -1,0 +1,517 @@
+<meta charset="utf-8">
+<title>StableWatch Idea</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* ============================================================
+   DESIGN PLAN — StableWatch Idea deck (인쇄용 6장, 단일 밝은 테마)
+
+   Color
+     --bg     #EFF1EC  옅은 세이지 회백. 순백 대신 규제문서 용지 느낌
+     --panel  #E3E7E0  표/구간 배경용, bg보다 한 톤 진한 패널
+     --ink    #15191C  거의 검정에 가까운 쿨톤 잉크. 본문 글자
+     --ink-soft #4B534E 보조 텍스트, 캡션, 출처줄
+     --pass   #0B3B36  짙은 청록. 판정 엔진, 강조 박스, 레터헤드 룰선
+     --fail   #8C2F2F  짙은 벽돌빨강. 결측 표시(학번), 정직한 열위 등 결핍 신호 전용
+     --line   #C7CCC3  헤어라인 룰
+
+   Type
+     제목/장타이틀 — Noto Serif KR 700/900 (규제 문서 특유의 권위, 세리프)
+     본문/라벨     — IBM Plex Sans KR 400/500/600 (기술 문서 느낌의 산세리프)
+     수치/날짜     — IBM Plex Mono 500, tabular-nums (판정표 원장 느낌)
+
+   Layout
+     16:9 슬라이드 6장을 화면에서는 세로로 쌓고 인쇄에서는 297x167mm
+     가로 페이지 1장씩으로 전환한다. 슬라이드 폭에 대한 컨테이너 쿼리
+     단위(cqw)로 모든 글자 크기를 고정해 화면 축소와 인쇄 전환에서도
+     비율이 그대로 유지되며, 그림자와 둥근 카드 없이 헤어라인 룰선과
+     레터헤드 상단 색띠만으로 위계를 만든다.
+   ============================================================ */
+
+:root{
+  --bg:#EFF1EC;
+  --panel:#E3E7E0;
+  --ink:#15191C;
+  --ink-soft:#4B534E;
+  --pass:#0B3B36;
+  --fail:#8C2F2F;
+  --line:#C7CCC3;
+  --serif:'Noto Serif KR','Nanum Myeongjo',serif;
+  --sans:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  --mono:'IBM Plex Mono','SF Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--sans);
+}
+h1,h2,h3,p{margin:0;}
+h1,h2,h3{text-wrap:balance;}
+ul{margin:0;padding:0;}
+
+.printbar{
+  position:sticky;top:0;z-index:10;
+  background:var(--ink);color:var(--bg);
+  font-family:var(--sans);font-size:13px;font-weight:500;
+  text-align:center;padding:9px 12px;
+  letter-spacing:.01em;
+}
+@media print{ .printbar{display:none;} }
+
+.deck{
+  display:flex;flex-direction:column;align-items:center;
+  gap:28px;padding:28px 0 56px;
+}
+
+.slide{
+  container-type:inline-size;
+  position:relative;
+  width:min(100vw - 40px, 1120px);
+  aspect-ratio:16/9;
+  background:var(--bg);
+  color:var(--ink);
+  border:1px solid var(--line);
+  border-top:0.32cqw solid var(--pass);
+  overflow:hidden;
+  padding:4.6cqw 5.4cqw 3.6cqw;
+  display:flex;
+  flex-direction:column;
+}
+@media print{
+  @page{ size:297mm 167mm; margin:0; }
+  .deck{gap:0;padding:0;}
+  .slide{
+    width:297mm;height:167mm;aspect-ratio:auto;
+    border-left:none;border-right:none;border-bottom:none;
+    page-break-after:always;
+  }
+  .slide:last-child{page-break-after:auto;}
+}
+
+.slide-head{display:flex;align-items:baseline;gap:.6cqw;margin-bottom:1.8cqw;}
+.kicker-num{font-family:var(--mono);font-size:1.35cqw;color:var(--ink-soft);letter-spacing:.02em;}
+.kicker-label{font-family:var(--sans);font-size:1.35cqw;font-weight:600;color:var(--ink);letter-spacing:.01em;}
+
+.slide-body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:1.4cqw;}
+
+.slide-foot{
+  display:flex;justify-content:space-between;align-items:baseline;
+  margin-top:1.4cqw;padding-top:1cqw;border-top:1px solid var(--line);
+}
+.sources{font-family:var(--sans);font-size:1.05cqw;color:var(--ink-soft);}
+.wordmark{font-family:var(--serif);font-weight:700;font-size:1.3cqw;letter-spacing:.03em;color:var(--ink);}
+
+.eyebrow{font-family:var(--mono);font-size:1.1cqw;color:var(--ink-soft);letter-spacing:.06em;text-transform:uppercase;}
+
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:500;color:var(--ink);}
+
+.tag{
+  display:inline-block;font-family:var(--sans);font-size:1.05cqw;font-weight:600;
+  letter-spacing:.02em;padding:.15em .6em;border:1px solid currentColor;
+}
+.tag-pass{color:var(--pass);}
+.tag-fail{color:var(--fail);}
+
+ul.bullets{list-style:none;display:flex;flex-direction:column;gap:.55cqw;}
+ul.bullets li{
+  font-family:var(--sans);font-size:1.3cqw;line-height:1.5;color:var(--ink);
+  padding-left:1.1em;position:relative;
+}
+ul.bullets li::before{
+  content:"–";position:absolute;left:0;color:var(--pass);font-weight:600;
+}
+
+/* ---- Slide 1: 표지 ---- */
+.slide-cover{justify-content:space-between;}
+.cover-eyebrow{font-family:var(--mono);font-size:1.3cqw;color:var(--ink-soft);letter-spacing:.05em;}
+.cover-main{display:flex;flex-direction:column;gap:1.3cqw;justify-content:center;flex:1;}
+.cover-title{font-family:var(--serif);font-weight:900;font-size:8.4cqw;color:var(--ink);letter-spacing:-.01em;}
+.cover-subtitle{font-family:var(--sans);font-weight:600;font-size:2.5cqw;color:var(--pass);}
+.cover-definition{font-family:var(--sans);font-size:1.65cqw;line-height:1.6;color:var(--ink-soft);max-width:78%;}
+.cover-meta{
+  display:flex;justify-content:space-between;align-items:center;
+  border-top:1px solid var(--line);padding-top:1.6cqw;
+}
+.cover-chip{
+  font-family:var(--mono);font-size:1.3cqw;font-weight:600;letter-spacing:.04em;
+  border:1px solid var(--ink);padding:.3em .9em;color:var(--ink);
+}
+.cover-team{font-family:var(--sans);font-size:1.4cqw;color:var(--ink);}
+.tbd{
+  color:var(--fail);font-family:var(--mono);font-weight:600;
+  border-bottom:1.5px dashed var(--fail);padding:0 .15em;
+}
+
+/* ---- Slide 2: 배경 ---- */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);}
+.tier{padding:0 1.9cqw;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:.9cqw;}
+.tier:first-child{padding-left:0;border-left:none;}
+.tier-num{font-family:var(--serif);font-weight:900;font-size:2.6cqw;color:var(--pass);}
+.tier-title{font-family:var(--sans);font-weight:700;font-size:1.5cqw;line-height:1.35;color:var(--ink);}
+.summary{
+  display:flex;align-items:baseline;gap:.8cqw;
+  border-top:1px solid var(--line);padding-top:1.1cqw;margin-top:.4cqw;
+  font-family:var(--sans);font-size:1.35cqw;color:var(--ink);
+}
+
+/* ---- Slide 3: 흐름도 + 인사이트 ---- */
+.diagram-wrap{flex:1;min-height:0;display:flex;}
+.diagram-wrap svg{width:100%;height:100%;}
+.diagram .col-label{fill:var(--ink-soft);font-family:var(--sans);font-size:17px;font-weight:600;letter-spacing:.06em;}
+.diagram .box-outline{fill:var(--bg);stroke:var(--ink);stroke-width:2;}
+.diagram .box-title{fill:var(--ink);font-family:var(--sans);font-weight:600;font-size:21px;}
+.diagram .box-sub{fill:var(--ink-soft);font-family:var(--sans);font-size:14px;}
+.diagram .engine-fill{fill:var(--pass);}
+.diagram .engine-title{fill:var(--bg);font-family:var(--serif);font-weight:900;font-size:38px;}
+.diagram .chip-box{fill:none;stroke:var(--bg);stroke-width:1;}
+.diagram .chip-text{fill:var(--bg);font-family:var(--sans);font-size:15px;font-weight:500;}
+.diagram .connector{fill:none;stroke:var(--ink);stroke-width:2;}
+.diagram .arrowhead{fill:var(--ink);}
+figure.diagram{margin:0;flex:1;min-height:0;display:flex;flex-direction:column;}
+figure.diagram figcaption{font-family:var(--sans);font-size:1.05cqw;color:var(--ink-soft);margin-top:.4cqw;}
+
+.insights{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);padding-top:1.1cqw;}
+.insight{padding:0 1.9cqw;}
+.insight:first-child{padding-left:0;border-right:1px solid var(--line);}
+.insight-label{font-family:var(--sans);font-weight:700;font-size:1.35cqw;color:var(--pass);margin-bottom:.35cqw;}
+.insight p{font-family:var(--sans);font-size:1.3cqw;line-height:1.5;color:var(--ink);}
+
+.realdata{font-family:var(--sans);font-size:1.1cqw;color:var(--ink-soft);}
+
+/* ---- Slide 4: Reference와 독창성 ---- */
+table.reftable{width:100%;border-collapse:collapse;}
+table.reftable caption{text-align:left;font-family:var(--sans);font-size:1.1cqw;color:var(--ink-soft);margin-bottom:.5cqw;}
+table.reftable th{
+  font-family:var(--sans);font-size:1.05cqw;font-weight:600;color:var(--ink-soft);
+  text-transform:lowercase;letter-spacing:.02em;text-align:left;
+  border-bottom:1px solid var(--ink);padding:.4cqw .8cqw .4cqw 0;
+}
+table.reftable td{
+  font-family:var(--sans);font-size:1.25cqw;line-height:1.4;color:var(--ink);
+  border-bottom:1px solid var(--line);padding:.6cqw .8cqw .6cqw 0;vertical-align:top;
+}
+table.reftable td:first-child,table.reftable th:first-child{font-weight:700;white-space:nowrap;}
+
+.diff-row{display:grid;grid-template-columns:1.1fr 1fr;gap:2.2cqw;flex:1;min-height:0;}
+.diff-col{display:flex;flex-direction:column;gap:.7cqw;}
+.diff-col h3{font-family:var(--sans);font-weight:700;font-size:1.3cqw;color:var(--ink);}
+.claim-stack{display:flex;flex-direction:column;gap:1cqw;justify-content:center;}
+.claim{display:flex;flex-direction:column;gap:.4cqw;}
+.claim p{font-family:var(--sans);font-size:1.25cqw;line-height:1.5;color:var(--ink);}
+
+/* ---- Slide 5: 사회진출 활용계획 ---- */
+.s5-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:2.4cqw;flex:1;min-height:0;}
+.s5-col{display:flex;flex-direction:column;gap:1.1cqw;min-height:0;}
+.s5-col h3{font-family:var(--sans);font-weight:700;font-size:1.35cqw;color:var(--pass);}
+.s5-col p.lead{font-family:var(--sans);font-size:1.3cqw;line-height:1.5;color:var(--ink);}
+.quote{border-left:2px solid var(--pass);padding-left:1cqw;display:flex;flex-direction:column;gap:.25cqw;}
+.quote .org{font-family:var(--sans);font-size:1.1cqw;font-weight:600;color:var(--ink-soft);}
+.quote p{font-family:var(--sans);font-size:1.2cqw;line-height:1.45;color:var(--ink);font-style:normal;}
+.portfolio-list{list-style:none;display:flex;flex-direction:column;gap:.4cqw;}
+.portfolio-list li{
+  font-family:var(--sans);font-size:1.2cqw;color:var(--ink);
+  display:flex;gap:.6cqw;align-items:baseline;
+}
+.portfolio-list .idx{font-family:var(--mono);color:var(--pass);font-weight:600;min-width:1.4em;}
+.portfolio-note{font-family:var(--sans);font-size:1.05cqw;color:var(--ink-soft);}
+.pull{
+  grid-column:1/-1;border-top:1px solid var(--line);padding-top:1cqw;margin-top:auto;
+  font-family:var(--serif);font-size:1.5cqw;font-weight:500;line-height:1.5;color:var(--ink);
+}
+
+/* ---- Slide 6: 기타 ---- */
+.info-rows{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;}
+.info-row{
+  display:grid;grid-template-columns:8.5cqw 1fr;gap:1.6cqw;
+  padding:1cqw 0;border-bottom:1px solid var(--line);align-items:baseline;
+}
+.info-row:first-child{border-top:1px solid var(--line);}
+.info-row dt{font-family:var(--mono);font-size:1.15cqw;font-weight:600;color:var(--pass);letter-spacing:.03em;}
+.info-row dd{margin:0;font-family:var(--sans);font-size:1.3cqw;line-height:1.5;color:var(--ink);}
+</style>
+
+<div class="printbar">브라우저 인쇄(Cmd+P) → PDF로 저장, 여백 없음, 배경 그래픽 켜기</div>
+
+<main class="deck">
+
+  <!-- 1. 표지 -->
+  <section class="slide slide-cover" aria-label="1/6 표지">
+    <div class="cover-eyebrow">2026-2 미디어프로젝트 Idea 제출</div>
+    <div class="cover-main">
+      <h1 class="cover-title">StableWatch</h1>
+      <p class="cover-subtitle">원화 스테이블코인 준비금 공시 판정기</p>
+      <p class="cover-definition">은행이 원화 스테이블코인을 발행하면 매달 내야 할 준비금 공시를 미국, EU, 홍콩, 싱가포르 규제에서 규칙으로 뽑아 실제 발행사 데이터로 판정하고, 한국 제도의 빈칸을 뽑아내는 도구</p>
+    </div>
+    <div class="cover-meta">
+      <span class="cover-chip">App / Web</span>
+      <span class="cover-team">디지털미디어학과 강인성&nbsp; <span class="tbd">[학번]</span></span>
+    </div>
+  </section>
+
+  <!-- 2. 배경 -->
+  <section class="slide" aria-label="2/6 배경">
+    <header class="slide-head">
+      <span class="kicker-num">2 / 6</span><span class="kicker-label">배경</span>
+    </header>
+    <div class="slide-body">
+      <div class="tiers">
+        <div class="tier">
+          <span class="tier-num">1</span>
+          <h2 class="tier-title">은행 직접 발행이 2026년에 현실이 됐다</h2>
+          <ul class="bullets">
+            <li><span class="num">2026-04-10</span> 홍콩 HKMA, HSBC와 Anchorpoint(Standard Chartered 합작)에 첫 인가</li>
+            <li><span class="num">2026-09-01</span> 싱가포르 MAS, 스테이블코인 입법예고(P015-2026)</li>
+            <li><span class="num">2026-09-01</span> 미국 21개 금융기관 합작사 설립 발표</li>
+          </ul>
+        </div>
+        <div class="tier">
+          <span class="tier-num">2</span>
+          <h2 class="tier-title">발행하면 준비금 공시 의무, 형식은 미정</h2>
+          <ul class="bullets">
+            <li>GENIUS Act: 월별 examination과 CEO, CFO 매월 인증</li>
+            <li>OCC 규정안(<span class="num">2026-03-02</span>) 통일 서식 미지정</li>
+            <li>관할권마다 주기 차이: 홍콩 주간, 싱가포르 월별</li>
+          </ul>
+        </div>
+        <div class="tier">
+          <span class="tier-num">3</span>
+          <h2 class="tier-title">한국은 발행사도 법도 없다</h2>
+          <ul class="bullets">
+            <li>정부안 국회 미제출(<span class="num">2026-09-05</span> 기준 보도)</li>
+            <li>한국은행 <span class="num">2026-03</span>: "은행 중심 컨소시엄" 우선 허용 인용</li>
+          </ul>
+        </div>
+      </div>
+      <p class="summary"><span class="tag tag-pass">정리</span> 은행 발행은 시작됐고, 공시 형식은 열려 있으며, 한국은 참고할 발행사 공시가 없다.</p>
+    </div>
+    <footer class="slide-foot">
+      <span class="sources">출처: HKMA, MAS, CoinDesk, GENIUS Act, OCC, 한국은행</span>
+      <span class="wordmark">StableWatch</span>
+    </footer>
+  </section>
+
+  <!-- 3. 내용: 무엇을 만드나 -->
+  <section class="slide" aria-label="3/6 내용">
+    <header class="slide-head">
+      <span class="kicker-num">3 / 6</span><span class="kicker-label">내용: 무엇을 만드나</span>
+    </header>
+    <div class="slide-body">
+      <div class="diagram-wrap">
+        <figure class="diagram">
+          <svg viewBox="0 0 1100 460" role="img" aria-label="발행사 공시 문서 두 종을 파서에 넣어 규칙 15개 곱하기 관할권 6개의 판정 엔진을 거치고, 화면 A 판정, 화면 B 고객 환매, 갭 리스트 세 가지 출력으로 갈라지는 처리 흐름">
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path class="arrowhead" d="M0,0 L10,5 L0,10 z"/>
+              </marker>
+            </defs>
+
+            <text class="col-label" x="160" y="34" text-anchor="middle">입력</text>
+            <text class="col-label" x="530" y="34" text-anchor="middle">엔진</text>
+            <text class="col-label" x="910" y="34" text-anchor="middle">출력 3개</text>
+
+            <rect class="box-outline" x="40" y="60" width="240" height="130"/>
+            <text class="box-title" x="160" y="117" text-anchor="middle">Circle 월간 보고서</text>
+            <text class="box-sub" x="160" y="143" text-anchor="middle">(PDF)</text>
+
+            <rect class="box-outline" x="40" y="270" width="240" height="130"/>
+            <text class="box-title" x="160" y="327" text-anchor="middle">SEC N-MFP3</text>
+            <text class="box-sub" x="160" y="353" text-anchor="middle">(XML)</text>
+
+            <path class="connector" d="M280,125 H310 M280,335 H310 M310,125 V335"/>
+            <path class="connector" d="M310,230 H358" marker-end="url(#arrow)"/>
+            <text class="box-sub" x="334" y="212" text-anchor="middle">파서</text>
+
+            <rect class="engine-fill" x="360" y="60" width="340" height="340"/>
+            <text class="engine-title" x="530" y="200" text-anchor="middle">규칙 15개</text>
+            <text class="engine-title" x="530" y="248" text-anchor="middle">× 관할권 6</text>
+
+            <rect class="chip-box" x="380" y="264" width="145" height="32"/>
+            <text class="chip-text" x="452" y="280" text-anchor="middle" dominant-baseline="middle">US</text>
+            <rect class="chip-box" x="535" y="264" width="145" height="32"/>
+            <text class="chip-text" x="607" y="280" text-anchor="middle" dominant-baseline="middle">EU 일반 EMT</text>
+            <rect class="chip-box" x="380" y="309" width="145" height="32"/>
+            <text class="chip-text" x="452" y="325" text-anchor="middle" dominant-baseline="middle">EU 중요 EMT</text>
+            <rect class="chip-box" x="535" y="309" width="145" height="32"/>
+            <text class="chip-text" x="607" y="325" text-anchor="middle" dominant-baseline="middle">HK</text>
+            <rect class="chip-box" x="380" y="354" width="145" height="32"/>
+            <text class="chip-text" x="452" y="370" text-anchor="middle" dominant-baseline="middle">SG</text>
+            <rect class="chip-box" x="535" y="354" width="145" height="32"/>
+            <text class="chip-text" x="607" y="370" text-anchor="middle" dominant-baseline="middle">KR 시나리오</text>
+
+            <path class="connector" d="M700,230 H730 M730,105 V355"/>
+            <path class="connector" d="M730,105 H758" marker-end="url(#arrow)"/>
+            <path class="connector" d="M730,230 H758" marker-end="url(#arrow)"/>
+            <path class="connector" d="M730,355 H758" marker-end="url(#arrow)"/>
+
+            <rect class="box-outline" x="760" y="60" width="300" height="90"/>
+            <text class="box-title" x="910" y="97" text-anchor="middle">화면 A</text>
+            <text class="box-sub" x="910" y="123" text-anchor="middle">판정</text>
+
+            <rect class="box-outline" x="760" y="185" width="300" height="90"/>
+            <text class="box-title" x="910" y="222" text-anchor="middle">화면 B</text>
+            <text class="box-sub" x="910" y="248" text-anchor="middle">고객 환매</text>
+
+            <rect class="box-outline" x="760" y="310" width="300" height="90"/>
+            <text class="box-title" x="910" y="347" text-anchor="middle">갭 리스트</text>
+            <text class="box-sub" x="910" y="373" text-anchor="middle">한국 제도의 빈칸</text>
+          </svg>
+          <figcaption>공시 문서를 파싱해 관할권별 규칙 엔진에 넣고, 판정 화면 두 개와 한국 갭 리스트로 갈라지는 처리 흐름</figcaption>
+        </figure>
+      </div>
+      <div class="insights">
+        <div class="insight">
+          <div class="insight-label">중요성</div>
+          <p>준비금 공시는 인가 다음에 오는 상시 의무. 국내에는 서식도 발행사 공시 사례도 없다.</p>
+        </div>
+        <div class="insight">
+          <div class="insight-label">확장성</div>
+          <p>관할권 추가는 JSON 설정 한 개, 발행사 추가는 파서 한 개. 한국 법안이 나오면 KR 시나리오 v1을 v2로.</p>
+        </div>
+      </div>
+      <p class="realdata">실데이터 확보: Circle 2026-07 보고서, 유통 <span class="num">71,826,453,410</span> / 준비자산 <span class="num">71,904,101,332</span>. SEC N-MFP3.</p>
+    </div>
+    <footer class="slide-foot">
+      <span class="sources">출처: Circle, SEC EDGAR</span>
+      <span class="wordmark">StableWatch</span>
+    </footer>
+  </section>
+
+  <!-- 4. Reference와 독창성 -->
+  <section class="slide" aria-label="4/6 Reference와 독창성">
+    <header class="slide-head">
+      <span class="kicker-num">4 / 6</span><span class="kicker-label">Reference와 독창성</span>
+    </header>
+    <div class="slide-body">
+      <table class="reftable">
+        <caption>선행 사례</caption>
+        <thead>
+          <tr><th scope="col">선행</th><th scope="col">하는 것</th><th scope="col">없는 것</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tessera(ProofLayer)</td>
+            <td>PYUSD와 USDC 보고서를 파싱해 GENIUS §4(a)에 매핑, PASS/FAIL 증거팩 공개</td>
+            <td>미국만, 코드 비공개, 고객 화면 없음, 한국 없음</td>
+          </tr>
+          <tr>
+            <td>FeedOracle</td>
+            <td>MiCA 조문을 규칙으로 쪼개 PASS/WARN/BLOCK</td>
+            <td>MiCA만, GENIUS와 홍콩 없음</td>
+          </tr>
+          <tr>
+            <td>Veris</td>
+            <td>5개 코인 일별 준비금 모니터, GENIUS 체크리스트</td>
+            <td>비공개</td>
+          </tr>
+          <tr>
+            <td>Xiang 외 2025</td>
+            <td>LLM으로 공시 문서 파싱</td>
+            <td>코드 없음</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="diff-row">
+        <div class="diff-col">
+          <h3>차별점 4개</h3>
+          <ul class="bullets">
+            <li>4개 관할권과 한국 시나리오를 한 엔진에서 토글</li>
+            <li>한국 갭 리스트</li>
+            <li>고객 환매 화면이 판정을 읽는 구조</li>
+            <li>공개 코드</li>
+          </ul>
+        </div>
+        <div class="claim-stack">
+          <div class="claim">
+            <span class="tag tag-pass">확인 범위</span>
+            <p>이 조합은 확인 범위에서 없음(<span class="num">2026-09-04</span> 기준, GitHub 6개와 퍼플렉시티 15개 질의)</p>
+          </div>
+          <div class="claim">
+            <span class="tag tag-fail">정직한 열위</span>
+            <p>온체인 유통량 재구성과 암호학적 봉인은 없음</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="slide-foot">
+      <span class="sources">출처: Tessera, FeedOracle, Veris, arXiv</span>
+      <span class="wordmark">StableWatch</span>
+    </footer>
+  </section>
+
+  <!-- 5. 사회진출 활용계획 -->
+  <section class="slide" aria-label="5/6 사회진출 활용계획">
+    <header class="slide-head">
+      <span class="kicker-num">5 / 6</span><span class="kicker-label">사회진출 활용계획</span>
+    </header>
+    <div class="slide-body">
+      <div class="s5-grid">
+        <div class="s5-col">
+          <h3>목표 진로</h3>
+          <p class="lead">은행권 디지털 기획. 스테이블코인 관련 부전공 이수 중.</p>
+          <div class="quote">
+            <span class="org">카카오뱅크, 서비스 기획자(스테이블코인)</span>
+            <p>"가상자산 관련 규제와 제도를 반영한 서비스 기획"</p>
+          </div>
+          <div class="quote">
+            <span class="org">BNK경남은행, 디지털자산사업부</span>
+            <p>"스테이블코인, CBDC 산업의 규제 변화에 따른 전략 수립"</p>
+          </div>
+        </div>
+        <div class="s5-col">
+          <h3>포트폴리오 10장 구성</h3>
+          <ul class="portfolio-list">
+            <li><span class="idx">01</span>문제 정의(배경 3층)</li>
+            <li><span class="idx">02</span>규제 매트릭스</li>
+            <li><span class="idx">03</span>화면 A</li>
+            <li><span class="idx">04</span>화면 B</li>
+            <li><span class="idx">05</span>갭 리스트</li>
+            <li><span class="idx">06</span>검증 결과</li>
+          </ul>
+          <p class="portfolio-note">장표마다 기획 의도와 규칙 근거를 붙인다</p>
+        </div>
+        <p class="pull">"은행이 스테이블코인을 발행하려면 무엇을 공시해야 하는지 4개 관할권 규제에서 요건을 뽑고, 실제 발행사 보고서를 파싱해 화면으로 구현했으며, 국내 제도의 빈칸을 정리했다"</p>
+      </div>
+    </div>
+    <footer class="slide-foot">
+      <span class="sources">출처: 카카오뱅크, BNK경남은행</span>
+      <span class="wordmark">StableWatch</span>
+    </footer>
+  </section>
+
+  <!-- 6. 기타 -->
+  <section class="slide" aria-label="6/6 기타">
+    <header class="slide-head">
+      <span class="kicker-num">6 / 6</span><span class="kicker-label">기타</span>
+    </header>
+    <div class="slide-body">
+      <dl class="info-rows">
+        <div class="info-row">
+          <dt>구성</dt>
+          <dd>1인 프로젝트. 외부협력인원 현재 없음.</dd>
+        </div>
+        <div class="info-row">
+          <dt>일정</dt>
+          <dd>과목 멘토링 신청 예정(<span class="num">2026-09-21</span>)</dd>
+        </div>
+        <div class="info-row">
+          <dt>스택</dt>
+          <dd>Python(파서, 규칙 엔진, 테스트), Next.js 정적 페이지, JSON 파일, Vercel 배포. 서버와 DB 없음.</dd>
+        </div>
+        <div class="info-row">
+          <dt>데이터</dt>
+          <dd>BlackRock 약관이 자동 수집과 재배포를 금지해 1차 데이터원은 SEC N-MFP3로 확정. BlackRock에는 서면 허가 요청 메일을 <span class="num">2026-09-06</span> 발송, 답장 대기. SEC EDGAR는 User-Agent에 이름과 이메일을 요구.</dd>
+        </div>
+        <div class="info-row">
+          <dt>레포</dt>
+          <dd>private</dd>
+        </div>
+      </dl>
+    </div>
+    <footer class="slide-foot">
+      <span class="sources">출처: BlackRock, SEC EDGAR, GitHub</span>
+      <span class="wordmark">StableWatch</span>
+    </footer>
+  </section>
+
+</main>

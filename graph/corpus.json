@@ -1,0 +1,426 @@
+{
+ "generated": "2026-09-10",
+ "layers": {
+  "1": "시행 법률과 시행령과 감독규정",
+  "2": "국회 계류 법안",
+  "3": "정부와 한국은행과 국회 공식 자료",
+  "4": "언론 보도",
+  "5": "업계 관행",
+  "foreign": "해외 규정(비교용)"
+ },
+ "documents": [
+  {
+   "id": "law:전자금융거래법시행령:285727",
+   "layer": 1,
+   "type": "law",
+   "title": "전자금융거래법 시행령",
+   "effective": "20260428",
+   "promulgation_no": "36281",
+   "file": "graph/corpus/law/전자금융거래법_시행령_20260428_285727.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:가상자산이용자보호등에관한법률:261099",
+   "layer": 1,
+   "type": "law",
+   "title": "가상자산 이용자 보호 등에 관한 법률",
+   "effective": "20240719",
+   "promulgation_no": "20372",
+   "file": "graph/corpus/law/가상자산_이용자_보호_등에_관한_법률_20240719_261099.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:가상자산이용자보호등에관한법률시행령:270729",
+   "layer": 1,
+   "type": "law",
+   "title": "가상자산 이용자 보호 등에 관한 법률 시행령",
+   "effective": "20250423",
+   "promulgation_no": "35472",
+   "file": "graph/corpus/law/가상자산_이용자_보호_등에_관한_법률_시행령_20250423_270729.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:은행법:282001",
+   "layer": 1,
+   "type": "law",
+   "title": "은행법",
+   "effective": "20260701",
+   "promulgation_no": "21296",
+   "file": "graph/corpus/law/은행법_20260701_282001.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:은행법시행령:287003",
+   "layer": 1,
+   "type": "law",
+   "title": "은행법 시행령",
+   "effective": "20260701",
+   "promulgation_no": "36417",
+   "file": "graph/corpus/law/은행법_시행령_20260701_287003.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:전자금융거래법:280277",
+   "layer": 1,
+   "type": "law",
+   "title": "전자금융거래법",
+   "effective": "20261217",
+   "promulgation_no": "21205",
+   "file": "graph/corpus/law/전자금융거래법_20251216_280277.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:금융소비자보호에관한법률:277247",
+   "layer": 1,
+   "type": "law",
+   "title": "금융소비자 보호에 관한 법률",
+   "effective": "20260102",
+   "promulgation_no": "21065",
+   "file": "graph/corpus/law/금융소비자_보호에_관한_법률_20260102_277247.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:공휴일에관한법률:283311",
+   "layer": 1,
+   "type": "law",
+   "title": "공휴일에 관한 법률",
+   "effective": "20260511",
+   "promulgation_no": "21338",
+   "file": "graph/corpus/law/공휴일에_관한_법률_20260511_283311.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:관공서의공휴일에관한규정:285779",
+   "layer": 1,
+   "type": "law",
+   "title": "관공서의 공휴일에 관한 규정",
+   "effective": "20260501",
+   "promulgation_no": "36290",
+   "file": "graph/corpus/law/관공서의_공휴일에_관한_규정_20260511_285779.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:예금자보호법:277269",
+   "layer": 1,
+   "type": "law",
+   "title": "예금자보호법",
+   "effective": "20260102",
+   "promulgation_no": "21065",
+   "file": "graph/corpus/law/예금자보호법_20260102_277269.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:외국환거래규정:2100000281984",
+   "layer": 1,
+   "type": "admrul",
+   "title": "외국환거래규정",
+   "effective": "20260706",
+   "promulgation_no": "2026-88",
+   "file": "graph/corpus/law/외국환거래규정_20260706_2100000281984.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:가상자산업감독규정:2100000244180",
+   "layer": 1,
+   "type": "admrul",
+   "title": "가상자산업감독규정",
+   "effective": "20240719",
+   "promulgation_no": "2024-37",
+   "file": "graph/corpus/law/가상자산업감독규정_20240719_2100000244180.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:전자금융감독규정:2100000282622",
+   "layer": 1,
+   "type": "admrul",
+   "title": "전자금융감독규정",
+   "effective": "20260715",
+   "promulgation_no": "2026-29",
+   "file": "graph/corpus/law/전자금융감독규정_20260715_2100000282622.xml",
+   "source": "law.go.kr DRF API (OC stablecoin)"
+  },
+  {
+   "id": "law:전자금융거래법:254921",
+   "layer": 1,
+   "type": "law",
+   "title": "전자금융거래법(현행, 법률 제19734호)",
+   "effective": "20240915",
+   "promulgation_no": "19734",
+   "file": "graph/corpus/law/전자금융거래법_20240915_254921.xml",
+   "source": "law.go.kr DRF API",
+   "note": "법률 제21205호(2025-12-16 공포) 중 제25조의2 개정은 2026-12-17 시행 예정. 280277 파일 참조"
+  },
+  {
+   "id": "bill:2210736",
+   "layer": 2,
+   "type": "bill",
+   "title": "디지털자산기본법안",
+   "proposer": "민병덕의원 등 37인",
+   "proposed": "2025-06-11",
+   "stage": "소관위심사",
+   "committee": "정무위원회",
+   "billId": "PRC_T2R5S0Q6P0P5X0Y9W1W1V3V0U7C4C1",
+   "detail_url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_T2R5S0Q6P0P5X0Y9W1W1V3V0U7C4C1",
+   "pdf_url": "https://likms.assembly.go.kr/filegate/servlet/FileGate?bookId=70879FDB-0140-A77D-A283-FF057C49539B&type=1",
+   "file": "graph/corpus/bills/2210736_디지털자산기본법안_민병덕_원문.pdf",
+   "pages": 161,
+   "verified": "2026-09-10 의안정보시스템 검색(fnSearch) + PDF 다운로드"
+  },
+  {
+   "id": "bill:2211777",
+   "layer": 2,
+   "type": "bill",
+   "title": "가치고정형 디지털자산을 활용한 지급 혁신에 관한 법률안",
+   "proposer": "김은혜의원 등 10인",
+   "proposed": "2025-07-28",
+   "stage": "소관위심사",
+   "committee": "정무위원회",
+   "billId": "PRC_U2S5A0B7Z2Z5Y1Z5X1F7F3E8F3D3D5",
+   "detail_url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_U2S5A0B7Z2Z5Y1Z5X1F7F3E8F3D3D5",
+   "pdf_url": "https://likms.assembly.go.kr/filegate/servlet/FileGate?bookId=8A77E5F3-229C-4C10-2CCD-4218B8CD86BE&type=1",
+   "file": "graph/corpus/bills/2211777_가치고정형디지털자산지급혁신법안_김은혜_원문.pdf",
+   "pages": 22,
+   "verified": "2026-09-10 의안정보시스템 검색(fnSearch) + PDF 다운로드"
+  },
+  {
+   "id": "bill:2211784",
+   "layer": 2,
+   "type": "bill",
+   "title": "가치안정형 디지털자산의 발행 및 유통에 관한 법률안",
+   "proposer": "안도걸의원 등 10인",
+   "proposed": "2025-07-28",
+   "stage": "소관위심사(2025-11-24 정무위 전체회의 상정, 소위회부)",
+   "committee": "정무위원회",
+   "billId": "PRC_K2L5J0I7I2G8H0C9D0B9C3A7B5Z3A7",
+   "detail_url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_K2L5J0I7I2G8H0C9D0B9C3A7B5Z3A7",
+   "pdf_url": "https://likms.assembly.go.kr/filegate/servlet/FileGate?bookId=D8920F9C-14EB-4B7B-FBE6-99738604A516&type=1",
+   "file": "graph/corpus/bills/2211784_가치안정형디지털자산법안_안도걸_원문.pdf",
+   "pages": 41,
+   "verified": "2026-09-10 의안정보시스템 검색(fnSearch) + PDF 다운로드"
+  },
+  {
+   "id": "bill:2212298",
+   "layer": 2,
+   "type": "bill",
+   "title": "가치안정형 디지털자산 발행업 등에 관한 법률안",
+   "proposer": "김현정의원 등 12인",
+   "proposed": "2025-08-21",
+   "stage": "소관위심사",
+   "committee": "정무위원회",
+   "billId": "PRC_K2S5R0S8R1P9L1K0J2H8I3R9K6J6K7",
+   "detail_url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_K2S5R0S8R1P9L1K0J2H8I3R9K6J6K7",
+   "pdf_url": "https://likms.assembly.go.kr/filegate/servlet/FileGate?bookId=2FE66A0C-FF89-8CD1-6CF2-E6758C1FAA09&type=1",
+   "file": "graph/corpus/bills/2212298_가치안정형디지털자산발행업법안_김현정_원문.pdf",
+   "pages": 40,
+   "verified": "2026-09-10 의안정보시스템 검색(fnSearch) + PDF 다운로드"
+  },
+  {
+   "id": "bill:2213166",
+   "layer": 2,
+   "type": "bill",
+   "title": "디지털자산시장의 혁신과 성장에 관한 법률안",
+   "proposer": "이강일의원 등 11인",
+   "proposed": "2025-09-22",
+   "stage": "소관위접수",
+   "committee": "정무위원회",
+   "billId": "PRC_K2J5G0R9O0N4W1T5S1B8A5W9T2C8C5",
+   "detail_url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_K2J5G0R9O0N4W1T5S1B8A5W9T2C8C5",
+   "pdf_url": "https://likms.assembly.go.kr/filegate/servlet/FileGate?bookId=484B534B-D74F-4A45-7E80-1E887FFF6D88&type=1",
+   "file": "graph/corpus/bills/2213166_디지털자산시장혁신성장법안_이강일_원문.pdf",
+   "pages": 144,
+   "verified": "2026-09-10 의안정보시스템 검색(fnSearch) + PDF 다운로드"
+  },
+  {
+   "id": "bill:2213266",
+   "layer": 2,
+   "type": "bill",
+   "title": "디지털자산시장통합법안",
+   "proposer": "김재섭의원 등 10인",
+   "proposed": "2025-09-25",
+   "stage": "소관위접수",
+   "committee": "정무위원회",
+   "billId": "PRC_T2U5P0Q9P2N4N1V5T4S1S3Q4R1Z5Z8",
+   "detail_url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_T2U5P0Q9P2N4N1V5T4S1S3Q4R1Z5Z8",
+   "pdf_url": "https://likms.assembly.go.kr/filegate/servlet/FileGate?bookId=C58932E8-C16E-443A-CD35-BAD76547B310&type=1",
+   "file": "graph/corpus/bills/2213266_디지털자산시장통합법안_김재섭_원문.pdf",
+   "pages": 150,
+   "verified": "2026-09-10 의안정보시스템 검색(fnSearch) + PDF 다운로드"
+  },
+  {
+   "id": "bill:2213449",
+   "layer": 2,
+   "type": "bill",
+   "title": "디지털자산 육성 기본법안",
+   "proposer": "최보윤의원 등 10인",
+   "proposed": "2025-10-01",
+   "stage": "소관위접수",
+   "committee": "정무위원회",
+   "billId": "PRC_H2P5Q0O9N2N2M1M4U1U4T0U8S5S5R1",
+   "detail_url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_H2P5Q0O9N2N2M1M4U1U4T0U8S5S5R1",
+   "pdf_url": "https://likms.assembly.go.kr/filegate/servlet/FileGate?bookId=135345B7-2066-491B-7EC3-5C5708F2D099&type=1",
+   "file": "graph/corpus/bills/2213449_디지털자산육성기본법안_최보윤_원문.pdf",
+   "pages": 161,
+   "verified": "2026-09-10 의안정보시스템 검색(fnSearch) + PDF 다운로드"
+  },
+  {
+   "id": "bill:2214492",
+   "layer": 2,
+   "type": "bill",
+   "title": "디지털자산의 시장 및 산업에 관한 법률안",
+   "proposer": "박상혁의원 등 10인",
+   "proposed": "2025-11-24",
+   "stage": "소관위접수",
+   "committee": "정무위원회",
+   "billId": "PRC_O2P5N1N1W1W2U1V0U4S6S0H6I6G0H0",
+   "detail_url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_O2P5N1N1W1W2U1V0U4S6S0H6I6G0H0",
+   "pdf_url": "https://likms.assembly.go.kr/filegate/servlet/FileGate?bookId=197AB93A-F62D-BD27-B3A5-56E2CFBD8250&type=1",
+   "file": "graph/corpus/bills/2214492_디지털자산시장산업법안_박상혁_원문.pdf",
+   "pages": 144,
+   "verified": "2026-09-10 의안정보시스템 검색(fnSearch) + PDF 다운로드"
+  },
+  {
+   "id": "gov:assembly:정무위검토보고서:2211784",
+   "layer": 3,
+   "type": "committee_report",
+   "title": "정무위원회 검토보고서: 가치고정형/가치안정형 디지털자산 법률안 3건(김은혜 2211777, 안도걸 2211784, 김현정 2212298)",
+   "date": "2025-11",
+   "file": "graph/corpus/bills/2211784_정무위_검토보고서.pdf",
+   "pages": 95,
+   "pdf_url": "https://likms.assembly.go.kr/filegate/servlet/FileGate?bookId=FC4FBBEB-F60B-816A-5AC0-F6BD0AB6BD9A&type=1",
+   "note": "표5 인가요건, 표8 상환절차, 표10 준비자산 비교표"
+  },
+  {
+   "id": "gov:bok:통화신용정책보고서:2026-03",
+   "layer": 3,
+   "type": "report",
+   "title": "한국은행 통화신용정책보고서 2026년 3월",
+   "date": "2026-03-12",
+   "url": "https://www.bok.or.kr/portal/bbs/B0000156/view.do?menuNo=200067&nttId=10096935",
+   "file": "graph/corpus/gov/한국은행_통화신용정책보고서_2026-03_p80-81_발췌.txt",
+   "note": "PDF 126쪽, 컨소시엄 문장은 PDF 80~81쪽(인쇄면 68)"
+  },
+  {
+   "id": "gov:fsc:83855",
+   "layer": 3,
+   "type": "press_release",
+   "title": "금융위 제2차 가상자산위원회 개최",
+   "date": "2025-01-15",
+   "url": "https://www.fsc.go.kr/no010101/83855"
+  },
+  {
+   "id": "gov:fsc:85999",
+   "layer": 3,
+   "type": "press_release",
+   "title": "금융위 설명자료: 스테이블코인 발행인의 주주구성 등 2단계법 주요내용은 확정된 바 없습니다",
+   "date": "2026-01-07",
+   "url": "https://www.fsc.go.kr/no010102/85999",
+   "verified": false
+  },
+  {
+   "id": "gov:fsc:86373",
+   "layer": 3,
+   "type": "press_release",
+   "title": "금융위 26년 제1차 가상자산위원회 개최",
+   "date": "2026-03-04",
+   "url": "https://www.fsc.go.kr/po010101/86373"
+  },
+  {
+   "id": "gov:fsc:87592",
+   "layer": 3,
+   "type": "press_release",
+   "title": "금융위 설명자료: 가상자산거래소 대주주 지분 상한은 확정된 바 없습니다",
+   "date": "2026-08-26",
+   "url": "https://www.fsc.go.kr/no010102/87592",
+   "note": "87598은 2026-08-27 국내증시 설명자료. 매니페스트_v2 이전 인용 오류"
+  },
+  {
+   "id": "foreign:occ:91FR10202",
+   "layer": "foreign",
+   "type": "proposed_rule",
+   "title": "OCC NPRM Implementing the GENIUS Act",
+   "date": "2026-03-02",
+   "url": "https://www.occ.gov/news-issuances/federal-register/2026/91fr10202.pdf"
+  },
+  {
+   "id": "foreign:us:GENIUS",
+   "layer": "foreign",
+   "type": "statute",
+   "title": "GENIUS Act (Pub. L. 119-27)",
+   "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
+  },
+  {
+   "id": "foreign:hkma:guideline",
+   "layer": "foreign",
+   "type": "guideline",
+   "title": "HKMA Guideline on Supervision of Licensed Stablecoin Issuers",
+   "date": "2025-08",
+   "url": "https://www.hkma.gov.hk/media/eng/doc/key-functions/ifc/stablecoin-issuers/Guideline_on_supervision_of_licensed_stablecoin_issuers_eng.pdf"
+  },
+  {
+   "id": "foreign:hkma:cc",
+   "layer": "foreign",
+   "type": "consultation_conclusions",
+   "title": "HKMA Consultation Conclusions on the Guideline",
+   "url": "https://www.hkma.gov.hk/media/eng/doc/key-functions/ifc/stablecoin-issuers/Consultation_conclusions_on_the_Guideline_on_Supervision_of_Licensed_Stablecoin_Issuers.pdf"
+  },
+  {
+   "id": "foreign:mas:response2023",
+   "layer": "foreign",
+   "type": "response",
+   "title": "MAS Response to Feedback on Stablecoin Regulatory Approach",
+   "date": "2023-08-15",
+   "url": "https://www.mas.gov.sg/-/media/mas-media-library/publications/consultations/pd/2023/response-to-consultation-on-stablecoins-regulation_15aug2023.pdf"
+  },
+  {
+   "id": "press:mk:11495896",
+   "layer": 4,
+   "type": "article",
+   "title": "매일경제 [단독] 테더·서클, 한국서 못 쓰나?…정부, 해외 스테이블코인 국내 지점 의무화 추진 (디지털자산기본법 정부안 입수)",
+   "date": "2025-12-19",
+   "url": "https://www.mk.co.kr/news/stock/11495896"
+  },
+  {
+   "id": "press:edaily:04159046645576512",
+   "layer": 4,
+   "type": "article",
+   "title": "이데일리: 이달 말 스테이블코인법 공청회, 유동수 \"금융위안 와야\"",
+   "date": "2026-09-03",
+   "url": "https://www.edaily.co.kr/News/Read?newsId=04159046645576512"
+  },
+  {
+   "id": "press:yna:AKR20250113134100002",
+   "layer": 4,
+   "type": "article",
+   "title": "연합뉴스: 빗썸, 3월 24일부터 국민은행과 제휴",
+   "date": "2025-01-13",
+   "url": "https://www.yna.co.kr/view/AKR20250113134100002",
+   "verified": false
+  },
+  {
+   "id": "practice:korbit:reserves",
+   "layer": 5,
+   "type": "webpage",
+   "title": "코빗 거래소 보유자산 공개",
+   "url": "https://insights.korbit.co.kr/reserves",
+   "fetched": "2026-09-10"
+  },
+  {
+   "id": "practice:korbit:aup:2026-07",
+   "layer": 5,
+   "type": "aup_report",
+   "title": "디지털엑스(코빗) 2026년 7월 자산실사 보고서, 회계법인 해솔",
+   "basis_date": "2026-07-31",
+   "report_date": "2026-08-19",
+   "file": "graph/corpus/practice/코빗_자산실사보고서_2026-07_회계법인해솔.pdf",
+   "pdf_url": "https://assets.ctfassets.net/2h7c9oe6s61w/7wxXbihD0eWXybDzIK4llU/d3eb224525418fec3a2649a36b04d2de/digitalx-202607-report.pdf"
+  },
+  {
+   "id": "practice:coinone:notice3316",
+   "layer": 5,
+   "type": "notice",
+   "title": "코인원 공지: 가상자산 이용자 보호 등에 관한 법률 시행에 따른 원화 예치금 이용료 지급 안내",
+   "date": "2024-08-19",
+   "url": "https://coinone.co.kr/info/notice/3316"
+  }
+ ]
+}

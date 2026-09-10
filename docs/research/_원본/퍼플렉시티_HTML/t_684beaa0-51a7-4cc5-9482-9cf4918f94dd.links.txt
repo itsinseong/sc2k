@@ -1,0 +1,7 @@
+eur-lex.europa | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L:2023:150:FULL
+원문 | https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng
+eur-lex.europa | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02023R1114-20240109
+eba.europa | https://www.eba.europa.eu/sites/default/files/2024-06/2bd7add3-35b1-40d7-9c45-67c8cccbe97a/Final%20report%20on%20Guidelines%20on%20liquidity%20stress%20testing%20under%20MiCAR.pdf
+EBA 문서 | https://www.eba.europa.eu/regulatory-technical-standards-further-specifying-liquidity-requirements-reserve-assets-under-micar
+EBA 문서 | https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/asset-referenced-and-e-money-tokens-micar/regulatory-technical-standards-specify-highly-liquid-financial-instruments-reserve-assets-under
+EUR-Lex 원문 | https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32025R1264

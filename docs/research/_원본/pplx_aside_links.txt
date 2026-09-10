@@ -1,0 +1,42 @@
+FEVER 논문 | https://aclanthology.org/N18-1074.pdf
+데이터 | https://fever.ai/dataset/fever.html
+ClaimBuster 논문 | https://arxiv.org/abs/2004.14425
+NeurIPS 논문 | https://proceedings.neurips.cc/paper_files/paper/2023/hash/cd86a30526cd1aff61d6f89f107634e4-Abstract-Datasets_and_Benchmarks.html
+MultiFC 논문 | https://ar5iv.labs.arxiv.org/html/1909.03242
+논문 | https://arxiv.org/html/2309.08793v2
+GitHub 데이터 | https://github.com/IIT-DM/Fin-Fact
+EMNLP 2024 논문 | https://aclanthology.org/2024.emnlp-main.818.pdf
+논문 | https://link.springer.com/article/10.1007/s10579-024-09743-x
+GitHub | https://github.com/manoelgadi/CryptoLin
+DLT-Corpus 논문 | https://arxiv.org/html/2602.22045
+Hugging Face 데이터 | https://huggingface.co/datasets/ExponentialScience/DLT-Sentiment-News
+Mendeley Data | https://data.mendeley.com/datasets/wvjjxr8bxx/2
+Kaggle 데이터 | https://www.kaggle.com/datasets/oliviervha/crypto-news
+bok.or | https://www.bok.or.kr/eng/bbs/E0000866/view.do?nttId=10093606&oldMenuNo=400007&menuNo=400223&programType=newsDataEng&depth=400223&relate=Y
+bok.or | https://www.bok.or.kr/portal/bbs/B0000168/view.do?menuNo=200058&nttId=10094368
+sedaily | https://en.sedaily.com/finance/2026/08/24/banks-race-to-secure-crypto-custody-stakes-in-korea
+jpmorgan | https://www.jpmorgan.com/insights/podcast-hub/making-sense/digital-assets-kinexys-and-regulatory-shifts
+markets.jpmorgan | https://markets.jpmorgan.com/research-and-insights
+citigroup | https://www.citigroup.com/global/about-us/strategy/digital-assets
+complyadvantage | https://complyadvantage.com/fincrime-risk-intelligence/negative-news-screening-tool/
+marketintelo | https://marketintelo.com/report/adverse-media-screening-market
+RSS 안내 | https://www.fsc.go.kr/ut060101
+DART RSS 안내 | https://dart.fss.or.kr/introduction/content6.do
+뉴스·의사록 | https://www.bok.or.kr/portal/main/contents.do?menuNo=200038
+통화정책 보도자료 | https://www.bok.or.kr/portal/main/contents.do?menuNo=200690
+RSS 목록 | https://www.sec.gov/about/rss-feeds
+보도자료 | https://www.sec.gov/newsroom/press-releases
+OCC RSS 페이지 | https://www.occ.gov/rss/index-rss.html
+ECB RSS | https://www.ecb.europa.eu/home/html/rss.en.html
+press feed | https://www.ecb.europa.eu/rss/press.html
+ESMA RSS XML | https://www.esma.europa.eu/rss.xml
+MiCA 페이지 | https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica
+freshfields | https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/treasury-proposes-genius-act-gatekeeping-rules-with-a-path-for-foreign-issuers-102nri4
+쿠팡 공식 보도자료 | https://news.coupang.com/archives/64957/
+reutersagency | https://reutersagency.com/about/standards-values/
+circle | https://www.circle.com/transparency
+kbfg | https://www.kbfg.com/kor/pr/press/view.htm?CONTENT=15097&B=8&QUERY=list.htm
+developers.google | https://developers.google.com/search/docs/appearance/structured-data/factcheck
+federalreserve | https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107.pdf
+fullfact | https://fullfact.org/blog/2025/feb/how-ai-can-help-fact-checkers/
+fullfact | https://fullfact.ai/blog/claim-challenge-update/

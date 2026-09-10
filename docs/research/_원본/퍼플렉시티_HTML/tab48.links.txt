@@ -1,0 +1,33 @@
+snb | https://www.snb.ch/dam/jcr:5140cb30-3c8c-433d-8619-0354b8f1036e/sem_2023_05_26_rostova.n.pdf
+eco | https://eco.com/support/en/articles/15182160-stablecoin-depeg-what-causes-it-and-how-to-spot-risk
+circle | https://www.circle.com/pressroom/3-3-billion-of-usdc-reserve-risk-removed-dollar-de-peg-closes
+reuters | https://www.reuters.com/technology/crypto-investors-pull-3-bln-stablecoin-usdc-three-days-2023-03-16/
+cryptorank | https://cryptorank.io/news/feed/965de-susd-depeg-crisis-deepens-analysis
+stablecoininsider | https://stablecoininsider.org/fdusd-q1-2026-stablecoin-report/
+pharos | https://pharos.watch/learn/case-studies/
+theblock | https://www.theblock.co/news/regulation/2026-05-24-stablrs-eurr-and-usdr-depeg-after-attacker-mints-13-5-million-in-unbacked-tokens-through-multisig-exploit-402429
+bis | https://www.bis.org/basel_framework/chapter/SCO/60.htm?inforce=20250101&published=20221216&tldate=20250817
+bis | https://www.bis.org/media-releases/20240717-basel-committee-publishes-final-disclosure-framework-banks-cryptoasset-exposures-and-targeted
+congress | https://www.congress.gov/bill/119th-congress/senate-bill/1582/text
+cravath | https://www.cravath.com/a/web/fhpEUar56vCDAmtGzveUMe/46HNsv/summary-of-new-york-department-of-financial-services-stablecoin-guidance.pdf
+occ | https://occ.gov/news-issuances/news-releases/2023/nr-ia-2023-18a.pdf
+federalreserve | https://www.federalreserve.gov/newsevents/testimony/files/gibson20231205a.pdf
+Circle Transparency | https://www.circle.com/transparency
+DeFiLlama Stablecoins | https://defillama.com/stablecoins
+Artemis Stablecoins | https://app.artemisanalytics.com/stablecoins
+Etherscan Token Transfers | https://etherscan.io/tokens
+Arkham | https://platform.arkhamintelligence.com/
+Nansen | https://www.nansen.ai/
+CryptoQuant | https://cryptoquant.com/
+Glassnode | https://glassnode.com/
+Curve | https://curve.fi/
+DexScreener | https://dexscreener.com/
+GeckoTerminal | https://www.geckoterminal.com/
+CoinGecko Stablecoins | https://www.coingecko.com/en/categories/stablecoins
+CoinMarketCap Stablecoins | https://coinmarketcap.com/view/stablecoin/
+DeFiLlama Yields/Stablecoins | https://defillama.com/
+DefiLlama Bridges | https://defillama.com/bridges
+Dune | https://dune.com/browse/dashboards
+Tenderly | https://tenderly.co/
+Etherscan | https://etherscan.io/
+OpenZeppelin Defender | https://www.openzeppelin.com/defender

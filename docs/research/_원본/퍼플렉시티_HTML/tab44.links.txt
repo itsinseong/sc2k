@@ -1,0 +1,7 @@
+docs.channel | https://docs.channel.io/kangsanpayments/ko/articles/5-2-%EC%A0%95%EC%82%B0-FAQ-b9f34837
+tempoatlas | https://tempoatlas.net/articles/stablecoin-chains-comparison
+09jjss000.tistory | https://09jjss000.tistory.com/entry/%EB%B0%B0%EB%AF%BC%C2%B7%EC%BF%A0%ED%8C%A1%EC%9D%B4%EC%B8%A0%C2%B7%EC%9A%94%EA%B8%B0%EC%9A%94-%EB%B9%A0%EB%A5%B8%EC%A0%95%EC%82%B0%C2%B7%EC%A6%89%EC%8B%9C%EC%A0%95%EC%82%B0-%EC%88%98%EC%88%98%EB%A3%8C%ED%95%9C%EB%8F%84-%EB%B9%84%EA%B5%90%EC%99%80-%EC%9E%85%EA%B8%88%EC%9D%BC-%EA%B3%84%EC%82%B0%EB%B2%95
+africa.visa | https://africa.visa.com/en_MW/about-visa/newsroom/press-releases/prl-18062025.html
+investor.visa | https://investor.visa.com/news/news-details/2025/Visa-Launches-Stablecoin-Settlement-in-the-United-States-Marking-a-Breakthrough-for-Stablecoin-Integration/default.aspx
+stripe | https://stripe.com/newsroom/news/shopify-stripe-stablecoin-payments
+jpmorgan | https://www.jpmorgan.com/payments/newsroom/ebanx-kinexys-blockchain-settlement
