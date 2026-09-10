@@ -1,0 +1,270 @@
+<title>StableWatch 아이디어 발표</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap">
+<style>
+:root{
+  --ink:#0C1718; --ink-2:#46595A; --ink-3:#7C8D8D;
+  --paper:#FBFCFC; --band:#EDF1F0; --rule:#D3DEDC;
+  --accent:#0F5257; --accent-soft:#DCEAE9;
+  --pass:#2E6B4F; --fail:#A8392C; --warn:#8A6210;
+  --sans:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  --mono:'IBM Plex Mono','IBM Plex Sans KR',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#5A6A6B;font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased}
+.hint{
+  max-width:1040px;margin:0 auto;padding:14px 4px 10px;color:#E6ECEB;font-size:13px;line-height:1.6;
+}
+.hint b{color:#fff;font-weight:600}
+.deck{max-width:1040px;margin:0 auto;padding:0 4px 40px;display:flex;flex-direction:column;gap:18px}
+.slide{
+  container-type:inline-size;
+  position:relative;aspect-ratio:16/9;background:var(--paper);color:var(--ink);
+  border-radius:3px;overflow:hidden;box-shadow:0 10px 30px -12px rgba(0,0,0,.55);
+  padding:4.2cqw 4.6cqw 3.4cqw;display:flex;flex-direction:column;
+}
+.eyebrow{font-family:var(--mono);font-size:1.15cqw;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h2{font-size:2.7cqw;font-weight:600;margin:.5cqw 0 0;letter-spacing:-.01em;line-height:1.25}
+.lede{font-size:1.5cqw;color:var(--ink-2);margin:.8cqw 0 0;line-height:1.55;max-width:66cqw}
+.no{position:absolute;right:3.4cqw;bottom:2.4cqw;font-family:var(--mono);font-size:1.1cqw;color:var(--ink-3)}
+.brand{position:absolute;left:4.6cqw;bottom:2.4cqw;font-family:var(--mono);font-size:1.1cqw;color:var(--ink-3);letter-spacing:.06em}
+.body{flex:1;display:flex;flex-direction:column;justify-content:center;gap:1.8cqw;padding-bottom:1.2cqw}
+svg{display:block;width:100%;height:auto;color:var(--ink-2)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* cover */
+.cover{justify-content:center;gap:0}
+.field{display:inline-flex;align-items:center;gap:.7cqw;font-family:var(--mono);font-size:1.25cqw;font-weight:600;letter-spacing:.1em;color:var(--paper);background:var(--accent);padding:.55cqw 1.1cqw;border-radius:2px;align-self:flex-start}
+h1{font-size:6.4cqw;font-weight:700;letter-spacing:-.03em;margin:2.4cqw 0 0;line-height:1}
+.sub{font-size:2.5cqw;font-weight:400;color:var(--accent);margin:.9cqw 0 0;letter-spacing:-.01em}
+.one{font-size:1.6cqw;color:var(--ink-2);margin:2.2cqw 0 0;line-height:1.6;max-width:64cqw;border-left:.35cqw solid var(--accent-soft);padding-left:1.4cqw}
+.who{margin-top:3cqw;font-size:1.5cqw;color:var(--ink);display:flex;gap:1.6cqw;align-items:baseline}
+.who .blank{color:var(--fail);font-family:var(--mono);font-weight:600}
+
+/* grids */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6cqw}
+.card{background:var(--band);border-radius:3px;padding:2cqw 2cqw 1.9cqw}
+.card .k{font-family:var(--mono);font-size:1.05cqw;letter-spacing:.12em;color:var(--accent);font-weight:600}
+.card .t{font-size:1.95cqw;font-weight:600;margin:.6cqw 0 .5cqw;line-height:1.3}
+.card .d{font-size:1.36cqw;color:var(--ink-2);line-height:1.55}
+.big{font-family:var(--mono);font-size:3.4cqw;font-weight:600;color:var(--accent);line-height:1}
+.stat{display:flex;gap:3.2cqw;margin-top:.4cqw}
+.stat div{display:flex;flex-direction:column;gap:.35cqw}
+.stat .lab{font-size:1.15cqw;color:var(--ink-3)}
+.stat .val{font-family:var(--mono);font-size:2.3cqw;font-weight:600;line-height:1}
+
+/* table */
+table{width:100%;border-collapse:collapse;font-size:1.38cqw}
+th{text-align:left;font-family:var(--mono);font-size:1.05cqw;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:500;padding:0 1cqw .8cqw 0;border-bottom:1px solid var(--rule)}
+td{padding:1.05cqw 1cqw 1.05cqw 0;border-bottom:1px solid var(--band);color:var(--ink-2);vertical-align:top}
+td.name{color:var(--ink);font-weight:600;white-space:nowrap}
+tr.us td{background:var(--accent-soft);color:var(--ink)}
+tr.us td.name{color:var(--accent)}
+tr.us td:first-child{padding-left:1cqw;border-radius:2px 0 0 2px}
+tr.us td:last-child{border-radius:0 2px 2px 0}
+.foot{font-size:1.15cqw;color:var(--ink-3);margin-top:1.2cqw;line-height:1.5}
+
+@media print{
+  @page{size:297mm 167mm;margin:0}
+  body{background:#fff}
+  .hint{display:none}
+  .deck{max-width:none;margin:0;padding:0;gap:0}
+  .slide{width:297mm;height:167mm;border-radius:0;box-shadow:none;break-after:page;aspect-ratio:auto}
+  .slide:last-child{break-after:auto}
+}
+</style>
+
+<p class="hint">인쇄(Cmd+P)하면 6장짜리 PDF가 됩니다. 여백 없음, 배경 그래픽 켜기. <b>제출은 PPT 포맷만 인정되므로 이 내용을 pptx로 변환해야 합니다.</b> 표지의 학번은 아직 빈칸입니다.</p>
+
+<div class="deck">
+
+<!-- 1 -->
+<section class="slide cover">
+  <span class="field">분야  APP</span>
+  <h1>StableWatch</h1>
+  <p class="sub">원화 스테이블코인 준비금 공시 판정기</p>
+  <p class="one">한국이 매달 무엇을 어떻게 공시해야 하는지 정한 서식을 만들고, 그 서식이 실제 발행사 자료로 채워지는지 시험하는 웹.</p>
+  <div class="who"><span>디지털미디어학과</span><span class="blank">[학번]</span><span>강인성</span></div>
+  <span class="brand">2026-2 미디어프로젝트</span><span class="no">1 / 6</span>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+  <span class="eyebrow">문제</span>
+  <h2>공시해야 하는데, 무엇을 어떻게 공시할지가 없다</h2>
+  <p class="lede">은행이 원화 스테이블코인을 발행하면 매달 준비금을 공시해야 한다. 한국에는 그 서식도 기준값도 아직 없다.</p>
+  <div class="body">
+    <svg viewBox="0 0 940 250" role="img" aria-label="국회 계류 법안 여덟 건이 환매 기한을 서로 다르게 정하고 있고 시행 법률에는 기한 규정이 없음을 보여주는 그림">
+      <g font-family="IBM Plex Sans KR, sans-serif">
+        <text x="0" y="16" font-size="15" font-weight="600" fill="var(--ink)">계류 법안 8건이 정한 환매 기한</text>
+        <g fill="none" stroke="var(--rule)" stroke-width="1.5">
+          <rect x="0" y="36" width="128" height="52" rx="26"/>
+          <rect x="144" y="36" width="150" height="52" rx="26"/>
+          <rect x="310" y="36" width="128" height="52" rx="26"/>
+          <rect x="454" y="36" width="150" height="52" rx="26"/>
+          <rect x="620" y="36" width="140" height="52" rx="26"/>
+        </g>
+        <g font-family="IBM Plex Mono, monospace" font-size="20" font-weight="600" fill="var(--ink)" text-anchor="middle">
+          <text x="64" y="69">3일</text><text x="219" y="69">3영업일</text><text x="374" y="69">5일</text><text x="529" y="69">5영업일</text><text x="690" y="69">10일</text>
+        </g>
+        <g font-size="11" fill="var(--ink-3)" text-anchor="middle">
+          <text x="64" y="105">이강일</text><text x="219" y="105">안도걸</text><text x="374" y="105">김재섭</text><text x="529" y="105">최보윤</text><text x="690" y="105">김은혜, 김현정</text>
+        </g>
+        <circle cx="838" cy="62" r="27" fill="var(--accent)"/>
+        <text x="838" y="72" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="30" font-weight="600" fill="var(--paper)">?</text>
+        <text x="838" y="105" text-anchor="middle" font-size="11" fill="var(--accent)" font-weight="600">정부안 미제출</text>
+
+        <line x1="0" y1="146" x2="940" y2="146" stroke="var(--rule)" stroke-width="1"/>
+        <text x="0" y="178" font-size="15" font-weight="600" fill="var(--ink)">시행 중인 법에는</text>
+        <text x="0" y="206" font-size="13" fill="var(--ink-2)">전자금융거래법 제19조는 환급을 "미리 약정한 바에 따라"로 두고 기한을 정하지 않는다</text>
+        <text x="0" y="232" font-size="13" fill="var(--ink-2)">준비금 공시의 서식, 주기, 검증 수준을 정한 조문은 없다</text>
+      </g>
+    </svg>
+  </div>
+  <span class="brand">StableWatch</span><span class="no">2 / 6</span>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+  <span class="eyebrow">내용 1</span>
+  <h2>무엇을 만드나</h2>
+  <p class="lede">판정 화면 둘과 서식 한 장. 빈칸 목록은 결과가 아니라 서식을 만들기 위한 중간 재료다.</p>
+  <div class="body">
+    <div class="three">
+      <div class="card">
+        <div class="k">화면 A</div>
+        <div class="t">판정</div>
+        <div class="d">보고서와 관할권을 고르면 규칙 15개가 다시 계산된다. 판정마다 근거 조문과 수치가 붙는다.</div>
+      </div>
+      <div class="card">
+        <div class="k">화면 B</div>
+        <div class="t">고객 안내</div>
+        <div class="d">판정을 읽어 환매 상태를 보여준다. 공시 규정이 없어 확인 불가인 항목이 그대로 드러난다.</div>
+      </div>
+      <div class="card">
+        <div class="k">최종 산출물</div>
+        <div class="t">한국 공시안 v1</div>
+        <div class="d">빈칸마다 값을 골라 만든 서식 한 장. 항목 27개에 값을 고른 이유와 기각한 대안까지 붙인다.</div>
+      </div>
+    </div>
+    <div class="stat">
+      <div><span class="lab">실데이터</span><span class="val">4개월</span></div>
+      <div><span class="lab">규칙</span><span class="val">15</span></div>
+      <div><span class="lab">관할권</span><span class="val">6</span></div>
+      <div><span class="lab">서식 항목</span><span class="val">27</span></div>
+      <div><span class="lab">채움률 시험</span><span class="val">108칸</span></div>
+    </div>
+    <p class="foot">Circle USDC 검사보고서 2026년 1월, 3월, 4월, 7월. 네 파일 모두 준비자산 합계가 총계와 정수로 일치. 서식 27항목에 4개월을 넣어 108칸이 실제로 채워지는지 센다. 판정 화면은 이미 동작한다.</p>
+  </div>
+  <span class="brand">StableWatch</span><span class="no">3 / 6</span>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <span class="eyebrow">내용 2</span>
+  <h2>근거를 붙이고, 빈칸을 서식으로 바꾼다</h2>
+  <p class="lede">한국 근거를 다섯 층으로 나눠 규칙 축마다 어느 문서 몇 조인지 연결한다. 비는 자리에 값을 골라 서식으로 만들고, 실제 자료로 채워지는지 시험한다.</p>
+  <div class="body">
+    <svg viewBox="0 0 940 330" role="img" aria-label="다섯 개 근거층이 규칙 축으로 모여 판정에 조문 인용이 붙고, 빈칸이 값 선택을 거쳐 공시안 서식이 되며 실데이터 채움률 시험으로 서식을 고치는 구조">
+      <g font-family="IBM Plex Sans KR, sans-serif">
+        <g fill="none" stroke="var(--rule)" stroke-width="1.4">
+          <rect x="0" y="20" width="196" height="34" rx="3"/>
+          <rect x="0" y="62" width="196" height="34" rx="3"/>
+          <rect x="0" y="104" width="196" height="34" rx="3"/>
+          <rect x="0" y="146" width="196" height="34" rx="3"/>
+          <rect x="0" y="188" width="196" height="34" rx="3"/>
+        </g>
+        <g font-size="13" fill="var(--ink)">
+          <text x="42" y="42">시행 법령</text><text x="42" y="84">계류 법안</text><text x="42" y="126">정부와 한은</text><text x="42" y="168">보도</text><text x="42" y="210">업계 관행</text>
+        </g>
+        <g font-family="IBM Plex Mono, monospace" font-size="12" font-weight="600" fill="var(--accent)">
+          <text x="16" y="42">1</text><text x="16" y="84">2</text><text x="16" y="126">3</text><text x="16" y="168">4</text><text x="16" y="210">5</text>
+        </g>
+        <g fill="none" stroke="currentColor" stroke-width="1.3">
+          <path d="M196 37 H250 V121"/><path d="M196 79 H250"/><path d="M196 121 H250"/><path d="M196 163 H250 V121"/><path d="M196 205 H250 V121"/>
+          <path d="M250 121 H296" marker-end="url(#a)"/>
+          <path d="M446 121 H520" marker-end="url(#a)"/>
+        </g>
+        <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="currentColor"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 z" fill="var(--accent)"/></marker></defs>
+        <rect x="300" y="94" width="146" height="54" rx="3" fill="var(--accent)"/>
+        <text x="373" y="118" text-anchor="middle" font-size="14" font-weight="600" fill="var(--paper)">규칙 축</text>
+        <text x="373" y="136" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--paper)" opacity=".85">R01~R15, K01~K05</text>
+
+        <rect x="524" y="76" width="416" height="90" rx="3" fill="var(--band)"/>
+        <text x="548" y="104" font-size="14" font-weight="600" fill="var(--ink)">판정</text>
+        <text x="548" y="128" font-size="12.5" fill="var(--ink-2)">충족, 미충족, 주의, 데이터 없음, 위임 예정, 규정 없음</text>
+        <g font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--accent)">
+          <text x="548" y="150">근거: 전자금융거래법 시행령 제13조의2 제2항  |  100%</text>
+        </g>
+        <text x="524" y="188" font-size="12" fill="var(--ink-3)">인용은 스크립트가 원문과 대조한다. 간선 110개 중 98개 원문 확인.</text>
+
+        <g fill="none" stroke="var(--rule)" stroke-width="1.4">
+          <rect x="0" y="244" width="210" height="44" rx="3"/>
+          <rect x="243" y="244" width="210" height="44" rx="3"/>
+          <rect x="729" y="244" width="210" height="44" rx="3"/>
+        </g>
+        <rect x="486" y="244" width="210" height="44" rx="3" fill="var(--accent)"/>
+        <g fill="none" stroke="currentColor" stroke-width="1.3" marker-end="url(#a)">
+          <line x1="210" y1="266" x2="239" y2="266"/><line x1="453" y1="266" x2="482" y2="266"/><line x1="696" y1="266" x2="725" y2="266"/>
+        </g>
+        <g font-size="12.5" text-anchor="middle" fill="var(--ink)">
+          <text x="105" y="264">1층에 근거가 없는 자리</text>
+          <text x="348" y="264">값 선택과 이유 기록</text>
+          <text x="834" y="264">실데이터 채움률 시험</text>
+        </g>
+        <g font-size="10.5" text-anchor="middle" fill="var(--ink-3)">
+          <text x="105" y="279">빈칸 목록</text>
+          <text x="348" y="279">기각한 대안과 바뀌는 조건까지</text>
+          <text x="834" y="279">4개월 곱하기 27항목</text>
+        </g>
+        <text x="591" y="264" text-anchor="middle" font-size="13.5" font-weight="600" fill="var(--paper)">한국 공시안 v1</text>
+        <text x="591" y="279" text-anchor="middle" font-size="10.5" fill="var(--paper)" opacity=".85">항목 27개</text>
+        <g fill="none" stroke="var(--accent)" stroke-width="1.3" stroke-dasharray="4 3">
+          <path d="M834 288 V308 H591 V292" marker-end="url(#b)"/>
+        </g>
+        <text x="712" y="322" text-anchor="middle" font-size="11" fill="var(--accent)">안 채워지는 칸이 나오면 서식을 고친다</text>
+      </g>
+    </svg>
+  </div>
+  <span class="brand">StableWatch</span><span class="no">4 / 6</span>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+  <span class="eyebrow">경쟁 서비스</span>
+  <h2>비슷한 것은 있지만, 한국과 판정을 같이 하는 곳은 없다</h2>
+  <div class="body">
+    <table>
+      <thead><tr><th style="width:22%">서비스</th><th style="width:39%">하는 것</th><th>없는 것</th></tr></thead>
+      <tbody>
+        <tr><td class="name">Tessera</td><td>미국 규칙으로 발행사 보고서를 판정하고 증거팩 공개</td><td>미국만. 파서와 생성 엔진은 비공개. 고객 화면과 한국 없음</td></tr>
+        <tr><td class="name">FeedOracle</td><td>EU 조문을 규칙으로 쪼개 통과와 경고 판정</td><td>EU만. 미국과 홍콩 없음</td></tr>
+        <tr><td class="name">stablecoinstatus.com</td><td>국회 계류 법안 8건을 6개 축으로 비교</td><td>법안 층만. 시행 법령과 관행 없음. 조문 인용과 판정 없음</td></tr>
+        <tr><td class="name">로펌, 연구기관</td><td>해외 비교와 법안 정리를 글로 씀</td><td>요약. 규칙 축별 조문 매핑과 실데이터 판정 없음</td></tr>
+        <tr class="us"><td class="name">StableWatch</td><td>관할권 6개 판정, 한국 근거 5층을 조문 단위로 연결, 값을 골라 만든 공시안 v1과 실데이터 채움률 시험, 공개 코드</td><td>온체인 유통량 재구성과 암호학적 봉인은 없음</td></tr>
+      </tbody>
+    </table>
+    <p class="foot">"확인 범위에서 없음"이지 최초 주장은 아니다. 2026년 9월 4일 GitHub 6개 질의와 퍼플렉시티 15개 질의, 9월 10일 적대검증에서 같은 조합을 찾지 못했다.</p>
+  </div>
+  <span class="brand">StableWatch</span><span class="no">5 / 6</span>
+</section>
+
+<!-- 6 -->
+<section class="slide">
+  <span class="eyebrow">사회진출</span>
+  <h2>은행 디지털 기획</h2>
+  <p class="lede">규제가 정해지기 전에 서비스를 설계해야 하는 자리다. 이 프로젝트가 그 일을 축소판으로 한 번 해 본 기록이 된다.</p>
+  <div class="body">
+    <div class="three">
+      <div class="card"><div class="k">남길 것 01</div><div class="t">서비스 기획 1쪽</div><div class="d">누구의 어떤 업무를 돕는지</div></div>
+      <div class="card"><div class="k">남길 것 02</div><div class="t">공시안과 화면</div><div class="d">해외 근거, 한국 가정, 선택 이유가 이어진 설계</div></div>
+      <div class="card"><div class="k">남길 것 03</div><div class="t">작동하는 공개 웹</div><div class="d">실제 자료로 판정하고 원문까지 열리는 화면</div></div>
+    </div>
+    <div class="three">
+      <div class="card"><div class="k">남길 것 04</div><div class="t">검증과 수정 기록</div><div class="d">AI 초안 116행 중 46행만 원문을 통과했고, 무엇을 어떻게 고쳤는지가 수치로 남는다</div></div>
+      <div class="card" style="grid-column:span 2"><div class="k">채용 근거</div><div class="t">직무가 실제로 있다</div><div class="d">하나은행 디지털 직렬 첫 항목이 디지털 서비스 기획. 카카오뱅크는 스테이블코인 서비스 기획자를 뽑으며 "규제와 제도를 반영한 서비스 기획"을 업무로 적었다. IBK는 디지털 역량을 신기술 이해, 서비스 기획 경험, 데이터 활용으로 설명한다.</div></div>
+    </div>
+  </div>
+  <span class="brand">StableWatch</span><span class="no">6 / 6</span>
+</section>
+
+</div>
