@@ -32,7 +32,9 @@ svg{display:block;width:100%;height:auto;color:var(--ink-2)}
 .kicker{font-size:1.35cqw;color:var(--ink-2);letter-spacing:.02em}
 h1{font-size:6.8cqw;font-weight:700;letter-spacing:-.035em;margin:1.6cqw 0 0;line-height:1.02}
 .sub{font-size:2.4cqw;font-weight:400;color:var(--accent);margin:1cqw 0 0}
-.who{margin-top:5cqw;font-size:1.5cqw;color:var(--ink-2);line-height:1.7;text-align:right}
+.thesis{font-size:1.62cqw;color:var(--ink-2);line-height:1.65;margin:2.6cqw 0 0;border-left:.3cqw solid var(--accent);padding-left:1.4cqw}
+.thesis b{color:var(--ink);font-weight:600}
+.who{margin-top:3.4cqw;font-size:1.5cqw;color:var(--ink-2);line-height:1.7;text-align:right}
 .who b{display:block;color:var(--ink);font-weight:600;font-family:var(--mono);letter-spacing:.02em}
 .field{position:absolute;top:5cqw;right:5.4cqw;font-family:var(--mono);font-size:1.15cqw;font-weight:600;letter-spacing:.16em;color:var(--paper);background:var(--accent);padding:.5cqw 1cqw;border-radius:2px}
 
@@ -55,6 +57,10 @@ h1{font-size:6.8cqw;font-weight:700;letter-spacing:-.035em;margin:1.6cqw 0 0;lin
 .row.ours dd{color:var(--ink)}
 
 .note{font-size:1.32cqw;color:var(--ink-3);line-height:1.55}
+.ex{background:var(--band);border-left:.3cqw solid var(--accent);border-radius:0 3px 3px 0;padding:1.7cqw 2cqw}
+.ex .lab{font-family:var(--mono);font-size:1.05cqw;letter-spacing:.12em;color:var(--accent);font-weight:600}
+.ex p{margin:.7cqw 0 0;font-size:1.55cqw;line-height:1.6;color:var(--ink)}
+.ex b{font-family:var(--mono);font-weight:600;color:var(--accent)}
 
 @media print{
   @page{size:297mm 167mm;margin:0}
@@ -76,6 +82,7 @@ h1{font-size:6.8cqw;font-weight:700;letter-spacing:-.035em;margin:1.6cqw 0 0;lin
   <p class="kicker">2026-2 미디어프로젝트 아이디어</p>
   <h1>StableWatch</h1>
   <p class="sub">원화 스테이블코인 준비금 공시 판정기</p>
+  <p class="thesis">해외 규제와 실제 발행사 데이터를 근거로<br><b>한국의 공시 기준을 직접 제안한다</b></p>
   <p class="who">디지털미디어학과<b>202127158 강인성</b></p>
 </section>
 
@@ -115,11 +122,11 @@ h1{font-size:6.8cqw;font-weight:700;letter-spacing:-.035em;margin:1.6cqw 0 0;lin
 <section class="slide">
   <div class="sec"><h2>내용</h2><span class="n">02</span></div>
   <div class="body">
-    <p class="hero">규정이 아직 없는 나라의<br><em>공시 서식을 먼저 만들어 본다</em></p>
+    <p class="hero">규정이 아직 없으니<br><em>내가 기준을 만들어 제안한다</em></p>
     <div class="pts" style="grid-template-columns:1fr 1fr 1fr">
-      <div class="pt"><i>A</i><span>판정 화면<br><span class="note">보고서와 나라를 고르면 규칙이 다시 계산된다</span></span></div>
-      <div class="pt"><i>B</i><span>고객 안내 화면<br><span class="note">환매할 때 무엇을 알 수 있고 무엇을 모르는지</span></span></div>
-      <div class="pt"><i>C</i><span>한국 공시안<br><span class="note">항목과 값을 정하고 고른 이유를 남긴 서식 한 장</span></span></div>
+      <div class="pt"><i>1</i><span>무엇을 제안하나<br><span class="note">매달 공시할 항목과 값, 기준일과 주기, 검증 수준을 정한 서식 한 장</span></span></div>
+      <div class="pt"><i>2</i><span>근거는 어디서<br><span class="note">해외 4개 관할권 규제와 한국의 법령, 국회 법안, 업계 관행</span></span></div>
+      <div class="pt"><i>3</i><span>타당한지 어떻게 보나<br><span class="note">실제 발행사가 낸 공시 자료를 넣어 그 값이 지켜질 수 있는지 확인</span></span></div>
     </div>
   </div>
   <span class="no">3 / 6</span>
@@ -142,13 +149,17 @@ h1{font-size:6.8cqw;font-weight:700;letter-spacing:-.035em;margin:1.6cqw 0 0;lin
       <g font-family="IBM Plex Sans KR, sans-serif" text-anchor="middle">
         <text x="138" y="53" font-size="18" font-weight="600" fill="var(--ink)">해외 규제에서 규칙을 뽑고</text>
         <text x="138" y="78" font-size="14" fill="var(--ink-2)">미국, EU, 홍콩, 싱가포르</text>
-        <text x="470" y="53" font-size="18" font-weight="600" fill="var(--ink)">한국 근거를 붙여 빈칸을 찾고</text>
+        <text x="470" y="53" font-size="18" font-weight="600" fill="var(--ink)">한국에 없는 칸을 찾고</text>
         <text x="470" y="78" font-size="14" fill="var(--ink-2)">법령, 법안, 정부 자료, 관행</text>
-        <text x="802" y="53" font-size="18" font-weight="600" fill="var(--paper)">값을 정해 서식을 만든다</text>
-        <text x="802" y="78" font-size="14" fill="var(--paper)" opacity=".85">실제 발행사 자료로 확인</text>
+        <text x="802" y="53" font-size="18" font-weight="600" fill="var(--paper)">값을 정해 제안하고</text>
+        <text x="802" y="78" font-size="14" fill="var(--paper)" opacity=".85">데이터로 타당한지 확인한다</text>
       </g>
     </svg>
-    <p class="note" style="font-size:1.5cqw;color:var(--ink-2);line-height:1.6">서식만 만들면 종이다. 그래서 실제 발행사의 월간 공시 보고서 4개월치를 넣어 본다. 정한 값이 현실에서 지켜질 수 있는 값인지 확인하고, 아니면 고친다.</p>
+    <div class="ex">
+      <span class="lab">근거를 대는 방식, 예를 들면</span>
+      <p>미국은 현금성 자산을 <b>30%</b> 이상 두라고 한다. 그런데 세계 최대 발행사의 4개월 공시를 계산해 보니 실제로는 <b>14%</b>였다. 그래서 한국 제안값은 30%가 아니라 <b>15%</b>로 잡고, 그 이유를 기록에 남긴다.</p>
+    </div>
+    <p class="note">제안한 서식과 판정을 웹 화면 두 개로 만든다. 담당자가 보는 판정 화면과 고객이 보는 안내 화면.</p>
   </div>
   <span class="no">4 / 6</span>
 </section>
@@ -161,9 +172,9 @@ h1{font-size:6.8cqw;font-weight:700;letter-spacing:-.035em;margin:1.6cqw 0 0;lin
       <div class="row"><dt>Tessera</dt><dd>미국 규칙으로 발행사 보고서를 판정한다. 미국만 다루고 한국은 없다.</dd></div>
       <div class="row"><dt>stablecoinstatus</dt><dd>국회 법안 8건을 비교해 보여준다. 법안만 있고 판정도 서식도 없다.</dd></div>
       <div class="row"><dt>로펌 보고서</dt><dd>해외 제도와 법안을 글로 정리한다. 값을 정해 서식으로 만들지는 않는다.</dd></div>
-      <div class="row ours"><dt>StableWatch</dt><dd>한국 근거를 조문 단위로 붙이고, 빈칸에 값을 정하고, 실제 자료로 확인한다.</dd></div>
+      <div class="row ours"><dt>StableWatch</dt><dd>한국이 쓸 기준을 값까지 정해 제안하고, 실제 발행사 자료로 그 값이 타당한지 확인한다.</dd></div>
     </dl>
-    <p class="note">확인한 범위에서 같은 조합을 찾지 못했다는 뜻이지, 세계 최초라는 주장은 아니다.</p>
+    <p class="note">앞의 셋은 있는 규정을 정리하거나 판정한다. 없는 규정에 값을 정해 제안하는 곳은 확인한 범위에서 없었다. 세계 최초라는 주장은 아니다.</p>
   </div>
   <span class="no">5 / 6</span>
 </section>

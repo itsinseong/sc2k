@@ -1,0 +1,810 @@
+<title>StableWatch 준비금 판정기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap">
+<style>
+:root{
+  --ink:#0D1A1C; --ink-2:#46595A; --ink-3:#6E8081;
+  --paper:#EDF1F0; --surface:#FBFDFC; --surface-2:#F3F7F6;
+  --rule:#CCD8D6; --rule-2:#DEE7E5;
+  --accent:#0F5257; --accent-soft:#DCEAE9; --accent-ink:#0F5257;
+  --pass:#2E6B4F; --pass-soft:#DDEAE2;
+  --fail:#A8392C; --fail-soft:#F4DFDB;
+  --warn:#8A6210; --warn-soft:#F0E7CE;
+  --nodata:#5F7274; --nodata-soft:#E3EAE9;
+  --shadow:0 1px 2px rgba(13,26,28,.05), 0 8px 24px -16px rgba(13,26,28,.28);
+  --sans:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  --mono:'IBM Plex Mono','IBM Plex Sans KR',ui-monospace,'SFMono-Regular',monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#DDE6E4; --ink-2:#9AAEAC; --ink-3:#748A8B;
+    --paper:#0B1314; --surface:#121D1E; --surface-2:#162223;
+    --rule:#26383A; --rule-2:#1E2E2F;
+    --accent:#5BC6BE; --accent-soft:#10302F; --accent-ink:#7FD6CF;
+    --pass:#64B183; --pass-soft:#172C22;
+    --fail:#E5776A; --fail-soft:#331C19;
+    --warn:#D3A144; --warn-soft:#302617;
+    --nodata:#8A9C9E; --nodata-soft:#1B2829;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#DDE6E4; --ink-2:#9AAEAC; --ink-3:#748A8B;
+  --paper:#0B1314; --surface:#121D1E; --surface-2:#162223;
+  --rule:#26383A; --rule-2:#1E2E2F;
+  --accent:#5BC6BE; --accent-soft:#10302F; --accent-ink:#7FD6CF;
+  --pass:#64B183; --pass-soft:#172C22;
+  --fail:#E5776A; --fail-soft:#331C19;
+  --warn:#D3A144; --warn-soft:#302617;
+  --nodata:#8A9C9E; --nodata-soft:#1B2829;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-weight:400; font-size:15px; line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px; margin:0 auto; padding:0 24px 80px}
+h1,h2,h3{text-wrap:balance; margin:0}
+p{margin:0}
+a{color:var(--accent-ink)}
+
+/* header */
+header{border-bottom:1px solid var(--rule); background:var(--surface)}
+.hd{max-width:1080px; margin:0 auto; padding:38px 24px 26px}
+.eyebrow{
+  font-family:var(--mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent-ink); font-weight:500;
+}
+h1{font-size:34px; font-weight:600; letter-spacing:-.015em; margin:10px 0 8px; line-height:1.25}
+.lede{color:var(--ink-2); max-width:62ch; font-size:15.5px}
+.meta{
+  display:flex; flex-wrap:wrap; gap:0 30px; margin-top:22px; padding-top:18px;
+  border-top:1px solid var(--rule-2);
+}
+.meta div{display:flex; flex-direction:column; gap:1px}
+.meta dt{font-size:11px; color:var(--ink-3); letter-spacing:.04em}
+.meta dd{margin:0; font-family:var(--mono); font-size:17px; font-weight:500; font-variant-numeric:tabular-nums}
+
+/* sections */
+section{margin-top:56px}
+.sec-head{display:flex; align-items:baseline; gap:12px; margin-bottom:6px}
+.sec-num{font-family:var(--mono); font-size:12px; color:var(--accent-ink); font-weight:500}
+h2{font-size:22px; font-weight:600; letter-spacing:-.01em}
+.sec-sub{color:var(--ink-2); max-width:64ch; margin-bottom:22px; font-size:14.5px}
+
+/* figures */
+figure{margin:0; background:var(--surface); border:1px solid var(--rule); border-radius:3px; padding:22px 20px 16px; box-shadow:var(--shadow)}
+.fig-scroll{overflow-x:auto}
+figure svg{display:block; width:100%; min-width:640px; height:auto; color:var(--ink-2)}
+figcaption{margin-top:14px; padding-top:12px; border-top:1px solid var(--rule-2); font-size:13px; color:var(--ink-2); line-height:1.6}
+.keys{list-style:none; margin:14px 0 0; padding:0; display:grid; gap:8px}
+.keys li{display:grid; grid-template-columns:22px 1fr; gap:10px; font-size:13px; color:var(--ink-2)}
+.keys b{font-family:var(--mono); color:var(--accent-ink); font-weight:500; font-size:12px}
+.keys strong{color:var(--ink); font-weight:500}
+
+/* controls */
+.panel{background:var(--surface); border:1px solid var(--rule); border-radius:3px; box-shadow:var(--shadow); overflow:hidden}
+.controls{display:flex; flex-wrap:wrap; gap:26px; padding:18px 20px; border-bottom:1px solid var(--rule-2); background:var(--surface-2)}
+.ctl{display:flex; flex-direction:column; gap:8px}
+.ctl-label{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-family:var(--mono)}
+.seg{display:flex; flex-wrap:wrap; gap:5px}
+button{font-family:inherit; font-size:inherit; cursor:pointer}
+.seg button{
+  font-family:var(--mono); font-size:12.5px; font-weight:500; padding:6px 11px;
+  background:var(--surface); color:var(--ink-2); border:1px solid var(--rule); border-radius:2px;
+  transition:background .12s, color .12s, border-color .12s;
+}
+.seg button:hover{border-color:var(--accent); color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--accent); border-color:var(--accent); color:var(--surface)}
+:root[data-theme="dark"] .seg button[aria-pressed="true"],
+.seg button[aria-pressed="true"]{color:var(--paper)}
+.seg .sub{display:block; font-size:10px; font-weight:400; opacity:.72; letter-spacing:0}
+button:focus-visible, a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+/* notice */
+.notice{
+  display:flex; gap:11px; padding:13px 20px; font-size:13px; line-height:1.55;
+  background:var(--warn-soft); color:var(--ink); border-bottom:1px solid var(--rule-2);
+}
+.notice b{font-weight:600}
+.notice .tag{font-family:var(--mono); font-size:11px; color:var(--warn); font-weight:600; letter-spacing:.08em; white-space:nowrap; padding-top:1px}
+
+/* jurisdiction summary strip */
+.strip{display:grid; grid-template-columns:repeat(6,1fr); border-bottom:1px solid var(--rule-2)}
+.strip button{
+  display:flex; flex-direction:column; gap:7px; align-items:flex-start; text-align:left;
+  padding:13px 14px; background:var(--surface); border:0; border-right:1px solid var(--rule-2);
+}
+.strip button:last-child{border-right:0}
+.strip button:hover{background:var(--surface-2)}
+.strip button[aria-pressed="true"]{background:var(--accent-soft)}
+.strip .jn{font-size:12.5px; font-weight:500; color:var(--ink)}
+.strip .jc{font-family:var(--mono); font-size:10.5px; color:var(--ink-3)}
+.bars{display:flex; width:100%; height:6px; border-radius:1px; overflow:hidden; background:var(--rule-2)}
+.bars i{display:block; height:100%}
+
+/* table */
+.tbl-scroll{overflow-x:auto}
+table{border-collapse:collapse; width:100%; min-width:760px; font-size:13.5px}
+thead th{
+  text-align:left; font-size:10.5px; letter-spacing:.11em; text-transform:uppercase; color:var(--ink-3);
+  font-family:var(--mono); font-weight:500; padding:12px 16px; border-bottom:1px solid var(--rule);
+  background:var(--surface-2); position:sticky; top:0;
+}
+tbody td{padding:13px 16px; border-bottom:1px solid var(--rule-2); vertical-align:top}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--surface-2)}
+.rid{font-family:var(--mono); font-size:12px; color:var(--ink-3); font-weight:500}
+.rname{font-weight:500; color:var(--ink); display:block; margin-top:2px}
+.req{color:var(--ink-2); max-width:30ch}
+.cite{display:block; margin-top:3px; font-family:var(--mono); font-size:11px; color:var(--ink-3)}
+.ev{color:var(--ink-2); max-width:46ch; line-height:1.55}
+.ev .lvl{
+  display:inline-block; margin-right:6px; font-family:var(--mono); font-size:10px; font-weight:600;
+  letter-spacing:.06em; color:var(--warn); border:1px solid var(--warn); border-radius:2px; padding:0 4px;
+  vertical-align:1px;
+}
+td.vcell{white-space:nowrap}
+.chip{
+  display:inline-block; font-family:var(--mono); font-size:11.5px; font-weight:600; letter-spacing:.02em;
+  padding:3px 9px; border-radius:2px; border:1px solid transparent;
+}
+.v-PASS{background:var(--pass-soft); color:var(--pass); border-color:var(--pass)}
+.v-FAIL{background:var(--fail-soft); color:var(--fail); border-color:var(--fail)}
+.v-WARN{background:var(--warn-soft); color:var(--warn); border-color:var(--warn)}
+.v-NODATA{background:var(--nodata-soft); color:var(--nodata); border-color:var(--nodata)}
+.v-GAP{background:var(--accent-soft); color:var(--accent-ink); border-color:var(--accent)}
+.num{font-family:var(--mono); font-variant-numeric:tabular-nums}
+
+/* legend */
+.legend{display:flex; flex-wrap:wrap; gap:18px; padding:14px 20px; background:var(--surface-2); border-top:1px solid var(--rule-2); font-size:12.5px; color:var(--ink-2)}
+.legend div{display:flex; align-items:center; gap:7px}
+
+/* callout */
+.callout{
+  margin-top:16px; padding:16px 18px; background:var(--surface); border:1px solid var(--rule);
+  border-left:3px solid var(--accent); border-radius:3px; font-size:13.5px; color:var(--ink-2);
+  display:flex; flex-wrap:wrap; align-items:center; gap:14px; line-height:1.6;
+}
+.callout p{max-width:70ch}
+.callout strong{color:var(--ink); font-weight:600}
+.ghost{
+  font-family:var(--mono); font-size:12px; font-weight:500; padding:6px 12px; white-space:nowrap;
+  background:transparent; color:var(--accent-ink); border:1px solid var(--accent); border-radius:2px;
+}
+.ghost:hover{background:var(--accent); color:var(--paper)}
+
+/* screen B */
+.redeem{display:grid; grid-template-columns:minmax(240px,320px) 1fr; gap:0}
+@media (max-width:760px){ .redeem{grid-template-columns:1fr} }
+.redeem-in{padding:22px 20px; border-right:1px solid var(--rule-2); display:flex; flex-direction:column; gap:16px}
+@media (max-width:760px){ .redeem-in{border-right:0; border-bottom:1px solid var(--rule-2)} }
+.field{display:flex; flex-direction:column; gap:6px}
+.field label{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-family:var(--mono)}
+.field input{
+  font-family:var(--mono); font-size:19px; font-weight:500; font-variant-numeric:tabular-nums;
+  padding:10px 12px; background:var(--surface-2); color:var(--ink);
+  border:1px solid var(--rule); border-radius:2px; width:100%;
+}
+.field input:focus{outline:2px solid var(--accent); outline-offset:-1px; border-color:var(--accent)}
+.status{padding:14px; border-radius:2px; border:1px solid; display:flex; flex-direction:column; gap:4px}
+.status .st{font-size:17px; font-weight:600}
+.status .sr{font-size:12.5px; line-height:1.5}
+.st-delay{background:var(--warn-soft); border-color:var(--warn); color:var(--warn)}
+.st-hold{background:var(--fail-soft); border-color:var(--fail); color:var(--fail)}
+.st-ok{background:var(--pass-soft); border-color:var(--pass); color:var(--pass)}
+.redeem-out{padding:22px 20px}
+.rows{display:grid; gap:0}
+.row{display:grid; grid-template-columns:150px 1fr; gap:14px; padding:11px 0; border-bottom:1px solid var(--rule-2); font-size:13.5px; align-items:baseline}
+.row:last-child{border-bottom:0}
+.row dt{color:var(--ink-3); font-size:12.5px}
+.row dd{margin:0; color:var(--ink)}
+.row dd .note{display:block; color:var(--ink-3); font-size:12px; margin-top:2px}
+.missing{color:var(--accent-ink); font-weight:500}
+.disclosure{
+  margin-top:16px; padding:12px 14px; background:var(--surface-2); border:1px dashed var(--rule);
+  border-radius:2px; font-size:12.5px; color:var(--ink-2); line-height:1.55;
+}
+
+/* gap list */
+.gap-count{font-family:var(--mono); color:var(--accent-ink); font-weight:600}
+table.gaps{min-width:900px}
+table.gaps td{font-size:12.5px}
+table.gaps .jv{color:var(--ink-2); max-width:22ch}
+table.gaps .none{color:var(--ink-3)}
+
+/* footer */
+footer{margin-top:64px; padding-top:24px; border-top:1px solid var(--rule); font-size:12.5px; color:var(--ink-3); line-height:1.7}
+footer h3{font-size:12px; letter-spacing:.1em; text-transform:uppercase; font-family:var(--mono); color:var(--ink-2); font-weight:500; margin-bottom:8px}
+footer ul{margin:0 0 18px; padding-left:18px}
+footer li{margin-bottom:3px}
+@media (prefers-reduced-motion:reduce){ *{transition:none !important; animation:none !important} }
+</style>
+
+<header>
+  <div class="hd">
+    <div class="eyebrow">프로토타입, 미디어프로젝트 2026-2</div>
+    <h1>StableWatch 준비금 판정기</h1>
+    <p class="lede">
+      해외 준비금 공시 요건을 규칙으로 뽑아 실제 발행사 보고서에 적용하고, 한국 공시안이 비어 있는 자리를 뽑아낸다.
+      아래 판정은 Circle USDC 검사보고서 4개월분에서 직접 추출한 값으로 매번 계산한다.
+    </p>
+    <dl class="meta">
+      <div><dt>실데이터</dt><dd>4개월</dd></div>
+      <div><dt>규칙</dt><dd>15</dd></div>
+      <div><dt>관할권</dt><dd>6</dd></div>
+      <div><dt>판정 조합</dt><dd>360</dd></div>
+      <div><dt>합계 대사 오차</dt><dd>0</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section>
+  <div class="sec-head"><span class="sec-num">01</span><h2>작업 구조</h2></div>
+  <p class="sec-sub">
+    원본 PDF에서 판정까지 한 방향으로 흐른다. 규칙 엔진은 순수 함수라 같은 입력에 항상 같은 판정을 낸다.
+    AI는 세 자리에만 들어가고, 숫자와 판정은 만들지 않는다.
+  </p>
+  <figure>
+    <div class="fig-scroll">
+      <svg viewBox="0 0 820 570" role="img" aria-label="원본 자료와 관할권 설정이 파서와 규칙 엔진을 거쳐 판정 파일이 되고, 화면 두 개와 갭 리스트와 평가 하네스가 그 파일을 읽는 구조">
+        <defs>
+          <marker id="ah1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,1 L9,5 L0,9 z" fill="currentColor"/>
+          </marker>
+        </defs>
+        <g fill="none" stroke="currentColor" stroke-width="1.4" marker-end="url(#ah1)">
+          <line x1="240" y1="67" x2="292" y2="67"/>
+          <line x1="410" y1="94" x2="410" y2="146"/>
+          <line x1="410" y1="204" x2="410" y2="256"/>
+          <line x1="240" y1="287" x2="292" y2="287"/>
+          <line x1="410" y1="314" x2="410" y2="366"/>
+          <line x1="410" y1="424" x2="410" y2="486"/>
+          <line x1="545" y1="358" x2="562" y2="358"/>
+          <line x1="545" y1="414" x2="562" y2="414"/>
+          <line x1="545" y1="470" x2="562" y2="470"/>
+        </g>
+        <g fill="none" stroke="currentColor" stroke-width="1.4">
+          <polyline points="520,397 545,397"/>
+          <polyline points="545,358 545,470"/>
+        </g>
+
+        <g stroke="currentColor" stroke-width="1.1" fill="none">
+          <rect x="30" y="40" width="210" height="54" rx="2"/>
+          <rect x="300" y="40" width="220" height="54" rx="2"/>
+          <rect x="300" y="150" width="220" height="54" rx="2"/>
+          <rect x="30" y="260" width="210" height="54" rx="2"/>
+          <rect x="300" y="260" width="220" height="54" rx="2"/>
+          <rect x="300" y="370" width="220" height="54" rx="2"/>
+          <rect x="300" y="490" width="220" height="54" rx="2"/>
+          <rect x="570" y="336" width="220" height="44" rx="2"/>
+          <rect x="570" y="392" width="220" height="44" rx="2"/>
+          <rect x="570" y="448" width="220" height="44" rx="2"/>
+        </g>
+
+        <g font-family="IBM Plex Sans KR, sans-serif" fill="currentColor">
+          <g font-size="12.5" font-weight="600">
+            <text x="45" y="63">원본 자료</text>
+            <text x="315" y="63">파서 F1, F2</text>
+            <text x="315" y="173">reports.json</text>
+            <text x="45" y="283">관할권 설정 JSON 6종</text>
+            <text x="315" y="283">규칙 엔진 F3</text>
+            <text x="315" y="393">verdicts.json</text>
+            <text x="315" y="513">평가 하네스</text>
+            <text x="585" y="356">화면 A 판정</text>
+            <text x="585" y="412">화면 B 고객 환매</text>
+            <text x="585" y="468">갭 리스트</text>
+          </g>
+          <g font-size="10.5" fill="currentColor" opacity=".72">
+            <text x="45" y="80">Circle 월간 PDF 4개월, SEC N-MFP3</text>
+            <text x="315" y="80">pdftotext, 합계 대사 실패 시 중단</text>
+            <text x="315" y="190">기준일 2개, 유통량, 자산 행</text>
+            <text x="45" y="300">임계치, 조문, 법적 상태</text>
+            <text x="315" y="300">순수 함수 15개, LLM 없음</text>
+            <text x="315" y="410">판정, 근거 조문, 근거 수치</text>
+            <text x="315" y="530">기대 판정표 diff, Tessera 팩 대조</text>
+            <text x="585" y="371">verdicts.json 전체를 읽음</text>
+            <text x="585" y="427">R01, R09, R13만 읽음</text>
+            <text x="585" y="483">KR 규정없음만 모음</text>
+          </g>
+          <g font-size="10.5" text-anchor="middle" opacity=".72">
+            <text x="266" y="60">추출</text>
+            <text x="266" y="280">설정 주입</text>
+          </g>
+          <text x="418" y="460" font-size="10.5" opacity=".72">회귀 대조</text>
+        </g>
+
+        <g>
+          <circle cx="222" cy="277" r="9" fill="none" stroke="#0F5257" stroke-width="1.3" stroke-dasharray="2.5 2"/>
+          <circle cx="772" cy="353" r="9" fill="none" stroke="#0F5257" stroke-width="1.3" stroke-dasharray="2.5 2"/>
+          <circle cx="772" cy="465" r="9" fill="none" stroke="#0F5257" stroke-width="1.3" stroke-dasharray="2.5 2"/>
+          <g font-family="IBM Plex Mono, monospace" font-size="10" font-weight="600" fill="#0F5257" text-anchor="middle">
+            <text x="222" y="281">1</text>
+            <text x="772" y="357">2</text>
+            <text x="772" y="469">3</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <figcaption>
+      Circle 보고서와 관할권 설정이 규칙 엔진에서 만나 판정 파일 하나가 되고, 화면 둘과 갭 리스트와 평가 하네스가 같은 파일을 읽는다.
+      점선 원은 AI가 들어가는 자리다.
+    </figcaption>
+    <ul class="keys">
+      <li><b>1</b><span><strong>관할권 설정 초안.</strong> 규정 원문을 읽고 규칙 15개 곱하기 관할권 5개 칸에 값과 조문과 법적 상태를 제안한다. 사람이 원문을 대조해 확정한다. 고친 칸의 수와 유형이 그대로 기록으로 남는다.</span></li>
+      <li><b>2</b><span><strong>판정 설명.</strong> 판정 하나와 그 근거 노드만 읽고 왜 이 상태인지 말로 푼다. 답에 들어간 숫자가 전부 판정 파일에 있는지 사후 검사한다.</span></li>
+      <li><b>3</b><span><strong>한국안 제안 초안.</strong> 빈칸마다 해외 네 관할권 값을 근거로 제안문과 이유를 쓴다. 최종 선택은 사람이 하고 라벨은 항상 제안이다.</span></li>
+    </ul>
+  </figure>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">02</span><h2>판정이 만들어지는 방식</h2></div>
+  <p class="sec-sub">
+    규칙 하나, 보고서 값 하나에 조문 연결만 바꾸면 판정이 달라진다. 규칙 R05를 2026년 4월 보고서로 실제로 돌린 결과다.
+  </p>
+  <figure>
+    <div class="fig-scroll">
+      <svg viewBox="0 0 820 400" role="img" aria-label="같은 규칙과 같은 보고서 값에 미국 조문을 연결하면 주의, EU 조문을 연결하면 미충족, 한국은 연결할 조문이 없어 갭이 되는 구조">
+        <defs>
+          <marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0,1 L9,5 L0,9 z" fill="currentColor"/>
+          </marker>
+        </defs>
+        <g fill="none" stroke="currentColor" stroke-width="1.4">
+          <polyline points="250,76 300,76"/>
+          <polyline points="250,150 300,150"/>
+          <polyline points="300,76 300,185"/>
+          <polyline points="250,316 312,316 312,205"/>
+          <polyline points="490,185 530,185"/>
+          <polyline points="530,84 530,244"/>
+        </g>
+        <g fill="none" stroke="currentColor" stroke-width="1.4" marker-end="url(#ah2)">
+          <line x1="300" y1="185" x2="326" y2="185"/>
+          <line x1="312" y1="205" x2="326" y2="205"/>
+          <line x1="530" y1="84" x2="566" y2="84"/>
+          <line x1="530" y1="164" x2="566" y2="164"/>
+          <line x1="530" y1="244" x2="566" y2="244"/>
+        </g>
+        <line x1="250" y1="224" x2="288" y2="224" stroke="#0F5257" stroke-width="1.4" stroke-dasharray="4 3"/>
+
+        <g stroke="currentColor" stroke-width="1.1" fill="none">
+          <rect x="30" y="50" width="220" height="52" rx="2"/>
+          <rect x="30" y="124" width="220" height="52" rx="2"/>
+          <rect x="30" y="290" width="220" height="52" rx="2"/>
+          <rect x="330" y="150" width="160" height="70" rx="2"/>
+          <rect x="570" y="60" width="220" height="48" rx="2"/>
+          <rect x="570" y="140" width="220" height="48" rx="2"/>
+        </g>
+        <g fill="none" stroke="#0F5257" stroke-width="1.2" stroke-dasharray="4 3">
+          <rect x="30" y="198" width="220" height="52" rx="2"/>
+          <rect x="570" y="220" width="220" height="48" rx="2"/>
+        </g>
+
+        <g font-family="IBM Plex Sans KR, sans-serif" fill="currentColor">
+          <g font-size="12.5" font-weight="600">
+            <text x="45" y="73">OCC 제안 §15.11(c)(2)</text>
+            <text x="45" y="147">MiCA Art. 54</text>
+            <text x="45" y="313">보고서 필드</text>
+            <text x="345" y="180">규칙 R05</text>
+            <text x="585" y="83">주의 13.95%</text>
+            <text x="585" y="163">미충족 13.95%</text>
+          </g>
+          <g font-size="10.5" opacity=".72">
+            <text x="45" y="90">요구불 예금 등 30% 이상</text>
+            <text x="45" y="164">30% 은행 예치</text>
+            <text x="45" y="330">기타 준비자산 10,756,592,397</text>
+            <text x="345" y="197">은행 예치</text>
+            <text x="345" y="212">최소 비율</text>
+            <text x="585" y="99">안전항 미충족, 원칙 심사 대상</text>
+            <text x="585" y="179">30% 미달</text>
+          </g>
+          <g font-size="12.5" font-weight="600" fill="#0F5257">
+            <text x="45" y="221">한국</text>
+            <text x="585" y="243">규정 없음</text>
+          </g>
+          <g font-size="10.5" fill="#0F5257" opacity=".85">
+            <text x="45" y="238">연결할 조문이 없음</text>
+            <text x="585" y="259">갭 리스트로</text>
+            <text x="294" y="228">간선 없음</text>
+          </g>
+          <g font-size="10.5" opacity=".72">
+            <text x="258" y="66">requires</text>
+            <text x="258" y="306">reads</text>
+            <text x="496" y="176">판정</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <figcaption>
+      규칙과 값은 그대로 두고 조문 간선만 바꾸면 판정이 갈린다. 한국은 걸 조문이 없어서 판정 대신 빈칸이 나오고, 그 빈칸이 갭 리스트가 된다.
+    </figcaption>
+  </figure>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">03</span><h2>화면 A, 판정</h2></div>
+  <p class="sec-sub">
+    보고서와 관할권을 고르면 규칙 15개가 다시 돌아간다. 근거 칸에는 판정이 읽은 실제 수치와 조문이 그대로 들어간다.
+  </p>
+
+  <div class="panel">
+    <div class="notice">
+      <span class="tag">시연 고지</span>
+      <p>USDC는 미국 밖 관할권의 규제 적용 대상이 아니다. 관할권을 바꿔 보는 것은 <b>규칙 엔진이 같은 자료를 다르게 읽는지 확인하는 시연</b>이며, 실제 위반 표시가 아니다. 한국 v1은 확정 제도가 아니라 날짜를 붙인 시나리오다.</p>
+    </div>
+
+    <div class="controls">
+      <div class="ctl">
+        <span class="ctl-label" id="lbl-m">보고서</span>
+        <div class="seg" id="months" role="group" aria-labelledby="lbl-m"></div>
+      </div>
+      <div class="ctl">
+        <span class="ctl-label" id="lbl-j">관할권</span>
+        <div class="seg" id="jurs" role="group" aria-labelledby="lbl-j"></div>
+      </div>
+    </div>
+
+    <div class="strip" id="strip" role="group" aria-label="관할권별 판정 분포"></div>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr><th style="width:19%">규칙</th><th style="width:23%">이 관할권의 요건</th><th style="width:13%">판정</th><th>근거</th></tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+
+    <div class="legend">
+      <div><span class="chip v-PASS">충족</span></div>
+      <div><span class="chip v-FAIL">미충족</span></div>
+      <div><span class="chip v-WARN">주의</span></div>
+      <div><span class="chip v-NODATA">데이터 없음</span> <span>파서가 아직 안 뽑은 값</span></div>
+      <div><span class="chip v-GAP">규정 없음</span> <span>그 관할권에 요건 자체가 없음</span></div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p><strong>두 종류의 빈칸을 갈라 놓는 것이 이 도구의 핵심이다.</strong> 데이터 없음은 내가 더 만들면 채워지고, 규정 없음은 제도가 채워야 한다. 한국 열에서 규정 없음이 몰리는 자리가 곧 갭 리스트다.</p>
+    <button class="ghost" id="jump-jan">2026년 1월 + 미국으로 보기</button>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">04</span><h2>화면 B, 고객 환매</h2></div>
+  <p class="sec-sub">
+    고객 화면은 판정 파일에서 R01과 R09와 R13만 읽는다. 발행사는 한국 v1 시나리오이고, 수치는 위에서 고른 보고서를 그대로 쓴다.
+  </p>
+  <div class="panel">
+    <div class="redeem">
+      <div class="redeem-in">
+        <div class="field">
+          <label for="amt">환매 요청 금액</label>
+          <input id="amt" type="text" inputmode="numeric" value="1,000,000" aria-describedby="amt-note">
+          <span class="note" id="amt-note" style="font-size:12px;color:var(--ink-3)">원</span>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="redeem-out">
+        <dl class="rows" id="redeem-rows"></dl>
+        <p class="disclosure">
+          이 스테이블코인은 예금이 아니며 예금자보호 대상이 아닙니다. 준비금 수치는 발행사가 공개한 특정 시점의 검사보고서에서 가져온 값이며 지금 이 순간의 잔액이 아닙니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-num">05</span><h2>갭 리스트</h2></div>
+  <p class="sec-sub">
+    한국 v1으로 엔진을 돌려 규정 없음이 나온 규칙만 모았다. 각 줄에 해외 네 관할권의 값을 붙여, 제안 초안을 쓸 때 무엇을 참고할지 보이게 했다.
+  </p>
+  <div class="panel">
+    <div class="tbl-scroll">
+      <table class="gaps">
+        <thead>
+          <tr><th style="width:18%">규칙</th><th>미국</th><th>EU 일반 EMT</th><th>홍콩</th><th>싱가포르</th></tr>
+        </thead>
+        <tbody id="gap-rows"></tbody>
+      </table>
+    </div>
+    <div class="legend"><div>한국 v1에서 규정 없음 <span class="gap-count" id="gap-n"></span>개. 이 표가 F14 제안 초안 생성기의 입력이 된다.</div></div>
+  </div>
+</section>
+
+<footer>
+  <h3>데이터</h3>
+  <ul>
+    <li>Circle USDC 월간 검사보고서 2026년 1월, 3월, 4월, 7월. 네 파일 모두 5쪽, 준비금 합계와 총계가 정수로 일치(오차 0). 로컬 <span class="num">data/samples/</span>에 보관.</li>
+    <li>2026년 7월 보고서만 기타 준비자산 안에 국채 CUSIP 하위표가 있고, 나머지 세 달은 현금 두 줄뿐이다. 파서 회귀 테스트가 이 차이를 잡아야 한다.</li>
+    <li>2026년 4월과 7월 보고서는 1쪽 글꼴 매핑이 깨져 문자가 뒤섞인다. 수치 표와 서명 블록은 네 파일 모두 정상 추출된다.</li>
+    <li>회계법인 이름은 이미지 서명이라 텍스트로 추출되지 않는다. 검증기관 필드는 아직 수동 확인이 필요하다.</li>
+  </ul>
+  <h3>규정 출처</h3>
+  <ul>
+    <li>GENIUS Act §4(a) — 준비자산, 월별 공시, 검사, 환매 절차와 수수료 공시</li>
+    <li>OCC 제안 규정 91 FR 10202 (2026-03-02) — §15.11(c)(2) 안전항 30%와 40%와 가중평균만기 20일, §15.11(e) 월간 구성 템플릿과 전월 말일 정오 기준, 인쇄면 10290</li>
+    <li>MiCA Art. 36, 37, 51, 52, 54, 58 / HKMA 감독지침 / MAS 2026 협의문 P015-2026</li>
+    <li>한국은 확정 규정이 없다. 금융위 2026-03-04 가상자산위원회 자료의 은행 중심 지분 50%+1은 정부 검토안 논의 항목이고 확정 제도가 아니다.</li>
+  </ul>
+  <p>프로토타입이다. 판정은 규칙 엔진 시연이며 법률 자문이나 준수 인증이 아니다. 2026-09-09.</p>
+</footer>
+</div>
+
+<script>
+const REPORTS = [
+  {m:'2026-01', label:'1월', dates:['2026-01-16','2026-01-30'], circ:69954717486, fv:70022091915, crf:59816982895, oth:10205109020, sig:'2026-02-26', tsub:false},
+  {m:'2026-03', label:'3월', dates:['2026-03-11','2026-03-31'], circ:77049290538, fv:77125330954, crf:66467038905, oth:10658292049, sig:'2026-04-29', tsub:false},
+  {m:'2026-04', label:'4월', dates:['2026-04-06','2026-04-30'], circ:77047590794, fv:77123668726, crf:66367076329, oth:10756592397, sig:'2026-05-28', tsub:false},
+  {m:'2026-07', label:'7월', dates:['2026-07-08','2026-07-31'], circ:71826453410, fv:71904101332, crf:60717246965, oth:11186854367, sig:'2026-08-27', tsub:true}
+];
+const JURS = [
+  {c:'US',  n:'미국',        s:'GENIUS + OCC 제안'},
+  {c:'EU',  n:'EU 일반 EMT', s:'MiCA'},
+  {c:'EUS', n:'EU 중요 EMT', s:'MiCA Art. 58'},
+  {c:'HK',  n:'홍콩',        s:'HKMA 지침'},
+  {c:'SG',  n:'싱가포르',    s:'MAS'},
+  {c:'KR',  n:'한국 v1',     s:'시나리오'}
+];
+
+const fmt = n => n.toLocaleString('en-US');
+const pct = (a,b) => (a/b*100).toFixed(4);
+const cash = r => r.oth / r.fv * 100;
+const nd = note => ['NODATA', note];
+
+const cov = r => r.fv >= r.circ
+  ? ['PASS', `준비자산 공정가치 ${fmt(r.fv)} ≥ 발행잔액 ${fmt(r.circ)}. 커버리지 ${pct(r.fv,r.circ)}%, 초과분 ${fmt(r.fv-r.circ)}`]
+  : ['FAIL', `공정가치가 발행잔액보다 ${fmt(r.circ-r.fv)} 부족`];
+
+const maturity = r => nd(r.tsub
+  ? '이 달은 보고서 안에 국채 CUSIP 하위표가 있어 추출할 수 있다. 만기 파싱은 파서 2단계로 미구현'
+  : '이 달은 국채가 Circle Reserve Fund 안에 있어 보고서 밖이다. SEC N-MFP3 파서가 필요하다');
+
+const cashUS = r => {
+  const s = cash(r);
+  return [s >= 30 ? 'PASS' : 'WARN',
+    `기타 준비자산 ${fmt(r.oth)}은 총 준비자산의 ${s.toFixed(2)}%로 안전항 30%에 미달한다. ` +
+    `안전항 미충족은 위반이 아니라 §15.11(c)(1) 원칙 심사 대상이다` +
+    (r.tsub ? '. 이 달은 기타 준비자산에 국채가 섞여 있어 현금만 보면 더 낮다' : ''), '근사'];
+};
+const cashEU = r => {
+  const s = cash(r);
+  return [s >= 30 ? 'PASS' : 'FAIL',
+    `은행 예치 근사치 ${s.toFixed(2)}%로 요건 30%에 미달한다. 요약표의 기타 준비자산을 현금으로 근사했다`, '근사'];
+};
+
+const asOf = r => {
+  const d = r.dates[1], [y,m,dd] = d.split('-').map(Number);
+  const last = new Date(y, m, 0).getDate();
+  const lastStr = `${y}-${String(m).padStart(2,'0')}-${last}`;
+  return dd === last
+    ? ['WARN', `기준일 ${d}는 말일과 일치한다. 다만 기준시각이 23:59 UTC라 제안의 "정오"와 다르다`]
+    : ['FAIL', `기준일이 ${d}인데 이 달 말일은 ${lastStr}이다. 말일이 토요일이라 영업일로 당겨졌다. 시각도 23:59 UTC로 정오가 아니다`];
+};
+
+const fresh = r => {
+  const base = new Date(r.dates[1] + 'T00:00:00Z'), sig = new Date(r.sig + 'T00:00:00Z');
+  const days = Math.round((sig - base) / 864e5);
+  const dl = new Date(Date.UTC(base.getUTCFullYear(), base.getUTCMonth() + 2, 0));
+  const dls = dl.toISOString().slice(0,10);
+  return [sig <= dl ? 'PASS' : 'FAIL',
+    `기준일 ${r.dates[1]}에서 회계사 서명일 ${r.sig}까지 ${days}일. 제안 기한은 ${dls} 정오다. 웹 공개일을 확인할 수 없어 서명일로 대신했다`, '대용'];
+};
+
+const RULES = [
+  {id:'R01', n:'준비금 커버리지', j:{
+    US:{req:'준비자산 공정가치 ≥ 발행잔액', cite:'GENIUS §4(a)(1)(A)', run:cov},
+    EU:{req:'이용자 자금 보호', cite:'MiCA Art. 36 준용', run:cov},
+    EUS:{req:'준비자산 상시 유지', cite:'MiCA Art. 36', run:cov},
+    HK:{req:'액면 전액 보유', cite:'HKMA 감독지침', run:cov},
+    SG:{req:'100% 상시, 일일 시가평가', cite:'MAS SCS 프레임워크', run:r=>['WARN', `커버리지 ${pct(r.fv,r.circ)}%로 100%는 넘는다. 다만 일일 시가평가 요건은 월간 보고서로 확인할 수 없다`]},
+    KR:{req:'100% (보도 단계, 확정 아님)', cite:'보도', run:cov, assume:true}
+  }},
+  {id:'R02', n:'허용 자산 종류', j:{
+    US:{req:'현금, 보험예금, 93일 이하 국채, overnight 레포, 정부 MMF', cite:'GENIUS §4(a)(1)(A), OCC §15.11(b)', run:r=>['PASS','보고서 구성은 Circle Reserve Fund(정부 MMF), 규제 금융기관 예치 현금, 국채다. 섹션 제목 수준에서만 확인했고 자산 행별 분류는 미추출','요약 수준']},
+    EU:{req:'저위험 고유동 자산', cite:'MiCA Art. 38', run:()=>nd('자산 행별 분류가 아직 파싱되지 않았다')},
+    EUS:{req:'저위험 고유동 자산', cite:'MiCA Art. 38(1)', run:()=>nd('자산 행별 분류가 아직 파싱되지 않았다')},
+    HK:{req:'고유동성 자산', cite:'HKMA 감독지침', run:()=>nd('자산 행별 분류가 아직 파싱되지 않았다')},
+    SG:{req:'현금, 현금성, 3개월 이하 정부채', cite:'MAS', run:()=>nd('자산 행별 분류가 아직 파싱되지 않았다')}
+  }},
+  {id:'R03', n:'국채 잔존만기 상한', j:{
+    US:{req:'93일 이하', cite:'GENIUS §4(a)(1)(A)(iii)', run:maturity},
+    SG:{req:'3개월 이하', cite:'MAS', run:maturity}
+  }},
+  {id:'R04', n:'레포 만기', j:{
+    US:{req:'overnight, 93일 이하 국채 담보', cite:'GENIUS §4(a)(1)(A)(iv)', run:()=>nd('보고서에 국채 레포 줄이 있는 것은 확인했으나 만기 조건은 추출하지 않았다')}
+  }},
+  {id:'R05', n:'은행 예치 최소 비율', j:{
+    US:{req:'요구불 예금 등 30% 이상 (안전항)', cite:'OCC 제안 §15.11(c)(2)', run:cashUS},
+    EU:{req:'30% 은행 예치', cite:'MiCA Art. 54', run:cashEU},
+    EUS:{req:'30% 은행 예치', cite:'MiCA Art. 54', run:cashEU},
+    SG:{req:'협의 중, 값 미확정', cite:'MAS 2026 협의 Q4'}
+  }},
+  {id:'R06', n:'준비자산 통화 일치', j:{
+    US:{req:'달러', cite:'GENIUS §4(a)(1)', run:()=>['PASS','준비자산 전액 달러 표시, 페그 통화도 달러']},
+    EU:{req:'페그 통화와 동일', cite:'MiCA Art. 36', run:()=>['PASS','준비자산 통화와 페그 통화가 같다']},
+    EUS:{req:'페그 통화와 동일', cite:'MiCA Art. 36', run:()=>['PASS','준비자산 통화와 페그 통화가 같다']},
+    HK:{req:'페그 통화와 동일', cite:'HKMA 감독지침', run:()=>['PASS','준비자산 통화와 페그 통화가 같다']},
+    SG:{req:'페그 통화와 동일', cite:'MAS', run:()=>['PASS','준비자산 통화와 페그 통화가 같다']},
+    KR:{req:'원화', cite:'가정', run:()=>['FAIL','준비자산은 달러인데 한국 v1의 페그 통화는 원화다. 데모 데이터가 해외 발행사라 생기는 구조적 불일치다'], assume:true}
+  }},
+  {id:'R07', n:'공개 주기', j:{
+    US:{req:'월별 웹 공개', cite:'GENIUS §4(a)(1)(C), OCC §15.11(e)', run:()=>['PASS','같은 형식의 월간 보고서가 4개월 연속 공개된 것을 확인했다']},
+    EU:{req:'일반 EMT에 월별 웹 공시 의무 없음', cite:'MiCA'},
+    EUS:{req:'준비자산 정기 공시', cite:'MiCA Art. 36', run:()=>nd('공시 주기 요건의 구체적 값이 RTS 미확정이다')},
+    HK:{req:'주간 웹 갱신', cite:'HKMA 감독지침 2.7.2', run:()=>['FAIL','월간 보고서만 있고 주간 갱신 자료가 없다']},
+    SG:{req:'월별 attestation 웹 공개', cite:'MAS', run:()=>['PASS','월간 검사보고서가 웹에 공개돼 있다']}
+  }},
+  {id:'R08', n:'검증 수준', j:{
+    US:{req:'등록 회계법인 examination', cite:'GENIUS §4(a)(3)', run:()=>['PASS','AICPA attestation 기준에 따른 examination 문구를 확인했다. 회계법인명은 이미지 서명이라 텍스트로 추출되지 않아 부분 확인이다','부분']},
+    EU:{req:'일반 EMT에 정기 감사 의무 없음', cite:'MiCA'},
+    EUS:{req:'6개월 독립 감사', cite:'MiCA Art. 58', run:()=>nd('6개월 감사 보고서를 확보하지 않았다')},
+    HK:{req:'정기 attestation과 연간 감사', cite:'HKMA 감독지침', run:()=>nd('월간 examination은 확인했으나 연간 감사 자료가 없다')},
+    SG:{req:'월별 attestation과 연간 감사', cite:'MAS', run:()=>nd('월간 examination은 확인했으나 연간 감사 자료가 없다')}
+  }},
+  {id:'R09', n:'검증 기준일과 기준시각', j:{
+    US:{req:'전월 말일 정오 기준', cite:'OCC 제안 §15.11(e)', run:asOf},
+    HK:{req:'기말과 무작위 1일', cite:'HKMA 감독지침', run:()=>nd('무작위 기준일 검증 자료가 공개 보고서에 없다')},
+    SG:{req:'월별 기준일', cite:'MAS', run:r=>['PASS',`월말 기준일 ${r.dates[1]} 확인. 같은 보고서에 중간 기준일 ${r.dates[0]}도 있어 열을 구분해 읽었다`]}
+  }},
+  {id:'R10', n:'보고서 신선도', j:{
+    US:{req:'당월 말일 정오까지 전월분 공개', cite:'OCC 제안 §15.11(e)', run:fresh},
+    HK:{req:'주간 갱신', cite:'HKMA 감독지침 2.7.2', run:()=>['FAIL','월 1회 공개라 주간 기준을 넘긴다']},
+    SG:{req:'다음 달 말까지', cite:'MAS', run:fresh}
+  }},
+  {id:'R11', n:'발행잔액 산식 공개', j:{
+    US:{req:'발행잔액 공개, 산식 세부는 미확정', cite:'GENIUS §4(a)(1)(C), OCC Q91', run:()=>['PASS','보고서에 유통량 정의 조항이 따로 있고 총액이 공개돼 있다. 미발행분과 소각대기 구분은 요건 자체가 미확정이다']},
+    HK:{req:'액면 잔액 공개', cite:'HKMA 감독지침', run:()=>['PASS','발행잔액이 기준일별로 공개돼 있다']},
+    SG:{req:'유통량 공개', cite:'MAS', run:()=>['PASS','발행잔액이 기준일별로 공개돼 있다']}
+  }},
+  {id:'R12', n:'수탁기관과 위치 공개', j:{
+    US:{req:'자산 카테고리별 수탁 지리적 위치, 실명은 미확정', cite:'OCC 제안 §15.11(e) Table 1', run:()=>['FAIL','보고서에는 규제 금융기관 예치 현금이라고만 적혀 있고 기관명도 국가도 없다. 템플릿의 Geographic location 열을 채울 수 없다']},
+    EUS:{req:'수탁 요건', cite:'MiCA Art. 37', run:()=>nd('수탁 구조 자료를 확보하지 않았다')},
+    HK:{req:'준비자산 관리정책 공개', cite:'HKMA 감독지침', run:()=>nd('관리정책 문서를 확보하지 않았다')},
+    SG:{req:'신탁 계정 분리', cite:'MAS', run:()=>nd('신탁 구조 자료를 확보하지 않았다')}
+  }},
+  {id:'R13', n:'환매 조건 공시', j:{
+    US:{req:'환매 절차 수립과 공시, 수수료 공시, 변경 7일 전 고지', cite:'GENIUS §4(a)(1)(B)', run:()=>nd('검사보고서 범위 밖이다. 발행사 이용약관 페이지를 따로 읽어야 한다')},
+    EU:{req:'액면 환매, 수수료 금지', cite:'MiCA Art. 51', run:()=>nd('검사보고서 범위 밖이다')},
+    EUS:{req:'액면 환매, 수수료 금지', cite:'MiCA Art. 51', run:()=>nd('검사보고서 범위 밖이다')},
+    HK:{req:'수수료, 조건, 처리기한 공시', cite:'홍콩 조례', run:()=>nd('검사보고서 범위 밖이다')},
+    SG:{req:'5영업일 이내 환매', cite:'MAS', run:()=>nd('검사보고서 범위 밖이다')},
+    KR:{req:'상환청구권 보장은 검토 방향뿐, 공시 항목과 기한은 없음', cite:'금융위 2025-01-15'}
+  }},
+  {id:'R14', n:'이자 지급 금지', j:{
+    US:{req:'금지', cite:'GENIUS §4(a)(11)', run:()=>nd('검사보고서 범위 밖이다')},
+    EU:{req:'금지', cite:'MiCA Art. 52', run:()=>nd('검사보고서 범위 밖이다')},
+    EUS:{req:'금지', cite:'MiCA Art. 52', run:()=>nd('검사보고서 범위 밖이다')},
+    SG:{req:'금지 (2026 제안)', cite:'MAS P015-2026', run:()=>nd('검사보고서 범위 밖이다')}
+  }},
+  {id:'R15', n:'경영진 인증', j:{
+    US:{req:'CEO와 CFO 매월 인증, 감독기관 제출', cite:'GENIUS §4(a)(3)(B)', run:()=>nd('보고서 서명자는 최고회계책임자다. CEO와 CFO 인증은 감독기관 제출분이라 웹 공개 여부가 OCC Q94에서 논의 중이다')}
+  }}
+];
+
+const LABEL = {PASS:'충족', FAIL:'미충족', WARN:'주의', NODATA:'데이터 없음', GAP:'규정 없음'};
+const ORDER = ['PASS','WARN','FAIL','NODATA','GAP'];
+
+function evaluate(rule, jc, rep){
+  const e = rule.j[jc];
+  if(!e) return {state:'GAP', note:'이 관할권에는 해당 요건이 없다', req:'요건 없음', cite:'', level:null};
+  if(!e.run) return {state:'GAP', note:e.req, req:e.req, cite:e.cite||'', level:null};
+  const [state, note, level] = e.run(rep);
+  return {state, note, req:e.req, cite:e.cite||'', level:level||null, assume:e.assume};
+}
+const runAll = (jc, rep) => RULES.map(r => ({id:r.id, n:r.n, ...evaluate(r, jc, rep)}));
+const tally = v => ORDER.map(s => [s, v.filter(x => x.state === s).length]);
+
+let curM = '2026-07', curJ = 'US';
+const $ = id => document.getElementById(id);
+const rep = () => REPORTS.find(r => r.m === curM);
+
+function renderControls(){
+  $('months').innerHTML = REPORTS.map(r =>
+    `<button data-m="${r.m}" aria-pressed="${r.m===curM}">${r.m.slice(2)}<span class="sub">${r.dates[1]}</span></button>`).join('');
+  $('jurs').innerHTML = JURS.map(j =>
+    `<button data-j="${j.c}" aria-pressed="${j.c===curJ}">${j.n}<span class="sub">${j.s}</span></button>`).join('');
+}
+
+function renderStrip(){
+  const r = rep();
+  $('strip').innerHTML = JURS.map(j => {
+    const t = tally(runAll(j.c, r));
+    const bars = t.map(([s,n]) => n ? `<i style="flex:${n}" class="b-${s}"></i>` : '').join('');
+    const pass = t.find(x=>x[0]==='PASS')[1], gap = t.find(x=>x[0]==='GAP')[1];
+    return `<button data-j="${j.c}" aria-pressed="${j.c===curJ}">
+      <span class="jn">${j.n}</span>
+      <span class="bars">${bars}</span>
+      <span class="jc">충족 ${pass}, 규정없음 ${gap}</span>
+    </button>`;
+  }).join('');
+  const map = {PASS:'--pass', WARN:'--warn', FAIL:'--fail', NODATA:'--nodata', GAP:'--accent'};
+  $('strip').querySelectorAll('i').forEach(i => {
+    const s = i.className.slice(2);
+    i.style.background = `var(${map[s]})`;
+  });
+}
+
+function renderTable(){
+  const v = runAll(curJ, rep());
+  $('rows').innerHTML = v.map(x => `
+    <tr>
+      <td><span class="rid">${x.id}</span><span class="rname">${x.n}</span></td>
+      <td class="req">${x.req}${x.cite ? `<span class="cite">${x.cite}</span>` : ''}</td>
+      <td class="vcell"><span class="chip v-${x.state}">${LABEL[x.state]}</span>${x.assume ? '<span class="cite">가정</span>' : ''}</td>
+      <td class="ev">${x.level ? `<span class="lvl">${x.level}</span>` : ''}${x.note}</td>
+    </tr>`).join('');
+}
+
+function renderRedeem(){
+  const r = rep();
+  const v = runAll('KR', r);
+  const g = id => v.find(x => x.id === id);
+  const r01 = g('R01'), r13 = g('R13');
+  const raw = ($('amt').value || '').replace(/[^0-9]/g, '');
+  const amt = raw ? parseInt(raw, 10) : 0;
+
+  let st, cls, reason;
+  if(r01.state === 'FAIL'){
+    st = '보류'; cls = 'st-hold';
+    reason = '준비금이 발행잔액에 못 미친다. 환매 요청을 접수하지 않는다.';
+  } else if(r13.state !== 'PASS'){
+    st = '지연 가능'; cls = 'st-delay';
+    reason = '준비금 커버리지는 확인됐지만 환매 처리기한과 수수료를 공시하는 규정이 없어 언제 얼마를 받는지 확정할 수 없다.';
+  } else {
+    st = '즉시 가능'; cls = 'st-ok';
+    reason = '준비금과 환매 조건이 모두 확인됐다.';
+  }
+  $('status').className = 'status ' + cls;
+  $('status').innerHTML = `<span class="st">${st}</span><span class="sr">${reason}</span>`;
+
+  const miss = t => `<span class="missing">확인 불가</span><span class="note">${t}</span>`;
+  $('redeem-rows').innerHTML = `
+    <div class="row"><dt>받을 금액</dt><dd class="num">${fmt(amt)} 원<span class="note">액면 1대 1 가정. 한국 v1 시나리오 값이다</span></dd></div>
+    <div class="row"><dt>수수료</dt><dd>${miss('공시 요건이 없다. 갭 리스트 R13')}</dd></div>
+    <div class="row"><dt>처리기한</dt><dd>${miss('공시 요건이 없다. 갭 리스트 R13')}</dd></div>
+    <div class="row"><dt>준비금 커버리지</dt><dd class="num">${pct(r.fv, r.circ)}%<span class="note">기준시각 ${r.dates[1]} 23:59 UTC</span></dd></div>
+    <div class="row"><dt>외부 검증</dt><dd>examination<span class="note">서명일 ${r.sig}. 회계법인명은 이미지 서명이라 자동 추출 불가</span></dd></div>
+    <div class="row"><dt>수탁기관</dt><dd>${miss('보고서에 기관명과 국가가 없다. 갭 리스트 R12')}</dd></div>`;
+}
+
+function renderGaps(){
+  const r = rep();
+  const kr = runAll('KR', r).filter(x => x.state === 'GAP');
+  $('gap-n').textContent = kr.length;
+  const cell = (rule, jc) => {
+    const e = RULES.find(x => x.id === rule.id).j[jc];
+    return e ? `<span class="jv">${e.req}</span>` : '<span class="none">요건 없음</span>';
+  };
+  $('gap-rows').innerHTML = kr.map(x => `
+    <tr>
+      <td><span class="rid">${x.id}</span><span class="rname">${x.n}</span></td>
+      <td>${cell(x,'US')}</td><td>${cell(x,'EU')}</td><td>${cell(x,'HK')}</td><td>${cell(x,'SG')}</td>
+    </tr>`).join('');
+}
+
+function renderAll(){ renderControls(); renderStrip(); renderTable(); renderRedeem(); renderGaps(); }
+
+document.addEventListener('click', e => {
+  const b = e.target.closest('button'); if(!b) return;
+  if(b.dataset.m){ curM = b.dataset.m; renderAll(); }
+  else if(b.dataset.j){ curJ = b.dataset.j; renderAll(); }
+  else if(b.id === 'jump-jan'){
+    curM = '2026-01'; curJ = 'US'; renderAll();
+    document.querySelector('#rows').scrollIntoView({behavior:'smooth', block:'center'});
+  }
+});
+$('amt').addEventListener('input', e => {
+  const raw = e.target.value.replace(/[^0-9]/g, '');
+  e.target.value = raw ? parseInt(raw, 10).toLocaleString('en-US') : '';
+  renderRedeem();
+});
+renderAll();
+</script>
