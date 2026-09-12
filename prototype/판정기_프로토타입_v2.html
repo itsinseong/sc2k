@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StableWatch 판정기, 시각 프로토타입 v2</title>
+<style>
+html{color-scheme:light}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+:root{
+  --surface-1:#fcfcfb; --page:#f9f9f7;
+  --ink:#0b0b0b; --ink-2:#52514e; --ink-3:#898781;
+  --gridline:#e1e0d9; --baseline:#c3c2b7;
+  --border:rgba(11,11,11,.10);
+  --series-1:#2a78d6;
+  --good:#0ca30c; --warning:#fab219; --critical:#d03b3b;
+  --sans:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --surface-1:#1a1a19; --page:#0d0d0d;
+    --ink:#ffffff; --ink-2:#c3c2b7; --ink-3:#898781;
+    --gridline:#2c2c2a; --baseline:#383835;
+    --border:rgba(255,255,255,.10);
+    --series-1:#3987e5;
+  }
+}
+:root[data-theme="dark"]{
+  --surface-1:#1a1a19; --page:#0d0d0d;
+  --ink:#ffffff; --ink-2:#c3c2b7; --ink-3:#898781;
+  --gridline:#2c2c2a; --baseline:#383835;
+  --border:rgba(255,255,255,.10);
+  --series-1:#3987e5;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--page); color:var(--ink);
+  font-family:var(--sans); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px; margin:0 auto; padding:0 24px 90px}
+h1,h2,h3{text-wrap:balance; margin:0}
+p{margin:0}
+a{color:var(--series-1)}
+.mono{font-family:var(--mono); font-variant-numeric:tabular-nums}
+
+/* flow bar */
+.flow{position:sticky; top:0; z-index:20; background:var(--surface-1); border-bottom:1px solid var(--gridline)}
+.flow-in{max-width:1180px; margin:0 auto; padding:14px 24px 12px}
+.flow-steps{display:flex; align-items:stretch; gap:0; margin:0; padding:0; list-style:none; overflow-x:auto}
+.flow-steps li{
+  flex:1 1 0; min-width:104px; display:flex; align-items:center; gap:8px;
+  padding:8px 10px; border:1px solid transparent; border-radius:3px;
+  color:var(--ink-3); font-size:13px; line-height:1.3; position:relative;
+}
+.flow-steps li + li::before{
+  content:""; position:absolute; left:-1px; top:50%; width:0; height:0;
+  border-top:4px solid transparent; border-bottom:4px solid transparent;
+  border-left:5px solid var(--gridline); transform:translateY(-50%);
+}
+.flow-steps .n{
+  flex:none; width:20px; height:20px; border-radius:50%; display:grid; place-items:center;
+  font-family:var(--mono); font-size:11.5px; font-weight:700;
+  background:color-mix(in srgb, var(--ink-3) 16%, var(--surface-1)); color:var(--ink-2);
+}
+.flow-steps li.on{border-color:var(--series-1); background:color-mix(in srgb, var(--series-1) 9%, var(--surface-1)); color:var(--ink)}
+.flow-steps li.on .n{background:var(--series-1); color:#fff}
+.flow-steps li.noscreen{border-style:dashed; border-color:var(--gridline)}
+.flow-steps li.noscreen .t::after{content:" (화면 없음)"; color:var(--ink-3); font-size:11.5px}
+.flow-loop{display:flex; align-items:flex-start; gap:10px; margin:10px 0 0; padding-top:10px; border-top:1px dashed var(--gridline); font-size:12.5px; color:var(--ink-2); line-height:1.55}
+.flow-loop svg{flex:none; margin-top:1px}
+.flow-loop b{color:var(--ink)}
+
+header{border-bottom:1px solid var(--gridline); background:var(--surface-1)}
+.hd{max-width:1180px; margin:0 auto; padding:40px 24px 28px}
+.eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--series-1); font-weight:600}
+h1{font-size:36px; font-weight:700; letter-spacing:-.015em; margin:12px 0 10px; line-height:1.2}
+.lede{color:var(--ink-2); max-width:70ch; font-size:16px}
+.meta{display:flex; flex-wrap:wrap; gap:6px 34px; margin-top:24px; padding-top:20px; border-top:1px solid var(--gridline)}
+.meta div{display:flex; flex-direction:column; gap:2px}
+.meta dt{font-size:11.5px; color:var(--ink-3); letter-spacing:.04em}
+.meta dd{margin:0; font-family:var(--mono); font-size:19px; font-weight:600}
+
+section{margin-top:64px}
+.sec-head{display:flex; align-items:baseline; gap:12px; margin-bottom:8px}
+.sec-num{font-family:var(--mono); font-size:13px; color:var(--series-1); font-weight:600}
+h2{font-size:25px; font-weight:700; letter-spacing:-.01em}
+.sec-sub{color:var(--ink-2); max-width:72ch; margin-bottom:24px; font-size:15px}
+
+.panel{background:var(--surface-1); border:1px solid var(--gridline); border-radius:4px; overflow:hidden}
+.figure{background:var(--surface-1); border:1px solid var(--gridline); border-radius:4px; padding:24px 22px 18px}
+.fig-scroll{overflow-x:auto}
+.figure svg{display:block; width:100%; min-width:640px; height:auto}
+figcaption{margin-top:16px; padding-top:14px; border-top:1px solid var(--gridline); font-size:14px; color:var(--ink-2); line-height:1.65}
+
+/* jurisdiction toggle */
+.controls{display:flex; flex-wrap:wrap; gap:8px; padding:18px 20px; border-bottom:1px solid var(--gridline); background:var(--surface-1)}
+.ctl-label{font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-family:var(--mono); margin-right:6px; align-self:center}
+button{font-family:inherit; font-size:inherit; cursor:pointer}
+.seg{display:flex; flex-wrap:wrap; gap:6px}
+.seg button{
+  font-family:var(--mono); font-size:13px; font-weight:600; padding:8px 14px;
+  background:var(--surface-1); color:var(--ink-2); border:1px solid var(--gridline); border-radius:3px;
+}
+.seg button:hover{border-color:var(--series-1); color:var(--ink)}
+.seg button[aria-pressed="true"]{background:var(--series-1); border-color:var(--series-1); color:#fff}
+button:focus-visible, a:focus-visible{outline:2px solid var(--series-1); outline-offset:2px}
+
+.grid-lead{padding:16px 20px; border-bottom:1px solid var(--gridline); font-size:14.5px; color:var(--ink-2); line-height:1.65; background:var(--surface-1)}
+.grid-lead strong{color:var(--ink); font-weight:600}
+
+.kr-note{margin:0; padding:16px 20px; border-bottom:1px solid var(--gridline); background:color-mix(in srgb, var(--series-1) 8%, var(--surface-1)); font-size:14.5px; color:var(--ink); line-height:1.7}
+
+.tbl-scroll{overflow-x:auto}
+table.grid-table{border-collapse:collapse; width:100%; min-width:920px}
+table.grid-table thead th{
+  text-align:left; font-size:11.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3);
+  font-family:var(--mono); font-weight:600; padding:12px 16px; border-bottom:1px solid var(--gridline);
+  background:var(--surface-1);
+}
+table.grid-table td{padding:8px; border-bottom:1px solid var(--gridline); vertical-align:top}
+table.grid-table tr:last-child td{border-bottom:0}
+.rule-cell{min-width:220px; padding:12px 16px !important}
+.rid{font-family:var(--mono); font-size:12.5px; color:var(--ink-3); font-weight:600}
+.rname{display:block; font-weight:600; color:var(--ink); font-size:14.5px; margin-top:2px}
+.evidence-tag{display:block; margin-top:4px; font-size:11.5px; color:var(--series-1); font-family:var(--mono)}
+
+.cell{
+  display:flex; flex-direction:column; gap:3px; align-items:flex-start; text-align:left; width:100%;
+  padding:10px 12px; border:1px solid var(--gridline); border-left-width:4px; border-radius:2px;
+  background:var(--surface-1); min-height:56px;
+}
+.cell:hover{border-color:var(--series-1)}
+.cell .lbl{font-size:14.5px; font-weight:700; color:var(--ink)}
+.cell .note{font-size:12px; color:var(--ink-2); line-height:1.45}
+.st-met{border-left-color:var(--good); background:color-mix(in srgb, var(--good) 14%, var(--surface-1))}
+.st-unmet{border-left-color:var(--critical); background:color-mix(in srgb, var(--critical) 14%, var(--surface-1))}
+.st-caution{border-left-color:var(--warning); background:color-mix(in srgb, var(--warning) 20%, var(--surface-1))}
+.st-nodata{border-left-color:var(--ink-3); border-left-style:solid; background:color-mix(in srgb, var(--ink-3) 8%, var(--surface-1))}
+.st-unresearched{border-left-color:var(--ink-3); border-left-style:dashed; background:var(--surface-1)}
+.st-uncollected{border-left-color:var(--ink-3); border-left-style:dotted; background:var(--surface-1)}
+.cell.st-unresearched .lbl, .cell.st-uncollected .lbl{color:var(--ink-3); font-weight:600}
+
+.legend{display:flex; flex-wrap:wrap; gap:16px 24px; padding:16px 20px; border-top:1px solid var(--gridline); background:var(--surface-1); font-size:13px; color:var(--ink-2)}
+.legend .lg{display:flex; align-items:center; gap:8px}
+.legend .sw{display:inline-block; width:14px; height:14px; border-radius:2px; border:1px solid var(--gridline); border-left-width:4px}
+.legend .reserved{color:var(--ink-3); font-size:12.5px}
+
+.drillhint{padding:14px 20px; font-size:13.5px; color:var(--ink-2); border-top:1px solid var(--gridline); background:var(--surface-1)}
+.drillhint b{color:var(--ink)}
+
+.stat-strip{display:flex; gap:0; border-top:1px solid var(--gridline)}
+.stat{flex:1; padding:16px 18px; border-right:1px solid var(--gridline)}
+.stat:last-child{border-right:0}
+.stat dt{font-size:11.5px; color:var(--ink-3); letter-spacing:.04em}
+.stat dd{margin:4px 0 0; font-family:var(--mono); font-size:20px; font-weight:700}
+
+/* evidence cards, screen 3 */
+.ev-card{background:var(--surface-1); border:1px solid var(--gridline); border-radius:4px; padding:18px 20px; margin-bottom:14px}
+.ev-card + .ev-card{margin-top:0}
+.ev-top{display:flex; flex-wrap:wrap; gap:10px 16px; align-items:baseline; margin-bottom:10px}
+.ev-doc{font-weight:700; font-size:15.5px}
+.ev-art{font-family:var(--mono); font-size:13px; color:var(--ink-2)}
+.ev-date{font-family:var(--mono); font-size:12.5px; color:var(--ink-3); margin-left:auto}
+.ev-quote{margin:0 0 10px; padding:12px 14px; background:color-mix(in srgb, var(--ink-3) 6%, var(--surface-1)); border-left:3px solid var(--gridline); font-size:14px; line-height:1.65; color:var(--ink-2)}
+.ev-bottom{display:flex; flex-wrap:wrap; gap:12px; align-items:center; font-size:13px}
+.ev-bottom a{font-family:var(--mono); font-size:12.5px}
+.chip{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:11.5px; font-weight:700; padding:3px 9px; border-radius:2px; border:1px solid}
+.chip.good{background:color-mix(in srgb, var(--good) 16%, var(--surface-1)); border-color:var(--good); color:var(--ink)}
+
+.evidence-unlinked{margin-top:14px; padding:12px 14px; border:1px dashed var(--gridline); border-radius:3px; font-size:13px; color:var(--ink-3)}
+
+.closing{margin-top:20px; padding:16px 18px; background:color-mix(in srgb, var(--critical) 10%, var(--surface-1)); border:1px solid var(--gridline); border-left:4px solid var(--critical); border-radius:3px; font-size:14.5px; color:var(--ink); line-height:1.6; font-weight:600}
+
+.figure-sm{max-width:760px}
+
+footer{margin-top:70px; padding-top:24px; border-top:1px solid var(--gridline); font-size:13px; color:var(--ink-3); line-height:1.7}
+@media (prefers-reduced-motion:reduce){ *{scroll-behavior:auto !important} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hd">
+    <div class="eyebrow">프로토타입 v2, 미디어프로젝트 2026-2</div>
+    <h1>StableWatch 판정기, 시각 프로토타입</h1>
+    <p class="lede">
+      표 중심이던 v1을 대신해 세 화면으로 압축했다. 발행사 셋을 나란히 놓은 판정 격자, 실측 지점이 왜 4개뿐인지 보여주는 시간축, 판정 하나를 뒷받침하는 근거 그래프.
+      실제 데이터가 없는 자리는 채우지 않고 그대로 비워 둔다.
+    </p>
+    <dl class="meta">
+      <div><dt>실측 지점</dt><dd class="mono">4</dd></div>
+      <div><dt>커버해야 할 구간</dt><dd class="mono">43개월</dd></div>
+      <div><dt>판정 내려진 칸</dt><dd class="mono">12 / 45</dd></div>
+      <div><dt>근거 간선</dt><dd class="mono">110</dd></div>
+      <div><dt>사람이 확정한 간선</dt><dd class="mono">0</dd></div>
+    </dl>
+  </div>
+</header>
+
+<nav class="flow" aria-label="작업 흐름 7단계">
+  <div class="flow-in">
+    <ol class="flow-steps" id="flowSteps">
+      <li data-sec=""><span class="n">1</span><span class="t">보고서 넣기</span></li>
+      <li data-sec="sec2"><span class="n">2</span><span class="t">파서가 숫자 뽑기</span></li>
+      <li data-sec="sec1"><span class="n">3</span><span class="t">관할권 고르기</span></li>
+      <li data-sec="sec1"><span class="n">4</span><span class="t">판정</span></li>
+      <li data-sec="sec3"><span class="n">5</span><span class="t">근거 조문까지</span></li>
+      <li data-sec="" class="noscreen"><span class="n">6</span><span class="t">빈 칸에 값 고르기</span></li>
+      <li data-sec="" class="noscreen"><span class="n">7</span><span class="t">채움률 시험</span></li>
+    </ol>
+    <p class="flow-loop">
+      <svg width="34" height="16" viewBox="0 0 34 16" aria-hidden="true">
+        <path d="M31 3 A 14 9 0 0 1 5 8" fill="none" stroke="var(--critical)" stroke-width="1.6"/>
+        <path d="M5 8 l5 -3.4 l0 6.8 z" fill="var(--critical)"/>
+      </svg>
+      <span><b>7단계에서 못 채우는 항목이 나오면 6단계로 돌아가 서식을 고친다.</b> 이 되돌이가 이 프로젝트의 핵심이다. 실제로 두 번 일어났다. 공개 기한을 5영업일로 제안했다가 실측 19~21영업일에 반박당해 자체 공시와 외부 검증본으로 나눴고, 현금성 비율을 미국 안전항 30%로 잡으려다 실측 평균 14.47%를 보고 15%로 내렸다. 6단계와 7단계는 아직 화면이 없고 <span class="mono">docs/한국공시안_v1.md</span>에 서식 27항목으로만 존재한다.</span>
+    </p>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<section id="sec2" class="annex">
+  <div class="sec-head"><span class="sec-num">2단계 각주</span><h2>왜 43개월이 필요한가</h2></div>
+  <p class="sec-sub">파서가 지금 뽑아 놓은 것이 얼마나 얇은지부터 본다. 2023년 1월부터 2026년 7월까지 43개월 중 실제로 찍을 수 있는 점은 4개뿐이고, 나머지는 선으로 잇지 않고 미수집으로 남긴다.</p>
+  <div class="figure figure-sm">
+    <div class="fig-scroll">
+      <svg viewBox="0 0 1120 420" role="img" aria-label="2023년 1월부터 2026년 7월까지 커버리지 시간축, 실측 4개 지점은 오른쪽 끝에 몰려 있고 나머지 39개월은 미수집, SVB 파산과 GENIUS Act 서명 시점을 세로선으로 표시">
+        <g stroke="var(--gridline)" stroke-width="1">
+          <line x1="70" y1="330" x2="1080" y2="330"/>
+          <line x1="70" y1="255" x2="1080" y2="255"/>
+          <line x1="70" y1="180" x2="1080" y2="180"/>
+          <line x1="70" y1="105" x2="1080" y2="105"/>
+          <line x1="70" y1="30" x2="1080" y2="30"/>
+        </g>
+        <g fill="var(--ink-3)" font-family="var(--mono)" font-size="12" text-anchor="end">
+          <text x="60" y="334">100.00%</text>
+          <text x="60" y="259">100.05%</text>
+          <text x="60" y="184">100.10%</text>
+          <text x="60" y="109">100.15%</text>
+          <text x="60" y="34">100.20%</text>
+        </g>
+        <line x1="70" y1="330" x2="1080" y2="330" stroke="var(--baseline)" stroke-width="1.3"/>
+
+        <g id="monthTicks"></g>
+
+        <g fill="var(--ink-3)" font-family="var(--mono)" font-size="12" text-anchor="middle">
+          <text x="70" y="352">2023-01</text>
+          <text x="358.6" y="352">2024-01</text>
+          <text x="647.1" y="352">2025-01</text>
+          <text x="935.7" y="352">2026-01</text>
+          <text x="1080" y="352" text-anchor="end">2026-07</text>
+        </g>
+
+        <line x1="118.1" y1="30" x2="118.1" y2="330" stroke="var(--ink-3)" stroke-width="1.3" stroke-dasharray="4 3">
+          <title>2023-03, SVB 파산, USDC 디페그</title>
+        </line>
+        <text x="118.1" y="18" font-family="var(--sans)" font-size="12" fill="var(--ink-2)" text-anchor="start">2023-03 SVB 파산</text>
+
+        <line x1="791.4" y1="30" x2="791.4" y2="330" stroke="var(--ink-3)" stroke-width="1.3" stroke-dasharray="4 3">
+          <title>2025-07, GENIUS Act 서명</title>
+        </line>
+        <text x="791.4" y="18" font-family="var(--sans)" font-size="12" fill="var(--ink-2)" text-anchor="start">2025-07 GENIUS Act 서명</text>
+
+        <text x="500" y="300" font-family="var(--sans)" font-size="14" fill="var(--ink-3)" text-anchor="middle">미수집 (39개월)</text>
+
+        <g fill="var(--series-1)">
+          <circle cx="935.7" cy="185.55" r="7"><title>2026-01-30 기준, 커버리지 100.0963%</title></circle>
+          <circle cx="983.8" cy="181.95" r="7"><title>2026-03-31 기준, 커버리지 100.0987%</title></circle>
+          <circle cx="1007.9" cy="181.95" r="7"><title>2026-04-30 기준, 커버리지 100.0987%</title></circle>
+          <circle cx="1080" cy="167.85" r="7"><title>2026-07-31 기준, 커버리지 100.1081%</title></circle>
+        </g>
+        <g font-family="var(--mono)" font-size="11.5" fill="var(--ink)" text-anchor="middle">
+          <text x="935.7" y="170">100.0963%</text>
+          <text x="983.8" y="166">100.0987%</text>
+          <text x="1007.9" y="205">100.0987%</text>
+          <text x="1080" y="152" text-anchor="end">100.1081%</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>
+      실측 4점 모두 2026년 오른쪽 끝에 몰려 있다. 2023년 SVB 파산 전후, 2025년 GENIUS Act 서명 전후를 비교하려면 왼쪽 39개월이 채워져야 하는데 지금은 그 구간에 찍을 점이 없다.
+    </figcaption>
+  </div>
+</section>
+
+<section id="sec1">
+  <div class="sec-head"><span class="sec-num">4단계</span><h2>발행사 판정 격자</h2></div>
+  <p class="sec-sub">규칙 15개를 세로에, 발행사 3사를 가로에 놓았다. 관할권을 바꾸면 같은 격자가 다시 계산된다.</p>
+
+  <div class="panel">
+    <div class="controls">
+      <span class="ctl-label" id="lbl-j">관할권</span>
+      <div class="seg" id="jurs" role="group" aria-labelledby="lbl-j"></div>
+    </div>
+
+    <div class="grid-lead">
+      <strong>이 격자는 대부분 비어 있는 게 정상이고 의도다.</strong> 채워진 칸보다 빈 칸이 많은 그림이 곧 지금까지 한 일과 남은 일의 경계다. 미국 관할권에서만 Circle과 Tether의 실측 판정이 들어가 있고, 나머지는 억지로 채우지 않았다.
+    </div>
+
+    <div id="krNote" class="kr-note" hidden>
+      한국 열이 비어 있는 이유는 조사를 안 해서가 아니다. 근거 간선 110개를 모았고 원문 대조도 98개가 끝났다. 사람이 확정한 간선이 0개라서 규칙 엔진에 값을 넣을 수 없다. 스키마가 확정 안 된 간선을 관할권 설정에 넣지 못하게 막아 놨기 때문이다.
+    </div>
+
+    <div class="tbl-scroll">
+      <table class="grid-table">
+        <thead>
+          <tr><th class="rule-cell">규칙</th><th>Circle, USDC</th><th>Tether, USDT</th><th>Paxos, PYUSD</th></tr>
+        </thead>
+        <tbody id="gridBody"></tbody>
+      </table>
+    </div>
+
+    <div class="legend" id="legend"></div>
+    <p class="drillhint" id="drillHint">격자에서 칸을 눌러 보면 근거로 내려간다. 지금은 R13 환매 조건 하나만 실제로 연결돼 있다.</p>
+    <p class="drillhint">Circle의 R03과 R05는 보고서에 CUSIP과 만기일이 있지만 파서가 총계까지만 뽑아서 아직 판정할 수 없다. 상태 구분으로는 조사 미완료지만 실제로는 <b>파서 백로그</b>다.</p>
+  </div>
+</section>
+
+<section id="sec3">
+  <div class="sec-head"><span class="sec-num">5단계</span><h2>근거 그래프 드릴다운, R13 환매 조건</h2></div>
+  <p class="sec-sub">격자에서 R13 칸을 누르면 이 화면으로 내려온다. 지금 실제 간선으로 연결된 것은 이 규칙 하나뿐이고, 나머지 칸은 근거 미연결이다.</p>
+
+  <h3 style="font-size:15px; font-weight:700; margin-bottom:12px; color:var(--ink-2)">1층, 시행 법률</h3>
+  <div class="ev-card">
+    <div class="ev-top">
+      <span class="ev-doc">전자금융거래법 (법률 254921)</span>
+      <span class="ev-art">제19조제1항</span>
+      <span class="ev-date">시행 2024-09-15</span>
+    </div>
+    <p class="ev-quote">선불전자지급수단을 발행한 금융회사 또는 전자금융업자는 선불전자지급수단보유자가 선불전자지급수단에 기록된 잔액의 환급을 청구하는 경우에는 미리 약정한 바에 따라 환급하여야 한다.</p>
+    <div class="ev-bottom">
+      <span class="chip good">원문 대조 완료</span>
+      <a href="https://www.law.go.kr/법령/전자금융거래법/제19조" target="_blank" rel="noopener">law.go.kr, 전자금융거래법 제19조</a>
+    </div>
+  </div>
+  <div class="ev-card">
+    <div class="ev-top">
+      <span class="ev-doc">가상자산이용자보호등에관한법률 (법률 261099)</span>
+      <span class="ev-art">제11조제1항, 제2항</span>
+      <span class="ev-date">시행 2024-07-19</span>
+    </div>
+    <p class="ev-quote">가상자산사업자는 이용자의 가상자산에 관한 입금 또는 출금을 대통령령으로 정하는 정당한 사유 없이 차단하여서는 아니 된다.</p>
+    <div class="ev-bottom">
+      <span class="chip good">원문 대조 완료</span>
+      <a href="https://www.law.go.kr/법령/가상자산이용자보호법/제11조" target="_blank" rel="noopener">law.go.kr, 가상자산이용자보호법 제11조</a>
+    </div>
+  </div>
+
+  <h3 style="font-size:15px; font-weight:700; margin:26px 0 12px; color:var(--ink-2)">2층, 계류 법안 사이에서 환매 기한이 갈리는 지점</h3>
+  <div class="figure">
+    <div class="fig-scroll">
+      <svg viewBox="0 0 900 340" role="img" aria-label="환매 기한을 정한 계류 법안 6건을 일수로 비교, 안도걸안과 이강일안은 3, 김재섭안과 최보윤안은 5, 김은혜안과 김현정안은 10, 싱가포르 MAS는 5영업일을 세로 기준선으로 표시">
+        <g stroke="var(--gridline)" stroke-width="1">
+          <line x1="160" y1="20" x2="160" y2="300"/>
+          <line x1="335" y1="20" x2="335" y2="300"/>
+          <line x1="451.7" y1="20" x2="451.7" y2="300"/>
+          <line x1="743.3" y1="20" x2="743.3" y2="300"/>
+        </g>
+        <g fill="var(--ink-3)" font-family="var(--mono)" font-size="12" text-anchor="middle">
+          <text x="160" y="316">0일</text>
+          <text x="451.7" y="316">5일</text>
+          <text x="743.3" y="316">10일</text>
+        </g>
+
+        <line x1="451.7" y1="14" x2="451.7" y2="300" stroke="var(--ink-3)" stroke-width="1.3" stroke-dasharray="4 3"/>
+        <text x="451.7" y="10" font-family="var(--sans)" font-size="12.5" fill="var(--ink-2)" text-anchor="middle">싱가포르 MAS 5영업일</text>
+
+        <g fill="var(--series-1)">
+          <rect x="160" y="41.5" width="175" height="22" rx="4"/>
+          <rect x="160" y="86.5" width="175" height="22" rx="4"/>
+          <rect x="160" y="131.5" width="291.7" height="22" rx="4"/>
+          <rect x="160" y="176.5" width="291.7" height="22" rx="4"/>
+          <rect x="160" y="221.5" width="583.3" height="22" rx="4"/>
+          <rect x="160" y="266.5" width="583.3" height="22" rx="4"/>
+        </g>
+        <g font-family="var(--sans)" font-size="13.5" fill="var(--ink)" text-anchor="end">
+          <text x="150" y="56.5">안도걸안</text>
+          <text x="150" y="101.5">이강일안</text>
+          <text x="150" y="146.5">김재섭안</text>
+          <text x="150" y="191.5">최보윤안</text>
+          <text x="150" y="236.5">김은혜안</text>
+          <text x="150" y="281.5">김현정안</text>
+        </g>
+        <g font-family="var(--mono)" font-size="12.5" fill="var(--ink-2)">
+          <text x="343" y="56.5">3영업일</text>
+          <text x="343" y="101.5">3일</text>
+          <text x="459.7" y="146.5">5일</text>
+          <text x="459.7" y="191.5">5영업일</text>
+          <text x="591.3" y="236.5">10일</text>
+          <text x="591.3" y="281.5">10일, 연장 가능</text>
+        </g>
+      </svg>
+    </div>
+    <figcaption>세로 점선은 싱가포르 MAS의 5영업일 기준이다. 계류 법안 6건 중 절반은 그 기준보다 짧고, 절반은 10일로 두 배 길다. 아직 어느 값도 확정된 간선이 아니다.</figcaption>
+  </div>
+
+  <div class="evidence-unlinked">R13 밖의 다른 칸을 누르면 이렇게 뜬다: 근거 미연결. 지금은 이 규칙 하나만 실제 간선으로 내려가는 화면이 있다.</div>
+  <div class="closing">간선 110개 중 사람이 확정한 것은 0개다. 확정 전에는 이 값들이 규칙 엔진에 들어가지 않는다.</div>
+</section>
+
+<footer>
+  <p>Circle 실측치는 2026년 1, 3, 4, 7월 검사보고서 4개월분에서 뽑았다. Tether 실측치는 2026년 3월과 6월 준비자산 보고서에서 뽑았다. Paxos는 아직 수집하지 않았다. 한국 근거 그래프는 법제처와 의안정보시스템 원문 대조 결과다.</p>
+</footer>
+
+</div>
+
+<script>
+const RULES = [
+  ['R01','커버리지 100% 이상'],
+  ['R02','허용 자산 종류'],
+  ['R03','국채 잔존만기 상한'],
+  ['R04','레포 만기'],
+  ['R05','은행 예치 최소 비율'],
+  ['R06','준비자산 통화 일치'],
+  ['R07','공개 주기'],
+  ['R08','검증 수준'],
+  ['R09','검증 기준시각'],
+  ['R10','보고서 신선도'],
+  ['R11','발행잔액 산식 공개'],
+  ['R12','수탁기관과 위치 공개'],
+  ['R13','환매 조건'],
+  ['R14','이자 지급 금지'],
+  ['R15','경영진 인증'],
+];
+const ISSUERS = [['circle','Circle, USDC'],['tether','Tether, USDT'],['paxos','Paxos, PYUSD']];
+const JURS = [['us','US'],['eu-general','EU 일반 EMT'],['eu-significant','EU 중요 EMT'],['hk','HK'],['sg','SG'],['kr','KR-v1']];
+
+const STATE_LABEL = {
+  met:'충족', unmet:'미충족', caution:'주의', nodata:'데이터 없음',
+  unresearched:'조사 미완료', uncollected:'미수집',
+  deferred:'위임 예정', noregulation:'규정 없음',
+};
+
+const US_CIRCLE = {
+  R01:['met','커버리지 100.096~100.108%'],
+  R02:['met','국채, 익일 레포, 은행 예치 현금'],
+  R07:['met','월별 공개'],
+  R08:['met','등록 회계법인 examination, Deloitte 서명'],
+  R11:['met','총공급에서 미발행, 동결, 소각대기를 뺀 산식을 보고서에 공개'],
+  R12:['caution','수탁 위치는 공개, 실명 공개는 OCC Q91에서 미확정'],
+};
+const US_TETHER = {
+  R01:['met','총자산이 총부채를 82억 달러 초과'],
+  R02:['unmet','비트코인, 귀금속, 기업채, 담보대출 보유'],
+  R03:['nodata','개별 만기일이 보고서에 없음'],
+  R07:['unmet','분기 공개, 월별 요구 미달'],
+  R08:['unmet','분기 assurance, 월별 examination 아님'],
+  R12:['nodata','수탁기관 표기 없음'],
+};
+
+function cellFor(jur, issuer, ruleId){
+  if(issuer === 'paxos') return ['uncollected', null];
+  if(jur !== 'us') return ['unresearched', null];
+  const src = issuer === 'circle' ? US_CIRCLE : US_TETHER;
+  // 근거가 있는 칸만 채운다. 확인하지 않은 것을 "데이터 없음"으로 적으면
+  // 격자를 비워 둔 이유가 사라진다.
+  return src[ruleId] || ['unresearched', null];
+}
+
+let curJur = 'us';
+
+function renderJurs(){
+  const el = document.getElementById('jurs');
+  el.innerHTML = JURS.map(([id,label]) =>
+    `<button data-jur="${id}" aria-pressed="${id===curJur}">${label}</button>`).join('');
+}
+
+function renderGrid(){
+  const body = document.getElementById('gridBody');
+  body.innerHTML = RULES.map(([id,name]) => {
+    const evidenceTag = id === 'R13' ? '<span class="evidence-tag">근거 그래프 있음, 아래로</span>' : '';
+    const cells = ISSUERS.map(([iid]) => {
+      const [state, note] = cellFor(curJur, iid, id);
+      const noteHtml = note ? `<span class="note">${note}</span>` : '';
+      return `<td><button class="cell st-${state}" data-rule="${id}" data-issuer="${iid}">
+        <span class="lbl">${STATE_LABEL[state]}</span>${noteHtml}
+      </button></td>`;
+    }).join('');
+    return `<tr>
+      <td class="rule-cell"><span class="rid">${id}</span><span class="rname">${name}</span>${evidenceTag}</td>
+      ${cells}
+    </tr>`;
+  }).join('');
+  document.getElementById('krNote').hidden = curJur !== 'kr';
+}
+
+function renderLegend(){
+  const used = ['met','unmet','caution','nodata','unresearched','uncollected'];
+  const el = document.getElementById('legend');
+  el.innerHTML = used.map(s =>
+    `<span class="lg"><i class="sw st-${s}"></i>${STATE_LABEL[s]}</span>`).join('')
+    + `<span class="reserved">위임 예정, 규정 없음은 상태로 정의만 해 두었고 지금 데이터에는 해당 칸이 없다.</span>`;
+}
+
+document.addEventListener('click', e => {
+  const jb = e.target.closest('button[data-jur]');
+  if(jb){ curJur = jb.dataset.jur; renderJurs(); renderGrid(); return; }
+  const cb = e.target.closest('.cell');
+  if(cb){
+    const rule = cb.dataset.rule, issuer = ISSUERS.find(x => x[0]===cb.dataset.issuer)[1];
+    const hint = document.getElementById('drillHint');
+    if(rule === 'R13'){
+      hint.innerHTML = `<b>선택: R13 환매 조건, ${issuer}</b>, 근거 그래프로 이동`;
+      document.getElementById('sec3').scrollIntoView({behavior:'smooth', block:'start'});
+    } else {
+      hint.innerHTML = `선택: ${rule}, ${issuer}, <b>근거 미연결</b>`;
+    }
+  }
+});
+
+// time-axis month ticks, 43 months from 2023-01 to 2026-07, index 0..42
+const dataMonths = new Set([36,38,39,42]);
+const ticksG = document.getElementById('monthTicks');
+let ticksSvg = '';
+for(let i=0;i<=42;i++){
+  const x = 70 + (i/42)*1010;
+  const isData = dataMonths.has(i);
+  ticksSvg += `<line x1="${x}" y1="330" x2="${x}" y2="${isData?324:327}" stroke="${isData?'var(--series-1)':'var(--baseline)'}" stroke-width="${isData?2:1}"/>`;
+}
+ticksG.innerHTML = ticksSvg;
+
+renderJurs();
+renderGrid();
+renderLegend();
+
+// 스크롤 위치에 따라 흐름 띠의 현재 단계를 켠다. 한 화면에 단계가 둘 걸칠 수 있어
+// 섹션 id마다 li를 배열로 묶는다(예: sec1 = 관할권 고르기 + 판정).
+const steps = [...document.querySelectorAll('#flowSteps li')];
+const bySec = new Map();
+steps.forEach(li => {
+  if(!li.dataset.sec) return;
+  const arr = bySec.get(li.dataset.sec) || [];
+  arr.push(li);
+  bySec.set(li.dataset.sec, arr);
+});
+function lightStep(lis){
+  const on = new Set(lis || []);
+  steps.forEach(s => s.classList.toggle('on', on.has(s)));
+}
+const io = new IntersectionObserver(entries => {
+  const hit = entries.filter(e => e.isIntersecting)
+                     .sort((a,b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+  if(hit) lightStep(bySec.get(hit.target.id));
+}, {rootMargin:'-45% 0px -45% 0px'});
+bySec.forEach((lis, id) => { const el = document.getElementById(id); if(el) io.observe(el); });
+lightStep(bySec.get('sec2'));
+</script>
+
+</body>
+</html>

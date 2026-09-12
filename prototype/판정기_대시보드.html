@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>원화 스테이블코인 준비금 공시 판정기</title>
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#0d1014;
+  --panel:#14181e;
+  --panel-2:#1a1f26;
+  --line:#242b34;
+  --line-2:#323b47;
+  --ink:#e7ecf2;
+  --ink-2:#9aa6b4;
+  --ink-3:#66717f;
+  /* 색은 둘만 쓴다. 충족과 미충족. 나머지는 전부 무채색이다. */
+  --pass:#3fb98c;
+  --fail:#e05f45;
+  --warn:#9aa6b4;
+  --pass-bg:rgba(63,185,140,.12);
+  --fail-bg:rgba(224,95,69,.13);
+  --warn-bg:transparent;
+  --sans:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --aside:376px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:14px; line-height:1.55;
+  -webkit-font-smoothing:antialiased; font-variant-numeric:tabular-nums;
+}
+button{font:inherit; color:inherit; background:none; border:0; cursor:pointer; text-align:left}
+:focus-visible{outline:2px solid var(--pass); outline-offset:1px}
+h1,h2,h3,p,ol,ul{margin:0}
+ol,ul{padding:0; list-style:none}
+a{color:var(--pass)}
+
+.app{height:100%; display:grid; grid-template-rows:auto auto 1fr; overflow:hidden}
+
+/* ---------- top ---------- */
+.topbar{
+  display:flex; align-items:center; gap:20px; flex-wrap:wrap;
+  padding:0 18px; height:50px; background:var(--panel); border-bottom:1px solid var(--line);
+}
+.brand{display:flex; align-items:baseline; gap:9px}
+.brand b{font-size:15px; font-weight:650; letter-spacing:-.012em}
+.brand span{font-size:12px; color:var(--ink-3)}
+.run{
+  margin-left:auto; flex:none; background:var(--ink); color:var(--bg); border-radius:4px;
+  padding:7px 16px; font-size:13px; font-weight:600; letter-spacing:-.005em;
+}
+.run:hover{background:#fff}
+.run[disabled]{opacity:.5; cursor:default}
+.jur{display:flex; gap:2px; margin-left:14px}
+.jur button{font-family:var(--mono); font-size:12px; padding:5px 10px; border-radius:3px; color:var(--ink-2)}
+.jur button:hover{background:var(--panel-2); color:var(--ink)}
+.jur button[aria-pressed="true"]{background:var(--panel-2); color:var(--ink); box-shadow:inset 0 0 0 1px var(--line-2)}
+
+/* ---------- flow diagram ---------- */
+.spine{background:var(--panel); border-bottom:1px solid var(--line); padding:12px 18px 0}
+.flowwrap{overflow-x:auto}
+#flow{display:block; width:100%; min-width:940px; height:auto}
+#flow .nd rect{fill:var(--panel); stroke:var(--line-2); stroke-width:1.2; rx:4}
+#flow .nd .t{font-size:12.5px; fill:var(--ink); font-weight:550}
+#flow .nd .s{font-size:10.5px; fill:var(--ink-3); font-family:var(--mono)}
+#flow .nd{cursor:pointer}
+#flow .nd:hover rect{stroke:var(--ink); stroke-width:1.6}
+#flow .nd.on rect{stroke:var(--ink); stroke-width:2.2}
+#flow .ok rect{fill:var(--pass-bg); stroke:var(--pass)}
+#flow .lk.done{stroke:var(--pass); stroke-opacity:.5}
+#flow .lk.flowing{stroke:var(--pass); stroke-width:2; stroke-opacity:1;
+  stroke-dasharray:6 8; animation:flowdash .7s linear infinite}
+@keyframes flowdash{to{stroke-dashoffset:-14}}
+#flow .pulse{fill:var(--pass)}
+@keyframes hotglow{0%,100%{stroke-opacity:1}50%{stroke-opacity:.4}}
+#flow .nd.running rect{animation:hotglow .8s ease-in-out infinite}
+#flow .nd.live rect{fill:var(--pass-bg); stroke:var(--pass)}
+#flow .nd.live .s{fill:var(--pass)}
+#flow .ok .s{fill:var(--pass)}
+#flow .part rect{fill:var(--panel-2); stroke:var(--line-2)}
+#flow .part .s{fill:var(--ink-3)}
+#flow .gone rect{fill:var(--panel); stroke:var(--line-2); stroke-dasharray:4 3}
+#flow .gone .s{fill:var(--ink-3)}
+#flow .gone .t{fill:var(--ink-2)}
+#flow .doc rect{fill:var(--panel-2); stroke:var(--line-2); stroke-dasharray:3 3}
+#flow .doc .t{fill:var(--ink-2)}
+#flow .lk{stroke:var(--line-2); stroke-width:1.4; fill:none}
+#flow .lk.loop{stroke:var(--fail); stroke-width:1.4}
+#flow .lbl{font-size:10.5px; fill:var(--ink-3)}
+#flow .nd.running rect{stroke:var(--ink); stroke-width:2.6}
+#flow .nd.running .t{font-weight:700}
+
+.runbar{
+  display:flex; gap:10px; align-items:baseline; padding:10px 15px;
+  border:1px solid var(--line); border-radius:5px; margin-bottom:13px;
+  background:var(--panel); font-size:13px; color:var(--ink-2); line-height:1.6;
+}
+.runbar.stopped{border-color:var(--line-2)}
+.runbar.done b{color:var(--pass)}
+.runbar b{color:var(--ink); font-weight:600; flex:none}
+.c.idle{color:var(--ink-3); opacity:.5}
+.loopline{display:flex; align-items:center; gap:16px; flex-wrap:wrap; padding:9px 0 11px; font-size:12px; color:var(--ink-2)}
+.fkey{display:flex; align-items:center; gap:6px}
+.fkey i{width:18px; height:12px; border-radius:2px; border:1px solid var(--line-2); display:inline-block}
+.fkey i.ok{background:var(--pass-bg); border-color:var(--pass)}
+.fkey i.part{background:var(--panel-2); border-color:var(--line-2)}
+.fkey i.gone{background:var(--panel); border-color:var(--line-2); border-style:dashed}
+.fkey i.doc{background:var(--panel-2); border-style:dashed}
+.loopline .hint{margin-left:auto; color:var(--ink-3)}
+
+/* ---------- body ---------- */
+.body{display:grid; grid-template-columns:1fr var(--aside); min-height:0}
+.main{overflow-y:auto; min-width:0; padding:16px 18px 26px}
+.card{background:var(--panel); border:1px solid var(--line); border-radius:5px; margin-bottom:13px}
+.card > header{display:flex; align-items:baseline; gap:12px; padding:11px 15px; border-bottom:1px solid var(--line)}
+.card h3{font-size:13px; font-weight:600}
+.card header p{font-size:12px; color:var(--ink-3); margin-left:auto}
+
+/* kpis */
+.kpis{display:grid; grid-template-columns:repeat(3,1fr); gap:11px; margin-bottom:13px}
+.kpi{background:var(--panel); border:1px solid var(--line); border-radius:5px; padding:12px 14px}
+.kpi dt{font-size:12px; color:var(--ink-3)}
+.kpi dd{margin:4px 0 0; font-family:var(--mono); font-size:22px; font-weight:600; letter-spacing:-.02em}
+.kpi dd em{font-style:normal; color:var(--ink-3); font-size:14px; font-weight:400}
+.kpi .track{display:flex; gap:1.5px; margin-top:7px; height:5px}
+.kpi .track i{flex:1 1 0; background:var(--panel-2); border-radius:1px}
+.kpi .track i.on{background:var(--pass)}
+
+/* matrix */
+.matrix{width:100%; border-collapse:separate; border-spacing:0}
+.matrix th{font-weight:600; text-align:left; color:var(--ink-3); font-size:11.5px; padding:9px 14px; border-bottom:1px solid var(--line); background:var(--panel)}
+.matrix thead th + th{text-align:center; width:146px}
+.matrix td{padding:0; border-bottom:1px solid var(--line)}
+.matrix tbody th{font-weight:450; color:var(--ink-2); font-size:12.5px; padding:0 14px; white-space:nowrap; border-bottom:1px solid var(--line)}
+.matrix tbody th .id{font-family:var(--mono); color:var(--ink-3); font-size:11.5px; margin-right:8px}
+.matrix tbody tr:hover th{color:var(--ink); background:var(--panel-2)}
+.matrix tr:last-child td,.matrix tr:last-child th{border-bottom:0}
+.c{
+  width:100%; height:33px; display:block; text-align:center;
+  border-left:1px solid var(--line); font-family:var(--mono); font-size:11px; color:var(--ink-3);
+}
+.c:hover{background:var(--panel-2); color:var(--ink-2)}
+.c.sel{box-shadow:inset 0 0 0 2px var(--ink)}
+.c.pass{background:var(--pass-bg); color:var(--pass); font-weight:600}
+.c.fail{background:var(--fail-bg); color:var(--fail); font-weight:600}
+.c.warn{background:transparent; color:var(--ink-2); box-shadow:inset 0 0 0 1px var(--line-2)}
+.c.void{background:repeating-linear-gradient(-45deg,transparent 0 5px,rgba(154,166,180,.07) 5px 10px); color:var(--ink-3)}
+.c.none{color:var(--ink-3); opacity:.65}
+/* 단계를 누르면 그 단계가 막고 있는 칸만 남긴다 */
+.focus .c{opacity:.26}
+.focus .c.hit{opacity:1; box-shadow:inset 0 0 0 2px var(--ink)}
+.focus tbody th{opacity:.4}
+.focus tr.hitrow th{opacity:1; color:var(--ink); font-weight:600}
+.lit{box-shadow:0 0 0 1px var(--ink-2)}
+.focusbar{display:flex; gap:9px; align-items:baseline; padding:9px 15px; border-bottom:1px solid var(--line); background:var(--panel-2); font-size:12.5px; color:var(--ink-2)}
+.focusbar b{color:var(--ink); font-weight:600}
+.focusbar button{margin-left:auto; font-size:12px; color:var(--ink-3); text-decoration:underline; flex:none}
+.krbreak{display:flex; flex-wrap:wrap; align-items:center; gap:8px 10px; padding:11px 16px;
+  border-bottom:1px solid var(--line); background:var(--panel-2); font-size:12px; color:var(--ink-3)}
+.krbreak b{color:var(--ink); font-weight:600; font-size:12.5px; margin-right:4px}
+.krchip{font-family:var(--mono); font-size:11px; padding:3px 9px; border-radius:2px;
+  border:1px solid var(--line-2); color:var(--ink-2)}
+.krchip em{font-style:normal; font-weight:700; color:var(--ink); margin-left:3px}
+.krchip.k-gap{border-color:var(--fail); color:var(--fail)}
+.krchip.k-gap em{color:var(--fail)}
+.krsay{flex-basis:100%; color:var(--ink-2); font-size:12.5px; margin-top:2px}
+.krtag{font-family:var(--mono); font-size:10px; padding:1px 6px; margin-left:9px;
+  border-radius:2px; border:1px solid var(--line-2); color:var(--ink-3)}
+.krtag.k-gap{border-color:var(--fail); color:var(--fail)}
+.legend{display:flex; flex-wrap:wrap; gap:7px 18px; padding:10px 15px; border-top:1px solid var(--line); font-size:12px; color:var(--ink-2)}
+.legend span{display:flex; align-items:center; gap:7px}
+.legend i{width:20px; height:13px; border-radius:2px; border:1px solid var(--line-2)}
+
+/* coverage */
+.cov{padding:16px 15px 15px}
+.cov-bar{display:flex; gap:2px; height:24px}
+.cov-bar i{flex:1 1 0; background:var(--panel-2); border:1px solid var(--line); border-radius:1px; position:relative}
+.cov-bar i.has{background:var(--pass); border-color:var(--pass)}
+.cov-bar i.mark{background:var(--line-2); border-color:var(--line-2)}
+.cov-bar i.mark::after{content:attr(data-l); position:absolute; top:-14px; left:50%; transform:translateX(-50%); font-size:10.5px; font-family:var(--mono); color:var(--ink-3); white-space:nowrap}
+.cov-ax{display:flex; justify-content:space-between; margin-top:7px; font-family:var(--mono); font-size:11px; color:var(--ink-3)}
+.cov p{margin-top:11px; font-size:12.5px; color:var(--ink-2); max-width:80ch}
+
+/* ---------- aside ---------- */
+.aside{background:var(--panel); border-left:1px solid var(--line); overflow-y:auto; min-width:0}
+.aside-hd{padding:14px 17px; border-bottom:1px solid var(--line); position:sticky; top:0; background:var(--panel); z-index:2}
+.aside-hd .kicker{font-family:var(--mono); font-size:11px; color:var(--ink-3)}
+.aside-hd h2{font-size:15px; font-weight:600; margin-top:2px; letter-spacing:-.01em}
+.aside-hd .who{margin-top:8px; display:flex; align-items:center; gap:8px; font-size:12.5px; color:var(--ink-2); flex-wrap:wrap}
+.pill{font-family:var(--mono); font-size:11px; font-weight:700; padding:2px 8px; border-radius:2px; border:1px solid var(--line-2); color:var(--ink-2)}
+.pill.pass{background:var(--pass-bg); border-color:transparent; color:var(--pass)}
+.pill.fail{background:var(--fail-bg); border-color:transparent; color:var(--fail)}
+.pill.warn{border-color:var(--line-2); color:var(--ink-2)}
+.aside-bd{padding:15px 17px 28px}
+.aside-bd > * + *{margin-top:14px}
+.why{font-size:13px; color:var(--ink-2); line-height:1.65}
+.why b{color:var(--ink); font-weight:600}
+.sub{font-size:11.5px; color:var(--ink-3); font-weight:600; padding-bottom:6px; border-bottom:1px solid var(--line)}
+.next{background:var(--panel-2); border-left:2px solid var(--ink); padding:11px 13px; font-size:12.5px; color:var(--ink-2); line-height:1.6}
+.next b{color:var(--ink)}
+.blocked{background:var(--fail-bg); border-left:2px solid var(--fail); padding:11px 13px; font-size:12.5px; color:var(--ink-2); line-height:1.6}
+.blocked b{color:var(--ink)}
+.ev{border:1px solid var(--line); border-radius:3px; padding:11px 12px; background:var(--panel-2)}
+.ev + .ev{margin-top:9px}
+.ev-hd{display:flex; flex-wrap:wrap; gap:4px 9px; align-items:baseline; font-size:12.5px}
+.ev-hd b{font-weight:600}
+.ev-hd .art,.ev-hd .dt{font-family:var(--mono); font-size:11px; color:var(--ink-3)}
+.ev q{display:block; margin:9px 0; font-size:12.5px; color:var(--ink-2); line-height:1.6; quotes:none; padding-left:10px; border-left:2px solid var(--line-2)}
+.ev-ft{display:flex; align-items:center; gap:9px; font-size:11.5px}
+.ev-ft a{font-family:var(--mono); font-size:11px}
+.tick{color:var(--pass); font-family:var(--mono); font-size:11px}
+.bills li{display:grid; grid-template-columns:60px 1fr 86px; align-items:center; gap:9px; padding:3px 0; font-size:12.5px}
+.bills .bar{height:9px; background:var(--warn); border-radius:1px; opacity:.75}
+.bills .v{font-family:var(--mono); font-size:11.5px; color:var(--ink-2); text-align:right}
+.bills-ax{margin-top:9px; padding-top:8px; border-top:1px solid var(--line); font-size:11.5px; color:var(--ink-3)}
+
+@media (max-width:1120px){
+  .body{grid-template-columns:1fr}
+  .aside{position:fixed; right:0; top:0; bottom:0; width:min(376px,88vw); box-shadow:-8px 0 24px rgba(22,32,43,.10); z-index:30}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <div class="topbar">
+    <div class="brand"><b>원화 스테이블코인 준비금 공시 판정기</b><span>StableWatch</span></div>
+    <button class="run" id="run">판정 실행</button>
+    <div class="jur" id="jur" role="group" aria-label="관할권"></div>
+  </div>
+
+  <div class="spine">
+    <div class="flowwrap">
+      <svg id="flow" viewBox="0 0 1000 272" role="group" aria-label="판정이 만들어지는 흐름"></svg>
+    </div>
+    <p class="loopline">
+      <span class="fkey"><i class="ok"></i>있음</span>
+      <span class="fkey"><i class="part"></i>부분</span>
+      <span class="fkey"><i class="gone"></i>없음</span>
+      <span class="fkey"><i class="doc"></i>문서만</span>
+      <span class="hint">상자를 누르면 아래 매트릭스에서 그 단계가 막고 있는 칸만 남는다.</span>
+    </p>
+  </div>
+
+  <div class="body">
+    <main class="main">
+      <p class="runbar" id="runbar"><b>시작</b><span>판정 실행을 누르면 보고서부터 판정까지 흐름이 순서대로 돈다.</span></p>
+      <dl class="kpis">
+        <div class="kpi"><dt>판정 내려진 칸</dt><dd class="num" id="k1">12<em> / 45</em></dd>
+          <div class="track" id="t1"></div></div>
+        <div class="kpi"><dt>확보한 관측치</dt><dd class="num">4<em> / 86</em></dd>
+          <div class="track" id="t2"></div></div>
+        <div class="kpi"><dt>사람이 확정한 근거 간선</dt><dd class="num">0<em> / 110</em></dd>
+          <div class="track" id="t3"></div></div>
+      </dl>
+
+      <section class="card" id="mxCard">
+        <header><h3>판정 매트릭스</h3><p>칸을 누르면 오른쪽에 근거가 열린다</p></header>
+        <div class="focusbar" id="focusbar" hidden></div>
+        <div class="krbreak" id="krbreak" hidden></div>
+        <table class="matrix">
+          <thead><tr><th>규칙</th><th>Circle USDC</th><th>Tether USDT</th><th>Paxos PYUSD</th></tr></thead>
+          <tbody id="mx"></tbody>
+        </table>
+        <div class="legend">
+          <span><i style="background:var(--pass-bg);border-color:var(--pass)"></i>충족</span>
+          <span><i style="background:var(--fail-bg);border-color:var(--fail)"></i>미충족</span>
+          <span><i style="background:var(--warn-bg);border-color:var(--warn)"></i>주의</span>
+          <span><i></i>조사 미완료</span>
+          <span><i style="background:repeating-linear-gradient(-45deg,transparent 0 5px,rgba(154,166,180,.07) 5px 10px)"></i>미수집</span>
+        </div>
+      </section>
+
+      <section class="card" id="covCard">
+        <header><h3>데이터 커버리지</h3><p>2023-01부터 2026-07까지 43개월</p></header>
+        <div class="cov">
+          <div class="cov-bar" id="cov"></div>
+          <div class="cov-ax"><span>2023-01</span><span>2026-07</span></div>
+          <p>확보한 4개월은 전부 오른쪽 끝에 몰려 있다. SVB 파산 때 커버리지가 어떻게 움직였는지, GENIUS 시행 뒤에 발행사 행동이 바뀌었는지 보려면 왼쪽이 채워져야 한다.</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="aside" id="aside" aria-live="polite"></aside>
+  </div>
+</div>
+
+<script>
+const RULES=[['R01','커버리지 100% 이상'],['R02','허용 자산 종류'],['R03','국채 잔존만기 상한'],
+ ['R04','레포 만기'],['R05','은행 예치 최소 비율'],['R06','준비자산 통화 일치'],['R07','공개 주기'],
+ ['R08','검증 수준'],['R09','검증 기준시각'],['R10','보고서 신선도'],['R11','발행잔액 산식 공개'],
+ ['R12','수탁기관과 위치 공개'],['R13','환매 조건'],['R14','이자 지급 금지'],['R15','경영진 인증']];
+const ISSUERS=[['circle','Circle USDC'],['tether','Tether USDT'],['paxos','Paxos PYUSD']];
+const JURS=[['us','US'],['eu','EU 일반 EMT'],['eus','EU 중요 EMT'],['hk','HK'],['sg','SG'],['kr','KR-v1']];
+const ST={pass:'충족',fail:'미충족',warn:'주의',nodata:'데이터 없음',none:'규정 없음',void:'미수집',idle:'대기'};
+
+// 흐름도 노드. x,y는 viewBox 0 0 1000 292 기준, 상자는 124x42.
+const NODES=[
+ {k:'in',   x:10, y:24, t:'발행사 보고서', s:'Circle 4, Tether 2', st:'part'},
+ {k:'parse',x:168,y:24, t:'파서',          s:'총계까지만',        st:'part'},
+ {k:'parse',x:326,y:24, t:'reports.json',  s:'4개월분',           st:'ok'},
+ {k:'evi',  x:10, y:152,t:'근거 간선 110개',s:'확정 0',           st:'part'},
+ {k:'jur',  x:168,y:152,t:'관할권 설정 6종', s:'데모 설정',         st:'part'},
+ {k:'judge',x:484,y:88, t:'규칙 엔진 15개', s:'프로토타입',        st:'part'},
+ {k:'judge',x:642,y:88, t:'verdicts.json',  s:'판정 45칸',         st:'part'},
+ {k:'judge',x:800,y:24, t:'화면 A 판정',    s:'프로토타입',        st:'part'},
+ {k:'evi',  x:800,y:88, t:'화면 C 근거',    s:'프로토타입',        st:'part'},
+ {k:'redeem',x:800,y:152,t:'화면 B 환매',   s:'없음',             st:'gone'},
+ {k:'fill', x:484,y:216,t:'공시안 서식 27항목',s:'문서만',         st:'doc'},
+ {k:'test', x:642,y:216,t:'채움률 시험',    s:'대기',             st:'gone'}];
+
+const LINKS=[
+ 'M134 45 H160',            // 0 보고서 → 파서
+ 'M292 45 H318',            // 1 파서 → reports.json
+ 'M450 45 H467 V109 H478',  // 2 reports.json → 엔진
+ 'M134 173 H160',           // 3 근거 간선 → 관할권 설정
+ 'M292 173 H467 V109',      // 4 관할권 설정 → 엔진
+ 'M608 109 H634',           // 엔진 → verdicts
+ 'M766 109 H783 V45 H792',  // verdicts → 화면 A
+ 'M766 109 H792',           // verdicts → 화면 C
+ 'M766 109 H783 V173 H792', // verdicts → 화면 B
+ 'M704 130 V237 H616'];     // verdicts → 공시안 서식
+
+const STEPS=[
+ {k:'in',n:1,t:'보고서 넣기',s:'완료',cls:'done',
+  d:'Circle 4개월과 Tether 2개 분기를 확보했다. Paxos는 아직 한 건도 받지 않았다.',
+  next:'Paxos 월간 보고서를 수집하면 매트릭스 세 번째 열이 열린다.'},
+ {k:'parse',n:2,t:'파서가 숫자 뽑기',s:'부분',cls:'part',
+  d:'Circle 파서가 유통량과 준비자산 총계와 회계사 서명일까지 뽑는다. 대사도 4개월 전부 통과한다. 다만 CUSIP 행과 월중 기준일을 아직 안 뽑는다.',
+  next:'CUSIP 행 파싱을 붙이면 R03과 R05가 판정으로 바뀐다. 월중 기준일까지 쓰면 관측치가 4개에서 8개가 된다.'},
+ {k:'jur',n:3,t:'관할권 고르기',s:'막힘',cls:'block',
+  d:'관할권 설정 JSON 6종이 아직 없다. 그래서 US 말고는 아무 관할권도 판정을 못 돌린다.',
+  next:'그 앞에 선행조건이 하나 더 있다. 근거 간선 110개를 사람이 확정해야 한다. 스키마가 확정 안 된 간선을 관할권 설정에 넣지 못하게 막아 놨고, 지금 확정된 것은 0개다. 원문 대조는 98개가 끝나 있어서 새로 판단할 것은 적용 대상이 맞는지 하나다.',
+  block:true},
+ {k:'judge',n:4,t:'판정',s:'부분',cls:'part',
+  d:'규칙 15개 중 근거가 붙은 12칸만 판정이 내려져 있다. 전부 US 관할권이다.',
+  next:'3단계가 풀리면 나머지 다섯 관할권이 같은 격자에서 돈다.'},
+ {k:'evi',n:5,t:'근거 조문까지',s:'부분',cls:'part',
+  d:'R13 환매 조건 하나만 근거 간선이 연결돼 있다. 나머지 규칙은 조문까지 내려가는 길이 없다.',
+  next:'간선 확정이 끝나면 축마다 연결된다. 지금 간선은 110개다.'},
+ {k:'fill',n:6,t:'빈 칸에 값 고르기',s:'문서만',cls:'ghost',
+  d:'화면이 없다. 한국 공시안 v1에 서식 27항목과 값 결정 기록으로만 있다. 채택값과 기각한 대안과 이유와 바뀌는 조건을 적는다.',
+  next:'화면으로 올릴지는 정하지 않았다. 이번 학기 범위 밖으로 둔 상태다.'},
+ {k:'test',n:7,t:'채움률 시험',s:'대기',cls:'ghost',
+  d:'화면이 없다. 43개월을 서식 27항목에 넣어 1,161칸 중 몇 칸이 채워지는지 세는 단계다.',
+  next:'2단계 파서가 43개월로 늘어나야 시작할 수 있다. 지금 세면 108칸뿐이다.'},
+ {k:'redeem',n:0,t:'화면 B 고객 환매',s:'없음',cls:'block',
+  d:'고객이 환매 금액을 넣으면 즉시 가능인지 지연인지 보류인지 알려주는 화면이다. 상태는 R01 커버리지, R07 공개 주기, R10 신선도, R13 환매 조건 네 규칙의 판정으로 정한다.',
+  next:'적대검증에서 지적받은 구멍이 여기 있다. 공시 판정만으로는 실제 환매 가능성을 말할 수 없다. 고객별 조건과 상환 대기열과 금액별 가용현금이 입력에 없기 때문이다. 상태를 공시 기준 시나리오 결과라고 화면에 못박거나, 필요한 입력을 정의해야 한다.',
+  block:true}];
+
+// 단계를 고르면 매트릭스에서 어느 칸이 걸리는지
+const FOCUS={
+ in:   {cell:(r,i)=>i==='paxos', card:'covCard', say:'Paxos 열이 통째로 미수집이다.'},
+ parse:{cell:(r,i)=>i==='circle'&&(r==='R03'||r==='R05'), card:'covCard',
+        say:'파서가 CUSIP 행을 안 뽑아서 이 둘이 못 돈다. 보고서에는 값이 있다.'},
+ jur:  {cell:()=>false, jurLit:true,
+        say:'관할권 설정이 없어서 US 말고는 격자가 통째로 빈다. 위에서 다른 관할권을 눌러 보라.'},
+ judge:{cell:()=>true, say:'근거가 붙어 판정이 내려진 칸은 여기뿐이다.'},
+ evi:  {cell:(r)=>r==='R13', say:'근거 간선이 조문까지 연결된 규칙은 R13 하나다.'},
+ redeem:{cell:(r)=>['R01','R07','R10','R13'].includes(r),
+        say:'환매 화면이 읽는 규칙 넷이다. 이 넷의 판정만으로 환매 가능성을 말할 수 있는지가 쟁점이다.'},
+ fill: {cell:()=>false, say:'화면이 없다. 서식은 한국 공시안 v1 문서에만 있다.'},
+ test: {cell:()=>false, say:'화면이 없다. 파서가 43개월로 늘어나야 시작한다.'}};
+
+// 관할권별 요건. null이면 그 관할권에 그 요건이 없다.
+const REQ={
+ R01:{us:'100% 이상',eu:'자금보호',eus:'Art. 36',hk:'액면 전액',sg:'100% 상시',kr:'100% 이상'},
+ R02:{us:'현금, 93일 국채, 익일 레포',eu:'저위험 고유동',eus:'Art. 38(1)',hk:'HQLA',sg:'3개월 정부채',kr:'예금과 국채'},
+ R03:{us:'93일 이내',eu:null,eus:null,hk:null,sg:'3개월 이내',kr:null},
+ R04:{us:'익일물',eu:null,eus:null,hk:null,sg:null,kr:null},
+ R05:{us:'30% 안전항',eu:'30% 이상',eus:'60% 이상',hk:null,sg:null,kr:null},
+ R06:{us:'달러',eu:'같은 통화',eus:'같은 통화',hk:'페그 통화',sg:'페그 통화',kr:'원화'},
+ R07:{us:'월별',eu:null,eus:'정기',hk:'주간',sg:'월별',kr:null},
+ R08:{us:'월별 examination',eu:null,eus:'6개월 감사',hk:'attestation과 연간 감사',sg:'월별 attestation',kr:null},
+ R09:{us:'전월 말일 정오',eu:null,eus:'반기 말',hk:'기간 말 영업일',sg:'월말',kr:null},
+ R10:{us:'당월 말일까지',eu:null,eus:null,hk:'7일 이내',sg:'다음 달 말',kr:null},
+ R11:{us:'미확정',eu:null,eus:null,hk:'액면 잔액',sg:'유통량',kr:null},
+ R12:{us:'지리적 위치',eu:null,eus:'Art. 37',hk:'관리정책 공개',sg:'신탁 계정',kr:null},
+ R13:{us:'절차와 수수료 공시',eu:'액면 상시, 수수료 금지',eus:'동일',hk:'조건과 기한 공시',sg:'5영업일',kr:'상환청구권'},
+ R14:{us:'금지',eu:'Art. 50',eus:'Art. 50',hk:null,sg:'금지',kr:'금지'},
+ R15:{us:'CEO와 CFO 매월',eu:null,eus:null,hk:null,sg:null,kr:null}};
+
+// 발행사 사실. [충족여부, 설명, 실측이면 1].
+// 실측 12개만 실제 보고서에서 확인한 값이고 나머지는 데모다.
+const FACT={
+ circle:{
+  R01:[true,'커버리지 100.096%에서 100.108% 사이. 4개월 모두 100%를 넘겼다.',1],
+  R02:[true,'국채와 익일 레포와 은행 예치 현금만 보유한다.',1],
+  R03:[true,'CUSIP별 만기가 전부 93일 이내다.'],
+  R04:[true,'익일 레포만 쓴다.'],
+  R05:[false,'현금성 비중이 평균 14.47%다. 30%도 60%도 못 넘는다.'],
+  R06:[true,'전부 달러 표시 자산이다.'],
+  R07:[true,'매달 공개한다. 한 보고서에 월중과 월말 두 기준일이 들어간다.',1],
+  R08:[true,'등록 회계법인 examination이다. 4개월 모두 Deloitte 서명이다.',1],
+  R09:[true,'월말 23시 59분 UTC 기준이다. 1월은 말일이 토요일이라 30일로 당겼다.'],
+  R10:[true,'기준일에서 서명까지 19~21영업일이다.'],
+  R11:[true,'총공급에서 미발행과 동결과 소각대기를 뺀 산식을 본문에 적는다.',1],
+  R12:['warn','수탁 위치는 공개하지만 기관 실명은 아니다.',1],
+  R13:[true,'환매 절차와 수수료를 공시한다.'],
+  R14:[true,'보유자에게 이자를 주지 않는다.'],
+  R15:[null,'경영진 인증이 검사보고서에 들어 있지 않다.']},
+ tether:{
+  R01:[true,'2026-03-31 기준 총자산이 총부채를 82억 3,220만 달러 초과한다.',1],
+  R02:[false,'비트코인과 귀금속과 기업채와 담보대출을 들고 있다.',1],
+  R03:[null,'개별 종목과 만기일이 보고서에 없다.',1],
+  R04:[null,'레포 만기 구분이 없다.'],
+  R05:[null,'은행 예치와 현금성 자산을 나눠 적지 않는다.'],
+  R06:[true,'달러 표시다.'],
+  R07:[false,'분기마다 낸다.',1],
+  R08:[false,'분기 BDO assurance다. 월별 examination이 아니다.',1],
+  R09:[true,'분기 말 23시 59분 UTC 기준이다.'],
+  R10:[null,'공개일이 보고서에 없다.'],
+  R11:[null,'발행잔액 산식을 적지 않는다.'],
+  R12:[null,'수탁기관 표기가 없다.',1],
+  R13:[null,'환매 조건이 보고서에 없다.'],
+  R14:[true,'보유자 이자 지급이 없다.'],
+  R15:[null,'경영진 인증이 없다.']},
+ paxos:{
+  R01:[true,'준비자산이 토큰 부채를 넘는다.'],
+  R02:[true,'현금과 은행예금과 익일 역레포와 그 담보 국채만 보유한다.'],
+  R03:[true,'담보 국채 만기가 3개월 이내다.'],
+  R04:[true,'익일 역레포만 쓴다.'],
+  R05:[null,'현금과 예금 소계는 있으나 기관별 구분이 없다.'],
+  R06:[true,'달러 표시다.'],
+  R07:[true,'월간 자체 보고서와 KPMG attestation을 병렬로 낸다.'],
+  R08:[true,'월별 KPMG attestation이다.'],
+  R09:[true,'월말 특정 시각 스냅샷이다.'],
+  R10:[true,'월말 후 5영업일에 자체 보고서를 낸다.'],
+  R11:[null,'토큰 부채는 적지만 산식 정의가 없다.'],
+  R12:[true,'수탁기관을 종목 단위로 적는다.'],
+  R13:[null,'환매 조건이 보고서에 없다.'],
+  R14:[true,'보유자 이자 지급이 없다.'],
+  R15:[null,'경영진 인증이 없다.']}};
+
+let jur='us', sel=null, step=null, ran=false, running=false;
+const esc=v=>String(v).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// 칸이 비는 이유를 설명하는 문구
+const NOTE={
+ nodata:'보고서를 갖고 있지만 이 규칙에 필요한 값이 없다.',
+ parser:'보고서 안에 CUSIP과 만기일이 실제로 있다. 파서가 총계까지만 뽑아서 판정을 못 할 뿐이다.',
+ uncollected:'아직 수집하지 않았다.',
+ kr:'한국 열은 근거 간선 110개 중 사람이 확정한 것이 0개라 실제로는 엔진에 값을 넣을 수 없다. 이 화면 값은 데모다.',
+ other:'이 관할권의 설정은 데모다. 규제 원문에서 값은 옮겨 왔지만 검사를 거친 설정 파일이 아니다.'};
+
+
+// 한국 열을 층별로 다시 읽은 1차 분류. 매니페스트 7절 한국 칸이 출처다.
+// "규정 없음"으로 뭉뚱그린 칸이 실제로는 여섯 종류로 갈린다.
+const KRK={gap:'진짜 공백',delegated:'시행령 위임',analog:'유사 제도 준용',
+           bill:'법안 후보값',todo:'조사 미완료',obvious:'자명'};
+const KRC={
+ R01:['analog','전금법 시행령 제13조의2와 이용자보호법 시행령 제8조가 똑같이 100%다. 구조가 같은 선례가 둘 있다.'],
+ R02:['todo','법안 8건에 자산 종류 조항이 있는지 아직 안 봤다. 지금 근거는 보도뿐이다.'],
+ R03:['gap','법률에도 법안에도 정부 자료에도 없다. 미국은 93일로 정했다.'],
+ R04:['gap','법률에도 법안에도 없다. 미국은 익일물로 정했다.'],
+ R05:['delegated','법안이 현금성 비율을 대통령령에 명시 위임했다. 안도걸 제16조, 최보윤 제104조.'],
+ R06:['obvious','원화 스테이블코인이므로 준비자산도 원화다.'],
+ R07:['bill','법안 다섯 건이 전부 매월로 일치한다. 값이 수렴했다.'],
+ R08:['bill','법안이 분기 검토와 반기 감사와 연 1회로 갈린다. 현행 관행은 합의된 절차라 감사도 검토도 아니다.'],
+ R09:['analog','가상자산업감독규정 제4조가 예치금을 영업일 단위로 산정한다. 기준시각 개념이 현행 제도에 있다.'],
+ R10:['bill','김현정 제32조1항이 다음 달 5일, 휴일이면 다음 영업일로 적었다. 후보값이 하나 있다.'],
+ R11:['gap','총공급에서 무엇을 빼는지 정한 곳이 없다. 미국도 질문으로 남겼지만 Circle은 이미 산식을 공개한다.'],
+ R12:['delegated','법안이 은행 등 대통령령이 정하는 금융기관에 예치 또는 신탁하라고 위임했다. 실명 공개 의무는 없고 관행만 있다.'],
+ R13:['bill','법안이 3일에서 10일까지 갈린다. 전금법 제19조는 기한 없이 약정에 위임했다.'],
+ R14:['bill','법안 세 건이 금지로 일치한다.'],
+ R15:['bill','법안 두 건이 대표이사 진술과 서명을 요구한다.']};
+
+// 판정. 요건이 없으면 규정 없음, 보고서에 값이 없으면 데이터 없음.
+function verdictOf(rid,iid){
+  const req=REQ[rid][jur], f=(FACT[iid]||{})[rid];
+  const real=!!(f&&f[2]);
+  if(req==null) return {st:'none',req:null,why:(f&&f[1])||'',real:false};
+  if(!f||f[0]===null) return {st:'nodata',req,why:(f&&f[1])||'보고서에 값이 없다.',real};
+  if(f[0]==='warn') return {st:'warn',req,why:f[1],real};
+  return {st:f[0]?'pass':'fail',req,why:f[1],real};
+}
+function stateOf(rid,iid){
+  const v=verdictOf(rid,iid);
+  return [v.st, v.why||null];
+}
+
+function drawJur(){
+  document.getElementById('jur').innerHTML=JURS.map(([k,l])=>
+    `<button data-j="${k}" aria-pressed="${k===jur}">${l}</button>`).join('');
+}
+
+function drawSpine(){
+  const arrow='<marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">'
+    +'<path d="M0 0 L8 4 L0 8 z" fill="#323b47"/></marker>'
+    +'<marker id="ahr" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto">'
+    +'<path d="M0 0 L8 4 L0 8 z" fill="#e05f45"/></marker>';
+  const links=LINKS.map((d,i)=>`<path class="lk" data-l="${i}" d="${d}" marker-end="url(#ah)"/>`).join('');
+  // 되돌이. 채움률에서 못 채우는 항목이 나오면 서식으로 돌아간다.
+  const loop=`<path class="lk loop" d="M704 258 V272 H546 V264" marker-end="url(#ah)"/>
+    <text class="lbl" x="625" y="286" text-anchor="middle">못 채우면 서식을 고친다</text>`;
+  const nodes=NODES.map((n,idx)=>
+    `<g class="nd ${n.st}${step===n.k?' on':''}" data-s="${n.k}" data-n="${idx}" role="button" tabindex="0"
+        aria-label="${n.t}, ${n.s}">
+       <rect x="${n.x}" y="${n.y}" width="124" height="42"/>
+       <text class="t" x="${n.x+11}" y="${n.y+19}">${n.t}</text>
+       <text class="s" x="${n.x+11}" y="${n.y+34}">${n.s}</text>
+     </g>`).join('');
+  document.getElementById('flow').innerHTML=`<defs>${arrow}</defs>${links}${loop}${nodes}`;
+}
+
+function track(id,on,total,cap){
+  const n=Math.min(total,cap);
+  document.getElementById(id).innerHTML=
+    Array.from({length:n},(_,i)=>`<i class="${i<Math.round(on/total*n)?'on':''}"></i>`).join('');
+}
+
+function drawMatrix(){
+  const f=step?FOCUS[step]:null;
+  document.getElementById('mx').innerHTML=RULES.map(([rid,name])=>{
+    let rowHit=false;
+    const tds=ISSUERS.map(([iid,iname])=>{
+      const [st0]=stateOf(rid,iid);
+      const st=ran?st0:'idle';
+      const on=sel&&sel.rid===rid&&sel.iid===iid?' sel':'';
+      const hit=f&&f.cell(rid,iid); if(hit) rowHit=true;
+      return `<td><button class="c ${st}${on}${hit?' hit':''}" data-r="${rid}" data-i="${iid}"
+        aria-label="${rid} ${name}, ${iname}, ${ST[st]}">${ST[st]}</button></td>`;
+    }).join('');
+    const kr=jur==='kr'?`<span class="krtag k-${KRC[rid][0]}">${KRK[KRC[rid][0]]}</span>`:'';
+    return `<tr class="${rowHit?'hitrow':''}"><th><span class="id">${rid}</span>${name}${kr}</th>${tds}</tr>`;
+  }).join('');
+
+  const kb=document.getElementById('krbreak');
+  if(jur==='kr'){
+    const t={}; Object.values(KRC).forEach(([k])=>t[k]=(t[k]||0)+1);
+    kb.hidden=false;
+    kb.innerHTML='<b>한국 15개 축을 층별로 다시 읽으면</b>'+
+      Object.keys(KRK).map(k=>`<span class="krchip k-${k}">${KRK[k]} <em>${t[k]||0}</em></span>`).join('')+
+      '<span class="krsay">비어 있는 것은 30칸이 아니라 3개다. 셋 다 운영 세부 규칙이다. 법안은 누가 발행하느냐를 정했지 어떻게 공시하느냐를 정하지 않았다.</span>';
+  } else kb.hidden=true;
+
+  const mxCard=document.getElementById('mxCard');
+  mxCard.classList.toggle('focus',!!f);
+  const bar=document.getElementById('focusbar');
+  if(f){
+    bar.hidden=false;
+    bar.innerHTML=`<b>${STEPS.find(s=>s.k===step).t}</b><span>${f.say}</span>
+      <button data-clear="1">전체 보기</button>`;
+  }else bar.hidden=true;
+
+  document.getElementById('covCard').classList.toggle('lit',!!(f&&f.card==='covCard'));
+  document.getElementById('jur').classList.toggle('lit',!!(f&&f.jurLit));
+
+  const n=ran&&jur==='us'?12:0;
+  document.getElementById('k1').innerHTML=`${n}<em> / 45</em>`;
+  track('t1',n,45,30);
+}
+
+function drawCov(){
+  const has=new Set([36,38,39,42]), marks={2:'SVB 파산',30:'GENIUS 시행'};
+  document.getElementById('cov').innerHTML=Array.from({length:43},(_,i)=>{
+    const cls=has.has(i)?'has':(marks[i]?'mark':'');
+    const t=has.has(i)?'실측 확보':(marks[i]||'미수집');
+    return `<i class="${cls}"${marks[i]?` data-l="${marks[i]}"`:''} title="${t}"></i>`;
+  }).join('');
+}
+
+function asideStep(k){
+  const s=STEPS.find(x=>x.k===k);
+  const body=`<p class="why">${esc(s.d)}</p>
+    <div class="${s.block?'blocked':'next'}"><b>다음에 할 것.</b> ${esc(s.next)}</div>`;
+  return `<div class="aside-hd"><div class="kicker">${s.n}단계</div><h2>${esc(s.t)}</h2>
+    <div class="who"><span class="pill ${s.cls==='done'?'pass':s.cls==='block'?'fail':s.cls==='part'?'warn':''}">${s.s}</span>판정이 만들어지는 순서</div>
+    </div><div class="aside-bd">${body}</div>`;
+}
+
+function asideCell(){
+  const {rid,iid}=sel;
+  const rule=RULES.find(r=>r[0]===rid), issuer=ISSUERS.find(i=>i[0]===iid);
+  const [st,note]=stateOf(rid,iid);
+  let body='';
+  if(note) body+=`<p class="why">${esc(note)}</p>`;
+  else if(st==='void') body+=`<p class="why">${esc(NOTE.uncollected)}</p>`;
+  else if(jur==='kr') body+=`<div class="blocked">${esc(NOTE.kr)}</div>`;
+  else if(jur!=='us') body+=`<p class="why">${esc(NOTE.other)}</p>`;
+  else if(iid==='circle'&&(rid==='R03'||rid==='R05')) body+=`<p class="why">${esc(NOTE.parser)}</p>`;
+  else body+=`<p class="why">${esc(NOTE.nodata)}</p>`;
+
+  if(rid==='R13'){
+    body+=`<p class="sub">1층, 시행 법률</p>`+EDGES.map(e=>`<div class="ev">
+      <div class="ev-hd"><b>${esc(e.doc)}</b><span class="art">${esc(e.art)}</span><span class="dt">${esc(e.date)}</span></div>
+      <q>${esc(e.q)}</q>
+      <div class="ev-ft"><span class="tick">원문 대조 완료</span><a href="${e.url}" target="_blank" rel="noopener">law.go.kr</a></div>
+      </div>`).join('');
+    body+=`<p class="sub">2층, 계류 법안이 갈리는 지점</p>
+      <ul class="bills">${BILLS.map(([n,d,l])=>
+        `<li><span>${n}</span><span class="bar" style="width:${d*10}%"></span><span class="v">${l}</span></li>`).join('')}</ul>
+      <p class="bills-ax">싱가포르는 5영업일이다. 법안 6건 중 셋은 그보다 짧고 둘은 두 배 길다.</p>
+      <div class="blocked"><b>아직 어느 값도 확정된 간선이 아니다.</b> 확정 전에는 규칙 엔진에 들어가지 않는다.</div>`;
+  }else{
+    body+=`<p class="why" style="color:var(--ink-3)">이 규칙에는 근거 간선이 아직 연결되지 않았다.</p>`;
+  }
+  return `<div class="aside-hd"><div class="kicker">${rid}</div><h2>${esc(rule[1])}</h2>
+    <div class="who"><span class="pill ${st}">${ST[st]}</span>${esc(issuer[1])}, ${esc(JURS.find(j=>j[0]===jur)[1])}</div>
+    </div><div class="aside-bd">${body}</div>`;
+}
+
+function drawAside(){
+  const el=document.getElementById('aside');
+  if(step) el.innerHTML=asideStep(step);
+  else if(sel) el.innerHTML=asideCell();
+  else el.innerHTML=`<div class="aside-hd"><h2>지금 막힌 곳</h2>
+    <div class="who"><span class="pill fail">3단계</span>관할권 고르기</div></div>
+    <div class="aside-bd">
+      <p class="why">관할권 설정 JSON 6종이 없어서 US 말고는 판정이 돌지 않는다. 그 앞에 선행조건이 하나 더 있다.
+      <b>근거 간선 110개를 사람이 확정해야 한다.</b> 지금 확정된 것은 0개다.</p>
+      <div class="blocked"><b>원문 대조는 98개가 끝나 있다.</b> 사람이 새로 판단할 것은 적용 대상이 맞는지 하나다.
+      발행사인지 거래소인지 선불업자인지, 일반 토큰인지 중요 토큰인지를 확인하면 된다.</div>
+      <p class="why" style="color:var(--ink-3)">위의 단계를 누르면 그 단계의 상태와 다음에 할 것이 열린다.
+      매트릭스의 칸을 누르면 그 판정의 근거가 열린다.</p>
+    </div>`;
+  el.scrollTop=0;
+}
+
+document.addEventListener('click',e=>{
+  if(e.target.closest('#run')){ run(); return; }
+  const j=e.target.closest('button[data-j]');
+  if(j){ jur=j.dataset.j; sel=null; step=null; drawJur(); drawSpine(); if(ran) run(); else { drawMatrix(); drawAside(); } return; }
+  if(e.target.closest('[data-clear]')){ step=null; drawSpine(); drawMatrix(); drawAside(); return; }
+  const s=e.target.closest('[data-s]');
+  if(s){ step=step===s.dataset.s?null:s.dataset.s; sel=null; drawSpine(); drawMatrix(); drawAside(); return; }
+  const c=e.target.closest('.c');
+  if(c){ sel={rid:c.dataset.r,iid:c.dataset.i}; step=null; drawSpine(); drawMatrix(); drawAside(); }
+});
+
+
+// 판정 실행. 보고서부터 따라가다 관할권 설정이 없는 자리에서 멈춘다.
+const REDUCED=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const SEQ=[0,1,2,3,4,5,6,7,8];
+const SEQ_LINK=[null,0,1,null,3,[2,4],5,6,7];  // 각 노드로 들어오는 선
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+
+// 선을 따라 흐르게 그린다. 선이 그려지는 동안이 한 단계다.
+async function flowLink(el,ms){
+  if(!el) return;
+  if(REDUCED||!el.getTotalLength){ el.classList.add('done'); return; }
+  const len=el.getTotalLength();
+  const svg=el.ownerSVGElement;
+
+  // 선이 그려지는 동안 머리에 점이 달려 간다
+  const dot=document.createElementNS('http://www.w3.org/2000/svg','circle');
+  dot.setAttribute('r','3.4'); dot.setAttribute('class','pulse');
+  svg.appendChild(dot);
+
+  el.style.animation='none';
+  el.style.transition='none';
+  el.style.strokeDasharray=len; el.style.strokeDashoffset=len;
+  el.getBoundingClientRect();
+  el.style.transition=`stroke-dashoffset ${ms}ms linear`;
+  el.style.strokeDashoffset='0';
+
+  const t0=performance.now();
+  await new Promise(fin=>{
+    (function tick(now){
+      const k=Math.min(1,(now-t0)/ms);
+      const pt=el.getPointAtLength(len*k);
+      dot.setAttribute('cx',pt.x); dot.setAttribute('cy',pt.y);
+      k<1 ? requestAnimationFrame(tick) : fin();
+    })(t0);
+  });
+
+  dot.remove();
+  el.classList.add('done');
+  el.style.transition=''; el.style.strokeDashoffset=''; el.style.strokeDasharray=''; el.style.animation='';
+}
+
+function bar(kind,label,text){
+  const el=document.getElementById('runbar');
+  el.className='runbar'+(kind==='stop'?' stopped':'');
+  el.innerHTML=`<b>${label}</b><span>${text}</span>`;
+}
+
+async function run(){
+  if(running) return;
+  running=true; ran=false; sel=null; step=null;
+  document.getElementById('run').disabled=true;
+  drawSpine(); drawMatrix(); drawAside();
+
+  const svg=document.getElementById('flow');
+  svg.querySelectorAll('.lk').forEach(l=>l.classList.remove('done','flowing'));
+  const nodes=[...svg.querySelectorAll('.nd')];
+  const step_ms=REDUCED?0:300;
+
+  const names=['발행사 보고서를 읽는다','파서가 표를 뽑는다','reports.json을 만든다',
+               '근거 간선을 불러온다','관할권 설정을 읽는다','규칙 15개를 돌린다',
+               'verdicts.json을 쓴다','화면 A에 판정을 그린다','근거 그래프를 잇는다'];
+    for(let i=0;i<SEQ.length;i++){
+    bar('go',`${i+1} / ${SEQ.length}`,names[i]);
+    const lk=SEQ_LINK[i];
+    if(lk===null){ if(step_ms) await wait(step_ms*0.5); }
+    else if(Array.isArray(lk)) await Promise.all(lk.map(x=>flowLink(svg.querySelector(`.lk[data-l="${x}"]`),step_ms)));
+    else await flowLink(svg.querySelector(`.lk[data-l="${lk}"]`),step_ms);
+    nodes.forEach(n=>n.classList.remove('running'));
+    nodes[SEQ[i]].classList.add('running','live');
+    if(step_ms) await wait(step_ms*0.3);
+  }
+
+  nodes.forEach(n=>n.classList.remove('running'));
+
+  ran=true; running=false;
+  document.getElementById('run').disabled=false;
+  drawMatrix(); drawAside();
+
+  svg.querySelectorAll('.lk.done').forEach(l=>l.classList.add('flowing'));
+  const jn=JURS.find(j=>j[0]===jur)[1];
+  bar('done','완료',`${jn} 기준으로 45칸을 판정했다. 그중 12칸이 실제 보고서에서 확인한 실측이고 나머지는 데모 설정으로 낸 값이다.`);
+}
+
+drawJur(); drawSpine(); drawMatrix(); drawCov(); drawAside();
+track('t2',4,86,30); track('t3',0,110,30);
+</script>
+</body>
+</html>
