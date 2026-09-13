@@ -103,6 +103,7 @@ a{color:var(--pass)}
 .runbar.done b{color:var(--pass)}
 .runbar b{color:var(--ink); font-weight:600; flex:none}
 .c.idle{color:var(--ink-3); opacity:.5}
+.c .real-i{display:inline-block; width:4px; height:4px; border-radius:50%; background:currentColor; margin-left:6px; vertical-align:middle}
 .loopline{display:flex; align-items:center; gap:16px; flex-wrap:wrap; padding:9px 0 11px; font-size:12px; color:var(--ink-2)}
 .fkey{display:flex; align-items:center; gap:6px}
 .fkey i{width:18px; height:12px; border-radius:2px; border:1px solid var(--line-2); display:inline-block}
@@ -166,6 +167,8 @@ a{color:var(--pass)}
   border:1px solid var(--line-2); color:var(--ink-2)}
 .krchip em{font-style:normal; font-weight:700; color:var(--ink); margin-left:3px}
 .krchip.k-gap{border-color:var(--fail); color:var(--fail)}
+.krchip.k-partial{border-color:var(--fail); color:var(--ink-2)}
+.krtag.k-partial{border-color:var(--fail)}
 .krchip.k-gap em{color:var(--fail)}
 .krsay{flex-basis:100%; color:var(--ink-2); font-size:12.5px; margin-top:2px}
 .krtag{font-family:var(--mono); font-size:10px; padding:1px 6px; margin-left:9px;
@@ -399,7 +402,7 @@ const FACT={
   R07:[true,'매달 공개한다. 한 보고서에 월중과 월말 두 기준일이 들어간다.',1],
   R08:[true,'등록 회계법인 examination이다. 4개월 모두 Deloitte 서명이다.',1],
   R09:[true,'월말 23시 59분 UTC 기준이다. 1월은 말일이 토요일이라 30일로 당겼다.'],
-  R10:[true,'기준일에서 서명까지 19~21영업일이다.'],
+  R10:[null,'보고서에 공개일이 없다. 기준일에서 회계사 서명까지 19~21영업일인 것만 확인된다.',1],
   R11:[true,'총공급에서 미발행과 동결과 소각대기를 뺀 산식을 본문에 적는다.',1],
   R12:['warn','수탁 위치는 공개하지만 기관 실명은 아니다.',1],
   R13:[true,'환매 절차와 수수료를 공시한다.'],
@@ -438,6 +441,16 @@ const FACT={
   R14:[true,'보유자 이자 지급이 없다.'],
   R15:[null,'경영진 인증이 없다.']}};
 
+const EDGES=[
+ {doc:'전자금융거래법',art:'제19조제1항',date:'시행 2024-09-15',
+  q:'선불전자지급수단을 발행한 금융회사 또는 전자금융업자는 선불전자지급수단보유자가 선불전자지급수단에 기록된 잔액의 환급을 청구하는 경우에는 미리 약정한 바에 따라 환급하여야 한다.',
+  url:'https://www.law.go.kr/법령/전자금융거래법/제19조'},
+ {doc:'가상자산이용자보호등에관한법률',art:'제11조제1항, 제2항',date:'시행 2024-07-19',
+  q:'가상자산사업자는 이용자의 가상자산에 관한 입금 또는 출금을 대통령령으로 정하는 정당한 사유 없이 차단하여서는 아니 된다.',
+  url:'https://www.law.go.kr/법령/가상자산이용자보호법/제11조'}];
+const BILLS=[['안도걸안',3,'3영업일'],['이강일안',3,'3일'],['김재섭안',5,'5일'],
+             ['최보윤안',5,'5영업일'],['김은혜안',10,'10일'],['김현정안',10,'10일, 연장 가능']];
+
 let jur='us', sel=null, step=null, ran=false, running=false;
 const esc=v=>String(v).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
@@ -452,24 +465,24 @@ const NOTE={
 
 // 한국 열을 층별로 다시 읽은 1차 분류. 매니페스트 7절 한국 칸이 출처다.
 // "규정 없음"으로 뭉뚱그린 칸이 실제로는 여섯 종류로 갈린다.
-const KRK={gap:'진짜 공백',delegated:'시행령 위임',analog:'유사 제도 준용',
-           bill:'법안 후보값',todo:'조사 미완료',obvious:'자명'};
+const KRK={bill:'법안 후보',delegated:'법안 내 위임',partial:'부분 공백',gap:'공백 후보'};
+// 적대검증 3차(2026-09-13) 반영. 앵커는 안도걸 2211784 제16조. 시행 법률 직접 근거는 0개다.
 const KRC={
- R01:['analog','전금법 시행령 제13조의2와 이용자보호법 시행령 제8조가 똑같이 100%다. 구조가 같은 선례가 둘 있다.'],
- R02:['todo','법안 8건에 자산 종류 조항이 있는지 아직 안 봤다. 지금 근거는 보도뿐이다.'],
- R03:['gap','법률에도 법안에도 정부 자료에도 없다. 미국은 93일로 정했다.'],
- R04:['gap','법률에도 법안에도 없다. 미국은 익일물로 정했다.'],
- R05:['delegated','법안이 현금성 비율을 대통령령에 명시 위임했다. 안도걸 제16조, 최보윤 제104조.'],
- R06:['obvious','원화 스테이블코인이므로 준비자산도 원화다.'],
- R07:['bill','법안 다섯 건이 전부 매월로 일치한다. 값이 수렴했다.'],
- R08:['bill','법안이 분기 검토와 반기 감사와 연 1회로 갈린다. 현행 관행은 합의된 절차라 감사도 검토도 아니다.'],
- R09:['analog','가상자산업감독규정 제4조가 예치금을 영업일 단위로 산정한다. 기준시각 개념이 현행 제도에 있다.'],
- R10:['bill','김현정 제32조1항이 다음 달 5일, 휴일이면 다음 영업일로 적었다. 후보값이 하나 있다.'],
- R11:['gap','총공급에서 무엇을 빼는지 정한 곳이 없다. 미국도 질문으로 남겼지만 Circle은 이미 산식을 공개한다.'],
- R12:['delegated','법안이 은행 등 대통령령이 정하는 금융기관에 예치 또는 신탁하라고 위임했다. 실명 공개 의무는 없고 관행만 있다.'],
- R13:['bill','법안이 3일에서 10일까지 갈린다. 전금법 제19조는 기한 없이 약정에 위임했다.'],
- R14:['bill','법안 세 건이 금지로 일치한다.'],
- R15:['bill','법안 두 건이 대표이사 진술과 서명을 요구한다.']};
+ R01:['bill','안도걸 제16조①2 미상환잔액 이상. 법안 7건 공통. 전금법과 이용자보호법 시행령 100%는 유사 선례일 뿐 준용 근거는 없다.'],
+ R02:['bill','안도걸 제16조①3 가~라. 은행권과 주화, 요구불예금, 1년 이내 국채, 준하는 자산.'],
+ R03:['bill','안도걸 제16조①3다 "1년 이내의 범위에서 대통령령으로 정하는 기간". 상한은 있고 세부는 위임.'],
+ R04:['gap','어느 층에서도 못 찾았다. 갭 확정 4단계는 아직 안 돌았다. 공백 후보다.'],
+ R05:['delegated','안도걸 제16조①4 "대통령령으로 정하는 비율 이상". 법안 안의 위임이라 법안이 통과돼야 산다.'],
+ R06:['bill','안도걸 제16조①1 연동 통화와 동일한 통화로 표시된 자산.'],
+ R07:['bill','법안 다섯 건이 매월로 일치.'],
+ R08:['bill','분기 검토와 반기 감사와 연 1회로 갈린다. 현행 거래소 관행은 합의된 절차.'],
+ R09:['bill','김현정 제32조 매월 말일 기준. 감독규정 제4조의 영업일 산정은 예치금 업무라 다른 규칙이다.'],
+ R10:['bill','김현정 제32조① 다음 달 5일, 휴일이면 다음 영업일.'],
+ R11:['partial','안도걸 제16조①2가 잔액을 정의한다. 총공급에서 무엇을 빼는지와 산식 공개 의무는 없다.'],
+ R12:['partial','안도걸 제16조①3나 보관기관 자격은 위임. 기관 실명과 위치의 공개 의무는 어느 층에도 없다.'],
+ R13:['bill','법안이 3일에서 10일까지 갈린다. 현행 전금법 제19조는 약정에 위임.'],
+ R14:['bill','법안 세 건 금지로 일치.'],
+ R15:['bill','안도걸 제16조⑤ 대표이사 진술과 서명. 김은혜 제13조⑤.']};
 
 // 판정. 요건이 없으면 규정 없음, 보고서에 값이 없으면 데이터 없음.
 function verdictOf(rid,iid){
@@ -520,12 +533,12 @@ function drawMatrix(){
   document.getElementById('mx').innerHTML=RULES.map(([rid,name])=>{
     let rowHit=false;
     const tds=ISSUERS.map(([iid,iname])=>{
-      const [st0]=stateOf(rid,iid);
+      const v0=verdictOf(rid,iid); const st0=v0.st;
       const st=ran?st0:'idle';
       const on=sel&&sel.rid===rid&&sel.iid===iid?' sel':'';
       const hit=f&&f.cell(rid,iid); if(hit) rowHit=true;
       return `<td><button class="c ${st}${on}${hit?' hit':''}" data-r="${rid}" data-i="${iid}"
-        aria-label="${rid} ${name}, ${iname}, ${ST[st]}">${ST[st]}</button></td>`;
+        aria-label="${rid} ${name}, ${iname}, ${ST[st]}${ran&&v0.real?', 실측':''}">${ST[st]}${ran&&v0.real?'<i class="real-i"></i>':''}</button></td>`;
     }).join('');
     const kr=jur==='kr'?`<span class="krtag k-${KRC[rid][0]}">${KRK[KRC[rid][0]]}</span>`:'';
     return `<tr class="${rowHit?'hitrow':''}"><th><span class="id">${rid}</span>${name}${kr}</th>${tds}</tr>`;
@@ -537,7 +550,7 @@ function drawMatrix(){
     kb.hidden=false;
     kb.innerHTML='<b>한국 15개 축을 층별로 다시 읽으면</b>'+
       Object.keys(KRK).map(k=>`<span class="krchip k-${k}">${KRK[k]} <em>${t[k]||0}</em></span>`).join('')+
-      '<span class="krsay">비어 있는 것은 30칸이 아니라 3개다. 셋 다 운영 세부 규칙이다. 법안은 누가 발행하느냐를 정했지 어떻게 공시하느냐를 정하지 않았다.</span>';
+      '<span class="krsay">시행 법률에서 직접 나오는 값은 0개다. 15칸 중 14칸이 계류 법안, 그중 대부분이 안도걸 2211784 제16조 한 조문에 기댄다. 법안이 폐기되면 전부 공백이 된다.</span>';
   } else kb.hidden=true;
 
   const mxCard=document.getElementById('mxCard');
@@ -579,7 +592,10 @@ function asideCell(){
   const {rid,iid}=sel;
   const rule=RULES.find(r=>r[0]===rid), issuer=ISSUERS.find(i=>i[0]===iid);
   const [st,note]=stateOf(rid,iid);
-  let body='';
+  const vv=verdictOf(rid,iid);
+  let body=vv.real
+    ? `<div class="why" style="color:var(--pass)">실측. 실제 보고서에서 확인한 값이다.</div>`
+    : `<div class="blocked">데모 값이다. 규제 원문과 보고서 구조를 근거로 넣었지만 파서가 뽑은 값이 아니다.</div>`;
   if(note) body+=`<p class="why">${esc(note)}</p>`;
   else if(st==='void') body+=`<p class="why">${esc(NOTE.uncollected)}</p>`;
   else if(jur==='kr') body+=`<div class="blocked">${esc(NOTE.kr)}</div>`;
