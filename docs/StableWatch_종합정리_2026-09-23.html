@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StableWatch 종합 정리</title>
+<style>
+/* 두리번 문서 디자인 시스템 v1 토큰과 부품을 옮겨 씀 (원본: ~/Desktop/AI융합캡스톤디자인2/두리번/html/두리번.css) */
+:root{
+  --ink:#111;--ink-2:#555;--ink-3:#85857f;
+  --line:#e4e4e0;--soft:#f6f6f4;
+  --accent:#2a78d6;--tint:#d9e7f8;--tint-2:#eef4fc;
+  --mute:#8c8c87;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#fff;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Pretendard','Malgun Gothic',sans-serif;font-size:16px;line-height:1.75;margin:0;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px 96px}
+a{color:var(--ink)}
+h2{font-size:23px;line-height:1.3;margin:0 0 6px;letter-spacing:-.01em}
+h3{font-size:15.5px;font-weight:700;margin:30px 0 10px}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin:0 0 6px}
+section{scroll-margin-top:48px}
+.cav{font-size:14px;color:var(--ink-3);margin:8px 0 0;max-width:68ch}
+.cap{font-size:12.5px;color:var(--ink-3);margin:0 0 10px}
+.tbd{font-size:12px;font-weight:600;color:var(--ink);border:1px solid #999;border-radius:3px;padding:0 5px;white-space:nowrap}
+
+.hero{padding:72px 0 52px;border-bottom:1px solid var(--ink)}
+.hero .eyebrow{font-size:13px;color:var(--ink-3);margin:0 0 18px}
+.hero h1{font-size:clamp(28px,5vw,42px);line-height:1.32;margin:0 0 22px;letter-spacing:-.02em;text-wrap:balance}
+.hero h1 em,.stmt em{font-style:normal;box-shadow:inset 0 -.42em 0 var(--tint)}
+.hero p{color:var(--ink-2);margin:0;font-size:15.5px;max-width:62ch}
+.toc{position:sticky;top:0;z-index:3;background:#fff;border-bottom:1px solid var(--line);padding:9px 0;display:flex;flex-wrap:wrap;gap:2px 16px;font-size:12.5px}
+.toc a{color:var(--ink-2);text-decoration:none;white-space:nowrap}
+.toc a:hover{color:#000;text-decoration:underline}
+.page{padding:68px 0 8px}
+.n{font-size:13px;font-weight:700;color:var(--accent);margin:0 0 8px}
+.page h2{font-size:clamp(25px,4vw,32px);margin:0 0 10px}
+.page > .a{font-size:18.5px;line-height:1.65;margin:0 0 28px;color:#222;max-width:36em}
+
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 14px}
+.tile{background:var(--soft);border-radius:10px;padding:16px 16px 14px}
+.tile .v{font-size:28px;font-weight:700;line-height:1.2;letter-spacing:-.02em}
+.tile .l{font-size:13px;color:var(--ink-2);line-height:1.5;margin-top:4px}
+.big{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 22px}
+.big div{background:var(--soft);border-radius:12px;padding:20px 18px}
+.big b{display:block;font-size:clamp(20px,2.8vw,24px);line-height:1.3;letter-spacing:-.02em}
+.big span{display:block;font-size:14px;color:var(--ink-2);margin-top:6px;line-height:1.55}
+
+.pic{border:1px solid var(--line);border-radius:14px;padding:22px 20px 16px;margin:0 0 16px;overflow-x:auto}
+.pic svg{display:block;width:100%;height:auto;min-width:640px}
+.pic.sm svg{min-width:520px}
+.pic h4{font-size:14px;font-weight:700;margin:0 0 2px}
+.pic .sub{font-size:12.5px;color:var(--ink-3);margin:0 0 12px}
+
+.stack{display:flex;gap:2px;height:30px;margin:6px 0 6px}
+.stack span{display:flex;align-items:center;justify-content:center;padding:0 6px;font-size:12.5px;font-weight:600;white-space:nowrap;border-radius:4px;overflow:hidden}
+.stack .a{background:var(--accent);color:#fff}
+.stack .g{background:#dcdcd8;color:var(--ink)}
+
+.tw{overflow-x:auto;margin:6px 0 12px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;line-height:1.55}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{font-size:12px;font-weight:600;color:var(--ink-2);border-bottom:1px solid var(--ink);white-space:nowrap}
+td.rw{font-weight:600;white-space:nowrap}
+td.c,th.c{text-align:center;vertical-align:middle;width:64px}
+table.mx td{vertical-align:middle}
+.m{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:30px;height:24px;border-radius:5px;font-size:13px;font-weight:700}
+.m.o{background:var(--accent);color:#fff}
+.m.t{background:var(--tint);color:var(--ink)}
+.m.x{color:#b5b5b0;border:1px solid var(--line)}
+tr.me td{background:var(--tint-2)}
+.key{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:12.5px;color:var(--ink-2);margin:0 0 12px;align-items:center}
+.key span{display:inline-flex;align-items:center;gap:6px}
+
+.def{display:grid;grid-template-columns:130px 1fr;gap:0;margin:0 0 8px}
+.def dt{font-weight:700;font-size:14px;padding:12px 0;border-top:1px solid var(--line)}
+.def dd{margin:0;padding:12px 0;border-top:1px solid var(--line);font-size:14.5px;color:#222}
+.warn{background:var(--soft);border-radius:10px;padding:14px 18px;font-size:13.5px;color:#333;margin:14px 0 0}
+.warn b{display:block;margin-bottom:4px}
+.warn ul{margin:0;padding-left:18px}
+.unk{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.unk li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;background:var(--soft);border-radius:12px;padding:16px 18px;margin:0}
+.unk li > span{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px}
+.unk b{display:block;font-size:16.5px}
+.unk p{margin:2px 0 0;font-size:14.5px;color:var(--ink-2)}
+.steps{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.steps li{display:grid;grid-template-columns:118px 1fr;gap:16px;border-top:1px solid var(--line);padding:14px 0 4px;margin:0}
+.steps .when{font-weight:700;font-size:14px}
+.steps .when small{display:block;font-weight:400;color:var(--ink-3);font-size:12px}
+.steps b{display:block;font-size:15.5px;margin-bottom:2px}
+.steps p{margin:0;font-size:14.5px;color:var(--ink-2)}
+.src{padding-left:0;list-style:none;font-size:13px;color:#444;line-height:1.6}
+.src li{margin:0 0 7px}
+.foot{margin-top:72px;border-top:1px solid var(--ink);padding-top:22px}
+
+/* SVG 공통 */
+svg text{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Pretendard',sans-serif}
+.t1{font-size:14px;font-weight:700;fill:var(--ink)}
+.t2{font-size:12.5px;fill:var(--ink-2)}
+.t3{font-size:12px;fill:var(--ink-3)}
+.tA{font-size:12.5px;font-weight:700;fill:var(--accent)}
+.bx{fill:#fff;stroke:#b5b5b0;stroke-width:1.2}
+.bxA{fill:#fff;stroke:var(--accent);stroke-width:2}
+.bxT{fill:var(--tint-2);stroke:var(--accent);stroke-width:2}
+.bxG{fill:var(--soft);stroke:var(--mute);stroke-width:1.2}
+.bxD{fill:#fff;stroke:#b5b5b0;stroke-width:1.2;stroke-dasharray:5 4}
+.ln{stroke:var(--mute);stroke-width:1.5;fill:none}
+.lnA{stroke:var(--accent);stroke-width:1.8;fill:none}
+.lnD{stroke:#b5b5b0;stroke-width:1.5;fill:none;stroke-dasharray:5 4}
+
+@media (max-width:720px){
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .big{grid-template-columns:1fr}
+  .def{grid-template-columns:1fr}
+  .def dd{border-top:none;padding-top:0}
+  .steps li{grid-template-columns:1fr;gap:4px}
+  .wrap{padding:0 16px 80px}
+}
+@media print{.toc{position:static}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <p class="eyebrow">미디어프로젝트 2026-2, StableWatch, 2026-09-23 기준 종합 정리</p>
+  <h1>원화 스테이블코인 준비금 공시 서식을 <em>먼저 제안하고</em>, 실제 발행사 공시로 <em>지켜질 수 있는지 검증한다</em></h1>
+  <p>프로젝트 정의, 작동 순서, 구성, 결과물, 의견을 낼 수 있는 경로(한국과 싱가포르), 일정, 진행 상황, 다음 할 일을 한 문서에 모았다. 근거 문서는 맨 아래에 적었다.</p>
+</header>
+
+<nav class="toc">
+  <a href="#p1">정의</a><a href="#p2">배경</a><a href="#p3">작동 순서</a><a href="#p4">구성도</a><a href="#p5">공시안</a><a href="#p6">실측</a><a href="#p7">한국 근거</a><a href="#p8">의견 경로</a><a href="#p9">싱가포르</a><a href="#p10">일정</a><a href="#p11">진행 상황</a><a href="#p12">다음 할 일</a><a href="#p13">미확인</a>
+</nav>
+
+<!-- 1 -->
+<section class="page" id="p1">
+  <p class="n">1</p>
+  <h2>무엇을 만드는가</h2>
+  <p class="a">한국에 아직 없는 원화 스테이블코인 준비금 공시 서식을 제안하고, 해외 발행사의 실제 공시를 넣어 그 서식이 지켜질 수 있는지 판정하는 도구다.</p>
+
+  <div class="big">
+    <div><b>판정기 웹</b><span>발행사 보고서 PDF를 읽어 관할권별 규칙 15개로 충족 여부를 판정한다. 관할권을 바꾸면 판정이 바뀐다.</span></div>
+    <div><b>한국 공시안 v1</b><span>발행인이 매월 공개할 서식 29항목과, 값을 고른 이유를 적은 결정 기록 5건.</span></div>
+    <div><b>실측 검증 기록</b><span>제안한 값을 실제 공시와 대조해 반박된 값을 고친 기록. 공개 기한과 현금성 비율을 고쳤다.</span></div>
+  </div>
+
+  <div class="tiles">
+    <div class="tile"><div class="v">15</div><div class="l">해외 규정에서 추린 준비금 공시 규칙</div></div>
+    <div class="tile"><div class="v">6</div><div class="l">관할권 설정. 미국, EU 일반, EU 중요, 홍콩, 싱가포르, 한국 시나리오</div></div>
+    <div class="tile"><div class="v">8</div><div class="l">정무위원회에 계류 중인 관련 법안</div></div>
+    <div class="tile"><div class="v">110</div><div class="l">법령과 법안 조문을 규칙에 연결한 근거 간선. 원문 대조 98</div></div>
+  </div>
+
+  <dl class="def">
+    <dt>1차 사용자</dt><dd>은행 발행 준비 조직의 준법, 자금 담당. 준비 중인 구조가 규칙 몇 칸을 통과하는지 판정 화면으로 본다.</dd>
+    <dt>2차 사용자</dt><dd>원화 스테이블코인을 환매하는 고객. 환매 화면에서 처리 상태, 수수료, 기한, 준비금 커버리지, "예금이 아님" 고지를 본다.</dd>
+    <dt>범위</dt><dd>한국 전용이다. 미국, EU, 홍콩, 싱가포르 규정은 제안 대상이 아니라 비교 기준이다(2026-09-13 결정).</dd>
+    <dt>하지 않는 것</dt><dd>온체인 유통량 재구성, 실시간 감시, 법률 자문, 은행 시스템 연동. 판정은 코드 규칙만 하고 LLM은 판정에 쓰지 않는다.</dd>
+  </dl>
+</section>
+
+<!-- 2 -->
+<section class="page" id="p2">
+  <p class="n">2</p>
+  <h2>왜 지금 필요한가</h2>
+  <p class="a">2026년에 은행의 스테이블코인 직접 발행이 해외에서 시작됐다. 발행하면 준비금 공시 의무가 따라오는데, 한국에는 무엇을 어떤 형식으로 공시할지 정한 규칙이 없다.</p>
+
+  <div class="pic">
+    <svg viewBox="0 0 840 250" role="img" aria-label="해외 은행 발행 사건 네 가지와 한국의 현재 상태 네 가지를 두 줄로 비교한 그림">
+      <text x="0" y="75" class="t1">해외</text>
+      <text x="0" y="195" class="t1">한국</text>
+      <g>
+        <rect x="60" y="30" width="180" height="84" rx="8" class="bx"/>
+        <text x="74" y="54" class="t3">2026-04-10</text><text x="74" y="76" class="t1">홍콩 첫 발행 인가</text><text x="74" y="97" class="t2">HSBC, Anchorpoint</text>
+        <rect x="255" y="30" width="180" height="84" rx="8" class="bx"/>
+        <text x="269" y="54" class="t3">2026-09-01</text><text x="269" y="76" class="t1">싱가포르 법 개정 자문</text><text x="269" y="97" class="t2">의견 마감 10-16</text>
+        <rect x="450" y="30" width="180" height="84" rx="8" class="bx"/>
+        <text x="464" y="54" class="t3">2026-09-01</text><text x="464" y="76" class="t1">21개 금융기관 합작</text><text x="464" y="97" class="t2">미국, 유럽 등. 2027 달러 토큰</text>
+        <rect x="645" y="30" width="190" height="84" rx="8" class="bx"/>
+        <text x="659" y="54" class="t3">2027-03 목표</text><text x="659" y="76" class="t1">일본 3대 은행 공동 발행</text><text x="659" y="97" class="t2">신탁 구조</text>
+      </g>
+      <g>
+        <rect x="60" y="150" width="180" height="84" rx="8" class="bx"/>
+        <text x="74" y="174" class="t3">2026-09 확인</text><text x="74" y="196" class="t1">정부안 국회 미제출</text><text x="74" y="217" class="t2">금융위 "확정된 바 없다"</text>
+        <rect x="255" y="150" width="180" height="84" rx="8" class="bx"/>
+        <text x="269" y="174" class="t3">정무위원회</text><text x="269" y="196" class="t1">의원 발의 법안 8건</text><text x="269" y="217" class="t2">상환 기한 3일~10일로 갈림</text>
+        <rect x="450" y="150" width="180" height="84" rx="8" class="bx"/>
+        <text x="464" y="174" class="t3">한국은행 2026-03</text><text x="464" y="196" class="t1">은행 중심 컨소시엄</text><text x="464" y="217" class="t2">우선 허용 방안 제시</text>
+        <rect x="645" y="150" width="190" height="84" rx="8" class="bxT"/>
+        <text x="659" y="174" class="tA">빈칸</text><text x="659" y="196" class="t1">준비금 공시 서식 없음</text><text x="659" y="217" class="t2">이 프로젝트가 채우는 자리</text>
+      </g>
+    </svg>
+  </div>
+
+  <h3>해외도 공시 형식은 제각각이다</h3>
+  <div class="tw"><table>
+    <thead><tr><th>관할권</th><th>공개 주기</th><th>외부 검증</th><th>법적 상태</th></tr></thead>
+    <tbody>
+      <tr><td class="rw">미국</td><td>월별 구성 공개</td><td>등록 회계법인 월별 examination, CEO와 CFO 월별 인증</td><td>GENIUS법 제정, 시행 예정 2027-01-18</td></tr>
+      <tr><td class="rw">EU</td><td>월 1회 이상 갱신(자산준거토큰)</td><td>6개월마다 독립 감사, 결과는 통지 후 2주 안에 공개</td><td>MiCA 시행 중</td></tr>
+      <tr><td class="rw">홍콩</td><td>주간 웹 갱신</td><td>HKMA가 수용하는 주기로 attestation</td><td>감독지침 시행 중(2025-08-01)</td></tr>
+      <tr><td class="rw">싱가포르</td><td>하위법령에서 정함</td><td>하위법령에서 정함</td><td>법 개정 자문 중(P015-2026)</td></tr>
+      <tr class="me"><td class="rw">한국</td><td>없음. 법안별로 월 1회 등</td><td>없음. 법안별로 분기 검토, 반기 감사 등</td><td>정부안 미제출, 법안 8건 계류</td></tr>
+    </tbody>
+  </table></div>
+  <p class="cav">미국, EU, 홍콩 문구는 2026-09-21 검증대장에서 원문과 대조했다.</p>
+
+  <h3>이 프로젝트가 다루는 것</h3>
+  <div class="tw"><table>
+    <thead><tr><th>구분</th><th>발행 주체</th><th>준비금 공시</th><th>이 프로젝트</th></tr></thead>
+    <tbody>
+      <tr><td class="rw">CBDC(기관용)</td><td>한국은행</td><td>해당 없음</td><td>범위 밖</td></tr>
+      <tr><td class="rw">예금토큰</td><td>시중은행</td><td>은행 예금 자체라 별도 준비자산을 쌓지 않음. 프로젝트 한강에서 실증 중</td><td>범위 밖</td></tr>
+      <tr class="me"><td class="rw">원화 스테이블코인</td><td>은행 컨소시엄 또는 민간</td><td>발행잔액 이상의 준비자산을 따로 쌓고 공시해야 함. 형식 미정</td><td>대상</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- 3 -->
+<section class="page" id="p3">
+  <p class="n">3</p>
+  <h2>어떤 순서로 작동하는가</h2>
+  <p class="a">해외 규칙으로 실제 공시를 판정하고, 한국 빈칸에 값을 제안하고, 그 값을 실측으로 검증한다. 맞지 않으면 값을 고쳐 다시 검증한다.</p>
+
+  <div class="pic">
+    <svg viewBox="0 0 840 240" role="img" aria-label="해외 규칙 추출, 실제 공시 판정, 한국 빈칸에 값 제안, 실측 검증의 네 단계와 검증에서 제안으로 돌아가는 반복">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#8c8c87"/></marker>
+        <marker id="arA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#2a78d6"/></marker>
+      </defs>
+      <rect x="4" y="30" width="186" height="100" rx="10" class="bx"/>
+      <text x="20" y="58" class="tA">1</text><text x="20" y="82" class="t1">해외 규칙 추출</text><text x="20" y="104" class="t2">해외 4개 관할권 규정</text><text x="20" y="121" class="t2">→ 규칙 15개</text>
+      <line x1="192" y1="80" x2="214" y2="80" class="ln" marker-end="url(#ar)"/>
+      <rect x="218" y="30" width="186" height="100" rx="10" class="bx"/>
+      <text x="234" y="58" class="tA">2</text><text x="234" y="82" class="t1">실제 공시로 판정</text><text x="234" y="104" class="t2">발행사 보고서 파싱</text><text x="234" y="121" class="t2">관할권별 충족 여부</text>
+      <line x1="406" y1="80" x2="428" y2="80" class="ln" marker-end="url(#ar)"/>
+      <rect x="432" y="30" width="186" height="100" rx="10" class="bx"/>
+      <text x="448" y="58" class="tA">3</text><text x="448" y="82" class="t1">한국 빈칸에 값 제안</text><text x="448" y="104" class="t2">법안 8건, 근거 그래프</text><text x="448" y="121" class="t2">→ 공시안 v1</text>
+      <line x1="620" y1="80" x2="642" y2="80" class="ln" marker-end="url(#ar)"/>
+      <rect x="646" y="30" width="190" height="100" rx="10" class="bxT"/>
+      <text x="662" y="58" class="tA">4</text><text x="662" y="82" class="t1">실측으로 검증</text><text x="662" y="104" class="t2">제안값과 실제 공시 대조</text><text x="662" y="121" class="t2">맞지 않으면 수정</text>
+      <path d="M741 132 V180 H525 V136" class="lnA" marker-end="url(#arA)"/>
+      <text x="548" y="200" class="tA">반박된 값은 고쳐서 3으로 돌아간다. 지금까지 두 번 고쳤다</text>
+      <text x="4" y="232" class="t3">결과물: 공시안 v1, 판정기 화면, 의견서(싱가포르 MAS 자문, 한국 입법예고 대비)</text>
+    </svg>
+  </div>
+
+  <h3>제안하고, 반박당하고, 고친 기록</h3>
+  <div class="tw"><table>
+    <thead><tr><th>제안한 값</th><th>실측(Circle USDC, 2026년 4개월)</th><th>조치</th></tr></thead>
+    <tbody>
+      <tr><td class="rw">검증본 공개 기한 5영업일</td><td>기준일부터 회계사 서명까지 19~21영업일</td><td>자체 공시 5영업일, 외부 검증본은 분기 종료 후 30일로 분리</td></tr>
+      <tr><td class="rw">현금성 최저 비율 30%</td><td>13.82~15.56%, 평균 14.47%</td><td>잠정 15%</td></tr>
+      <tr><td class="rw">커버리지 100% 이상</td><td>100.0963~100.1081%</td><td>유지. 105% 같은 추가 완충은 기각</td></tr>
+      <tr><td class="rw">기준일 매월 말일</td><td>1월은 말일이 토요일이라 30일</td><td>말일이 휴일이면 직전 영업일</td></tr>
+    </tbody>
+  </table></div>
+  <p class="cav">발행사 1곳, 4개월(n=4) 표본이다. 분포를 말하기에는 작고, 값의 실현 가능성을 확인하는 근거로만 쓴다.</p>
+</section>
+
+<!-- 4 -->
+<section class="page" id="p4">
+  <p class="n">4</p>
+  <h2>시스템은 어떻게 구성되는가</h2>
+  <p class="a">숫자 줄기(발행사 공시, 파서, 규칙 엔진)와 근거 줄기(법령과 법안, 근거 그래프, 한국 후보값)가 판정 화면에서 만난다. 서버와 DB 없이 정적 JSON과 HTML로 동작한다.</p>
+
+  <div class="pic">
+    <svg viewBox="0 0 860 470" role="img" aria-label="입력, 처리, 판정, 출력 네 열로 된 구성도. 있는 것은 파란 테두리, 일부는 회색, 계획은 점선">
+      <defs>
+        <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#8c8c87"/></marker>
+      </defs>
+      <text x="10" y="16" class="t3">입력</text><text x="240" y="16" class="t3">처리</text><text x="470" y="16" class="t3">판정</text><text x="680" y="16" class="t3">출력</text>
+
+      <rect x="10" y="30" width="190" height="78" rx="8" class="bxA"/>
+      <text x="24" y="54" class="t1">발행사 공시 PDF</text><text x="24" y="76" class="t2">Circle 4개월 파싱 완료</text><text x="24" y="95" class="t2">9/21 발행사 5곳 추가 확보</text>
+      <rect x="10" y="170" width="190" height="78" rx="8" class="bxD"/>
+      <text x="24" y="194" class="t2" font-weight="700">소스 감시 (확장)</text><text x="24" y="216" class="t3">의안정보시스템, 법제처,</text><text x="24" y="235" class="t3">Circle, SEC 하루 1회</text>
+      <rect x="10" y="310" width="190" height="78" rx="8" class="bxA"/>
+      <text x="24" y="334" class="t1">법령, 법안, 정부 원문</text><text x="24" y="356" class="t2">법령 14건, 법안 8건</text><text x="24" y="375" class="t2">graph/corpus</text>
+
+      <rect x="240" y="30" width="190" height="78" rx="8" class="bxA"/>
+      <text x="254" y="54" class="t1">파서</text><text x="254" y="76" class="t2">숫자를 JSON으로</text><text x="254" y="95" class="t2">합계가 안 맞으면 중단</text>
+      <rect x="240" y="170" width="190" height="78" rx="8" class="bxD"/>
+      <text x="254" y="194" class="t2" font-weight="700">관할권 설정 JSON</text><text x="254" y="216" class="t3">6종, 임계치와 법적 상태</text><text x="254" y="235" class="t3">아직 없음</text>
+      <rect x="240" y="310" width="190" height="78" rx="8" class="bxA"/>
+      <text x="254" y="334" class="t1">근거 그래프</text><text x="254" y="356" class="t2">간선 110개</text><text x="254" y="375" class="t2">원문 대조 98, 사람 확정 0</text>
+
+      <rect x="470" y="170" width="170" height="78" rx="8" class="bxG"/>
+      <text x="484" y="194" class="t1">규칙 엔진 15개</text><text x="484" y="216" class="t2">숫자 + 설정 → 판정</text><text x="484" y="235" class="t2">프로토타입에 일부</text>
+      <rect x="470" y="330" width="170" height="78" rx="8" class="bxD"/>
+      <text x="484" y="354" class="t2" font-weight="700">LLM (확장)</text><text x="484" y="376" class="t3">인용 제한 검색, 적대검증</text><text x="484" y="395" class="t3">판정에는 쓰지 않음</text>
+
+      <rect x="680" y="20" width="175" height="66" rx="8" class="bxG"/>
+      <text x="694" y="46" class="t1">화면 A 판정</text><text x="694" y="68" class="t2">로컬 프로토타입</text>
+      <rect x="680" y="104" width="175" height="66" rx="8" class="bxD"/>
+      <text x="694" y="130" class="t2" font-weight="700">화면 B 고객 환매</text><text x="694" y="152" class="t3">미착수</text>
+      <rect x="680" y="188" width="175" height="66" rx="8" class="bxG"/>
+      <text x="694" y="214" class="t1">화면 C 근거</text><text x="694" y="236" class="t2">R13 하나 연결</text>
+      <rect x="680" y="272" width="175" height="66" rx="8" class="bxT"/>
+      <text x="694" y="298" class="t1">한국 공시안 v1</text><text x="694" y="320" class="t2">29항목, 값 결정 5건</text>
+      <rect x="680" y="356" width="175" height="66" rx="8" class="bxG"/>
+      <text x="694" y="382" class="t1">의견서</text><text x="694" y="404" class="t2">MAS 초안, 입법예고 대비</text>
+
+      <line x1="200" y1="69" x2="236" y2="69" class="ln" marker-end="url(#ar2)"/>
+      <line x1="200" y1="349" x2="236" y2="349" class="ln" marker-end="url(#ar2)"/>
+      <line x1="105" y1="170" x2="105" y2="112" class="lnD" marker-end="url(#ar2)"/>
+      <line x1="105" y1="248" x2="105" y2="306" class="lnD" marker-end="url(#ar2)"/>
+      <path d="M430 69 H555 V166" class="ln" marker-end="url(#ar2)"/>
+      <line x1="430" y1="209" x2="466" y2="209" class="ln" marker-end="url(#ar2)"/>
+      <line x1="335" y1="310" x2="335" y2="252" class="ln" marker-end="url(#ar2)"/>
+      <text x="342" y="286" class="t3">한국 후보값</text>
+      <path d="M640 200 H660 V53 H676" class="ln" marker-end="url(#ar2)"/>
+      <line x1="767" y1="86" x2="767" y2="100" class="lnD" marker-end="url(#ar2)"/>
+      <path d="M430 330 H452 V290 H660 V221 H676" class="ln" marker-end="url(#ar2)"/>
+      <path d="M660 290 V305 H676" class="ln" marker-end="url(#ar2)"/>
+      <line x1="767" y1="338" x2="767" y2="352" class="ln" marker-end="url(#ar2)"/>
+      <line x1="470" y1="369" x2="434" y2="369" class="lnD" marker-end="url(#ar2)"/>
+
+      <rect x="10" y="440" width="26" height="16" rx="3" class="bxA"/><text x="42" y="453" class="t2">있음</text>
+      <rect x="100" y="440" width="26" height="16" rx="3" class="bxG"/><text x="132" y="453" class="t2">일부</text>
+      <rect x="190" y="440" width="26" height="16" rx="3" class="bxD"/><text x="222" y="453" class="t2">계획 또는 확장</text>
+    </svg>
+  </div>
+
+  <dl class="def">
+    <dt>LLM의 자리</dt><dd>판정과 인용에는 쓰지 않는다. 쓰는 곳은 세 가지다. 보도층 후보 수집, 근거를 무너뜨려 보는 적대검증, 근거 그래프 노드 번호로만 답하게 제한한 검색(확장).</dd>
+    <dt>파일 위치</dt><dd><code>scripts/parse_circle.py</code>, <code>data/reports.json</code>, <code>graph/edges/</code>(7개 파일), <code>prototype/판정기_대시보드.html</code>, <code>docs/한국공시안_v1.md</code></dd>
+    <dt>검사</dt><dd><code>tests/test_parser.py</code>(합계 대사), <code>tests/test_graph.py</code>와 <code>scripts/validate_graph.py</code>(간선 인용문이 원문에 있는지)</dd>
+  </dl>
+</section>
+
+<!-- 5 -->
+<section class="page" id="p5">
+  <p class="n">5</p>
+  <h2>결과물: 한국 공시안 v1</h2>
+  <p class="a">발행인이 매월 공개할 표 한 장을 6개 묶음 29항목으로 정했다. 확정후보 26개, 미정 3개다. 미정은 컨소시엄 분담, 참여사 이탈 처리, 상환 수수료다.</p>
+
+  <p class="cap">묶음별 항목 수 (총 29)</p>
+  <div class="stack" role="img" aria-label="발행 현황 3, 준비자산 8, 보관 5, 검증 4, 환매 4, 메타 5">
+    <span class="g" style="width:10.3%">A 3</span>
+    <span class="g" style="width:27.6%">B 준비자산 8</span>
+    <span class="a" style="width:17.2%">C 보관 5</span>
+    <span class="g" style="width:13.8%">D 검증 4</span>
+    <span class="g" style="width:13.8%">E 환매 4</span>
+    <span class="g" style="width:17.3%">F 메타 5</span>
+  </div>
+  <p class="cav">A 발행 현황, B 준비자산, C 보관, D 검증, E 환매, F 메타(기준일, 기준시각, 공개 기한, 위치, 대표이사 서명). 파란 묶음에 미국 서식에 없는 항목이 모여 있다. 보관 기관 실명과 기관별 금액(C1), 컨소시엄 참여사별 분담(C4).</p>
+
+  <h3>값 결정 기록 5건</h3>
+  <div class="tw"><table>
+    <thead><tr><th>번호</th><th>항목</th><th>채택 값</th><th>근거</th><th>값이 바뀌는 조건</th></tr></thead>
+    <tbody>
+      <tr><td class="rw">D-01</td><td>기준일, 공개 기한</td><td>말일(휴일이면 직전 영업일). 자체 공시 5영업일, 검증본 분기 종료 후 30일</td><td>Circle 서명까지 19~21영업일</td><td>자체 공시와 검증본 수치가 자주 어긋나면 하나로 합침</td></tr>
+      <tr><td class="rw">D-02</td><td>상환 기한</td><td>3영업일</td><td>법안 후보 3일~10일. 한국 계좌이체는 실시간</td><td>결제 인프라 처리 시간 측정 결과</td></tr>
+      <tr><td class="rw">D-03</td><td>보관 기관 실명</td><td>의무. 기관별 금액과 비중</td><td>코빗(신한은행), 코인원(카카오뱅크)이 자발 공개. 컨소시엄 쏠림 확인용</td><td>보안 위험 근거가 나오면 기관 수와 최대 집중도만 공개</td></tr>
+      <tr><td class="rw">D-04</td><td>검증 수준</td><td>분기 회계법인 검토, 연 1회 감사, 검증 종류 표시</td><td>국내 거래소 실사는 합의된 절차로 보증이 아님</td><td>발행 규모가 커지면 월간</td></tr>
+      <tr><td class="rw">D-05</td><td>현금성 최저 비율</td><td>잠정 15%</td><td>Circle 평균 14.47%</td><td>3개월 이하 원화 국채 잔액이 부족하면 상향</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="warn">
+    <b>항목 수 표기 불일치</b>
+    공시안 문서 본문은 "항목 27개, 확정후보 24개"라고 적었지만 표를 세면 29항목(A 3, B 8, C 5, D 4, E 4, F 5), 확정후보 26개다. 과제계획서, 발표 자료, 인터뷰 문서의 "27항목" 표기를 같이 정리해야 한다.
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="page" id="p6">
+  <p class="n">6</p>
+  <h2>제안값을 뒷받침하는 실측</h2>
+  <p class="a">발행사 6곳의 검증 보고서는 기준일부터 서명까지 17~23일(평일 기준)이 걸렸다. 현금과 예금 최저 비율은 관할권마다 5%에서 60%까지 갈린다.</p>
+
+  <div class="pic">
+    <h4>기준일부터 검증인 서명까지 걸린 날</h4>
+    <p class="sub">파란 선은 처음 제안했던 공개 기한 5영업일. 모든 발행사가 그 선을 넘는다.</p>
+    <svg viewBox="0 0 780 270" role="img" aria-label="발행사 6곳의 기준일부터 서명까지 일수. Circle 19~21, Paxos PYUSD와 USDP 17, USDG 18, RLUSD 19, GUSD 21, USDT 23">
+      <g class="t2" text-anchor="end">
+        <text x="200" y="47">Circle USDC (월, n=4)</text>
+        <text x="200" y="83">Paxos PYUSD, USDP (월)</text>
+        <text x="200" y="119">Paxos USDG (월)</text>
+        <text x="200" y="155">Ripple RLUSD (월)</text>
+        <text x="200" y="191">Gemini GUSD (월)</text>
+        <text x="200" y="227">Tether USDT (분기)</text>
+      </g>
+      <rect x="212" y="30" width="380" height="24" rx="3" fill="#8c8c87"/><rect x="592" y="30" width="40" height="24" fill="#c9c9c5"/>
+      <rect x="212" y="66" width="340" height="24" rx="3" fill="#8c8c87"/>
+      <rect x="212" y="102" width="360" height="24" rx="3" fill="#8c8c87"/>
+      <rect x="212" y="138" width="380" height="24" rx="3" fill="#8c8c87"/>
+      <rect x="212" y="174" width="420" height="24" rx="3" fill="#8c8c87"/>
+      <rect x="212" y="210" width="460" height="24" rx="3" fill="#8c8c87"/>
+      <g font-size="13" font-weight="700" fill="#111">
+        <text x="640" y="47">19~21</text><text x="560" y="83">17</text><text x="580" y="119">18</text><text x="600" y="155">19</text><text x="640" y="191">21</text><text x="680" y="227">23</text>
+      </g>
+      <line x1="312" y1="18" x2="312" y2="244" stroke="#2a78d6" stroke-width="2.5"/>
+      <text x="318" y="16" class="tA">5영업일</text>
+      <line x1="212" y1="244" x2="712" y2="244" stroke="#e4e4e0"/>
+      <g class="t3" text-anchor="middle">
+        <text x="212" y="262">0</text><text x="312" y="262">5</text><text x="412" y="262">10</text><text x="512" y="262">15</text><text x="612" y="262">20</text><text x="712" y="262">25일</text>
+      </g>
+    </svg>
+    <p class="cav">Circle은 영업일(공시안 3절), 나머지 5곳은 공휴일을 빼지 않은 평일 수다. 5곳은 2026-09-21에 PDF에서 기계로 읽은 값이라 표지 수기 확인 전이다. RLUSD는 PDF 텍스트에 검증인 이름이 없어 표지 이미지 확인이 필요하다.</p>
+  </div>
+
+  <div class="pic">
+    <h4>현금과 은행예금 최저 비율, 관할권별</h4>
+    <p class="sub">파란 막대가 공시안 D-05 제안값.</p>
+    <svg viewBox="0 0 780 330" role="img" aria-label="현금과 예금 최저 비율. 영국 FCA 5, Circle 실측 14.47, 제안 15, EU 전자화폐토큰 30, 미국 OCC 안전항 30, 영란은행 시스템적 30, 일본 50, EU 중요 토큰 60">
+      <g class="t2" text-anchor="end">
+        <text x="240" y="37">영국 FCA 전체 발행인 (자문)</text>
+        <text x="240" y="71">Circle USDC 실측 평균</text>
+        <text x="240" y="105" font-weight="700" fill="#111">공시안 D-05 제안</text>
+        <text x="240" y="139">EU 전자화폐토큰 54(a) (시행)</text>
+        <text x="240" y="173">미국 OCC 안전항 (제안, 의무 아님)</text>
+        <text x="240" y="207">영란은행 시스템적 발행인 (자문)</text>
+        <text x="240" y="241">일본 예저금, 내각부령 3조</text>
+        <text x="240" y="275">EU 중요 토큰 45(7)(b) (시행)</text>
+      </g>
+      <rect x="252" y="22" width="37.5" height="22" rx="3" fill="#8c8c87"/>
+      <rect x="252" y="56" width="108.5" height="22" rx="3" fill="#8c8c87"/>
+      <rect x="252" y="90" width="112.5" height="22" rx="3" fill="#2a78d6"/>
+      <rect x="252" y="124" width="225" height="22" rx="3" fill="#8c8c87"/>
+      <rect x="252" y="158" width="225" height="22" rx="3" fill="#8c8c87"/>
+      <rect x="252" y="192" width="225" height="22" rx="3" fill="#8c8c87"/>
+      <rect x="252" y="226" width="375" height="22" rx="3" fill="#8c8c87"/>
+      <rect x="252" y="260" width="450" height="22" rx="3" fill="#8c8c87"/>
+      <g font-size="13" font-weight="700" fill="#111">
+        <text x="296" y="38">5%</text><text x="367" y="72">14.47%</text><text x="371" y="106" fill="#2a78d6">15%</text><text x="484" y="140">30%</text><text x="484" y="174">30%</text><text x="484" y="208">30%</text><text x="634" y="242">50%</text><text x="709" y="276">60%</text>
+      </g>
+      <line x1="252" y1="296" x2="702" y2="296" stroke="#e4e4e0"/>
+      <g class="t3" text-anchor="middle">
+        <text x="252" y="314">0</text><text x="364.5" y="314">15</text><text x="477" y="314">30</text><text x="589.5" y="314">45</text><text x="702" y="314">60%</text>
+      </g>
+    </svg>
+    <p class="cav">홍콩과 싱가포르는 숫자 비율이 없다. 일본 50%는 e-Gov 현행 본문(2026-09-21 조회) 기준이며 시행일은 확인하지 못했다. 미국 SEC 2010년 MMF 규칙의 주간 유동자산 30%는 "2008년 최대 환매 주간에 펀드 약 90%가 견딜 수 있는 값"으로 정해졌다(75 FR 10060에서 원문 확인). MAS Q4 답변의 근거로 쓴다.</p>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="page" id="p7">
+  <p class="n">7</p>
+  <h2>한국 열의 값은 어디에서 오는가</h2>
+  <p class="a">한국 규칙 15칸 가운데 시행 중인 법률에서 직접 나오는 값은 없다. 11칸이 계류 법안에 기대고 있어, 법안이 폐기되면 그 칸은 공백이 된다.</p>
+
+  <p class="cap">한국 규칙 15칸의 근거 유형 (2026-09-13 적대검증 3차 반영)</p>
+  <div class="stack" role="img" aria-label="법안 후보값 11, 법안 내 위임 1, 부분 공백 2, 공백 후보 1">
+    <span class="a" style="width:73.3%">법안 후보값 11</span>
+    <span class="g" style="width:6.7%">1</span>
+    <span class="g" style="width:13.3%">부분 2</span>
+    <span class="g" style="width:6.7%">1</span>
+  </div>
+  <p class="cav">법안 후보값 11(대부분 안도걸 안 제16조 한 조문), 법안 안의 대통령령 위임 1(R05 현금성 비율), 부분 공백 2(R11 발행잔액 산식, R12 수탁기관 공개), 공백 후보 1(R04 레포 만기).</p>
+
+  <h3>근거 5층</h3>
+  <div class="tw"><table>
+    <thead><tr><th>층</th><th>내용</th><th>쓰는 방식</th></tr></thead>
+    <tbody>
+      <tr><td class="rw">1 시행 법령</td><td>전자금융거래법(선불충전금 별도관리), 가상자산이용자보호법(예치금), 은행법 등 14건</td><td>직접 근거가 아니라 유사 선례</td></tr>
+      <tr><td class="rw">2 계류 법안</td><td>정무위원회 법안 8건 원문</td><td>한국 후보값의 주 출처</td></tr>
+      <tr><td class="rw">3 정부 자료</td><td>금융위원회 원문, 한국은행 통화신용정책보고서 2026-03</td><td>방향 확인. "100%, 국내 보관, 이자 금지"는 금융위 원문에 없다</td></tr>
+      <tr><td class="rw">4 보도</td><td>정부안 관련 기사</td><td>확정 근거로 쓰지 않음</td></tr>
+      <tr><td class="rw">5 관행</td><td>코빗 자산실사보고서, 선불충전금 공시</td><td>한국에서 이미 돌아가는 유사 공시의 실데이터</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- 8 -->
+<section class="page" id="p8">
+  <p class="n">8</p>
+  <h2>의견을 낼 수 있는 곳은 어디인가</h2>
+  <p class="a">지금 열려 있는 곳은 싱가포르 MAS 자문, 그리고 한국 국회의 법안 대표발의 의원실과 정무위원회 전문위원실이다. 공시 서식이 실제로 정해지는 한국 하위법령 입법예고는 법이 공포된 뒤에 열린다.</p>
+
+  <div class="pic">
+    <svg viewBox="0 0 870 420" role="img" aria-label="한국 입법 단계 다섯 개와 의견 제출 지점 세 곳, 싱가포르 자문 단계 네 개. 지금 가능한 곳은 파란색">
+      <defs>
+        <marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#8c8c87"/></marker>
+      </defs>
+      <text x="0" y="18" class="t1">한국</text>
+      <rect x="0" y="32" width="148" height="76" rx="8" class="bxA"/>
+      <text x="12" y="54" class="tA">지금 이 단계</text><text x="12" y="76" class="t1">국회 심사</text><text x="12" y="97" class="t2">법안 8건 → 대안 1건</text>
+      <line x1="150" y1="70" x2="170" y2="70" class="ln" marker-end="url(#ar3)"/>
+      <rect x="174" y="32" width="148" height="76" rx="8" class="bx"/>
+      <text x="186" y="54" class="t3">본회의 뒤</text><text x="186" y="76" class="t1">법 공포</text><text x="186" y="97" class="t2">시행일은 부칙</text>
+      <line x1="324" y1="70" x2="344" y2="70" class="ln" marker-end="url(#ar3)"/>
+      <rect x="348" y="32" width="148" height="76" rx="8" class="bx"/>
+      <text x="360" y="54" class="t3">공포에서 시행 사이</text><text x="360" y="76" class="t1">하위법령</text><text x="360" y="97" class="t2">시행령, 감독규정, 서식</text>
+      <line x1="498" y1="70" x2="518" y2="70" class="ln" marker-end="url(#ar3)"/>
+      <rect x="522" y="32" width="148" height="76" rx="8" class="bx"/>
+      <text x="534" y="54" class="t3">시행 뒤</text><text x="534" y="76" class="t1">인가, 첫 발행</text><text x="534" y="97" class="t2">은행 컨소시엄</text>
+      <line x1="672" y1="70" x2="692" y2="70" class="ln" marker-end="url(#ar3)"/>
+      <rect x="696" y="32" width="170" height="76" rx="8" class="bx"/>
+      <text x="708" y="54" class="t3">매달</text><text x="708" y="76" class="t1">공시, 검사, 개정</text><text x="708" y="97" class="t2">규정이 다시 고쳐짐</text>
+
+      <line x1="74" y1="110" x2="74" y2="146" class="lnA"/>
+      <rect x="0" y="148" width="148" height="80" rx="8" class="bxT"/>
+      <text x="12" y="172" class="tA">문 1, 지금 가능</text><text x="12" y="194" class="t1">의원실, 전문위원실</text><text x="12" y="215" class="t2">메일과 질문</text>
+      <line x1="422" y1="110" x2="422" y2="146" class="lnD"/>
+      <rect x="348" y="148" width="148" height="80" rx="8" class="bx"/>
+      <text x="360" y="172" class="t3">문 2, 법 공포 뒤</text><text x="360" y="194" class="t1">입법예고 의견서</text><text x="360" y="215" class="t2">서식 29항목 제출</text>
+      <line x1="781" y1="110" x2="781" y2="146" class="lnD"/>
+      <rect x="696" y="148" width="170" height="80" rx="8" class="bx"/>
+      <text x="708" y="172" class="t3">문 3, 첫 공시 뒤</text><text x="708" y="194" class="t1">개정 의견</text><text x="708" y="215" class="t2">판정 결과를 근거로</text>
+      <text x="0" y="252" class="t3">정부안이나 새 법안이 나오면 그 입법예고에도 의견을 낼 수 있다(아래 표 3, 4번).</text>
+
+      <line x1="0" y1="274" x2="866" y2="274" stroke="#e4e4e0"/>
+      <text x="0" y="300" class="t1">싱가포르</text>
+      <rect x="0" y="314" width="148" height="76" rx="8" class="bx"/>
+      <text x="12" y="336" class="t3">2023-08</text><text x="12" y="358" class="t1">정책 확정</text><text x="12" y="379" class="t2">MAS-SCS 프레임워크</text>
+      <line x1="150" y1="352" x2="170" y2="352" class="ln" marker-end="url(#ar3)"/>
+      <rect x="174" y="314" width="170" height="76" rx="8" class="bxT"/>
+      <text x="186" y="336" class="tA">지금 제출 가능</text><text x="186" y="358" class="t1">법 개정 자문</text><text x="186" y="379" class="t2">P015-2026, 10-16 마감</text>
+      <line x1="346" y1="352" x2="366" y2="352" class="ln" marker-end="url(#ar3)"/>
+      <rect x="370" y="314" width="160" height="76" rx="8" class="bx"/>
+      <text x="382" y="336" class="t3">추후</text><text x="382" y="358" class="t1">하위법령 자문</text><text x="382" y="379" class="t2">공시 세부가 여기서</text>
+      <line x1="532" y1="352" x2="552" y2="352" class="ln" marker-end="url(#ar3)"/>
+      <rect x="556" y="314" width="130" height="76" rx="8" class="bx"/>
+      <text x="568" y="336" class="t3">미정</text><text x="568" y="358" class="t1">시행</text>
+      <rect x="720" y="330" width="22" height="14" rx="3" class="bxT"/><text x="748" y="342" class="t2">지금 가능</text>
+      <rect x="720" y="356" width="22" height="14" rx="3" class="bx"/><text x="748" y="368" class="t2">아직 안 열림</text>
+    </svg>
+  </div>
+
+  <div class="key"><span><i class="m o">O</i>열림</span><span><i class="m t">△</i>조건이 생기면 열림</span><span><i class="m x">✕</i>아직 안 열림</span></div>
+  <div class="tw"><table class="mx">
+    <thead><tr><th>경로</th><th class="c">상태</th><th>상태 사유</th><th>제출처</th><th>낼 것과 형식</th></tr></thead>
+    <tbody>
+      <tr class="me"><td class="rw">1 싱가포르 MAS 자문</td><td class="c"><i class="m o">O</i></td><td>2026-10-16 23:59 싱가포르 시간(한국 10-17 00:59) 마감. 자격 제한 없음</td><td>MAS, FormSG</td><td>Q4, Q23, Q29, Q30 영문 답변. 첨부 불가, 이름과 함께 공개가 기본</td></tr>
+      <tr class="me"><td class="rw">2 한국 문 1</td><td class="c"><i class="m o">O</i></td><td>법안이 정무위에 계류 중이라 상시 가능. 연락처와 질문은 9/15 문서에 준비</td><td>대표발의 의원실 8곳, 정무위 수석전문위원실</td><td>공시 항목이 법 본문에 남도록 하는 제안과 질문. 메일 제목에 의안번호</td></tr>
+      <tr><td class="rw">3 국회 입법예고</td><td class="c"><i class="m t">△</i></td><td>계류 8건은 예고 기간이 끝났다. 새 법안이 발의되면 10일 이상 열린다(국회법 제82조의2)</td><td>국회입법예고 시스템</td><td>법안에 대한 온라인 의견</td></tr>
+      <tr><td class="rw">4 정부안 입법예고</td><td class="c"><i class="m t">△</i></td><td>2026-09-05 확인 기준 미게시. 게시되면 40일 이상 열린다(행정절차법 제43조)</td><td>금융위원회, 국민참여입법센터</td><td>정부 법률안에 대한 의견</td></tr>
+      <tr><td class="rw">5 한국 문 2</td><td class="c"><i class="m x">✕</i></td><td>법 공포 뒤 시행령과 감독규정이 입법예고, 변경예고될 때 열린다</td><td>금융위원회, 금융감독원</td><td>서식 29항목과 실측 근거를 붙인 의견서. 공시 서식이 정해지는 층</td></tr>
+      <tr><td class="rw">6 한국 문 3</td><td class="c"><i class="m x">✕</i></td><td>첫 발행과 첫 공시 뒤</td><td>금융위원회, 발행사</td><td>판정 결과와 채워지지 않는 항목 목록을 근거로 한 개정 의견</td></tr>
+      <tr><td class="rw">7 싱가포르 하위법령 자문</td><td class="c"><i class="m t">△</i></td><td>MAS가 "subsidiary legislation"을 추후 따로 자문한다고 밝힘(자문서 1.2항)</td><td>MAS</td><td>공시 서식 세부</td></tr>
+    </tbody>
+  </table></div>
+  <p class="cav">이 프로젝트의 제안 대상은 한국이다. MAS 제출은 한국 공시안의 근거(실측, 값 결정 기록)를 해외 공개 자문에 내는 것이고, 현재 학기 중 마감이 정해진 의견 제출 경로로 확인한 것은 이것 하나다. 입법예고 기간은 법이 정한 최소 기간이며 실제 기간은 공고마다 다르다.</p>
+</section>
+
+<!-- 9 -->
+<section class="page" id="p9">
+  <p class="n">9</p>
+  <h2>싱가포르 MAS 자문에 무엇을 내는가</h2>
+  <p class="a">질문 30개 가운데 4개에만 답한다. 답변마다 공시안의 값 결정 기록과 실측이 근거로 붙는다. 영문 초안은 9/16에 작성했고, 9/21 검증 결과를 아직 넣지 않았다.</p>
+
+  <div class="pic">
+    <svg viewBox="0 0 840 330" role="img" aria-label="공시안 항목 네 개가 MAS 질문 Q4, Q23, Q29, Q30에 각각 연결된 그림">
+      <defs>
+        <marker id="ar4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#2a78d6"/></marker>
+      </defs>
+      <text x="0" y="16" class="t3">공시안의 근거</text><text x="520" y="16" class="t3">MAS 질문</text>
+      <rect x="0" y="28" width="360" height="64" rx="8" class="bx"/>
+      <text x="14" y="52" class="t1">D-05 현금성 최저 비율 15%</text><text x="14" y="75" class="t2">Circle 평균 14.47%, SEC 2010 근거, 일본 50%</text>
+      <rect x="0" y="104" width="360" height="64" rx="8" class="bx"/>
+      <text x="14" y="128" class="t1">C4 컨소시엄 참여사별 분담 공개</text><text x="14" y="151" class="t2">MAS 5.7항의 주체별 보고를 공시로 확장</text>
+      <rect x="0" y="180" width="360" height="64" rx="8" class="bx"/>
+      <text x="14" y="204" class="t1">C1 보관 기관 실명, 모은행 비중</text><text x="14" y="227" class="t2">국내 거래소 자발 공개, ECB와 뉴욕연준 연구</text>
+      <rect x="0" y="256" width="360" height="64" rx="8" class="bx"/>
+      <text x="14" y="280" class="t1">D-01 검증본 기한, F1 기준일 규칙</text><text x="14" y="303" class="t2">Circle 19~21영업일, 5곳 평일 17~23일</text>
+
+      <line x1="362" y1="60" x2="516" y2="60" class="lnA" marker-end="url(#ar4)"/>
+      <line x1="362" y1="136" x2="516" y2="136" class="lnA" marker-end="url(#ar4)"/>
+      <line x1="362" y1="212" x2="516" y2="212" class="lnA" marker-end="url(#ar4)"/>
+      <line x1="362" y1="288" x2="516" y2="288" class="lnA" marker-end="url(#ar4)"/>
+
+      <rect x="520" y="28" width="318" height="64" rx="8" class="bxT"/>
+      <text x="534" y="52" class="tA">Q4, 3.6~3.7항</text><text x="534" y="75" class="t1">현금과 예금 최저 비율</text>
+      <rect x="520" y="104" width="318" height="64" rx="8" class="bxT"/>
+      <text x="534" y="128" class="tA">Q23, 5.7항</text><text x="534" y="151" class="t1">발행 주체별 준비자산</text>
+      <rect x="520" y="180" width="318" height="64" rx="8" class="bxT"/>
+      <text x="534" y="204" class="tA">Q29, 6.3~6.4항</text><text x="534" y="227" class="t1">은행 별도 법인과 모은행 예치</text>
+      <rect x="520" y="256" width="318" height="64" rx="8" class="bxT"/>
+      <text x="534" y="280" class="tA">Q30, 개정안 37조</text><text x="534" y="303" class="t1">검증 보고서 기한, 기준일</text>
+    </svg>
+  </div>
+  <p class="cav">정의, 인가, 이자 금지, 시스템적 지정, 외국 코인 인정 질문에는 답하지 않는다. 데이터가 없고 프로젝트 범위 밖이다.</p>
+
+  <h3>제출까지 남은 일</h3>
+  <ol class="steps">
+    <li><div class="when">1</div><div><b>초안 보강</b><p>Q4에 SEC 2010 원문 문장과 일본 50%(시행일 확인 뒤), Q30에 발행사 5곳 서명 소요일(표지 확인 뒤), Q29에 학술 근거 한 줄을 넣는다.</p></div></li>
+    <li><div class="when">2</div><div><b>표본 크기 명시</b><p>"발행사 1곳, 4개월"을 답변에 그대로 적는다. 5곳 자료를 넣으면 그 범위를 따로 적는다.</p></div></li>
+    <li><div class="when">3</div><div><b>검토와 교정</b><p>교수 검토(초안에는 김태봉 교수), 영문 교정. MAS는 사람이 작성한 것으로 보이지 않는 제출물을 공개하지 않을 수 있다고 적었다. 문장을 직접 확인한다.</p></div></li>
+    <li><div class="when">4</div><div><b>공개 여부 결정</b><p>기본은 이름과 제출물 모두 공개. 발표에서 제출 기록으로 쓰려면 공개가 낫다.</p></div></li>
+    <li><div class="when">5</div><div><b>FormSG 입력과 제출</b><p>Q4, Q23, Q29, Q30 칸에 나눠 넣고, 응답자 소개 문단은 Q30 칸 앞에 붙인다. 10/10 제출 목표, 확인 화면을 캡처해 <code>docs/research/MAS_자문_2026/</code>에 저장한다.</p></div></li>
+  </ol>
+</section>
+
+<!-- 10 -->
+<section class="page" id="p10">
+  <p class="n">10</p>
+  <h2>일정은 어떻게 되는가</h2>
+  <p class="a">10월 둘째 주에 마감이 몰려 있다. MAS 제출 목표일, Claude 유료 구독 종료(빌드 종료), MAS 마감, 2차 Reference 제출이 열흘 안에 있다.</p>
+
+  <div class="pic">
+    <svg viewBox="0 0 860 200" role="img" aria-label="9월 22일부터 12월 10일까지의 일정. 오늘 9월 23일, 10월 10일 MAS 제출 목표, 10월 13일 빌드 종료, 10월 16일 MAS 마감, 10월 19일 2차 Reference, 11월 23일 최종 제출">
+      <rect x="30" y="34" width="210" height="20" rx="3" fill="#ecece8"/>
+      <text x="62" y="48" class="t2">1차 Idea 발표 (조별 9/21, 9/28, 10/12)</text>
+      <rect x="660" y="34" width="140" height="20" rx="3" fill="#ecece8"/>
+      <text x="666" y="48" class="t2">최종시연 발표 (조별)</text>
+      <line x1="40" y1="70" x2="830" y2="70" stroke="#111" stroke-width="1.5"/>
+      <g class="t3" text-anchor="middle">
+        <text x="130" y="26">10월</text><text x="440" y="26">11월</text><text x="740" y="26">12월</text>
+      </g>
+      <line x1="130" y1="64" x2="130" y2="76" stroke="#111"/><line x1="440" y1="64" x2="440" y2="76" stroke="#111"/><line x1="740" y1="64" x2="740" y2="76" stroke="#111"/>
+
+      <line x1="50" y1="14" x2="50" y2="72" stroke="#2a78d6" stroke-width="2.5"/>
+      <circle cx="50" cy="70" r="5" fill="#2a78d6"/>
+      <text x="56" y="14" class="tA">오늘 9/23</text>
+
+      <g>
+        <line x1="120" y1="72" x2="120" y2="94" class="ln"/><text x="124" y="104" class="t2">9/30 멘토 확정</text>
+        <line x1="310" y1="72" x2="310" y2="94" class="ln"/><text x="314" y="104" class="t2">10/19 2차 Reference</text>
+        <line x1="280" y1="72" x2="280" y2="118" class="lnA"/><text x="284" y="128" class="tA">10/16 MAS 마감</text>
+        <line x1="250" y1="72" x2="250" y2="142" class="ln"/><text x="254" y="152" class="t1">10/13 빌드 종료, Claude 유료 구독 종료</text>
+        <line x1="220" y1="72" x2="220" y2="166" class="lnA"/><text x="224" y="176" class="tA">10/10 MAS 제출 목표</text>
+        <line x1="580" y1="72" x2="580" y2="94" class="ln"/><text x="576" y="104" class="t2" text-anchor="end">멘토링 완료 11/15</text>
+        <line x1="660" y1="72" x2="660" y2="118" class="ln"/><text x="656" y="128" class="t1" text-anchor="end">최종 제출 11/23 (영상 2개, 소스 공개)</text>
+        <line x1="830" y1="72" x2="830" y2="142" class="ln"/><text x="826" y="152" class="t2" text-anchor="end">동료평가 12/10</text>
+      </g>
+    </svg>
+    <p class="cav">1주차 강의자료, 멘토링 추진계획, 매니페스트 기준. 2차 Reference는 중간고사를 대체하는 자유 형식 제출이다. 24조의 1차 발표가 세 날짜 중 언제인지는 문서에서 확인하지 못했다.</p>
+  </div>
+</section>
+
+<!-- 11 -->
+<section class="page" id="p11">
+  <p class="n">11</p>
+  <h2>지금 어디까지 왔는가</h2>
+  <p class="a">파서, 근거 그래프, 공시안 초안, 판정 프로토타입, 원문 검증 대장은 있다. 규칙 엔진 분리, 관할권 설정, 환매 화면, 배포는 아직 없다.</p>
+
+  <div class="key"><span><i class="m o">O</i>있음</span><span><i class="m t">△</i>일부</span><span><i class="m x">✕</i>없음</span></div>
+  <div class="tw"><table class="mx">
+    <thead><tr><th>항목</th><th class="c">상태</th><th>판정 사유</th></tr></thead>
+    <tbody>
+      <tr><td class="rw">F1 Circle PDF 파서, 합계 대사</td><td class="c"><i class="m o">O</i></td><td>4개월 파싱, 대사 테스트 통과. PRD 목표 43개월 중 4개월</td></tr>
+      <tr><td class="rw">F2 SEC N-MFP3 파서</td><td class="c"><i class="m x">✕</i></td><td>미착수. BlackRock CSV는 약관상 자동 수집 금지라 대체 데이터원</td></tr>
+      <tr><td class="rw">F3 규칙 엔진 15개</td><td class="c"><i class="m t">△</i></td><td>프로토타입 화면 안에서 45칸 중 12칸 판정. 독립 함수와 규칙별 테스트는 없음</td></tr>
+      <tr><td class="rw">F4 관할권 설정 JSON 6종</td><td class="c"><i class="m x">✕</i></td><td>규칙 표는 매니페스트 7절에만 있음</td></tr>
+      <tr><td class="rw">F5 화면 A 판정</td><td class="c"><i class="m t">△</i></td><td>로컬 프로토타입 2종. 배포 전</td></tr>
+      <tr><td class="rw">F6 화면 B 고객 환매</td><td class="c"><i class="m x">✕</i></td><td>미착수</td></tr>
+      <tr><td class="rw">F7 한국 후보값 매트릭스</td><td class="c"><i class="m t">△</i></td><td>공시안 v1 문서로 존재. 화면 없음</td></tr>
+      <tr><td class="rw">F8 발행사 확장</td><td class="c"><i class="m t">△</i></td><td>9/21 Paxos, Tether, Ripple, Gemini 보고서 PDF 확보. 파서 없음</td></tr>
+      <tr><td class="rw">F9 화면 C 근거</td><td class="c"><i class="m t">△</i></td><td>간선 110개 중 원문 대조 98개, 사람 확정 0개. 화면 연결은 R13 하나</td></tr>
+      <tr><td class="rw">한국 공시안 v1</td><td class="c"><i class="m o">O</i></td><td>29항목, 값 결정 5건, 실측 검증 4건(M1~M4). M5 채움률 시험 미실시</td></tr>
+      <tr><td class="rw">원문 검증 대장</td><td class="c"><i class="m o">O</i></td><td>4차 116행 중 46행 통과(40%). 6차 인용문 133조각 중 111조각 일치(83%)</td></tr>
+      <tr><td class="rw">MAS 답변 초안</td><td class="c"><i class="m t">△</i></td><td>9/16 영문 초안. 9/21 검증 결과 미반영</td></tr>
+      <tr><td class="rw">공개 URL, 소스 공개</td><td class="c"><i class="m x">✕</i></td><td>레포 비공개. 최종 제출 때 소스 공개 필요(비공개는 감점 가능)</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- 12 -->
+<section class="page" id="p12">
+  <p class="n">12</p>
+  <h2>다음에 무엇을 하는가</h2>
+  <p class="a">10월 13일 이후에는 Claude 유료 구독이 끝나므로, 그 전에 배포 가능한 판정기와 MAS 제출을 끝내는 것이 우선이다.</p>
+
+  <ol class="steps">
+    <li><div class="when">이번 주<small>9/23~9/28</small></div><div><b>정정 반영</b><p>9/21 검증대장의 인용문 정정 3건(GENIUS법 §4(a)(1)(A)(ii), FCA ODDR 문장, MiCA 54(a) 조문 번호)을 노션 PRD와 공시안에 반영하고, "27항목" 표기를 29로 맞춘다. 일본 50%의 시행일을 부칙에서 확인한다.</p></div></li>
+    <li><div class="when">~10/10<small>MAS 제출 목표</small></div><div><b>MAS 답변 보강과 제출</b><p>9절의 다섯 단계. 발행사 5곳 서명일은 PDF 표지에서 눈으로 확인한 뒤 넣는다.</p></div></li>
+    <li><div class="when">~10/13<small>빌드 종료</small></div><div><b>판정기를 배포 가능한 상태로</b><p>관할권 설정 JSON과 규칙 엔진을 프로토타입에서 분리하고 규칙별 테스트를 붙인다. 화면 A를 정적 배포한다. Paxos 파서, 공시안 M5 채움률 시험. 시간이 모자라면 PRD 리스크 절 순서대로 뒤에서부터 줄인다(근거 화면은 정적 표로, 발행사는 1곳 추가로).</p></div></li>
+    <li><div class="when">수시</div><div><b>문 1 연락</b><p>의원실 8곳과 정무위 수석전문위원실에 공통 질문 5개 중 2개와 개별 질문 2개만. 제목에 의안번호. 전문위원실은 전화로 담당 조사관을 먼저 확인한다.</p></div></li>
+    <li><div class="when">~10/19<small>2차 Reference</small></div><div><b>레퍼런스 자료</b><p>선행 사례 비교(Tessera, FeedOracle, Veris 등), 해외 규칙표 15개와 조문, 법안 8건 비교표, AI 조사를 원문으로 검증한 절차와 통과율.</p></div></li>
+    <li><div class="when">~11/23<small>최종 제출</small></div><div><b>최종 산출물</b><p>멘토링 2회(11/15까지), 결과보고서, 발표 영상과 시연 영상(각 5~10분), 소스 공개. 공시안 서식, 실측, 반박 기록은 최종 발표에서 처음 꺼낸다(발표 3단계 배분).</p></div></li>
+  </ol>
+</section>
+
+<!-- 13 -->
+<section class="page" id="p13">
+  <p class="n">13</p>
+  <h2>아직 확인하지 못한 것</h2>
+  <p class="a">아래 여섯 가지는 문서에서 확인되지 않았거나 원문 확인이 남아 있다.</p>
+  <ul class="unk">
+    <li><span>?</span><div><b>1차 발표 날짜</b><p>조별 일정이 9/21, 9/28, 10/12인데 24조가 언제인지 문서에 없다.</p></div></li>
+    <li><span>?</span><div><b>과제계획서 제출 상태</b><p>핵심판(9/21)에 제안한 수정 3건("세계 최대" 표현, "미국 21개 금융기관", 멘토 소속 표기)의 반영과 제출 여부.</p></div></li>
+    <li><span>?</span><div><b>의원실 연락 여부</b><p>연락처와 질문은 9/15에 준비됐다. 발송 기록은 찾지 못했다.</p></div></li>
+    <li><span>?</span><div><b>일본 50%의 시행일</b><p>e-Gov 현행 본문에는 있으나 개정 부칙에서 시행일과 경과 규정을 확인하지 못했다.</p></div></li>
+    <li><span>?</span><div><b>3개월 이하 원화 국채 잔액</b><p>D-05 15%의 반증 조건이다. 나머지 85%를 담을 시장이 있는지 아직 확인하지 않았다.</p></div></li>
+    <li><span>?</span><div><b>공시안 항목 수</b><p>문서 표기 27, 표를 세면 29. 어느 쪽으로 맞출지 정해야 한다.</p></div></li>
+  </ul>
+</section>
+
+<footer class="foot">
+  <h3 style="margin-top:0">근거 문서</h3>
+  <ul class="src">
+    <li><a href="PRD_2026-09-13.html">PRD_2026-09-13.html</a>. 노션 PRD(3d2a1bab) 2026-09-15 동기화본. 사용자, 기능 F1~F9, 일정, 리스크</li>
+    <li><a href="한국공시안_v1.md">한국공시안_v1.md</a>. 서식, 값 결정 기록 D-01~D-05, 실측 M1~M5</li>
+    <li><a href="확장설계_메모_2026-09-13.html">확장설계_메모_2026-09-13.html</a>. 한국 전용 결정, LLM의 자리, 감시 설계</li>
+    <li><a href="인터뷰_연락처와_질문_2026-09-15.html">인터뷰_연락처와_질문_2026-09-15.html</a>. 의원실 8곳, 전문위원실, 교수 연락처와 질문</li>
+    <li><a href="research/MAS_자문_2026/MAS_P015-2026_답변초안_2026-09-16.md">MAS_P015-2026_답변초안_2026-09-16.md</a>. 자문 개요, 영문 초안, FormSG 항목</li>
+    <li><a href="research/퍼플렉시티_6차/검증대장_2026-09-21.md">퍼플렉시티_6차/검증대장_2026-09-21.md</a>. 인용문 대조, 발행사 5곳 날짜, 관할권별 현금 비율</li>
+    <li><a href="research/퍼플렉시티_4차/검증대장_2026-09-10.md">퍼플렉시티_4차/검증대장_2026-09-10.md</a>. 한국 법령과 법안 원문 대조</li>
+    <li><a href="idea-submission/발표_3단계_배분.md">idea-submission/발표_3단계_배분.md</a>. 발표 단계별로 꺼낼 재료</li>
+    <li><a href="research/GPT종합정리_검증_재정리_2026-09-09.md">GPT종합정리_검증_재정리_2026-09-09.md</a> 2.9절. 1주차 강의자료 기준 학기 일정</li>
+    <li>2026-09-16 정리본 "법이 통과된 다음". 한국 입법 이후 단계와 문 1, 2, 3 구분</li>
+    <li>입법예고 기간: 국회법 제82조의2(10일 이상), 행정절차법 제43조(40일 이상)</li>
+  </ul>
+  <p class="cav">작성 2026-09-23. 수치는 표본 크기와 확인 상태를 옆에 적었다. 확인되지 않은 값은 13절에 모았다.</p>
+</footer>
+
+</div>
+</body>
+</html>
