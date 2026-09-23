@@ -1,0 +1,2906 @@
+   THIS VERSION OF THE PROPOSED AMENDMENTS TO THE PAYMENT
+  SERVICES ACT 2019 IS IN DRAFT FORM AND SUBJECT TO CHANGE. IT IS
+  ALSO SUBJECT TO REVIEW BY THE ATTORNEY GENERAL’S CHAMBERS
+
+                       PAYMENT SERVICES ACT 2019
+
+An Act to provide for the licensing and regulation of payment service providers and
+  MAS-regulated stablecoin issuers, the recognition and regulation of foreign
+  stablecoin issuers as MAS-recognised stablecoin issuers and stablecoins issued by
+  them, the oversight of payment systems and designated systemic stablecoins, and
+  connected matters and to make consequential and related amendments to certain
+  other Acts.
+
+
+                                       PART 1
+
+                                  PRELIMINARY
+
+Short title and commencement
+  1.—(1) This Act is the Payment Services Act 2019.
+  (2) Section 113 comes into operation on a date that the Minister appoints by
+notification in the Gazette.
+
+Interpretation
+  2.—(1) In this Act, unless the context otherwise requires —
+      …
+      “designated systemic stablecoin” means a stablecoin that has been designated by
+         the Authority under section 40B as a designated systemic stablecoin for the
+         purposes of this Act;
+      “digital payment token” means any digital representation of value (other than an
+         excluded digital representation of value) that —
+              (a) any digital representation of value (other than an excluded digital
+                  representation of value) that —
+              (a)   (i) is expressed as a unit;
+              (b)   (ii) is not denominated in any currency, and is not pegged by its
+                         issuer to any currency;
+              (c) (iii) is, or is intended to be, a medium of exchange accepted by the
+                        public, or a section of the public, as payment for goods or
+                        services or for the discharge of a debt;
+              (d) (iv) can be transferred, stored or traded electronically; and
+        (e)   (v) satisfies such other characteristics as the Authority may
+                  prescribe; or
+        (b) any stablecoin;
+
+…
+“e-money” means any electronically stored monetary value that —
+        (a) is denominated in any currency, or pegged by its issuer to any
+            currency;
+        (b) has been paid for in advance to enable the making of payment
+            transactions through the use of a payment account;
+        (c) is accepted by a person other than its issuer; and
+        (d) represents a claim on its issuer,
+    but does not include any deposit accepted in Singapore, from any person in
+    Singapore, or any stablecoin;
+
+“excluded stablecoin” means a stablecoin that is prescribed by the Authority as
+   an excluded stablecoin;
+
+…
+“issuer”, in relation to a stablecoin, means any individual or entity that issues a
+    stablecoin;
+…
+“licensee” means a payment service provider or MAS-regulated stablecoin
+    issuer, the licence of which is in force;
+“MAS-regulated stablecoin”, means any stablecoin that —
+        (a) meets such characteristics as the Authority may prescribe for the
+            purposes of this Act; and
+        (b) is issued by an MAS-regulated stablecoin issuer;
+“MAS-regulated stablecoin issuer” means a person that holds a stablecoin
+  issuance licence of which is in force;
+“participant”, means —
+        (a) in relation to a payment system, means any person that is recognised
+            in the rules of the payment system, or is otherwise recognised by the
+            operator or settlement institution of the payment system, as being
+                   eligible to settle payments through the payment system with other
+                   persons that are similarly recognised, or to process payments through
+                   the payment system; and
+              (b) in relation to a stablecoin, any person that carries on a business of
+                  providing a digital payment token service in respect of the stablecoin;
+
+      …
+     “reference asset”, in relation to any stablecoin, means the currency or asset, or pool
+         or basket of currencies or assets, by reference to which its issuer maintains or
+         purports to maintain its value;
+
+      …
+     “reserve assets”, in relation to any stablecoin, refers to the assets backing the
+        value of the stablecoin that are available to the issuer for honouring a
+        redemption request by a holder of the stablecoin;
+      …
+     “stablecoin”, means any digital representation of value that —
+              (a) is expressed as a unit;
+              (b) its issuer maintains or purports to maintain its value by reference
+                  to a single currency or asset, or a pool or basket of currencies or
+                  assets;
+              (c) is, or is intended to be, a medium of exchange accepted by the
+                  public, or a section of the public, as payment for goods or services
+                  or for the discharge of a debt;
+
+              (d) can be transferred, stored or traded electronically; and
+              (e) satisfies such other characteristics as the Authority may prescribe,
+          but does not include any excluded stablecoin;
+     “stablecoin issuance licence”, means a licence granted under section 6;
+     …
+
+   (4) For the purposes of sections 5(2), and 13(13), 20A(1)(b) and paragraphs 2(i)
+and 2(m) of the First Schedule, a payment service, or the provision of a payment
+service, is incidental to any other business carried on by a person, if the payment
+service —
+       (a) is carried on, offered or provided by that person to support that other
+           business; and
+        (b) is provided by that person in connection with the carrying on of that other
+            business.
+
+
+
+
+                                       PART 2
+
+    LICENSING OF PAYMENT SERVICE PROVIDERS AND PERSONS WHO
+        HOLD THEMSELVES OUT AS ISSUERS OF MAS-REGULATED
+                          STABLECOINS
+
+     Division 1 — Licensing of payment service providers and persons who hold
+               themselves out as issuers of MAS-regulated stablecoins
+
+
+…
+
+Holding out as the issuer of an MAS-regulated stablecoin, etc.
+5A.—(1) A person must not hold the person out as the issuer of an “MAS-regulated
+stablecoin” (or any of its derivatives in any language) unless the person is an MAS-
+regulated stablecoin issuer.
+
+   (2) A person must not hold any stablecoin out as an “MAS-regulated stablecoin” (or
+any of its derivatives in any language), unless the stablecoin is an MAS-regulated
+stablecoin.
+
+  (3) To avoid doubt, a reference in this section to an “MAS-regulated stablecoin” (or
+any of its derivatives in any language) does not include an MAS-recognised stablecoin.
+
+   (4) A person that contravenes subsection (1) or (2) shall be guilty of an offence and
+shall be liable on conviction —
+       (a) in the case of an individual, to a fine not exceeding $125,000 or to
+           imprisonment for a term not exceeding 3 years or to both and, in the case
+           of a continuing offence, to a further fine not exceeding $12,500 for every
+           day or part of a day during which the offence continues after conviction;
+           or
+       (b) in any other case, to a fine not exceeding $250,000 and, in the case of a
+           continuing offence, to a further fine not exceeding $25,000 for every day
+           or part of a day during which the offence continues after conviction.
+
+
+
+
+Application for licence to provide any payment service or hold out as an issuer of
+an MAS-regulated stablecoin, etc.
+
+6.—(1) A person that wishes to —
+       (a) carry on a business of providing any type of payment service; or
+       (b) hold out as an issuer of an MAS-regulated stablecoin or to hold any
+            stablecoin that it issues out as an MAS-regulated stablecoin,
+may apply to the Authority, in such form and manner as the Authority may require, for
+the appropriate licence under this section.
+
+  (2) The types of licences that may be applied for under subsection (1) are as follows:
+       (a) a money-changing licence;
+       (b) a standard payment institution licence;
+       (c) a major payment institution licence.;
+       (d) a stablecoin issuance licence.
+
+   (3) A person must have in force a money-changing licence to be entitled to carry on
+a business of providing a money-changing service, unless the person has in force a
+standard payment institution licence or major payment institution licence that entitles
+the person to carry on a business of providing that service.
+
+  (4) A person must have in force a standard payment institution licence or a major
+payment institution licence to be entitled to carry on a business of —
+       (a) providing one of the following payment services:
+           (i)       an account issuance service;
+
+             (ii)      a domestic money transfer service;
+
+             (iii)     a cross-border money transfer service;
+
+             (iv)      a merchant acquisition service;
+           (v)      an e-money issuance service;
+
+           (vi)     a digital payment token service; or
+
+      (b) providing 2 or more of the following payment services:
+          (i)       an account issuance service;
+
+           (ii)     a domestic money transfer service;
+
+           (iii)    a cross-border money transfer service;
+
+           (iv)     a merchant acquisition service;
+
+           (v)      an e-money issuance service;
+
+           (vi)     a digital payment token service;
+
+           (vii)    a money-changing service.
+
+   (5) Despite subsection (4), a licensee must have in force a major payment
+institution licence if —
+      (a) both of the following apply:
+          (i)       the licensee carries on a business of providing one or more of
+                    the following payment services:
+                     (A)     an account issuance service (other than an e-money
+                             account issuance service);
+                     (B)     a domestic money transfer service;
+                     (C)     a cross-border money transfer service;
+                     (D)     a merchant acquisition service;
+                     (E)     a digital payment token service;
+
+           (ii)     the average, over a calendar year, of the total value of all
+                    payment transactions that are accepted, processed or executed
+                    by the licensee in one month exceeds —
+                     (A)     $3 million (or its equivalent in a foreign currency), for
+                             any one of those payment services; or
+                     (B)     $6 million (or its equivalent in a foreign currency), for
+                             2 or more of those payment services;
+
+      (b) both of the following apply:
+            (i)       the licensee carries on a business of providing an e-money
+                      account issuance service;
+
+            (ii)      the sum of the following amounts exceeds $5 million (or its
+                      equivalent in a foreign currency):
+                      (A)      the average, over a calendar year, of the total value in
+                               one day of all e-money that is stored in any payment
+                               account issued by the licensee to a person whom the
+                               licensee has determined, according to such criteria as
+                               the Authority may specify by written notice, to be
+                               resident in Singapore;
+                      (B)      the average, over a calendar year, of the total value in
+                               one day of all e-money that is issued in Singapore, and
+                               is stored in any payment account issued by the
+                               licensee to any person whom the licensee has not
+                               determined, according to such criteria as the
+                               Authority may specify by written notice, to be
+                               resident outside Singapore; or
+
+       (c) both of the following apply:
+           (i)       the licensee carries on a business of providing an e-money
+                     issuance service;
+
+            (ii)      the average, over a calendar year, of the total value in one day
+                      of all specified e-money that is issued by the licensee exceeds
+                      $5 million (or its equivalent in a foreign currency).
+
+  (6) Where any licensee mentioned in subsection (5)(a)(i), (b)(i) or (c)(i) does not
+have in force a major payment institution licence on the relevant date —
+       (a) that licensee must, within the prescribed period, apply under section 7(1)
+           to change that licensee’s licence to a major payment institution licence;
+           and
+       (b) subsection (5) does not apply to that licensee —
+           (i)       during the prescribed period mentioned in paragraph (a); and
+
+            (ii)      if that licensee complies with paragraph (a), until the date on
+                      which the application mentioned in that paragraph —
+                      (A)      is withdrawn by the licensee; or
+                      (B)      is approved or refused by the Authority.
+  (7) Upon receiving an application under subsection (1), the Authority may —
+       (a) grant a licence to the applicant, —
+
+            (i)       in respect of one or more types of payment services;, or
+
+            (ii)      to hold out as an issuer of an MAS-regulated stablecoin, and to
+                      hold any stablecoin that it issues out as an MAS-regulated
+                      stablecoin,
+            with or without conditions; or
+       (b) refuse to grant a licence.
+  (8) Where an applicant has applied for a money-changing licence, the Authority
+must not grant the licence to the applicant unless —
+       (a) the applicant has a permanent place of business, or a registered office in
+           Singapore;
+       (b) the Authority —
+           (i)      is satisfied that the applicant is a fit and proper person under the
+                    Guidelines on Fit and Proper Criteria;
+
+            (ii)      is satisfied as to the financial condition of the applicant;
+
+            (iii)     is satisfied that the public interest will be served by the granting
+                      of the licence; and
+
+            (iv)      is satisfied that the applicant meets such other criteria for the
+                      grant of the licence as the Authority considers relevant; and
+
+       (c) the application is accompanied by —
+           (i)       such information as the Authority may require; and
+
+            (ii)      a non-refundable application fee of a prescribed amount that is
+                      payable in such manner as the Authority may specify.
+
+  (9) Where an applicant has applied for a standard payment institution licence or
+major payment institution licence, the Authority must not grant the licence to the
+applicant unless —
+       (a) the applicant is a company, or is a corporation formed or incorporated
+           outside Singapore;
+       (b) the applicant has a permanent place of business, or a registered office in
+           Singapore;
+       (c) an executive director of the applicant —
+            (i)       is a citizen or permanent resident of Singapore; or
+
+            (ii)      if the applicant satisfies such conditions as may be prescribed,
+                      belongs to a prescribed class of persons;
+
+       (d) the applicant satisfies such financial requirements as may be prescribed;
+       (e) the Authority —
+           (i)      is satisfied that the applicant is a fit and proper person under the
+                    Guidelines on Fit and Proper Criteria;
+
+            (ii)      is satisfied as to the financial condition of the applicant;
+
+            (iii)     is satisfied that the public interest will be served by the granting
+                      of the licence; and
+
+            (iv)      is satisfied that the applicant meets such other criteria for the
+                      grant of the licence as the Authority considers relevant;
+
+        (f) the applicant satisfies such operational requirements as the Authority may
+            specify; and
+       (g) the application is accompanied by —
+           (i)       such information as the Authority may require; and
+
+            (ii)      a non-refundable application fee of a prescribed amount that is
+                      payable in such manner as the Authority may specify.
+
+  (9A) Where an applicant has applied for a stablecoin issuance licence, the Authority
+must not grant the licence to the applicant unless –
+       (a) the applicant is a company;
+       (b) the applicant has a permanent place of business, or a registered office in
+           Singapore;
+       (c) an executive director of the applicant –
+           (i)       is a citizen or permanent resident of Singapore; or
+
+            (ii)      if the applicant satisfies such conditions as may be prescribed,
+                      belongs to a prescribed class of persons;
+
+       (d) the applicant satisfies such financial requirements as may be prescribed;
+       (e) the Authority –
+            (i)       is satisfied that the stablecoin issued or to be issued by the
+                      applicant meets the characteristics prescribed for the purpose of
+                      the MAS-regulated stablecoin definition;
+
+            (ii)      is satisfied that the applicant is a fit and proper person under the
+                      Guidelines on Fit and Proper Criteria;
+
+            (iii)     is satisfied as to the financial condition of the applicant;
+
+            (iv)      is satisfied that the public interest will be served by the granting
+                      of the licence; and
+
+            (v)       is satisfied that the applicant meets such other criteria for the
+                      grant of the licence as the Authority considers relevant;
+
+        (f) the applicant satisfies such operational requirements as the Authority may
+            prescribe by regulations or specify by written notice; and
+       (g) the application is accompanied by –
+           (i)       such information as the Authority may require; and
+
+            (ii)      a non-refundable application fee of a prescribed amount that is
+                      payable in such manner as the Authority may specify.
+
+   (10) The Authority may at any time add to, vary or revoke any of the conditions of
+a licence imposed under subsection (7)(a) or this subsection.
+   (11) The Authority must not refuse an application under subsection (1) without
+giving the applicant an opportunity to be heard.
+  (12) Every standard payment institution, and every major payment institution and
+every MAS-regulated stablecoin issuer must, while its licence is in force, satisfy —
+       (a) such financial requirements as may be prescribed; and
+       (b) such operational requirements and other requirements as the Authority
+           may prescribe by regulations or specify by written notice.
+  (12A) In addition to subsection (12), every MAS-regulated stablecoin issuer must,
+while its stablecoin issuance licence is in force, also ensure that —
+       (a) it satisfies any additional financial requirements as the Authority may
+           specify by written notice, having regard to the risks arising from the
+           activities of its stablecoin business and such other factors as the Authority
+           considers relevant; and
+       (b) any MAS-regulated stablecoin issued continues to meet the characteristics
+           prescribed for the purposes of the MAS-regulated stablecoin definition.
+
+   (13) A standard payment institution, or major payment institution or
+MAS-regulated stablecoin issuer that fails to comply with any requirement mentioned
+in subsection (12) or (12A) (as the case may be) must immediately notify the Authority
+of the failure.
+   (14) Where a standard payment institution, or major payment institution or
+MAS-regulated stablecoin issuer (each a “relevant entity”) fails to comply with any
+requirement under subsection (12) or (12A) (as the case may be) —
+       (a) the Authority may, by written notice to the relevant entity, do either or
+           both of the following:
+           (i)       restrict or suspend the operations of the relevant entity;
+
+             (ii)      give such directions to the relevant entity as the Authority
+                       considers appropriate; and
+
+       (b) the relevant entity must comply with that notice.
+   (15) A licensee that contravenes subsection (5) shall be guilty of an offence and
+shall be liable on conviction —
+       (a) in the case of an individual, to a fine not exceeding $125,000 or to
+           imprisonment for a term not exceeding 3 years or to both and, in the case
+           of a continuing offence, to a further fine not exceeding $12,500 for every
+           day or part of a day during which the offence continues after conviction;
+           or
+       (b) in any other case, to a fine not exceeding $250,000 and, in the case of a
+           continuing offence, to a further fine not exceeding $25,000 for every day
+           or part of a day during which the offence continues after conviction.
+  (16) A licensee that, without reasonable cause, contravenes —
+
+       (a) in the case of a licensee that is a payment service provider,
+           subsection (12), or fails to comply with any condition imposed by the
+           Authority under subsection (7)(a) or (10);
+       (b) in the case of a licensee that is an MAS-regulated stablecoin issuer,
+           subsection (12) or (12A) or fails to comply with any condition imposed
+           by the Authority under subsection (7)(a) or (10),
+shall be guilty of an offence and shall be liable on conviction to a fine not exceeding
+$100,000 and, in the case of a continuing offence, to a further fine not exceeding
+$10,000 for every day or part of a day during which the offence continues after
+conviction.
+
+
+  (17) In this section —
+      “e-money account issuance service” means an account issuance service where
+         each payment account issued stores e-money;
+      “relevant date” means —
+      (a)          in relation to a licensee mentioned in subsection (5)(a)(i), the date
+                   on which subsection (5)(a)(ii) first applies to that licensee;
+      (b)          in relation to a licensee mentioned in subsection (5)(b)(i), the date
+                   on which subsection (5)(b)(ii) first applies to that licensee; or
+      (c)          in relation to a licensee mentioned in subsection (5)(c)(i), the date
+                   on which subsection (5)(c)(ii) first applies to that licensee.
+
+Variation or change of licence
+   7.—(1) A licensee (other than an MAS-regulated stablecoin issuer) may apply to
+the Authority, in the form and manner prescribed, for any of the following things:
+       (a) a variation of the licensee’s standard payment institution licence or major
+           payment institution licence by changing the types of payment services that
+           the licence entitles the licensee to carry on a business of providing;
+       (b) a change of the licensee’s money-changing licence to a standard payment
+           institution licence or a major payment institution licence;
+       (c) a change of the licensee’s standard payment institution licence to a
+           money-changing licence or a major payment institution licence;
+       (d) a change of the licensee’s major payment institution licence to a
+           money-changing licence or a standard payment institution licence;.
+       (e) a change of the licensee’s major payment institution licence to a stablecoin
+           issuance licence.
+   (2) The Authority may require an applicant to provide the Authority with such
+information or documents in relation to the application as the Authority considers
+necessary.
+  (3) An application under subsection (1) must be accompanied by a non-refundable
+application fee of the prescribed amount that is payable in such manner as the
+Authority may specify by written notice.
+  (4) The Authority may approve an application under subsection (1) subject to such
+conditions or restrictions as the Authority thinks fit, or may refuse the application.
+   (5) The Authority must not refuse an application under subsection (1) without
+giving the applicant an opportunity to be heard.
+
+…
+
+Prohibition against solicitation
+   9.—(1) A person (other than a licensee that is a payment service provider or an
+exempt payment service provider), whether in Singapore or elsewhere, must not,
+whether by that person or through any other person in Singapore or elsewhere, do any
+of the following things:
+       (a) offer to provide, or issue any advertisement containing any offer to
+           provide, to the public in Singapore or any section of the public in
+           Singapore, any type of payment service, whether in Singapore or
+           elsewhere;
+       (b) make an offer or invitation, or issue any advertisement containing any
+           offer or invitation, to the public in Singapore or any section of the public
+           in Singapore, to enter into any agreement relating to the provision by any
+           person of any type of payment service, whether in Singapore or elsewhere.
+   (2) A person that contravenes subsection (1) shall be guilty of an offence and shall
+be liable on conviction —
+       (a) in the case of an individual, to a fine not exceeding $125,000 or to
+           imprisonment for a term not exceeding 3 years or to both and, in the case
+           of a continuing offence, to a further fine not exceeding $12,500 for every
+           day or part of a day during which the offence continues after conviction;
+           or
+       (b) in any other case, to a fine not exceeding $250,000 and, in the case of a
+           continuing offence, to a further fine not exceeding $25,000 for every day
+           or part of a day during which the offence continues after conviction.
+   (3) A person in Singapore (whether or not a licensee or an exempt payment service
+provider) must not, on behalf of a person outside Singapore that is not a licensee and
+is not an exempt payment service provider, do any of the following things:
+       (a) offer to provide, or issue any advertisement containing any offer to
+           provide, to the public in Singapore or any section of the public in
+           Singapore, any type of payment service, whether in Singapore or
+           elsewhere;
+       (b) make an offer or invitation, or issue any advertisement containing any
+           offer or invitation, to the public in Singapore or any section of the public
+            in Singapore, to enter into any agreement relating to the provision by any
+            person of any type of payment service, whether in Singapore or elsewhere.
+   (4) A person that contravenes subsection (3) shall be guilty of an offence and shall
+be liable on conviction —
+       (a) in the case of an individual, to a fine not exceeding $125,000 or to
+           imprisonment for a term not exceeding 3 years or to both and, in the case
+           of a continuing offence, to a further fine not exceeding $12,500 for every
+           day or part of a day during which the offence continues after conviction;
+           or
+       (b) in any other case, to a fine not exceeding $250,000 and, in the case of a
+           continuing offence, to a further fine not exceeding $25,000 for every day
+           or part of a day during which the offence continues after conviction.
+   (4A) A person (other than an MAS-regulated stablecoin issuer), whether in
+Singapore or elsewhere, must not, through any other person in Singapore or elsewhere,
+issue any advertisement to the public in Singapore or any section of the public in
+Singapore containing any representation to the effect that the first-mentioned person is
+an MAS-regulated stablecoin issuer or that any stablecoin issued by the first-
+mentioned person is an MAS-regulated stablecoin.
+   (4B) A person in Singapore must not, on behalf of a person that is not an MAS-
+regulated stablecoin issuer, issue any advertisement to the public in Singapore or any
+section of the public in Singapore containing any representation to the effect that the
+second-mentioned person is an MAS-regulated stablecoin issuer or that any stablecoin
+issued by the second-mentioned person is an MAS-regulated stablecoin.
+  (4C) A person that contravenes subsection (4A) or (4B) shall be guilty of an offence
+and shall be liable on conviction —
+
+       (a) in the case of an individual, to a fine not exceeding $125,000 or to the
+           imprisonment for a term not exceeding 3 years or to both and, in the case
+           of a continuing offence, to a further fine not exceeding $12,500 for every
+           day or part of a day during which the offence continues after conviction;
+           or
+       (b) in any other case, to a fine not exceeding $250,000 and, in the case of a
+           continuing offence, to a further fine not exceeding $25,000 for every day
+           or part of a day during which the offence continues after conviction.
+   (5) For the purposes of subsections (1), and (3), (4A) and (4B), in determining
+whether an offer, invitation or advertisement is made or issued to the public in
+Singapore or any section of the public in Singapore, a person must have regard to such
+considerations as the Authority may prescribe.
+  (6) A person whose business is to publish, or to arrange for the publication, of
+advertisements (called in this subsection the publisher) shall not be guilty of an offence
+under subsection (2), or (4), or (4B) if the publisher proves that —
+        (a) the publisher received the advertisement for publication in the ordinary
+            course of the publisher’s business;
+        (b) the matters contained in the advertisement were not, wholly or in part,
+            devised or selected by the publisher or by any person under the publisher’s
+            direction or control; and
+        (c) the publisher did not know and had no reason for believing that the
+            publication of the advertisement would constitute an offence.
+
+…
+
+
+
+
+Lapsing, surrender, revocation or suspension of licence
+    11.—(1) A licence lapses —
+        (a) if the licensee (being an entity) is wound up or otherwise dissolved,
+            whether in Singapore or elsewhere;
+        (b) if the licensee (being an individual) dies, becomes mentally incapacitated
+            or is adjudicated a bankrupt; or
+        (c) upon the occurrence of such other event as may be prescribed.
+    (2) The Authority may revoke a licence if —
+        (a) it appears to the Authority that any of the following persons is not a fit
+            and proper person under the Guidelines on Fit and Proper Criteria:
+                 (i) the licensee;
+
+                 (ii)   any officer or employee of the licensee;
+
+                (iii)   where the licensee is a partnership or limited liability
+                        partnership, any partner of that partnership or limited liability
+                        partnership;
+
+                (iv)    where the licensee is a corporation, any 5% controller, 12%
+                        controller, 20% controller or indirect controller of the licensee;
+
+        (b) it appears to the Authority that either of the following is not satisfactory:
+          (i)   the financial standing of the licensee;
+
+         (ii)   the manner in which the licensee’s business is being conducted;
+
+(c) the licensee has contravened, or continues to contravene, any provision of
+    this Act, or has failed, or continues to fail, to comply with any condition
+    or restriction imposed, or any written notice issued, by the Authority
+    under this Act;
+(d) the licensee has failed to comply with any written notice issued by the
+    Authority under the Monetary Authority of Singapore Act 1970;
+                                                           [Act 18 of 2022 wef 28/04/2023]
+
+(e) it appears to the Authority that the licensee has failed, or continues to fail,
+    to comply with any of the licensee’s obligations under or arising from —
+         (i) this Act; or
+
+         (ii)   any written notice issued by the Authority under this Act;
+
+(f) the licensee has provided to the Authority any information or document
+    required under this Act that is false or misleading in a material particular;
+(g) it appears to the Authority that any of the following persons has not
+    performed that person’s duties under this Act honestly or fairly:
+         (i) the licensee;
+
+         (ii)   any officer or employee of the licensee;
+
+        (iii)   where the licensee is a partnership or limited liability
+                partnership, any partner of that partnership or limited liability
+                partnership;
+
+(h) it appears to the Authority that it would be contrary to the public interest
+    for the licensee to continue its operations;
+(i) the licensee fails to pay the annual fee mentioned in section 10(1);
+(j) in the case of a licensee that is a payment service provider, the licensee
+    fails or ceases to carry on a business of providing any type of payment
+    service that the licensee is entitled to carry on a business of providing, and
+    in the case of a licensee that is an MAS-regulated stablecoin issuer, the
+    licensee fails or ceases to carry on a business of issuing MAS-regulated
+    stablecoins including honouring redemption requests made by holders of
+    such MAS-regulated stablecoins;
+(k) the licensee fails or ceases to have an executive director who —
+                 (i)   is a citizen or permanent resident of Singapore; or
+
+                (ii)   belongs to the prescribed class of persons mentioned in
+                       section 6(9)(c)(ii) or section 6(9A)(c)(ii) (as the case may be);
+                                                                [Act 18 of 2022 wef 28/04/2023]
+
+
+        (l) if any executive director of the licensee belongs to the prescribed class of
+            persons mentioned in section 6(9)(c)(ii) or section 6(9A)(c)(ii) (as the
+            case may be), the licensee does not or ceases to satisfy any condition
+            mentioned in section 6(9)(c)(ii); or section 6(9A)(c)(ii) (as the case may
+            be); or
+                                                                [Act 18 of 2022 wef 28/04/2023]
+
+       (m) the licensee has failed, or continues to fail, to comply with any written
+           notice issued by the Authority under the Financial Services and Markets
+           Act 2022.
+                                                                [Act 18 of 2022 wef 28/04/2023]
+
+  (3) The Authority may, if the Authority considers it desirable to do so —
+       (a) suspend the licence of a licensee for a specified period, instead of
+           revoking the licence under subsection (2); and
+       (b) at any time —
+                (i) extend the suspension for a specified period; or
+
+                (ii)   cancel the suspension.
+
+   (4) Except as provided in subsection (5), the Authority must not revoke a licence
+under subsection (2) or suspend a licence under subsection (3), without giving the
+licensee an opportunity to be heard.
+   (5) The Authority may revoke or suspend a licence of a licensee, without giving the
+licensee an opportunity to be heard, in any of the following circumstances:
+       (a) the licensee (being an entity) is in the course of being wound up or
+           otherwise dissolved, whether in Singapore or elsewhere;
+       (b) a receiver, a receiver and manager, a judicial manager or an equivalent
+           person has been appointed, whether in Singapore or elsewhere, for or in
+           respect of any property of the licensee;
+       (c) any of the following persons has been convicted, whether in Singapore or
+           elsewhere, of an offence involving fraud or dishonesty, or of an offence
+           the conviction for which involves a finding that the person convicted had
+           acted fraudulently or dishonestly, whether the applicable offence is
+           committed before, on or after 28 January 2020:
+                 (i)    the licensee;
+
+                 (ii)   where the licensee is a partnership or limited liability
+                        partnership, any partner of that partnership or limited liability
+                        partnership;
+
+                (iii)   where the licensee is a corporation, any director, 5% controller,
+                        12% controller, 20% controller or indirect controller of the
+                        licensee.
+
+   (6) A licensee that is a payment service provider whose licence has lapsed, or is
+revoked or suspended, must cease to carry on the business of providing any type of
+payment service from the date the licence lapses, or the revocation or suspension takes
+effect, as the case may be.
+   (6A) A licensee that is an MAS-regulated stablecoin issuer whose stablecoin
+issuance licence has lapsed, or is revoked or suspended, must cease to hold itself out
+as an issuer of an “MAS-regulated stablecoin”, or to hold out any stablecoin it issues
+as an “MAS-regulated stablecoin”, from the date that the stablecoin issuance licence
+lapses, or the revocation or suspension takes effect, as the case may be.
+   (7) Despite the lapsing or revocation of a licence granted to a person, unless the
+Authority otherwise directs, sections 16, 37, 72, 74, 76B and 76C continue to apply in
+relation to the person in respect of matters that occurred before the lapsing or
+revocation of the licence.
+                                                                 [Act 12 of 2024 wef 24/01/2025]
+
+  (8) A person that contravenes subsections (6) or (6A) shall be guilty of an offence
+and shall be liable on conviction to a fine not exceeding $100,000 and, in the case of a
+continuing offence, to a further fine not exceeding $10,000 for every day or part of a
+day during which the offence continues after conviction.
+  (9) A licensee may surrender the licensee’s licence by submitting to the Authority
+a written notice of surrender, in such form as may be specified by the Authority by
+written notice.
+  (10) Any surrender, lapsing, revocation or suspension of a person’s licence —
+       (a) does not avoid or affect any agreement, transaction or arrangement
+           relating to the person’s business of providing any payment service or
+           issuance of any MAS-regulated stablecoins (as the case may be) that is
+           entered into by the person, whether the agreement, transaction or
+           arrangement was entered into before or after the surrender, lapsing,
+           revocation, or suspension (as the case may be) of the licence; and
+       (b) does not affect any right, obligation or liability arising under any such
+           agreement, transaction or arrangement.
+   (11) Upon any lapsing, revocation or surrender of a stablecoin issuance licence, the
+Authority may, by a written notice served on the person whose stablecoin issuance
+licence has lapsed, been surrendered or revoked under this Act (“former licensee”),
+direct the former licensee to do one or more of the following –
+       (a) give notice or make a public announcement that the former licensee is no
+           longer entitled to hold itself out as an issuer of an “MAS-regulated
+           stablecoin” or to hold out any stablecoin issued by it as an “MAS-
+           regulated stablecoin”;
+       (b) not dispose of, or otherwise deal with, any reserve asset that was
+           maintained in compliance with section 21B immediately before the
+           lapsing, surrender or revocation (as the case may be) of its stablecoin
+           issuance licence except in accordance with such restrictions, within such
+           period, and subject to such conditions as the Authority may specify;
+       (c) honour any redemption request from any holder of a specified stablecoin
+           that the former licensee receives during the time period specified by the
+           Authority, by paying the holder the par value of the specified stablecoin
+           after deducting any applicable fees in connection with the redemption;
+       (d) cease any further issuance of stablecoins.
+   (12) Upon any suspension of a stablecoin issuance licence, the Authority may, by a
+written notice served on a person whose stablecoin issuance licence has been
+suspended under this Act (“suspended licensee”), direct the suspended licensee to do
+one or more of the following –
+       (a) give notice or make a public announcement that the suspended licensee is
+           not entitled, during the period of suspension, to hold itself out as an issuer
+           of an “MAS-regulated stablecoin” or to hold out any stablecoin issued by
+           it as an “MAS-regulated stablecoin”;
+       (b) not dispose of, or otherwise deal with, any reserve assets that was
+           maintained in compliance with section 21B immediately before the
+           suspension of its stablecoin issuance licence except in accordance with
+           such restrictions, within such period, and subject to such conditions as the
+           Authority may specify;
+       (c) honour any redemption request from any holder of a specified stablecoin
+           that the person receives during the time period specified by the Authority,
+           by paying the holder the par value of the specified stablecoin after
+           deducting any applicable fees in connection with the redemption;
+       (d) cease any further issuance of stablecoins;
+
+       (e) to do, or refrain from doing, such things as are specified in the written
+           notice to rectify any contravention or non-compliance of the Act.
+  (13) For the purposes of subsections (11) and (12), “specified stablecoin” means
+any stablecoin issued by a suspended licensee or former licensee, which –
+        (a) immediately before the suspension, revocation, surrender or lapsing (as
+            the case may be) of that person’s stablecoin issuance licence, was an
+            MAS-regulated stablecoin; and
+        (b) remains in circulation.
+  (14) The Authority may at any time vary, rescind or revoke any written notice issued
+under subsections (11) or (12).
+   (15) A person that contravenes any requirement specified by the Authority in a
+written notice issued under subsections (11) or (12), shall be guilty of an offence and
+shall be liable on conviction to a fine not exceeding $100,000 and, in the case of a
+continuing offence, to a further fine not exceeding $10,000 for every day or part of a
+day during which the offence continues after conviction.
+
+…
+
+
+                          Division 2 — Conduct of business
+
+
+                             Subdivision (1) — General
+
+
+
+Place of business or registered office of licensee
+   14.—(1) A licensee must not carry on a business of providing any type of payment
+service unless the licensee has —
+        (a) a permanent place of business; or
+        (b) a registered office in Singapore.
+    (1A) An MAS-regulated stablecoin issuer must have —
+        (a) a permanent place of business; or
+        (b) a registered office in Singapore.
+   (2) A licensee must appoint at least one person to be present, on such days and at
+such hours as the Authority may specify by written notice, at the licensee’s permanent
+place of business or registered office to address any queries or complaints from —
+       (a) in the case of a licensee that is a payment service provider, any payment
+           service user that uses any payment service provided by the licensee or is
+           a customer of the licensee; and
+       (b) in the case of a licensee that is an MAS-regulated stablecoin issuer, any
+           holder of an MAS-regulated stablecoin.
+
+  (3) A licensee must keep, or cause to be kept, at the licensee’s permanent place of
+business or registered office, —
+       (a) in the case of a licensee that is a payment service provider, books of all
+           the licensee’s transactions in relation to any payment service provided by
+           the licensee; and
+       (b) in the case of a licensee that is an MAS-regulated stablecoin issuer, books
+           of all transactions in relation to the issuance of an MAS-regulated
+           stablecoin by the licensee.
+   (4) A licensee must notify the Authority of any change in the address of any of the
+following places within 7 days after the date of that change:
+       (a) the licensee’s permanent place of business or registered office in
+           Singapore;
+       (b) every other place of business of the licensee.
+   (5) Except with the approval of the Authority under subsection (6), a licensee that
+is a payment service provider must not carry on a business of providing any
+money-changing service or cross-border money transfer service at any place of
+business other than the licensee’s permanent place of business mentioned in
+subsection (1).
+   (6) Where a licensee that is a payment service provider wishes to carry on a
+business of providing any money-changing service or cross-border money transfer
+service at any place of business other than the licensee’s permanent place of business
+mentioned in subsection (1) —
+       (a) the licensee must, before carrying on any such business at that other place
+           of business, apply in writing to the Authority for approval to do so; and
+       (b) the Authority may give its approval for the licensee to carry on that
+           business at that other place of business, subject to such conditions as the
+           Authority thinks fit.
+  (7) The Authority may at any time add to, vary or revoke any condition imposed
+under subsection (6) or this subsection.
+   (8) The Authority may revoke its approval under subsection (6) if the licensee
+breaches any condition imposed on the licensee under subsection (6) or (7).
+   (9) A licensee that contravenes subsection (1), (2), (3) or (5) shall be guilty of an
+offence and shall be liable on conviction to a fine not exceeding $100,000 and, in the
+case of a continuing offence, to a further fine not exceeding $10,000 for every day or
+part of a day during which the offence continues after conviction.
+   (10) A licensee that contravenes subsection (4) shall be guilty of an offence and
+shall be liable on conviction to a fine not exceeding $2,000.
+
+…
+
+
+Obligation of licensee to provide information to Authority
+   16.—(1) Subject to subsection (4), the Authority may, by written notice, require
+any licensee, or any person acting on behalf of a licensee, to provide to the Authority,
+within such period as the Authority may specify in the notice, all such information
+relating to the licensee’s business of providing any payment service or issuance of
+MAS-regulated stablecoins (as the case may be) as the Authority may specify in the
+notice.
+  (2) Without limiting subsection (1), the Authority may, in the notice under that
+subsection, require any person mentioned in that subsection to provide —
+        (a) information relating to any of the following matters:
+                 (i) the operations of the licensee;
+
+                 (ii)   the pricing of, or any other form of consideration for —
+
+                         (A) in the case of a licensee that is a payment service
+                             provider, any payment service offered or provided by the
+                             licensee; and
+
+                         (B) in the case of a licensee that is an MAS-regulated
+                             stablecoin issuer, any MAS-regulated stablecoin issued
+                             by the licensee; and
+
+        (b) such other information as the Authority may require for the purposes of
+            this Act.
+    (3) Subject to subsection (4) —
+        (a) a requirement imposed by the Authority under this section has effect
+            despite any obligation as to secrecy or other restrictions upon the
+            disclosure of information imposed by any rule of law or contract; and
+       (b) a person that complies with a requirement imposed by the Authority under
+           this section is not to be treated as being in breach of any restriction on the
+           disclosure of the information imposed by any rule of law or contract.
+   (4) Nothing in this section requires a person to disclose any information subject to
+legal privilege.
+   (5) A person that fails to comply with a notice under subsection (1) shall be guilty
+of an offence and shall be liable on conviction —
+       (a) in the case of an individual, to a fine not exceeding $12,500 or to
+           imprisonment for a term not exceeding 12 months or to both and, in the
+           case of a continuing offence, to a further fine not exceeding $1,250 for
+           every day or part of a day during which the offence continues after
+           conviction; or
+       (b) in any other case, to a fine not exceeding $25,000 and, in the case of a
+           continuing offence, to a further fine not exceeding $2,500 for every day
+           or part of a day during which the offence continues after conviction.
+
+…
+
+
+
+
+Prohibition from carrying on certain businesses
+  20.—(1) A licensee must not carry on a business of granting any credit facility to
+any individual in Singapore.
+  (2) A licensee that is entitled to and does carry on a business of providing an
+e-money issuance service —
+       (a) must not lend any customer money; and
+       (b) must not use any customer money, or any interest earned on any customer
+           money, to finance wholly or to any material extent any activity of any
+           business carried on by the licensee.
+   (3) A licensee that contravenes subsection (1) shall be guilty of an offence and shall
+be liable on conviction to a fine not exceeding $100,000 and, in the case of a continuing
+offence, to a further fine not exceeding $10,000 for every day or part of a day during
+which the offence continues after conviction.
+   (4) A licensee that contravenes subsection (2) shall be guilty of an offence and shall
+be liable on conviction to a fine not exceeding $250,000 and, in the case of a continuing
+offence, to a further fine not exceeding $25,000 for every day or part of a day during
+which the offence continues after conviction.
+   (5) In this section —
+      “credit facility” means —
+              (a) any advance, loan or other facility that is granted by a licensee to
+                  a customer who is an individual, and that gives the customer
+                  access to any funds or financial guarantee provided by the
+                  licensee; or
+              (b) any other liability that is incurred by a licensee on behalf of a
+                  customer who is an individual;
+      “customer money” means any money received in Singapore by a licensee from
+         a person in Singapore, in exchange for which the licensee issues any
+         e-money, but does not include any of the following:
+              (a) any money paid to the licensee to reduce the amount owed to the
+                  licensee by that person;
+              (b) any money that is repaid by the licensee to that person;
+               (c) any money which is paid to the licensee, or which the licensee has
+                   informed that person will be used, to defray any fee or charge
+                   imposed by the licensee for providing any payment service to that
+                   person;
+              (d) any money that is paid to, and received by, a recipient in
+                  accordance with the instructions of that person;
+               (e) any money paid to any other person that is entitled to the money.
+
+Additional prohibitions on MAS-regulated stablecoin issuers
+20A—(1) An MAS-regulated stablecoin issuer must not carry on, or enter into any
+partnership, joint venture or other arrangement with any person to carry on, whether in
+Singapore or elsewhere, any business (including the business mentioned in section
+20(1)), except for the following:
+    (a) the business of issuing MAS-regulated stablecoins;
+    (b) any business of providing a digital payment token service in respect of any
+        MAS-regulated stablecoin it issues, which is incidental to the business which
+        the MAS-regulated stablecoin issuer may carry on under paragraph (a);
+    (c) any business or class of business as the Authority may prescribe, subject to
+        such conditions as may be prescribed;
+     (d) any other business as the Authority may approve for the purposes of this
+         section, subject to such conditions as the Authority may impose.
+
+
+
+
+  (2) An MAS-regulated stablecoin issuer must not —
+     (a) lend any specified money;
+     (b) use any specified money or any interest earned on any specified money to
+         finance wholly or to any material extent any activity of any business carried
+         on by the MAS-regulated stablecoin;
+     (c) pay any interest on any MAS-regulated stablecoin that it has issued;
+     (d) in the course of its trade or business, use any name, logo or trademark in a
+         manner which indicates or represents that the MAS-regulated stablecoin
+         issuer or its trade or business is related to or associated with a bank
+         incorporated in Singapore;
+     (e) cause or knowingly permit any corporation formed or incorporated outside
+         Singapore to issue any stablecoin that satisfies all of the following (such
+         corporation called in this section a “foreign issuer”) —
+            (i) is fungible with any MAS-regulated stablecoin issued by the MAS-
+                regulated stablecoin issuer; and
+           (ii) confers a right on the reserve assets that the MAS-regulated stablecoin
+                issuer is required to maintain pursuant to section 21B(1).
+
+   (3) Nothing in this section is to be construed as exempting an MAS-regulated
+stablecoin issuer from any requirement which, apart from this section, the MAS-
+regulated stablecoin issuer is required to comply with under any written law for the
+conduct of any business.
+
+  (4) An MAS-regulated stablecoin issuer that contravenes subsection (1) shall be
+guilty of an offence and shall be liable on conviction to a fine not exceeding $100,000,
+and in the case of a continuing offence, to a further fine not exceeding $10,000 for every
+day or part of a day during which the offence continues after conviction.
+  (5) An MAS-regulated stablecoin issuer that contravenes subsection (2) shall be
+guilty of an offence and shall be liable on conviction to a fine not exceeding $250,000
+and, in the case of a continuing offence, to a further fine not exceeding $25,000 for
+every day or part of a day during which the offence continues after conviction.
+
+  (6) In this section —
+     “specified money” means any money that is received by an MAS-regulated
+     stablecoin issuer from a customer, in exchange for the MAS-regulated stablecoins
+     that has been transferred to those customers but does not include any of the
+     following:
+     (a)    any money paid to the MAS-regulated stablecoin issuer to reduce the
+            amount owed to the MAS-regulated stablecoin issuer by that customer;
+     (b)    any money that is repaid by the MAS-regulated stablecoin issuer to that
+            customer;
+      (c)   any money that is paid to, and received by, a recipient in accordance with
+            the instructions of that customer;
+     (d)    any money paid to any other person that is entitled to the money.
+
+Stake in entity
+20B. —(1) An MAS-regulated stablecoin issuer must not acquire or hold, directly or
+indirectly, any stake in any entity without the prior approval of the Authority.
+   (2) An approval of the Authority under this section may be subject to such conditions
+as the Authority may determine, including any condition relating to the operations or
+activities of the entity concerned.
+  (3) The Authority may at any time add to, vary, or revoke any condition imposed
+under subsection (2).
+  (4) Subsection (1) does not apply to —
+     (a)    any interest held by way of security for the purposes of a transaction
+            entered into in the ordinary course of the business of the MAS-regulated
+            stablecoin issuer;
+     (b)    any shareholding or interest acquired or held by the MAS-regulated
+            stablecoin issuer in the course of satisfaction of debts due to it which is
+            disposed of at the earliest suitable opportunity; and
+      (c)   such other interest as may be prescribed.
+
+  (5) An MAS-regulated stablecoin issuer that contravenes subsection (1) shall be
+guilty of an offence and shall be liable on conviction to fine not exceeding $100,000,
+and in the case of a continuing offence, to a further fine not exceeding $10,000 for every
+day or part of a day during which the offence continues after conviction.
+
+    (6) For purposes of subsection (1) —
+
+        “company” means a company incorporated under the Companies Act 1967 or
+        any corresponding previous written law, a company incorporated outside
+        Singapore, or a VCC;
+
+        “limited liability partnership” has the meaning given by section 2(1) of the
+        Limited Liability Partnerships Act 2005, and includes a limited liability
+        partnership formed or established outside Singapore;
+
+        “management”, in relation to an entity, means —
+        (a)    if the entity is a company, its directors;
+        (b)    if the entity is a limited liability partnership, its partners or managers;
+        (c)    if the entity is any other partnership, its partners;
+        (d)    if the entity is a cooperative society, the members of its committee of
+               management; or
+        (e)    if the entity is any other society, its officers, and includes such other
+               person of the entity as the Authority may prescribe;
+
+        “stake”, in relation to an entity, means —
+        (a)    any beneficial interest in the total number of issued shares or such other
+               measure corresponding to shares in a company as may be prescribed;
+        (b)    control of the voting power or such other measure corresponding to voting
+               power in a company as may be prescribed; or
+        (c)    any interest in the entity, by reason of which the management of the entity
+               is accustomed or under an obligation, whether formal or informal, to act
+               in accordance with the MAS-regulated stablecoin issuer’s directions,
+               instructions or wishes, or where the MAS-regulated stablecoin issuer is
+               in a position to determine the policy of the entity;
+
+        “VCC” has the meaning given by section 2(1) of the Variable Capital Companies
+        Act 2018.
+
+   (7) The Authority may, by regulations, disapply this section to any entity or class of entities,
+subject to such conditions as may be prescribed.
+
+…
+   Additional requirements in respect of MAS-regulated stablecoin issuers
+   21B. —(1) An MAS-regulated stablecoin issuer must, while its stablecoin issuance
+licence is in force —
+       (a) maintain a separate pool of reserve assets in relation to each type of MAS-
+           regulated stablecoin issued by the MAS-regulated stablecoin issuer, that
+           are not less than the par value of the outstanding MAS-regulated
+           stablecoins in circulation;
+       (b) provide each holder of any MAS-regulated stablecoin issued by the MAS-
+           regulated stablecoin issuer the right to redeem the MAS-regulated
+           stablecoin on a par value basis, for its equivalent value determined by
+           reference to the reference asset of the MAS-regulated stablecoin, upon the
+           MAS-regulated stablecoin issuer’s receipt of a redemption request from
+           the holder; and
+       (c) fulfil every redemption request within such time from the MAS-regulated
+           stablecoin issuer’s receipt of the request as may be prescribed by the
+           Authority.
+  (2) An MAS-regulated stablecoin issuer must satisfy the requirements prescribed
+by regulations made under section 103(1) in respect of —
+       (a) any matter relating to the reserve assets mentioned in subsection (1)(a)
+           including:
+            (i) the maintenance of such reserve assets including the composition
+                and valuation of such reserve assets;
+            (ii) the extent to which such reserve assets may be commingled with
+                 other assets held by the MAS-regulated stablecoin issuer;
+            (iii) the safeguarding of such reserve assets in the event of insolvency of
+                  the MAS-regulated stablecoin issuer; and
+       (b) the terms and conditions that relate to the redemption of an MAS-
+           regulated stablecoin.
+  (3) An MAS-regulated stablecoin issuer that contravenes subsection (1) shall be
+guilty of an offence and shall be liable on conviction to a fine not exceeding $250,000
+and, in the case of a continuing offence, to a further fine not exceeding $25,000 for
+every day or part of a day during which the offence continues after conviction.
+
+
+  Public disclosure requirement
+   21C. —(1) For the purposes of enhancing market discipline, the Authority may, by
+written notice to an MAS-regulated stablecoin issuer or a class of MAS-regulated
+stablecoin issuers, require the MAS-regulated stablecoin issuer or each MAS-regulated
+stablecoin issuer in the class to disclose in writing to the public, in the form and manner
+specified by the Authority, any information relating to its operations and activities, and
+the manner it complies with any provision of the Act or a notice or direction issued
+under the Act.
+
+ (2) Without limiting subsection (1), a notice under that subsection may require an
+MAS-regulated stablecoin issuer to disclose one or more of the following information:
+       (a) the policies and procedures that the MAS-regulated stablecoin issuer has
+           put in place to maintain the value of each MAS-regulated stablecoin issued
+           by the MAS-regulated stablecoin issuer by reference to the reference asset
+           of the MAS-regulated stablecoin ;
+       (b) the policies and procedures that the MAS-regulated stablecoin issuer has
+           put in place to manage the reserve assets that the MAS-regulated
+           stablecoin issuer is required to maintain pursuant to section 21B(1);
+        (c) the terms and conditions that would apply to a holder of each MAS-
+            regulated stablecoin issued by the MAS-regulated stablecoin issuer;
+       (d) information relating to the reserve assets that the MAS-regulated
+           stablecoin issuer is required to maintain pursuant to section 21B(1) and the
+           MAS-regulated stablecoin issuer’s compliance with the requirements in
+           relation to the reserve assets that may be prescribed under section 21B(2).
+
+  (3) It is not necessary to publish any written notice issued under subsection (1) in the
+Gazette.
+
+  (4) The Authority may at any time, vary, rescind or revoke any notice issued under
+subsection (1).
+
+   (5) Any MAS-regulated stablecoin issuer which fails to comply with a notice under
+subsection (1) shall be guilty of an offence and shall be liable on conviction to a fine
+not exceeding $250,000 and, in the case of a continuing offence, to a further fine not
+exceeding $25,000 for every day or part of a day during which the offence continues
+after conviction.
+
+   (6) Any MAS-regulated stablecoin issuer who fails to take reasonable care that any
+information provided to the public in purported compliance with a notice under
+subsection (1) is clear, fair and not misleading in a material particular, shall be guilty
+of an offence and shall be liable on conviction to a fine not exceeding $250,000, and in
+the case of a continuing offence, to a further fine not exceeding $25,000 for every day
+or part of a day during which the offence continues after conviction.
+
+
+Subdivision (2) — Major payment institutions and MAS-regulated stablecoin issuers
+Security provided by major payment institutions
+   22.—(1) Every major payment institution must maintain with the Authority security
+of a prescribed amount (or its equivalent in a foreign currency), for the due performance
+of the obligations of the major payment institution to every payment service user who
+is a customer of the major payment institution.
+   (2) The security mentioned in subsection (1) must be —
+        (a) in the form of a cash deposit;
+        (b) in the form of a bank guarantee that satisfies such requirements as the
+            Authority may specify by written notice; or
+        (c) in such other form as the Authority may, in any particular case, allow.
+   (3) Where a major payment institution has surrendered its licence, or the licence of
+a major payment institution has lapsed or has been revoked, the Authority may enforce
+the security mentioned in subsection (1) to the extent required to pay any sums
+outstanding and claimed by payment service users who are customers of the major
+payment institution.
+   (4) To avoid doubt, where the security mentioned in subsection (1) is provided in
+the form of a bank guarantee, the Authority may call on the bank guarantee for the
+purposes of subsection (3), even though a closure certificate required under
+subsection (7) has not been submitted to the Authority.
+   (5) Where a major payment institution has surrendered its licence, or the licence of
+a major payment institution has lapsed or has been revoked, the Authority must release
+the security mentioned in subsection (1), or the remainder of that security, to the major
+payment institution, upon the Authority —
+        (a) being satisfied that there is no outstanding claim by any payment service
+            user who is a customer of the major payment institution; and
+        (b) receiving the closure certificate required under subsection (7).
+   (6) Any security provided by a major payment institution under this section —
+        (a) is not liable to be attached, sequestered or levied upon for or in respect of
+            any debt or claim whatsoever; and
+        (b) if the major payment institution is declared insolvent or is wound up by
+            an order of the court — is deemed not to form part of the property of the
+            major payment institution.
+   (7) A major payment institution must within 45 days, or such longer period as the
+Authority may allow, after the date on which the licence of the major payment
+institution is surrendered, lapses or is revoked, submit to the Authority a closure
+certificate issued by the auditors of the major payment institution confirming that —
+        (a) all moneys received from payment service users who are customers of the
+            major payment institution have been received by the intended recipients
+            of those moneys; and
+        (b) adequate provision has been made to meet any unforeseen liabilities in
+            respect of every business of the major payment institution that its major
+            payment institution licence entitles it to carry on.
+
+Security provided by MAS-regulated stablecoin issuers
+
+22A. —(1) Every MAS-regulated stablecoin issuer must maintain with the Authority,
+security of a prescribed amount (or its equivalent in a foreign currency), for due
+performance of its redemption obligations to the holders of the MAS-regulated
+stablecoins issued by the MAS-regulated stablecoin issuer, and obligations to customers
+from whom money has been received by the MAS-regulated stablecoin issuer in
+exchange for MAS-regulated stablecoins that have not been transferred to those
+customers.
+
+  (2) The security mentioned in subsection (1) must be —
+       (a) in the form of a cash deposit;
+       (b) in the form of a bank guarantee that satisfies such requirements as the
+           Authority may specify by written notice; or
+       (c) in such other form as the Authority may, in any particular case, allow.
+
+   (3) Where an MAS-regulated stablecoin issuer has surrendered its stablecoin
+issuance licence, or its stablecoin issuance licence has lapsed or has been revoked, the
+Authority may enforce the security mentioned in subsection (1) to the extent required
+to pay any sums outstanding and claimed by holders of the MAS-regulated stablecoins
+issued by the MAS-regulated stablecoin issuer, and by customers from whom money
+has been received by the MAS-regulated stablecoin issuer in exchange for
+MAS-regulated stablecoins that have not been transferred to those customers.
+
+   (4) To avoid doubt, where the security mentioned in subsection (1) is provided in the
+form of a bank guarantee, the Authority may call on the bank guarantee for the purposes
+of subsection (3), even though a closure certificate required under subsection (7) has
+not been submitted to the Authority.
+
+   (5) Where an MAS-regulated stablecoin issuer has surrendered its stablecoin
+issuance licence, or its stablecoin issuance licence has lapsed or has been revoked, the
+Authority must release the security mentioned in subsection (1), or the remainder of
+that security, to the MAS-regulated stablecoin issuer, upon the Authority —
+       (a) being satisfied that —
+                (i)    there are no outstanding redemption requests by any holder of an
+                       MAS-regulated stablecoin issued by the MAS-regulated
+                       stablecoin issuer that remain unsatisfied, during the time period
+                       mentioned in section 11(11)(c); and
+                (ii)   there are no outstanding claims by any customer who has paid
+                       money to the MAS-regulated stablecoin issuer in exchange for
+                       MAS-regulated stablecoins that have not been transferred to such
+                       customers; and
+        (b) receiving the closure certificate required under subsection (7).
+
+    (6) Any security provided by an MAS-regulated stablecoin issuer under this section
+—
+        (a) is not liable to be attached, sequestered or levied upon for or in respect of
+            any debt, claim whatsoever; and
+        (b) if the MAS-regulated stablecoin issuer is declared insolvent or is wound
+            up by an order of the court – is deemed not to form part of the property of
+            the MAS-regulated stablecoin issuer.
+
+   (7) An MAS-regulated stablecoin issuer must within 45 days, or such longer period
+as the Authority may allow, after the date on which its stablecoin issuance licence is
+surrendered, lapses or is revoked, submit to the Authority a closure certificate issued
+by the auditors of the MAS-regulated stablecoin issuer confirming that —
+        (a) all holders of MAS-regulated stablecoins issued by the MAS-regulated
+            stablecoins issuer who have submitted redemption requests during the time
+            period mentioned in section 11(11)(c), have received redemption proceeds
+            equal to the par value of the redeemed MAS-regulated stablecoins,
+            determined by reference to the reference asset of the MAS-regulated
+            stablecoins;
+        (b) all customers who have paid money in exchange for MAS-regulated
+            stablecoins that have not been transferred to those customers, have
+            received repayment of such monies; and
+        (c) adequate provision has been made to meet any unforeseen liabilities in
+            respect of every business that the MAS-regulated stablecoin issuer is
+            permitted to carry on under its stablecoin issuance licence.
+
+
+Safeguarding of money received from customer, etc.
+    23.—(1) Subsection (2) applies to —
+        (a) every major payment institution that carries on a business of providing any
+            of the following payment services:
+                (i)    a domestic money transfer service;
+
+                (ii)   a cross-border money transfer service;
+
+               (iii)   a merchant acquisition service;
+
+       (b) any prescribed major payment institution in respect of a prescribed
+           payment service (other than a payment service mentioned in
+           paragraph (a)(i), (ii) or (iii)); and
+       (c) any prescribed licensee (other than a major payment institution) in respect
+           of a prescribed payment service.
+                                                     [Act 1 of 2021 wef 04/04/2024]
+   (2) A major payment institution or licensee mentioned in subsection (1) must
+ensure that no later than the next business day after any relevant money is received
+from, or on account of, a customer, the whole or such part, as may be prescribed, of
+the relevant money, is safeguarded in one of the following manners:
+       (a) by an undertaking, from a safeguarding institution, to be fully liable to the
+           customer for the relevant money;
+       (b) by a guarantee given by a safeguarding institution for the amount of the
+           relevant money;
+       (c) by depositing the relevant money in a trust account maintained with a
+           safeguarding institution;
+       (d) in such other manner as may be prescribed.
+                                                                 [Act 1 of 2021 wef 04/04/2024]
+
+  (3) Subsection (4) applies to —
+       (a) every major payment institution that carries on a business of providing an
+           e-money issuance service;
+       (b) any prescribed major payment institution in respect of a prescribed
+           payment service (other than a payment service mentioned in
+           paragraph (a)); and
+       (c) any prescribed licensee (other than a major payment institution) in respect
+           of a prescribed payment service; and
+                                                                 [Act 1 of 2021 wef 04/04/2024]
+
+       (d) every MAS-regulated stablecoin issuer.
+   (4) A major payment institution or licensee mentioned in subsection (3) must
+ensure that from the time any relevant money is received from, or on account of, a
+customer, the whole or such part, as may be prescribed, of the relevant money is
+safeguarded in one of the following manners:
+       (a) by an undertaking, from a safeguarding institution, to be fully liable to the
+           customer for the relevant money;
+       (b) by a guarantee given by a safeguarding institution for the amount of the
+           relevant money;
+       (c) by depositing the relevant money in a trust account maintained with a
+           safeguarding institution;
+       (d) in such other manner as may be prescribed.
+                                                                 [Act 1 of 2021 wef 04/04/2024]
+
+   (5) The Authority may make regulations under section 103 to provide for all or any
+of the following matters:
+       (a) any matter concerning the safeguarding of relevant money under
+           subsection (2) or (4) by any safeguarding institution;
+       (b) any matter concerning the depositing of relevant money in a trust account
+           mentioned in subsection (2)(c) or (4)(c), including —
+               (i) any matter concerning the trust governing the account;
+
+                (ii)   the extent (if any) to which the relevant money may be
+                       commingled with any other money;
+
+               (iii)   the manner in which the relevant money must be treated and
+                       dealt with, despite any other written law, on the occurrence of
+                       either or both of the following:
+                          (A) any event affecting the ability of the major payment
+                              institution or licensee to which subsection (2) or (4)
+                              applies to perform its obligations, such as in the event
+                              of the insolvency of the major payment institution or
+                              licensee;
+                                                                 [Act 1 of 2021 wef 04/04/2024]
+
+                          (B) any event affecting the ability of the safeguarding
+                              institution to perform its obligations, such as in the
+                              event of the insolvency of the safeguarding institution;
+                              and
+
+               (iv)    the circumstances (if any) in which a major payment institution
+                       or licensee to which subsection (2) or (4) applies may withdraw
+                       money from the account;
+                                                                 [Act 1 of 2021 wef 04/04/2024]
+
+
+       (c) any matter concerning the safeguarding of relevant money in any manner
+           mentioned in subsection (2)(d) or (4)(d), including —
+         (i)    the extent (if any) to which a major payment institution or
+                licensee to which subsection (2) or (4) applies may commingle
+                the relevant money with any other money;
+                                                          [Act 1 of 2021 wef 04/04/2024]
+
+         (ii)   the manner in which the relevant money must be treated and
+                dealt with, despite any other written law, on the occurrence of
+                any event affecting the ability of the major payment institution
+                or licensee to which subsection (2) or (4) applies to perform its
+                obligations, such as in the event of the insolvency of the major
+                payment institution or licensee; and
+                                                          [Act 1 of 2021 wef 04/04/2024]
+
+        (iii)   where the relevant money is safeguarded by being deposited in
+                an account (other than a trust account mentioned in
+                subsection (2)(c) or (4)(c)), the circumstances (if any) in which
+                the major payment institution or licensee to which
+                subsection (2) or (4) applies may withdraw any money from
+                that account;
+                                                          [Act 1 of 2021 wef 04/04/2024]
+
+
+(d) the obligations of a major payment institution or licensee to which
+    subsection (2) or (4) applies to record and maintain a separate book entry
+    for each customer, in relation to that customer’s relevant money and,
+    where applicable, e-money and digital payment tokens;
+                                                          [Act 1 of 2021 wef 04/04/2024]
+
+(e) the obligations of a safeguarding institution that must be set out in a
+    contract between a major payment institution or licensee to which
+    subsection (2) or (4) applies and the safeguarding institution;
+                                                          [Act 1 of 2021 wef 04/04/2024]
+
+(f) the form of acknowledgment that a major payment institution or licensee
+    to which subsection (2) or (4) applies must obtain from a safeguarding
+    institution;
+                                                          [Act 1 of 2021 wef 04/04/2024]
+
+(g) the information that a major payment institution or licensee to which
+    subsection (2) or (4) applies must provide to a safeguarding institution,
+    including the date or time by which any relevant money must be
+    safeguarded;
+                                                          [Act 1 of 2021 wef 04/04/2024]
+
+(h) the manner in which a major payment institution or licensee to which
+    subsection (2) or (4) applies conducts its dealings with a customer for the
+    purposes of safeguarding the customer’s relevant money, including the
+    disclosure of any information to the customer;
+                                                          [Act 1 of 2021 wef 04/04/2024]
+
+(i) any other matters relating to this section.
+   (6) Despite any other written law, where subsection (2)(b) or (4)(b) applies, the
+proceeds of the guarantee are payable, in the event of the insolvency of the major
+payment institution or licensee to which subsection (2) or (4) applies, into a separate
+trust account held by the major payment institution or licensee (as the case may be),
+which —
+       (a) must be designated in such a way as to show that it is an account held for
+           the purpose of safeguarding the relevant money in accordance with this
+           section; and
+       (b) must be used only for holding such proceeds on trust for each customer
+           that had provided the relevant money to the major payment institution or
+           licensee (as the case may be).
+                                                                 [Act 1 of 2021 wef 04/04/2024]
+                                                                 [Act 1 of 2021 wef 04/04/2024]
+
+   (7) All moneys deposited in an account mentioned in subsection (2)(c), (4)(c),
+(5)(b) or (c)(iii) or (6) —
+       (a) cannot be used for the payment of the debts of the major payment
+           institution or licensee to which subsection (2) or (4) applies; and
+                                                                 [Act 1 of 2021 wef 04/04/2024]
+
+       (b) are not liable to be taken under or pursuant to an enforcement order or a
+           process of any court.
+                                                                [Act 25 of 2021 wef 01/04/2022]
+
+   (8) The Authority may, on the application of any person, by written notice grant
+approval, subject to such conditions as the Authority may specify in the notice, to any
+major payment institution or licensee to which subsection (2) or (4) applies to
+safeguard any relevant money in 2 or more of the manners mentioned in
+subsection (2)(a) to (d) or (4)(a) to (d).
+                                                                 [Act 1 of 2021 wef 04/04/2024]
+
+  (9) A major payment institution or licensee to which subsection (2) or (4) applies
+must notify the Authority, in such form or manner as the Authority may specify by
+written notice, of —
+       (a) the manner mentioned in subsection (2)(a) to (d) or (4)(a) to (d) that the
+           major payment institution or licensee (as the case may be) has chosen to
+           safeguard the relevant money;
+                                                                 [Act 1 of 2021 wef 04/04/2024]
+
+       (b) the name of the safeguarding institution (if any) that will safeguard the
+           relevant money in the manner mentioned in paragraph (a); and
+       (c) any change to the manner mentioned in paragraph (a) that the major
+           payment institution or licensee (as the case may be) has chosen to
+           safeguard the relevant money.
+                                                                 [Act 1 of 2021 wef 04/04/2024]
+                                                                 [Act 1 of 2021 wef 04/04/2024]
+   (10) Where the major payment institution or licensee to which subsection (2) or (4)
+applies is any of the following financial institutions, the major payment institution or
+licensee (as the case may be) must not concurrently be the safeguarding institution
+mentioned in paragraph (a) or (b) of the applicable subsection in relation to the relevant
+money received by the major payment institution or licensee (as the case may be) under
+the applicable subsection:
+       (a) a bank licensed under the Banking Act 1970;
+       (b) a merchant bank licensed under the Banking Act 1970;
+        (c) a finance company licensed under the Finance Companies Act 1967;
+       (d) any other financial institution that may be prescribed.
+                                                                                         [1/2020]
+                                                                   [Act 1 of 2021 wef 04/04/2024]
+
+   (11) A major payment institution or licensee mentioned in subsection (1) that
+contravenes subsection (2), (9) or (10), or fails to comply with any condition imposed
+under subsection (8), shall be guilty of an offence and shall be liable on conviction to
+a fine not exceeding $250,000 and, in the case of a continuing offence, to a further fine
+not exceeding $25,000 for every day or part of a day during which the offence
+continues after conviction.
+                                                                   [Act 1 of 2021 wef 04/04/2024]
+
+   (12) A major payment institution or licensee mentioned in subsection (3) that
+contravenes subsection (4), (9) or (10), or fails to comply with any condition imposed
+under subsection (8), shall be guilty of an offence and shall be liable on conviction to
+a fine not exceeding $250,000 and, in the case of a continuing offence, to a further fine
+not exceeding $25,000 for every day or part of a day during which the offence
+continues after conviction.
+                                                                   [Act 1 of 2021 wef 04/04/2024]
+
+  (13) [Deleted by Act 1 of 2021 wef 04/04/2024]
+  (14) In this section —
+      “business day” means any day other than a Saturday, Sunday, public holiday or
+         bank holiday;
+      “relevant money” —
+               (a) means any money —
+                      (i) that is received —
+                                   (A) by a major payment institution from, or on
+                                       account of, a customer in respect of any
+                                       payment        service         mentioned       in
+                                       subsection (1)(a)(i), (ii) or (iii) or (3)(a);
+                   (B) by a major payment institution prescribed for
+                       the purposes of subsection (1)(b) or (3)(b)
+                       from, or on account of, a customer in respect
+                       of any payment service prescribed in respect
+                       of the major payment institution; or
+                   (C) by a licensee prescribed for the purposes of
+                       subsection (1)(c) or (3)(c) from, or on account
+                       of, a customer in respect of any payment
+                       service prescribed in respect of the licensee;
+                       and
+                   (D) by an MAS-regulated stablecoin issuer from,
+                       or on account of, a customer in exchange for
+                       the transfer of any MAS-regulated stablecoin;
+                       and
+
+         (ii)   that the major payment institution or licensee (as the
+                case may be) —
+                   (A) where subsections (1) and (2) apply —
+                       continues to hold at the end of each business
+                       day; or
+                   (B) where subsections (3) and (4) apply and the
+                       major payment institution or licensee is a
+                       payment service provider — has held at any
+                       time and (in the case of an e-money issuance
+                       service) has issued specified e-money in
+                       exchange for; orbut
+                   (C) where subsections (3) and (4) apply and the
+                       licensee is an MAS-regulated stablecoin issuer
+                       – has held at any time until the customer has
+                       received the MAS-regulated stablecoin; but
+
+(b) does not include all of the following:
+        (i) any money paid to the major payment institution or
+              licensee (as the case may be) to reduce the amount owed
+              to the major payment institution or licensee (as the case
+              may be) by a customer;
+
+         (ii)   any money that is repaid by the major payment
+                institution or licensee (as the case may be) to a
+                customer;
+               (iii)   any money which is paid to the major payment
+                       institution or licensee (as the case may be), or which the
+                       major payment institution or licensee has informed a
+                       customer will be used, to defray any fee or charge
+                       imposed by the major payment institution or in the case
+                       of a licensee that is a payment service provider, for
+                       providing any payment service to a customer or in the
+                       case of a licensee that is an MAS-regulated stablecoin
+                       issuer, in connection with the transfer of any MAS-
+                       regulated stablecoin by the MAS-regulated stablecoin
+                       issuer to a customer;
+
+               (iv)    where a major payment institution or licensee carries on
+                       a business of providing a domestic money transfer
+                       service, a merchant acquisition service or an e-money
+                       issuance service, any money that is paid to, and received
+                       by, a recipient in accordance with instructions given by
+                       a customer of the major payment institution or licensee
+                       (as the case may be) to the major payment institution or
+                       licensee;
+
+                (v)    where a major payment institution or licensee carries on
+                       a business of providing a cross-border money transfer,
+                       any money that is paid by the major payment institution
+                       or licensee (as the case may be) in accordance with
+                       instructions given by a customer of the major payment
+                       institution or licensee (as the case may be) to the major
+                       payment institution or licensee, whether or not the
+                       recipient has received that money;
+
+               (vi)    any money paid to any other person that is entitled to
+                       the money;
+                                                          [Act 1 of 2021 wef 04/04/2024]
+
+
+“safeguarding institution” means —
+       (a) in the case of subsections (2)(a) and (4)(a) —
+                (i) a bank in Singapore; or
+
+                (ii)   any other financial institution that may be prescribed for
+                       this sub-paragraph;
+
+       (b) in the case of subsections (2)(b) and (4)(b) —
+                (i) a bank in Singapore; or
+                        (ii)   any other financial institution that may be prescribed for
+                               this sub-paragraph;
+
+               (c) in the case of subsections (2)(c) and (4)(c), a person that the trust
+                   account mentioned in subsection (2)(c) or (4)(c) (as the case may
+                   be) is maintained with, being a person that satisfies such criteria as
+                   may be prescribed;
+               (d) in any case where any relevant money is safeguarded in such
+                   manner as may be prescribed for the purposes of subsection (2)(d)
+                   or (4)(d), a person safeguarding the relevant money in that manner,
+                   being a person that satisfies such criteria as may be prescribed; or
+               (e) in any other case, any bank in Singapore or financial institution
+                   mentioned in paragraph (a) or (b) or any person mentioned in
+                   paragraph (c) or (d).
+…
+
+                   Division 3 — Control of controllers of licensees
+
+…
+
+
+Power of Authority to issue directions for this Division
+   30.—(1) If the Authority is satisfied that a person has contravened section 28(1) or
+(6) or has failed to comply with any condition imposed under section 28(3) or (4), or if
+the Authority has served a written notice of objection under section 29, the Authority
+may, by written notice —
+      (a) direct the transfer or disposal of all or any of the shares in the licensee
+          held by the person or any of the person’s associates (called in this section
+          the specified shares) within such time or subject to such conditions as the
+          Authority considers appropriate;
+      (b) restrict the transfer or disposal of all or any of the specified shares; or
+      (c) make such other direction as the Authority considers appropriate.
+   (2) Where the Authority has issued any direction under subsection (1)(a) or
+imposed any restriction under subsection (1)(b), until a transfer or disposal is effected
+in accordance with the direction or until the restriction on the transfer or disposal is
+removed, as the case may be —
+      (a) no voting rights may be exercised in respect of the specified shares, unless
+          the Authority expressly permits such rights to be exercised;
+      (b) no shares of the licensee may be issued or offered (whether by way of
+          rights, bonus or otherwise) in respect of the specified shares, unless the
+          Authority expressly permits such issue or offer; and
+      (c) except in a liquidation of the licensee, no payment may be made by the
+          licensee of any amount (whether by way of dividends or otherwise) in
+          respect of the specified shares, unless the Authority expressly authorises
+          such payment.
+   (3) Subsection (2) has effect despite any provision of the Companies Act 1967 or
+the Insolvency, Restructuring and Dissolution Act 2018 or anything contained in the
+constitution of the licensee.
+   (4) Any issue or offer of shares in contravention of subsection (2)(b) is void, and a
+person to whom a direction has been issued under subsection (1)(a) or on whom a
+restriction has been imposed under subsection (1)(b) must immediately return those
+shares to the licensee, upon which the licensee must return to the person any payment
+received from the person in respect of those shares.
+   (5) Any payment made by a licensee in contravention of subsection (2)(c) is void,
+and a person to whom a direction has been issued under subsection (1)(a) or on whom
+a restriction has been imposed under subsection (1)(b) must immediately return the
+payment the person has received to the licensee.
+
+
+Power of Authority to obtain information relating to this Division
+31.—(1) The Authority may, by written notice, direct a licensee to obtain from any
+of its shareholders, and to provide to the Authority, any information relating to the
+shareholder that the Authority may require for either or both of the following
+purposes:
+      (a) ascertaining or investigating into the control of shareholding or voting
+          power in the licensee;
+      (b) exercising any power or function under section 28, 29, 30, 32, or 100 or
+          100A.
+   (2) Without limiting subsection (1), the notice in subsection (1) may require the
+licensee to obtain and provide the following information:
+      (a) whether the shareholder has an interest in any share in the licensee as
+          beneficial owner or as trustee;
+      (b) if the shareholder holds the interest in the share as trustee, to indicate as
+          far as that shareholder is able to —
+            (i)       the person for whom that shareholder holds the interest (either
+                      by name or by other particulars sufficient to enable that person
+                      to be identified); and
+            (ii)      the nature of that person’s interest.
+
+   (3) The Authority may, by written notice, require any shareholder (X) of a licensee,
+or any person (Y) that appears from information provided to the Authority under
+subsection (1) or this subsection to have an interest in any share in the licensee, to
+provide to the Authority any information relating to X or Y (as the case may be) that
+the Authority may require for either or both of the following purposes:
+       (a) ascertaining or investigating into the control of shareholding or voting
+           power in the licensee;
+       (b) exercising any power or function under section 28, 29, 30, 32, or 100 or
+           100A.
+  (4) Without limiting subsection (3), the notice              in   subsection (3)    may
+require X or Y to provide the following information:
+       (a) whether X or Y holds the interest as beneficial owner or as trustee;
+       (b) if X or Y holds the interest as trustee, to indicate as far as X or Y can —
+           (i)        the person (Z) for whom X or Y holds the interest (either by
+                      name or by other particulars sufficient to enable Z to be
+                      identified); and
+            (ii)      the nature of Z’s interest;
+
+       (c) whether any share or any voting right attached to the share is the subject
+           of an agreement or arrangement described in section 2(2)(c)(vi), and if so,
+           to give particulars of the agreement or arrangement and the parties to it.
+
+…
+
+
+
+
+                            Division 5 — Audit of licensees
+
+
+Auditing
+    37.—(1) Despite the provisions of the Companies Act 1967, a licensee —
+        (a) must, on an annual basis and at its own expense, appoint an auditor; and
+       (b) if for any reason its auditor ceases to be its auditor, appoint another auditor
+           as soon as practicable after such cessation.
+   (1A) A licensee that is an MAS-regulated stablecoin issuer must, in addition to the
+requirement in subsection (1), and at its own expense, appoint an auditor to —
+       (a) carry out an audit in respect of the MAS-regulated stablecoin issuer’s
+           observance of its obligations under or arising from this Act in relation to
+           reserve assets (such audit called for the purposes of this section, a “reserve
+           assets attestation”) at such frequency and in accordance with such
+           standards as the Authority may specify; and
+       (b) submit a report of every reserve assets attestation (each report called for
+           the purposes of this section, a “reserve assets attestation report”) to the
+           Authority in such form as may be specified and within such time as the
+           Authority may allow.
+   (1B) A licensee that is an MAS-regulated stablecoin issuer may appoint the auditor
+that it is required to appoint under subsection (1) or another auditor to carry out the
+duties mentioned in subsection (1A) (such auditor called for the purposes of this
+section, the “reserve assets auditor”).
+   (1C) A licensee that is an MAS-regulated stablecoin issuer must publish every
+reserve assets attestation report on its website within such time as the Authority may
+specify.
+  (2) The Authority may appoint an auditor for a licensee —
+       (a)    in the case of a licensee that is a payment service provider, appoint an
+              auditor for the licensee —
+             (a)(i) if the licensee fails to appoint an auditor as required under
+                    subsection (1); or
+             (b)(ii) if the Authority considers it desirable that another auditor should
+                     act with the auditor appointed under subsection (1); and .
+       (b)    in the case of a licensee that is an MAS-regulated stablecoin issuer —
+               (i)    appoint an auditor for the licensee —
+                      (A) if the licensee fails to appoint an auditor as required under
+                          subsection (1); or
+                      (B) if the Authority considers it desirable that another auditor
+                          should act with the auditor appointed under subsection (1);
+                          or
+               (ii)   appoint a reserve assets auditor for the licensee —
+                      (A) if the licensee fails to appoint a reserve assets auditor as
+                          required under subsection (1A); or
+                       (B) if the Authority considers it necessary that another auditor
+                           should act with the reserve assets auditor appointed under
+                           subsection (1A).
+   (3) The Authority may at any time fix the remuneration to be paid by a licensee to
+an auditor appointed by the Authority under subsection (2) for the licensee.
+  (4) The duties of an auditor appointed under subsection (1) or (2) are as follows:
+       (a) to carry out, for the year in respect of which the auditor is appointed, an
+           audit of the accounts of the licensee;
+       (b) to carry out an audit of —
+               (i) in the case of a licensee that is a payment services provider, the
+                   transactions in relation to the payment services provided by the
+                   licensee, in particular, in respect of the licensee’s observance of the
+                   provisions of this Act and any of the requirements imposed under
+                   any other written law administered by the Authority; and
+              (ii) in the case of a licensee that is an MAS-regulated stablecoin issuer,
+                   the transactions in relation to any MAS-regulated stablecoin issued
+                   by the licensee, in particular, in respect of the licensee’s observance
+                   of the provisions of this Act and any of the requirements imposed
+                   under any other written law administered by the Authority;
+       (c) to submit a report of the audit to the Authority in such form as may be
+           prescribed and within such time as the Authority may allow;
+       (d) to make a report —
+               (i) in the case of a licensee incorporated in Singapore, on the
+                     financial statements or consolidated financial statements of the
+                     licensee in accordance with section 207 of the Companies
+                     Act 1967; or
+
+                (ii)     in the case of a licensee incorporated outside Singapore, on the
+                         latest annual balance sheet and profit and loss account of the
+                         licensee, together with any notes on that balance sheet and
+                         profit and loss account, showing the assets and liabilities and
+                         profit or loss arising out of the operations of the licensee in
+                         Singapore, that complies with section 207 of the Companies
+                         Act 1967.
+
+   (5) The Authority may, by written notice to an auditor, impose all or any of the
+following duties on the auditor in addition to those provided under subsection (4), and
+the auditor must carry out the duties so imposed:
+       (a) a duty to submit such additional information in relation to the audit as the
+           Authority considers necessary;
+       (b) a duty to enlarge or extend the scope of the audit of the licensee’s business
+           and affairs;
+       (c) a duty to carry out any other examination, or establish any procedure, in
+           relation to the audit in any particular case;
+       (d) a duty to submit a report on any of the matters mentioned in paragraphs (b)
+           and (c).
+  (6) The licensee must remunerate the auditor in respect of —
+       (a) any remuneration the Authority has fixed under subsection (3); and
+       (b) the discharge of all or any of the additional duties of the auditor imposed
+           under subsection (5).
+  (7) Despite any other provision of this Act or the provisions of the Companies
+Act 1967, the Authority may, if the Authority is not satisfied with the performance of
+any duty by the auditor of a licensee, at any time direct the licensee to —
+       (a) remove the auditor; and
+       (b) appoint another auditor.
+   (8) The auditor’s report made under subsection (4)(d) must be attached to the
+balance sheet and the profit and loss account, the financial statements or the
+consolidated financial statements (as the case may be) of the licensee, and a copy of
+the report, together with any report under subsection (5)(d), must be submitted in
+writing to the Authority.
+  (9) If an auditor, in the course of performing the auditor’s duties, is satisfied that
+any of the following matters has occurred, the auditor must immediately report that
+matter to the Authority:
+       (a) there has been a serious breach or non-observance of the provisions of this
+           Act or any of the requirements imposed under any other written law
+           administered by the Authority;
+       (b) a criminal offence involving fraud or dishonesty has been committed;
+       (c) losses have been incurred that reduce the capital of the licensee by at least
+           50%;
+       (d) there is any irregularity that has or may have a material effect on the
+           accounts of the licensee, including any irregularity that had caused a major
+           disruption to, in the case of a licensee that is a payment service provider,
+           the provision of any type of payment service to the customers of the
+           licensee, and in the case of a licensee that is an MAS-regulated stablecoin
+           issuer, the issuance and redemption of MAS-regulated stablecoins;
+       (e) the auditor is unable to confirm that the claims of creditors of the licensee
+           are still covered by the assets of the licensee.
+  (10) Where an auditor or employee of the auditor discloses in good faith to the
+Authority —
+        (a) the auditor’s or employee’s knowledge or suspicion of any of the matters
+            mentioned in subsection (9); or
+        (b) any information or other matter on which that knowledge or suspicion is
+            based,
+the disclosure is not a breach of any restriction upon the disclosure imposed by any
+law, contract or rules of professional conduct, and the auditor or employee is not liable
+for any loss arising out of the disclosure or any act or omission in consequence of the
+disclosure.
+  (11) A licensee that contravenes subsection (1) or (1A) (as the case may be) shall
+be guilty of an offence and shall be liable on conviction to a fine not exceeding
+$100,000 and, in the case of a continuing offence, to a further fine not exceeding
+$10,000 for every day or part of a day during which the offence continues after
+conviction.
+  (12) An auditor that contravenes subsection (5) or (9) shall be guilty of an offence
+and shall be liable on conviction to a fine not exceeding $100,000 and, in the case of a
+continuing offence, to a further fine not exceeding $10,000 for every day or part of a
+day during which the offence continues after conviction.
+
+…
+
+
+
+
+                                  PART 2A
+                         DESIGNATION OF STABLECOIN
+
+Division 1 – Information gathering powers over the issuer and participants in respect
+                                   of a stablecoin
+
+
+Provision of information to Authority
+   40A.—(1) The Authority may, by notice in the form and manner prescribed, require
+any of the following persons to provide to the Authority, within a reasonable period
+specified in the notice, such information relating to a stablecoin that the public or any
+section of the public may purchase, as the Authority may require:
+       (a) the issuer of the stablecoin;
+       (b) any participant in respect of the stablecoin.
+   (2) Without limiting subsection (1), the Authority may in a notice issued under that
+subsection require any person mentioned in subsection (1a) or (1b) to provide, whether
+in the form of a return to be provided on a periodic basis or otherwise —
+       (a) information relating to the issuance of the stablecoin including but not
+           limited to the volume of stablecoins issued and the market value of all
+           stablecoins in circulation;
+       (b) information relating to the provision of a digital payment token service in
+           respect of the stablecoin;
+       (c) information relating to the person’s business; and
+       (d) such other information as the Authority may require for the purposes of
+           this Part.
+   (3) Subject to subsection (5), any person to whom a notice is issued under subsection
+(1) must comply with the notice.
+
+   (4) A person that contravenes subsection (3) shall be guilty of an offence and shall
+be liable on conviction to a fine not exceeding $100,000 or to imprisonment for a term
+not exceeding 2 years or to both and, in the case of a continuing offence, to a further
+fine not exceeding $10,000 for every day or part of a day during which the offence
+continues after conviction.
+
+   (5) A person to whom a notice is issued under subsection (1) is not obliged to
+disclose any information that the person is prohibited by any written law from
+disclosing.
+
+
+
+
+                       Division 2 – Designation of stablecoins
+Power of Authority to designate stablecoin as a designated systemic stablecoin
+
+   40B.—(1) The Authority may, by order published in the Gazette, designate a
+stablecoin as a designated systemic stablecoin if the Authority is satisfied that any of
+the following considerations applies:
+      (a) any loss of value stability of the stablecoin (including where the value of
+          the stablecoin deviates materially or persistently from the reference asset
+          of the stablecoin), or a disruption to the issuance, redemption, transfer,
+          settlement or continued operation of the stablecoin could —
+               (i)    trigger or cause systemic disruption to the financial system of
+                      Singapore, or;
+               (ii)   affect the stability of, or public confidence in the financial
+                      system of Singapore; or;
+      (b) the designation is otherwise in the interests of the public or a section of
+          the public.
+  (2) Any order made under subsection (1) —
+      (a) must identify the stablecoin and the issuer of the stablecoin; and
+      (b) continues to have effect until the order is withdrawn by the Authority.
+   (3) The issuer or any participant in respect of a stablecoin which is aggrieved by a
+decision of the Authority to designate the stablecoin as a designated systemic
+stablecoin may, within 30 days after the order is published in the Gazette, appeal in
+writing to the Minister whose decision shall be final.
+  (4) Despite the lodging of an appeal under subsection (3), the designation by the
+Authority under this section continues to have effect pending the decision of the
+Minister.
+   (5) The Minister may, when deciding an appeal under subsection (3), direct the
+Authority to withdraw the designation of the stablecoin as a designated systemic
+stablecoin, and the direction takes effect from the date of the Minister’s decision.
+
+
+Prohibition against holding out as the issuer of a designated systemic stablecoin
+   40C.—(1) A person must not hold the person out as the issuer of a designated
+systemic stablecoin unless the stablecoin has been designated by the Authority under
+section 40B.
+   (2) A person that contravenes subsection (1) shall be guilty of an offence and shall
+be liable on conviction to a fine not exceeding $250,000 or to imprisonment for a term
+not exceeding 3 years or to both, and in the case of a continuing offence, to a further
+fine not exceeding $25,000 for every day or part of a day during which the offence
+continues after conviction.
+
+
+Withdrawal of designation of designated systemic stablecoin
+   40D.—(1) The Authority may, by order in the Gazette, withdraw the designation of
+any designated systemic stablecoin at any time if the Authority is of the opinion that
+the applicable consideration in section 40B(1) is no longer valid or satisfied.
+   (2) The Authority must not withdraw the designation of any designated systemic
+stablecoin without giving the issuer and the participants in respect of the designated
+systemic stablecoin an opportunity to be heard.
+
+
+
+
+      Division 3 – Obligations of the issuer of a designated systemic stablecoin
+
+
+Obligations of the issuer of a designated systemic stablecoin in relation to reserve
+assets and redemption
+  40E.—(1) The issuer of a designated systemic stablecoin must —
+     (a) maintain reserve assets in relation to the designated systemic stablecoin that
+         are not less than the par value of the designated systemic stablecoins in
+         circulation;
+     (b) provide each holder of any designated systemic stablecoin issued by the
+         issuer the right to redeem the designated systemic stablecoin on a par value
+         basis, for the equivalent value determined by reference to the reference asset
+         of the designated systemic stablecoin, upon the issuer’s receipt of a
+         redemption request from the holder; and
+     (c) fulfil every redemption request within such time from the issuer’s receipt of
+         the request as may be prescribed by the Authority.
+  (2) The issuer of a designated systemic stablecoin must satisfy the requirements
+prescribed by regulations made under section 103(1) in respect of —
+     (a) any matter relating to the reserve assets mentioned in subsection (1)(a),
+         including —
+             (i) the maintenance of such reserve assets including the composition
+                   and valuation of such reserve assets;
+
+              (ii)   the extent to which such reserve assets may be commingled with
+                     other assets held by the issuer;
+
+             (iii)   the safeguarding of such reserve assets in the event of the
+                     insolvency of the issuer; and
+
+     (b) the terms and conditions that relate to the redemption of a designated
+         systemic stablecoin.
+  (3) A person that contravenes subsection (1) shall be guilty of an offence and shall
+be liable on conviction to a fine not exceeding $250,000 and, in the case of a
+continuing offence, to a further fine not exceeding $25,000 for every day or part of a
+day during which the offence continues after conviction.
+Obligations of the issuer of a designated systemic stablecoin in relation to
+provision of information
+
+   40F. —(1) The Authority may, by written notice, require the issuer of a designated
+systemic stablecoin, to provide to the Authority, with such period as the Authority
+may specify in the notice, all such information relating to the issuer’s business of
+issuing designated systemic stablecoins as the Authority may specify in the notice.
+
+  (2) Without limiting subsection (1), the Authority may in a notice issued under that
+subsection require the issuer of a designated systemic stablecoin to provide —
+    (a)   information relating to the issuance of the designated systemic stablecoin
+          including but not limited to the volume of designated systemic stablecoins
+          issued and the market value of all designated systemic stablecoins in
+          circulation; and
+    (b)   such other information as the Authority may require for the purposes of this
+          Part.
+
+  (3) Subject to subsection (5), any person to whom a notice is issued under
+subsection (1) must comply with the notice.
+
+   (4) A person that contravenes subsection (3) shall be guilty of an offence and shall
+be liable on conviction to a fine not exceeding $100,000 or to imprisonment for a term
+not exceeding 2 years or to both and, in the case of a continuing offence, to a further
+fine not exceeding $10,000 for every day or part of a day during which the offence
+continues after conviction.
+
+   (5) A person to whom a notice is issued under subsection (1) is not obliged to
+disclose any information that the person is prohibited by any written law from
+disclosing.
+
+Obligations of the issuer of a designated systemic stablecoin in relation to audit
+of reserve assets
+
+   40G.—(1) The Authority may, by written notice, require the issuer of a designated
+systemic stablecoin to appoint at its own expense, an auditor, to carry out an audit in
+respect of the issuer’s observance of its obligations under or arising from this Act in
+relation to reserve assets (such audit called for the purposes of this section, a “reserve
+assets attestation”).
+
+  (2) Without limiting subsection (1), the Authority may, in the notice under that
+subsection, require —
+    (a)   the reserve assets attestations to be carried out at such frequency and in
+          accordance with such standards as the Authority may specify;
+    (b)   the auditor to submit a report of every reserve assets attestations (each report
+          called the “reserve assets attestation report”) to the Authority in such form
+          as may be specified and within such time as the Authority may allow; and
+    (c)   the issuer to publish every reserve assets attestation report on its website
+          within such time as the Authority may specify.
+
+   (3) A person that contravenes subsection (1) shall be guilty of an offence and shall
+be liable on conviction to a fine not exceeding $100,000 or to imprisonment for a term
+not exceeding 2 years or to both, and in the case of a continuing offence, to a further
+fine not exceeding $10,000 for every day or part of a day during which the offence
+continues after conviction.
+                                      PART 2B
+
+    RECOGNITION OF MAS-RECOGNISED STABLECOIN ISSUERS AND
+                MAS-RECOGNISED STABLECOINS
+
+Interpretation of this Part
+
+  40H.—(1) In this part, unless the context otherwise requires —
+
+   “foreign corporation” means any body corporate formed or incorporated or
+      existing outside Singapore;
+
+   “MAS-recognised stablecoin issuer” means a foreign corporation that is
+     recognised by the Authority under section 40J(4)(a) as an MAS-recognised
+     stablecoin issuer;
+
+   “MAS-recognised stablecoin” means a stablecoin that is issued by an
+     MAS-recognised stablecoin issuer, and recognised by the Authority under
+     section 40J(4)(b) as an MAS-recognised stablecoin.
+
+
+Holding out as the issuer of an MAS-recognised stablecoin, etc.
+
+   40I.—(1) A person must not hold the person or any other person out as the issuer
+of an “MAS-recognised stablecoin” (or any of its derivatives in any language) unless
+the person is an MAS-recognised stablecoin issuer.
+
+(2) A person must not hold any stablecoin out as an “MAS-recognised stablecoin” (or
+any of its derivatives in any language) unless the stablecoin is an MAS-recognised
+stablecoin.
+
+  (3) A person that contravenes subsection (1) or (2) shall be guilty of an offence and
+shall be liable on conviction —
+     (a) in the case of an individual, to a fine not exceeding $125,000 or
+         imprisonment for a term not exceeding 3 years or to both and, in the case
+         of a continuing offence, to a further fine not exceeding $12,5000 for every
+         day or part of a day during which the offence continues after conviction; or
+     (b) in any other case, to a fine not exceeding $250,000 and, in the case of a
+         continuing offence, to a further fine not exceeding $25,000 for every day or
+         part of a day during which the offence continues after conviction.
+
+  (4) To avoid doubt, a reference to “MAS-recognised stablecoin” (or any of its
+derivatives in any language) does not include an MAS-regulated stablecoin.
+Power of the Authority to recognise MAS-recognised stablecoin issuers and
+MAS-recognised stablecoins
+
+40J.—(1) A foreign corporation may apply to the Authority —
+     (a) to be recognised as an MAS-recognised stablecoin issuer; and
+     (b) in connection with an application under paragraph (a), for one stablecoin
+         issued by it to be recognised as an MAS-recognised stablecoin.
+
+   (2) An MAS-recognised stablecoin issuer may make a separate application to the
+Authority for any other stablecoin issued by it to be recognised as an MAS-recognised
+stablecoin.
+
+  (3) An application under subsection (1) or (2) must be made in such form and
+manner as the Authority may specify.
+
+   (4) Where an application is made under subsection (1), the Authority may
+recognise —
+     (a) a foreign corporation as an MAS-recognised stablecoin issuer; and
+     (b) the stablecoin specified in the application as an MAS-recognised
+         stablecoin,
+
+subject to such conditions or restrictions of a general or specific nature as the
+Authority may impose.
+
+   (5) Where an application is made by an MAS-recognised stablecoin issuer under
+subsection (2), the Authority may recognise any stablecoin specified in the
+application as an MAS-recognised stablecoin, subject to such conditions or
+restrictions of a general or specific nature as the Authority may impose.
+
+
+  (6) Without limiting subsection (4) and (5), the conditions or restrictions that the
+Authority may impose include —
+     (a) the activities that the MAS-recognised stablecoin issuer may undertake;
+
+     (b) the minimum financial requirement that the MAS-recognised stablecoin
+         issuer has to maintain; and
+     (c) the requirement for the MAS-recognised stablecoin issuer to be, and to
+         remain licensed, approved, authorised, designated, recognised, registered
+         or otherwise regulated by a financial regulatory authority responsible for
+         the supervision of the MAS-recognised stablecoin issuer in the country or
+         territory in which the head office or principal place of business of the
+         MAS-recognised stablecoin issuer is situated, to carry on the activity of
+         stablecoin issuance in that country.
+   (7) The Authority may at any time add to, vary or revoke any condition or
+restriction that is imposed under subsection (4) or (5).
+
+  (8) An MAS-recognised stablecoin issuer must, for the duration of the recognition
+granted under subsections (4) and (5), satisfy every condition or restriction that may
+be imposed under subsections (4) and (5).
+
+  (9) The Authority must give notice in the Gazette of —
+     (a) the recognition of a foreign corporation as an MAS-recognised stablecoin
+         issuer under subsection (4); and
+     (b) the recognition of each stablecoin issued by an MAS-recognised stablecoin
+         issuer under subsection (5),
+
+and such notice may include all or any of the conditions and restrictions imposed by
+the Authority under subsections (4) and (5).
+
+  (10) Any MAS-recognised stablecoin issuer which contravenes subsection (8) shall
+be guilty of an offence and shall be liable on conviction to a fine not exceeding
+$150,000 and, in the case of a continuing offence to a further fine not exceeding
+$15,000 for every day or part of a day during which the offence continues after
+conviction.
+
+   (11) In deciding whether to recognise the foreign corporation in subsection (4)(a),
+the Authority may have regard to all relevant matters that the Authority considers
+appropriate, including, but not limited to, the following —
+     (a) whether the foreign corporation is, in the country or territory in which the
+         head office or principal place of business of the foreign corporation is
+         situated, subject to requirements and supervision comparable to which
+         MAS-regulated stablecoin issuers are subject under this Act;
+     (b) whether adequate arrangements exist for cooperation between the Authority
+         and the financial regulatory authority responsible for the supervision of the
+         foreign corporation in the country or territory in which the head office or
+         principal place of business of the foreign corporation is situated;
+     (c) whether the Authority is of the opinion that it would be contrary to the
+         interest of the public to recognise the foreign corporation; and
+     (d) such other matters as may be prescribed by the Authority.
+
+   (12) In deciding whether to recognise the stablecoin specified in a foreign
+corporation’s application under subsection (1) or an MAS-recognised stablecoin
+issuer’s application in subsection (2) as an MAS-recognised stablecoin, the Authority
+may have regard to all relevant matters that the Authority considers appropriate,
+including, but not limited to, the following —
+    (a) whether the foreign corporation or MAS-recognised stablecoin issuer (as
+        the case may be) is, in the country or territory in which the stablecoin is
+        specified in its application under subsection (1) or (2) was issued, subject
+        to requirements relating to the stablecoin that are imposed by the financial
+        regulatory authority of that country or territory, that are comparable to the
+        requirements imposed on an MAS-regulated stablecoin issuer in respect of
+        its MAS-regulated stablecoins;
+    (b) whether the Authority is of the opinion that it would be contrary to the
+        interest of the public to recognise the stablecoin; and
+     (c) such other matters as may be prescribed by the Authority.
+
+  (13) For purposes of subsection (11)(a), the Authority may have regard to —
+    (a) the relevant laws and practices of the country or territory in which the head
+        office or principal place of business of the foreign corporation is situated;
+        and
+    (b) the rules and practices of the foreign corporation.
+
+ (14) The Authority may refuse to recognise a foreign corporation as an
+MAS-recognised stablecoin issuer if —
+    (a) the foreign corporation has not provided the Authority with such
+        information as the Authority may require, relating to —
+             (i)    the foreign corporation or any person employed by or associated
+                    with the foreign corporation for the purposes of the foreign
+                    corporation’s business; or
+             (ii)   any circumstances likely to affect the foreign corporation’s
+                    manner of conducting business;
+    (b) any information or document provided by the foreign corporation to the
+        Authority is false or misleading;
+    (c) the foreign corporation or any person who has a substantial shareholding
+        in the foreign corporation is in the course of being wound up or otherwise
+        dissolved, whether in Singapore or elsewhere;
+    (d) an enforcement order against the foreign corporation or any person who
+        has a substantial shareholding in the foreign corporation in respect of a
+        judgement debt has been returned unsatisfied in whole or in part;
+    (e)    a receiver, a receiver and manager, a judicial manager or a person in an
+          equivalent capacity has been appointed, whether in Singapore or
+          elsewhere, in relation to, or in respect of, any property of the foreign
+          corporation or any person who has a substantial shareholding in the foreign
+          corporation;
+(f) the foreign corporation or any person who has a substantial shareholding
+    in the foreign corporation has, whether in Singapore or elsewhere, entered
+    into a compromise or scheme of arrangement with the creditors of the
+    foreign corporation or shareholder (as the case may be) being a
+    compromise or scheme of arrangement that is still in operation;
+(g) the foreign corporation, any person who has a substantial shareholding in
+    the foreign corporation or any officer of the foreign corporation —
+        (i)    has been convicted, whether in Singapore or elsewhere, of an
+               offence committed before, on or after [date of bill
+               commencement] involving fraud or dishonesty or the conviction
+               of which involved a finding that the foreign corporation, person
+               who has substantial shareholding in the foreign corporation or
+               officer (as the case may be) had acted fraudulently or
+               dishonestly; or
+        (ii)   has been convicted of an offence under this Act committed
+               before, on or after [date of bill commencement];
+(h) the Authority is not satisfied as to the educational or other qualifications
+    or experience of the officers or employees of the foreign corporation,
+    having regard to the nature of the duties they are to perform in connection
+    with the stablecoin issuance business of the foreign corporation;
+(i) the foreign corporation fails to satisfy the Authority that the foreign
+    corporation is a fit and proper person or that all of its officers, employees
+    and persons who have a substantial shareholding in the foreign corporation
+    are fit and proper persons;
+(j) the Authority has reason to believe that the foreign corporation may not be
+    able to act in the best interests of investors, customers or holders of the
+    stablecoins issued by the foreign corporation, having regard to the
+    reputation, character, financial integrity and reliability of the foreign
+    corporation or its officers, employees or persons who have a substantial
+    shareholding in the foreign corporation;
+(k) the Authority is not satisfied as to —
+        (i)    the financial standing of the foreign corporation or any of the
+               persons who has a substantial shareholding in the foreign
+               corporation; or
+        (ii)   the manner in which the stablecoin issuance business of the
+               foreign corporation is being conducted or is to be conducted (as
+               the case may be);
+     (l) the Authority is not satisfied as to the record of past performance or
+         expertise of the foreign corporation, having regard to the nature of the
+         business which the foreign corporation may carry on in connection with
+         the stablecoin issuance business;
+    (m) there are other circumstances which are likely to —
+              (i)   lead to the improper conduct of business by the foreign
+                    corporation or any of its officers, employees or persons who
+                    have a substantial shareholding in the foreign corporation; or
+             (ii)   reflect discredit on the manner of conducting the business of the
+                    foreign corporation or any of the persons who has a substantial
+                    shareholding in the foreign corporation;
+    (n)   the Authority is not satisfied, having regard to the matters referred in
+          subsection (11), that the foreign corporation should be recognised as an
+          MAS-recognised stablecoin issuer; or
+    (o)   the Authority is of the opinion that it would be contrary to the interest of
+          the public to recognise the foreign corporation.
+   (15) The Authority may refuse to recognise any stablecoin specified in a foreign
+corporation’s application under subsection (1) or an MAS-recognised stablecoin
+issuer’s application in subsection (2) as an MAS-recognised stablecoin if —
+    (a)   any information or document provided in relation to the issuance of the
+          stablecoin to the Authority is false or misleading;
+
+    (b)   the Authority is not satisfied, having regard to the matters referred to in
+          subsection (12) that the stablecoin should be recognised as an
+          MAS-recognised stablecoin; or
+
+    (c)   the Authority is of the opinion that it would be contrary to the interest of
+          the public to recognise the stablecoin as an MAS-recognised stablecoin.
+   (16) Subject to subsection (17), the Authority must not refuse to recognise a foreign
+corporation under subsection (14) or refuse to recognise a stablecoin under subsection
+(15) without giving that foreign corporation or MAS-recognised stablecoin issuer (as
+the case may be) an opportunity to be heard.
+
+   (17) The Authority may refuse to recognise the foreign corporation in subsection
+(4) or to recognise a stablecoin under subsection (4) or (5) (as the case may be) on
+any of the following grounds without giving the corporation an opportunity to be
+heard:
+     (a) the foreign corporation or MAS-recognised stablecoin issuer is in the
+         course of being wound up or otherwise dissolved, whether in Singapore or
+         elsewhere;
+
+     (b) a receiver, a receiver and manager or a person in an equivalent capacity has
+         been appointed, whether in Singapore or elsewhere, in relation to, or in
+         respect of, any property of the foreign corporation or MAS-recognised
+         stablecoin;
+
+     (c) the foreign corporation or MAS-recognised stablecoin issuer, has been
+         convicted, whether in Singapore or elsewhere, of an offence committed
+         involving fraud or dishonesty or the conviction for which involved a finding
+         that it had acted fraudulently, or dishonestly, whether the applicable offence
+         is committed before, on or after [date of bill commencement].
+Obligation to provide information and notify Authority of certain matters
+
+   40K.—(1) The Authority may, by written notice, require an MAS-recognised
+stablecoin issuer to provide, within the period specified in the notice, such
+information relating to the MAS-recognised stablecoin issuer or any MAS-recognised
+stablecoin issued by it as the Authority may require for the purposes of this Part,
+including information relating to the issuance and circulation of any MAS-recognised
+stablecoin issued by the MAS-recognised stablecoin issuer.
+
+  (2) An MAS-recognised stablecoin issuer must, as soon as practicable after the
+occurrence of any of the following events, notify the Authority of that occurrence:
+     (a) any material change to the information provided by the MAS-recognised
+         stablecoin issuer in its application under section 40J(1) or 40J(2);
+
+     (b) an intention to make a material change to the stablecoin issuance business
+         which the MAS-recognised stablecoin issuer carries on;
+     (c) any civil or criminal proceeding instituted against the MAS-recognised
+         stablecoin issuer, whether in Singapore or elsewhere;
+
+     (d) any event (including an irregularity in the operations of the
+         MAS-recognised stablecoin issuer) that materially impedes or impairs the
+         operations of the MAS-recognised stablecoin issuer;
+     (e) the MAS-recognised stablecoin issuer being or becoming, or being likely
+         to become, insolvent or unable to meet any of its financial, statutory,
+         contractual or other obligations;
+      (f) any disciplinary action taken against the MAS-recognised stablecoin issuer
+          by any regulatory authority (other than the Authority), whether in Singapore
+          or elsewhere;
+      (g) any significant change to the regulatory requirements imposed on the
+          MAS-recognised stablecoin issuer by any regulatory authority (other than
+          the Authority), whether in Singapore or elsewhere;
+      (h) if it ceases to be licensed, approved, authorised, designated, recognised,
+          registered or regulated by the financial regulatory authority responsible for
+          the supervision of the MAS-recognised stablecoin issuer in the country or
+          territory in which the head office or principal place of business of the
+          MAS-recognised stablecoin issuer is situated;
+
+       (i) any other event that the Authority may specify by written notice.
+
+  (3) Any person who contravenes subsection (1) shall be guilty of an offence and
+shall be liable on conviction to a fine not exceeding $250,000 and, in the case of a
+continuing offence, to a further fine not exceeding $25,000 for every day or part of a
+day during which the offence continues after conviction.
+
+Cancellation of recognition
+
+   40L.—(1) An MAS-recognised stablecoin issuer that intends to cease holding out
+an MAS-recognised stablecoin issued by it as an MAS-recognised stablecoin, or
+holding itself out as an MAS-recognised stablecoin issuer may apply to the Authority
+to cancel recognition of the stablecoin or cancel its recognition as an MAS-recognised
+stablecoin issuer.
+
+  (2) An application under subsection (1) must be made in such form and manner, and
+no later than such time as the Authority may specify.
+
+   (3)Where an MAS-recognised stablecoin issuer makes an application in subsection
+(1), the issuer must give notice or make a public announcement stating that it has
+applied to the Authority for the cancellation of the recognition of the stablecoin
+specified in the application or the cancellation of its recognition as an MAS-recognised
+stablecoin issuer, as the case may be, and the date from which it intends to cease
+holding out the stablecoin as an MAS-recognised stablecoin or holding itself out as an
+MAS-recognised stablecoin issuer.
+   (4) The Authority may, if it is satisfied that the MAS-recognised stablecoin issuer
+has complied with subsection (3), cancel the recognition of the stablecoin specified
+in the application or its recognition as an MAS-recognised stablecoin issuer, as the
+case may be, with effect from such date as the Authority may determine.
+
+Power of Authority to revoke recognition
+
+40M. —(1) The Authority may revoke the recognition of a foreign corporation as an
+MAS-recognised stablecoin issuer under section 40J(4) if —
+     (a)   there exists at any time a ground under section 40J(14) or 40J(15) on
+           which the Authority may refuse an application;
+
+     (b) the foreign corporation ceases to issue any MAS-recognised stablecoin
+         recognised under section 40J(4)(b) or 40J(5);
+
+     (c) if the foreign corporation ceases to be licensed, approved, authorised,
+         designated, recognised, registered or regulated by the financial regulatory
+         authority responsible for the supervision of the foreign corporation in the
+         country or territory in which the head office or principal place of business
+         of the foreign corporation is situated;
+
+     (d) if the Authority is no longer satisfied that the foreign corporation is, in the
+         country or territory in which the head office or principal place of business
+         of the foreign corporation is situated, subject to requirements and
+         supervision comparable to which MAS-regulated stablecoin issuers are
+         subject under this Act;
+
+     (e) the foreign corporation contravenes any conditions or restrictions imposed
+         under section 40J(4) or 40J(5);
+
+      (f) the Authority is of the opinion that the foreign corporation —
+              (i)    is carrying on is business in a manner likely to be detrimental to
+                     the interest of the public or a section of the public;
+             (ii)    is or is likely to become insolvent, or is or is likely to become
+                     unable to meet its obligations relating to any MAS-recognised
+                     stablecoin issued by it;
+             (iii)   has contravened any provisions of this Act;
+     (g) has provided to the Authority any information or document required under
+         this Act that is false or misleading in a material particular; or
+     (h) the Authority considers it in the public interest to do so.
+   (2) Subject to subsection (3), the Authority must not revoke the recognition of a
+foreign corporation as an MAS-recognised stablecoin issuer under section 40J(4)(a),
+or the recognition of any stablecoin under section 40J(4)(b) or 40J(5), without giving
+the foreign corporation or MAS-recognised stablecoin issuer an opportunity to be
+heard;
+
+   (3) The Authority may revoke the recognition of a foreign corporation as an
+MAS-recognised stablecoin issuer under section 40J(4)(a), or the recognition of any
+stablecoin under section 40J(4)(b) or 40J(5), on any of the following grounds without
+giving the foreign corporation or MAS-recognised stablecoin issuer an opportunity to
+be heard;
+     (a) the foreign corporation or MAS-recognised stablecoin issuer (as the case
+         may be) is in the course of being wound up or otherwise dissolved, whether
+         in Singapore or elsewhere;
+
+     (b) a receiver, a receiver and manager or a person in an equivalent capacity has
+         been appointed, whether in Singapore or elsewhere, in relation to, or in
+         respect of, any property of the foreign corporation or MAS-recognised
+         stablecoin issuer (as the case may be);
+     (c) the foreign corporation or MAS-recognised stablecoin issuer (as the case
+         may be), has been convicted, whether in Singapore or elsewhere, of an
+         offence committed involving fraud or dishonesty or the conviction for
+         which involved a finding that it had acted fraudulently, or dishonestly,
+         whether the applicable offence is committed before, on or after [date of bill
+         commencement].
+   (4) Upon revocation of the recognition of an MAS-recognised stablecoin issuer,
+every MAS-recognised stablecoin issued by that issuer ceases to be an MAS-
+recognised stablecoin.
+
+Action by Authority if an MAS-recognised stablecoin issuer is unable to meet
+obligations, etc.
+
+40N. —(1) The Authority may exercise its powers specified in subsection (2) as
+appears to the Authority to be necessary, where —
+    (a)   an MAS-recognised stablecoin issuer informs the Authority that it is or is
+          likely to become insolvent, or that it is or is likely to become unable to meet
+          its obligations;
+    (b)   an MAS-recognised stablecoin issuer becomes unable to meet its
+          obligations, or is insolvent;
+    (c)   the Authority is of an opinion that the foreign corporation —
+              (i)    is carrying on its business in a manner likely to be detrimental to
+                     the interest of the public or a section of the public;
+             (ii)    is or is likely to become insolvent, or is or is likely to become
+                     unable to meet its obligations;
+             (iii)   has contravened any provisions of this Act; or
+             (iv)    has failed to comply with any condition or restriction imposed
+                     under section 40J(4) or (5);
+     (d)   the Authority considers it in the public interest to do so.
+    (2) For the purposes of subsection (1), the Authority may issue to any of the
+ following persons or classes of persons a written notice, either of a general or a
+ specific nature, to comply with such requirements as the Authority may specify in the
+ notice:
+      (a) any licensee or class of licensees;
+      (b) any exempt payment service provider or class of exempt payment service
+          providers;
+      (c) any person, or class of persons, exempt under section 100.
+
+    (3) Without limiting subsection (2), a notice may be issued with respect to
+ restricting a licensee, an exempt payment service provider, or a person exempt under
+ section 100 from providing any digital payment token service in respect of any
+ MAS-recognised stablecoin issued by the MAS-recognised stablecoin issuer.
+
+   (4) Where the Authority has exercised its powers under subsection (2), the
+ Authority may, at any time and without affecting the Authority’s powers under
+ section 40M, add to, vary or revoke any requirement imposed under subsection (2).
+
+    (5) Any person that fails to comply with any requirement specified in a notice
+ issued under subsection (2) shall be guilty of an offence and shall be liable on
+ conviction to a fine not exceeding $100,000 and, in the case of a continuing offence,
+ to a further fine not exceeding $10,000 for every day or part of a day during which
+ the offence continues after conviction.
+
+
+                                        PART 3
+
+                                PAYMENT SYSTEMS
+
+…
+
+            Division 6 — Control of controllers of operators of designated
+                                  payment systems
+…
+
+
+Power of Authority to issue directions for this Division
+    61.—(1) If the Authority is satisfied that a person has contravened section 59(1), (2)
+or (7) or has failed to comply with any condition imposed under section 59(4) or (5), or
+if the Authority has served a written notice of objection under section 60, the Authority
+may, by written notice —
+      (a) direct the transfer or disposal of all or any of the shares in the operator held
+          by the person or any of the person’s associates (called in this section the
+          specified shares) within such time or subject to such conditions as the
+          Authority considers appropriate;
+      (b) restrict the transfer or disposal of all or any of the specified shares; or
+      (c) make such other direction as the Authority considers appropriate.
+  (2) Where the Authority has issued any direction under subsection (1)(a) or imposed
+any restriction under subsection (1)(b), until a transfer or disposal is effected in
+accordance with the direction or until the restriction on the transfer or disposal is
+removed, as the case may be —
+      (a) no voting rights may be exercised in respect of the specified shares, unless
+          the Authority expressly permits such rights to be exercised;
+      (b) no shares of the operator may be issued or offered (whether by way of
+          rights, bonus or otherwise) in respect of the specified shares, unless the
+          Authority expressly permits such issue or offer; and
+      (c) except in a liquidation of the operator, no payment may be made by the
+          operator of any amount (whether by way of dividends or otherwise) in
+          respect of the specified shares, unless the Authority expressly authorises
+          such payment.
+   (3) Subsection (2) has effect despite any provision of the Companies Act 1967 or
+the Insolvency, Restructuring and Dissolution Act 2018 or anything contained in the
+constitution of the operator.
+   (4) Any issue or offer of shares in contravention of subsection (2)(b) is void, and a
+person to whom a direction has been issued under subsection (1)(a) or on whom a
+restriction has been imposed under subsection (1)(b) must immediately return those
+shares to the operator, upon which the operator must return to the person any payment
+received from the person in respect of those shares.
+   (5) Any payment made by an operator in contravention of subsection (2)(c) is void,
+and a person to whom a direction has been issued under subsection (1)(a) or on whom
+a restriction has been imposed under subsection (1)(b) must immediately return the
+payment the person has received to the operator.
+
+…
+
+
+
+                                         PART 5
+
+                               EMERGENCY POWERS
+
+Interpretation of this Part
+    77. In this Part, unless the context otherwise requires —
+                                             …
+       “payment entity” means any of the following entities:
+           (a) a licensee;
+           (b) a person that is granted a licence under section 57B of the
+               Banking Act 1970 to carry on the business of issuing credit
+               cards or charge cards in Singapore;
+           (c) an operator of a designated payment system;
+           (d) a settlement institution of a designated payment system;
+           (e) an issuer of a designated systemic stablecoin;
+
+
+…
+
+                                        PART 6
+
+           ASSISTANCE TO FOREIGN REGULATORY AUTHORITIES
+
+Interpretation of this Part
+    84. In this Part, unless the context otherwise requires —
+       “enforce” means enforce through criminal or administrative proceedings;
+       “enforcement”, in relation to a regulatory authority, means the taking of any
+          action to enforce a law or regulatory requirement against a specified person,
+          being a law or regulatory requirement that relates to the payment systems, or
+          payment services, or stablecoin issuance activities of the foreign country of
+          the regulatory authority concerned;
+       “foreign country” means a country or territory other than Singapore;
+       “investigation”, in relation to a regulatory authority, means an investigation to
+          determine if a specified person has contravened or is contravening a law or
+          regulatory requirement, being a law or regulatory requirement that relates to
+          the payment systems, or payment services, or stablecoin issuance activities
+          of the foreign country of the regulatory authority concerned;
+
+…
+
+General exemption
+
+   100.—(1) The Authority may, by regulations, exempt any of the following from all
+or any of the provisions of this Act, subject to such conditions as may be prescribed:
+        (a) any person or class of persons;
+        (b) any payment service or class of payment services;
+         (c) any payment system or class of payment systems;
+        (d) any payment account or class of payment accounts;
+         (e) any shares or interests in shares, or class or description of shares or interests
+             in shares;
+         (f) any other thing or class or description of things.;
+
+        (g) any stablecoins or class of stablecoins.
+
+
+
+…
+
+
+Power of Authority to exempt MAS-regulated stablecoin issuers from
+requirements under sections 20A(2) and 21B
+
+100A.—(1) The Authority may, on the application of any MAS-regulated stablecoin
+issuer, exempt the MAS-regulated stablecoin issuer from section 20A(2)(e), 21B(1)(a)
+and 21B(2)(a) if the Authority considers it appropriate to do so in the circumstances of
+the case.
+
+    (2) An exemption under section (1) -
+        (a) may be granted by written notice subject to such conditions as the Authority
+            may specify in that notice;
+        (b) need not be published in the Gazette; and
+        (c)   may be revoked at any time by the Authority.
+
+  (3) Where the Authority exempts any MAS-regulated stablecoin issuer under
+subsection (1), the conditions that may be imposed under subsection (2)(a) include
+conditions relating to:
+        (a) the operations or activities of the MAS-regulated stablecoin issuer
+            including in relation to its issuance of MAS-regulated stablecoins;
+        (b) the reserve assets that the MAS-regulated stablecoin issuer is required to
+            maintain pursuant to section 21B, having regard to the risks arising from
+            the activities of the foreign issuer and such other factors as the Authority
+            considers relevant;
+        (c)   the standards, framework, policies and procedures in relation to the
+              attribution of, reserve assets that the MAS-regulated stablecoin issuer is
+           required to maintain pursuant to a condition imposed under this section, to
+           the outstanding MAS-regulated stablecoins and foreign-issued stablecoins;
+           and
+      (d) the maintenance and submission of records relating to reserve assets and
+          the standards, framework, policies and procedures mentioned in subsection
+          (c) to the Authority at such frequency as the Authority may specify.
+
+  (4) In deciding whether to grant exemption mentioned in subsection (1), the
+Authority may have regard to all relevant matters that the Authority considers
+appropriate including, but not limited to, the following:
+      (a) whether a foreign issuer is, in the country or territory in which the head
+          office or principal place of business of the foreign issuer is situated, subject
+          to requirements and supervision comparable to the requirements and
+          supervision to which MAS-regulated stablecoin issuers are subject under
+          this Act; and
+      (b) whether adequate arrangements exist for cooperation between the
+          Authority and the financial regulatory authority responsible for the
+          supervision of the foreign issuer in the country or territory in which the
+          head office or principal place of business of the foreign issuer is situated.
+
+  (5) In considering whether a foreign issuer has met the requirements mentioned in
+subsection (4)(a), the Authority may have regard to –
+      (a) the relevant laws and practices of the country or territory in which the head
+          office or principal place of business of the foreign corporation is situated;
+          and
+      (b) the rules and practices of the foreign issuer.
+
+  (6) The Authority may at any time add to, vary or revoke any condition imposed
+under this section.
+
+  (7) A person shall be guilty to an offence if the person contravenes any condition –
+      (a) specified by the Authority under subsection 2(a); or
+      (b) added or varied under subsection (6).
+
+  (8) For the purposes of this section –
+
+      “foreign-issued stablecoins” refers to stablecoins issued by a foreign issuer that
+      meet the characteristics specified in section 20A(2)(e).
+
+      “foreign issuer” has the meaning given to it in section 20A(2)(e).
+       …
+
+
+Power of Authority to issue written notice
+   102.—(1) The Authority may, if it thinks it necessary or expedient for the effective
+administration of this Act, for the protection of consumers or in the interest of the public
+or a section of the public, for ensuring the integrity and proper management of a
+designated payment system, or for ensuring the integrity of the e-money stored in a
+payment account, issue to any of the following persons or classes of persons a written
+notice, either of a general or a specific nature, to comply with such requirements as the
+Authority may specify in the notice:
+        (a) any licensee or class of licensees;
+        (b) any operator, or class of operators, of a relevant payment system;
+        (c) any settlement institution, or class of settlement institutions, of a relevant
+            payment system;
+        (d) any participant, or class of participants, of a relevant payment system;
+        (e) any person, or class of persons, that determines access to a relevant
+            payment system;
+        (f) any exempt payment service provider or class of exempt payment service
+            providers;
+        (g) any person, or class of persons, exempt under section 100;
+      (ga) any issuer or participant in respect of a designated systemic stablecoin;
+        (h) any person that contravenes, has contravened, or is likely to contravene,
+            any provision of this Act.
+   (2) Without limiting subsection (1), a notice may be issued —
+        (a) with respect to —
+            (i)       the activities that may be carried out by a licensee, an exempt
+                      payment service provider, or a person exempt under
+                      section 100, in relation to its business;
+
+             (ii)       the standards, framework, policies and procedures for the
+                        prudent management of risks (including information
+                        technology risks) by a licensee, an exempt payment service
+                        provider or a person exempt under section 100, or by an
+                        operator or a settlement institution of a designated payment
+                        system;
+
+             (iii)      the financial soundness, financial management and stability of
+                        a licensee, an exempt payment service provider or a person
+         exempt under section 100, or of an operator, a settlement
+         institution or a participant of a designated payment system;
+
+(iv)     the standards to be maintained by a licensee, an exempt
+         payment service provider, or a person exempt under
+         section 100, in the conduct of its business;
+
+(v)      the arrangement and conditions that are to apply if a licensee,
+         an exempt payment service provider or a person exempt under
+         section 100, or an operator, a settlement institution or a
+         participant of a designated payment system, appoints any
+         person as an independent contractor to carry out any of the
+         functions and duties of the licensee, exempt payment service
+         provider, person exempt under section 100, operator, settlement
+         institution or participant, as the case may be;
+
+(vi)     the type, form, manner and frequency of returns and other
+         information to be submitted to the Authority;
+
+(vii)    the preparation and publication of reports on the performance
+         of a licensee, an exempt payment service provider or a person
+         exempt under section 100, or of an operator, a settlement
+         institution or a participant of a designated payment system;
+
+(viii)   the remuneration of an auditor appointed under this Act and the
+         costs of an audit carried out under this Act;
+
+(ix)     any measures to be taken by any of the following persons or
+         classes of persons to address any discriminatory measure
+         practised by one or more of those persons or classes of persons:
+         (A)      any operator, or class of operators, of a relevant
+                  payment system;
+         (B)      any settlement institution, or class of settlement
+                  institutions, of a relevant payment system;
+         (C)      any participant, or class of participants, of a relevant
+                  payment system;
+         (D)      any person, or class of persons, that determines access
+                  to a relevant payment system;
+
+(x)      the appointment of a person approved by the Authority —
+         (A)      to advise an operator, a settlement institution or a
+                  participant of a designated payment system on the
+                  proper conduct of its business; or
+         (B)      to advise a class of participants of a designated
+                  payment system on the proper conduct of the business
+                  of a participant in that class of participants;
+
+(xi)     the collection by or on behalf of the Authority of information
+         from a licensee, an exempt payment service provider or a
+         person exempt under section 100, or from an operator, a
+         settlement institution or a participant of a designated payment
+         system, in relation to the conduct of its business at such
+         intervals or on such occasions as may be set out in the notice;
+
+(xii)    the manner in which a licensee, an exempt payment service
+         provider or a person exempt under section 100, or an operator,
+         a settlement institution or a participant of a designated payment
+         system, deals with its customers, and any conflicts of interests
+         between the licensee, exempt payment service provider, person
+         exempt under section 100, operator, settlement institution or
+         participant (as the case may be) and its customers;
+
+(xiii)   the duties of a licensee, an exempt payment service provider, or
+         a person exempt under section 100, to its customers in the
+         operation of payment accounts maintained for those customers
+         (including duties in relation to the foreign exchange rate to be
+         applied, where the currency for which the licensee, exempt
+         payment service provider or person exempt under section 100
+         maintains a payment account for a customer is different from
+         the currency received for payment into that payment account);
+
+(xiv)    the duties of a licensee, an exempt payment service provider, or
+         a person exempt under section 100, to its customers in relation
+         to the safeguarding of money under section 23 (including duties
+         in relation to the foreign exchange rate to be applied, where the
+         currency in which the money is safeguarded is different from
+         the currency received by the licensee, exempt payment service
+         provider or person exempt under section 100 from, or on
+         account of, a customer);
+
+(xv)     the display or exhibition by a licensee, an exempt payment
+         service provider, or a person exempt under section 100, of such
+         cautionary statements as the Authority thinks fit in a
+         conspicuous place at every place of business of the licensee,
+         exempt payment service provider or person exempt under
+         section 100; and
+     (xvi)     the provision by a licensee, an exempt payment service
+               provider, or a person exempt under section 100, of cautionary
+               statements in writing to the customers of the licensee, exempt
+               payment service provider or person exempt under section 100;
+
+     (xvii)    the activities that may be carried out by an issuer of a designated
+               systemic stablecoin, in relation to its issuance of the designated
+               systemic stablecoin;
+
+     (xviii)   the activities that may be carried out by a participant in respect
+               of a designated systemic stablecoin, including restricting the
+               participant from providing any digital payment token service in
+               respect of the designated systemic stablecoin;
+
+     (xix)     the standards to be maintained by an issuer of a designated
+               systemic stablecoin, in relation to its issuance of the designated
+               systemic stablecoin;
+
+     (xx)      the requirement for an issuer of a designated systemic
+               stablecoin to operate as a corporation;
+
+     (xxi)     the disclosure to the public, in the form and manner specified
+               by the Authority, any information relating to the operations and
+               activities of an issuer or a participant in respect of a designated
+               systemic stablecoin, and the manner the issuer or participant
+               complies with any provision of this Act or requirements
+               imposed under this Act;
+
+     (xxii)    operational requirements for the purposes of risk management
+               by an issuer of a designated systemic stablecoin (including but
+               not limited to stress testing); and
+
+     (xxiii)   financial requirements on an issuer of a designated systemic
+               stablecoin as the Authority considers appropriate, having regard
+               to the risks arising from the activities of its business of issuing
+               designated systemic stablecoins and such other factors as the
+               Authority considers relevant.
+
+(b) to require any person that contravenes, has contravened, or is likely to
+    contravene, any provision of this Act —
+    (i)       to comply with, or to cease contravening, that provision;
+
+     (ii)      to take any action necessary to enable the person to conduct the
+               person’s business in accordance with sound principles; and
+             (iii)     where the person is a company, to remove any of its directors;
+                       and
+
+        (c) for any other purpose specified in this Act.
+   (3) It is not necessary to publish any written notice issued under subsection (1) in
+the Gazette.
+  (4) The Authority may at any time vary, rescind or revoke any notice issued under
+subsection (1).
+   (5) A person that fails to comply with any requirement specified in a notice issued
+under subsection (1) shall (if the failure to comply with that requirement is not an
+offence under any other provision of this Act) be guilty of an offence and shall be liable
+on conviction to a fine not exceeding $100,000 and, in the case of a continuing offence,
+to a further fine not exceeding $10,000 for every day or part of a day during which the
+offence continues after conviction.
+   (6) In this section, “discriminatory measure” means any measure that is, or is likely
+to be, not equally disadvantageous or advantageous to all participants of the relevant
+payment system, in that the measure —
+        (a) prejudices or benefits one or more of those participants to a greater extent
+            than the other participants; or
+       (b) prejudices or benefits one or more of those participants without affecting
+           the other participants.
+
+Power of Authority to make regulations
+   103.—(1) The Authority may make regulations prescribing matters required or
+permitted by this Act to be prescribed, or necessary or convenient to be prescribed for
+carrying out or giving effect to this Act.
+   (2) Without limiting subsection (1), the Authority may make regulations for or with
+respect to —
+       (a) the fees to be paid in respect of any matter or thing required for the
+           purposes of this Act, and the refund or remission of the whole or any part
+           of any such fees;
+       (b) the granting, variation, change, lapsing, surrender, revocation or
+           suspension of a licence, and all incidental matters;
+        (c) the cessation of the provision of a payment service by a licensee, an
+            exempt payment service provider or a person exempt under section 100,
+            and all incidental matters;
+(d) the activities that may be carried out by an operator, a settlement
+    institution or a participant of a designated payment system, in relation to
+    its business;
+(e) the standards to be maintained by an operator, a settlement institution or
+    a participant of a designated payment system in the conduct of its
+    business;
+ (f) any measures to be taken by an operator, a settlement institution, or a
+     participant or class of participants, of a designated payment system in
+     relation to its business;
+(g) the standards, framework, policies and procedures for business continuity
+    management (including for ensuring the availability of a designated
+    payment system by the maintenance of a backup system) by an operator
+    or a settlement institution of a designated payment system;
+(h) the corporate governance of a licensee, an exempt payment service
+    provider or a person exempt under section 100, or of an operator or a
+    settlement institution of a designated payment system;
+ (i) prescribing the offences that may be compounded;
+ (j) prescribing the procedure —
+         (i) for the use of the electronic service mentioned in section 106;
+               and
+
+         (ii)   in circumstances where there is a breakdown or an interruption
+                of the electronic service;
+
+(k) the imposition, variation or revocation of an access regime;
+ (l) the acquisition or holding of shares or any other interest in an operator of
+     a designated payment system;
+(m) the acquisition or holding of shares or any other interest by an operator of
+    a designated payment system in any other entity;
+(n) different requirements for the audit of accounts in relation to different
+    designated payment systems;
+(o) the responsibilities of an operator or a settlement institution of a
+    designated payment system in relation to the audit of its accounts;
+(p) the procedures applicable in the event of a default in any payment
+    obligations facilitated by a designated payment system, including the
+    suspension and re-admission of any participants of the designated
+    payment system;
+       (q) the determination, for the purposes of this Act, of the equivalent in foreign
+           currency of a Singapore dollar amount, including the exchange rate and
+           time at which the amount of foreign currency is to be translated to
+           Singapore currency;.
+       (r) the maintenance by an issuer of a designated systemic stablecoin of
+           minimum capital of a prescribed amount and in a prescribed manner; and
+       (s) the standards, systems, and processes which an issuer or a participant in
+           respect of a designated systemic stablecoin must adopt or establish to
+           protect the integrity, authenticity and confidentiality of data relating to –
+                  (i) in the case of the issuer, the issuance of the designated systemic
+                  stablecoin (including the redemption of the designated systemic
+                  stablecoin); and
+                  (ii) in the case of a participant, the provision of any digital payment
+                  token service in respect of the designated systemic stablecoin.
+  (3) Except as otherwise expressly provided in this Act, regulations made under this
+Act —
+       (a) may be of general or specific application;
+      (aa) may relate to all, or any class, category or description of persons or
+           payment services, MAS-regulated stablecoin issuers or MAS-regulated
+           stablecoins, and may make different provisions for different classes,
+           categories or descriptions of persons or payment services, MAS-regulated
+           stablecoin issuers or MAS-regulated stablecoins, or to a particular person
+           or payment service, MAS-regulated stablecoin issuer or MAS-regulated
+           stablecoin;
+                                                                  [Act 1 of 2021 wef 04/04/2024]
+
+       (b) may contain such saving and transitional provisions as the Authority may
+           consider necessary or expedient;
+       (c) may provide that a contravention of any specified provision of the
+           regulations shall be an offence; and
+       (d) may provide —
+               (i) in the case of an individual, for penalties not exceeding a fine
+                    of $50,000 or imprisonment for a term not exceeding 2 years or
+                    both for each offence and, in the case of a continuing offence, a
+                    further penalty not exceeding a fine of $5,000 for every day or
+                    part of a day during which the offence continues after
+                    conviction; and
+
+                (ii)   in any other case, for penalties not exceeding a fine of $100,000
+                       and, in the case of a continuing offence, a further penalty not
+                        exceeding a fine of $10,000 for every day or part of a day during
+                        which the offence continues after conviction.
+
+Publication of certain information
+  104.—(1) The Authority may, from time to time, prepare and publish —
+       (a) consolidated statements aggregating any information provided under this
+           Act; or
+       (b) for statistical purposes, statements that relate to or are derived from any
+           information provided under this Act in respect of —
+                (i) a payment system, being the only payment system in its class;
+                       or
+
+                (ii)    a payment service provided by a licensee that is a payment
+                        service provider, being the only payment service in its class; or
+                        .
+
+                (iii)   an MAS-regulated stablecoin issued by a licensee that is an
+                        MAS-regulated stablecoin issuer, being the only MAS-
+                        regulated stablecoin issued in its class.
+
+   (2) The Authority may, from time to time and in such form or manner as the
+Authority considers appropriate, publish such information as the Authority may
+consider necessary or expedient to publish in the public interest, including information
+relating to all or any of the following:
+       (a) the lapsing, surrender, revocation or suspension of the licence of any
+           person under section 11;
+       (b) the acceptance by any person of an offer to compound an offence under
+           section 96;
+       (c) the revocation or withdrawal of any exemption granted under this Act;
+       (d) the conviction of any person for any offence under this Act;
+       (e) any other action taken by the Authority against any person under this Act.
+
+                                               …
+
+ 113A. —(1) Section 2 of the Financial Services and Markets Act 2022 is amended
+ by inserting, immediately after paragraph (o) of the definition of “financial
+ institution”, the following paragraph:
+
+      “(oa) any issuer of a stablecoin that is designated under the Payment Services
+      Act 2019;”
+                                 FIRST SCHEDULE
+
+
+                                      PART 2
+
+               SERVICES THAT ARE NOT PAYMENT SERVICES
+
+   2. Despite Part 1 of this Schedule, the following services are not payment services
+for the purposes of this Act:
+
+  …
+      (l) any digital payment token service that is provided in respect of any limited
+          purpose digital payment token;
+                                                       [Act 1 of 2021 wef 04/04/2024]
+    (m) any digital payment token service that is provided by any MAS-regulated
+        stablecoin issuer in respect of any MAS-regulated stablecoin that it issues
+        where the digital payment token service is incidental to its business of
+        issuing MAS-regulated stablecoins.
+
