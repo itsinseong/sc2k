@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StableWatch PRD — 2026-09-13</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --bg:#f3f4f7;--panel:#fff;--card:#fff;--ink:#171b26;--dim:#5c6579;--line:#dbe0e8;
+  --accent:#2f5fd6;--accent-ink:#1c3d94;
+  --red:#c8412a;--green:#1f7f5c;--amber:#a9711a;--orange:#c15a1f;
+  --code:#eef1f5;--sidebar:#eceff4;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e1117;--panel:#151a23;--card:#171d28;--ink:#e7ebf3;--dim:#96a1b8;--line:#2a3140;
+    --accent:#6f95f0;--accent-ink:#a9c0f7;
+    --red:#e5664e;--green:#3db98a;--amber:#dba24a;--orange:#e0854a;
+    --code:#1c2330;--sidebar:#11151d;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e1117;--panel:#151a23;--card:#171d28;--ink:#e7ebf3;--dim:#96a1b8;--line:#2a3140;
+  --accent:#6f95f0;--accent-ink:#a9c0f7;
+  --red:#e5664e;--green:#3db98a;--amber:#dba24a;--orange:#e0854a;
+  --code:#1c2330;--sidebar:#11151d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Pretendard","Apple SD Gothic Neo",system-ui,sans-serif;
+  font-size:16px;line-height:1.7;
+}
+.shell{display:flex;min-height:100vh;max-width:1880px;margin:0 auto}
+
+/* 사이드바 */
+.side{
+  width:280px;flex:0 0 280px;background:var(--sidebar);border-right:1px solid var(--line);
+  position:sticky;top:0;height:100vh;overflow-y:auto;padding:28px 22px 40px;
+}
+.side .brand{font-weight:700;font-size:15px;letter-spacing:-.01em;margin-bottom:2px}
+.side .brand-sub{font-size:12.5px;color:var(--dim);margin-bottom:22px}
+.side nav{display:flex;flex-direction:column;gap:1px}
+.side nav a{
+  display:block;padding:7px 10px;border-radius:5px;color:var(--dim);text-decoration:none;
+  font-size:13.5px;line-height:1.4;
+}
+.side nav a:hover{background:var(--card);color:var(--ink)}
+.side .grp{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--dim);margin:16px 0 4px 10px;opacity:.7}
+.side .grp:first-of-type{margin-top:4px}
+
+/* 본문 */
+main{flex:1;min-width:0;padding:48px 64px 140px;max-width:1320px}
+header.hero{margin-bottom:56px}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:12.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--accent-ink);margin:0 0 12px}
+h1.title{font-size:clamp(34px,3.4vw,50px);line-height:1.15;margin:0 0 10px;letter-spacing:-.015em}
+.subtitle{font-size:18px;color:var(--dim);margin:0}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:24px;padding-top:20px;
+  border-top:1px solid var(--line);font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--dim)}
+
+section{margin:0 0 72px;scroll-margin-top:28px}
+section h2{font-size:26px;margin:0 0 22px;letter-spacing:-.01em;display:flex;align-items:baseline;gap:12px}
+section h2 .num{font-family:"JetBrains Mono",monospace;font-size:14px;color:var(--accent-ink);font-weight:600}
+h3{font-size:17px;margin:26px 0 10px}
+p{margin:0 0 15px}
+p:last-child{margin-bottom:0}
+strong{font-weight:600}
+.dim{color:var(--dim)}
+a{color:var(--accent-ink)}
+
+table{border-collapse:collapse;width:100%;font-size:14.5px;margin:4px 0}
+.twrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px;margin:6px 0 20px}
+.twrap table{margin:0}
+th,td{border-bottom:1px solid var(--line);padding:10px 14px;text-align:left;vertical-align:top}
+th{background:var(--code);font-weight:600;font-size:13px;color:var(--dim);
+  text-transform:uppercase;letter-spacing:.03em}
+tr:last-child td{border-bottom:none}
+
+.note{background:var(--code);border-left:3px solid var(--line);border-radius:0 5px 5px 0;
+  padding:12px 16px;font-size:14px;color:var(--dim);margin:14px 0}
+
+/* 카드 그리드: 핵심 기능 */
+.feat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:6px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:7px;padding:18px 20px}
+.feat .fn{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--accent-ink);
+  font-weight:600;margin-bottom:6px}
+.feat .ft{font-weight:600;font-size:15.5px;margin-bottom:6px}
+.feat .fd{font-size:14px;color:var(--dim);line-height:1.65}
+
+/* 성공지표 카드 */
+.metric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:6px}
+.metric{background:var(--card);border:1px solid var(--line);border-radius:7px;padding:18px 20px}
+.metric.must{border-left:4px solid var(--green)}
+.metric h4{margin:0 0 8px;font-size:15px}
+.metric p{font-size:14px;color:var(--dim);margin:0}
+
+/* 리스크 카드 */
+.risk-list{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.risk{display:grid;grid-template-columns:260px 1fr;gap:18px;background:var(--card);
+  border:1px solid var(--line);border-radius:7px;padding:14px 18px;align-items:start}
+.risk .rt{font-weight:600;font-size:14.5px}
+.risk .rm{font-size:13.8px;color:var(--dim);line-height:1.6}
+
+/* 재분류 표 색 배지 */
+.kind{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:14px}
+.kind i{width:11px;height:11px;border-radius:2px;flex:0 0 auto}
+.k-bill i{background:var(--amber)}
+.k-deleg i{background:var(--amber);opacity:.45}
+.k-part i{background:var(--orange)}
+.k-gap i{background:var(--red)}
+.count{font-family:"JetBrains Mono",monospace;font-weight:600}
+
+ul.plain{list-style:none;padding:0;margin:6px 0 0}
+ul.plain li{padding:8px 0;border-top:1px solid var(--line);font-size:14.8px;line-height:1.65}
+ul.plain li:first-child{border-top:none}
+ul.rules{padding-left:20px;margin:6px 0 0}
+ul.rules li{margin:7px 0;font-size:15px;line-height:1.65}
+
+.linkgrp{margin-bottom:26px}
+.linkgrp h3{margin-top:0}
+ul.links{list-style:none;padding:0;margin:0}
+ul.links li{padding:10px 0;border-top:1px solid var(--line);font-size:14.5px;line-height:1.65}
+ul.links li:first-child{border-top:none}
+ul.links li .lnote{color:var(--dim);display:block;margin-top:2px;font-size:13.5px}
+
+code{font-family:"JetBrains Mono",monospace;font-size:.88em;background:var(--code);
+  padding:1px 6px;border-radius:3px}
+
+.footline{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--dim);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media (max-width:1400px){
+  .feat-grid,.metric-grid{grid-template-columns:1fr}
+  .risk{grid-template-columns:1fr}
+  main{padding:40px 32px 120px}
+}
+@media (max-width:960px){
+  .shell{flex-direction:column}
+  .side{position:relative;width:100%;height:auto;flex:none}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<aside class="side">
+  <div class="brand">StableWatch</div>
+  <div class="brand-sub">PRD · 2026-09-15 노션 동기화</div>
+  <nav>
+    <div class="grp">개요</div>
+    <a href="#owners">담당자와 이해관계자</a>
+    <a href="#problem">문제</a>
+    <a href="#target">타겟</a>
+    <div class="grp">제품</div>
+    <a href="#flow">핵심 흐름</a>
+    <a href="#scenario">유저 시나리오</a>
+    <a href="#features">핵심 기능</a>
+    <a href="#kr-reclass">한국 규칙 15개 재분류</a>
+    <a href="#kr-practice">한국 현행 유사 공시 3종</a>
+    <div class="grp">경계와 규칙</div>
+    <a href="#not-doing">하지 않는 것</a>
+    <a href="#biz-rules">주요 비즈니스 규칙</a>
+    <a href="#alt">기존 대안과 우리 자리</a>
+    <div class="grp">실행</div>
+    <a href="#metrics">성공지표</a>
+    <a href="#schedule">일정</a>
+    <a href="#risk">리스크</a>
+    <a href="#assumptions">추정과 미확인</a>
+    <a href="#extension">확장 (9/21 이후)</a>
+    <div class="grp">근거</div>
+    <a href="#sources">근거와 원출처 링크</a>
+  </nav>
+</aside>
+
+<main>
+
+<header class="hero">
+  <p class="eyebrow">Product Requirements Document</p>
+  <h1 class="title">StableWatch</h1>
+  <p class="subtitle">원화 스테이블코인 준비금 공시 판정기</p>
+  <div class="meta-row">
+    <span>과목 미디어프로젝트 2026-2 (아주대)</span>
+    <span>담당 강인성 1인</span>
+    <span>노션 원본 최종 수정 2026-09-15</span>
+    <span><a href="https://app.notion.com/p/3d2a1bab894481639679f18fdb41e516">노션에서 보기 ↗</a></span>
+  </div>
+</header>
+
+<section id="owners">
+  <h2><span class="num">01</span>담당자와 이해관계자</h2>
+  <div class="twrap"><table>
+    <tr><th>역할</th><th>이름</th><th>담당</th></tr>
+    <tr><td>PM</td><td>강인성</td><td>문제 정의, 규제 리서치, 요건 매트릭스, PRD, 발표</td></tr>
+    <tr><td>데이터</td><td>강인성</td><td>발행사 보고서 파서, 규칙 엔진, 관할권 설정 JSON</td></tr>
+    <tr><td>FE</td><td>강인성</td><td>화면 A 판정, 화면 B 고객 환매, 화면 C 근거 그래프, Next.js 정적 배포</td></tr>
+  </table></div>
+  <p class="dim">스테이크홀더: 미디어프로젝트 담당 교수(평가), 은행권 디지털 기획 채용 담당자(포트폴리오 독자).</p>
+</section>
+
+<section id="problem">
+  <h2><span class="num">02</span>문제</h2>
+
+  <p><strong>은행 직접 발행이 2026년에 현실이 됐다.</strong> 홍콩 HKMA가 2026-04-10 HSBC와 Anchorpoint에 첫 발행 인가를 냈고(신청 36곳 중 2곳, 하반기 출시 예정), 싱가포르 MAS가 2026-09-01 법제화 입법예고를 냈으며(의견마감 10-16), 같은 날 Bank of America, Citi, Goldman, UBS, Deutsche 등 21개 금융기관이 합작사 설립을 발표했다(달러 토큰 2027 상반기). 일본 3대 은행은 2027-03 공동 발행이 목표다.</p>
+
+  <p><strong>발행하면 준비금 공시 의무가 따라오는데, 형식이 정해져 있지 않다.</strong> 미국 GENIUS Act §4(a)(1)(C)와 §4(a)(3)은 월별 준비금 구성을 웹사이트에 공개하고 등록 회계법인이 매월 examination하며 CEO와 CFO가 매월 인증하라고 한다. 그런데 OCC 하위규정 제안(2026-03-02, 91 FR 10202)은 통일 서식을 정하지 않았다. 템플릿 지정 여부, CUSIP과 예금집중도 공개, 평균 만기 산식, 수탁기관 실명, 검증 기준을 모두 공개질문(Q88~Q96)으로 남겼다. 관할권마다 주기와 검증 수준도 다르다. 홍콩은 일간 명세 작성과 주간 웹 갱신, 싱가포르는 월별 attestation을 다음 달 말까지 웹 공개, EU는 일반 EMT에 월별 웹 공시 의무가 없고 중요 EMT를 발행하는 EMI에만 6개월 감사가 붙는다.</p>
+
+  <p><strong>CBDC와 예금토큰과 스테이블코인은 서로 다르다.</strong> 한국은행은 2026년 통화신용정책 운영방향에서 CBDC와 스테이블코인 거버넌스를 투 트랙으로 추진한다고 밝혔다. 프로젝트 한강 2단계가 2026년 상반기 착수해 참여 은행이 9곳으로 늘었고(착수일 확인 필요) 실거래 개시가 2026년 하반기로 예상되는데, 이는 기관용 CBDC와 은행 예금토큰을 결합한 모델이다. 원화 스테이블코인은 별도 입법 트랙이고 아직 법이 없다.</p>
+
+  <div class="twrap"><table>
+    <tr><th>구분</th><th>발행 주체</th><th>공시</th></tr>
+    <tr><td>CBDC(기관용)</td><td>한국은행</td><td>은행 간 결제 인프라, 준비금 공시 불필요</td></tr>
+    <tr><td>예금토큰</td><td>시중은행</td><td>은행 예금을 토큰화한 것. 예금 여부와 보호는 혁신금융서비스 특례로 다뤄져 이 프로젝트의 판정 범위 밖</td></tr>
+    <tr><td><strong>원화 스테이블코인</strong></td><td>은행 또는 민간 컨소시엄</td><td><strong>발행사가 새로 자산을 쌓아야 하고 그걸 공시해야 하는데 형식이 없음. 이 프로젝트가 다루는 게 이것뿐이다</strong></td></tr>
+  </table></div>
+
+  <p class="dim">표의 기준은 발행 주체와 준비자산 공시 필요 여부다. 보유자가 누구에게 어떤 청구권을 갖는지는 별도 검토가 필요하다.</p>
+  <div class="note">출처: ZDNet(2025-12-26, 한은 CBDC와 스테이블코인 투 트랙 보도), 파이낸셜뉴스(2026-03-23, 프로젝트 한강 2단계), CoinDesk(2026-07-20, 은행 9곳 실거래 준비 보도). 발행사 지배구조 등 확정되지 않은 세부사항은 여기 포함하지 않는다. 기사 날짜와 "투 트랙" 표현은 기사 서술이며 정책 원문으로 재확인이 필요하다(적대검증 3차 #15).</div>
+
+  <p><strong>한국은 발행사가 없고 법도 없지만, 구조가 같은 공시는 이미 돌고 있다.</strong> 정부안은 2026-09-05 기준 국회 미제출이고(9-3과 9-5 두 차례 확인. 금융위원장은 8-24 정무위에서 가을 입법에 "최대한 노력"이라고 답한 것으로 보도), 금융위 공식 원문에 "100%, 국내 보관, 이자 금지"가 확정 제도로 나온 것은 없다(보도만). 금융위가 원문으로 말한 것은 "준비자산에 대한 엄격한 관리의무"와 "이용자의 상환청구권 보장"(2025-01-15, 검토 방향)이다. 한국은행은 통화신용정책보고서 2026년 3월에 "우선 은행 중심 컨소시엄에 발행을 허용하고 범위를 점차 확대해 나가는 방안이 바람직하다"고 적었다. 한편 가상자산이용자보호법(2024-07 시행) 아래 국내 거래소는 고객위탁자산 보유비율을 공시한다. 코빗은 자산별 비율을 일별로 공개하고(2026-09-04 기준 BTC 100.13%, USDT 107.43%), 자산실사 보고서를 월간과 분기로 올리며, 원화 예치금은 신한은행 분리 보관을 명시한다. 즉 스테이블코인 준비금 공시와 현행 거래소 공시 사이의 차이가 곧 한국 제도의 빈칸이다.</p>
+
+  <p>세 층을 합치면: 은행 발행이 시작되는데 공시 형식은 열려 있고 관할권마다 다르며, 한국은 참고할 발행사 공시가 없다. 이 도구는 한국 전용이다. 한국의 그 빈칸에 값을 제안하고, 해외 규정과 해외 발행사 실데이터로 그 값을 검증한다.</p>
+</section>
+
+<section id="target">
+  <h2><span class="num">03</span>타겟</h2>
+  <p>1차는 은행 발행 준비 조직의 준법 또는 자금 담당이다. 카카오뱅크 "서비스 기획자 - 스테이블코인" 공고의 담당 업무에 "가상자산 관련 규제와 제도를 반영한 서비스 기획"이 그대로 적혀 있고, BNK경남은행 디지털자산사업부 공고는 "스테이블코인, CBDC 산업의 규제 변화에 따른 전략 수립"이다. 이들이 화면 A(판정)를 쓴다. 이들의 우위는 알림 속도가 아니라 판정 속도다. 정무위 대안이 나오면 은행 법무팀과 로펌은 당일 안다. 로펌 메모가 대안의 의미를 정리하는 데 2~3주 걸리는 동안, 이 도구는 대안 조문을 규칙 값으로 넣어 분 단위로 "준비 중인 구조가 15칸 중 몇 칸을 통과하나"를 낸다.</p>
+  <p>2차는 은행 앱에서 원화 스테이블코인을 환매하는 고객이다. 홍콩 조례는 환매 수수료와 조건과 처리기한 공시를 요구하고, 일본은 법정통화 오인 방지 설명 의무를 둔다. 이들이 화면 B(환매)를 본다.</p>
+  <p>3차는 감독기관, 연구자, 채용 담당자다. 갭 리스트를 읽는다.</p>
+  <div class="note">가설로 표시할 것: 은행 내부의 보고 주기와 정보원은 공개 자료로 확인되지 않는다. 현업 인터뷰는 미실시.</div>
+</section>
+
+<section id="flow">
+  <h2><span class="num">04</span>핵심 흐름</h2>
+  <p>해외 4개 관할권(US, EU, HK, SG)은 제안 대상이 아니라 참조 기준이고, 해외 발행사 3사(Circle, Tether, Paxos) 데이터는 한국 후보값을 실측으로 검증하는 재료다. 판정기 화면은 한국이 주인공이고 해외는 비교 열이다.</p>
+  <p>발행사와 보고서 선택(Circle 2023-01~2026-07, Tether, Paxos 등) → 파서가 JSON 생성 → 관할권 선택(US, EU 일반 EMT, EU 중요 EMT, HK, SG, KR 시나리오 v1) → 규칙 15개 판정 → 결과표(PASS, FAIL, N/A, 근거 조문, 근거 수치) → 관할권을 바꾸면 판정이 바뀌는 것을 확인. 이것이 화면 A다. 결과표의 판정 셀을 누르면 근거 간선을 타고 조문 원문까지 내려가는 화면 C(근거 그래프)로 이어진다.</p>
+  <p>고객이 환매 금액을 입력하면 화면 B가 화면 A의 판정을 읽어 상태(즉시 가능, 지연 가능, 보류)를 표시하고, 액면가와 수수료와 처리기한, 준비금 커버리지와 기준시각, 검증기관과 검증일, "예금이 아니며 예금자보호 대상이 아님" 고지를 보여준다.</p>
+  <p>한국 열은 단일 시나리오가 아니라 규칙별 후보값 배열이다. 칸마다 해외 참조값, 법안 8건이 낸 값, 내 제안(공시안 v1 D-01~D-05)을 두고 화면에서 고른다. 법안 8건은 정무위 법안소위에서 위원회 대안 하나로 합쳐지고 원안은 대안 반영 폐기되는 것이 관행이라(가상자산이용자보호법이 같은 경로), 통과되는 값은 8건 중 하나가 아니라 8건에서 골라 섞은 값이다. 그래서 법안별 시나리오가 아니라 값의 범위로 대비한다. 대안이 상환기한을 5영업일로 정하면 Circle은 통과하고 Tether는 탈락한다는 답이 그 자리에서 나온다. 값이 없는 칸(공백 후보, 부분 공백)이 갭 리스트다.</p>
+</section>
+
+<section id="scenario">
+  <h2><span class="num">05</span>유저 시나리오</h2>
+  <p><strong>준법 담당자</strong> — 이번 달 Circle 보고서 PDF를 화면 A에 올린다. 파서가 유통량과 준비자산과 CUSIP별 국채를 뽑고 합계가 맞는지 대사한다. 관할권을 US로 두고 규칙 15개를 돌리면 커버리지 100.11%로 R01은 PASS, 국채 잔존만기는 93일 이내라 R03도 PASS가 뜬다. 관할권을 HK로 바꾸면 주간 웹 갱신 요건(R07)이 FAIL로 바뀐다. 어느 조문 때문인지 근거를 펼쳐 확인하고, 이 표를 그대로 내부 보고에 붙인다.</p>
+  <p><strong>고객</strong> — 은행 앱에서 원화 스테이블코인 50만 원을 환매하려고 금액을 넣는다. 화면에 "즉시 가능"이 뜨고, 그 아래에 액면가 1원, 수수료 0원, 처리기한, 오늘 준비금 커버리지와 기준시각, 검증기관과 검증일이 보인다. "예금이 아니며 예금자보호 대상이 아님" 고지를 읽고 확인을 누른다. 준비금 보고서가 45일 넘게 묵었으면 같은 화면이 "지연 가능"으로 바뀌고 이유가 붙는다.</p>
+</section>
+
+<section id="features">
+  <h2><span class="num">06</span>핵심 기능</h2>
+  <div class="feat-grid">
+    <div class="feat"><div class="fn">F1</div><div class="ft">Circle PDF 파서 + 합계 대사</div>
+      <div class="fd">pdftotext로 요약표와 CUSIP별 국채 행(만기일, 공정가치)과 합계 행을 뽑고, 행 합계와 총계와 공정가치가 맞는지 대사한다. 범위는 2023-01~2026-07 43개월(2023-03 SVB 파산 디페그 구간과 2025-07 GENIUS Act 서명 전후 포함), 월중과 월말 기준일 모두 관측치로 저장해 86개 관측치를 만든다. 실패하면 중단하고 로그를 남긴다.</div></div>
+    <div class="feat"><div class="fn">F2</div><div class="ft">SEC N-MFP3 파서 + 집중도 계산</div>
+      <div class="fd">Circle Reserve Fund(USDXX)의 SEC 월간 공시 XML에서 자산유형별 합계, 만기 사다리, 레포 상대방별 비중을 계산한다. BlackRock 사이트 CSV는 약관상 자동 수집이 금지라 수동 대조용으로만 쓴다.</div></div>
+    <div class="feat"><div class="fn">F3</div><div class="ft">규칙 엔진 15개</div>
+      <div class="fd">순수 함수. 입력은 파싱된 JSON과 관할권 설정, 출력은 규칙별 PASS/FAIL/N/A와 근거 조문과 근거 수치와 기준시각. 규칙마다 PASS, FAIL, N/A 테스트 1개씩.</div></div>
+    <div class="feat"><div class="fn">F4</div><div class="ft">관할권 설정 6종</div>
+      <div class="fd">US, EU 일반 EMT, EU 중요 EMT, HK, SG는 참조 기준으로 단일 값. KR은 규칙별 후보값 배열(해외 참조값, 법안 8건 값, 내 제안). 임계치, 주기, 검증 수준, 조문 링크, 법적 상태(시행 중, 제정 후 미발효, 협의 중, 계류, 대안 성안, 공포, 시행령 입법예고), 버전과 날짜를 JSON으로.</div></div>
+    <div class="feat"><div class="fn">F5</div><div class="ft">화면 A 판정</div>
+      <div class="fd">보고서 선택, 관할권 토글, 결과표, 근거 펼침, 기준시각과 신선도, 커버리지와 구성 차트, 레포 상대방 집중도.</div></div>
+    <div class="feat"><div class="fn">F6</div><div class="ft">화면 B 고객 환매</div>
+      <div class="fd">환매 금액 입력, 상태(즉시 가능, 지연 가능, 보류)는 R01·R07·R10·R13 결과로 결정, 액면가와 수수료와 처리기한, 준비금 커버리지와 기준시각, 검증기관과 검증일, 예금 아님 고지.</div></div>
+    <div class="feat"><div class="fn">F7</div><div class="ft">갭 리스트 생성</div>
+      <div class="fd">규칙별 후보값 범위 표(대안 대비 매트릭스). 각 행에 해외 4개 관할권 값, 법안 8건 값, 내 제안, 한국 근거 5층을 병기하고, 값을 고르면 발행사 3사 판정이 바로 갱신된다. 값이 없는 칸이 갭 리스트다.</div></div>
+    <div class="feat"><div class="fn">F8</div><div class="ft">발행사 확장 (Tether, Paxos)</div>
+      <div class="fd">Circle만 넣으면 규칙 15개가 전부 PASS로 나와 판정기가 판정기가 아니게 된다. Tether(2026-06-30 기준 준비자산 1,877억 달러, 분기 BDO ISAE 3000R)는 비트코인과 귀금속과 기업채와 담보대출을 보유해 R02가 4개 관할권 전부 미충족. Paxos(PYUSD)는 월간 자체 Reserve Report와 KPMG attestation을 병렬로 내고 CUSIP과 수탁기관과 만기일까지 세분한다.</div></div>
+    <div class="feat"><div class="fn">F9</div><div class="ft">화면 C 근거 그래프</div>
+      <div class="fd">화면 A의 판정 셀에서 근거 간선을 타고 조문 원문까지 내려가는 드릴다운. 레포 <code>graph/</code>에 이미 있는 간선 110개(원문 대조 98개, 부분 일치 2개)와 법령 원문 14건, 계류 법안 8건, 문서 39건을 추가 리서치 없이 화면 표면으로 올리는 것이다.</div></div>
+  </div>
+</section>
+
+<section id="kr-reclass">
+  <h2><span class="num">07</span>한국 규칙 15개 층별 재분류</h2>
+  <p>한국 열 15칸을 다시 대조했다. 시행 법률에서 직접 나오는 값은 하나도 없다. 14칸이 계류 법안에 기대고, 그중 대부분이 안도걸 안(2211784) 제16조 한 조문이다. 법안이 폐기되면 전부 공백이 된다.</p>
+  <div class="twrap"><table>
+    <tr><th>종류</th><th>규칙</th><th>개수</th></tr>
+    <tr><td><span class="kind k-bill"><i></i>법안 후보값 있음</span></td>
+      <td>R01 커버리지(제16조①2), R02 허용 자산(①3가~라), R03 국채 만기 상한(①3다 "1년 이내"), R06 통화 일치(①1), R07 공개 주기, R08 검증 수준, R09 기준시각(김현정 제32조), R10 공개 기한(김현정 제32조①), R13 환매 조건, R14 이자 금지, R15 경영진 인증(제16조⑤)</td>
+      <td class="count">11</td></tr>
+    <tr><td><span class="kind k-deleg"><i></i>법안 내 위임 조항</span></td>
+      <td>R05 현금성 비율(제16조①4 "대통령령으로 정하는 비율")</td>
+      <td class="count">1</td></tr>
+    <tr><td><span class="kind k-part"><i></i>부분 공백</span></td>
+      <td>R11 발행잔액 산식(잔액 정의는 ①2에 있으나 제외항목 산식과 공개 의무 없음), R12 수탁기관 공개(보관기관 자격은 ①3나 위임, 실명과 위치 공개 의무는 없음)</td>
+      <td class="count">2</td></tr>
+    <tr><td><span class="kind k-gap"><i></i>공백 후보</span></td>
+      <td>R04 레포 만기(어느 층에서도 못 찾았으나 갭 확정 4단계 미완주)</td>
+      <td class="count">1</td></tr>
+  </table></div>
+  <p class="dim">공시 의무의 후보는 있으나 항목별 통일 서식과 세부 기준은 미확정이다. 전금법 시행령 제13조의2와 이용자보호법 시행령 제8조의 100%는 유사 선례일 뿐 직접 적용 근거는 없다. 가상자산업감독규정 제4조의 영업일 산정은 예치금 업무라 R09와 다른 규칙이다.</p>
+  <p>앞으로 이 열이 바뀌는 경로는 다섯 단계다: 정무위 대안 성안 → 본회의 통과 → 공포 → 시행령 입법예고(R05처럼 "대통령령으로 정하는" 위임 칸이 여기서 채워진다) → 감독규정과 시행(보통 6개월에서 1년 유예). 감시 스크립트는 이 다섯 상태를 갖고, 단계가 바뀔 때마다 후보값 배열을 갱신하고 발행사 3사를 재판정한다.</p>
+  <div class="note">이 분류는 2026-09-13 적대검증 3차(Codex)로 고쳤다. 이전 판의 "진짜 공백 3개"는 공시안 A1과 B3~B6가 이미 인용한 조문을 놓친 오류였다.</div>
+</section>
+
+<section id="kr-practice">
+  <h2><span class="num">08</span>한국 현행 유사 공시 3종 (관행층 실데이터)</h2>
+  <p>한국에 스테이블코인 발행사는 없지만 "고객 돈을 받아 별도로 보관하고 공시하는" 구조는 셋이 이미 돌고 있다. 근거층 5층(관행)의 실데이터로 쓴다.</p>
+  <div class="twrap"><table>
+    <tr><th>구분</th><th>근거</th><th>무엇을 공시하나</th><th>상태</th></tr>
+    <tr><td>거래소 고객위탁자산</td><td>가상자산이용자보호법 제6조, 감독규정 제5조</td><td>자산별 보유비율 일별, 실사보고서 월간과 분기, 관리기관 은행 실명</td><td>실측 완료(코빗 2026-09-04)</td></tr>
+    <tr><td><strong>선불충전금</strong></td><td>전자금융거래법 시행령 제13조의2</td><td>충전금 100% 별도관리(신탁 또는 예치). 공시 주기는 확인 필요</td><td>수집 예정(카카오페이, 토스, 네이버페이)</td></tr>
+    <tr><td>예금토큰 실증(프로젝트 한강)</td><td>한국은행 보도자료</td><td>참여 은행 9곳, 기관용 CBDC와 결합 모델. 판정 범위 밖이지만 "한국은 예금토큰을 먼저 한다"의 근거</td><td>3층 정부 자료</td></tr>
+  </table></div>
+  <p class="dim">선불충전금이 가장 가깝다. 코빗은 고객이 맡긴 가상자산이고 선불충전금은 고객이 낸 원화라, 원화를 받아 준비자산을 쌓는 스테이블코인과 구조가 같다. 발행 주체 후보인 은행 컨소시엄(유니카: 신한 우리 NH 케이뱅크 등, 하나 주도: BNK iM SC OK)은 4층 보도라 여기 넣지 않는다.</p>
+</section>
+
+<section id="not-doing">
+  <h2><span class="num">09</span>하지 않는 것</h2>
+  <ul class="rules">
+    <li>온체인 유통량 재구성과 암호학적 증거 봉인 — Tessera 수준의 자체 검증 인프라는 만들지 않는다. 대신 Tessera 공개 팩을 미국 규칙의 정답지로 쓴다</li>
+    <li>실시간 모니터링 — 법제처, 의안정보시스템, Circle, SEC 어디에도 웹훅이 없어 실시간은 원천 불가하고, 가장 빠른 소스도 하루 단위다. 감시는 하루 1회 cron으로 하고(확장 항목), 상시 서버는 감시용이 아니라 MCP 서빙용으로만 검토한다. 서버와 DB 없이 데이터 갱신은 파서 재실행 후 커밋</li>
+    <li>코빗 일별 수집 크론, 사용성 테스트 — 확장 과제로 남긴다</li>
+    <li>법률 자문과 실제 은행 시스템 연동 — 범위 밖. 한국 값은 전부 시나리오다</li>
+  </ul>
+</section>
+
+<section id="biz-rules">
+  <h2><span class="num">10</span>주요 비즈니스 규칙</h2>
+  <ul class="rules">
+    <li>제안 대상은 한국뿐이다. 해외 4개 관할권은 참조 기준이고 해외 발행사 데이터는 한국 후보값의 실측 검증 재료다</li>
+    <li>판정은 코드 규칙만 한다. LLM은 판정과 인용에 개입하지 않는다. LLM을 쓰는 곳은 셋뿐이다: 보도층 후보 수집, 적대검증 공격자, 근거 그래프 노드 id 인용으로 제한한 검색</li>
+    <li>시장 신호가 아니라 규제 공시 문서 자체를 판정한다. 페그, 유동성, 보유자 집중도 같은 시장 데이터는 입력이 아니다</li>
+    <li>규칙은 순수 함수다. 입력 필드가 없으면 N/A를 낸다. 억지로 채우지 않는다</li>
+    <li>관할권 설정은 코드가 아니라 JSON이다. 임계치와 주기와 검증 수준과 법적 상태를 거기에 둔다. 규칙 코드는 관할권을 모른다</li>
+    <li>파서는 합계 대사를 통과해야 결과를 출력한다. 대사 실패는 오류가 아니라 중단이다</li>
+    <li>확정 안 된 값은 "미정"이나 "추정"으로 표시하고 임의로 채우지 않는다. 한국 시나리오는 법률 원문이 아니라 날짜가 붙은 가정(KR-v1)이며, 법안이 나오면 v2로 올린다</li>
+    <li>바젤 SCO60은 발행사 규제가 아니라 은행이 코인을 보유할 때의 기준이므로 매트릭스가 아니라 부록에 둔다</li>
+    <li>EU 열은 일반 EMT(EMI), 중요 EMT(EMI), 은행 발행을 구분한다. MiCA Art. 58은 은행에 자동 적용되지 않는다</li>
+    <li>검증 수준은 examination, attestation, audit를 한 칸에 넣지 않고 구분한다</li>
+    <li>유통량 정의는 소스마다 다르다(Circle은 총공급에서 미발행과 동결과 소각대기를 뺀다). DefiLlama 수치와 바로 비교하지 않고 기준시각과 제외항목을 정규화한다</li>
+  </ul>
+</section>
+
+<section id="alt">
+  <h2><span class="num">11</span>기존 대안과 우리 자리</h2>
+  <div class="twrap"><table>
+    <tr><th>선행</th><th>하는 것</th><th>없는 것</th></tr>
+    <tr><td>Tessera(ProofLayer)</td><td>PYUSD와 USDC 보고서를 파싱해 GENIUS §4(a)에 매핑, PASS/FAIL 증거팩 공개</td><td>미국만. 비공개. 고객 화면 없음. 한국 없음</td></tr>
+    <tr><td>FeedOracle</td><td>MiCA(Art. 36 준비금)와 DORA와 AMLR 컴플라이언스 MCP, 스테이블코인 리스크 점수 MCP(시장 신호 7개: 페그, 유동성, 발행소각, 보유자 집중도, 수탁, 상환 마찰, 크로스체인. 105개 이상 토큰), 서명 영수증(출처, 타임스탬프, 내용 해시를 ES256K와 ML-DSA-65로 서명), 저장소 13개 MIT 공개, 호출당 과금</td><td>준비금 신호가 DefiLlama와 Etherscan과 수기 레지스트리. 발행사 공시 문서 파싱 없음. GENIUS 없음. 한국 없음. 2026-09-15 재확인</td></tr>
+    <tr><td>Veris (Fluxa Ventures)</td><td>AML 플랫폼(거래 스크리닝, SAR 자동 작성). 에이전트 6개 중 하나가 준비금 모니터(USDC USDT DAI FRAX, 5분/일 1회, GENIUS 불리언 체크). API와 VPC 배포, 무료~월 $2,500~연 $20K</td><td>준비금은 부속 기능. 공시 문서 파싱 없음. 조문 인용 없음. 비공개. 한국 없음. 2026-09-15 재확인</td></tr>
+    <tr><td>Xiang 외 2025 (arXiv 2512.02418)</td><td>LLM으로 공시 문서 파싱</td><td>코드 없음</td></tr>
+    <tr><td><strong>우리</strong></td>
+      <td><strong>한국 전용. 규제 공시 문서(발행사 attestation, SEC N-MFP3)를 파싱해 규칙 15개로 판정하고 조문 원문까지 인용. 해외 4개 관할권은 참조 기준, 발행사 3사(Circle, Tether, Paxos)는 실측 재료. 법안 8건의 값 범위로 정무위 대안에 대비하는 후보값 매트릭스, 한국 공시안 제안, 고객 환매 화면이 판정을 읽는 구조, 공개 코드</strong></td>
+      <td><strong>온체인 재구성과 암호학적 봉인 없음. 시장 신호 없음. 판정 대상 발행사 3곳뿐</strong></td></tr>
+  </table></div>
+  <p>선행 셋의 공통점은 시장 데이터나 수기 목록으로 "있는 규정"을 체크하는 것이고, 규제 공시 문서 자체를 파싱하거나 없는 규정에 값을 제안하는 곳은 없다. FeedOracle의 서명 영수증(해시와 타임스탬프)과 methodology 노출과 MCP 제공 형태는 따라한다(확장 항목). 이 조합은 2026-09-04 기준 GitHub 6개 질의와 퍼플렉시티 15개 질의에서 확인되지 않았고, Veris와 FeedOracle은 2026-09-15에 사이트와 저장소를 직접 열어 재확인했다. "확인 범위에서 없음"이지 세계 최초 주장이 아니다. 정직한 열위: 미국 증거팩 완성도만 비교하면 Tessera 대비 3 대 10(추정). 그 대신 Tessera가 미국 한 관할권에서 하는 것을 네 관할권과 한국 시나리오로 넓혔고, Tessera 공개 팩을 우리 미국 규칙의 테스트 오라클로 쓴다.</p>
+</section>
+
+<section id="metrics">
+  <h2><span class="num">12</span>성공지표</h2>
+  <div class="metric-grid">
+    <div class="metric must"><h4>1층 시스템 검증 (반드시 달성)</h4>
+      <p>Circle 2023-01~2026-07 43개월(86개 관측치) 파싱 대사율 100%, 규칙 15개 각각 PASS·FAIL·N/A 테스트 통과, 같은 데이터로 관할권 2개 이상에서 판정이 달라지는 것을 최종 발표에서 시연</p></div>
+    <div class="metric"><h4>2층 외부 대조 (가능 시)</h4>
+      <p>US 규칙 결과와 Tessera 팩 결과의 일치율(측정 후 보고), KR-v1에서 나온 갭 리스트 항목 수(측정값), 사용성 테스트 5명 중 환매 화면 완주 인원(측정값)</p></div>
+    <div class="metric"><h4>3층 발행사 비교 (신규)</h4>
+      <p>발행사 3사 × 관할권 6개 × 규칙 15개의 충족·미충족 분포(측정값. Circle은 대부분 충족, Tether는 다수 미충족이 정상), 근거 그래프에서 조문 원문까지 클릭으로 도달 가능한 판정 셀의 비율(측정값)</p></div>
+    <div class="metric"><h4>공시안 채움률</h4>
+      <p>43개월 × 27항목 = 1,161칸(이전 4개월 × 27항목 = 108칸) 중 채움·못 채움·파싱 실패·해당 없음의 개수(측정값). 못 채움이 나온 항목마다 서식을 유지할지 낮출지 판단을 적는다</p></div>
+  </div>
+</section>
+
+<section id="schedule">
+  <h2><span class="num">13</span>일정</h2>
+  <p>남은 실작업 추정은 기존 핵심 기능(파서, 규칙 엔진, 화면 A·B, 갭 리스트, 배포) 3~4일과 신규 3축(Circle 43개월 확장, 발행사 확장, 근거 그래프 화면) 4~6일을 더한 7~10일(추정)이다. 근거 간선 확정은 한국(KR-v1) 설정 JSON의 선행조건이다. 해외 5개 관할권 설정은 매니페스트 §7 조문으로 바로 만들 수 있고, 파서와 화면 골격도 간선 확정과 독립이다. 막혀 있는 것은 한국 열 하나다.</p>
+  <div class="twrap"><table>
+    <tr><th>구간</th><th>기간</th><th>할 일</th><th>외부 고정 일정</th></tr>
+    <tr><td>2주차 잔여</td><td>9/10~9/14</td><td>근거 간선 110개 확정 검토, 관할권 설정 JSON 6종, 규칙 엔진 15개와 단위 테스트, Circle CUSIP 행 파서</td><td></td></tr>
+    <tr><td>3주차</td><td>9/15~9/21</td><td>SEC N-MFP3 파서, 갭 리스트, Circle 43개월 수집과 파싱</td><td><strong>9/21 과제계획서(hwp) 제출과 멘토 신청</strong></td></tr>
+    <tr><td>4주차</td><td>9/22~9/28</td><td>화면 A 판정, 배포 골격</td><td>기획서 발표 구간 시작(4~6주차, 9/22~10/9)</td></tr>
+    <tr><td>5주차</td><td>9/29~10/5</td><td>화면 B 고객 환매, 화면 C 근거 그래프</td><td>9/30 멘토 확정</td></tr>
+    <tr><td>6주차</td><td>10/6~10/12</td><td>Tether 파서, Paxos 파서, 공시안 채움률 시험</td><td></td></tr>
+    <tr><td>마감</td><td>10/13</td><td>빌드 종료</td><td>Claude 유료 구독 종료</td></tr>
+    <tr><td>이후</td><td>10/14~</td><td>사용성 테스트 5명, 적대검증 3차, 최종 발표 준비</td><td>11/15 멘토링 실행 완료, 11/23 결과보고서 제출, 최종 발표 13~15주차(11/23~12/11)</td></tr>
+  </table></div>
+  <p class="dim">9/21이 가장 가까운 외부 마감이다. 4주 과제계획서를 hwp로 내면서 멘토를 신청한다. 멘토가 과제계획서와 직무 커리어를 보고 수락하는 구조라 이 문서가 멘토 매칭을 좌우한다. 담당 서철수, 멘토 19명 중 팀당 1명, 멘토링 최대 2회 회당 2시간, 진행 사진 필요. 출처는 멘토링 추진계획_260901.pdf 5쪽과 검증대장 9절이다.</p>
+</section>
+
+<section id="risk">
+  <h2><span class="num">14</span>리스크</h2>
+  <div class="risk-list">
+    <div class="risk"><div class="rt">법조문 해석 오류</div><div class="rm">규칙마다 조문 번호와 원문 링크, Codex와 Gemini 적대검증 재실행</div></div>
+    <div class="risk"><div class="rt">Circle PDF 형식 변경</div><div class="rm">43개월분 회귀 테스트, 실패 시 해당 월 수동 입력</div></div>
+    <div class="risk"><div class="rt">정무위 대안의 값이 후보값 범위 밖으로 나오는 것</div><div class="rm">범위 안이면 재판정만, 밖이면 후보값 추가 후 재판정. 시행령 위임 칸은 입법예고 시점에 채운다</div></div>
+    <div class="risk"><div class="rt">BlackRock 약관이 자동 수집과 재배포를 금지</div><div class="rm">2026-09-05 원문 확인. 데이터원을 SEC N-MFP3로 교체, CSV는 수동 대조와 비공개 보관</div></div>
+    <div class="risk"><div class="rt">범위 팽창</div><div class="rm">우선순위를 기존 핵심 기능 &gt; 발행사 확장 &gt; 근거 그래프 화면 &gt; Circle 43개월 순으로 두고, 시간이 모자라면 뒤에서부터 자른다. Circle은 최소 4개월로, 근거 그래프 화면은 정적 표로, 발행사는 Tether만으로 후퇴 가능</div></div>
+    <div class="risk"><div class="rt">실사용자 부재</div><div class="rm">사용성 테스트 5명, 은행 현업 1명 접촉 시도</div></div>
+    <div class="risk"><div class="rt">규제 읽기에 시간이 새는 것</div><div class="rm">파서와 엔진을 먼저, 매트릭스는 4주차 이후</div></div>
+    <div class="risk"><div class="rt">원화 스테이블코인 발행이 장기 지연되는 것</div><div class="rm">한국이 예금토큰을 먼저 실증하므로 가능. 그 경우 산출물은 해외 4개 관할권 판정기와 한국 공시안 v1 초안으로 유지하고, 은행 준법 담당 수요 가설은 정책 연구자 수요로 전환한다. 전환 조건은 2027년 상반기까지 정부안 미제출</div></div>
+  </div>
+</section>
+
+<section id="assumptions">
+  <h2><span class="num">15</span>추정과 미확인</h2>
+  <p>남은 실작업 7~10일과 면접 효과, 카카오뱅크 인턴 포트폴리오 적합성은 추정이다. "한국은 미국을 따라간다"는 부분만 근거가 있다(한은은 은행 컨소시엄을 선호하고 금융위는 미확정). 다관할권 공개 구현이 없다는 것은 "확인 범위에서"다. Paxos 원본 PDF의 텍스트 추출 가능 여부, 업비트 실사보고서 상세는 미확인. BlackRock 약관은 2026-09-05 확인 완료(자동 수집 금지, 재배포 금지). 한국 정부안은 2026-09-05 재확인에도 미제출이며 임계치 공식 원문 없음. 규칙 15개라는 수는 설계 선택이다. 가상자산이용자보호법이 정무위 대안으로 통합한 원안 건수(19건으로 기억)와 선불충전금 공시 주기는 확인 필요. Veris 문서는 갱신일 미표기라 준비금 에이전트가 현재 운영 중인지는 미확인.</p>
+</section>
+
+<section id="extension">
+  <h2><span class="num">16</span>확장 (9/21 이후)</h2>
+  <p class="dim">순서대로. 전부 지금은 안 만든다.</p>
+  <div class="feat-grid">
+    <div class="feat"><div class="fn">X1</div><div class="ft">파서 출처 추적</div>
+      <div class="fd">pdftotext 전문을 PDF 옆에 저장하고 숫자마다 {value, page, line, raw}. 판정 JSON에 영수증 {source_pdf_sha256, parser_version, ruleset_version, jurisdiction_version, timestamp}.</div></div>
+    <div class="feat"><div class="fn">X2</div><div class="ft">소스 감시 cron</div>
+      <div class="fd">의안정보시스템(법안 8건 상태, 정부안, 신규 발의), 법제처(법령ID별 시행일자), Circle transparency, SEC EDGAR N-MFP3. 하루 1회 GitHub Actions, state.json diff, 변경 시 이슈 생성과 파서 재실행. 법안 상태는 5단계. Codex 적대검증을 CI 공격자로 자동화.</div></div>
+    <div class="feat"><div class="fn">X3</div><div class="ft">법안 조문 트리 파서</div>
+      <div class="fd">제N조, ①, 1., 가. 네 층을 노드로. Akoma Ntoso 주소 체계 참조. 수정안이 나오면 트리 diff로 바뀐 호와 매달린 규칙만 재판정.</div></div>
+    <div class="feat"><div class="fn">X4</div><div class="ft">networkx 질의</div>
+      <div class="fd">"법안 X가 폐기되면 어느 규칙이 비나" 도달 가능성. JSON은 저장, networkx는 연산, Neo4j 안 씀. 필드명은 FIBO 참조.</div></div>
+    <div class="feat"><div class="fn">X5</div><div class="ft">5층 필터 UI → 인용 제한 LLM 검색</div>
+      <div class="fd">빈칸 클릭에 5층이 날짜와 상태와 같이 뜬 뒤, 그 위에 노드 id로만 답하고 판정은 안 하는 검색. 학기 중 corpus는 전부 공개 자료라 Claude API. 은행 도입 시 망분리와 국외이전 규정이 걸리므로 온프레미스 한국어 오픈 모델 또는 혁신금융서비스 경로(배포 시 고려, 조문과 사례는 확인 필요).</div></div>
+    <div class="feat"><div class="fn">X6</div><div class="ft">MCP 서버</div>
+      <div class="fd">judge(issuer, month, jurisdiction), gap_list(scenario), evidence(rule) 도구 3개. 상시 서버가 필요해지는 유일한 지점.</div></div>
+    <div class="feat"><div class="fn">X7</div><div class="ft">선불충전금 공시 실측</div>
+      <div class="fd">카카오페이, 토스, 네이버페이 공시 수집.</div></div>
+  </div>
+</section>
+
+<section id="sources">
+  <h2><span class="num">17</span>근거와 원출처 링크</h2>
+  <div class="note">여기가 링크 정본이다. 2026-09-13에 레포 <code>docs/매니페스트_v2.md</code> 14절과 <code>docs/research/스테이블코인_리서치_통합_2026-09-04.md</code> 15절에서 옮겨왔고, 그 두 파일은 이후 갱신하지 않는다.</div>
+
+  <div class="linkgrp">
+    <h3>관할권 규정 원문</h3>
+    <ul class="links">
+      <li>미국 GENIUS Act 법전 — <a href="https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm">govinfo PLAW-119publ27</a><span class="lnote">§4(a)(1)(C), §4(a)(3)이 월별 공개와 월별 examination과 경영진 인증</span></li>
+      <li>미국 OCC 하위규정 제안 2026-03-02, 91 FR 10202 — <a href="https://www.govinfo.gov/app/details/FR-2026-03-02/2026-04089">govinfo FR-2026-03-02</a><span class="lnote">통일 서식 미정, 공개질문 Q88~Q96</span></li>
+      <li>EU MiCA 규정 2023/1114 — <a href="https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng">EUR-Lex</a><span class="lnote">Art. 58은 은행에 자동 적용되지 않는다</span></li>
+      <li>홍콩 HKMA 스테이블코인 발행자 감독지침 — <a href="https://www.hkma.gov.hk/media/eng/doc/key-functions/ifc/stablecoin-issuers/Guideline_on_supervision_of_licensed_stablecoin_issuers_eng.pdf">HKMA PDF</a><span class="lnote">일간 명세 작성과 주간 웹 갱신</span></li>
+      <li>싱가포르 MAS 2026 입법예고 P015-2026 — <a href="https://www.mas.gov.sg/publications/consultations/2026/consultation-on-proposed-amendments-to-the-payment-services-act-for-stablecoin-regulation">MAS 협의문</a><span class="lnote">2026-09-01 공고, 의견마감 10-16</span></li>
+    </ul>
+  </div>
+
+  <div class="linkgrp">
+    <h3>한국 당국 원문과 현행 제도</h3>
+    <ul class="links">
+      <li>금융위 2025-01-15 검토 방향 — <a href="https://www.fsc.go.kr/no010101/83855">fsc.go.kr/no010101/83855</a><span class="lnote">"준비자산에 대한 엄격한 관리의무"와 "이용자의 상환청구권 보장". 보도에 나오는 "100%, 국내 보관, 이자 금지"는 여기에 없다</span></li>
+      <li>한국은행 통화신용정책보고서 2026-03 — <a href="https://www.bok.or.kr/portal/bbs/B0000156/view.do?menuNo=200067&nttId=10096935">bok.or.kr</a><span class="lnote">"우선 은행 중심 컨소시엄에 발행을 허용"</span></li>
+      <li>가상자산이용자보호법 예치금 관리 — <a href="https://www.fsc.go.kr/no010101/81214">금융위 보도자료</a>, <a href="https://www.korea.kr/news/policyNewsView.do?newsId=148931616">정책브리핑</a><span class="lnote">법 제6조와 감독규정 제5조. 예치금을 고유재산과 분리해 은행에 예치 또는 신탁, 안전자산만 운용, 파산 시 이용자 우선 지급</span></li>
+      <li>예치금 관리기관 은행<span class="lnote">업비트는 케이뱅크, 빗썸은 NH농협, 코인원은 카카오뱅크, 코빗은 신한은행, 코팍스는 전북은행</span></li>
+      <li>법령·법안 원문 조회<span class="lnote">법제처 API(OC <code>stablecoin</code>, <code>DRF lawSearch</code>와 <code>lawService</code>, 연혁은 <code>eflaw</code>), 계류 법안은 의안정보시스템에서 페이지의 <code>fnSearch(1)</code>로 검색하고 <code>data-bill-id</code>로 상세 진입</span></li>
+    </ul>
+  </div>
+
+  <div class="linkgrp">
+    <h3>국내 거래소 공시 (구조가 같은 현행 사례)</h3>
+    <ul class="links">
+      <li>코빗 거래소 보유자산 공개 — <a href="https://insights.korbit.co.kr/reserves">insights.korbit.co.kr/reserves</a><span class="lnote">2026-09-04 열람. 자산별 비율 일별 공개, 자산실사 보고서 월간과 분기 병행, 원화 예치금 신한은행 분리 보관 명시. 확인 수치: 2026-07 가상자산 보유 100.29%, 일별 BTC 100.13% ETH 100.75% XRP 100.15% USDT 107.43% USDC 107.03% USDS 116.51% WBTC 104.07% VANRY 141.22%. 형식은 웹 화면이고 API와 다운로드는 미확인</span></li>
+      <li>업비트 실사보고서 공지 — <a href="https://www.upbit.com/service_center/notice?id=5369">upbit.com 공지 5369</a><span class="lnote">상세 수치와 회계법인명은 SPA라 미추출</span></li>
+    </ul>
+  </div>
+
+  <div class="linkgrp">
+    <h3>발행사 공시와 기계판독 데이터</h3>
+    <ul class="links">
+      <li>Circle 투명성 페이지 — <a href="https://www.circle.com/transparency">circle.com/transparency</a><span class="lnote">월 2회 기준일 PDF. 파서 입력원</span></li>
+      <li>SEC Form N-MFP 양식 — <a href="https://www.sec.gov/files/formn-mfp.pdf">sec.gov/files/formn-mfp.pdf</a></li>
+      <li>Circle Reserve Fund 2026-01-31분 제출 — <a href="https://www.sec.gov/Archives/edgar/data/844779/000119312526040594/0001193125-26-040594-index.htm">EDGAR 인덱스</a></li>
+      <li>SEC DERA N-MFP 데이터셋 — <a href="https://www.sec.gov/data-research/sec-markets-data/dera-form-n-mfp-data-sets">dera-form-n-mfp-data-sets</a><span class="lnote">F2 파서의 데이터원</span></li>
+      <li>BlackRock USDXX(Circle Reserve Fund) 제품 페이지 — <a href="https://www.blackrock.com/cash/en-us/products/329365/circle-reserve-fund">blackrock.com</a></li>
+      <li>BlackRock 약관 — <a href="https://www.blackrock.com/corporate/compliance/terms-and-conditions">terms-and-conditions</a><span class="lnote">2026-09-05 원문 확인. 자동 수집과 재배포 금지. 사이트 CSV는 수동 대조용으로만 쓰고 공개 저장소에 올리지 않는다</span></li>
+    </ul>
+  </div>
+
+  <div class="linkgrp">
+    <h3>레포와 산출물</h3>
+    <ul class="links">
+      <li>레포 — <a href="https://github.com/itsinseong/media-project-stablewatch">github.com/itsinseong/media-project-stablewatch</a><span class="lnote">현재 private, 최종 제출 전 public 전환 필요</span></li>
+      <li>레포 안에서 볼 곳<span class="lnote"><code>docs/한국공시안_v1.md</code>(항목 27개, 값 결정 기록과 실측 검증), <code>graph/</code>(근거 그래프 스키마와 문서 39건과 간선 110개), <code>docs/research/퍼플렉시티_4차/검증대장_2026-09-10.md</code>(원문 대조 대장과 적대검증 처리표), <code>data/samples/</code>(Circle PDF, Tessera PYUSD 팩. BlackRock 파일은 gitignore)</span></li>
+      <li>노션 미디어프로젝트 허브 — <a href="https://app.notion.com/p/3cca1bab89448003861fd87bb6b5aad3">app.notion.com/p/3cca1bab89448003861fd87bb6b5aad3</a></li>
+    </ul>
+  </div>
+
+  <div class="footline">
+    <span>StableWatch PRD · 노션 원본에서 생성</span>
+    <span>생성 2026-09-13, 갱신 2026-09-15</span>
+  </div>
+</section>
+
+</main>
+</div>
+</body>
+</html>

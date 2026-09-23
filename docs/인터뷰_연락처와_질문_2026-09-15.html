@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StableWatch 인터뷰 연락처와 질문</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+:root{
+  --paper:#F7F6F1; --ink:#1B1F2A; --mute:#6B6F79; --line:#D8D6CE; --panel:#FFFFFF; --row:#FBFAF6;
+  --p1:#C8362B; --p1-soft:#F6DEDB;
+  --p2:#2E5AAC; --p2-soft:#DCE6F7;
+  --p3:#2F8F5B; --p3-soft:#DDF0E4;
+  --p4:#8A6300; --p4-soft:#F8EBC4;
+  --ok:#2F8F5B; --warn:#B7791F; --no:#8A8D96;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#15171D; --ink:#EDECE6; --mute:#A3A6B0; --line:#33363F; --panel:#1E2129; --row:#22252E;
+    --p1:#E5665B; --p1-soft:#3A2321; --p2:#6E95E0; --p2-soft:#1F2C45; --p3:#4FB37B; --p3-soft:#1C3328; --p4:#F0C860; --p4-soft:#3A3116;
+    --ok:#4FB37B; --warn:#E0A63A; --no:#8A8D96;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans KR",system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.55}
+.wrap{max-width:1100px;margin:0 auto;padding-inline:20px;padding-block:36px 80px;display:grid;gap:44px}
+h1,h2,h3{font-family:"Gowun Batang","Noto Serif KR",serif;text-wrap:balance;margin:0;line-height:1.25}
+h1{font-size:2rem;font-weight:700}
+h2{font-size:1.35rem;font-weight:700}
+h3{font-size:1.02rem;font-weight:700}
+.lead{color:var(--mute);margin:10px 0 0;font-size:1rem;max-width:72ch}
+.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+section{display:grid;gap:12px}
+.p1 .eyebrow{color:var(--p1)} .p2 .eyebrow{color:var(--p2)} .p3 .eyebrow{color:var(--p3)} .p4 .eyebrow{color:var(--p4)}
+.why{margin:0;color:var(--mute);max-width:80ch}
+.tw{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:900px;font-size:.9rem}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{font-weight:500;color:var(--mute);font-size:.75rem;letter-spacing:.06em;background:var(--row);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.who{font-weight:700;white-space:nowrap}
+td.who small{display:block;font-weight:400;color:var(--mute)}
+td.ct{font-variant-numeric:tabular-nums;white-space:nowrap}
+td.ct a{color:var(--ink)}
+td.src a{color:var(--mute);font-size:.8rem;word-break:break-all}
+.st{display:inline-block;font-size:.72rem;padding:2px 7px;border-radius:3px;font-weight:700;white-space:nowrap}
+.st.ok{background:var(--p3-soft);color:var(--ok)}
+.st.warn{background:var(--p4-soft);color:var(--warn)}
+.st.no{background:var(--row);color:var(--no);border:1px solid var(--line)}
+.p1 th{border-top:4px solid var(--p1)} .p2 th{border-top:4px solid var(--p2)} .p3 th{border-top:4px solid var(--p3)} .p4 th{border-top:4px solid var(--p4)}
+.common{background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--ink);border-radius:6px;padding:16px 18px}
+.common ol{margin:8px 0 0;padding-left:20px}
+.common li{margin:5px 0}
+.common li b{font-weight:700}
+.qgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.q{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px;border-top:4px solid var(--line)}
+.p1 .q{border-top-color:var(--p1)} .p2 .q{border-top-color:var(--p2)} .p3 .q{border-top-color:var(--p3)} .p4 .q{border-top-color:var(--p4)}
+.q h3{margin-bottom:2px}
+.q .tag{font-size:.78rem;color:var(--mute);margin-bottom:6px}
+.q ol{margin:0;padding-left:18px}
+.q li{margin:4px 0}
+.rule{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+.rule ul{margin:6px 0 0;padding-left:18px}
+.rule li{margin:3px 0}
+.note{font-size:.85rem;color:var(--mute);margin:0}
+@media (max-width:700px){.qgrid{grid-template-columns:1fr} h1{font-size:1.6rem}}
+@media print{body{background:#fff;color:#000} .tw{overflow:visible} table{min-width:0;font-size:.8rem} .qgrid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow" style="color:var(--mute)">StableWatch 인터뷰 후보</div>
+  <h1>누구에게, 어디로, 무엇을 물을 것인가</h1>
+  <p class="lead">확인일 2026-09-15. 국회, 학교, 기관, 회사가 스스로 공개한 대표 연락처만 모았다. 개인 휴대전화나 사적 정보는 넣지 않았고, 찾지 않았다. 상태 표시는 <span class="st ok">확인</span> 공식 페이지에서 직접 본 것, <span class="st warn">부분</span> 이름이나 부서는 확인했으나 직통은 대표번호로 가야 하는 것, <span class="st no">미확인</span> 저자나 담당자를 못 찾은 것. 질문은 앞부분의 공통 5개를 모두에게 묻고, 뒤의 개별 질문을 사람마다 2~3개 더한다.</p>
+</header>
+
+<!-- 공통 질문 -->
+<section>
+  <div class="eyebrow" style="color:var(--mute)">공통 질문, 모두에게</div>
+  <h2>답이 값으로 돌아오게 묻는다</h2>
+  <div class="common">
+    <p class="note">앞에 붙이는 한 문장. "한국에 아직 없는 원화 스테이블코인 준비금 공시 서식을 해외 규칙과 국회 법안으로 먼저 만들고, Circle 실제 공시 4개월치로 그 값이 지켜지는지 확인하는 학부 프로젝트입니다. 아래 값이 맞는지만 짚어 주시면 됩니다."</p>
+    <ol>
+      <li><b>항목.</b> 발행사가 매달 공개해야 할 준비금 항목을 발행잔액, 준비자산 총액과 시가, 자산 유형별 비중, 보관 기관 실명, 검증인과 검증 수준, 환매 조건 여섯 묶음으로 잡았다. 빠진 것이나 과한 것이 있는가.</li>
+      <li><b>주기.</b> 발행사 자체 공시는 다음 달 5영업일, 외부 검증본은 분기 종료 후 30일로 나눴다. Circle은 회계사 서명까지 19~21영업일이 걸렸다. 이 두 기한이 현실적인가.</li>
+      <li><b>구성.</b> 현금성 자산 최저 비율을 잠정 15%로 뒀다. Circle 실측이 평균 14.47%다. 미국 OCC와 EU는 30%를 말한다. 한국은 어느 쪽이 맞는가.</li>
+      <li><b>컨소시엄.</b> 은행 컨소시엄이 발행하면 참여 은행별 준비금 금액을 공개해야 쏠림이 보인다고 봤다. 미국 단일 발행사 규칙에는 없는 항목이다. 필요한가, 은행이 받아들이겠는가.</li>
+      <li><b>쓸모.</b> 이 판정기를 은행 기획 부서, 금융당국, 코인 보유자 중 누가 가장 먼저 쓰겠는가.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 1순위 -->
+<section class="p1">
+  <div class="eyebrow">1순위</div>
+  <h2>법안을 쓴 의원실, 법안을 합칠 정무위 전문위원실</h2>
+  <p class="why">의원 본인이 아니라 법안을 실제로 쓴 보좌관에게 간다. 8개 의원실은 같은 메일 한 통으로 보내되 개별 질문만 바꾼다. 정무위 전문위원실은 8건을 이미 비교해 검토보고서를 쓴 곳이라 대안 병합 방향을 아는 유일한 자리다.</p>
+  <div class="tw"><table>
+    <thead><tr><th>대상</th><th>법안 (의안번호)</th><th>왜 이 사람</th><th>연락처</th><th>상태</th><th>출처</th></tr></thead>
+    <tbody>
+      <tr><td class="who">민병덕 의원실<small>더불어민주당, 안양 동안갑, 의원회관 927호</small></td><td>디지털자산기본법안 (2210736)</td><td>가장 먼저 나온 포괄 법안. 정부안이 이 틀을 따를 가능성이 큼</td><td class="ct">02-784-9540<br><a href="mailto:anyangmin@gmail.com">anyangmin@gmail.com</a></td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.assembly.go.kr/members/22nd/MINBYOUNGDUG">assembly.go.kr</a></td></tr>
+      <tr><td class="who">김은혜 의원실<small>국민의힘, 성남 분당을, 의원회관 622호</small></td><td>가치고정형디지털자산지급혁신법안 (2211777)</td><td>스테이블코인 전용 법안, 여당 쪽 관점</td><td class="ct">02-784-1238<br><a href="mailto:kimeunhye_official@naver.com">kimeunhye_official@naver.com</a></td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.assembly.go.kr/members/22nd/KIMEUNHYE">assembly.go.kr</a></td></tr>
+      <tr><td class="who">안도걸 의원실<small>더불어민주당, 광주 동남을, 의원회관 442호</small></td><td>가치안정형디지털자산법안 (2211784)</td><td>공시안 A1, B3~B6이 인용하는 제16조를 쓴 곳. 준비자산 세부 항목이 가장 구체적. 검토보고서가 붙은 유일한 법안</td><td class="ct">02-784-4441<br><a href="mailto:ahndogeol@naver.com">ahndogeol@naver.com</a></td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.assembly.go.kr/members/22nd/AHNDOGEOL">assembly.go.kr</a></td></tr>
+      <tr><td class="who">김현정 의원실<small>더불어민주당, 평택병, 의원회관 732호</small></td><td>가치안정형디지털자산발행업법안 (2212298)</td><td>발행업 인가 구조를 다룸. 은행 컨소시엄 자격 질문에 적합</td><td class="ct">02-784-6142<br><a href="mailto:ubuntu_21@naver.com">ubuntu_21@naver.com</a></td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.assembly.go.kr/members/22nd/KIMHYUNJUNG">assembly.go.kr</a></td></tr>
+      <tr><td class="who">이강일 의원실<small>더불어민주당, 청주 상당, 의원회관 905호, 정무위 소속</small></td><td>디지털자산시장혁신성장법안 (2213166)</td><td>정무위원이라 소위 심사 흐름을 직접 앎</td><td class="ct">02-784-9401<br><a href="mailto:kilee905@naver.com">kilee905@naver.com</a></td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.assembly.go.kr/members/22nd/LEEKANGILL">assembly.go.kr</a></td></tr>
+      <tr><td class="who">김재섭 의원실<small>국민의힘, 서울 도봉갑, 의원회관 433호</small></td><td>디지털자산시장통합법안 (2213266)</td><td>공시안 B3이 인용하는 제127조를 쓴 곳</td><td class="ct">02-784-3851<br><a href="mailto:dobongstar24@naver.com">dobongstar24@naver.com</a></td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.assembly.go.kr/members/22nd/KIMJAESUB">assembly.go.kr</a></td></tr>
+      <tr><td class="who">최보윤 의원실<small>국민의힘, 비례, 의원회관 407호</small></td><td>디지털자산육성기본법안 (2213449)</td><td>육성 쪽 관점. 공시 부담을 어디까지 볼지 반대 논리를 들을 수 있음</td><td class="ct">02-784-4710<br><a href="mailto:law@bychoi.com">law@bychoi.com</a></td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.assembly.go.kr/members/22nd/CHOIBOYUN">assembly.go.kr</a></td></tr>
+      <tr><td class="who">박상혁 의원실<small>더불어민주당, 김포을, 의원회관 741호, 정무위 소속</small></td><td>디지털자산시장산업법안 (2214492)</td><td>공시안 A1, B1이 인용하는 제99조를 쓴 곳. 유일하게 준비자산 시가 평가를 명시. 정무위원</td><td class="ct">02-784-2417~9<br><a href="mailto:gimpo_park@naver.com">gimpo_park@naver.com</a></td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.assembly.go.kr/members/22nd/PARKSANGHYUK">assembly.go.kr</a></td></tr>
+      <tr><td class="who">정무위원회 수석전문위원실<small>국회 본청. 현 수석전문위원 곽현준</small></td><td>8건 전부 (병합 심사 담당)</td><td>안도걸안 검토보고서를 쓴 곳. 보고서 당시 수석전문위원은 정명호, 지금은 곽현준. 금융위 소관 법안은 금융정책조사관이 실무를 봄</td><td class="ct">수석전문위원 02-6788-5101<br>금융정책조사관 윤상우 5104<br>이중석 5111, 백수연 5106<br>이명자 5113, 김혜진 5108</td><td><span class="st ok">확인</span></td><td class="src"><a href="https://policy.na.go.kr:444/cmmit/empList/empList/empList.do?menuNo=2000015">정무위 직원 명단</a></td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">의원실 메일은 의원 공식 계정이라 보좌진이 읽는다. 제목에 "법안 2211784 준비자산 공시 조항 문의, 아주대 학생"처럼 의안번호를 넣으면 담당 보좌관에게 바로 간다. 전문위원실은 메일이 공개돼 있지 않아 전화로 담당 조사관을 먼저 확인한다.</p>
+
+  <h3 style="margin-top:8px">개별 질문</h3>
+  <div class="qgrid">
+    <div class="q"><h3>민병덕 의원실</h3><div class="tag">디지털자산기본법안 2210736, 포괄 법안</div><ol>
+      <li>기본법 구조에서 스테이블코인 준비자산 공시는 법 본문에 두는가, 대통령령이나 금융위 고시로 넘기는가.</li>
+      <li>정부안이 제출되면 이 법안과 어떻게 합쳐지는가. 정부안이 이 틀을 따를 것으로 보는가.</li>
+      <li>발행 자격을 은행으로 한정하는 한은 방안에 대해 법안의 입장은 무엇인가.</li>
+    </ol></div>
+    <div class="q"><h3>김은혜 의원실</h3><div class="tag">가치고정형디지털자산지급혁신법안 2211777</div><ol>
+      <li>"지급혁신"을 앞세운 법안인데, 매달 준비금 공시가 혁신을 막는다는 반론에 어떻게 답하는가.</li>
+      <li>비은행 발행을 허용한다면 은행 발행과 공시 수준을 차등할 생각이 있는가.</li>
+      <li>환매 기한을 며칠로 잡았고 그 근거는 무엇인가. 법안 8건이 3일부터 10일까지 갈린다.</li>
+    </ol></div>
+    <div class="q"><h3>안도걸 의원실</h3><div class="tag">가치안정형디지털자산법안 2211784, 제16조</div><ol>
+      <li>제16조①의 준비자산 항목(한국은행권과 주화, 요구불예금, 1년 이내 국채)을 이렇게 나눈 근거는 무엇인가. 해외 어느 규칙을 참고했는가.</li>
+      <li>준비자산 평가를 시가로 할지 장부가로 할지 조문에 명시하지 않았는데 의도한 것인가. 박상혁안은 시가를 명시했다.</li>
+      <li>제16조④ 공개 위치(발행인 홈페이지)에 고정 URL이나 기계 판독 형식을 요구할 생각이 있는가.</li>
+      <li>대안 병합 때 제16조의 세부 항목이 살아남을 가능성을 어떻게 보는가.</li>
+    </ol></div>
+    <div class="q"><h3>김현정 의원실</h3><div class="tag">가치안정형디지털자산발행업법안 2212298, 인가 구조</div><ol>
+      <li>발행업 인가 요건과 준비금 공시 의무가 어떻게 연결되는가. 공시 위반이 인가 취소 사유에 들어가는가.</li>
+      <li>은행 컨소시엄이 발행업 인가를 받는 경우 인가 주체는 컨소시엄 법인인가 참여 은행 각각인가.</li>
+      <li>인가 심사에서 준비금 관리 계획을 어떤 형식으로 받을 생각인가.</li>
+    </ol></div>
+    <div class="q"><h3>이강일 의원실</h3><div class="tag">디지털자산시장혁신성장법안 2213166, 정무위원</div><ol>
+      <li>정무위 법안소위에서 8건을 어떤 순서와 방식으로 병합할 예정인가. 정부안을 기다리는가.</li>
+      <li>6월 지방선거 이후 심사 일정을 어떻게 보는가. 올해 안 통과 가능성은.</li>
+      <li>소위에서 준비자산 공시 조항이 쟁점이 됐는가, 아니면 발행 자격 문제에 가려 있는가.</li>
+    </ol></div>
+    <div class="q"><h3>김재섭 의원실</h3><div class="tag">디지털자산시장통합법안 2213266, 제127조</div><ol>
+      <li>제127조①3가의 준비자산 유형 분류가 안도걸안 제16조와 거의 같은데 같은 출처를 참고했는가.</li>
+      <li>통합법 안에서 스테이블코인 장이 가상자산 장과 분리돼 있는 이유는 무엇인가.</li>
+      <li>한은의 은행 51% 방안에 대한 여당 쪽 입장은 무엇인가.</li>
+    </ol></div>
+    <div class="q"><h3>최보윤 의원실</h3><div class="tag">디지털자산육성기본법안 2213449, 육성 관점</div><ol>
+      <li>육성 관점에서 준비금 공시의 최소 수준은 어디까지라고 보는가. 월별 공시가 과한가.</li>
+      <li>소규모 발행사에 외부 검증 비용이 진입 장벽이 된다고 보는가. 그렇다면 대안은.</li>
+      <li>공시 의무를 법에 넣지 않고 자율 규제에 맡기는 방안을 검토했는가.</li>
+    </ol></div>
+    <div class="q"><h3>박상혁 의원실</h3><div class="tag">디지털자산시장산업법안 2214492, 제99조, 정무위원</div><ol>
+      <li>제99조②2에서 준비자산을 시가로 평가한다고 유일하게 명시했는데 그 이유는 무엇인가.</li>
+      <li>"미상환 잔액"의 정의를 총발행에서 상환분을 뺀 값으로 읽어도 되는가. 미국 GENIUS법은 이 정의가 비어 있다.</li>
+      <li>정무위원으로서 정부안이 언제 합류할 것으로 보는가.</li>
+    </ol></div>
+    <div class="q"><h3>정무위 수석전문위원실</h3><div class="tag">금융정책조사관 앞으로</div><ol>
+      <li>안도걸안 검토보고서에서 준비자산 조항에 대해 지적한 쟁점은 무엇이었나. 8건 준비자산 조항 비교표가 내부에 있는가.</li>
+      <li>대안을 만들 때 공시 세부 서식은 법 본문에 두는 방향인가, 금융위 고시로 위임하는 방향인가.</li>
+      <li>정부안 제출 전에 의원안만으로 대안을 만들 가능성이 있는가.</li>
+      <li>학생이 만든 공시안 초안을 참고 자료로 보내면 읽어 줄 수 있는가.</li>
+    </ol></div>
+  </div>
+</section>
+
+<!-- 2순위 -->
+<section class="p2">
+  <div class="eyebrow">2순위</div>
+  <h2>학교 안, 그리고 이미 정한 멘토</h2>
+  <p class="why">비용이 제일 낮고 답이 확실히 온다. 경제학 쪽에는 "현금성 15%가 말이 되나"를, 금융공학 쪽에는 "준비금 커버리지와 만기 구조를 어떻게 재나"를 묻는다. 부전공 지도교수에게는 표본 4개월의 통계적 한계를 먼저 묻는다.</p>
+  <div class="tw"><table>
+    <thead><tr><th>대상</th><th>소속, 분야</th><th>왜 이 사람</th><th>연락처</th><th>상태</th><th>출처</th></tr></thead>
+    <tbody>
+      <tr><td class="who">김태봉 교수<small>부전공 지도교수</small></td><td>아주대 경제학과, 거시경제학, 시계열분석, 베이지언통계. 학생설계전공 "스테이블코인과 금융경제구조" 지도</td><td>부전공을 승인한 사람이라 주제 설명이 필요 없음. 전공이 시계열과 베이지언이라 "4개월 표본으로 값을 정해도 되나"를 물을 최적의 상대</td><td class="ct"><a href="mailto:tbk@ajou.ac.kr">tbk@ajou.ac.kr</a><br>031-219-2920, 율곡관 413</td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.ajou.ac.kr/econ/faculty/faculty.do">경제학과 교수진</a></td></tr>
+      <tr><td class="who">박영준 교수</td><td>아주대 경제학과, 금융경제, 거시경제</td><td>경제학과에서 금융경제를 전공 표기한 유일한 교수</td><td class="ct"><a href="mailto:yjpark@ajou.ac.kr">yjpark@ajou.ac.kr</a><br>031-219-3537, 율곡관 419</td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.ajou.ac.kr/econ/faculty/faculty.do">경제학과 교수진</a></td></tr>
+      <tr><td class="who">최희갑 교수</td><td>아주대 경제학과, 거시경제학, 국제금융</td><td>달러 스테이블코인 준비금이 미국 국채라는 점, 원화 준비금의 외환 문제를 물을 상대</td><td class="ct"><a href="mailto:hgchoi@ajou.ac.kr">hgchoi@ajou.ac.kr</a><br>031-219-2734, 율곡관 402</td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.ajou.ac.kr/econ/faculty/faculty.do">경제학과 교수진</a></td></tr>
+      <tr><td class="who">유재인 교수</td><td>아주대 금융공학과, 거시경제학, 재무경제학</td><td>금융공학과에서 거시와 재무를 함께 다루는 교수</td><td class="ct"><a href="mailto:janeyoo@ajou.ac.kr">janeyoo@ajou.ac.kr</a><br>031-219-3670</td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.ajou.ac.kr/fe/faculty/faculty.do">금융공학과 교수진</a></td></tr>
+      <tr><td class="who">심규철 교수</td><td>아주대 금융공학과, 투자론, 위험관리, 기업재무</td><td>준비자산 만기 구조와 유동성 위험 측정 방법을 물을 상대</td><td class="ct"><a href="mailto:gshim@ajou.ac.kr">gshim@ajou.ac.kr</a><br>031-219-1880</td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.ajou.ac.kr/fe/faculty/faculty.do">금융공학과 교수진</a></td></tr>
+      <tr><td class="who">김병륜 멘토<small>신한투자증권</small></td><td>증권 트레이딩 시스템 개발, 금융 서비스 기획</td><td>9/21 신청하는 1순위 멘토. "은행 기획자가 이 도구를 쓰겠나"를 물을 사람</td><td class="ct">멘토 신청 구글시트로<br>담당 서철수 031-219-3859</td><td><span class="st ok">확인</span></td><td class="src">멘토링 추진계획 (데스크탑)</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">아주대 내선은 031-219 뒤에 4자리를 붙인다. 교수 메일은 학과 페이지에 공개된 공식 계정이다.</p>
+
+  <h3 style="margin-top:8px">개별 질문</h3>
+  <div class="qgrid">
+    <div class="q"><h3>김태봉 교수</h3><div class="tag">부전공 지도교수, 시계열, 베이지언</div><ol>
+      <li>Circle 4개월치로 커버리지 여유폭 0.1%와 현금성 14.47%를 재서 한국 값의 근거로 썼다. 표본 4개로 값을 정하는 것의 통계적 한계를 어떻게 적어야 정직한가.</li>
+      <li>기간을 늘리면 커버리지 변동을 시계열로 추적할 수 있다. 어떤 지표(변동폭, 추세, 이상치)를 보는 것이 의미 있는가.</li>
+      <li>부전공 "스테이블코인과 금융경제구조"의 결과물로 이 프로젝트가 성립하는가. 부전공 쪽에서 더 넣어야 할 경제구조 관점이 있는가.</li>
+      <li>발표에서 "제안값이 데이터에 반박됐다"는 구조를 쓰는데, 경제학 논문 형식으로 치면 어떤 절차에 해당하는가.</li>
+    </ol></div>
+    <div class="q"><h3>박영준 교수</h3><div class="tag">금융경제, 거시경제</div><ol>
+      <li>준비금 100%를 안전자산으로만 요구하면 통화 승수와 은행 예금에 어떤 영향이 있는가. 한은이 말하는 예금 이탈 우려의 경제학적 근거는 무엇인가.</li>
+      <li>은행이 스테이블코인을 찍으면 예금토큰과 무엇이 다른가. 경제학적으로 둘을 구분하는 기준은 무엇인가.</li>
+      <li>준비금 운용 수익을 발행사가 갖고 보유자에게 이자를 주지 않는 구조가 지속 가능한가.</li>
+    </ol></div>
+    <div class="q"><h3>최희갑 교수</h3><div class="tag">거시경제, 국제금융</div><ol>
+      <li>달러 스테이블코인 준비금은 대부분 미국 단기국채다. 한국은 단기 국고채가 없다. 원화 준비금을 무엇으로 채우는 것이 맞는가.</li>
+      <li>원화 스테이블코인이 해외에서 유통되면 준비금을 국내에 보관하라는 요구가 외환 규제와 어떻게 맞물리는가.</li>
+      <li>달러 스테이블코인이 국내에서 쓰이면 원화 준비금 공시 규칙이 그것도 다뤄야 하는가.</li>
+    </ol></div>
+    <div class="q"><h3>유재인 교수</h3><div class="tag">거시경제, 재무경제</div><ol>
+      <li>커버리지가 100.0963%에서 100.1081% 사이로 좁게 유지된다. 발행사가 여유를 두지 않는 이유를 재무 관점에서 어떻게 설명하는가.</li>
+      <li>한국이 105% 같은 초과 담보를 요구하면 발행사 수익 구조가 어떻게 바뀌는가.</li>
+      <li>준비금을 MMF에 넣는 구조(Circle Reserve Fund)를 한국에서 재현할 수 있는가.</li>
+    </ol></div>
+    <div class="q"><h3>심규철 교수</h3><div class="tag">투자론, 위험관리</div><ol>
+      <li>준비자산 만기 구조를 공시 항목에 넣을 때 어떤 지표(가중평균만기, 잔존만기 분포, 1년 이내 비중)가 유동성 위험을 가장 잘 보여주는가.</li>
+      <li>대량 환매 스트레스 시나리오를 공시에 요구하는 것이 과한가. 은행 LCR 같은 지표를 빌려올 수 있는가.</li>
+      <li>현금성 자산 비율을 잴 때 익일물 역레포를 현금으로 볼지 국채로 볼지 어떻게 정하는가.</li>
+    </ol></div>
+    <div class="q"><h3>김병륜 멘토</h3><div class="tag">신한투자증권, 금융 서비스 기획</div><ol>
+      <li>은행이나 증권사 기획 부서가 규제 확정 전에 서비스를 설계할 때 실제로 어떤 절차를 밟는가. 이 판정기가 그 절차의 어느 단계에 들어가는가.</li>
+      <li>정적 JSON과 HTML 한 장 구조로 시작했는데, 발행사가 셋으로 늘고 기간이 길어지면 어느 시점에 백엔드가 필요한가.</li>
+      <li>은행 디지털 기획 채용에서 이 프로젝트를 어떻게 설명해야 실무자에게 통하는가.</li>
+    </ol></div>
+  </div>
+</section>
+
+<!-- 3순위 -->
+<section class="p3">
+  <div class="eyebrow">3순위</div>
+  <h2>실무, 답장 확률은 낮지만 한 명이면 충분한 곳</h2>
+  <p class="why">회사는 개인 메일을 공개하지 않는다. 이름이 공개 기사에 나온 사람을 대표번호나 회사 문의 채널로 찾는 방식이다. 학교 동문이나 멘토 소개가 있으면 그 경로가 먼저다.</p>
+  <div class="tw"><table>
+    <thead><tr><th>대상</th><th>소속, 직책</th><th>왜 이 사람</th><th>연락처</th><th>상태</th><th>출처</th></tr></thead>
+    <tbody>
+      <tr><td class="who">코빗<small>공시 담당 부서</small></td><td>가상자산거래소. 원화 예치금 실사보고서를 공개하고 보관 은행이 신한은행임을 밝힘</td><td>공시안 C항목 "보관 기관 실명 공개"의 국내 근거. 의무가 아닌데 왜 공개하는지, 비용은 얼마인지</td><td class="ct">공시 페이지에서 문의 경로 확인<br>korbit.co.kr/service/disclosure</td><td><span class="st warn">부분</span></td><td class="src"><a href="https://korbit.co.kr/service/disclosure/">코빗 공시</a></td></tr>
+      <tr><td class="who">코인원<small>실사 회계법인 대주회계법인</small></td><td>가상자산거래소. 2026년 3월 기준 예치금 102.37%, 가상자산 100.12% 실사 공개</td><td>코빗과 같은 이유. 실사 회계법인이 실명으로 나와 있어 그쪽으로도 연결 가능</td><td class="ct">1670-9756 (평일 10~19시)<br>제휴문의는 사이트 링크</td><td><span class="st warn">부분</span></td><td class="src"><a href="https://coinone.co.kr/info/notice/5365">코인원 실사 공지</a></td></tr>
+      <tr><td class="who">카카오뱅크<small>스테이블코인 조직</small></td><td>권태훈 CFO가 대외 발언. 카카오, 카카오뱅크, 카카오페이 대표가 공동 TF장. "스테이블코인 서비스 기획자" 채용공고가 있었음</td><td>발표 6장에서 예로 든 자리. 발행부터 결제까지 하겠다고 공언한 은행</td><td class="ct">채용 문의 경로 또는 홍보실 대표번호<br>(개인 연락처 비공개)</td><td><span class="st warn">부분</span></td><td class="src"><a href="https://zdnet.co.kr/view/?no=20260506110354">ZDNet 2026-05</a></td></tr>
+      <tr><td class="who">KB국민은행<small>디지털자산 조직</small></td><td>박형주 AI DT추진본부장. 은행권 최초로 스테이블코인 상표 출원, Circle과 협력</td><td>KB 채용공고에 "예금토큰 및 스테이블코인 발행 관리 시스템"이 명시됨. 은행 컨소시엄 실무 관점</td><td class="ct">KB금융 대표 채널<br>(개인 연락처 비공개)</td><td><span class="st warn">부분</span></td><td class="src"><a href="https://www.thebell.co.kr/front/newsview.asp?key=202601141337448240106568">더벨 2026-01</a></td></tr>
+      <tr><td class="who">이재혁 파트너</td><td>삼일PwC 가상자산전문화센터장</td><td>원화 스테이블코인 온체인 검증 자문을 직접 언급. "검증본 5영업일이 가능한가"에 실무 답을 줄 사람</td><td class="ct">삼일PwC 대표번호 경유<br>pwc.com/kr</td><td><span class="st warn">부분</span></td><td class="src"><a href="https://view.asiae.co.kr/article/2026090910092588910">아시아경제 2026-09</a></td></tr>
+      <tr><td class="who">박성배 부대표, 황태영 상무</td><td>삼정KPMG 디지털자산 서비스 리더, 전문팀</td><td>"달러 스테이블코인, 글로벌 금융시장을 흔들다" 보고서 발간. 주요국 규제 모니터링 담당</td><td class="ct">삼정KPMG 대표번호 경유<br>kpmg.com/kr</td><td><span class="st warn">부분</span></td><td class="src"><a href="https://www.newsis.com/view/NISX20250728_0003268374">뉴시스 2025-07</a></td></tr>
+      <tr><td class="who">김경호 센터장</td><td>딜로이트 안진 디지털자산센터</td><td>Circle 검사보고서를 쓰는 곳이 Deloitte. 한국에서 같은 역할을 할 조직의 장</td><td class="ct">딜로이트 안진 대표번호 경유<br>deloitte.com/kr</td><td><span class="st warn">부분</span></td><td class="src"><a href="https://www.fnnews.com/news/202606111042122098">파이낸셜뉴스 2026-06</a></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 style="margin-top:8px">개별 질문</h3>
+  <div class="qgrid">
+    <div class="q"><h3>코빗, 코인원</h3><div class="tag">공시 담당 부서</div><ol>
+      <li>의무가 아닌데 원화 예치금 보관 은행을 실명으로 공개하기로 한 이유는 무엇인가. 은행 쪽 반응은 어땠는가.</li>
+      <li>회계법인 실사가 기준일부터 보고서 공개까지 며칠 걸리는가. 분기에서 월간으로 바뀌면 비용이 얼마나 느는가.</li>
+      <li>실사보고서에 "감사나 검토가 아니다"라고 적는 이유는 무엇인가. 더 높은 보증 수준을 받으려면 무엇이 달라지는가.</li>
+    </ol></div>
+    <div class="q"><h3>카카오뱅크, KB국민은행</h3><div class="tag">스테이블코인 조직</div><ol>
+      <li>발행하게 되면 매달 준비금 공시를 누가 만들고 누가 검증하는가. 기존 예금 회계와 분리되는가.</li>
+      <li>컨소시엄으로 발행할 때 참여 은행별 준비금 금액 공개를 받아들일 수 있는가. 반대한다면 이유는.</li>
+      <li>규제 확정 전에 내부에서 공시 서식 초안을 이미 만들고 있는가. 학생 공시안을 비교해 볼 의향이 있는가.</li>
+    </ol></div>
+    <div class="q"><h3>이재혁 (삼일PwC)</h3><div class="tag">온체인 검증 자문</div><ol>
+      <li>외부 검증본을 기준일 후 5영업일에 내는 것이 가능한가. Circle은 19~21영업일이 걸렸다. 분기 후 30일은 어떤가.</li>
+      <li>ISAE 3000 검토와 회계감사 사이에서 준비금 공시에 맞는 보증 수준은 무엇인가.</li>
+      <li>온체인 발행량과 오프체인 준비금을 대사할 때 실무에서 가장 자주 틀리는 지점은 어디인가.</li>
+    </ol></div>
+    <div class="q"><h3>박성배, 황태영 (삼정KPMG)</h3><div class="tag">주요국 규제 비교</div><ol>
+      <li>미국 GENIUS법 이후 OCC와 재무부 세부 규칙에서 준비금 공시 서식이 어떻게 구체화되고 있는가.</li>
+      <li>한국 법안 8건을 해외 규칙과 비교했을 때 공시 항목에서 가장 큰 빈칸은 무엇이라고 보는가.</li>
+      <li>은행이 발행사가 되면 회계 처리에서 준비금이 어느 계정으로 잡히는가.</li>
+    </ol></div>
+    <div class="q"><h3>김경호 (딜로이트 안진)</h3><div class="tag">Deloitte가 Circle 검사인</div><ol>
+      <li>Circle 검사보고서 형식(CUSIP 단위 보유내역, 월 2회 기준일)을 한국 발행사에 그대로 이식할 수 있는가.</li>
+      <li>Deloitte가 Circle을 검사하는 절차에서 시간이 가장 오래 걸리는 단계는 무엇인가.</li>
+      <li>한국 회계법인이 스테이블코인 준비금 검사를 맡으려면 무엇이 준비돼야 하는가.</li>
+    </ol></div>
+  </div>
+</section>
+
+<!-- 4순위 -->
+<section class="p4">
+  <div class="eyebrow">4순위</div>
+  <h2>보고서를 쓴 연구자, 저자 앞으로 보낸다</h2>
+  <p class="why">발표 5장에서 "연구기관 보고서는 정리는 하지만 판정하지 않는다"고 말한다. 그 보고서를 쓴 사람에게 "판정까지 해 보니 이렇던데 맞나"를 묻는 구조라 대화가 자연스럽다. 저자 이름이 있는 곳은 저자 앞으로, 없는 곳은 담당 부서로.</p>
+  <div class="tw"><table>
+    <thead><tr><th>대상</th><th>보고서</th><th>왜 이 사람</th><th>연락처</th><th>상태</th><th>출처</th></tr></thead>
+    <tbody>
+      <tr><td class="who">한국은행 결제정책부 결제연구팀<small>디지털화폐실, 가상자산반 신설</small></td><td>"디지털 시대의 화폐, 혁신과 신뢰의 조화: 원화 스테이블코인의 주요 이슈와 대응방안" (2025-10-27, 141쪽)</td><td>은행 주도 컨소시엄과 51% 방안이 나온 원문. 프로젝트가 전제로 삼는 문서</td><td class="ct">결제연구팀 02-750-6640<br>결제정책팀 02-750-6630</td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.bok.or.kr/portal/bbs/B0000232/view.do?menuNo=200706&nttId=10094188">한국은행 보고서 페이지</a></td></tr>
+      <tr><td class="who">박효민 입법조사관</td><td>국회입법조사처 이슈와 논점 2436호 "스테이블코인 제도화, 무엇에 집중할 것인가" (2025-12-04)</td><td>발행 주체, 준비자산 관리, 거래소 규제를 쟁점으로 정리한 국회 내부 문서의 저자. 금융감독과 은행 담당</td><td class="ct">02-6788-4587<br>금융공정거래팀 (팀장 이수진 4580)</td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.nars.go.kr/intro/getDeptInformation.do?deptNo=6&deptName=%EA%B8%88%EC%9C%B5%EA%B3%B5%EC%A0%95%EA%B1%B0%EB%9E%98%ED%8C%80">입법조사처 부서 연락처</a></td></tr>
+      <tr><td class="who">신보성 선임연구위원</td><td>자본시장연구원 이슈보고서 25-17 "스테이블코인 발행의 경제적 의미와 정책적 시사점" (2025-11-03)</td><td>준비자산을 안전자산으로만 구성하는 각국 규제를 정리. 현금성 15%와 단기 국고채 부재 문제를 물을 상대</td><td class="ct"><a href="mailto:pori@kcmi.re.kr">pori@kcmi.re.kr</a><br>02-3771-0651, 거시금융실</td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.kcmi.re.kr/expert/expert_list?exp_num=27">자본시장연구원 연구위원</a></td></tr>
+      <tr><td class="who">한국금융연구원<small>저자 미확인</small></td><td>금융브리프 논단 "스테이블코인 제도화에 따른 규제 이슈"</td><td>발행 자격과 자본 요건을 다룬 글. 저자 이름이 페이지 추출에서 안 잡혔음</td><td class="ct">페이지에서 저자 확인 후 기관 대표 경유</td><td><span class="st no">미확인</span></td><td class="src"><a href="https://www.kif.re.kr/kif4/publication/pub_detail?mid=20&nid=75&sid=58&vid=7518&cno=352762">금융연구원 페이지</a></td></tr>
+      <tr><td class="who">김준영, 이정민, 김계정, 김영준 변호사</td><td>김앤장 "스테이블코인 관련 정책 동향" (2025-09-30)</td><td>발표 5장 "로펌 보고서"의 실제 저자들. 핀테크와 디지털자산 그룹</td><td class="ct"><a href="mailto:joonyoung.kim@kimchang.com">joonyoung.kim@kimchang.com</a> 02-3703-1824<br><a href="mailto:jungmin.lee@kimchang.com">jungmin.lee@kimchang.com</a> 02-3703-1671<br><a href="mailto:gyejeong.kim@kimchang.com">gyejeong.kim@kimchang.com</a> 02-3703-4550<br><a href="mailto:youngjoon.kim1@kimchang.com">youngjoon.kim1@kimchang.com</a> 02-3703-4640</td><td><span class="st ok">확인</span></td><td class="src"><a href="https://www.kimchang.com/ko/insights/detail.kc?sch_section=4&idx=32939">김앤장 인사이트</a></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3 style="margin-top:8px">개별 질문</h3>
+  <div class="qgrid">
+    <div class="q"><h3>한국은행 결제연구팀</h3><div class="tag">2025-10-27 보고서 담당 부서</div><ol>
+      <li>보고서의 은행 주도 컨소시엄 방안이 확정되면 준비금 공시 서식은 한은이 정하는가, 금융위가 정하는가.</li>
+      <li>보고서가 꼽은 일곱 가지 리스크 중 준비금 공시로 줄일 수 있는 것은 무엇이고, 공시로는 못 줄이는 것은 무엇인가.</li>
+      <li>예금토큰과 스테이블코인을 같은 은행이 함께 낼 때 공시를 분리해야 하는가.</li>
+      <li>한은이 생각하는 준비자산 구성(한국은행권, 지준예치금, 국채)에서 현금성 최저 비율은 어느 수준인가.</li>
+    </ol></div>
+    <div class="q"><h3>박효민 입법조사관</h3><div class="tag">이슈와 논점 2436호 저자</div><ol>
+      <li>보고서에서 준비자산 관리를 쟁점으로 꼽았는데, 8건 법안의 준비자산 조항을 비교했을 때 가장 갈리는 지점은 무엇인가.</li>
+      <li>법 통과 뒤 공시 세부는 고시로 위임될 것으로 보는가. 그렇다면 고시가 나오기까지 얼마나 걸리는가.</li>
+      <li>입법조사처 입장에서 학생이 만든 공시 서식 초안이 참고 자료로 쓸모가 있는가. 어떤 형식이면 읽히는가.</li>
+    </ol></div>
+    <div class="q"><h3>신보성 선임연구위원</h3><div class="tag">이슈보고서 25-17 저자</div><ol>
+      <li>준비자산을 안전자산으로만 한정할 때 단기 국고채가 없는 한국은 무엇으로 채우는가. 통안채나 MMF가 대안이 되는가.</li>
+      <li>현금성 최저 15%가 한국 상황에서 적절한가. 30%를 의무로 걸면 무엇이 문제인가.</li>
+      <li>보고서에서 다룬 준비금 운용 수익과 발행사 인센티브 구조가 공시 항목에 반영돼야 하는가.</li>
+    </ol></div>
+    <div class="q"><h3>한국금융연구원 논단 저자</h3><div class="tag">저자 확인 후</div><ol>
+      <li>발행 자격과 자본 요건을 다뤘는데, 자본 요건과 준비금 공시 요건을 연동해야 한다고 보는가.</li>
+      <li>비은행 발행을 허용할 경우 공시 수준을 은행과 차등하는 것이 맞는가.</li>
+    </ol></div>
+    <div class="q"><h3>김앤장 변호사 4인</h3><div class="tag">정책 동향 2025-09-30 저자</div><ol>
+      <li>법안 8건의 공시 조항 중 하위법령 위임 방식이 서로 다른 곳이 있는가. 대안에서 어느 방식으로 수렴할 것으로 보는가.</li>
+      <li>MiCA와 GENIUS법의 준비금 공시 규정과 한국 법안을 비교했을 때 법적 정합성에서 가장 큰 차이는 무엇인가.</li>
+      <li>발행사가 공시 의무를 위반했을 때 제재 조항이 법안에 있는가. 없다면 어디에 들어가야 하는가.</li>
+    </ol></div>
+  </div>
+</section>
+
+<!-- 발송 -->
+<section>
+  <div class="eyebrow" style="color:var(--mute)">보내는 순서</div>
+  <div class="rule">
+    <strong>시점과 방식</strong>
+    <ul>
+      <li>9월 안에 발송. 2차 레퍼런스가 10/19, 멘토링 실행 마감이 11/15라 10월 초까지 답한 사람만 인터뷰가 된다.</li>
+      <li>김태봉 교수를 가장 먼저 찾아간다. 지도교수이고 표본 문제를 먼저 정리해야 나머지 질문이 선다.</li>
+      <li>1순위 9곳은 같은 메일 한 통에 개별 질문만 바꿔서. 2순위는 직접 찾아간다. 3순위와 4순위는 저자와 부서 앞으로 각각 보낸다.</li>
+      <li>메일에는 공통 질문 5개 중 상대에게 맞는 2개와 개별 질문 2개까지만. 질문이 다섯을 넘으면 답장이 안 온다.</li>
+      <li>답을 받으면 근거 그래프에 "인터뷰" 출처 유형으로 간선을 넣는다. 조문, 실측, 증언이 한 화면에서 구분된다.</li>
+      <li>인터뷰 내용을 발표에 쓸 때는 이름 공개 동의를 받는다. 동의가 없으면 "은행 실무자", "의원실 보좌진"으로 적는다.</li>
+    </ul>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
