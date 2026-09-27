@@ -1,0 +1,190 @@
+/* 1. 토큰 */
+:root{
+  --ink:#111;--ink-2:#555;--ink-3:#85857f;      /* 글자: 기본, 보조, 흐림 */
+  --line:#e4e4e0;--soft:#f6f6f4;                /* 선, 옅은 배경 */
+  --accent:#2a78d6;--tint:#d9e7f8;--tint-2:#eef4fc;  /* 강조 파랑과 그 옅은 단계 2개 */
+  --mute:#8c8c87;                               /* 강조 아닌 데이터 막대 */
+}
+
+/* 2. 기본 */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#fff;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Pretendard','Malgun Gothic',sans-serif;font-size:16px;line-height:1.75;margin:0;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:anywhere}
+.wrap{max-width:820px;margin:0 auto;padding:0 24px 88px}
+a{color:var(--ink)}
+h2{font-size:23px;line-height:1.3;margin:0 0 6px;letter-spacing:-.01em}
+h3{font-size:15.5px;font-weight:700;margin:30px 0 10px}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:22px}
+li{margin:0 0 6px}
+b{font-weight:700}
+sup{font-size:10.5px;color:var(--ink-3);margin-left:1px}
+sup a{color:inherit;text-decoration:none}
+small{font-size:12px;color:var(--ink-3)}
+section{scroll-margin-top:48px;margin-top:60px}
+.lede{color:var(--ink-2);font-size:14.5px;margin:0 0 20px}
+.cav{font-size:14px;color:var(--ink-3);margin:0;max-width:62ch}       /* 그림 아래 유의 한 줄 */
+.cap{font-size:12.5px;color:var(--ink-3);margin:0 0 12px}              /* 그림 안 소제목 */
+.tbd{font-size:12px;font-weight:600;color:var(--ink);border:1px solid #999;border-radius:3px;padding:0 5px;white-space:nowrap}  /* 미정 표기 */
+
+/* 3. 문서 머리 */
+.mast{padding:52px 0 18px}
+.mast .eyebrow{font-size:12px;color:var(--ink-3);margin:0 0 8px}
+.mast h1{font-size:32px;line-height:1.25;margin:0 0 10px;letter-spacing:-.015em}
+.mast p{color:var(--ink-2);margin:0;font-size:14.5px}
+.hero{padding:72px 0 56px;border-bottom:1px solid var(--ink)}         /* 그림책용 큰 머리 */
+.hero .eyebrow{font-size:13px;color:var(--ink-3);margin:0 0 18px}
+.hero h1{font-size:clamp(30px,5.4vw,46px);line-height:1.3;margin:0 0 22px;letter-spacing:-.02em;text-wrap:balance}
+.hero h1 em,.stmt em{font-style:normal;box-shadow:inset 0 -.42em 0 var(--tint)}  /* 형광펜 강조 */
+.hero p{color:var(--ink-2);margin:0;font-size:15.5px;max-width:60ch}
+.stmt{font-size:21px;line-height:1.6;font-weight:600;letter-spacing:-.01em;margin:14px 0 26px}  /* 핵심 문장 */
+.toc{position:sticky;top:0;z-index:3;background:#fff;border-top:1px solid var(--ink);border-bottom:1px solid var(--line);padding:9px 0;display:flex;flex-wrap:wrap;gap:2px 18px;font-size:12.5px}
+.toc a{color:var(--ink-2);text-decoration:none;white-space:nowrap}
+.toc a:hover{color:#000;text-decoration:underline}
+.page{padding:64px 0 8px}                                              /* 그림책 한 장 */
+.n{font-size:13px;font-weight:700;color:var(--accent);margin:0 0 8px}  /* 장 번호 */
+.page h2{font-size:clamp(26px,4.2vw,34px);margin:0 0 10px}
+.page > .a{font-size:19px;line-height:1.6;margin:0 0 28px;color:#222;max-width:34em}  /* 질문에 대한 답 한 줄. .stack .a와 충돌하지 않게 .page 직계로 한정 */
+
+/* 4. 수치 타일 */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 14px}
+.tile{background:var(--soft);border-radius:10px;padding:16px 16px 14px}
+.tile .v{font-size:28px;font-weight:700;line-height:1.2;letter-spacing:-.02em}
+.tile .l{font-size:13px;color:var(--ink-2);line-height:1.5;margin-top:4px}
+.tile .s{font-size:11.5px;color:var(--ink-3);margin-top:8px}
+.big{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 22px}  /* 그림책용 큰 숫자 */
+.big div{background:var(--soft);border-radius:12px;padding:20px 18px}
+.big b{display:block;font-size:clamp(26px,3.6vw,34px);line-height:1.2;letter-spacing:-.02em;white-space:nowrap}
+.big span{display:block;font-size:14px;color:var(--ink-2);margin-top:6px;line-height:1.5}
+
+/* 5. 차트 상자와 툴팁 */
+.chart,.pic{border:1px solid var(--line);border-radius:10px;padding:18px 20px 16px;margin:0 0 14px}
+.pic{border-radius:14px;padding:28px 26px;margin-bottom:16px}
+.chart h4{font-size:14px;font-weight:700;margin:0 0 2px}
+.chart .sub{font-size:12.5px;color:var(--ink-3);margin:0 0 14px}
+.chart .note{font-size:12px;color:var(--ink-3);margin:12px 0 0;line-height:1.6}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+[data-tip]{position:relative}
+[data-tip]:hover::after,[data-tip]:focus-visible::after{content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%);background:#111;color:#fff;font-size:12px;font-weight:400;line-height:1.5;padding:6px 10px;border-radius:6px;width:max-content;max-width:260px;white-space:normal;z-index:5;pointer-events:none;text-align:left}
+
+/* 6. 막대 */
+.meter{display:flex;height:22px;border-radius:4px;overflow:hidden;background:var(--tint)}   /* 비율 1개 */
+.meter i{display:block;background:var(--accent);border-radius:0 4px 4px 0}
+.meter-l{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink-2);margin-top:6px}
+.stack{display:flex;gap:2px;height:24px}                                                     /* 구성 비율 */
+.stack span{display:flex;align-items:center;padding:0 9px;font-size:12px;font-weight:600;white-space:nowrap;border-radius:4px}
+.stack .a{background:var(--accent);color:#fff}
+.stack .g{background:#dcdcd8;color:var(--ink)}
+.bars{display:grid;grid-template-columns:auto 1fr;gap:10px 12px;align-items:center;font-size:13px}  /* 가로 막대 비교 */
+.bars .bar{height:20px;border-radius:0 4px 4px 0;background:var(--mute)}
+.bars .bar.a{background:var(--accent)}
+.bars .row{display:flex;align-items:center;gap:8px}
+.bars .val{font-weight:700;font-size:13px}
+
+/* 7. 시간 흐름 (그림책 1장) */
+.tl{display:flex;gap:3px;height:54px;margin:34px 0 8px}
+.tl div{display:flex;align-items:center;justify-content:center;font-size:13.5px;font-weight:600;border-radius:6px;position:relative;white-space:nowrap}
+.tl .A{background:var(--accent);color:#fff}
+.tl .B{background:#dcdcd8;color:var(--ink)}
+.tl .R{background:repeating-linear-gradient(135deg,var(--tint) 0 6px,#fff 6px 10px);border:1.5px solid var(--accent)}
+.tl .R[data-say]::before{content:attr(data-say);position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%);background:#111;color:#fff;font-size:12.5px;font-weight:500;padding:5px 10px;border-radius:6px;white-space:nowrap}
+.tll{display:flex;gap:3px;font-size:12.5px;color:var(--ink-2);text-align:center;line-height:1.45}
+
+/* 8. 근거 수준 게이지 */
+.lv{display:grid;grid-template-columns:minmax(150px,1.3fr) 168px auto 1fr;gap:12px 14px;align-items:center;font-size:13.5px}
+.lv.c3{grid-template-columns:1fr 200px auto;font-size:15.5px;gap:16px}   /* 3열 판 */
+.lv > *{margin:0}
+.lv .hd{font-size:11.5px;color:var(--ink-3)}
+.lv .nm b{display:block;font-size:14px}
+.lv .nm small{display:block;line-height:1.4}
+.lv .s1{font-weight:700}
+.lv .use{color:var(--ink-2);font-size:13px;line-height:1.55}
+.seg{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.seg i{height:16px;background:#ecece8;border-radius:3px}
+.seg i.on{background:var(--mute)}
+.seg.a i.on{background:var(--accent)}
+.scale{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;font-size:10.5px;color:var(--ink-3);text-align:center}
+.tag{font-size:12px;font-weight:600;border:1px solid #bbb;border-radius:999px;padding:1px 9px;white-space:nowrap;justify-self:start}
+.tag.a{border-color:var(--accent);color:#1d5fb0}
+
+/* 9. 표와 판정 매트릭스 */
+.tw{overflow-x:auto;margin:6px 0 12px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;line-height:1.55}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{font-size:12px;font-weight:600;color:var(--ink-2);border-bottom:1px solid var(--ink);white-space:nowrap}
+td.rw{font-weight:600;white-space:nowrap}
+td.c,th.c{text-align:center;vertical-align:middle;width:74px}
+table.mx td{vertical-align:middle}
+.m{font-style:normal;display:inline-flex;align-items:center;justify-content:center;width:30px;height:24px;border-radius:5px;font-size:13px;font-weight:700}
+.m.o{background:var(--accent);color:#fff}      /* O 제공 */
+.m.t{background:var(--tint);color:var(--ink)}  /* △ 일부 */
+.m.x{color:#b5b5b0}                            /* ✕ 미제공 */
+tr.me td{background:var(--tint-2);font-weight:600}  /* 우리 제품 행 */
+.key{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:12.5px;color:var(--ink-2);margin:0 0 16px;align-items:center}
+.key span{display:inline-flex;align-items:center;gap:6px}
+
+/* 10. 목록과 상자 */
+.def{display:grid;grid-template-columns:120px 1fr;gap:0;margin:0}      /* 항목: 설명 */
+.def dt{font-weight:700;font-size:14px;padding:12px 0;border-top:1px solid var(--line)}
+.def dd{margin:0;padding:12px 0;border-top:1px solid var(--line);font-size:14.5px;color:#222}
+.warn{background:var(--soft);border-radius:10px;padding:14px 18px;font-size:13.5px;color:#333;margin:14px 0 0}  /* 유의사항 상자 */
+.warn b{display:block;margin-bottom:4px}
+.warn ul{margin:0;padding-left:18px}
+.unk{list-style:none;padding:0;margin:0;display:grid;gap:12px}         /* 모르는 것 목록 */
+.unk li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;background:var(--soft);border-radius:12px;padding:16px 18px}
+.unk li > span{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px}
+.unk b{display:block;font-size:17px}
+.unk p{margin:2px 0 0;font-size:14.5px;color:var(--ink-2)}
+.src{padding-left:0;list-style:none;font-size:13px;color:#444;line-height:1.6}  /* 출처 */
+.src li{margin:0 0 7px}
+.src li:target{background:var(--tint-2)}
+.src a{word-break:break-all}
+
+/* 11. 화면 예시 카드 (그림책 4장) */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.do{border:1px solid var(--line);border-radius:14px;padding:18px 16px 16px;display:flex;flex-direction:column}
+.do .k{font-size:12.5px;font-weight:700;color:var(--accent);margin:0 0 4px}
+.do h3{font-size:17px;line-height:1.4;margin:0 0 14px}
+.mock{background:var(--soft);border-radius:10px;padding:12px;font-size:12.5px;line-height:1.5;margin-top:auto}
+.mock .row{display:flex;justify-content:space-between;gap:8px;padding:4px 0;border-bottom:1px solid #e9e9e5}
+.mock .row:last-child{border-bottom:0}
+.mock .row span:first-child{color:var(--ink-3);white-space:nowrap}
+.mock .row span:last-child{text-align:right;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 6px}
+.chips i{font-style:normal;background:#fff;border:1px solid #d8d8d3;border-radius:5px;padding:1px 7px;font-size:12px}
+.grp{background:#fff;border:1.5px solid var(--accent);border-radius:8px;padding:7px 9px;margin-top:6px}
+.grp b{display:block;font-size:12.5px;margin-bottom:4px}
+.arrow{text-align:center;color:var(--ink-3);font-size:12px;margin:4px 0 0}
+.btns{display:flex;gap:6px;margin-top:10px}
+.btns i{font-style:normal;flex:1;text-align:center;border:1px solid #cfcfca;border-radius:6px;padding:4px 0;background:#fff;font-weight:600}
+.btns i:first-child{background:#111;color:#fff;border-color:#111}
+
+/* 12. 꼬리말, 반응형, 인쇄 */
+footer{border-top:1px solid var(--line);margin-top:56px;padding-top:14px;font-size:12px;color:var(--ink-3);line-height:1.8}
+@media (max-width:680px){
+  .wrap{padding:0 16px 64px}
+  .tiles{grid-template-columns:1fr 1fr}.big,.three,.two{grid-template-columns:1fr}
+  .lv,.lv.c3{grid-template-columns:1fr 120px}.lv .tag,.lv .use,.lv .hd:nth-child(n+3){grid-column:1/-1}
+  .def{grid-template-columns:1fr}.def dd{border-top:0;padding-top:0}
+  td.rw{white-space:normal}.tl div{font-size:11.5px}.tl .R[data-say]::before{font-size:11px;white-space:normal;width:150px;text-align:center}
+}
+@media print{.toc{position:static}}
+
+/* 13. 화면 전체 폭, 복사 버튼, 그림 */
+.cp{font-family:inherit;font-size:12px;color:#111;background:#fff;border:1px solid #bbb;border-radius:4px;padding:3px 10px;cursor:pointer;white-space:nowrap}
+.cp:hover{border-color:#111}
+.cp.ok{color:#777}
+.bh{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid var(--ink)}
+.bh h2{margin:0}
+.mast .tools{margin-top:16px;display:flex;gap:6px}
+.wrap{max-width:none;padding:0 clamp(24px,4vw,72px) 88px}
+.def{grid-template-columns:160px 1fr}
+.cav{max-width:none}
+figure{margin:0 0 10px}
+figure svg{width:100%;max-width:960px;height:auto;display:block;margin:0 auto}
+figcaption{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12.5px;color:var(--ink-3);margin-top:8px}
+body.editing #doc,body.editing .mast,body.editing footer{outline:1px dashed #999;outline-offset:10px}
+body.editing #editToggle{background:#111;color:#fff;border-color:#111}
+@media (max-width:680px){.def{grid-template-columns:1fr}}
+.tbd{background:#ffe6a8;color:#7a4300;border:1px solid #eea12c;font-weight:700;padding:1px 6px}
+@media print{.nocopy,.cp{display:none}}
