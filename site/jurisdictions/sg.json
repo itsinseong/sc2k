@@ -1,0 +1,117 @@
+{
+  "id": "sg",
+  "name": "싱가포르",
+  "legal_status": "협의 중",
+  "version": "1.0",
+  "as_of": "2026-09-24",
+  "source_note": "MAS 2023 스테이블코인 프레임워크는 시행 중이나, 은행 발행을 포함한 법 개정 자문(P015-2026)이 2026-09-01 공고돼 2026-10-16까지 의견을 받는다. R05는 이번 자문의 질의(Q4) 대상이라 협의 중으로 둔다. docs/매니페스트_v2.md §7, §2.1.",
+  "rules": {
+    "R01": {
+      "requirement": "100% 상시 커버리지, 일일 시가평가",
+      "comparison": "gte",
+      "threshold": 1.0,
+      "article": "MAS 스테이블코인 프레임워크",
+      "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-consults-on-legislative-amendments-to-implement-stablecoin-regulatory-framework",
+      "legal_status": "시행 중"
+    },
+    "R02": {
+      "requirement": "허용 자산 종류: 현금, 현금성 자산, 3개월 이하 정부채",
+      "allowed": ["cash", "cash_equivalent", "government_bond_3m"],
+      "article": "MAS 스테이블코인 프레임워크",
+      "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-consults-on-legislative-amendments-to-implement-stablecoin-regulatory-framework",
+      "legal_status": "시행 중"
+    },
+    "R03": {
+      "requirement": "국채 잔존만기 상한 3개월",
+      "threshold_days": 90,
+      "article": "MAS 스테이블코인 프레임워크",
+      "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-consults-on-legislative-amendments-to-implement-stablecoin-regulatory-framework",
+      "legal_status": "시행 중"
+    },
+    "R04": {
+      "requirement": "레포 만기 미규정",
+      "threshold_days": null,
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    },
+    "R05": {
+      "requirement": "현금성 최저 비율, 법 개정 자문 질의(Q4)로 검토 중",
+      "threshold": null,
+      "delegated": true,
+      "article": "MAS 법 개정 자문(P015-2026) Q4",
+      "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-consults-on-legislative-amendments-to-implement-stablecoin-regulatory-framework"
+    },
+    "R06": {
+      "requirement": "준비자산 통화는 페그 통화와 일치",
+      "required_currency": "same_as_peg",
+      "article": "MAS 스테이블코인 프레임워크",
+      "url": null,
+      "legal_status": "시행 중"
+    },
+    "R07": {
+      "requirement": "공개 주기 월별",
+      "cadence_days": 31,
+      "article": "MAS 스테이블코인 프레임워크",
+      "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-consults-on-legislative-amendments-to-implement-stablecoin-regulatory-framework",
+      "legal_status": "시행 중"
+    },
+    "R08": {
+      "requirement": "월별 attestation, 연간 감사",
+      "verification_types": ["attestation", "audit"],
+      "article": "MAS 스테이블코인 프레임워크",
+      "url": null,
+      "legal_status": "시행 중"
+    },
+    "R09": {
+      "requirement": "월말 기준",
+      "time_bucket": "unspecified_business_day",
+      "time_label": "월말",
+      "article": "MAS 스테이블코인 프레임워크",
+      "url": null,
+      "legal_status": "시행 중"
+    },
+    "R10": {
+      "requirement": "공개 기한 다음 달 말",
+      "deadline_days": 31,
+      "unit": "calendar_days",
+      "article": "MAS 스테이블코인 프레임워크",
+      "url": null,
+      "legal_status": "시행 중"
+    },
+    "R11": {
+      "requirement": "유통량 공개",
+      "expected": true,
+      "article": "MAS 스테이블코인 프레임워크",
+      "url": null,
+      "legal_status": "시행 중"
+    },
+    "R12": {
+      "requirement": "신탁 계정 공개",
+      "expected": true,
+      "article": "MAS 스테이블코인 프레임워크",
+      "url": null,
+      "legal_status": "시행 중"
+    },
+    "R13": {
+      "requirement": "환매 기한 5영업일",
+      "max_days": 5,
+      "unit": "business_days",
+      "article": "MAS 스테이블코인 프레임워크",
+      "url": null,
+      "legal_status": "시행 중"
+    },
+    "R14": {
+      "requirement": "이자 지급 금지(2026 제안)",
+      "expected": false,
+      "article": "MAS 법 개정 자문(P015-2026)",
+      "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-consults-on-legislative-amendments-to-implement-stablecoin-regulatory-framework"
+    },
+    "R15": {
+      "requirement": "경영진 인증 미규정",
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    }
+  }
+}

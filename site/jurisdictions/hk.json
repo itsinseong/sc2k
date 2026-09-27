@@ -1,0 +1,113 @@
+{
+  "id": "hk",
+  "name": "홍콩",
+  "legal_status": "시행 중",
+  "version": "1.0",
+  "as_of": "2026-09-24",
+  "source_note": "HKMA 감독지침 시행 중(2025-08-01). 2026-04-10 HSBC와 Anchorpoint에 첫 발행 인가. docs/매니페스트_v2.md §7, §2.1.",
+  "rules": {
+    "R01": {
+      "requirement": "액면 전액 커버리지",
+      "comparison": "gte",
+      "threshold": 1.0,
+      "article": "HKMA 감독지침(액면 전액 보유)",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/"
+    },
+    "R02": {
+      "requirement": "허용 자산 종류: 고유동성 우량자산(현금, 3개월 이내 은행예금 등 HQLA)",
+      "allowed": [
+        "hqla",
+        "cash",
+        "bank_deposit_3m"
+      ],
+      "article": "HKMA 감독지침 2.3.1",
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/"
+    },
+    "R03": {
+      "requirement": "국채 잔존만기 상한 미규정",
+      "threshold_days": null,
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    },
+    "R04": {
+      "requirement": "레포 만기 미규정",
+      "threshold_days": null,
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    },
+    "R05": {
+      "requirement": "현금성 최저 비율 미규정(현금과 3개월 이내 은행예금 허용만 규정)",
+      "threshold": null,
+      "not_regulated": true,
+      "article": "HKMA 감독지침 2.3.1",
+      "url": null
+    },
+    "R06": {
+      "requirement": "준비자산 통화는 페그 통화와 일치",
+      "required_currency": "same_as_peg",
+      "article": "HKMA 감독지침 통화 일치 요건",
+      "url": null
+    },
+    "R07": {
+      "requirement": "주간 웹 갱신",
+      "cadence_days": 7,
+      "article": "HKMA 감독지침 2.7.2",
+      "url": null
+    },
+    "R08": {
+      "requirement": "HKMA가 수용하는 주기로 attestation, 연간 감사",
+      "verification_types": [
+        "attestation",
+        "audit"
+      ],
+      "article": "HKMA 감독지침",
+      "url": null
+    },
+    "R09": {
+      "requirement": "기간 말 영업일 및 무작위 영업일 1일 기준",
+      "time_bucket": "unspecified_business_day",
+      "time_label": "기간 말 영업일 + 무작위 영업일",
+      "article": "HKMA 감독지침 2.7.3",
+      "url": null
+    },
+    "R10": {
+      "requirement": "attestation 보고서는 기간 말 후 1개월 이내 제출(웹 공시 갱신은 최대 7일, 검증 보고서에는 적용하지 않음)",
+      "deadline_days": 31,
+      "unit": "calendar_days",
+      "article": "HKMA 감독지침 2.7.2, 2.7.3",
+      "url": null
+    },
+    "R11": {
+      "requirement": "액면 잔액 공개",
+      "expected": true,
+      "article": "HKMA 감독지침(액면 잔액)",
+      "url": null
+    },
+    "R12": {
+      "requirement": "준비자산 관리정책 공개",
+      "expected": true,
+      "article": "HKMA 감독지침",
+      "url": null
+    },
+    "R13": {
+      "requirement": "액면가, 환매 조건과 처리 기한 공시",
+      "partial": true,
+      "article": "홍콩 스테이블코인 조례",
+      "url": null
+    },
+    "R14": {
+      "requirement": "이자 지급 미규정",
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    },
+    "R15": {
+      "requirement": "경영진 인증 미규정",
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    }
+  }
+}

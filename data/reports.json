@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-15",
+ "generated": "2026-09-27",
  "source": "Circle USDC 월간 examination report, pdftotext -layout",
  "note": "회계법인명은 서명 이미지라 자동 추출되지 않는다. 서식 항목 D1은 수동 확인.",
  "reports": [
@@ -14,6 +14,7 @@
    "as_of": "2026-01-30",
    "month": "2026-01",
    "as_of_time": "23:59 UTC",
+   "reserve_currency": "USD",
    "circulation": 69954717486,
    "fair_value": 70022091915,
    "components": {
@@ -51,6 +52,7 @@
    "as_of": "2026-03-31",
    "month": "2026-03",
    "as_of_time": "23:59 UTC",
+   "reserve_currency": "USD",
    "circulation": 77049290538,
    "fair_value": 77125330954,
    "components": {
@@ -88,6 +90,7 @@
    "as_of": "2026-04-30",
    "month": "2026-04",
    "as_of_time": "23:59 UTC",
+   "reserve_currency": "USD",
    "circulation": 77047590794,
    "fair_value": 77123668726,
    "components": {
@@ -125,6 +128,7 @@
    "as_of": "2026-07-31",
    "month": "2026-07",
    "as_of_time": "23:59 UTC",
+   "reserve_currency": "USD",
    "circulation": 71826453410,
    "fair_value": 71904101332,
    "components": {

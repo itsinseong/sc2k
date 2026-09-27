@@ -1,0 +1,326 @@
+{
+  "id": "kr-v1",
+  "name": "한국 시나리오(KR-v1)",
+  "legal_status": "계류",
+  "version": "1.0",
+  "as_of": "2026-09-24",
+  "disclaimer": "한국 열은 제안이며 확정 규정이 아니다. 학부 프로젝트의 설계 산출물이고, 정부안은 국회에 제출되지 않았다.",
+  "source_note": "정무위원회에 계류 중인 의원 발의 법안 8건(2210736 민병덕, 2211777 김은혜, 2211784 안도걸, 2212298 김현정, 2213166 이강일, 2213266 김재섭, 2213449 최보윤, 2214492 박상혁)과 StableWatch 한국공시안 v1(docs/한국공시안_v1.md)의 값 결정 기록 D-01~D-05를 후보값으로 둔다. 근거 유형 분류는 2026-09-13 적대검증 3차(docs/research/적대검증_Codex_3차_2026-09-13.md) 반영본. 규칙마다 후보 중 하나를 골라 판정에 넣는다. 기본값은 계류 법안 값(bill)이다.",
+  "rules": {
+    "R01": {
+      "requirement": "커버리지 = 준비자산 공정가치 / 발행잔액 ≥ 100%",
+      "evidence_type": "법안 후보값",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안 7건 공통(안도걸 등)",
+          "comparison": "gte",
+          "threshold": 1.0,
+          "article": "안도걸 안 제16조①2 등 법안 7건이 발행잔액 이상 보유를 규정"
+        },
+        {
+          "id": "press",
+          "label": "보도(매일경제)",
+          "comparison": "gte",
+          "threshold": 1.0,
+          "article": "매일경제 2025-12-19"
+        },
+        {
+          "id": "proposal",
+          "label": "공시안 제안(B2)",
+          "comparison": "gte",
+          "threshold": 1.0,
+          "article": "한국공시안_v1 B2, M1 실측 근거(Circle 평균 100.1005%)"
+        }
+      ]
+    },
+    "R02": {
+      "requirement": "허용 자산 종류",
+      "evidence_type": "법안 후보값",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안(안도걸)",
+          "allowed": [
+            "cash",
+            "bank_deposit",
+            "government_bond",
+            "other_designated"
+          ],
+          "article": "안도걸 안 제16조①3가~라"
+        },
+        {
+          "id": "proposal",
+          "label": "공시안 제안(B3~B6)",
+          "allowed": [
+            "cash",
+            "bank_deposit",
+            "government_bond",
+            "other_designated"
+          ],
+          "article": "한국공시안_v1 B3~B6"
+        }
+      ]
+    },
+    "R03": {
+      "requirement": "국채 잔존만기 상한",
+      "evidence_type": "법안 후보값",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안(안도걸, '1년 이내')",
+          "threshold_days": 365,
+          "article": "안도걸 안 제16조①3다"
+        },
+        {
+          "id": "proposal",
+          "label": "공시안 제안(B5, 1년 이하 구간)",
+          "threshold_days": 365,
+          "article": "한국공시안_v1 B5"
+        }
+      ]
+    },
+    "R04": {
+      "requirement": "레포 만기",
+      "evidence_type": "공백 후보",
+      "evidence_layer": null,
+      "unresearched": true,
+      "note": "어느 근거층에서도 찾지 못했다. graph/schema.md 갭 확정 절차(조사범위, 위임확인, 유사제도 준용, 반증조건) 미완료.",
+      "candidates": []
+    },
+    "R05": {
+      "requirement": "현금성(은행 예치) 최저 비율",
+      "evidence_type": "법안 내 위임",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안 내 위임(대통령령)",
+          "delegated": true,
+          "article": "안도걸 안 제16조①4 '대통령령으로 정하는 비율'"
+        },
+        {
+          "id": "foreign_ref",
+          "label": "해외 참조값(OCC 안전항 / EU 일반 EMT)",
+          "comparison": "gte",
+          "threshold": 0.3,
+          "article": "OCC 제안 §15.11(c)(2), MiCA Art. 54(a)"
+        },
+        {
+          "id": "proposal",
+          "label": "공시안 제안(D-05, 잠정 15%)",
+          "comparison": "gte",
+          "threshold": 0.15,
+          "article": "한국공시안_v1 D-05, Circle 실측 평균 14.47%(M4) 근거"
+        }
+      ]
+    },
+    "R06": {
+      "requirement": "준비자산 통화 일치",
+      "evidence_type": "법안 후보값",
+      "evidence_layer": 2,
+      "note": "2026-09-13 적대검증 3차 반영. 이전에는 '자명'으로 분류했으나 안도걸 안에 별도 동일통화 조문이 있어 법안 후보값으로 재분류.",
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안(안도걸, 연동된 통화와 동일한 통화)",
+          "required_currency": "same_as_peg",
+          "article": "안도걸 안 제16조①1 '가치가 연동된 통화와 동일한 통화로 표시된 자산'"
+        },
+        {
+          "id": "proposal",
+          "label": "공시안 제안(원화 스테이블코인 전제)",
+          "required_currency": "KRW",
+          "article": "한국공시안_v1(원화 전제)"
+        }
+      ]
+    },
+    "R07": {
+      "requirement": "공개 주기",
+      "evidence_type": "법안 후보값",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안 5건 공통(매월)",
+          "cadence_days": 31,
+          "article": "안도걸, 김은혜, 이강일, 김현정, 박상혁 안(매월)"
+        }
+      ]
+    },
+    "R08": {
+      "requirement": "검증 수준(examination, attestation, audit 구분)",
+      "evidence_type": "법안 후보값",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안(안도걸, 분기 회계법인 검토)",
+          "verification_types": [
+            "quarterly_review"
+          ],
+          "article": "안도걸 안 제16조③(박상혁 안도 분기 검토)"
+        },
+        {
+          "id": "proposal",
+          "label": "공시안 제안(D-04, 분기 검토 + 연 1회 감사)",
+          "verification_types": [
+            "quarterly_review",
+            "audit"
+          ],
+          "article": "한국공시안_v1 D-04"
+        }
+      ]
+    },
+    "R09": {
+      "requirement": "검증 기준시각",
+      "evidence_type": "법안 후보값",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안(김현정, 매월 말일 기준)",
+          "time_bucket": "unspecified_business_day",
+          "time_label": "매월 말일 기준(시각 미기재)",
+          "article": "김현정 안 제32조"
+        },
+        {
+          "id": "proposal",
+          "label": "공시안 제안(F2, 자정)",
+          "time_bucket": "midnight",
+          "time_label": "기준일 24:00(자정)",
+          "article": "한국공시안_v1 F2"
+        }
+      ]
+    },
+    "R10": {
+      "requirement": "공개 기한",
+      "evidence_type": "법안 후보값",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안(김현정, 다음 달 5일)",
+          "deadline_days": 5,
+          "unit": "calendar_days",
+          "article": "김현정 안 제32조①(휴일이면 다음 영업일)"
+        },
+        {
+          "id": "proposal",
+          "label": "공시안 제안(D-01, 검증본은 분기 종료 후 30일)",
+          "deadline_days": 30,
+          "unit": "calendar_days",
+          "article": "한국공시안_v1 D-01(자체 공시 5영업일은 발행사 작성 공시에 적용, 검증 보고서는 30일)"
+        }
+      ]
+    },
+    "R11": {
+      "requirement": "발행잔액 산식 공개",
+      "evidence_type": "부분 공백",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안(안도걸, 잔액 정의만 있음)",
+          "partial": true,
+          "article": "안도걸 안 제16조①2(제외 항목 산식과 공개 의무는 없음)"
+        },
+        {
+          "id": "proposal",
+          "label": "공시안 제안(A2, 산식 공개 의무화)",
+          "expected": true,
+          "article": "한국공시안_v1 A2"
+        }
+      ]
+    },
+    "R12": {
+      "requirement": "수탁기관과 위치 공개",
+      "evidence_type": "부분 공백",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안(안도걸, 보관기관 자격만 위임)",
+          "partial": true,
+          "article": "안도걸 안 제16조①3나, ④(실명과 위치 공개 의무는 없음)"
+        },
+        {
+          "id": "proposal",
+          "label": "공시안 제안(C1, D-03 실명 의무화)",
+          "expected": true,
+          "article": "한국공시안_v1 C1, 결정기록 D-03"
+        }
+      ]
+    },
+    "R13": {
+      "requirement": "환매 조건(액면, 기한, 수수료)",
+      "evidence_type": "법안 후보값",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안(안도걸, 3영업일)",
+          "max_days": 3,
+          "unit": "business_days",
+          "article": "안도걸 안 제18조①. 법안별 범위는 3일(이강일) ~ 10일(김은혜, 김현정)"
+        },
+        {
+          "id": "proposal",
+          "label": "공시안 제안(D-02/E1, 3영업일)",
+          "max_days": 3,
+          "unit": "business_days",
+          "article": "한국공시안_v1 D-02, E1"
+        }
+      ]
+    },
+    "R14": {
+      "requirement": "이자 지급 금지",
+      "evidence_type": "법안 후보값",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안(안도걸 등, 금지)",
+          "expected": false,
+          "article": "안도걸 안 제17조, 김재섭 안 제128조(홍보 목적 예외), 김현정 안 제31조"
+        },
+        {
+          "id": "press",
+          "label": "보도",
+          "expected": false,
+          "article": "매일경제 2025-12-19"
+        }
+      ]
+    },
+    "R15": {
+      "requirement": "경영진 인증",
+      "evidence_type": "법안 후보값",
+      "evidence_layer": 2,
+      "default_candidate": "bill",
+      "candidates": [
+        {
+          "id": "bill",
+          "label": "법안(안도걸, 대표이사 진술과 서명)",
+          "expected": true,
+          "article": "안도걸 안 제16조⑤, 김은혜 안 제13조⑤"
+        }
+      ]
+    }
+  }
+}

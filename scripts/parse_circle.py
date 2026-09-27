@@ -56,6 +56,7 @@ def parse(pdf):
     r['as_of'] = r['report_dates'][1]
     r['month'] = r['as_of'][:7]
     r['as_of_time'] = '23:59 UTC' if '11:59pm' in text else None
+    r['reserve_currency'] = 'USD' if 'U.S. dollar denominated assets' in text else None
 
     m = re.search(r'USDC in Circulation\s+([\d,]+)\s+([\d,]+)', text)
     r['circulation'] = num(m.group(2)) if m else None

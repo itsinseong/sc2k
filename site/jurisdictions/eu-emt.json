@@ -1,0 +1,109 @@
+{
+  "id": "eu-emt",
+  "name": "EU 일반 EMT",
+  "legal_status": "시행 중",
+  "version": "1.0",
+  "as_of": "2026-09-24",
+  "source_note": "MiCA(Markets in Crypto-Assets Regulation) 시행 중. 일반 EMT(전자화폐토큰) 발행 EMI에 적용. docs/매니페스트_v2.md §7, 2026-09-21 검증대장 §3 현금성 최저비율.",
+  "rules": {
+    "R01": {
+      "requirement": "커버리지 = 준비자산 공정가치 / 발행잔액 ≥ 100%",
+      "comparison": "gte",
+      "threshold": 1.0,
+      "article": "EMD2(전자화폐지침) 자금보호 요건",
+      "url": null
+    },
+    "R02": {
+      "requirement": "허용 자산 종류: 은행예치 30% 이상 + 저위험 고유동자산",
+      "allowed": ["bank_deposit", "low_risk_liquid_asset"],
+      "article": "MiCA 준비자산 요건(EMD2 자금보호 준용)",
+      "url": null
+    },
+    "R03": {
+      "requirement": "국채 잔존만기 상한 미규정",
+      "threshold_days": null,
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    },
+    "R04": {
+      "requirement": "레포 만기 미규정",
+      "threshold_days": null,
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    },
+    "R05": {
+      "requirement": "수취 자금의 30% 이상을 신용기관 분리 계좌에 예치",
+      "comparison": "gte",
+      "threshold": 0.30,
+      "article": "MiCA Art. 54(a)",
+      "url": null,
+      "note": "조문 번호는 2026-09-21 검증대장에서 Art. 54(2)(a)를 Art. 54(a)로 정정(제54조는 항 번호 없이 (a)(b) 2호)"
+    },
+    "R06": {
+      "requirement": "준비자산 통화는 페그 통화와 일치",
+      "required_currency": "same_as_peg",
+      "article": "MiCA 준비자산 통화 일치 요건",
+      "url": null
+    },
+    "R07": {
+      "requirement": "공개 주기 미규정",
+      "cadence_days": null,
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    },
+    "R08": {
+      "requirement": "검증 수준 미규정(일반 EMT는 월별 공시 의무 자체가 없음)",
+      "verification_types": null,
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    },
+    "R09": {
+      "requirement": "검증 기준시각 미규정",
+      "time_bucket": null,
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    },
+    "R10": {
+      "requirement": "공개 기한 미규정",
+      "deadline_days": null,
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    },
+    "R11": {
+      "requirement": "발행잔액 산식 공개 미규정",
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    },
+    "R12": {
+      "requirement": "수탁기관과 위치 공개 미규정",
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    },
+    "R13": {
+      "requirement": "액면 상시 환매(수수료 금지), 조건은 백서에 기재. 처리 기한 수치는 미규정",
+      "partial": true,
+      "article": "MiCA Art. 49(4), Art. 49(6), Art. 51(1)(d)",
+      "url": null
+    },
+    "R14": {
+      "requirement": "이자 지급 금지(할인, 보상도 이자로 본다)",
+      "expected": false,
+      "article": "MiCA Art. 50",
+      "url": null
+    },
+    "R15": {
+      "requirement": "경영진 인증 미규정",
+      "not_regulated": true,
+      "article": null,
+      "url": null
+    }
+  }
+}

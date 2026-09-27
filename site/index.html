@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StableWatch 판정기</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hd">
+  <div class="eyebrow">StableWatch, 화면 A 판정</div>
+  <h1>원화 스테이블코인 준비금 공시 판정기</h1>
+  <p class="lede">
+    발행사 준비금 보고서를 관할권 규칙 15개로 판정한다. 규칙 코드는 관할권을 모르고,
+    임계치와 기한은 전부 관할권 설정에서 온다. 값이 없는 자리는 채우지 않고 "데이터 없음"으로 낸다.
+  </p>
+  <p class="kr-disclaimer">한국(KR-v1) 열은 제안이며 확정된 규정이 아니다. 국회에 계류 중인 법안과 StableWatch 자체 공시안(v1)의 후보값 중 하나를 골라 판정한다.</p>
+</header>
+
+<div class="controls">
+  <div class="ctl-row">
+    <span class="ctl-label">보고서</span>
+    <select id="reportSelect"></select>
+  </div>
+  <div class="ctl-row">
+    <span class="ctl-label">관할권</span>
+    <div class="seg" id="jurToggle"></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section class="stats" id="statsRow"></section>
+  <section class="composition" id="compositionRow"></section>
+  <main id="ruleList" aria-label="규칙 15개 판정"></main>
+
+  <footer class="ft">
+    <p>데이터: data/reports.json(Circle), data/reports_paxos.json(Paxos). 관할권 설정: site/jurisdictions/*.json. 판정 로직: site/engine.js(순수 함수, 규칙마다 테스트 있음).</p>
+    <p>이 도구는 학부 미디어프로젝트 산출물이며, 한국 열의 값은 전부 제안이다. 법률 자문이 아니다.</p>
+  </footer>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
