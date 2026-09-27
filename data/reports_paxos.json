@@ -1,0 +1,334 @@
+{
+ "generated": "2026-09-27",
+ "source": "Paxos PYUSD/USDP/USDG 월간 examination(USDG는 reasonable assurance) report, pdftotext -layout",
+ "note": "sources는 숫자별 {page, line, raw} 출처. 대사 실패 보고서는 reports에서 제외.",
+ "reports": [
+  {
+   "source_file": "data/samples/Paxos_PYUSD_Examination_2026-07.pdf",
+   "issuer": "Paxos Trust Company, National Association",
+   "token": "PYUSD",
+   "report_dates": [
+    "2026-07-21",
+    "2026-07-31"
+   ],
+   "as_of": "2026-07-31",
+   "month": "2026-07",
+   "as_of_time": "17:00 ET",
+   "reserve_currency": "USD",
+   "circulation": 2689335674,
+   "fair_value": 2694072163,
+   "components": {
+    "cash": 94699538,
+    "government_mmf": 0,
+    "repo": 2200625000,
+    "treasury": 398747625
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 2694072163,
+     "got": 2694072163,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 2694072163,
+     "got": 2694072163,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 4736489,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00176121,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-08-25",
+    "firm": "KPMG LLP"
+   },
+   "flags": {
+    "scan_suspected": false
+   },
+   "sources": {
+    "report_dates": [
+     {
+      "page": 4,
+      "line": 12,
+      "raw": "July 21, 2026"
+     },
+     {
+      "page": 4,
+      "line": 12,
+      "raw": "July 31, 2026"
+     }
+    ],
+    "reserve_currency": {
+     "page": 8,
+     "line": 10,
+     "raw": "United States Dollar"
+    },
+    "circulation": {
+     "page": 4,
+     "line": 16,
+     "raw": "2,689,335,674"
+    },
+    "fair_value": {
+     "page": 4,
+     "line": 19,
+     "raw": "$2,694,072,163"
+    },
+    "components": {
+     "cash": {
+      "page": 8,
+      "line": 13,
+      "raw": "$94,699,538"
+     },
+     "government_mmf": {
+      "page": 8,
+      "line": 14,
+      "raw": "-"
+     },
+     "repo": {
+      "page": 8,
+      "line": 15,
+      "raw": "$2,200,625,000"
+     },
+     "treasury": {
+      "page": 8,
+      "line": 16,
+      "raw": "$398,747,625"
+     },
+     "total": {
+      "page": 8,
+      "line": 17,
+      "raw": "$2,694,072,163"
+     }
+    },
+    "attestation.signed": {
+     "page": 2,
+     "line": 22,
+     "raw": "August 25, 2026"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Paxos_USDP_Examination_2026-07.pdf",
+   "issuer": "Paxos Trust Company, National Association",
+   "token": "USDP",
+   "report_dates": [
+    "2026-07-21",
+    "2026-07-31"
+   ],
+   "as_of": "2026-07-31",
+   "month": "2026-07",
+   "as_of_time": "17:00 ET",
+   "reserve_currency": "USD",
+   "circulation": 31954027,
+   "fair_value": 31975703,
+   "components": {
+    "cash": 24935703,
+    "government_mmf": 0,
+    "repo": 7040000,
+    "treasury": 0
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 31975703,
+     "got": 31975703,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 31975703,
+     "got": 31975703,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 21676,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00067835,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-08-25",
+    "firm": "KPMG LLP"
+   },
+   "flags": {
+    "scan_suspected": false
+   },
+   "sources": {
+    "report_dates": [
+     {
+      "page": 4,
+      "line": 12,
+      "raw": "July 21, 2026"
+     },
+     {
+      "page": 4,
+      "line": 12,
+      "raw": "July 31, 2026"
+     }
+    ],
+    "reserve_currency": {
+     "page": 6,
+     "line": 11,
+     "raw": "United States Dollar"
+    },
+    "circulation": {
+     "page": 4,
+     "line": 14,
+     "raw": "31,954,027"
+    },
+    "fair_value": {
+     "page": 4,
+     "line": 17,
+     "raw": "$31,975,703"
+    },
+    "components": {
+     "cash": {
+      "page": 6,
+      "line": 14,
+      "raw": "$24,935,703"
+     },
+     "government_mmf": {
+      "page": 6,
+      "line": 15,
+      "raw": "-"
+     },
+     "repo": {
+      "page": 6,
+      "line": 16,
+      "raw": "$7,040,000"
+     },
+     "treasury": {
+      "page": 6,
+      "line": 17,
+      "raw": "-"
+     },
+     "total": {
+      "page": 6,
+      "line": 18,
+      "raw": "$31,975,703"
+     }
+    },
+    "attestation.signed": {
+     "page": 2,
+     "line": 22,
+     "raw": "August 25, 2026"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Paxos_USDG_Examination_2026-07.pdf",
+   "issuer": "Paxos Digital Singapore Pte. Ltd.",
+   "token": "USDG",
+   "report_dates": [
+    "2026-07-21",
+    "2026-07-31"
+   ],
+   "as_of": "2026-07-31",
+   "month": "2026-07",
+   "as_of_time": "17:00 ET",
+   "reserve_currency": "USD",
+   "circulation": 3400474143,
+   "fair_value": 3404876225,
+   "components": {
+    "cash": 103442070,
+    "government_mmf": 1939425768,
+    "repo": 0,
+    "treasury": 1362008387
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 3404876225,
+     "got": 3404876225,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 3404876225,
+     "got": 3404876225,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 4402082,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00129455,
+   "attestation": {
+    "type": "reasonable assurance",
+    "standard": "Singapore Standard on Assurance Engagements 3000 (SSAE 3000)",
+    "signed": "2026-08-26",
+    "firm": "KPMG LLP"
+   },
+   "flags": {
+    "scan_suspected": false
+   },
+   "sources": {
+    "report_dates": [
+     {
+      "page": 6,
+      "line": 9,
+      "raw": "July 21, 2026"
+     },
+     {
+      "page": 6,
+      "line": 9,
+      "raw": "July 31, 2026"
+     }
+    ],
+    "reserve_currency": {
+     "page": 9,
+     "line": 5,
+     "raw": "United States Dollar"
+    },
+    "circulation": {
+     "page": 6,
+     "line": 13,
+     "raw": "3,400,474,143"
+    },
+    "fair_value": {
+     "page": 6,
+     "line": 16,
+     "raw": "$3,404,876,225"
+    },
+    "components": {
+     "cash": {
+      "page": 9,
+      "line": 8,
+      "raw": "$103,442,070"
+     },
+     "government_mmf": {
+      "page": 9,
+      "line": 10,
+      "raw": "$1,939,425,768"
+     },
+     "repo": {
+      "page": 9,
+      "line": 12,
+      "raw": "-"
+     },
+     "treasury": {
+      "page": 9,
+      "line": 14,
+      "raw": "$1,362,008,387"
+     },
+     "total": {
+      "page": 9,
+      "line": 16,
+      "raw": "$3,404,876,225"
+     }
+    },
+    "attestation.signed": {
+     "page": 4,
+     "line": 49,
+     "raw": "26 August 2026"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,2676 @@
+{
+ "generated": "2026-09-27",
+ "note": "보고서 7건(Circle USDC n=4, Paxos PYUSD/USDP/USDG n=3) x 서식 29항목. 분류는 채움, 못채움, 파싱실패, 해당없음 네 가지. source는 채움 판정의 근거 {page, line}(있을 때만).",
+ "rows": [
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "A1",
+   "group": "A 발행 현황",
+   "name": "발행잔액(미상환 기준)",
+   "status": "채움",
+   "reason": "USDC in Circulation 행에 미상환 유통량 69,954,717,486가 그대로 나온다(2쪽 19줄).",
+   "source": {
+    "page": 2,
+    "line": 19
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "A2",
+   "group": "A 발행 현황",
+   "name": "발행잔액 산식 정의",
+   "status": "채움",
+   "reason": "Criteria A가 총발행에서 미발행 허용분, 접근차단분, Gateway 소각대기분을 빼는 산식을 문장으로 명시한다(2쪽 29줄).",
+   "source": {
+    "page": 2,
+    "line": 29
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "A3",
+   "group": "A 발행 현황",
+   "name": "코인 종류별 분리 표시",
+   "status": "해당없음",
+   "reason": "이 문서 한 건은 USDC 한 종류만 다룬다. Circle은 USDC와 EURC를, Paxos Trust는 PYUSD와 USDP를 같은 발행사가 내지만 코인별로 별도 문서를 낸다. 한 표 안에서 코인별로 나눠 보여줄 자리가 이 문서에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "B1",
+   "group": "B 준비자산",
+   "name": "준비자산 총 평가액(시장가)",
+   "status": "채움",
+   "reason": "Fair Value of Assets Held in USDC Reserve 행에 준비자산 시가 총액 70,022,091,915가 나온다(2쪽 22줄).",
+   "source": {
+    "page": 2,
+    "line": 22
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "B2",
+   "group": "B 준비자산",
+   "name": "커버리지(B1/A1)",
+   "status": "채움",
+   "reason": "원문에 커버리지 %가 직접 쓰여 있진 않지만 A1과 B1이 둘 다 있어 계산된다(2쪽 19줄과 2쪽 22줄에서 산출, 100.0963%).",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "B3",
+   "group": "B 준비자산",
+   "name": "한국은행권과 주화",
+   "status": "못채움",
+   "reason": "한국은행권과 주화에 대응하는 항목이 없다. Circle과 Paxos 모두 준비자산을 은행 예치금, 국채, 레포로만 구성하고 실물 화폐나 주화를 보유한다는 언급이 7개 보고서 어디에도 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "B4",
+   "group": "B 준비자산",
+   "name": "요구불예금",
+   "status": "채움",
+   "reason": "Cash held in Circle Reserve Fund, Cash held at regulated financial institutions 두 줄이 은행 예치 현금을 보여준다(3쪽 50줄부터).",
+   "source": {
+    "page": 3,
+    "line": 50
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "B5",
+   "group": "B 준비자산",
+   "name": "국채, 지방채, 특수채(잔존만기 구간별)",
+   "status": "파싱실패",
+   "reason": "국채는 CUSIP, 만기일, 공정가치를 행마다 갖춘 표로 원문에 있다(TOTAL U.S. TREASURY SECURITIES). 다만 파서가 잔존만기 구간별(1개월, 3개월, 1년 이하)로 묶어내지 않는다. 지방채와 특수채에 해당하는 자산은 애초에 보유 목록에 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "B6",
+   "group": "B 준비자산",
+   "name": "기타 자산",
+   "status": "못채움",
+   "reason": "현금, 국채, 레포(Paxos) 또는 Circle Reserve Fund 구성 외에 '기타' 항목으로 잡히는 잔여 자산이 7개 보고서 어디에도 없다. 구성 항목이 그 자체로 전체 합계를 설명한다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "B7",
+   "group": "B 준비자산",
+   "name": "현금성 비율((B3+B4)/B1)",
+   "status": "채움",
+   "reason": "B3가 항상 0이라 사실상 B4/B1과 같다. Circle은 Circle Reserve Fund 내 현금과 기타 준비자산 내 현금을 더해 B1로 나누면 된다. 현금 행과 총액 행이 원문에 모두 있어 계산 가능하다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "B8",
+   "group": "B 준비자산",
+   "name": "가중평균만기",
+   "status": "파싱실패",
+   "reason": "국채와 레포 행마다 만기일과 par 금액이 있어 par 가중평균만기를 계산할 재료는 있다. 두 파서 모두 이 집계를 하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "C1",
+   "group": "C 보관",
+   "name": "보관 기관명(기관별 금액과 비중)",
+   "status": "못채움",
+   "reason": "Cash held at regulated financial institutions라고만 쓰고 은행 실명은 나오지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "C2",
+   "group": "C 보관",
+   "name": "보관 방식",
+   "status": "채움",
+   "reason": "Segregated Accounts(격리계좌)로 신탁, 예치, 지급보증보험 중 예치에 가까운 방식을 설명한다(2쪽 61줄). 한국 서식의 세 갈래 분류 용어와 정확히 일치하진 않는다.",
+   "source": {
+    "page": 2,
+    "line": 61
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "C3",
+   "group": "C 보관",
+   "name": "고유재산 분리 여부",
+   "status": "채움",
+   "reason": "고유재산과 분리해 보관한다는 문장이 명시적으로 있다(2쪽 61줄, \"segregated from other accounts\" 또는 \"unencumbered\").",
+   "source": {
+    "page": 2,
+    "line": 61
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "C4",
+   "group": "C 보관",
+   "name": "컨소시엄 참여사별 분담",
+   "status": "해당없음",
+   "reason": "Circle과 Paxos 모두 단독 발행사다. 컨소시엄 구조 자체가 없어 분담 항목이 성립하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "C5",
+   "group": "C 보관",
+   "name": "참여사 이탈과 파산 시 처리",
+   "status": "해당없음",
+   "reason": "C4와 같은 이유로 컨소시엄 참여사 개념이 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "D1",
+   "group": "D 검증",
+   "name": "검증 기관명",
+   "status": "못채움",
+   "reason": "의견서에 회계법인명이 텍스트로 없다. 서명란도 이미지고, pdftotext로 뽑으면 회사명 표기가 깨지는 페이지도 있다(4개월 중 2개월, 2026-04와 2026-07). 실제 검증인은 Deloitte & Touche LLP로 알려져 있으나 이 문서 자체에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "D2",
+   "group": "D 검증",
+   "name": "검증 종류",
+   "status": "채움",
+   "reason": "보고서 제목과 본문이 검증 종류를 명시한다(\"examination\", 1쪽 7줄).",
+   "source": {
+    "page": 1,
+    "line": 7
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "D3",
+   "group": "D 검증",
+   "name": "검증 기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 기준일이 검증 대상 기준일과 같다(기준일 2026-01-30, 2쪽 17줄).",
+   "source": {
+    "page": 2,
+    "line": 17
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "D4",
+   "group": "D 검증",
+   "name": "검증 보고서 링크",
+   "status": "못채움",
+   "reason": "이 PDF 자신을 가리키는 URL이 본문에 없다. 파일은 발행사 홈페이지(Circle Transparency, Paxos Transparency)에서 받았지만 그 주소는 문서 밖 정보다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "E1",
+   "group": "E 환매",
+   "name": "상환 기한",
+   "status": "못채움",
+   "reason": "상환 처리에 걸리는 영업일 수가 이 문서에 없다. Paxos는 각주로 약관 URL(paxos.com/terms-and-conditions)을 걸어두지만 며칠인지는 그 URL 안에 있고 이 보고서 본문에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "E2",
+   "group": "E 환매",
+   "name": "상환 수수료",
+   "status": "못채움",
+   "reason": "상환 수수료 금액이나 무료 여부를 밝히는 문장이 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "E3",
+   "group": "E 환매",
+   "name": "상환 제한 사유",
+   "status": "못채움",
+   "reason": "상환이 제한되는 사유를 열거하는 문구가 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "E4",
+   "group": "E 환매",
+   "name": "예금이 아니라는 고지",
+   "status": "못채움",
+   "reason": "예금자보호 대상이 아니라는 고지 문구가 이 보고서에 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "F1",
+   "group": "F 메타",
+   "name": "기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 마지막 날짜가 기준일이다(2026-01-30, 2쪽 17줄).",
+   "source": {
+    "page": 2,
+    "line": 17
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "F2",
+   "group": "F 메타",
+   "name": "기준시각",
+   "status": "채움",
+   "reason": "11:59pm Coordinated Universal Time으로 명시된다. 자정 기준이라는 점에서 한국 제안(기준일 24시)과 같은 개념이다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "F3",
+   "group": "F 메타",
+   "name": "공개 기한",
+   "status": "못채움",
+   "reason": "'다음 달 며칠 이내 공개한다' 같은 공개 기한 정책 문장이 본문에 없다. 기준일과 서명일 사이 실제 경과일은 외부에서 두 날짜를 비교해야 알 수 있다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "F4",
+   "group": "F 메타",
+   "name": "공개 위치",
+   "status": "못채움",
+   "reason": "이 보고서가 상시 게시되는 고정 URL을 본문이 스스로 밝히지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-01",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-01",
+   "item": "F5",
+   "group": "F 메타",
+   "name": "대표이사 진술과 서명",
+   "status": "채움",
+   "reason": "Tamara Schulz, Chief Accounting Officer 이름과 직함, 서명일이 있다(5쪽 31줄). 다만 대표이사(CEO)가 아니라 회계 책임자 직급이다.",
+   "source": {
+    "page": 5,
+    "line": 31
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "A1",
+   "group": "A 발행 현황",
+   "name": "발행잔액(미상환 기준)",
+   "status": "채움",
+   "reason": "USDC in Circulation 행에 미상환 유통량 77,049,290,538가 그대로 나온다(2쪽 18줄).",
+   "source": {
+    "page": 2,
+    "line": 18
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "A2",
+   "group": "A 발행 현황",
+   "name": "발행잔액 산식 정의",
+   "status": "채움",
+   "reason": "Criteria A가 총발행에서 미발행 허용분, 접근차단분, Gateway 소각대기분을 빼는 산식을 문장으로 명시한다(2쪽 27줄).",
+   "source": {
+    "page": 2,
+    "line": 27
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "A3",
+   "group": "A 발행 현황",
+   "name": "코인 종류별 분리 표시",
+   "status": "해당없음",
+   "reason": "이 문서 한 건은 USDC 한 종류만 다룬다. Circle은 USDC와 EURC를, Paxos Trust는 PYUSD와 USDP를 같은 발행사가 내지만 코인별로 별도 문서를 낸다. 한 표 안에서 코인별로 나눠 보여줄 자리가 이 문서에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "B1",
+   "group": "B 준비자산",
+   "name": "준비자산 총 평가액(시장가)",
+   "status": "채움",
+   "reason": "Fair Value of Assets Held in USDC Reserve 행에 준비자산 시가 총액 77,125,330,954가 나온다(2쪽 21줄).",
+   "source": {
+    "page": 2,
+    "line": 21
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "B2",
+   "group": "B 준비자산",
+   "name": "커버리지(B1/A1)",
+   "status": "채움",
+   "reason": "원문에 커버리지 %가 직접 쓰여 있진 않지만 A1과 B1이 둘 다 있어 계산된다(2쪽 18줄과 2쪽 21줄에서 산출, 100.0987%).",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "B3",
+   "group": "B 준비자산",
+   "name": "한국은행권과 주화",
+   "status": "못채움",
+   "reason": "한국은행권과 주화에 대응하는 항목이 없다. Circle과 Paxos 모두 준비자산을 은행 예치금, 국채, 레포로만 구성하고 실물 화폐나 주화를 보유한다는 언급이 7개 보고서 어디에도 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "B4",
+   "group": "B 준비자산",
+   "name": "요구불예금",
+   "status": "채움",
+   "reason": "Cash held in Circle Reserve Fund, Cash held at regulated financial institutions 두 줄이 은행 예치 현금을 보여준다(3쪽 43줄부터).",
+   "source": {
+    "page": 3,
+    "line": 43
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "B5",
+   "group": "B 준비자산",
+   "name": "국채, 지방채, 특수채(잔존만기 구간별)",
+   "status": "파싱실패",
+   "reason": "국채는 CUSIP, 만기일, 공정가치를 행마다 갖춘 표로 원문에 있다(TOTAL U.S. TREASURY SECURITIES). 다만 파서가 잔존만기 구간별(1개월, 3개월, 1년 이하)로 묶어내지 않는다. 지방채와 특수채에 해당하는 자산은 애초에 보유 목록에 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "B6",
+   "group": "B 준비자산",
+   "name": "기타 자산",
+   "status": "못채움",
+   "reason": "현금, 국채, 레포(Paxos) 또는 Circle Reserve Fund 구성 외에 '기타' 항목으로 잡히는 잔여 자산이 7개 보고서 어디에도 없다. 구성 항목이 그 자체로 전체 합계를 설명한다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "B7",
+   "group": "B 준비자산",
+   "name": "현금성 비율((B3+B4)/B1)",
+   "status": "채움",
+   "reason": "B3가 항상 0이라 사실상 B4/B1과 같다. Circle은 Circle Reserve Fund 내 현금과 기타 준비자산 내 현금을 더해 B1로 나누면 된다. 현금 행과 총액 행이 원문에 모두 있어 계산 가능하다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "B8",
+   "group": "B 준비자산",
+   "name": "가중평균만기",
+   "status": "파싱실패",
+   "reason": "국채와 레포 행마다 만기일과 par 금액이 있어 par 가중평균만기를 계산할 재료는 있다. 두 파서 모두 이 집계를 하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "C1",
+   "group": "C 보관",
+   "name": "보관 기관명(기관별 금액과 비중)",
+   "status": "못채움",
+   "reason": "Cash held at regulated financial institutions라고만 쓰고 은행 실명은 나오지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "C2",
+   "group": "C 보관",
+   "name": "보관 방식",
+   "status": "채움",
+   "reason": "Segregated Accounts(격리계좌)로 신탁, 예치, 지급보증보험 중 예치에 가까운 방식을 설명한다(2쪽 59줄). 한국 서식의 세 갈래 분류 용어와 정확히 일치하진 않는다.",
+   "source": {
+    "page": 2,
+    "line": 59
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "C3",
+   "group": "C 보관",
+   "name": "고유재산 분리 여부",
+   "status": "채움",
+   "reason": "고유재산과 분리해 보관한다는 문장이 명시적으로 있다(2쪽 59줄, \"segregated from other accounts\" 또는 \"unencumbered\").",
+   "source": {
+    "page": 2,
+    "line": 59
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "C4",
+   "group": "C 보관",
+   "name": "컨소시엄 참여사별 분담",
+   "status": "해당없음",
+   "reason": "Circle과 Paxos 모두 단독 발행사다. 컨소시엄 구조 자체가 없어 분담 항목이 성립하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "C5",
+   "group": "C 보관",
+   "name": "참여사 이탈과 파산 시 처리",
+   "status": "해당없음",
+   "reason": "C4와 같은 이유로 컨소시엄 참여사 개념이 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "D1",
+   "group": "D 검증",
+   "name": "검증 기관명",
+   "status": "못채움",
+   "reason": "의견서에 회계법인명이 텍스트로 없다. 서명란도 이미지고, pdftotext로 뽑으면 회사명 표기가 깨지는 페이지도 있다(4개월 중 2개월, 2026-04와 2026-07). 실제 검증인은 Deloitte & Touche LLP로 알려져 있으나 이 문서 자체에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "D2",
+   "group": "D 검증",
+   "name": "검증 종류",
+   "status": "채움",
+   "reason": "보고서 제목과 본문이 검증 종류를 명시한다(\"examination\", 1쪽 7줄).",
+   "source": {
+    "page": 1,
+    "line": 7
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "D3",
+   "group": "D 검증",
+   "name": "검증 기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 기준일이 검증 대상 기준일과 같다(기준일 2026-03-31, 2쪽 16줄).",
+   "source": {
+    "page": 2,
+    "line": 16
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "D4",
+   "group": "D 검증",
+   "name": "검증 보고서 링크",
+   "status": "못채움",
+   "reason": "이 PDF 자신을 가리키는 URL이 본문에 없다. 파일은 발행사 홈페이지(Circle Transparency, Paxos Transparency)에서 받았지만 그 주소는 문서 밖 정보다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "E1",
+   "group": "E 환매",
+   "name": "상환 기한",
+   "status": "못채움",
+   "reason": "상환 처리에 걸리는 영업일 수가 이 문서에 없다. Paxos는 각주로 약관 URL(paxos.com/terms-and-conditions)을 걸어두지만 며칠인지는 그 URL 안에 있고 이 보고서 본문에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "E2",
+   "group": "E 환매",
+   "name": "상환 수수료",
+   "status": "못채움",
+   "reason": "상환 수수료 금액이나 무료 여부를 밝히는 문장이 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "E3",
+   "group": "E 환매",
+   "name": "상환 제한 사유",
+   "status": "못채움",
+   "reason": "상환이 제한되는 사유를 열거하는 문구가 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "E4",
+   "group": "E 환매",
+   "name": "예금이 아니라는 고지",
+   "status": "못채움",
+   "reason": "예금자보호 대상이 아니라는 고지 문구가 이 보고서에 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "F1",
+   "group": "F 메타",
+   "name": "기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 마지막 날짜가 기준일이다(2026-03-31, 2쪽 16줄).",
+   "source": {
+    "page": 2,
+    "line": 16
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "F2",
+   "group": "F 메타",
+   "name": "기준시각",
+   "status": "채움",
+   "reason": "11:59pm Coordinated Universal Time으로 명시된다. 자정 기준이라는 점에서 한국 제안(기준일 24시)과 같은 개념이다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "F3",
+   "group": "F 메타",
+   "name": "공개 기한",
+   "status": "못채움",
+   "reason": "'다음 달 며칠 이내 공개한다' 같은 공개 기한 정책 문장이 본문에 없다. 기준일과 서명일 사이 실제 경과일은 외부에서 두 날짜를 비교해야 알 수 있다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "F4",
+   "group": "F 메타",
+   "name": "공개 위치",
+   "status": "못채움",
+   "reason": "이 보고서가 상시 게시되는 고정 URL을 본문이 스스로 밝히지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-03",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-03",
+   "item": "F5",
+   "group": "F 메타",
+   "name": "대표이사 진술과 서명",
+   "status": "채움",
+   "reason": "Tamara Schulz, Chief Accounting Officer 이름과 직함, 서명일이 있다(5쪽 32줄). 다만 대표이사(CEO)가 아니라 회계 책임자 직급이다.",
+   "source": {
+    "page": 5,
+    "line": 32
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "A1",
+   "group": "A 발행 현황",
+   "name": "발행잔액(미상환 기준)",
+   "status": "채움",
+   "reason": "USDC in Circulation 행에 미상환 유통량 77,047,590,794가 그대로 나온다(2쪽 18줄).",
+   "source": {
+    "page": 2,
+    "line": 18
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "A2",
+   "group": "A 발행 현황",
+   "name": "발행잔액 산식 정의",
+   "status": "채움",
+   "reason": "Criteria A가 총발행에서 미발행 허용분, 접근차단분, Gateway 소각대기분을 빼는 산식을 문장으로 명시한다(2쪽 27줄).",
+   "source": {
+    "page": 2,
+    "line": 27
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "A3",
+   "group": "A 발행 현황",
+   "name": "코인 종류별 분리 표시",
+   "status": "해당없음",
+   "reason": "이 문서 한 건은 USDC 한 종류만 다룬다. Circle은 USDC와 EURC를, Paxos Trust는 PYUSD와 USDP를 같은 발행사가 내지만 코인별로 별도 문서를 낸다. 한 표 안에서 코인별로 나눠 보여줄 자리가 이 문서에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "B1",
+   "group": "B 준비자산",
+   "name": "준비자산 총 평가액(시장가)",
+   "status": "채움",
+   "reason": "Fair Value of Assets Held in USDC Reserve 행에 준비자산 시가 총액 77,123,668,726가 나온다(2쪽 21줄).",
+   "source": {
+    "page": 2,
+    "line": 21
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "B2",
+   "group": "B 준비자산",
+   "name": "커버리지(B1/A1)",
+   "status": "채움",
+   "reason": "원문에 커버리지 %가 직접 쓰여 있진 않지만 A1과 B1이 둘 다 있어 계산된다(2쪽 18줄과 2쪽 21줄에서 산출, 100.0987%).",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "B3",
+   "group": "B 준비자산",
+   "name": "한국은행권과 주화",
+   "status": "못채움",
+   "reason": "한국은행권과 주화에 대응하는 항목이 없다. Circle과 Paxos 모두 준비자산을 은행 예치금, 국채, 레포로만 구성하고 실물 화폐나 주화를 보유한다는 언급이 7개 보고서 어디에도 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "B4",
+   "group": "B 준비자산",
+   "name": "요구불예금",
+   "status": "채움",
+   "reason": "Cash held in Circle Reserve Fund, Cash held at regulated financial institutions 두 줄이 은행 예치 현금을 보여준다(3쪽 53줄부터).",
+   "source": {
+    "page": 3,
+    "line": 53
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "B5",
+   "group": "B 준비자산",
+   "name": "국채, 지방채, 특수채(잔존만기 구간별)",
+   "status": "파싱실패",
+   "reason": "국채는 CUSIP, 만기일, 공정가치를 행마다 갖춘 표로 원문에 있다(TOTAL U.S. TREASURY SECURITIES). 다만 파서가 잔존만기 구간별(1개월, 3개월, 1년 이하)로 묶어내지 않는다. 지방채와 특수채에 해당하는 자산은 애초에 보유 목록에 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "B6",
+   "group": "B 준비자산",
+   "name": "기타 자산",
+   "status": "못채움",
+   "reason": "현금, 국채, 레포(Paxos) 또는 Circle Reserve Fund 구성 외에 '기타' 항목으로 잡히는 잔여 자산이 7개 보고서 어디에도 없다. 구성 항목이 그 자체로 전체 합계를 설명한다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "B7",
+   "group": "B 준비자산",
+   "name": "현금성 비율((B3+B4)/B1)",
+   "status": "채움",
+   "reason": "B3가 항상 0이라 사실상 B4/B1과 같다. Circle은 Circle Reserve Fund 내 현금과 기타 준비자산 내 현금을 더해 B1로 나누면 된다. 현금 행과 총액 행이 원문에 모두 있어 계산 가능하다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "B8",
+   "group": "B 준비자산",
+   "name": "가중평균만기",
+   "status": "파싱실패",
+   "reason": "국채와 레포 행마다 만기일과 par 금액이 있어 par 가중평균만기를 계산할 재료는 있다. 두 파서 모두 이 집계를 하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "C1",
+   "group": "C 보관",
+   "name": "보관 기관명(기관별 금액과 비중)",
+   "status": "못채움",
+   "reason": "Cash held at regulated financial institutions라고만 쓰고 은행 실명은 나오지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "C2",
+   "group": "C 보관",
+   "name": "보관 방식",
+   "status": "채움",
+   "reason": "Segregated Accounts(격리계좌)로 신탁, 예치, 지급보증보험 중 예치에 가까운 방식을 설명한다(2쪽 59줄). 한국 서식의 세 갈래 분류 용어와 정확히 일치하진 않는다.",
+   "source": {
+    "page": 2,
+    "line": 59
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "C3",
+   "group": "C 보관",
+   "name": "고유재산 분리 여부",
+   "status": "채움",
+   "reason": "고유재산과 분리해 보관한다는 문장이 명시적으로 있다(2쪽 59줄, \"segregated from other accounts\" 또는 \"unencumbered\").",
+   "source": {
+    "page": 2,
+    "line": 59
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "C4",
+   "group": "C 보관",
+   "name": "컨소시엄 참여사별 분담",
+   "status": "해당없음",
+   "reason": "Circle과 Paxos 모두 단독 발행사다. 컨소시엄 구조 자체가 없어 분담 항목이 성립하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "C5",
+   "group": "C 보관",
+   "name": "참여사 이탈과 파산 시 처리",
+   "status": "해당없음",
+   "reason": "C4와 같은 이유로 컨소시엄 참여사 개념이 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "D1",
+   "group": "D 검증",
+   "name": "검증 기관명",
+   "status": "못채움",
+   "reason": "의견서에 회계법인명이 텍스트로 없다. 서명란도 이미지고, pdftotext로 뽑으면 회사명 표기가 깨지는 페이지도 있다(4개월 중 2개월, 2026-04와 2026-07). 실제 검증인은 Deloitte & Touche LLP로 알려져 있으나 이 문서 자체에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "D2",
+   "group": "D 검증",
+   "name": "검증 종류",
+   "status": "채움",
+   "reason": "보고서 제목과 본문이 검증 종류를 명시한다(\"examination\", 1쪽 7줄).",
+   "source": {
+    "page": 1,
+    "line": 7
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "D3",
+   "group": "D 검증",
+   "name": "검증 기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 기준일이 검증 대상 기준일과 같다(기준일 2026-04-30, 2쪽 16줄).",
+   "source": {
+    "page": 2,
+    "line": 16
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "D4",
+   "group": "D 검증",
+   "name": "검증 보고서 링크",
+   "status": "못채움",
+   "reason": "이 PDF 자신을 가리키는 URL이 본문에 없다. 파일은 발행사 홈페이지(Circle Transparency, Paxos Transparency)에서 받았지만 그 주소는 문서 밖 정보다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "E1",
+   "group": "E 환매",
+   "name": "상환 기한",
+   "status": "못채움",
+   "reason": "상환 처리에 걸리는 영업일 수가 이 문서에 없다. Paxos는 각주로 약관 URL(paxos.com/terms-and-conditions)을 걸어두지만 며칠인지는 그 URL 안에 있고 이 보고서 본문에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "E2",
+   "group": "E 환매",
+   "name": "상환 수수료",
+   "status": "못채움",
+   "reason": "상환 수수료 금액이나 무료 여부를 밝히는 문장이 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "E3",
+   "group": "E 환매",
+   "name": "상환 제한 사유",
+   "status": "못채움",
+   "reason": "상환이 제한되는 사유를 열거하는 문구가 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "E4",
+   "group": "E 환매",
+   "name": "예금이 아니라는 고지",
+   "status": "못채움",
+   "reason": "예금자보호 대상이 아니라는 고지 문구가 이 보고서에 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "F1",
+   "group": "F 메타",
+   "name": "기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 마지막 날짜가 기준일이다(2026-04-30, 2쪽 16줄).",
+   "source": {
+    "page": 2,
+    "line": 16
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "F2",
+   "group": "F 메타",
+   "name": "기준시각",
+   "status": "채움",
+   "reason": "11:59pm Coordinated Universal Time으로 명시된다. 자정 기준이라는 점에서 한국 제안(기준일 24시)과 같은 개념이다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "F3",
+   "group": "F 메타",
+   "name": "공개 기한",
+   "status": "못채움",
+   "reason": "'다음 달 며칠 이내 공개한다' 같은 공개 기한 정책 문장이 본문에 없다. 기준일과 서명일 사이 실제 경과일은 외부에서 두 날짜를 비교해야 알 수 있다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "F4",
+   "group": "F 메타",
+   "name": "공개 위치",
+   "status": "못채움",
+   "reason": "이 보고서가 상시 게시되는 고정 URL을 본문이 스스로 밝히지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-04",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-04",
+   "item": "F5",
+   "group": "F 메타",
+   "name": "대표이사 진술과 서명",
+   "status": "채움",
+   "reason": "Tamara Schulz, Chief Accounting Officer 이름과 직함, 서명일이 있다(5쪽 32줄). 다만 대표이사(CEO)가 아니라 회계 책임자 직급이다.",
+   "source": {
+    "page": 5,
+    "line": 32
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "A1",
+   "group": "A 발행 현황",
+   "name": "발행잔액(미상환 기준)",
+   "status": "채움",
+   "reason": "USDC in Circulation 행에 미상환 유통량 71,826,453,410가 그대로 나온다(2쪽 18줄).",
+   "source": {
+    "page": 2,
+    "line": 18
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "A2",
+   "group": "A 발행 현황",
+   "name": "발행잔액 산식 정의",
+   "status": "채움",
+   "reason": "Criteria A가 총발행에서 미발행 허용분, 접근차단분, Gateway 소각대기분을 빼는 산식을 문장으로 명시한다(2쪽 27줄).",
+   "source": {
+    "page": 2,
+    "line": 27
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "A3",
+   "group": "A 발행 현황",
+   "name": "코인 종류별 분리 표시",
+   "status": "해당없음",
+   "reason": "이 문서 한 건은 USDC 한 종류만 다룬다. Circle은 USDC와 EURC를, Paxos Trust는 PYUSD와 USDP를 같은 발행사가 내지만 코인별로 별도 문서를 낸다. 한 표 안에서 코인별로 나눠 보여줄 자리가 이 문서에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "B1",
+   "group": "B 준비자산",
+   "name": "준비자산 총 평가액(시장가)",
+   "status": "채움",
+   "reason": "Fair Value of Assets Held in USDC Reserve 행에 준비자산 시가 총액 71,904,101,332가 나온다(2쪽 21줄).",
+   "source": {
+    "page": 2,
+    "line": 21
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "B2",
+   "group": "B 준비자산",
+   "name": "커버리지(B1/A1)",
+   "status": "채움",
+   "reason": "원문에 커버리지 %가 직접 쓰여 있진 않지만 A1과 B1이 둘 다 있어 계산된다(2쪽 18줄과 2쪽 21줄에서 산출, 100.1081%).",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "B3",
+   "group": "B 준비자산",
+   "name": "한국은행권과 주화",
+   "status": "못채움",
+   "reason": "한국은행권과 주화에 대응하는 항목이 없다. Circle과 Paxos 모두 준비자산을 은행 예치금, 국채, 레포로만 구성하고 실물 화폐나 주화를 보유한다는 언급이 7개 보고서 어디에도 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "B4",
+   "group": "B 준비자산",
+   "name": "요구불예금",
+   "status": "채움",
+   "reason": "Cash held in Circle Reserve Fund, Cash held at regulated financial institutions 두 줄이 은행 예치 현금을 보여준다(3쪽 28줄부터).",
+   "source": {
+    "page": 3,
+    "line": 28
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "B5",
+   "group": "B 준비자산",
+   "name": "국채, 지방채, 특수채(잔존만기 구간별)",
+   "status": "파싱실패",
+   "reason": "국채는 CUSIP, 만기일, 공정가치를 행마다 갖춘 표로 원문에 있다(TOTAL U.S. TREASURY SECURITIES). 다만 파서가 잔존만기 구간별(1개월, 3개월, 1년 이하)로 묶어내지 않는다. 지방채와 특수채에 해당하는 자산은 애초에 보유 목록에 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "B6",
+   "group": "B 준비자산",
+   "name": "기타 자산",
+   "status": "못채움",
+   "reason": "현금, 국채, 레포(Paxos) 또는 Circle Reserve Fund 구성 외에 '기타' 항목으로 잡히는 잔여 자산이 7개 보고서 어디에도 없다. 구성 항목이 그 자체로 전체 합계를 설명한다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "B7",
+   "group": "B 준비자산",
+   "name": "현금성 비율((B3+B4)/B1)",
+   "status": "채움",
+   "reason": "B3가 항상 0이라 사실상 B4/B1과 같다. Circle은 Circle Reserve Fund 내 현금과 기타 준비자산 내 현금을 더해 B1로 나누면 된다. 현금 행과 총액 행이 원문에 모두 있어 계산 가능하다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "B8",
+   "group": "B 준비자산",
+   "name": "가중평균만기",
+   "status": "파싱실패",
+   "reason": "국채와 레포 행마다 만기일과 par 금액이 있어 par 가중평균만기를 계산할 재료는 있다. 두 파서 모두 이 집계를 하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "C1",
+   "group": "C 보관",
+   "name": "보관 기관명(기관별 금액과 비중)",
+   "status": "못채움",
+   "reason": "Cash held at regulated financial institutions라고만 쓰고 은행 실명은 나오지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "C2",
+   "group": "C 보관",
+   "name": "보관 방식",
+   "status": "채움",
+   "reason": "Segregated Accounts(격리계좌)로 신탁, 예치, 지급보증보험 중 예치에 가까운 방식을 설명한다(2쪽 59줄). 한국 서식의 세 갈래 분류 용어와 정확히 일치하진 않는다.",
+   "source": {
+    "page": 2,
+    "line": 59
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "C3",
+   "group": "C 보관",
+   "name": "고유재산 분리 여부",
+   "status": "채움",
+   "reason": "고유재산과 분리해 보관한다는 문장이 명시적으로 있다(2쪽 59줄, \"segregated from other accounts\" 또는 \"unencumbered\").",
+   "source": {
+    "page": 2,
+    "line": 59
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "C4",
+   "group": "C 보관",
+   "name": "컨소시엄 참여사별 분담",
+   "status": "해당없음",
+   "reason": "Circle과 Paxos 모두 단독 발행사다. 컨소시엄 구조 자체가 없어 분담 항목이 성립하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "C5",
+   "group": "C 보관",
+   "name": "참여사 이탈과 파산 시 처리",
+   "status": "해당없음",
+   "reason": "C4와 같은 이유로 컨소시엄 참여사 개념이 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "D1",
+   "group": "D 검증",
+   "name": "검증 기관명",
+   "status": "못채움",
+   "reason": "의견서에 회계법인명이 텍스트로 없다. 서명란도 이미지고, pdftotext로 뽑으면 회사명 표기가 깨지는 페이지도 있다(4개월 중 2개월, 2026-04와 2026-07). 실제 검증인은 Deloitte & Touche LLP로 알려져 있으나 이 문서 자체에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "D2",
+   "group": "D 검증",
+   "name": "검증 종류",
+   "status": "채움",
+   "reason": "보고서 제목과 본문이 검증 종류를 명시한다(\"examination\", 1쪽 7줄).",
+   "source": {
+    "page": 1,
+    "line": 7
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "D3",
+   "group": "D 검증",
+   "name": "검증 기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 기준일이 검증 대상 기준일과 같다(기준일 2026-07-31, 2쪽 16줄).",
+   "source": {
+    "page": 2,
+    "line": 16
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "D4",
+   "group": "D 검증",
+   "name": "검증 보고서 링크",
+   "status": "못채움",
+   "reason": "이 PDF 자신을 가리키는 URL이 본문에 없다. 파일은 발행사 홈페이지(Circle Transparency, Paxos Transparency)에서 받았지만 그 주소는 문서 밖 정보다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "E1",
+   "group": "E 환매",
+   "name": "상환 기한",
+   "status": "못채움",
+   "reason": "상환 처리에 걸리는 영업일 수가 이 문서에 없다. Paxos는 각주로 약관 URL(paxos.com/terms-and-conditions)을 걸어두지만 며칠인지는 그 URL 안에 있고 이 보고서 본문에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "E2",
+   "group": "E 환매",
+   "name": "상환 수수료",
+   "status": "못채움",
+   "reason": "상환 수수료 금액이나 무료 여부를 밝히는 문장이 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "E3",
+   "group": "E 환매",
+   "name": "상환 제한 사유",
+   "status": "못채움",
+   "reason": "상환이 제한되는 사유를 열거하는 문구가 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "E4",
+   "group": "E 환매",
+   "name": "예금이 아니라는 고지",
+   "status": "못채움",
+   "reason": "예금자보호 대상이 아니라는 고지 문구가 이 보고서에 없다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "F1",
+   "group": "F 메타",
+   "name": "기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 마지막 날짜가 기준일이다(2026-07-31, 2쪽 16줄).",
+   "source": {
+    "page": 2,
+    "line": 16
+   }
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "F2",
+   "group": "F 메타",
+   "name": "기준시각",
+   "status": "채움",
+   "reason": "11:59pm Coordinated Universal Time으로 명시된다. 자정 기준이라는 점에서 한국 제안(기준일 24시)과 같은 개념이다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "F3",
+   "group": "F 메타",
+   "name": "공개 기한",
+   "status": "못채움",
+   "reason": "'다음 달 며칠 이내 공개한다' 같은 공개 기한 정책 문장이 본문에 없다. 기준일과 서명일 사이 실제 경과일은 외부에서 두 날짜를 비교해야 알 수 있다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "F4",
+   "group": "F 메타",
+   "name": "공개 위치",
+   "status": "못채움",
+   "reason": "이 보고서가 상시 게시되는 고정 URL을 본문이 스스로 밝히지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Circle_USDC_2026-07",
+   "issuer": "Circle",
+   "token": "USDC",
+   "month": "2026-07",
+   "item": "F5",
+   "group": "F 메타",
+   "name": "대표이사 진술과 서명",
+   "status": "채움",
+   "reason": "Tamara Schulz, Chief Accounting Officer 이름과 직함, 서명일이 있다(5쪽 32줄). 다만 대표이사(CEO)가 아니라 회계 책임자 직급이다.",
+   "source": {
+    "page": 5,
+    "line": 32
+   }
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "A1",
+   "group": "A 발행 현황",
+   "name": "발행잔액(미상환 기준)",
+   "status": "채움",
+   "reason": "Total PYUSD redeemable tokens outstanding (Exhibit A line d) 행에 미상환 유통량 2,689,335,674가 그대로 나온다(4쪽 16줄).",
+   "source": {
+    "page": 4,
+    "line": 16,
+    "raw": "2,689,335,674"
+   }
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "A2",
+   "group": "A 발행 현황",
+   "name": "발행잔액 산식 정의",
+   "status": "채움",
+   "reason": "Exhibit A 표가 자연발행량(a)에서 상환불가 물량(b, c)을 뺀 값이 상환가능 유통량(d)임을 행 구조로 보여준다. PYUSD는 상환불가 물량이 모두 N/A라 산식이 항등에 가깝다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "A3",
+   "group": "A 발행 현황",
+   "name": "코인 종류별 분리 표시",
+   "status": "해당없음",
+   "reason": "이 문서 한 건은 PYUSD 한 종류만 다룬다. Circle은 USDC와 EURC를, Paxos Trust는 PYUSD와 USDP를 같은 발행사가 내지만 코인별로 별도 문서를 낸다. 한 표 안에서 코인별로 나눠 보여줄 자리가 이 문서에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "B1",
+   "group": "B 준비자산",
+   "name": "준비자산 총 평가액(시장가)",
+   "status": "채움",
+   "reason": "Total redemption assets in United States Dollar (Exhibit B) 행에 준비자산 시가 총액 2,694,072,163가 나온다(4쪽 19줄).",
+   "source": {
+    "page": 4,
+    "line": 19,
+    "raw": "$2,694,072,163"
+   }
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "B2",
+   "group": "B 준비자산",
+   "name": "커버리지(B1/A1)",
+   "status": "채움",
+   "reason": "원문에 커버리지 %가 직접 쓰여 있진 않지만 A1과 B1이 둘 다 있어 계산된다(4쪽 16줄과 4쪽 19줄에서 산출, 100.1761%).",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "B3",
+   "group": "B 준비자산",
+   "name": "한국은행권과 주화",
+   "status": "못채움",
+   "reason": "한국은행권과 주화에 대응하는 항목이 없다. Circle과 Paxos 모두 준비자산을 은행 예치금, 국채, 레포로만 구성하고 실물 화폐나 주화를 보유한다는 언급이 7개 보고서 어디에도 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "B4",
+   "group": "B 준비자산",
+   "name": "요구불예금",
+   "status": "채움",
+   "reason": "Exhibit B의 Cash 행이 FDIC 부보 은행 계좌에 있는 현금 94,699,538달러를 보여준다(8쪽 13줄).",
+   "source": {
+    "page": 8,
+    "line": 13,
+    "raw": "$94,699,538"
+   }
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "B5",
+   "group": "B 준비자산",
+   "name": "국채, 지방채, 특수채(잔존만기 구간별)",
+   "status": "파싱실패",
+   "reason": "Treasury bills 표에 CUSIP, 만기일, par, 공정가치가 행마다 있다. 파서가 잔존만기 구간별 합계로 재집계하지 않는다. 지방채, 특수채는 보유 목록에 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "B6",
+   "group": "B 준비자산",
+   "name": "기타 자산",
+   "status": "못채움",
+   "reason": "현금, 국채, 레포(Paxos) 또는 Circle Reserve Fund 구성 외에 '기타' 항목으로 잡히는 잔여 자산이 7개 보고서 어디에도 없다. 구성 항목이 그 자체로 전체 합계를 설명한다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "B7",
+   "group": "B 준비자산",
+   "name": "현금성 비율((B3+B4)/B1)",
+   "status": "채움",
+   "reason": "B3가 항상 0이라 사실상 B4/B1과 같다. Exhibit B의 Cash 행(94,699,538)을 B1(2,694,072,163)으로 나누면 3.5151%다. 현금 행과 총액 행이 원문에 모두 있어 계산 가능하다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "B8",
+   "group": "B 준비자산",
+   "name": "가중평균만기",
+   "status": "파싱실패",
+   "reason": "국채와 레포 행마다 만기일과 par 금액이 있어 par 가중평균만기를 계산할 재료는 있다. 두 파서 모두 이 집계를 하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "C1",
+   "group": "C 보관",
+   "name": "보관 기관명(기관별 금액과 비중)",
+   "status": "못채움",
+   "reason": "레포 상대방과 예치 은행을 Bank 1, Bank 2로 익명 표기한다(8쪽 근처 표). 실명은 KPMG 검증 대상이 아니라서 보고서에 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "C2",
+   "group": "C 보관",
+   "name": "보관 방식",
+   "status": "채움",
+   "reason": "Segregated Accounts(격리계좌)로 신탁, 예치, 지급보증보험 중 예치에 가까운 방식을 설명한다(8쪽 21줄). 한국 서식의 세 갈래 분류 용어와 정확히 일치하진 않는다.",
+   "source": {
+    "page": 8,
+    "line": 21
+   }
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "C3",
+   "group": "C 보관",
+   "name": "고유재산 분리 여부",
+   "status": "채움",
+   "reason": "고유재산과 분리해 보관한다는 문장이 명시적으로 있다(8쪽 21줄, \"segregated from other accounts\" 또는 \"unencumbered\").",
+   "source": {
+    "page": 8,
+    "line": 21
+   }
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "C4",
+   "group": "C 보관",
+   "name": "컨소시엄 참여사별 분담",
+   "status": "해당없음",
+   "reason": "Circle과 Paxos 모두 단독 발행사다. 컨소시엄 구조 자체가 없어 분담 항목이 성립하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "C5",
+   "group": "C 보관",
+   "name": "참여사 이탈과 파산 시 처리",
+   "status": "해당없음",
+   "reason": "C4와 같은 이유로 컨소시엄 참여사 개념이 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "D1",
+   "group": "D 검증",
+   "name": "검증 기관명",
+   "status": "채움",
+   "reason": "KPMG LLP가 문서 상단에 평문으로 나온다(1쪽 1줄). Paxos는 이미지 서명이 아니라 텍스트다.",
+   "source": {
+    "page": 1,
+    "line": 1
+   }
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "D2",
+   "group": "D 검증",
+   "name": "검증 종류",
+   "status": "채움",
+   "reason": "보고서 제목과 본문이 검증 종류를 명시한다(\"examination\", 1쪽 18줄).",
+   "source": {
+    "page": 1,
+    "line": 18
+   }
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "D3",
+   "group": "D 검증",
+   "name": "검증 기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 기준일이 검증 대상 기준일과 같다(기준일 2026-07-31, 4쪽 12줄).",
+   "source": {
+    "page": 4,
+    "line": 12,
+    "raw": "July 31, 2026"
+   }
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "D4",
+   "group": "D 검증",
+   "name": "검증 보고서 링크",
+   "status": "못채움",
+   "reason": "이 PDF 자신을 가리키는 URL이 본문에 없다. 파일은 발행사 홈페이지(Circle Transparency, Paxos Transparency)에서 받았지만 그 주소는 문서 밖 정보다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "E1",
+   "group": "E 환매",
+   "name": "상환 기한",
+   "status": "못채움",
+   "reason": "상환 처리에 걸리는 영업일 수가 이 문서에 없다. Paxos는 각주로 약관 URL(paxos.com/terms-and-conditions)을 걸어두지만 며칠인지는 그 URL 안에 있고 이 보고서 본문에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "E2",
+   "group": "E 환매",
+   "name": "상환 수수료",
+   "status": "못채움",
+   "reason": "상환 수수료 금액이나 무료 여부를 밝히는 문장이 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "E3",
+   "group": "E 환매",
+   "name": "상환 제한 사유",
+   "status": "채움",
+   "reason": "Exhibit A(USDG는 Exhibit C) 각주가 access-restricted, time-locked 두 제한 범주를 명시한다(5쪽 19줄). 이번 달은 두 범주 다 금액이 N/A라 실제로 제한된 물량은 없다.",
+   "source": {
+    "page": 5,
+    "line": 19
+   }
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "E4",
+   "group": "E 환매",
+   "name": "예금이 아니라는 고지",
+   "status": "못채움",
+   "reason": "예금자보호 대상이 아니라는 고지 문구가 이 보고서에 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "F1",
+   "group": "F 메타",
+   "name": "기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 마지막 날짜가 기준일이다(2026-07-31, 4쪽 12줄).",
+   "source": {
+    "page": 4,
+    "line": 12,
+    "raw": "July 31, 2026"
+   }
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "F2",
+   "group": "F 메타",
+   "name": "기준시각",
+   "status": "채움",
+   "reason": "5:00 PM Eastern Time으로 명시된다. 다만 이는 자정이 아니라 미국 동부 영업일 마감 시각이라 한국 제안의 '기준일 24시'와 시점 자체가 다르다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "F3",
+   "group": "F 메타",
+   "name": "공개 기한",
+   "status": "못채움",
+   "reason": "'다음 달 며칠 이내 공개한다' 같은 공개 기한 정책 문장이 본문에 없다. 기준일과 서명일 사이 실제 경과일은 외부에서 두 날짜를 비교해야 알 수 있다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "F4",
+   "group": "F 메타",
+   "name": "공개 위치",
+   "status": "못채움",
+   "reason": "이 보고서가 상시 게시되는 고정 URL을 본문이 스스로 밝히지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_PYUSD_2026-07",
+   "issuer": "Paxos",
+   "token": "PYUSD",
+   "month": "2026-07",
+   "item": "F5",
+   "group": "F 메타",
+   "name": "대표이사 진술과 서명",
+   "status": "채움",
+   "reason": "Adam Ackermann, Head of Treasury and Portfolio Management 이름과 직함, 서명일이 있다(4쪽 27줄). 대표이사가 아니라 재무 책임자 직급이다.",
+   "source": {
+    "page": 4,
+    "line": 27
+   }
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "A1",
+   "group": "A 발행 현황",
+   "name": "발행잔액(미상환 기준)",
+   "status": "채움",
+   "reason": "Total USDP redeemable tokens outstanding (Exhibit A line d) 행에 미상환 유통량 31,954,027가 그대로 나온다(4쪽 14줄).",
+   "source": {
+    "page": 4,
+    "line": 14,
+    "raw": "31,954,027"
+   }
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "A2",
+   "group": "A 발행 현황",
+   "name": "발행잔액 산식 정의",
+   "status": "채움",
+   "reason": "Exhibit A 표가 자연발행량(a)에서 상환불가 물량(b, c)을 뺀 값이 상환가능 유통량(d)임을 행 구조로 보여준다. USDP는 상환불가 물량이 모두 N/A라 산식이 항등에 가깝다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "A3",
+   "group": "A 발행 현황",
+   "name": "코인 종류별 분리 표시",
+   "status": "해당없음",
+   "reason": "이 문서 한 건은 USDP 한 종류만 다룬다. Circle은 USDC와 EURC를, Paxos Trust는 PYUSD와 USDP를 같은 발행사가 내지만 코인별로 별도 문서를 낸다. 한 표 안에서 코인별로 나눠 보여줄 자리가 이 문서에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "B1",
+   "group": "B 준비자산",
+   "name": "준비자산 총 평가액(시장가)",
+   "status": "채움",
+   "reason": "Total redemption assets in United States Dollar (Exhibit B) 행에 준비자산 시가 총액 31,975,703가 나온다(4쪽 17줄).",
+   "source": {
+    "page": 4,
+    "line": 17,
+    "raw": "$31,975,703"
+   }
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "B2",
+   "group": "B 준비자산",
+   "name": "커버리지(B1/A1)",
+   "status": "채움",
+   "reason": "원문에 커버리지 %가 직접 쓰여 있진 않지만 A1과 B1이 둘 다 있어 계산된다(4쪽 14줄과 4쪽 17줄에서 산출, 100.0678%).",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "B3",
+   "group": "B 준비자산",
+   "name": "한국은행권과 주화",
+   "status": "못채움",
+   "reason": "한국은행권과 주화에 대응하는 항목이 없다. Circle과 Paxos 모두 준비자산을 은행 예치금, 국채, 레포로만 구성하고 실물 화폐나 주화를 보유한다는 언급이 7개 보고서 어디에도 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "B4",
+   "group": "B 준비자산",
+   "name": "요구불예금",
+   "status": "채움",
+   "reason": "Exhibit B의 Cash 행이 FDIC 부보 은행 계좌에 있는 현금 24,935,703달러를 보여준다(6쪽 14줄).",
+   "source": {
+    "page": 6,
+    "line": 14,
+    "raw": "$24,935,703"
+   }
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "B5",
+   "group": "B 준비자산",
+   "name": "국채, 지방채, 특수채(잔존만기 구간별)",
+   "status": "못채움",
+   "reason": "USDP 7월 보고서는 Obligations of U.S. Treasury 행이 0이다. 이번 달은 국채를 보유하지 않아 만기 구간을 나눌 대상 자체가 없다. 지방채, 특수채도 전 보고서에 걸쳐 보유 목록에 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "B6",
+   "group": "B 준비자산",
+   "name": "기타 자산",
+   "status": "못채움",
+   "reason": "현금, 국채, 레포(Paxos) 또는 Circle Reserve Fund 구성 외에 '기타' 항목으로 잡히는 잔여 자산이 7개 보고서 어디에도 없다. 구성 항목이 그 자체로 전체 합계를 설명한다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "B7",
+   "group": "B 준비자산",
+   "name": "현금성 비율((B3+B4)/B1)",
+   "status": "채움",
+   "reason": "B3가 항상 0이라 사실상 B4/B1과 같다. Exhibit B의 Cash 행(24,935,703)을 B1(31,975,703)으로 나누면 77.9833%다. 현금 행과 총액 행이 원문에 모두 있어 계산 가능하다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "B8",
+   "group": "B 준비자산",
+   "name": "가중평균만기",
+   "status": "파싱실패",
+   "reason": "국채와 레포 행마다 만기일과 par 금액이 있어 par 가중평균만기를 계산할 재료는 있다. 두 파서 모두 이 집계를 하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "C1",
+   "group": "C 보관",
+   "name": "보관 기관명(기관별 금액과 비중)",
+   "status": "못채움",
+   "reason": "레포 상대방과 예치 은행을 Bank 1, Bank 2로 익명 표기한다(6쪽 근처 표). 실명은 KPMG 검증 대상이 아니라서 보고서에 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "C2",
+   "group": "C 보관",
+   "name": "보관 방식",
+   "status": "채움",
+   "reason": "Segregated Accounts(격리계좌)로 신탁, 예치, 지급보증보험 중 예치에 가까운 방식을 설명한다(6쪽 22줄). 한국 서식의 세 갈래 분류 용어와 정확히 일치하진 않는다.",
+   "source": {
+    "page": 6,
+    "line": 22
+   }
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "C3",
+   "group": "C 보관",
+   "name": "고유재산 분리 여부",
+   "status": "채움",
+   "reason": "고유재산과 분리해 보관한다는 문장이 명시적으로 있다(6쪽 22줄, \"segregated from other accounts\" 또는 \"unencumbered\").",
+   "source": {
+    "page": 6,
+    "line": 22
+   }
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "C4",
+   "group": "C 보관",
+   "name": "컨소시엄 참여사별 분담",
+   "status": "해당없음",
+   "reason": "Circle과 Paxos 모두 단독 발행사다. 컨소시엄 구조 자체가 없어 분담 항목이 성립하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "C5",
+   "group": "C 보관",
+   "name": "참여사 이탈과 파산 시 처리",
+   "status": "해당없음",
+   "reason": "C4와 같은 이유로 컨소시엄 참여사 개념이 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "D1",
+   "group": "D 검증",
+   "name": "검증 기관명",
+   "status": "채움",
+   "reason": "KPMG LLP가 문서 상단에 평문으로 나온다(1쪽 1줄). Paxos는 이미지 서명이 아니라 텍스트다.",
+   "source": {
+    "page": 1,
+    "line": 1
+   }
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "D2",
+   "group": "D 검증",
+   "name": "검증 종류",
+   "status": "채움",
+   "reason": "보고서 제목과 본문이 검증 종류를 명시한다(\"examination\", 1쪽 18줄).",
+   "source": {
+    "page": 1,
+    "line": 18
+   }
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "D3",
+   "group": "D 검증",
+   "name": "검증 기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 기준일이 검증 대상 기준일과 같다(기준일 2026-07-31, 4쪽 12줄).",
+   "source": {
+    "page": 4,
+    "line": 12,
+    "raw": "July 31, 2026"
+   }
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "D4",
+   "group": "D 검증",
+   "name": "검증 보고서 링크",
+   "status": "못채움",
+   "reason": "이 PDF 자신을 가리키는 URL이 본문에 없다. 파일은 발행사 홈페이지(Circle Transparency, Paxos Transparency)에서 받았지만 그 주소는 문서 밖 정보다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "E1",
+   "group": "E 환매",
+   "name": "상환 기한",
+   "status": "못채움",
+   "reason": "상환 처리에 걸리는 영업일 수가 이 문서에 없다. Paxos는 각주로 약관 URL(paxos.com/terms-and-conditions)을 걸어두지만 며칠인지는 그 URL 안에 있고 이 보고서 본문에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "E2",
+   "group": "E 환매",
+   "name": "상환 수수료",
+   "status": "못채움",
+   "reason": "상환 수수료 금액이나 무료 여부를 밝히는 문장이 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "E3",
+   "group": "E 환매",
+   "name": "상환 제한 사유",
+   "status": "채움",
+   "reason": "Exhibit A(USDG는 Exhibit C) 각주가 access-restricted, time-locked 두 제한 범주를 명시한다(5쪽 18줄). 이번 달은 두 범주 다 금액이 N/A라 실제로 제한된 물량은 없다.",
+   "source": {
+    "page": 5,
+    "line": 18
+   }
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "E4",
+   "group": "E 환매",
+   "name": "예금이 아니라는 고지",
+   "status": "못채움",
+   "reason": "예금자보호 대상이 아니라는 고지 문구가 이 보고서에 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "F1",
+   "group": "F 메타",
+   "name": "기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 마지막 날짜가 기준일이다(2026-07-31, 4쪽 12줄).",
+   "source": {
+    "page": 4,
+    "line": 12,
+    "raw": "July 31, 2026"
+   }
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "F2",
+   "group": "F 메타",
+   "name": "기준시각",
+   "status": "채움",
+   "reason": "5:00 PM Eastern Time으로 명시된다. 다만 이는 자정이 아니라 미국 동부 영업일 마감 시각이라 한국 제안의 '기준일 24시'와 시점 자체가 다르다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "F3",
+   "group": "F 메타",
+   "name": "공개 기한",
+   "status": "못채움",
+   "reason": "'다음 달 며칠 이내 공개한다' 같은 공개 기한 정책 문장이 본문에 없다. 기준일과 서명일 사이 실제 경과일은 외부에서 두 날짜를 비교해야 알 수 있다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "F4",
+   "group": "F 메타",
+   "name": "공개 위치",
+   "status": "못채움",
+   "reason": "이 보고서가 상시 게시되는 고정 URL을 본문이 스스로 밝히지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDP_2026-07",
+   "issuer": "Paxos",
+   "token": "USDP",
+   "month": "2026-07",
+   "item": "F5",
+   "group": "F 메타",
+   "name": "대표이사 진술과 서명",
+   "status": "채움",
+   "reason": "Adam Ackermann, Head of Treasury and Portfolio Management 이름과 직함, 서명일이 있다(4쪽 26줄). 대표이사가 아니라 재무 책임자 직급이다.",
+   "source": {
+    "page": 4,
+    "line": 26
+   }
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "A1",
+   "group": "A 발행 현황",
+   "name": "발행잔액(미상환 기준)",
+   "status": "채움",
+   "reason": "Total USDG redeemable tokens outstanding (Exhibit A line d) 행에 미상환 유통량 3,400,474,143가 그대로 나온다(6쪽 13줄).",
+   "source": {
+    "page": 6,
+    "line": 13,
+    "raw": "3,400,474,143"
+   }
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "A2",
+   "group": "A 발행 현황",
+   "name": "발행잔액 산식 정의",
+   "status": "채움",
+   "reason": "Exhibit A 표가 자연발행량(a)에서 상환불가 물량(b, c)을 뺀 값이 상환가능 유통량(d)임을 행 구조로 보여준다. USDG는 상환불가 물량이 모두 N/A라 산식이 항등에 가깝다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "A3",
+   "group": "A 발행 현황",
+   "name": "코인 종류별 분리 표시",
+   "status": "해당없음",
+   "reason": "이 문서 한 건은 USDG 한 종류만 다룬다. Circle은 USDC와 EURC를, Paxos Trust는 PYUSD와 USDP를 같은 발행사가 내지만 코인별로 별도 문서를 낸다. 한 표 안에서 코인별로 나눠 보여줄 자리가 이 문서에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "B1",
+   "group": "B 준비자산",
+   "name": "준비자산 총 평가액(시장가)",
+   "status": "채움",
+   "reason": "Total redemption assets in United States Dollar (Exhibit B) 행에 준비자산 시가 총액 3,404,876,225가 나온다(6쪽 16줄).",
+   "source": {
+    "page": 6,
+    "line": 16,
+    "raw": "$3,404,876,225"
+   }
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "B2",
+   "group": "B 준비자산",
+   "name": "커버리지(B1/A1)",
+   "status": "채움",
+   "reason": "원문에 커버리지 %가 직접 쓰여 있진 않지만 A1과 B1이 둘 다 있어 계산된다(6쪽 13줄과 6쪽 16줄에서 산출, 100.1295%).",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "B3",
+   "group": "B 준비자산",
+   "name": "한국은행권과 주화",
+   "status": "못채움",
+   "reason": "한국은행권과 주화에 대응하는 항목이 없다. Circle과 Paxos 모두 준비자산을 은행 예치금, 국채, 레포로만 구성하고 실물 화폐나 주화를 보유한다는 언급이 7개 보고서 어디에도 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "B4",
+   "group": "B 준비자산",
+   "name": "요구불예금",
+   "status": "채움",
+   "reason": "Exhibit B의 Cash 행이 FDIC 부보 은행 계좌에 있는 현금 103,442,070달러를 보여준다(9쪽 8줄).",
+   "source": {
+    "page": 9,
+    "line": 8,
+    "raw": "$103,442,070"
+   }
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "B5",
+   "group": "B 준비자산",
+   "name": "국채, 지방채, 특수채(잔존만기 구간별)",
+   "status": "파싱실패",
+   "reason": "Treasury bills 표에 CUSIP, 만기일, par, 공정가치가 행마다 있다. 파서가 잔존만기 구간별 합계로 재집계하지 않는다. 지방채, 특수채는 보유 목록에 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "B6",
+   "group": "B 준비자산",
+   "name": "기타 자산",
+   "status": "못채움",
+   "reason": "현금, 국채, 레포(Paxos) 또는 Circle Reserve Fund 구성 외에 '기타' 항목으로 잡히는 잔여 자산이 7개 보고서 어디에도 없다. 구성 항목이 그 자체로 전체 합계를 설명한다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "B7",
+   "group": "B 준비자산",
+   "name": "현금성 비율((B3+B4)/B1)",
+   "status": "채움",
+   "reason": "B3가 항상 0이라 사실상 B4/B1과 같다. Exhibit B의 Cash 행(103,442,070)을 B1(3,404,876,225)으로 나누면 3.0381%다. 현금 행과 총액 행이 원문에 모두 있어 계산 가능하다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "B8",
+   "group": "B 준비자산",
+   "name": "가중평균만기",
+   "status": "파싱실패",
+   "reason": "국채와 레포 행마다 만기일과 par 금액이 있어 par 가중평균만기를 계산할 재료는 있다. 두 파서 모두 이 집계를 하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "C1",
+   "group": "C 보관",
+   "name": "보관 기관명(기관별 금액과 비중)",
+   "status": "못채움",
+   "reason": "레포 상대방과 예치 은행을 Bank 1, Bank 2로 익명 표기한다(9쪽 근처 표). 실명은 KPMG 검증 대상이 아니라서 보고서에 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "C2",
+   "group": "C 보관",
+   "name": "보관 방식",
+   "status": "채움",
+   "reason": "Segregated Accounts(격리계좌)로 신탁, 예치, 지급보증보험 중 예치에 가까운 방식을 설명한다(9쪽 20줄). 한국 서식의 세 갈래 분류 용어와 정확히 일치하진 않는다.",
+   "source": {
+    "page": 9,
+    "line": 20
+   }
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "C3",
+   "group": "C 보관",
+   "name": "고유재산 분리 여부",
+   "status": "채움",
+   "reason": "고유재산과 분리해 보관한다는 문장이 명시적으로 있다(9쪽 20줄, \"segregated from other accounts\" 또는 \"unencumbered\").",
+   "source": {
+    "page": 9,
+    "line": 20
+   }
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "C4",
+   "group": "C 보관",
+   "name": "컨소시엄 참여사별 분담",
+   "status": "해당없음",
+   "reason": "Circle과 Paxos 모두 단독 발행사다. 컨소시엄 구조 자체가 없어 분담 항목이 성립하지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "C5",
+   "group": "C 보관",
+   "name": "참여사 이탈과 파산 시 처리",
+   "status": "해당없음",
+   "reason": "C4와 같은 이유로 컨소시엄 참여사 개념이 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "D1",
+   "group": "D 검증",
+   "name": "검증 기관명",
+   "status": "채움",
+   "reason": "KPMG LLP가 문서 상단에 평문으로 나온다(2쪽 1줄). Paxos는 이미지 서명이 아니라 텍스트다.",
+   "source": {
+    "page": 2,
+    "line": 1
+   }
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "D2",
+   "group": "D 검증",
+   "name": "검증 종류",
+   "status": "채움",
+   "reason": "보고서 제목과 본문이 검증 종류를 명시한다(\"reasonable assurance\", 2쪽 9줄).",
+   "source": {
+    "page": 2,
+    "line": 9
+   }
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "D3",
+   "group": "D 검증",
+   "name": "검증 기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 기준일이 검증 대상 기준일과 같다(기준일 2026-07-31, 6쪽 9줄).",
+   "source": {
+    "page": 6,
+    "line": 9,
+    "raw": "July 31, 2026"
+   }
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "D4",
+   "group": "D 검증",
+   "name": "검증 보고서 링크",
+   "status": "못채움",
+   "reason": "이 PDF 자신을 가리키는 URL이 본문에 없다. 파일은 발행사 홈페이지(Circle Transparency, Paxos Transparency)에서 받았지만 그 주소는 문서 밖 정보다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "E1",
+   "group": "E 환매",
+   "name": "상환 기한",
+   "status": "못채움",
+   "reason": "상환 처리에 걸리는 영업일 수가 이 문서에 없다. Paxos는 각주로 약관 URL(paxos.com/terms-and-conditions)을 걸어두지만 며칠인지는 그 URL 안에 있고 이 보고서 본문에는 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "E2",
+   "group": "E 환매",
+   "name": "상환 수수료",
+   "status": "못채움",
+   "reason": "상환 수수료 금액이나 무료 여부를 밝히는 문장이 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "E3",
+   "group": "E 환매",
+   "name": "상환 제한 사유",
+   "status": "채움",
+   "reason": "Exhibit A(USDG는 Exhibit C) 각주가 access-restricted, time-locked 두 제한 범주를 명시한다(12쪽 24줄). 이번 달은 두 범주 다 금액이 N/A라 실제로 제한된 물량은 없다.",
+   "source": {
+    "page": 12,
+    "line": 24
+   }
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "E4",
+   "group": "E 환매",
+   "name": "예금이 아니라는 고지",
+   "status": "못채움",
+   "reason": "예금자보호 대상이 아니라는 고지 문구가 이 보고서에 없다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "F1",
+   "group": "F 메타",
+   "name": "기준일",
+   "status": "채움",
+   "reason": "Report Dates 표의 마지막 날짜가 기준일이다(2026-07-31, 6쪽 9줄).",
+   "source": {
+    "page": 6,
+    "line": 9,
+    "raw": "July 31, 2026"
+   }
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "F2",
+   "group": "F 메타",
+   "name": "기준시각",
+   "status": "채움",
+   "reason": "5:00 PM Eastern Time으로 명시된다. 다만 이는 자정이 아니라 미국 동부 영업일 마감 시각이라 한국 제안의 '기준일 24시'와 시점 자체가 다르다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "F3",
+   "group": "F 메타",
+   "name": "공개 기한",
+   "status": "못채움",
+   "reason": "'다음 달 며칠 이내 공개한다' 같은 공개 기한 정책 문장이 본문에 없다. 기준일과 서명일 사이 실제 경과일은 외부에서 두 날짜를 비교해야 알 수 있다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "F4",
+   "group": "F 메타",
+   "name": "공개 위치",
+   "status": "못채움",
+   "reason": "이 보고서가 상시 게시되는 고정 URL을 본문이 스스로 밝히지 않는다.",
+   "source": null
+  },
+  {
+   "report": "Paxos_USDG_2026-07",
+   "issuer": "Paxos",
+   "token": "USDG",
+   "month": "2026-07",
+   "item": "F5",
+   "group": "F 메타",
+   "name": "대표이사 진술과 서명",
+   "status": "채움",
+   "reason": "Wee Siang Lee(Executive Director)와 Tero Reuna(Head of EU) 두 명이 서명한다(6쪽 33줄 근처). 둘 다 대표이사가 아니라 임원급 서명이다.",
+   "source": {
+    "page": 6,
+    "line": 33
+   }
+  }
+ ]
+}
