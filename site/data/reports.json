@@ -20,9 +20,16 @@
    "fair_value": 70022091915,
    "components": {
     "circle_reserve_fund": 59816982895,
-    "other": 10205109020
+    "cash": 10156944576,
+    "treasury": 0,
+    "other": 48164444
    },
    "reconciliation": {
+    "other_breakdown": {
+     "expected": 10205109020,
+     "got": 10205109020,
+     "diff": 0
+    },
     "covers_circulation": {
      "surplus": 67374429,
      "ok": true
@@ -58,9 +65,16 @@
    "fair_value": 77125330954,
    "components": {
     "circle_reserve_fund": 66467038905,
-    "other": 10658292049
+    "cash": 10361225037,
+    "treasury": 0,
+    "other": 297067012
    },
    "reconciliation": {
+    "other_breakdown": {
+     "expected": 10658292049,
+     "got": 10658292049,
+     "diff": 0
+    },
     "covers_circulation": {
      "surplus": 76040416,
      "ok": true
@@ -96,9 +110,16 @@
    "fair_value": 77123668726,
    "components": {
     "circle_reserve_fund": 66367076329,
-    "other": 10756592397
+    "cash": 10567044499,
+    "treasury": 0,
+    "other": 189547898
    },
    "reconciliation": {
+    "other_breakdown": {
+     "expected": 10756592397,
+     "got": 10756592397,
+     "diff": 0
+    },
     "covers_circulation": {
      "surplus": 76077932,
      "ok": true
@@ -134,9 +155,16 @@
    "fair_value": 71904101332,
    "components": {
     "circle_reserve_fund": 60717246965,
-    "other": 11186854367
+    "cash": 10607410596,
+    "treasury": 499418694,
+    "other": 80025077
    },
    "reconciliation": {
+    "other_breakdown": {
+     "expected": 11186854367,
+     "got": 11186854367,
+     "diff": 0
+    },
     "covers_circulation": {
      "surplus": 77647922,
      "ok": true

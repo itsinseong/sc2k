@@ -2,10 +2,10 @@ import json, subprocess, sys, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 EXPECTED = {
-    '2026-01': dict(circulation=69954717486, fair_value=70022091915, as_of='2026-01-30', signed='2026-02-26', tsub=False),
-    '2026-03': dict(circulation=77049290538, fair_value=77125330954, as_of='2026-03-31', signed='2026-04-29', tsub=False),
-    '2026-04': dict(circulation=77047590794, fair_value=77123668726, as_of='2026-04-30', signed='2026-05-28', tsub=False),
-    '2026-07': dict(circulation=71826453410, fair_value=71904101332, as_of='2026-07-31', signed='2026-08-27', tsub=True),
+    '2026-01': dict(circulation=69954717486, fair_value=70022091915, as_of='2026-01-30', signed='2026-02-26', tsub=False, cash=10156944576),
+    '2026-03': dict(circulation=77049290538, fair_value=77125330954, as_of='2026-03-31', signed='2026-04-29', tsub=False, cash=10361225037),
+    '2026-04': dict(circulation=77047590794, fair_value=77123668726, as_of='2026-04-30', signed='2026-05-28', tsub=False, cash=10567044499),
+    '2026-07': dict(circulation=71826453410, fair_value=71904101332, as_of='2026-07-31', signed='2026-08-27', tsub=True, cash=10607410596),
 }
 
 def _reports():
@@ -24,7 +24,8 @@ def test_four_months_parse_and_reconcile():
         assert r['as_of'] == exp['as_of'], m
         assert r['attestation']['signed'] == exp['signed'], m
         c = r['components']
-        assert c['circle_reserve_fund'] + c['other'] == r['fair_value'], f'{m} 구성 합계 불일치'
+        assert c['circle_reserve_fund'] + c['cash'] + c['treasury'] + c['other'] == r['fair_value'], f'{m} 구성 합계 불일치'
+        assert c['cash'] == exp['cash'], f'{m} 은행 예금(Cash held at regulated financial institutions) 불일치: {c["cash"]}'
         assert r['fair_value'] >= r['circulation'], m
 
 def test_july_alone_has_treasury_subtable():

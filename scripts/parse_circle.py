@@ -38,6 +38,32 @@ def to_iso(s):
     return f'{year}-{i:02d}-{int(day):02d}' if i else None
 
 
+def line_amount(line):
+    """줄 끝 금액. 괄호는 음수."""
+    m = re.search(r'(\()?([\d,]{5,})\)?\s*$', line)
+    if not m: return None
+    return -num(m.group(2)) if m.group(1) else num(m.group(2))
+
+
+def other_breakdown(text):
+    """월말 '기타 준비자산' 구획을 은행 예금, 국채, 정산 차액으로 나눈다.
+    은행 예금 금액은 같은 줄 끝에 있거나(4, 7월) 레이아웃 때문에 바로 윗줄에 혼자 있다(1, 3월)."""
+    block = text.split('OTHER USDC RESERVE ASSETS AS OF')[-1].split('TOTAL OTHER USDC RESERVE ASSETS')[0]
+    lines = block.splitlines()
+    out = {'cash': None, 'treasury': 0, 'due': None}
+    for i, line in enumerate(lines):
+        if 'Cash held at regulated financial institutions' in line:
+            out['cash'] = line_amount(line)
+            for j in (i - 1, i - 2, i + 1):  # 금액만 있는 이웃 줄
+                if out['cash'] is None and 0 <= j < len(lines) and re.fullmatch(r'\s*[\d,]{7,}\s*', lines[j]):
+                    out['cash'] = num(lines[j].strip())
+        elif 'Cash due to/(owed by) Circle' in line:
+            out['due'] = line_amount(line)
+        elif 'TOTAL U.S. TREASURY SECURITIES' in line:
+            out['treasury'] = line_amount(line) or 0
+    return out
+
+
 def last_amount(text, label):
     """label 뒤에 오는 마지막 금액. 보고서에 기준일별 구획이 둘이고 월말 구획이 뒤에 온다."""
     hits = re.findall(re.escape(label) + r'[^\n\d]*([\d,]{7,})', text)
@@ -66,12 +92,19 @@ def parse(pdf):
     crf = last_amount(text, 'TOTAL CIRCLE RESERVE FUND ASSETS')
     oth = last_amount(text, 'TOTAL OTHER USDC RESERVE ASSETS')
     tot = last_amount(text, 'TOTAL USDC RESERVE ASSETS AS OF')
-    r['components'] = {'circle_reserve_fund': crf, 'other': oth}
+    ob = other_breakdown(text)
+    # 기타 준비자산 = 은행 예금 + 국채(7월만) + 정산 차액. 판정기는 cash를 은행 예금으로 읽는다.
+    r['components'] = {'circle_reserve_fund': crf, 'cash': ob['cash'], 'treasury': ob['treasury'], 'other': ob['due']}
 
     # 합계 대사. 구획을 잘못 잡으면 여기서 걸린다.
     checks = {}
     if None not in (crf, oth, tot):
         checks['components_sum'] = {'expected': tot, 'got': crf + oth, 'diff': crf + oth - tot}
+    if None not in (oth, ob['cash'], ob['due']):
+        got = ob['cash'] + ob['treasury'] + ob['due']
+        checks['other_breakdown'] = {'expected': oth, 'got': got, 'diff': got - oth}
+    else:
+        checks['other_breakdown'] = {'expected': oth, 'got': None, 'diff': 'parse_fail'}
     if None not in (tot, r['fair_value']):
         checks['total_equals_fair_value'] = {'expected': r['fair_value'], 'got': tot, 'diff': tot - r['fair_value']}
     if None not in (r['fair_value'], r['circulation']):
