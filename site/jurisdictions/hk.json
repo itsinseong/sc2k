@@ -4,7 +4,7 @@
   "legal_status": "시행 중",
   "version": "1.0",
   "as_of": "2026-09-24",
-  "source_note": "HKMA 감독지침 시행 중(2025-08-01). 2026-04-10 HSBC와 Anchorpoint에 첫 발행 인가. docs/매니페스트_v2.md §7, §2.1.",
+  "source_note": "스테이블코인 발행인 규제 시행 중(2025-08-01, HKMA 감독지침 같은 날 관보 게재). 2026-04-10 HSBC와 Anchorpoint에 첫 발행 인가. docs/매니페스트_v2.md §7, §2.1.",
   "rules": {
     "R01": {
       "requirement": "액면 전액 커버리지",

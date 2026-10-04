@@ -3,8 +3,8 @@
   "name": "미국",
   "legal_status": "제정 후 미발효",
   "version": "1.0",
-  "as_of": "2026-09-24",
-  "source_note": "GENIUS Act(PLAW-119publ27, 시행 예정 2027-01-18). OCC 하위규정 제안 91 FR 10202(2026-03-02, 의견마감 2026-05-01, 협의 중)는 §15.11에 세부 임계치를 둔다. docs/매니페스트_v2.md §7, §2 근거.",
+  "as_of": "2026-10-04",
+  "source_note": "GENIUS Act(PLAW-119publ27, 시행 예정 2027-01-18, §20). 하위규정은 제안 단계이며 OCC, FDIC, 연준, NCUA의 최종 규정은 2026-10-04 현재 없다. OCC 제안 91 FR 10202(2026-03-02, 의견마감 2026-05-01)는 §15.11에 세부 임계치를 두고, 연준 제안 91 FR 61580(2026-09-29, 의견마감 2026-11-30)은 §247.11에 같은 취지의 공시 시점을 둔다. docs/매니페스트_v2.md §7, §2 근거.",
   "rules": {
     "R01": {
       "requirement": "커버리지 = 준비자산 공정가치 / 발행잔액 ≥ 100%",
@@ -14,21 +14,21 @@
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
     },
     "R02": {
-      "requirement": "허용 자산 종류: 현금, 보험예금, 93일 이하 국채, overnight 레포, 정부 MMF",
-      "allowed": ["cash", "bank_deposit", "treasury_bill_93d", "overnight_repo", "government_mmf"],
-      "article": "GENIUS Act §4(a)(1)(A)(ii) 등",
+      "requirement": "허용 자산 8종: 미국 화폐와 연준 예치금, 보험 예금기관의 수시입출 예금, 93일 이하 국채, 익일물 레포 수취 자금, 익일물 역레포, 정부 MMF, 감독기관이 승인한 연방정부 자산, 위 자산의 토큰 형태",
+      "allowed": ["cash", "bank_deposit", "treasury_bill_93d", "overnight_repo", "overnight_reverse_repo", "government_mmf", "approved_federal_asset", "tokenized_reserve"],
+      "article": "GENIUS Act §4(a)(1)(A)(i)~(viii)",
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
     },
     "R03": {
       "requirement": "국채 잔존만기 상한 93일",
       "threshold_days": 93,
-      "article": "GENIUS Act §4(a)(1)(A) 허용자산(국채 93일 이하)",
+      "article": "GENIUS Act §4(a)(1)(A)(iii) 잔존 또는 발행 만기 93일 이하",
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
     },
     "R04": {
       "requirement": "레포 만기 overnight",
       "threshold_days": 1,
-      "article": "GENIUS Act §4(a)(1)(A) 허용자산(익일물 환매조건부채권)",
+      "article": "GENIUS Act §4(a)(1)(A)(iv), (v) 레포와 역레포 모두 익일물",
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
     },
     "R05": {
@@ -53,24 +53,24 @@
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
     },
     "R08": {
-      "requirement": "등록 회계법인의 월별 examination",
+      "requirement": "등록 회계법인의 월별 examination. 보증 수준은 법에 없고 연준 제안이 의견을 묻는 중. 연결 발행잔액 500억 달러 초과, SEC 보고 의무 없는 발행사는 연차 재무제표 감사(PCAOB 기준)",
       "verification_types": ["examination"],
-      "article": "GENIUS Act §4(a)(3)",
+      "article": "GENIUS Act §4(a)(3)(A), §4(a)(10)",
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
     },
     "R09": {
-      "requirement": "전월 말일 정오 기준(OCC 제안, 확정 아님)",
+      "requirement": "전월 말일 정오 기준(제안 단계, 확정 아님)",
       "time_bucket": "noon",
       "time_label": "전월 말일 정오",
-      "article": "OCC 제안 §15.11(e)",
+      "article": "OCC 제안 §15.11(e), 연준 제안 §247.11(d)",
       "url": "https://www.occ.gov/news-issuances/federal-register/2026/91fr10202.pdf",
       "legal_status": "협의 중"
     },
     "R10": {
-      "requirement": "공개 기한 다음 달 말 정오(OCC 제안)",
+      "requirement": "공개 기한 다음 달 말 정오, 공시 전에 검사를 마치고 검사 보고서를 함께 공시(제안 단계)",
       "deadline_days": 31,
       "unit": "calendar_days",
-      "article": "OCC 제안 §15.11(e)",
+      "article": "OCC 제안 §15.11(e), (f), 연준 제안 §247.11(d), (e)",
       "url": "https://www.occ.gov/news-issuances/federal-register/2026/91fr10202.pdf",
       "legal_status": "협의 중"
     },
@@ -95,15 +95,15 @@
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
     },
     "R14": {
-      "requirement": "이자 지급 금지",
+      "requirement": "발행사 이자 지급 금지. 제안 규정 4건이 계열사나 관련 제3자와 이자 지급 약정을 맺으면 발행사의 이자 지급으로 추정",
       "expected": false,
-      "article": "GENIUS Act(이자와 수익 지급 금지 조항)",
+      "article": "GENIUS Act §4(a)(11), 제안 규정 OCC §15.10, FDIC §350.3(b)(4), NCUA §706.201, 연준 §247.10",
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
     },
     "R15": {
-      "requirement": "CEO와 CFO의 매월 인증",
+      "requirement": "CEO와 CFO의 매월 인증, 알고 허위 인증하면 형사 처벌(18 U.S.C. 1350(c))",
       "expected": true,
-      "article": "GENIUS Act §4(a)(3)",
+      "article": "GENIUS Act §4(a)(3)(B), (C)",
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
     }
   }
