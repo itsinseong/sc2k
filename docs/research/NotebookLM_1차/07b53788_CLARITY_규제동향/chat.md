@@ -1,0 +1,279 @@
+# 채팅 질문과 답: 디지털 자산 및 스테이블코인 규제 동향
+
+- 노트북 URL: https://notebook.google.com/notebook/07b53788-3def-408a-8d7b-950e09f830f8?authuser=1
+- 질문 입력: 2026-10-04 15:05(화면 표시 "오늘 오후 3:05"), 1회
+- 수집일: 2026-10-04
+- 수집 방법: Aside 브라우저(aside repl). 답 원문은 document.body.innerText, 표는 DOM의 table 칸을 그대로 읽어 [n]으로 인용 칩 번호를 표시. 생성 완료 확인 후 수집(소스 19개 기준).
+
+## 질문 원문
+
+넣은 소스만 근거로 답한다. 소스에 없는 내용은 "소스에 없음"이라고 적고 추정하지 않는다. 아래 주제마다 행을 나눠 표 하나로 정리한다.
+1. 미국 GENIUS법 시행 규정: 기관별 제안안과 최종 규정의 공표일, 최종 규정이 정한 시행일, §20에 따른 법 시행일
+2. CLARITY Act: 하원 통과일과 표결 수, 상원 심사 단계와 날짜, 스테이블코인 준비금, 공시, 이자와 보상 조항(조항 번호, GENIUS법을 바꾸는지 더하는지)
+3. 한국: 계류 법안 수와 새로 발의된 법안, 정부안 제출 여부와 날짜, 9월 공청회 날짜와 쟁점
+4. 레퍼런스: Tessera, FeedOracle, Veris와 새 서비스가 각각 보고서 파싱, 조문 판정, 한국 대상, 기준값 제안을 하는지
+| 주제 | 항목 | 날짜 또는 값 | 내용 | 근거 소스 | 원문 인용 한 줄 | 소스에 없음 여부 |
+
+## 답 원문(표, DOM 칸 기준)
+
+| 주제 | 항목 | 날짜 또는 값 | 내용 | 근거 소스 | 원문 인용 한 줄 | 소스에 없음 여부 |
+|---|---|---|---|---|---|---|
+| 미국 GENIUS법 시행 규정 | 기관별 제안안과 최종 규정의 공표일 | 제안안: 2025년 8월 18일(재무부 RFC), 2026년 초/3월(OCC 제안안), 2026년 4월(FDIC/재무부 NPRM, FinCEN/OFAC 제안안) <br>최종 규정 공표일: 소스에 없음 | 연방 규제 기관(OCC, FDIC, 재무부, FinCEN 등)은 2025년 8월부터 2026년 4월에 걸쳐 규칙 제정을 위한 제안안(NPRM/RFC)을 발표하고 시행 절차를 진행 중이나, 확정된 최종 규정(final regulations)의 공표일은 소스에 명시되어 있지 않음[1]. | What Is the GENIUS Act? US Stablecoin Law Explained for 2026 \| Support, US Federal Crypto and Digital Assets Legislation - Davis Wright Tremaine | "The OCC published a proposed rule in early 2026... and the FDIC and Treasury followed with their own proposals through April 2026."[1] | 소스에 없음 (최종 규정의 공표일은 소스에 없음) |
+| 미국 GENIUS법 시행 규정 | 최종 규정이 정한 시행일 | 소스에 없음 | GENIUS법은 최종 규정 공표 후 120일 또는 법 제정(2025.07.18) 후 18개월(2027.01.18) 중 빠른 날에 발효되도록 규정되어 있으나, 최종 규정이 아직 확정 공표되지 않아 최종 규정에서 지정한 구체적 시행일 값은 소스에 없음[2][3]. | The GENIUS Act of 2025: Stablecoin Legislation Adopted in the US - Latham & Watkins LLP, Banking and Insurance (Pre-Meeting) 2/3/2026 - BILL ANALYSIS AND FISCAL IMPACT STATEMENT | "The GENIUS Act takes effect on the earlier of (i) 18 months after its enactment or (ii) 120 days after the primary federal stablecoin regulators issue final regulations implementing the Act."[3] | 소스에 없음 |
+| 미국 GENIUS법 시행 규정 | §20에 따른 법 시행일 | 소스에 없음 | 소스에 GENIUS법의 'Section 20(§20)' 조항이나 이에 따른 법 시행일 관련 언급이 전혀 존재하지 않음 (법 전체 시행일은 제정 후 18개월이 되는 2027년 1월 18일 또는 최종 규정 발효 후 120일 중 빠른 날임)[2][3]. | Banking and Insurance (Pre-Meeting) 2/3/2026 - BILL ANALYSIS AND FISCAL IMPACT STATEMENT, What Is the GENIUS Act? US Stablecoin Law Explained for 2026 \| Support | "The GENIUS Act was signed into law on July 18, 2025, and is effective January 2027 or 120 days after final regulations implementing the Act are issued, whichever is earlier."[2] | 소스에 없음 |
+| CLARITY Act | 하원 통과일과 표결 수 | 2025년 7월 17일 / 찬성 294표, 반대 134표 (Roll Call 199) | 2025년 7월 17일 미 하원 본회의에서 찬성 294표, 반대 134표로 가결됨 (Roll Call 199)[4][5]. | CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서, CLARITY Act Timeline: House Passage, Senate Progress, and What's Next \| Support - Eco | "The House passed H.R. 3633 by a 294-134 vote (Roll Call 199)."[4][5] | 해당 없음 |
+| CLARITY Act | 상원 심사 단계와 날짜 | 2026년 5월 12일(초안 공개), 2026년 5월 14일(은행위 통과 15-9), 2026년 6월 1일(본회의 상정), 2026년 9월 15일(본회의 Cloture 표결 부결 49-50) | 2026년 5월 12일 상원 은행위원회가 309쪽 수정안을 공개하고 5월 14일 찬성 15표, 반대 9표로 통과시킨 뒤 6월 1일 상원 안건(Calendar No. 423)으로 상정되었으나, 2026년 9월 15일 상원 본회의 토론 종결(Cloture) 표결에서 찬성 49표, 반대 50표로 부결되어 입법 절차가 중단됨[5][6]. | CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서, In the Wake of CLARITY Act's Failure, Agencies Move Forward Without Congressional Action or Certainty | "The Senate rejected cloture on the Digital Asset Market Clarity Act of 2025 (H.R. 3633) by a vote of 49-50 on September 15, 2026, effectively ending the bill's prospects for the remainder of this Congress."[5][6] | 해당 없음 |
+| CLARITY Act | 스테이블코인 준비금 조항 (조항 번호, GENIUS법과의 관계) | 조항 번호 소스에 없음 / GENIUS법 준용 및 파산시 변제권 보완 | 법안 자체에 결제용 스테이블코인 전용 준비금 조항 번호가 명시되어 있지 않음. GENIUS법의 1:1 유동자산 준비금 요건을 준용하되, 상원 초안은 파산 절차 시 디지털 상품 및 스테이블코인 보유자의 변제 우선순위(Customer-property priority, Sec. 702 등)를 명확히 구체화하여 보완함[7]. | CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서, CLARITY Act Timeline: House Passage, Senate Progress, and What's Next \| Support - Eco | "The bill largely leaves stablecoin issuance rules to the separate GENIUS Act enacted"[7] | 소스에 없음 (독자적 준비금 조항 번호 소스에 없음) |
+| CLARITY Act | 스테이블코인 공시 조항 (조항 번호, GENIUS법과의 관계) | 조항 번호 소스에 없음 / GENIUS법 체계 수용 | 법안 자체에 결제용 스테이블코인 전용 공시 조항 번호가 명시되어 있지 않음. 발행사의 월간 준비금 구성 공시 및 회계법인 검증 의무 등은 기존 GENIUS법 체계에 의존하고 수용함[7]. | CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서, What Is the CLARITY Act? The US Crypto Bill That Could Reshape | "The bill largely leaves stablecoin issuance rules to the separate GENIUS Act enacted"[7] | 소스에 없음 (독자적 공시 조항 번호 소스에 없음) |
+| CLARITY Act | 스테이블코인 이자와 보상 조항 (조항 번호, GENIUS법과의 관계) | Sec. 404 (제404조) / GENIUS법의 이자 금지 대상을 제3자로 확대 및 벌금 권한 추가(더함) | 상원 초안 제404조(Sec. 404)는 조항명을 "Prohibiting Interest and Yield on Payment Stablecoins"로 전면 개정함. GENIUS법 §4(a)(11)이 발행사(issuer)에만 부과했던 이자 지급 금지를 넘어, 거래소, 디지털 자산 서비스 제공자 및 제휴사(covered party)가 보유자에게 이자, 수익 또는 "경제적·기능적으로 동일한" 보상을 제공하는 행위까지 금지 대상을 확대하고, 재무부에 위반 건당 500만 달러의 민사 벌금 부과 권한을 신설함(더함)[8][9]. | CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서, CLARITY Act: Senate Banking Releases New Text, Sets Thursday Markup - Galaxy | "§404 renamed 'Prohibiting Interest and Yield on Payment Stablecoins' and rewritten end-to-end... introduces 'economically or functionally equivalent' test; adds $5m per-violation civil penalty enforced by Treasury"[8][9] | 해당 없음 (상원 초안 Sec. 404 기준) |
+| 한국 | 계류 법안 수와 새로 발의된 법안 | 소스에 없음 | 소스에 한국의 디지털 자산 관련 계류 법안 수 및 새로 발의된 법안에 대한 정보가 존재하지 않음. | 소스에 없음 | 소스에 없음 | 소스에 없음 |
+| 한국 | 정부안 제출 여부와 날짜 | 소스에 없음 | 소스에 한국 정부안의 제출 여부 및 제출 날짜에 대한 정보가 존재하지 않음. | 소스에 없음 | 소스에 없음 | 소스에 없음 |
+| 한국 | 9월 공청회 날짜와 쟁점 | 소스에 없음 | 소스에 한국의 9월 공청회 개최 날짜 및 공청회 쟁점에 대한 정보가 존재하지 않음. | 소스에 없음 | 소스에 없음 | 소스에 없음 |
+| 레퍼런스 | Tessera, FeedOracle, Veris와 새 서비스의 기능 수행 여부 | 소스에 없음 | 소스에 Tessera, FeedOracle, Veris나 관련 새 서비스에 대한 언급이 전혀 존재하지 않으며, 이들이 보고서 파싱, 조문 판정, 한국 대상 서비스, 기준값 제안을 수행하는지에 대한 정보가 없음. | 소스에 없음 | 소스에 없음 | 소스에 없음 |
+
+마지막 줄 원문: 💡 추가 검토 및 질문 제안: 미국 GENIUS법과 CLARITY 법안 간의 연관 조항이나 상원 위원회 제출 수정안의 세부 차이점에 대해 더 자세한 비교 분석이 필요하시면 언제든 말씀해 주세요!
+
+## 답 원문(innerText 그대로)
+
+주제
+	
+항목
+	
+날짜 또는 값
+	
+내용
+	
+근거 소스
+	
+원문 인용 한 줄
+	
+소스에 없음 여부
+
+
+미국 GENIUS법 시행 규정
+	
+기관별 제안안과 최종 규정의 공표일
+	
+제안안: 2025년 8월 18일(재무부 RFC), 2026년 초/3월(OCC 제안안), 2026년 4월(FDIC/재무부 NPRM, FinCEN/OFAC 제안안) <br>최종 규정 공표일: 소스에 없음
+	
+연방 규제 기관(OCC, FDIC, 재무부, FinCEN 등)은 2025년 8월부터 2026년 4월에 걸쳐 규칙 제정을 위한 제안안(NPRM/RFC)을 발표하고 시행 절차를 진행 중이나, 확정된 최종 규정(final regulations)의 공표일은 소스에 명시되어 있지 않음
+1
+.
+	
+What Is the GENIUS Act? US Stablecoin Law Explained for 2026 | Support, US Federal Crypto and Digital Assets Legislation - Davis Wright Tremaine
+	
+"The OCC published a proposed rule in early 2026... and the FDIC and Treasury followed with their own proposals through April 2026."
+1
+	
+소스에 없음 (최종 규정의 공표일은 소스에 없음)
+
+
+미국 GENIUS법 시행 규정
+	
+최종 규정이 정한 시행일
+	
+소스에 없음
+	
+GENIUS법은 최종 규정 공표 후 120일 또는 법 제정(2025.07.18) 후 18개월(2027.01.18) 중 빠른 날에 발효되도록 규정되어 있으나, 최종 규정이 아직 확정 공표되지 않아 최종 규정에서 지정한 구체적 시행일 값은 소스에 없음
+2
+3
+.
+	
+The GENIUS Act of 2025: Stablecoin Legislation Adopted in the US - Latham & Watkins LLP, Banking and Insurance (Pre-Meeting) 2/3/2026 - BILL ANALYSIS AND FISCAL IMPACT STATEMENT
+	
+"The GENIUS Act takes effect on the earlier of (i) 18 months after its enactment or (ii) 120 days after the primary federal stablecoin regulators issue final regulations implementing the Act."
+3
+	
+소스에 없음
+
+
+미국 GENIUS법 시행 규정
+	
+§20에 따른 법 시행일
+	
+소스에 없음
+	
+소스에 GENIUS법의 'Section 20(§20)' 조항이나 이에 따른 법 시행일 관련 언급이 전혀 존재하지 않음 (법 전체 시행일은 제정 후 18개월이 되는 2027년 1월 18일 또는 최종 규정 발효 후 120일 중 빠른 날임)
+2
+3
+.
+	
+Banking and Insurance (Pre-Meeting) 2/3/2026 - BILL ANALYSIS AND FISCAL IMPACT STATEMENT, What Is the GENIUS Act? US Stablecoin Law Explained for 2026 | Support
+	
+"The GENIUS Act was signed into law on July 18, 2025, and is effective January 2027 or 120 days after final regulations implementing the Act are issued, whichever is earlier."
+2
+	
+소스에 없음
+
+
+CLARITY Act
+	
+하원 통과일과 표결 수
+	
+2025년 7월 17일 / 찬성 294표, 반대 134표 (Roll Call 199)
+	
+2025년 7월 17일 미 하원 본회의에서 찬성 294표, 반대 134표로 가결됨 (Roll Call 199)
+4
+5
+.
+	
+CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서, CLARITY Act Timeline: House Passage, Senate Progress, and What's Next | Support - Eco
+	
+"The House passed H.R. 3633 by a 294-134 vote (Roll Call 199)."
+4
+5
+	
+해당 없음
+
+
+CLARITY Act
+	
+상원 심사 단계와 날짜
+	
+2026년 5월 12일(초안 공개), 2026년 5월 14일(은행위 통과 15-9), 2026년 6월 1일(본회의 상정), 2026년 9월 15일(본회의 Cloture 표결 부결 49-50)
+	
+2026년 5월 12일 상원 은행위원회가 309쪽 수정안을 공개하고 5월 14일 찬성 15표, 반대 9표로 통과시킨 뒤 6월 1일 상원 안건(Calendar No. 423)으로 상정되었으나, 2026년 9월 15일 상원 본회의 토론 종결(Cloture) 표결에서 찬성 49표, 반대 50표로 부결되어 입법 절차가 중단됨
+5
+6
+.
+	
+CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서, In the Wake of CLARITY Act's Failure, Agencies Move Forward Without Congressional Action or Certainty
+	
+"The Senate rejected cloture on the Digital Asset Market Clarity Act of 2025 (H.R. 3633) by a vote of 49-50 on September 15, 2026, effectively ending the bill's prospects for the remainder of this Congress."
+5
+6
+	
+해당 없음
+
+
+CLARITY Act
+	
+스테이블코인 준비금 조항 (조항 번호, GENIUS법과의 관계)
+	
+조항 번호 소스에 없음 / GENIUS법 준용 및 파산시 변제권 보완
+	
+법안 자체에 결제용 스테이블코인 전용 준비금 조항 번호가 명시되어 있지 않음. GENIUS법의 1:1 유동자산 준비금 요건을 준용하되, 상원 초안은 파산 절차 시 디지털 상품 및 스테이블코인 보유자의 변제 우선순위(Customer-property priority, Sec. 702 등)를 명확히 구체화하여 보완함
+7
+.
+	
+CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서, CLARITY Act Timeline: House Passage, Senate Progress, and What's Next | Support - Eco
+	
+"The bill largely leaves stablecoin issuance rules to the separate GENIUS Act enacted"
+7
+	
+소스에 없음 (독자적 준비금 조항 번호 소스에 없음)
+
+
+CLARITY Act
+	
+스테이블코인 공시 조항 (조항 번호, GENIUS법과의 관계)
+	
+조항 번호 소스에 없음 / GENIUS법 체계 수용
+	
+법안 자체에 결제용 스테이블코인 전용 공시 조항 번호가 명시되어 있지 않음. 발행사의 월간 준비금 구성 공시 및 회계법인 검증 의무 등은 기존 GENIUS법 체계에 의존하고 수용함
+7
+.
+	
+CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서, What Is the CLARITY Act? The US Crypto Bill That Could Reshape
+	
+"The bill largely leaves stablecoin issuance rules to the separate GENIUS Act enacted"
+7
+	
+소스에 없음 (독자적 공시 조항 번호 소스에 없음)
+
+
+CLARITY Act
+	
+스테이블코인 이자와 보상 조항 (조항 번호, GENIUS법과의 관계)
+	
+Sec. 404 (제404조) / GENIUS법의 이자 금지 대상을 제3자로 확대 및 벌금 권한 추가(더함)
+	
+상원 초안 제404조(Sec. 404)는 조항명을 "Prohibiting Interest and Yield on Payment Stablecoins"로 전면 개정함. GENIUS법 §4(a)(11)이 발행사(issuer)에만 부과했던 이자 지급 금지를 넘어, 거래소, 디지털 자산 서비스 제공자 및 제휴사(covered party)가 보유자에게 이자, 수익 또는 "경제적·기능적으로 동일한" 보상을 제공하는 행위까지 금지 대상을 확대하고, 재무부에 위반 건당 500만 달러의 민사 벌금 부과 권한을 신설함(더함)
+8
+9
+.
+	
+CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서, CLARITY Act: Senate Banking Releases New Text, Sets Thursday Markup - Galaxy
+	
+"§404 renamed 'Prohibiting Interest and Yield on Payment Stablecoins' and rewritten end-to-end... introduces 'economically or functionally equivalent' test; adds $5m per-violation civil penalty enforced by Treasury"
+8
+9
+	
+해당 없음 (상원 초안 Sec. 404 기준)
+
+
+한국
+	
+계류 법안 수와 새로 발의된 법안
+	
+소스에 없음
+	
+소스에 한국의 디지털 자산 관련 계류 법안 수 및 새로 발의된 법안에 대한 정보가 존재하지 않음.
+	
+소스에 없음
+	
+소스에 없음
+	
+소스에 없음
+
+
+한국
+	
+정부안 제출 여부와 날짜
+	
+소스에 없음
+	
+소스에 한국 정부안의 제출 여부 및 제출 날짜에 대한 정보가 존재하지 않음.
+	
+소스에 없음
+	
+소스에 없음
+	
+소스에 없음
+
+
+한국
+	
+9월 공청회 날짜와 쟁점
+	
+소스에 없음
+	
+소스에 한국의 9월 공청회 개최 날짜 및 공청회 쟁점에 대한 정보가 존재하지 않음.
+	
+소스에 없음
+	
+소스에 없음
+	
+소스에 없음
+
+
+레퍼런스
+	
+Tessera, FeedOracle, Veris와 새 서비스의 기능 수행 여부
+	
+소스에 없음
+	
+소스에 Tessera, FeedOracle, Veris나 관련 새 서비스에 대한 언급이 전혀 존재하지 않으며, 이들이 보고서 파싱, 조문 판정, 한국 대상 서비스, 기준값 제안을 수행하는지에 대한 정보가 없음.
+	
+소스에 없음
+	
+소스에 없음
+	
+소스에 없음
+💡 추가 검토 및 질문 제안: 미국 GENIUS법과 CLARITY 법안 간의 연관 조항이나 상원 위원회 제출 수정안의 세부 차이점에 대해 더 자세한 비교 분석이 필요하시면 언제든 말씀해 주세요!
+
+## 인용 번호 대응표
+
+칩을 누르지 않고 접근성 트리의 버튼 이름("번호: 소스 제목")에서 읽음. 칩 하나가 여러 구절을 가리킬 수 있으나 버튼 이름에는 소스 제목 하나만 나옴. 6번 제목은 화면에서 잘린 그대로.
+
+| 번호 | 소스 제목 |
+|---|---|
+| 1 | What Is the GENIUS Act? US Stablecoin Law Explained for 2026 \| Support |
+| 2 | Banking and Insurance (Pre-Meeting) 2/3/2026 - BILL ANALYSIS AND FISCAL IMPACT STATEMENT |
+| 3 | The GENIUS Act of 2025 Stablecoin Legislation Adopted in the US - Latham & Watkins LLP |
+| 4 | CLARITY Act Timeline: House Passage, Senate Progress, and What's Next \| Support - Eco |
+| 5 | CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서 |
+| 6 | In the Wake of CLARITY Act's Failure, Agencies Move Forward Without Congressional Action or Certa |
+| 7 | CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서 |
+| 8 | CLARITY Act: Senate Banking Releases New Text, Sets Thursday Markup - Galaxy |
+| 9 | CLARITY 법안(H.R. 3633) 입법 절차 및 지급결제용 스테이블코인 규제 조항 종합 분석 보고서 |

@@ -1,0 +1,105 @@
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">미디어프로젝트 2026-2, StableWatch, 판정기</p>
+  <h1>판정기 사이트와 흐름도</h1>
+  <p>공개 중인 판정기 주소와, 지금 동작하는 흐름과 PRD v1.0이 목표로 하는 최종 흐름이다.</p>
+  <div class="tools nocopy"><button class="cp" data-act="copyall">전체 복사</button></div>
+</header>
+<nav class="toc nocopy"><a href="#st1">1 사이트 주소</a><a href="#st2">2 흐름도</a></nav>
+
+<main class="doc">
+
+<section id="st1">
+  <div class="bh"><h2>1. 사이트 주소</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <div class="tiles site-links">
+      <a class="tile" href="https://stablecoin-reservedraft.vercel.app" target="_blank" rel="noopener"><div class="v">stablecoin-reservedraft</div><div class="l">stablecoin-reservedraft.vercel.app</div><div class="s">스테이블코인 준비금 공시 초안</div></a>
+      <a class="tile" href="https://stablereserve.vercel.app" target="_blank" rel="noopener"><div class="v">stablereserve</div><div class="l">stablereserve.vercel.app</div><div class="s">준비금</div></a>
+      <a class="tile" href="https://stableview.vercel.app" target="_blank" rel="noopener"><div class="v">stableview</div><div class="l">stableview.vercel.app</div><div class="s">들여다보기</div></a>
+      <a class="tile" href="https://stableledger.vercel.app" target="_blank" rel="noopener"><div class="v">stableledger</div><div class="l">stableledger.vercel.app</div><div class="s">장부</div></a>
+      <a class="tile" href="https://stablecoin-kr.vercel.app" target="_blank" rel="noopener"><div class="v">stablecoin-kr</div><div class="l">stablecoin-kr.vercel.app</div><div class="s">원화 스테이블코인</div></a>
+    </div>
+    <p class="cav">다섯 주소는 같은 사이트를 보여 준다. 정적 파일만으로 동작하고 서버와 DB는 없다. 한국 열은 제안값이며 확정된 규정이 아니다.</p>
+  </div>
+</section>
+
+<section id="st2">
+  <div class="bh"><h2>2. 흐름도</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <p class="key"><span><i class="m o">O</i>동작함</span><span><i class="m t">△</i>일부</span><span><i class="m x">✕</i>없음</span><span><b class="fl-new-tag">추가</b>최종에서 새로 생기는 단계</span></p>
+
+    <div class="fl2">
+      <div class="fl-col">
+        <h3>현재 <small>2026-10-02 배포본</small></h3>
+
+        <p class="fl-lane">자료</p>
+        <div class="fl-box"><b>발행사 검증 보고서 PDF</b><span>Circle USDC 4개월, Paxos PYUSD, USDP, USDG 7월</span></div>
+        <div class="fl-arrow"></div>
+        <div class="fl-box"><i class="m o">O</i><b>파서</b><span>숫자를 읽고 합계를 맞춰 본다. 숫자마다 쪽과 줄을 남긴다(F1, F8 일부)</span></div>
+        <div class="fl-arrow"></div>
+        <div class="fl-box"><i class="m o">O</i><b>보고서 데이터 7건</b><span>reports.json</span></div>
+        <div class="fl-arrow"></div>
+        <div class="fl-box"><i class="m o">O</i><b>규칙 엔진 15개와 나라 설정 6개</b><span>미국, EU 일반, EU 중요, 홍콩, 싱가포르, 한국(F3, F4)</span></div>
+
+        <p class="fl-lane">화면</p>
+        <div class="fl-box"><i class="m o">O</i><b>개요</b><span>보고서 고르기, 은행 예금 비중, 준비금 구성 비교, 나라 카드 6장</span></div>
+        <div class="fl-arrow"></div>
+        <div class="fl-box"><i class="m o">O</i><b>나라 상세</b><span>규칙 탭: 판정, 보고서 값과 기준, 근거 조문, 원문 링크. 보고서 탭: 그 나라 발행사 보고서(F5)</span></div>
+        <div class="fl-arrow"></div>
+        <div class="fl-box"><i class="m o">O</i><b>한국 후보값 고르기</b><span>법안 값, 해외 참조값, 공시안 제안값 중 하나를 고르면 판정이 바뀐다(F7)</span></div>
+
+        <p class="fl-lane">판정 밖 자료</p>
+        <div class="fl-box fl-side"><b>홍콩 주간 명세 6주치</b><span>회계법인 확인이 없는 회사 자체 공시. 표로만 보여 주고 판정에는 넣지 않는다</span></div>
+      </div>
+
+      <div class="fl-col">
+        <h3>최종 <small>PRD v1.0 목표</small></h3>
+
+        <p class="fl-lane">자료</p>
+        <div class="fl-box"><b>발행사 검증 보고서 PDF</b><span>현재 7건에 Tether, Ripple, Gemini 보고서 추가</span></div>
+        <div class="fl-box fl-new"><b class="fl-new-tag">추가</b><i class="m x">✕</i><b>Circle 펀드 월간 공시</b><span>SEC N-MFP3에서 자산 종류, 만기 구간, 레포 상대방 비중(F2)</span></div>
+        <div class="fl-arrow"></div>
+        <div class="fl-box"><i class="m t">△</i><b>파서</b><span>발행사 확장. 잔존만기 구간과 가중평균만기까지 읽는다(F8)</span></div>
+        <div class="fl-arrow"></div>
+        <div class="fl-box"><i class="m o">O</i><b>규칙 엔진 15개와 나라 설정 6개</b><span>법안이 대안으로 합쳐지거나 시행령이 나오면 한국 설정의 버전을 올린다</span></div>
+        <div class="fl-box fl-new"><b class="fl-new-tag">추가</b><i class="m x">✕</i><b>변경 감시</b><span>하루 한 번 법안 상태, 법령 시행일, 새 보고서를 확인하고 바뀌면 다시 판정한다(확장 설계 메모, PRD 기능 목록 밖)</span></div>
+
+        <p class="fl-lane">화면</p>
+        <div class="fl-box"><i class="m o">O</i><b>화면 A 판정</b><span>현재의 개요, 나라 상세, 한국 후보값 고르기</span></div>
+        <div class="fl-arrow"></div>
+        <div class="fl-box fl-new"><b class="fl-new-tag">추가</b><i class="m t">△</i><b>화면 C 근거</b><span>판정 칸에서 근거 간선을 따라 조문 원문까지 내려간다. 지금은 조문 이름과 원문 링크까지(F9)</span></div>
+        <div class="fl-box fl-new"><b class="fl-new-tag">추가</b><i class="m x">✕</i><b>화면 B 고객 환매</b><span>돌려받을 금액을 넣으면 즉시 가능, 지연 가능, 보류를 보여 준다. 액면가, 수수료, 처리 기한, 검증기관, 예금 아님 고지(F6)</span></div>
+      </div>
+    </div>
+    <p class="cav">기능 번호는 PRD v1.0 6절이다. 시간이 모자라면 PRD 리스크 절 순서대로 뒤에서부터 줄인다(근거 화면은 정적 표로, 발행사는 1곳 추가로).</p>
+  </div>
+</section>
+
+</main>
+</div>
+
+<style>
+.site-links a{text-decoration:none;color:inherit;display:block}
+.site-links a:hover{background:var(--tint-2)}
+.site-links .v{font-size:18px;word-break:break-all}
+.site-links{grid-template-columns:repeat(5,1fr)}
+@media (max-width:900px){.site-links{grid-template-columns:1fr 1fr}}
+.fl2{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:4px 0 14px}
+.fl-col{border:1px solid var(--line);border-radius:12px;padding:18px 18px 20px}
+.fl-col h3{margin:0 0 6px;font-size:18px}
+.fl-col h3 small{font-size:12.5px;font-weight:400;color:var(--ink-3);margin-left:6px}
+.fl-lane{font-size:12px;font-weight:700;color:var(--ink-3);margin:16px 0 8px}
+.fl-box{position:relative;border:1px solid var(--line);border-radius:9px;padding:10px 12px 10px 48px;background:#fff;margin-bottom:6px}
+.fl-box .m{position:absolute;left:10px;top:10px}
+.fl-box>b{display:block;font-size:14.5px}
+.fl-box>span{display:block;font-size:13px;color:var(--ink-2);line-height:1.55;margin-top:2px}
+.fl-box:not(:has(.m)){padding-left:12px}
+.fl-new{background:var(--tint-2);border-color:var(--tint)}
+.fl-new-tag{display:inline-block;font-size:11px;font-weight:700;color:var(--accent);border:1px solid var(--accent);border-radius:4px;padding:0 5px;margin-right:2px}
+.fl-box .fl-new-tag{position:absolute;right:10px;top:10px}
+.fl-side{border-style:dashed}
+.fl-arrow{height:16px;margin:0 0 6px 24px;border-left:2px solid var(--line);position:relative}
+.fl-arrow:after{content:"";position:absolute;left:-6px;bottom:-2px;border:5px solid transparent;border-top-color:var(--line)}
+@media (max-width:900px){.fl2{grid-template-columns:1fr}}
+</style>

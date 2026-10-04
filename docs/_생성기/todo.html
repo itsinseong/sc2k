@@ -1,0 +1,177 @@
+<style>
+/* 간트 */
+.td-g{--lw:230px;position:relative;min-width:780px;font-size:13px;margin:4px 0 0}
+.td-r{display:grid;grid-template-columns:var(--lw) minmax(0,1fr);align-items:center;border-top:1px solid var(--line)}
+.td-r.hd{border-top:0}
+.td-r .lb{padding:7px 12px 7px 0;line-height:1.4}
+.td-r .lb b{display:block;font-size:13.5px}
+.td-r .lb small{color:var(--ink-3);font-size:12px}
+.td-r .tk{position:relative;height:44px}
+.td-r.hd .tk{height:34px}
+.td-r .wl{position:absolute;bottom:4px;transform:translateX(-50%);font-size:11.5px;color:var(--ink-3);text-align:center;line-height:1.3;white-space:nowrap}
+.td-wk{position:absolute;top:34px;bottom:0;border-left:1px dashed var(--line)}
+.td-bar{position:absolute;top:16px;height:12px;border-radius:3px;background:var(--mute)}
+.td-bar.f{background:var(--accent)}
+.td-mk{position:absolute;top:13px;width:14px;height:14px;margin-left:-7px;border-radius:50%;border:2px solid var(--ink);background:var(--bg)}
+.td-mk.f{border-color:var(--accent);background:var(--accent)}
+.td-r.on .lb b{color:var(--accent)}
+.td-now{position:absolute;top:22px;bottom:0;border-left:2px solid var(--accent);z-index:2}
+.td-now span{position:absolute;top:-2px;right:4px;font-size:11.5px;font-weight:700;color:var(--accent);white-space:nowrap}
+.td-key{display:flex;gap:18px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-2);margin:12px 0 4px}
+.td-key i{display:inline-block;width:18px;height:10px;border-radius:2px;vertical-align:-1px;margin-right:6px}
+.td-key i.c{width:12px;height:12px;border-radius:50%;border:2px solid var(--ink);background:var(--bg);vertical-align:-2px}
+/* 집중 카드 */
+.td-card ul{margin:0;padding-left:18px;font-size:13.5px;line-height:1.65}
+.td-card .dl{font-size:12.5px;color:var(--ink-3);margin:0 0 10px}
+.td-card .dl b{color:var(--accent)}
+</style>
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">미디어프로젝트 2026-2, StableWatch, 할 일, 2026-10-03</p>
+  <h1>남은 일정과 할 일</h1>
+  <p>지금은 MAS 의견 제출(목표 10/10)에 집중한다. 이후 순서는 8주차 Reference 조사 과제(10/19), 2차 Reference 발표(11/9), 멘토링 완료(11/15), 최종 제출(12주차), 3차 최종시연(11/30)이다. PRD 일정의 구현 마감(10/13) 항목은 끝났다.</p>
+  <div class="tools nocopy"><button class="cp" data-act="copyall">전체 복사</button></div>
+</header>
+<nav class="toc nocopy"><a href="#td1">1 전체 흐름</a><a href="#td2">2 지금 할 일</a><a href="#td3">3 집중 준비</a><a href="#td4">4 결정할 것</a><a href="#td5">5 끝난 일</a></nav>
+
+<main class="doc">
+
+<section id="td1">
+  <div class="bh"><h2>1. 전체 흐름</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <div class="tw"><div class="td-g">
+      <div class="td-wk" style="left:calc(var(--lw) + (100% - var(--lw)) * .0339)"></div>
+      <div class="td-wk" style="left:calc(var(--lw) + (100% - var(--lw)) * .1525)"></div>
+      <div class="td-wk" style="left:calc(var(--lw) + (100% - var(--lw)) * .2712)"></div>
+      <div class="td-wk" style="left:calc(var(--lw) + (100% - var(--lw)) * .3898)"></div>
+      <div class="td-wk" style="left:calc(var(--lw) + (100% - var(--lw)) * .5085)"></div>
+      <div class="td-wk" style="left:calc(var(--lw) + (100% - var(--lw)) * .6271)"></div>
+      <div class="td-wk" style="left:calc(var(--lw) + (100% - var(--lw)) * .7458)"></div>
+      <div class="td-wk" style="left:calc(var(--lw) + (100% - var(--lw)) * .8644)"></div>
+      <div class="td-wk" style="left:calc(var(--lw) + (100% - var(--lw)) * .9831)"></div>
+      <div class="td-now" id="td-now" hidden><span>오늘</span></div>
+
+      <div class="td-r hd"><div class="lb"></div><div class="tk">
+        <span class="wl" style="left:3.39%">10/5<br>6주</span><span class="wl" style="left:15.25%">10/12<br>7주</span><span class="wl" style="left:27.12%">10/19<br>8주</span><span class="wl" style="left:38.98%">10/26<br>9주</span><span class="wl" style="left:50.85%">11/2<br>10주</span><span class="wl" style="left:62.71%">11/9<br>11주</span><span class="wl" style="left:74.58%">11/16<br>12주</span><span class="wl" style="left:86.44%">11/23<br>13주</span><span class="wl" style="left:98.31%">11/30<br>14주</span>
+      </div></div>
+
+      <div class="td-r on"><div class="lb"><b>MAS 의견 제출</b><small>목표 10/10(토), 마감 10/16(금)</small></div><div class="tk"><div class="td-bar f" style="left:0;width:11.86%"></div><div class="td-mk f" style="left:11.86%"></div><div class="td-mk" style="left:22.03%"></div></div></div>
+      <div class="td-r"><div class="lb"><b>D-05 결정, 공시안 고치기</b><small>Reference 과제 전</small></div><div class="tk"><div class="td-bar" style="left:0;width:27.12%"></div></div></div>
+      <div class="td-r"><div class="lb"><b>8주차 Reference 조사 과제</b><small>10/19(월)</small></div><div class="tk"><div class="td-bar" style="left:15.25%;width:11.87%"></div><div class="td-mk" style="left:27.12%"></div></div></div>
+      <div class="td-r on"><div class="lb"><b>멘토링 1~2회</b><small>11/15(일)까지, 진행 사진</small></div><div class="tk"><div class="td-bar f" style="left:3.39%;width:69.49%"></div><div class="td-mk f" style="left:72.88%"></div></div></div>
+      <div class="td-r on"><div class="lb"><b>2차 Reference 발표</b><small>영상 녹화, 11/9(월) 발표</small></div><div class="tk"><div class="td-bar f" style="left:38.98%;width:23.73%"></div><div class="td-mk f" style="left:62.71%"></div></div></div>
+      <div class="td-r"><div class="lb"><b>최종 구현</b><small>화면 B 환매, 화면 C 근거, 발행사 추가</small></div><div class="tk"><div class="td-bar" style="left:28.81%;width:45.77%"></div></div></div>
+      <div class="td-r on"><div class="lb"><b>최종 제출</b><small>발표, 시연 영상, 소스 공개. 12주차</small></div><div class="tk"><div class="td-bar f" style="left:62.71%;width:11.87%"></div><div class="td-mk f" style="left:74.58%"></div></div></div>
+      <div class="td-r"><div class="lb"><b>SoftCon 결과보고서</b><small>11/23(월)</small></div><div class="tk"><div class="td-bar" style="left:74.58%;width:11.86%"></div><div class="td-mk" style="left:86.44%"></div></div></div>
+      <div class="td-r"><div class="lb"><b>3차 최종시연 발표</b><small>11/30(월), 17~32조</small></div><div class="tk"><div class="td-bar" style="left:86.44%;width:11.87%"></div><div class="td-mk" style="left:98.31%"></div></div></div>
+    </div></div>
+    <div class="td-key"><span><i style="background:var(--accent)"></i>집중 준비</span><span><i style="background:var(--mute)"></i>나머지</span><span><i class="c"></i>마감</span><span><i style="width:2px;background:var(--accent)"></i>오늘</span></div>
+    <p class="cav">막대는 작업 기간, 동그라미는 마감이다. 최종 제출일은 과목 자료에 12주차와 11/23 두 가지로 적혀 있어 <span class="tbd">날짜 확인</span>이 필요하다.</p>
+  </div>
+</section>
+
+<section id="td2">
+  <div class="bh"><h2>2. 지금 할 일: MAS 의견 제출</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <p>제출 목표 10/10(토)까지 <b class="dd" data-d="2026-10-10"></b>. 숫자는 PDF에서 직접 읽고, 영어는 본인 문장으로 고친다.</p>
+    <div class="tw"><table>
+      <tr><th>권장 시점</th><th>할 일</th><th>내용</th><th>상태</th></tr>
+      <tr><td class="rw">10/3(토)~10/4(일)</td><td class="rw">수치 확인</td><td>Q30 서명 소요일 10건, Q4 현금 비중, RLUSD 회계법인(Deloitte &amp; Touche LLP)을 원문 PDF로 확인했다. Circle 은행 예금 비중은 보고서의 은행 예금 줄 기준 13.43~14.75%다</td><td>완료</td></tr>
+      <tr><td class="rw">10/5(월)</td><td class="rw">교수 검토 요청</td><td>김태봉 교수에게 답변을 보낸다. 작은 표본으로 기준값과 기한을 제안하는 문장이 과한지 묻는다</td><td><span class="tbd">미완</span></td></tr>
+      <tr><td class="rw">10/5(월)~10/8(목)</td><td class="rw">영어 손보기</td><td>문단마다 소리 내어 읽고 본인 문장으로 고친다</td><td><span class="tbd">미완</span></td></tr>
+      <tr><td class="rw">10/8(목)까지</td><td class="rw">공개 방식</td><td>이름과 제출물 모두 공개, 또는 신원과 제출물 모두 비공개. 이름만 숨기는 선택지는 없다. 발표에서 제출 기록으로 쓰려면 공개가 낫다</td><td><span class="tbd">미정</span></td></tr>
+      <tr><td class="rw">10/9(금)~10/10(토)</td><td class="rw">입력과 제출</td><td>FormSG에서 Q4, Q23, Q29, Q30 칸에 나눠 넣고 31번 이름, 33번 학교 메일을 입력한다. 교수 회신을 반영한다</td><td><span class="tbd">미완</span></td></tr>
+      <tr><td class="rw">10/10(토)</td><td class="rw">제출 기록</td><td>제출 확인 화면을 캡처한다. 최종 산출물의 의견 제출 기록으로 쓴다</td><td><span class="tbd">미완</span></td></tr>
+    </table></div>
+    <p class="cav">교수 회신이 늦어도 마감(10/16 23:59 싱가포르, 한국 10/17 00:59)까지 6일이 남는다. 영문 답변과 양식 칸 구성은 <a href="#m9">MAS 자문 탭</a>에 있다.</p>
+  </div>
+</section>
+
+<section id="td3">
+  <div class="bh"><h2>3. 집중 준비</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <p>아래 네 가지는 직접 해야 하는 일이다. 코드 작업과 문서 정리는 요청하면 처리할 수 있다.</p>
+    <div class="ms-grid">
+
+      <div class="ms-card td-card">
+        <span class="q">1</span><h4>MAS 의견 제출</h4>
+        <p class="dl">목표 <b>10/10(토)</b>, 마감 10/16(금)</p>
+        <ul>
+          <li>최종 산출물의 외부 의견 제출 기록이 된다</li>
+          <li>PDF 숫자 확인 끝(10/4). 남은 것은 교수 검토, 공개 방식, 영어 손보기</li>
+          <li>영어를 본인 문장으로 고치기. 사람이 쓰지 않은 것으로 보이는 제출물은 공개되지 않을 수 있다</li>
+        </ul>
+      </div>
+
+      <div class="ms-card td-card">
+        <span class="q">2</span><h4>멘토링</h4>
+        <p class="dl"><b>11/15(일)</b>까지 1~2회, 회당 최대 2시간</p>
+        <ul>
+          <li>멘토 매칭 결과 확인과 일정 잡기 <span class="tbd">매칭 확인</span></li>
+          <li>학생과 멘토가 함께 나온 진행 사진. 결과보고서(11/23)에 첨부한다</li>
+          <li>물어볼 것: 은행 내부 보고 주기(공개 자료로 확인 안 됨), 현금성 비율 15%, 공시안 29항목을 실무에서 채울 수 있는지</li>
+        </ul>
+      </div>
+
+      <div class="ms-card td-card">
+        <span class="q">3</span><h4>2차 Reference 발표</h4>
+        <p class="dl"><b>11/9(월)</b>, 17~32조. 발표 시간 4분 예상(공지 전)</p>
+        <ul>
+          <li>발표 자료 5장은 완성. 적용 전략 장에 넣을 영상을 직접 녹화한다</li>
+          <li>마지막 임시 장(영상 흐름)을 지운다</li>
+          <li>녹화에서 뺄 것: 개요 위 숫자 3개, 준비금 차트, 한국 후보값의 공시안 제안 항목, R05. 3차 최종시연에서 보여 준다</li>
+        </ul>
+      </div>
+
+      <div class="ms-card td-card">
+        <span class="q">4</span><h4>최종 제출과 3차 최종시연</h4>
+        <p class="dl">최종 제출 <b>12주차</b>, 발표 11/30(월)</p>
+        <ul>
+          <li>발표 영상, 시연 영상 각 5~10분. 카페와 Blackboard 양쪽에 제출</li>
+          <li>시연 영상에 관할권 전환에 따른 판정 변화와 환매 화면이 들어간다. 화면 B(환매)는 아직 없다</li>
+          <li>소스 코드는 공개해야 한다(비공개는 감점될 수 있음). 저장소는 현재 비공개</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="td4">
+  <div class="bh"><h2>4. 결정할 것</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <div class="tw"><table>
+      <tr><th>결정</th><th>선택지</th><th>영향</th><th>기한</th></tr>
+      <tr><td class="rw">D-05 현금성 자산 범위</td><td>요구불예금만, 또는 익일물 레포 포함</td><td>요구불예금만 세면 15% 기준에 PYUSD(3.52%), USDG(3.04%)와 Circle 4개월(은행 예금 줄 기준 13.43~14.75%)이 모두 못 미친다(각 n=1, Circle n=4). 공시안 B7 값과 D-05 근거 문단을 고친다. MAS Q4는 이미 범위를 먼저 정하자는 논지로 썼다</td><td class="rw">10/19 전</td></tr>
+      <tr><td class="rw">MAS 공개 방식</td><td>이름과 제출물 공개, 또는 신원과 제출물 비공개</td><td>발표에서 제출 기록으로 보여 줄 수 있는지가 갈린다</td><td class="rw">10/8</td></tr>
+      <tr><td class="rw">최종 구현 범위</td><td>PRD 전체, 또는 줄인 범위</td><td>시간이 모자라면 PRD 리스크 절 순서대로 줄인다. 근거 화면은 정적 표로, 발행사는 1곳 추가로</td><td class="rw">10/19 이후 구현 전</td></tr>
+      <tr><td class="rw">소스 공개 방식</td><td>저장소 공개, 또는 제출용 공개본</td><td>공개 전 비밀값과 토큰 파일이 빠졌는지 점검한다</td><td class="rw">최종 제출 전</td></tr>
+      <tr><td class="rw">최종 제출일</td><td>12주차(11/16 주), 또는 11/23</td><td>과목 자료 두 곳의 표기가 다르다. 강의 공지로 확인한다</td><td class="rw">11월 전</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section id="td5">
+  <div class="bh"><h2>5. 끝난 일</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <div class="tw"><table>
+      <tr><th>날짜</th><th>항목</th><th>결과</th></tr>
+      <tr><td class="rw">9/26</td><td class="rw">MAS 답변 v2</td><td>Q4, Q23, Q29, Q30 영문 답변</td></tr>
+      <tr><td class="rw">10/4</td><td class="rw">MAS 수치 확인, 답변 v3</td><td>발행사 5곳 보고서 10건 원문 대조, 교수 검토 요약, 양식 입력표</td></tr>
+      <tr><td class="rw">9/27</td><td class="rw">Paxos 파서, 채움률 시험(M5)</td><td>공시안 적용 182칸 중 53% 채움</td></tr>
+      <tr><td class="rw">9/27</td><td class="rw">판정기 규칙 엔진</td><td>규칙 15개, 나라 설정 6개, 시험 28개</td></tr>
+      <tr><td class="rw">9/28</td><td class="rw">1차 Idea 발표</td><td>발표 자료와 시연 영상 12초</td></tr>
+      <tr><td class="rw">9/30</td><td class="rw">홍콩 주간 준비금 명세</td><td>Anchorpoint HKDAP 6주치(8/19~9/23)</td></tr>
+      <tr><td class="rw">10/1</td><td class="rw">2차 Reference 발표 자료</td><td>표지, 비교, SWOT, Tessera 원문 분석, 적용 전략 5장</td></tr>
+      <tr><td class="rw">10/2</td><td class="rw">판정기 화면 교체</td><td>개요, 나라 상세, 한국 후보값 고르기. 공개 주소 5개</td></tr>
+    </table></div>
+  </div>
+</section>
+
+</main>
+</div>
+<script>
+document.querySelectorAll('#todo [data-d]').forEach(function(e){var n=Math.ceil((new Date(e.dataset.d+'T23:59:00+09:00')-new Date())/864e5);e.textContent=n>0?n+'일 남음':(n===0?'오늘':'지남')});
+(function(){var a=new Date('2026-10-03T00:00:00+09:00'),t=(new Date()-a)/864e5/59,e=document.getElementById('td-now');if(e&&t>=0&&t<=1){e.style.left='calc(var(--lw) + (100% - var(--lw)) * '+t+')';e.hidden=false}})();
+</script>

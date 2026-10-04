@@ -1,0 +1,271 @@
+- title: "디지털자산 정책 인사이트 - Gemini Notebook" [url=https://notebook.google.com/notebook/9eabc005-b4b7-460b-bb6f-0e32a1fcd276?authuser=1]
+- button "Google 앱" [ref=e1]
+- button "Google 계정: 강인성 ((ê³ì  ê°ë¦¼)), Google 멤버십" [ref=e2]
+- link "Gemini Notebook 홈페이지" [ref=e3]:
+  - image "Gemini Notebook 로고"
+- textbox "디지털자산 정책 인사이트" [ref=e4]
+- text: "공개"
+- button "노트북 만들기" [ref=e5]
+- button "노트북 공유" [ref=e6]: "공유"
+- button "노트북 구성" [ref=e7]
+- button "설정" [ref=e8]
+- text: "PLUS"
+- region:
+  - navigation:
+    - heading [level=2]: "출처"
+  - button "소스 패널 접기" [ref=e9]
+  - generic [ref=e10] [scrollable]:
+    - button "출처 추가" [ref=e11]: "소스 추가"
+    - form:
+      - textbox "입력된 질문을 기반으로 소스 검색" [ref=e12] [placeholder="웹에서 새 소스를 검색하세요"]
+      - button "웹" [ref=e13]
+      - button "Fast Research" [ref=e14]
+      - button "제출" [ref=e15] [disabled]
+    - button "주제별로 소스 자동 라벨 지정" [ref=e16]
+    - button "소스 정렬" [ref=e17]
+    - text: "모두 선택"
+    - label [ref=e18]:
+      - text: "check_box"
+      - checkbox "모든 출처 선택" [ref=e19] [hidden] [checked]
+    - generic [ref=e20]:
+      - button "“법 통과되면 바로 쓴다”…금융권 '원화 코인' 선점 경쟁 - 매일경제" [ref=e21]
+      - button "더보기" [ref=e22]
+      - label:
+        - text: "check_box"
+        - checkbox "“법 통과되면 바로 쓴다”…금융권 '원화 코인' 선점 경쟁 - 매일경제 선택" [ref=e23] [hidden] [checked]
+    - generic [ref=e24]:
+      - button "[경제현안분석 제109호] 스테이블코인의 금융시장에 대한 영향과 시사점" [ref=e25]
+      - button "더보기" [ref=e26]
+      - label:
+        - text: "check_box"
+        - checkbox "[경제현안분석 제109호] 스테이블코인의 금융시장에 대한 영향과 시사점 선택" [ref=e27] [hidden] [checked]
+    - generic [ref=e28]:
+      - button "[뉴스모음] 디지털자산기본법, 내달 정부안 제출…대주주 지분 상한 20% 적용 外 - 딜사이트" [ref=e29]
+      - button "더보기" [ref=e30]
+      - label:
+        - text: "check_box"
+        - checkbox "[뉴스모음] 디지털자산기본법, 내달 정부안 제출…대주주 지분 상한 20% 적용 外 - 딜사이트 선택" [ref=e31] [hidden] [checked]
+    - generic [ref=e32]:
+      - button "[카드뉴스] 원화 스테이블코인, 결제비용 최대 5.15조원 절감 추정 - 산업종합저널 전자" [ref=e33]
+      - button "더보기" [ref=e34]
+      - label:
+        - text: "check_box"
+        - checkbox "[카드뉴스] 원화 스테이블코인, 결제비용 최대 5.15조원 절감 추정 - 산업종합저널 전자 선택" [ref=e35] [hidden] [checked]
+    - generic [ref=e36]:
+      - button "「디지털자산기본법」 국회 발의 – 디지털자산의 본격적인 제도화 - 법무법인 세종" [ref=e37]
+      - button "더보기" [ref=e38]
+      - label:
+        - text: "check_box"
+        - checkbox "「디지털자산기본법」 국회 발의 – 디지털자산의 본격적인 제도화 - 법무법인 세종 선택" [ref=e39] [hidden] [checked]
+    - generic [ref=e40]:
+      - button "2월: 디지털자산 정책 인사이트" [ref=e41]
+      - button "더보기" [ref=e42]
+      - label:
+        - text: "check_box"
+        - checkbox "2월: 디지털자산 정책 인사이트 선택" [ref=e43] [hidden] [checked]
+    - generic [ref=e44]:
+      - button "가상자산 현물 ETF · 파생상품 제도화 관련 법안과 쟁점 | BKL Legal Update" [ref=e45]
+      - button "더보기" [ref=e46]
+      - label:
+        - text: "check_box"
+        - checkbox "가상자산 현물 ETF · 파생상품 제도화 관련 법안과 쟁점 | BKL Legal Update 선택" [ref=e47] [hidden] [checked]
+    - generic [ref=e48]:
+      - button "가치고정형 디지털자산을 활용한 지급 혁신에 관한 법률안(김은혜의원 등 10인) - 열려라국회" [ref=e49]
+      - button "더보기" [ref=e50]
+      - label:
+        - text: "check_box"
+        - checkbox "가치고정형 디지털자산을 활용한 지급 혁신에 관한 법률안(김은혜의원 등 10인) - 열려라국회 선택" [ref=e51] [hidden] [checked]
+    - generic [ref=e52]:
+      - button "국회예산정책처, 「스테이블코인의 금융시장에 대한 영향과 시사점」 발간" [ref=e53]
+      - button "더보기" [ref=e54]
+      - label:
+        - text: "check_box"
+        - checkbox "국회예산정책처, 「스테이블코인의 금융시장에 대한 영향과 시사점」 발간 선택" [ref=e55] [hidden] [checked]
+    - generic [ref=e56]:
+      - button "국회예산정책처, 「스테이블코인의 금융시장에 대한 영향과 시사점」 발간 - NBC-1TV" [ref=e57]
+      - button "더보기" [ref=e58]
+      - label:
+        - text: "check_box"
+        - checkbox "국회예산정책처, 「스테이블코인의 금융시장에 대한 영향과 시사점」 발간 - NBC-1TV 선택" [ref=e59] [hidden] [checked]
+    - generic [ref=e60]:
+      - button "디지털 시대의 화폐, 혁신과 신뢰의 조화 : 원화 스테이블코인의 주요 이슈와 대응방안 | 국내연구자료 | KDI 경제교육·정보센터" [ref=e61]
+      - button "더보기" [ref=e62]
+      - label:
+        - text: "check_box"
+        - checkbox "디지털 시대의 화폐, 혁신과 신뢰의 조화 : 원화 스테이블코인의 주요 이슈와 대응방안 | 국내연구자료 | KDI 경제교육·정보센터 선택" [ref=e63] [hidden] [checked]
+    - generic [ref=e64]:
+      - button "디지털자산시장의 혁신과 성장에 관한 법률안 - 법제처 국민참여입법센터" [ref=e65]
+      - button "더보기" [ref=e66]
+      - label:
+        - text: "check_box"
+        - checkbox "디지털자산시장의 혁신과 성장에 관한 법률안 - 법제처 국민참여입법센터 선택" [ref=e67] [hidden] [checked]
+    - generic [ref=e68]:
+      - button "디지털자산의 시장 및 산업에 관한 법률안(박상혁의원 등 10인) - 열려라국회" [ref=e69]
+      - button "더보기" [ref=e70]
+      - label:
+        - text: "check_box"
+        - checkbox "디지털자산의 시장 및 산업에 관한 법률안(박상혁의원 등 10인) - 열려라국회 선택" [ref=e71] [hidden] [checked]
+    - generic [ref=e72]:
+      - button "美 스테이블코인 공세에 국회도 속도…가상자산 공청회 열리나 - 뉴시스" [ref=e73]
+      - button "더보기" [ref=e74]
+      - label:
+        - text: "check_box"
+        - checkbox "美 스테이블코인 공세에 국회도 속도…가상자산 공청회 열리나 - 뉴시스 선택" [ref=e75] [hidden] [checked]
+    - generic [ref=e76]:
+      - button "민주당 “디지털자산기본법, 9월말 공청회 진행” - 매일경제" [ref=e77]
+      - button "더보기" [ref=e78]
+      - label:
+        - text: "check_box"
+        - checkbox "민주당 “디지털자산기본법, 9월말 공청회 진행” - 매일경제 선택" [ref=e79] [hidden] [checked]
+    - generic [ref=e80]:
+      - button "보도설명자료 - 금융위원회" [ref=e81]
+      - button "더보기" [ref=e82]
+      - label:
+        - text: "check_box"
+        - checkbox "보도설명자료 - 금융위원회 선택" [ref=e83] [hidden] [checked]
+    - generic [ref=e84]:
+      - button "스테이블코인 발행인의 주주구성 등 2단계법 주요내용은 확정된 바 없습니다. - 상세화면 - 보도설명자료 - 위원회 소식 - 알림마당 - 금융위원회" [ref=e85]
+      - button "더보기" [ref=e86]
+      - label:
+        - text: "check_box"
+        - checkbox "스테이블코인 발행인의 주주구성 등 2단계법 주요내용은 확정된 바 없습니다. - 상세화면 - 보도설명자료 - 위원회 소식 - 알림마당 - 금융위원회 선택" [ref=e87] [hidden] [checked]
+    - generic [ref=e88]:
+      - button "스테이블코인 제도화, 무엇에 집중할 것인가 - 국회입법조사처" [ref=e89]
+      - button "더보기" [ref=e90]
+      - label:
+        - text: "check_box"
+        - checkbox "스테이블코인 제도화, 무엇에 집중할 것인가 - 국회입법조사처 선택" [ref=e91] [hidden] [checked]
+    - generic [ref=e92]:
+      - button "스테이블코인법 9월 속도전, 디지털 금융 주도권 확보 쟁점 - 한국보험신문" [ref=e93]
+      - button "더보기" [ref=e94]
+      - label:
+        - text: "check_box"
+        - checkbox "스테이블코인법 9월 속도전, 디지털 금융 주도권 확보 쟁점 - 한국보험신문 선택" [ref=e95] [hidden] [checked]
+    - generic [ref=e96]:
+      - button "스테이블코인의 금융시장에 대한 영향과 시사점 | 국내연구자료 | KDI 경제교육·정보센터" [ref=e97]
+      - button "더보기" [ref=e98]
+      - label:
+        - text: "check_box"
+        - checkbox "스테이블코인의 금융시장에 대한 영향과 시사점 | 국내연구자료 | KDI 경제교육·정보센터 선택" [ref=e99] [hidden] [checked]
+    - generic [ref=e100]:
+      - button "원화 스테이블코인 과연 한국에도 도입될까? 법제화 현황은? - KB Think" [ref=e101]
+      - button "더보기" [ref=e102]
+      - label:
+        - text: "check_box"
+        - checkbox "원화 스테이블코인 과연 한국에도 도입될까? 법제화 현황은? - KB Think 선택" [ref=e103] [hidden] [checked]
+    - generic [ref=e104]:
+      - button "원화 스테이블코인 쓰면 가맹점 수수료 5조 절감 | Decenter - 디센터" [ref=e105]
+      - button "더보기" [ref=e106]
+      - label:
+        - text: "check_box"
+        - checkbox "원화 스테이블코인 쓰면 가맹점 수수료 5조 절감 | Decenter - 디센터 선택" [ref=e107] [hidden] [checked]
+    - generic [ref=e108]:
+      - button "정점식 \"가상자산 과세, 혼란은 청년투자자 몫…준비 충분해야\" - 연합뉴스" [ref=e109]
+      - button "더보기" [ref=e110]
+      - label:
+        - text: "check_box"
+        - checkbox "정점식 \"가상자산 과세, 혼란은 청년투자자 몫…준비 충분해야\" - 연합뉴스 선택" [ref=e111] [hidden] [checked]
+    - generic [ref=e112]:
+      - button "제429회 국회(정기회) 제10차 정무위원회 [10:30]" [ref=e113]
+      - button "더보기" [ref=e114]
+      - label:
+        - text: "check_box"
+        - checkbox "제429회 국회(정기회) 제10차 정무위원회 [10:30] 선택" [ref=e115] [hidden] [checked]
+    - generic [ref=e116]:
+      - button "한국 디지털자산기본법 12개 사업 영역 — AI 에이전트 경제와 데이터 자산화 분석" [ref=e117]
+      - button "더보기" [ref=e118]
+      - label:
+        - text: "check_box"
+        - checkbox "한국 디지털자산기본법 12개 사업 영역 — AI 에이전트 경제와 데이터 자산화 분석 선택" [ref=e119] [hidden] [checked]
+    - generic [ref=e120]:
+      - button "한은 \"원화 스테이블코인, 은행이 발행·운영 맡아야\" - 지디넷코리아" [ref=e121]
+      - button "더보기" [ref=e122]
+      - label:
+        - text: "check_box"
+        - checkbox "한은 \"원화 스테이블코인, 은행이 발행·운영 맡아야\" - 지디넷코리아 선택" [ref=e123] [hidden] [checked]
+    - generic [ref=e124]:
+      - button "Compliance Digest—August 2025 - Sumsub" [ref=e125]
+      - button "더보기" [ref=e126]
+      - label:
+        - text: "check_box"
+        - checkbox "Compliance Digest—August 2025 - Sumsub 선택" [ref=e127] [hidden] [checked]
+    - generic [ref=e128]:
+      - button "Deep Research 보고서: 한국 원화 스테이블코인 법제화 현황 및 정책 쟁점 종합보고서 (2026년 10월 현재)" [ref=e129]
+      - button "더보기" [ref=e130]
+      - label:
+        - text: "check_box"
+        - checkbox "Deep Research 보고서: 한국 원화 스테이블코인 법제화 현황 및 정책 쟁점 종합보고서 (2026년 10월 현재) 선택" [ref=e131] [hidden] [checked]
+    - generic [ref=e132]:
+      - button "https://scholar.google.com/citations?user=cgX-pW8AAAAJ&hl=en" [ref=e133]
+      - button "더보기" [ref=e134]
+      - button "오류 정보" [ref=e135]: "info"
+    - generic [ref=e136]:
+      - button "https://www.kcmi.re.kr/common/downloadw?fid=28186&fgu=002001016&fty=004003" [ref=e137]
+      - button "더보기" [ref=e138]
+      - button "오류 정보" [ref=e139]: "info"
+- region:
+  - generic [ref=e140] [scrollable]:
+    - button [ref=e141]
+    - button "요약 복사" [ref=e142]
+    - button "만족스러운 요약" [ref=e143]
+    - button "불만족스러운 요약" [ref=e144]
+    - text: "오늘 • 오후 3:13"
+    - button [ref=e145]
+    - table:
+      - text: "주제 항목 날짜 또는 값 내용 근거 소스 원문 인용 한 줄 소스에 없음 여부 1. 미국 GENIUS법 시행 규정 기관별 제안안 공표일 소스에 없음 소스에 없음 소스에 없음 소스에 없음 소스에 없음 1. 미국 GENIUS법 시행 규정 최종 규정 공표일 소스에 없음 소스에 없음 소스에 없음 소스에 없음 소스에 없음 1. 미국 GENIUS법 시행 규정 최종 규정이 정한 시행일 소스에 없음 소스에 없음 소스에 없음 소스에 없음 소스에 없음 1. 미국 GENIUS법 시행 규정§20에 따른 법 시행일 2026년 1월 18일 (법 시행일 기준)"
+      - button "1: 美 스테이블코인 공세에 국회도 속도…가상자산 공청회 열리나 - 뉴시스" [ref=e146]: "1"
+      - text: "GENIUS Act의 전체 법 시행일은 2026년 1월 18일로 명시되어 있으나, §20 조항 규정에 따른 시행일 구분은 소스에 명시되어 있지 않음"
+      - button "1: 美 스테이블코인 공세에 국회도 속도…가상자산 공청회 열리나 - 뉴시스" [ref=e147]: "1"
+      - text: ".美 스테이블코인 공세에 국회도 속도…가상자산 공청회 열리나 - 뉴시스\"미국은 스테이블코인 규제법인 지니어스법이 내년 1월18일 시행을 앞두고 있고\"부분 소스에 없음 (§20 조항 언급은 소스에 없음)2. CLARITY Act 하원 통과일과 표결 수 소스에 없음 소스에 없음 소스에 없음 소스에 없음 소스에 없음 2. CLARITY Act 상원 심사 단계와 날짜 상원 논의 및 토론 종결 절차 진행 중 (2026년 8월 기준, 구체적 날짜 수치 없음)"
+      - button "1: 美 스테이블코인 공세에 국회도 속도…가상자산 공청회 열리나 - 뉴시스" [ref=e148]: "1"
+      - text: "상원에서 클래리티법안에 대한 논의 및 토론 종결 절차가 진행 중이라는 사실만 확인되며, 구체적인 심사 단계별 날짜나 표결 수치는 소스에 명시되어 있지 않음"
+      - button "1: 美 스테이블코인 공세에 국회도 속도…가상자산 공청회 열리나 - 뉴시스" [ref=e149]: "1"
+      - text: ".美 스테이블코인 공세에 국회도 속도…가상자산 공청회 열리나 - 뉴시스\"클래리티법도 상원 논의가 진행되는 등 제도 정비에 속도를 내고 있다\"부분 소스에 없음 (구체적 날짜 및 단계 수치는 소스에 없음)2. CLARITY Act 스테이블코인 준비금, 공시, 이자와 보상 조항 (조항 번호, GENIUS법 변경/추가 여부)소스에 없음 소스에 없음 소스에 없음 소스에 없음 소스에 없음 3. 한국 계류 법안 수와 새로 발의된 법안 10건 (정무위 계류 제정안 8건 등)"
+      - button "2: 스테이블코인법 9월 속도전, 디지털 금융 주도권 확보 쟁점 - 한국보험신문" [ref=e150]: "2"
+      - button "3: 스테이블코인 제도화, 무엇에 집중할 것인가 - 국회입법조사처" [ref=e151]: "3"
+      - text: "국회에는 디지털자산 및 스테이블코인 관련 법안 10건(정무위 계류 8건 등)이 계류 중이며, 민병덕(2210736), 안도걸(2211784), 김은혜(2211777), 김현정(2212298), 이강일(2213166), 최보윤·김재섭(2213266), 박상혁(2213449, 2214492), 박성훈(2213738) 의원안 등이 발의됨"
+      - button "2: 스테이블코인법 9월 속도전, 디지털 금융 주도권 확보 쟁점 - 한국보험신문" [ref=e152]: "2"
+      - button [ref=e153]
+      - text: ".스테이블코인법 9월 속도전, 디지털 금융 주도권 확보 쟁점 - 한국보험신문 / 한국 원화 스테이블코인 법제화 현황 및 정책 쟁점 종합보고서\"현재 국회에는 디지털자산과 스테이블코인 관련 법안 10건이 계류돼 있다.\"해당 없음 (소스에 있음)3. 한국 정부안 제출 여부와 날짜 독립 정부안 직접 제출 없음 (2026년 9월 중 유동수 정무위원장/여당 의원입법 형태 제출 추진)"
+      - button "6: 민주당 “디지털자산기본법, 9월말 공청회 진행” - 매일경제" [ref=e154]: "6"
+      - button [ref=e155]
+      - text: "2026년 10월 기준 독립된 정부입법안이 국회에 직접 제출된 바는 없으며, 금융위원회 세부안을 바탕으로 유동수 정무위원장 명의 또는 여당 당론 통합 대안 형태로 발의·제출하는 방안이 추진 중임"
+      - button "6: 민주당 “디지털자산기본법, 9월말 공청회 진행” - 매일경제" [ref=e156]: "6"
+      - button [ref=e157]
+      - text: ".[뉴스모음] 디지털자산기본법, 내달 정부안 제출…대주주 지분 상한 20% 적용 外 - 딜사이트 / 민주당 “디지털자산기본법, 9월말 공청회 진행” - 매일경제\"금융당국이 디지털자산기본법 정부안을 이르면 다음 주 국회 정무위원장 입법 형태로 발의할 전망이다.\"해당 없음 (소스에 있음)3. 한국 9월 공청회 날짜와 쟁점 2026년 9월 말"
+      - button "9: 민주당 “디지털자산기본법, 9월말 공청회 진행” - 매일경제" [ref=e158]: "9"
+      - text: "민병덕 의원 등 정무위 측은 9월 말 공청회를 개최하기로 함"
+      - button "9: 민주당 “디지털자산기본법, 9월말 공청회 진행” - 매일경제" [ref=e159]: "9"
+      - text: ". 주요 쟁점은 가상자산 거래소 대주주 지분 제한(20% 상한 등) 완화 여부, 스테이블코인 발행 주체(은행 중심/컨소시엄 vs 비은행 핀테크 허용), 준비자산 요건 및 이용자 보호·금융안정 장치 마련 등임"
+      - button "2: 스테이블코인법 9월 속도전, 디지털 금융 주도권 확보 쟁점 - 한국보험신문" [ref=e160]: "2"
+      - button [ref=e161]
+      - text: ".민주당 “디지털자산기본법, 9월말 공청회 진행” - 매일경제 / 스테이블코인법 9월 속도전, 디지털 금융 주도권 확보 쟁점 - 한국보험신문\"저쪽(정부)에서 오든 안 오든 9월 말 기본법 공청회를 열 것\"해당 없음 (소스에 있음)4. 레퍼런스 Tessera, FeedOracle, Veris와 새 서비스의 역할 (보고서 파싱, 조문 판정, 한국 대상, 기준값 제안)소스에 없음 소스에 없음 소스에 없음 소스에 없음 소스에 없음"
+    - text: "💡 추가로  국내 2단계 디지털자산기본법의 주요 계류 법안별 세부 내용 비교 나  국회예산정책처의 원화 스테이블코인 결제 수수료 절감 시나리오 분석  내용도 함께 정리해 드릴까요?"
+    - button "메시지를 메모에 저장" [ref=e162]: "메모에 저장"
+    - button "클립보드에 모델 대답 복사" [ref=e163]
+    - button "대답을 좋음으로 평가" [ref=e164]
+    - button "대답을 좋지 않음으로 평가" [ref=e165]
+  - form:
+    - textbox "쿼리 상자" [ref=e166] [focused] [placeholder="질문하거나 창작하세요"]
+    - text: "소스 28개"
+    - button "제출" [ref=e167] [disabled]
+  - text: "Gemini Notebook은 실수를 할 수 있으니 다시 한번 확인하세요."
+- region:
+  - navigation:
+    - heading [level=2]: "스튜디오"
+  - button "스튜디오 패널 접기" [ref=e168]
+  - text: "새로운 기능: 이제 대화형 보고서를 만들 수 있습니다."
+  - button "사용해 보기" [ref=e169]
+  - button "배너 닫기" [ref=e170]
+  - button "AI 오디오 오버뷰" [ref=e171]
+  - button "슬라이드 자료" [ref=e172]
+  - button "동영상 개요" [ref=e173]
+  - button "마인드맵" [ref=e174]
+  - button "보고서" [ref=e175]
+  - text: "New!"
+  - button "플래시카드" [ref=e176]
+  - button "퀴즈" [ref=e177]
+  - button "인포그래픽" [ref=e178]
+  - button "데이터 표" [ref=e179]
+  - text: "스튜디오 출력이 여기에 저장됩니다 소스를 추가한 후 클릭하여 AI 오디오 오버뷰, 학습 가이드, 마인드맵 등을 추가해 보세요."
+  - button "메모 추가" [ref=e180]

@@ -1,0 +1,1160 @@
+{
+ "115개 출처": {
+  "papers": [
+   {
+    "title": "Leveraging Large Language Models to Bridge On-chain and Off-chain Transparency in Stablecoins",
+    "site": "arxiv.org",
+    "year": "2025",
+    "citations": null,
+    "authors": "Xiang et al.",
+    "url": "https://arxiv.org/abs/2512.02418"
+   },
+   {
+    "title": "Why stablecoins fail: design fragilities, regulation, and the role of institutions",
+    "site": "tandfonline.com",
+    "year": "2026",
+    "citations": "3",
+    "authors": "Hao et al.",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/14765284.2026.2633661"
+   },
+   {
+    "title": "GSPC — reserve attestation facts (ReserveFacts)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042174"
+   },
+   {
+    "title": "FLASH USDT Compliance as Code: Deterministic Regulatory Mapping for Stablecoin Execution Systems",
+    "site": "figshare.com",
+    "year": "2026",
+    "citations": null,
+    "authors": "Nohr",
+    "url": "https://figshare.com/articles/preprint/FLASH_USDT_Compliance_as_Code_Deterministic_Regulatory_Mapping_for_Stablecoin_Execution_Systems/31042195"
+   },
+   {
+    "title": "Execution Governance for Stablecoins: Pre-Effect Authorization, Reserve Integrity, Continuous Validation, and Verifiable Accountability for Issuance, Transfer, Redemption, Freeze, Bridge, and Settlement",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "KU",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.22744154"
+   },
+   {
+    "title": "FinTagging: Benchmarking LLMs for Extracting and Structuring Financial Information",
+    "site": "arxiv.org",
+    "year": "2025",
+    "citations": "3",
+    "authors": "Wang et al.",
+    "url": "https://arxiv.org/abs/2505.20650"
+   },
+   {
+    "title": "RKEFino1: A Regulation Knowledge-Enhanced Large Language Model",
+    "site": "ieeexplore.ieee.org",
+    "year": "2025",
+    "citations": null,
+    "authors": "Wang et al.",
+    "url": "https://ieeexplore.ieee.org/document/11038786/"
+   },
+   {
+    "title": "VeriFin: A Neurosymbolic Framework for Verifying LLM-Generated Financial Claims",
+    "site": "arxiv.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Hall et al.",
+    "url": "https://arxiv.org/abs/2608.10213"
+   },
+   {
+    "title": "A reproducible, traceable pipeline and XBRL-grounded oracle for evaluating LLM numeric fidelity in corporate-finance analysis",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Chahed",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.22678122"
+   },
+   {
+    "title": "Evidence-Grounded Trading Desk Risk Memos over SEC Filings: Retrieval-Augmented Generation with XBRL Numeric Verification",
+    "site": "scipublication.com",
+    "year": "2023",
+    "citations": null,
+    "authors": "Zhang et al.",
+    "url": "https://scipublication.com/index.php/JACS/article/view/379"
+   },
+   {
+    "title": "FinVerBench: Benchmark Validity and Calibration in Large Language Model Financial Statement Verification",
+    "site": "arxiv.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Panda",
+    "url": "https://arxiv.org/abs/2605.29586"
+   },
+   {
+    "title": "The Stanford EDGAR Filings Dataset: Reconstructing U.S. Corporate and Financial Disclosures into Layout-Faithful and Token-Efficient Pretraining Data",
+    "site": "arxiv.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Bettencourt et al.",
+    "url": "https://arxiv.org/abs/2606.18192"
+   },
+   {
+    "title": "Enabling and Analyzing How to Efficiently Extract Information from Hybrid Long Documents with LLMs",
+    "site": "arxiv.org",
+    "year": "2023",
+    "citations": "5",
+    "authors": "Yue et al.",
+    "url": "https://arxiv.org/abs/2305.16344"
+   },
+   {
+    "title": "IndiaFinBench: An Evaluation Benchmark for Large Language Model Performance on Indian Financial Regulatory Text",
+    "site": "arxiv.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Pall",
+    "url": "https://arxiv.org/abs/2604.19298"
+   },
+   {
+    "title": "The Model Is a Dependency: Provenance and Error Detection in Financial Data Extraction",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Milton",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.22904290"
+   },
+   {
+    "title": "Natural Language Processing for Unstructured Records in Finance and Public Services: A Review",
+    "site": "allmultidisciplinaryjournal.com",
+    "year": "2020",
+    "citations": null,
+    "authors": "Iziduh et al.",
+    "url": "https://www.allmultidisciplinaryjournal.com/article/6105/natural-language-processing-for-unstructured-records-in-finance-and-public-services-a-review"
+   },
+   {
+    "title": "FiNER: Financial Numeric Entity Recognition for XBRL Tagging",
+    "site": "aclanthology.org",
+    "year": "2022",
+    "citations": "79",
+    "authors": "Loukas et al.",
+    "url": "https://aclanthology.org/2022.acl-long.303"
+   },
+   {
+    "title": "Extracting Financial Data from Unstructured Sources: Leveraging Large Language Models",
+    "site": "publications.aaahq.org",
+    "year": "2024",
+    "citations": "39",
+    "authors": "Li et al.",
+    "url": "https://publications.aaahq.org/jis/article/doi/10.2308/ISYS-2023-047/12867/Extracting-Financial-Data-from-Unstructured"
+   },
+   {
+    "title": "Evidence-Grounded Financial RAG: Reducing Numerical Hallucination in LLM-Generated Corporate Risk Memos",
+    "site": "scipublication.com",
+    "year": "2023",
+    "citations": null,
+    "authors": "Wu et al.",
+    "url": "https://scipublication.com/index.php/JACS/article/view/380"
+   },
+   {
+    "title": "Context-Aware Document Intelligence for Automated Compliance Evidence Extraction from Heterogeneous Financial Documents",
+    "site": "esj.eastasouth-institute.com",
+    "year": "2023",
+    "citations": null,
+    "authors": "Shah",
+    "url": "https://esj.eastasouth-institute.com/index.php/esiscs/article/download/1222/915"
+   },
+   {
+    "title": "The New Quant: A Survey of Large Language Models in Financial Prediction and Trading",
+    "site": "arxiv.org",
+    "year": "2025",
+    "citations": "1",
+    "authors": "Fu",
+    "url": "https://arxiv.org/abs/2510.05533"
+   },
+   {
+    "title": "Deep Representation Learning for Financial Document Analytics",
+    "site": "bonndoc.ulb.uni-bonn.de",
+    "year": "2025",
+    "citations": null,
+    "authors": "Hillebrand",
+    "url": "https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/13286"
+   },
+   {
+    "title": "ARTIFICIAL INTELLIGENCE-ENABLED REGTECH FOR KYC, FINANCIAL COMPLIANCE, AND REGULATORY REPORTING: APPLICATIONS, RISKS, AND FUTURE DIRECTIONS",
+    "site": "upubjournals.com",
+    "year": "2026",
+    "citations": null,
+    "authors": "Li & Zhang",
+    "url": "https://upubjournals.com/wjebr/article/view/2718"
+   },
+   {
+    "title": "Large Language Models for Financial Knowledge Extraction Analytical Insights and Corporate Planning Support",
+    "site": "drpress.org",
+    "year": "2025",
+    "citations": "1",
+    "authors": "Zhang & Wang",
+    "url": "https://drpress.org/ojs/index.php/mmaa/article/view/32153"
+   },
+   {
+    "title": "FinCriticalED: A Visual Benchmark for Financial Fact-Level OCR",
+    "site": "arxiv.org",
+    "year": "2025",
+    "citations": "1",
+    "authors": "He et al.",
+    "url": "https://arxiv.org/abs/2511.14998"
+   },
+   {
+    "title": "Zero-Shot Question Answering over Financial Documents using Large Language Models",
+    "site": "arxiv.org",
+    "year": "2023",
+    "citations": "9",
+    "authors": "Phogat et al.",
+    "url": "https://arxiv.org/abs/2311.14722"
+   },
+   {
+    "title": "NumLLM: Numeric-Sensitive Large Language Model for Chinese Finance",
+    "site": "arxiv.org",
+    "year": "2024",
+    "citations": "3",
+    "authors": "Su et al.",
+    "url": "https://arxiv.org/abs/2405.00566"
+   },
+   {
+    "title": "The Role of Retrieval-Augmented Generation (RAG) in Financial Document Processing: Automating Compliance and Reporting",
+    "site": "eajournals.org",
+    "year": "2025",
+    "citations": "5",
+    "authors": "Malali",
+    "url": "https://eajournals.org/ijmt/vol12-issue-3-2025/the-role-of-retrieval-augmented-generation-rag-in-financial-document-processing-automating-compliance-and-reporting/"
+   },
+   {
+    "title": "Optimizing Large Language Models for Financial Analytics: A Comprehensive Framework for Domain-Specific Adaptation",
+    "site": "ieeexplore.ieee.org",
+    "year": "2025",
+    "citations": null,
+    "authors": "Huong et al.",
+    "url": "https://ieeexplore.ieee.org/document/11406064/"
+   },
+   {
+    "title": "AI-Driven Compliance Audits: Enhancing Regulatory Adherence in Financial and Legal Sectors",
+    "site": "ijarcst.org",
+    "year": "2023",
+    "citations": "6",
+    "authors": "Researcher & Gandhi",
+    "url": "https://ijarcst.org/index.php/ijarcst/article/view/92"
+   },
+   {
+    "title": "Systematic Review of Artificial Intelligence Techniques for Enhancing Financial Reporting and Regulatory Compliance",
+    "site": "ijetcsit.org",
+    "year": "2021",
+    "citations": null,
+    "authors": "Bitkuri et al.",
+    "url": "https://ijetcsit.org/index.php/ijetcsit/article/view/330/"
+   },
+   {
+    "title": "RegMiner: Taming the Complexity of Regulatory Documents for Digitalized Compliance Management",
+    "site": "ceur-ws.org",
+    "year": "2020",
+    "citations": "1",
+    "authors": "Winter et al.",
+    "url": "http://ceur-ws.org/Vol-2673/paperDR10.pdf"
+   },
+   {
+    "title": "Natural Language Processing Techniques Automating Financial Reporting to Reduce Costs and Improve Regulatory Compliance",
+    "site": "allmultidisciplinaryjournal.com",
+    "year": "2021",
+    "citations": "14",
+    "authors": "Adesanya et al.",
+    "url": "https://www.allmultidisciplinaryjournal.com/search?q=MGE-2025-5-078&search=search"
+   },
+   {
+    "title": "Neuro-Symbolic Financial Reasoning via Deterministic Fact Ledgers and Adversarial Low-Latency Hallucination Detector",
+    "site": "arxiv.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Agand",
+    "url": "https://arxiv.org/abs/2603.04663"
+   },
+   {
+    "title": "Stablecoin Governance Under MiCA: A Systemic Framework for Compliance, Supervision, and Technical Enforcement",
+    "site": "figshare.com",
+    "year": "2026",
+    "citations": null,
+    "authors": "Nohr",
+    "url": "https://figshare.com/articles/preprint/Stablecoin_Governance_Under_MiCA_A_Systemic_Framework_for_Compliance_Supervision_and_Technical_Enforcement/31072402"
+   },
+   {
+    "title": "Djed: A Formally Verified Crypto-Backed Autonomous Stablecoin Protocol",
+    "site": "ieeexplore.ieee.org",
+    "year": "2023",
+    "citations": "6",
+    "authors": "Zahnentferner et al.",
+    "url": "https://ieeexplore.ieee.org/document/10174901/"
+   },
+   {
+    "title": "Proof of reserves: a double-helix framework",
+    "site": "linkinghub.elsevier.com",
+    "year": "2025",
+    "citations": "3",
+    "authors": "Lazirko et al.",
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0890838925001805"
+   },
+   {
+    "title": "Rule-Layer Compliance Systems and Human-Centric VASP Teams: A Technical Evaluation Using AI LLM &amp; Rule Layer Frameworks",
+    "site": "figshare.com",
+    "year": "2026",
+    "citations": null,
+    "authors": "Nohr",
+    "url": "https://figshare.com/articles/preprint/Rule-Layer_Compliance_Systems_and_Human_Centric_VASP_Teams_A_Technical_Evaluation_Using_AI_LLM_Rule_Layer_Frameworks/31047394"
+   },
+   {
+    "title": "SoK: Web3 RegTech for Cryptocurrency VASP AML/CFT Compliance",
+    "site": "arxiv.org",
+    "year": "2025",
+    "citations": null,
+    "authors": "Mao et al.",
+    "url": "https://arxiv.org/abs/2512.24888"
+   },
+   {
+    "title": "Cross-Border Stablecoin Register",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Fan",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.22941250"
+   },
+   {
+    "title": "Execution-Time Compliance Enforcement in Crypto-Asset Regulatory Frameworks",
+    "site": "figshare.com",
+    "year": "2026",
+    "citations": null,
+    "authors": "Nohr",
+    "url": "https://figshare.com/articles/preprint/Execution-Time_Compliance_Enforcement_in_Crypto-Asset_Regulatory_Frameworks/31072516"
+   },
+   {
+    "title": "RegTech in public and private sectors: the nexus between data, technology and regulation",
+    "site": "link.springer.com",
+    "year": "2022",
+    "citations": "67",
+    "authors": "Grassi & Lanfranchi",
+    "url": "https://link.springer.com/10.1007/s40812-022-00226-0"
+   },
+   {
+    "title": "RegTech and SupTech: A Proposal for Blockchain-Certified Computational Regulation",
+    "site": "hdl.handle.net",
+    "year": "2025",
+    "citations": null,
+    "authors": "Passalacqua & Favaro",
+    "url": "https://hdl.handle.net/11568/1339987"
+   },
+   {
+    "title": "RegTech—the application of modern information technology in regulatory affairs: areas of interest in research and practice",
+    "site": "onlinelibrary.wiley.com",
+    "year": "2020",
+    "citations": "46",
+    "authors": "Becker et al.",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/isaf.1479"
+   },
+   {
+    "title": "Cryptocurrency Regulation",
+    "site": "taylorfrancis.com",
+    "year": "2022",
+    "citations": "3",
+    "authors": "Motsi-Omoijiade",
+    "url": "https://www.taylorfrancis.com/books/9781003254164"
+   },
+   {
+    "title": "Tradeoffs in automated financial regulation of decentralized finance due to limits on mutable turing machines",
+    "site": "nature.com",
+    "year": "2025",
+    "citations": "4",
+    "authors": "Charoenwong et al.",
+    "url": "https://www.nature.com/articles/s41598-024-84612-9"
+   },
+   {
+    "title": "合规科技:区块链与加密货币时代的合规创新指南",
+    "site": "zenodo.org",
+    "year": "2025",
+    "citations": null,
+    "authors": "Lab",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.17304780"
+   },
+   {
+    "title": "How RegTech tools enable regulatory compliance for cryptoassets: A case study for cryptoasset transaction monitoring",
+    "site": "hstalks.com",
+    "year": "2023",
+    "citations": null,
+    "authors": "Boškić",
+    "url": "https://hstalks.com/doi/10.69554/SOXV3917/"
+   },
+   {
+    "title": "CBDC Cross-Border Settlement Prototype: Programmable Compliance for Cross-Border CBDC Settlement Using ISO 20022 and FATF Travel Rule Automation",
+    "site": "zenodo.org",
+    "year": "2025",
+    "citations": null,
+    "authors": "Muhammad",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.16886148"
+   },
+   {
+    "title": "Algorithmic Regulation: Automating Financial Compliance Monitoring and Regulation Using AI and Blockchain",
+    "site": "econpapers.repec.org",
+    "year": "2017",
+    "citations": "43",
+    "authors": "Treleaven & Batrinca",
+    "url": "https://econpapers.repec.org/RePEc:ris:jofitr:1586"
+   },
+   {
+    "title": "RegTech advancements-a comprehensive review of its evolution, challenges, and implications for financial regulation and compliance",
+    "site": "emerald.com",
+    "year": "2024",
+    "citations": "19",
+    "authors": "Khoury et al.",
+    "url": "https://www.emerald.com/insight/content/doi/10.1108/JFRA-05-2024-0286/full/html"
+   },
+   {
+    "title": "Regulating crypto assets",
+    "site": "un-ilibrary.org",
+    "year": "2023",
+    "citations": "2",
+    "authors": "Development",
+    "url": "https://www.un-ilibrary.org/content/books/9789210026178c007"
+   },
+   {
+    "title": "Crystal Validator vs. Chainalysis: Structural Comparison of Enforcement-Layer Compliance vs. Post-Hoc Blockchain Analytics",
+    "site": "figshare.com",
+    "year": "2026",
+    "citations": null,
+    "authors": "Nohr",
+    "url": "https://figshare.com/articles/preprint/Crystal_Validator_vs_Chainalysis_Structural_Comparison_of_Enforcement-Layer_Compliance_vs_Post-Hoc_Blockchain_Analytics/31079212/1"
+   },
+   {
+    "title": "Cryptoassets & Digital Finance: Markets, Infrastructure, Regulation, Institutional Control and the Future of Financial Value",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Malyutin",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.21865526"
+   },
+   {
+    "title": "Metarules, Judgment and the Algorithmic Future of Financial Regulation in the UK",
+    "site": "academic.oup.com",
+    "year": "2023",
+    "citations": null,
+    "authors": "Georgosouli",
+    "url": "https://academic.oup.com/ojls/article/43/4/777/7246484"
+   },
+   {
+    "title": "LPOR: A Layered Proof of Reserves Framework for Usable and Publicly Auditable Solvency Verification",
+    "site": "ieeexplore.ieee.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Kim et al.",
+    "url": "https://ieeexplore.ieee.org/document/11575531/"
+   },
+   {
+    "title": "The Undercollateralized Mint Loophole in Stablecoin Systems: Structural Failure Modes and Logic-Layer Enforcement",
+    "site": "figshare.com",
+    "year": "2026",
+    "citations": null,
+    "authors": "Nohr",
+    "url": "https://figshare.com/articles/preprint/The_Undercollateralized_Mint_Loophole_in_Stablecoin_Systems_Structural_Failure_Modes_and_Logic-Layer_Enforcement/31072480"
+   },
+   {
+    "title": "Ledger to ledger: off- and on-chain auditing of stablecoin",
+    "site": "ijdar.org",
+    "year": "2022",
+    "citations": "10",
+    "authors": "Carvalho et al.",
+    "url": "http://www.ijdar.org/10.4192/1577-8517-v22_5.pdf"
+   },
+   {
+    "title": "GSPC — reserve attestation facts (ReserveFacts)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042173"
+   },
+   {
+    "title": "GSPC — custody disclosure facts (CustodyFacts)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042097"
+   },
+   {
+    "title": "GSPC Methodology and the 417-Provision Frozen Corpus Anchor — Council of AI (CSOAI)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "review)",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.21991105"
+   },
+   {
+    "title": "GSPC — provenance controls facts (ChainFacts)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042162"
+   },
+   {
+    "title": "GSPC-transparency — CSOAI measured axis bank (csoai.gspc-axis-dataset/0.1)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Ltd)",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.22070705"
+   },
+   {
+    "title": "GSPC — openness bank (OSSBench)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042158"
+   },
+   {
+    "title": "Council of AI — FAQ door",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042059"
+   },
+   {
+    "title": "GSPC-accountability — CSOAI measured axis bank (csoai.gspc-axis-dataset/0.1)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Ltd)",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.22070711"
+   },
+   {
+    "title": "GSPC — distribution integrity facts (DistributionFacts)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042103"
+   },
+   {
+    "title": "GSPC — safety bank (DefBench)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042069"
+   },
+   {
+    "title": "GSPC jail — alias of the goldbank",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042144"
+   },
+   {
+    "title": "Measured vs reported — the empty table, on purpose",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042233"
+   },
+   {
+    "title": "GSPC interop",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042139"
+   },
+   {
+    "title": "GSPC — conformance bank (MCPBench)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042149"
+   },
+   {
+    "title": "GSPC — continuity bank (PQCBench)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042080"
+   },
+   {
+    "title": "GSPC — care bank (CareBench)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042090"
+   },
+   {
+    "title": "ClaimGuard",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042021"
+   },
+   {
+    "title": "GSPC — cross reality bank (XRAIV)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042196"
+   },
+   {
+    "title": "GSPC — governance bank (GovBench)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042120"
+   },
+   {
+    "title": "GSPC — swarm bank (SwarmBench v2b)",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042182"
+   },
+   {
+    "title": "GSPC compare",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042092"
+   },
+   {
+    "title": "CSOAI mirror deposit — agent-population census and GSPC master consolidation roll-up",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.22806071"
+   },
+   {
+    "title": "GSPC axis transcripts — prompts and full responses",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042086"
+   },
+   {
+    "title": "Council of AI — cinematic stills",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23042014"
+   },
+   {
+    "title": "GSPC drift rail — day-over-day consistency",
+    "site": "zenodo.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "AI) & Templeman",
+    "url": "https://zenodo.org/doi/10.5281/zenodo.23041988"
+   }
+  ],
+  "web": [
+   {
+    "title": "Verify a Stablecoin's $184B in Reserves: 12 Steps [2026]",
+    "site": "shattered.io",
+    "year": "2026",
+    "url": "https://shattered.io/verify-stablecoin-reserves-2026/"
+   },
+   {
+    "title": "New AI PDF Parsing for On-Chain Proof of Reserves",
+    "site": "ledgerlens.io",
+    "year": "2024",
+    "url": "https://ledgerlens.io/resources/news-insights/new-ai-pdf-parsing-for-on-chain-proof-of-reserves/"
+   },
+   {
+    "title": "Verify Stablecoin Proof-of-Reserves: 10 Steps [2026]",
+    "site": "shattered.io",
+    "year": "2026",
+    "url": "https://shattered.io/verify-stablecoin-proof-of-reserves-2026/"
+   },
+   {
+    "title": "AI Document Analysis for Fintech Compliance",
+    "site": "llamaindex.ai",
+    "year": "2026",
+    "url": "https://www.llamaindex.ai/blog/ai-powered-document-analysis"
+   },
+   {
+    "title": "Stablecoin Reserve Attestations: Key Considerations for ...",
+    "site": "forvismazars.us",
+    "year": "2025",
+    "url": "https://www.forvismazars.us/forsights/2025/11/stablecoin-reserve-attestations-key-considerations-for-compliance"
+   },
+   {
+    "title": "Proof of Reserves for Stablecoins: Attestations, Audits, and ...",
+    "site": "bitgo.com",
+    "year": "2026",
+    "url": "https://www.bitgo.com/resources/blog/proof-of-reserves-stablecoins/"
+   },
+   {
+    "title": "Leveraging Large Language Models to Bridge On-chain and…",
+    "site": "findas.org",
+    "year": "2025",
+    "url": "https://www.findas.org/reports/paper-deep-dive-leveraging-large-language-models-to-bridge-on-chain-and-off-chain-transparency-in-stablecoins"
+   },
+   {
+    "title": "Stablecoin Reserve Transparency: What Monthly Attestations ...",
+    "site": "spark.money",
+    "year": "2026",
+    "url": "https://www.spark.money/research/stablecoin-reserve-transparency-audit"
+   },
+   {
+    "title": "Real-Time Proof of Reserves Attestations",
+    "site": "thenetworkfirm.com",
+    "year": null,
+    "url": "https://www.thenetworkfirm.com/real-time-reserves-for-crypto-blockchain-auditing-the-network-firm"
+   },
+   {
+    "title": "Leveraging Large Language Models to Bridge Cross ...",
+    "site": "arxiv.org",
+    "year": "2026",
+    "url": "https://arxiv.org/html/2512.02418v3"
+   },
+   {
+    "title": "From Knowledge Graph to RAG for Stablecoin Regulatory ...",
+    "site": "surrealdb.com",
+    "year": "2025",
+    "url": "https://surrealdb.com/blog/from-knowledge-graph-generation-to-rag-for-stablecoin-regulatory-intelligence"
+   },
+   {
+    "title": "Proof of Reserves for Stablecoin Issuers",
+    "site": "onchainfinanceinstitute.com",
+    "year": "2025",
+    "url": "https://www.onchainfinanceinstitute.com/articles/proof-of-reserves-for-stablecoin-issuers"
+   },
+   {
+    "title": "What Is Reserve Attestation? Stablecoin Audits Explained 2026",
+    "site": "eco.com",
+    "year": "2026",
+    "url": "https://eco.com/support/en/articles/15210347-what-is-reserve-attestation-stablecoin-audits-explained-2026"
+   },
+   {
+    "title": "Real-Time Reserve Attestation: How Chainlink Proof of Reserves ...",
+    "site": "spark.money",
+    "year": null,
+    "url": "https://www.spark.money/research/stablecoin-real-time-attestation-chainlink"
+   },
+   {
+    "title": "Senior Product Director, Growth AI (LLM Applications) - OKX",
+    "site": "builtin.com",
+    "year": null,
+    "url": "https://builtin.com/job/senior-product-director-growth-ai-llm-applications/6758580"
+   },
+   {
+    "title": "Maksym Lazirko",
+    "site": "montclair.edu",
+    "year": null,
+    "url": "https://www.montclair.edu/faculty-staff/maksym-lazirko"
+   },
+   {
+    "title": "Rajesh Upadhayaya",
+    "site": "scholar.google.com",
+    "year": null,
+    "url": "https://scholar.google.com/citations?user=PFqNWBwAAAAJ&hl=en"
+   },
+   {
+    "title": "Bitcoin research with a transaction graph dataset - PMC - NIH",
+    "site": "pmc.ncbi.nlm.nih.gov",
+    "year": null,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11890552/"
+   },
+   {
+    "title": "Empirical Evidence in AI Oracle Development",
+    "site": "chain.link",
+    "year": "2025",
+    "url": "https://chain.link/blog/ai-oracles"
+   },
+   {
+    "title": "Banking on Stablecoins – White Paper",
+    "site": "trmlabs.com",
+    "year": "2025",
+    "url": "https://www.trmlabs.com/reports-and-whitepapers/banking-on-stablecoins"
+   },
+   {
+    "title": "Stablecoin Reserve Requirements: Attestations & Custody",
+    "site": "astraea.law",
+    "year": "2026",
+    "url": "https://astraea.law/insights/stablecoin-reserve-requirements-attestations-custody-2025"
+   },
+   {
+    "title": "A Blockchain Framework for Automated Copyright ...",
+    "site": "papers.ssrn.com",
+    "year": null,
+    "url": "https://papers.ssrn.com/sol3/Delivery.cfm/6968162.pdf?abstractid=6968162&mirid=1"
+   },
+   {
+    "title": "NBER WORKING PAPER SERIES STABLECOINS",
+    "site": "nber.org",
+    "year": null,
+    "url": "https://www.nber.org/system/files/working_papers/w34475/w34475.pdf"
+   },
+   {
+    "title": "The future of DAOs in finance - in need of legal status",
+    "site": "ecb.europa.eu",
+    "year": null,
+    "url": "https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op331~a03e416045.it.pdf?ca341296edabc184a32dc15e30d3020b"
+   },
+   {
+    "title": "Stablecoin Accounting: Reserve Attestations and Audits",
+    "site": "fortress-accounting.com",
+    "year": null,
+    "url": "https://fortress-accounting.com/stablecoin-reserve-attestations/"
+   },
+   {
+    "title": "Taiwan FinTech Regulation 2026: From Sandbox to MiCA ...",
+    "site": "hungyichen.com",
+    "year": null,
+    "url": "https://www.hungyichen.com/en/insights/fintech-legislation-next"
+   },
+   {
+    "title": "5 Ways Chainlink Supercharges Growth for Stablecoin ...",
+    "site": "chain.link",
+    "year": "2026",
+    "url": "https://chain.link/blog/chainlink-for-stablecoin-issuers"
+   },
+   {
+    "title": "Deep Dive into BasedAI: Large Language Model Network ...",
+    "site": "gate.com",
+    "year": "2026",
+    "url": "https://www.gate.com/learn/articles/deep-dive-into-the-operational-network-of-large-language-models-basedai/2211"
+   },
+   {
+    "title": "A Comprehensive Framework for Stablecoin Regulation ...",
+    "site": "sec.gov",
+    "year": null,
+    "url": "https://www.sec.gov/files/stablecoin_regulatory_framework.pdf"
+   },
+   {
+    "title": "FCA Shifts to Tech Positive, Innovation and ...",
+    "site": "linkedin.com",
+    "year": "2026",
+    "url": "https://www.linkedin.com/posts/colin-payne_move-fast-make-things-the-fca-is-still-activity-7465306858820358144-B1ei"
+   },
+   {
+    "title": "State Stablecoin & DeFi Policy Playbook: Post‑GENIUS Act",
+    "site": "nablock.org",
+    "year": "2025",
+    "url": "https://nablock.org/state-stablecoin-defi-policy-playbook-post%E2%80%91genius-act/"
+   },
+   {
+    "title": "RegTech vs. SupTech: Staying Compliant Through AI",
+    "site": "coincub.com",
+    "year": "2026",
+    "url": "https://coincub.com/blog/regtech-suptech-compliant/"
+   }
+  ]
+ },
+ "42개 출처": {
+  "papers": [
+   {
+    "title": "Stablecoins and CBDC: A Two-Tier Digital Won System for Monetary Sovereignty and Financial Stability",
+    "site": "kiss.kstudy.com",
+    "year": "2025",
+    "citations": null,
+    "authors": "Kim",
+    "url": "https://kiss.kstudy.com/Detail/Ar?key=4225895"
+   },
+   {
+    "title": "Regulatory Measures to Promote the Adoption of Korean Won-Based Stablecoins - Focused on the Markets in Crypto-Assets Regulation (MiCA) in Europe -",
+    "site": "kiss.kstudy.com",
+    "year": "2025",
+    "citations": null,
+    "authors": "Won",
+    "url": "https://kiss.kstudy.com/Detail/Ar?key=4187634"
+   },
+   {
+    "title": "Key Issues in Stablecoin Legislation and Korea’s Legislative Direction: Lessons from the U.S. GENIUS Act",
+    "site": "kiss.kstudy.com",
+    "year": "2025",
+    "citations": null,
+    "authors": "Kim",
+    "url": "https://kiss.kstudy.com/Detail/Ar?key=4226008"
+   },
+   {
+    "title": "Suggestion on the Legalization Plan for the Stablecoin Trade Settlement",
+    "site": "doi.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Kim",
+    "url": "https://doi.org/10.18104/kalc.2026.41.1.69"
+   },
+   {
+    "title": "Surviving the Phantom Menace of Dollar Stablecoins : KRW Stablecoin Strategy",
+    "site": "dbpia.co.kr",
+    "year": "2025",
+    "citations": null,
+    "authors": "Kim",
+    "url": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12336987&buildDate=2026-02-24+16%3A27%3A47&nowDate=20260324_1&cdnUrl=https%3A%2F%2Fcdn.dbpia.co.kr%2Fstatic&appVersion=1.0.0&buildTime=20260224162747&minify=.min&language=ko_KR&hasTopBanner=true"
+   },
+   {
+    "title": "Digital Currency Strategies in the Korean Financial Market: A Comparative Analysis of Stablecoin and CBDC Adoption Strategies",
+    "site": "kiss.kstudy.com",
+    "year": "2025",
+    "citations": null,
+    "authors": "Jeon",
+    "url": "https://kiss.kstudy.com/Detail/Ar?key=4204383"
+   },
+   {
+    "title": "Fintech, Cryptoassets, and Central Bank Digital Currency in the Republic of Korea",
+    "site": "hdl.handle.net",
+    "year": "2019",
+    "citations": "1",
+    "authors": "Kwon et al.",
+    "url": "http://hdl.handle.net/10419/222785"
+   },
+   {
+    "title": "Central bank digital currency",
+    "site": "taylorfrancis.com",
+    "year": "2025",
+    "citations": "1",
+    "authors": "Moon",
+    "url": "https://www.taylorfrancis.com/books/9781003386216/chapters/10.4324/9781003386216-3"
+   },
+   {
+    "title": "Stablecoins And National Currency Stability: Impacts and Regulatory Mechanisms in The Digital Financial System",
+    "site": "sciencebring.com",
+    "year": "2026",
+    "citations": null,
+    "authors": "Sh.Sh & O.A.",
+    "url": "https://sciencebring.com/index.php/ijasr/article/view/1239/1149"
+   },
+   {
+    "title": "U.S. GENIUS Act and its Implication for Korean StableCoins Regulation",
+    "site": "kiss.kstudy.com",
+    "year": "2025",
+    "citations": null,
+    "authors": "Cho",
+    "url": "https://kiss.kstudy.com/Detail/Ar?key=4205074"
+   },
+   {
+    "title": "Monetary Policy and the Bank of Korea",
+    "site": "kiss.kstudy.com",
+    "year": "2017",
+    "citations": null,
+    "authors": "Kim",
+    "url": "https://kiss.kstudy.com/Detail/Ar?key=3548509"
+   },
+   {
+    "title": "The capital-access premium and the won: Korean stablecoin premia as a leading indicator of exchange-rate pressure",
+    "site": "linkinghub.elsevier.com",
+    "year": "2026",
+    "citations": null,
+    "authors": "Yoo",
+    "url": "https://linkinghub.elsevier.com/retrieve/pii/S0165176526003484"
+   },
+   {
+    "title": "A Comparative Legal Study on AML Regulations for Stablecoins : Focusing on the Need to Regulate Peer-to-Peer Transactions via Unhosted Wallets and Stablecoin Issuers",
+    "site": "doi.org",
+    "year": "2026",
+    "citations": null,
+    "authors": "Kim",
+    "url": "https://doi.org/10.38133/cnulawreview.2026.46.2.103"
+   },
+   {
+    "title": "A Study on the Bank of Korea Act Amendments for Swift Introduction of CBDC",
+    "site": "dbpia.co.kr",
+    "year": "2023",
+    "citations": null,
+    "authors": "Park et al.",
+    "url": "http://www.dbpia.co.kr/Journal/ArticleDetail/NODE11704109"
+   },
+   {
+    "title": "An Introductory Review of Virtual Asset Regulations in Korea",
+    "site": "kci.go.kr",
+    "year": "2024",
+    "citations": null,
+    "authors": "이정수",
+    "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003117862"
+   },
+   {
+    "title": "An Investigation of Dynamic Price Movements of the Cryptocurrency Coin in Korea",
+    "site": "journal.korfin.org",
+    "year": "2019",
+    "citations": "4",
+    "authors": "Lee et al.",
+    "url": "http://journal.korfin.org/sub/sub_detail.html?code=359973&?search=&year=2019&issueCode=26904&searchType=all"
+   },
+   {
+    "title": "Legal system of cryptoassets protection in South Korea",
+    "site": "visnyk-pravo.uzhnu.edu.ua",
+    "year": "2025",
+    "citations": null,
+    "authors": "Tipikin-Holovko",
+    "url": "http://visnyk-pravo.uzhnu.edu.ua/article/view/324754"
+   },
+   {
+    "title": "Evaluating the Short-Term Economic Impacts of FinTech Innovations: A Focus on Cryptocurrencies and CBDCs",
+    "site": "aisel.aisnet.org",
+    "year": "2024",
+    "citations": null,
+    "authors": "Jeon et al.",
+    "url": "https://aisel.aisnet.org/pacis2024/track02_blockchain/track02_blockchain/6"
+   },
+   {
+    "title": "Linkage between US monetary policy and emerging economies: the case of Korea?s financial market and monetary policy",
+    "site": "ijes-journal.org",
+    "year": "2015",
+    "citations": "4",
+    "authors": "Huh & Wu",
+    "url": "https://ijes-journal.org/journal/article/view/162"
+   }
+  ],
+  "web": [
+   {
+    "title": "An Institutional-Grade Korean Won Stablecoin",
+    "site": "krw1.kr",
+    "year": null,
+    "url": "https://krw1.kr/pdf/BDACS_KRW1_White%20Paper_EN.pdf"
+   },
+   {
+    "title": "Guide to Korea's Stablecoin Regulation Framework",
+    "site": "law.asia",
+    "year": "2025",
+    "url": "https://law.asia/korea-stablecoin-regulation-framework/"
+   },
+   {
+    "title": "2025 KRW Stablecoins Status - by Ekko an and Ryan Yoon",
+    "site": "reports.tiger-research.com",
+    "year": "2025",
+    "url": "https://reports.tiger-research.com/p/korea-stable-coin-eng"
+   },
+   {
+    "title": "KRW-Based Stablecoin Research Report | by Mossland",
+    "site": "medium.com",
+    "year": null,
+    "url": "https://medium.com/mossland-blog/krw-based-stablecoin-research-report-7662b1ae770d"
+   },
+   {
+    "title": "원화 스테이블코인 과연 한국에도 도입될까? 법제화 현황은?",
+    "site": "kbthink.com",
+    "year": "2025",
+    "url": "https://kbthink.com/crypto/korean-won-stablecoin.html"
+   },
+   {
+    "title": "[Article] Can KRW Stablecoin Make it? - FP RESEARCH",
+    "site": "research.4pillars.io",
+    "year": "2025",
+    "url": "https://research.4pillars.io/en/research/can-krw-stablecoin-make-it"
+   },
+   {
+    "title": "South Korean stablecoin regulation - The Banker",
+    "site": "thebanker.com",
+    "year": "2025",
+    "url": "https://www.thebanker.com/provision/2715780b-431c-59f4-a58d-279856122b54"
+   },
+   {
+    "title": "Pioneering Regulated KRW Infrastructure on Kaia",
+    "site": "kaia.io",
+    "year": null,
+    "url": "https://kaia.io/krw"
+   },
+   {
+    "title": "한국은행 - 원화 스테이블코인의 주요 이슈와 대응방안",
+    "site": "bok.or.kr",
+    "year": null,
+    "url": "https://www.bok.or.kr/portal/bbs/B0000232/view.do?menuNo=200706&nttId=10094188"
+   },
+   {
+    "title": "Korean stablecoin premia as a leading indicator of ...",
+    "site": "sciencedirect.com",
+    "year": null,
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165176526003484"
+   },
+   {
+    "title": "South Korea's KRW Stablecoin Opportunity",
+    "site": "dwf-labs.com",
+    "year": "2026",
+    "url": "https://www.dwf-labs.com/research/south-koreas-krw-stablecoin-opportunity"
+   },
+   {
+    "title": "원화 스테이블코인의 입법방향",
+    "site": "kci.go.kr",
+    "year": null,
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003223968"
+   },
+   {
+    "title": "Issues of a Korean Won Stablecoin and Its Potential Impact ...",
+    "site": "koreascience.kr",
+    "year": null,
+    "url": "https://koreascience.kr/article/JAKO202531839668808.image"
+   },
+   {
+    "title": "원화 스테이블코인의 입법방향",
+    "site": "scholarworks.dongguk.edu",
+    "year": null,
+    "url": "https://scholarworks.dongguk.edu/item/4de8ee3f-e02b-41b0-8cfa-91efbb4048e3"
+   },
+   {
+    "title": "[논문]우리나라의 스테이블코인 규제 방안에 관한 연구",
+    "site": "scienceon.kisti.re.kr",
+    "year": null,
+    "url": "https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=ART003105392"
+   },
+   {
+    "title": "지급결제학회지 2025, Vol.17 No.1",
+    "site": "kci.go.kr",
+    "year": null,
+    "url": "https://www.kci.go.kr/kciportal/landing/journalArticleList.kci?vol_isse_id=VOL000185759&sere_id=SER000005145"
+   },
+   {
+    "title": "Korea's Stablecoin Regulation: The Bank vs Fintech Debate",
+    "site": "blog.chakwon.com",
+    "year": "2026",
+    "url": "https://blog.chakwon.com/2026/04/24/koreas-stablecoin-regulation-the-bank-vs-fintech-debate/"
+   },
+   {
+    "title": "일본 스테이블코인 규제의 현황과 시사점",
+    "site": "m.riss.kr",
+    "year": null,
+    "url": "https://m.riss.kr/search/detail/DetailView.do?p_mat_type=1a0202e37d52c72d&control_no=9ffce687d6207516c85d2949c297615a"
+   },
+   {
+    "title": "Korea's Stablecoin Future: Bank-led Stability vs.",
+    "site": "spglobal.com",
+    "year": "2026",
+    "url": "https://www.spglobal.com/ratings/en/regulatory/article/koreas-stablecoin-future-bank-led-stability-vs-nonbank-innovation-s101686138"
+   },
+   {
+    "title": "What happens when stablecoins are introduced? Evidence ...",
+    "site": "sciencedirect.com",
+    "year": null,
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1544612325022172"
+   },
+   {
+    "title": "원화 스테이블코인의 입법방향",
+    "site": "kci.go.kr",
+    "year": null,
+    "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003223968"
+   },
+   {
+    "title": "지급수단으로 활용되는 스테이블코인을 중심으로 - dCollection",
+    "site": "dcollection.korea.ac.kr",
+    "year": null,
+    "url": "https://dcollection.korea.ac.kr/srch/srchDetail/000000271101"
+   },
+   {
+    "title": "South Korea's won stablecoin race heats up before legislation",
+    "site": "upi.com",
+    "year": "2026",
+    "url": "https://www.upi.com/Top_News/World-News/2026/09/08/banks-crypto-exchanges-payment-platforms-won-stablecoin/2011788912171/"
+   }
+  ]
+ }
+}

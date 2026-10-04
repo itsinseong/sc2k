@@ -1,0 +1,422 @@
+public
+공개
+add_2
+노트북 만들기
+share_1
+공유
+more_vert
+settings
+PLUS
+출처
+side_nav
+add_2
+소스 추가
+language
+웹
+keyboard_arrow_down
+search_spark
+Fast Research
+keyboard_arrow_down
+arrow_forward
+label_auto
+sort
+모두 선택
+- CFTC REAUTHORIZATION: STAKEHOLDER PERSPECTIVES - GovInfo.gov
+- THE FUTURE OF DIGITAL ASSETS: PROVIDING CLARITY FOR THE DIGITAL ASSET ECOSYSTEM - GovInfo.gov
+- THE FUTURE OF DIGITAL ASSETS:. PROVIDING CLARITY FOR DIGITAL ASSET SPOT MARKETS - GovInfo.gov
+CLARITY Act: Senate Banking Releases New Text, Sets Thursday Markup - Galaxy
+CONGRESSIONAL RECORD—HOUSE H3373 - GovInfo.gov
+Congressional Record, Volume 172 Issue 145 (Tuesday, September 15, 2026) - GovInfo.gov
+Crypto CLARITY Act - Blockchain Council
+Crypto Legislation: CLARITY Act's (H.R. 3633) Potential Effects on SEC Jurisdiction
+markdown
+Deep Research 보고서: 미국 디지털 자산 시장 명확성 법안(CLARITY Act, H.R. 3633) 입법 동향 및 법안 원문·조항 상세 분석 보고서
+DIGITAL ASSET MARKET CLARITY ACT OF 2025 R E P O R T COMMITTEE ON AGRICULTURE - GovInfo.gov
+H. Rept. 119-168 - CRPT-119hrpt168 | Document in Context - GovInfo.gov
+H.R. 3633 (RS) - Digital Asset Market Clarity Act - BILLS-119hr3633rs | Content Details
+House Calendars for October 1, 2026 - 119th Congress, 2nd Session-HISTORY OF BILLS AND RESOLUTIONS - GovInfo.gov
+House Calendars for September 28, 2026 - 119th Congress, 2nd Session-INDEX OF SHORT TITLES - GovInfo.gov
+https://anzlaw.thomsonreuters.com/w-047-1623?transitionType=Default&contextData=(sc.Default)
+info
+Senate Banking Committee Advances CLARITY Act in Bipartisan Vote
+Senate Releases Updated Clarity Act Text, SEC Commissioner Addresses Crypto Vaults, and SEC and CFTC Advance 24-Hour Trading
+Statement of Administration Policy: H.R. 3633 - Digital Asset Market Clarity Act of 2025
+Statements of Administration Policy – OMB - The White House
+The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You
+landscape_2
+🏛️
+미국 상품선물거래위원회 재승이와 이해관계자 전망
+소스 20개
+·
+2026. 10. 4.
+
+제공된 자료는 **상품선물거래위원회(CFTC)**의 재허가 및 감독 필요성에 관한 하원 농업위원회 청문회 기록을 담고 있습니다. 이 문서들은 지난 10년 이상 공식적인 재허가가 지연된 상황에서, 농업 및 에너지 시장의 위험 관리 기능과 파생상품 시장의 투명성을 유지하기 위한 의회의 역할의 중요성을 강조하고 있습니다. 아울러 시장 참여자와 전문가들은 가상자산 및 예측 시장의 대두, 규제 기관의 예산 및 인력 부족, 그리고 소비자 및 투자자 보호 방안 등 변화하는 금융 환경 속에서 CFTC가 직면한 다양한 과제들을 논의하고 있습니다.
+
+keep_pin
+메모에 저장
+copy
+thumb_up
+thumb_down
+오늘 • 오후 3:05
+
+넣은 소스만 근거로 답한다. 소스에 없는 내용은 "소스에 없음"이라고 적고 추정하지 않는다. 아래 주제마다 행을 나눠 표 하나로 정리한다.
+
+
+
+
+
+미국 GENIUS법 시행 규정: 기관별 제안안과 최종 규정의 공표일, 최종 규정이 정한 시행일, §20에 따른 법 시행일
+
+
+CLARITY Act: 하원 통과일과 표결 수, 상원 심사 단계와 날짜, 스테이블코인 준비금, 공시, 이자와 보상 조항(조항 번호, GENIUS법을 바꾸는지 더하는지)
+
+
+한국: 계류 법안 수와 새로 발의된 법안, 정부안 제출 여부와 날짜, 9월 공청회 날짜와 쟁점
+
+
+레퍼런스: Tessera, FeedOracle, Veris와 새 서비스가 각각 보고서 파싱, 조문 판정, 한국 대상, 기준값 제안을 하는지
+| 주제 | 항목 | 날짜 또는 값 | 내용 | 근거 소스 | 원문 인용 한 줄 | 소스에 없음 여부 |
+
+
+Thoughts
+expand_more
+요청하신 4가지 주제 및 관련 세부 항목에 대해 업로드된 소스만을 근거로 정리한 표입니다. 소스에 언급되지 않은 내용은 **"소스에 없음"**으로 명확히 기재하였습니다.
+주제
+	
+항목
+	
+날짜 또는 값
+	
+내용
+	
+근거 소스
+	
+원문 인용 한 줄
+	
+소스에 없음 여부
+
+
+미국 GENIUS법 시행 규정
+	
+기관별 제안안 공표일
+	
+소스에 없음
+	
+소스에서 관련 정보나 날짜를 찾을 수 없음
+	
+소스에 없음
+	
+소스에 없음
+	
+예
+
+
+미국 GENIUS법 시행 규정
+	
+최종 규정 공표일
+	
+소스에 없음
+	
+소스에서 관련 정보나 날짜를 찾을 수 없음
+	
+소스에 없음
+	
+소스에 없음
+	
+예
+
+
+미국 GENIUS법 시행 규정
+	
+최종 규정이 정한 시행일
+	
+소스에 없음
+	
+소스에서 관련 정보나 날짜를 찾을 수 없음
+	
+소스에 없음
+	
+소스에 없음
+	
+예
+
+
+미국 GENIUS법 시행 규정
+	
+§20에 따른 법 시행일
+	
+소스에 없음
+	
+소스에서 관련 정보나 날짜를 찾을 수 없음
+	
+소스에 없음
+	
+소스에 없음
+	
+예
+
+
+CLARITY Act (H.R. 3633)
+	
+하원 통과일과 표결 수
+	
+2025년 7월 17일 / 찬성 294표, 반대 134표
+1
+more_horiz
+	
+미 하원 본회의 표결에서 찬성 294표, 반대 134표의 초당적 표결로 가결되어 상원으로 이송됨
+1
+more_horiz
+.
+	
+CLARITY Act: Senate Banking Releases New Text...
+1
+, The CLARITY Act, Explained
+2
+, House Calendars
+3
+, 미국 디지털 자산 시장 명확성 법안 보고서
+4
+	
+"2025년 7월 17일 하원 본회의 표결에서 찬성 294표, 반대 134표라는 압도적인 초당적 찬성표를 얻어 가결"
+4
+	
+아니오
+
+
+CLARITY Act (H.R. 3633)
+	
+상원 심사 단계와 날짜
+	
+2025-09-18 (상원 회부)<br>2026-05-14 (은행위 15-9 통과)<br>2026-06-01 (RS 보고본 등재)<br>2026-07-22 (통합안 공개)<br>2026-09-15 (토론종결동의 부결 49-50)
+5
+more_horiz
+	
+상원 은행위원회 표결 통과(15-9) 및 보고본(RS) 등재 후, 616페이지 통합 수정안이 공개되었으나 2026년 9월 15일 토론 종결 동의(Cloture Vote) 표결에서 부결(49-50)된 후 톰 틸리스 의원의 재심의 동의(Motion to Reconsider) 제출로 상원 입법 달력상 계류 중임
+5
+more_horiz
+.
+	
+Congressional Record Vol. 172 Issue 145
+5
+, Senate Banking Committee Advances CLARITY Act
+6
+, Senate Releases Updated Clarity Act Text
+7
+, 미국 디지털 자산 시장 명확성 법안 보고서
+8
+9
+	
+"By 49 yeas to 50 nays (Vote No. EX. 234)... Senate rejected the motion to close further debate on the motion to proceed to consideration of H.R. 3633"
+5
+	
+아니오
+
+
+CLARITY Act (H.R. 3633)
+	
+스테이블코인 준비금
+	
+100%+ 최고 유동성 자산 분리 보관 의무
+10
+11
+ (준비금 및 운영 요건 충족)
+12
+	
+허가된 결제용 스테이블코인(Permitted Payment Stablecoin)이 준비금 및 운영 요건을 충족할 경우 증권 규제에서 제외되며, 100% 이상의 최고 유동성 자산으로 분리 보관해야 함
+10
+more_horiz
+.
+	
+Crypto Legislation: CLARITY Act's Potential Effects on SEC Jurisdiction
+12
+, 미국 디지털 자산 시장 명확성 법안 보고서
+10
+11
+	
+"permitted payment stablecoins that meet the bill's reserve and operational requirements would be generally excluded from securities regulation"
+12
+	
+아니오
+
+
+CLARITY Act (H.R. 3633)
+	
+공시
+	
+$7,500만 달러 공모 면제 한도, 반기(6개월) 보고서, 360일 내 규칙 제정
+12
+more_horiz
+	
+디지털 상품 및 부속 자산 발행자에 대해 성숙도 상태, 소스코드, 토큰 이코노믹스, 위험 요인 등에 대한 최초 공시 및 지속적 공시(반기 보고서 및 중요 변경 시 수시 보고서) 제출 의무를 규정함
+12
+more_horiz
+.
+	
+Crypto Legislation: CLARITY Act's Potential Effects on SEC Jurisdiction
+12
+, DIGITAL ASSET MARKET CLARITY ACT OF 2025 REPORT
+13
+14
+	
+"This exemption would require issuers to file initial and ongoing disclosures. Disclosure items would include maturity status, source code, token economics, and risk factors."
+12
+	
+아니오
+
+
+CLARITY Act (H.R. 3633)
+	
+이자와 보상 조항 (조항 번호, GENIUS법을 바꾸는지 더하는지)
+	
+제404조 (Section 404) / GENIUS법 §4(a)(11) 금지 유지 및 제404조 신설(더함)
+10
+more_horiz
+	
+제404조는 결제용 스테이블코인의 단순 보유 잔액에 대한 이자·수익(Interest/Yield) 지급은 금지하되 상거래·결제 연동 리워드는 허용함. 발행자 등은 GENIUS법 §4(a)(11)의 개별 금지 적용을 그대로 받으면서(remain subject to), CLARITY Act 제404조의 추가 제약 및 세부 보상 기준을 적용받으므로 GENIUS법 규정을 대체·변경하는 것이 아니라 추가적인 규제를 더하는 구조임
+10
+more_horiz
+.
+	
+CLARITY Act: Senate Banking Releases New Text... - Galaxy
+15
+16
+, Senate Banking Committee Advances CLARITY Act
+17
+, 미국 디지털 자산 시장 명확성 법안 보고서
+10
+11
+	
+"remains subject to the GENIUS Act's separate prohibitions under §4(a)(11)"
+16
+	
+아니오
+
+
+한국
+	
+계류 법안 수와 새로 발의된 법안
+	
+소스에 없음
+	
+소스에서 한국 가상자산 관련 계류 법안 수 및 신규 발의 법안 정보를 찾을 수 없음
+	
+소스에 없음
+	
+소스에 없음
+	
+예
+
+
+한국
+	
+정부안 제출 여부와 날짜
+	
+소스에 없음
+	
+소스에서 한국 정부안 제출 여부 및 날짜 정보를 찾을 수 없음
+	
+소스에 없음
+	
+소스에 없음
+	
+예
+
+
+한국
+	
+9월 공청회 날짜와 쟁점
+	
+소스에 없음
+	
+소스에서 한국 9월 공청회 개최 날짜 및 쟁점 정보를 찾을 수 없음
+	
+소스에 없음
+	
+소스에 없음
+	
+예
+
+
+레퍼런스
+	
+Tessera (보고서 파싱 등)
+	
+소스에 없음
+	
+소스에서 Tessera 서비스 및 보고서 파싱 기능 관련 정보를 찾을 수 없음
+	
+소스에 없음
+	
+소스에 없음
+	
+예
+
+
+레퍼런스
+	
+FeedOracle (조문 판정 등)
+	
+소스에 없음
+	
+소스에서 FeedOracle 서비스 및 조문 판정 기능 관련 정보를 찾을 수 없음
+	
+소스에 없음
+	
+소스에 없음
+	
+예
+
+
+레퍼런스
+	
+Veris 및 새 서비스 (한국 대상, 기준값 제안 등)
+	
+소스에 없음
+	
+소스에서 Veris 및 새 서비스의 한국 대상·기준값 제안 관련 정보를 찾을 수 없음
+	
+소스에 없음
+	
+소스에 없음
+	
+예
+💡 CLARITY Act의 SEC-CFTC 관할권 구별 기준이나 '탈중앙화(Mature Blockchain) 테스트'의 세부 요건에 대해 추가 정리가 필요하시면 말씀해 주세요!
+keep_pin
+메모에 저장
+copy
+thumb_up
+thumb_down
+소스 19개
+arrow_upward
+Gemini Notebook은 실수를 할 수 있으니 다시 한번 확인하세요.
+스튜디오
+side_nav
+🎉
+새로운 기능: 이제 대화형 보고서를 만들 수 있습니다.
+사용해 보기
+close
+audio_spark
+AI 오디오 오버뷰
+tablet
+슬라이드 자료
+videocam
+동영상 개요
+flowchart
+마인드맵
+auto_tab_group
+보고서
+New!
+copy
+플래시카드
+quiz
+퀴즈
+stacked_bar_chart
+인포그래픽
+format_list_bulleted
+데이터 표
+edit_fix_auto
+스튜디오 출력이 여기에 저장됩니다
+소스를 추가한 후 클릭하여 AI 오디오 오버뷰, 학습 가이드, 마인드맵 등을 추가해 보세요.
+article
+메모 추가

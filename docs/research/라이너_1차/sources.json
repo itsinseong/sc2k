@@ -1,0 +1,675 @@
+{
+ "thread": "https://app.liner.com/ko/search/s/29822984/t/94263205?msg-entry-type=main",
+ "run_date": "2026-10-04",
+ "mode": "기본 검색 (Search Agent API)",
+ "collected": "2026-10-04, Aside, 출처 패널 카드 데이터",
+ "citation_rule": "본문 [citationSourceIndex N] = 출처 목록 no N",
+ "count": 69,
+ "sources": [
+  {
+   "no": 1,
+   "title": "GENIUS Act Broad-Based Principles for Determining ...",
+   "hostname": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2026/04/03/2026-06489/genius-act-broad-based-principles-for-determining-whether-a-state-level-regulatory-regime-is",
+   "date_shown": "2026-04-03",
+   "snippet": "The GENIUS Act, enacted on July 18, 2025, provides a comprehensive framework for the regulation of payment stablecoins. As defined in the GENIUS ...",
+   "cited_in": []
+  },
+  {
+   "no": 2,
+   "title": "Proposed Rule",
+   "hostname": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2026/05/18/2026-09915/implementing-the-guiding-and-establishing-national-innovation-for-us-stablecoins-act-for-the",
+   "date_shown": "2026-05-18",
+   "snippet": "In February 2026, the NCUA issued proposed regulations to govern investments in and licensing of permitted payment stablecoin issuers subject to the NCUA's",
+   "cited_in": []
+  },
+  {
+   "no": 3,
+   "title": "GENIUS Act Regulations: Notice of Proposed Rulemaking",
+   "hostname": "occ.gov",
+   "url": "https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-3.html",
+   "date_shown": "2026-02-25",
+   "snippet": "The GENIUS Act was enacted on July 18, 2025. It establishes a regulatory framework for payment stablecoin activities. The GENIUS Act generally ...",
+   "cited_in": []
+  },
+  {
+   "no": 4,
+   "title": "The Stablecoin Yield Debate",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/crs-product/IF13174",
+   "date_shown": "2026-03-06",
+   "snippet": "In July 2025, Congress passed the GENIUS Act (P.L. 119-27) establishing a regulatory framework for payment stablecoins. These digital assets use the same ...",
+   "cited_in": []
+  },
+  {
+   "no": 5,
+   "title": "Treasury Proposes Rule to Implement the GENIUS Act's ...",
+   "hostname": "home.treasury.gov",
+   "url": "https://home.treasury.gov/news/press-releases/sb0435",
+   "date_shown": "2026-04-08",
+   "snippet": "The GENIUS Act provides a framework for the federal regulation of payment stablecoins. The law directs Treasury to issue regulations that would ...",
+   "cited_in": []
+  },
+  {
+   "no": 6,
+   "title": "Digital Asset Market Clarity Act",
+   "hostname": "banking.senate.gov",
+   "url": "https://www.banking.senate.gov/imo/media/doc/section-by-section.pdf",
+   "date_shown": "2026-05-12",
+   "snippet": "May 12, 2026. Page 1. Sec ... deposit-like interest or yield on payment stablecoin balances, while allowing bona fide activity or transaction-based rewards ...",
+   "cited_in": [
+    "2. CLARITY Act 본문",
+    "2. CLARITY Act 표, 상원 초안, Digital Asset Market Clarity Act 관련 section-by-section 자료 행"
+   ]
+  },
+  {
+   "no": 7,
+   "title": "Fact Sheet: President Donald J. Trump Signs GENIUS Act ...",
+   "hostname": "whitehouse.gov",
+   "url": "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/",
+   "date_shown": "2025-07-18",
+   "snippet": "Trump signed the GENIUS Act into law, a historic piece of legislation that will pave the way for the United States to lead the global digital ...",
+   "cited_in": []
+  },
+  {
+   "no": 8,
+   "title": "FDIC Approves Proposal to Implement GENIUS Act ...",
+   "hostname": "fdic.gov",
+   "url": "https://www.fdic.gov/news/press-releases/2026/fdic-approves-proposal-implement-genius-act-requirements-and-standards",
+   "date_shown": "2026-04-07",
+   "snippet": "On December 19, 2025, the FDIC issued a proposed rule that would establish application procedures for IDIs seeking approval to issue payment ...",
+   "cited_in": [
+    "1. GENIUS법 시행 규정 본문"
+   ]
+  },
+  {
+   "no": 9,
+   "title": "H. R. 3633",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/119/bills/hr3633/BILLS-119hr3633rs.pdf",
+   "date_shown": "2026-06-01",
+   "snippet": "AN ACT. To provide for a system of regulation of the offer and sale of digital commodities by the Securities and Exchange. Commission and the Commodity ...",
+   "cited_in": []
+  },
+  {
+   "no": 10,
+   "title": "The GENIUS ACT in 2026: A strategic inflection point for ...",
+   "hostname": "wolterskluwer.com",
+   "url": "https://www.wolterskluwer.com/en/expert-insights/the-genius-act-in-2026-a-strategic-inflection-point-for-us-banks",
+   "date_shown": "2026-07-01",
+   "snippet": "The GENIUS Act moves stablecoins into a regulated banking framework, making digital asset strategy a near-term priority for U.S. banks.",
+   "cited_in": []
+  },
+  {
+   "no": 11,
+   "title": "market_structure_draft.pdf",
+   "hostname": "banking.senate.gov",
+   "url": "https://www.banking.senate.gov/imo/media/doc/market_structure_draft.pdf",
+   "date_shown": "2026-05-08",
+   "snippet": "To provide for a system of regulation of the offer and sale of digital commodities by the Securities and Exchange. Commission and the Commodity Futures ...",
+   "cited_in": []
+  },
+  {
+   "no": 12,
+   "title": "Permitted Payment Stablecoin Issuer Customer ...",
+   "hostname": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2026/06/22/2026-12460/permitted-payment-stablecoin-issuer-customer-identification-program",
+   "date_shown": "2026-06-22",
+   "snippet": "The GENIUS Act provides a comprehensive framework for the regulation of payment stablecoins. The GENIUS Act requires that a PPSI “be treated as a financial ...",
+   "cited_in": [
+    "1. GENIUS법 시행 규정 표, OCC 행"
+   ]
+  },
+  {
+   "no": 13,
+   "title": "Text - H.R.3633 - 119th Congress (2025-2026): Digital ...",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633/text",
+   "date_shown": null,
+   "snippet": "Text for H.R.3633 - 119th Congress (2025-2026): Digital Asset Market Clarity Act. ... Prohibiting interest and yield on payment stablecoins. Sec. 405 ...",
+   "cited_in": [
+    "2. CLARITY Act 본문",
+    "2. CLARITY Act 표, 하원 통과본, H.R. 3633 행"
+   ]
+  },
+  {
+   "no": 14,
+   "title": "SEC Issues Crypto Guidance as Congress Considers ...",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/crs-product/LSB11415",
+   "date_shown": "2026-04-03",
+   "snippet": "According to reports, the Senate Banking Committee may hold a markup for that bill (or revised market-structure legislation) in April 2026. While H.R. 3633 and ...",
+   "cited_in": []
+  },
+  {
+   "no": 15,
+   "title": "ehf26374.pdf",
+   "hostname": "banking.senate.gov",
+   "url": "https://www.banking.senate.gov/imo/media/doc/ehf26374.pdf",
+   "date_shown": "2026-05-20",
+   "snippet": "To provide for a system of regulation of the offer and sale of digital commodities by the Securities and Exchange. Commission and the Commodity Futures ...",
+   "cited_in": []
+  },
+  {
+   "no": 16,
+   "title": "Boozman Leads Ag Committee in Advancing Crypto ...",
+   "hostname": "agriculture.senate.gov",
+   "url": "https://www.agriculture.senate.gov/newsroom/rep/press/release/boozman-leads-ag-committee-in-advancing-crypto-market-structure-legislation",
+   "date_shown": "2026-01-29",
+   "snippet": "The committee-passed legislation builds on the bipartisan, House-passed CLARITY Act and incorporates provisions negotiated with Senate Democrats ...",
+   "cited_in": []
+  },
+  {
+   "no": 17,
+   "title": "GENIUS Act Requirements and Standards for FDIC ...",
+   "hostname": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2026/04/10/2026-06974/genius-act-requirements-and-standards-for-fdic-supervised-permitted-payment-stablecoin-issuers-and",
+   "date_shown": "2026-04-10",
+   "snippet": "The proposed rule aims to establish a tailored, principles-based regulatory regime for FDIC-supervised PPSIs and FDIC-supervised custodians, consistent with the ...",
+   "cited_in": [
+    "1. GENIUS법 시행 규정 표, FDIC 행"
+   ]
+  },
+  {
+   "no": 18,
+   "title": "의안정보시스템",
+   "hostname": "likms.assembly.go.kr",
+   "url": "http://likms.assembly.go.kr/bill/main.do",
+   "date_shown": null,
+   "snippet": "미확정\n\n  ZZ22141\n  :   정부\n  :   2026-09-21\n 조세특례제한법 일부개정법률안\n\n  정태호\n\n  2221514\n  :   정태호의원 등 10인\n  :   2026-09-21\n 여성기업지원에 관한 법률 일부개정법률안\n\n  오세희\n\n  2221513\n  :   오세희의원 등 10인\n  :   2026-09-21\n 주식·사채 등의 전자등록에 관한 법률 일부개정법률안\n\n  박상혁\n\n  2221512\n  :   박상혁의원 등 11인\n  :   2026-09-21\n 소음·진동관리법 일부개정법률안\n\n  조지연\n\n  2221511\n  :   조지연의원 등 10인\n  :   2026-09-21\n 조세특례제한법 일부개정법률안\n\n  안상훈\n\n  2221510\n  :   안상훈의원 등 11인\n  :   2026-09-21\n 주택도시기금법 일부개정법률안\n\n  전현희\n\n  2221509\n  :   전현희의원 등 12인\n  :   2026-09-21\n 상법 일부개정법률안 [...] 박상혁\n\n  2221508\n  :   박상혁의원 등 11인\n  :   2026-09-21\n 자본시장과 금융투자업에 관한 법률 일부개정법률안\n\n  이학영\n\n  2221507\n  :   이학영의원 등 10인\n  :   2026-09-21\n 공직선거법 일부개정법률안\n\n  최형두\n\n  2221506\n  :   최형두의원 등 109인\n  :   2026-09-21\n\n### 본회의부의안건\n\n 국민체육진흥법 일부개정법률안(대안)\n\n  문화체육관광위원회\n\n  2221409\n  :   문화체육관광위원장\n  :   2026-09-16\n 방송통신발전 기본법 일부개정법률안(대안)\n\n  과학기술정보방송통신위원회\n\n  2221267\n  :   과학기술정보방송통신위원장\n  :   2026-09-09\n 방송법 일부개정법률안(대안)\n\n  과학기술정보방송통신위원회\n\n  2221266\n  :   과학기술정보방송통신위원장\n  :   2026-09-09\n 첨단의료복합단지 육성에 관한 특별법 일부개정법률안(대안) [...] :   2221428\n\n  원안가결\n  :   법제사법위원장\n  :   2026-09-17\n 군사기밀 보호법 일부개정법률안(대안)\n\n  국방위원회\n\n  :   2221427\n\n  원안가결\n  :   국방위원장\n  :   2026-09-17\n 대한적십자사 전국대의원총회 대의원 위촉의 건\n\n  본회의\n\n  :   2221425\n\n  원안가결\n  :   의장\n  :   2026-09-17\n 본회의 의결을 요하는 국정감사대상기관 승인의 건(농림축산식품해양수산위원회)\n\n  농림축산식품해양수산위원회\n\n  :   2221421\n\n  원안가결\n  :   농림축산식품해양수산위원장\n  :   2026-09-17\n 본회의 의결을 요하는 국정감사대상기관 승인의 건(외교통일위원회)\n\n  외교통일위원회\n\n  :   2221417\n\n  원안가결\n  :   외교통일위원장\n  :   2026-09-17\n 본회의 의결을 요하는 국정감사대상기관 승인의 건(재정경제기획위원회)\n\n  재정경제기획위원회",
+   "cited_in": [
+    "3. 한국 원화 스테이블코인 법안과 정부안 본문",
+    "3. 한국 원화 스테이블코인 법안과 정부안 표, 새 의원안 행"
+   ]
+  },
+  {
+   "no": 19,
+   "title": "An Overview of Decentralized Finance (Defi)",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/crs_external_products/R/PDF/R48883/R48883.2.pdf?ref=academy.teleswap.xyz",
+   "date_shown": "2026-03-16",
+   "snippet": "3633, the crypto market structure-focused Digital Asset Market. Clarity Act of 2025 (or CLARITY Act) that the House passed in July 2025 and related bills being ...",
+   "cited_in": []
+  },
+  {
+   "no": 20,
+   "title": "보도설명자료 - 위원회 소식 - 알림마당 - 금융위원회",
+   "hostname": "fsc.go.kr",
+   "url": "https://fsc.go.kr/no010102/85770",
+   "date_shown": null,
+   "snippet": "ㅇ 정부안을 조속히 마련하여 국회 입법 논의를 지원하기로 의견을 모았습니다.\n\n□ 다만, 당정은 스테이블코인 발행인과 관련하여 은행 지분 51% 이상 ‘컨소시엄’ 허용 등에 대해서는 구체적으로 확정한 바 없으니, 보도에 신중을 기해주시기 바랍니다.\n\n첨부파일 (2)첨부파일 목록;)\n\n251201(보도설명) “원화 스테이블코인 발행 컨소시엄 구성에 대해서는 확정된 바 없습니다.hwp “원화 스테이블코인 발행 컨소시엄 구성에 대해서는 확정된 바 없습니다.hwp\")  (99 KB)  파일다운로드\n\n251201(보도설명) “원화 스테이블코인 발행 컨소시엄 구성에 대해서는 확정된 바 없습니다.hwpx “원화 스테이블코인 발행 컨소시엄 구성에 대해서는 확정된 바 없습니다.hwpx\")  (110 KB)  파일다운로드\n\n목록으로 [...] 주메뉴 바로가기  본문 내용 바로가기\n\neg(전자정부)이 누리집은 대한민국 공식 전자정부 누리집입니다.\n\n금융위원회\n\n 알기쉬운 금융\n ENGLISH\n 어린이\n\n 검색;)\n 모바일메뉴 열기;)\n\n홈으로 알림마당 위원회 소식 보도설명자료\n\n### 보도설명자료\n\n공유하기;)\n\n FaceBook; \"페이스북 공유하기 새창열기\")\n X (구)트위터; \"X (구)트위터 공유하기 새창열기\")\n NaverBlog; \"네이버블로그 공유하기 새창열기\")\n URL 복사; \"URL 복사하기\")\n\n  인쇄하기; \"인쇄하기\")\n\n원화 스테이블코인 발행 컨소시엄 구성에 대해서는 확정된 바 없습니다. - 매일경제 12.1일자 「원화 스테이블코인, ‘은행 지분 51%’ 컨소시엄으로 푼다...정부안 10일 데드라인」 보도에 대한 설명\n\n2025-12-01 조회수 : 39525\n\n담당부서가상자산과 담당자윤영주 사무관 연락처02-2100-1651\n\n|  | [...] |  |\n\n| “원화 스테이블코인 발행 컨소시엄 구성에 대해서는 확정된 바 없습니다.” |\n| - 매일경제 12.1일자 「원화 스테이블코인, ‘은행 지분 51%’ 컨소시엄으로 푼다...정부안 10일 데드라인」 보도에 대한 설명 - |\n\n1. 기사내용\n\n□ 매일경제는 12.1일자 「‘은행 지분 51%’ 컨소시엄으로 푼다...정부안 10일 데드라인」 제하의 기사에서,\n\n ㅇ “가장 큰 쟁점이었던 스테이블코인 발행 주체 문제는 한국은행, 금융위, 은행권의 입장을 조율해 ‘컨소시엄 형태’로 정리됐다.”\n\n ㅇ “특히 컨소시엄 구성 시 은행이 50% 이상(51%)의 지분을 갖는 방향으로 당정 간 의견이 모였다.”\n\n ㅇ “당정은 이번 정기국회 내 법안 발의를 마치고, 내년 1월 임시국회에서 법안을 처리한다는 목표다.”라고 보도하였습니다.\n\n2. 동 보도내용에 대한 설명\n\n□ 12.1일 당정 협의를 통해 디지털자산기본법 제정방향에 대한 다양한 사항들을 논의하였고,",
+   "cited_in": [
+    "3. 한국 원화 스테이블코인 법안과 정부안 표, 정부안 행"
+   ]
+  },
+  {
+   "no": 21,
+   "title": "한국은행",
+   "hostname": "bok.or.kr",
+   "url": "https://www.bok.or.kr/portal/main/main.do",
+   "date_shown": null,
+   "snippet": "BOK 이슈노트 [제2026-22호] 달러 스테이블코인과 외환시장 간 연계성: 글로벌 거래소의 역할을 중심으로 달러 스테이블코인의 발행 규모와 활용 범위가 확대되면서 ...",
+   "cited_in": [
+    "3. 한국 원화 스테이블코인 법안과 정부안 표, 한국은행 발표 행"
+   ]
+  },
+  {
+   "no": 22,
+   "title": "Cryptocurrency: Regulatory and Legislative Policy Issues",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/crs-product/R48963",
+   "date_shown": "2026-05-29",
+   "snippet": "The House passed the Digital Asset Market Clarity Act of 2025 (CLARITY Act; H.R. ... Act establishes is a prohibition on stablecoin issuers paying yield to ...",
+   "cited_in": []
+  },
+  {
+   "no": 23,
+   "title": "PYUSD Reserve Reconciliation — 2026-05",
+   "hostname": "tessera.financial",
+   "url": "https://tessera.financial/PYUSD_2026-05/original/report.pdf",
+   "date_shown": null,
+   "snippet": "Reserve Reconciliation Report — PayPal USD (PYUSD) Period: 2026-05 (2026-05-01 to 2026-05-31) Issuer: Paxos Trust Company · Chain: ethereum · Contract: 0x6c3ea9036406852006290770BEdFcAbA0e23A0e8 Blocks 24996368–25218797 Prepared by ProofLayer as audit-readiness support. This document is not an audit opinion, attestation, or examination under AICPA or PCAOB standards; formal examinations remain with registered public accounting firms. [...] 04:44:20 UTC from  99N5QwJCmGdSIzUsGoGdLXxYI0.pdf) Generated by ProofLayer · Deterministic reconciliation engine v0.1 · AI used for document extraction only; all figures computed deterministically from source evidence. [...] 6. Supply Corroboration — Attestation vs Independent Chain Data The attestation states tokens outstanding per chain at an exact cut-off time. ProofLayer independently reconstructs supply at that same instant from raw chain data — two unrelated measurement paths compared below. Tolerance: 0.0005 of the attested figure.",
+   "cited_in": [
+    "4. 레퍼런스 서비스 갱신 표, Tessera, ProofLayer 행"
+   ]
+  },
+  {
+   "no": 24,
+   "title": "GENIUS Act Regulations on Payment Stablecoin Issuance, ...",
+   "hostname": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2026/08/18/2026-16796/genius-act-regulations-on-payment-stablecoin-issuance-offer-and-sale",
+   "date_shown": "2026-08-18",
+   "snippet": "GENIUS Act Regulations on Payment Stablecoin Issuance, Offer, and Sale. A Proposed Rule by the Treasury Department on 08/18/2026. New folder; My Clipboard. This ...",
+   "cited_in": [
+    "1. GENIUS법 시행 규정 표, 재무부 행"
+   ]
+  },
+  {
+   "no": 25,
+   "title": "Stablecoin Preflight — Verified Stablecoin Evidence",
+   "hostname": "feedoracle.io",
+   "url": "https://feedoracle.io/stablecoin-preflight/",
+   "date_shown": "2026-08-19",
+   "snippet": "Verify a stablecoin before you list, accept or pay with it. FeedOracle turns EU register evidence, issuer disclosures, reserve disclosures, peg ...",
+   "cited_in": [
+    "4. 레퍼런스 서비스 갱신 표, FeedOracle 행"
+   ]
+  },
+  {
+   "no": 26,
+   "title": "Veris Documentation",
+   "hostname": "docs.useveris.finance",
+   "url": "https://docs.useveris.finance/",
+   "date_shown": null,
+   "snippet": "Always-on surveillance across stablecoin reserves, travel rule compliance, and regulatory change detection. These agents operate on periodic schedules ...",
+   "cited_in": [
+    "4. 레퍼런스 서비스 갱신 표, Veris 행"
+   ]
+  },
+  {
+   "no": 27,
+   "title": "Implementing the Federal Reserve Board's ...",
+   "hostname": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2026/09/29/2026-19860/implementing-the-federal-reserve-boards-responsibilities-under-the-genius-act",
+   "date_shown": "2026-09-29",
+   "snippet": "The GENIUS Act's effective date is the earlier of 18 months after the enactment date (July 18, 2025) or 120 days after the primary Federal payment stablecoin ...",
+   "cited_in": [
+    "1. GENIUS법 시행 규정 본문",
+    "1. GENIUS법 시행 규정 표, 연준 행"
+   ]
+  },
+  {
+   "no": 28,
+   "title": "S.1582 - GENIUS Act 119th Congress (2025-2026)",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1582",
+   "date_shown": null,
+   "snippet": "19) This section requires certain federal employees to disclose holdings over $5,000 of permitted payment stablecoins as part of required financial disclosures.",
+   "cited_in": []
+  },
+  {
+   "no": 29,
+   "title": "Investments in and Licensing of Permitted Payment ...",
+   "hostname": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2026/02/12/2026-02868/investments-in-and-licensing-of-permitted-payment-stablecoins-issuers",
+   "date_shown": "2026-02-12",
+   "snippet": "The GENIUS Act charges the NCUA with licensing, regulating, and supervising payment stablecoin issuers that are subsidiaries of federally insured credit unions",
+   "cited_in": [
+    "1. GENIUS법 시행 규정 표, NCUA 행"
+   ]
+  },
+  {
+   "no": 30,
+   "title": "Permitted Payment Stablecoin Issuer Anti-Money ...",
+   "hostname": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2026/04/10/2026-06963/permitted-payment-stablecoin-issuer-anti-money-launderingcountering-the-financing-of-terrorism",
+   "date_shown": "2026-04-10",
+   "snippet": "The GENIUS Act directs that a “permitted payment stablecoin issuer shall be treated as a financial institution for purposes of the Bank Secrecy Act” and “shall ...",
+   "cited_in": [
+    "1. GENIUS법 시행 규정 표, 재무부 또는 관련 연방기관 행"
+   ]
+  },
+  {
+   "no": 31,
+   "title": "An Overview of H.R. 3633, the CLARITY Act",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/crs-product/IN12583",
+   "date_shown": "2025-09-30",
+   "snippet": "The bill would provide the CFTC with exclusive regulatory jurisdiction over transactions in digital commodities—including in spot or cash ...",
+   "cited_in": []
+  },
+  {
+   "no": 32,
+   "title": "Approval Requirements for Issuance of Payment ...",
+   "hostname": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2025/12/19/2025-23510/approval-requirements-for-issuance-of-payment-stablecoins-by-subsidiaries-of-fdic-supervised-insured",
+   "date_shown": "2025-12-19",
+   "snippet": "As required by the GENIUS Act, this proposed rule would establish a process and Federal framework for the acceptance and processing of PPSI applications ...",
+   "cited_in": []
+  },
+  {
+   "no": 33,
+   "title": "Calendar No. llll A BILL",
+   "hostname": "agriculture.senate.gov",
+   "url": "https://www.agriculture.senate.gov/download/s___digital_commodity_intermediaries_actpdf",
+   "date_shown": "2026-05-03",
+   "snippet": "Clarity Act of 2026). 12. ''(B) RELATIONSHIP OF PERSONS TO DE-. 13 ... STABLECOIN.—A payment stablecoin (as. 7 defined in section 2 of the ...",
+   "cited_in": [
+    "2. CLARITY Act 표, 상원 농업위원회 관련 초안 행"
+   ]
+  },
+  {
+   "no": 34,
+   "title": "한국은행 - 통화신용정책보고서(상세)",
+   "hostname": "bok.or.kr",
+   "url": "https://www.bok.or.kr/portal/bbs/B0000156/view.do?menuNo=200067&nttId=10096935",
+   "date_shown": null,
+   "snippet": "9월~10월, 가상환경에서의 기술 실험 진행(1차). 10월 30일, 가상환경에서의 ... 스테이블코인은 법정화폐에 가치가 연동(pegging)되어 발행되는 사실상 화폐 대용 ...",
+   "cited_in": []
+  },
+  {
+   "no": 35,
+   "title": "FeedOracle — Stablecoin Decision Infrastructure",
+   "hostname": "feedoracle.io",
+   "url": "https://feedoracle.io/",
+   "date_shown": null,
+   "snippet": "FeedOracle turns scattered stablecoin facts — EU register status, issuer and reserve disclosures, peg observations, source freshness — into structured, ...",
+   "cited_in": []
+  },
+  {
+   "no": 36,
+   "title": "A BILL",
+   "hostname": "agriculture.senate.gov",
+   "url": "https://www.agriculture.senate.gov/imo/media/doc/bipartisan_market_structure_discussion_draft.pdf",
+   "date_shown": "2026-05-08",
+   "snippet": "Definitions under the Commodity Exchange Act. Sec. 102. Definitions under this Act. Sec. 103. Rulemakings. Sec. 104. Commodity Exchange Act ...",
+   "cited_in": []
+  },
+  {
+   "no": 37,
+   "title": "Ⅰ. 금융안정 상황",
+   "hostname": "bok.or.kr",
+   "url": "https://www.bok.or.kr/portal/cmmn/file/fileDown.do?atchFileId=08fc6e2fd52a40ffaf25d0877a39e42d&fileSn=2",
+   "date_shown": null,
+   "snippet": "68 미국 비트코인 현물 ETF 자금유출입 규모: 2026년 4월 +17.4억달러 → 5월 -23.3억달러(자료: EPFR). 69 2026년 5월 14일 스테이블코인 보유에 대한 이자 지급은 ...",
+   "cited_in": []
+  },
+  {
+   "no": 38,
+   "title": "MiCA & DORA: Where We Actually Stand — Evidence Is the ...",
+   "hostname": "feedoracle.io",
+   "url": "https://feedoracle.io/blog/100-days-mica-dora-countdown",
+   "date_shown": null,
+   "snippet": "Stablecoin MiCA Status — As of Late April 2026. FeedOracle continuously monitors stablecoin authorization status, reserve quality, peg behaviour, and custody ...",
+   "cited_in": []
+  },
+  {
+   "no": 39,
+   "title": "Written Statement of Ji Hun Kim CCI - Senate Agriculture",
+   "hostname": "agriculture.senate.gov",
+   "url": "https://www.agriculture.senate.gov/download/09/22/2025/testimony_kim_07152025pdf",
+   "date_shown": "2025-07-15",
+   "snippet": "(2025) Fidelity Develops Stablecoin and Tokenized Fund as U.S. Weighs New Crypto Regulations. Available at: https://finance.yahoo.com/news ...",
+   "cited_in": []
+  },
+  {
+   "no": 40,
+   "title": "카드뉴스 - 홍보자료 - 알림마당 - 금융위원회",
+   "hostname": "fsc.go.kr",
+   "url": "https://www.fsc.go.kr/no040101?cnId=3021&curPage=44&pastPage=44&srchKey=&srchText=",
+   "date_shown": null,
+   "snippet": "![설명드립니다. 1. 기사내용 한국경제는 1.6일 [단독] 은행, ‘원화 스테이블코인社’ 자회사로 둘 수 있다 제하의 기사에서 은행이 원화 스테이블코인 발행사의 지분 15%를 넘게 보유할 수 있는 길이 열릴 전망이다. 정부는 디지털자산기본법에서 원화 스테이블코인 발행을 은행 중심(지분 50%+1주) 컨소시엄부터 허용하기로 가닥을 잡았다. 문제는 은행법상 은행은 다른 회사 지분을 15%까지만 소유할 수 있다는 점이다. 금융당국은 이 같은 문제를 해결하기 위해 금융투자업, 보험업, 저축은행업 등으로 제한된 은행의 자회사 업종(은행업 감독규정)에 스테이블코인 발행업을 추가할 방침이다.” 등의 내용을 보도하였습니다.](/comm/getImage?srvcId=CARDNEWS&upperNo=3021&fileTy=ATTACH&fileNo=2&thumbTy=M \"자세히보기\") [...] ![설명드립니다. 1. 기사내용 한국경제는 1.6일 [단독] 은행, ‘원화 스테이블코인社’ 자회사로 둘 수 있다 제하의 기사에서 은행이 원화 스테이블코인 발행사의 지분 15%를 넘게 보유할 수 있는 길이 열릴 전망이다. 정부는 디지털자산기본법에서 원화 스테이블코인 발행을 은행 중심(지분 50%+1주) 컨소시엄부터 허용하기로 가닥을 잡았다. 문제는 은행법상 은행은 다른 회사 지분을 15%까지만 소유할 수 있다는 점이다. 금융당국은 이 같은 문제를 해결하기 위해 금융투자업, 보험업, 저축은행업 등으로 제한된 은행의 자회사 업종(은행업 감독규정)에 스테이블코인 발행업을 추가할 방침이다.” 등의 내용을 보도하였습니다.](/comm/getImage?srvcId=CARDNEWS&upperNo=3021&fileTy=ATTACH&fileNo=2) [...] 주메뉴 바로가기  본문 내용 바로가기\n\neg(전자정부)이 누리집은 대한민국 공식 전자정부 누리집입니다.\n\n금융위원회\n\n 알기쉬운 금융\n ENGLISH\n 어린이\n\n 검색;)\n 모바일메뉴 열기;)\n\n홈으로 알림마당 홍보자료 카드뉴스\n\n### 카드뉴스\n\n공유하기;)\n\n FaceBook; \"페이스북 공유하기 새창열기\")\n X (구)트위터; \"X (구)트위터 공유하기 새창열기\")\n NaverBlog; \"네이버블로그 공유하기 새창열기\")\n URL 복사; \"URL 복사하기\")\n\n  인쇄하기; \"인쇄하기\")\n\n전체2648건 페이지44/442\n\n스테이블코인 발행인의 주주구성 등 2단계법 주요내용은 확정된 바 없습니다.\n\n2026-01-08\n\n이전\n\n설명드립니다. 한국경제의 1월 6일 기사에 대한 설명. 스테이블코인 발행인의 주주구성 등 2단계법 주요내용은 확정된 바 없습니다.",
+   "cited_in": [
+    "3. 한국 원화 스테이블코인 법안과 정부안 표, 금융위 발표 행"
+   ]
+  },
+  {
+   "no": 41,
+   "title": "2026년 통화신용정책 운영방향",
+   "hostname": "bok.or.kr",
+   "url": "https://www.bok.or.kr/portal/bbs/B0000168/view.do?menuNo=200058&nttId=10095576",
+   "date_shown": "2026-01-07",
+   "snippet": "스테이블코인 관련해서는 거시경제 안정 등이 고려된 스테이블코인 거버넌스 체계 구축을 위해 국회, 정부 등의 스테이블코인 입법 논의에 적극 참여 ...",
+   "cited_in": [
+    "3. 한국 원화 스테이블코인 법안과 정부안 본문"
+   ]
+  },
+  {
+   "no": 42,
+   "title": "Verified Reports — FeedOracle",
+   "hostname": "feedoracle.io",
+   "url": "https://feedoracle.io/reports.html",
+   "date_shown": null,
+   "snippet": "Verified Reports · Digital Asset AMLR Risk Assessment · MiCA Stablecoin Assessment · Macro-Economic Risk Briefing · RWA Risk Intelligence Report · DORA Evidence Pack.",
+   "cited_in": []
+  },
+  {
+   "no": 43,
+   "title": "Testimony of Perianne Boring, Founder and ...",
+   "hostname": "agriculture.senate.gov",
+   "url": "https://www.agriculture.senate.gov/download/testimony_boring_0209202213",
+   "date_shown": "2022-02-09",
+   "snippet": "clarity has created many unintended consequences. The fragmented regulatory system is hampering innovation and impacting the U.S.'s global ...",
+   "cited_in": []
+  },
+  {
+   "no": 44,
+   "title": "소개 및 알림|의안 안내",
+   "hostname": "likms.assembly.go.kr",
+   "url": "https://likms.assembly.go.kr/bill/bi/intro/billItroPage.do",
+   "date_shown": null,
+   "snippet": "##### 7) 동의안 [...] |  |\n\n| ① 헌법 또는 「국회법」 제00조의 규정에 의하여 법률안, 결의안 등 의안을 발의함을 밝히고,  ② 의안의 대표발의자, 발의자, 찬성자의 서명날인이 있어야 하며,  ③ 의안의 제안이유와 주요내용을 기재하고,  ④ 법률안이면 조문을, 결의안 또는 건의안이면 주문을 적으며, 일부개정법률안인 경우에는 현행법과 개정안의 조문대비표를 붙이고,  ⑤ 의안의 시행에 비용이 수반되어 예산상 또는 기금상의 조치가 필요한 경우에는 비용추계서 또는 비용추계서 미첨부 사유서를 붙이며,  ⑥ 「조세특례제한법」에 따른 조세특례를 신규로 도입하는 법률안의 경우 조세특례의 필요성 및 적시성, 기대효과, 예상되는 문제점 등에 대하여 평가한 자료를 붙여야 한다. |\n\n ##### 의안의 발의자 및 찬성자 수 [...] 의안 안내서비스 소개공지사항\n\n 인쇄하기; \"인쇄하기 새창열림\")\n 공유; \"SNS 공유하기\")\n\n+ 카카오스토리\n+ 페이스북\n+ 엑스\n+ 네이버블로그\n+ 카카오톡\n+ URL\n\n창닫기;)\n\n 만족도조사; \"만족도조사\")\n 점자뷰어보기 \"점자뷰어 새창열림\")\n 전자점자 다운로드 \"전자점자 다운로드\")\n 인트로 영역 접기; \"인트로 영역 접기\")\n\n 홈\n 소개 및 알림;) \n\n  의안검색의안현황의안통계연차보고서청원예결산정보소개 및 알림\n 의안 안내;) \n\n  의안 안내서비스 소개공지사항\n\n 인쇄하기; \"인쇄하기 새창열림\")\n 공유; \"SNS 공유하기\")\n\n+ 카카오스토리\n+ 페이스북\n+ 엑스\n+ 네이버블로그\n+ 카카오톡\n+ URL\n\n창닫기;)\n\n 만족도조사; \"만족도조사\")\n 점자뷰어보기 \"점자뷰어 새창열림\")\n 전자점자 다운로드 \"전자점자 다운로드\")\n 인트로 영역 열기; \"인트로 영역 열기\")\n\n## 소개 및 알림\n\n 의안 안내\n 서비스 소개\n 공지사항\n\n### 의안 안내",
+   "cited_in": []
+  },
+  {
+   "no": 45,
+   "title": "| 한국은행 경제특강 | 프로그램안내",
+   "hostname": "bok.or.kr",
+   "url": "https://www.bok.or.kr/portal/main/contents.do?menuNo=201130",
+   "date_shown": null,
+   "snippet": "스테이블코인과 중앙은행 디지털화폐(CBDC), 가상자산 기초, 국내외 가상자산 거래 ... 경제교육소식 2026년 10월 「한은금요강좌」 안내 2026.09.21 · 경제교육소식 ...",
+   "cited_in": []
+  },
+  {
+   "no": 46,
+   "title": "RLUSD Reserve Attestation API | FeedOracle Docs",
+   "hostname": "feedoracle.io",
+   "url": "https://feedoracle.io/docs/rlusd-attestation.html",
+   "date_shown": null,
+   "snippet": "Overview. This API transforms Ripple's monthly PDF attestation reports into structured JSON with cryptographic verification and on-chain anchoring.",
+   "cited_in": [
+    "4. 레퍼런스 서비스 갱신 표, FeedOracle API 행"
+   ]
+  },
+  {
+   "no": 47,
+   "title": "Treasury Proposes GENIUS Act Principles for Acceptable ...",
+   "hostname": "consumerfinancialserviceslawmonitor.com",
+   "url": "https://www.consumerfinancialserviceslawmonitor.com/2026/04/treasury-proposes-genius-act-principles-for-acceptable-state-stablecoin-regimes/",
+   "date_shown": "2026-04-07",
+   "snippet": "Enacted July 18, 2025, the GENIUS Act creates a new regulatory regime for “payment stablecoins” under which only “permitted payment stablecoin ...",
+   "cited_in": []
+  },
+  {
+   "no": 48,
+   "title": "참고 4. 최근 가상자산시장 가격 변동의 특징85",
+   "hostname": "bok.or.kr",
+   "url": "https://www.bok.or.kr/portal/cmmn/file/fileDown.do?atchFileId=08fc6e2fd52a40ffaf25d0877a39e42d&fileSn=6",
+   "date_shown": null,
+   "snippet": "... 2026. BOK 국제컨퍼런스), 글로벌 가상자산시장 시가총액 1위로서 시장 전반에 큰 영향을 미치고 있는 점을 고려한 것이다. 87 알고리즘 기반 스테이블코 ...",
+   "cited_in": []
+  },
+  {
+   "no": 49,
+   "title": "RWA Risk Intelligence Report - FeedOracle",
+   "hostname": "feedoracle.io",
+   "url": "https://feedoracle.io/reports/api/report/FO-RWA_RISK-20260429T134808/pdf",
+   "date_shown": null,
+   "snippet": "Evaluates governance controls, custody risk, reserve composition, market depth, and asset provenance. All evidence is cryptographically signed (HMAC-SHA256) ...",
+   "cited_in": []
+  },
+  {
+   "no": 50,
+   "title": "A Look Back at One Year of GENIUS Implementation | CSBS",
+   "hostname": "csbs.org",
+   "url": "https://www.csbs.org/look-back-one-year-genius-implementation",
+   "date_shown": "2026-07-20",
+   "snippet": "Five federal agencies have rule writing responsibilities under GENIUS. ... During the 2026 legislative session, several states adopted legislation ...",
+   "cited_in": []
+  },
+  {
+   "no": 51,
+   "title": "DIGITAL ASSET MARKET CLARITY ACT OF 2025 ...",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/119/meeting/house/117802/documents/CRPT-119hrpt168-pt1.pdf?utm_source=chatgpt.com",
+   "date_shown": "2025-06-23",
+   "snippet": "The Committee on Agriculture, to whom was referred the bill. (H.R. 3633) to provide for a system of regulation of the offer and.",
+   "cited_in": []
+  },
+  {
+   "no": 52,
+   "title": "의안검색|의안상세",
+   "hostname": "likms.assembly.go.kr",
+   "url": "https://likms.assembly.go.kr/bill/bi/billDetailPage.do?billId=PRC_I2G6H0F4F1N6M1M5L3M2K1K1S3R6R1",
+   "date_shown": null,
+   "snippet": "+ 카카오스토리\n+ 페이스북\n+ 엑스\n+ 네이버블로그\n+ 카카오톡\n+ URL\n\n창닫기;)\n\n 만족도조사; \"만족도조사\")\n 점자뷰어보기 \"점자뷰어 새창열림\")\n 전자점자 다운로드 \"전자점자 다운로드\")\n 인트로 영역 접기; \"인트로 영역 접기\")\n\n 홈\n 의안상세;) \n\n  기본검색문서검색지능형검색\n\n 인쇄하기; \"인쇄하기 새창열림\")\n 공유; \"SNS 공유하기\")\n\n+ 카카오스토리\n+ 페이스북\n+ 엑스\n+ 네이버블로그\n+ 카카오톡\n+ URL\n\n창닫기;)\n\n 만족도조사; \"만족도조사\")\n 점자뷰어보기 \"점자뷰어 새창열림\")\n 전자점자 다운로드 \"전자점자 다운로드\")\n 인트로 영역 열기; \"인트로 영역 열기\")\n\n###  산업기술혁신 촉진법 일부개정법률안(조정식의원 등 10인)\n\n심사정보\n\n 심사정보 [...] 소개 및 알림;)\n\n 의안 안내\n 서비스 소개\n 공지사항\n\n 국회정보길라잡이\n 국회의원 검색\n\n닫기\n\n 제22대 제439회국회(정기회)\n 국회정보길라잡이\n 국회의원 검색\n\n 대한민국국회\n 로그인\n 글자크기 화면확대 화면축소\n 1. 페이스북\n  2. 인스타그램\n  3. 유튜브\n  4. 엑스\n 사이트맵\n\n 의안검색\n  + 기본검색\n  + 문서검색\n  + 지능형검색\n 의안현황\n  + 계류의안\n  + 처리의안\n  + 표결정보\n  + 위원회안(대안)\n  + 본회의 부의안건\n 의안통계\n  + 한눈에 보는 통계\n  + 일반통계\n 연차보고서\n  + 연차보고서\n 청원\n  + 청원검색\n  + 청원현황\n  + 청원통계\n  + 청원안내\n 소개 및 알림\n  + 의안 안내\n  + 서비스 소개\n  + 공지사항\n\n 검색\n 전체메뉴\n\n국민을 지키는 국회 미래로 나아가는 국회\n\n 홈\n 의안상세;) \n\n  기본검색문서검색지능형검색\n\n 인쇄하기; \"인쇄하기 새창열림\")\n 공유; \"SNS 공유하기\") [...] 본문 내용 바로가기\n\n찾으시는 검색어를 입력해주세요\n\n창닫기;)\n\n전체메뉴\n\n# 대한민국국회\n\n내일을 여는 국민의 국회\n\n 페이스북\n 유투브\n 트위터\n 인스타그램\n\n의안검색;)\n\n 기본검색\n 문서검색\n 지능형검색\n\n의안현황;)\n\n 계류의안\n 처리의안;)\n  + 처리의안(전체)\n  + 본회의 처리의안\n 표결정보;)\n  + 의안별 표결정보\n  + 의원별 표결정보\n 위원회안(대안)\n 본회의 부의안건\n\n의안통계;)\n\n 한눈에 보는 통계\n 일반통계;)\n  + 처리의안통계\n  + 계류의안통계\n\n연차보고서;)\n\n 연차보고서\n\n청원;)\n\n 청원검색\n 청원현황;)\n  + 계류청원\n  + 처리청원\n 청원통계;)\n  + 한눈에 보는 통계\n  + 일반통계\n 청원안내\n\n예결산정보;)\n\n 예산정보;)\n  + 예산안현황\n  + 참고정보\n  + 확정예산\n 결산정보;)\n  + 결산현황\n  + 참고정보\n  + 시정요구 및 조치결과\n 예결산통계;)\n  + 예결산 심사연혁\n  + 예결산통계\n 예결산안내\n 관련법령",
+   "cited_in": []
+  },
+  {
+   "no": 53,
+   "title": "종합평가",
+   "hostname": "bok.or.kr",
+   "url": "https://www.bok.or.kr/portal/cmmn/file/fileDown.do?menuNo=200068&atchFileId=1104342478695e8603ce60dea7ac49ed&fileSn=7",
+   "date_shown": null,
+   "snippet": "9) 원화 기반 스테이블코인 테라KRW(KRT)가 코인원, 고팍스에서 거래되었으나 올해 5월 상장 폐지되었다. 10) FTX 파산 여파로 암호자산 대출전문업체인 Genesis ...",
+   "cited_in": []
+  },
+  {
+   "no": 54,
+   "title": "FeedOracle Whitepaper v6.0",
+   "hostname": "feedoracle.io",
+   "url": "https://feedoracle.io/whitepaper.html",
+   "date_shown": null,
+   "snippet": "Changelog v4.2 (Mar 13, 2026): Know Your Agent (KYA): agent identity registration with trust scoring (0-100), 4 trust levels (UNVERIFIED/KNOWN/TRUSTED/CERTIFIED) ...",
+   "cited_in": []
+  },
+  {
+   "no": 55,
+   "title": "Text - S.1582 - 119th Congress (2025-2026): GENIUS Act",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1582/text",
+   "date_shown": null,
+   "snippet": "419 Public Law 119–27 119th Congress An Act To provide for the regulation of payment stablecoins, and for other purposes. July 18, 2025. [ S. 1582 ]. Be it ...",
+   "cited_in": []
+  },
+  {
+   "no": 56,
+   "title": "Text - S.394 - 119th Congress (2025-2026): GENIUS Act of ...",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/394/text",
+   "date_shown": null,
+   "snippet": "—The term “Comptroller-regulated entity” means any Federal qualified nonbank payment stablecoin issuer that is subject to regulation and supervision exclusively ...",
+   "cited_in": []
+  },
+  {
+   "no": 57,
+   "title": "House Reports",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/house-reports/119th-congress",
+   "date_shown": null,
+   "snippet": "PROVIDING FOR CONSIDERATION OF THE BILL (H.R. 8029) MAKING APPROPRIATIONS FOR THE DEPARTMENT OF HOMELAND SECURITY FOR THE FISCAL YEAR ENDING SEPTEMBER 30, 2026, ...",
+   "cited_in": []
+  },
+  {
+   "no": 58,
+   "title": "참고 I-1.",
+   "hostname": "bok.or.kr",
+   "url": "https://www.bok.or.kr/portal/cmmn/file/fileDown.do?atchFileId=8e938c0ae22d44409c92ac122f3d000f&fileSn=7",
+   "date_shown": "2025-10-11",
+   "snippet": "지난 2025년 9월 발생한 국가정보자원관리원 화재. 사태는 재해 발생 시 ... 지난 10월 11일 발생한 스테이블코인의 가격 변동성. 은 파생상품 등 ...",
+   "cited_in": []
+  },
+  {
+   "no": 59,
+   "title": "About FeedOracle — Compliance Evidence Infrastructure",
+   "hostname": "feedoracle.io",
+   "url": "https://feedoracle.io/about.html",
+   "date_shown": null,
+   "snippet": "We cover DORA, MiCA, and AMLR — the three regulations that define EU financial compliance in 2026. ... Stablecoin peg monitoring, reserve drift detection, ...",
+   "cited_in": []
+  },
+  {
+   "no": 60,
+   "title": "OCC Proposes Comprehensive Rulemaking to Implement ...",
+   "hostname": "mayerbrown.com",
+   "url": "https://www.mayerbrown.com/en/insights/publications/2026/03/occ-proposes-comprehensive-rulemaking-to-implement-the-genius-act",
+   "date_shown": "2026-03-11",
+   "snippet": "Each primary federal payment stablecoin regulator must promulgate implementing regulations by July 18, 2026. The GENIUS Act takes effect on ...",
+   "cited_in": []
+  },
+  {
+   "no": 61,
+   "title": "H. Rept. 119-168 - Digital Asset Market Clarity Act of 2025",
+   "hostname": "congress.gov",
+   "url": "https://www.congress.gov/committee-report/119th-congress/house-report/168/1",
+   "date_shown": null,
+   "snippet": "Part 1 of House report on Digital Asset Market Clarity Act of 2025. This report is by the Agriculture Committee.",
+   "cited_in": []
+  },
+  {
+   "no": 62,
+   "title": "이창용 총재 2026년 신년사",
+   "hostname": "bok.or.kr",
+   "url": "https://www.bok.or.kr/portal/bbs/P0002575/view.do?menuNo=200041&nttId=10095505",
+   "date_shown": "2026-01-02",
+   "snippet": "한국은행은 디지털화폐 시스템에 대비하기 위해 원화 스테이블코인의 발행이 필요하다고 생각하며 그와 관련하여 위험을 최소화하면서도 혁신을 촉진 ...",
+   "cited_in": []
+  },
+  {
+   "no": 63,
+   "title": "MiCA Register Evidence API | FeedOracle Docs",
+   "hostname": "feedoracle.io",
+   "url": "https://feedoracle.io/docs/mica-compliance.html",
+   "date_shown": null,
+   "snippet": "EU authorization register lookup for stablecoins. Verifiable evidence packs from official sources with configurable policy classification.",
+   "cited_in": [
+    "4. 레퍼런스 서비스 갱신 본문"
+   ]
+  },
+  {
+   "no": 64,
+   "title": "GENIUS Act Stablecoin Bill Signed into Law: A Breakdown",
+   "hostname": "uk.practicallaw.thomsonreuters.com",
+   "url": "https://uk.practicallaw.thomsonreuters.com/w-047-6505?transitionType=Default&contextData=(sc.Default)",
+   "date_shown": "2025-07-19",
+   "snippet": "The Guiding and Establishing National Innovation for US Stablecoins (GENIUS) Act was signed into law by President Trump on July 18, 2025, ...",
+   "cited_in": []
+  },
+  {
+   "no": 65,
+   "title": "GENIUS Act Implementation",
+   "hostname": "federalregister.gov",
+   "url": "https://www.federalregister.gov/documents/2025/09/19/2025-18226/genius-act-implementation",
+   "date_shown": "2025-09-19",
+   "snippet": "The GENIUS Act, enacted on July 18, 2025, provides a comprehensive framework for the federal regulation of payment stablecoins. As defined in ...",
+   "cited_in": []
+  },
+  {
+   "no": 66,
+   "title": "의안검색|기본검색",
+   "hostname": "likms.assembly.go.kr",
+   "url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_Z2X5Y1W2X1V7V1R4Q3Q9O5P9O1O2W1",
+   "date_shown": null,
+   "snippet": "기본검색문서검색지능형검색\n\n 인쇄하기; \"인쇄하기 새창열림\")\n 공유; \"SNS 공유하기\")\n\n+ 카카오스토리\n+ 페이스북\n+ 엑스\n+ 네이버블로그\n+ 카카오톡\n+ URL\n\n창닫기;)\n\n 만족도조사; \"만족도조사\")\n 점자뷰어보기 \"점자뷰어 새창열림\")\n 전자점자 다운로드 \"전자점자 다운로드\")\n 인트로 영역 접기; \"인트로 영역 접기\")\n\n 홈\n 의안검색;) \n\n  의안검색의안현황의안통계연차보고서청원예결산정보소개 및 알림\n 기본검색;) \n\n  기본검색문서검색지능형검색\n\n 인쇄하기; \"인쇄하기 새창열림\")\n 공유; \"SNS 공유하기\")\n\n+ 카카오스토리\n+ 페이스북\n+ 엑스\n+ 네이버블로그\n+ 카카오톡\n+ URL\n\n창닫기;)\n\n 만족도조사; \"만족도조사\")\n 점자뷰어보기 \"점자뷰어 새창열림\")\n 전자점자 다운로드 \"전자점자 다운로드\")\n 인트로 영역 열기; \"인트로 영역 열기\")\n\n###  서비스산업발전기본법안(최은석의원 등 10인)\n\n심사정보\n\n 심사정보",
+   "cited_in": []
+  },
+  {
+   "no": 67,
+   "title": "[제2026-11호] 국내외 자산 토큰화 현황 및 향후 정책 과제",
+   "hostname": "bok.or.kr",
+   "url": "https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10097981&searchCnd=1&searchKwd=&depth2=201156&depth3=200433&depth=200433&pageUnit=10&pageIndex=1&programType=newsData&menuNo=200433&oldMenuNo=200433",
+   "date_shown": null,
+   "snippet": "마지막으로 토큰화 자산의 결제수단으로는 화폐의 단일성 유지 등을 위해 중앙은행 화폐(디지털화폐 포함)나 은행 예금(예금토큰 포함)을 우선 활용하고 스테이블코인은 ...",
+   "cited_in": []
+  },
+  {
+   "no": 68,
+   "title": "Developer Docs — FeedOracle API",
+   "hostname": "feedoracle.io",
+   "url": "https://feedoracle.io/docs.html",
+   "date_shown": null,
+   "snippet": "MiCA preflight checks before listing tokens. Stablecoin authorization status, peg monitoring, and compliance evidence packs for regulatory review. Exchanges & ...",
+   "cited_in": []
+  },
+  {
+   "no": 69,
+   "title": "GENIUS Act explained: What it means for crypto and digital ...",
+   "hostname": "ssga.com",
+   "url": "https://www.ssga.com/us/en/intermediary/insights/genius-act-explained-what-it-means-for-crypto-and-digital-assets",
+   "date_shown": "2025-08-15",
+   "snippet": "Signed into law on July 18, 2025, the historic legislation sets up a regulatory framework for USD-backed payment stablecoins and serves as a ...",
+   "cited_in": []
+  }
+ ]
+}

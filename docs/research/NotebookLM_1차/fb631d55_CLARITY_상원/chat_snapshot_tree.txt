@@ -1,0 +1,293 @@
+- title: "디지털 상품 규제법안 및 명확성 법안 - Gemini Notebook" [url=https://notebook.google.com/notebook/fb631d55-39f6-4789-9f64-3e6331ba2d2b?authuser=1]
+- button "Google 앱" [ref=e1]
+- button "Google 계정: 강인성 ((ê³ì  ê°ë¦¼)), Google 멤버십" [ref=e2]
+- link "Gemini Notebook 홈페이지" [ref=e3]:
+  - image "Gemini Notebook 로고"
+- textbox "디지털 상품 규제법안 및 명확성 법안" [ref=e4]
+- text: "공개"
+- button "노트북 만들기" [ref=e5]
+- button "노트북 공유" [ref=e6]: "공유"
+- button "노트북 구성" [ref=e7]
+- button "설정" [ref=e8]
+- text: "PLUS"
+- region:
+  - navigation:
+    - heading [level=2]: "출처"
+  - button "소스 패널 접기" [ref=e9]
+  - generic [ref=e10] [scrollable]:
+    - button "출처 추가" [ref=e11]: "소스 추가"
+    - form:
+      - textbox "입력된 질문을 기반으로 소스 검색" [ref=e12] [placeholder="웹에서 새 소스를 검색하세요"]
+      - button "웹" [ref=e13]
+      - button "Fast Research" [ref=e14]
+      - button "제출" [ref=e15] [disabled]
+    - button "주제별로 소스 자동 라벨 지정" [ref=e16]
+    - button "소스 정렬" [ref=e17]
+    - text: "모두 선택"
+    - label [ref=e18]:
+      - text: "check_box"
+      - checkbox "모든 출처 선택" [ref=e19] [hidden] [checked]
+    - generic [ref=e20]:
+      - button "A BILL - Senate Committee On Agriculture, Nutrition & Forestry" [ref=e21]
+      - button "더보기" [ref=e22]
+      - label:
+        - text: "check_box"
+        - checkbox "A BILL - Senate Committee On Agriculture, Nutrition & Forestry 선택" [ref=e23] [hidden] [checked]
+    - generic [ref=e24]:
+      - button "BPInsights: July 25, 2026 - Bank Policy Institute" [ref=e25]
+      - button "더보기" [ref=e26]
+      - label:
+        - text: "check_box"
+        - checkbox "BPInsights: July 25, 2026 - Bank Policy Institute 선택" [ref=e27] [hidden] [checked]
+    - generic [ref=e28]:
+      - button "CLARITY Act: Senate Banking Releases New Text, Sets Thursday Markup - Galaxy" [ref=e29]
+      - button "더보기" [ref=e30]
+      - label:
+        - text: "check_box"
+        - checkbox "CLARITY Act: Senate Banking Releases New Text, Sets Thursday Markup - Galaxy 선택" [ref=e31] [hidden] [checked]
+    - generic [ref=e32]:
+      - button "Deep Research 보고서: 미국 디지털 자산 시장 명확성 법안(CLARITY Act, H.R. 3633)의 입법 현황 및 종합 정책 분석 보고서" [ref=e33]
+      - button "더보기" [ref=e34]
+      - label:
+        - text: "check_box"
+        - checkbox "Deep Research 보고서: 미국 디지털 자산 시장 명확성 법안(CLARITY Act, H.R. 3633)의 입법 현황 및 종합 정책 분석 보고서 선택" [ref=e35] [hidden] [checked]
+    - generic [ref=e36]:
+      - button "Digital Asset Market Clarity Act - Senate Banking Committee" [ref=e37]
+      - button "더보기" [ref=e38]
+      - label:
+        - text: "check_box"
+        - checkbox "Digital Asset Market Clarity Act - Senate Banking Committee 선택" [ref=e39] [hidden] [checked]
+    - generic [ref=e40]:
+      - button "Effects of Stablecoin Yield Prohibition on Bank Lending - The White House" [ref=e41]
+      - button "더보기" [ref=e42]
+      - label:
+        - text: "check_box"
+        - checkbox "Effects of Stablecoin Yield Prohibition on Bank Lending - The White House 선택" [ref=e43] [hidden] [checked]
+    - generic [ref=e44]:
+      - button "Effects of Stablecoin Yield Prohibition on Bank Lending - The White House" [ref=e45]
+      - button "더보기" [ref=e46]
+      - label:
+        - text: "check_box"
+        - checkbox "Effects of Stablecoin Yield Prohibition on Bank Lending - The White House 선택" [ref=e47] [hidden] [checked]
+    - generic [ref=e48]:
+      - button "ehf26374.pdf - Senate Committee on Banking, Housing, and Urban Affairs" [ref=e49]
+      - button "더보기" [ref=e50]
+      - label:
+        - text: "check_box"
+        - checkbox "ehf26374.pdf - Senate Committee on Banking, Housing, and Urban Affairs 선택" [ref=e51] [hidden] [checked]
+    - generic [ref=e52]:
+      - button "FACT SHEET: The CLARITY Act Delivers Regulatory Clarity for the Crypto Industry - Senate Banking Com" [ref=e53]
+      - button "더보기" [ref=e54]
+      - label:
+        - text: "check_box"
+        - checkbox "FACT SHEET: The CLARITY Act Delivers Regulatory Clarity for the Crypto Industry - Senate Banking Com" [ref=e55] [hidden] [checked]
+    - generic [ref=e56]:
+      - button "Forbes: Tillis-Alsobrooks Reach Compromise On Stablecoin Yield In Clarity Act" [ref=e57]
+      - button "더보기" [ref=e58]
+      - label:
+        - text: "check_box"
+        - checkbox "Forbes: Tillis-Alsobrooks Reach Compromise On Stablecoin Yield In Clarity Act 선택" [ref=e59] [hidden] [checked]
+    - generic [ref=e60]:
+      - button "How the CLARITY Act Unlocks Innovation" [ref=e61]
+      - button "더보기" [ref=e62]
+      - label:
+        - text: "check_box"
+        - checkbox "How the CLARITY Act Unlocks Innovation 선택" [ref=e63] [hidden] [checked]
+    - generic [ref=e64]:
+      - button "National Security Advisory: Clarity Act Fails to Address Key Vulnerabilities Exploited by Criminals," [ref=e65]
+      - button "더보기" [ref=e66]
+      - label:
+        - text: "check_box"
+        - checkbox "National Security Advisory: Clarity Act Fails to Address Key Vulnerabilities Exploited by Criminals," [ref=e67] [hidden] [checked]
+    - generic [ref=e68]:
+      - button "National Security Issue Brief: The Clarity Act Weakens Law Enforcement Authorities to Address Decent" [ref=e69]
+      - button "더보기" [ref=e70]
+      - label:
+        - text: "check_box"
+        - checkbox "National Security Issue Brief: The Clarity Act Weakens Law Enforcement Authorities to Address Decent" [ref=e71] [hidden] [checked]
+    - generic [ref=e72]:
+      - button "Senate Banking Committee Advances CLARITY Act in Bipartisan Vote" [ref=e73]
+      - button "더보기" [ref=e74]
+      - label:
+        - text: "check_box"
+        - checkbox "Senate Banking Committee Advances CLARITY Act in Bipartisan Vote 선택" [ref=e75] [hidden] [checked]
+    - generic [ref=e76]:
+      - button "Statements of Administration Policy – OMB - The White House" [ref=e77]
+      - button "더보기" [ref=e78]
+      - label:
+        - text: "check_box"
+        - checkbox "Statements of Administration Policy – OMB - The White House 선택" [ref=e79] [hidden] [checked]
+    - generic [ref=e80]:
+      - button "STRENGTHENING AMERICAN LEADERSHIP IN DIGITAL FINANCIAL TECHNOLOGY - The White House" [ref=e81]
+      - button "더보기" [ref=e82]
+      - label:
+        - text: "check_box"
+        - checkbox "STRENGTHENING AMERICAN LEADERSHIP IN DIGITAL FINANCIAL TECHNOLOGY - The White House 선택" [ref=e83] [hidden] [checked]
+    - generic [ref=e84]:
+      - button "The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You" [ref=e85]
+      - button "더보기" [ref=e86]
+      - label:
+        - text: "check_box"
+        - checkbox "The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You 선택" [ref=e87] [hidden] [checked]
+    - generic [ref=e88]:
+      - button "The Council of Economic Advisers Effects of Stablecoin Yield Prohibition on Bank Lending - The White" [ref=e89]
+      - button "더보기" [ref=e90]
+      - label:
+        - text: "check_box"
+        - checkbox "The Council of Economic Advisers Effects of Stablecoin Yield Prohibition on Bank Lending - The White" [ref=e91] [hidden] [checked]
+    - generic [ref=e92]:
+      - button "The Facts: The CLARITY Act Protects Main Street, Unleashes Responsible Innovation, and Cracks Down o" [ref=e93]
+      - button "더보기" [ref=e94]
+      - label:
+        - text: "check_box"
+        - checkbox "The Facts: The CLARITY Act Protects Main Street, Unleashes Responsible Innovation, and Cracks Down o" [ref=e95] [hidden] [checked]
+    - generic [ref=e96]:
+      - button "The Long, Winding, and Rocky Road Toward Crypto Clarity | Davis Wright Tremaine" [ref=e97]
+      - button "더보기" [ref=e98]
+      - label:
+        - text: "check_box"
+        - checkbox "The Long, Winding, and Rocky Road Toward Crypto Clarity | Davis Wright Tremaine 선택" [ref=e99] [hidden] [checked]
+    - generic [ref=e100]:
+      - button "US Crypto Policy Tracker: Legislative Developments - Latham & Watkins LLP" [ref=e101]
+      - button "더보기" [ref=e102]
+      - label:
+        - text: "check_box"
+        - checkbox "US Crypto Policy Tracker: Legislative Developments - Latham & Watkins LLP 선택" [ref=e103] [hidden] [checked]
+    - generic [ref=e104]:
+      - button "What Is the CLARITY Act? Full Guide to US Crypto Regulation - Sumsub" [ref=e105]
+      - button "더보기" [ref=e106]
+      - label:
+        - text: "check_box"
+        - checkbox "What Is the CLARITY Act? Full Guide to US Crypto Regulation - Sumsub 선택" [ref=e107] [hidden] [checked]
+    - generic [ref=e108]:
+      - button "What They Are Saying: Industry Leaders Praise Chairman Scott, Senate Banking Committee on Advancing " [ref=e109]
+      - button "더보기" [ref=e110]
+      - label:
+        - text: "check_box"
+        - checkbox "What They Are Saying: Industry Leaders Praise Chairman Scott, Senate Banking Committee on Advancing " [ref=e111] [hidden] [checked]
+    - generic [ref=e112]:
+      - button "Written Testimony of Ryan Louvar Chief Legal Officer and Head of Business and Legal Affairs, Digital" [ref=e113]
+      - button "더보기" [ref=e114]
+      - label:
+        - text: "check_box"
+        - checkbox "Written Testimony of Ryan Louvar Chief Legal Officer and Head of Business and Legal Affairs, Digital" [ref=e115] [hidden] [checked]
+- region:
+  - generic [ref=e116] [scrollable]:
+    - button [ref=e117]
+    - button "요약 복사" [ref=e118]
+    - button "만족스러운 요약" [ref=e119]
+    - button "불만족스러운 요약" [ref=e120]
+    - text: "오늘 • 오후 3:05"
+    - generic [ref=e121] [scrollable]:
+      - button [ref=e122]
+      - text: "제공해주신 소스 자료를 바탕으로 요청하신 주제별 내용을 정리한 종합 비교 표입니다. 소스에 존재하지 않는 정보는 원칙에 따라 추정하지 않고 **\"소스에 없음\"**으로 명시하였습니다."
+      - heading [level=3]: "디지털 상품 규제법안 및 명확성 법안 분석 표"
+      - table:
+        - text: "주제 항목 날짜 또는 값 내용 근거 소스 원문 인용 한 줄 소스에 없음 여부 1. 미국 GENIUS법 시행 규정 기관별 제안안과 최종 규정의 공표일 소스에 없음 연준(Fed), OCC, FDIC 등 각 연방 금융 규제 기관별 제안안 및 최종 규정의 구체적인 공표일 날짜는 소스에 기재되어 있지 않음.소스에 없음 소스에 없음 소스에 없음 1. 미국 GENIUS법 시행 규정 최종 규정이 정한 시행일 소스에 없음 (단, 법률령상 시행 조건 명시됨)최종 규정이 정한 구체적인 시행일 날짜는 소스에 없음. (단, GENIUS법 자체는 제정 후 18개월이 경과한 날 또는 주요 연방 규제기관이 최종 시행 규정을 공표한 후 120일이 지난 날 중 더 빠른 날에 효력이 발생함"
+        - button "1: US Crypto Policy Tracker: Legislative Developments - Latham & Watkins LLP" [ref=e123]: "1"
+        - button "2: US Crypto Policy Tracker: Legislative Developments - Latham & Watkins LLP" [ref=e124]: "2"
+        - text: ").US Crypto Policy Tracker - Latham & Watkins LLP"
+        - button "1: US Crypto Policy Tracker: Legislative Developments - Latham & Watkins LLP" [ref=e125]: "1"
+        - button "2: US Crypto Policy Tracker: Legislative Developments - Latham & Watkins LLP" [ref=e126]: "2"
+        - text: "\"The GENIUS Act takes effect on the earlier of (i) 18 months after its enactment or (ii) 120 days after the primary federal stablecoin regulators issue final regulations implementing the Act.\""
+        - button "1: US Crypto Policy Tracker: Legislative Developments - Latham & Watkins LLP" [ref=e127]: "1"
+        - button "2: US Crypto Policy Tracker: Legislative Developments - Latham & Watkins LLP" [ref=e128]: "2"
+        - text: "소스에 없음 1. 미국 GENIUS법 시행 규정§20에 따른 법 시행일 소스에 없음 GENIUS법 내 §20(섹션 20) 조항 및 이에 따른 법 시행일 관련 상세 내용은 소스에 기재되어 있지 않음.소스에 없음 소스에 없음 소스에 없음 2. CLARITY Act 하원 통과일과 표결 수 2025년 7월 17일<br>찬성  294표, 반대  134표 미국 하원은 2025년 7월 17일 표결 수 찬성 294표, 반대 134표(294-134)의 초당적 찬성으로 CLARITY Act(H.R. 3633)를 최종 가결함"
+        - button "3: The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You" [ref=e129]: "3"
+        - button [ref=e130]
+        - text: ".CLARITY Act: What It Does & Where It Stands (2026)"
+        - button "3: The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You" [ref=e131]: "3"
+        - button "4: The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You" [ref=e132]: "4"
+        - text: "; 미국 디지털 자산 시장 명확성 법안 입법 현황 보고서"
+        - button "5: 미국 디지털 자산 시장 명확성 법안(CLARITY Act, H.R. 3633)의 입법 현황 및 종합 정책 분석 보고서" [ref=e133]: "5"
+        - button "6: 미국 디지털 자산 시장 명확성 법안(CLARITY Act, H.R. 3633)의 입법 현황 및 종합 정책 분석 보고서" [ref=e134]: "6"
+        - text: "\"The CLARITY Act passed the U.S. House of Representatives by a vote of 294-134 on July 17, 2025.\""
+        - button "3: The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You" [ref=e135]: "3"
+        - button "4: The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You" [ref=e136]: "4"
+        - text: "소스에 있음 2. CLARITY Act 상원 심사 단계와 날짜 상원 이송: 2025.09.18<br>농업위 통과: 2026.01.29 (12-11)<br>은행위 통과: 2026.05.14 (15-9)<br>안건 등재: 2026.06.01 (Calendar No. 423)<br>최종 교착/무산: 2026.09.14 2025년 9월 18일 상원에 이송되어 농업위(2026.01.29) 및 은행위(2026.05.14)를 가결 통과하고 2026년 6월 1일 상원 안건 달력에 등재되었으나, 공직자 윤리 및 AML 쟁점 등으로 2026년 9월 14일 635페이지 병합안 협상이 결렬되며 상원 본회의 표결에 이르지 못하고 교착됨"
+        - button "4: The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You" [ref=e137]: "4"
+        - button [ref=e138]
+        - text: ".미국 디지털 자산 시장 명확성 법안 입법 현황 보고서"
+        - button "6: 미국 디지털 자산 시장 명확성 법안(CLARITY Act, H.R. 3633)의 입법 현황 및 종합 정책 분석 보고서" [ref=e139]: "6"
+        - button "11: 미국 디지털 자산 시장 명확성 법안(CLARITY Act, H.R. 3633)의 입법 현황 및 종합 정책 분석 보고서" [ref=e140]: "11"
+        - text: "; US Crypto Policy Tracker"
+        - button "8: US Crypto Policy Tracker: Legislative Developments - Latham & Watkins LLP" [ref=e141]: "8"
+        - button "9: US Crypto Policy Tracker: Legislative Developments - Latham & Watkins LLP" [ref=e142]: "9"
+        - text: "; CLARITY Act: What It Does & Where It Stands"
+        - button "4: The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You" [ref=e143]: "4"
+        - button "7: The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You" [ref=e144]: "7"
+        - text: "\"On May 14, 2026, that committee voted 15-9 to advance an amended version... reported the amended bill to the full Senate on June 1, 2026, placing it on the Legislative Calendar\""
+        - button "4: The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You" [ref=e145]: "4"
+        - button "7: The CLARITY Act, Explained: What US Crypto Market-Structure Reform Means for You" [ref=e146]: "7"
+        - text: "소스에 있음 2. CLARITY Act 스테이블코인 준비금 1:1 (100% 이상)<br>고품질 유동자산 담보 허가받은 결제용 스테이블코인 발행자(Permitted Payment Stablecoin Issuer)는 발행 잔액에 대해 최소 1:1(100% 이상)의 준비금을 현금, 연준 예치금, 만기 90일 이내 단기 국채, 역레포, 정부 MMF 등 고품질 유동 자산(Qualifying Reserves)으로 유지해야 함"
+        - button "12: Effects of Stablecoin Yield Prohibition on Bank Lending - The White House" [ref=e147]: "12"
+        - button [ref=e148]
+        - text: ".US Crypto Policy Tracker"
+        - button "14: US Crypto Policy Tracker: Legislative Developments - Latham & Watkins LLP" [ref=e149]: "14"
+        - text: "; STRENGTHENING AMERICAN LEADERSHIP IN DIGITAL FINANCIAL TECHNOLOGY"
+        - button "13: STRENGTHENING AMERICAN LEADERSHIP IN DIGITAL FINANCIAL TECHNOLOGY - The White House" [ref=e150]: "13"
+        - text: "; 미국 디지털 자산 시장 명확성 법안 입법 현황 보고서"
+        - button "15: 미국 디지털 자산 시장 명확성 법안(CLARITY Act, H.R. 3633)의 입법 현황 및 종합 정책 분석 보고서" [ref=e151]: "15"
+        - text: "\"Permitted payment stablecoin issuers must maintain reserves backing outstanding payment stablecoins on at least a one-to-one basis, consisting only of certain specified assets, including the US dollar and short-term Treasuries.\""
+        - button "14: US Crypto Policy Tracker: Legislative Developments - Latham & Watkins LLP" [ref=e152]: "14"
+        - text: "소스에 있음 2. CLARITY Act 공시 제정 후 1년 이내  규칙 제정<br>반기별 공시 의무 부과 부속 자산(Ancillary assets) 발행자에 대한 반기별 정기 공시 의무, 소액 자금조달(연 5,000만 달러 이하/총 2억 달러 이하) 시 Regulation Crypto를 통한 맞춤형 공시 면제, 2차 시장 중개자의 정보 개시 의무 및 스테이블코인 보상 관련 불오도성 및 조건 명확 공시(Sec. 404(e)) 의무를 규정함"
+        - button "16: A BILL - Senate Committee On Agriculture, Nutrition & Forestry" [ref=e153]: "16"
+        - button [ref=e154]
+        - text: ".Digital Asset Market Clarity Act - Senate Banking Committee"
+        - button "16: A BILL - Senate Committee On Agriculture, Nutrition & Forestry" [ref=e155]: "16"
+        - text: "; ehf26374.pdf"
+        - button "17: ehf26374.pdf - Senate Committee on Banking, Housing, and Urban Affairs" [ref=e156]: "17"
+        - button [ref=e157]
+        - text: "; 미국 디지털 자산 시장 명확성 법안 입법 현황 보고서"
+        - button "22: 미국 디지털 자산 시장 명확성 법안(CLARITY Act, H.R. 3633)의 입법 현황 및 종합 정책 분석 보고서" [ref=e158]: "22"
+        - text: "\"Not later than 1 year after the date of enactment of this Act, the Commissions and the Secretary of the Treasury shall jointly promulgate rules requiring clear and conspicuous disclosure, in plain English, of any compensation... paid by a covered party\""
+        - button "21: ehf26374.pdf - Senate Committee on Banking, Housing, and Urban Affairs" [ref=e159]: "21"
+        - text: "소스에 있음 2. CLARITY Act 이자와 보상 조항 (조항 번호, GENIUS법을 바꾸는지 더하는지)Sec. 404<br>GENIUS법 규정에  더함 (확장·보완함)조항 번호는  Sec. 404(\"Prohibiting Interest and Yield on Payment Stablecoins\"). GENIUS Act §4(a)(11)이 발행자(Issuer)의 이자 지급만을 금지했던 것에서 더 나아가(더함/확장함), CLARITY Act Sec. 404는 거래소, 브로커, 계열사 등 2차 시장 중개자(Covered parties)가 예금 유사 수동적 이자/수익을 지급하는 것을 금지하고, 실제 결제 및 이용 활동에 연동된 보상(activity/transaction-based rewards)만을 제한적으로 허용함"
+        - button "12: Effects of Stablecoin Yield Prohibition on Bank Lending - The White House" [ref=e160]: "12"
+        - button [ref=e161]
+        - text: ".Digital Asset Market Clarity Act"
+        - button "16: A BILL - Senate Committee On Agriculture, Nutrition & Forestry" [ref=e162]: "16"
+        - text: "; ehf26374.pdf"
+        - button "26: ehf26374.pdf - Senate Committee on Banking, Housing, and Urban Affairs" [ref=e163]: "26"
+        - button "27: ehf26374.pdf - Senate Committee on Banking, Housing, and Urban Affairs" [ref=e164]: "27"
+        - text: "; Forbes: Tillis-Alsobrooks Compromise"
+        - button "23: Forbes: Tillis-Alsobrooks Reach Compromise On Stablecoin Yield In Clarity Act" [ref=e165]: "23"
+        - button "24: Forbes: Tillis-Alsobrooks Reach Compromise On Stablecoin Yield In Clarity Act" [ref=e166]: "24"
+        - text: "; 미국 디지털 자산 시장 명확성 법안 입법 현황 보고서"
+        - button "22: 미국 디지털 자산 시장 명확성 법안(CLARITY Act, H.R. 3633)의 입법 현황 및 종합 정책 분석 보고서" [ref=e167]: "22"
+        - button "28: 미국 디지털 자산 시장 명확성 법안(CLARITY Act, H.R. 3633)의 입법 현황 및 종합 정책 분석 보고서" [ref=e168]: "28"
+        - text: "\"The GENIUS Act prohibited interest payments by stablecoin issuers but did not explicitly address certain secondary market practices by exchanges or affiliates.\""
+        - button "24: Forbes: Tillis-Alsobrooks Reach Compromise On Stablecoin Yield In Clarity Act" [ref=e169]: "24"
+        - text: "/ \"Prohibits covered digital asset service providers and their affiliates from paying US customers passive, deposit-like interest or yield on payment stablecoin balances\""
+        - button "16: A BILL - Senate Committee On Agriculture, Nutrition & Forestry" [ref=e170]: "16"
+        - button "29: Digital Asset Market Clarity Act - Senate Banking Committee" [ref=e171]: "29"
+        - text: "소스에 있음 3. 한국 계류 법안 수와 새로 발의된 법안 소스에 없음 대한민국 국회에 계류 중인 가상자산 관련 법안 수 및 새로 발의된 법안 명칭/내용은 소스에 없음.소스에 없음 소스에 없음 소스에 없음 3. 한국 정부안 제출 여부와 날짜 소스에 없음 한국 정부의 가상자산 관련 법안 제출 여부 및 제출 날짜 관련 정보는 소스에 없음.소스에 없음 소스에 없음 소스에 없음 3. 한국 9월 공청회 날짜와 쟁점 소스에 없음 한국 내 9월 국회/정부 공청회 개최 날짜 및 주요 쟁점 사항은 소스에 없음.소스에 없음 소스에 없음 소스에 없음 4. 레퍼런스 Tessera 서비스의 기능 (보고서 파싱, 조문 판정, 한국 대상, 기준값 제안)소스에 없음 Tessera 서비스의 보고서 파싱, 조문 판정, 한국 대상 적용 여부, 기준값 제안 기능 관련 내용은 소스에 없음.소스에 없음 소스에 없음 소스에 없음 4. 레퍼런스 FeedOracle 서비스의 기능 (보고서 파싱, 조문 판정, 한국 대상, 기준값 제안)소스에 없음 FeedOracle 서비스의 보고서 파싱, 조문 판정, 한국 대상 적용 여부, 기준값 제안 기능 관련 내용은 소스에 없음.소스에 없음 소스에 없음 소스에 없음 4. 레퍼런스 Veris 서비스의 기능 (보고서 파싱, 조문 판정, 한국 대상, 기준값 제안)소스에 없음 Veris 서비스의 보고서 파싱, 조문 판정, 한국 대상 적용 여부, 기준값 제안 기능 관련 내용은 소스에 없음.소스에 없음 소스에 없음 소스에 없음 4. 레퍼런스 새 서비스의 기능 (보고서 파싱, 조문 판정, 한국 대상, 기준값 제안)소스에 없음 언급된 신규 서비스의 보고서 파싱, 조문 판정, 한국 대상 적용, 기준값 제안 관련 정보는 소스에 없음.소스에 없음 소스에 없음 소스에 없음"
+      - text: "💡 추가 검토 안내: CLARITY Act Sec. 404의 스테이블코인 이자 및 보상 규제가 전통 은행 예금 및 대출 시장에 미치는 영향 분석(백악관 CEA 보고서 등)이나 법안 내 자금세탁방지(AML)·DeFi 규제 쟁점에 대해 더 자세한 요약이 필요하시면 말씀해 주세요."
+    - button "메시지를 메모에 저장" [ref=e172]: "메모에 저장"
+    - button "클립보드에 모델 대답 복사" [ref=e173]
+    - button "대답을 좋음으로 평가" [ref=e174]
+    - button "대답을 좋지 않음으로 평가" [ref=e175]
+  - form:
+    - textbox "쿼리 상자" [ref=e176] [focused] [placeholder="질문하거나 창작하세요"]
+    - text: "소스 24개"
+    - button "제출" [ref=e177] [disabled]
+  - text: "Gemini Notebook은 실수를 할 수 있으니 다시 한번 확인하세요."
+- region:
+  - navigation:
+    - heading [level=2]: "스튜디오"
+  - button "스튜디오 패널 접기" [ref=e178]
+  - text: "새로운 기능: 이제 대화형 보고서를 만들 수 있습니다."
+  - button "사용해 보기" [ref=e179]
+  - button "배너 닫기" [ref=e180]
+  - button "AI 오디오 오버뷰" [ref=e181]
+  - button "슬라이드 자료" [ref=e182]
+  - button "동영상 개요" [ref=e183]
+  - button "마인드맵" [ref=e184]
+  - button "보고서" [ref=e185]
+  - text: "New!"
+  - button "플래시카드" [ref=e186]
+  - button "퀴즈" [ref=e187]
+  - button "인포그래픽" [ref=e188]
+  - button "데이터 표" [ref=e189]
+  - text: "스튜디오 출력이 여기에 저장됩니다 소스를 추가한 후 클릭하여 AI 오디오 오버뷰, 학습 가이드, 마인드맵 등을 추가해 보세요."
+  - button "메모 추가" [ref=e190]

@@ -1,0 +1,353 @@
+- title: "AI 에이전트 결제와 블록체인 인프라 - Gemini Notebook" [url=https://notebook.google.com/notebook/f880a229-bb7e-4530-a517-c5e8f53315e8?authuser=1]
+- button "Google 앱" [ref=e1]
+- button "Google 계정: 강인성 ((ê³ì  ê°ë¦¼)), Google 멤버십" [ref=e2]
+- link "Gemini Notebook 홈페이지" [ref=e3]:
+  - image "Gemini Notebook 로고"
+- textbox "AI 에이전트 결제와 블록체인 인프라" [ref=e4]
+- text: "공개"
+- button "노트북 만들기" [ref=e5]
+- button "노트북 공유" [ref=e6]: "공유"
+- button "노트북 구성" [ref=e7]
+- button "설정" [ref=e8]
+- text: "PLUS"
+- region:
+  - navigation:
+    - heading [level=2]: "출처"
+  - button "소스 패널 접기" [ref=e9]
+  - generic [ref=e10] [scrollable]:
+    - button "출처 추가" [ref=e11]: "소스 추가"
+    - form:
+      - textbox "입력된 질문을 기반으로 소스 검색" [ref=e12] [placeholder="웹에서 새 소스를 검색하세요"]
+      - button "웹" [ref=e13]
+      - button "Fast Research" [ref=e14]
+      - button "제출" [ref=e15] [disabled]
+    - button "주제별로 소스 자동 라벨 지정" [ref=e16]
+    - button "소스 정렬" [ref=e17]
+    - text: "모두 선택"
+    - label [ref=e18]:
+      - text: "check_box"
+      - checkbox "모든 출처 선택" [ref=e19] [hidden] [checked]
+    - generic [ref=e20]:
+      - button "디지털자산과 금융 질서의 균형:" [ref=e21]
+      - button "더보기" [ref=e22]
+      - label:
+        - text: "check_box"
+        - checkbox "디지털자산과 금융 질서의 균형: 선택" [ref=e23] [hidden] [checked]
+    - generic [ref=e24]:
+      - button "스테이블코인과 보험산업 과제" [ref=e25]
+      - button "더보기" [ref=e26]
+      - label:
+        - text: "check_box"
+        - checkbox "스테이블코인과 보험산업 과제 선택" [ref=e27] [hidden] [checked]
+    - generic [ref=e28]:
+      - button "AI agents can browse the web. Now they need a way to pay for it. - TNW" [ref=e29]
+      - button "더보기" [ref=e30]
+      - label:
+        - text: "check_box"
+        - checkbox "AI agents can browse the web. Now they need a way to pay for it. - TNW 선택" [ref=e31] [hidden] [checked]
+    - generic [ref=e32]:
+      - button "awesome-mcp-servers/README.md at main - GitHub" [ref=e33]
+      - button "더보기" [ref=e34]
+      - label:
+        - text: "check_box"
+        - checkbox "awesome-mcp-servers/README.md at main - GitHub 선택" [ref=e35] [hidden] [checked]
+    - generic [ref=e36]:
+      - button "Blockchain MCP Connectors - Glama" [ref=e37]
+      - button "더보기" [ref=e38]
+      - label:
+        - text: "check_box"
+        - checkbox "Blockchain MCP Connectors - Glama 선택" [ref=e39] [hidden] [checked]
+    - generic [ref=e40]:
+      - button "Casper CSPR Kucoin AMA" [ref=e41]
+      - button "더보기" [ref=e42]
+      - label:
+        - text: "check_box"
+        - checkbox "Casper CSPR Kucoin AMA 선택" [ref=e43] [hidden] [checked]
+    - generic [ref=e44]:
+      - button "Chainlink (LINK) Price Prediction 2026-2030 - Coincub" [ref=e45]
+      - button "더보기" [ref=e46]
+      - label:
+        - text: "check_box"
+        - checkbox "Chainlink (LINK) Price Prediction 2026-2030 - Coincub 선택" [ref=e47] [hidden] [checked]
+    - generic [ref=e48]:
+      - button "Chainlink Services Achieve ISO 27001 & SOC 2 Compliance" [ref=e49]
+      - button "더보기" [ref=e50]
+      - label:
+        - text: "check_box"
+        - checkbox "Chainlink Services Achieve ISO 27001 & SOC 2 Compliance 선택" [ref=e51] [hidden] [checked]
+    - generic [ref=e52]:
+      - button "Changelog · Directories by Enterprise DNA" [ref=e53]
+      - button "더보기" [ref=e54]
+      - label:
+        - text: "check_box"
+        - checkbox "Changelog · Directories by Enterprise DNA 선택" [ref=e55] [hidden] [checked]
+    - generic [ref=e56]:
+      - button "Compliance Attestation: Onchain Verification and Standards - Chainlink" [ref=e57]
+      - button "더보기" [ref=e58]
+      - label:
+        - text: "check_box"
+        - checkbox "Compliance Attestation: Onchain Verification and Standards - Chainlink 선택" [ref=e59] [hidden] [checked]
+    - generic [ref=e60]:
+      - button "Crypto Finance is Now Live With Chainlink Proof of Reserve To Bring Trust and Transparency to nxtAss" [ref=e61]
+      - button "더보기" [ref=e62]
+      - label:
+        - text: "check_box"
+        - checkbox "Crypto Finance is Now Live With Chainlink Proof of Reserve To Bring Trust and Transparency to nxtAss" [ref=e63] [hidden] [checked]
+    - generic [ref=e64]:
+      - button "csprUSD Revival: Why It Matters for Casper - Sarson Funds | Cryptocurrency & Blockchain Investment F" [ref=e65]
+      - button "더보기" [ref=e66]
+      - label:
+        - text: "check_box"
+        - checkbox "csprUSD Revival: Why It Matters for Casper - Sarson Funds | Cryptocurrency & Blockchain Investment F" [ref=e67] [hidden] [checked]
+    - generic [ref=e68]:
+      - button "Deep Research 보고서: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 " [ref=e69]
+      - button "더보기" [ref=e70]
+      - label:
+        - text: "check_box"
+        - checkbox "Deep Research 보고서: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 " [ref=e71] [hidden] [checked]
+    - generic [ref=e72]:
+      - button "ERC-8263: Onchain Proof Layer for AI Agents - Ethereum Magicians" [ref=e73]
+      - button "더보기" [ref=e74]
+      - label:
+        - text: "check_box"
+        - checkbox "ERC-8263: Onchain Proof Layer for AI Agents - Ethereum Magicians 선택" [ref=e75] [hidden] [checked]
+    - generic [ref=e76]:
+      - button "feedoracle/feedoracle-mcp: Regulatory compliance MCP server for AI agents - GitHub" [ref=e77]
+      - button "더보기" [ref=e78]
+      - label:
+        - text: "check_box"
+        - checkbox "feedoracle/feedoracle-mcp: Regulatory compliance MCP server for AI agents - GitHub 선택" [ref=e79] [hidden] [checked]
+    - generic [ref=e80]:
+      - button "GENIUS Act Requirements and Standards for FDIC-Supervised Permitted Payment Stablecoin Issuers and I" [ref=e81]
+      - button "더보기" [ref=e82]
+      - label:
+        - text: "check_box"
+        - checkbox "GENIUS Act Requirements and Standards for FDIC-Supervised Permitted Payment Stablecoin Issuers and I" [ref=e83] [hidden] [checked]
+    - generic [ref=e84]:
+      - button "Hong Kong Stablecoin Regulation: HKMA Licensing Framework in 2026 - Sumsub" [ref=e85]
+      - button "더보기" [ref=e86]
+      - label:
+        - text: "check_box"
+        - checkbox "Hong Kong Stablecoin Regulation: HKMA Licensing Framework in 2026 - Sumsub 선택" [ref=e87] [hidden] [checked]
+    - generic [ref=e88]:
+      - button "https://www.npmjs.com/package/@agentutility/mcp-prooflayer" [ref=e89]
+      - button "더보기" [ref=e90]
+      - button "오류 정보" [ref=e91]: "info"
+    - generic [ref=e92]:
+      - button "Proof of Reserve | Blockchain Security Glossary - Zealynx" [ref=e93]
+      - button "더보기" [ref=e94]
+      - label:
+        - text: "check_box"
+        - checkbox "Proof of Reserve | Blockchain Security Glossary - Zealynx 선택" [ref=e95] [hidden] [checked]
+    - generic [ref=e96]:
+      - button "ProofLayer - Casper Network" [ref=e97]
+      - button "더보기" [ref=e98]
+      - label:
+        - text: "check_box"
+        - checkbox "ProofLayer - Casper Network 선택" [ref=e99] [hidden] [checked]
+    - generic [ref=e100]:
+      - button "ProofLayer: AI Red Teaming & MCP Security" [ref=e101]
+      - button "더보기" [ref=e102]
+      - label:
+        - text: "check_box"
+        - checkbox "ProofLayer: AI Red Teaming & MCP Security 선택" [ref=e103] [hidden] [checked]
+    - generic [ref=e104]:
+      - button "Real-Time Asset Verification and On-Chain Audit Services - LedgerLens" [ref=e105]
+      - button "더보기" [ref=e106]
+      - label:
+        - text: "check_box"
+        - checkbox "Real-Time Asset Verification and On-Chain Audit Services - LedgerLens 선택" [ref=e107] [hidden] [checked]
+    - generic [ref=e108]:
+      - button "Stablecoin Reserve Attestations: Key Considerations for Compliance | Forvis Mazars US" [ref=e109]
+      - button "더보기" [ref=e110]
+      - label:
+        - text: "check_box"
+        - checkbox "Stablecoin Reserve Attestations: Key Considerations for Compliance | Forvis Mazars US 선택" [ref=e111] [hidden] [checked]
+    - generic [ref=e112]:
+      - button "Stablecoin Scanner - MCP Connector - Glama.ai" [ref=e113]
+      - button "더보기" [ref=e114]
+      - label:
+        - text: "check_box"
+        - checkbox "Stablecoin Scanner - MCP Connector - Glama.ai 선택" [ref=e115] [hidden] [checked]
+    - generic [ref=e116]:
+      - button "Stablecoins and the GENIUS Act: What Advisors Should Know | The Specialist's Desk" [ref=e117]
+      - button "더보기" [ref=e118]
+      - label:
+        - text: "check_box"
+        - checkbox "Stablecoins and the GENIUS Act: What Advisors Should Know | The Specialist's Desk 선택" [ref=e119] [hidden] [checked]
+    - generic [ref=e120]:
+      - button "What Does the GENIUS Act Require of Accountants? - The Center for Audit Quality" [ref=e121]
+      - button "더보기" [ref=e122]
+      - label:
+        - text: "check_box"
+        - checkbox "What Does the GENIUS Act Require of Accountants? - The Center for Audit Quality 선택" [ref=e123] [hidden] [checked]
+    - generic [ref=e124]:
+      - button "What Is the GENIUS Act of 2025? Rules for Stablecoin Issuers | Cherry Bekaert" [ref=e125]
+      - button "더보기" [ref=e126]
+      - label:
+        - text: "check_box"
+        - checkbox "What Is the GENIUS Act of 2025? Rules for Stablecoin Issuers | Cherry Bekaert 선택" [ref=e127] [hidden] [checked]
+    - generic [ref=e128]:
+      - button "What Is the GENIUS Act? Stablecoin Rules Explained - Paxos" [ref=e129]
+      - button "더보기" [ref=e130]
+      - label:
+        - text: "check_box"
+        - checkbox "What Is the GENIUS Act? Stablecoin Rules Explained - Paxos 선택" [ref=e131] [hidden] [checked]
+- region:
+  - generic [ref=e132] [scrollable]:
+    - button [ref=e133]
+    - button "요약 복사" [ref=e134]
+    - button "만족스러운 요약" [ref=e135]
+    - button "불만족스러운 요약" [ref=e136]
+    - text: "오늘 • 오후 3:12"
+    - generic [ref=e137] [scrollable]:
+      - button [ref=e138]
+      - text: "요청하신 주제별 세부 항목을 제시된 소격 및 서격 규칙에 따라 정리한 표입니다. 소정에 명시되지 않은 정보는 추정하지 않고 **\"소스에 없음\"**으로 명확히 표기하였습니다."
+      - table:
+        - text: "주제 항목 날짜 또는 값 내용 근거 소스 원문 인용 한 줄 소스에 없음 여부 1. 미국 GENIUS법 시행 규정 기관별 제안안과 최종 규정의 공표일 소스에 없음 (법제정일: 2025년 7월 18일)"
+        - button "1: What Is the GENIUS Act of 2025? Rules for Stablecoin Issuers | Cherry Bekaert" [ref=e139]: "1"
+        - text: "GENIUS 법안 자체는 2025년 7월 18일에 제정되었고 FDIC Proposed Part 350 제안안 명칭은 언급되나"
+        - button "2: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e140]: "2"
+        - text: ", 연방 금융기관별 구체적 제안안 및 최종 규정의 정확한 공표일 날짜는 소스에 기재되어 있지 않습니다.What Is the GENIUS Act of 2025? Rules for Stablecoin Issuers | Cherry Bekaert"
+        - button "1: What Is the GENIUS Act of 2025? Rules for Stablecoin Issuers | Cherry Bekaert" [ref=e141]: "1"
+        - text: "/ 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증..."
+        - button "2: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e142]: "2"
+        - text: "\"On July 18, 2025, the Guiding and Establishing National Innovation for U.S. Stablecoins (GENIUS Act) was signed into law\""
+        - button "1: What Is the GENIUS Act of 2025? Rules for Stablecoin Issuers | Cherry Bekaert" [ref=e143]: "1"
+        - text: "소스에 없음 최종 규정이 정한 시행일 소스에 없음 연방 규제 당국의 최종 이행 규정(Implementing regulations)이 확정하여 정한 별도의 최종 시행일 날짜는 소스에 제시되지 않았습니다.--소스에 없음§20에 따른 법 시행일 2027년 1월 18일 (또는 이행 규정 최종화 후 120일 중 빠른 날)"
+        - button "3: What Is the GENIUS Act? Stablecoin Rules Explained - Paxos" [ref=e144]: "3"
+        - text: "GENIUS법의 법적 시행일은 제정일(2025년 7월 18일)로부터 18개월 후인 2027년 1월 18일 또는 최종 이행 규정 공표 후 120일 중 빠른 날로 규정되어 있습니다"
+        - button "3: What Is the GENIUS Act? Stablecoin Rules Explained - Paxos" [ref=e145]: "3"
+        - button "4: What Does the GENIUS Act Require of Accountants? - The Center for Audit Quality" [ref=e146]: "4"
+        - text: ". (단, 소스 조문 텍스트상 '§20'이라는 조문 번호 자체는 명시되어 있지 않습니다.)What Is the GENIUS Act? Stablecoin Rules Explained - Paxos"
+        - button "3: What Is the GENIUS Act? Stablecoin Rules Explained - Paxos" [ref=e147]: "3"
+        - text: "/ What Does the GENIUS Act Require of Accountants? - The CAQ"
+        - button "4: What Does the GENIUS Act Require of Accountants? - The Center for Audit Quality" [ref=e148]: "4"
+        - text: "\"The effective date is the earlier of January 18, 2027 or 120 days after federal regulators finalize implementing regulations, whichever comes first.\""
+        - button "3: What Is the GENIUS Act? Stablecoin Rules Explained - Paxos" [ref=e149]: "3"
+        - text: "해당 없음 (단, §20 조문 번호 명시는 소스에 없음)2. CLARITY Act 하원 통과일과 표결 수 소스에 없음 소약 주석에 H.R.4766 (Clarity for Payment Stablecoins Act of 2023) 법안 출처는 언급되나"
+        - button "5: 디지털자산과 금융 질서의 균형:" [ref=e150]: "5"
+        - text: ", 하원 통과 날짜 및 표결 수치는 소스에 나와 있지 않습니다.디지털자산과 금융 질서의 균형:"
+        - button "5: 디지털자산과 금융 질서의 균형:" [ref=e151]: "5"
+        - text: "\"U.S. Congress. (2023). H.R.4766 - Clarity for Payment Stablecoins Act of 2023. Government Publishing Office.\""
+        - button "5: 디지털자산과 금융 질서의 균형:" [ref=e152]: "5"
+        - text: "소스에 없음 상원 심사 단계와 날짜 2026년 9월 15일 (상원 클로처 부결)"
+        - button "6: csprUSD Revival: Why It Matters for Casper - Sarson Funds | Cryptocurrency & Blockchain Investmen" [ref=e153]: "6"
+        - text: "2026년 9월 15일 상원에서 클로처(cloture, 토론 종결) 표결이 부결되어 법안 심사가 교착(Stalls) 상태에 머물러 있습니다"
+        - button "6: csprUSD Revival: Why It Matters for Casper - Sarson Funds | Cryptocurrency & Blockchain Investmen" [ref=e154]: "6"
+        - text: ".csprUSD Revival: Why It Matters for Casper - Sarson Funds"
+        - button "6: csprUSD Revival: Why It Matters for Casper - Sarson Funds | Cryptocurrency & Blockchain Investmen" [ref=e155]: "6"
+        - text: "\"On Sept. 15, the Senate rejected cloture on\""
+        - button "6: csprUSD Revival: Why It Matters for Casper - Sarson Funds | Cryptocurrency & Blockchain Investmen" [ref=e156]: "6"
+        - text: "해당 없음 스테이블코인 준비금, 공시, 이자와 보상 조항 (조항 번호, GENIUS법을 바꾸는지 더하는지)소스에 없음 CLARITY Act의 준비금, 공시, 이자/보상 관련 구체적 조항 번호 및 GENIUS법 개정/추가 여부는 소스에 명시되지 않았습니다"
+        - button "7: 디지털자산과 금융 질서의 균형:" [ref=e157]: "7"
+        - text: ". (참고: 이자 지급 금지 §4(a)(11) 및 준비금/공시 규정은 GENIUS Act의 조칙으로 설명되어 있습니다"
+        - button "8: Stablecoins and the GENIUS Act: What Advisors Should Know | The Specialist's Desk" [ref=e158]: "8"
+        - button "9: What Is the GENIUS Act? Stablecoin Rules Explained - Paxos" [ref=e159]: "9"
+        - text: ").디지털자산과 금융 질서의 균형:"
+        - button "7: 디지털자산과 금융 질서의 균형:" [ref=e160]: "7"
+        - text: "\"암호화폐를 증권과 상품으로 구분하여 규제 체계를 정립하기 위한 ‘클래리티 법(CLARITY Act)’과 중앙은행의 CBDC 발행을 금지하고 감시하는 ‘반CBDC법(Anti-CBDC Act)’ 별도 준비\""
+        - button "7: 디지털자산과 금융 질서의 균형:" [ref=e161]: "7"
+        - text: "소스에 없음 3. 한국 계류 법안 수와 새로 발의된 법안 다수 (주요 발의 법안 8건 명시)"
+        - button "10: 디지털자산과 금융 질서의 균형:" [ref=e162]: "10"
+        - button "11: 스테이블코인과 보험산업 과제" [ref=e163]: "11"
+        - text: "22대 국회에서 다수의 법안이 발의되어 계류 중입니다"
+        - button "11: 스테이블코인과 보험산업 과제" [ref=e164]: "11"
+        - text: ". 주요 발의 법안으로 민병덕안(2025.6.10), 송석준안(2025.6.17), 안도걸안(2025.7.28), 김은혜안(2025.7.28), 김현정안(2025.8.21), 고동진안(2025.9.3), 이강일안(2025.9.4), 김재섭안(2025.9.24) 등이 수록되어 있습니다"
+        - button "10: 디지털자산과 금융 질서의 균형:" [ref=e165]: "10"
+        - text: ". (전체 계류 법안의 총 수치는 명시되지 않음)디지털자산과 금융 질서의 균형:"
+        - button "10: 디지털자산과 금융 질서의 균형:" [ref=e166]: "10"
+        - text: "/ 스테이블코인과 보험산업 과제"
+        - button "11: 스테이블코인과 보험산업 과제" [ref=e167]: "11"
+        - text: "\"22대 국회에서 다수의 법안이 발의되었으나 발행 주체 범위 등을 둘러싼 이견으로 소관 상임위원회 심의가 지연되고 있음\""
+        - button "11: 스테이블코인과 보험산업 과제" [ref=e168]: "11"
+        - text: "해당 없음 (단, 정확한 전체 계류 법안 총 수치는 소스에 없음)정부안 제출 여부와 날짜 소스에 없음 (추진계획 발표일: 2025년 1월 15일)"
+        - button "11: 스테이블코인과 보험산업 과제" [ref=e169]: "11"
+        - text: "2025년 1월 15일 금융위원회 가상자산위원회가 2단계 입법 추진계획을 발표한 사실은 명시되어 있으나"
+        - button "11: 스테이블코인과 보험산업 과제" [ref=e170]: "11"
+        - text: ", 정부 자체 공식 법안(정부안)이 국회에 제출되었는지 여부 및 제출 날짜는 소스에 명시되어 있지 않습니다.스테이블코인과 보험산업 과제"
+        - button "11: 스테이블코인과 보험산업 과제" [ref=e171]: "11"
+        - text: "\"한국은 2025년 1월 15일 금융위원회 산하 가상자산위원회가 스테이블코인 특화 제도를 핵심으로 한 2단계 입법 추진계획을 발표하고\""
+        - button "11: 스테이블코인과 보험산업 과제" [ref=e172]: "11"
+        - text: "소스에 없음 (정부안 제출일 미기재)9월 공청회 날짜와 쟁점 소스에 없음 소스에 9월 공청회 개최 날짜 및 공청회 쟁점에 대한 내용은 일절 언급되어 있지 않습니다.--소스에 없음 4. 레퍼런스 Tessera (ProofLayer)기능별 수행 여부 기재"
+        - button "12: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e173]: "12"
+        - button "13: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e174]: "13"
+        - text: "- 보고서 파싱: 소스에 없음 (회계 보고서 파싱 언급 없음) <br>- 조문 판정: US GENIUS Act, ISO 42001, SOC 2, ERC-8263 규격 준수를 검증함"
+        - button "13: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e175]: "13"
+        - text: "<br>- 한국 대상: 소스에 없음 (csprUSD, USD 예금, RWA 대상)"
+        - button "12: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e176]: "12"
+        - button "13: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e177]: "13"
+        - text: "<br>- 기준값 제안: 소스에 없음 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증..."
+        - button "12: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e178]: "12"
+        - button "13: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e179]: "13"
+        - text: "\"TEE 기반 데이터 서명, Casper L1 타임스탬프 앵커링, ZKP 증명\""
+        - button "13: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e180]: "13"
+        - text: "해당 없음 (일부 항목 소스에 없음)FeedOracle 기능별 수행 여부 기재"
+        - button "14: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e181]: "14"
+        - text: "- 보고서 파싱: 수행함 (ReserveOracle이 외부 회계 검증 보고서와의 오차 분석/파싱을 자동 수행)"
+        - button "14: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e182]: "14"
+        - text: "<br>- 조문 판정: 수행함 (EU MiCA Article 36 조문을 직접 조준하여 검증하고, RiskOracle을 통해 SAFE, CAUTION, AVOID 3단계 정산 판정 산출)"
+        - button "14: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e183]: "14"
+        - text: "<br>- 한국 대상: 소스에 없음 (EU MiCA, DORA, AMLR 등 유럽 규제 중심)"
+        - button "14: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e184]: "14"
+        - text: "<br>- 기준값 제안: 소스에 없음 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증..."
+        - button "14: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e185]: "14"
+        - text: "/ feedoracle/feedoracle-mcp..."
+        - button "15: feedoracle/feedoracle-mcp: Regulatory compliance MCP server for AI agents - GitHub" [ref=e186]: "15"
+        - text: "\"ReserveOracle (11개 도구): EU MiCA Article 36 규정을 직접 조준하여... 외부 회계 검증 보고서와의 오차 분석을 자동 수행한다\""
+        - button "14: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e187]: "14"
+        - text: "해당 없음 (일부 항목 소스에 없음)Veris 기능별 수행 여부 기재"
+        - button "16: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e188]: "16"
+        - text: "- 보고서 파싱: 소스에 없음 (스마트 계약 코드 행동 그래프 분석 중심)"
+        - button "16: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e189]: "16"
+        - text: "<br>- 조문 판정: 소스에 없음 (스마트 계약 코드 내 무단 민팅 백도어 탐지 및 서킷 브레이커 조항 유지 추적)"
+        - button "16: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e190]: "16"
+        - text: "<br>- 한국 대상: 소스에 없음 <br>- 기준값 제안: 소스에 없음 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증..."
+        - button "16: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e191]: "16"
+        - text: "\"Veris는 17개의 MCP 도구를 기반으로 자산의 입출금 및 온체인 준비금 락업(Lock-up) 로직에 대한 실행 그래프를 작성하고\""
+        - button "16: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e192]: "16"
+        - text: "해당 없음 (일부 항목 소스에 없음)신규/확장 서비스 및 분석 보고서 기능별 수행 여부 기재"
+        - button "17: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e193]: "17"
+        - button [ref=e194]
+        - text: "- 보고서 파싱: Chainlink PoR 등 오프체인 수탁 잔액 데이터 실시간 피드 수집"
+        - button "17: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e195]: "17"
+        - text: "<br>- 조문 판정: 준비금 100% 미만 시 신규 토큰 민팅 원자적(Atomic) 차단"
+        - button "17: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e196]: "17"
+        - text: "<br>- 한국 대상 & 기준값 제안: 수행함 (본 분석 보고서가 한국 원화(KRW) 스테이블코인을 대상으로   수학적 충당 비율 수식 및 적격 자산 만기 기준값(국고채·통안채 90일 이하, RP 7일 이하)을 제안함)"
+        - button "18: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e197]: "18"
+        - button "19: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e198]: "19"
+        - text: "글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증..."
+        - button "17: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e199]: "17"
+        - button [ref=e200]
+        - text: "\"한국 원화(KRW) 연동 스테이블코인의 신뢰성 확보와 금융 시스템으로의 리스크 전이 방지를 위한 준비금 산정 기준 체계가 정립된다\""
+        - button "18: 글로벌 디지털 자산 규제 조문에 따른 스테이블코인 준비금 검증(Attestation) 도구·상용 서비스 및 한국 원화(KRW) 스테이블코인 기준 분석 보고서" [ref=e201]: "18"
+        - text: "해당 없음"
+      - text: "💡 추가 논의 제안: 원화 스테이블코인 준비금 가이드라인의 수학적 산출식()이나 국내 주요 금융권(은행·카드·보험)의 스테이블코인 기술 검증(PoC) 현황에 대해 더 자세히 확인하고 싶으시면 말씀해 주세요."
+    - button "메시지를 메모에 저장" [ref=e202]: "메모에 저장"
+    - button "클립보드에 모델 대답 복사" [ref=e203]
+    - button "대답을 좋음으로 평가" [ref=e204]
+    - button "대답을 좋지 않음으로 평가" [ref=e205]
+  - form:
+    - textbox "쿼리 상자" [ref=e206] [focused] [placeholder="질문하거나 창작하세요"]
+    - text: "소스 27개"
+    - button "제출" [ref=e207] [disabled]
+  - text: "Gemini Notebook은 실수를 할 수 있으니 다시 한번 확인하세요."
+- region:
+  - navigation:
+    - heading [level=2]: "스튜디오"
+  - button "스튜디오 패널 접기" [ref=e208]
+  - text: "새로운 기능: 이제 대화형 보고서를 만들 수 있습니다."
+  - button "사용해 보기" [ref=e209]
+  - button "배너 닫기" [ref=e210]
+  - button "AI 오디오 오버뷰" [ref=e211]
+  - button "슬라이드 자료" [ref=e212]
+  - button "동영상 개요" [ref=e213]
+  - button "마인드맵" [ref=e214]
+  - button "보고서" [ref=e215]
+  - text: "New!"
+  - button "플래시카드" [ref=e216]
+  - button "퀴즈" [ref=e217]
+  - button "인포그래픽" [ref=e218]
+  - button "데이터 표" [ref=e219]
+  - text: "스튜디오 출력이 여기에 저장됩니다 소스를 추가한 후 클릭하여 AI 오디오 오버뷰, 학습 가이드, 마인드맵 등을 추가해 보세요."
+  - button "메모 추가" [ref=e220]

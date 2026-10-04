@@ -1,0 +1,352 @@
+- title: "GENIUS Act 규제 프레임워크 - Gemini Notebook" [url=https://notebook.google.com/notebook/3a1bae21-8f0f-4bef-aa38-9e7e7eac9397?authuser=1]
+- button "Google 앱" [ref=e1]
+- button "Google 계정: 강인성 ((ê³ì  ê°ë¦¼)), Google 멤버십" [ref=e2]
+- link "Gemini Notebook 홈페이지" [ref=e3]:
+  - image "Gemini Notebook 로고"
+- textbox "GENIUS Act 규제 프레임워크" [ref=e4]
+- text: "공개"
+- button "노트북 만들기" [ref=e5]
+- button "노트북 공유" [ref=e6]: "공유"
+- button "노트북 구성" [ref=e7]
+- button "설정" [ref=e8]
+- text: "PLUS"
+- region:
+  - navigation:
+    - heading [level=2]: "출처"
+  - button "소스 패널 접기" [ref=e9]
+  - generic [ref=e10] [scrollable]:
+    - button "출처 추가" [ref=e11]: "소스 추가"
+    - form:
+      - textbox "입력된 질문을 기반으로 소스 검색" [ref=e12] [placeholder="웹에서 새 소스를 검색하세요"]
+      - button "웹" [ref=e13]
+      - button "Fast Research" [ref=e14]
+      - button "제출" [ref=e15] [disabled]
+    - button "주제별로 소스 자동 라벨 지정" [ref=e16]
+    - button "소스 정렬" [ref=e17]
+    - text: "모두 선택"
+    - label [ref=e18]:
+      - text: "check_box"
+      - checkbox "모든 출처 선택" [ref=e19] [hidden] [checked]
+    - generic [ref=e20]:
+      - button "12 USC 5905: Supervision and enforcement with respect to Federal qualified payment stablecoin issuer" [ref=e21]
+      - button "더보기" [ref=e22]
+      - label:
+        - text: "check_box"
+        - checkbox "12 USC 5905: Supervision and enforcement with respect to Federal qualified payment stablecoin issuer" [ref=e23] [hidden] [checked]
+    - generic [ref=e24]:
+      - button "A Look Back at One Year of GENIUS Implementation | CSBS" [ref=e25]
+      - button "더보기" [ref=e26]
+      - label:
+        - text: "check_box"
+        - checkbox "A Look Back at One Year of GENIUS Implementation | CSBS 선택" [ref=e27] [hidden] [checked]
+    - generic [ref=e28]:
+      - button "A New Era for the Stablecoin Industry: The GENIUS Act | BakerHostetler" [ref=e29]
+      - button "더보기" [ref=e30]
+      - label:
+        - text: "check_box"
+        - checkbox "A New Era for the Stablecoin Industry: The GENIUS Act | BakerHostetler 선택" [ref=e31] [hidden] [checked]
+    - generic [ref=e32]:
+      - button "Applicaiton by BitGo Trust Company to Convert to a National Bank - OCC.gov" [ref=e33]
+      - button "더보기" [ref=e34]
+      - label:
+        - text: "check_box"
+        - checkbox "Applicaiton by BitGo Trust Company to Convert to a National Bank - OCC.gov 선택" [ref=e35] [hidden] [checked]
+    - generic [ref=e36]:
+      - button "Billing code [4810-AK-P] DEPARTMENT OF THE TREASURY 12 CFR Chapter XV [TREAS-DO- 2026-0562] RIN 1505" [ref=e37]
+      - button "더보기" [ref=e38]
+      - label:
+        - text: "check_box"
+        - checkbox "Billing code [4810-AK-P] DEPARTMENT OF THE TREASURY 12 CFR Chapter XV [TREAS-DO- 2026-0562] RIN 1505" [ref=e39] [hidden] [checked]
+    - generic [ref=e40]:
+      - button "Deep Research 보고서: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e41]
+      - button "더보기" [ref=e42]
+      - label:
+        - text: "check_box"
+        - checkbox "Deep Research 보고서: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석 선택" [ref=e43] [hidden] [checked]
+    - generic [ref=e44]:
+      - button "GENIUS Act - Wikipedia" [ref=e45]
+      - button "더보기" [ref=e46]
+      - label:
+        - text: "check_box"
+        - checkbox "GENIUS Act - Wikipedia 선택" [ref=e47] [hidden] [checked]
+    - generic [ref=e48]:
+      - button "GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - Congressional Research S" [ref=e49]
+      - button "더보기" [ref=e50]
+      - label:
+        - text: "check_box"
+        - checkbox "GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - Congressional Research S" [ref=e51] [hidden] [checked]
+    - generic [ref=e52]:
+      - button "GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e53]
+      - button "더보기" [ref=e54]
+      - label:
+        - text: "check_box"
+        - checkbox "GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com 선택" [ref=e55] [hidden] [checked]
+    - generic [ref=e56]:
+      - button "GENIUS Act Broad-Based Principles for Determining Whether a State-Level Regulatory Regime Is Substan" [ref=e57]
+      - button "더보기" [ref=e58]
+      - label:
+        - text: "check_box"
+        - checkbox "GENIUS Act Broad-Based Principles for Determining Whether a State-Level Regulatory Regime Is Substan" [ref=e59] [hidden] [checked]
+    - generic [ref=e60]:
+      - button "GENIUS Act Creates Stablecoin Regulatory Framework | Legis1" [ref=e61]
+      - button "더보기" [ref=e62]
+      - label:
+        - text: "check_box"
+        - checkbox "GENIUS Act Creates Stablecoin Regulatory Framework | Legis1 선택" [ref=e63] [hidden] [checked]
+    - generic [ref=e64]:
+      - button "GENIUS Act explained: US stablecoin law - Proof of Talk" [ref=e65]
+      - button "더보기" [ref=e66]
+      - label:
+        - text: "check_box"
+        - checkbox "GENIUS Act explained: US stablecoin law - Proof of Talk 선택" [ref=e67] [hidden] [checked]
+    - generic [ref=e68]:
+      - button "GENIUS Act Implementation - Federal Register" [ref=e69]
+      - button "더보기" [ref=e70]
+      - label:
+        - text: "check_box"
+        - checkbox "GENIUS Act Implementation - Federal Register 선택" [ref=e71] [hidden] [checked]
+    - generic [ref=e72]:
+      - button "GENIUS Act Passes in US Congress: A Breakdown of the Landmark Stablecoin Law" [ref=e73]
+      - button "더보기" [ref=e74]
+      - label:
+        - text: "check_box"
+        - checkbox "GENIUS Act Passes in US Congress: A Breakdown of the Landmark Stablecoin Law 선택" [ref=e75] [hidden] [checked]
+    - generic [ref=e76]:
+      - button "GENIUS Act Regulations on Payment Stablecoin Issuance, Offer, and Sale" [ref=e77]
+      - button "더보기" [ref=e78]
+      - label:
+        - text: "check_box"
+        - checkbox "GENIUS Act Regulations on Payment Stablecoin Issuance, Offer, and Sale 선택" [ref=e79] [hidden] [checked]
+    - generic [ref=e80]:
+      - button "GENIUS Act Requirements and Standards for FDIC-Supervised Permitted Payment Stablecoin Issuers and I" [ref=e81]
+      - button "더보기" [ref=e82]
+      - label:
+        - text: "check_box"
+        - checkbox "GENIUS Act Requirements and Standards for FDIC-Supervised Permitted Payment Stablecoin Issuers and I" [ref=e83] [hidden] [checked]
+    - generic [ref=e84]:
+      - button "GENIUS Act Rulemaking Tracker - Paradigm.xyz" [ref=e85]
+      - button "더보기" [ref=e86]
+      - label:
+        - text: "check_box"
+        - checkbox "GENIUS Act Rulemaking Tracker - Paradigm.xyz 선택" [ref=e87] [hidden] [checked]
+    - generic [ref=e88]:
+      - button "https://www.fdic.gov/news/financial-institution-letters/2025/notice-proposed-rulemaking-establish-ge" [ref=e89]
+      - button "더보기" [ref=e90]
+      - button "오류 정보" [ref=e91]: "info"
+    - generic [ref=e92]:
+      - button "https://www.fdic.gov/news/speeches/2025/proposed-rule-regarding-approval-requirements-issuance-payme" [ref=e93]
+      - button "더보기" [ref=e94]
+      - button "오류 정보" [ref=e95]: "info"
+    - generic [ref=e96]:
+      - button "https://www.theblock.co/news/regulation/2026-07-18-us-regulators-miss-genius-acts-one-year-deadline-" [ref=e97]
+      - button "더보기" [ref=e98]
+      - button "오류 정보" [ref=e99]: "info"
+    - generic [ref=e100]:
+      - button "Implementing the Federal Reserve Board's Responsibilities Under the GENIUS Act" [ref=e101]
+      - button "더보기" [ref=e102]
+      - label:
+        - text: "check_box"
+        - checkbox "Implementing the Federal Reserve Board's Responsibilities Under the GENIUS Act 선택" [ref=e103] [hidden] [checked]
+    - generic [ref=e104]:
+      - button "Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Issua" [ref=e105]
+      - button "더보기" [ref=e106]
+      - label:
+        - text: "check_box"
+        - checkbox "Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Issua" [ref=e107] [hidden] [checked]
+    - generic [ref=e108]:
+      - button "Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Issua" [ref=e109]
+      - button "더보기" [ref=e110]
+      - label:
+        - text: "check_box"
+        - checkbox "Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Issua" [ref=e111] [hidden] [checked]
+    - generic [ref=e112]:
+      - button "Notice of proposed rulemaking: Implementing the Guiding and Establishing National Innovation for U.S" [ref=e113]
+      - button "더보기" [ref=e114]
+      - label:
+        - text: "check_box"
+        - checkbox "Notice of proposed rulemaking: Implementing the Guiding and Establishing National Innovation for U.S" [ref=e115] [hidden] [checked]
+    - generic [ref=e116]:
+      - button "OCC Decision Letter - Application by Paxos Trust Company to Convert to a National Trust Bank - OCC.g" [ref=e117]
+      - button "더보기" [ref=e118]
+      - label:
+        - text: "check_box"
+        - checkbox "OCC Decision Letter - Application by Paxos Trust Company to Convert to a National Trust Bank - OCC.g" [ref=e119] [hidden] [checked]
+    - generic [ref=e120]:
+      - button "OCC Requests Comments on Proposal to Implement GENIUS Act" [ref=e121]
+      - button "더보기" [ref=e122]
+      - label:
+        - text: "check_box"
+        - checkbox "OCC Requests Comments on Proposal to Implement GENIUS Act 선택" [ref=e123] [hidden] [checked]
+    - generic [ref=e124]:
+      - button "OCC Rules Regarding the Availability of OCC Information - OCC.gov" [ref=e125]
+      - button "더보기" [ref=e126]
+      - label:
+        - text: "check_box"
+        - checkbox "OCC Rules Regarding the Availability of OCC Information - OCC.gov 선택" [ref=e127] [hidden] [checked]
+    - generic [ref=e128]:
+      - button "Public Law 119 - 27 - Guiding and Establishing National Innovation for U.S. Stablecoins Act\" or the " [ref=e129]
+      - button "더보기" [ref=e130]
+      - label:
+        - text: "check_box"
+        - checkbox "Public Law 119 - 27 - Guiding and Establishing National Innovation for U.S. Stablecoins Act\" or the " [ref=e131] [hidden] [checked]
+    - generic [ref=e132]:
+      - button "Request for Comment on Innovative Methods To Detect Illicit Activity Involving Digital Assets" [ref=e133]
+      - button "더보기" [ref=e134]
+      - label:
+        - text: "check_box"
+        - checkbox "Request for Comment on Innovative Methods To Detect Illicit Activity Involving Digital Assets 선택" [ref=e135] [hidden] [checked]
+    - generic [ref=e136]:
+      - button "Treasury's GENIUS Act rule would make exchanges vet foreign stablecoin issuers - Zyphe" [ref=e137]
+      - button "더보기" [ref=e138]
+      - label:
+        - text: "check_box"
+        - checkbox "Treasury's GENIUS Act rule would make exchanges vet foreign stablecoin issuers - Zyphe 선택" [ref=e139] [hidden] [checked]
+    - generic [ref=e140]:
+      - button "When Does the GENIUS Act Take Effect? The 120-Day Trigger - Astraea Counsel" [ref=e141]
+      - button "더보기" [ref=e142]
+      - label:
+        - text: "check_box"
+        - checkbox "When Does the GENIUS Act Take Effect? The 120-Day Trigger - Astraea Counsel 선택" [ref=e143] [hidden] [checked]
+    - generic [ref=e144]:
+      - button "Why Does MiCA And The GENIUS Act Ban Stablecoin Interest - Legal 500" [ref=e145]
+      - button "더보기" [ref=e146]
+      - label:
+        - text: "check_box"
+        - checkbox "Why Does MiCA And The GENIUS Act Ban Stablecoin Interest - Legal 500 선택" [ref=e147] [hidden] [checked]
+- region:
+  - generic [ref=e148] [scrollable]:
+    - button [ref=e149]
+    - button "요약 복사" [ref=e150]
+    - button "만족스러운 요약" [ref=e151]
+    - button "불만족스러운 요약" [ref=e152]
+    - text: "오늘 • 오후 2:59"
+    - generic [ref=e153] [scrollable]:
+      - button [ref=e154]
+      - text: "제시해주신 요청 사항과 소스 자료를 바탕으로 작성한 종합 비교 표입니다. 소스에 명확히 기재되지 않은 항목은 **\"소스에 없음\"**으로 표기하였습니다"
+      - button "1: When Does the GENIUS Act Take Effect? The 120-Day Trigger - Astraea Counsel" [ref=e155]: "1"
+      - button [ref=e156]
+      - text: "."
+      - table:
+        - text: "주제 항목 날짜 또는 값 내용 근거 소스 원문 인용 한 줄 소스에 없음 여부 1. 미국 GENIUS법 시행 규정 기관별 제안안(NPRM) 공표일 2025년 12월 ~ 2026년 9월"
+        - button "5: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e157]: "5"
+        - text: "연방 재무부, OCC, FDIC, NCUA, FRB, FinCEN 등 6개 주요 기관이 총 11건의 입법예고안(NPRM) 및 정보 요청서(RFC)를 공표함"
+        - button "5: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e158]: "5"
+        - button "6: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e159]: "6"
+        - text: ".미국 GENIUS법 시행 규정 제정 현황 및 규제 프레임워크 종합 분석"
+        - button "6: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e160]: "6"
+        - text: "\"2026년 10월 4일 현재 연방 재무부, 통화감독청(OCC), 연방예금보험공사(FDIC), 연방신용협동조합감독청(NCUA), 연방준비제도이사회(FRB), 금융범죄단속네트워크(FinCEN) 등 6개 주요 기관은 총 11건의 입법예고안(NPRM) 및 정보 요청서(RFC)를 공표하였으며\""
+        - button "6: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e161]: "6"
+        - text: "아니오 (소스에 있음)1. 미국 GENIUS법 시행 규정 최종 규정의 공표일 미공표 (소스에 없음)"
+        - button "2: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e162]: "2"
+        - text: "2026년 10월 기준, 법정 1년 제정 시한(2026.07.18)을 초과했음에도 연방관보에 최종 확정 규정(Final Rule)을 공표한 행정기관은 단 한 곳도 없음"
+        - button "1: When Does the GENIUS Act Take Effect? The 120-Day Trigger - Astraea Counsel" [ref=e163]: "1"
+        - button "2: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e164]: "2"
+        - text: ".미국 GENIUS법 시행 규정 제정 현황 및 규제 프레임워크 종합 분석"
+        - button "2: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e165]: "2"
+        - text: "\"2026년 10월 4일 현재, 법정 1년 시한을 넘겼음에도 불구하고 연방관보에 최종 확정 규정(Final Rule)을 공표한 행정기관은 단 한 곳도 존재하지 않는다\""
+        - button "2: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e166]: "2"
+        - text: "아니오 (미공표 상태임이 명시됨)1. 미국 GENIUS법 시행 규정 최종 규정이 정한 시행일 소스에 없음"
+        - button "1: When Does the GENIUS Act Take Effect? The 120-Day Trigger - Astraea Counsel" [ref=e167]: "1"
+        - button "2: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e168]: "2"
+        - text: "주요 연방 규제 기관의 최종 확정 규정이 공표되지 않았으므로, 최종 규정에 의해 정해진 시행일 값은 소스에 존재하지 않음"
+        - button "1: When Does the GENIUS Act Take Effect? The 120-Day Trigger - Astraea Counsel" [ref=e169]: "1"
+        - button "2: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e170]: "2"
+        - text: ". (단, OCC는 2026년 11월 최종 규정 확정을 목표로 심의 중임"
+        - button "7: Why Does MiCA And The GENIUS Act Ban Stablecoin Interest - Legal 500" [ref=e171]: "7"
+        - button "8: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e172]: "8"
+        - text: ")When Does the GENIUS Act Take Effect? The 120-Day Trigger"
+        - button "1: When Does the GENIUS Act Take Effect? The 120-Day Trigger - Astraea Counsel" [ref=e173]: "1"
+        - text: "/ Why Does MiCA And The GENIUS Act Ban Stablecoin Interest"
+        - button "7: Why Does MiCA And The GENIUS Act Ban Stablecoin Interest - Legal 500" [ref=e174]: "7"
+        - text: "\"11 proposed rulemakings (one advance notice, ten proposed rules); 0 final rules — as of July 17, 2026.\""
+        - button "1: When Does the GENIUS Act Take Effect? The 120-Day Trigger - Astraea Counsel" [ref=e175]: "1"
+        - text: "소스에 없음 1. 미국 GENIUS법 시행 규정§20에 따른 법 시행일 2027년 1월 18일"
+        - button "2: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e176]: "2"
+        - button "9: GENIUS Act explained: US stablecoin law - Proof of Talk" [ref=e177]: "9"
+        - text: "§20에 따라 최종 규정 공표 후 120일 경과일과 제정일(2025.07.18) 18개월 경과일 중 빠른 날이 발효되나, 2026.09.20까지 최종 규정이 게재되지 않아 법정 백스탑인 2027년 1월 18일로 확정됨"
+        - button "2: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e178]: "2"
+        - button "9: GENIUS Act explained: US stablecoin law - Proof of Talk" [ref=e179]: "9"
+        - text: ".미국 GENIUS법 시행 규정 제정 현황 및 규제 프레임워크 종합 분석"
+        - button "2: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e180]: "2"
+        - text: "\"따라서 GENIUS법의 공식 시행일은 법정 백스탑인 2027년 1월 18일로 확정되었다\""
+        - button "2: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e181]: "2"
+        - text: "아니오 (소스에 있음)2. CLARITY Act 하원 통과일과 표결 수 소스에 없음"
+        - button "4: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e182]: "4"
+        - text: "CLARITY Act(H.R. 3633)의 하원 통과 일자 및 표결 수에 대한 정보는 소스에 기재되어 있지 않음"
+        - button "4: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e183]: "4"
+        - text: ". (GENIUS Act의 하원 통과일 2025년 7월 17일, 표결 수 308대 122만 기재됨"
+        - button "10: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e184]: "10"
+        - button "11: 미국 GENIUS법(Pub. L. 119-27) 시행 규정 제정 현황 및 규제 프레임워크 종합 분석" [ref=e185]: "11"
+        - text: ")GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com"
+        - button "4: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e186]: "4"
+        - text: "\"The House-passed version of H.R. 3633 does not have a stablecoin yield provision.\""
+        - button "4: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e187]: "4"
+        - text: "소스에 없음 2. CLARITY Act 상원 심사 단계와 날짜 2026년 5월 14일 (상원 은행위 통과), 2026년 6월 1일 (상원 안건 상정)"
+        - button "12: Why Does MiCA And The GENIUS Act Ban Stablecoin Interest - Legal 500" [ref=e188]: "12"
+        - text: "상원 은행위원회(Senate Banking Committee)에서 2026년 5월 14일 15 대 9 표결로 가결(reported out)되어 2026년 6월 1일 상원 안건 달력(Senate calendar)에 상정됨"
+        - button "12: Why Does MiCA And The GENIUS Act Ban Stablecoin Interest - Legal 500" [ref=e189]: "12"
+        - text: ".Why Does MiCA And The GENIUS Act Ban Stablecoin Interest"
+        - button "12: Why Does MiCA And The GENIUS Act Ban Stablecoin Interest - Legal 500" [ref=e190]: "12"
+        - text: "\"CLARITY Act, which the Senate Banking Committee reported out 15–9 on May 14, 2026 and which was placed on the Senate calendar on June 1, 2026\""
+        - button "12: Why Does MiCA And The GENIUS Act Ban Stablecoin Interest - Legal 500" [ref=e191]: "12"
+        - text: "아니오 (소스에 있음)2. CLARITY Act 스테이블코인 준비금 조항 소스에 없음"
+        - button "3: A Look Back at One Year of GENIUS Implementation | CSBS" [ref=e192]: "3"
+        - text: "CLARITY Act의 스테이블코인 준비금(reserve) 규정에 관한 세부 내용은 소스에 기재되어 있지 않음"
+        - button "3: A Look Back at One Year of GENIUS Implementation | CSBS" [ref=e193]: "3"
+        - text: ". (주 인증 타임라인 명확화 가능성만 언급됨"
+        - button "3: A Look Back at One Year of GENIUS Implementation | CSBS" [ref=e194]: "3"
+        - text: ")A Look Back at One Year of GENIUS Implementation CSBS"
+        - button "3: A Look Back at One Year of GENIUS Implementation | CSBS" [ref=e195]: "3"
+        - text: "\"and future legislation (such as the Clarity Act) may also clarify this certification timeline.\""
+        - button "3: A Look Back at One Year of GENIUS Implementation | CSBS" [ref=e196]: "3"
+        - text: "2. CLARITY Act 스테이블코인 공시 조항 소스에 없음"
+        - button "13: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e197]: "13"
+        - text: "CLARITY Act의 스테이블코인 공시(disclosure) 규정에 관한 세부 내용은 소스에 기재되어 있지 않음"
+        - button "13: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e198]: "13"
+        - text: ". (업계 제출 서한 제목의 제404조 언급 외 상세 내용 없음"
+        - button "13: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e199]: "13"
+        - text: ")GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com"
+        - button "13: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e200]: "13"
+        - text: "\"Joint-Trades-Letter-Section-404-of-the-CLARITY-Act-05.08.26.pdf\""
+        - button "13: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e201]: "13"
+        - text: "소스에 없음 2. CLARITY Act 이자와 보상 조항 (조항 번호, GENIUS법 변경/추가 여부)제404조 (Section 404)"
+        - button "13: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e202]: "13"
+        - text: "GENIUS법의 이자 금지 규정을 수정·확장하여 가상자산 서비스 제공자(DASP)의 예금 이자 성격 수익 지급을 금지하되, 거래·스테이킹·유동성 공급·담보 제공에 따른 활동 기반 보상(activity-based rewards)은 허용함 (GENIUS법 규정을 수정 및 추가함)"
+        - button "12: Why Does MiCA And The GENIUS Act Ban Stablecoin Interest - Legal 500" [ref=e203]: "12"
+        - button "14: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e204]: "14"
+        - text: ".Why Does MiCA And The GENIUS Act Ban Stablecoin Interest"
+        - button "12: Why Does MiCA And The GENIUS Act Ban Stablecoin Interest - Legal 500" [ref=e205]: "12"
+        - text: "/ GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com"
+        - button "14: GENIUS Act (P.L. 119-27): Creating a Regulatory Framework for Stablecoins - EveryCRSReport.com" [ref=e206]: "14"
+        - text: "\"would extend the prohibition to digital asset service providers while permitting 'activity-based rewards' tied to transacting, staking, providing liquidity, or posting collateral.\""
+        - button "12: Why Does MiCA And The GENIUS Act Ban Stablecoin Interest - Legal 500" [ref=e207]: "12"
+        - text: "아니오 (소스에 있음)3. 한국 계류 법안 수와 새로 발의된 법안 소스에 없음 한국 국회의 계류 법안 수 및 새로 발의된 법안에 대한 정보는 제공된 소스에 전혀 포함되어 있지 않음.소스에 없음 소스에 없음 소스에 없음 3. 한국 정부안 제출 여부와 날짜 소스에 없음 한국 정부안의 제출 여부 및 날짜에 대한 정보는 제공된 소스에 전혀 포함되어 있지 않음.소스에 없음 소스에 없음 소스에 없음 3. 한국 9월 공청회 날짜와 쟁점 소스에 없음 한국의 9월 공청회 개최 날짜 및 주요 쟁점에 대한 정보는 제공된 소스에 전혀 포함되어 있지 않음.소스에 없음 소스에 없음 소스에 없음 4. 레퍼런스 Tessera (보고서 파싱, 조문 판정, 한국 대상, 기준값 제안 여부)소스에 없음 Tessera 서비스 및 해당 기능(보고서 파싱, 조문 판정, 한국 대상, 기준값 제안)에 대한 내용은 업로드된 소스에 존재하지 않음.소스에 없음 소스에 없음 소스에 없음 4. 레퍼런스 FeedOracle (보고서 파싱, 조문 판정, 한국 대상, 기준값 제안 여부)소스에 없음 FeedOracle 서비스 및 해당 기능에 대한 내용은 업로드된 소스에 존재하지 않음.소스에 없음 소스에 없음 소스에 없음 4. 레퍼런스 Veris (보고서 파싱, 조문 판정, 한국 대상, 기준값 제안 여부)소스에 없음 Veris 서비스 및 해당 기능에 대한 내용은 업로드된 소스에 존재하지 않음.소스에 없음 소스에 없음 소스에 없음 4. 레퍼런스 새 서비스 (보고서 파싱, 조문 판정, 한국 대상, 기준값 제안 여부)소스에 없음 새 서비스 및 해당 기능에 대한 내용은 업로드된 소스에 존재하지 않음.소스에 없음 소스에 없음 소스에 없음"
+      - text: "💡 미국 GENIUS법과 CLARITY Act의 규제 항목(준비금, 이자 금지, DASP 실사 의무 등)을 다각도로 비교 분석하는 맞춤형 보고서를 작성해보는 것은 어떨까요?"
+    - button "메시지를 메모에 저장" [ref=e208]: "메모에 저장"
+    - button "클립보드에 모델 대답 복사" [ref=e209]
+    - button "대답을 좋음으로 평가" [ref=e210]
+    - button "대답을 좋지 않음으로 평가" [ref=e211]
+  - form:
+    - textbox "쿼리 상자" [ref=e212] [focused] [placeholder="질문하거나 창작하세요"]
+    - text: "소스 29개"
+    - button "제출" [ref=e213] [disabled]
+  - text: "Gemini Notebook은 실수를 할 수 있으니 다시 한번 확인하세요."
+- region:
+  - navigation:
+    - heading [level=2]: "스튜디오"
+  - button "스튜디오 패널 접기" [ref=e214]
+  - text: "새로운 기능: 이제 대화형 보고서를 만들 수 있습니다."
+  - button "사용해 보기" [ref=e215]
+  - button "배너 닫기" [ref=e216]
+  - button "AI 오디오 오버뷰" [ref=e217]
+  - button "슬라이드 자료" [ref=e218]
+  - button "동영상 개요" [ref=e219]
+  - button "마인드맵" [ref=e220]
+  - button "보고서" [ref=e221]
+  - text: "New!"
+  - button "플래시카드" [ref=e222]
+  - button "퀴즈" [ref=e223]
+  - button "인포그래픽" [ref=e224]
+  - button "데이터 표" [ref=e225]
+  - text: "스튜디오 출력이 여기에 저장됩니다 소스를 추가한 후 클릭하여 AI 오디오 오버뷰, 학습 가이드, 마인드맵 등을 추가해 보세요."
+  - button "메모 추가" [ref=e226]

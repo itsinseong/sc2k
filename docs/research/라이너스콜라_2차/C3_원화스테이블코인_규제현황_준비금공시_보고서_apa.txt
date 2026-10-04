@@ -1,0 +1,207 @@
+원화 기반 스테이블코인 규제 현황과 준비금 공시 의무
+한국의 원화 스테이블코인 규제는 2025년 하반기 이후 입법 속도가 가속화되고 있으나, 준비금 공시·검증 체계
+의 구체성에서 국제 기준에 미치지 못하는 간극이 존재한다. 본 보고서는 국내 입법 동향, 주요 법안의 준비금·공
+시 관련 규정, 학계의 제언, 국제 비교를 정리한다.
+1. 규제 배경: 현행법상 민간 발행 사실상 금지
+한국에서는 민간 기관이 원화 스테이블코인을 발행하는 것이 사실상 금지되어 있다. 헌법상 화폐 발행 권한은 한
+국은행에만 귀속되며, 민간이 원화와 동일 가치의 가상자산을 발행하면 사설 화폐처럼 기능하여 중앙은행의 통
+화정책 통제력을 약화할 수 있다는 우려가 있다 ( 원화 스테이블코인 과연 한국에도 도입될까? 법제화 현황은?,
+2025 )。과거 클레이튼 기반 프로젝트나 카카오페이 연계 스테이블코인 실험도 규제 장벽에 가로맛혀 무산되
+었으며, 국내보다는 동남아 등 해외에서 우회 진행되고 있다 ( 원화 스테이블코인 과연 한국에도 도입될까? 법제
+화 현황은?, 2025 )。한국은행은 비은행의 스테이블코인 발행에 반대하는 입장으로, 원화 스테이블코인이 무
+분별하게 발행되면 금융 안정성에 위험이 생기고 시중 유동성이 늘어나 통화정책이 약화될 수 있다고 본다 ( 원
+화 스테이블코인 과연 한국에도 도입될까? 법제화 현황은?, 2025 )。이창용 한국은행 총재는 "원화 표시 스테
+이블코인을 은행에만 적용할지, 비은행에도 허용할지 고민해야 한다"라며 신중한 입장을 밝혔다 ( 원화 스테이
+블코인 과연 한국에도 도입될까? 법제화 현황은?, 2025 )。
+현행법 체계에서 2024년 7월 시행된 가상자산 이용자 보호법은 제1단계 입법으로, 유통 시장의 불공정거래 규
+제와 사후적 자산 보호에 치중하며 발행 단계 규제와 스테이블코인 체계적 리스크 대응은 포함하지 않는다 ( 이
+정수, 2024 )。정부는 제2단계 입법으로 공시 규정과 스테이블코인 규제를 포함하는 포괄적 기본법 전환을 검
+토 중이다 ( 이정수, 2024 )。
+2. 국회 계류 중인 스테이블코인 관련 법안
+2025년 7월 기준 국회에 발의된 스테이블코인 관련 법안은 총 3건이다 ( 안전핀 빠진 수류탄 될라…쏟아지는
+스테이블코인 법안 - 마켓인, 2025 )。세 법안 모두 스테이블코인 발행 주체의 자본금과 준비금 요건, 자산 분
+리 보관 등 큰 틀에서 최소한의 규율을 포함하고 있으나, 상환청구권·위기 시 공적 개입 절차 등 이용자 보호의
+핵심 장치는 거의 빠져 있다 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법안 - 마켓인, 2025 )。
+   디지털자산기본법안: 2025년 6월 발의된 포괄적 법안으로 가상자산 정의, 스테이블코인 규율, 투자자 보
+   호 장치 등을 담고 있다 ( 원화 스테이블코인 과연 한국에도 도입될까? 법제화 현황은?, 2025 )。
+   국민의힘 발의안(김은혜 의원 등 10인): 스테이블코인 도입에 직접 초점을 맞춘 안으로 세부적 설계를 포함
+   한다 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법안 - 마켓인, 2025 )。
+   더불어민주당 발의안(안도걸 의원 등 10인): 역시 스테이블코인 도입에 직접 초점을 맞춘 별도 법안이다
+   ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법안 - 마켓인, 2025 )。
+이 밖에 강준현 의원이 디지털자산혁신법 추가 발의를 준비 중이며 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이
+블코인 법안 - 마켓인, 2025 ), 후속 논의에서 금융위원회가 발행·유통 규칙, 디지털자산 사업 정의 및 행위 규제
+를 포함하는 법안을 준비 중이다 ( South Korea Advances Crypto Bill as 22% Tax Nears, 2026 )。
+2026년 9월 기준, 국회는 스테이블코인 발행 이후의 관리·감독 체계를 핵심 쟁점으로 삼아 논의 중이며
+( South Korea Stalls Digital Asset Bill over Stablecoin ..., 2026 ), 금융위는 2026년 내 제2단계 암호자
+산 입법 완료를 목표로 하고 있다 ( South Korea Targets November Review for Second Stage ...,
+2026 )。
+3. 준비금 요건과 공시 의무: 현행 법안의 한계
+현재 발의된 법안들은 발행·운영의 투명성을 확보할 기본적인 보고·공시 의무는 포함하나, 실시간 준비금 증빙이
+나 환매 절차 보장에 대한 구체 규정은 부족한 실정이다 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법안
+- 마켓인, 2025 )。이러한 법적 공백이 있을 경우 발행사가 유동성 위기에 직면했을 때 이용자가 법적으로 보호
+받을 수단이 마땅치 않다 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법안 - 마켓인, 2025 )。
+구체적으로 법안에서 요구하는 것으로 알려진 준비금·공시 관련 최소 규율은 다음과 같다.
+   자본금 요건: 발행 주체는 최소 5억 원(약 36만 달러) 이상의 자본금을 보유해야 한다 ( Guide to Korea’s
+   Stablecoin Regulation Framework, 2025 )。
+   준비금 요건: 스테이블코인 발행액의 100%에 상응하는 준비자산을 안전 자산(은행 예금 등)으로 보유해야
+   한다 ( South Korea’s Stablecoin Bill Hits a Wall as Regulators ..., 2025 )。준비금은 은행 또는 승인
+   된 기관에 예치해야 한다 ( South Korea Crypto Regulation Delayed Until 2026 Over ..., 2025 )。
+   자산 분리 보관: 준비자산은 발행 주체의 자산과 분리 보관해야 한다 ( 안전핀 빠진 수류탄 될라…쏟아지는
+   스테이블코인 법안 - 마켓인, 2025 )。
+   기본적 보고·공시 의무: 발행·운영 투명성을 위한 기본 보고·공시 의무가 존재하나, 실시간 준비금 증빙이나
+   환매 절차에 대한 구체 규정은 미비하다 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법안 - 마켓인,
+   2025 )。
+전문가들이 지적하는 핵심 공백은 다음과 같다 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법안 - 마켓
+인, 2025 )。
+   상환권 법제화 부재: 이용자의 스테이블코인을 법정화폐로 상환할 권리가 법적으로 명시되지 않았다.
+   실시간 준비금 공시 미비: 발행 시점에 준비금이 충분했다 하더라도, 운용 중 변동을 실시간으로 모니터링할
+   공시 체계가 구체화되지 않았다.
+   외부 분리 보관 구체화 부족: 자산 분리 보관의 원칙은 있으나 외부 커스터디 전문 기관을 통한 분산 보관 의
+   무화 등 구체적 수단은 미비하다 ( 강사 & LEE, 2025 )。
+   비상 시 개입 절차 부재: 발행사 파산 등 위기 시 감독 기관의 검사·보고 권한 및 공적 개입 절차가 명시되지
+   않았다 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법안 - 마켓인, 2025 )。
+4. 학계의 제언: 준비금 공시 체계 강화 방향
+다수의 국내 학술 연구가 준비금 공시 의무의 구체화를 입법의 핵심 과제로 제시하고 있다.
+4.1 MiCA 기반 공시 체계 도입 제안
+원대성(Won, 2025)은 EU MiCA의 전자화폐토큰(EMT) 규제를 중심으로 원화 스테이블코인의 공시 체계를
+분석하고, 가상자산 백서 작성 및 공시 의무 도입, 준비금 운용 내역·환급 기준·리스크 관련 정보의 지속적 제공
+의무화를 제안한다 ( Won, 2025 )。특히 MiCA가 전자화폐토큰에 대해 전자화폐 관련 법령과 자금세탁방지
+규정의 중복 적용을 명시한 점을 참조할 때, 한국 역시 전자금융거래법 등 기존 법제와의 충돌 또는 병존 문제가
+핵심 쟁점이라고 지적한다 ( Won, 2025 )。
+4.2 100% 상시 예치와 공시·감사 의무
+김지연(Jiyeon Kim, 2025)은 단기적으로 인가·감독 체계 하에서 원화 스테이블코인을 제도화하고, 준비자산
+100% 이상 상시 예치, 상환 규정의 구체화, 공시·감사 의무, 유형별 차등 규율을 통해 제도적 신뢰를 확보할 것
+을 제안한다 ( Kim, 2025 )。중장기적으로는 도매형·목적형 CBDC를 단계적으로 추진하는 '공존형 2층 디지
+털 원화 체계'를 정책 방향으로 제시한다 ( Kim, 2025 )。
+4.3 GENIUS Act 참조: 준비자산 보유 의무와 우선 상환권
+김홍기(Hongki Kim, 2025)는 미국 GENIUS Act를 참조하여 발행자에게 충분한 준비자산 보유를 의무화하
+고, 보유자에게는 발행자 파산 등 비상 상황에 대비한 우선적 상환권을 보장해야 한다고 제안한다 ( Kim,
+2025 )。준비자산의 보유비율과 보유방식은 발행주체의 사정을 반영하여 탄력적 고려가 가능하나, 원칙적으
+로 충분성이 법적으로 보장되어야 함을 강조한다 ( Kim, 2025 )。감독 체계로는 금융위원회를 주무부서로 하
+면서 한국은행이 적극적으로 참여하는 이원적 감독구조를 제안한다 ( Kim, 2025 )。
+조지은(Cho, 2025) 역시 GENIUS Act 기반으로 금융안정성·금산분리 원칙·이용자 보호장치 마련의 필요성
+을 확인하고, 발행인과 준비자산에 대한 구체적 방안 및 중앙은행의 감시·감독 기능 명시적 허용을 제안한다
+( Cho, 2025 )。
+4.4 발행–보관–유통 전과정 통합 규제
+이형균(Lee, 2025)은 한국 가상자산법의 구조적 한계를 분석하며, 발행 단계의 규제 공백과 스테이블코인의 시
+스템 리스크 대응 미비를 핵심 문제로 지적한다 ( 강사 & LEE, 2025 )。개선 방안으로 가상자산법 내에 발행·공
+시에 관한 장을 신설하여 백서 허위 기재에 대한 법적 책임을 명확히 하고, 외부 커스터디 전문 기관을 통한 분
+산 보관 의무화, 스테이블코인에 대한 별도 건전성 규제 수립, 금융당국과 한국은행 간 거시건전성 감독 협력 체
+계 법제화 등을 제안한다 ( 강사 & LEE, 2025 )。
+4.5 통화주권 관점의 준비자산 비축 전략
+김태봉(Taebong Kim, 2025)은 달러 스테이블코인 확산에 대응해 국제 금융시장에서의 신뢰성 확보를 위해
+비트코인을 포함하는 준비자산 비축 전략을 구축할 것을 제안한다 ( Kim, 2025 )。이는 준비금의 구성 자산 범
+위를 논의의 대상으로 삼는 점에서 다른 학자들의 법정통화 한정 입장과 구별된다.
+5. 국제 비교: 준비금 공시 의무의 글로벌 스탠다드
+해외 주요국은 스테이블코인에 금융업 수준의 규제를 적용한다 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블
+코인 법안 - 마켓인, 2025 )。
+ 관할권          준비금 요건            공시·감사 의무         발행 주체 제한
+ EU (MiCA) 1:1   상환권 보장, 준비자산
+              100% 보관           분기별 외부 감사        EU 인가 금융기관
+ 미국 (GENIUS 100% 준비금, 안전 자산(현금· 월간 공시, 감독기관 검사   은행·비은행 인가
+ Act)         국채 등) 한정                           기관
+ 일본           고객 자산 전액 신탁보전 의무        외부 신탁 계좌 관리       은행·전자결제업
+                                                        자
+ 한국 (법안 발의 100% 준비금, 은행 예치       기본적 보고·공시 의무만, 실시 논의 중(은행 vs
+ 수준)                             간 증빙 미비                비은행)
+MiCA는 전자화폐토큰(EMT)에 대해 준비자산 100% 보관, 1:1 상환권 보장, 분기별 외부 감사, EU 인가 금융
+기관 발행 요건을 의무화했다 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법안 - 마켓인, 2025 )。일본
+은 2023년부터 은행과 전자결제업자만 발행할 수 있도록 하고 고객 자산을 외부 신탁 계좌에 별도 보관하도록
+규정했다 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법안 - 마켓인, 2025 )。박선영(2025) 역시 주
+요국이 발행 주체에 대한 인가제, 100% 준비자산 보유 의무, 정보 공시 강화, 해외 발행 스테이블코인의 유통 제
+한 등 엄격하고 포괄적인 규제 체계를 도입하고 있음을 지적한다 ( 원화 스테이블코인의 입법방향, n.d. )。
+6. 발행 주체 논쟁: 은행 vs 비은행
+발행 주체를 은행으로 한정할지, 비은행(핀테크·기술 기업 등)으로 확대할지가 핵심 쟁점이다. 김홍기(2025)는
+발행 주체를 은행 또는 이에 준하는 기관으로 한정하는 것이 바람직하며, 필요시 기획재정부·금융위·한국은행이
+참여하는 위원회에서 발행자 승인 여부를 심사하는 절차를 마련할 것을 제안한다 ( Kim, 2025 )。
+반면 비은행권은 원화 스테이블코인도 글로벌 경쟁력을 갖추려면 핀테크·민간 플랫폼의 참여가 필수적이라고 주
+장한다 ( 원화 스테이블코인 과연 한국에도 도입될까? 법제화 현황은?, 2025 )。김태봉(2025) 역시 기술 기업
+을 포함해 발행 주체 범위를 확대하고 디지털 경제의 네트워크 효과와 광범위한 채택을 촉진하는 사용성 극대화
+전략이 동반되어야 한다고 제안한다 ( Kim, 2025 )。
+국회 논의에서는 은행의 지분 과반 보유 요건(51%)이 거론되고 있어 ( Korea’s Stablecoin Ownership
+Fight Heats Up Before the US ..., 2026 ), 발행 주체 요건이 준비금 공시 체계의 실효성과 직결된다. 은행
+발행으로 한정할 경우 기존 은행 감독 체계(건전성 규제, 검사 권한 등)를 준비금 공시의 간접 보장 수단으로 활
+용할 수 있으나, 비은행 발행을 허용할 경우 공시·감사 의무의 법적 구체화가 더욱 시급해진다.
+7. AML 규제의 공백
+김미향(Mihyang Kim, 2026)은 현행 특정금융정보법 하에서 AML 규제가 가상자산거래소 등 거래 중개기관
+에만 집중되어 스테이블코인 발행자에 대한 규제 간극이 존재한다고 지적한다 ( Kim, 2026 )。스테이블코인
+이 지급수단으로 광범위하게 사용되면 비호스팅 지갑을 통한 P2P 거래가 증가할 것으로 예상되며, 기존 거래소
+중심의 AML 체계로는 리스크 통제가 충분하지 않다. 이에 발행인을 AML 의무 대상으로 편입시키고, 비호스팅
+지갑 거래에 강화된 의무를 부과할 것을 제안한다 ( Kim, 2026 )。
+8. 시사점과 과제
+한국의 원화 스테이블코인 규제 논의에서 준비금 공시 의무와 관련하여 도출되는 주요 시사점은 다음과 같다.
+첫째, 실시간 준비금 공시 체계의 법적 구체화가 시급하다. 현재 법안 수준에서는 기본적 보고·공시 의무만 있고,
+실시간 준비금 증빙이나 환매 절차에 대한 구체 규정이 부족하다 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블
+코인 법안 - 마켓인, 2025 )。MiCA의 분기별 외부 감사 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법
+안 - 마켓인, 2025 )나 미국 GENIUS Act의 월간 공시 ( 안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법
+안 - 마켓인, 2025 ) 수준에 맞추거나 이를 초과하는 실시간 공시 체계가 필요하다. 학계에서도 준비금 운용 내
+역·환급 기준·리스크 정보의 지속적 제공 의무화 ( Won, 2025 )와 공시·감사 의무 ( Kim, 2025 )가 일관되게
+제언되고 있다.
+둘째, 상환권의 법제화가 선행되어야 한다. 준비금 공시는 이용자에게 발행사의 상환 능력을 확인시키는 장치이
+나, 상환권 자체가 법적으로 보장되지 않으면 공시의 실효성이 떨어진다 ( 안전핀 빠진 수류탄 될라…쏟아지는
+스테이블코인 법안 - 마켓인, 2025 )。김홍기(2025)가 제안한 우선적 상환권 보장 ( Kim, 2025 )과 Jiyeon
+Kim(2025)의 상환 규정 구체화 ( Kim, 2025 )가 상호 보완적으로 입법에 반영되어야 한다.
+셋째, 발행 주체 요건이 공시 체계의 실효성과 직결된다. 비은행 발행을 허용할수록 공시·감사·AML 의무의 법적
+구체화 수준이 높아야 한다. 은행 발행으로 한정하더라도 준비금 분리 보관의 구체적 수단(외부 커스터디 의무
+화 등)과 감독 기관의 실시간 검사 권한이 보장되어야 한다 ( 강사 & LEE, 2025 ; 안전핀 빠진 수류탄 될라…쏟
+아지는 스테이블코인 법안 - 마켓인, 2025 )。
+넷째, 해외 발행 스테이블코인에 대한 공시 요건 적용도 검토되어야 한다. USDT·USDC 등 해외 스테이블코인
+이 국내에서 유통될 경우, 동일한 수준의 준비금 공시·상환권 보장이 적용되어야 안전망이 탄탄하다 ( 안전핀 빠
+진 수류탄 될라…쏟아지는 스테이블코인 법안 - 마켓인, 2025 )。그렇지 않으면 규제 차선(arbitrage)으로 이
+용자 보호에 허점이 생긴다.
+다섯째, 자동화된 공시 검증의 가능성을 탐색해야 한다. 학계와 산업계에서 LLM 기반 공시 파싱, 블록체인 기반
+준비금 증명(PoR), 기계집행 단언 등 자동화 기술이 연구되고 있으나 ( Kim, 2025 ; Kim, 2025 ), 원화 스테
+이블코인에 적용된 사례는 아직 없다. 입법 단계에서 머신 리더블(machine-readable) 공시 포맷과 API 기
+반 실시간 검증을 법적 요건으로 수용하면, 사후 감사 중심 체계를 실시간 감시 체계로 전환할 수 있다.
+                                   References
+Cho, J. (2025). U.S. GENIUS Act and its Implication for Korean StableCoins Regulation. Korean
+Journal of Law and Society, 80(0), 261–292. https://kiss.kstudy.com/Detail/Ar?key=4205074
+Guide to Korea’s Stablecoin Regulation Framework. (2025). https://law.asia/korea-stablecoin-
+regulation-framework/
+Kim, H. (2025). Key Issues in Stablecoin Legislation and Korea’s Legislative Direction: Lessons
+from the U.S. GENIUS Act. Commercial Cases Review, 38(4), 429–477.
+https://kiss.kstudy.com/Detail/Ar?key=4226008
+Kim, J. (2025). Stablecoins and CBDC: A Two-Tier Digital Won System for Monetary
+Sovereignty and Financial Stability. Journal of Money & Finance, 39(4), 31–62.
+https://kiss.kstudy.com/Detail/Ar?key=4225895
+Kim, M. (2026). A Comparative Legal Study on AML Regulations for Stablecoins : Focusing on
+the Need to Regulate Peer-to-Peer Transactions via Unhosted Wallets and Stablecoin
+Issuers. Institute for Legal Studies Chonnam National University, 46(2), 103–136.
+https://doi.org/10.38133/cnulawreview.2026.46.2.103
+Kim, T. (2025). Surviving the Phantom Menace of Dollar Stablecoins : KRW Stablecoin
+Strategy. Korea Business Review, 29(3), 25–34. https://www.dbpia.co.kr/journal/articleDetail?
+nodeId=NODE12336987&buildDate=2026-02-
+24+16%3A27%3A47&nowDate=20260324_1&cdnUrl=https%3A%2F%2Fcdn.dbpia.co.kr%2
+Fstatic&appVersion=1.0.0&buildTime=20260224162747&minify=.min&language=ko_KR&hasT
+opBanner=true
+Korea’s Stablecoin Ownership Fight Heats Up Before the US ... (2026).
+https://www.dailymotion.com/video/xbga52e
+South Korea advances crypto bill as 22% tax nears. (2026).
+https://cryptonews.net/news/legal/33217924/
+South Korea Crypto Regulation Delayed Until 2026 Over ... (2025).
+https://es.tradingview.com/news/coinpedia:b77134e27094b:0-south-korea-crypto-
+regulation-delayed-until-2026-over-stablecoin-disputes/
+South Korea stalls digital asset bill over stablecoin ... (2026). https://biz.chosun.com/en/en-
+finance/2026/09/08/5OMBDWDTE5F6HKVGLNHKPZNCWA/
+South Korea targets November review for second stage ... (2026). https://crypto.news/south-
+korea-targets-november-review-for-second-stage-crypto-legislation/
+South Korea’s Stablecoin Bill Hits a Wall as Regulators ... (2025).
+https://finance.yahoo.com/news/south-korean-stablecoin-bill-delayed-101858432.html
+Won, D. S. (2025). Regulatory Measures to Promote the Adoption of Korean Won-Based
+Stablecoins - Focused on the Markets in Crypto-Assets Regulation (MiCA) in Europe -. Yonsei
+Law Journal, 48(0), 379–428. https://kiss.kstudy.com/Detail/Ar?key=4187634
+강사법학박사 경북대학교, & LEE, H.-K. (2025). Legal Issues and Structural Limitations of Virtual
+Asset Regulation - A Comparative Analysis of Korea’s Virtual Asset User Protection Act and
+Japan’s Dual Regulatory Framework -. Journal of Theory and Practics of Private Law, 28(4),
+175–225. https://www.earticle.net/Article/A480544
+안전핀 빠진 수류탄 될라…쏟아지는 스테이블코인 법안 - 마켓인. (2025).
+https://marketin.edaily.co.kr/News/Read?newsId=03913046642239112
+원화 스테이블코인 과연 한국에도 도입될까? 법제화 현황은? (2025).
+https://kbthink.com/crypto/korean-won-stablecoin.html
+원화 스테이블코인의 입법방향. (n.d.).
+https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?
+sereArticleSearchBean.artiId=ART003223968
+이정수. (2024). An Introductory Review of Virtual Asset Regulations in Korea. Seoul National
+University Open Repository (Seoul National University).
+https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003117862
+

@@ -1,0 +1,360 @@
+<style>
+.mas-en{border:1px solid var(--line);border-radius:8px;padding:14px 18px;font-size:13.5px;line-height:1.7;color:var(--ink);margin:0 0 18px}
+.mas-en p{margin:0 0 10px}.mas-en p:last-child{margin:0}
+.mas-en p{white-space:pre-line}
+
+.ms-h{font-size:15px;font-weight:700;margin:26px 0 12px}
+.ms-h:first-child{margin-top:0}
+/* 날짜 축 */
+.ms-tl{position:relative;height:118px;margin:6px 8px 0}
+.ms-tl .now{position:absolute;top:22px;transform:translateX(-50%);font-size:11.5px;font-weight:700;color:var(--accent);white-space:nowrap}
+.ms-tl .now::after{content:"";display:block;width:0;height:12px;border-left:1.5px solid var(--accent);margin:2px auto 0}
+.ms-tl .ax{position:absolute;left:0;right:0;top:40px;border-top:2px solid var(--line)}
+.ms-tl .run{position:absolute;top:39px;height:4px;background:var(--accent);border-radius:2px}
+.ms-tl .pt{position:absolute;top:0;transform:translateX(-50%);text-align:center;font-size:13px;line-height:1.4;white-space:nowrap}
+.ms-tl .pt i{display:block;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--ink);margin:33px auto 8px}
+.ms-tl .pt.go i{background:var(--accent);border-color:var(--accent)}
+.ms-tl .pt b{display:block}
+.ms-tl .pt small{display:block}
+.ms-tl .pt .dd{color:var(--accent);font-weight:700}
+.ms-tl .pt.l{transform:none;text-align:left}.ms-tl .pt.l i{margin-left:0}
+.ms-tl .pt.r{transform:translateX(-100%);text-align:right}.ms-tl .pt.r i{margin-right:0}
+.ms-tl .lab{position:absolute;top:0;font-size:12px;color:var(--ink-3)}
+/* 순서 */
+.ms-flow{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch}
+.ms-flow .st{flex:1 1 130px;border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:13.5px;line-height:1.5;position:relative;background:var(--bg)}
+.ms-flow .st b{display:block;font-size:14px}
+.ms-flow .st em{font-style:normal;font-size:12px;color:var(--ink-3);display:block;margin-bottom:2px}
+.ms-flow .st.go{border-color:var(--accent);background:var(--tint-2)}
+.ms-flow .st.done{color:var(--ink-3)}
+.ms-flow .st.done b{color:var(--ink-2)}
+.ms-flow .ar{align-self:center;color:var(--ink-3);font-size:14px}
+@media (max-width:680px){.ms-flow{flex-direction:column}.ms-flow .st{flex:none}.ms-flow .ar{transform:rotate(90deg);align-self:flex-start;margin-left:14px}}
+/* 답변 네 장 */
+.ms-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:760px){.ms-grid{grid-template-columns:1fr}}
+.ms-card{border:1px solid var(--line);border-radius:10px;padding:16px 18px;min-width:0}
+.ms-card .q{font-size:12px;font-weight:700;color:var(--accent)}
+.ms-card h4{margin:2px 0 4px;font-size:15px}
+.ms-card .say{margin:0 0 12px;font-size:13.5px;line-height:1.6}
+.ms-card .cav{font-size:12px;margin:10px 0 0}
+/* 막대 */
+.ms-bars{display:grid;gap:7px;font-size:13px}
+.ms-bars .r{display:grid;grid-template-columns:86px minmax(0,1fr) 50px;gap:8px;align-items:center}
+.ms-bars .r span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.ms-bars .tk{position:relative;height:14px;background:var(--soft);border-radius:3px}
+.ms-bars .f{position:absolute;top:0;bottom:0;background:var(--ink-2);border-radius:3px}
+.ms-bars .f.hi{background:var(--accent)}
+.ms-bars .ref{position:absolute;top:-4px;bottom:-4px;border-left:1.5px dashed var(--ink)}
+.ms-bars .refl{position:relative;height:16px;font-size:11.5px;color:var(--ink-3)}
+.ms-bars .refl span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+/* 상자 그림 */
+.ms-box{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px}
+.ms-box .b{border:1px solid var(--line2);border-radius:6px;padding:6px 10px;background:var(--bg)}
+.ms-box .b.hi{border-color:var(--accent);color:var(--accent);font-weight:700}
+.ms-box .ar{color:var(--ink-3)}
+.ms-out{margin:10px 0 0;padding:8px 12px;background:var(--tint-2);border-radius:6px;font-size:13px;line-height:1.6}
+.ms-out b{color:var(--accent)}
+/* 영문과 한국어 대조 */
+.mx-bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--ink-3);margin:0 0 8px}
+.mx-bar .num{font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+.cpb{margin-left:auto;font:inherit;font-size:12.5px;border:1px solid var(--line2);border-radius:6px;background:var(--bg);color:var(--ink);padding:3px 10px;cursor:pointer}
+.cpb:hover{border-color:var(--ink)}
+.cpb.ok{border-color:var(--accent);color:var(--accent)}
+.mx-pair{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:0 0 24px}
+.mx-pair p{margin:0;padding:10px 16px;font-size:13.5px;line-height:1.7;white-space:pre-line;border-top:1px solid var(--line)}
+.mx-pair p:nth-child(-n+2){border-top:0}
+.mx-pair .e{color:var(--ink)}
+.mx-pair .k{color:var(--ink-2);background:var(--soft);border-left:1px solid var(--line)}
+@media (max-width:900px){.mx-pair{grid-template-columns:1fr}.mx-pair .k{border-left:0;border-top:0}}
+.en-cell{font-size:12.5px;line-height:1.6;color:var(--ink-2)}
+.ok-mark{font-weight:700}
+</style>
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">미디어프로젝트 2026-2, StableWatch, 해외 의견 제출</p>
+  <h1>싱가포르 MAS 자문 P015-2026 답변</h1>
+  <p>싱가포르 통화청의 스테이블코인 법 개정 자문에 준비금 구성과 공시에 관한 의견을 낸다. 마감은 2026-10-16 23:59(싱가포르 시간, 한국 시간 10-17 00:59)이고 제출 목표일은 10-10이다. 답변의 수치는 발행사 보고서 10건의 원문과 대조했다.</p>
+  <div class="tools nocopy"><button class="cp" data-act="copyall">전체 복사</button></div>
+</header>
+<nav class="toc nocopy"><a href="#m0">한눈에 보기</a><a href="#m1">1 자문 개요</a><a href="#m2">2 답변 범위</a><a href="#m3">3 교수 검토 요약</a><a href="#m4">4 원문 대조 결과</a><a href="#m5">5 보강 후보</a><a href="#m6">6 제출 전 확인</a><a href="#m7">7 양식 입력</a><a href="#m8">8 일정</a><a href="#m9">9 영문 답변</a></nav>
+
+<main class="doc">
+
+<section id="m0">
+  <div class="bh"><h2>한눈에 보기</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+
+    <p class="ms-h">일정</p>
+    <div class="tw"><div class="ms-tl" style="min-width:520px">
+      <div class="ax"></div>
+      <div class="run" style="left:0;width:70%"></div>
+      <div class="now" id="ms-now" hidden>오늘</div>
+      <div class="pt l" style="left:0"><small>09-26</small><i></i><b>답변 초안</b><small>Q4, Q23, Q29, Q30</small></div>
+      <div class="pt go" style="left:70%"><small>10-10(토)</small><i></i><b>제출 목표</b><small class="dd" data-d="2026-10-10"></small></div>
+      <div class="pt r" style="left:100%"><small>10-16(금) 23:59 싱가포르</small><i></i><b>마감</b><small>한국 10-17 00:59</small></div>
+    </div></div>
+    <p class="cav">파란 구간이 확인과 손보기 기간이다. 제출 후 MAS가 의견 반영 결과를 내면(보통 수개월 뒤) 인용 여부를 확인한다.</p>
+
+    <p class="ms-h">제출까지 순서</p>
+    <div class="ms-flow">
+      <div class="st done"><em>1 완료(10-04)</em><b>수치 확인</b>보고서 10건 원문 대조</div><span class="ar">→</span>
+      <div class="st go"><em>2</em><b>교수 검토</b>3절 요약으로 요청</div><span class="ar">→</span>
+      <div class="st"><em>3</em><b>공개 방식</b>이름과 함께 공개 또는 전부 비공개</div><span class="ar">→</span>
+      <div class="st"><em>4</em><b>영어 손보기</b>직접 읽고 본인 문장으로</div><span class="ar">→</span>
+      <div class="st"><em>5</em><b>양식 입력, 제출</b>7절 표대로</div><span class="ar">→</span>
+      <div class="st"><em>6</em><b>확인 화면 캡처</b>최종 산출물의 제출 기록</div>
+    </div>
+
+    <p class="ms-h">답하는 질문 4개</p>
+    <div class="ms-grid">
+
+      <div class="ms-card">
+        <span class="q">Q4</span><h4>현금과 예금 최저 비율</h4>
+        <p class="say">발행사마다 은행 예금 비중이 3%에서 78%까지 다르다. 비율보다 <b>무엇을 현금으로 셀지</b>를 먼저 정하고, 매 기준일 공시하게 하자.</p>
+        <div class="ms-bars">
+          <div class="r"><span></span><div class="refl"><span style="left:6.25%">5%</span><span style="left:37.5%">30%</span></div><span></span></div>
+          <div class="r"><span>USDP</span><div class="tk"><div class="f hi" style="width:97.5%"></div><div class="ref" style="left:6.25%"></div><div class="ref" style="left:37.5%"></div></div><span>77.98%</span></div>
+          <div class="r"><span>USDC 4개월</span><div class="tk"><div class="f" style="width:17.6%"></div><div class="ref" style="left:6.25%"></div><div class="ref" style="left:37.5%"></div></div><span>14.10%</span></div>
+          <div class="r"><span>PYUSD</span><div class="tk"><div class="f" style="width:4.4%"></div><div class="ref" style="left:6.25%"></div><div class="ref" style="left:37.5%"></div></div><span>3.52%</span></div>
+          <div class="r"><span>USDG</span><div class="tk"><div class="f" style="width:3.8%"></div><div class="ref" style="left:6.25%"></div><div class="ref" style="left:37.5%"></div></div><span>3.04%</span></div>
+        </div>
+        <p class="cav">점선은 영국과 EU가 비시스템 스테이블코인에 두는 기준 범위(5~30%). 축 0~80%. USDC는 보고서의 은행 예금 줄 기준 4개월 평균(13.43~14.75%). Paxos 3종은 2026-07-31 1건씩.</p>
+      </div>
+
+      <div class="ms-card">
+        <span class="q">Q30</span><h4>검증 보고서 공개 기한</h4>
+        <p class="say">회계법인 서명까지 평일 17~23일이 걸린다. 공개 기한을 <b>3주보다 짧게</b> 두면 표본의 어느 발행사도 지키지 못한다.</p>
+        <div class="ms-bars">
+          <div class="r"><span></span><div class="refl"><span style="left:60%">15일(3주)</span></div><span></span></div>
+          <div class="r"><span>USDC 4개월</span><div class="tk"><div class="f hi" style="left:76%;width:8%"></div><div class="ref" style="left:60%"></div></div><span>19~21</span></div>
+          <div class="r"><span>PYUSD, USDP</span><div class="tk"><div class="f" style="width:68%"></div><div class="ref" style="left:60%"></div></div><span>17</span></div>
+          <div class="r"><span>USDG</span><div class="tk"><div class="f" style="width:72%"></div><div class="ref" style="left:60%"></div></div><span>18</span></div>
+          <div class="r"><span>RLUSD</span><div class="tk"><div class="f" style="width:76%"></div><div class="ref" style="left:60%"></div></div><span>19</span></div>
+          <div class="r"><span>GUSD</span><div class="tk"><div class="f" style="width:84%"></div><div class="ref" style="left:60%"></div></div><span>21</span></div>
+          <div class="r"><span>USDT</span><div class="tk"><div class="f" style="width:92%"></div><div class="ref" style="left:60%"></div></div><span>23</span></div>
+        </div>
+        <p class="cav">기준일부터 서명일까지 평일 수(공휴일 미차감). 축 0~25일. 보고서 10건, 발행사 5곳.</p>
+        <div class="ms-out">함께 제안: 기준일은 <b>말일, 말일이 휴일이면 직전 영업일</b>. 2026-01-31이 토요일이라 Circle은 1월 30일을 썼다.</div>
+      </div>
+
+      <div class="ms-card">
+        <span class="q">Q23</span><h4>여러 법인에 나뉜 준비자산</h4>
+        <p class="say">재배분 약정의 일별 기록을 MAS에 매달 내는 안에 찬성하고, <b>법인별 보유액을 공개 공시에도</b> 넣자.</p>
+        <div class="ms-box">
+          <span class="b">준비자산</span><span class="ar">→</span>
+          <span class="b">법인 A</span><span class="b">법인 B</span><span class="ar">→</span>
+          <span class="b">MAS 월간 제출</span><span class="b hi">+ 공개 공시</span>
+        </div>
+        <p class="cav">근거: 자문문 5.3항, 5.7항. 나뉜 법인 하나가 환매를 못 하는 위험은 보유자가 숫자를 봐야 판단할 수 있다.</p>
+      </div>
+
+      <div class="ms-card">
+        <span class="q">Q29</span><h4>은행이 별도 법인으로 발행</h4>
+        <p class="say">별도 법인 요건에 찬성. 준비금이 <b>다시 모은행 예금으로</b> 들어가면 한 은행에 몰린다.</p>
+        <div class="ms-box">
+          <span class="b">모은행</span><span class="ar">→</span><span class="b">발행 법인</span><span class="ar">→</span><span class="b">준비금</span><span class="ar">→</span><span class="b hi">모은행 예금</span>
+        </div>
+        <div class="ms-out">공시 항목 2개 제안: <b>보관 기관별 금액</b>, <b>모은행과 계열사 보관 비중</b></div>
+        <p class="cav">근거: 자문문 6.3항, ECB Occasional Paper 353(2024), 한국은행 통화신용정책보고서(2026-03), 국내 거래소 2곳의 보관 은행 자율 공개.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="m1">
+  <div class="bh"><h2>1. 자문 개요</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <dl class="def">
+      <dt>제목</dt><dd>Consultation on Proposed Amendments to the Payment Services Act 2019 for Stablecoins Regulation</dd>
+      <dt>번호</dt><dd>P015-2026</dd>
+      <dt>기간</dt><dd>2026-09-01 ~ 2026-10-16 23:59 (싱가포르 시간)</dd>
+      <dt>제출 방법</dt><dd>FormSG 온라인 양식. 파일 첨부 칸 없이 질문별 서술 칸에 입력</dd>
+      <dt>자격</dt><dd>제한 없음("interested parties")</dd>
+      <dt>공개</dt><dd>제출물은 제출자 이름과 함께 공개하는 것이 기본(1.5항). 비공개를 원하면 제출물에 적는다. 고를 수 있는 것은 제출물 전체나 일부 비공개(신원은 공개), 또는 신원과 제출물 전체 비공개다. MAS는 익명 제출물을 공개하지 않고, 사람이 작성하지 않은 것으로 보이는 제출물도 공개하지 않을 수 있다.</dd>
+      <dt>구조</dt><dd>질문 30개. 1~3 정의와 인가, 4~14 발행사 추가 요건, 15~20 시스템적 스테이블코인, 21~25 다국적 발행, 26~27 외국 스테이블코인 인정, 28~30 기타</dd>
+      <dt>이후 절차</dt><dd>준비자산 구성, 상환 기한, 검증 주기는 하위법령과 MAS 고시로 정하며 별도 자문을 연다(1.2항). 이번 자문은 그 첫 단계다.</dd>
+      <dt>원문</dt><dd><a href="https://www.mas.gov.sg/publications/consultations/2026/consultation-on-proposed-amendments-to-the-payment-services-act-for-stablecoin-regulation">MAS 자문 페이지</a>, <a href="https://form.gov.sg/6a91272d85631d22bcaf2e2f">제출 양식(FormSG)</a></dd>
+    </dl>
+  </div>
+</section>
+
+<section id="m2">
+  <div class="bh"><h2>2. 답변 범위</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <p>질문 30개 가운데 준비자산 구성과 공시에 관한 4개에만 답한다. 표본은 Q4가 발행사 2곳의 보고서 7건, Q30이 발행사 5곳의 보고서 10건으로 작아서, 수치는 평균이 아니라 실행 가능성과 편차의 근거로만 쓴다.</p>
+    <div class="tw"><table>
+      <tr><th>질문</th><th>주제</th><th>답변 요지</th><th>근거</th></tr>
+      <tr><td class="rw">Q4</td><td>현금과 예금 최저 비율</td><td>비율보다 어떤 자산을 현금으로 셀지 먼저 정해야 한다. 매 기준일 현금 비중을 공시하게 한다.</td><td>Circle USDC 4개월 은행 예금 비중 13.43~14.75%, Paxos 3종 3.04~77.98%, 미국 MMF 규칙(SEC 2010), 일본 예금 50% 규정</td></tr>
+      <tr><td class="rw">Q23</td><td>여러 법인에 나뉜 준비자산</td><td>재배분 약정의 일별 기록을 매달 MAS에 내는 안에 찬성하고, 법인별 보유액을 공개 공시에도 넣는다.</td><td>자문문 5.3항, 5.7항</td></tr>
+      <tr><td class="rw">Q29</td><td>은행의 별도 법인 발행</td><td>별도 법인 요건에 찬성. 보관 기관별 금액과 모은행 보관 비중을 공시 항목으로 둔다.</td><td>자문문 6.3항, ECB Occasional Paper 353(2024), 한국은행 통화신용정책보고서(2026-03), 국내 거래소 보관 은행 자율 공개 사례</td></tr>
+      <tr><td class="rw">Q30</td><td>검증 보고서 공개 기한, 기준일 규칙</td><td>회계법인 검증에 평일 17~23일이 걸리므로 공개 기한을 3주보다 짧게 두지 않는다. 기준일은 "말일 또는 직전 영업일"로 정한다.</td><td>Circle 4건 평일 19~21일, 다른 발행사 4곳 보고서 6건 평일 17~23일</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section id="m3">
+  <div class="bh"><h2>3. 교수 검토 요약</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <p>김태봉 교수께 검토를 요청할 때 보내는 한 장 요약이다. 회신은 10-08까지 받으면 제출 일정에 맞는다.</p>
+    <dl class="def">
+      <dt>제출처</dt><dd>싱가포르 통화청(MAS) 스테이블코인 법 개정 자문 P015-2026. 마감 2026-10-16 23:59(싱가포르 시간)</dd>
+      <dt>형식</dt><dd>학생 개인 자격의 영문 의견. 온라인 양식의 질문별 칸에 입력하며, 질문 30개 중 준비금 구성과 공시에 관한 4개(Q4, Q23, Q29, Q30)에만 답한다</dd>
+      <dt>공개</dt><dd>제출물은 이름과 함께 MAS 누리집에 공개되는 것이 기본이다. 신원을 비공개로 하면 제출물도 공개되지 않는다(1.5항)</dd>
+      <dt>근거 자료</dt><dd>발행사 5곳(Circle, Paxos, Tether, Ripple, Gemini)의 회계법인 검증 보고서 10건을 직접 읽은 값, 자문문 원문, 미국 SEC 규칙, 일본 내각부령, ECB 논문, 한국은행 보고서</dd>
+    </dl>
+    <div class="tw"><table>
+      <tr><th>질문</th><th>주장</th><th>근거</th><th>표본</th></tr>
+      <tr><td class="rw">Q4</td><td>현금 최저 비율은 숫자보다 무엇을 현금으로 셀지를 먼저 정하고, 매 기준일 비중을 공시하게 한다</td><td>은행 예금 비중이 3.04~77.98%로 다르다. Paxos는 하루짜리 레포를 현금 예금처럼 평가하며, 레포를 현금으로 치면 PYUSD는 3.52%에서 85.20%가 된다</td><td>보고서 7건</td></tr>
+      <tr><td class="rw">Q23</td><td>여러 법인에 나뉜 준비금은 법인별 보유액을 공개 공시에도 넣는다</td><td>자문문 5.3항, 5.7항</td><td>문헌</td></tr>
+      <tr><td class="rw">Q29</td><td>은행이 별도 법인으로 발행하면 보관 기관별 금액과 모은행 보관 비중을 공시한다</td><td>자문문 6.3항, ECB Occasional Paper 353(2024), 한국은행 통화신용정책보고서(2026-03)</td><td>문헌</td></tr>
+      <tr><td class="rw">Q30</td><td>검증 보고서 공개 기한을 약 3주보다 짧게 두지 않는다. 기준일은 말일, 말일이 휴일이면 직전 영업일</td><td>기준일부터 회계법인 서명까지 평일 17~23일</td><td>보고서 10건, 발행사 5곳</td></tr>
+    </table></div>
+    <p class="ms-h">확인받을 것</p>
+    <ol>
+      <li>작은 표본에 비해 표현이 과한지. 특히 Q30의 "약 3주보다 짧으면 이 표본의 어느 발행사도 지키지 못한다"와 Q4의 15% 판단.</li>
+      <li>학생 개인 의견 형식. 소속(아주대 학부생)과 수업 프로젝트 이름을 적어도 되는지.</li>
+      <li>공개 방식. 이름과 함께 공개할지, 신원과 제출물을 모두 비공개로 할지. 수업 산출물의 제출 기록으로 쓰려면 공개가 낫다.</li>
+      <li>보강 후보를 넣을지. Tether의 범주 표기(현금 범주 74.91% 중 은행 예금 0.02%), USDG의 법인별 준비금, Q28 추가 답변(5절).</li>
+    </ol>
+  </div>
+</section>
+
+<section id="m4">
+  <div class="bh"><h2>4. 원문 대조 결과</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <p>답변에 쓰는 수치와 사실 문장을 발행사 보고서 PDF와 자문문 원문에 대조한 결과다(2026-10-04). 9절 영문은 원문 값에 맞춰져 있다.</p>
+    <div class="tw"><table class="mx">
+      <tr><th>항목</th><th>원문 값</th><th>판정</th><th>판정 사유</th></tr>
+      <tr><td class="rw">Q30 서명 소요일 6건</td><td>PYUSD 17, USDP 17, USDG 18, USDT 23, RLUSD 19, GUSD 21(평일)</td><td class="ok-mark">O</td><td>기준일과 서명일이 각 보고서 서명 쪽과 일치한다</td></tr>
+      <tr><td class="rw">Q30 Circle 4건</td><td>달력일 27, 29, 28, 27일, 평일 19~21일</td><td class="ok-mark">O</td><td>공휴일을 빼면 18~21일이라, 답변은 영업일이 아니라 평일로 적는다</td></tr>
+      <tr><td class="rw">RLUSD 검증인</td><td>Deloitte &amp; Touche LLP</td><td class="ok-mark">O</td><td>보고서 글자에는 이름이 없고, 머리글 로고와 서명 이미지에 있다</td></tr>
+      <tr><td class="rw">Q4 Paxos 3종</td><td>PYUSD 3.5151%, USDG 3.0381%, USDP 77.9833%</td><td class="ok-mark">O</td><td>각 보고서 Exhibit B의 Cash 줄을 총액으로 나눈 값이다</td></tr>
+      <tr><td class="rw">Q4 Circle 4개월</td><td>은행 예금 줄 기준 13.43, 13.70, 14.51, 14.75%(평균 14.10%)</td><td class="ok-mark">△</td><td>"기타 준비자산" 묶음 비중은 13.82~15.56%다. 묶음 안에 "규제 금융기관 예치 현금" 줄이 따로 있어 은행 예금 비중은 이 줄로 계산한다</td></tr>
+      <tr><td class="rw">Q4 15% 하한 판단</td><td>USDC 네 달 모두 15% 미만</td><td class="ok-mark">△</td><td>묶음 비중으로 보면 네 달 중 세 달 미만이지만, 은행 예금 줄로는 네 달 모두 미만이다</td></tr>
+      <tr><td class="rw">Paxos PYUSD, USDP 보고서</td><td>별도 보고서 2건, 같은 날(2026-08-25) 서명</td><td class="ok-mark">△</td><td>한 보고서로 묶어 부르면 사실과 다르다</td></tr>
+      <tr><td class="rw">Circle 보고서 4건의 시점</td><td>1, 3, 4, 7월 기준일</td><td class="ok-mark">△</td><td>연속한 최근 4개월이 아니므로 "most recent"라고 쓰지 않는다</td></tr>
+      <tr><td class="rw">국내 거래소 보관 은행 공개</td><td>코빗(신한은행), 코인원(카카오뱅크)이 거래소 누리집에 공개</td><td class="ok-mark">△</td><td>회계법인 검증 보고서 안에는 은행 이름이 없다</td></tr>
+      <tr><td class="rw">이름만 비공개로 하는 선택지</td><td>없음</td><td class="ok-mark">✕</td><td>1.5항: 신원을 비공개로 하면 제출물도 공개되지 않는다. 고를 수 있는 것은 이름과 함께 공개, 또는 전부 비공개다</td></tr>
+      <tr><td class="rw">2026-01-31 요일</td><td>토요일</td><td class="ok-mark">O</td><td>Circle이 1월 30일을 기준일로 쓴 이유와 맞는다</td></tr>
+    </table></div>
+    <p class="cav">O 원문과 일치, △ 값이나 문장의 기준이 원문과 다름, ✕ 원문에 없는 선택지. 일본 50% 규정, SEC 인용문, ECB 인용문은 2026-09-21 원문 검증 결과를 따른다.</p>
+    <div class="warn"><b>답변 밖에 남는 일</b><ul><li>이 페이지의 PRD 탭, 한국 공시안 v1 D-05, 판정기 설정 파일 kr-v1.json의 R05 근거 문구는 Circle 비중을 은행 예금 줄 기준 14.10%로 쓴다. 옛 판정기 프로토타입(prototype 폴더의 판정기_대시보드.html, 판정기_프로토타입_v2.html)은 "기타 준비자산" 묶음 기준 평균 14.47%를 쓴다. 프로토타입도 은행 예금 줄 기준으로 맞출지 <span class="tbd">미정</span></li></ul></div>
+  </div>
+</section>
+
+<section id="m5">
+  <div class="bh"><h2>5. 보강 후보</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <p>자문문이 묻는 것과 지금 답변을 맞대 본 결과다. Q23은 묻는 것 셋 가운데 공시 하나만 답하고, Q30은 37조 (1A)항의 검증 기준을 다루지 않는다. 답하지 않는 질문 가운데 Q28은 같은 자료로 답할 수 있다.</p>
+    <div class="tw"><table>
+      <tr><th>질문</th><th>MAS가 묻는 것</th><th>지금 답변</th><th>빈 곳</th></tr>
+      <tr><td class="rw">Q4</td><td>발행사 추가 요건 전반, 그중 현금 최저 비율 기준값(3.7항)</td><td>기준값보다 범주 정의 먼저, 매 기준일 공시</td><td>기준값 숫자는 내지 않음. 표본이 작아서 의도한 선택</td></tr>
+      <tr><td class="rw">Q23</td><td>안전장치가 적절한지, 싱가포르 법인 보유 적정량, 재배분 약정과 발행량 배분 모델</td><td>법인별 보유액 공개</td><td>배분 모델에 대한 근거 없음(A3)</td></tr>
+      <tr><td class="rw">Q29</td><td>은행의 별도 비은행 법인 발행 요건</td><td>찬성, 공시 항목 2개</td><td>실제 보고서 사례로 보강 가능(A4)</td></tr>
+      <tr><td class="rw">Q30</td><td>기타 의견</td><td>검증 공개 기한, 기준일 규칙</td><td>검증 기준과 보고 기준(A5), 다음 달 말 서명 사례(A6)</td></tr>
+      <tr><td class="rw">Q28</td><td>비규제 스테이블코인을 파는 사업자의 소매 고객 공시</td><td>답하지 않음</td><td>B1</td></tr>
+      <tr><td class="rw">Q22, Q27</td><td>외국 제도의 실질 동등성 판단 요소</td><td>답하지 않음</td><td>B2</td></tr>
+    </table></div>
+    <div class="tw"><table>
+      <tr><th>번호</th><th>붙일 곳</th><th>요지</th><th>영문 초안</th><th>결정</th></tr>
+      <tr><td class="rw">A1</td><td>Q4 관찰 2 끝</td><td>Tether 2026-06-30 보고서의 "Cash &amp; Cash Equivalent" 범주는 74.91%인데 그 안의 은행 예금 줄은 0.02%다</td><td class="en-cell">Tether's quarterly report shows the same problem at a larger scale. On 30 June 2026, its category "Cash &amp; Cash Equivalent &amp; Other Short-Term Deposits" was 74.91% of reserves, while the line "Cash &amp; Bank Deposits" within it was 0.02%; most of the category was US Treasury bills and reverse repurchase agreements.</td><td><span class="tbd">미정</span></td></tr>
+      <tr><td class="rw">A2</td><td>Q4 목록</td><td>RLUSD 은행 예금 15.18%, 국채 펀드 16.39%, 국채 68.43%. 넣으면 범위 문단의 Q4 표본도 고친다</td><td class="en-cell">Ripple, RLUSD (n=1, 31 Jul 2026): 15.18% cash deposits at US regulated financial institutions, 16.39% government money market funds, 68.43% US Treasury bills.</td><td><span class="tbd">미정</span></td></tr>
+      <tr><td class="rw">A3</td><td>Q23 끝</td><td>표본에서 다국적 발행 구조인 코인은 USDG 하나다. 법인별 준비금은 공개하지만(EU 보유 0.35%) 토큰 잔액은 블록체인별로만 나와 법인별 비교가 안 된다</td><td class="en-cell">The one multi-jurisdiction stablecoin in my sample shows what public disclosure of the split can look like. USDG is issued by Paxos Digital Singapore and Paxos Issuance Europe under a multi-jurisdictional model. Its 31 Jul 2026 report, assured by KPMG in Singapore, lists cash and fund holdings by issuing entity: of USD 3.40 billion in redemption assets, USD 11.96 million (0.35%) was held in the EU. The same report gives tokens outstanding by blockchain but not by issuing entity, so a reader cannot compare each entity's reserves with the tokens it has issued. If MAS accepts a stablecoin attribution model, I suggest that tokens outstanding also be disclosed by issuing entity.</td><td><span class="tbd">미정</span></td></tr>
+      <tr><td class="rw">A4</td><td>Q29 공시 항목 뒤</td><td>발행사 5곳 보고서 중 은행 이름과 은행별 금액을 함께 적은 곳은 없다. GUSD는 이름만, USDG는 금액만 적는다</td><td class="en-cell">In the reports of the five issuers I read, none gave both the name of each bank and the amount held at it. Gemini's GUSD report names the two banks holding its reserve deposits but not the amount at each; Paxos's USDG report lists Treasury bill holdings by counterparty but names them only as "Bank 1 in Singapore" and "Bank 2 in Singapore"; the Circle reports refer to "regulated financial institutions" without names.</td><td><span class="tbd">미정</span></td></tr>
+      <tr><td class="rw">A5</td><td>Q30 1문단 끝</td><td>검증 기준과 보고 기준이 발행사마다 다르다. 고시에서 검증 수준과 보고 기준을 함께 정하자</td><td class="en-cell">Section 37(1A)(a) also lets MAS specify the standards for the attestation. In my sample the engagements followed different standards (AICPA attestation standards for Circle, the US Paxos tokens, RLUSD and GUSD; SSAE 3000 reasonable assurance for USDG; ISAE 3000 (Revised) reasonable assurance for USDT) and different reporting criteria (the AICPA 2025 Criteria for Stablecoin Reporting, NYDFS guidance, or criteria set by the issuer). I suggest that the notice name both the assurance level and the reporting criteria, so that reports from different issuers can be compared.</td><td><span class="tbd">미정</span></td></tr>
+      <tr><td class="rw">A6</td><td>Q30 1문단 끝</td><td>10건 모두 기준일 다음 달 말일 안에 서명했고, Tether는 그 마지막 날에 서명했다. 게시일은 찾지 못했다</td><td class="en-cell">All ten reports were signed by the end of the month after the reference date; Tether's was signed on the last day of that month. I could not find publication dates, so the signature date is the earliest date on which each report could have been published.</td><td><span class="tbd">미정</span></td></tr>
+      <tr><td class="rw">B1</td><td>Q28 칸(새로 답함)</td><td>각주 18은 발행사 공시로 안내만 해도 된다고 하지만, 보고서마다 같은 말이 다른 자산을 가리킨다. 사업자가 공통 범주로 바꿔 기준일, 검증 수준과 함께 보여 주게 하자. 판정기가 하는 일과 같다</td><td class="en-cell">Footnote 18 suggests that, where a non-MAS-regulated stablecoin publicly discloses its reserve composition, DPTSPs may meet the disclosure requirement by referring customers to that information. In the issuer reports I read, the same words describe different assets: Tether's "Cash &amp; Cash Equivalent &amp; Other Short-Term Deposits" was 74.91% of reserves on 30 June 2026, while cash and bank deposits were 0.02%. A reference alone may lead retail customers to compare unlike figures. I suggest that DPTSPs present the issuer's figures mapped to a short common list of categories (cash at banks, overnight repo, government money market funds, government bills, other), with the reference date and the assurance level of the source report.</td><td><span class="tbd">미정</span></td></tr>
+      <tr><td class="rw">B2</td><td>Q22 칸(새로 답함)</td><td>동등성은 준비금 구성만이 아니라 공시와 검증 항목을 줄 단위로 비교하자. 여섯 규칙에서 예금 하한, 공개 주기, 검증 수준이 다르다. 근거가 2차 자료라 B1보다 약하다</td><td class="en-cell">When assessing whether a foreign regime is substantively equivalent, I suggest comparing disclosure and attestation items line by line, not only reserve composition rules. In my comparison of six rule sets (the US GENIUS Act with the OCC proposal, EU MiCA for e-money tokens and for significant e-money tokens, Hong Kong, Singapore and a draft Korean standard), the items differ on the minimum bank deposit share (none in Hong Kong's guideline, 30% for EU e-money tokens, 60% for significant ones), public disclosure frequency (weekly in Hong Kong, monthly in the US and Singapore) and attestation level.</td><td><span class="tbd">미정</span></td></tr>
+    </table></div>
+    <p class="cav">B1, B2를 넣으면 범위 문단의 "I respond only to Questions 4, 23, 29 and 30"도 함께 고친다.</p>
+  </div>
+</section>
+
+<section id="m6">
+  <div class="bh"><h2>6. 제출 전 확인</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <div class="tw"><table>
+      <tr><th>할 일</th><th>내용</th><th>상태</th></tr>
+      <tr><td class="rw">수치 확인</td><td>Q4 현금 비중, Q30 서명 소요일 10건, RLUSD 검증인을 원문으로 확인(4절)</td><td>완료(10-04)</td></tr>
+      <tr><td class="rw">교수 검토</td><td>3절 요약으로 김태봉 교수께 검토 요청. 회신은 10-08까지</td><td><span class="tbd">미완</span></td></tr>
+      <tr><td class="rw">공개 방식</td><td>A 이름과 제출물 공개(기본) 또는 B 신원과 제출물 비공개. 이름만 숨기는 선택지는 없다. 고른 쪽에 맞춰 Q30 칸 첫 문단과 양식 35번을 채운다</td><td><span class="tbd">미정</span></td></tr>
+      <tr><td class="rw">이름 표기</td><td>영문 이름(Insung Kang)이 학교 등록 영문 이름과 같은지, 프로젝트 이름을 StableWatch로 둘지 S2K로 바꿀지</td><td><span class="tbd">미정</span></td></tr>
+      <tr><td class="rw">보강 후보</td><td>5절 A1~A6, B1, B2를 넣을지</td><td><span class="tbd">미정</span></td></tr>
+      <tr><td class="rw">본인 문장으로 손보기</td><td>문단마다 소리 내어 읽고 고친다. 사람이 작성하지 않은 것으로 보이는 제출물은 공개되지 않을 수 있다(1.5항)</td><td><span class="tbd">미완</span></td></tr>
+      <tr><td class="rw">입력과 제출</td><td>7절 표대로 입력. 중간 저장(Save a draft) 가능</td><td><span class="tbd">미완</span></td></tr>
+      <tr><td class="rw">제출 기록</td><td>제출 확인 화면을 캡처한다. 최종 산출물의 의견 제출 기록으로 쓴다</td><td><span class="tbd">미완</span></td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section id="m7">
+  <div class="bh"><h2>7. 양식 입력</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <p>칸 번호는 2026-09-16에 양식을 열어 기록한 것이다. 글자 수는 줄바꿈을 포함한다.</p>
+    <div class="tw"><table>
+      <tr><th>칸</th><th>A안: 이름과 제출물 공개</th><th>B안: 신원과 제출물 비공개</th><th>글자 수</th></tr>
+      <tr><td class="rw">Q4</td><td colspan="2">9절 Q4 칸 영문(두 안 같음)</td><td class="num">3,929</td></tr>
+      <tr><td class="rw">Q23</td><td colspan="2">9절 Q23 칸 영문(두 안 같음)</td><td class="num">746</td></tr>
+      <tr><td class="rw">Q29</td><td colspan="2">9절 Q29 칸 영문(두 안 같음)</td><td class="num">1,588</td></tr>
+      <tr><td class="rw">Q30</td><td>응답자 소개 A안, 답변 범위, Q30 답변(9절 Q30 칸 그대로)</td><td>첫 문단만 B안으로 바꿈</td><td class="num">A 3,111 / B 3,196</td></tr>
+      <tr><td class="rw">31 이름(필수)</td><td>Insung Kang</td><td>Insung Kang(공개되지 않음)</td><td></td></tr>
+      <tr><td class="rw">32 전화(선택)</td><td>비움</td><td>비움</td><td></td></tr>
+      <tr><td class="rw">33 이메일(필수)</td><td>학교 메일 <span class="tbd">주소 확인</span></td><td>같음</td><td></td></tr>
+      <tr><td class="rw">34 싱가포르 단일통화 스테이블코인 발행(선택)</td><td>No</td><td>No</td><td></td></tr>
+      <tr><td class="rw">35 비공개 요청</td><td>비움</td><td>Please keep my identity and my whole submission confidential (para 1.5).</td><td></td></tr>
+    </table></div>
+    <div class="warn"><b>유의</b><ul><li>칸별 글자 수 제한은 양식을 열어 확인한다 <span class="tbd">미확인</span>. Q4 칸이 가장 길다.</li><li>연락처는 공개 방식과 관계없이 공개되지 않는다.</li><li>양식 기술 문의: payment_services@mas.gov.sg</li></ul></div>
+  </div>
+</section>
+
+<section id="m8">
+  <div class="bh"><h2>8. 일정</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <dl class="def">
+      <dt>10-05(월)</dt><dd>교수 검토 요청(3절)</dd>
+      <dt>10-08(목)</dt><dd>공개 방식, 이름 표기, 보강 후보 결정. 영문 손보기 마감</dd>
+      <dt>10-10(토)</dt><dd>제출 목표일. 주말과 양식 오류에 대비해 마감보다 앞당김</dd>
+      <dt>10-16(금) 23:59</dt><dd>마감(싱가포르 시간). 한국 시간 10-17(토) 00:59</dd>
+      <dt>제출 후</dt><dd>MAS가 의견 반영 결과(Response to feedback)를 낼 때 이 제출물이 인용되는지 확인. 보통 수개월 뒤</dd>
+    </dl>
+  </div>
+</section>
+
+<section id="m9">
+  <div class="bh"><h2>9. 영문 답변</h2><button class="cp nocopy">복사</button></div>
+  <div class="body">
+    <p>양식 칸에 붙이는 영문(왼쪽)과 한국어 대조(오른쪽)다. 영문 복사 단추는 그 칸의 영문만 복사한다.</p>
+<h3 id="mx-q30">Q30 칸</h3>
+<div class="mx-bar"><span class="num">3,111자</span><span>응답자 소개 A안, 답변 범위, Q30 답변을 이 순서로 한 칸에 넣는다.</span><button class="cpb nocopy" data-c="mx-q30-en">영문 복사</button></div>
+<div class="mx-pair" id="mx-q30-en"><p class="e">Respondent: Insung Kang, undergraduate student, Ajou University (Republic of Korea). Independent student research project "StableWatch" on reserve disclosure standards for won-denominated stablecoins. Not affiliated with any issuer, bank or regulator.</p><p class="k nocopy">응답자: 강인성(Insung Kang), 아주대학교 학부생(대한민국). 원화 스테이블코인 준비금 공시 기준을 다루는 개인 학생 연구 프로젝트 "StableWatch". 발행사, 은행, 규제기관과 관계없음.</p><p class="e">Scope of this response. I respond only to Questions 4, 23, 29 and 30, on reserve asset composition and public disclosure. My comments are based on a small empirical exercise. For the reserve composition figures in Question 4 and the timing figures in Question 30, I parsed four monthly independent accountant examination reports published by Circle for USDC (reference dates 30 Jan, 31 Mar, 30 Apr and 31 Jul 2026). For Question 4, I also parsed the 31 Jul 2026 reports for three tokens issued by Paxos entities (PYUSD, USDP and USDG). For Question 30, I also read six recent reports from four other issuers (reference dates between 29 May and 31 Jul 2026) to check whether the timing pattern held outside this sample. The samples are small (for Question 4, two issuers and seven reports; for Question 30, five issuers and ten reports; all in one currency) and I present them as evidence of feasibility and variation, not as a market average.</p><p class="k nocopy">답변 범위. 준비자산 구성과 공시에 관한 질문 4, 23, 29, 30에만 답한다. 의견은 작은 실증 작업에 근거한다. 질문 4의 구성 수치와 질문 30의 소요일은 Circle이 USDC에 대해 낸 월간 회계법인 검증 보고서 4건(기준일 1월 30일, 3월 31일, 4월 30일, 7월 31일)을 읽어 얻었다. 질문 4에는 Paxos 계열 토큰 3종(PYUSD, USDP, USDG)의 7월 31일 보고서도 읽었다. 질문 30에는 이 표본 밖에서도 같은지 보려고 다른 발행사 4곳의 최근 보고서 6건(기준일 5월 29일~7월 31일)도 읽었다. 표본은 작다(질문 4는 발행사 2곳, 보고서 7건, 질문 30은 발행사 5곳, 보고서 10건, 모두 한 통화). 시장 평균이 아니라 실행 가능성과 편차의 근거로만 제시한다.</p><p class="e">Section 37(1C) requires publication of each reserve assets attestation report "within such time as the Authority may specify". When MAS sets that period, I would ask it to take into account the observed time needed for independent examination. In the four Circle reports I examined (reference dates 30 Jan, 31 Mar, 30 Apr and 31 Jul 2026), the interval from the reference date to the accountant's signature was 27, 29, 28 and 27 calendar days, or 19 to 21 weekdays (n=4). To check whether this was specific to one issuer, I also read six recent reports from four other issuers: Paxos's PYUSD and USDP reports (two reports signed on the same day), 17 weekdays; Paxos's USDG report, 18 weekdays; Tether's USDT report, 23 weekdays; Ripple's RLUSD report, 19 weekdays; and Gemini's GUSD report, 21 weekdays. I counted weekdays without adjusting for public holidays, so the business-day figures would be equal or slightly lower. Across these ten reports, the interval ranged from 17 to 23 weekdays. A publication deadline shorter than about three business weeks for an independently examined report would not be met by any issuer in this small sample.</p><p class="k nocopy">37조 (1C)항은 준비자산 검증 보고서를 "MAS가 정하는 기간 안에" 공개하게 한다. 그 기간을 정할 때 독립 검증에 실제로 걸리는 시간을 고려해 달라고 요청한다. 살펴본 Circle 보고서 4건(기준일 1월 30일, 3월 31일, 4월 30일, 7월 31일)은 기준일부터 회계법인 서명까지 달력일로 27, 29, 28, 27일, 평일로 19~21일 걸렸다(n=4). 한 발행사만의 일인지 보려고 다른 발행사 4곳의 최근 보고서 6건도 읽었다. Paxos PYUSD와 USDP 보고서(같은 날 서명한 별도 보고서 2건) 평일 17일, Paxos USDG 18일, Tether USDT 23일, Ripple RLUSD 19일, Gemini GUSD 21일이다. 평일 수는 공휴일을 빼지 않았으므로 영업일로 세면 같거나 조금 적다. 열 보고서의 간격은 평일 17~23일이다. 독립 검증 보고서의 공개 기한을 약 3주보다 짧게 두면 이 작은 표본의 어느 발행사도 지키지 못한다.</p><p class="e">A workable design, which I have adopted in my own draft standard, separates two documents: an issuer-prepared, management-signed monthly statement due within five business days of the reference date, and an independently examined report due within 30 days after the end of each quarter (or after each month, if monthly examination is required, with a deadline of not less than 25 business days).</p><p class="k nocopy">실행 가능한 설계로, 내 공시안에서는 문서를 둘로 나눴다. 발행사가 만들고 경영진이 서명하는 월간 명세는 기준일부터 5영업일 안에, 독립 검증 보고서는 분기 말 후 30일 안에 낸다(월간 검증을 요구하면 기한을 25영업일 이상으로 둔다).</p><p class="e">On reference dates: one of the four Circle reports used 30 January rather than the month-end because 31 January 2026 fell on a Saturday. A rule of "last calendar day of the month" alone cannot be followed in every month; I would suggest "last calendar day, or the preceding business day where the last day is not a business day", stated in the notice under section 21C.</p><p class="k nocopy">기준일 규칙. Circle 보고서 4건 중 하나는 2026-01-31이 토요일이라 월말 대신 1월 30일을 썼다. "달의 마지막 날"만으로는 모든 달에 지킬 수 없다. "달의 마지막 날, 그날이 영업일이 아니면 직전 영업일"로 21C조 고시에 적자고 제안한다.</p></div>
+<h3 id="mx-q4">Q4 칸</h3>
+<div class="mx-bar"><span class="num">3,929자</span><button class="cpb nocopy" data-c="mx-q4-en">영문 복사</button></div>
+<div class="mx-pair" id="mx-q4-en"><p class="e">MAS notes that the UK and EU require or will require minimum proportions of bank deposits ranging from 5% to 30% for non-systemic stablecoins (paras 3.6 to 3.7). A comparable rule already exists for a much larger pool of assets: the 2010 amendments to Rule 2a-7, which governs US money market funds, set daily and weekly liquid asset minimums of 25% and 50% (17 CFR 270.2a-7(d)(4)). The SEC's release explaining that rule stated that under the higher liquidity thresholds it adopted, "approximately 90 percent of retail and institutional funds would have been able to satisfy the level of redemption demands during individual days as well as the week of greatest redemption pressure in the fall of 2008" (Release No. IC-29132, 75 FR 10060, 4 March 2010). I raise this only as a reference point for how a liquidity floor has been calibrated for a different pool of redemption-facing assets, not as a claim that stablecoin redemption behaviour would match a 2008 money market fund run.</p><p class="k nocopy">MAS는 영국과 EU가 비시스템 스테이블코인에 은행 예금 최저 비율 5~30%를 두고 있거나 둘 예정이라고 적었다(3.6~3.7항). 훨씬 큰 자산에는 비슷한 규칙이 이미 있다. 미국 머니마켓펀드 규칙(Rule 2a-7) 2010년 개정은 일간 유동자산 25%, 주간 50% 최저치를 정했다(17 CFR 270.2a-7(d)(4)). SEC는 규칙 해설에서 새 기준이면 "소매와 기관 펀드의 약 90%가 2008년 가을 환매 압력이 가장 컸던 날과 주의 환매 수요를 감당할 수 있었을 것"이라고 적었다(Release No. IC-29132, 75 FR 10060, 2010-03-04). 환매를 받는 다른 자산에서 유동성 하한을 어떻게 정했는지 보여 주는 참고점일 뿐, 스테이블코인 환매가 2008년 펀드 환매와 같다는 주장은 아니다.</p><p class="e">Japan regulates this differently and may be a useful comparator. Under the Cabinet Office Ordinance on Electronic Payment Instruments Exchange Service Providers (Cabinet Office Ordinance No. 48 of 2023), Article 3, paragraph 1, as amended, made under Article 2(9) of the Act on Settlement of Funds (Act No. 59 of 2009, as amended by Act No. 66 of 2025), at least 50% of the reserve assets backing a yen-denominated trust-type stablecoin must be held as demand deposits, with the remainder held in short-term government or qualifying foreign bonds. This amendment took effect on 1 June 2026 (Financial Services Agency of Japan, announcement of 22 May 2026, https://www.fsa.go.jp/news/r7/sonota/20260522/20260522.html).</p><p class="k nocopy">일본은 방식이 달라 비교 대상이 될 수 있다. 자금결제법 제2조 제9항에 따른 내각부령(2023년 제48호) 제3조 제1항 개정으로, 엔화 신탁형 스테이블코인 준비자산의 50% 이상을 수시입출금 예금으로 두고 나머지는 단기 국채나 적격 외국 채권으로 두어야 한다. 이 개정은 2026-06-01 시행됐다(일본 금융청 2026-05-22 발표).</p><p class="e">In the reports I examined, the share of reserves held as cash at banks varied widely between issuers and tokens:</p><p class="k nocopy">살펴본 보고서에서 은행 예금 비중은 발행사와 토큰마다 크게 달랐다.</p><p class="e">- Circle, USDC (n=4): 13.43%, 13.70%, 14.51% and 14.75%, a mean of 14.10%. This is the line "cash held at regulated financial institutions" as a share of total reserve assets. Most of the remainder was held in a government money market fund invested in short-dated US Treasuries and overnight repo; on 31 Jul 2026, a further 0.69% was held in Treasury bills outside the fund.
+- Paxos, PYUSD (n=1, 31 Jul 2026): 3.52% cash at banks, 81.68% overnight reverse repurchase agreements, 14.80% US Treasuries.
+- Paxos, USDG (n=1): 3.04% cash at banks, 56.96% government money market funds, 40.00% US Treasuries.
+- Paxos, USDP (n=1): 77.98% cash at banks, 22.02% reverse repurchase agreements. This token is much smaller (about USD 32 million in reserves).</p><p class="k nocopy">- Circle USDC(4건): 13.43%, 13.70%, 14.51%, 14.75%, 평균 14.10%. 보고서의 "규제 금융기관 예치 현금" 줄을 준비자산 총액으로 나눈 값이다. 나머지는 대부분 단기 미국 국채와 하루짜리 레포에 투자하는 정부 머니마켓펀드에 있다. 7월 31일에는 펀드 밖 국채 0.69%가 더 있었다.
+- Paxos PYUSD(1건, 7월 31일): 은행 예금 3.52%, 하루짜리 레포 81.68%, 미국 국채 14.80%.
+- Paxos USDG(1건): 은행 예금 3.04%, 국채 펀드 56.96%, 미국 국채 40.00%.
+- Paxos USDP(1건): 은행 예금 77.98%, 레포 22.02%. 이 토큰은 규모가 훨씬 작다(준비금 약 3,200만 달러).</p><p class="e">Two observations follow.</p><p class="k nocopy">여기서 두 가지를 말한다.</p><p class="e">1. The observed cash share ranges from about 3% to 78% across these seven reports, and whether an issuer meets a given floor depends mainly on which assets count towards it. If only bank deposits count, a 15% floor would not be met by PYUSD or USDG, nor by USDC in any of the four months. If overnight repo or government money market fund shares also count, the same reports would clear a much higher floor. I would therefore ask MAS to define the eligible asset categories for the threshold before, or together with, setting the number. My sample is too small to support a specific percentage.</p><p class="k nocopy">1. 일곱 보고서의 은행 예금 비중은 약 3%에서 78%까지다. 하한을 지키는지는 주로 무엇을 거기에 세느냐에 달렸다. 은행 예금만 세면 15% 하한을 PYUSD와 USDG가 못 지키고, USDC도 네 달 모두 못 지킨다. 하루짜리 레포나 정부 머니마켓펀드까지 세면 같은 보고서가 훨씬 높은 하한도 넘는다. 그래서 숫자를 정하기 전에, 또는 함께, 하한에 들어가는 자산 범주를 먼저 정해 달라고 요청한다. 표본이 작아 특정 비율을 뒷받침하지는 못한다.</p><p class="e">2. Whatever threshold is chosen, the disclosure regime under section 21C should require the issuer to publish the cash and deposit share on every reference date, to four decimal places of the coverage ratio and with the asset categories defined in the notice, so that compliance can be verified from the published report rather than only from supervisory returns. In the reports I examined, the categories are not presented in the same way: Circle shows "cash held at regulated financial institutions" as a separate line, while the Paxos reports state that their overnight repurchase agreements are "deemed to be a cash deposit with no risk of change in value" for valuation purposes. A prescribed category list would remove that ambiguity.</p><p class="k nocopy">2. 하한을 무엇으로 정하든, 21C조 공시에서 발행사가 매 기준일 현금과 예금 비중을 커버리지 비율 소수점 넷째 자리 수준으로, 고시에 정한 자산 범주에 맞춰 공개하게 해야 한다. 그래야 감독 보고만이 아니라 공개 보고서로도 준수 여부를 확인할 수 있다. 살펴본 보고서는 범주를 같은 방식으로 보여 주지 않는다. Circle은 "규제 금융기관 예치 현금"을 따로 한 줄로 적고, Paxos 보고서는 하루짜리 레포를 평가할 때 "가치 변동 위험이 없는 현금 예금으로 본다"고 적는다. 범주 목록을 정해 두면 이 모호함이 없어진다.</p></div>
+<h3 id="mx-q23">Q23 칸</h3>
+<div class="mx-bar"><span class="num">746자</span><button class="cpb nocopy" data-c="mx-q23-en">영문 복사</button></div>
+<div class="mx-pair" id="mx-q23-en"><p class="e">I support the proposal in para 5.7 that reserve rebalancing arrangements or stablecoin attribution models be approved by MAS before issuance, with daily records kept and submitted to MAS monthly. I suggest that the amount of reserve assets held by each issuing entity also be included in the public disclosure under section 21C, not only in submissions to MAS. The rationale MAS gives in paras 5.3 and 5.7, that bifurcation of the reserve pool across entities creates a risk that one entity cannot meet redemptions, applies equally to any structure in which the reserve pool is split across several custodians or several affiliated entities within one jurisdiction. Holders and market participants can only price that risk if the split is public.</p><p class="k nocopy">5.7항의 제안, 곧 준비금 재배분 약정이나 발행량 배분 모델을 발행 전에 MAS가 승인하고 일별 기록을 남겨 매달 MAS에 내게 하는 안에 찬성한다. 발행 법인별 준비자산 보유액을 MAS 제출만이 아니라 21C조 공개 공시에도 넣자고 제안한다. MAS가 5.3항과 5.7항에서 든 이유, 곧 준비금이 법인별로 나뉘면 한 법인이 환매를 못 할 위험이 생긴다는 점은 한 나라 안에서 준비금이 여러 보관 기관이나 계열 법인에 나뉜 구조에도 똑같이 적용된다. 나뉜 내용이 공개돼야 보유자와 시장이 그 위험을 가늠할 수 있다.</p></div>
+<h3 id="mx-q29">Q29 칸</h3>
+<div class="mx-bar"><span class="num">1,588자</span><button class="cpb nocopy" data-c="mx-q29-en">영문 복사</button></div>
+<div class="mx-pair" id="mx-q29-en"><p class="e">I support the separate-entity requirement. Para 6.3 explicitly contemplates that the reserve pool may consist of cash deposited with the parent bank. This creates a concentration in which the asset backing the stablecoin is a claim on the same banking group that controls the issuer. In a stylised balance-sheet scenario, Coste finds that "converting retail deposits into stablecoin issuers' deposits weakens a bank's liquidity coverage ratio (LCR), turning a retail deposit into a wholesale deposit, even when these funds are reinvested in high-quality liquid assets" (European Central Bank Occasional Paper No. 353, 2024). I suggest two disclosure items under section 21C for such issuers:</p><p class="k nocopy">별도 법인 요건에 찬성한다. 6.3항은 준비금이 모은행에 예치한 현금일 수 있다고 명시한다. 그러면 스테이블코인을 받치는 자산이 발행사를 지배하는 같은 은행 그룹에 대한 청구권이 되어 한곳에 몰린다. Coste는 단순화한 재무상태표 시나리오에서 "소매 예금을 스테이블코인 발행사 예금으로 바꾸면 그 돈을 고유동성 자산에 다시 넣어도 소매 예금이 도매 예금이 되어 은행의 유동성커버리지비율(LCR)이 약해진다"고 보였다(ECB Occasional Paper No. 353, 2024). 이런 발행사에 21C조 공시 항목 두 개를 제안한다.</p><p class="e">1. the name of each custodian or deposit-taking institution holding reserve assets, with the amount held at each, on every reference date; and</p><p class="k nocopy">1. 매 기준일, 준비자산을 맡은 보관 기관이나 예금 기관의 이름과 기관별 금액.</p><p class="e">2. the share of reserve assets held with the parent bank or any related corporation, so that the degree of intra-group concentration is visible.</p><p class="k nocopy">2. 모은행과 계열사에 맡긴 준비자산 비중. 그룹 안 쏠림 정도가 보이게 한다.</p><p class="e">This is the structure under discussion in Korea, where the central bank has proposed that won stablecoins first be issued by bank-led consortia (Bank of Korea, Monetary Policy Report, March 2026). In that context, the per-custodian breakdown is a direct way to see whether reserves are concentrated in one member bank. I note that voluntary disclosure of the custodian bank by name already exists in practice: two Korean digital asset exchanges name the bank holding customer won deposits on their own websites without any legal obligation to do so, which suggests the cost of this disclosure item is low.</p><p class="k nocopy">한국에서 논의 중인 구조가 이것이다. 한국은행은 원화 스테이블코인을 우선 은행 중심 컨소시엄이 발행하게 하자고 했다(통화신용정책보고서 2026년 3월). 이 경우 보관 기관별 금액은 준비금이 참여 은행 한 곳에 몰렸는지 바로 보여 준다. 보관 은행 이름을 자발적으로 밝히는 예도 이미 있다. 한국 가상자산 거래소 두 곳은 법적 의무가 없는데도 고객 원화 예치금을 맡은 은행 이름을 자기 누리집에 밝힌다. 이 항목의 비용이 낮다는 뜻이다.</p></div>
+<h3 id="mx-resp-b">B안일 때 Q30 칸 첫 문단</h3>
+<div class="mx-bar"><span class="num">Q30 칸 전체 3,196자</span><span>신원과 제출물을 비공개로 할 때 위 Q30 칸의 첫 문단만 이것으로 바꾼다.</span><button class="cpb nocopy" data-c="mx-resp-b-en">영문 복사</button></div>
+<div class="mx-pair" id="mx-resp-b-en"><p class="e">Respondent: undergraduate student, Ajou University (Republic of Korea). Independent student research project "StableWatch" on reserve disclosure standards for won-denominated stablecoins. Not affiliated with any issuer, bank or regulator. As provided in para 1.5, I request that my identity and my whole submission be kept confidential.</p><p class="k nocopy">응답자: 아주대학교 학부생(대한민국). 원화 스테이블코인 준비금 공시 기준을 다루는 개인 학생 연구 프로젝트 "StableWatch". 발행사, 은행, 규제기관과 관계없음. 1.5항에 따라 신원과 제출물 전체를 비공개로 해 줄 것을 요청함.</p></div>
+  </div>
+</section>
+
+</main>
+</div>
+<script>
+document.querySelectorAll('#mas [data-d]').forEach(function(e){var n=Math.ceil((new Date(e.dataset.d+'T23:59:00+08:00')-new Date())/864e5);e.textContent=n>0?n+'일 남음':(n===0?'오늘':'지남')});
+(function(){var a=new Date('2026-09-26T00:00:00+09:00'),t=(new Date()-a)/864e5/20,e=document.getElementById('ms-now');if(e&&t>=0&&t<=1){e.style.left=(t*100)+'%';e.hidden=false}})();
+document.querySelectorAll('#mas .cpb').forEach(function(b){b.addEventListener('click',function(){var t=[].map.call(document.getElementById(b.dataset.c).querySelectorAll('.e'),function(p){return p.innerText}).join('\n\n');navigator.clipboard.writeText(t).then(function(){flash(b,'복사됨')},function(){flash(b,'복사 실패')})})});
+</script>

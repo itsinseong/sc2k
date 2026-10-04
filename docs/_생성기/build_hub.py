@@ -8,7 +8,7 @@ OUT = os.path.join(os.path.dirname(HERE), "StableWatch_종합.html")
 def read(name):
     return open(os.path.join(HERE, name), encoding="utf-8").read()
 
-TABS = [("idea", "아이디어 제안서"), ("prd", "PRD"), ("ref", "레퍼런스"), ("final", "최종")]
+TABS = [("idea", "아이디어 제안서"), ("prd", "PRD"), ("ref", "레퍼런스"), ("site", "판정기"), ("mas", "MAS 자문"), ("final", "최종"), ("todo", "할 일")]
 bodies = {k: read(f"{k}.html") for k, _ in TABS}
 shot = base64.b64encode(open(os.path.join(HERE, "dash.jpg"), "rb").read()).decode()
 bodies["idea"] = bodies["idea"].replace('src="dash.jpg"', f'src="data:image/jpeg;base64,{shot}"')
