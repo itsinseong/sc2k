@@ -1,12 +1,27 @@
 // 나라별 구조 흐름도: 가로로 낮은 입체(아이소메트릭) 블록 도식.
 // 블록과 선의 자리는 모든 나라가 같고, 이름표와 선 이름표의 문구와 자리만 나라마다 바뀝니다.
-// 감독 블록은 실제 건물 사진을 보고 그대로 옮긴 모양(서울 정부서울청사 본관, 홍콩 Two IFC, 싱가포르 MAS 빌딩)이거나, 사진으로 한 건물을 특정할 수 없으면 네모 상자입니다.
+// 감독 블록은 실제 건물 사진을 보고 그대로 옮긴 모양(서울 정부서울청사 본관, 홍콩 Two IFC, 싱가포르 MAS 빌딩, 도쿄 중앙합동청사 제7호관 서관, 파리 Tour Europlaza)이거나, 감독기관이 여럿인 미국(연방 기관 넷)과 EU 일반(회원국 감독기관 다섯)은 그 기관들의 본부 건물을 한 바닥판에 모은 묶음이고, 사진으로 한 건물을 특정할 수 없으면 네모 상자입니다.
 // 칸 좌표 (a, b): 가로로 a칸, 세로로 b칸. a와 b의 홀짝이 같은 점이 격자 교점입니다.
+// isoFlowSvg(spec, { name, id }): 오른쪽 열 그림과 크게 보기 대화 상자가 같은 전체판(블록 이름표 줄과 선 이름표를 모두 쓴 판)을 씁니다.
+// 이름표, 선 이름표, 꼬리표는 뒤에 번진 흰 테두리(iso-halo)와 글자 둘레 흰 선(styles.css)으로 젖빛 유리처럼 보이게 해 격자와 선이 글자를 가로지르지 않습니다.
+import { BUILDINGS } from './iso_buildings.js';
+import { BUILDINGS2 } from './iso_buildings2.js';
+import { usRegulators } from './iso_clusters_us.js';
+import { euNcaGroup } from './iso_eu_authorities.js';
+import { coinStacks } from './iso_coins.js';
+import { bankBuilding } from './iso_bank.js';
+import { vaultBuilding } from './iso_vault.js';
+// 보관: 규칙에 은행 예치가 적힌 곳(EU 일반, EU 중요, 한국)은 은행 건물, 은행으로 정하지 않은 곳은 금고(미국, 홍콩은 보관 기관, 싱가포르, 일본은 신탁)
+const VAULT = { us: 'CUSTODY', hk: 'CUSTODY', sg: 'TRUST', jp: 'TRUST' };
+// 검증 블록 윗면 글자: 법이 요구하는 검증 종류(어느 회계법인인지는 발행사가 고르므로 법인은 그리지 않는다). 없는 나라는 체크 그림
+const VERIFY = { us: 'ATTEST', hk: 'ATTEST', sg: 'ATTEST', 'eu-emt-significant': 'AUDIT', 'kr-v1': 'REVIEW', jp: 'CERT' };
+import { personFigure } from './iso_person.js';
 const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const HW0 = 40, SP = 1.2;                // 칸 한 개의 윗면 반폭(px)과 칸 간격 배율. 물체 크기는 그대로 두고 칸 간격만 넓힌다
 const HW = HW0 * SP, HH = HW * 15 / 26;  // 한 칸 반폭, 반높이(px)
 const C30 = Math.sqrt(3) / 2;            // 입체 좌표에서 길이 1이 화면 가로로 가는 몫(세로는 1/2)
 const F1 = 13, F2 = 12;                  // 이름표 이름, 이름표 줄과 선 이름표 글자 크기
+const FROST = 4, BLUR = 3;               // 이름표 뒤 흰 번짐: 이름표보다 사방으로 더 나오는 거리(px)와 흐림 정도(가우시안 표준편차)
 const f = (n) => Math.round(n * 10) / 10;
 const g5 = (n) => Math.round(n * 1e5) / 1e5;
 const pts = (a) => a.map(([x, y]) => `${f(x)},${f(y)}`).join(' ');
@@ -44,17 +59,36 @@ function wrap(text, fs, max, bold) {
 
 // ---- 장면: 가운데 줄에 이용자, 발행사, 준비금, 보관이 왼쪽에서 오른쪽으로 서고, 뒷줄(위)에 감독과 검증, 앞줄(아래)에 공개가 선다 ----
 // 블록은 모두 격자 교점에 서고, 가운데 줄 밖의 블록은 가운데 줄 블록에서 ±30도 선(칸 방향) 위로 3칸, 4칸 떨어진다
-const PS = 1.2;                         // 사람 그림 배율
-const X0 = 64;
-const CELL = { 이용자: [0, 0], 공개: [4, 4], 발행사: [8, 0], 감독: [12, -4], 준비금: [14, 0], 검증: [18, -4], 보관: [20, 0] };
+const X0 = 80;
+// 장판: 판정 항목 4묶음(app.js GROUPS)마다 그 규칙을 보는 블록 밑에 까는 옅은 판. 바닥에 묶음 이름과 규칙 번호를 눕혀 쓴다
+// 발행사는 모든 규칙의 대상이라, 감독은 규칙을 정하는 쪽이라 장판 밖에 둔다
+// u=(a+b)/2는 오른쪽 아래, v=(a-b)/2는 오른쪽 위 방향 칸 좌표. 블록 바닥 윤곽에서 0.1~0.2칸 더 나가고, 오른쪽 아래 가장자리(u 끝) 0.6칸은 글자 자리다
+const ZONES = [
+  { name: '상환과 이자', rules: 'R13, R14', u: [-.55, 1.15], v: [-.65, .75] },
+  { name: '공개 방식', rules: 'R07, R10~R12', u: [3.5, 5.15], v: [-.72, .72] },
+  { name: '준비금 규모와 구성', rules: 'R01~R06', u: [6.1, 11.3], v: [6.1, 10.6] },
+  { name: '검증과 서명', rules: 'R08, R09, R15', u: [6, 8.6], v: [11.35, 12.75] },
+];
+const ZU = HW0 * SP / C30;               // 칸 한 개의 바닥 길이(입체 좌표 px)
+// 흐름별 2묶음(보는 사람이 고를 때): 앞은 이용자와 발행사 사이에 코인이 오가는 쪽, 뒤는 받은 돈이 준비금으로 쌓이는 쪽. 규칙 번호는 4묶음을 합친 것
+const ZONES_FLOW = [
+  { name: '발행과 상환', rules: 'R07, R10~R14', u: [-.6, 5], v: [-.6, 5] },
+  { name: '준비금 관리', rules: 'R01~R06, R08, R09, R15', u: [6, 10.75], v: [6.05, 11.5] },
+];
+const CELL = { 이용자: [0, 0], 공개: [4, 4], 발행사: [8, 0], 감독: [12, -4], 준비금: [14, 0], 검증: [19, -5], 보관: [20, 0] };
+const MODES = { group: { zones: ZONES, cell: CELL }, flow: { zones: ZONES_FLOW, cell: { ...CELL, 검증: [18, -4] } } };   // 4묶음은 검증이 준비금 장판과 떨어지게 한 칸 오른쪽 위
 // sides: 이름표를 놓아 볼 방향 순서(t 위, b 아래, l 왼쪽, r 오른쪽)
 const SIDES = { 이용자: 'tbl', 공개: 'lrbt', 발행사: 'blr', 감독: 'tlrb', 준비금: 'btrl', 검증: 'tlrb', 보관: 'btrl', 코인: 'trl' };
 const ORDER = ['감독', '검증', '이용자', '공개', '발행사', '준비금', '보관'];  // 블록 이름표 항목 순서
 const W = Math.ceil(X0 + 20 * HW + 56 + 70);
 const FLAG = { us: 'us', 'eu-emt': 'eu', 'eu-emt-significant': 'eu', hk: 'hk', sg: 'sg', jp: 'jp', 'kr-v1': 'kr' };
-// 감독 블록이 베끼는 실제 건물. 없으면 네모 상자
-const BUILDING = { 'kr-v1': 'seoul', hk: 'ifc', sg: 'mas' };
+// 코인 표면(발행사 윗면과 준비금 동전 윗면)에 새기는 나라 통화 기호. 없는 나라는 고리만 그린다.
+// 나라 기준이라, 이름표의 코인이 다른 통화(미국의 EURC, 싱가포르의 Paxos USDG는 달러 코인)여도 나라 통화로 쓴다. 싱가포르를 달러로 보이게 하려면 'S$'를 '$'로 바꾼다
+const CUR = { us: '$', 'eu-emt': '€', 'eu-emt-significant': '€', hk: 'HK$', sg: 'S$', jp: '¥', 'kr-v1': '₩' };
+// 감독 블록이 베끼는 실제 건물(미국과 EU 일반은 감독기관 여럿의 본부 건물을 한 바닥판에 모은 묶음). 없으면 네모 상자
+const BUILDING = { 'kr-v1': 'seoul', hk: 'ifc', sg: 'mas', jp: 'fsa', 'eu-emt-significant': 'eba', us: 'us4', 'eu-emt': 'eu5' };
 const TITLE_COIN = '판정기 자료의 코인';
+const DRAW = { ...BUILDINGS, ...BUILDINGS2, us4: usRegulators, eu5: euNcaGroup };   // BUILDING의 값으로 찾는 그리기 함수: (cx, cy, 국기 파일) -> { el, ps }
 
 // ---- 물체 그리기 ----
 // 입체 좌표 (x, y, z): x는 오른쪽 아래, y는 왼쪽 아래로 가는 바닥 길이(px), z는 위로 가는 높이(px). 세 길이가 화면에서 같은 크기로 보이는 정등각이다.
@@ -64,21 +98,27 @@ const hull = (a) => {
   const half = (q) => { const r = []; for (const t of q) { while (r.length > 1 && cr(r[r.length - 2], r[r.length - 1], t) <= 0) r.pop(); r.push(t); } r.pop(); return r; };
   return [...half(p), ...half([...p].reverse())];
 };
+// 코인 윗면: 고리 하나와 나라 통화 기호 하나. 고리 반지름은 그림 좌표다
+const COIN_R = 16.5;
+// 통화 기호의 잉크 상자 [폭, 높이](글자 크기 1일 때, Pretendard 800 실측). 기호를 고리 안에 꼭 맞추는 데 쓴다
+const INK = { $: [.573, .885], '€': [.592, .727], '¥': [.535, .707], '₩': [.881, .707], 'HK$': [1.944, .885], 'S$': [1.211, .885] };
+const symText = (sym) => {
+  if (!INK[sym]) return '';
+  const [w, h] = INK[sym], s = Math.min(1.78, 1.76 / Math.hypot(w, h)) * COIN_R;   // 잉크 상자의 대각선이 고리 지름의 88%를 넘지 않게, 한 글자는 높이도 제한
+  return `<text class="iso-coin-sym" y="${f(.354 * s)}" font-size="${f(s)}" text-anchor="middle">${esc(sym)}</text>`;   // .354 s: 기호 잉크 가운데를 고리 가운데에 맞추는 기준선 내림
+};
 // 윗면에 눕혀 그리는 그림: 그림 좌표 ±13을 화면 가로는 그대로, 세로는 .577로 눌러 바닥에 누운 모양으로 만든다
 const PIC = {
-  coin: '<circle r="12.5"/><circle r="6.8"/>',
-  notes: '<rect x="-12.5" y="-12" width="25" height="7.4" rx="1.5"/><rect x="-12.5" y="-3.7" width="25" height="7.4" rx="1.5"/><rect x="-12.5" y="4.6" width="25" height="7.4" rx="1.5"/>',
-  bank: '<path d="M-13.5 -3.5L0 -12.5L13.5 -3.5Z"/><path d="M-9.5 0V8M-3.2 0V8M3.2 0V8M9.5 0V8M-13.5 12H13.5"/>',
+  coin: `<circle r="${COIN_R}"/>`,
   check: '<circle cx="-4" cy="-1.5" r="9.8"/><path d="M5.8 -1.5H14.5M-8.8 -1.5L-5 2.2L1 -5.6"/>',
 };
-// 건물 치수는 사진에서 잰 비율이다. 서울 정부서울청사 본관: 창 줄 12칸 x 4칸, 기둥 한 칸 p(폭 6.4px), 높이 10.2p, 맨 위 띠 .87p
-// 홍콩 Two IFC: 높이 : 밑변 약 7 : 1, 3분의 2 높이까지 거의 곧게 서다가 위 10%에서 둥글게 좁아진다
-// 싱가포르 MAS 빌딩: 정면 기둥 4개와 양쪽 살창, 맨 위 가로 틈 두 줄
-function drawObj(k, cx, cy, kind, flagFile) {
+// 감독 건물의 치수와 그리는 법은 iso_buildings.js(서울, 홍콩, 싱가포르)와 iso_buildings2.js(도쿄, 파리), 건물 묶음은 iso_clusters_us.js(미국)와 iso_eu_authorities.js(EU 일반), 준비금 동전 기둥은 iso_coins.js, 보관 은행 건물은 iso_bank.js, 이용자 그림은 iso_person.js에 있다.
+function drawObj(k, cx, cy, kind, flagFile, cur) {
+  const bld = DRAW[kind];
+  if (bld) return bld(cx, cy, flagFile);
   const P = (x, y, z) => [cx + (x - y) * C30, cy + (x + y) * .5 - z];
   const el = [], ps = [];
   const face = (c, a) => { ps.push(...a); el.push(`<polygon class="iso-face ${c}" points="${pts(a)}"/>`); };
-  const fl = (c, a) => el.push(`<polygon class="iso-fl ${c}" points="${pts(a)}"/>`);
   const ln = (a, c = '') => el.push(`<polyline class="iso-d iso-dn ${c}" points="${pts(a)}"/>`);
   const path = (c, segs) => el.push(`<path class="${c}" d="${segs.map((s) => `M${s.map(([x, y]) => `${f(x)} ${f(y)}`).join('L')}`).join('')}"/>`);
   // 가로 x0~x1, 세로 y0~y1, 높이 z0~z1 상자. 왼쪽 면은 y1, 오른쪽 면은 x1, 윗면은 z1
@@ -87,8 +127,6 @@ function drawObj(k, cx, cy, kind, flagFile) {
     face(c.r ?? 'iso-r', [P(x1, y1, z1), P(x1, y0, z1), P(x1, y0, z0), P(x1, y1, z0)]);
     if (c.t !== 0) face(c.t ?? 'iso-t', [P(x0, y0, z1), P(x1, y0, z1), P(x1, y1, z1), P(x0, y1, z1)]);
   };
-  const qL = (y, x0, x1, z0, z1) => [P(x0, y, z1), P(x1, y, z1), P(x1, y, z0), P(x0, y, z0)];   // 왼쪽 면 위의 네모
-  const qR = (x, y0, y1, z0, z1) => [P(x, y1, z1), P(x, y0, z1), P(x, y0, z0), P(x, y1, z0)];   // 오른쪽 면 위의 네모
   // 윗면에 국기를 4:3 그대로 눕혀 붙인다. 국기 가로는 x 방향, 세로는 y 방향이고 국기 위쪽이 오른쪽 위를 향한다
   const flag = (xc, yc, z, fw) => {
     if (!flagFile) return;
@@ -96,71 +134,9 @@ function drawObj(k, cx, cy, kind, flagFile) {
     el.push(`<image class="iso-flag" href="flags/${flagFile}.svg" x="0" y="0" width="640" height="480" preserveAspectRatio="none" transform="matrix(${g5(fw * C30 / 640)},${g5(fw * .5 / 640)},${g5(-fh * C30 / 480)},${g5(fh * .5 / 480)},${f(o[0])},${f(o[1])})"/>`);
     ln([P(x0, y0, z), P(x0 + fw, y0, z), P(x0 + fw, y0 + fh, z), P(x0, y0 + fh, z), P(x0, y0, z)]);
   };
-  const mark = (pic, z, a) => { const [x, y] = P(0, 0, z); el.push(`<g class="iso-mark" transform="translate(${f(x)},${f(y)}) scale(${g5(a / 36)},${g5(a / 36 * .5774)})">${PIC[pic]}</g>`); };
-  const cube = (a, h, pic) => { box(-a / 2, a / 2, -a / 2, a / 2, 0, h); mark(pic, h, a); };
+  const mark = (pic, z, a, sym) => { const [x, y] = P(0, 0, z); el.push(`<g class="iso-mark" transform="translate(${f(x)},${f(y)}) scale(${g5(a / 36)},${g5(a / 36 * .5774)})">${PIC[pic]}${sym ? symText(sym) : ''}</g>`); };
+  const cube = (a, h, pic, sym) => { box(-a / 2, a / 2, -a / 2, a / 2, 0, h); mark(pic, h, a, sym); };
 
-  // 서울 정부서울청사 본관: 가늘고 흰 세로 기둥이 층 전체를 덮고, 기둥 사이에 짙은 창 줄이 선다. 맨 위는 창 없는 띠
-  const seoul = () => {
-    const p = 6.4, Wd = 12.8 * p, Dd = 4.8 * p, Hh = 10.2 * p, x0 = -Wd / 2, x1 = Wd / 2, y0 = -Dd / 2, y1 = Dd / 2, band = .87 * p, zt = Hh - band;
-    box(x0, x1, y0, y1, 0, Hh, { l: 'iso-w', r: 'iso-w' });
-    // 창 줄 칸: 가장자리 기둥 .6p, 창 .59p, 기둥 .41p. 길이 len에 창 n개가 든다
-    const bays = (len, n) => Array.from({ length: n }, (_, i) => { const a = -len / 2 + .6 * p + i * p; return [a, a + .59 * p]; });
-    const long = bays(Wd, 12), short = bays(Dd, 4), floors = 19;
-    for (const [a, b] of long) { fl('iso-dk', qL(y1, a, b, 0, zt)); fl('iso-dk', qL(y1, a, b, Hh - .77 * p, Hh - .6 * p)); }
-    for (const [a, b] of short) { fl('iso-dk', qR(x1, a, b, 0, zt)); fl('iso-dk', qR(x1, a, b, Hh - .77 * p, Hh - .6 * p)); }
-    const fls = (bs, q) => { const s = []; for (const [a, b] of bs) for (let i = 1; i < floors; i++) { const z = zt * i / floors; s.push([q(a, z), q(b, z)]); } return s; };
-    path('iso-fline', [...fls(long, (u, z) => P(u, y1, z)), ...fls(short, (u, z) => P(x1, u, z))]);
-    const m = .5 * p;
-    ln([P(x0 + m, y0 + m, Hh), P(x1 - m, y0 + m, Hh), P(x1 - m, y1 - m, Hh), P(x0 + m, y1 - m, Hh), P(x0 + m, y0 + m, Hh)]);
-    flag(0, 0, Hh, (Dd - 2 * m) * .88 / .75);
-  };
-  // 홍콩 Two IFC: 거의 곧은 정사각 기둥에 앞 모서리를 깎은 면이 서고, 위쪽이 둥글게 좁아지며, 가운데에 기계층 어두운 띠 셋
-  const ifc = () => {
-    const s0 = 26, Hh = 186, ch = .13;
-    const prof = [[0, 1], [.3, 1], [.6, .985], [.77, .975], [.85, .93], [.9, .88], [.93, .82], [.96, .7], [.98, .6], [1, .52]].map(([fz, r]) => [fz * Hh, r * s0]);
-    const Lp = prof.map(([z, s]) => P(-s / 2, s / 2, z)), Lq = prof.map(([z, s]) => P(s / 2 - ch * s, s / 2, z));
-    const Cp = prof.map(([z, s]) => P(s / 2 - ch * s, s / 2, z)), Cq = prof.map(([z, s]) => P(s / 2, s / 2 - ch * s, z));
-    const Rp = prof.map(([z, s]) => P(s / 2, s / 2 - ch * s, z)), Rq = prof.map(([z, s]) => P(s / 2, -s / 2, z));
-    face('iso-w', [...Lp, ...[...Lq].reverse()]);
-    face('iso-l', [...Cp, ...[...Cq].reverse()]);
-    face('iso-l', [...Rp, ...[...Rq].reverse()]);
-    const sAt = (z) => { let i = 1; while (i < prof.length - 1 && prof[i][0] < z) i++; const [z0, s0_] = prof[i - 1], [z1, s1] = prof[i]; return s0_ + (s1 - s0_) * (z - z0) / (z1 - z0); };
-    // 층 가로선: 8층마다
-    const lines = [];
-    for (let z = Hh / 11; z < Hh * .9; z += Hh / 11) { const s = sAt(z); lines.push([P(-s / 2, s / 2, z), P(s / 2 - ch * s, s / 2, z)], [P(s / 2, s / 2 - ch * s, z), P(s / 2, -s / 2, z)]); }
-    path('iso-fline iso-fline-d', lines);
-    // 기계층 어두운 띠
-    for (const fz of [.57, .72, .86]) { const z = fz * Hh, s = sAt(z), c = -ch * s / 2, h = s * .3; fl('iso-dk', qL(s / 2, c - h, c + h, z, z + 4)); fl('iso-dk', qR(s / 2, c - h, c + h, z, z + 4)); }
-    const st = prof[prof.length - 1][1];
-    face('iso-t', [P(-st / 2, -st / 2, Hh), P(st / 2, -st / 2, Hh), P(st / 2, st / 2, Hh), P(-st / 2, st / 2, Hh)]);
-    flag(0, 0, Hh, st * .86);
-  };
-  // 싱가포르 MAS 빌딩: 정면에 굵은 기둥, 양끝에 가는 살창, 맨 위에 창 없는 띠와 가로 틈 두 줄. 옆면은 민벽과 살창
-  const mas = () => {
-    const Wd = 40, Dd = 38, Hh = 105, x0 = -Wd / 2, x1 = Wd / 2, y0 = -Dd / 2, y1 = Dd / 2, top = .17 * Hh;
-    box(x0, x1, y0, y1, 0, Hh, { l: 'iso-w', r: 'iso-w' });
-    const seg = [['e', .04], ['v', .22], ['p', .08], ['p', .1], ['n', .1], ['p', .09], ['p', .09], ['v', .18], ['e', .06]], tot = seg.reduce((s, [, w]) => s + w, 0);
-    let a = x0; const spans = seg.map(([t, w]) => { const r = [t, a, a + w / tot * Wd]; a = r[2]; return r; });
-    const zb = Hh - top;
-    // 맨 위 가로 틈 두 줄
-    const ex0 = spans[0][2], ex1 = spans[spans.length - 1][1];
-    fl('iso-dk', qL(y1, ex0, ex1, Hh - .085 * Hh, Hh - .05 * Hh));
-    fl('iso-dk', qL(y1, ex0, ex1, Hh - .135 * Hh, Hh - .1 * Hh));
-    const lv = [];
-    for (const [t, s0, s1] of spans) {
-      if (t === 'v') { fl('iso-dp', qL(y1, s0, s1, 0, zb)); const n = 5; for (let i = 0; i <= n; i++) { const u = s0 + (s1 - s0) * i / n; lv.push([P(u, y1, 0), P(u, y1, zb)]); } }
-      if (t === 'p') lv.push([P(s0, y1, 0), P(s0, y1, zb)], [P(s1, y1, 0), P(s1, y1, zb)]);
-    }
-    path('iso-lv', lv);
-    // 오른쪽 면: 앞 모서리에서 민벽 27%, 살창 55%, 맨 끝 18%
-    const ra = y1 - .27 * Dd, rb = y1 - .82 * Dd;
-    fl('iso-dp', qR(x1, rb, ra, 0, zb));
-    const rl = []; for (let i = 0; i <= 8; i++) { const u = rb + (ra - rb) * i / 8; rl.push([P(x1, u, 0), P(x1, u, zb)]); }
-    path('iso-lv', rl);
-    const m = 2.5;
-    ln([P(x0 + m, y0 + m, Hh), P(x1 - m, y0 + m, Hh), P(x1 - m, y1 - m, Hh), P(x0 + m, y1 - m, Hh), P(x0 + m, y0 + m, Hh)]);
-    flag(0, 0, Hh, Math.min(Wd - 2 * m, (Dd - 2 * m) / .75) * .94);
-  };
   // 네모 상자: 감독이 사진으로 한 건물을 특정할 수 없을 때. 윗면이 4:3이라 국기가 그대로 들어맞는다
   const slab = () => { const d = 52, w = d * 4 / 3, h = 30; box(-w / 2, w / 2, -d / 2, d / 2, 0, h, { l: 'iso-w', r: 'iso-w' }); flag(0, 0, h, w); };
   // 공개: 종이 묶음. 종이 8장을 약간씩 어긋나게 쌓고 맨 위 장에 글줄
@@ -170,41 +146,42 @@ function drawObj(k, cx, cy, kind, flagFile) {
     const z = off.length * t;
     path('iso-d iso-dn', [-14, -6, 2, 10, 18].map((y) => [P(-sw / 2 + 6, y, z), P(sw / 2 - 6, y, z)]));
   };
-  // 이용자: 얇은 네모 발판(사람 그림은 따로 그린다)
-  const plate = () => box(-23.1, 23.1, -23.1, 23.1, 0, 6);
 
-  if (kind === 'seoul') seoul();
-  else if (kind === 'ifc') ifc();
-  else if (kind === 'mas') mas();
-  else if (kind === 'slab') slab();
+  if (kind === 'slab') slab();
   else if (kind === 'papers') papers();
-  else if (kind === 'plate') plate();
-  else if (kind === 'coin') cube(80, 28, 'coin');
-  else if (kind === 'notes') cube(64.7, 22, 'notes');
+  else if (kind === 'person') { const c = personFigure(cx, cy); el.push(c.svg); ps.push(...c.poly); }
+  else if (kind === 'coin') cube(80, 28, 'coin', cur);
+  else if (kind === 'coins') { const c = coinStacks(cx, cy, { symbol: cur }); el.push(c.svg); ps.push(...c.poly); }
   else if (kind === 'check') cube(64.7, 22, 'check');
-  else if (kind === 'bank') cube(64.7, 22, 'bank');
+  else if (kind.startsWith('check:')) { const ax = 92, ay = 46, h = 24, w = kind.slice(6), fs = Math.min(15, (ax - 16) / (w.length * .72)), [x, y] = P(0, 0, h); box(-ax / 2, ax / 2, -ay / 2, ay / 2, 0, h); el.push(`<text class="iso-coin-sym" transform="matrix(${g5(C30)} .5 ${g5(-C30)} .5 ${f(x)} ${f(y)})" x=".3" y="${f(.36 * fs)}" font-size="${f(fs)}" text-anchor="middle" letter-spacing=".6">${esc(w)}</text>`); }
+  else if (kind === 'bank') { const c = bankBuilding(cx, cy, { symbol: cur }); el.push(...c.el); ps.push(...c.poly); }
+  else if (kind.startsWith('vault:')) { const c = vaultBuilding(cx, cy, { word: kind.slice(6) }); el.push(...c.el); ps.push(...c.poly); }
   return { el, ps };
 }
 
 // 장면 만들기: 블록마다 물체를 그리고, 바깥 윤곽(볼록 다각형), 이름표를 붙일 점(윤곽 위)을 구한다.
 // 윤곽은 물체 전체(지붕, 국기, 종이 묶음, 사람 머리까지)를 감싼다. padTop은 가장 높은 물체 위쪽 여백, padBot은 가장 낮은 물체 아래쪽 여백(이름표 자리)
-function makeScene(id, padTop, padBot) {
-  const KINDS = { 이용자: 'plate', 공개: 'papers', 발행사: 'coin', 감독: BUILDING[id] ?? 'slab', 준비금: 'notes', 검증: 'check', 보관: 'bank' };
+function makeScene(id, padTop, padBot, mode) {
+  const { zones: ZS, cell } = MODES[mode] ?? MODES.group;
+  const KINDS = { 이용자: 'person', 공개: 'papers', 발행사: 'coin', 감독: BUILDING[id] ?? 'slab', 준비금: 'coins', 검증: VERIFY[id] ? `check:${VERIFY[id]}` : 'check', 보관: VAULT[id] ? `vault:${VAULT[id]}` : 'bank' };
   const make = (Y0) => {
     const B = {};
-    for (const [k, [a, b]] of Object.entries(CELL)) {
-      const x = X0 + a * HW, y = Y0 + b * HH, o = drawObj(k, x, y, KINDS[k], k === '감독' ? FLAG[id] : null), ps = [...o.ps], ppl = k === '이용자';
-      if (ppl) { const tc = y - 6; ps.push([x - 11.2 * PS, tc - 4.5 * PS], [x + 11.2 * PS, tc - 4.5 * PS], [x - 7.3 * PS, tc - 29 * PS - 7.3 * PS], [x + 7.3 * PS, tc - 29 * PS - 7.3 * PS], [x - 11.2 * PS, tc - 20.2 * PS], [x + 11.2 * PS, tc - 20.2 * PS]); }
-      const poly = hull(ps), xs = poly.map((p) => p[0]), ys = poly.map((p) => p[1]), x0 = Math.min(...xs), y0 = Math.min(...ys);
+    for (const [k, [a, b]] of Object.entries(cell)) {
+      const x = X0 + a * HW, y = Y0 + b * HH, o = drawObj(k, x, y, KINDS[k], k === '감독' ? FLAG[id] : null, CUR[id]), ppl = k === '이용자';
+      const poly = hull(o.ps), xs = poly.map((p) => p[0]), ys = poly.map((p) => p[1]), x0 = Math.min(...xs), y0 = Math.min(...ys);
       const my = y - 16;
       B[k] = { k, x, y, el: o.el, poly, ppl, bb: { x: x0, y: y0, w: Math.max(...xs) - x0, h: Math.max(...ys) - y0 }, sides: SIDES[k],
         port: { l: [x - exitT(poly, [x, my], [-1, 0]), my], r: [x + exitT(poly, [x, my], [1, 0]), my], t: [x, my - exitT(poly, [x, my], [0, -1])], b: [x, my + exitT(poly, [x, my], [0, 1])] } };
     }
     return B;
   };
-  const probe = make(0), top = Math.min(...Object.values(probe).map((b) => b.bb.y)), Y0 = Math.ceil(padTop - top), B = make(Y0);
-  const bottom = Math.max(...Object.values(B).map((b) => b.bb.y + b.bb.h));
-  return { B, Y0, H: Math.ceil(bottom + padBot) };
+  const zones = (Y0) => ZS.map((z) => {
+    const { u: [u0, u1], v: [v0, v1] } = z, S = (u, v) => [X0 + (u + v) * HW, Y0 + (u - v) * HH], q = (a, b) => [S(a, v0), S(b, v0), S(b, v1), S(a, v1)];
+    return { ...z, poly: q(u0, u1) };
+  });
+  const ys = (B, Z) => [...Object.values(B).flatMap((b) => [b.bb.y, b.bb.y + b.bb.h]), ...Z.flatMap((z) => z.poly.map((p) => p[1]))];
+  const top = Math.min(...ys(make(0), zones(0))), Y0 = Math.ceil(padTop - top), B = make(Y0), Z = zones(Y0);
+  return { B, Z, Y0, H: Math.ceil(Math.max(...ys(B, Z)) + padBot) };
 }
 
 // ---- 기하 도우미 ----
@@ -269,9 +246,11 @@ function chord(poly, axis, v) {
 
 // 선: 바닥 가운데끼리 이은 직선을 블록 윤곽 밖에서 시작하고 끝낸다. money는 돈과 코인이 오가는 선(진한 점선), 나머지는 확인과 공개(옅은 점선)
 // off는 직선에서 옆으로 벌리는 거리(px). 이용자와 발행사 사이 두 줄은 시작과 끝을 같은 자리에 맞춘다
+// 두 줄 사이(OFF의 두 배)가 좁으면 한 줄의 화살표 머리가 다른 줄의 점과 선에 바짝 붙는다. OFF 6이면 6.4px, 8이면 10px 넘게 떨어진다
+const OFF = 8;
 const LINKS = [
-  { id: '발행', from: '이용자', to: '발행사', money: 1, off: 6 },
-  { id: '상환', from: '발행사', to: '이용자', money: 1, off: 6 },
+  { id: '발행', from: '이용자', to: '발행사', money: 1, off: OFF },
+  { id: '상환', from: '발행사', to: '이용자', money: 1, off: OFF },
   { id: '예치', from: '발행사', to: '준비금', money: 1 },
   { id: '보관', from: '준비금', to: '보관', money: 1 },
   { id: '검증', from: '검증', to: '준비금' },
@@ -281,22 +260,24 @@ const LINKS = [
 ];
 const GAP = 9;                          // 선 끝(시작 점, 화살표 머리)과 블록 윤곽 사이 거리(px). 비스듬한 선은 면에 비스듬히 닿아 실제 간격이 이만큼 안 나오므로 넉넉히 둔다
 const PAIR = {
-  a: (A, d) => Math.max(exitT(A.poly, [A.x, A.y - 6], d), exitT(A.poly, [A.x, A.y + 6], d)) + GAP,
-  b: (T, d) => Math.max(exitT(T.poly, [T.x, T.y - 6], [-d[0], -d[1]]), exitT(T.poly, [T.x, T.y + 6], [-d[0], -d[1]])) + GAP,
+  a: (A, d) => Math.max(exitT(A.poly, [A.x, A.y - OFF], d), exitT(A.poly, [A.x, A.y + OFF], d)) + GAP,
+  b: (T, d) => Math.max(exitT(T.poly, [T.x, T.y - OFF], [-d[0], -d[1]]), exitT(T.poly, [T.x, T.y + OFF], [-d[0], -d[1]])) + GAP,
 };
 function route(B, l) {
   const A = B[l.from], T = B[l.to];
   let dx = T.x - A.x, dy = T.y - A.y; const len = Math.hypot(dx, dy); dx /= len; dy /= len;
   const nx = -dy * (l.off || 0), ny = dx * (l.off || 0), p0 = [A.x + nx, A.y + ny], p1 = [T.x + nx, T.y + ny];
   const a = l.off ? PAIR.a(A, [dx, dy]) : exitT(A.poly, p0, [dx, dy]) + GAP, b = l.off ? PAIR.b(T, [dx, dy]) : exitT(T.poly, p1, [-dx, -dy]) + GAP;
-  return [[p0[0] + dx * a, p0[1] + dy * a], [p1[0] - dx * b, p1[1] - dy * b]];
+  let s = [p0[0] + dx * a, p0[1] + dy * a], e = [p1[0] - dx * b, p1[1] - dy * b];
+  // 비스듬히 닿는 선은 윤곽까지 실제 거리가 GAP보다 짧을 수 있으므로, 시작 점은 GAP, 화살표 끝은 머리 길이만큼 더 떨어질 때까지 물린다(두 줄 쌍은 위에서 맞췄으므로 건드리지 않는다)
+  if (!l.off) {
+    for (let i = 0; i < 80 && polyDist(A.poly, s) < GAP; i++) { s = [s[0] + dx, s[1] + dy]; }
+    for (let i = 0; i < 80 && polyDist(T.poly, e) < GAP + 5; i++) { e = [e[0] - dx, e[1] - dy]; }
+  }
+  return [s, e];
 }
-
-// 사람: 얇은 네모 발판 위에 선 실루엣
-function person(b, cls) {
-  const { x: cx, y: cy } = b, tc = cy - 6;
-  return `<g class="iso-blk iso-ppl ${cls}">${b.el.join('')}</g><g class="iso-fig ${cls}"><circle cx="${f(cx)}" cy="${f(tc - 29 * PS)}" r="${f(7.3 * PS)}"/><path d="M${f(cx - 11.2 * PS)} ${f(tc - 4.5 * PS)}q0 ${f(-15.7 * PS)} ${f(11.2 * PS)} ${f(-15.7 * PS)}q${f(11.2 * PS)} 0 ${f(11.2 * PS)} ${f(15.7 * PS)}z"/></g>`;
-}
+// 점에서 볼록 윤곽까지 거리(안이면 0)
+const polyDist = (poly, p) => inPoly(poly, p[0], p[1]) ? 0 : Math.min(...poly.map((a, i) => ptSeg(p[0], p[1], a, poly[(i + 1) % poly.length])));
 
 // ---- 자리 잡기: 이름표, 선 이름표, 꼬리표를 서로와 블록, 선에 겹치지 않게 놓는다 ----
 // 항목마다 후보 자리를 만들고(블록과 선을 피하는 자리만), 후보끼리 겹치지 않는 조합 가운데 값이 가장 싼 것을 되돌아가며 찾는다.
@@ -368,20 +349,22 @@ const CANVAS = [{ pt: 56, pb: 84 }, { pt: 96, pb: 110 }, { pt: 140, pb: 140 }, {
 const cache = new Map();
 export function isoFlowSvg(spec, opt = {}) {
   if (!spec?.노드) return '';
-  const key = `${opt.id}|${opt.name}|${JSON.stringify(spec)}`;
+  const key = `${opt.id}|${opt.name}|${opt.zones}|${JSON.stringify(spec)}`;
   if (!cache.has(key)) cache.set(key, build(spec, opt));
   return cache.get(key);
 }
 
-function build(spec, { name = '', id = '' } = {}) {
+function build(spec, { name = '', id = '', zones = 'group' } = {}) {
   const N = spec.노드, C = spec.연결 || {}, coins = Array.isArray(spec.코인) ? spec.코인.filter(Boolean) : [];
   const nd = (k) => N[k] || {}, rows = (k) => nd(k).줄 || [], title = (k) => String(nd(k).이름 ?? '').trim() || k, gone = (k) => Boolean(nd(k).없음);
   let res = null;
   for (const cv of CANVAS) { res = attempt(cv); if (res.ok) break; }
-  const { sol, items, B, H, links, note } = res;
+  const { sol, items, B, Z, H, links, note } = res;
 
   function attempt(cv) {
-    const { B, H } = makeScene(id, cv.pt, cv.pb);
+    const { B, Z, H } = makeScene(id, cv.pt, cv.pb, zones);
+    // 이름표는 장판 테두리에 걸치지 않는다(장판 안이나 밖에 통째로 놓인다). 장판 이름은 제 장판 테두리에만 걸칠 수 있다
+    const zEdges = Z.flatMap(({ poly: z }, zi) => z.map((p, i) => [p, z[(i + 1) % 4], zi])), onZone = (r, own = -1) => zEdges.some(([p, q, zi]) => zi !== own && segHit(r, p, q, 3));
     const bodies = Object.values(B).map((b) => ({ poly: b.poly, bb: b.bb }));
     const inside = (r) => r.x >= EDGE && r.y >= EDGE && r.x + r.w <= W - EDGE && r.y + r.h <= H - EDGE;
     const offBlocks = (r, m) => !bodies.some((b) => hitR(r, b.bb, m) && polyHit(b.poly, r, m));
@@ -419,7 +402,7 @@ function build(spec, { name = '', id = '' } = {}) {
           const w = Math.ceil(Math.max(...lines.map((t) => tw(t, F2, 1)))) + 20, h = 7 + lines.length * 14.5 + (lines.length > 1 ? 1 : 0);
           for (let oy = -70; oy <= 70; oy += 6) for (let ox = -90; ox <= 90; ox += 6) {
             const cx = mx + ox, cy = my + oy, r = { x: cx - w / 2, y: cy - h / 2, w, h };
-            if (!inside(r) || !offBlocks(r, lv.m) || onLine(r, l.id, MG)) continue;
+            if (!inside(r) || !offBlocks(r, lv.m) || onLine(r, l.id, MG) || onZone(r)) continue;
             const on = segHit(r, p, q, 0);
             // 선 위에 놓을 때는 화살표 끝과 시작점이 가려지지 않아야 하고, 선이 이름표 가운데 가까이를 지나야 한다(테두리나 모서리만 스치는 자리는 뺀다)
             if (on && (segHit(r, p, [p[0] + ux * 14, p[1] + uy * 14], 2) || segHit(r, q, [q[0] - ux * 18, q[1] - uy * 18], 2))) continue;
@@ -428,7 +411,7 @@ function build(spec, { name = '', id = '' } = {}) {
             // 선과의 거리(겹치면 0). 다른 선이 자기 선만큼 가까우면 어느 선의 이름표인지 헷갈리므로 뺀다
             let gap = 0;
             if (!on) { gap = rgap(r, p, q); if (gap < 4 || gap > lv.capP) continue; }
-            if (links.some((o) => o !== l && rgap(r, o.path[0], o.path[1]) <= gap + 3)) continue;
+            if (links.some((o) => o !== l && rgap(r, o.path[0], o.path[1]) <= gap + (Boolean(o.money) !== Boolean(l.money) ? 16 : 3))) continue;   // 종류(돈, 확인)가 다른 선이 더 가까이 있으면 그 선의 이름표로 읽히므로 더 멀리 둔다
             let ld = null; // 선에서 8px 넘게 떨어지면 지시선으로 잇는다. 지시선이 블록이나 다른 선을 지나는 자리는 뺀다
             if (gap > 8) { ld = pillLead(r, p, q); const n = Math.ceil(Math.hypot(ld[1][0] - ld[0][0], ld[1][1] - ld[0][1]) / 2); if (blockHit(ld[0], ld[1], n, n, 2) || segs.some((s) => s.id !== l.id && segX(ld[0], ld[1], s.p, s.q))) continue; }
             cands.push({ r, lines, link: l, ld, lb: ld && bbox(ld[0], ld[1]), cost: gap * 2 + gap * gap / 40 + (on ? perp * .5 : 10) + (ld ? 4 : 0) + Math.abs((cx - mx) * ux + (cy - my) * uy) * .35 + (lines.length > 1 ? 3 : 0) });
@@ -440,9 +423,10 @@ function build(spec, { name = '', id = '' } = {}) {
     }
 
     // 블록 이름표: 이름은 13px 굵게, 줄은 12px. 한 항목은 두 줄까지만 나눈다. 코인 이름표는 발행사에 붙는다
-    const layout = (hd, bd, mw) => {
+    // keep: 줄을 나누지 않는 이름표(코인 이름은 'Circle USDC, EURC'가 한 줄이어야 읽힘)
+    const layout = (hd, bd, mw, keep) => {
       const head = wrap(hd, F1, mw - 20, 1), body = bd.map((t) => wrap(t, F2, mw - 20));
-      if (head.length > 2 || body.some((r) => r.length > 2)) return null;
+      if (head.length > 2 || body.some((r) => r.length > (keep ? 1 : 2))) return null;
       const flat = body.flat(), w = Math.max(64, Math.ceil(Math.max(...head.map((t) => tw(t, F1, 1)), ...flat.map((t) => tw(t, F2)))) + 20);
       return { head, body: flat, w, h: Math.ceil(17 + (head.length - 1) * 15.5 + (flat.length ? 15.5 + (flat.length - 1) * 14.5 : 0) + 7) };
     };
@@ -453,13 +437,13 @@ function build(spec, { name = '', id = '' } = {}) {
       const mk = (lv) => {
         const cands = [], seen = new Set();
         [196, 174, 154, 136, 120].forEach((mw, wr) => {
-          const L = layout(li.hd, li.bd, mw); if (!L) return;
+          const L = layout(li.hd, li.bd, mw, li.id === '코인'); if (!L) return;
           const sig = `${L.head}#${L.body}`; if (seen.has(sig)) return; seen.add(sig);
           [...sides].forEach((s, si) => {
             const [px, py] = B[k].port[s], { w, h } = L;
             for (const step of [0, 7, 15, 28, 46, 68]) for (const sh of SH) {
               const r = s === 'r' ? { x: px + 13 + step, y: py - h / 2 + sh, w, h } : s === 'l' ? { x: px - 13 - step - w, y: py - h / 2 + sh, w, h } : s === 't' ? { x: px - w / 2 + sh, y: py - 13 - step - h, w, h } : { x: px - w / 2 + sh, y: py + 13 + step, w, h };
-              if (!inside(r) || !offBlocks(r, lv.m) || onLine(r, null, MG)) continue;
+              if (!inside(r) || !offBlocks(r, lv.m + 6) || onLine(r, null, MG) || onZone(r)) continue;   // 이름표는 블록 윤곽에서 선 이름표보다 6px 더 떨어진다
               const ld = lead(B, k, s, r), ll = Math.hypot(ld[1][0] - ld[0][0], ld[1][1] - ld[0][1]);
               if (ll > lv.capL) continue;
               if (blockHit(ld[0], ld[1], 14, 16)) continue; // 지시선이 블록을 지나면 안 된다
@@ -473,9 +457,26 @@ function build(spec, { name = '', id = '' } = {}) {
       items.push({ kind: 'lab', id: li.id, mk });
     }
 
+    // 장판 이름: 묶음 이름(굵게)과 규칙 번호. 한 줄이나 두 줄로, 제 장판에 걸치게 놓는다(블록 하나뿐인 장판은 빈 데가 적어 밖으로 반쯤 나갈 수 있다). 장판 안쪽, 앞쪽(아래) 모서리에 가까울수록 싸다
+    Z.forEach((z, zi) => {
+      const w1 = Math.ceil(tw(z.name, F2, 1) + 6 + tw(z.rules, 11)) + 8, w2 = Math.ceil(Math.max(tw(z.name, F2, 1), tw(z.rules, 11))) + 8;
+      const ys = z.poly.map((p) => p[1]), xs = z.poly.map((p) => p[0]), front = z.poly[ys.indexOf(Math.max(...ys))];
+      z.L = [{ two: false, w: w1, h: 20 }, { two: true, w: w2, h: 34 }];
+      const mk = (lv) => {
+        const cands = [];
+        for (const L of z.L) for (let cy = Math.min(...ys) - L.h / 2; cy <= Math.max(...ys) + L.h / 2; cy += 4) for (let cx = Math.min(...xs) - L.w / 2; cx <= Math.max(...xs) + L.w / 2; cx += 4) {
+          const r = { x: cx - L.w / 2, y: cy - L.h / 2, w: L.w, h: L.h }, pin = [[r.x, r.y], [r.x + r.w, r.y], [r.x, r.y + r.h], [r.x + r.w, r.y + r.h], [cx, cy]].map(([x, y]) => inPoly(z.poly, x, y));
+          if (!pin.some(Boolean) || !inside(r) || !offBlocks(r, lv.m) || onLine(r, null, MG) || onZone(r, zi)) continue;
+          cands.push({ r, L, cost: Math.hypot(cx - front[0], cy - front[1]) * .4 + pin.slice(0, 4).filter((v) => !v).length * 12 + (pin[4] ? 0 : 30) + (L.two ? 6 : 0) });
+        }
+        return cands.sort((a, b) => a.cost - b.cost).slice(0, 60);
+      };
+      items.push({ kind: 'zone', id: z.name, mk });
+    });
+
     // 꼬리표(검토 중인 값 표시)
     const note = spec.꼬리표 ? { text: String(spec.꼬리표), w: Math.ceil(tw(spec.꼬리표, F2, 1)) + 22, h: 24 } : null;
-    if (note) items.push({ kind: 'note', id: 'note', mk: (lv) => [[EDGE, EDGE], [EDGE, H - note.h - EDGE], [W / 2 - note.w / 2, EDGE], [W - note.w - EDGE, EDGE], [W - note.w - EDGE, H - note.h - EDGE]].map(([x, y], i) => ({ r: { x, y, w: note.w, h: note.h }, cost: i * 10 })).filter((c) => offBlocks(c.r, lv.m) && !onLine(c.r, null, MG)) });
+    if (note) items.push({ kind: 'note', id: 'note', mk: (lv) => [[EDGE, EDGE], [EDGE, H - note.h - EDGE], [W / 2 - note.w / 2, EDGE], [W - note.w - EDGE, EDGE], [W - note.w - EDGE, H - note.h - EDGE]].map(([x, y], i) => ({ r: { x, y, w: note.w, h: note.h }, cost: i * 10 })).filter((c) => offBlocks(c.r, lv.m) && !onLine(c.r, null, MG) && !onZone(c.r)) });
 
     // 풀기: 조건을 하나씩 풀어 가며 시험한다. 끝내 안 풀리면 ok를 거짓으로 돌려 더 큰 그림판으로 다시 푼다
     let sol = null;
@@ -496,7 +497,7 @@ function build(spec, { name = '', id = '' } = {}) {
       }
       sol = { chosen };
     }
-    return { ok: true, sol, items, B, H, links, note };
+    return { ok: true, sol, items, B, Z, H, links, note };
   }
 
   const out = [];
@@ -520,7 +521,8 @@ function build(spec, { name = '', id = '' } = {}) {
   const sentence = (a) => a.reduce((s, t) => s ? `${s}${s.endsWith(',') ? ' ' : ', '}${t}` : t, '');
   const desc = [...ORDER.map((k) => `${k === title(k) ? k : `${k}(${title(k)})`}: ${sentence(rows(k))}`), ...(coins.length ? [`${TITLE_COIN}: ${coins.join(', ')}`] : []), ...Object.entries(C).filter(([, t]) => String(t ?? '').trim()).map(([k, t]) => `연결 ${k}: ${t}`)].join('. ');
   // 가로는 칸 폭을 따르되 W*.75(12px 글자가 9px 밑으로 가지 않는 폭)보다 줄지 않고, W*1.077(13px 글자가 본문 14px를 넘지 않는 폭)보다 늘지 않는다
-  out.push(`<svg class="iso-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(aria)}" aria-describedby="iso-desc" style="width:100%;max-width:${Math.round(W * 1.077)}px;min-width:${Math.round(W * .75)}px"><desc id="iso-desc">${esc(desc)}</desc><defs>${mk('ink')}${mk('mut')}${mk('off')}</defs><path class="iso-grid" d="${grid.join('')}"/>`);
+  const frostDef = `<filter id="iso-frost" filterUnits="userSpaceOnUse" x="0" y="0" width="${W}" height="${H}"><feGaussianBlur stdDeviation="${BLUR}"/></filter>`;
+  out.push(`<svg class="iso-svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(aria)}" aria-describedby="iso-desc" style="width:100%;max-width:${Math.round(W * 1.077)}px;min-width:${Math.round(W * .75)}px"><desc id="iso-desc">${esc(desc)}</desc><defs>${mk('ink')}${mk('mut')}${mk('off')}${frostDef}</defs><path class="iso-grid" d="${grid.join('')}"/>${Z.map((z) => `<polygon class="iso-zone" points="${pts(z.poly)}"/>`).join('')}`);
   const leadAt = out.length;
   for (const l of links) {
     const kind = l.ghost ? 'off' : l.money ? 'ink' : 'mut', [sx, sy] = l.path[0];
@@ -528,22 +530,35 @@ function build(spec, { name = '', id = '' } = {}) {
   }
   for (const k of Object.keys(B).sort((a, b) => B[a].y - B[b].y || B[a].x - B[b].x)) {
     const cls = `${k === '발행사' ? 'iso-main' : ''} ${gone(k) ? 'iso-ghost' : ''}`;
-    out.push(k === '이용자' ? person(B[k], cls) : `<g class="iso-blk ${cls}">${B[k].el.join('')}</g>`);
+    out.push(`<g class="iso-blk ${cls}" data-k="${k}">${B[k].el.join('')}</g>`);
   }
   const leads = [], leadTag = ([a, b]) => `<line class="iso-lead" x1="${f(a[0])}" y1="${f(a[1])}" x2="${f(b[0])}" y2="${f(b[1])}"/>`;
+  const frost = [], frostAt = out.length;   // 이름표 뒤 흰 번짐 자리: 블록 위, 이름표 아래
   for (const p of pills) if (p.ld) leads.push(leadTag(p.ld));
   for (const k of labIds) {
     const c = labels[k], { L } = c, { x, y, w, h } = c.r;
     const txt = [...L.head.map((t, i) => `<text class="iso-t1" x="10" y="${17 + i * 15.5}" font-size="${F1}">${esc(t)}</text>`), ...L.body.map((t, i) => `<text class="iso-t2" x="10" y="${17 + (L.head.length - 1) * 15.5 + 15.5 + i * 14.5}" font-size="${F2}">${esc(t)}</text>`)];
     leads.push(leadTag(c.ld));
-    out.push(`<g class="iso-lab ${k === '코인' ? 'iso-coin' : ''} ${gone(k) ? 'iso-ghost' : ''}" transform="translate(${f(x)},${f(y)})"><rect width="${w}" height="${h}" rx="5"/>${txt.join('')}</g>`);
+    frost.push([x, y, w, h, 5]);
+    out.push(`<g class="iso-lab ${k === '코인' ? 'iso-coin' : ''} ${gone(k) ? 'iso-ghost' : ''}" transform="translate(${f(x)},${f(y)})" data-k="lab-${k}"><rect width="${w}" height="${h}" rx="5"/>${txt.join('')}</g>`);
   }
-  out.splice(leadAt, 0, ...leads);
   for (const p of pills) {
     const kind = p.link.ghost ? 'off' : p.link.money ? 'ink' : 'mut';
-    out.push(`<g class="iso-pill iso-pill-${kind}" data-id="${p.link.id}" transform="translate(${f(p.x)},${f(p.y)})"><rect width="${p.w}" height="${p.h}" rx="10"/>${p.lines.map((t, i) => `<text x="${p.w / 2}" y="${15 + i * 14.5}" text-anchor="middle" font-size="${F2}">${esc(t)}</text>`).join('')}</g>`);
+    frost.push([p.x, p.y, p.w, p.h, 10]);
+    out.push(`<g class="iso-pill iso-pill-${kind}" data-id="${p.link.id}" transform="translate(${f(p.x)},${f(p.y)})" data-k="pill-${p.link.id}"><rect width="${p.w}" height="${p.h}" rx="10"/>${p.lines.map((t, i) => `<text x="${p.w / 2}" y="${15 + i * 14.5}" text-anchor="middle" font-size="${F2}">${esc(t)}</text>`).join('')}</g>`);
   }
-  if (note) out.push(`<g class="iso-note" transform="translate(${note.x},${note.y})"><rect width="${note.w}" height="${note.h}" rx="12"/><text x="${note.w / 2}" y="16.5" text-anchor="middle" font-size="${F2}">${esc(note.text)}</text></g>`);
+  for (const z of Z) {
+    const c = pick('zone', z.name), { x, y } = c.r, two = c.L?.two;
+    frost.push([x, y, c.r.w, c.r.h, 6]);
+    out.push(`<g class="iso-ztag" transform="translate(${f(x)},${f(y)})" data-k="zone-${esc(z.name)}"><rect width="${c.r.w}" height="${c.r.h}"/><text class="iso-zone-t" x="4" y="14.5" font-size="${F2}">${esc(z.name)}</text><text class="iso-zone-r" x="${two ? 4 : f(4 + tw(z.name, F2, 1) + 6)}" y="${two ? 29 : 14.5}" font-size="11">${esc(z.rules)}</text></g>`);
+  }
+  if (note) {
+    frost.push([note.x, note.y, note.w, note.h, 12]);
+    out.push(`<g class="iso-note" transform="translate(${note.x},${note.y})" data-k="note"><rect width="${note.w}" height="${note.h}" rx="12"/><text x="${note.w / 2}" y="16.5" text-anchor="middle" font-size="${F2}">${esc(note.text)}</text></g>`);
+  }
+  // 흰 번짐: 이름표마다 사방으로 FROST px 큰 흰 네모를 한 묶음으로 모아 한 번만 흐린다
+  out.splice(frostAt, 0, `<g class="iso-halo" filter="url(#iso-frost)">${frost.map(([x, y, w, h, r]) => `<rect x="${f(x - FROST)}" y="${f(y - FROST)}" width="${f(w + 2 * FROST)}" height="${f(h + 2 * FROST)}" rx="${r + FROST}"/>`).join('')}</g>`);
+  out.splice(leadAt, 0, ...leads);
   out.push('</svg>');
   return out.join('');
 }

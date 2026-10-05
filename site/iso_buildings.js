@@ -66,8 +66,8 @@ export function seoul(cx, cy, flagFile) {
 // 사진 실측: 높이 : 한 변 약 7.2, 단면 곡선은 사진 윤곽과 4% 안에서 맞다, 어두운 띠 높이 .34 .58 .74
 export function ifc(cx, cy, flagFile) {
   const { P, el, ps, face, fl, ln, path, qL, qR, flag } = kit(cx, cy, flagFile);
-  const s0 = 26, Hh = 186, ch = .22;
-  const prof = [[0, 1], [.3, 1], [.6, .985], [.77, .975], [.85, .93], [.9, .88], [.93, .82], [.96, .7], [.98, .6], [1, .52]].map(([fz, r]) => [fz * Hh, r * s0]);
+  const s0 = 28, Hh = 186, ch = .22;
+  const prof = [[0, 1], [.3, 1], [.6, 1], [.62, .97], [.74, .97], [.76, .93], [.86, .93], [.88, .88], [1, .78]].map(([fz, r]) => [fz * Hh, r * s0]);
   // 팔각 단면의 네 꼭짓점 줄: 왼쪽 큰 면 A-B, 앞 깎은 면 B-C, 오른쪽 큰 면 C-D(화면에서 보이는 세 면)
   const A = prof.map(([z, s]) => P(-s / 2 + ch * s, s / 2, z)), B = prof.map(([z, s]) => P(s / 2 - ch * s, s / 2, z));
   const C = prof.map(([z, s]) => P(s / 2, s / 2 - ch * s, z)), D = prof.map(([z, s]) => P(s / 2, -s / 2 + ch * s, z));
@@ -77,50 +77,49 @@ export function ifc(cx, cy, flagFile) {
   const sAt = (z) => { let i = 1; while (i < prof.length - 1 && prof[i][0] < z) i++; const [z0, s0_] = prof[i - 1], [z1, s1] = prof[i]; return s0_ + (s1 - s0_) * (z - z0) / (z1 - z0); };
   // 층 가로선: 세 면을 끊김 없이 잇는다. 4층마다
   const lines = [];
-  for (let z = Hh / 22; z < Hh * .9; z += Hh / 22) { const s = sAt(z), e = ch * s; lines.push([P(-s / 2 + e, s / 2, z), P(s / 2 - e, s / 2, z), P(s / 2, s / 2 - e, z), P(s / 2, -s / 2 + e, z)]); }
+  for (let z = Hh / 22; z < Hh * .9; z += Hh / 40) { const s = sAt(z), e = ch * s; lines.push([P(-s / 2 + e, s / 2, z), P(s / 2 - e, s / 2, z), P(s / 2, s / 2 - e, z), P(s / 2, -s / 2 + e, z)]); }
   path('iso-fline iso-fline-d', lines);
   // 세로 홈: 앞 깎은 면 양옆
   ln(prof.map(([z, s]) => P(s / 2 - ch * s, s / 2, z)));
   ln(prof.map(([z, s]) => P(s / 2, s / 2 - ch * s, z)));
   // 기계층 어두운 띠: 큰 면 두 개에만, 깎은 면 쪽에 붙여 큰 면 길이의 76%
-  for (const fz of [.34, .58, .74]) {
+  for (const fz of [.34, .79]) {
     const z = fz * Hh, s = sAt(z), e = ch * s, L = s - 2 * e, k = .76 * L;
     fl('iso-dk', qL(s / 2, s / 2 - e - k, s / 2 - e, z, z + 4));
     fl('iso-dk', qR(s / 2, s / 2 - e - k, s / 2 - e, z, z + 4));
   }
   const st = prof[prof.length - 1][1], e = ch * st;
   face('iso-t', [P(-st / 2 + e, -st / 2, Hh), P(st / 2 - e, -st / 2, Hh), P(st / 2, -st / 2 + e, Hh), P(st / 2, st / 2 - e, Hh), P(st / 2 - e, st / 2, Hh), P(-st / 2 + e, st / 2, Hh), P(-st / 2, st / 2 - e, Hh), P(-st / 2, -st / 2 + e, Hh)]);
-  flag(0, 0, Hh, st * .8);
+  flag(0, 0, Hh, st * .85);
   return { el, ps };
 }
 
 // 싱가포르 MAS 빌딩: 정면에 굵은 기둥, 양끝에 가는 살창, 맨 위에 창 없는 띠와 가로 틈 두 줄. 옆면은 민벽과 살창
-// 사진 실측: 정면 : 옆면 : 높이 약 1 : 1.15 ~ 1.3 : 2.7(지붕이 3:4가 되도록 36 : 48 : 100), 정면 기둥 칸 쪽 구성은 폭의 %
+// 사진 실측: 정면 : 옆면 : 높이 = 48 : 36 : 100(지붕이 4:3. 사진에서 띠 있는 정면이 옆면보다 넓다), 정면 가로 구성은 폭의 %
 export function mas(cx, cy, flagFile) {
-  const { P, el, ps, fl, path, box, qL, qR, flag } = kit(cx, cy, flagFile);
-  const Wd = 36, Dd = 48, Hh = 100, x0 = -Wd / 2, x1 = Wd / 2, y0 = -Dd / 2, y1 = Dd / 2, zt = Hh * .842;
+  const { el, ps, fl, box, qL, qR, flag } = kit(cx, cy, flagFile);
+  const Wd = 48, Dd = 36, Hh = 100, x0 = -Wd / 2, x1 = Wd / 2, y0 = -Dd / 2, y1 = Dd / 2, zt = Hh * .842;
   box(x0, x1, y0, y1, 0, Hh, { l: 'iso-w', r: 'iso-w' });
   // 정면(왼쪽 면) 가로 구성, 폭의 %: e 모서리 기둥, b 갈색 띠, v 살창, p 밝은 기둥, g 어두운 틈, n 민 패널
-  const seg = [['e', 4.4], ['b', 6.7], ['v', 16.9], ['p', 5.8], ['g', 4.4], ['p', 5.9], ['g', 7.1], ['n', 10], ['p', 5.6], ['g', 4.7], ['p', 5.2], ['g', 4.9], ['v', 14.8], ['e', 3.6]];
+  const seg = [['e', 4.4], ['b', 6.7], ['v', 16.9], ['p', 8], ['g', 2.8], ['p', 8], ['g', 3.5], ['n', 10], ['p', 8], ['g', 2.9], ['p', 7.5], ['g', 2.9], ['v', 14.8], ['e', 3.6]];
   let a = x0; const spans = seg.map(([t, w]) => { const r = [t, a, a + w / 100 * Wd]; a = r[2]; return r; });
   // 맨 위: 창 없는 띠 7.5%, 어두운 틈 2.6%, 보 1.9%, 어두운 틈 1.9%, 보 1.9%, 그 아래부터 기둥과 살창
   const ex0 = spans[0][2], ex1 = spans[spans.length - 1][1];
-  fl('iso-dk', qL(y1, ex0, ex1, Hh * (1 - .101), Hh * (1 - .075)));
-  fl('iso-dk', qL(y1, ex0, ex1, Hh * (1 - .139), Hh * (1 - .12)));
+  for (const z of [.84, .875, .91]) fl('iso-dk', qL(y1, ex0, ex1, Hh * z, Hh * z + 2.6));   // 사진: 깊게 들어간 어두운 띠 셋과 그 사이 넓은 흰 보
   // 살창 칸: 어두운 바탕에 밝은 날
   const slats = (q, s0, s1, z1, n) => { const pw = (s1 - s0) / n; for (let i = 0; i < n; i++) fl('iso-dp', q(s0 + i * pw + pw * .5, s0 + i * pw + pw * .85, 0, z1)); };
   for (const [t, s0, s1] of spans) {
     if (t === 'b' || t === 'g') fl('iso-dk', qL(y1, s0, s1, 0, zt));
     if (t === 'v') { fl('iso-dk', qL(y1, s0, s1, 0, zt)); slats((u0, u1, z0, z1) => qL(y1, u0, u1, z0, z1), s0, s1, zt, 6); }
   }
-  // 옆면(오른쪽 면): 앞 모서리에서 민벽 30%, 살창 65%, 끝 5%. 살창 위는 왕관(유리 띠, 열린 철골)
-  const ra = y1 - .3 * Dd, rb = y1 - .95 * Dd, zl = Hh * .82;
+  // 옆면(오른쪽 면): 앞 모서리에서 민벽 30%, 살창 65%, 끝 5%. 살창 위 22%는 왕관이고, 아래에서 위로 선반과 유리 띠, 열린 철골, 정면과 같은 높이의 창 없는 띠(7.5%)다
+  const ra = y1 - .3 * Dd, rb = y1 - .95 * Dd, zl = Hh * .775;
   fl('iso-dk', qR(x1, rb, ra, 0, zl));
   slats((u0, u1, z0, z1) => qR(x1, u0, u1, z0, z1), rb, ra, zl, 14);
-  fl('iso-dp', qR(x1, rb, ra, zl, Hh * .9));
-  fl('iso-dk', qR(x1, rb, ra, Hh * .9, Hh * .98));
-  // 지붕은 3:4라 국기를 y 방향으로 눕히면 가장자리까지 꼭 맞는다
-  flag(0, 0, Hh, Dd, 'y');
+  fl('iso-dp', qR(x1, rb, ra, zl, Hh * .865));
+  fl('iso-dk', qR(x1, rb, ra, Hh * .865, Hh * .925));
+  // 지붕이 4:3이라 국기가 가장자리까지 꼭 맞는다
+  flag(0, 0, Hh, Wd);
   return { el, ps };
 }
 

@@ -97,7 +97,8 @@ function route() {
   render();
   if (state.rules) {
     const at = state.rules !== 'all' && document.getElementById(`rule-${state.rules}`);
-    if (at) at.scrollIntoView({ block: 'start', behavior: 'instant' }); else window.scrollTo({ top: 0, behavior: 'instant' });
+    const top = at?.previousElementSibling?.matches('.rs-gh') ? at.parentElement : at; // 묶음 첫 항목이면 묶음 제목부터 보이게
+    if (top) top.scrollIntoView({ block: 'start', behavior: 'instant' }); else window.scrollTo({ top: 0, behavior: 'instant' });
   }
 }
 function selectReport(index) {
@@ -277,7 +278,7 @@ function home() {
     ${chartComposition()}
     ${ruleList(kr, foreign)}
     ${flowSection()}
-    <div class="home-sec"><h2>한국 기준값과 해외 기준값</h2><p>한국 제안값은 해외 규칙과 국회 법안을 살펴 정했습니다. 표는 규칙마다 한국과 해외의 값을 나란히 보여 주고, 아래 그래프는 숫자 규칙 4개에서 한국 제안값이 어디에 놓이는지 보여 줍니다.</p></div>${ruleTable(jurisdictions, copy)}${ruleDots(jurisdictions, copy)}<div class="disclosure"><strong>${KR_NOTICE}</strong><br>${foreignNames()} 판정: ${FOREIGN_NOTICE}</div>${rulesDock()}</div>`;
+    <div class="home-sec"><h2>한국 기준값과 해외 기준값</h2><p>한국 제안값은 해외 기준과 국회 법안을 살펴 정했습니다. 표는 규칙마다 한국과 해외의 값을 나란히 보여 주고, 아래 그래프는 숫자 규칙 4개에서 한국 제안값이 어디에 놓이는지 보여 줍니다.</p></div>${ruleTable(jurisdictions, copy)}${ruleDots(jurisdictions, copy)}<div class="disclosure"><strong>${KR_NOTICE}</strong><br>${foreignNames()} 판정: ${FOREIGN_NOTICE}</div>${rulesDock()}</div>`;
 }
 // ---- 개요 오른쪽 끝에서 나오는 규칙 설명 패널. 열고 닫는 것은 CSS(:hover, :has(:focus-visible))가 하고, 터치는 단추가 .open을 켠다 ----
 // 규칙 한 줄 그림: 지금 고른 보고서를 한국 후보값으로 판정한 결과(evaluateRule)를 작은 그림과 짧은 글로 보인다. 패널과 설명 페이지가 같이 쓴다
@@ -325,7 +326,7 @@ function glanceRow(rid) {
 function rulesDock() {
   const item = (rid) => `<a class="rx-item" href="#rules/${rid}"><small>${rid}</small><b>${ruleName(rid)}</b><p>${esc(copy.규칙설명[rid].split(/(?<=다\.)\s/)[0])}</p></a>`;
   const group = ([name, ids]) => `<div class="rx-group"><h3>${esc(name)}</h3>${ids.map(item).join('')}</div>`;
-  return `<aside class="rx-dock" aria-label="규칙 설명"><i class="rx-edge" aria-hidden="true"></i><button type="button" class="rx-tab" aria-controls="rx-panel" aria-expanded="false">규칙</button><div class="rx-panel" id="rx-panel"><div class="rx-head"><strong>규칙 ${RULE_IDS.length}개</strong><a href="#rules">설명 페이지</a></div>${GROUPS.map(group).join('')}</div></aside>`;
+  return `<aside class="rx-dock" aria-label="판정 항목 설명"><i class="rx-edge" aria-hidden="true"></i><button type="button" class="rx-tab" aria-controls="rx-panel" aria-expanded="false">판정 항목</button><div class="rx-panel" id="rx-panel"><div class="rx-head"><strong>판정 항목 ${RULE_IDS.length}개</strong><a href="#rules">설명 페이지</a></div>${GROUPS.map(group).join('')}</div></aside>`;
 }
 // ---- 규칙 설명 페이지(#rules, #rules/R03): 규칙마다 설명, 나라별 기준 표, 보고서 현황 ----
 const RULE_FIELD = { R03: 'treasury_max_maturity_days', R04: 'repo_max_maturity_days', R11: 'circulation_formula_disclosed', R12: 'custodian_disclosure', R15: 'management_certification', R07: 'disclosure_cadence', R13: 'redemption_days', R14: 'interest_paid' }; // field_notes가 있는 규칙
@@ -410,7 +411,7 @@ function ruleDoc(rid) {
 function rulesPage() {
   const index = GROUPS.map(([name, ids]) => `<div><h2>${esc(name)}</h2>${ids.map((rid) => `<a href="#rules/${rid}"><small class="num">${rid}</small> ${ruleName(rid)}</a>`).join('')}</div>`).join('');
   const group = ([name, ids]) => `<section class="rs-group" aria-label="${esc(name)}"><div class="rs-gh"><h2>${esc(name)}</h2><p>${esc(copy.묶음설명?.[name] || '')}</p></div>${ids.map(ruleDoc).join('')}</section>`;
-  return `<div class="rs-page"><a href="#" class="back-link">← 개요로 돌아가기</a><section class="rs-top panel"><h1>규칙 ${RULE_IDS.length}개</h1><p>한국 후보 기준 ${RULE_IDS.length}개로 준비금 보고서 한 건을 점검하고, 같은 규칙으로 해외 ${FOREIGN_IDS.length}곳(미국, EU 일반, EU 중요, 홍콩, 싱가포르, 일본)의 기준에도 맞춰 봅니다. 규칙은 네 묶음으로 나뉩니다.</p><p>칸 색의 뜻은 아래 범례와 같습니다. ${KR_NOTICE}.</p>${statusLegend()}<nav class="rs-index" aria-label="규칙 목록">${index}</nav></section>${GROUPS.map(group).join('')}</div>`;
+  return `<div class="rs-page"><a href="#" class="back-link">← 종합 판정으로 돌아가기</a><section class="rs-top panel"><h1>판정 항목 ${RULE_IDS.length}개</h1><p>한국 후보 기준 ${RULE_IDS.length}개로 준비금 보고서 한 건을 점검하고, 같은 항목으로 해외 ${FOREIGN_IDS.length}곳(미국, EU 일반, EU 중요, 홍콩, 싱가포르, 일본)의 기준에도 맞춰 봅니다. 항목은 네 묶음으로 나뉩니다.</p><p>칸 색의 뜻은 아래 범례와 같습니다. ${KR_NOTICE}.</p>${statusLegend()}<nav class="rs-index" aria-label="판정 항목 목록">${index}</nav></section>${GROUPS.map(group).join('')}</div>`;
 }
 function rulesPane(id) {
   const values = judged(id), active = values.filter((v) => [STATUS.MET,STATUS.UNMET,STATUS.CAUTION].includes(v.status));
@@ -496,12 +497,61 @@ function reportsPane(id) {
   return `<div class="pane-intro">${esc(copy.나라[id].이름)} 발행사 검증 보고서 ${indices.length}건. 보고서를 누르면 그 보고서로 판정이 바뀝니다.</div>${groups.map(group).join('')}`;
 }
 // ---- 나라 상세 오른쪽 열 맨 위 구조 흐름도: 화면문구.json 나라[id].흐름이 있을 때만 그린다 ----
+// 장판 묶음: 'group' 판정 항목 4묶음(기본), 'flow' 흐름 2묶음. 나라를 옮겨도 고른 것을 유지한다
+let isoMode = 'group';
+const isoModeBtns = () => `<div class="iso-mode" role="group" aria-label="장판 묶음">${[['group', '판정 항목별'], ['flow', '흐름별']].map(([m, t]) => `<button type="button" data-iso-mode="${m}" aria-pressed="${isoMode === m}">${t}</button>`).join('')}</div>`;
+// 장판 묶음을 바꿀 때 그림이 천천히 옮겨 가게: 바꾸기 전 블록, 이름표 자리를 재 두었다가 새 그림에서 그 자리부터 미끄러지게 한다. 선, 장판, 지시선은 조금 뒤에 떠오른다
+const isoPos = (svg) => {
+  const m = new Map(), c = svg.getBoundingClientRect(), s = svg.viewBox.baseVal.width / c.width;
+  svg.querySelectorAll('[data-k]').forEach((el) => { const b = el.getBoundingClientRect(); m.set(el.dataset.k, [(b.left - c.left) * s, (b.top - c.top) * s]); });
+  return m;
+};
+function isoGlide(svg, old) {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const now = isoPos(svg), move = { duration: 700, easing: 'cubic-bezier(.4,0,.2,1)' }, fade = { duration: 450, delay: 350, easing: 'ease-out', fill: 'backwards' };
+  svg.querySelectorAll('[data-k]').forEach((el) => {
+    const p = old.get(el.dataset.k), q = now.get(el.dataset.k);
+    if (!p) { el.animate([{ opacity: 0 }, { opacity: 1 }], fade); return; }
+    const dx = p[0] - q[0], dy = p[1] - q[1], t = el.transform?.baseVal.consolidate()?.matrix, ax = t?.e ?? 0, ay = t?.f ?? 0;
+    if (Math.abs(dx) + Math.abs(dy) > .5) el.animate([{ transform: `translate(${ax + dx}px,${ay + dy}px)` }, { transform: `translate(${ax}px,${ay}px)` }], move);
+  });
+  svg.querySelectorAll('.iso-zone, .iso-ln, .iso-dot, .iso-lead, .iso-halo').forEach((el) => el.animate([{ opacity: 0 }, { opacity: 1 }], fade));
+}
+function setIsoMode(m) {
+  isoMode = m;
+  document.querySelectorAll('.iso-section, .iso-dlg').forEach((root) => {
+    const svg = root.querySelector('.iso-svg'), id = root.dataset.iso, info = copy.나라[id];
+    root.querySelectorAll('[data-iso-mode]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.isoMode === m)));
+    if (!svg || !info?.흐름) return;
+    const old = isoPos(svg), box = document.createElement('div');
+    box.innerHTML = isoFlowSvg(info.흐름, { name: info.이름, id, zones: m });
+    svg.replaceWith(box.firstElementChild);
+    isoGlide(root.querySelector('.iso-svg'), old);
+  });
+}
 function isoSection(info, id) {
   const spec = info.흐름;
   if (!spec?.노드) return '';
   const ghost = Object.values(spec.노드).some((n) => n?.없음);
-  const how = `돈과 코인이 오가는 길은 진한 점선, 확인과 공개는 옅은 점선${ghost ? '이고, 점선 테두리의 흐린 블록은 규칙에서 요구하지 않는 단계입니다.' : '입니다.'}`;
-  return `<section class="panel iso-section" aria-labelledby="iso-title"><h2 id="iso-title">${esc(info.이름)} 흐름</h2><p>${how}</p><div class="iso-scroll" role="group" aria-labelledby="iso-title" tabindex="0">${isoFlowSvg(spec, { name: info.이름, id })}</div><p class="iso-hint" aria-hidden="true">옆으로 밀어서 보기</p></section>`;
+  const key = (cls, name) => `<span><i class="iso-key ${cls}" aria-hidden="true"></i>${name}</span>`; // 범례: 선 색과 같은 동그라미
+  const legend = `<span class="legend iso-legend">${key('money', '돈과 코인')}${key('check', '확인과 공개')}${ghost ? key('ghost', '규칙에 없는 단계') : ''}</span>`;
+  return `<section class="panel iso-section" data-iso="${esc(id)}" aria-labelledby="iso-title"><div class="iso-head"><h2 id="iso-title">${esc(info.이름)} 흐름</h2>${isoModeBtns()}<button type="button" class="iso-zoom" data-action="iso-zoom">크게 보기</button></div><p>발행, 준비금 보관, 검증, 공개가 누구 사이에서 일어나는지 보여 줍니다.</p>${legend}<div class="iso-scroll" data-action="iso-zoom" role="group" aria-labelledby="iso-title">${isoFlowSvg(spec, { name: info.이름, id, zones: isoMode })}</div></section>`;
+}
+// 흐름도 크게 보기: 열 안의 그림과 같은 전체판(블록 이름표 줄과 선 이름표 모두)을 대화 상자에 원래 크기로 그린다. Esc나 바깥을 누르면 닫힌다
+function openIsoZoom(section) {
+  let dlg = document.querySelector('.iso-dlg');
+  if (!dlg) {
+    dlg = document.createElement('dialog'); dlg.className = 'iso-dlg';
+    dlg.addEventListener('click', (e) => {
+      const m = e.target.closest('[data-iso-mode]'); if (m) { setIsoMode(m.dataset.isoMode); return; }
+      if (e.target === dlg || e.target.closest('[data-action="iso-close"]')) dlg.close();
+    });
+    document.body.append(dlg);
+  }
+  const title = section.querySelector('h2')?.textContent || '흐름', id = section.dataset.iso, info = copy.나라[id];
+  dlg.dataset.iso = id;
+  dlg.innerHTML = `<div class="iso-head"><h2>${esc(title)}</h2>${isoModeBtns()}<button type="button" class="iso-zoom" data-action="iso-close">닫기</button></div>${info?.흐름 ? isoFlowSvg(info.흐름, { name: info.이름, id, zones: isoMode }) : ''}`;
+  dlg.showModal();
 }
 // ---- 나라 한눈에: 법(논의, 제정, 시행 단계 점) + 숫자 카드 6개 + 한 줄 설명 ----
 const STAGES = ['논의', '제정', '시행'];
@@ -543,7 +593,7 @@ function detail() {
     id === 'kr-v1' ? KR_NOTICE : '',
     id === 'jp' ? JP_NOTICE : '',
   ].filter(Boolean);
-  return `<div class="detail"><div class="detail-head"><a href="#" class="back-link">← 개요로 돌아가기</a><span class="context">선택 보고서 ${esc(label(r))} / 기준일 ${esc(r.as_of)}</span></div><div class="detail-layout"><section class="identity-card panel" aria-label="${esc(info.이름)} 개요"><div class="globe"></div><div class="identity-top"><div class="identity-name"><h1>${esc(info.이름)}</h1><div class="legal">법적 상태<strong>${esc(jur.legal_status)}</strong></div></div></div><div><div class="score"><strong class="num">${met}<small>/ ${done}</small></strong><span>판정된 규칙 ${done}개 중 충족</span></div><div class="rule-grid" role="img" aria-label="규칙 ${RULE_IDS.length}개 판정: 충족 ${met}, 주의 ${caution}, 미충족 ${unmet}, 판정 안 됨 ${none}">${results.map((v) => `<span class="rg ${statusClass(v.status)}" title="${v.rule} ${esc(copy.규칙15개[v.rule])}: ${esc(statusLabel(v))}${notDisclosed(v) ? `, 판정 ${esc(v.status)}` : ''}. ${esc(ruleHelp(v.rule))}"><b>${v.rule}</b></span>`).join('')}</div>${statusLegend({met,caution,unmet,none})}</div><div class="eli"><div class="small-head">${esc(info.이름)} 한눈에</div>${glance(info, id)}</div>${notes.length ? `<div class="notes">${notes.map((n) => `<div class="comparison-note">${n}</div>`).join('')}</div>` : ''}${links.length ? `<div><div class="small-head">규제 원문</div><ul class="source-links">${links.map(([u,t]) => `<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t)}</a></li>`).join('')}</ul></div>` : ''}<div class="source-date">규칙 자료 기준일 ${esc(jur.as_of)} / 판정 보고서 기준일 ${esc(r.as_of)}</div></section><div class="detail-side">${isoSection(info, id)}<section class="detail-right panel" aria-label="${esc(info.이름)} 판정과 보고서"><div class="detail-tabs" role="tablist" aria-label="상세 내용"><button type="button" role="tab" data-tab="rules" aria-selected="${state.tab === 'rules'}" tabindex="0">규칙 ${RULE_IDS.length}개</button><button type="button" role="tab" data-tab="reports" aria-selected="${state.tab === 'reports'}" tabindex="0">이 나라 보고서${id === 'hk' ? ` / 주간 명세 ${weekly.주간.length}주` : ` ${reportCount}건`}</button></div><div role="tabpanel">${state.tab === 'rules' ? rulesPane(id) : reportsPane(id)}</div></section></div></div><nav class="country-nav" aria-label="나라 이동"><a href="#" >전체 개요</a>${ORDER.map((key) => `<a href="#${key}" class="${id === key ? 'active' : ''}" ${id === key ? 'aria-current="page"' : ''}>${esc(copy.나라[key].이름)}</a>`).join('')}</nav></div>`;
+  return `<div class="detail"><div class="detail-head"><a href="#" class="back-link">← 종합 판정으로 돌아가기</a><span class="context">선택 보고서 ${esc(label(r))} / 기준일 ${esc(r.as_of)}</span></div><div class="detail-layout"><section class="identity-card panel" aria-label="${esc(info.이름)} 개요"><div class="globe"></div><div class="identity-top"><div class="identity-name"><h1>${esc(info.이름)}</h1><div class="legal">법적 상태<strong>${esc(jur.legal_status)}</strong></div></div></div><div><div class="score"><strong class="num">${met}<small>/ ${done}</small></strong><span>판정된 규칙 ${done}개 중 충족</span></div><div class="rule-grid" role="img" aria-label="규칙 ${RULE_IDS.length}개 판정: 충족 ${met}, 주의 ${caution}, 미충족 ${unmet}, 판정 안 됨 ${none}">${results.map((v) => `<span class="rg ${statusClass(v.status)}" title="${v.rule} ${esc(copy.규칙15개[v.rule])}: ${esc(statusLabel(v))}${notDisclosed(v) ? `, 판정 ${esc(v.status)}` : ''}. ${esc(ruleHelp(v.rule))}"><b>${v.rule}</b></span>`).join('')}</div>${statusLegend({met,caution,unmet,none})}</div><div class="eli"><div class="small-head">${esc(info.이름)} 한눈에</div>${glance(info, id)}</div>${notes.length ? `<div class="notes">${notes.map((n) => `<div class="comparison-note">${n}</div>`).join('')}</div>` : ''}${links.length ? `<div><div class="small-head">규제 원문</div><ul class="source-links">${links.map(([u,t]) => `<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(t)}</a></li>`).join('')}</ul></div>` : ''}<div class="source-date">규칙 자료 기준일 ${esc(jur.as_of)} / 판정 보고서 기준일 ${esc(r.as_of)}</div></section><div class="detail-side">${isoSection(info, id)}<section class="detail-right panel" aria-label="${esc(info.이름)} 판정과 보고서"><div class="detail-tabs" role="tablist" aria-label="상세 내용"><button type="button" role="tab" data-tab="rules" aria-selected="${state.tab === 'rules'}" tabindex="0">규칙 ${RULE_IDS.length}개</button><button type="button" role="tab" data-tab="reports" aria-selected="${state.tab === 'reports'}" tabindex="0">이 나라 보고서${id === 'hk' ? ` / 주간 명세 ${weekly.주간.length}주` : ` ${reportCount}건`}</button></div><div role="tabpanel">${state.tab === 'rules' ? rulesPane(id) : reportsPane(id)}</div></section></div></div><nav class="country-nav" aria-label="나라 이동"><a href="#" >종합 판정</a>${ORDER.map((key) => `<a href="#${key}" class="${id === key ? 'active' : ''}" ${id === key ? 'aria-current="page"' : ''}>${esc(copy.나라[key].이름)}</a>`).join('')}</nav></div>`;
 }
 // 점 그래프는 칸 폭에 1:1로 맞춘다. 그린 뒤 칸 폭을 재서 폭이 다르면 그 폭으로 다시 그린다
 // 판정 흐름은 칸 폭에 맞춰 가로로 늘림. 그린 뒤 칸 폭을 재서 다르면 그 폭으로 다시 그림
@@ -574,7 +624,7 @@ function render() {
   $('#rail-kr').classList.toggle('active',state.jurisdiction === 'kr-v1');
   $('#rail-country').href = state.jurisdiction && state.jurisdiction !== 'kr-v1' ? `#${state.jurisdiction}` : '#us';
   renderSidebar($('#side'), {
-    ruleGroups: GROUPS, ruleNames: copy.규칙15개, ruleActive: state.rules,
+    ruleGroups: GROUPS, ruleActive: state.rules,
     reports, order: ORDER, jurisdiction: state.jurisdiction, index: state.reportIndex, ym, coin, groups: byToken([...reports.keys()]), openReports: (tok, el) => toggleReportPop(!(rpTok === tok && !reportPop.hidden), tok, el),
     names: Object.fromEntries(ORDER.map((id) => [id, copy.나라[id].이름])),
     subs: Object.fromEntries(ORDER.map((id) => [id, copy.나라[id].부제 || ''])),
@@ -717,6 +767,8 @@ searchBox.addEventListener('keydown', (e) => {
 });
 searchList.addEventListener('mousedown', (e) => { const li = e.target.closest('[data-i]'); if (li) { e.preventDefault(); pickHit(Number(li.dataset.i)); } });
 $('#app').addEventListener('click',(e) => {
+  const isoM = e.target.closest('[data-iso-mode]'); if (isoM) { setIsoMode(isoM.dataset.isoMode); return; }
+  const zoom = e.target.closest('[data-action="iso-zoom"]'); if (zoom) { openIsoZoom(zoom.closest('.iso-section')); return; }
   const report = e.target.closest('[data-report]'); if (report) return selectReport(Number(report.dataset.report));
   const country = e.target.closest('[data-country]'); if (country) return selectJurisdiction(country.dataset.country);
   const tab = e.target.closest('[data-tab]'); if (tab) {const next = tab.dataset.tab; if (next !== state.tab) window.location.hash = `#${state.jurisdiction}${next === 'reports' ? '/reports' : ''}`;return;}
@@ -730,7 +782,12 @@ $('#app').addEventListener('change',(e) => {
   }
 });
 // 규칙 설명 패널: 마우스는 CSS가 열고 닫는다. 손가락(터치, 펜)은 손잡이를 눌러 열고, 바깥을 누르거나 Esc로 닫는다
-$('#app').addEventListener('mousedown', (e) => { if (e.target.closest('.rx-tab')) e.preventDefault(); }); // 마우스로 눌러도 포커스가 남아 패널이 안 닫히는 것을 막음
+$('#app').addEventListener('mousedown', (e) => { if (e.target.closest('.rx-tab')) e.preventDefault(); });
+// 판정 항목 패널: 탭이나 화면 오른쪽 끝 띠에 커서만 대도 열리고, 패널 밖으로 나가면 잠깐 뒤 닫힌다(밀려 나오는 동안 커서가 탭에서 벗어나도 닫히지 않게)
+let rxTimer = 0;
+const rxSet = (d, on) => { d.classList.toggle('open', on); d.querySelector('.rx-tab')?.setAttribute('aria-expanded', String(on)); };
+$('#app').addEventListener('mouseover', (e) => { const d = e.target.closest?.('.rx-dock'); if (!d) return; clearTimeout(rxTimer); if (e.target.closest('.rx-tab, .rx-edge')) rxSet(d, true); });
+$('#app').addEventListener('mouseout', (e) => { const d = e.target.closest?.('.rx-dock'); if (!d || d.contains(e.relatedTarget)) return; clearTimeout(rxTimer); rxTimer = setTimeout(() => rxSet(d, false), 300); }); // 마우스로 눌러도 포커스가 남아 패널이 안 닫히는 것을 막음
 $('#app').addEventListener('click', (e) => { const t = e.target.closest('.rx-tab'); if (t && e.pointerType !== 'mouse') t.setAttribute('aria-expanded', String(t.closest('.rx-dock').classList.toggle('open'))); });
 document.addEventListener('pointerdown', (e) => { const d = document.querySelector('.rx-dock.open'); if (d && !d.contains(e.target)) { d.classList.remove('open'); d.querySelector('.rx-tab').setAttribute('aria-expanded', 'false'); } });
 document.addEventListener('keydown', (e) => { const d = e.key === 'Escape' && document.querySelector('.rx-dock'); if (d) { d.classList.remove('open'); d.querySelector('.rx-tab').setAttribute('aria-expanded', 'false'); if (d.contains(document.activeElement)) document.activeElement.blur(); } });
