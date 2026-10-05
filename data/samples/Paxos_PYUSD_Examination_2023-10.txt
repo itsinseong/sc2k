@@ -1,0 +1,317 @@
+               
+
+
+
+
+                                                            Paxos Trust Company, LLC
+                                                     Examination of Management Assertions
+                                            Reserve Accounts Report – PayPal USD (PYUSD) Token
+                                      October 19, 2023 and October 31, 2023 at 5:00 PM Eastern Time
+                                                      With Independent Accountant’s Report
+               
+
+
+             Paxos Trust Company, LLC
+             Table of Contents
+             October 19, 2023 and October 31, 2023                                  ____
+
+
+             Independent Accountant’s Report                                               1-2
+
+
+             Reserve Accounts Report                                                       3-5
+
+
+             Notes to the Reserve Accounts Report                                           6
+             (No Assurance Provided by the Independent Accountant on These Notes)
+               
+
+
+
+
+           INDEPENDENT ACCOUNTANT’S REPORT
+
+
+           Paxos Trust Company, LLC
+           New York, NY 10011
+
+           We have examined Paxos Trust Company, LLC’s (the “Company”) below assertions. Paxos Trust Company, LLC’s
+           management is responsible for its assertions. Our responsibility is to express an opinion on management’s assertions
+           based on our examination. Management’s assertions, which are summarized in the attached report, (hereafter
+           referred to as the “Reserve Accounts Report”), which we examined are as follows:
+
+                   The Reserve Accounts Report refers to the total supply of PayPal USD tokens (“PYUSD”) as of October 19,
+                    2023 and October 31, 2023 (collectively, the “Report Dates and Times”) at 5:00 pm Eastern Time (“ET”).
+                    Such PYUSD, (which also represents the total circulating supply) as denoted under contract
+                    0x6c3ea9036406852006290770BEdFcAbA0e23A0e8 at 18 decimals at 5:00 pm ET on the Report Dates and
+                    Times is 130,528,541.45 and 158,956,937.45, respectively, as reported by the Etherscan API and an
+                    internally maintained and operated node on the Ethereum network.
+
+                   The Reserve Accounts Report refers to the accounts held by the Company at U.S. insured depository
+                    institutions and debt instruments that are expressly guaranteed by the full faith and credit of the United States
+                    Government. The USD balance and, when applicable, amounts backed by U.S Treasury Debt in the Reserve
+                    Accounts is at least equal to or greater than $130,528,541.45 and $158,956,937.45, respectively, at the
+                    Report Dates and Times. This contemplates the impact of outstanding wires, deposits in transit or other
+                    reconciling items.
+
+                   The Reserve Accounts Report refers to the Company’s Reserve Account holdings as of the Report Dates
+                    and Times at 5:00 pm ET, which includes the disclosure of the total fair value of the Company’s asset holdings
+                    by asset type. Any amounts held in U.S. Treasury Debt include additional disclosures such as CUSIP and
+                    maturity date, as applicable.
+
+                   The total PYUSD supply, for which each PYUSD is assigned a redemption value, strictly pegged at 1:1 to the
+                    U.S. Dollar by the Company, does not exceed the balance of the Reserve Accounts reported below.
+
+                   The Reserve Account Report refers to the Reserve Account holdings by asset class which do not violate the
+                    asset guidelines that were set forth by the New York Department of Financial Services (“NYDFS”).
+
+           Our examination was conducted in accordance with attestation standards established by the American Institute of
+           Certified Public Accountants. Those standards require that we plan and perform the examination to obtain reasonable
+           assurance about whether management’s assertions are fairly stated, in all material respects. The nature, timing, and
+           extent of the procedures selected depend on our judgment, including an assessment of the risks of material
+           misstatement of management’s assertions whether due to fraud or error.
+
+           We are required to be independent and to meet our ethical responsibilities in accordance with relevant ethical
+           requirements relating to the engagement.
+
+
+
+
+                                                                       1
+               
+
+
+
+
+           In performing our risk assessment, we considered the Company's internal controls relevant to the aforementioned
+           assertions, in order to design procedures that are appropriate in the circumstances, but not for the purpose of
+           expressing an opinion on the effectiveness of the Company's internal control. Accordingly, we did not test the
+           operating effectiveness of such controls and express no such opinion on such controls.
+
+           We believe that the evidence we obtained is sufficient and appropriate to provide a reasonable basis for our opinion.
+
+           We direct your attention to the accompanying notes of the Reserve Accounts Report for risks and uncertainties related
+           to cryptocurrencies and background information provided by management. We have not audited, reviewed or
+           performed any procedures to provide assurance with respect to these notes. Accordingly, we provide no opinion,
+           conclusion or any other form of assurance with respect to these accompanying notes to the Reserve Accounts Report.
+
+           At any given time, the Company has the right to hold funds in any combination of varying financial instruments at their
+           discretion. Those instruments generally include, but are not necessarily limited to U.S. dollars, U.S. Treasury backed
+           Bills, Bonds, and Notes.
+
+           The expressed examination opinion on the above assertions are limited solely to the Reserve Accounts Report at the
+           Report Date and Time noted above. Any activity prior to or after the Report Dates and Times at 5:00 pm ET was not
+           considered when testing the assertions described above. In addition, we have not performed any procedures or
+           provided any level of assurance on the financial or non-financial activity of the Reserve Accounts on dates or times
+           other than the Report Date and Time noted within this report.
+
+           In our opinion, management’s assertions noted above are fairly stated as of the Report Dates and Times at 5:00 pm
+           ET, in all material respects.
+
+
+
+
+           November 14, 2023
+
+
+
+
+                                                                     2
+                
+
+
+
+
+             RESERVE ACCOUNTS REPORT
+
+             Paxos Trust Company, LLC
+             New York, NY 10011
+
+             October 19, 2023 and October 31, 2023 at 5:00 pm ET (hereafter “Report Dates and Times”). The management
+             of the Company hereby makes the following assertions as of:
+
+
+                     October 19, 2023 at 5:00 pm ET:
+
+
+                PYUSD tokens issued and in circulation (Notes 1
+                                                                                                     130,528,541.45 PYUSD
+                and 4)
+                U.S. Dollars / amounts backed by U.S. government
+                guaranteed debt instruments reserved for PYUSD                                              $130,528,541.45
+                token holders (Note 2)
+
+
+                     October 31, 2023 at 5:00 pm ET:
+
+
+                PYUSD tokens issued and in circulation (Notes 1
+                                                                                                     158,956,937.45 PYUSD
+                and 4)
+                U.S. Dollars / amounts backed by U.S. government
+                guaranteed debt instruments reserved for PYUSD                                              $158,956,937.45
+                token holders (Note 2)
+
+
+             The Company’s total Reserve Accounts, which are greater than or equal to the total supply of PYUSD, are
+             comprised of the following asset holdings (Notes 3 and 5):
+
+                     October 19, 2023 at 5:00 pm ET:
+
+                                                                                                 Fair Value as of October 19,
+                              Description                         CUSIP          Maturity Date
+                                                                                                     2023 at 5:00pm ET
+               Collateral Held Pursuant to
+               Overnight Reserve Repurchase
+               Agreements
+               U.S. Treasury Bonds                               912810TS7        05/15/2043            $133,470,089
+                 Total U.S. Government Guaranteed Debt Instruments Held Pursuant                        $133,470,089
+                                          to Overnight Reserve Repurchase Agreements:
+                                                                      Total U.S. Dollars Held:              $601
+                                                     Total Assets Held in Reserve Accounts:             $133,470,690
+
+
+
+
+                                                                             3
+                
+
+
+
+
+             RESERVE ACCOUNTS REPORT
+
+                      October 31, 2023 at 5:00 pm ET:
+
+                                                                                                 Fair Value as of October 31,
+                              Description                         CUSIP          Maturity Date
+                                                                                                      2023 at 5:00pm ET
+                 Collateral Held Pursuant to
+                 Overnight Reserve Repurchase
+                 Agreements
+                 U.S. Treasury Bonds                             912828XL9        07/15/2025              $10,827,340
+                 U.S. Treasury Bonds                             912810TH1        05/15/2042             $151,892,289
+                  Total U.S. Government Guaranteed Debt Instruments Held Pursuant                        $162,719,629
+                                          to Overnight Reverse Repurchase Agreements:
+                                                                      Total U.S. Dollars Held:              $2,365
+                                                     Total Assets Held in Reserve Accounts:              $162,721,994
+
+
+             NOTES
+
+                   1. The total supply of PayPal USD tokens (“PYUSD”) (which also represents the total circulating supply) as
+                       denoted under contract 0x6c3ea9036406852006290770BEdFcAbA0e23A0e8 at 18 decimals at the Report
+                       Dates and Times is 130,528,541.45 and 158,956,937.45, respectively, as reported by the Etherscan API1
+                       and an internally maintained and operated node on the Ethereum network.
+
+
+                   2. This Reserve Accounts Report refers to the accounts held by the Company in U.S. insured depository
+                       institutions where cash is held and debt instruments that are expressly guaranteed by the full faith and
+                       credit of the United States Government, which are either owned outright by Paxos or held pursuant to
+                       overcollateralized overnight reverse repurchase agreements. The balance in the Reserve Accounts is at
+                       least equal to or greater than $130,528,541.45 and $158,956,937.45, respectively, at the Report Dates and
+                       Times. This contemplates the impact of outstanding wires, deposits in transit or other reconciling items.
+
+
+                   3. This Reserve Accounts refers to the Company’s Reserve Account holdings as of the Report Dates and
+                       Times at 5:00 pm ET, which includes the disclosure of the total fair value, calculated using the publicly
+                       available pricing as of the Report Dates and Times, of the Company’s asset holdings by asset type as
+                       reported above. Any amounts held in U.S. Treasury Debt include additional disclosures such as CUSIP and
+                       maturity date, as applicable.
+
+
+                   4. The total PYUSD supply, for which each PYUSD is assigned a redemption value of $1 U.S. by the
+                       Company, does not exceed the balance of the Reserve Accounts reported above.
+
+
+
+
+             1
+                 https://etherscan.io
+                                                                             4
+               
+
+
+
+
+             RESERVE ACCOUNTS REPORT
+
+                   5. This Reserve Accounts Report refers to the Reserve Account holdings by asset class, which are in
+                       compliance with the approved reserve asset guidelines2 as set forth by the NYDFS.
+
+
+             To the best of the knowledge and belief of the undersigned, the information contained in the Reserve Accounts
+             Report as of the Report Dates and Times at 5:00pm ET is accurate and complete.
+
+
+
+
+             Adam Ackermann, Head of Portfolio Management
+             Paxos Trust Company, LLC
+
+                 1RYHPEHU
+
+
+             Date
+
+
+
+
+             2
+                 https://www.dfs.ny.gov/industry_guidance/industry_letters/il20220608_issuance_stablecoins
+                                                                       5
+               
+
+
+             Paxos Trust Company, LLC
+             Notes to the Reserve Accounts Report
+             October 19, 2023 and October 31, 2023 at 5:00pm ET
+             (No Assurance Provided by the Independent Accountant on These Notes)
+
+                  1. BACKGROUND INFORMATION PROVIDED BY PAXOS TRUST COMPANY, LLC
+
+                      Paxos Trust Company, LLC (the “Company”) is a New York limited purpose trust company. The Company
+                      received its trust charter from the New York Department of Financial Services in 2015 and has been a long-
+                      time leader in both crypto asset services and the creation of blockchain technologies for the financial world.
+
+
+                      The PayPal USD token (“PYUSD”) is a cryptographic token, which allows financial market participants to
+                      transact in a crypto asset that has been strictly pegged 1:1 to the U.S. dollar by the Company. The Company
+                      maintains the reserves securing PYUSD in one or more of the following forms: (i) fiat currency held in FDIC-
+                      insured bank accounts; (ii) (a) investments (including through overcollateralized overnight reverse
+                      repurchase agreements) in debt instruments that are expressly guaranteed by the full faith and credit of the
+                      United States Government; and/or (b) money-market funds composed of such debt instruments. Amounts
+                      backed by debt instruments that are expressly guaranteed by the full faith and credit of the United States
+                      Government are subject to market pricing risk. PYUSD is an ERC-20 token, which is built on the Ethereum
+                      public blockchain and as such, the total number of PYUSD tokens in circulation is fully and transparently
+                      viewable at all times by anyone through any publicly available Ethereum block explorer (e.g. Etherscan).
+
+
+                  2. DISCUSSIONS RELATED TO CRYPTO ASSETS GENERALLY
+
+                      As of the date of this report, crypto assets remain an evolving area of technology and market place activity.
+                      Those who choose to invest in crypto assets should inform themselves of the general risks and uncertainties
+                      associated with such assets.
+
+
+                      (1) Crypto assets are owned anonymously. While the public keys of virtual wallets holding crypto assets
+                      reside on the distributed networks and can be viewed publicly, the ownership of the wallets are normally
+                      not registered and therefore, anonymous. Ownership of crypto assets is evidenced primarily by the
+                      possession of the underlying private key (e.g. passcode). The possessor of the private key controls the
+                      corresponding crypto asset wallet.
+
+
+                      (2) Risk of irreversible transactions. Transactions for most crypto assets that occur over the blockchain are
+                      generally irreversible, even if such transactions occur fraudulently or accidentally. If a private key is lost or
+                      fraudulently used, the crypto assets in the corresponding wallet may not be recoverable.
+
+
+                      (3) Regulatory uncertainty. Legislative and regulatory changes or actions at the state or federal level may
+                      change or affect the use, transfer, exchange, and value of crypto assets. The effects of any such changes
+                      are not determinable as of the date of this report.
+
+
+
+
+                                                                         6
+

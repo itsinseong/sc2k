@@ -1,0 +1,38 @@
+Paxos Digital Singapore Pte. Ltd.
+Notes to the Redemption Assets Report
+
+December 2024
+(No Assurance provided by the Independent Accountant on these Notes)
+1. BACKGROUND INFORMATION PROVIDED BY PAXOS DIGITAL SINGAPORE PTE LTD
+   Paxos Digital Singapore Pte. Ltd. (the "Company") was granted a Major Payment Institution (MPI) license by
+   the Monetary Authority of Singapore (“MAS”) to issue stablecoins on 1 July 2024.
+   The Global Dollar token (“USDG”) is a cryptographic token, which allows financial market participants to
+   transact in a crypto asset that has been pegged 1:1 to the U.S. dollar by the Company. The Company maintains
+   the redemption assets securing USDG in approved asset categories per the requirements set by MAS. USDG
+   is deployed on the Ethereum network and is an ERC-20 token, which is built on the Ethereum public blockchain.
+   As such, the number of USDG tokens in circulation is fully and transparently viewable at all times by anyone
+   through any publicly available Ethereum block explorer (e.g. Etherscan).
+
+2. DISCUSSIONS RELATED TO CRYPTO ASSETS
+   As of the date of this report, crypto assets remain an evolving area of technology and marketplace activity.
+   Those who choose to invest in crypto assets should inform themselves of the general risks and uncertainties
+   associated with such assets.
+  a. Ownership of Crypto assets:
+     Crypto assets are owned anonymously. While the public keys of virtual wallets holding crypto assets reside
+     on the distributed networks and can be viewed publicly, the ownership of the wallets is normally not
+     registered and therefore, anonymous. Ownership of crypto assets is evidenced primarily by the possession
+     of the underlying private key (e.g. passcode). The possessor of the private key controls the corresponding
+     crypto asset wallet.
+  b. Risk of irreversible transactions:
+     Transactions for most crypto assets that occur over the blockchain are generally irreversible, even if such
+     transactions occur fraudulently or accidentally. If a private key is lost or fraudulently used, the crypto assets
+     in the corresponding wallet may not be recoverable.
+  c. Regulatory uncertainty:
+     Legislative and regulatory changes or actions may change or affect the use, transfer, exchange, and value
+     of crypto assets. The effects of any such changes are not determinable as of the date of this report.
+
+
+
+
+                                                         5
+

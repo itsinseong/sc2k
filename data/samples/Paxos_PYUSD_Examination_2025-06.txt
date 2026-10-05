@@ -1,0 +1,420 @@
+Docusign Envelope ID: A3BCD7C6-C5A1-4E8E-8566-251E78456152
+
+
+
+
+                                           KPMG LLP
+                                           345 Park Avenue
+                                           New York, NY 10154-0102
+
+
+
+
+                                          Independent Accountants’ Examination Report
+
+
+           To the Audit Committee and Management
+           Paxos Trust Company, LLC:
+
+           Report on Management’s Assertion regarding the PayPal USD Redeemable Tokens and Redemption
+           Assets
+           Opinion
+           We have examined management of Paxos Trust Company, LLC’s (the Company) assertion on page 3 of the
+           PayPal USD (PYUSD) Redemption Assets Report as of June 9, 2025 and June 30, 2025 at 5:00 PM Eastern
+           Time (the PYUSD Redemption Assets Report) regarding the total PYUSD natively minted tokens and total
+           PYUSD redeemable tokens outstanding (Exhibit A), the composition of redemption assets by asset type
+           (Exhibit B), and the comparison of the two (Exhibit C), which includes the criteria used by management of the
+           Company as a basis for the assertion (Management’s Assertion).
+
+           In our opinion, Management’s Assertion is fairly stated, in all material respects.
+
+           Basis for opinion
+           Our examination was conducted in accordance with attestation standards established by the American Institute
+           of Certified Public Accountants. We are required to be independent and to meet our other ethical requirements
+           in accordance with relevant ethical requirements related to the engagement. We believe that the evidence we
+           have obtained is sufficient and appropriate to provide a reasonable basis for our opinion.
+
+           Other matters
+           Management of the Company has referenced to information on websites throughout the PYUSD Redemption
+           Assets Report. The information on these websites has not been subjected to our examination procedures, and
+           accordingly we do not express an opinion, conclusion or any other form of assurance on this information.
+
+           Management of the Company is responsible for ensuring the Company’s terms related to PYUSD token
+           purchases and redemptions and the definitions of purchase and redemption rights applicable as of the report
+           dates continue to be available to support an understanding of the PYUSD Redemption Assets Report.
+
+           Our opinion is not modified in respect of these matters.
+
+           Responsibilities for Management’s Assertion
+           Management of the Company is responsible for Management’s Assertion as well as:
+
+           •   designing, implementing and maintaining internal control relevant to the preparation of Management’s
+               Assertion such that it is free from material misstatement, whether due to fraud or error;
+
+           •   selecting or developing suitable criteria as a basis for Management’s Assertion and appropriately referring
+               to or describing the criteria used; and
+
+           •   fairly stating Management’s Assertion.
+
+
+                                           KPMG LLP, a Delaware limited liability partnership and a member firm of
+                                           the KPMG global organization of independent member firms affiliated with
+                                           KPMG International Limited, a private English company limited by guarantee.
+Docusign Envelope ID: A3BCD7C6-C5A1-4E8E-8566-251E78456152
+
+
+
+
+           Our responsibilities
+           The attestation standards established by the American Institute of Certified Public Accountants require us to:
+
+           •   plan and perform the examination to obtain reasonable assurance about whether Management’s Assertion
+               is fairly stated, in all material respects; and
+
+           •   express an opinion on Management's Assertion, based on our examination.
+
+           We exercised professional judgment and maintained professional skepticism throughout the engagement. We
+           designed and performed our procedures to obtain evidence about Management's Assertion that is sufficient
+           and appropriate to provide a basis for our opinion. The nature, timing, and extent of the procedures selected
+           depended on our judgment, including an assessment of the risks of material misstatement of Management's
+           Assertion, whether due to fraud or error. We identified and assessed the risks of material misstatement through
+           understanding Management's Assertion and the engagement circumstances. We also obtained an
+           understanding of the internal control relevant to Management's Assertion in order to design procedures that are
+           appropriate in the circumstances but not for the purpose of expressing an opinion on the effectiveness of
+           internal controls.
+
+
+
+
+           New York, New York
+           July 28, 2025
+
+
+
+
+                                                                  2
+Docusign Envelope ID: A3BCD7C6-C5A1-4E8E-8566-251E78456152
+
+
+
+
+                                                                                        PYUSD Redemption Assets Report
+
+            PayPal USD (PYUSD) Redemption Assets Report as of June 9, 2025 and June 30, 2025 at 5:00 PM
+            Eastern Time
+
+            Background 1
+            Paxos Trust Company, LLC (the Company or Paxos) is a New York limited purpose trust company. The
+            Company received its trust charter from the New York Department of Financial Services (NYDFS) in 2015
+            and has been a long-time leader in both crypto asset services and the creation of blockchain
+            technologies for the financial world. As the prudential regulator of companies engaged in virtual
+            currency business activity in New York, NYDFS has requirements, standards, and controls on the
+            stablecoins issued by its regulated entities. This includes guidelines published by the NYDFS in the
+            industry letter dated June 8, 2022, 2 which applies to entities licensed under 23 NYCRR Part 200 or
+            chartered as limited purpose trust companies under the New York Banking Law that issue U.S. Dollar-
+            backed stablecoins under the supervision of the NYDFS (the NYDFS Guidelines). This PYUSD Redemption
+            Assets Report has been prepared by Management of Paxos to fulfill the requirements set out in the
+            NYDFS Guidelines.
+            Management of Paxos is responsible for the completeness, accuracy, and validity of the PYUSD
+            Redemption Assets Report as of June 9, 2025 and June 30, 2025 at 5:00 pm Eastern Time (the Report
+            Dates).
+
+            Management’s Assertion
+
+            Management of Paxos asserts that as of June 9, 2025 and June 30, 2025 at 5:00 pm Eastern Time:
+
+            •   the total PYUSD natively minted tokens and total PYUSD redeemable tokens outstanding (Exhibit A),
+                the composition of redemption assets by asset type (Exhibit B), and the comparison of the two
+                (Exhibit C), are prepared in accordance with the AICPA 2025 Criteria for Stablecoin Reporting:
+                Specific to Asset-Backed Fiat Pegged Tokens3 (the AICPA Criteria).
+            •   the total redemption assets (Exhibit B) are equal to or greater than total PYUSD redeemable tokens
+                outstanding (Exhibit A), as presented in Exhibit C. The criteria we used in making this assertion were
+                that the total redemption assets, which are defined as unencumbered assets held by the Company
+                in segregated accounts on behalf of the PYUSD token holders and measured as described in Exhibit
+                B, are equal to or greater than the PYUSD redeemable tokens outstanding, which are defined in the
+                AICPA Criteria.
+            •   the Company has applied the requirements of Part 2 of the New York Department of Financial
+                Services (NYDFS) industry letter dated June 8, 2022 2 (NYDFS Guidelines) regarding its redemption
+                assets, as presented in Exhibit B.
+
+
+
+
+            1
+              Not subject to the Independent Accountants’ Examination Report
+            2
+              https://www.dfs.ny.gov/industry_guidance/industry_letters/il20220608_issuance_stablecoins
+            3
+              https://www.aicpa-cima.com/resources/download/stablecoin-reporting-criteria
+
+
+                                                                 3
+Docusign Envelope ID: A3BCD7C6-C5A1-4E8E-8566-251E78456152
+
+
+
+
+                                                                                      PYUSD Redemption Assets Report
+
+            Summary1
+
+            The following summarizes the total PYUSD redeemable tokens outstanding and total redemption assets
+            as of the Report Dates, which are disclosed in Exhibits A and B.
+               Report Dates                                            June 9, 2025             June 30, 2025
+
+
+               Total PYUSD redeemable tokens outstanding               997,845,464                950,362,292
+               (Exhibit A line d)
+
+               Total redemption assets in United States Dollar       $1,001,959,216              $953,684,788
+               (Exhibit B)
+
+            To the best of the knowledge and belief of the undersigned, the information contained in the PYUSD
+            Redemption Assets Report as of the Report Dates at 5:00pm Eastern Time is accurate and complete.
+
+
+
+
+            Adam Ackermann, Head of Treasury and Portfolio Management
+            Paxos Trust Company, LLC
+
+            July 28, 2025
+
+
+
+
+                                                                 4
+Docusign Envelope ID: A3BCD7C6-C5A1-4E8E-8566-251E78456152
+
+
+
+
+                                                                                                                                                                   PYUSD Redemption Assets Report
+
+            Exhibit A: Total PYUSD Natively Minted Tokens and Total PYUSD Redeemable Tokens Outstanding
+
+            The following table summarizes the types of PYUSD tokens:
+
+                           PYUSD Tokens (in quantity of tokens)                     Blockchain Ethereumii                       Blockchain Solanaiii                                Total
+
+                                                                               June 9, 2025        June 30, 2025          June 9, 2025         June 30, 2025         June 9, 2025         June 30, 2025
+
+                a. Total PYUSD natively minted tokens                             783,342,031         738,525,064           214,503,433          211,837,228            997,845,464         950,362,292
+
+                b. Less temporary PYUSD nonredeemable tokens                                N/A                  N/A                   N/A                  N/A                   N/A                 N/A
+                                   Temporarily access-restricted                            N/A                  N/A                   N/A                  N/A                   N/A                 N/A
+                                                   Time-locked                              N/A                  N/A                   N/A                  N/A                   N/A                 N/A
+
+                c. Less permanent PYUSD nonredeemable tokens                                N/A                  N/A                   N/A                  N/A                   N/A                 N/A
+                                  Permanently access-restricted                             N/A                  N/A                   N/A                  N/A                   N/A                 N/A
+
+                      Total PYUSD nonredeemable tokensi                                     N/A                 N/A                    N/A                 N/A                    N/A                 N/A
+
+                d. Total PYUSD redeemable tokens outstanding                      783,342,031         738,525,064           214,503,433          211,837,228            997,845,464         950,362,292
+
+                 i    All PYUSD tokens are redeemable. There are no temporary or permanent PYUSD nonredeemable tokens
+                ii    Blockchain Ethereum refers to the smart contract running on Ethereum at 0x6c3ea9036406852006290770BEdFcAbA0e23A0e8
+                iii   Blockchain Solana refers to the smart contract running on Solana at 2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo
+             NOTE: Refer to the Company’s terms related to PYUSD token purchases and redemptions and the definitions of purchase and redemption rights (including which holders have such rights) 4
+
+            The tokens included in this Exhibit A incorporate the PYUSD redeemable tokens of Paxos Trust Company, LLC. The PYUSD token is a
+            cryptographic token, which allows financial market participants to transact in a crypto asset that has been strictly pegged 1:1 to the U.S. dollar
+            by the Company. PYUSD is built on the Ethereum and Solana public blockchains. As such, the total number of PYUSD tokens in circulation is
+            viewable through any publicly available Ethereum block explorer and Solana block explorer (e.g. Etherscan and Solscan).
+
+            4
+             https://www.paxos.com/terms-and-conditions/general-terms-and-conditions and https://www.paxos.com/terms-and-conditions/stablecoin-terms-
+            conditions
+
+                                                                                                            5
+Docusign Envelope ID: A3BCD7C6-C5A1-4E8E-8566-251E78456152
+
+
+
+
+                                                                                         PYUSD Redemption Assets Report
+
+            Exhibit B: Composition of Redemption Assets by Asset Type
+
+            The following table summarizes redemption assets by asset type in United States Dollar (USD):
+
+                                                                              June 9, 2025            June 30, 2025
+                Cash                                                               $69,193,216             $24,673,788
+                Government money market funds, at net asset value                             -                       -
+                Repurchase agreements, at fair value                              $932,766,000            $929,011,000
+                Obligations of U.S. Treasury, at fair value                                   -                       -
+                Total                                                            $1,001,959,216           $953,684,788
+
+            The redemption assets included in this Exhibit B relate to the redemption assets supporting the PYUSD
+            redeemable tokens reported in Exhibit A.
+            The Company maintains the redemption assets securing PYUSD in segregated accounts that are
+            unencumbered and held on behalf of PYUSD token holders in one or more of the following forms: (i) fiat
+            currency held in Federal Deposit Insurance Corporation (FDIC)-insured bank accounts; (ii) (a)
+            investments (including through overcollateralized overnight reverse repurchase agreements) in debt
+            instruments that are expressly guaranteed by the full faith and credit of the United States Government;
+            and/or (b) money-market funds composed of such debt instruments. Amounts backed by debt
+            instruments that are expressly guaranteed by the full faith and credit of the United States Government
+            are subject to market pricing risk.
+
+            1. Cash
+
+            The Company’s cash is held at commercial banks and cash held at a specific bank may at times exceed
+            the FDIC limit of $250,000. As of June 9, 2025 and June 30, 2025, the uninsured FDIC demand deposits at
+            commercial banks totaled $68,691,773 and $24,172,343, respectively. The Company has obtained
+            excess deposit insurance, in the amount of $50,000,000, from Paxos Insurance Company Ltd, a captive
+            insurance company for the Company and its affiliates. The following table summarizes cash by type of
+            account, regulatory agency, and geographic location.
+
+                 Type of Account         Regulatory Agency Geographic Location      June 9, 2025            June 30, 2025
+
+             For the benefit of       Federal Reserve
+                                                              United States             $69,193,216           $24,673,788
+             authorized token holders Board
+             Total                                                                      $69,193,216           $24,673,788
+
+
+            2. Government Money Market Funds
+
+            Government money market funds hold investments in direct obligations of the Government of the
+            United States and reverse repurchase agreements on such obligations. As of June 9, 2025 and June 30,
+            2025, the Company held no government money market funds.
+
+
+
+
+                                                                     6
+Docusign Envelope ID: A3BCD7C6-C5A1-4E8E-8566-251E78456152
+
+
+
+
+                                                                                          PYUSD Redemption Assets Report
+
+            3. Repurchase Agreements, at Fair Value
+
+            Repurchase agreements are agreements with selected commercial banks and broker-dealers, under
+            which the Company acquires securities as collateral (debt obligation) subject to an obligation of the
+            counterparty to repurchase and the Company to resell the securities (obligation) at an agreed-upon time
+            and price. The Company, through a custodian or a sub-custodian, receives delivery of the underlying
+            securities collateralizing repurchase agreements. The Company is not permitted to sell or repledge the
+            securities acquired as collateral. Repurchase agreements are exposed to credit and liquidity risk. To
+            manage these risks, the repurchase agreements entered by the Company are overcollateralized such
+            that the fair value of the underlying collateral is greater than the par amount of the repurchase
+            agreement. The Company monitors the fair value of the underlying collateral on a daily basis, with
+            additional securities obtained as collateral as necessary. Since the repurchase agreements mature
+            overnight, the par amount of the repurchase agreement is considered to be equal to fair value as the
+            amount is deemed to be a cash deposit with no risk of change in value as of the end of each day. The
+            following table summarizes the remaining contractual maturity of the agreements by counterparty at
+            fair value:
+
+                                               Repurchase Agreements as of June 9, 2025
+                                               Coupon     Purchase     Maturity
+               Counterparty     Collateral                                                  Par           Fair Value
+                                                Rate        Date         Date
+                              Obligations
+             Bank 1 in United
+                              of U.S.          4.25%         6/9/2025    6/10/2025        $932,766,000     $932,766,000
+             States
+                              Treasury
+             Total Repurchase Agreements                                                                   $932,766,000
+
+
+                                              Repurchase Agreements as of June 30, 2025
+                                              Coupon      Purchase     Maturity
+               Counterparty     Collateral                                                  Par           Fair Value
+                                                Rate        Date         Date
+                              Obligations
+             Bank 1 in United
+                              of U.S.          4.38%         6/30/2025   7/1/2025         $929,011,000     $929,011,000
+             States
+                              Treasury
+             Total Repurchase Agreements                                                                   $929,011,000
+
+
+
+            4. Obligations of U.S. Treasury
+
+            Obligations of U.S. Treasury are held by a qualified custodian. The Company only holds U.S. Treasury bills
+            that are three months or less from their respective maturities. As of June 9, 2025 and June 30, 2025, the
+            Company held no obligations of U.S. Treasury.
+
+
+
+
+                                                                    7
+Docusign Envelope ID: A3BCD7C6-C5A1-4E8E-8566-251E78456152
+
+
+
+
+                                                                                                              PYUSD Redemption Assets Report
+
+            Exhibit C: Comparison Between the Redemption Assets and the PYUSD Redeemable Tokens
+            Outstanding
+
+            The following table summarizes the redemption assets and the PYUSD redeemable tokens outstanding:
+
+                                                                                                June 9, 2025                 June 30, 2025
+                Redemption assets                                                                  $1,001,959,216                 $953,684,788
+
+                Less: Amount of PYUSD redeemable tokens outstandingi                                   997,845,464                  950,362,292
+
+                Subtotal prior to timing difference                                                     $4,113,752                   $3,322,496
+
+                Timing differences:
+                              PYUSD tokens purchased but not yet minted                                              -                             -
+                                     PYUSD tokens redeemed but not yet paid                                          -                             -
+
+                Subtotal prior to temporary difference                                                  $4,113,752                   $3,322,496
+
+                Temporary differences:ii
+                                                 PYUSD access-restricted tokens                                  N/A                           N/A
+                                                     PYUSD time-locked tokens                                    N/A                           N/A
+
+                Surplus (Deficit)iii                                                                    $4,113,752                   $3,322,496
+
+                i The amount of PYUSD redeemable tokens outstanding includes requests for purchases and redemptions that have not yet been
+                processed due to timing differences
+                ii All PYUSD tokens are redeemable. There are no temporary or permanent PYUSD nonredeemable tokens
+                iii The Company’s terms stipulate that for each PYUSD redeemable token outstanding there is $1 available assets for redemption. This
+                surplus indicates that asset-backing levels are in accordance with the Company’s terms4
+
+            The tokens and redemption assets included in this Exhibit C relate to the PYUSD redeemable tokens
+            reported in Exhibit A and redemption assets reported in Exhibit B.
+
+
+
+
+                                                                                 8
+Docusign Envelope ID: A3BCD7C6-C5A1-4E8E-8566-251E78456152
+
+
+
+
+                                                                                         PYUSD Redemption Assets Report
+
+            Appendix: General considerations related to Crypto Assets1
+
+            As of the date of this report, crypto assets remain an evolving area of technology and marketplace
+            activity. Those who choose to invest in crypto assets should inform themselves of the general risks and
+            uncertainties associated with such assets.
+
+            (1) Crypto assets are owned anonymously. While the public keys of virtual wallets holding crypto assets
+            reside on the distributed networks and can be viewed publicly, the ownership of the wallets are
+            normally not registered and therefore, anonymous. Ownership of crypto assets is evidenced primarily by
+            the possession of the underlying private key (e.g. passcode). The possessor of the private key controls
+            the corresponding crypto asset wallet.
+
+            (2) Risk of irreversible transactions. Transactions for most crypto assets that occur over the blockchain
+            are generally irreversible, even if such transactions occur fraudulently or accidentally. If a private key is
+            lost or fraudulently used, the crypto assets in the corresponding wallet may not be recoverable.
+
+            (3) Regulatory uncertainty. Legislative and regulatory changes or actions at the state or federal level may
+            change or affect the use, transfer, exchange, and value of crypto assets. The effects of any such changes
+            are not determinable as of the date of this report.
+
+
+
+
+                                                                  9
+

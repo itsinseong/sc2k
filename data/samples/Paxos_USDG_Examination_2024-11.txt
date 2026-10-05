@@ -1,0 +1,257 @@
+Docusign Envelope ID: DE5379FD-F55B-4657-AC12-E5B889DC05AC
+
+
+
+
+                                              Paxos Digital Singapore Pte. Ltd.
+                                           Examination of Management Assertions
+                                                 Global Dollar (USDG) Token
+                                                      November 2024
+                                           With Independent Accountant’s Report
+Docusign Envelope ID: DE5379FD-F55B-4657-AC12-E5B889DC05AC
+
+
+            Paxos Digital Singapore Pte. Ltd.
+            Table of Contents
+            November 2024
+
+            Independent Accountant’s Report                                        1-2
+
+            Redemption Assets Report                                               3-5
+
+            Notes to the Redemption Assets Report                                   6
+            (No Assurance provided by the Independent Accountant on these Notes)
+                              INDEPENDENT ACCOUNTANT’S REPORT
+
+To,
+The Board of Directors
+Paxos Digital Singapore Pte. Ltd.
+Purpose of the Report
+
+We have examined Paxos Digital Singapore Pte. Ltd.’s (the “Company”) below assertions. Paxos Digital
+Singapore Pte. Ltd.’s management is responsible for its assertions. Our responsibility is to express an
+opinion on management’s assertions based on our examination. Management’s assertions, which are
+summarized in the attached report, (hereafter referred to as the “Redemption Assets Report”), which we
+examined are as follows:
+
+    ●   The Redemption Assets Report refers to the supply of Global Dollar tokens (“USDG”) as of 26
+        November 2024 and 29 November 2024 at 5:00 pm SGT. Such USDG in terms of number of
+        tokens held as denoted under contracts 0xe343167631d89B6Ffc58B88d6b7fB0228795491D on
+        the Ethereum network at 18 decimals at 5:00 pm SGT on the Report Dates and Times is
+        26,436,864 and 29,386,864, respectively.
+    ●   The Redemption Assets Report refers to the accounts held by the Company at regulated financial
+        institutions and in United States government debt instruments. The fair value of the redemption
+        assets is at least equal to or greater than USD 26,436,864 and USD 29,386,864 respectively, at
+        the Report Dates and Times.
+    ●   The Redemption Assets Report refers to the Company’s holdings as of the Report Dates and
+        Times at 5:00 pm ET, which includes the disclosure of the total fair value of the Company’s asset
+        holdings by asset type. Any amounts held in U.S. Government Debt include additional disclosures
+        such as CUSIP and maturity date, as applicable.
+    ●   The USDG supply in terms of the number of tokens, as represented by management in the
+        Redemption Assets Report, does not exceed the balance of the Redemption Assets reported
+        below. The percentage value of the reserve assets in excess of the par value of outstanding USDG
+        in circulation is 0.1% and 0.28%, respectively.
+    ●   The Redemption Assets Report refers to the redemption asset composition which is substantively
+        compliant with the Monetary Authority of Singapore’s (MAS) upcoming stablecoin regulatory
+        framework.
+
+
+Our examination was conducted in accordance with the Singapore Standard on Assurance Engagements
+(SSAE) 3000 (Revised), Assurance Engagements other than Audits or Reviews of Historical Financial
+Information, established by the Institute of Singapore Chartered Accountants (“ISCA”). Those standards
+require that we plan and perform the examination to obtain reasonable assurance about whether the
+Redemption Assets in the accompanying Redemption Assets Report is correctly stated, based on the
+criteria set forth in the Redemption Assets Report, in all material respects. An examination involves
+performing procedures to obtain evidence about the Redemption Assets Information. The nature, timing,
+and extent of the procedures selected depend on our judgment, including an assessment of the risks of
+material misstatement of the Redemption Assets Information, whether due to fraud or error. In making an
+assessment of the risks of material misstatement, we considered and obtained an understanding of
+internal controls relevant to the preparation of, and the Redemption Assets Information in, the
+accompanying Redemption Assets Report in order to design procedures that are appropriate in the
+circumstances, but not for the purpose of expressing an opinion on the effectiveness of such internal
+control. Accordingly, no such opinion is expressed. We believe that the evidence we obtained is sufficient
+and appropriate to provide a reasonable basis for our opinion.
+
+
+
+ Enrome LLP                         143 Cecil Street, #19-03/04                admin@enrome-group.com
+                                    GB Building Singapore 069542               www.enrome-group.com
+                                                    1
+                         INDEPENDENT ACCOUNTANT’S REPORT (Continued)
+
+
+Our firm applies Singapore Standards on Quality Management and, accordingly, maintains a
+comprehensive system of quality control including documented policies and procedures regarding
+compliance with ethical requirements, professional standards and applicable legal and regulatory
+requirements. We have complied with the independence and other ethical requirements of the Accounting
+and Corporate Regulatory Authority (ACRA) Code of Professional Conduct and Ethics for Public
+Accountants and Accounting Entities (ACRA Code), which is founded on fundamental principles of integrity,
+objectivity, professional competence and due care, confidentiality and professional behaviour.
+
+The Redemption Assets Information in the accompanying Redemption Assets Report relates to the
+Company’s USDG token, which is a cryptographic stored value token that allows financial market
+participants to transact in a crypto asset.
+
+Crypto assets are an evolving area of technology and market place activity. Those who choose to acquire
+and utilize USDG assets should inform themselves of the general risks and uncertainties associated with
+such assets.
+
+In our opinion, the Redemption Assets Information in the accompanying Redemption Assets Report as of
+November 2024 is fairly stated, based on the criteria set forth in the Redemption Assets Report, in all
+material respects.
+
+
+
+
+ENROME LLP
+Public Accountants and
+Chartered Accountants
+
+Singapore, 27 December 2024
+
+
+
+
+ Enrome LLP                        143 Cecil Street, #19-03/04               admin@enrome-group.com
+                                   GB Building Singapore 069542              www.enrome-group.com
+                                                   2
+Docusign Envelope ID: DE5379FD-F55B-4657-AC12-E5B889DC05AC
+
+
+          Paxos Digital Singapore Pte. Ltd.
+          REDEMPTION ASSETS REPORT
+
+          November 2024
+          Paxos Digital Singapore Pte. Ltd. (the “Company”) is responsible for the completeness, accuracy, and validity of the
+          Redemption Assets Report as of 26 November 2024 and 29 November 2024 at 5:00 pm SGT (the “Report Dates and
+          Times”). The management of the Company asserts that the fair value of the redemption assets held is equal to or
+          greater than USDG in circulation hereby makes the following assertions as of:
+
+
+                         Report Dates                        26 November 2024                   29 November 2024
+
+                  USDG tokens in circulation                     26,436,864                          29,386,864
+                   Fair Value of Redemption
+                                                                 $26,462,167                        $29,467,869
+                            Assets
+
+               Percentage value of the reserve
+                                                                    0.1%                               0.28%
+               assets in excess of the par value
+
+
+
+          The Company’s total fair value of redemption assets, which are greater than or equal to the supply of USDG, are
+          comprised of the following (Notes 3 and 5):
+
+           ●    26 November 2024:
+
+
+                  Description              CUSIP                    Maturity Date                  Fair Value ($)
+
+               U.S. Treasury Bills      912797ME4                     12/03/2024                    $5,295,325
+               U.S. Treasury Bills      912797MN4                     12/10/2024                    $1,397,521
+               U.S. Treasury Bills       912797LQ8                    12/19/2024                    $2,393,030
+                                                                Total U.S. Treasury Bills:          $9,085,876
+                                                      Total Cash and Cash Equivalents               $17,376,291
+                                                             Total of Redemption Assets:            $26,462,167
+
+
+
+
+           ●    29 November 2024:
+
+
+                   Description              CUSIP                    Maturity Date                Fair Value ($)
+
+               U.S. Treasury Bills       912797ME4                    12/03/2024                    $5,297,350
+               U.S. Treasury Bills       912797MN4                    12/10/2024                    $1,398,045
+               U.S. Treasury Bills        912797LQ8                   12/19/2024                    $2,393,921
+                                                                Total U.S. Treasury Bills:          $9,089,316
+                                                     Total Cash and Cash Equivalents:              $20,378,553
+                                                             Total of Redemption Assets:           $29,467,869
+
+
+                                                                     3
+Docusign Envelope ID: DE5379FD-F55B-4657-AC12-E5B889DC05AC
+
+
+          Paxos Digital Singapore Pte. Ltd.
+          REDEMPTION ASSETS REPORT
+
+          November 2024
+          NOTES:
+              1. The     supply     of    Global Dollar tokens   (“USDG”)     as    denoted     under     contract
+                 0xe343167631d89B6Ffc58B88d6b7fB0228795491D on the Ethereum network at the Report Dates and Times
+                 is 26,436,864 and 29,386,864.
+              2. The Redemption Assets Report refers to the redemption asset composition which is substantively compliant with
+                 the Monetary Authority of Singapore’s (MAS) upcoming stablecoin regulatory framework 1. The fair value of the
+                 redemption assets is at least equal to or greater than USD 26,436,864 and USD 29,386,864 respectively, at the
+                 Report Dates and Times.
+              3. This Redemption Assets Report refers to the Company’s holdings as of the Report Dates and Times at 5:00 pm
+                 SGT, which includes the disclosure of the total fair value of the Company’s asset holdings by asset type as
+                 reported above. Any amounts held in U.S. Government Securities include additional disclosures such as CUSIP
+                 and maturity date, as applicable.
+              4. The USDG supply does not exceed the balance of the Redemption Assets reported above.
+
+
+              To the best of the knowledge and belief of the undersigned, the information contained in the Redemption Assets
+              Report as of the Report Dates and Times at 5:00pm SGT is accurate and complete.
+
+
+
+
+              Soo Huang Lim
+              Executive Director
+              Paxos Digital Singapore Pte. Ltd.
+
+              Date: 27 December 2024
+
+
+
+
+          1
+           https://www.mas.gov.sg/-/media/mas-media-library/publications/consultations/pd/2023/response-to-consultation-on-stablecoins-
+          regulation_15aug2023.pdf
+                                                                               4
+Docusign Envelope ID: DE5379FD-F55B-4657-AC12-E5B889DC05AC
+
+
+            Paxos Digital Singapore Pte. Ltd.
+            Notes to the Redemption Assets Report
+
+            November 2024
+            (No Assurance provided by the Independent Accountant on these Notes)
+             1. BACKGROUND INFORMATION PROVIDED BY PAXOS DIGITAL SINGAPORE PTE LTD
+                 Paxos Digital Singapore Pte. Ltd. (the "Company") was granted a Major Payment Institution (MPI) license by
+                 the Monetary Authority of Singapore (“MAS”) to issue stablecoins on 1 July 2024.
+                 The Global Dollar token (“USDG”) is a cryptographic token, which allows financial market participants to
+                 transact in a crypto asset that has been pegged 1:1 to the U.S. dollar by the Company. The Company maintains
+                 the redemption assets securing USDG in approved asset categories per the requirements set by MAS. USDG
+                 is deployed on the Ethereum network and is an ERC-20 token, which is built on the Ethereum public blockchain.
+                 As such, the number of USDG tokens in circulation is fully and transparently viewable at all times by anyone
+                 through any publicly available Ethereum block explorer (e.g. Etherscan).
+
+             2. DISCUSSIONS RELATED TO CRYPTO ASSETS
+                 As of the date of this report, crypto assets remain an evolving area of technology and marketplace activity.
+                 Those who choose to invest in crypto assets should inform themselves of the general risks and uncertainties
+                 associated with such assets.
+                a. Ownership of Crypto assets:
+                   Crypto assets are owned anonymously. While the public keys of virtual wallets holding crypto assets reside
+                   on the distributed networks and can be viewed publicly, the ownership of the wallets is normally not
+                   registered and therefore, anonymous. Ownership of crypto assets is evidenced primarily by the possession
+                   of the underlying private key (e.g. passcode). The possessor of the private key controls the corresponding
+                   crypto asset wallet.
+                b. Risk of irreversible transactions:
+                   Transactions for most crypto assets that occur over the blockchain are generally irreversible, even if such
+                   transactions occur fraudulently or accidentally. If a private key is lost or fraudulently used, the crypto assets
+                   in the corresponding wallet may not be recoverable.
+                c. Regulatory uncertainty:
+                   Legislative and regulatory changes or actions may change or affect the use, transfer, exchange, and value
+                   of crypto assets. The effects of any such changes are not determinable as of the date of this report.
+
+
+
+
+                                                                       6
+

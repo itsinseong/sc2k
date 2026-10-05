@@ -1,0 +1,315 @@
+               Paxos Trust Company, LLC
+         Examination of Management Assertions
+   Reserve Accounts Report – Pax Dollar Token (USDP)
+March 24, 2023 and March 31, 2023 at 5:00 PM Eastern Time
+         With Independent Accountant’s Report
+Paxos Trust Company, LLC
+Table of Contents
+March 24, 2023 and March 31, 2023                     ______           _____
+
+Independent Accountant’s Report                                                1-2
+
+
+Reserve Accounts Report                                                        3-5
+
+
+Notes to the Reserve Accounts Report                                           6-7
+(No Assurance Provided by the Independent Accountant on These Notes)
+INDEPENDENT ACCOUNTANT’S REPORT
+
+
+Paxos Trust Company, LLC
+New York, NY 10011
+
+We have examined Paxos Trust Company, LLC’s (the “Company”) below assertions. Paxos Trust Company,
+LLC’s management is responsible for its assertions. Our responsibility is to express an opinion on
+management’s assertions based on our examination. Management’s assertions, which are summarized in
+the attached report, (hereafter referred to as the “Reserve Accounts Report”), which we examined are as
+follows:
+
+    •   The Reserve Accounts Report refers to the total supply of Pax Dollar tokens (“USDP”) as of March
+        24, 2023 and March 31, 2023 (collectively, the “Report Dates and Times”) at 5:00 pm Eastern Time
+        (“ET”). Such USDP, (which also represents the total circulating supply) as denoted under contract
+        0x8e870d67f660d95d5be530380d0ec0bd388289e1 at 18 decimals at 5:00 pm ET on the Report
+        Dates and Times is 757,552,716.46 and 757,552,716.46 respectively, as reported by the Etherscan
+        API and an internally maintained and operated node on the Ethereum network.
+
+    •   The Reseve Accounts Report refers to the accounts held and controlled by the Company at U.S.
+        insured depository institutions and debt instruments that are expressly guaranteed by the full faith
+        and credit of the United States Government. The USD balance and, when applicable, amounts
+        backed by U.S. Treasury Debt in the Reserve Accounts is at least equal to or greater than
+        $757,552,716.46 and $757,552,716.46 respectively, at the Report Dates and Times to adequately
+        support the total supply of outstanding USDP at the Report Dates and Times. This contemplates the
+        impact of outstanding wires, deposits in transit or other reconciling items.
+
+    •   The Reserve Accounts Report refers to the Company’s Reserve Account holdings as of the Report
+        Dates and Times at 5:00 pm ET, which includes the disclosure of the total fair value of the Company’s
+        asset holdings by asset type. Any amounts held in U.S. Treasury Debt include additional disclosures
+        such as CUSIP and maturity date, as applicable.
+
+    •   The total USDP supply, for which each USDP is assigned a redemption value, strictly pegged at 1:1
+        to the U.S Dollar by the Company, does not exceed the balance of the Reserve Accounts reported
+        below.
+
+    •   The Reserve Accounts Report refers to the Reserve Account holdings by asset class which does not
+        violate the asset guidelines that were set forth by the New York Department of Financial Services
+        (“NYDFS”).
+
+Our examination was conducted in accordance with attestation standards established by the American
+Institute of Certified Public Accountants. Those standards require that we plan and perform the examination
+to obtain reasonable assurance about whether management’s assertions are fairly stated, in all material
+respects. The nature, timing, and extent of the procedures selected depend on our judgment, including an
+assessment of the risks of material misstatement of management’s assertions whether due to fraud or error.
+
+
+
+
+                                                     1
+In performing our risk assessment, we considered the Company's internal controls relevant to the
+aforementioned assertions, in order to design procedures that are appropriate in the circumstances, but not
+for the purpose of expressing an opinion on the effectiveness of the Company's internal control. Accordingly,
+we did not test the operating effectiveness of such controls and express no such opinion on such controls.
+
+We believe that the evidence we obtained is sufficient and appropriate to provide a reasonable basis for our
+opinion.
+
+We direct your attention to the accompanying notes of the Reserve Accounts Report for risks and
+uncertainties related to cryptocurrencies and background information provided by management. We have
+not audited, reviewed or performed any procedures to provide assurance with respect to these notes.
+Accordingly, we provide no opinion, conclusion or any other form of assurance with respect to these
+accompanying notes to the Reserve Accounts Report.
+
+The expressed examination opinion on the above assertions are limited solely to the Reserve Accounts
+Report at the Report Dates and Times noted above. Any activity prior to or after the Report Dates and Times
+at 5:00 pm ET was not considered when testing the assertions described above. In addition, we have not
+performed any procedures or provided any level of assurance on the financial or non-financial activity of the
+Reserve Accounts on dates or times other than the Report Dates and Times noted within this report.
+
+Subsequent to the Report Dates and Times of this report, the Company held Reserve Account assets at
+financial institutions that either announced their intention to wind down or were subsequently closed by state
+regulators. As a result of actions taken by the U.S. federal government, the Company did not incur any
+financial losses on insured or uninsured balances.
+
+In our opinion, management’s assertions noted above are fairly stated as of the Report Dates and Times at
+5:00 pm ET, in all material respects.
+
+
+
+
+April 19, 2023
+
+
+
+
+                                                      2
+RESERVE ACCOUNTS REPORT
+
+Paxos Trust Company, LLC
+New York, NY 10011
+
+
+March 24, 2023 and March 31, 2023 at 5:00 pm ET (hereafter “Report Date and Time”). The management of the
+Company hereby makes the following assertions as of:
+
+
+    •   March 24, 2023 at 5:00 pm ET:
+
+
+  USDP tokens issued and in circulation (Notes 1 and
+                                                                                      757,552,716.46 USDP
+  4)
+  U.S. dollars / amounts backed by U.S. government
+  guaranteed debt instruments reserved for USDP                                            $757,552,716.46
+  token holders (Note 2)
+
+
+    •   March 31, 2023 at 5:00 pm ET:
+
+
+  USDP tokens issued and in circulation (Notes 1 and
+                                                                                      757,552,716.46 USDP
+  4)
+  U.S. dollars / amounts backed by U.S. government
+  guaranteed debt instruments reserved for USDP                                            $757,552,716.46
+  token holders (Note 2)
+
+
+The Company’s total Reserve Accounts which are greater than or equal to the total supply of USDP are
+comprised of the following asset holdings (Notes 3 and 5):
+
+
+    •   March 24, 2023 at 5:00 pm ET:
+
+
+                                                                               Fair Value as of March 24,
+              Description                    CUSIP           Maturity Date
+                                                                                   2023 at 5:00pm ET
+ U.S. Treasury Bills                       912796Z85          03/28/2023              $99,990,000
+ U.S. Treasury Bills                       912796YN3          04/06/2023              $49,952,000
+                                                 Total U.S. Treasury Bills:          $149,942,000
+
+
+
+
+                                                        3
+RESERVE ACCOUNTS REPORT
+
+    Collateral Held Pursuant to
+    Overnight Reverse Repurchase
+    Agreements
+    U.S. Treasury Debt                       912810TG3         05/15/2052                $247,363,818
+    U.S. Treasury Debt                        912810TL2        11/15/2052                $107,628,514
+    U.S. Treasury Debt                        912810TP3        02/15/2053                 $27,507,676
+      Total U.S. Government Guaranteed Debt Instruments Held Pursuant                    $382,500,018
+                            to Overnight Reverse Repurchase Agreements:
+                                                     Total U.S. Dollars Held:            $249,540,607
+                                    Total Assets Held in Reserve Accounts:               $781,982,625
+
+
+      •     March 31, 2023 at 5:00 pm ET:
+
+
+                                                                                      Fair Value as of March 31,
+                   Description                      CUSIP          Maturity Date
+                                                                                          2023 at 5:00pm ET
+    U.S. Treasury Bills                           912796YN3          04/06/2023               $49,980,500
+    U.S. Treasury Bills                           912796CT4          04/11/2023              $99,898,000
+                                                        Total U.S. Treasury Bills:           $149,878,500
+
+
+    Collateral Held Pursuant to Overnight
+    Reverse Repurchase Agreements
+    U.S. Treasury Debt                            91282CEU1          06/15/2025              $35,700,021
+    U.S. Treasury Debt                            91282CBF7          01/15/2031              $157,425,120
+    U.S. Treasury Debt                            91282CCM1          07/15/2031              $122,599,967
+    U.S. Treasury Debt                            912810QF8          02/15/2040              $75,869,441
+    U.S. Treasury Debt                            912810RW0          02/15/2047              $26,605,525
+          Total U.S. Government Guaranteed Debt Instruments Held Pursuant to                 $418,200,074
+                                   Overnight Reverse Repurchase Agreements:
+
+
+                                                          Total U.S. Dollars Held:           $200,252,581
+                                         Total Assets Held in Reserve Accounts:              $768,331,155
+
+
+NOTES
+
+      1. The total supply of Pax Dollar tokens (“USDP”) (which also represents the total circulating supply) as
+            denoted under contract 0x8e870d67f660d95d5be530380d0ec0bd388289e1 at 18 decimals at the Report
+            Dates and Times is 757,552,716.46 and 757,552,716.46, respectively, as reported by the Etherscan API 1
+            and an internally maintained and operated node on the Ethereum network.
+
+1
+    https://etherscan.io
+                                                          4
+RESERVE ACCOUNTS REPORT
+
+
+
+      2. The Reserve Accounts refers to the accounts held by the Company at U.S. insured depository institutions
+           and debt instruments that are expressly guaranteed by the full faith and credit of the United States
+           Government, which are either owned outright by Paxos or held pursuant to overcollateralized overnight
+           reverse repurchase agreements. The USD balance in the Reserve Accounts is at least equal to or greater
+           than $757,552,716.46 and $757,552,716.46 respectively, at the Report Dates and Times. This
+           contemplates the impact of outstanding wires, deposits in transit or other reconciling items.
+
+
+      3. This Reserve Accounts Report refers to the Company’s Reserve Account holdings as of the Report Dates
+           and Times at 5:00 pm ET, which includes the disclosure of the total fair value, calculated using the publicly
+           available pricing as of the Report Dates and Times, of the Company’s asset holdings by asset type as
+           reported above. Any amounts held in U.S. Treasury Debt include additional disclosures such as CUSIP and
+           maturity date, as applicable.
+
+
+      4. The total USDP supply, for which each USDP is assigned a redemption value of $1 U.S. by the Company,
+           does not exceed the balance of the Reserve Accounts reported above.
+
+      5. This Reserve Accounts Report refers to the Reserve Account holdings by asset class, which are in
+           compliance with the approved reserve asset guidelines 2 as set forth by the NYDFS.
+
+
+
+To the best of the knowledge and belief of the undersigned, the information contained in the Reserve Accounts
+Report as of the Report Dates and Times 5:00pm ET is accurate and complete.
+
+
+
+
+Jennifer Kattamis, Controller
+Paxos Trust Company, LLC
+
+April 19, 2023
+Date
+
+
+
+
+2
+    https://www.dfs.ny.gov/industry_guidance/industry_letters/il20220608_issuance_stablecoins
+
+                                                              5
+Paxos Trust Company, LLC
+Notes to the Reserve Accounts Report
+March 24, 2023 and March 31, 2023 at 5:00pm ET
+(No Assurance Provided by the Independent Accountant on These Notes)
+
+     1. BACKGROUND INFORMATION PROVIDED BY PAXOS TRUST COMPANY, LLC
+
+       Paxos Trust Company, LLC (the “Company”) is a New York limited purpose trust company. The Company
+       received its trust charter from the New York Department of Financial Services in 2015 and has been a long-
+       time leader in both crypto asset services and the creation of blockchain technologies for the financial world.
+
+       The Pax Dollar token (“USDP”) is a cryptographic token, which allows financial market participants to
+       transact in a crypto asset that has been strictly pegged 1:1 to the U.S. dollar by the Company. The Company
+       maintains the reserves securing USDP in one or more of the following forms: (i) fiat currency held in FDIC-
+       insured bank accounts; (ii) (a) investments (including through overcollateralized overnight reverse
+       repurchase agreements) in debt instruments that are expressly guaranteed by the full faith and credit of the
+       United States Government; and/or (b) money-market funds composed of such debt instruments. Amounts
+       backed by debt instruments that are expressly guaranteed by the full faith and credit of the United States
+       Government are subject to market pricing risk. USDP is an ERC-20 token, which is built on the Ethereum
+       public blockchain and as such, the total number of USDP tokens in circulation is fully and transparently
+       viewable at all times by anyone through any publicly available Ethereum block explorer (e.g. Etherscan).
+
+
+       Subsequent to the Report Dates and Times of this report, the Company held Reserve Account assets at
+       financial institutions that either announced their intention to wind down or were subsequently closed by
+       state regulators. As a result of actions taken by the U.S. federal government, the Company did not incur
+       any financial losses on insured or uninsured balances.
+
+
+2.     DISCUSSIONS RELATED TO CRYPTO ASSETS GENERALLY
+
+       As of the date of this report, crypto assets remain an evolving area of technology and market place activity.
+       Those who choose to invest in crypto assets should inform themselves of the general risks and uncertainties
+       associated with such assets.
+
+
+       (1) Crypto assets are owned anonymously. While the public keys of virtual wallets holding crypto assets
+       reside on the distributed networks and can be viewed publicly, the ownership of the wallets are normally
+       not registered and therefore, anonymous. Ownership of crypto assets is evidenced primarily by the
+       possession of the underlying private key (e.g. passcode). The possessor of the private key controls the
+       corresponding crypto asset wallet.
+
+
+       (2) Risk of irreversible transactions. Transactions for most crypto assets that occur over the blockchain are
+       generally irreversible, even if such transactions occur fraudulently or accidentally. If a private key is lost or
+       fraudulently used, the crypto assets in the corresponding wallet may not be recoverable.
+
+
+
+
+                                                          6
+Paxos Trust Company, LLC
+Notes to the Reserve Accounts Report
+March 24, 2023 and March 31, 2023 at 5:00pm ET
+(No Assurance Provided by the Independent Accountant on These Notes)
+
+     (3) Regulatory uncertainty. Legislative and regulatory changes or actions at the state or federal level may
+     change or affect the use, transfer, exchange, and value of crypto assets. The effects of any such changes
+     are not determinable as of the date of this report.
+
+
+
+
+                                                       7
+

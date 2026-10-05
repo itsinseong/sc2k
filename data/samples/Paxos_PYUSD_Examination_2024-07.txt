@@ -1,0 +1,308 @@
+Docusign Envelope ID: 14EE682A-9E12-43D8-8CB5-69DFFBBDD454
+
+
+
+
+                                                        Paxos Trust Company, LLC
+                                                 Examination of Management Assertions
+                                                       PayPal USD (PYUSD) Token
+                                        July 26, 2024 and July 31, 2024 at 5:00 PM Eastern Time
+                                                 With Independent Accountant’s Report
+Docusign Envelope ID: 14EE682A-9E12-43D8-8CB5-69DFFBBDD454
+
+
+            Paxos Trust Company, LLC
+            Table of Contents
+            July 26, 2024 and July 31, 2024                                        ____   ______
+
+
+            Independent Accountant’s Report                                                   1-2
+
+
+            Redemption Assets Report                                                          3-5
+
+
+            Notes to the Redemption Assets Report                                                  6
+            (No Assurance Provided by the Independent Accountant on These Notes)
+Docusign Envelope ID: 14EE682A-9E12-43D8-8CB5-69DFFBBDD454
+
+
+
+
+          INDEPENDENT ACCOUNTANT’S REPORT
+
+
+          Paxos Trust Company, LLC
+          New York, NY 10011
+
+          We have examined Paxos Trust Company, LLC’s (the “Company”) below assertions. Paxos Trust Company, LLC’s
+          management is responsible for its assertions. Our responsibility is to express an opinion on management’s
+          assertions based on our examination. Management’s assertions, which are summarized in the attached report,
+          (hereafter referred to as the “Redemption Assets Report”), which we examined are as follows:
+
+               •   The Redemption Assets Report refers to the supply of PayPal USD tokens (“PYUSD”) as of July 26, 2024
+                   and July 31, 2024 (collectively, the “Report Dates and Times”) at 5:00 pm Eastern Time (“ET”). Such
+                   PYUSD as denoted under contracts 0x6c3ea9036406852006290770BEdFcAbA0e23A0e8 on the
+                   Ethereum network and 2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo on the Solana network at
+                   5:00 pm ET on the Report Dates and Times combined is 587,112,509 and 625,414,560, respectively.
+
+               •   The Redemption Assets Report refers to the accounts held by the Company at U.S. insured depository
+                   institutions and debt instruments that are expressly guaranteed by the full faith and credit of the United
+                   States Government. The fair value of the redemption assets is at least equal to or greater than
+                   $587,112,509 and $625,414,560, respectively, at the Report Dates and Times.
+
+               •   The Redemption Assets Report refers to the Company’s holdings as of the Report Dates and Times at 5:00
+                   pm ET, which includes the disclosure of the total fair value of the Company’s asset holdings by asset type.
+                   Any amounts held in U.S. Treasury Debt include additional disclosures such as CUSIP and maturity date,
+                   as applicable.
+
+               •   The PYUSD supply, as represented by management in the Redemption Assets Report, does not exceed
+                   the balance of the Redemption Assets reported below.
+
+               •   The Redemption Assets Report refers to the redemption asset composition which adhere to the guidelines
+                   that were set forth by the New York Department of Financial Services (“NYDFS”).
+
+          Our examination was conducted in accordance with attestation standards established by the American Institute of
+          Certified Public Accountants. Those standards require that we plan and perform the examination to obtain
+          reasonable assurance about whether management’s assertions are fairly stated, in all material respects. The
+          nature, timing, and extent of the procedures selected depend on our judgment, including an assessment of the risks
+          of material misstatement of management’s assertions whether due to fraud or error.
+
+          We are required to be independent and to meet our ethical responsibilities in accordance with relevant ethical
+          requirements relating to the engagement.
+
+
+                                                                   1
+Docusign Envelope ID: 14EE682A-9E12-43D8-8CB5-69DFFBBDD454
+
+
+
+
+          In performing our risk assessment, we considered and gathered an understanding of the Company's internal
+          controls relevant to the aforementioned assertions, in order to design procedures that are appropriate in the
+          circumstances, but not for the purpose of expressing an opinion on the effectiveness of the Company's internal
+          control. Accordingly, we did not test the operating effectiveness of such controls and express no such opinion on
+          such controls.
+
+          We believe that the evidence we obtained is sufficient and appropriate to provide a reasonable basis for our
+          opinion.
+
+          We direct your attention to the accompanying notes of the Redemption Assets Report for risks and uncertainties
+          related to cryptocurrencies and background information provided by management. We have not audited, reviewed
+          or performed any procedures to provide assurance with respect to these notes. Accordingly, we provide no opinion,
+          conclusion or any other form of assurance with respect to these accompanying notes to the Redemption Assets
+          Report.
+
+          Management’s assertion does not address the assets and liabilities of the Company, other than its PYUSD tokens
+          and related PYUSD redemption assets. Our procedures were limited to the related PYUSD redemption assets, and
+          therefore do not constitute an audit or examination of the Company or its financial position.
+
+          We were not engaged to perform and did not perform an examination of the Company’s compliance with laws or
+          regulations. We also were not engaged to perform and did not perform an examination of the Company’s
+          compliance with its contractual obligations to its clients.
+
+          The expressed examination opinion on the above assertions are limited solely to the Redemption Assets Report at
+          the Report Dates and Times noted above. Any activity prior to or after the Report Dates and Times at 5:00 pm ET
+          was not considered when testing the assertions described above. In addition, we have not performed any
+          procedures or provided any level of assurance on the financial or non-financial activity of the Redemption Assets on
+          dates or times other than the Report Date and Time noted within this report.
+
+          In our opinion, management’s assertions noted above are fairly stated as of the Report Dates and Times at 5:00 pm
+          ET, in all material respects.
+
+
+
+
+          August 13, 2024
+
+
+
+
+                                                                   2
+Docusign Envelope ID: 14EE682A-9E12-43D8-8CB5-69DFFBBDD454
+
+
+
+
+            REDEMPTION ASSETS REPORT
+
+            Paxos Trust Company, LLC (the “Company”) is responsible for the completeness, accuracy, and validity of the
+            Redemption Assets Report as of July 26, 2024 and July 31, 2024 at 5:00 pm ET (hereafter the “Report Dates and
+            Times”). The management of the Company asserts that the fair value of the redemption assets held is equal to or
+            greater than PYUSD in circulation and hereby makes the following assertions as of:
+
+
+            Report Dates                                                  July 26, 2024                 July 31, 2024
+
+            PYUSD tokens in circulation                                            587,112,509                      625,414,560
+
+            Fair Value of Redemption Assets (as
+                                                                                  $599,457,546                     $638,945,680
+            defined in the notes below)
+
+
+
+            The Company’s total fair value of redemption assets, which are greater than or equal to the supply of PYUSD, are
+            comprised of the following (Notes 3 and 5):
+
+
+                •    July 26, 2024 at 5:00 pm ET:
+
+                          Description                        CUSIP        Maturity Date           Fair Value ($)
+
+            U.S. Treasury Bills                         912797KB2          08/15/2024                          29,925,300
+            U.S. Treasury Bills                         912797KM8          09/26/2024                          19,828,200
+            U.S. Treasury Bills                         912797KT3          10/10/2024                          31,664,000
+                                                               Total U.S. Treasury Bills:                      81,417,500
+            U.S. Treasury Bonds                        91282CEQ0           05/15/2025                          14,224,923
+            U.S. Treasury Bonds                        91282CAQ4           10/15/2025                           8,016,177
+            U.S. Treasury Bonds                         912810TZ1          02/15/2044                          16,350,137
+            U.S. Treasury Bonds                         912810RJ9          11/15/2044                          97,469,137
+            U.S. Treasury Bonds                         912810SA7          02/15/2048                          38,970,314
+            U.S. Treasury Bonds                         912810SD1          08/15/2048                        111,857,629
+            U.S. Treasury Bonds                         912810SE9          11/15/2048                          65,890,755
+            U.S. Treasury Bonds                         912810SH2          05/15/2049                          38,949,737
+            U.S. Treasury Bonds                         912810SX7          05/15/2051                        121,306,712
+            Total U.S. Government Guaranteed Debt Instruments Held Pursuant to
+                                        Overnight Reverse Repurchase Agreements:                             513,035.520
+                                                                 Total U.S. Dollars Held:                       5,004,526
+                                               Total Fair Value of Redemption Assets:                        599,457,546
+
+
+
+
+                                                                      3
+Docusign Envelope ID: 14EE682A-9E12-43D8-8CB5-69DFFBBDD454
+
+
+
+
+            REDEMPTION ASSETS REPORT
+
+                •    July 31, 2024 at 5:00 pm ET:
+
+                         Description                         CUSIP        Maturity Date     Fair Value ($)
+
+            U.S. Treasury Bills                        912797KB2           08/15/2024                   29,938,500
+            U.S. Treasury Bills                        912797KM8           09/26/2024                   19,836,400
+            U.S. Treasury Bills                        912797KT3           10/10/2024                   31,678,720
+                                                               Total U.S. Treasury Bills:               81,453,620
+            U.S. Treasury Bonds                        91282CJS1           12/31/2025                    8,025,360
+            U.S. Treasury Bonds                        912810TU2           08/15/2043                  521,343,420
+            U.S. Treasury Bonds                        912810TV0           11/15/2053                   23,118,300
+              Total U.S. Government Guaranteed Debt Instruments Held Pursuant
+                                     to Overnight Reverse Repurchase Agreements:                       552,487,080
+                                                                Total U.S. Dollars Held:                 5,004,980
+                                              Total Fair Value of Redemption Assets:                   639,945,680
+
+
+
+
+            NOTES
+                                                                      4
+Docusign Envelope ID: 14EE682A-9E12-43D8-8CB5-69DFFBBDD454
+
+
+
+
+            REDEMPTION ASSETS REPORT
+
+                  1. The      supply    of   PayPal     USD      tokens     (“PYUSD”)     as     denoted     under    contracts
+                      0x6c3ea9036406852006290770BEdFcAbA0e23A0e8                on      the     Ethereum       network      and
+                      2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo on the Solana network at the Report Dates and
+                      Times combined is 587,112,509 and 625,414,560, respectively.
+
+
+                  2. This Redemption Assets Report refers to the accounts held by the Company in U.S. insured depository
+                      institutions where cash is held and debt instruments that are expressly guaranteed by the full faith and
+                      credit of the United States Government. The fair value of the redemption assets is at least equal to or
+                      greater than $587,112,509 and $625,414,560, respectively, at the Report Dates and Times.
+
+
+                  3. This Redemption Assets Report refers to the Company’s holdings as of the Report Dates and Times at
+                      5:00 pm ET, which includes the disclosure of the total fair value of the Company’s asset holdings by asset
+                      type as reported above. Any amounts held in U.S. Treasury Debt include additional disclosures such as
+                      CUSIP and maturity date, as applicable.
+
+                  4. The PYUSD supply does not exceed the balance of the Redemption Assets reported above.
+
+
+                  5. This Redemption Assets Report refers to the redemption asset composition, which adheres to the
+                      guidelines1 as set forth by the New York Department of Financial Services (“NYDFS”).
+
+
+            To the best of the knowledge and belief of the undersigned, the information contained in the Redemption Assets
+            Report as of the Report Dates and Times at 5:00pm ET is accurate and complete.
+
+
+
+
+            Adam Ackermann, Head of Portfolio Management
+            Paxos Trust Company, LLC
+
+            August 13, 2024
+
+
+            Date
+
+
+
+
+            1
+                https://www.dfs.ny.gov/industry_guidance/industry_letters/il20220608_issuance_stablecoins
+                                                                      5
+Docusign Envelope ID: 14EE682A-9E12-43D8-8CB5-69DFFBBDD454
+
+
+            Paxos Trust Company, LLC
+            Notes to the Redemption Assets Report
+            July 26, 2024 and July 31, 2024 at 5:00pm ET
+            (No Assurance Provided by the Independent Accountant on These Notes)
+
+                1. BACKGROUND INFORMATION PROVIDED BY PAXOS TRUST COMPANY, LLC
+
+                     Paxos Trust Company, LLC (the “Company”) is a New York limited purpose trust company. The Company
+                     received its trust charter from the New York Department of Financial Services in 2015 and has been a
+                     long-time leader in both crypto asset services and the creation of blockchain technologies for the financial
+                     world.
+
+
+                     The PayPal USD token (“PYUSD”) is a cryptographic token, which allows financial market participants to
+                     transact in a crypto asset that has been strictly pegged 1:1 to the U.S. dollar by the Company. The
+                     Company maintains the redemption assets securing PYUSD in segregated accounts that are
+                     unencumbered and held on behalf of PYUSD holders in one or more of the following forms: (i) fiat
+                     currency held in FDIC-insured bank accounts; (ii) (a) investments (including through overcollateralized
+                     overnight reverse repurchase agreements) in debt instruments that are expressly guaranteed by the full
+                     faith and credit of the United States Government; and/or (b) money-market funds composed of such debt
+                     instruments. Amounts backed by debt instruments that are expressly guaranteed by the full faith and
+                     credit of the United States Government are subject to market pricing risk. Fiat deposits held at insured
+                     depository institutions may be in excess of FDIC-insurance limits. PYUSD is an ERC-20 token, which is
+                     built on the Ethereum and Solana public blockchains. As such, the total number of PYUSD tokens in
+                     circulation is fully and transparently viewable at all times by anyone through any publicly available
+                     Ethereum block explorer and Solana block explorer (e.g. Etherscan and Solscan).
+
+
+                2. DISCUSSIONS RELATED TO CRYPTO ASSETS GENERALLY
+
+                     As of the date of this report, crypto assets remain an evolving area of technology and market place
+                     activity. Those who choose to invest in crypto assets should inform themselves of the general risks and
+                     uncertainties associated with such assets.
+
+
+                     (1) Crypto assets are owned anonymously. While the public keys of virtual wallets holding crypto assets
+                     reside on the distributed networks and can be viewed publicly, the ownership of the wallets are normally
+                     not registered and therefore, anonymous. Ownership of crypto assets is evidenced primarily by the
+                     possession of the underlying private key (e.g. passcode). The possessor of the private key controls the
+                     corresponding crypto asset wallet.
+
+
+                     (2) Risk of irreversible transactions. Transactions for most crypto assets that occur over the blockchain
+                     are generally irreversible, even if such transactions occur fraudulently or accidentally. If a private key is
+                     lost or fraudulently used, the crypto assets in the corresponding wallet may not be recoverable.
+
+
+                     (3) Regulatory uncertainty. Legislative and regulatory changes or actions at the state or federal level may
+                     change or affect the use, transfer, exchange, and value of crypto assets. The effects of any such changes
+                     are not determinable as of the date of this report.
+                                                                       6
+

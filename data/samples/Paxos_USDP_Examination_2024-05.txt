@@ -1,0 +1,291 @@
+DocuSign Envelope ID: CED66B2F-0CA7-4149-A2AF-76D484AF29D6
+
+
+
+
+                                                   Paxos Trust Company, LLC
+                                            Examination of Management Assertions
+                                                     Pax Dollar (USDP) Token
+                                    May 16, 2024 and May 31, 2024 at 5:00 PM Eastern Time
+                                             With Independent Accountant’s Report
+DocuSign Envelope ID: CED66B2F-0CA7-4149-A2AF-76D484AF29D6
+
+
+            Paxos Trust Company, LLC
+            Table of Contents
+            May 16, 2024 and May 31, 2024                      ______         _____   _______
+
+            Independent Accountant’s Report                                                1-2
+
+
+            Redemption Assets Report                                                       3-4
+
+
+            Notes to the Redemption Assets Report                                           5
+            (No Assurance Provided by the Independent Accountant on These Notes)
+DocuSign Envelope ID: CED66B2F-0CA7-4149-A2AF-76D484AF29D6
+
+
+
+
+          INDEPENDENT ACCOUNTANT’S REPORT
+
+
+          Paxos Trust Company, LLC
+          New York, NY 10011
+
+          We have examined Paxos Trust Company, LLC’s (the “Company”) below assertions. Paxos Trust Company,
+          LLC’s management is responsible for its assertions. Our responsibility is to express an opinion on
+          management’s assertions based on our examination. Management’s assertions, which are summarized in
+          the attached report, (hereafter referred to as the “Redemption Assets Report”), which we examined are as
+          follows:
+
+               •   The Redemption Assets Report refers to the supply of Pax Dollar tokens (“USDP”) as of May 16,
+                   2024 and May 31, 2024 (collectively, the “Report Dates and Times”) at 5:00 pm Eastern Time (“ET”).
+                   Such USDP as denoted under contracts 0x8e870d67f660d95d5be530380d0ec0bd388289e1 on the
+                   Ethereum network and HVbpJAQGNpkgBaYBZQBR1t7yFdvaYVp2vCQQfKKEN4tM on the Solana
+                   network at 5:00 pm ET on the Report Dates and Times combined is 145,982,333 and 145,982,340,
+                   respectively.
+
+               •   The Redemption Assets Report refers to the accounts held by the Company at U.S. insured
+                   depository institutions and debt instruments that are expressly guaranteed by the full faith and credit
+                   of the United States Government. The fair value of the redemption assets is at least equal to or
+                   greater than $145,982,333 and $145,982,340, respectively, at the Report Dates and Times.
+
+               •   The Redemption Assets Report refers to the Company’s holdings as of the Report Dates and Times
+                   at 5:00 pm ET, which includes the disclosure of the total fair value of the Company’s asset holdings
+                   by asset type. Any amounts held in U.S. Treasury Debt include additional disclosures such as CUSIP
+                   and maturity date, as applicable.
+
+               •   The USDP supply, as represented by management in the Redemption Assets Report, does not
+                   exceed the balance of the Redemption Assets reported below.
+
+               •   The Redemption Assets Report refers to the redemption asset composition which adhere to the
+                   guidelines that were set forth by the New York Department of Financial Services (“NYDFS”).
+
+          Our examination was conducted in accordance with attestation standards established by the American
+          Institute of Certified Public Accountants. Those standards require that we plan and perform the examination
+          to obtain reasonable assurance about whether management’s assertions are fairly stated, in all material
+          respects. The nature, timing, and extent of the procedures selected depend on our judgment, including an
+          assessment of the risks of material misstatement of management’s assertions whether due to fraud or error.
+
+          We are required to be independent and to meet our ethical responsibilities in accordance with relevant ethical
+          requirements relating to the engagement.
+
+
+
+
+                                                                 1
+DocuSign Envelope ID: CED66B2F-0CA7-4149-A2AF-76D484AF29D6
+
+
+
+
+          In performing our risk assessment, we considered and gathered an understanding of the Company's internal
+          controls relevant to the aforementioned assertions, in order to design procedures that are appropriate in the
+          circumstances, but not for the purpose of expressing an opinion on the effectiveness of the Company's
+          internal control. Accordingly, we did not test the operating effectiveness of such controls and express no such
+          opinion on such controls.
+
+          We believe that the evidence we obtained is sufficient and appropriate to provide a reasonable basis for our
+          opinion.
+
+          We direct your attention to the accompanying notes of the Redemption Assets Report for risks and
+          uncertainties related to cryptocurrencies and background information provided by management. We have not
+          audited, reviewed or performed any procedures to provide assurance with respect to these notes.
+          Accordingly, we provide no opinion, conclusion or any other form of assurance with respect to these
+          accompanying notes to the Redemption Assets Report.
+
+          Management’s assertion does not address the assets and liabilities of the Company, other than its USDP
+          tokens and related USDP redemption assets. Our procedures were limited to the related USDP redemption
+          assets, and therefore do not constitute an audit or examination of the Company or its financial position.
+
+          We were not engaged to perform and did not perform an examination of the Company’s compliance with laws
+          or regulations. We also were not engaged to perform and did not perform an examination of the Company’s
+          compliance with its contractual obligations to its clients.
+
+          The expressed examination opinion on the above assertions are limited solely to the Redemption Assets
+          Report at the Report Dates and Times noted above. Any activity prior to or after the Report Dates and Times
+          at 5:00 pm ET was not considered when testing the assertions described above. In addition, we have not
+          performed any procedures or provided any level of assurance on the financial or non-financial activity of the
+          Redemption Assets on dates or times other than the Report Dates and Times noted within this report.
+
+          In our opinion, management’s assertions noted above are fairly stated as of the Report Dates and Times at
+          5:00 pm ET, in all material respects.
+
+
+
+
+          June 21, 2024
+
+
+
+
+                                                                2
+DocuSign Envelope ID: CED66B2F-0CA7-4149-A2AF-76D484AF29D6
+
+
+
+
+            REDEMPTION ASSETS REPORT
+
+            Paxos Trust Company, LLC (the “Company”) is responsible for the completeness, accuracy, and validity of the
+            Redemption Assets Report as of May 16, 2024 and May 31, 2024 at 5:00 pm ET (hereafter the “Report Dates and
+            Times”). The management of the Company asserts that the fair value of the redemption assets held is equal to or
+            greater than USDP in circulation and hereby makes the following assertions as of:
+
+
+             Report Dates                                                  May 16, 2024                May 31, 2024
+
+             USDP tokens in circulation                                             145,982,333                 145,982,340
+
+             Fair Value of Redemption Assets (as
+                                                                                  $146,710,536                 $147,279,620
+             defined in the notes below)
+
+
+            The Company’s total fair value of redemption assets, which are greater than or equal to the supply of USDP are
+            comprised of the following (Notes 3 and 5):
+
+
+                •     May 16, 2024 at 5:00 pm ET:
+
+                           Description                       CUSIP          Maturity Date           Fair Value ($)
+
+             U.S. Treasury Debt                           91282CHB0          05/15/2026                              7,884,600
+             U.S. Treasury Debt                           91282CHZ7          09/30/2030                              5,100,000
+             U.S. Treasury Debt                           912810UA4          05/15/2054                         20,676,420
+             Total U.S. Government Guaranteed Debt Instruments Held Pursuant to
+                                                                                                                33,661,020
+                                           Overnight Reverse Repurchase Agreements:
+                                                                Total U.S. Dollars Held:                       113,049,516
+                                              Total Assets Held in Redemption Assets:                          146,710,536
+
+
+                •     May 31, 2024 at 5:00 pm ET:
+
+                             Description                        CUSIP           Maturity Date          Fair Value ($)
+
+             U.S. Treasury Bills                              912797JZ1           06/04/2024                              1,000
+                                                                     Total U.S. Treasury Bills:                           1,000
+             U.S. Treasury Bonds                             91282CBW0            04/30/2026                         10,062,982
+             U.S. Treasury Bonds                              91282CHZ7           09/30/2030                             92,138
+             U.S. Treasury Bonds                              912810SX7           05/15/2051                         15,419,340
+             U.S. Treasury Bonds                              912810SZ2           08/15/2051                          8,160,000
+                    Total U.S. Government Guaranteed Debt Instruments Held Pursuant to
+                                                                                                                     33,734,460
+                                              Overnight Reverse Repurchase Agreements:
+                                                                      Total U.S. Dollars Held:                   113,544,160
+                                                    Total Fair Value of Redemption Assets:                       147,279,620
+                                                                       3
+DocuSign Envelope ID: CED66B2F-0CA7-4149-A2AF-76D484AF29D6
+
+
+
+
+            REDEMPTION ASSETS REPORT
+
+
+
+
+            NOTES
+
+                  1. The       supply      of    Pax      Dollar    tokens      (“USDP”)      as     denoted    under   contracts
+                       0x8e870d67f660d95d5be530380d0ec0bd388289e1                  on       the      Ethereum    network     and
+                       HVbpJAQGNpkgBaYBZQBR1t7yFdvaYVp2vCQQfKKEN4tM on the Solana network at the Report Dates
+                       and Times combined is 145,982,333 and 145,982,340, respectively.
+
+
+                  2. This Redemption Assets Report refers to the accounts held by the Company at U.S. insured depository
+                       institutions where cash is held and debt instruments that are expressly guaranteed by the full faith and
+                       credit of the United States Government. The fair value of the redemption assets is at least equal to or
+                       greater than $145,982,333 and $145,982,340, respectively, at the Report Dates and Times.
+
+
+                  3. This Redemption Assets Report refers to the Company’s holdings as of the Report Dates and Times at
+                       5:00 pm ET, which includes the disclosure of the total fair value of the Company’s asset holdings by asset
+                       type as reported above. Any amounts held in U.S. Treasury Debt include additional disclosures such as
+                       CUSIP and maturity date, as applicable.
+
+
+                  4. The USDP supply does not exceed the balance of the Redemption Assets reported above.
+
+                  5. This Redemption Assets Report refers to the redemption asset composition, which adhere to the guidelines1
+                       as set forth by the NYDFS.
+
+
+            To the best of the knowledge and belief of the undersigned, the information contained in the Redemption Assets
+            Report as of the Report Dates and Times 5:00pm ET is accurate and complete.
+
+
+
+
+            Adam Ackermann, Head of Portfolio Management
+            Paxos Trust Company, LLC
+
+            June 21, 2024
+
+            Date
+
+
+
+
+            1
+                https://www.dfs.ny.gov/industry_guidance/industry_letters/il20220608_issuance_stablecoins
+
+                                                                          4
+DocuSign Envelope ID: CED66B2F-0CA7-4149-A2AF-76D484AF29D6
+
+
+            Paxos Trust Company, LLC
+            Notes to the Redemption Assets Report
+            May 16, 2024 and May 31, 2024 at 5:00pm ET
+            (No Assurance Provided by the Independent Accountant on These Notes)
+
+                 1. BACKGROUND INFORMATION PROVIDED BY PAXOS TRUST COMPANY, LLC
+
+                     Paxos Trust Company, LLC (the “Company”) is a New York limited purpose trust company. The Company
+                     received its trust charter from the New York Department of Financial Services in 2015 and has been a long-
+                     time leader in both crypto asset services and the creation of blockchain technologies for the financial world.
+
+                     The Pax Dollar token (“USDP”) is a cryptographic token, which allows financial market participants to
+                     transact in a crypto asset that has been strictly pegged 1:1 to the U.S. dollar by the Company. The Company
+                     maintains the redemption assets securing USDP in segregated accounts that are unencumbered and held
+                     on behalf of USDP holders in one or more of the following forms: (i) fiat currency held in FDIC-insured bank
+                     accounts; (ii) (a) investments (including through overcollateralized overnight reverse repurchase
+                     agreements) in debt instruments that are expressly guaranteed by the full faith and credit of the United
+                     States Government; and/or (b) money-market funds composed of such debt instruments. Amounts backed
+                     by debt instruments that are expressly guaranteed by the full faith and credit of the United States
+                     Government are subject to market pricing risk. Fiat deposits held at insured depository institutions may be
+                     in excess of FDIC insurance limits. USDP is deployed on the Ethereum network and the Solana network
+                     and is an ERC-20 token, which is built on the Ethereum public blockchain, and an SPL token, which is built
+                     on the Solana public blockchain. As such, the number of USDP tokens in circulation is fully and
+                     transparently viewable at all times by anyone through any publicly available Ethereum block explorer and
+                     Solana block explorer (e.g. Etherscan and Solscan).
+
+
+            2.       DISCUSSIONS RELATED TO CRYPTO ASSETS GENERALLY
+
+                     As of the date of this report, crypto assets remain an evolving area of technology and market place activity.
+                     Those who choose to invest in crypto assets should inform themselves of the general risks and uncertainties
+                     associated with such assets.
+
+
+                     (1) Crypto assets are owned anonymously. While the public keys of virtual wallets holding crypto assets
+                     reside on the distributed networks and can be viewed publicly, the ownership of the wallets are normally
+                     not registered and therefore, anonymous. Ownership of crypto assets is evidenced primarily by the
+                     possession of the underlying private key (e.g. passcode). The possessor of the private key controls the
+                     corresponding crypto asset wallet.
+
+
+                     (2) Risk of irreversible transactions. Transactions for most crypto assets that occur over the blockchain are
+                     generally irreversible, even if such transactions occur fraudulently or accidentally. If a private key is lost or
+                     fraudulently used, the crypto assets in the corresponding wallet may not be recoverable.
+
+
+                     (3) Regulatory uncertainty. Legislative and regulatory changes or actions at the state or federal level may
+                     change or affect the use, transfer, exchange, and value of crypto assets. The effects of any such changes
+                     are not determinable as of the date of this report.
+
+                                                                        5
+

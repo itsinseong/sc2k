@@ -1,0 +1,480 @@
+Docusign Envelope ID: 5FADC43C-12FB-426E-83EA-1F6C34D4F1CD
+
+
+
+
+                                           KPMG LLP
+                                           345 Park Avenue
+                                           New York, NY 10154-0102
+
+
+
+
+                                          Independent Accountants’ Examination Report
+
+
+           To the Audit Committee and Management
+           Paxos Trust Company, LLC
+
+           Report on Management’s Assertion regarding the Pax Dollar Redeemable Tokens and Redemption
+           Assets
+           Opinion
+           We have examined management of Paxos Trust Company, LLC’s (the Company) assertion on page 3 of the
+           Pax Dollar (USDP) Redemption Assets Report as of January 21, 2025 and January 31, 2025 at 5:00 PM
+           Eastern Time (the USDP Redemption Assets Report) regarding the USDP redeemable tokens outstanding and
+           redemption assets, which includes the criteria used by management of the Company as a basis for the
+           assertion (Management’s Assertion).
+
+           In our opinion, Management’s Assertion is fairly stated, in all material respects.
+
+           Basis for opinion
+           Our examination was conducted in accordance with attestation standards established by the American Institute
+           of Certified Public Accountants. We are required to be independent and to meet our other ethical requirements
+           in accordance with relevant ethical requirements related to the engagement. We believe that the evidence we
+           have obtained is sufficient and appropriate to provide a reasonable basis for our opinion.
+
+           Other matters
+           Management of the Company has referenced to information on websites throughout the USDP Redemption
+           Assets Report. The information on these websites has not been subjected to our examination procedures, and
+           accordingly we do not express an opinion, conclusion or any other form of assurance on this information.
+
+           Management of the Company is responsible for ensuring the Company’s terms related to USDP token
+           purchases and redemptions and the definitions of purchase and redemption rights applicable as of the report
+           dates continue to be available to support an understanding of the USDP Redemption Assets Report.
+
+           Our opinion is not modified in respect of these matters.
+
+           Responsibilities for Management’s Assertion
+           Management of the Company is responsible for Management’s Assertion as well as:
+
+           •   designing, implementing and maintaining internal control relevant to the preparation of Management’s
+               Assertion such that it is free from material misstatement, whether due to fraud or error;
+           •   selecting or developing suitable criteria as a basis for Management’s Assertion and appropriately referring
+               to or describing the criteria used; and
+           •   fairly stating Management’s Assertion.
+
+
+
+
+                                           KPMG LLP, a Delaware limited liability partnership and a member firm of
+                                           the KPMG global organization of independent member firms affiliated with
+                                           KPMG International Limited, a private English company limited by guarantee.
+Docusign Envelope ID: 5FADC43C-12FB-426E-83EA-1F6C34D4F1CD
+
+
+
+
+           Our responsibilities
+           The attestation standards established by the American Institute of Certified Public Accountants require us to:
+
+           •   plan and perform the examination to obtain reasonable assurance about whether Management’s Assertion
+               is fairly stated, in all material respects; and
+           •   express an opinion on Management's Assertion, based on our examination.
+
+           We exercised professional judgment and maintained professional skepticism throughout the engagement. We
+           designed and performed our procedures to obtain evidence about Management's Assertion that is sufficient
+           and appropriate to provide a basis for our opinion. The nature, timing, and extent of the procedures selected
+           depended on our judgment, including an assessment of the risks of material misstatement of Management's
+           Assertion, whether due to fraud or error. We identified and assessed the risks of material misstatement through
+           understanding Management's Assertion and the engagement circumstances. We also obtained an
+           understanding of the internal control relevant to Management's Assertion in order to design procedures that are
+           appropriate in the circumstances but not for the purpose of expressing an opinion on the effectiveness of
+           internal controls.
+
+
+
+
+           New York, New York
+           February 28, 2025
+
+
+
+
+                                                                  2
+Docusign Envelope ID: 5FADC43C-12FB-426E-83EA-1F6C34D4F1CD
+
+
+
+
+                                                                                                ‭USDP Redemption Assets Report‬
+            ‭Pax Dollar (USDP) Redemption Assets Report as of January 21, 2025 and January 31, 2025 at 5:00 PM‬
+             ‭Eastern Time‬
+
+            ‭Background‬‭1‬
+            ‭Paxos Trust Company, LLC (the Company or Paxos) is a New York limited purpose trust company. The‬
+             ‭Company received its trust charter from the New York Department of Financial Services (NYDFS) in 2015‬
+              ‭and has been a long-time leader in both crypto asset services and the creation of blockchain‬
+               ‭technologies for the financial world.‬‭As the prudential‬‭regulator of companies engaged in virtual‬
+                ‭currency business activity in New York, NYDFS has requirements, standards, and controls on the‬
+                 ‭stablecoins issued by its regulated entities. This includes guidelines published by the NYDFS in the‬
+                  ‭industry letter dated June 8, 2022,‬‭2‬ ‭which applies to‬‭entities licensed under 23 NYCRR Part 200 or‬
+                   ‭chartered as limited purpose trust companies under the New York Banking Law that issue U.S.‬
+                    ‭Dollar-backed stablecoins under the supervision of the NYDFS (the NYDFS Guidelines). This USDP‬
+                     ‭Redemption Assets Report has been prepared by Management of Paxos to fulfill the requirements set‬
+                      ‭out in the NYDFS Guidelines.‬
+            ‭Management of Paxos is responsible for the completeness, accuracy, and validity of the USDP‬
+             ‭Redemption Assets Report as of January 21, 2025 and January 31, 2025 at 5:00 pm Eastern Time (the‬
+              ‭Report Dates).‬
+
+            ‭The Glossary on pages 10-11 contains key terms and definitions regarding the items presented in Exhibits‬
+             ‭A, B and C.‬
+
+            ‭Management’s assertion‬
+
+            ‭Management of Paxos asserts that as of January 21, 2025 and January 31, 2025 at 5:00 pm Eastern Time:‬
+
+            ‭•‬ ‭the total redemption assets (Exhibit B) are equal to or greater than total USDP redeemable tokens‬
+                    ‭outstanding (Exhibit A), as presented in Exhibit C. The criteria we used in making this assertion were‬
+                     ‭that the total redemption assets, which are defined as unencumbered assets held by the Company in‬
+                      ‭segregated accounts on behalf of the USDP token holders and measured as described in Exhibit B,‬
+                       ‭are equal to or greater than the USDP redeemable tokens outstanding, which are defined in the‬
+                        ‭Glossary.‬
+            ‭•‬ ‭the Company has applied the requirements of Part 2 of the New York Department of Financial‬
+                    ‭Services (NYDFS) industry letter dated June 8, 2022‬‭2‬ ‭(NYDFS Guidelines) regarding its redemption‬
+                     ‭assets, as presented in Exhibit B.‬
+
+
+
+
+            ‭1‬
+                  ‭Not subject to the Independent Accountants’ Examination Report‬
+            ‭2‬
+                   ‭https://www.dfs.ny.gov/industry_guidance/industry_letters/il20220608_issuance_stablecoins‬
+
+                                                                        ‭3‬
+Docusign Envelope ID: 5FADC43C-12FB-426E-83EA-1F6C34D4F1CD
+
+
+
+
+                                                                                              ‭USDP Redemption Assets Report‬
+                      ‭1‬
+            ‭Summary‬
+
+            ‭The following summarizes the total USDP redeemable tokens outstanding and total redemption assets as‬
+             ‭of the Report Dates, which are disclosed in Exhibits A and B.‬
+               ‭Report Dates‬                                            ‭January 21, 2025‬          ‭January 31, 2025‬
+
+
+               ‭Total USDP redeemable tokens outstanding‬                      ‭93,661,704‬                ‭80,050,903‬
+                ‭(Exhibit A line d)‬
+
+               ‭Total redemption assets in United States Dollar‬             ‭$93,665,236‬               ‭$80,364,541‬
+                ‭(Exhibit B)‬
+
+            ‭To the best of the knowledge and belief of the undersigned, the information contained in the USDP‬
+             ‭Redemption Assets Report as of the Report Dates at 5:00pm Eastern Time is accurate and complete.‬
+
+
+
+
+            ‭Adam Ackermann,‬‭Head of Treasury and Portfolio Management‬
+             ‭Paxos Trust Company, LLC‬
+
+            ‭February 28, 2025‬
+
+
+
+
+                                                                   ‭4‬
+Docusign Envelope ID: 5FADC43C-12FB-426E-83EA-1F6C34D4F1CD
+
+
+
+
+                                                                                                                                                                            ‭USDP Redemption Assets Report‬
+            ‭Exhibit A‬‭:‬‭Total USDP Natively Minted Tokens and Total‬‭USDP Redeemable Tokens Outstanding‬
+
+            ‭The following table summarizes the types of USDP tokens:‬
+
+                               ‭USDP Tokens (in quantity of tokens)‬                    ‭Blockchain Ethereum‬‭ii‬                     ‭Blockchain Solana‬‭iii‬                            ‭Total‬
+
+                                                                                    ‭January 21,‬         ‭January 31,‬          ‭January 21,‬        ‭January 31,‬         ‭January 21,‬           ‭January 31,‬
+                                                                                         ‭2025‬                ‭2025‬                ‭2025‬               ‭2025‬                 ‭2025‬                  ‭2025‬
+                  ‭a.‬ ‭Total USDP natively minted tokens‬                              ‭93,118,753‬         ‭79,444,771‬               ‭542,951‬           ‭606,132‬           ‭93,661,704‬           ‭80,050,903‬
+
+                  ‭b.‬ ‭Less temporary USDP nonredeemable tokens‬                               ‭N/A‬                  ‭N/A‬                ‭N/A‬                 ‭N/A‬                ‭N/A‬                   ‭N/A‬
+                                        ‭Temporarily access-restricted‬                          ‭N/A‬                  ‭N/A‬                ‭N/A‬                 ‭N/A‬                ‭N/A‬                   ‭N/A‬
+                                                         ‭Time-locked‬                            ‭N/A‬                  ‭N/A‬                ‭N/A‬                 ‭N/A‬                ‭N/A‬                   ‭N/A‬
+
+                  ‭c.‬    ‭Less permanent USDP nonredeemable tokens‬                            ‭N/A‬                  ‭N/A‬                ‭N/A‬                 ‭N/A‬                ‭N/A‬                   ‭N/A‬
+                                         ‭Permanently access-restricted‬                         ‭N/A‬                  ‭N/A‬                ‭N/A‬                 ‭N/A‬                ‭N/A‬                   ‭N/A‬
+
+                         ‭Total USDP nonredeemable tokens‬‭i‬                                  ‭N/A‬                  ‭N/A‬                 ‭N/A‬                ‭N/A‬                ‭N/A‬                   ‭N/A‬
+
+                  ‭d.‬ ‭Total USDP redeemable tokens outstanding‬                      ‭93,118,753‬         ‭79,444,771‬               ‭542,951‬           ‭606,132‬           ‭93,661,704‬           ‭80,050,903‬
+
+                   ‭i‬   ‭All USDP tokens are redeemable. There are no temporary or permanent USDP nonredeemable tokens‬
+
+                  ‭ii‬ ‭Blockchain Ethereum refers to the smart contract running on Ethereum at 0x8e870d67f660d95d5be530380d0ec0bd388289e1‬
+
+                  ‭iii‬ ‭Blockchain Solana refers to the smart contract running on Solana at HVbpJAQGNpkgBaYBZQBR1t7yFdvaYVp2vCQQfKKEN4tM‬
+                                                                                                                                                                                                        ‭3‬
+             ‭NOTE‬‭: Refer to the Company’s terms related to USDP token purchases and redemptions and the definitions of purchase and redemption rights (including which holders have such rights)‬
+
+            ‭The tokens included in this Exhibit A incorporate the USDP redeemable tokens of Paxos Trust Company, LLC. The USDP token is a cryptographic‬
+             ‭token, which allows financial market participants to transact in a crypto asset that has been strictly pegged 1:1 to the U.S. dollar by the Company.‬
+              ‭USDP is built on the Ethereum and Solana public blockchains. As such, the total number of USDP tokens in circulation is viewable through any‬
+               ‭publicly available Ethereum block explorer and Solana block explorer (e.g. Etherscan and Solscan).‬
+
+
+            ‭3‬
+                  ‭https://www.paxos.com/terms-and-conditions/general-terms-and-conditions‬‭and‬‭https://www.paxos.com/terms-and-conditions/stablecoin-terms-conditions‬
+
+                                                                                                                ‭5‬
+Docusign Envelope ID: 5FADC43C-12FB-426E-83EA-1F6C34D4F1CD
+
+
+
+
+                                                                                                  ‭USDP Redemption Assets Report‬
+            ‭Exhibit B: Composition of Redemption Assets by Asset Type‬
+
+
+            ‭The following table summarizes redemption assets by asset type in United States Dollar (USD):‬
+
+                                                                             ‭January 21, 2025‬          ‭January 31, 2025‬
+             ‭Cash‬                                                                  ‭$92,147,236‬                ‭$67,395,541‬
+             ‭Government money market funds, at net asset value‬                                   ‭-‬                        ‭-‬
+             ‭Repurchase agreements, at fair value‬                                   ‭$1,518,000‬                ‭$12,969,000‬
+             ‭Obligations of U.S. Treasury, at fair value‬                                         ‭-‬                        ‭-‬
+             ‭Total‬                                                                 ‭$93,665,236‬                ‭$80,364,541‬
+
+            ‭The redemption assets included in this Exhibit B relate to the redemption assets supporting the USDP‬
+             ‭redeemable tokens reported in Exhibit A.‬
+            ‭The Company maintains the redemption assets securing USDP in segregated accounts that are‬
+             ‭unencumbered and held on behalf of USDP token holders in one or more of the following forms: (i) fiat‬
+              ‭currency held in Federal Deposit Insurance Corporation (FDIC)-insured bank accounts; (ii) (a) investments‬
+               ‭(including through overcollateralized overnight reverse repurchase agreements) in debt instruments that‬
+                ‭are expressly guaranteed by the full faith and credit of the United States Government; and/or (b)‬
+                 ‭money-market funds composed of such debt instruments. Amounts backed by debt instruments that are‬
+                  ‭expressly guaranteed by the full faith and credit of the United States Government are subject to market‬
+                   ‭pricing risk.‬
+
+            ‭1.‬ ‭Cash‬
+             ‭The Company’s cash is held at commercial banks and cash held at a specific bank may at times exceed‬
+              ‭the FDIC limit of $250,000. As of January 21, 2025 and January 31, 2025, the uninsured FDIC demand‬
+               ‭deposits at commercial banks totaled $798,353 and $798,353 respectively. The Company has obtained‬
+                ‭excess deposit insurance, in the amount of $50,000,000, from Paxos Insurance Company Ltd, a captive‬
+                 ‭insurance company for the Company and its affiliates. The following table summarizes cash by type of‬
+                  ‭account, regulatory agency, and geographic location.‬
+
+                  ‭Type of Account‬         ‭Regulatory Agency‬   ‭Geographic Location‬ ‭January 21, 2025‬         ‭January 31, 2025‬
+
+             ‭For the benefit of‬
+                                         ‭Federal Reserve Board‬ ‭United States‬                  ‭$92,147,236‬         ‭$67,395,541‬
+              ‭authorized token holders‬
+             ‭Total‬                                                                              ‭$92,147,236‬         ‭$67,395,541‬
+
+
+            ‭2.‬ ‭Government Money Market Funds‬
+             ‭Government money market funds hold investments in direct obligations of the Government of the‬
+              ‭United States and reverse repurchase agreements on such obligations. As of January 21, 2025 and‬
+               ‭January 31, 2025, the Company held no government money market funds.‬
+
+            ‭3.‬ ‭Repurchase Agreements, at Fair Value‬
+             ‭Repurchase agreements are agreements with selected commercial banks and broker-dealers, under‬
+
+
+                                                                       ‭6‬
+Docusign Envelope ID: 5FADC43C-12FB-426E-83EA-1F6C34D4F1CD
+
+
+
+
+                                                                                                ‭USDP Redemption Assets Report‬
+            ‭which the Company acquires securities as collateral (debt obligation) subject to an obligation of the‬
+             ‭counterparty to repurchase and the Company to resell the securities (obligation) at an agreed-upon time‬
+              ‭and price. The Company, through a custodian or a sub-custodian, receives delivery of the underlying‬
+               ‭securities collateralizing repurchase agreements. The Company is not permitted to sell or repledge the‬
+                ‭securities acquired as collateral. Repurchase agreements are exposed to credit and liquidity risk. To‬
+                 ‭manage these risks, the repurchase agreements entered by the Company are overcollateralized such that‬
+                  ‭the fair value of the underlying collateral is greater than the par amount of the repurchase agreement.‬
+                   ‭The Company monitors the fair value of the underlying collateral on a daily basis, with additional‬
+                    ‭securities obtained as collateral as necessary. Since the repurchase agreements mature overnight, the‬
+                     ‭par amount of the repurchase agreement is considered to be equal to fair value as the amount is‬
+                      ‭deemed to be a cash deposit with no risk of change in value as of the end of each day. The following‬
+                       ‭table summarizes the remaining contractual maturity of the agreements by counterparty at fair value:‬
+
+                                               ‭Repurchase Agreements as of January 21, 2025‬
+                                                  ‭Coupon‬   ‭Purchase‬    ‭Maturity‬
+               ‭Counterparty‬     ‭Collateral‬                                                ‭Par‬              ‭Fair Value‬
+                                                    ‭Rate‬      ‭Date‬       ‭Date‬
+                                ‭Obligations‬
+             ‭Bank 1 in United‬
+                                 ‭of U.S.‬       ‭4.25%‬     ‭1/21/2025‬    ‭1/22/2025‬          ‭$1,518,000‬       ‭$1,518,000‬
+              ‭States‬
+                                  ‭Treasury‬
+             ‭Total‬
+              ‭Repurchase‬                                                                                          ‭$1,518,000‬
+               ‭Agreements‬
+
+
+                                                  ‭Repurchase Agreements as of January 31, 2025‬
+                                                     ‭Coupon‬     ‭Purchase‬  ‭Maturity‬
+                 ‭Counterparty‬      ‭Collateral‬                                                  ‭Par‬         ‭Fair Value‬
+                                                         ‭Rate‬      ‭Date‬     ‭Date‬
+                                ‭Obligations‬
+             ‭Bank 1 in United‬
+                                 ‭of U.S.‬             ‭4.32%‬  ‭1/31/2025‬  ‭2/3/2025‬          ‭$12,969,000‬     ‭$12,969,000‬
+              ‭States‬
+                                  ‭Treasury‬
+             ‭Total‬
+              ‭Repurchase‬                                                                                        ‭$12,969,000‬
+               ‭Agreements‬
+
+
+            ‭4.‬ ‭Obligations of U.S. Treasury‬
+                  ‭Obligations of U.S. Treasury are held by a qualified custodian. The Company only holds U.S. Treasury‬
+                   ‭bills that are three months or less from their respective maturities. As of January 21, 2025 and‬
+                    ‭January 31, 2025, the Company held no obligations of U.S. Treasury.‬
+
+
+
+
+                                                                      ‭7‬
+Docusign Envelope ID: 5FADC43C-12FB-426E-83EA-1F6C34D4F1CD
+
+
+
+
+                                                                                                                   ‭USDP Redemption Assets Report‬
+            ‭Exhibit C: Comparison Between the Redemption Assets and the USDP Redeemable Tokens Outstanding‬
+
+            ‭The following table summarizes the redemption assets and the USDP redeemable tokens outstanding:‬
+
+                                                                                           ‭January 21, 2025‬              ‭January 31, 2025‬
+             ‭Redemption assets‬                                                                     ‭$93,665,236‬                 ‭$80,364,541‬
+
+             ‭Less: Amount of USDP redeemable tokens outstanding‬‭i‬                                   ‭93,661,704‬                 ‭80,050,903‬
+
+             ‭Subtotal prior to timing difference‬                                                          ‭$3,532‬                  ‭$313,638‬
+
+             ‭Timing differences:‬
+                             ‭USDP tokens purchased but not yet minted‬                                             ‭-‬                              ‭-‬
+                                        ‭USDP tokens redeemed but not yet paid‬                                      ‭-‬                              ‭-‬
+
+             ‭Subtotal prior to temporary difference‬                                                       ‭$3,532‬                  ‭$313,638‬
+
+             ‭Temporary differences:‬‭ii‬
+                                                 ‭USDP access-restricted tokens‬                                ‭N/A‬                         ‭N/A‬
+                                                      ‭USDP time-locked tokens‬                                  ‭N/A‬                         ‭N/A‬
+
+             ‭Surplus (Deficit)‬‭iii‬                                                                       ‭$3,532‬                  ‭$313,638‬
+
+             ‭i The amount of USDP redeemable tokens outstanding includes requests for purchases and redemptions that have not yet been‬
+              ‭processed due to timing differences‬
+             ‭ii All USDP tokens are redeemable. There are no temporary or permanent USDP nonredeemable tokens‬
+             ‭iii The Company’s terms stipulate that for each USDP redeemable token outstanding there is $1 available assets for redemption. This‬
+              ‭surplus indicates that asset-backing levels are in accordance with the Company’s terms‬‭3‬
+
+            ‭The tokens and redemption assets included in this Exhibit C relate to the USDP redeemable tokens‬
+             ‭reported in Exhibit A and redemption assets reported in Exhibit B.‬
+
+
+
+
+                                                                                   ‭8‬
+Docusign Envelope ID: 5FADC43C-12FB-426E-83EA-1F6C34D4F1CD
+
+
+
+
+                                                                                             ‭USDP Redemption Assets Report‬
+                                                                            ‭1‬
+            ‭Appendix: General considerations related to Crypto Assets‬
+
+            ‭As of the date of this report, crypto assets remain an evolving area of technology and marketplace‬
+             ‭activity. Those who choose to invest in crypto assets should inform themselves of the general risks and‬
+              ‭uncertainties associated with such assets.‬
+
+            ‭(1) Crypto assets are owned anonymously. While the public keys of virtual wallets holding crypto assets‬
+             ‭reside on the distributed networks and can be viewed publicly, the ownership of the wallets are normally‬
+              ‭not registered and therefore, anonymous. Ownership of crypto assets is evidenced primarily by the‬
+               ‭possession of the underlying private key (e.g. passcode). The possessor of the private key controls the‬
+                ‭corresponding crypto asset wallet.‬
+
+            ‭(2) Risk of irreversible transactions. Transactions for most crypto assets that occur over the blockchain‬
+             ‭are generally irreversible, even if such transactions occur fraudulently or accidentally. If a private key is‬
+              ‭lost or fraudulently used, the crypto assets in the corresponding wallet may not be recoverable.‬
+
+            ‭(3) Regulatory uncertainty. Legislative and regulatory changes or actions at the state or federal level may‬
+             ‭change or affect the use, transfer, exchange, and value of crypto assets. The effects of any such changes‬
+              ‭are not determinable as of the date of this report.‬
+
+
+
+
+                                                                    ‭9‬
+Docusign Envelope ID: 5FADC43C-12FB-426E-83EA-1F6C34D4F1CD
+
+
+
+
+                                                                                             ‭USDP Redemption Assets Report‬
+            ‭Glossary: Key terms and definitions regarding the items presented in Exhibits A, B and C‬‭1‬
+
+              ‭NOTE 1:‬‭These key terms and definitions are consistent‬‭with the‬‭AICPA and CIMA Blockchain Universal‬
+               ‭Glossary, published in 2024‬
+
+              ‭NOTE 2:‬‭All USDP tokens are redeemable. There are‬‭no temporary or permanent nonredeemable‬
+               ‭tokens.‬
+
+
+              ‭asset-backed tokens.‬‭Digital assets that are pegged‬‭to the value of other assets (for example, fiat,‬
+               ‭commodities, or other digital assets).‬
+
+              ‭access-restricted tokens.‬‭Tokens associated with wallet‬‭addresses that may be temporarily or‬
+               ‭permanently restricted from redemption or transferring. See‬‭nonredeemable tokens‬‭.‬
+
+              ‭bridged tokens.‬‭The application of wrapping a token‬‭for use on blockchains for which the tokens were‬
+               ‭not natively minted by the issuer.‬
+
+              ‭minted tokens (minting).‬‭Tokens created by the issuer‬‭that reside on a distributed ledger or blockchain‬
+               ‭network.‬
+
+              ‭natively minted tokens.‬‭Tokens that have been minted‬‭on in-scope blockchains and that have not been‬
+               ‭bridged from other blockchains or networks.‬
+
+              ‭nonredeemable tokens.‬‭Tokens that cannot be redeemed‬‭with the token issuer at the measurement‬
+               ‭point in time or are otherwise encumbered and not valid for redemption. Nonredeemable tokens may‬
+                ‭include, but are not limited to, time- locked tokens; pre-minted tokens; test tokens; bridged or‬
+                 ‭wrapped tokens; tokens that have been access-restricted. Tokens can be either temporarily or‬
+                  ‭permanently nonredeemable. See‬‭pre-minted tokens‬‭;‬‭test tokens‬‭;‬‭bridged tokens‬‭;‬‭wrapped tokens‬‭;‬
+                   ‭access-restricted tokens‬‭.‬
+
+              ‭pre-minted tokens.‬‭Tokens that have been minted by‬‭an asset-backed token issuer but not yet issued‬
+               ‭and are considered nonredeemable. See‬‭asset-backed‬‭token‬‭;‬‭nonredeemable tokens‬
+
+              ‭redeemable tokens outstanding.‬‭The total of natively‬‭minted tokens less nonredeemable tokens. Also‬
+               ‭known as issued tokens that are in circulation. See‬‭nonredeemable tokens‬‭.‬
+
+              ‭test tokens.‬‭Minted tokens for which there are no‬‭associated redemption assets. These are used for‬
+               ‭the sole purpose of performing entity-related testing of the system for functionality and are‬
+                ‭considered nonredeemable. See‬‭nonredeemable tokens‬‭.‬
+
+              ‭time-locked tokens (locked tokens).‬‭Tokens that are‬‭subject to a restriction mechanism that locks the‬
+               ‭use of the token for a set time limit. Depending on the use, these tokens may or may not be‬
+                ‭redeemable.‬
+
+              ‭token quantity (token supply).‬‭The number of tokens‬‭that have been natively minted on a particular‬
+               ‭blockchain. See‬‭natively minted tokens‬‭.‬
+
+
+
+                                                                   ‭10‬
+Docusign Envelope ID: 5FADC43C-12FB-426E-83EA-1F6C34D4F1CD
+
+
+
+
+                                                                                        ‭USDP Redemption Assets Report‬
+              ‭wrapped tokens.‬‭Tokens that are separate and distinct tokenized versions of another digital asset.‬
+               ‭These may be used either on the same blockchain as the original digital asset or on a different‬
+                ‭blockchain.‬
+
+
+
+
+                                                                ‭11‬
+

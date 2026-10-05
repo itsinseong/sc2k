@@ -1,0 +1,137 @@
+Docusign Envelope ID: D8FEC4FC-8F24-44DB-86B0-0E4A3F0AA87E
+
+
+
+
+                                                  RLUSD Reserves Report
+                                                      January 2026
+Docusign Envelope ID: D8FEC4FC-8F24-44DB-86B0-0E4A3F0AA87E
+
+
+
+
+                                    Standard Custody & Trust Company, LLC
+
+                                                             CONTENTS
+
+                                                                            Page(s)
+        Independent Accountant’s Report                                       1
+
+        Management’s Assertion and RLUSD Reserve Report                      2-3
+Independent Accountant’s Report
+
+
+Audit Committee and Management
+Standard Custody & Trust Company, LLC
+
+We have examined management of Standard Custody & Trust Company, LLC’s (the “Company”) assertion
+that the RLUSD Reserve Report is presented in accordance with the criteria defined in the accompanying
+RLUSD Reserve Report as of January 14, 2026, and January 30, 2026, at 5:00pm Eastern Time (the “Report
+Dates”). The Company’s management is responsible for its assertion. Our responsibility is to express an
+opinion on management’s assertion based on our examination.
+
+Our examination was conducted in accordance with attestation standards established by the American
+Institute of Certified Public Accountants (AICPA). Those standards require that we plan and perform the
+examination to obtain reasonable assurance about whether management’s assertion is fairly stated, in all
+material respects. An examination involves performing procedures to obtain evidence about
+management’s assertion. The nature, timing, and extent of the procedures selected depend on our
+judgment, including an assessment of the risks of material misstatement of management’s assertion,
+whether due to fraud or error. We believe that the evidence we obtained is sufficient and appropriate to
+provide a reasonable basis for our opinion.
+
+We are required to be independent and to meet our other ethical responsibilities in accordance with
+relevant ethical requirements relating to the engagement.
+
+In our opinion, management’s assertion that the RLUSD Reserve Report is presented in accordance with
+the criteria set forth therein as of the Report Dates is fairly stated, in all material respects.
+
+
+
+
+February 25, 2026
+Docusign Envelope ID: D8FEC4FC-8F24-44DB-86B0-0E4A3F0AA87E
+
+
+
+
+                         MANAGEMENT’S ASSERTION AND RLUSD RESERVE REPORT
+        MANAGEMENT’S ASSERTION
+
+        Standard Custody & Trust Company, LLC (the “Company”), a subsidiary of Ripple Labs Inc. as the ultimate
+        parent company, is a New York limited purpose trust company and the issuer of Ripple USD (“RLUSD”), a U.S.
+        dollar-denominated stablecoin. The Company is responsible for the completeness, accuracy, and validity of the
+        RLUSD Reserve Report as of January 14, 2026, and January 30, 2026, at 5:00pm Eastern Time (the “Report
+        Dates”). The Company’s Management asserts that as of the Report Dates:
+
+            ●   The Market Value of the Assets in the Reserve, both in aggregate and broken down by asset class, and
+                the quantity of Outstanding Stablecoin Units in the RLUSD Reserve Report are presented in accordance
+                with the criteria below,
+            ●   The Market Value of the Assets in the Reserve was equal or greater than the Outstanding Stablecoin
+                Units, and
+            ●   The DFS-imposed Conditions on the Assets in the Reserve have been met.
+
+
+        CRITERIA
+
+        This criteria was derived from items 3(a)(i) through 3 (a)(iv) set forth in Paragraph 3 of the industry letter issued
+        by the New York State Department of Financial Services (“DFS”) dated June 8, 2022, Guidance on the Issuance
+        of U.S. Dollar-Backed Stablecoins (the “NYDFS Letter”).
+            1. Market Value means the total balance of U.S. dollar denominated Assets in the Reserve at the Report
+               Dates held by the Company with regulated financial institutions on behalf of RLUSD holders.
+            2. Reserve means the account utilized by Management to hold the Assets on behalf of RLUSD holders at
+               the Report Dates. The Reserve is segregated from the proprietary assets of the Company.
+            3. Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP
+               Ledger and Ethereum blockchain networks at the Report Dates.
+            4. DFS-imposed Conditions means:
+                     o   The Assets in the Reserve must be segregated from the proprietary assets of the issuing entity,
+                         and must be held in custody with (i) U.S. state or federally chartered depository institutions with
+                         deposits insured by the Federal Deposit Insurance Corporation (“FDIC”) and/or (ii) asset
+                         custodians, approved in advance in writing by the DFS.
+                     o   The Assets in the Reserve consist of the following classes:
+                             ▪ U.S. Treasury bills acquired by the Issuer three months or less from their respective
+                                 maturities.
+                             ▪ Reverse repurchase agreements fully collateralized by U.S. Treasury bills, U.S.
+                                 Treasury notes, and/or U.S. Treasury bonds on an overnight basis, subject to DFS-
+                                 approved requirements concerning overcollateralization. Such reverse repurchase
+                                 agreements shall be either (A) tri-party or (B) bilateral with a counterparty whose identity
+                                 has been submitted to DFS in writing, without objection, at least 14 days prior to the
+                                 Issuer’s commencing to enter into contracts with such counterparty.
+                             ▪ Government money-market funds, subject to DFS-approved caps on the fraction of the
+                                 Reserve assets to be held in such funds and DFS-approved restrictions on the funds,
+                                 such as a minimum percentage allocation to direct obligations of the Government of the
+                                 United States and reverse repurchase agreements on such obligations.
+                             ▪ Deposit accounts at US State or federally chartered depository institutions, subject to
+                                                                                                                                2
+Docusign Envelope ID: D8FEC4FC-8F24-44DB-86B0-0E4A3F0AA87E
+
+
+
+
+                                 DFS-approved restrictions such as (A) percentage-of-Reserve or absolute-dollar-value
+                                 caps on the assets to be deposited at any given depository institution and/or (B)
+                                 limitations based on DFS’s conclusions concerning the risk characteristics of depository
+                                 institutions, taking into consideration the amounts reasonably needed to be held at
+                                 depository institutions to meet anticipated redemption demands.
+
+
+        RLUSD RESERVE REPORT The total Outstanding Stablecoin Units and total Market Value of the Reserve, in
+        aggregate, as of the Report Dates, are as follows:
+
+                                                       January 14, 2026                     January 30, 2026
+         Outstanding Stablecoin Units                             1,385,456,204                        1,357,255,995
+         Market Value of the Reserve                            $ 1,447,074,824                      $ 1,422,590,657
+
+
+        The total Market Value of the assets in the Reserve, broken down by asset class as of the Report Dates are as
+        follows:
+
+
+
+
+        ________________________________
+        Jack McDonald
+        Chief Executive Officer
+        Standard Custody & Trust Company, LLC
+        February 25, 2026
+                                                                                                                            3
+

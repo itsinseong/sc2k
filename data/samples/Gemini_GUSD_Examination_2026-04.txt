@@ -1,0 +1,97 @@
+Independent Accountants’ Report
+    GUSD Reserves Report
+       April 30, 2026
+                                  One California Street, Suite 2500, San Francisco, CA 94111
+                                  Phone 415-421-5757 | Fax 415-288-6288 | bpm@bpm.com
+
+
+
+                                   INDEPENDENT ACCOUNTANT’S REPORT
+
+To the Audit Committee and Management of
+Gemini Trust Company, LLC
+New York, New York
+
+We have examined the compliance of Gemini Trust Company, LLC (the “Company”) with item 3(a) of the New York
+State Department of Financial Services (“DFS”) industry letter dated June 8, 2022, Guidance on the Issuance of
+U.S. Dollar-Backed Stablecoins (the “DFS Letter”), which is described as Management’s Assertion in the GUSD
+Reserves Report as of April 20, 2026 and as of April 30, 2026. Management of the Company is responsible for its
+assertion about compliance with item 3(a) of the DFS Letter. Our responsibility is to express an opinion on
+Management’s Assertion about the Company’s compliance with the specified requirements based on our
+examination.
+
+Our examination was conducted in accordance with attestation standards established by the American Institute of
+Certified Public Accountants. Those standards require that we plan and perform the examination to obtain
+reasonable assurance about whether Management’s Assertion about compliance with the specified requirements
+is fairly stated, in all material respects. An examination involves performing procedures to obtain evidence about
+whether Management’s Assertion is fairly stated in all material respects. The nature, timing, and extent of the
+procedures selected depend on our judgment, including an assessment of the risks of material misstatement of
+Management’s Assertion, whether due to fraud or error. In making an assessment of the risks of material
+misstatement, we considered and obtained an understanding of internal control relevant to the preparation of the
+GUSD Reserves Report and for compliance with the DFS Letter in order to design procedures that are appropriate
+in the circumstances, but not for the purpose of expressing an opinion on the effectiveness of internal control.
+Accordingly, no such opinion is expressed. We believe that the evidence we obtained is sufficient and appropriate
+to provide a reasonable basis for our opinion.
+
+We are required to be independent and to meet our other ethical responsibilities in accordance with relevant ethical
+requirements relating to the engagement.
+
+Our examination does not provide a legal determination on the Company’s compliance with specified requirements.
+
+In our opinion, Management’s Assertion that the Company complied with the requirements of item 3(a) of the DFS
+Letter as of April 20, 2026, and as of April 30, 2026, is fairly stated, in all material respects.
+
+
+
+
+San Francisco, California
+May 29, 2026
+
+
+
+
+bpm.com
+                                        GUSD RESERVES REPORT
+
+Gemini Trust Company, LLC (the “Company”) has issued Gemini dollars (“GUSD”), a U.S. dollar-backed stablecoin,
+to its customers. We, as members of management, are responsible for complying with the requirements of the New
+York State Department of Financial Services (“DFS”) industry letter dated June 8, 2022, Guidance on the Issuance
+of U.S. Dollar-Backed Stablecoins (the “DFS Letter”). We are also responsible for establishing and maintaining
+effective internal controls over compliance with the requirements of the DFS Letter. We have performed an
+evaluation that includes all relevant matters of the Company’s compliance with item 1(a), paragraph 2, and item 3(a)
+of the DFS Letter during the period from April 1, 2026, to April 30, 2026.
+
+In accordance with item 3(a) of the DFS Letter, we assert that the Company has complied with the following
+requirements as of the dates noted below (“Management’s Assertion”):
+
+    •   The amounts disclosed below for GUSD issued and in circulation and the Reserve (as defined below) as
+        of April 20, 2026, and as of April 30, 2026, at end of day are accurate;
+
+    •   The Reserve was, at these times, adequate to fully back all outstanding GUSD issued and in circulation;
+        and
+
+    •   All DFS-imposed conditions on the Reserve assets (whether set forth in paragraph 2 of the DFS Letter or
+        otherwise specified by DFS) have been met.
+
+The Company is required to comply with the following provisions of the DFS Letter:
+
+    •   Item 1(a) under the DFS Letter requires that a U.S. dollar-backed stablecoin must be fully backed by asset
+        reserves (the “Reserve”), meaning that the market value of the Reserve is at least equal to the nominal
+        value of all outstanding units of the stablecoin as of the end of each business day. Per the DFS Letter, “end
+        of day” is implied to be 5pm Eastern Time. As a practical matter our reconciliation process begins within 30
+        minutes of 5pm Eastern Time and takes a number of minutes to complete the necessary transfers which
+        could mean that the reconciliation process is completed shortly after 5pm Eastern Time.
+        Paragraph 2 of the DFS Letter includes the following provisions:
+
+           o   Item 2(a) under the DFS Letter requires that assets in the Reserve must be segregated from the
+               proprietary assets of the issuing entity, and must be held in custody with (i) U.S. state or federally
+               chartered depository institutions with deposits insured by the Federal Deposit Insurance Corporation
+               (“FDIC”) and/or (ii) asset custodians, approved in advance in writing by DFS. The Reserve assets
+               shall be held at these depository institutions and custodians for the benefit of the holders of the
+               stablecoin, with appropriate titling of accounts.
+           o   Item 2(b) under the DFS Letter describes the types of permissible assets the Reserve may hold,
+               including deposit accounts at state or federally chartered depository institutions, government
+               money market funds, U.S. Treasury bills with maturities of three months or less, and certain reverse
+               repurchase agreements fully collateralized on an overnight basis. DFS imposes additional
+               restrictions and provisions with regard to these asset types, which are described in Item 2(b).
+

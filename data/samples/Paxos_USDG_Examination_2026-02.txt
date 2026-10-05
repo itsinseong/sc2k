@@ -1,0 +1,177 @@
+           Paxos Digital Singapore Pte. Ltd.
+           Registration Number: 202316062N
+
+ Report on Management’s Assertion regarding the Global
+Dollar (USDG) Redeemable Tokens and Redemption Assets
+ as of 10 February 2026 and 27 February 2026 at 5:00 PM
+                United States Eastern Time
+Independent reasonable assurance report
+Board of Directors and Management
+Paxos Digital Singapore Pte. Ltd.
+
+We were engaged by the Board of Directors of Paxos Digital Singapore Pte. Ltd. (the “Company”)
+to report on management of the Company’s assertion on page 5 of the Global Dollar (USDG)
+Redemption Assets Report as of 10 February 2026 and 27 February 2026 at 5:00 PM United
+States Eastern Time (the “USDG Redemption Assets Report”) regarding:
+
+    (a) the total USDG natively minted tokens and the total USDG redeemable tokens
+         outstanding (Exhibit A),
+
+    (b) the composition of redemption assets by asset type (Exhibit B), and
+
+    (c) the comparison of the two (Exhibit C),
+
+which includes the Criteria used by management of the Company as a basis for the assertion
+(“Management’s Assertion”), in the form of an independent reasonable assurance conclusion
+about whether the Management’s Assertion has been properly stated and whether the
+accompanying Exhibits A, B and C have been properly prepared and presented, in all material
+respects in accordance with the Criteria.
+
+Our conclusion excludes the information on the websites which has been referenced to throughout
+the USDG Redemption Assets Report.
+
+Criteria
+
+Exhibits A, B and C were prepared in accordance with the Part I of “AICPA 2025 Criteria for
+Stablecoin Reporting: Specific to Asset-Backed Fiat Pegged Tokens” and the reserve assets
+composition requirements in sub-paragraph b of Reserve Asset Undertakings included in the
+Letter of Undertaking agreed with the Monetary Authority of Singapore (MAS) and executed
+by the Company, which states “b. we undertake to hold reserve assets only in the following types
+of assets (in any combination): i. cash; ii. cash equivalent; iii. bonds or notes with no more than
+three months residual maturity, that is issued by either: a. the government or public entity of the
+country that the currency of the SCS is pegged to; or b. a recognised multilateral agency; or iv.
+any bonds or notes stated in sub-paragraph b. iii. above that are held under a reverse repurchase
+agreement, where: a. the term of the agreement is overnight; and b. the counterparty to that
+agreement holds a long-term rating of not less than AA- by Fitch Ratings or Standard and Poor’s
+Ratings Services, or not less than Aa3 by Moody’s Investor Services”.
+
+Management’s responsibility
+
+Management is responsible for preparing and presenting Management’s Assertion and the
+accompanying Exhibits A, B and C in the USDG Redemption Assets Report that are free from
+material misstatement in accordance with the Criteria and for the information contained therein.
+
+This responsibility includes designing, implementing and maintaining internal control relevant to
+the preparation and presentation of Management’s Assertion and the accompanying Exhibits A,
+B and C that are free from material misstatement whether due to fraud or error.
+
+
+
+
+                                                                                                  2
+                                                                       Paxos Digital Singapore Pte. Ltd.
+                                           Report on Management’s Assertion regarding the Global Dollar
+                                                      (USDG) Redeemable Tokens and Redemption Assets
+                                   as of 10 February 2026 and 27 February 2026 at 5:00 PM United States
+                                                                                          Eastern Time
+
+
+
+
+Management is also responsible for preventing and detecting fraud and for identifying and
+ensuring that the Company complies with laws and regulations applicable to its activities.
+
+Management is also responsible for ensuring that staff involved with the preparation and
+presentation of the Management’s Assertion and the accompanying Exhibits A, B and C are
+properly trained, information systems are properly updated and that any changes in reporting
+encompass all significant reporting units.
+
+Auditors’ independence and quality management
+
+We have complied with the independence and other ethical requirements of the Accounting and
+Corporate Regulatory Authority (ACRA) Code of Professional Conduct and Ethics for Public
+Accountants and Accounting Entities (ACRA Code), which is founded on fundamental principles
+of integrity, objectivity, professional competence and due care, confidentiality and professional
+behaviour.
+
+Our firm applies Singapore Standard on Quality Management (SSQM) 1 Quality Management
+for Firms that Perform Audits or Reviews of Financial Statements, or Other Assurance or Related
+Services Engagements, which requires the firm to design, implement and operate a system of
+quality management including policies or procedures regarding compliance with ethical
+requirements, professional standards and applicable legal and regulatory requirements.
+
+Auditors’ responsibility
+
+Our responsibility is to examine the Management’s Assertion and the accompanying Exhibits A,
+B and C in the USDG Redemption Assets Report prepared and presented by the Company, which
+incorporates the reserve assets of Paxos Issuance Europe Oy, a separate legal entity from the
+Company incorporated in Finland, as presented in Exhibit B, and to report thereon in the form of
+an independent reasonable assurance conclusion based on the evidence obtained. We conducted
+our engagement in accordance with Singapore Standard on Assurance Engagements 3000,
+Assurance Engagements other than Audits or Reviews of Historical Financial Information. That
+standard requires that we plan and perform our procedures to obtain reasonable assurance about
+whether the Management’s Assertion is properly stated and the accompanying Exhibits A, B and
+C are properly prepared and presented, in all material respects, in accordance with the Criteria.
+
+The procedures selected depend on our judgement, including the assessment of the risks of
+material misstatement of the Management’s Assertion and the accompanying Exhibits A, B and
+C, whether due to fraud or error.
+
+In making those risk assessments, we have considered internal controls relevant to the preparation
+and presentation of the Management’s Assertion and the accompanying Exhibits A, B and C in
+order to design assurance procedures that are appropriate in the circumstances, but not for the
+purposes of expressing a conclusion as to the effectiveness of the Company's internal control over
+the preparation and presentation of the Management’s Assertion and the accompanying Exhibits
+A, B and C.
+
+
+
+
+                                                                                                           3
+                                                                       Paxos Digital Singapore Pte. Ltd.
+                                           Report on Management’s Assertion regarding the Global Dollar
+                                                      (USDG) Redeemable Tokens and Redemption Assets
+                                   as of 10 February 2026 and 27 February 2026 at 5:00 PM United States
+                                                                                          Eastern Time
+
+
+
+
+Our engagement also included assessing the appropriateness of the Management’s Assertion and
+the accompanying Exhibits A, B and C, the suitability of the Criteria used by the Company in
+preparing and presenting the Management’s Assertion and the accompanying Exhibits A, B and
+C in the circumstances of the engagement, obtaining an understanding of the process undertaken
+by management to prepare the non-financial information in the Management’s Assertion and the
+accompanying Exhibits A, B and C, comparison of the non-financial information the
+Management’s Assertion and the accompanying Exhibits A, B and C to the sources from which
+it was obtained and re-computation of the calculations in the accompanying Exhibits A, B and C.
+Reasonable assurance is less than absolute assurance.
+
+Because of the inherent limitations in any system of internal accounting control, fraud or error
+may occur and not be detected. Also, projection of any evaluation of the system to future periods
+is subject to the risk that procedures may become inadequate because of changes in conditions or
+that the degree of compliance with the procedures may deteriorate.
+
+Conclusion
+
+Our conclusion has been formed on the basis of, and is subject to, the matters outlined in this
+report.
+
+We believe that the evidence we have obtained is sufficient and appropriate to provide a basis for
+our conclusion.
+
+In our opinion, the Management’s Assertion has been properly stated and the accompanying
+Exhibits A, B and C have been properly prepared and presented, in all material respects, in
+accordance with the Criteria.
+
+Purpose and restriction on use
+
+This report is prepared solely to assist the Company in its submission of the USDG Redemption
+Assets Report to the Monetary Authority of Singapore (MAS). As a result, the report may not be
+suitable for another purpose.
+
+
+
+
+KPMG LLP
+Public Accountants and
+Chartered Accountants
+
+Singapore
+26 March 2026
+
+
+
+
+                                                                                                           4
+

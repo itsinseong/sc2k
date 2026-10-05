@@ -1,0 +1,158 @@
+Independent Accountants’ Report
+    GUSD Reserves Report
+       December 2024
+                                  One California Street, Suite 2500, San Francisco, CA 94111
+                                  Phone 415-421-5757 | Fax 415-288-6288 | bpm@bpm.com
+
+
+
+
+                                   INDEPENDENT ACCOUNTANTS’ REPORT
+
+
+To the Audit Committee and Management of
+Gemini Trust Company, LLC
+New York, NY
+
+We have examined the compliance of Gemini Trust Company, LLC (the “Company”) with item 3(a) of the New York
+State Department of Financial Services (“DFS”) industry letter dated June 8, 2022, Guidance on the Issuance of
+U.S. Dollar-Backed Stablecoins (the “DFS Letter”), which is described as Management’s Assertion in the GUSD
+Reserves Report as of December 9, 2024 and as of December 31, 2024 Management of the Company is
+responsible for its assertion about compliance with item 3(a) of the DFS Letter. Our responsibility is to express an
+opinion on Management’s Assertion about the Company’s compliance with the specified requirements based on
+our examination.
+
+Our examination was conducted in accordance with attestation standards established by the AICPA. Those
+standards require that we plan and perform the examination to obtain reasonable assurance about whether
+Management’s Assertion about compliance with the specified requirements is fairly stated, in all material respects.
+An examination involves performing procedures to obtain evidence about whether Management’s Assertion is fairly
+stated in all material respects. The nature, timing, and extent of the procedures selected depend on our judgment,
+including an assessment of the risks of material misstatement of Management’s Assertion, whether due to fraud or
+error. In making an assessment of the risks of material misstatement, we considered and obtained an understanding
+of internal control relevant to the preparation of the GUSD Reserves Report and for compliance with the DFS Letter
+in order to design procedures that are appropriate in the circumstances, but not for the purpose of expressing an
+opinion on the effectiveness of internal control. Accordingly, no such opinion is expressed. We believe that the
+evidence we obtained is sufficient and appropriate to provide a reasonable basis for our opinion.
+
+We are required to be independent and to meet our other ethical responsibilities in accordance with relevant ethical
+requirements relating to the engagement.
+
+Our examination does not provide a legal determination on the Company’s compliance with specified requirements.
+
+In our opinion, Management’s Assertion that the Company complied with the requirements of item 3(a) of the DFS
+Letter as of December 9, 2024 and as of December 31, 2024 , is fairly stated, in all material respects.
+
+
+
+
+San Francisco, California
+January 31, 2025
+
+
+
+
+bpm.com
+                                        GUSD RESERVES REPORT
+
+                                                                                , a U.S. dollar-backed stablecoin,
+to its customers. We, as members of management, are responsible for complying with the requirements of the New
+                                                                  dated June 8, 2022, Guidance on the Issuance
+of U.S. Dollar-Backed Stablecoins          DFS      . We are also responsible for establishing and maintaining
+effective internal controls over compliance with the requirements of the DFS Letter. We have performed an
+                                                                      nce with item 1(a), paragraph 2, and item
+3(a) of the DFS Letter during the period from December 1, 2024 to December 31, 2024.
+
+In accordance with item 3(a) of the DFS Letter, we assert that the Company has complied with the following
+requirements as of
+
+        The amounts disclosed below for GUSD issued and in circulation and the Reserve (as defined below) as
+        of December 9, 2024 at end of day and December 31, 2024 at end of day are accurate;
+
+        The Reserve was, at these times, adequate to fully back all outstanding GUSD issued and in circulation;
+        and
+
+        All DFS-imposed conditions on the Reserve assets (whether set forth in paragraph 2 of the DFS Letter or
+        otherwise specified by DFS) have been met.
+
+The Company is required to comply with the following provisions of the DFS Letter:
+
+        Item 1(a) under the DFS Letter requires that a U.S. dollar-backed stablecoin must be fully backed by asset
+                                                                                                 equal to the nominal
+        value of all outstanding units of the stablecoin as of the end of each business day.
+                                                       As a practical matter our reconciliation process begins within
+        30 minutes of 5 pm Eastern Time and takes a number of minutes to complete the necessary transfers which
+        could mean that the reconciliation process is completed shortly after 5 pm Eastern Time.
+        On December 20, 2024 and December 23, 2024, due to a technical issue with the Company's reconciliation
+        process, the balance of the Reserve held in the segregated Gemini dollar accounts was less than the
+        nominal value of all outstanding units of Gemini dollars, as of the end of the business day, by approximately
+        $606,000 and $194,000, respectively. The funds remained in the Company's possession for the duration
+        of the impacted period but were being held in a segregated customer omnibus account instead of a
+        dedicated Gemini dollar account. Management identified the error and corrected the deficient balance on
+        December 24, 2024 by transferring funds from the segregated customer omnibus account.
+        Paragraph 2 of the DFS Letter includes the following provisions:
+
+           o   Item 2(a) under the DFS Letter requires that assets in the Reserve must be segregated from the
+               proprietary assets of the issuing entity, and must be held in custody with (i) U.S. state or federally
+               chartered depository institutions with deposits insured by the Federal Deposit Insurance Corporation
+
+               shall be held at these depository institutions and custodians for the benefit of the holders of the
+               stablecoin, with appropriate titling of accounts.
+           o   Item 2(b) under the DFS Letter describes the types of permissible assets the Reserve may hold,
+               including deposit accounts at state or federally chartered depository institutions, government money-
+               market funds, U.S. Treasury bills with maturities of three months or less, and certain reverse
+               repurchase agreements fully collateralized on an overnight basis. DFS imposes additional
+               restrictions and provisions with regard to these asset types, which are described in Item 2(b).
+                                           GUSD RESERVES REPORT
+            o   Item 2(c) under the DFS Letter explains the Company is expected to manage the liquidity risk of
+                the Reserve in accordance with the redemption requirements discussed in paragraph 1 of the DFS
+                Letter.
+
+       In compliance with item 3(a) of the DFS Letter, we report the following end of day amounts for the following
+       dates:
+                                                                  December 9, 2024          December 31, 2024
+
+    GUSD issued and in circulation1                                          66,983,483.41                 58,435,216.23
+
+    Market value of the Reserve2:
+      Cash deposits held at U.S. regulated financial
+      institutions                                                   $       67,123,045.65          $      58,684,581.56
+      Money-market funds                                                                    -                             -
+      Net cash receivable (payable) due to timing and
+      settlement differences3                                                  (139,562.24)                  (249,365.33)
+    Total Reserve                                                    $       66,983,483.41          $      58,435,216.23
+
+
+
+For each GUSD issued, the Company has received one corresponding U.S. dollar from its customers, which are
+held across (i) one or more omnibus bank accounts at depository institutions insured by the Federal Deposit
+Insurance Corporation, (ii) one or more money-market funds, and/or (iii) U.S. Treasury bills with maturities of three
+months or less. The accounts are established and segregated specifically for the U.S. dollars that correspond to
+the Gemini dollars issued and in circulation.
+
+
+
+
+_____________________________
+
+Marshall Beard
+CEO/President
+Gemini Trust Company, LLC
+January 31, 2025
+
+
+
+
+____________________________
+1
+  Per the Etherscan.io website located at: https://etherscan.io.
+2
+  The Gemini dollar reserves are held and maintained as cash deposits at State Street and Western Alliance; and are invested
+in U.S. Treasury bills and money market funds, that are in turn invested only in government securities, repurchase agreements
+collateralized solely by government securities and/or cash, and cash. Market values are based on the fair value of assets and
+on a trade-date basis.
+3
+  Balances have been adjusted for the balance of cash receivable and payable due to timing and settlement differences,
+including deposits/withdrawals occurring after the bank statement cut-off time, money-market funds purchased/sold prior to the
+indicated dates, and U.S. Treasury securities purchased/sold before end of day and settled after those dates as well as
+amounts held in excess of the nominal amounts of GUSD issued and in circulation.
+

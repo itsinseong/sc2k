@@ -1,0 +1,295 @@
+()*+,-./ÿ1/234)53ÿ6(7ÿ89:;<=>?@8A1A@B(1C@;;1D@BCE98A1ACA:9
+            ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                 ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                                     ÿ
+                                                          23456ÿÿ
+                                           74389395 ÿ5ÿ 3 38 ÿ6695 6ÿ
+                                                53ÿ53ÿÿ5 ÿ
+                                                     8ÿÿÿ
+                                             9!ÿ"# # ÿ$$5% 3 &6ÿ'5ÿ
+
+
+
+
+            ÿ
+56789:;<ÿ><?@A6B@ÿC5DÿEFGHIJKLMEN>NMO5>PMHH>QMOPRFEN>NPNGF
+             01234ÿ
+             61789ÿ3ÿ3 9 4ÿ
+             9979ÿÿÿÿÿÿ ÿ ÿ ÿ ÿ ÿ ÿ ÿ ÿ
+            ÿÿ!"ÿ#$ÿ                                      %&'ÿ
+            ÿ
+            #()ÿ"""ÿ#$ÿ                                             *&+ÿ
+            ÿ
+            ,"ÿÿ-ÿ#()ÿ"""ÿ#$ÿ                                  .ÿ
+            /,ÿ""$ÿ$0)ÿ12ÿ-ÿÿÿÿ-"ÿ,"3ÿ
+
+
+
+
+                                                              ÿ
+                            INDEPENDENT ACCOUNTANT’S REPORT
+
+  To,
+  The Board of Directors
+  Paxos Digital Singapore Pte. Ltd.
+  Paxos Issuance Europe Oy
+  Purpose of the Report
+  We have examined Paxos Digital Singapore Pte. Ltd.’s and Paxos Issuance Europe Oy’s (“Paxos”,
+  the “Company”) below assertions. Paxos’ management is responsible for its assertions. Our
+  responsibility is to express an opinion on management’s assertions based on our examination.
+  Management’s assertions, which are summarized in the attached report, (hereafter referred to as the
+  “Redemption Assets Report”), which we examined are as follows:
+   ●   The Redemption Assets Report refers to the supply of Global Dollar tokens (“USDG”) as of 19
+       September 2025 and 30 September 2025 at 5:00 pm SGT. Such USDG in terms of number of
+       tokens held as denoted under contracts 0xe343167631d89B6Ffc58B88d6b7fB0228795491D on
+       the Ethereum network, 2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH on the
+       Solana network, 0xe343167631d89B6Ffc58B88d6b7fB0228795491D on the Ink Network, and
+       0x4ae46a509f6b1d9056937ba4500cb143933d2dc8 on the X Layer Network at 5:00 pm SGT on
+       the Report Dates and Times is 664,533,671 and 730,514,012, respectively.
+   ●   The Redemption Assets Report refers to the accounts held by the Company at regulated financial
+       institutions and in United States government debt instruments. The fair value of the redemption
+       assets is at least equal to or greater than USD 664,533,671 and USD 730,514,012 respectively,
+       at the Report Dates and Times. Total Redemption Assets held in the EU were USD 722,286 and
+       USD 722,286 respectively, at the Report Dates and Times.
+   ●   The Redemption Assets Report refers to the Company’s holdings as of the Report Dates and
+       Times at 5:00 pm ET, which includes the disclosure of the total fair value of the Company’s asset
+       holdings by asset type. Any amounts held in U.S. Government Debt include additional disclosures
+       such as CUSIP and maturity date, as applicable.
+   ●   The USDG supply in terms of the number of tokens, as represented by management in the
+       Redemption Assets Report, does not exceed the balance of the Redemption Assets reported
+       below. The percentage value of the reserve assets in excess of the par value of outstanding USDG
+       in circulation is 0.08% and 0.33%, respectively.
+   ●   The Redemption Assets Report refers to the redemption asset composition which is substantively
+       compliant with the Monetary Authority of Singapore’s (MAS) upcoming stablecoin regulatory
+       framework and compliant with the European Union’s Markets in Crypto-Assets (MiCA) regulation.
+
+  Our examination was conducted in accordance with the Singapore Standard on Assurance
+  Engagements (SSAE) 3000 (Revised), Assurance Engagements other than Audits or Reviews of
+  Historical Financial Information, established by the Institute of Singapore Chartered Accountants
+  (“ISCA”). Those standards require that we plan and perform the examination to obtain reasonable
+  assurance about whether the Redemption Assets in the accompanying Redemption Assets Report
+  is correctly stated, based on the criteria set forth in the Redemption Assets Report, in all material
+  respects. An examination involves performing procedures to obtain evidence about the Redemption
+  Assets Information. The nature, timing, and extent of the procedures selected depend on our
+  judgment, including an assessment of the risks of material misstatement of the Redemption Assets
+  Information, whether due to fraud or error. In making an assessment of the risks of material
+  misstatement, we considered and obtained an understanding of internal controls relevant to the
+  preparation of, and the Redemption Assets Information in, the accompanying Redemption Assets
+  Report in order to design procedures that are appropriate in the circumstances, but not for the purpose
+  of expressing an opinion on the effectiveness of such internal control. Accordingly, no such opinion is
+  expressed. We believe that the evidence we obtained is sufficient and appropriate to provide a
+  reasonable basis for our opinion.
+Enrome LLP                        143 Cecil Street, #19-03/04                admin@enrome-group.com
+                                  GB Building Singapore 069542               www.enrome-group.com
+                         INDEPENDENT ACCOUNTANT’S REPORT (Continued)
+
+
+Our firm applies Singapore Standards on Quality Management and, accordingly, maintains a
+comprehensive system of quality control including documented policies and procedures regarding
+compliance with ethical requirements, professional standards and applicable legal and regulatory
+requirements. We have complied with the independence and other ethical requirements of the Accounting
+and Corporate Regulatory Authority (ACRA) Code of Professional Conduct and Ethics for Public
+Accountants and Accounting Entities (ACRA Code), which is founded on fundamental principles of integrity,
+objectivity, professional competence and due care, confidentiality and professional behaviour.
+
+The Redemption Assets Information in the accompanying Redemption Assets Report relates to the
+Company’s USDG token, which is a cryptographic stored value token that allows financial market
+participants to transact in a crypto asset.
+
+Crypto assets are an evolving area of technology and market place activity. Those who choose to acquire
+and utilize USDG assets should inform themselves of the general risks and uncertainties associated with
+such assets.
+
+In our opinion, the Redemption Assets Information in the accompanying Redemption Assets Report as of
+September 2025 is fairly stated, based on the criteria set forth in the Redemption Assets Report, in all
+material respects.
+
+
+
+
+ENROME LLP
+Public Accountants and
+Chartered Accountants
+
+Singapore, 28 October 2025
+
+
+
+
+ Enrome LLP                        143 Cecil Street, #19-03/04                admin@enrome-group.com
+                                   GB Building Singapore 069542               www.enrome-group.com
+{|}~ÿ|ÿ{ÿ{
+          01234ÿ
+          678790 ÿ7 ÿ670 6 ÿ
+          ÿ
+          
+          ÿ
+            ÿÿ ÿ ÿ ÿ ÿ ÿ ÿ ÿ ÿ ÿ                                                            ÿ ÿ ÿ
+          ÿ !"!#$ÿ%!&"'()ÿ#)*ÿ+#,*ÿ&,ÿÿ-.&/)ÿ0.(')ÿ12ÿ3#")#4)(ÿ567ÿ(ÿ#4)ÿ589'&26:ÿ!ÿ
+          ()'&!;$)ÿ<(ÿ#4)ÿ/9'$)#)&)7ÿ//.(/27ÿ&,ÿ=$!,!#2ÿ<ÿ#4)ÿ>),)9'#!&ÿ?)#ÿ>)'(#ÿÿ<ÿ@Aÿ%)'#)9;)(ÿ
+          BCBDÿ&,ÿECÿ%)'#)9;)(ÿBCBDÿ#ÿDFCCÿ'9ÿ%GHÿ3#4)ÿ5>)'(#ÿ#)ÿ&,ÿH!9)6:*ÿI% Gÿ!ÿ!.),ÿ&,ÿ(),))9),ÿ;2ÿ
+          *ÿH4)ÿ9&")9)&#ÿ<ÿ#4)ÿ89'&2ÿ)(#ÿ#4#ÿ#4)ÿ<!(ÿ=$.)ÿ<ÿ#4)ÿ(),)9'#!&ÿ)#ÿ4)$,ÿ!ÿ)J.$ÿ#ÿ(ÿ
+          "()#)(ÿ#4&ÿI% Gÿ!&ÿ/!(/.$#!&ÿ4)();2ÿ9K)ÿ#4)ÿ<$$L!&"ÿ)(#!&ÿÿ<Fÿ
+          ÿ
+                       63ÿ814ÿ                     MNÿÿÿ                     Oÿÿÿ
+                P8Qÿ3RS4ÿTSÿUTUVW1T3Sÿ                  XXYZOOZX[Mÿ                            [OZMYZMÿ
+                 \1Tÿ]1WVÿ3^ÿ6_T3Sÿ                   XXZOZYNXÿ                            [OZ̀NXZNÿ
+                           444ÿ
+             0US1aÿb1WVÿ3^ÿcÿ4bÿ
+                1444ÿTSÿ2U44ÿ3^ÿcÿ1ÿ                     d`eÿ                                 dOOeÿ
+                            b1WVÿ
+          ÿ
+          ÿ
+          H4)ÿ89'&2fÿ##$ÿ<!(ÿ=$.)ÿ<ÿ(),)9'#!&ÿ)#7ÿL4!/4ÿ()ÿ"()#)(ÿ#4&ÿ(ÿ)J.$ÿ#ÿ#4)ÿ.''$2ÿ<ÿI% G7ÿ()ÿ
+          /9'(!),ÿ<ÿ#4)ÿ<$$L!&"ÿ3g#)ÿE:Fÿ
+          ÿ
+           hÿ@Aÿ%)'#)9;)(ÿBCBDFÿ
+          ÿ
+                84UTT3Sÿ              iP0ÿ                   91VTjÿ81ÿ                   \1Tÿ]1WVÿklmÿ        ÿ
+                                                                                                                          ÿ
+                                                                                                                          ÿ
+            I*%*ÿH().(2ÿn!$$ÿ A@BoAozo@ÿ                       CAqBDqBCBDÿ                       po7Atr7EBCÿ          ÿ
+            I*%*ÿH().(2ÿn!$$ÿ A@BoAos%E@ÿ                       @CqCBqBCBDÿ                       BE7AtD7@Brÿ          ÿ
+                                                                                                                          ÿ
+            I*%*ÿH().(2ÿn!$$ÿ A@BoAouvoEÿ                       @Cq@tqBCBDÿ                       Ep7rAD7ErDÿ          ÿ
+            ÿ                                                   31WÿPddÿ14VjÿwTWW4xÿ           MXZ̀`Z̀OOÿ          ÿ
+                                                                                                                          ÿ
+                                                      31Wÿi14cÿ1S_ÿi14cÿ7yVTb1WS4ÿ               `ZXZXXOÿ          ÿ
+                                                           31Wÿ3^ÿ6_T3Sÿ444xÿ              XXZOZYNXÿ          ÿ
+                                                                                                                          ÿ
+                                                                                                                          ÿ
+          ÿ
+          ÿ
+          ÿ
+           hÿECÿ%)'#)9;)(ÿBCBDFÿ
+          ÿ
+                 84UTT3Sÿ              iP0ÿ                  91VTjÿ81ÿ                   \1Tÿ]1WVÿklmÿ
+            I*%*ÿH().(2ÿn!$$ÿ A@BoAog?@pÿ                        @CqECqBCBDÿ                      po7rEo7rCrÿ
+            I*%*ÿH().(2ÿn!$$ÿ A@BoAos%E@ÿ                        @CqCBqBCBDÿ                      BE7AAp7tBpÿ
+            I*%*ÿH().(2ÿn!$$ÿ A@BoAouvoEÿ                        @Cq@tqBCBDÿ                      Ep7AEt7rtCÿ
+            ÿ                                                  31WÿPddÿ14VjÿwTWW4xÿ            MXZ[XNZNÿ
+                                                     31Wÿi14cÿ1S_ÿi14cÿ7yVTb1WS4xÿ               XXZMXZNO[ÿ
+                                                           31Wÿ3^ÿ6_T3Sÿ444xÿ              [OZ̀NXZNÿ
+                                                                   Oÿ
+                                                                 ÿ
+nopqrstuÿwuxyzo{yÿ|n}ÿ~ ~wnww~w
+          01234ÿ
+          678790 ÿ7 ÿ670 6 ÿ
+          ÿ
+          
+          ÿ
+            ÿÿ ÿ ÿ ÿ ÿ ÿ ÿ ÿ ÿ ÿ                                                                                    ÿ ÿ ÿ
+               7ÿ
+           ÿÿ !"##$%ÿ &'ÿ ($&)*$ÿ +&$$*,ÿ -&./!ÿ 0123+(45ÿ *!ÿ 6/&-6ÿ "/6,ÿ 7&/-,*7-!ÿ
+               89:;:<=>=:<6?@A=B'7C?A??6=)>'A8DD?>@C;@<+ÿ &/ÿ -ÿ E-,"Fÿ /-G&,.Hÿ
+               D"<-!I3JK:JALB:"M(NB7?IO.D-6PG.//QOL(LR(LSÿ &/ÿ -ÿ 3&$*/*ÿ /-G&,.Hÿ
+               89:;:<=>=:<6?@A=B'7C?A??6=)>'A8DD?>@C;@<+ÿ                    &/ÿ       -ÿ         T/.ÿ        M-G&,.*/6ÿ
+               89;*;=*C8@'=)<6@8C=@:>)*;C887)<;:@::6D67?ÿ&/ÿ-ÿUÿV*%,ÿM-G&,.ÿÿÿ*-ÿCW88ÿ#Fÿ3(ÿ&/ÿ-ÿQ#&,-ÿ
+               +*-!ÿ*/6ÿPF!ÿP!ÿ==;HC::H=><ÿ*/6ÿ>:8HC<;H8<DHÿ,!#7-PX$%Yÿ
+           ÿÿQ6F#-P&/ÿZ!!-!ÿQ#&,-ÿ,',!ÿ-&ÿ-ÿ,6F#-P&/ÿ*!!-ÿ7&F#&!P-P&/ÿGP7ÿP!ÿ!")!-*/-<PX$%ÿ7&F#$P*/-ÿ
+               GP-ÿ-ÿO&/-*,%ÿZ"-&,P-%ÿ&'ÿ3P/[*#&,\!ÿ0OZ35ÿ"#7&FP/[ÿ!-*)$7&P/ÿ,["$*-&,%ÿ',*FG&,.*/6ÿ7&F#$P*/-ÿ
+               GP-ÿ-ÿE",&#*/ÿ2/P&/\!ÿO*,.-!ÿP/ÿ],%#-&^Z!!-!ÿ0OP]Z5ÿ,["$*-P&/Yÿÿ'*P,ÿX*$"ÿ&'ÿ-ÿ,6F#-P&/ÿ*!!-!ÿ
+               P!ÿ*-ÿ$*!-ÿJ"*$ÿ-&ÿ&,ÿ[,*-,ÿ-*/ÿ23+ÿ==;HC::H=><ÿ*/6ÿ23+ÿ>:8HC<;H8<Dÿ,!#7-PX$%Hÿ*-ÿ-ÿQ#&,-ÿ+*-!ÿ
+               */6ÿPF!Yÿ&-*$ÿQ6F#-P&/ÿZ!!-!ÿ$6ÿP/ÿ-ÿE2ÿG,ÿ23+ÿ>DDHD?=ÿ*/6ÿ23+ÿ>DDHD?=ÿ,!#7-PX$%Hÿ*-ÿ-ÿ
+               Q#&,-ÿ+*-!ÿ*/6ÿPF!Yÿ
+           _ÿP!ÿQ6F#-P&/ÿZ!!-!ÿQ#&,-ÿ,',!ÿ-&ÿ-ÿ]&F#*/%\!ÿ&$6P/[!ÿ*!ÿ&'ÿ-ÿQ#&,-ÿ+*-!ÿ*/6ÿPF!ÿ*-ÿCW88ÿ
+               #Fÿ3(HÿGP7ÿP/7$"6!ÿ-ÿ6P!7$&!",ÿ&'ÿ-ÿ-&-*$ÿ'*P,ÿX*$"ÿ&'ÿ-ÿ]&F#*/%\!ÿ*!!-ÿ&$6P/[!ÿ)%ÿ*!!-ÿ-%#ÿ*!ÿ
+               ,#&,-6ÿ*)&XYÿZ/%ÿ*F&"/-!ÿ$6ÿP/ÿ2Y3Yÿ(&X,/F/-ÿ37",P-P!ÿP/7$"6ÿ*66P-P&/*$ÿ6P!7$&!",!ÿ!"7ÿ*!ÿ
+               ]23TNÿ*/6ÿF*-",P-%ÿ6*-Hÿ*!ÿ*##$P7*)$Yÿ
+           `ÿÿ23+(ÿ!"##$%ÿ6&!ÿ/&-ÿ976ÿ-ÿ)*$*/7ÿ&'ÿ-ÿQ6F#-P&/ÿZ!!-!ÿ,#&,-6ÿ*)&XYÿ
+           ÿ+",P/[ÿ-ÿQ#&,-ÿO&/-Hÿ-ÿ]&F#*/%ÿ7"!-&6P6ÿQ6F#-P&/ÿZ!!-!ÿ*-ÿ+A3ÿA*/.ÿV-6YHÿA*/.P/[ÿ]P,7$ÿ3YZYHÿ
+               */6ÿ+,%'"!ÿZ!!-ÿO*/*[F/-Hÿ*ÿ!")!P6P*,%ÿ&'ÿA*/.ÿ&'ÿMGÿa&,.ÿO$$&/Yÿ
+                   ÿ
+            &ÿ-ÿ)!-ÿ&'ÿ-ÿ./&G$6[ÿ*/6ÿ)$P'ÿ&'ÿ-ÿ"/6,!P[/6Hÿ-ÿP/'&,F*-P&/ÿ7&/-*P/6ÿP/ÿ-ÿQ6F#-P&/ÿZ!!-!ÿ
+            Q#&,-ÿ*!ÿ&'ÿ-ÿQ#&,-ÿ+*-!ÿ*/6ÿPF!ÿ*-ÿCW88#Fÿ3(ÿP!ÿ*77",*-ÿ*/6ÿ7&F#$-Yÿ
+            ÿ
+            ÿ
+            ÿ
+            Lÿ3P*/[ÿVÿ
+            E97"-PXÿ+P,7-&,ÿ
+            01234ÿ8bcb1dÿbec13ÿ0ÿfgÿ
+            ÿ
+            +*-WÿD?ÿh7-&),ÿD8DCÿ
+            ÿ
+            ÿ
+            ÿ
+            ÿ
+            ,&ÿQ"/*ÿ
+            S*6ÿ&'ÿE2ÿ
+            01234ÿ44i1ejÿ7i3ÿkÿ
+          ÿÿÿÿ
+            +*-WÿD?ÿh7-&),ÿD8DCÿ
+
+
+
+          <-
+            -#!WllGGGYF*!Y[&XY![l^lF6P*lF*!^F6P*^$P),*,%l#")$P7*-P&/!l7&/!"$-*-P&/!l#6lD8D:l,!#&/!^-&^7&/!"$-*-P&/^&/^!-*)$7&P/!^,["$*-P&/m<C*"
+          [D8D:Y#6'ÿ
+                                                                              `ÿ
+                                                                               ÿ
+qrstuvwxÿzx{|}r~|ÿqÿ zqzzz
+            01234ÿ
+            63784ÿ73ÿ798ÿ8 8 73ÿ44874ÿ8 37ÿ                                  ÿ ÿ
+            ÿÿ                                 ÿ                                 ÿ
+            8 78 8ÿÿ                    ÿ                                 ÿ ÿ
+            63ÿÿ4418ÿ38 ÿÿ798ÿ 8 8 87ÿ3717ÿ3ÿ79848ÿ63784ÿ
+             ÿ!"#$ %&6'ÿ6(% )*%6ÿ0 %+','ÿ!-ÿ0.%ÿÿ
+               01234ÿ5676819ÿ:6;71<3=>ÿ08>?ÿ@8A?ÿB14ÿ7=1;8>Aÿ1ÿC1D3=ÿ01EF>;8ÿG;4868H863;ÿIC0GJÿ96K>;4>ÿLEÿ8M>ÿC3;>81=Eÿ
+               NH8M3=68Eÿ3Oÿ:6;71<3=>ÿIPCN:QJÿ83ÿ644H>ÿ481L9>K36;4ÿ3;ÿRÿSH9EÿTUTV?ÿ01234ÿG44H1;K>ÿWH=3<>ÿXEÿ3L816;>Aÿ1;ÿ
+               W9>K8=3;6KÿC3;>EÿG;4868H863;ÿIPWCGQJÿ96K>;4>ÿ83ÿ644H>ÿ1;Aÿ=>A>>Fÿ>YF3;>Eÿ83Z>;4ÿ3;ÿT[ÿ\3]>FL>=ÿTUTTÿ1;Aÿ
+               64ÿ=>7H918>AÿLEÿ8M>ÿ^6;;64Mÿ^6;1;K619ÿ:H<>=]643=EÿNH8M3=68EÿIP^G\Y^:NQJ?ÿ
+               _M>ÿ`93L19ÿ53991=ÿ83Z>;ÿIPa:5`QJÿ64ÿ1ÿK=E<837=1<M6Kÿ83Z>;bÿBM6KMÿ1993B4ÿO6;1;K619ÿF1=Z>8ÿ<1=86K6<1;84ÿ83ÿ
+               8=1;41K8ÿ6;ÿ1ÿK=E<83ÿ144>8ÿ8M18ÿM14ÿL>>;ÿ<>77>AÿRcRÿ83ÿ8M>ÿa?:?ÿA3991=ÿLEÿ8M>ÿd3F<1;E?ÿ_M>ÿd3F<1;Eÿ
+               F16;816;4ÿ8M>ÿ=>A>F<863;ÿ144>84ÿ4>KH=6;7ÿa:5`ÿ6;ÿ1<<=3]>Aÿ144>8ÿK18>73=6>4ÿ<>=ÿ8M>ÿ=>eH6=>F>;84ÿ4>8ÿLEÿ
+               CN:?ÿa:5`ÿ64ÿA><93E>Aÿ3;ÿ8M>ÿW8M>=>HFÿ;>8B3=Zbÿ8M>ÿ:391;1ÿ;>8B3=Zbÿ8M>ÿG;Zÿ;>8B3=Zbÿ1;Aÿ8M>ÿfÿ@1E>=ÿ
+               ;>8B3=Z?ÿG8ÿ>26484ÿ14ÿ1;ÿWgdYTUÿ83Z>;ÿ3;ÿ8M>ÿW8M>=>HFÿ<HL96KÿL93KZKM16;bÿfÿ@1E>=bÿ1;AÿG;Zÿh93KZKM16;bÿ1;Aÿ
+               1;ÿ:0@ÿ83Z>;ÿ3;ÿ8M>ÿ:391;1ÿL93KZKM16;?ÿN4ÿ4HKMbÿ8M>ÿ;HFL>=ÿ3Oÿa:5`ÿ83Z>;4ÿ6;ÿK6=KH91863;ÿ64ÿOH99Eÿ1;Aÿ
+               8=1;4<1=>;89Eÿ]6>B1L9>ÿ18ÿ199ÿ86F>4ÿLEÿ1;E3;>ÿ8M=3H7Mÿ1;Eÿ<HL96K9Eÿ1]1691L9>ÿW8M>=>HFbÿ:391;1bÿG;Zbÿ1;Aÿfÿ
+               @1E>=ÿL93KZÿ>2<93=>=4ÿI>?7?bÿW8M>=4K1;bÿ:394K1;bÿG;ZÿW2<93=>=bÿ1;Aÿfÿ@1E>=ÿ>2<93=>=4J?ÿ
+             ÿ'"&%6ÿ,i*,'ÿ*%ÿ" -0*%ÿ,*ÿ
+               N4ÿ3Oÿ8M>ÿA18>ÿ3Oÿ8M64ÿ=><3=8bÿK=E<83ÿ144>84ÿ=>F16;ÿ1;ÿ>]39]6;7ÿ1=>1ÿ3Oÿ8>KM;3937Eÿ1;AÿF1=Z>8<91K>ÿ1K86]68E?ÿ
+               _M34>ÿBM3ÿKM334>ÿ83ÿ6;]>48ÿ6;ÿK=E<83ÿ144>84ÿ4M3H9Aÿ6;O3=Fÿ8M>F4>9]>4ÿ3Oÿ8M>ÿ7>;>=19ÿ=64Z4ÿ1;AÿH;K>=816;86>4ÿ
+               1443K618>AÿB68Mÿ4HKMÿ144>84?ÿÿ
+               1ÿ%j849ÿ3kÿ" 73ÿ144874lÿ
+                   d=E<83ÿ144>84ÿ1=>ÿ3B;>Aÿ1;3;EF3H49E?ÿmM69>ÿ8M>ÿ<HL96KÿZ>E4ÿ3Oÿ]6=8H19ÿB199>84ÿM39A6;7ÿK=E<83ÿ144>84ÿ
+                   =>46A>ÿ3;ÿ8M>ÿA648=6LH8>Aÿ;>8B3=Z4ÿ1;AÿK1;ÿL>ÿ]6>B>Aÿ<HL96K9Ebÿ8M>ÿ3B;>=4M6<ÿ3Oÿ8M>ÿB199>84ÿ64ÿ;3=F199Eÿ;38ÿ
+                   =>7648>=>Aÿ1;Aÿ8M>=>O3=>bÿ1;3;EF3H4?ÿXB;>=4M6<ÿ3OÿK=E<83ÿ144>84ÿ64ÿ>]6A>;K>Aÿ<=6F1=69EÿLEÿ8M>ÿ
+                   <344>4463;ÿ3Oÿ8M>ÿH;A>=9E6;7ÿ<=6]18>ÿZ>EÿI>?7?ÿ<144K3A>J?ÿ_M>ÿ<344>443=ÿ3Oÿ8M>ÿ<=6]18>ÿZ>EÿK3;8=394ÿ8M>ÿ
+                   K3==>4<3;A6;7ÿK=E<83ÿ144>8ÿB199>8?ÿ
+               ÿ 4nÿ3kÿ884o8ÿ7141734lÿ
+                   _=1;41K863;4ÿO3=ÿF348ÿK=E<83ÿ144>84ÿ8M18ÿ3KKH=ÿ3]>=ÿ8M>ÿL93KZKM16;ÿ1=>ÿ7>;>=199Eÿ6==>]>=46L9>bÿ>]>;ÿ6Oÿ4HKMÿ
+                   8=1;41K863;4ÿ3KKH=ÿO=1HAH9>;89Eÿ3=ÿ1KK6A>;8199E?ÿGOÿ1ÿ<=6]18>ÿZ>Eÿ64ÿ9348ÿ3=ÿO=1HAH9>;89EÿH4>Abÿ8M>ÿK=E<83ÿ
+                   144>84ÿ6;ÿ8M>ÿK3==>4<3;A6;7ÿB199>8ÿF1Eÿ;38ÿL>ÿ=>K3]>=1L9>?ÿ
+               ÿ 8po173ÿ8717lÿ
+                   @>7649186]>ÿ1;Aÿ=>7H9183=EÿKM1;7>4ÿ3=ÿ1K863;4ÿF1EÿKM1;7>ÿ3=ÿ1OO>K8ÿ8M>ÿH4>bÿ8=1;4O>=bÿ>2KM1;7>bÿ1;Aÿ
+                   ]19H>ÿ3OÿK=E<83ÿ144>84?ÿ_M>ÿ>OO>K84ÿ3Oÿ1;Eÿ4HKMÿKM1;7>4ÿ1=>ÿ;38ÿA>8>=F6;1L9>ÿ14ÿ3Oÿ8M>ÿA18>ÿ3Oÿ8M64ÿ=><3=8?ÿ
+               ÿ
+
+
+
+
+                                                                   ÿ                                                       ÿ
+

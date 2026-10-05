@@ -1,0 +1,5838 @@
+{
+ "generated": "2026-10-05",
+ "source": "Circle EURC 월간 examination report(2023년 일부는 토큰명 EUROC), pdftotext -layout",
+ "note": "회계법인명은 서명 이미지라 자동 추출되지 않는다. EURC 준비자산은 은행 예금뿐이라 circle_reserve_fund, treasury는 0. 구성: cash=EURC RESERVE ASSETS의 Cash held at (U.S.) regulated financial institutions(은행 예금만, 유로), other=Cash due to/(owed by) the Company(Circle)(정산 차액). 2023년 상반기 원문은 토큰명이 EUROC(EURO Coin)이며 token은 EURC로 통일. 대사 실패 보고서는 reports에서 제외. 금액 단위는 EUR(원문 €). 규칙 입력값(F2): holdings는 은행 예금과 정산 차액뿐이라 국채, 레포는 not_applicable. 제외 보고서는 최상위 excluded에 적는다.",
+ "excluded": [
+  {
+   "token": "EURC",
+   "month": "2023-10",
+   "source_file": "data/samples/Circle_EURC_Examination_2023-10.pdf",
+   "reason": "준비자산 표 TOTAL 줄과 Management’s Assertion 표의 Fair Value 불일치(기대 50636368, 읽은 값 50636369, 차이 1)"
+  }
+ ],
+ "reports": [
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2023-01.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2023-01-17",
+    "2023-01-31"
+   ],
+   "as_of": "2023-01-31",
+   "month": "2023-01",
+   "as_of_time": "23:59 PST",
+   "reserve_currency": "EUR",
+   "circulation": 31077321,
+   "fair_value": 31077321,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 31288991,
+    "treasury": 0,
+    "other": -211670
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 31077321,
+     "got": 31077321,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 31077321,
+     "got": 31077321,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 0,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.0,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2023-03-02",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 31288991,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at U.S. regulated financial institutions",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF JANUARY, 31 2023' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -211670,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF JANUARY, 31 2023' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": true,
+   "custodians": [
+    "Bank of New York Mellon",
+    "Silvergate Bank"
+   ],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 31077321,
+     "got": 31077321,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2023-01-17, 2023-01-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EUROC supply on EUROC Approved Blockchains at the Report Dates (25,133,315 and 31,077,321, respectively) less (i) Tokens Allowed But Not Issued as reported on EUROC Approved Blockchains (zer"
+    },
+    "custodian_disclosure": {
+     "state": "found",
+     "where": "p.4 각주(Notes)",
+     "note": "각주에 은행명 있음: Bank of New York Mellon, Silvergate Bank"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2023-02.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2023-02-09",
+    "2023-02-28"
+   ],
+   "as_of": "2023-02-28",
+   "month": "2023-02",
+   "as_of_time": "23:59 PST",
+   "reserve_currency": "EUR",
+   "circulation": 29807117,
+   "fair_value": 29807117,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 29807164,
+    "treasury": 0,
+    "other": -47
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 29807117,
+     "got": 29807117,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 29807117,
+     "got": 29807117,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 0,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.0,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2023-03-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 29807164,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at U.S. regulated financial institutions",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF FEBRUARY 28 2023' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -47,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF FEBRUARY 28 2023' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": true,
+   "custodians": [
+    "Bank of New York Mellon",
+    "Silvergate Bank"
+   ],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 29807117,
+     "got": 29807117,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2023-02-09, 2023-02-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EUROC supply on EUROC Approved Blockchains at the Report Dates (31,248,656 and 29,807,117 respectively) less (i) Tokens Allowed But Not Issued as reported on EUROC Approved Blockchains (zero"
+    },
+    "custodian_disclosure": {
+     "state": "found",
+     "where": "p.4 각주(Notes)",
+     "note": "각주에 은행명 있음: Bank of New York Mellon, Silvergate Bank 후속 사건(Subsequent Event) 문단의 은행명은 보관처 목록이 아니라 제외"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2023-03.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2023-03-06",
+    "2023-03-31"
+   ],
+   "as_of": "2023-03-31",
+   "month": "2023-03",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 31068113,
+   "fair_value": 31318984,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 31571321,
+    "treasury": 0,
+    "other": -252337
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 31318984,
+     "got": 31318984,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 31318984,
+     "got": 31318984,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 250871,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00807487,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2023-04-28",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 31571321,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at U.S. regulated financial institutions",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF MARCH 31, 2023' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -252337,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF MARCH 31, 2023' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": true,
+   "custodians": [
+    "Bank of New York Mellon"
+   ],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 31318984,
+     "got": 31318984,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2023-03-06, 2023-03-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EUROC supply on EUROC Approved Blockchains at the Report Dates (31,712,517 and 31,068,113 respectively) less (i) Tokens Allowed But Not Issued as reported on EUROC Approved Blockchains (zero"
+    },
+    "custodian_disclosure": {
+     "state": "found",
+     "where": "p.4 각주(Notes)",
+     "note": "각주에 은행명 있음: Bank of New York Mellon (월말 기준일 문장만 사용)"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2023-04.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2023-04-14",
+    "2023-04-28"
+   ],
+   "as_of": "2023-04-28",
+   "month": "2023-04",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 48171006,
+   "fair_value": 48421985,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 48655531,
+    "treasury": 0,
+    "other": -233546
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 48421985,
+     "got": 48421985,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 48421985,
+     "got": 48421985,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 250979,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00521017,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2023-05-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 48655531,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at U.S. regulated financial institutions",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF APRIL 28, 2023' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -233546,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF APRIL 28, 2023' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": true,
+   "custodians": [
+    "Bank of New York Mellon"
+   ],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 48421985,
+     "got": 48421985,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2023-04-14, 2023-04-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EUROC supply on EUROC Approved Blockchains at the Report Dates (31,248,321 and 48,171,006 respectively) less (i) Tokens Allowed But Not Issued as reported on EUROC Approved Blockchains (zero"
+    },
+    "custodian_disclosure": {
+     "state": "found",
+     "where": "p.4 각주(Notes)",
+     "note": "각주에 은행명 있음: Bank of New York Mellon"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2023-05.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2023-05-23",
+    "2023-05-31"
+   ],
+   "as_of": "2023-05-31",
+   "month": "2023-05",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 48157539,
+   "fair_value": 48408644,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 48684736,
+    "treasury": 0,
+    "other": -276092
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 48408644,
+     "got": 48408644,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 48408644,
+     "got": 48408644,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 251105,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00521424,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2023-06-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 48684736,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF MAY 31, 2023' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -276092,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF MAY 31, 2023' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": true,
+   "custodians": [
+    "Bank of New York Mellon"
+   ],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 48408644,
+     "got": 48408644,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2023-05-23, 2023-05-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EUROC supply on EUROC Approved Blockchains at the Report Dates (48,158,521 and 48,157,539 respectively) less (i) Tokens Allowed But Not Issued as reported on EUROC Approved Blockchains (zero"
+    },
+    "custodian_disclosure": {
+     "state": "found",
+     "where": "p.4 각주(Notes)",
+     "note": "각주에 은행명 있음: Bank of New York Mellon"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2023-06.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2023-06-02",
+    "2023-06-30"
+   ],
+   "as_of": "2023-06-30",
+   "month": "2023-06",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 47917232,
+   "fair_value": 48168455,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 48271939,
+    "treasury": 0,
+    "other": -103484
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 48168455,
+     "got": 48168455,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 48168455,
+     "got": 48168455,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 251223,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00524285,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2023-07-28",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 48271939,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF JUNE 30, 2023' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -103484,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF JUNE 30, 2023' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": true,
+   "custodians": [
+    "Bank of New York Mellon"
+   ],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 48168455,
+     "got": 48168455,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2023-06-02, 2023-06-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EUROC supply on EUROC Approved Blockchains at the Report Dates (48,149,956 and 47,917,232 respectively) less (i) Tokens Allowed But Not Issued as reported on EUROC Approved Blockchains (zero"
+    },
+    "custodian_disclosure": {
+     "state": "found",
+     "where": "p.4 각주(Notes)",
+     "note": "각주에 은행명 있음: Bank of New York Mellon"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2023-07.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2023-07-24",
+    "2023-07-31"
+   ],
+   "as_of": "2023-07-31",
+   "month": "2023-07",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 47725692,
+   "fair_value": 47976927,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 48089738,
+    "treasury": 0,
+    "other": -112811
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 47976927,
+     "got": 47976927,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 47976927,
+     "got": 47976927,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 251235,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00526415,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2023-08-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 48089738,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF JULY 31, 2023' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -112811,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF JULY 31, 2023' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": true,
+   "custodians": [
+    "Bank of New York Mellon"
+   ],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 47976927,
+     "got": 47976927,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2023-07-24, 2023-07-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EUROC supply on EUROC Approved Blockchains at the Report Dates (47,736,115 and 47,725,692 respectively) less (i) Tokens Allowed But Not Issued as reported on EUROC Approved Blockchains (zero"
+    },
+    "custodian_disclosure": {
+     "state": "found",
+     "where": "p.4 각주(Notes)",
+     "note": "각주에 은행명 있음: Bank of New York Mellon"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2023-08.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2023-08-07",
+    "2023-08-31"
+   ],
+   "as_of": "2023-08-31",
+   "month": "2023-08",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 49225433,
+   "fair_value": 49476668,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 49708789,
+    "treasury": 0,
+    "other": -232121
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 49476668,
+     "got": 49476668,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 49476668,
+     "got": 49476668,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 251235,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00510376,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2023-09-29",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 49708789,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF AUGUST 31, 2023' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -232121,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EUROC RESERVE ASSETS AS OF AUGUST 31, 2023' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": true,
+   "custodians": [
+    "Bank of New York Mellon"
+   ],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 49476668,
+     "got": 49476668,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2023-08-07, 2023-08-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EUROC supply on EUROC Approved Blockchains at the Report Dates (49,577,604 and 49,225,433 respectively) less (i) Tokens Allowed But Not Issued as reported on EUROC Approved Blockchains (zero"
+    },
+    "custodian_disclosure": {
+     "state": "found",
+     "where": "p.4 각주(Notes)",
+     "note": "각주에 은행명 있음: Bank of New York Mellon"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2023-09.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2023-09-14",
+    "2023-09-29"
+   ],
+   "as_of": "2023-09-29",
+   "month": "2023-09",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 49354779,
+   "fair_value": 49606006,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 49728538,
+    "treasury": 0,
+    "other": -122532
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 49606006,
+     "got": 49606006,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 49606006,
+     "got": 49606006,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 251227,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00509023,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2023-10-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 49728538,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF SEPTEMBER 29, 2023' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -122532,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF SEPTEMBER 29, 2023' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 49606006,
+     "got": 49606006,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2023-09-14, 2023-09-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (49,252,086 and 49,354,779 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (zero at"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2023-11.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2023-11-16",
+    "2023-11-30"
+   ],
+   "as_of": "2023-11-30",
+   "month": "2023-11",
+   "as_of_time": "23:59 PST",
+   "reserve_currency": "EUR",
+   "circulation": 51397804,
+   "fair_value": 51649035,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 51779694,
+    "treasury": 0,
+    "other": -130659
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 51649035,
+     "got": 51649035,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 51649035,
+     "got": 51649035,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 251231,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00488797,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2023-12-22",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 51779694,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF NOVEMBER 30, 2023' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -130659,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF NOVEMBER 30, 2023' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 51649035,
+     "got": 51649035,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2023-11-16, 2023-11-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (51,492,673 and 51,397,804 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (zero at"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2023-12.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2023-12-06",
+    "2023-12-29"
+   ],
+   "as_of": "2023-12-29",
+   "month": "2023-12",
+   "as_of_time": "23:59 PST",
+   "reserve_currency": "EUR",
+   "circulation": 52199724,
+   "fair_value": 52450950,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 52577183,
+    "treasury": 0,
+    "other": -126233
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 52450950,
+     "got": 52450950,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 52450950,
+     "got": 52450950,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 251226,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00481278,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2024-01-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 52577183,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF DECEMBER 29, 2023' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -126233,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF DECEMBER 29, 2023' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 52450950,
+     "got": 52450950,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2023-12-06, 2023-12-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (51,126,095 and 91,368,624, respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (0 and "
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2024-01.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2024-01-11",
+    "2024-01-31"
+   ],
+   "as_of": "2024-01-31",
+   "month": "2024-01",
+   "as_of_time": "23:59 PST",
+   "reserve_currency": "EUR",
+   "circulation": 51734446,
+   "fair_value": 51985679,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 52051081,
+    "treasury": 0,
+    "other": -65402
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 51985679,
+     "got": 51985679,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 51985679,
+     "got": 51985679,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 251233,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.0048562,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2024-02-29",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 52051081,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF JANUARY 31, 2024' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -65402,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF JANUARY 31, 2024' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 51985679,
+     "got": 51985679,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2024-01-11, 2024-01-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (91,449,062 and 91,011,701, respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (39,261"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2024-02.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2024-02-23",
+    "2024-02-29"
+   ],
+   "as_of": "2024-02-29",
+   "month": "2024-02",
+   "as_of_time": "23:59 PST",
+   "reserve_currency": "EUR",
+   "circulation": 48474978,
+   "fair_value": 48726194,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 48856104,
+    "treasury": 0,
+    "other": -129910
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 48726194,
+     "got": 48726194,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 48726194,
+     "got": 48726194,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 251216,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00518239,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2024-03-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 48856104,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF FEBRUARY 29, 2024' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -129910,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF FEBRUARY 29, 2024' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 48726194,
+     "got": 48726194,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2024-02-23, 2024-02-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (88,488,670 and 88,005,214, respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (39,530"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2024-03.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2024-03-25",
+    "2024-03-29"
+   ],
+   "as_of": "2024-03-29",
+   "month": "2024-03",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 51257692,
+   "fair_value": 52009000,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 52145177,
+    "treasury": 0,
+    "other": -136177
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 52009000,
+     "got": 52009000,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 52009000,
+     "got": 52009000,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 751308,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.01465747,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2024-04-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 52145177,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF MARCH 29, 2024' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -136177,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF MARCH 29, 2024' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 52009000,
+     "got": 52009000,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2024-03-25, 2024-03-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (91,496,253 and 90,723,530, respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (39,465"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2024-04.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2024-04-05",
+    "2024-04-30"
+   ],
+   "as_of": "2024-04-30",
+   "month": "2024-04",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 40749720,
+   "fair_value": 41501157,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 41881030,
+    "treasury": 0,
+    "other": -379873
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 41501157,
+     "got": 41501157,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 41501157,
+     "got": 41501157,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 751437,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.0184403,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2024-05-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 41881030,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF APRIL 30, 2024' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -379873,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF APRIL 30, 2024' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 41501157,
+     "got": 41501157,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2024-04-05, 2024-04-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (87,654,368 and 80,156,291, respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (39,465"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2024-05.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2024-05-07",
+    "2024-05-31"
+   ],
+   "as_of": "2024-05-31",
+   "month": "2024-05",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 36995250,
+   "fair_value": 37746702,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 37851861,
+    "treasury": 0,
+    "other": -105159
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 37746702,
+     "got": 37746702,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 37746702,
+     "got": 37746702,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 751452,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.02031212,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2024-06-27",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 37851861,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF MAY 31, 2024' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -105159,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF MAY 31, 2024' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "VP, Accounting, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 37746702,
+     "got": 37746702,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2024-05-07, 2024-05-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (78,458,384 and 76,403,139, respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (39,423"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 VP, Accounting 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2024-06.pdf",
+   "issuer": "Circle Internet Financial, LLC",
+   "token": "EURC",
+   "report_dates": [
+    "2024-06-10",
+    "2024-06-28"
+   ],
+   "as_of": "2024-06-28",
+   "month": "2024-06",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 35434916,
+   "fair_value": 36186236,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 36697000,
+    "treasury": 0,
+    "other": -510764
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 36186236,
+     "got": 36186236,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 36186236,
+     "got": 36186236,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 751320,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.02120282,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2024-07-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 36697000,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF JUNE 28, 2024' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -510764,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) the Company due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF JUNE 28, 2024' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Financial, LLC",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 36186236,
+     "got": 36186236,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2024-06-10, 2024-06-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (75,978,925 and 75,155,346, respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (39,407"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2024-07.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2024-07-18",
+    "2024-07-31"
+   ],
+   "as_of": "2024-07-31",
+   "month": "2024-07",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 35419463,
+   "fair_value": 36172122,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 35106353,
+    "treasury": 0,
+    "other": 1065769
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 36172122,
+     "got": 36172122,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 36172122,
+     "got": 36172122,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 752659,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.02124987,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2024-08-28",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 35106353,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF JULY 31, 2024' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": 1065769,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF JULY 31, 2024' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 36172122,
+     "got": 36172122,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2024-07-18, 2024-07-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (74,449,991 and 75,025,254 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (39,607,"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2024-08.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2024-08-29",
+    "2024-08-30"
+   ],
+   "as_of": "2024-08-30",
+   "month": "2024-08",
+   "as_of_time": "23:59 PDT",
+   "reserve_currency": "EUR",
+   "circulation": 52867999,
+   "fair_value": 53620711,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 53953752,
+    "treasury": 0,
+    "other": -333041
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 53620711,
+     "got": 53620711,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 53620711,
+     "got": 53620711,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 752712,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.01423757,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2024-09-27",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 53953752,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF AUGUST 30, 2024' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -333041,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF AUGUST 30, 2024' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 53620711,
+     "got": 53620711,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2024-08-29, 2024-08-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (91,732,747 and 91,532,749 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (38,664,"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2024-09.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2024-09-20",
+    "2024-09-30"
+   ],
+   "as_of": "2024-09-30",
+   "month": "2024-09",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 61976108,
+   "fair_value": 62728914,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 62908455,
+    "treasury": 0,
+    "other": -179541
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 62728914,
+     "got": 62728914,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 62728914,
+     "got": 62728914,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 752806,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.01214671,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2024-10-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 62908455,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF SEPTEMBER 30, 2024' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -179541,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF SEPTEMBER 30, 2024' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 62728914,
+     "got": 62728914,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2024-09-20, 2024-09-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (95,439,791 and 100,616,920 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (38,694"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2024-10.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2024-10-07",
+    "2024-10-31"
+   ],
+   "as_of": "2024-10-31",
+   "month": "2024-10",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 81713273,
+   "fair_value": 82465938,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 83012237,
+    "treasury": 0,
+    "other": -546299
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 82465938,
+     "got": 82465938,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 82465938,
+     "got": 82465938,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 752665,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00921105,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2024-11-26",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 83012237,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF October 31, 2024' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -546299,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF October 31, 2024' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 82465938,
+     "got": 82465938,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2024-10-07, 2024-10-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (113,714,258 and 118,799,253 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (38,68"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2024-11.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2024-11-27",
+    "2024-11-29"
+   ],
+   "as_of": "2024-11-29",
+   "month": "2024-11",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 87759186,
+   "fair_value": 88509695,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 87182480,
+    "treasury": 0,
+    "other": 1327215
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 88509695,
+     "got": 88509695,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 88509695,
+     "got": 88509695,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 750509,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00855191,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2024-12-20",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 87182480,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF November 29, 2024' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": 1327215,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF November 29, 2024' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 88509695,
+     "got": 88509695,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2024-11-27, 2024-11-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (121,216,438 and 122,235,227 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (34,58"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2024-12.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2024-12-09",
+    "2024-12-31"
+   ],
+   "as_of": "2024-12-31",
+   "month": "2024-12",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 80705696,
+   "fair_value": 81456210,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 104925677,
+    "treasury": 0,
+    "other": -23469467
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 81456210,
+     "got": 81456210,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 81456210,
+     "got": 81456210,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 750514,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00929939,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2025-01-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 104925677,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF December 31, 2024' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -23469467,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF December 31, 2024' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 81456210,
+     "got": 81456210,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2024-12-09, 2024-12-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (122,644,900 and 115,388,980 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (34,48"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2025-01.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2025-01-06",
+    "2025-01-31"
+   ],
+   "as_of": "2025-01-31",
+   "month": "2025-01",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 101293431,
+   "fair_value": 102043948,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 102075725,
+    "treasury": 0,
+    "other": -31777
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 102043948,
+     "got": 102043948,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 102043948,
+     "got": 102043948,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 750517,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00740934,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2025-02-27",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 102075725,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF January 31, 2025' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -31777,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF January 31, 2025' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 102043948,
+     "got": 102043948,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2025-01-06, 2025-01-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (119,540,834 and 135,804,898 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (34,29"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2025-02.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2025-02-04",
+    "2025-02-28"
+   ],
+   "as_of": "2025-02-28",
+   "month": "2025-02",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 115640112,
+   "fair_value": 116390630,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 112800881,
+    "treasury": 0,
+    "other": 3589749
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 116390630,
+     "got": 116390630,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 116390630,
+     "got": 116390630,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 750518,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00649012,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2025-03-28",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 112800881,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF February 28, 2025' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": 3589749,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF February 28, 2025' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 116390630,
+     "got": 116390630,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2025-02-04, 2025-02-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (148,919,199 and 146,162,851 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (34,50"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2025-03.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2025-03-19",
+    "2025-03-31"
+   ],
+   "as_of": "2025-03-31",
+   "month": "2025-03",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 170726017,
+   "fair_value": 171476538,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 139571789,
+    "treasury": 0,
+    "other": 31904749
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 171476538,
+     "got": 171476538,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 171476538,
+     "got": 171476538,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 750521,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00439606,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2025-04-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 139571789,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF March 31, 2025' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": 31904749,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF March 31, 2025' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 171476538,
+     "got": 171476538,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2025-03-19, 2025-03-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (157,151,416 and 196,108,250 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (25,78"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2025-04.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2025-04-03",
+    "2025-04-30"
+   ],
+   "as_of": "2025-04-30",
+   "month": "2025-04",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 201534426,
+   "fair_value": 202284947,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 211202029,
+    "treasury": 0,
+    "other": -8917082
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 202284947,
+     "got": 202284947,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 202284947,
+     "got": 202284947,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 750521,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00372403,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2025-05-29",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 211202029,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF April 30, 2025' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -8917082,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF April 30, 2025' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 202284947,
+     "got": 202284947,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2025-04-03, 2025-04-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (167,785,400 and 228,544,835 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (26,42"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2025-05.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2025-05-27",
+    "2025-05-30"
+   ],
+   "as_of": "2025-05-30",
+   "month": "2025-05",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 188175019,
+   "fair_value": 188925542,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 188929799,
+    "treasury": 0,
+    "other": -4257
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 188925542,
+     "got": 188925542,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 188925542,
+     "got": 188925542,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 750523,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00398843,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2025-06-27",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 188929799,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF May 30, 2025' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -4257,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF May 30, 2025' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 188925542,
+     "got": 188925542,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2025-05-27, 2025-05-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (230,840,326 and 219,279,781 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (32,89"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2025-06.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2025-06-12",
+    "2025-06-30"
+   ],
+   "as_of": "2025-06-30",
+   "month": "2025-06",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 171793247,
+   "fair_value": 172543770,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 172544021,
+    "treasury": 0,
+    "other": -251
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 172543770,
+     "got": 172543770,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 172543770,
+     "got": 172543770,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 750523,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00436876,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2025-07-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 172544021,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF June 30, 2025' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -251,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF June 30, 2025' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 172543770,
+     "got": 172543770,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2025-06-12, 2025-06-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (204,617,970 and 208,058,542 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (36,17"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2025-07.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2025-07-08",
+    "2025-07-31"
+   ],
+   "as_of": "2025-07-31",
+   "month": "2025-07",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 180600510,
+   "fair_value": 181351029,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 181351280,
+    "treasury": 0,
+    "other": -251
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 181351029,
+     "got": 181351029,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 181351029,
+     "got": 181351029,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 750519,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00415569,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2025-08-29",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 181351280,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF July 31, 2025' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -251,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF July 31, 2025' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 181351029,
+     "got": 181351029,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2025-07-08, 2025-07-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (218,171,885 and 216,892,956 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (39,24"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2025-08.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2025-08-04",
+    "2025-08-29"
+   ],
+   "as_of": "2025-08-29",
+   "month": "2025-08",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 203610054,
+   "fair_value": 204360573,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 204131533,
+    "treasury": 0,
+    "other": 229040
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 204360573,
+     "got": 204360573,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 204360573,
+     "got": 204360573,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 750519,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00368606,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2025-09-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 204131533,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF AUGUST 29, 2025' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": 229040,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF AUGUST 29, 2025' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 204360573,
+     "got": 204360573,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2025-08-04, 2025-08-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (221,996,702 and 235,512,680 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (36,15"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2025-09.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2025-09-18",
+    "2025-09-30"
+   ],
+   "as_of": "2025-09-30",
+   "month": "2025-09",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 214594363,
+   "fair_value": 215344883,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 215356693,
+    "treasury": 0,
+    "other": -11810
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 215344883,
+     "got": 215344883,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 215344883,
+     "got": 215344883,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 750520,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00349739,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2025-10-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 215356693,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF SEPTEMBER 30, 2025' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -11810,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF SEPTEMBER 30, 2025' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 215344883,
+     "got": 215344883,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2025-09-18, 2025-09-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (251,153,161 and 246,474,982 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (33,50"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2025-10.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2025-10-13",
+    "2025-10-31"
+   ],
+   "as_of": "2025-10-31",
+   "month": "2025-10",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 241565152,
+   "fair_value": 244315671,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 247122082,
+    "treasury": 0,
+    "other": -2806411
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 244315671,
+     "got": 244315671,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 244315671,
+     "got": 244315671,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 2750519,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.01138624,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2025-11-26",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 247122082,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF OCTOBER 31, 2025' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -2806411,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF OCTOBER 31, 2025' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 244315671,
+     "got": 244315671,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2025-10-13, 2025-10-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (256,603,084 and 269,114,312 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (27,30"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2025-11.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2025-11-03",
+    "2025-11-28"
+   ],
+   "as_of": "2025-11-28",
+   "month": "2025-11",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 286688320,
+   "fair_value": 289438841,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 289618902,
+    "treasury": 0,
+    "other": -180061
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 289438841,
+     "got": 289438841,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 289438841,
+     "got": 289438841,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 2750521,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00959412,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2025-12-19",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 289618902,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF NOVEMBER 28, 2025' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -180061,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF NOVEMBER 28, 2025' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 289438841,
+     "got": 289438841,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2025-11-03, 2025-11-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (262,346,874 and 311,546,375 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (25,67"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2025-12.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2025-12-26",
+    "2025-12-31"
+   ],
+   "as_of": "2025-12-31",
+   "month": "2025-12",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 309608590,
+   "fair_value": 312359116,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 314042591,
+    "treasury": 0,
+    "other": -1683475
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 312359116,
+     "got": 312359116,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 312359116,
+     "got": 312359116,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 2750526,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00888388,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-01-30",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 314042591,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF DECEMBER 31, 2025' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -1683475,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF DECEMBER 31, 2025' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 312359116,
+     "got": 312359116,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2025-12-26, 2025-12-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (321,149,944 and 330,934,061 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (22,24"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2026-01.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2026-01-16",
+    "2026-01-30"
+   ],
+   "as_of": "2026-01-30",
+   "month": "2026-01",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 347804540,
+   "fair_value": 350555067,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 350555401,
+    "treasury": 0,
+    "other": -334
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 350555067,
+     "got": 350555067,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 350555067,
+     "got": 350555067,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 2750527,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00790826,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-02-26",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 350555401,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF JANUARY 30, 2026' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -334,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF JANUARY 30, 2026' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 350555067,
+     "got": 350555067,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2026-01-16, 2026-01-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (330,499,435 and 366,147,418 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (23,78"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2026-02.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2026-02-19",
+    "2026-02-27"
+   ],
+   "as_of": "2026-02-27",
+   "month": "2026-02",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 393662772,
+   "fair_value": 396413298,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 396560668,
+    "treasury": 0,
+    "other": -147370
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 396413298,
+     "got": 396413298,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 396413298,
+     "got": 396413298,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 2750526,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00698701,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-03-27",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 396560668,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF FEBRUARY 27, 2026' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -147370,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF FEBRUARY 27, 2026' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 396413298,
+     "got": 396413298,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2026-02-19, 2026-02-27). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (421,433,575 and 428,291,818 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (32,11"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2026-03.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2026-03-11",
+    "2026-03-31"
+   ],
+   "as_of": "2026-03-31",
+   "month": "2026-03",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 357896076,
+   "fair_value": 360646610,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 362379695,
+    "treasury": 0,
+    "other": -1733085
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 360646610,
+     "got": 360646610,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 360646610,
+     "got": 360646610,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 2750534,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00768529,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-04-29",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 362379695,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF MARCH 31, 2026' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -1733085,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF MARCH 31, 2026' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 360646610,
+     "got": 360646610,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2026-03-11, 2026-03-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (425,882,860 and 409,005,806 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (37,44"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2026-04.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2026-04-06",
+    "2026-04-30"
+   ],
+   "as_of": "2026-04-30",
+   "month": "2026-04",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 371443746,
+   "fair_value": 374194276,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 376595996,
+    "treasury": 0,
+    "other": -2401720
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 374194276,
+     "got": 374194276,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 374194276,
+     "got": 374194276,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 2750530,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00740497,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-05-28",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 376595996,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF APRIL 30, 2026' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -2401720,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF APRIL 30, 2026' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 374194276,
+     "got": 374194276,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2026-04-06, 2026-04-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (416,199,303 and 424,413,310 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (54,89"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2026-05.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2026-05-05",
+    "2026-05-29"
+   ],
+   "as_of": "2026-05-29",
+   "month": "2026-05",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 372655505,
+   "fair_value": 375406036,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 373377679,
+    "treasury": 0,
+    "other": 2028357
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 375406036,
+     "got": 375406036,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 375406036,
+     "got": 375406036,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 2750531,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00738089,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-06-29",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 373377679,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF MAY 29, 2026' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": 2028357,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF MAY 29, 2026' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 375406036,
+     "got": 375406036,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2026-05-05, 2026-05-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (421,525,511 and 430,338,152 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (55,74"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2026-06.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2026-06-02",
+    "2026-06-30"
+   ],
+   "as_of": "2026-06-30",
+   "month": "2026-06",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 381986779,
+   "fair_value": 384737359,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 389833314,
+    "treasury": 0,
+    "other": -5095955
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 384737359,
+     "got": 384737359,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 384737359,
+     "got": 384737359,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 2750580,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00720072,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-07-29",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 389833314,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF JUNE 30, 2026' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -5095955,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF JUNE 30, 2026' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 384737359,
+     "got": 384737359,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2026-06-02, 2026-06-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (430,718,468 and 438,424,381 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (56,47"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2026-07.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2026-07-08",
+    "2026-07-31"
+   ],
+   "as_of": "2026-07-31",
+   "month": "2026-07",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 397363133,
+   "fair_value": 400113753,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 400053404,
+    "treasury": 0,
+    "other": 60349
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 400113753,
+     "got": 400113753,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 400113753,
+     "got": 400113753,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 2750620,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00692218,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-08-27",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 400053404,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF JULY 31, 2026' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": 60349,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF JULY 31, 2026' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 400113753,
+     "got": 400113753,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2026-07-08, 2026-07-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (433,236,037 and 456,769,606 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (60,16"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2026-08.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2026-08-11",
+    "2026-08-31"
+   ],
+   "as_of": "2026-08-31",
+   "month": "2026-08",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 390534293,
+   "fair_value": 393284908,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 395424211,
+    "treasury": 0,
+    "other": -2139303
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 393284908,
+     "got": 393284908,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 393284908,
+     "got": 393284908,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 2750615,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00704321,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-09-29",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": true,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 395424211,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF AUGUST 31, 2026' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -2139303,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF AUGUST 31, 2026' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 393284908,
+     "got": 393284908,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2026-08-11, 2026-08-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (458,103,939 and 454,011,923 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (62,54"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  }
+ ]
+}

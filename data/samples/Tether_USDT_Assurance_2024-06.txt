@@ -1,0 +1,513 @@
+TETHER HOLDINGS LIMITED
+INDEPENDENT AUDITORS' REPORT ON THE
+CONSOLIDATED FINANCIALS FIGURES AND
+RESERVES REPORT
+
+
+
+
+AMZ/MSC/fbs – RC134792024BD0209
+                                                                                               Tel: +39 02 58.20.10                          Viale Abruzzi, 94
+                                                                                               www.bdo.it                                    20131 - Milano
+
+
+
+
+INDEPENDENT AUDITORS' REPORT ON THE CONSOLIDATED FINANCIALS FIGURES AND
+RESERVES REPORT
+
+
+To the Board of Directors of
+Tether Holdings Limited
+
+
+We have been engaged to perform a reasonable assurance engagement on the Consolidated Financials
+Figures and Reserves Report of Tether Holdings Limited (the “Company”) and its wholly owned subsidiaries
+Tether International Limited (BVI), Tether Operations Limited (BVI), Tether Limited (Hong Kong), Alpha
+Group Commodities Limited (BVI), TG Commodities Limited (BVI), Tether Investments Limited (BVI),
+Zettahash Limited (BVI) and Uruguay Research Limited (BVI) (the “Group”) as at 30 June 2024, a copy of
+which has been attached to this report.
+
+
+Management’s Responsibility for the Consolidated Financials Figures and Reserves Report
+Management is responsible for the preparation of the Consolidated Financials Figures and Reserves Report in
+compliance with the criteria, including Management’s Key Accounting Policies, set out in the Consolidated
+Financials Figures and Reserves Report and for such internal control as management determines is necessary
+to enable the preparation of the Consolidated Financials Figures and Reserves Report that is free from
+material misstatement, whether due to fraud or error.
+
+
+Auditors' Independence and quality control
+We have complied with the independence and all other ethical requirements of the Code of Ethics for
+Professional Accountants issued by the International Ethics Standards Board for Accountants, which is founded
+on fundamental principles of integrity, objectivity, professional competence and due care, confidentiality
+and professional behaviour.
+Our company applies International Standard on Quality Management 1, Quality Management for Firms that
+Perform Audits or Reviews of Financial Statements, or Other Assurance or Related Services Engagements
+(ISQM1) and, accordingly, maintains a system of quality control that includes directives and procedures
+concerning compliance with ethical requirements, professional standards and applicable legal and regulatory
+requirements.
+
+
+Auditors’ responsibility
+Our responsibility is to express our conclusion based on the procedures performed about the compliance of
+the Consolidated Financials Figures and Reserves Report with the criteria, including Management’s Key
+Accounting Policies, set out therein.
+We carried out our work in accordance with the criteria established in the International Standard on
+Assurance Engagements 3000 (Revised) ~ Assurance Engagements Other than Audits or Reviews of Historical
+Financial Information (“ISAE 3000 Revised"), issued by the International Auditing and Assurance Standards
+Board (IAASB) for reasonable assurance engagements. This standard requires that we plan and perform the
+engagement to obtain reasonable assurance whether the Consolidated Financials Figures and Reserves Report
+is free from material misstatement.
+The procedures performed on the Consolidated Financials Figures and Reserves Report are based on our
+professional judgement and include inquiries, primarily of the company’s personnel responsible for the
+preparation of the information presented in the Consolidated Financials Figures and Reserves Report, analysis
+of documents, recalculations and other procedures aimed to obtain evidence, as appropriate.
+
+Bari, Bologna, Brescia, Cagliari, Firenze, Genova, Milano, Napoli, Padova, Palermo, Roma, Torino, Verona.
+
+BDO Italia S.p.A. – Sede Legale: Viale Abruzzi, 94 – 20131 Milano – Capitale Sociale Euro 1.000.000 i.v.
+Codice Fiscale, Partita IVA e Registro Imprese di Milano n. 07722780967 - R.E.A. Milano 1977842
+Iscritta al Registro dei Revisori Legali al n. 167911 con D.M. del 15/03/2013 G.U. n. 26 del 02/04/2013
+BDO Italia S.p.A., società per azioni italiana, è membro di BDO International Limited, società di diritto inglese (company limited by guarantee), e fa parte della rete internazionale
+BDO, network di società indipendenti.
+                                                                                                                                                                       Page 1 of 3
+Specifically, we carried out the following procedures:
+     ▪    obtain a comprehension of internal control system;
+     ▪    perform enquiries with the Management on the business operation of the last quarter, identifying
+          material changes;
+     ▪    compare financial data between the current Consolidated Financials Figures and Reserves Report and
+          the ones of the previous periods and discussion of possible significant differences;
+     ▪    obtain confirmation letters directly from banks and depositaries and verify the reconciliations
+          performed by management between the amounts in the accounting ledger/system and the bank
+          statement to confirm the existence of the assets disclosed in the Consolidated Financials Figures and
+          Reserves Report;
+     ▪    obtain reports from a specialized provider relating to inventory and quality testing, on sample basis,
+          of precious metals and performing inventory procedures in order to confirm the existence of assets
+          disclosed in the Consolidated Financials Figures and Reserves Report;
+     ▪    verify, for a significant sample, the correct valuation of the assets disclosed in the Consolidated
+          Financials Figures and Reserves Report in accordance with the criteria described in the Management’s
+          Key accounting policies;
+     ▪    verify the reconciliations performed by management between the accounting ledger/system and the
+          ledgers on the various blockchains relating to assets and liabilities at 30 June 2024;
+     ▪    verify, for a sample of outstanding secured loans, the existence of the collateral through the analysis
+          of the contract and of the transactions;
+     ▪    verify the correctness of the disclosures included in the Consolidated Financials Figures and Reserves
+          Report, excluding the Notes.
+
+
+Conclusion
+In our opinion, the Consolidated Financials Figures and Reserves Report, as prepared by the management of
+the Group as of 30 June 2024, is, in all material respects, fairly presented in accordance with the criteria,
+including Management’s Key Accounting Policies, set out therein.
+
+
+Emphasis of Matter
+We draw attention to the following in the accompanying Consolidated Financials Figures and Reserves Report:
+     ▪    The reporting date is limited to a point in time as of 30 June 2024. We did not perform procedures or
+          provide any assurance at any other date or time in this report.
+     ▪    Management’s accounting policies provide the following:
+           - financial investments are valued at fair value in line with IFRS 9, except for Tether Investments
+             Limited (BVI), for which assets include some private equity and venture capital investments
+             conservatively valued at cost unless listed or at the price of the last capital raise;
+           - investments in precious metals are valued at fair value;
+           - intangible digital assets are valued at fair value;
+           - secured loans are fully collateralized by liquid assets and regularly monitored and are measured at
+             amortised cost (notional value for short-term secured loans) and adjusted for any expected credit
+             loss allowance in line with IFRS 9;
+           - Tether tokens issued have been classified as refund liabilities in line with IFRS 9, which are
+             repayable on demand, and are recorded at the contractual redemption value of the tokens;
+
+
+
+
+Tether Holdings Limited | Independent Auditor’s Report
+                                                                                                       Page 2 of 3
+           - other assets and other liabilities are valued at amortised cost (notional value for short-term assets
+             and liabilities) less any expected credit losses.
+     ▪    Management has applied a going concern basis of accounting to value the Group’s assets. The going
+          concern assessment requires significant management judgment with regards to the Group’s liquidity,
+          market and credit risks. We do not provide any assurance in respect of such assessment.
+     ▪    The valuation of the assets of the Group is based on normal trading conditions and does not reflect
+          unexpected and extraordinary market conditions, or the case of key custodians or counterparties
+          experiencing substantial illiquidity, which may result in delayed realisable values. No provision for
+          expected credit losses was identified by management at the reporting date.
+     ▪    At the reporting date, Tether Holdings Limited and its wholly owned subsidiaries are defendants in
+          one ongoing civil litigation proceeding, the outcome of which cannot yet be reasonably reliably
+          estimated by management and its counsel. No provision is recognised by management.
+     ▪    The digital tokens issued by Tether International Limited and Tether Limited allow holders to transact
+          and settle transactions in a rapid manner, which may be pseudonymous, and may be verified by the
+          sender and the recipient. The digital asset industry is nascent and innovating rapidly. Accordingly,
+          any users of digital assets, including those tokens issued by the Group, should first inform themselves
+          of the general risks and uncertainties of the industry, including as to evolving legal and regulatory
+          requirements. Users of Tether tokens should familiarize themselves with the risk disclosures, as they
+          may be changed and updated from time to time.
+Our opinion is not modified in respect of these matters.
+
+
+Basis of Accounting
+Without modifying our conclusion, we draw attention to the Management’s Key Accounting Policies included
+in the Consolidated Financials Figures and Reserves Report, which describe the basis of accounting. The
+Consolidated Financials Figures and Reserves Report is prepared by management of Tether Holdings Limited
+for transparency purposes. As a result, the Consolidated Financials Figures and Reserves Report may not be
+suitable for another purpose.
+
+
+Scope limitations
+Our opinion is limited solely to the Consolidated Financials Figures and Reserves Report and the
+corresponding consolidated total assets and consolidated total liabilities as of 30 June 2024. Activity prior to
+and after this time and date was not considered when testing the balances and information described above.
+In addition, we have not performed any procedures or provided any level of assurance on the financial or
+non-financial activity on dates or times other than that noted within this report.
+The Notes to the Consolidated Financials Figures and Reserves Report are provided by management of the
+Group for additional information only, and this information has not been subject to the scope of our
+assurance engagement and, accordingly, we do not express an opinion or provide any assurance on it. Our
+responsibility is to read the other information in the Notes, and, in doing so, consider whether the other
+information is materially inconsistent with the Consolidated Financials Figures and Reserves Report or our
+knowledge obtained in the course of the engagement, or otherwise appears to be materially misstated.
+
+Milan, 31 July 2024
+
+
+                                                                                      BDO Italia S.p.A.
+
+
+                                                                                     Andrea Mezzadra
+                                                                                         Partner
+
+
+
+
+Tether Holdings Limited | Independent Auditor’s Report
+                                                                                                          Page 3 of 3
+                                        Consolidated Financial Figures & Reserves Report
+
+           This report includes financial information for and in respect of wholly owned subsidiaries of Tether Holdings
+           Limited (the “Group”) 1.This report does not represent the financial statements of the Group but discloses
+           financial information extracted from its accounting records.
+
+           Only the assets owned by the companies issuing fiat-denominated Tether tokens (being Tether International
+           Limited (BVI) and Tether Limited (HK)) are considered as reserves backing the fiat-denominated Tether tokens in
+           circulation (the “Reserves”) for which additional details are provided in the dedicated section. Assets held by
+           Tether Investments Limited (BVI) and by the other reported Group entities are not part of the Reserves.
+
+           Consolidated key financial figures as of 30 June 2024 and its comparative as of 31 December 2023 at 11:59 PM
+           UTC are:
+
+
+
+
+FINANCIAL FIGURES                                                       30 June 2024                                           31 December 2023
+
+                                                        Total                Total                                   Total              Total
+In USD Millions                                         Assets             Liabilities            Equity             Assets           Liabilities          Equity
+Tether International Limited &
+Tether Limited (Combined) (Reserves) 2                     118,436              (113,102)              5,334            96,778             (91,575)          5,203
+
+Tether Investments Limited 3                                  6,235                    (27)            6,208                321                  (19)          302
+
+Other reported Group entities 4                               1,048                  (697)                351             1,522                  (22)        1,500
+
+TOTAL                                                     125,719              (113,826)             11,893            98,621             (91,616)           7,005
+
+
+
+
+           1
+             The wholly owned subsidiaries consolidated are: Tether International Limited (BVI), Tether Limited (Hong Kong), Tether Operations
+           Limited (BVI), Alpha Group Commodities Limited (BVI), TG Commodities Limited (BVI), Tether Investments Limited (BVI), Zettahash
+           Limited (BVI) and Uruguay Research Limited (BVI).
+           2
+             Tether International Limited (BVI) and Tether Limited (HK) are the companies which issue Tether tokens pegged to fiat currencies such as
+           USDt, EURt, CNHt and MXNt and are managing the Reserves backing those Tether tokens. Only these assets are Reserves backing the issued
+           Tether tokens pegged to fiat currencies.
+           3
+             Tether Investments Limited (BVI) is the dedicated vehicle for proprietary investments into sustainable energy, Bitcoin mining, data, AI
+           infrastructure, P2P telecommunications technology and other long term proprietary investments. Tether Investments Limited (BVI) also
+           invests in funds and other entities, some of which participate in secondary market trading in cryptocurrencies, including USDt and other
+           stablecoins. Zettahash Limited (BVI) has been contributed to Tether investments Limited (BVI) in Q2 2024. The assets of Tether Investments
+           Limited do not form part of the Reserves.
+           4
+             The Group has other subsidiaries which are not considered material and are aggregated in this line. These include Tether Operations Limited
+           (BVI), Uruguay Research Limited (BVI), Alpha Group Commodities Limited (BVI) and TG Commodities Limited (BVI). Zettahash Limited
+           (BVI), which as of 31 March 2024 was included in the Other reported Group entities was contributed to Tether Investments Limited in Q2
+           2024. The tables reflect this contribution and as of 30 June 2024 Zettahash Limited (BVI) is therefore included in Tether Investments Limited
+           (BVI).
+
+                                                                                 Consolidated Financial Figures and Reserves Report as of 30 June 2024
+                                                                                                               Authorised & approved on 31 July 2024
+                                                                                                                                            Page 1 of 7
+           The value of the assets composing the Reserves as of 30 June 2024, exceeds the value of the liabilities of the
+           companies issuing fiat-denominated Tether tokens by USD 5,334,337,355.
+
+
+
+
+CHANGE IN NET EQUITY                                             As of                                During the period
+                                                             beginning of                                                                             As of end of
+                                                              the period:            Financial          Dividend                 Capital              the period:
+In USD Millions                                               31.12.2023               result          Distributions            injections            30.06.2024
+Tether International Limited &
+Tether Limited (Combined)                                                5,203              5,114               (4,983)                        --             5,334
+
+Tether Investments Limited                                                  302                 49                      --                5,857               6,208
+
+Other reported Group entities                                            1,500                  29              (1,296)                     118                 351
+
+TOTAL                                                                   7,005              5,192                (6,279)                  5,975               11,893
+
+
+
+
+           Management’s Key Accounting Policies:
+
+           ●        This report is prepared using the recognition and measurement principles of IFRS as issued by the IASB
+                    but does not contain sufficient information in terms of general presentation, required primary statements,
+                    and disclosures to comply with IFRS.
+           ●        Management has applied a going concern basis of accounting to value the Group’s assets.
+           ●        Financial investments are valued at fair value in line with IFRS 9 5.
+           ●        Investments in precious metals are valued at fair value.
+           ●        Intangible digital assets are valued at fair value.
+           ●        Secured loans are fully collateralized by liquid assets and regularly monitored and are measured at amortised
+                    cost (notional value for short-term secured loans) and adjusted for any expected credit loss allowance in line
+                    with IFRS 9.
+           ●        Tether tokens issued have been classified as refund liabilities in line with IFRS 9, which are repayable on
+                    demand, and are recorded at the contractual redemption value of the tokens.
+           ●        Other assets and other liabilities are valued at amortised cost (notional value for short-term assets and
+                    liabilities) less any expected credit losses.
+
+
+
+
+           5
+             Tether Investments Limited (BVI) assets include private equity and venture capital investments which for the purpose of this report have been
+           conservatively valued at cost unless listed or at the price of the last capital raise. These assets do not form part of the Reserves.
+
+                                                                                  Consolidated Financial Figures and Reserves Report as of 30 June 2024
+                                                                                                                Authorised & approved on 31 July 2024
+                                                                                                                                             Page 2 of 7
+●        The valuation of the assets of the Group is based on normal trading conditions and does not reflect
+         unexpected and extraordinary market conditions, or the case of key custodians or counterparties
+         experiencing substantial illiquidity, which may result in delayed realisable values. No provision for expected
+         credit losses was identified by management at the reporting date.
+
+
+
+
+Fiat denominated Tether tokens Reserves report:
+
+●        Reporting Date: The reporting date is limited to a point in time as of 30 June 2024 at 11:59 PM UTC.
+
+●        The Reserves for Tether tokens in circulation amount to US$ 118,436,336,293.
+
+●        The liabilities of the Companies issuing Tether tokens amount to US$ 113,101,998,938 of which
+         US$ 112,395,445,973 relates to digital tokens issued 6.
+
+●        The value of the assets composing the Reserves as of 30 June 2024 exceed the value of the
+         liabilities of the companies issuing Tether tokens by USD 5,334,337,355
+
+
+●        Key accounting policies: the policies disclosed above are applicable for the Reserves’ reporting.
+●        Outstanding Litigation: At the date stated above, Tether Holdings Limited and its wholly owned
+         subsidiaries are defendants in one ongoing civil litigation proceeding, the outcome of which cannot yet be
+         reasonably reliably estimated by Company’s management and its counsel. No provision is recognised in the
+         Consolidated Financial Figures and Reserves Report.
+
+
+●        Asset Breakdown: At the reporting date, the breakdown of the Reserves backing the fiat-denominated
+         Tether tokens in circulation is as follows:
+
+
+
+
+6
+   The liabilities related to digital tokens issued comprises the amount related to the total digital tokens issued less digital tokens held by the
+companies issuing Tether tokens (Tether International Limited (BVI) and Tether Limited (HK)) but not in its treasury wallet. Digital tokens
+in the treasury wallet are authorised but not yet issued and are not considered liabilities. The total gross contractual redemption value related to
+all digital tokens issued is equal to US$ 112,803,192,641. The amount related to digital tokens held by the Companies issuing Tether tokens but
+not in its treasury wallet is equal to US$ 407,746,668. The digital tokens held by the companies issuing Tether tokens do not form any part of
+the assets or liabilities of these companies. As per its definition, contractual redemption value of the token takes into consideration the
+redemption fee of 10 basis points.
+
+                                                                         Consolidated Financial Figures and Reserves Report as of 30 June 2024
+                                                                                                       Authorised & approved on 31 July 2024
+                                                                                                                                    Page 3 of 7
+            Asset Category                                                                              Amount in USD
+
+            1.    Cash & Cash Equivalent & Other Short-Term Deposits
+
+                       U.S. Treasury Bills 7                                                                 80,948,647,984
+
+                       Overnight Reverse Repurchase Agreements 8                                             11,286,972,273
+
+                       Term Reverse Repurchase Agreements 9                                                      997,373,133
+
+                       Money Market Funds 10                                                                   6,355,402,510
+
+                       Cash & Bank Deposits 11                                                                   109,867,228
+
+                       Non-U.S. Treasury Bills 12                                                                  72,412,344
+
+            Subtotal                                                                                       99,770,675,472
+
+            2.    Corporate Bonds 13                                                                               17,377,107
+
+            3.    Precious Metals 14                                                                           3,814,334,566
+
+            4.    Bitcoin 15                                                                                   4,734,040,881
+
+            5.    Other Investments 16                                                                         3,528,626,010
+
+            6.    Secured Loans 17                                                                             6,571,282,257
+
+            Total (1+2+3+4+5+6)                                                                          118,436,336,293
+
+
+
+7
+    The “U.S. Treasury Bills” category comprises U.S. Treasury Bills with a residual average maturity of less than 90 days.
+8
+  The “Overnight Reverse-Repurchase Agreements” category comprises Reverse-Repurchase Agreements with a maturity of 1 day fully
+collateralized by US Treasuries, where the ultimate issuer or guarantor has a rating of A-2.
+9
+  The “Term Reverse-Repurchase Agreements” category comprises fully collateralized Reverse-Repurchase Agreements with a residual average
+maturity of less than 90 days, where the ultimate issuer or guarantor has a rating of A-2.
+10
+   The “Money Market Funds” category comprises funds investing in highly liquid, short-term money market instruments, including but not
+limited to deposits, treasury bills, and reverse-repurchase agreements.
+11
+   The “Cash & Bank Deposits” category comprises cash deposits at financial institutions.
+12
+   The “Non-U.S. Treasury Bills” have a residual average maturity of less than 360 days.
+
+13
+     The “Corporate Bonds” have a residual average maturity of less than 180 days.
+14
+   The “Precious Metals” category comprises LBMA standard physical gold bars owned by the Tether International Limited (BVI). It does not
+include gold whose ownership is represented by Tether Gold tokens (XAUt), further details of which are provided below.
+15
+    The “Bitcoin” category comprises Bitcoins held on-chain in wallets controlled by the Tether International Limited (BVI). The value of
+Bitcoin has been calculated using BTC price USD 62,824 available at 11:59 PM UTC.
+16
+   The “Other Investments” category comprises other investments within the Reserves that do not meet any of the criteria set out in the other
+categories.
+17
+   The “Secured Loans” category comprises loans over-collateralized by liquid assets subject to margin call and liquidation mechanisms.
+
+                                                                          Consolidated Financial Figures and Reserves Report as of 30 June 2024
+                                                                                                        Authorised & approved on 31 July 2024
+                                                                                                                                     Page 4 of 7
+●       Cash and Cash Equivalent and other short-term deposits:
+        At the reporting date, the value of US treasuries in which Money Market Funds are invested (indirect
+        exposure) is as follows:
+
+                                                                                         Fair value of the US Treasuries bills
+         US dollars                        Fair value                                    indirect exposure
+
+         Money Market Funds                                          6,355,402,510                                   5,390,782,538
+
+
+        At the reporting date, the value of US treasuries provided as collateral for the Overnight Reverse Repurchase
+        Agreement activity, is as follows:
+
+                                                                                         Fair value of the US Treasuries
+         US dollars                        Fair value                                    Collateralizing the exposure 18
+
+         Overnight Reverse
+         Repurchase Agreement                                      11,286,972,273                                  11,246,720,878
+
+
+
+
+Other Information
+●       Risks Associated with Digital Tokens: The digital tokens issued by Tether International Limited and Tether
+        Limited allow holders to transact and settle transactions in a rapid manner, which may be pseudonymous,
+        and may be verified by the sender and the recipient. The digital asset industry is nascent and innovating
+        rapidly. Accordingly, any users of digital assets, including those tokens issued by the Group, should first
+        inform themselves of the general risks and uncertainties of the industry, including as to evolving legal and
+        regulatory requirements. Users of Tether tokens should familiarize themselves with the risk disclosures, as
+        they may be changed and updated from time to time, available at the “Risk Disclosure Statement” tabs at
+        https://tether.to/legal/ and https://gold.tether.to/legal.
+
+
+●       Tether Gold: Tether Gold (XAU₮) tokens are digital tokens that represent ownership of physical gold.
+        Holders of XAU₮ tokens have undivided ownership rights to gold on specified gold bars. TG Commodities
+        Limited, being a member of the Group, is the issuer of the XAU₮ tokens and the representative of the token
+
+
+
+18
+  Overnight Reverse Repurchase agreements are marked to market every morning, with adjustment to collateral as needed. Any difference is
+due to intraday movements in collateral value.
+
+                                                                   Consolidated Financial Figures and Reserves Report as of 30 June 2024
+                                                                                                 Authorised & approved on 31 July 2024
+                                                                                                                              Page 5 of 7
+         holders with the custodian. XAU₮s are issued to a token holder upon or shortly following receipt of the
+         gold by the custodian. Accordingly, the gold in respect of issued XAU₮ tokens is held in the Group’s
+         reserves for a short period of time between purchase of the gold and the issuance of the XAU₮ tokens, but
+         there is no such gold as of the reporting date. However, XAU₮ tokens that are available for sale to users but
+         not yet sold to them are included in the Group’s asset reserves. 19
+
+
+
+Authorised and approved by the Board of Directors on 31 July 2024 and signed on behalf of the Board of Directors
+by JL van der Velde, as director:
+
+
+
+
+JL van der Velde
+
+
+
+
+19
+   At the reporting date, there are 246,524.33 XAU₮ tokens that have been issued, 180,777.07 of which have been sold and 65,747.26 of which
+are available for sale. The custodian holds 246,524.33 fine troy ounces of gold in respect of the XAU₮ tokens. The fair market value of the gold
+held by the custodian in respect of the XAU₮ tokens that have been sold is equal to US$420,623,048. The fair market value of the gold held by
+the custodian for XAU₮ tokens available for sale is equal to US$152,977,437.
+
+
+
+
+                                                                       Consolidated Financial Figures and Reserves Report as of 30 June 2024
+                                                                                                     Authorised & approved on 31 July 2024
+                                                                                                                                  Page 6 of 7
+                            Notes to the Consolidated Financial Figures and Reserves Report
+                                    (no assurance provided by the independent auditor on these notes)
+
+
+1.      Responsibilities of Management:
+
+        Management is responsible for the preparation and fair presentation of this Consolidated Financial Figures
+        and Reserves Report, and for such internal control as management determines is necessary to enable its
+        preparation free from material misstatement.
+
+2.      Background Information:
+
+        2.1.     Tether Holding Limited is a British Virgin Islands company. Tether Limited, a member of the
+                 Group, is registered as a Money Services Business with the Financial Crimes Enforcement Network
+                 of the U.S. Department of the Treasury. Members of the Group make reports to the BVI’s Financial
+                 Investigation Agency pursuant to applicable law.
+        2.2.     Tether tokens are stablecoin utility tokens that facilitate commercial transactions and activity in
+                 various marketplaces. As of the reporting date, Tether tokens are available on 16 discrete
+                 blockchains, 20 all as approved by the Group. The total number of authorised and issued tokens is
+                 made publicly available by the Group. All Tether tokens are backed by an equivalent amount of
+                 assets held in Reserves. The use of fiat-denominated Tether tokens is governed by Tether’s terms of
+                 service, as they may be changed and updated from time to time, available at https://tether.to/legal/.
+                 The use of XAU₮ tokens is governed by Tether Gold’s gold token terms of sale and service, as they
+                 may be changed and updated from time to time, available at https://gold.tether.to/legal.
+
+
+
+
+20
+   Tether tokens are currently issued on the Ethereum, Tron, Ton, EOS, Liquid, Algorand, SLP, Solana, Avalanche, Tezos, Near, Kusama
+Asset Hub, Cosmos, Celo, Polkadot Asset Hub, and Omni layer (Bitcoin) blockchains. Tether has announced plans to discontinue support for
+the Kusama, Bitcoin Cash SLP, Omni layer (Bitcoin). Tether will stop minting on EOS and Algorand
+
+                                                                    Consolidated Financial Figures and Reserves Report as of 30 June 2024
+                                                                                                  Authorised & approved on 31 July 2024
+                                                                                                                               Page 7 of 7
+

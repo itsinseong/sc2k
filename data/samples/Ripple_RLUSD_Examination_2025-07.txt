@@ -1,0 +1,129 @@
+   Independent Accountants’ Report
+Standard Custody & Trust Company, LLC
+       RLUSD Reserves Report
+            July 2025
+                                  One California Street, Suite 2500, San Francisco, CA 94111
+                                  Phone 415-421-5757 | Fax 415-288-6288 | bpm@bpm.com
+
+
+
+
+                                   INDEPENDENT ACCOUNTANTS’ REPORT
+
+
+To the Audit Committee and Management of
+Standard Custody & Trust Company, LLC
+135 E. 57th Street, 21st Floor
+New York, NY 10022
+
+We have examined management of Standard Custody & Trust Company, LLC’s (the “Company”) assertion included
+in the accompanying RLUSD Reserves Report that the Company complied with item 3(a) of the New York State
+Department of Financial Services (“DFS”) industry letter dated June 8, 2022, Guidance on the Issuance of U.S.
+Dollar-Backed Stablecoins (the “DFS Letter”), as of July 17, 2025, and as of July 31, 2025, at 5:00 pm Eastern Time
+(“ET”) (the “Report Dates”). Management of the Company is responsible for its assertion about compliance with
+item 3(a) of the DFS Letter. Our responsibility is to express an opinion on management’s assertion about the
+Company’s compliance with the specified requirements based on our examination.
+
+Our examination was conducted in accordance with attestation standards established by the AICPA. Those
+standards require that we plan and perform the examination to obtain reasonable assurance about whether
+management’s assertion about compliance with the specified requirements is fairly stated, in all material respects.
+An examination involves performing procedures to obtain evidence about whether management’s assertion is fairly
+stated in all material respects. The nature, timing, and extent of the procedures selected depend on our judgment,
+including an assessment of the risks of material misstatement of management’s assertion, whether due to fraud or
+error. In making an assessment of the risks of material misstatement, we considered and obtained an understanding
+of internal control relevant to the preparation of the RLUSD Reserves Report and for compliance with the DFS
+Letter in order to design procedures that are appropriate in the circumstances, but not for the purpose of expressing
+an opinion on the effectiveness of internal control. Accordingly, no such opinion is expressed. We believe that the
+evidence we obtained is sufficient and appropriate to provide a reasonable basis for our opinion.
+
+We are required to be independent and to meet our other ethical responsibilities in accordance with relevant ethical
+requirements relating to the engagement.
+
+Our examination does not provide a legal determination on the Company’s compliance with specified requirements.
+
+In our opinion, management’s assertion that the Company complied with the requirements of item 3(a) of the DFS
+Letter as of the Report Dates, is fairly stated, in all material respects.
+
+
+
+
+San Francisco, California
+August 25, 2025
+
+
+
+
+bpm.com                                                                                                            1
+Docusign Envelope ID: 376E16E3-93D8-49ED-95DE-9AB23C3E9AF5
+
+
+
+
+                                              RLUSD RESERVES REPORT
+
+        Standard Custody & Trust Company, LLC (the “Company”), a subsidiary of Ripple Labs Inc., as the ultimate
+        parent company, is a New York limited purpose trust company and the issuer of Ripple USD (“RLUSD”), a U.S.
+        dollar-denominated stablecoin. The Company is responsible for the completeness, accuracy, and validity of the
+        RLUSD Reserves Report as of July 17, 2025, and July 31, 2025, at 5:00pm Eastern Time (“ET”) (the “Report
+        Dates”).
+
+        The Company asserts that the Company has complied with the following requirements as of the Report Dates:
+
+                 ●    The amounts disclosed below for RLUSD outstanding and the asset reserves (the “Reserves”) as
+                      of the Report Dates are accurate;
+                 ●    The market value of the Reserves was, as of the Report Dates, equal to or greater than the nominal
+                      value of all RLUSD outstanding; and
+                 ●    All conditions on the Reserves set forth in the industry letter dated June 8, 2022, Guidance on the
+                      Issuance of U.S. Dollar-Backed Stablecoins, issued by the New York Department of Financial
+                      Services (“NYDFS”), have been met.
+        The total RLUSD outstanding and total market value of the Reserves, in aggregate, as of the Report Dates, are
+        reported as follows:
+
+
+
+
+        The total market value of the Reserves, broken down by asset class as of the Report Dates are reported as
+        follows:
+
+
+
+
+        Continued                                                                                                 2
+Docusign Envelope ID: 376E16E3-93D8-49ED-95DE-9AB23C3E9AF5
+
+
+
+
+        NOTES
+            1. Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and
+               redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report
+               Dates. Currently, the only RLUSD approved blockchains are the XRPL and Ethereum blockchain
+               networks.
+
+            2. The Reserves are denominated in U.S. dollar and are held across (i) one or more bank accounts at
+               depository institutions insured by the Federal Deposit Insurance Corporation or otherwise approved by
+               the NYDFS, (ii) one or more government money-market funds backed by direct obligations of the
+               Government of the United States and reverse repurchase agreements on such obligations, and/or (iii)
+               U.S. Treasury bills with maturities of three months or less. The accounts are in the name of the Company
+               and established specifically for the benefit of holders of RLUSD. The Reserves are segregated from the
+               proprietary assets of the Company. Market value for the Reserves is determined as of the trade-date,
+               with the fair value determined as of each applicable report date.
+
+
+        To the best of the knowledge and belief of the undersigned, the information contained in the RLUSD Reserves
+        Report as of the Report Dates is accurate and complete.
+
+
+
+
+        ________________________________
+        Jack McDonald
+        Chief Executive Officer
+        Standard Custody & Trust, LLC
+        August 25, 2025
+
+
+
+
+                                                                                                                          3
+

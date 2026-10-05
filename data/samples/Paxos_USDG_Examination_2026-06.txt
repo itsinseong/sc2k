@@ -1,0 +1,708 @@
+           
+
+
+
+
+                                             Paxos Digital Singapore Pte. Ltd.
+                                             Registration Number: 202316062N
+
+                            Report on Management’s Assertion regarding the Global
+                           Dollar (USDG) Redeemable Tokens and Redemption Assets
+                            as of 17 June 2026 and 30 June 2026 at 5:00 PM United
+                                             States Eastern Time
+           
+
+
+
+                                                               KPMG LLP                        Telephone   +65 6213 3388
+                                                               12 Marina View #15-01           Fax         +65 6225 0984
+                                                               Asia Square Tower 2             Internet    www.kpmg.com.sg
+                                                               Singapore 018961
+
+
+
+
+                     Independent reasonable assurance report
+                     Board of Directors and Management
+                     Paxos Digital Singapore Pte. Ltd.
+
+                     We were engaged by the Board of Directors of Paxos Digital Singapore Pte. Ltd. (the “Company”)
+                     to report on management of the Company’s assertion on page 5 of the Global Dollar (USDG)
+                     Redemption Assets Report as of 17 June 2026 and 30 June 2026 at 5:00 PM United States Eastern
+                     Time (the “USDG Redemption Assets Report”) regarding:
+
+                         (a) the total USDG natively minted tokens and the total USDG redeemable tokens
+                              outstanding (Exhibit A),
+
+                         (b) the composition of redemption assets by asset type (Exhibit B), and
+
+                         (c) the comparison of the two (Exhibit C),
+
+                     which includes the Criteria used by management of the Company as a basis for the assertion
+                     (“Management’s Assertion”), in the form of an independent reasonable assurance conclusion
+                     about whether the Management’s Assertion has been properly stated and whether the
+                     accompanying Exhibits A, B and C have been properly prepared and presented, in all material
+                     respects in accordance with the Criteria.
+
+                     Our conclusion excludes the information on the websites which has been referenced to throughout
+                     the USDG Redemption Assets Report.
+
+                     Criteria
+
+                     Exhibits A, B and C were prepared in accordance with the Part I of “AICPA 2025 Criteria for
+                     Stablecoin Reporting: Specific to Asset-Backed Fiat Pegged Tokens” and the reserve assets
+                     composition requirements in sub-paragraph b of Reserve Asset Undertakings included in the
+                     Letter of Undertaking agreed with the Monetary Authority of Singapore (MAS) and executed
+                     by the Company, which states “b. we undertake to hold reserve assets only in the following types
+                     of assets (in any combination): i. cash; ii. cash equivalent; iii. bonds or notes with no more than
+                     three months residual maturity, that is issued by either: a. the government or public entity of the
+                     country that the currency of the SCS is pegged to; or b. a recognised multilateral agency; or iv.
+                     any bonds or notes stated in sub-paragraph b. iii. above that are held under a reverse repurchase
+                     agreement, where: a. the term of the agreement is overnight; and b. the counterparty to that
+                     agreement holds a long-term rating of not less than AA- by Fitch Ratings or Standard and Poor’s
+                     Ratings Services, or not less than Aa3 by Moody’s Investor Services”.
+
+                     Management’s responsibility
+
+                     Management is responsible for preparing and presenting Management’s Assertion and the
+                     accompanying Exhibits A, B and C in the USDG Redemption Assets Report that are free from
+                     material misstatement in accordance with the Criteria and for the information contained therein.
+
+                     This responsibility includes designing, implementing and maintaining internal control relevant to
+                     the preparation and presentation of Management’s Assertion and the accompanying Exhibits A,
+                     B and C that are free from material misstatement whether due to fraud or error.
+
+
+
+                                                                                                                         2
+           
+
+
+                                                                                               Paxos Digital Singapore Pte. Ltd.
+                                                                  Report on Management’s Assertion regarding the Global Dollar
+                                                                             (USDG) Redeemable Tokens and Redemption Assets
+                                                           as of 17 June 2026 and 30 June 2026 at 5:00 PM United States Eastern
+                                                                                                                          Time
+
+
+
+                     Management is also responsible for preventing and detecting fraud and for identifying and
+                     ensuring that the Company complies with laws and regulations applicable to its activities.
+
+                     Management is also responsible for ensuring that staff involved with the preparation and
+                     presentation of the Management’s Assertion and the accompanying Exhibits A, B and C are
+                     properly trained, information systems are properly updated and that any changes in reporting
+                     encompass all significant reporting units.
+
+                     Auditors’ independence and quality management
+
+                     We have complied with the independence and other ethical requirements of the Accounting and
+                     Corporate Regulatory Authority (ACRA) Code of Professional Conduct and Ethics for Public
+                     Accountants and Accounting Entities (ACRA Code), which is founded on fundamental principles
+                     of integrity, objectivity, professional competence and due care, confidentiality and professional
+                     behaviour.
+
+                     Our firm applies Singapore Standard on Quality Management (SSQM) 1 Quality Management
+                     for Firms that Perform Audits or Reviews of Financial Statements, or Other Assurance or Related
+                     Services Engagements, which requires the firm to design, implement and operate a system of
+                     quality management including policies or procedures regarding compliance with ethical
+                     requirements, professional standards and applicable legal and regulatory requirements.
+
+                     Auditors’ responsibility
+
+                     Our responsibility is to examine the Management’s Assertion and the accompanying Exhibits A,
+                     B and C in the USDG Redemption Assets Report prepared and presented by the Company, which
+                     incorporates the reserve assets of Paxos Issuance Europe Oy, a separate legal entity from the
+                     Company incorporated in Finland, as presented in Exhibit B, and to report thereon in the form of
+                     an independent reasonable assurance conclusion based on the evidence obtained. We conducted
+                     our engagement in accordance with Singapore Standard on Assurance Engagements 3000,
+                     Assurance Engagements other than Audits or Reviews of Historical Financial Information. That
+                     standard requires that we plan and perform our procedures to obtain reasonable assurance about
+                     whether the Management’s Assertion is properly stated and the accompanying Exhibits A, B and
+                     C are properly prepared and presented, in all material respects, in accordance with the Criteria.
+
+                     The procedures selected depend on our judgement, including the assessment of the risks of
+                     material misstatement of the Management’s Assertion and the accompanying Exhibits A, B and
+                     C, whether due to fraud or error.
+
+                     In making those risk assessments, we have considered internal controls relevant to the preparation
+                     and presentation of the Management’s Assertion and the accompanying Exhibits A, B and C in
+                     order to design assurance procedures that are appropriate in the circumstances, but not for the
+                     purposes of expressing a conclusion as to the effectiveness of the Company's internal control over
+                     the preparation and presentation of the Management’s Assertion and the accompanying Exhibits
+                     A, B and C.
+
+
+
+
+                                                                                                                                   3
+           
+
+
+                                                                                               Paxos Digital Singapore Pte. Ltd.
+                                                                  Report on Management’s Assertion regarding the Global Dollar
+                                                                             (USDG) Redeemable Tokens and Redemption Assets
+                                                           as of 17 June 2026 and 30 June 2026 at 5:00 PM United States Eastern
+                                                                                                                          Time
+
+
+                     Our engagement also included assessing the appropriateness of the Management’s Assertion and
+                     the accompanying Exhibits A, B and C, the suitability of the Criteria used by the Company in
+                     preparing and presenting the Management’s Assertion and the accompanying Exhibits A, B and
+                     C in the circumstances of the engagement, obtaining an understanding of the process undertaken
+                     by management to prepare the non-financial information in the Management’s Assertion and the
+                     accompanying Exhibits A, B and C, comparison of the non-financial information the
+                     Management’s Assertion and the accompanying Exhibits A, B and C to the sources from which
+                     it was obtained and re-computation of the calculations in the accompanying Exhibits A, B and C.
+                     Reasonable assurance is less than absolute assurance.
+
+                     Because of the inherent limitations in any system of internal accounting control, fraud or error
+                     may occur and not be detected. Also, projection of any evaluation of the system to future periods
+                     is subject to the risk that procedures may become inadequate because of changes in conditions or
+                     that the degree of compliance with the procedures may deteriorate.
+
+                     Conclusion
+
+                     Our conclusion has been formed on the basis of, and is subject to, the matters outlined in this
+                     report.
+
+                     We believe that the evidence we have obtained is sufficient and appropriate to provide a basis for
+                     our conclusion.
+
+                     In our opinion, the Management’s Assertion has been properly stated and the accompanying
+                     Exhibits A, B and C have been properly prepared and presented, in all material respects, in
+                     accordance with the Criteria.
+
+                     Purpose and restriction on use
+
+                     This report is prepared solely to assist the Company in its submission of the USDG Redemption
+                     Assets Report to the Monetary Authority of Singapore (MAS). As a result, the report may not be
+                     suitable for another purpose.
+
+
+
+
+                     KPMG LLP
+                     Public Accountants and
+                     Chartered Accountants
+
+                     Singapore
+                     24 July 2026
+
+
+
+
+                                                                                                                                   4
+               
+
+
+
+
+                                                                                                   USDG Redemption Assets Report
+
+             Global Dollar (USDG) Redemption Assets Report as of June 17, 2026 and June 30, 2026 at United
+             States 5:00 PM Eastern Time
+
+             Background1
+             Paxos Digital Singapore Pte. Ltd. and Paxos Issuance Europe Oy (together “Paxos”, or the “Company”) are
+             issuers of Global Dollar (“USDG”). Paxos Digital Singapore Pte. Ltd. (PDS) was granted a Major Payment
+             Institution (MPI) license by the Monetary Authority of Singapore (“MAS”) to issue stablecoins on 1 July
+             2024. Paxos Issuance Europe Oy (PIE) obtained an Electronic Money Institution (“EMI”) license to issue
+             and redeem e-money tokens on 23 November 2022 and is regulated by the Finnish Financial Supervisory
+             Authority (“FIN-FSA”).
+             The Global Dollar token (“USDG”) is a cryptographic token that allows financial market participants to
+             transact in a crypto asset pegged 1:1 to the U.S. dollar. USDG is issued and redeemed by PDS and PIE
+             under a multi-jurisdictional compliance model in consideration of MAS’s upcoming stablecoin regulatory
+             framework and compliant with MiCA’s e-money token requirements, including capital, segregation of
+             reserves, redemption at par, and ongoing disclosures.
+             Management of Paxos is responsible for the completeness, accuracy, and validity of the USDG
+             Redemption Assets Report as of June 17, 2026 and June 30, 2026 at 5:00 pm United States Eastern Time
+             (the Report Dates).
+
+             Management’s Assertion
+
+             Management of Paxos asserts that as of June 17, 2026 and June 30, 2026 at 5:00 pm United States Eastern
+             Time:
+
+             •   the total USDG natively minted tokens and total USDG redeemable tokens outstanding (Exhibit A), the
+                 composition of redemption assets by asset type (Exhibit B), and the comparison of the two (Exhibit C),
+                 are prepared in accordance with part 1 of the AICPA 2025 Criteria for Stablecoin Reporting: Specific
+                 to Asset-Backed Fiat Pegged Tokens2 (the AICPA Criteria).
+             •   the total redemption assets (Exhibit B) are equal to or greater than total USDG redeemable tokens
+                 outstanding (Exhibit A), as presented in Exhibit C. The criteria we used in making this assertion were
+                 that the total redemption assets, which are defined as unencumbered assets held by the Company in
+                 segregated accounts on behalf of the USDG token holders and measured as described in Exhibit B, are
+                 equal to or greater than the USDG redeemable tokens outstanding, which are defined in the AICPA
+                 Criteria.
+             •   the Company has applied the reserve assets composition requirements applicable to USDG under (i)
+                 sub-paragraph b of Reserve Asset Undertakings included in the Letter of Undertaking agreed with MAS
+                 and executed by PDS3 and (ii) Regulation (EU) 2023/1114 on markets in crypto-assets (“MiCA”)1 4 and
+                 associated EBA draft Regulatory Technical Standards (2024/11)1 5 to the redemption assets, as
+
+
+             1
+               Not subject to the Independent Accountants’ Examination Report
+             2
+               https://www.aicpa-cima.com/resources/download/stablecoin-reporting-criteria
+             3
+               See Appendix II
+             4
+               https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02023R1114-20240109
+             5
+              https://www.eba.europa.eu/activities/single-rulebook/regulatory-activities/asset-referenced-and-e-money-tokens-
+             micar/regulatory-technical-standards-specify-highly-liquid-financial-instruments-reserve-assets-under
+
+                                                                         5
+           
+
+
+
+
+                                                                                    USDG Redemption Assets Report
+
+                 presented in Exhibit B.
+
+
+             Summary1
+             The following summarizes the total USDG redeemable tokens outstanding and total redemption assets as
+             of the Report Dates, which are disclosed in Exhibits A and B.
+                Report Dates                                       June 17, 2026                     June 30, 2026
+
+
+                Total USDG redeemable tokens
+                outstanding (Exhibit A line d)                      2,757,006,607                    2,984,505,939
+
+                Total redemption assets in United
+                States Dollar (Exhibit B)                          $2,761,717,916                   $2,989,975,984
+
+                Percentage value of the reserve
+                assets in excess of the par value                          0.17%                             0.18%
+
+                Total Redemption Assets held in
+                the EU                                                  8,297,582                        8,577,582
+
+
+
+             To the best of the knowledge and belief of the undersigned, the information contained in the USDG
+             Redemption Assets Report as of the Report Dates at 5:00pm United States Eastern Time is accurate and
+             complete.
+
+
+
+
+             Wee Siang Lee
+             Executive Director
+             Paxos Digital Singapore Pte. Ltd.
+
+             July 24, 2026
+
+
+
+
+             Tero Reuna
+             Head of EU
+             Paxos Issuance Europe Oy
+
+             July 24, 2026
+
+
+
+
+                                                               6
+                 
+
+
+
+
+                                                                                                                                                             USDG Redemption Assets Report
+
+                       Exhibit A: Total USDG Natively Minted Tokens and Total USDG Redeemable Tokens Outstanding
+
+                       The following table summarizes the types of USDG tokens as of June 17, 2026
+                    USDG Tokens (in quantity of            Blockchain          Blockchain                              Blockchain X          Blockchain            Blockchain
+                                                                                                 Blockchain Inkiv                                                                          Total
+                            tokens)                        Ethereumii           Solanaiii                                 Layerv           Arbitrum Onevi         Robinhoodvii
+                  Total USDG natively minted
+             a.                                               470,586,049         671,623,685          20,784,255        1,592,103,208               249,992            1,659,418       2,757,006,607
+                  tokens
+
+                  Less temporary USDG
+             b.                                                       N/A                  N/A                 N/A                  N/A                  N/A                  N/A                    N/A
+                  nonredeemable tokens
+                  Temporarily access-restricted                       N/A                  N/A                 N/A                  N/A                  N/A                  N/A                    N/A
+                  Time-locked                                         N/A                  N/A                 N/A                  N/A                  N/A                  N/A                    N/A
+
+                  Less permanent USDG
+             c.                                                       N/A                  N/A                 N/A                  N/A                  N/A                  N/A                    N/A
+                  nonredeemable tokens
+                  Permanently access-restricted                       N/A                  N/A                 N/A                  N/A                  N/A                  N/A                    N/A
+
+                  Total USDG nonredeemable
+                                                                      N/A                 N/A                  N/A                  N/A                  N/A                  N/A                    N/A
+                  tokensi
+
+                  Total USDG redeemable tokens
+             d.                                               470,586,049         671,623,685          20,784,255        1,592,103,208               249,992            1,659,418       2,757,006,607
+                  outstanding
+
+              i All USDG tokens are redeemable. There are no temporary or permanent USDG nonredeemable tokens
+             ii Blockchain Ethereum refers to the smart contract running on Ethereum at 0xe343167631d89B6Ffc58B88d6b7fB0228795491D
+             iii Blockchain Solana refers to the smart contract running on Solana at 2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH
+             iv Blockchain Ink refers to the smart contract running on Ink at 0xe343167631d89B6Ffc58B88d6b7fB0228795491D
+             v Blockchain X Layer refers to the smart contract running on X Layer at 0x4ae46a509f6b1d9056937ba4500cb143933d2dc8
+             vi Blockchain Arbitrum One refers to the smart contract running on Arbitrum one at 0x004B506865409877C9fA29bfb1ebA929984B9bbC
+             vii Blockchain Robinhood refers to the smart contract running on Robinhood at 0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168
+              NOTE: Refer to the Company’s terms related to USDG token purchases and redemptions and the definitions of purchase and redemption rights (including which holders have such rights)6
+
+
+                       6
+                           https://www.paxos.com/terms-and-conditions/general-terms-and-conditions and https://www.paxos.com/terms-and-conditions/stablecoin-terms-conditions
+
+                                                                                                          7
+                 
+
+
+
+
+                                                                                                                                                              USDG Redemption Assets Report
+
+                       The following table summarizes the types of USDG tokens as of June 30, 2026
+
+                     USDG Tokens (in quantity of            Blockchain          Blockchain                               Blockchain X          Blockchain           Blockchain
+                                                                                                  Blockchain Inkiv                                                                          Total
+                             tokens)                        Ethereumii           Solanaiii                                  Layerv           Arbitrum Onevi        Robinhoodvii
+                   Total USDG natively minted
+              a.                                              478,353,518         650,265,117            37,977,852       1,721,349,260               249,992           96,310,200       2,984,505,939
+                   tokens
+
+                   Less temporary USDG
+              b.                                                       N/A                 N/A                  N/A                  N/A                  N/A                   N/A                   N/A
+                   nonredeemable tokens
+                   Temporarily access-restricted                       N/A                 N/A                  N/A                  N/A                  N/A                   N/A                   N/A
+                   Time-locked                                         N/A                 N/A                  N/A                  N/A                  N/A                   N/A                   N/A
+
+                   Less permanent USDG
+              c.                                                       N/A                 N/A                  N/A                  N/A                  N/A                   N/A                   N/A
+                   nonredeemable tokens
+                   Permanently access-restricted                       N/A                 N/A                  N/A                  N/A                   N/A                  N/A                   N/A
+
+                   Total USDG nonredeemable
+                                                                       N/A                 N/A                  N/A                  N/A                  N/A                  N/A                    N/A
+                   tokensi
+
+                   Total USDG redeemable tokens
+              d.                                              478,353,518         650,265,117            37,977,852       1,721,349,260               249,992           96,310,200       2,984,505,939
+                   outstanding
+
+               i All USDG tokens are redeemable. There are no temporary or permanent USDG nonredeemable tokens
+               ii Blockchain Ethereum refers to the smart contract running on Ethereum at 0xe343167631d89B6Ffc58B88d6b7fB0228795491D
+              iii Blockchain Solana refers to the smart contract running on Solana at 2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH
+              iv Blockchain Ink refers to the smart contract running on Ink at 0xe343167631d89B6Ffc58B88d6b7fB0228795491D
+               v Blockchain X Layer refers to the smart contract running on X Layer at 0x4ae46a509f6b1d9056937ba4500cb143933d2dc8
+              vi Blockchain Arbitrum One refers to the smart contract running on Arbitrum one at 0x004B506865409877C9fA29bfb1ebA929984B9bbC
+              vii Blockchain Robinhood refers to the smart contract running on Robinhood at 0x5fc5360D0400a0Fd4f2af552ADD042D716F1d168
+               NOTE: Refer to the Company’s terms related to USDG token purchases and redemptions and the definitions of purchase and redemption rights (including which holders have such rights)7
+
+
+
+                       7
+                           https://www.paxos.com/terms-and-conditions/general-terms-and-conditions and https://www.paxos.com/terms-and-conditions/stablecoin-terms-conditions
+
+                                                                                                           8
+             
+
+
+
+
+                                                                                                 USDG Redemption Assets Report
+
+             Exhibit B: Composition of Redemption Assets by Asset Type
+
+             The following table summarizes redemption assets by asset type in United States Dollar (USD):
+
+                                                                 June 17, 2026                         June 30, 2026
+             Cash                                                          $129,387,243                             $112,903,118
+             Government money market funds, at
+                                                                          $1,330,519,463                        $1,526,753,653
+             net asset value
+             Repurchase agreements, at fair value                                            -                                 -
+             Obligations of U.S. Treasury, at fair
+                                                                          $1,301,811,210                        $1,350,319,213
+             value
+             Total                                                        $2,761,717,916                        $2,989,975,984
+
+             The redemption assets included in this Exhibit B relate to the redemption assets supporting the USDG
+             redeemable tokens reported in Exhibit A.
+             The Company maintains the redemption assets securing USDG in segregated accounts that are
+             unencumbered and held on behalf of USDG token holders in one or more of the following forms: (i) fiat
+             currency held in bank accounts; (ii) (a) investments (including through overcollateralized overnight
+             reverse repurchase agreements) in debt instruments that are expressly guaranteed by the full faith and
+             credit of the United States Government; and/or (b) money-market funds composed of such debt
+             instruments. Amounts backed by debt instruments that are expressly guaranteed by the full faith and
+             credit of the United States Government are subject to market pricing risk.
+
+             1. Cash
+
+             The Company’s cash is held at commercial banks. As of June 17, 2026 and June 30, 2026 the USD demand
+             deposits at commercial banks totaled $129,387,243 and $112,903,118 respectively, which are uninsured.
+             The following table summarizes cash by type of account, regulatory agency, and geographic location.
+
+                                                                                  Geographic
+   Entity            Type of Account                  Regulatory Agency                             June 17, 2026         June 30, 2026
+                                                                                   Location
+            Segregated Account – Stablecoin      Monetary Authority of
+   PDS                                                                           Singapore              $124,979,832          $108,315,707
+            Reserve                              Singapore (MAS)
+
+            Segregated Account – Stablecoin      Commission de Surveillance
+   PIE                                                                           Luxembourg               $4,407,411               $4,587,411
+            Reserve                              du Secteur Financier (CSSF)
+   Total                                                                                               $129,387,243           $112,903,118
+
+
+             2. Government Money Market Funds
+
+             Government money market funds at net asset value hold investments in direct obligations of the
+             Government of the United States and reverse repurchase agreements on such obligations. As of June 17,
+             2026 and June 30, 2026, the Company held the following Government money market funds at net asset
+             value.
+
+                                                                      9
+             
+
+
+
+
+                                                                                              USDG Redemption Assets Report
+
+
+
+
+                             Entity            CUSIP             Maturity Date      June 17, 2026         June 30, 2026
+
+
+                                PDS          262006208               N/A           $1,326,629,292         $1,522,763,482
+
+
+                                PIE        IE00B14RXK43              N/A             $1,995,071            $1,995,071
+
+
+                                PIE       IE0004WWOG99               N/A             $1,895,100            $1,995,100
+
+                        Total                                                      $1,330,519,463         $1,526,753,653
+
+
+              3. Repurchase Agreements, at Fair Value
+
+              Repurchase agreements are agreements with selected commercial banks and broker-dealers, under
+              which the Company acquires securities as collateral (debt obligation) subject to an obligation of the
+              counterparty to repurchase and the Company to resell the securities (obligation) at an agreed-upon time
+              and price. The Company, through a custodian or a sub-custodian, receives delivery of the underlying
+              securities collateralizing repurchase agreements. The Company is not permitted to sell or repledge the
+              securities acquired as collateral. Repurchase agreements are exposed to credit and liquidity risk. To
+              manage these risks, the repurchase agreements entered by the Company are overcollateralized such that
+              the fair value of the underlying collateral is greater than the par amount of the repurchase agreement.
+              The Company monitors the fair value of the underlying collateral on a daily basis, with additional securities
+              obtained as collateral as necessary. Since the repurchase agreements mature overnight, the par amount
+              of the repurchase agreement is considered to be equal to fair value as the amount is deemed to be a cash
+              deposit with no risk of change in value as of the end of each day. As of June 17, 2026 and June 30, 2026,
+              the Company held no repurchase agreements.
+
+
+              4. Obligations of U.S. Treasury, at Fair Value
+
+              Obligations of U.S. Treasury are held by a qualified custodian. The Company only holds U.S. Treasury
+              securities that are three months or less from their respective maturities. As of June 17, 2026 and June 30,
+              2026, the Company held obligations of the U.S. Treasury.
+
+
+
+                                                       Treasury bills as of June 17, 2026
+                                                                                 Maturity
+     Entity         Counterparty          CUSIP/ISIN      Unit cost Unit price                      Par            Cost    Fair Value
+                                                                                  Date
+    PDS          Bank 1 in Singapore      912797UB1        $99.47     $99.94     6/23/2026 $105,000,000 $104,446,591 $104,937,350
+    PDS          Bank 1 in Singapore      912797TE7        $99.57     $99.92     6/25/2026   $75,000,000 $74,679,560       $74,940,383
+    PDS          Bank 1 in Singapore      912797TF4        $99.85     $99.85     7/2/2026    $82,000,000 $81,878,367       $81,878,367
+
+
+
+                                                                      10
+            
+
+
+
+
+                                                                                              USDG Redemption Assets Report
+
+    PDS         Bank 1 in Singapore      912797UN5        $99.57     $99.80      7/7/2026   $170,000,000 $169,264,070 $169,661,294
+    PDS         Bank 1 in Singapore       912797RF6       $99.59     $99.78      7/9/2026    $50,000,000 $49,794,545    $49,889,756
+    PDS         Bank 1 in Singapore       912797TN7       $99.59     $99.71     7/16/2026    $42,000,000 $41,828,278    $41,878,538
+    PDS         Bank 1 in Singapore       912797US4       $99.46     $99.52      8/4/2026   $115,000,000 $114,373,345 $114,449,187
+    PDS         Bank 1 in Singapore       912797UT2       $99.45     $99.45     8/11/2026    $80,000,000 $79,560,367    $79,560,367
+    PDS         Bank 1 in Singapore       912797TX5       $99.28     $99.36     8/20/2026    $70,000,000 $69,495,300    $69,551,378
+    PDS         Bank 2 in Singapore       912797TD9       $99.58     $99.99     6/18/2026    $65,000,000 $64,727,758    $64,993,518
+    PDS         Bank 2 in Singapore       912797TE7       $99.64     $99.92     6/25/2026 $119,000,000 $118,574,692 $118,905,433
+    PDS         Bank 2 in Singapore       912797TF4       $99.42     $99.85      7/2/2026    $85,000,000 $84,506,092    $84,873,396
+    PDS         Bank 2 in Singapore       912797RF6       $99.58     $99.78      7/9/2026    $85,000,000 $84,641,760    $84,812,325
+    PDS         Bank 2 in Singapore       912797UP0       $99.44     $99.73     7/14/2026    $92,000,000 $91,486,231    $91,752,290
+    PDS         Bank 2 in Singapore       912797TN7       $99.30     $99.71     7/16/2026    $50,000,000 $49,651,944    $49,855,806
+    PDS         Bank 2 in Singapore       912797TX5       $99.31     $99.36     8/20/2026    $20,000,000 $19,861,808    $19,871,822
+    Total Treasury bills                                                                                               $1,301,811,210
+
+
+
+
+                                                      Treasury bills as of June 30, 2026
+                                                                                Maturity
+     Entity        Counterparty          CUSIP/ISIN      Unit cost Unit price                  Par         Cost          Fair Value
+                                                                                 Date
+    PDS         Bank 1 in Singapore      912797TF4        $99.85     $99.98     7/2/2026    $82,000,000 $81,878,367     $81,983,782
+    PDS         Bank 1 in Singapore      912797UN5        $99.57     $99.93     7/7/2026 $170,000,000 $169,264,070     $169,881,454
+    PDS         Bank 1 in Singapore      912797RF6        $99.59     $99.91     7/9/2026    $50,000,000 $49,794,545     $49,954,900
+    PDS         Bank 1 in Singapore      912797TN7        $99.59     $99.84     7/16/2026   $42,000,000 $41,828,278     $41,932,987
+    PDS         Bank 1 in Singapore      912797US4        $99.46     $99.65     8/4/2026 $115,000,000 $114,373,345     $114,598,365
+    PDS         Bank 1 in Singapore      912797UT2        $99.45     $99.58     8/11/2026   $80,000,000 $79,560,367     $79,664,280
+    PDS         Bank 1 in Singapore      912797UU9        $99.45     $99.51     8/18/2026 $155,000,000 $154,146,943    $154,233,729
+    PDS         Bank 1 in Singapore      912797TX5        $99.28     $99.49     8/20/2026   $70,000,000 $69,495,300     $69,642,504
+    PDS         Bank 1 in Singapore      912797UG0        $99.13     $99.20     9/17/2026   $65,000,000 $64,431,684     $64,477,942
+    PDS         Bank 2 in Singapore      912797TF4        $99.61     $99.98     7/2/2026 $150,000,000 $149,416,103     $149,970,264
+    PDS         Bank 2 in Singapore      912797RF6        $99.58     $99.91     7/9/2026    $85,000,000 $84,641,760     $84,923,224
+    PDS         Bank 2 in Singapore      912797UP0        $99.44     $99.86     7/14/2026   $92,000,000 $91,486,231     $91,871,558
+    PDS         Bank 2 in Singapore      912797TN7        $99.30     $99.84     7/16/2026   $50,000,000 $49,651,944     $49,920,444
+    PDS         Bank 2 in Singapore      912797US4        $99.60     $99.65     8/4/2026    $68,000,000 $67,727,244     $67,761,339
+    PDS         Bank 2 in Singapore      912797TX5        $99.31     $99.49     8/20/2026   $20,000,000 $19,861,808     $19,897,858
+    PDS         Bank 2 in Singapore      912797RS8        $99.29     $99.34     9/3/2026    $60,000,000 $59,574,167     $59,604,583
+    Total Treasury bills                                                                                               $1,350,319,213
+
+
+                                                                     11
+                     
+
+
+
+
+                                                                                                               USDG Redemption Assets Report
+
+
+
+             Exhibit C: Comparison Between the Redemption Assets and the USDG Redeemable Tokens Outstanding
+
+             The following table summarizes the redemption assets and the USDG redeemable tokens outstanding:
+
+                                                                                               June 17, 2026                 June 30, 2026
+                Redemption assets                                                                  $2,761,717,916               $2,989,975,984
+
+                Less: Amount of USDG redeemable tokens outstandingi                                 2,757,006,607                2,984,505,939
+
+                Subtotal prior to timing difference                                                     $4,711,309                   $5,470,045
+
+                Timing differences:
+                               USDG tokens purchased but not yet minted                                              -                                -
+                                 USDG tokens redeemed but not yet paid                                               -                                -
+
+                Subtotal prior to temporary difference                                                  $4,711,309                   $5,470,045
+
+                Temporary differences:ii
+                                                  USDG access-restricted tokens                                  N/A                           N/A
+                                                     USDG time-locked tokens                                     N/A                           N/A
+
+                Surplus (Deficit)iii                                                                    $4,711,309                   $5,470,045
+
+                i The amount of USDG redeemable tokens outstanding includes requests for purchases and redemptions that have not yet been
+                processed due to timing differences
+                ii All USDG tokens are redeemable. There are no temporary or permanent USDG nonredeemable tokens
+                iii The Company’s terms stipulate that for each USDG redeemable token outstanding there is $1 available assets for redemption. This
+                surplus indicates that asset-backing levels are in accordance with the Company’s terms4
+
+             The tokens and redemption assets included in this Exhibit C relate to the USDG redeemable tokens
+             reported in Exhibit A and redemption assets reported in Exhibit B.
+
+
+
+
+                                                                                12
+           
+
+
+
+
+                                                                                          USDG Redemption Assets Report
+
+             Appendix I: General considerations related to Crypto Assets1
+
+             As of the date of this report, crypto assets remain an evolving area of technology and marketplace activity.
+             Those who choose to invest in crypto assets should inform themselves of the general risks and
+             uncertainties associated with such assets.
+
+             (1) Crypto assets are owned anonymously. While the public keys of virtual wallets holding crypto assets
+             reside on the distributed networks and can be viewed publicly, the ownership of the wallets are normally
+             not registered and therefore, anonymous. Ownership of crypto assets is evidenced primarily by the
+             possession of the underlying private key (e.g. passcode). The possessor of the private key controls the
+             corresponding crypto asset wallet.
+
+             (2) Risk of irreversible transactions. Transactions for most crypto assets that occur over the blockchain are
+             generally irreversible, even if such transactions occur fraudulently or accidentally. If a private key is lost
+             or fraudulently used, the crypto assets in the corresponding wallet may not be recoverable.
+
+             (3) Regulatory uncertainty. Legislative and regulatory changes or actions at the state or federal level may
+             change or affect the use, transfer, exchange, and value of crypto assets. The effects of any such changes
+             are not determinable as of the date of this report.
+
+
+
+
+                                                                  13
+           
+
+
+
+
+                                                                                          USDG Redemption Assets Report
+
+             Appendix II: PDS Letter of Undertaking (LoU) Reserve Asset Undertakings
+
+             Background1
+
+             The Letter of Undertaking (“LoU”) was agreed with the Monetary Authority of Singapore (“MAS”) and
+             executed by Paxos Digital Singapore Pte. Ltd. (“PDS”) in connection with the grant of its Major Payment
+             Institution licence. PDS has executed the LoU and committed to comply with the undertakings set out
+             therein as a condition of its licensing. The LoU sets out specific prudential and reserve asset requirements
+             that reflect MAS’ policy intent under its stablecoin regulatory framework, including expectations relating
+             to the composition, quality, and safeguarding of reserve assets supporting single-currency stablecoins
+             (SCSs).
+
+             PDS’ LoU with MAS includes the following requirements on reserve asset types:
+
+
+             Reserve Asset Undertakings
+
+             b. we undertake to hold reserve assets only in the following types of assets (in any combination):
+
+                     i. cash;
+
+                     ii. cash equivalent;
+
+                     iii. bonds or notes with no more than three months residual maturity, that is issued by either:
+
+                                a. the government or public entity of the country that the currency of the SCS is pegged
+                                to;
+
+                                or
+
+                                b. a recognised multilateral agency; or
+
+                     iv. any bonds or notes stated in sub-paragraph b. iii. above that are held under a reverse
+                     repurchase agreement, where:
+
+                                a. the term of the agreement is overnight; and
+
+                                b. the counterparty to that agreement holds a long-term rating of not less than AA- by
+                                Fitch Ratings or Standard and Poor’s Ratings Services, or not less than Aa3 by Moody’s
+                                Investor Services;
+
+
+
+
+                                                                   14
+

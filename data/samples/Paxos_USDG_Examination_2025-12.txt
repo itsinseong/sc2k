@@ -1,0 +1,98 @@
+                                INDEPENDENT ACCOUNTANT’S REPORT
+
+To,
+The Board of Directors
+Paxos Digital Singapore Pte. Ltd.
+Paxos Issuance Europe Oy
+Purpose of the Report
+
+We have examined Paxos Digital Singapore Pte. Ltd.’s and Paxos Issuance Europe Oy’s (“Paxos”, the
+“Company”) below assertions. Paxos’ management is responsible for its assertions. Our responsibility is to
+express an opinion on management’s assertions based on our examination. Management’s assertions, which
+are summarized in the attached report, (hereafter referred to as the “Redemption Assets Report”), which we
+examined are as follows:
+
+   ●   The Redemption Assets Report refers to the supply of Global Dollar tokens (“USDG”) as of 12
+       December 2025 and 31 December 2025 at 5:00 pm SGT. Such USDG in terms of number of tokens
+       held as denoted under contracts 0xe343167631d89B6Ffc58B88d6b7fB0228795491D on the Ethereum
+       network, 2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH on the Solana network,
+       0xe343167631d89B6Ffc58B88d6b7fB0228795491D            on      the       Ink Network,    and
+       0x4ae46a509f6b1d9056937ba4500cb143933d2dc8 on the X Layer Network at 5:00 pm SGT on the
+       Report Dates and Times is 1,399,832,357 and 1,529,283,030, respectively.
+
+   ●   The Redemption Assets Report refers to the accounts held by the Company at regulated financial
+       institutions and in United States government debt instruments. The fair value of the redemption assets
+       is at least equal to or greater than USD 1,399,832,357 and USD 1,529,283,030 respectively, at the
+       Report Dates and Times. Total Redemption Assets held in the EU were USD 6,318,565 and USD
+       6,725,565 respectively, at the Report Dates and Times.
+
+   ●   The Redemption Assets Report refers to the Company’s holdings as of the Report Dates and Times at
+       5:00 pm ET, which includes the disclosure of the total fair value of the Company’s asset holdings by
+       asset type. Any amounts held in U.S. Government Debt include additional disclosures such as CUSIP
+       and maturity date, as applicable.
+
+   ●   The USDG supply in terms of the number of tokens, as represented by management in the Redemption
+       Assets Report, does not exceed the balance of the Redemption Assets reported below. The percentage
+       value of the reserve assets in excess of the par value of outstanding USDG in circulation is 0.61% and
+       0.59%, respectively.
+
+   ●   The Redemption Assets Report refers to the redemption asset composition which is substantively
+       compliant with the Monetary Authority of Singapore’s (MAS) upcoming stablecoin regulatory framework
+       and compliant with the European Union’s Markets in Crypto-Assets (MiCA) regulation.
+
+Our examination was conducted in accordance with the Singapore Standard on Assurance Engagements
+(SSAE) 3000 (Revised), Assurance Engagements other than Audits or Reviews of Historical Financial
+Information, established by the Institute of Singapore Chartered Accountants (“ISCA”). Those standards require
+that we plan and perform the examination to obtain reasonable assurance about whether the Redemption
+Assets in the accompanying Redemption Assets Report is correctly stated, based on the criteria set forth in
+the Redemption Assets Report, in all material respects. An examination involves performing procedures to
+obtain evidence about the Redemption Assets Information. The nature, timing, and extent of the procedures
+selected depend on our judgment, including an assessment of the risks of material misstatement of the
+Redemption Assets Information, whether due to fraud or error. In making an assessment of the risks of material
+misstatement, we considered and obtained an understanding of internal controls relevant to the preparation of,
+and the Redemption Assets Information in, the accompanying Redemption Assets Report in order to design
+procedures that are appropriate in the circumstances, but not for the purpose of expressing an opinion on the
+effectiveness of such internal control. Accordingly, no such opinion is expressed. We believe that the evidence
+we obtained is sufficient and appropriate to provide a reasonable basis for our opinion.
+
+ Enrome LLP                           143 Cecil Street, #19-03/04                 admin@enrome-group.com
+                                      GB Building Singapore 069542                www.enrome-group.com
+                                                      1
+                      INDEPENDENT ACCOUNTANT’S REPORT (Continued)
+
+  Our firm applies Singapore Standards on Quality Management and, accordingly, maintains a
+  comprehensive system of quality control including documented policies and procedures regarding
+  compliance with ethical requirements, professional standards and applicable legal and regulatory
+  requirements. We have complied with the independence and other ethical requirements of the Accounting
+  and Corporate Regulatory Authority (ACRA) Code of Professional Conduct and Ethics for Public
+  Accountants and Accounting Entities (ACRA Code), which is founded on fundamental principles of integrity,
+  objectivity, professional competence and due care, confidentiality and professional behaviour.
+
+  The Redemption Assets Information in the accompanying Redemption Assets Report relates to the
+  Company’s USDG token, which is a cryptographic stored value token that allows financial market
+  participants to transact in a crypto asset.
+
+  Crypto assets are an evolving area of technology and market place activity. Those who choose to acquire
+  and utilize USDG assets should inform themselves of the general risks and uncertainties associated with
+  such assets.
+
+  In our opinion, the Redemption Assets Information in the accompanying Redemption Assets Report as of
+  December 2025 is fairly stated, based on the criteria set forth in the Redemption Assets Report, in all
+  material respects.
+
+
+
+
+  ENROME LLP
+  Public Accountants and
+  Chartered Accountants
+
+  Singapore, 24 January 2026
+
+
+
+
+Enrome LLP                        143 Cecil Street, #19-03/04                 admin@enrome-group.com
+                                  GB Building Singapore 069542                www.enrome-group.com
+                                                  2
+
