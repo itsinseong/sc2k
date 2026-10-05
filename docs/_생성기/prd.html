@@ -1,9 +1,9 @@
 <div class="wrap">
 
 <header class="mast">
-  <p class="eyebrow">미디어프로젝트 2026-2, StableWatch, PRD v1.0, 2026-09-24</p>
-  <h1>StableWatch PRD</h1>
-  <p>StableWatch는 한국에 아직 없는 원화 스테이블코인 준비금 공시 서식을 제안하고, 해외 발행사의 실제 공시를 넣어 그 서식이 지켜질 수 있는지 판정하는 웹 도구다. 결정되지 않은 항목은 <span class="tbd">미정</span>으로 표기하고 13절에 모았다.</p>
+  <p class="eyebrow">미디어프로젝트 2026-2, Stablecoin2Korea, PRD v1.0, 2026-09-24</p>
+  <h1>Stablecoin2Korea PRD</h1>
+  <p>Stablecoin2Korea는 한국에 아직 없는 원화 스테이블코인 준비금 공시 서식을 제안하고, 해외 발행사의 실제 공시를 넣어 그 서식이 지켜질 수 있는지 판정하는 웹 도구다. 결정되지 않은 항목은 <span class="tbd">미정</span>으로 표기하고 13절에 모았다.</p>
   <div class="tools nocopy"><button class="cp" data-act="copyall">전체 복사</button></div>
 </header>
 <nav class="toc nocopy"><a href="#p1">1 개요</a><a href="#p2">2 문제</a><a href="#p3">3 대상</a><a href="#p4">4 목표</a><a href="#p5">5 구조</a><a href="#p6">6 기능</a><a href="#p7">7 판정 규칙</a><a href="#p8">8 한국 공시안</a><a href="#p9">9 기존 대안</a><a href="#p10">10 운영 원칙</a><a href="#p11">11 지표</a><a href="#p12">12 리스크</a><a href="#p13">13 미정과 미확인</a><a href="#p14">14 일정</a></nav>
@@ -14,7 +14,7 @@
   <div class="bh"><h2>1. 개요</h2><button class="cp nocopy">복사</button></div>
   <div class="body">
     <dl class="def">
-      <dt>제품</dt><dd><b>StableWatch</b>. 원화 스테이블코인 준비금 공시 판정기(웹)</dd>
+      <dt>제품</dt><dd><b>Stablecoin2Korea</b>. 원화 스테이블코인 준비금 공시 판정기(웹)</dd>
       <dt>정의</dt><dd>한국에 아직 없는 준비금 공시 서식을 제안하고, 해외 발행사의 실제 공시로 그 서식이 지켜질 수 있는지 판정한다. 지켜질 수 없는 값은 고친다.</dd>
       <dt>산출물</dt><dd>판정기 웹(화면 A 판정, 화면 B 고객 환매, 화면 C 근거), 한국 공시안 v1(서식 29항목, 값 결정 기록 5건), 실측 검증 기록, 싱가포르 MAS 자문 의견서(P015-2026)</dd>
       <dt>범위</dt><dd>제안 대상은 한국이다. 미국, EU, 홍콩, 싱가포르 규정은 비교 기준이고, 해외 발행사 공시는 한국 제안값을 검증하는 실측 자료다(2026-09-13 결정).</dd>
@@ -118,8 +118,8 @@
   <div class="bh"><h2>5. 서비스 구조</h2><button class="cp nocopy">복사</button></div>
   <div class="body">
     <p>숫자 줄기(발행사 공시, 파서)와 규정 줄기(해외 규정, 관할권 설정), 근거 줄기(한국 법령과 법안, 근거 그래프)가 규칙 엔진과 판정 화면에서 만난다.</p>
-    <figure class="pic" data-name="StableWatch_서비스구조">
-      <svg viewBox="0 0 960 318" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif" role="img" aria-label="StableWatch 서비스 구조">
+    <figure class="pic" data-name="Stablecoin2Korea_서비스구조">
+      <svg viewBox="0 0 960 318" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif" role="img" aria-label="Stablecoin2Korea 서비스 구조">
         <defs><marker id="pa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#111"/></marker></defs>
         <g font-size="12" fill="#85857f"><text x="20" y="24">입력</text><text x="270" y="24">처리</text><text x="520" y="24">판정</text><text x="750" y="24">출력</text></g>
         <rect x="20" y="40" width="200" height="64" rx="8" fill="#f6f6f4"/>
@@ -172,7 +172,7 @@
         <text x="764" y="266" font-size="11" fill="#555">근거 5층과 조문 원문</text>
         <text x="20" y="310" font-size="11.5" fill="#85857f">공시안의 제안값은 한국 설정의 후보값으로 다시 들어가 발행사 실측으로 검증된다.</text>
       </svg>
-      <figcaption><span>StableWatch 서비스 구조. 서버와 DB 없이 정적 JSON과 HTML로 동작하며, 데이터 갱신은 파서 재실행 후 커밋으로 한다.</span><button class="cp png nocopy">PNG 복사</button></figcaption>
+      <figcaption><span>Stablecoin2Korea 서비스 구조. 서버와 DB 없이 정적 JSON과 HTML로 동작하며, 데이터 갱신은 파서 재실행 후 커밋으로 한다.</span><button class="cp png nocopy">PNG 복사</button></figcaption>
     </figure>
     <dl class="def">
       <dt>LLM의 자리</dt><dd>판정과 인용에는 쓰지 않는다. 쓰는 곳은 보도층 후보 수집, 근거를 반박해 보는 적대검증, 근거 그래프 노드 번호로만 답하게 제한한 검색(확장) 세 가지다.</dd>
@@ -340,7 +340,7 @@
       <tr><td class="rw">Veris</td><td>미국</td><td class="c"><i class="m x">✕</i></td><td class="c"><i class="m t">△</i></td><td class="c"><i class="m x">✕</i></td><td class="c"><i class="m x">✕</i></td><td>AML 플랫폼의 부속 기능으로 준비금을 모니터링하고 GENIUS법 조건을 참과 거짓으로 확인한다. 조문 인용이 없고 코드는 공개되지 않는다(API 문서는 공개)</td></tr>
       <tr><td class="rw">stablecoinstatus.com</td><td>한국</td><td class="c"><i class="m x">✕</i></td><td class="c"><i class="m x">✕</i></td><td class="c"><i class="m t">△</i></td><td class="c"><i class="m x">✕</i></td><td>계류 법안 8건을 6개 축으로 비교하는 추적기다(김성원 안 2218219는 목록에 없다). 시행 법률과 관행 층이 없다</td></tr>
       <tr><td class="rw">로펌, 연구기관 보고서</td><td>한국, 해외 비교</td><td class="c"><i class="m x">✕</i></td><td class="c"><i class="m x">✕</i></td><td class="c"><i class="m t">△</i></td><td class="c"><i class="m x">✕</i></td><td>정부 논의와 법안을 항목별로 정리한다. 조문 단위 인용과 규칙 축 매핑, 판정이 없다</td></tr>
-      <tr class="me"><td class="rw">StableWatch</td><td>미국, EU, 홍콩, 싱가포르, 한국</td><td class="c"><i class="m o">O</i></td><td class="c"><i class="m o">O</i></td><td class="c"><i class="m o">O</i></td><td class="c"><i class="m o">O</i></td><td>공시 문서를 파싱해 관할권별로 판정하고, 한국 빈칸에 값을 제안해 실측으로 검증한다. 온체인 재구성과 암호학적 봉인은 없다</td></tr>
+      <tr class="me"><td class="rw">Stablecoin2Korea</td><td>미국, EU, 홍콩, 싱가포르, 한국</td><td class="c"><i class="m o">O</i></td><td class="c"><i class="m o">O</i></td><td class="c"><i class="m o">O</i></td><td class="c"><i class="m o">O</i></td><td>공시 문서를 파싱해 관할권별로 판정하고, 한국 빈칸에 값을 제안해 실측으로 검증한다. 온체인 재구성과 암호학적 봉인은 없다</td></tr>
     </table></div>
     <p class="cav">2026-09-04 GitHub 6개 질의와 퍼플렉시티 15개 질의, 2026-09-15 FeedOracle과 Veris 직접 재확인 범위의 결과다. 확인 범위에서 같은 조합이 없었다는 뜻이며 최초라는 주장이 아니다. 미국 증거팩의 완성도는 Tessera가 앞서므로, Tessera 공개 팩을 미국 규칙의 대조 자료로 쓴다.</p>
   </div>
@@ -431,5 +431,5 @@
 
 </main>
 
-<footer>StableWatch PRD v1.0, 2026-09-24. 레포 github.com/itsinseong/media-project-stablewatch(최종 제출 전 공개 전환 예정).</footer>
+<footer>Stablecoin2Korea PRD v1.0, 2026-09-24. 레포 github.com/itsinseong/media-project-stablewatch(최종 제출 전 공개 전환 예정).</footer>
 </div>

@@ -1,8 +1,8 @@
 <div class="wrap">
 
 <header class="mast">
-  <p class="eyebrow">미디어프로젝트 2026-2, StableWatch, 레퍼런스, 2026-10-01</p>
-  <h1>StableWatch 레퍼런스</h1>
+  <p class="eyebrow">미디어프로젝트 2026-2, Stablecoin2Korea, 레퍼런스, 2026-10-01</p>
+  <h1>Stablecoin2Korea 레퍼런스</h1>
   <p>8주차 Reference 조사 과제와 2차 Reference 발표에 쓰는 자료다. 원문에서 확인하지 못한 값은 <span class="tbd">확인 못함</span>으로 표기했다.</p>
   <div class="tools nocopy"><button class="cp" data-act="copyall">전체 복사</button></div>
 </header>
@@ -50,7 +50,7 @@
       <tr><td class="rw">Veris</td><td>미국</td><td class="c"><i class="m x">✕</i></td><td class="c"><i class="m t">△</i></td><td class="c"><i class="m x">✕</i></td><td class="c"><i class="m x">✕</i></td><td>AML 플랫폼의 부속 기능으로 코인 5종의 준비금을 모니터링하고 GENIUS법 조건을 참과 거짓으로 확인한다. 조문 인용이 없고 코드는 공개되지 않는다(API 문서는 공개)</td></tr>
       <tr><td class="rw">stablecoinstatus.com</td><td>한국</td><td class="c"><i class="m x">✕</i></td><td class="c"><i class="m x">✕</i></td><td class="c"><i class="m t">△</i></td><td class="c"><i class="m x">✕</i></td><td>국회 계류 법안 8건(김성원 안 2218219는 목록에 없다)을 발행자 자격, 준비금 구성, 이자 지급, 해외 스테이블코인, 감독기관, 인가 방식 6개 축으로 비교하는 추적기다. 법안 층만 다루고 시행 법률과 관행 층, 조문 단위 판정은 없다</td></tr>
       <tr><td class="rw">로펌, 연구기관 보고서</td><td>한국, 해외 비교</td><td class="c"><i class="m x">✕</i></td><td class="c"><i class="m x">✕</i></td><td class="c"><i class="m t">△</i></td><td class="c"><i class="m x">✕</i></td><td>김앤장 「스테이블코인 관련 정책 동향」과 자본시장연구원 보고서는 정부 논의와 법안을 항목별로 정리한다. 조문 단위 인용을 규칙 축에 붙이거나 실제 공시 문서 판정과 연결하지 않는다</td></tr>
-      <tr class="me"><td class="rw">StableWatch</td><td>미국, EU, 홍콩, 싱가포르, 한국</td><td class="c"><i class="m o">O</i></td><td class="c"><i class="m o">O</i></td><td class="c"><i class="m o">O</i></td><td class="c"><i class="m o">O</i></td><td>공시 문서를 파싱해 관할권 6개에서 판정하고, 한국 빈칸에 값을 제안해 실측으로 검증한다. 온체인 유통량 재구성과 암호학적 증거 봉인은 없다. 미국 규칙의 대조에는 Tessera의 공개 증거팩을 오라클로 쓴다</td></tr>
+      <tr class="me"><td class="rw">Stablecoin2Korea</td><td>미국, EU, 홍콩, 싱가포르, 한국</td><td class="c"><i class="m o">O</i></td><td class="c"><i class="m o">O</i></td><td class="c"><i class="m o">O</i></td><td class="c"><i class="m o">O</i></td><td>공시 문서를 파싱해 관할권 6개에서 판정하고, 한국 빈칸에 값을 제안해 실측으로 검증한다. 온체인 유통량 재구성과 암호학적 증거 봉인은 없다. 미국 규칙의 대조에는 Tessera의 공개 증거팩을 오라클로 쓴다</td></tr>
     </table></div>
     <p class="cav">공시 문서 파싱은 발행사가 낸 검증보고서나 준비금 명세를 코드로 읽어 구조화하는지를 뜻한다. 값 제안은 관할권 설정에 값이 없는 칸에 후보값을 채워 제안하는지를 뜻한다.</p>
     <h3>3.1 공통 기회와 위협</h3>
@@ -63,14 +63,14 @@
       <tr><td class="rw">위협</td><td>한국은 법안 단계, 싱가포르는 법 개정 자문 중이라 규칙 값이 단계마다 바뀐다</td><td>7절</td></tr>
     </table></div>
     <h3>3.2 Tessera 보고서 원문 분석</h3>
-    <p>대상은 PYUSD Reserve Reconciliation 2026-05 보고서(5쪽, <code>data/samples/Tessera_PYUSD_ReserveReconciliation_2026-05.pdf</code>)다. 규제 조문, 규칙, 발행사 보고서 판정, 공개로 이어지는 구조가 StableWatch와 같고 미국 GENIUS법만 다룬다.</p>
+    <p>대상은 PYUSD Reserve Reconciliation 2026-05 보고서(5쪽, <code>data/samples/Tessera_PYUSD_ReserveReconciliation_2026-05.pdf</code>)다. 규제 조문, 규칙, 발행사 보고서 판정, 공개로 이어지는 구조가 Stablecoin2Korea와 같고 미국 GENIUS법만 다룬다.</p>
     <div class="tw"><table>
       <tr><th>방식</th><th>내용</th><th>보고서 수치</th></tr>
       <tr><td class="rw">보고서 표 옮기기</td><td>발행사 준비자산 표를 줄마다 자산 종류, 수탁기관, 원문 쪽 번호, 신뢰도와 함께 기계판독 작업지로 옮긴다</td><td>4개 항목, 합계 $3,030,833,747</td></tr>
       <tr><td class="rw">온체인 대조</td><td>체인 4개(ethereum, solana, arbitrum_one, stellar) 유통량을 원자료에서 다시 계산해 검증 기준시각에 맞춰 대조한다. 발행과 소각 내역도 대사한다</td><td>커버리지 1.003896, 발행 523건과 소각 493건 대사 후 설명 안 된 차이 0.00</td></tr>
       <tr><td class="rw">조문 연결과 봉인</td><td>검사마다 GENIUS법 제4조(a)(1)(A), (1)(C), (3)(A), (3)(B)~(C)에 연결한다. 모든 수치를 각주로 원본 파일(SHA-256)에 잇고 머클루트 하나로 봉인한다. 준수 판정이 아니라는 문구를 본문에 둔다</td><td>유통량 각주 [1] 하나에 원본 파일 1,708개(검증보고서 1개, 체인 응답 1,707개)</td></tr>
     </table></div>
-    <h3>3.3 StableWatch 적용</h3>
+    <h3>3.3 Stablecoin2Korea 적용</h3>
     <div class="tw"><table>
       <tr><th>레퍼런스</th><th>가져오는 것</th><th>쓰는 곳</th></tr>
       <tr><td class="rw">Tessera</td><td>공개 증거 묶음</td><td>미국 규칙 판정 결과의 외부 대조 자료</td></tr>

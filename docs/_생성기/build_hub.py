@@ -22,7 +22,7 @@ SVG_MOON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
 
 HEADER = f"""<header class="hub-top">
   <div class="hub-bar">
-    <a class="hub-brand" href="#idea"><b>StableWatch</b><small>미디어프로젝트 2026-2, 원화 스테이블코인 준비금 공시 판정기</small></a>
+    <a class="hub-brand" href="#idea"><b>Stablecoin2Korea</b><small>미디어프로젝트 2026-2, 원화 스테이블코인 준비금 공시 판정기</small></a>
     <div class="hub-search">
       <label>{SVG_SEARCH}<input id="gq" type="search" placeholder="전체 문서 검색 (⌘K)" autocomplete="off" aria-label="전체 검색"></label>
       <div class="hub-res" id="gres" hidden></div>
@@ -185,7 +185,7 @@ page = f"""<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>StableWatch 기획 문서</title>
+<title>Stablecoin2Korea 기획 문서</title>
 <script>{HEAD_JS}</script>
 <style>
 {read("base.css")}

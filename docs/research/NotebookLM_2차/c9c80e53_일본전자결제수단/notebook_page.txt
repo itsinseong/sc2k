@@ -1,0 +1,90 @@
+public
+공개
+add_2
+노트북 만들기
+share_1
+공유
+more_vert
+settings
+PLUS
+출처
+side_nav
+add_2
+소스 추가
+language
+웹
+keyboard_arrow_down
+search_spark
+Fast Research
+keyboard_arrow_down
+arrow_forward
+label_auto
+sort
+모두 선택
+（事務ガイドライン第三分冊：金融会社関係「１７．電子決済手段等取引業者関係」（新旧対 - 金融庁
+17 電子決済手段等取引業者関係
+金融商品取引法施行令 - e-Gov 法令検索
+info
+金融審議会 資金決済制度等に関するワーキング・グループ 報告 2025 年 1 月 22 日
+金融サービスの提供及び利用環境の整備等に関する法律 - e-Gov 法令検索
+info
+履行保証金の供託について - 一般社団法人日本資金決済業協会
+漁業協同組合等の信用事業等に関する命令 - e-Gov 法令検索
+info
+銀行法施行規則 - e-Gov 法令検索
+info
+資金決済に関する法律 - e-Gov 法令検索
+資金決済に関する法律 - e-Gov 法令検索
+info
+資金移動業者に関する内閣府令 第12条（履行保証金に充てることができる債券の種類）
+markdown
+Deep Research 보고서: 일본 전자결제수단 준비금 공시 판정 기준 법령 대조 보고서
+landscape_2
+📄
+전자決済手段等取引業者監督指針
+소스 12개
+·
+2026. 10. 5.
+
+본 자료는 **전자決済手段等取引業者(전자결제수단등거래업자)**에 대한 감독 지침을 상세히 규정하고 있습니다. 주요 내용으로는 전자결제수단 및 거래업의 정의와 범위, 취급 적절성 판단 기준, 경영 관리 및 내부통제 체계 등이 포함됩니다. 또한 법령 준수와 반사회적 세력과의 관계 차단을 위한 엄격한 기준을 제시하고 있습니다. 마지막으로 이용자 보호 조치와 시스템 리스크 관리 등 건전하고 적정한 업무 수행을 위한 구체적인 감독 착안점을 다루고 있습니다.
+
+keep_pin
+메모에 저장
+copy
+thumb_up
+thumb_down
+전자決済手段等取引業者の登録要件と審査基準について教えてください。
+subdirectory_arrow_right
+利用者保護と財産分別管理に関する主な監督上の着眼点は何ですか？
+subdirectory_arrow_right
+外国電子決済手段を取り扱う際の特別なリスク管理と資産保全の要件は何ですか？
+subdirectory_arrow_right
+소스 7개
+arrow_upward
+Gemini Notebook은 실수를 할 수 있으니 다시 한번 확인하세요.
+스튜디오
+side_nav
+audio_spark
+AI 오디오 오버뷰
+tablet
+슬라이드 자료
+videocam
+동영상 개요
+flowchart
+마인드맵
+auto_tab_group
+보고서
+New!
+copy
+플래시카드
+quiz
+퀴즈
+stacked_bar_chart
+인포그래픽
+format_list_bulleted
+데이터 표
+edit_fix_auto
+스튜디오 출력이 여기에 저장됩니다
+소스를 추가한 후 클릭하여 AI 오디오 오버뷰, 학습 가이드, 마인드맵 등을 추가해 보세요.
+article
+메모 추가
