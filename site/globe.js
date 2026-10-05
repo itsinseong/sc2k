@@ -1,6 +1,6 @@
 // 지구본: TopoJSON 직접 해석 + 정사영 투영 + 대원 호. 외부 라이브러리 없음.
 const SEOUL = [126.98, 37.57];
-const ANCHORS = { us: [-77.04, 38.91], eu: [4.35, 50.85], hk: [114.17, 22.32], sg: [103.82, 1.35] };
+const ANCHORS = { us: [-77.04, 38.91], eu: [4.35, 50.85], hk: [114.17, 22.32], sg: [103.82, 1.35], jp: [139.69, 35.69] };
 const EU_IDS = '040 056 100 191 196 203 208 233 246 250 276 300 348 372 380 428 440 442 470 528 616 620 642 703 705 724 752'.split(' ');
 const FY = 0.34; // 나라를 둘 높이 비율(위쪽). 아래 점수 글에 가리지 않게
 const CFG = { // pin = 표시할 점, ids = 칠할 나라, view = 시점 중심, k = 구 반지름 / 상자 너비(클수록 확대), top = 있으면 구의 윗 테두리를 상자 안에 두고 나라를 상자 높이의 이 비율 자리에 둠
@@ -9,6 +9,7 @@ const CFG = { // pin = 표시할 점, ids = 칠할 나라, view = 시점 중심,
   'eu-emt-significant': { name: 'EU', pin: ANCHORS.eu, ids: EU_IDS, label: 'EU', view: [11, 51], k: 1.0, top: FY },
   hk: { name: '홍콩', pin: ANCHORS.hk, ids: ['344'], dot: true, label: '홍콩', view: [114.1, 22.35], k: 18, det: 'hk' },
   sg: { name: '싱가포르', pin: ANCHORS.sg, ids: ['702'], dot: true, label: '싱가포르', view: [103.82, 1.35], k: 20, det: 'sg' },
+  jp: { name: '일본', pin: ANCHORS.jp, ids: ['392'], label: '일본', view: [137.5, 37.5], k: 1.9, det: 'kr' },
   'kr-v1': { name: '한국', pin: SEOUL, ids: ['410'], label: '한국', view: [127.5, 36], k: 3.0, det: 'kr' },
 };
 const T_TWEEN = 1.1, T_PULSE = 2.4, TM = 6; // TM: 윗 테두리 여백
@@ -239,18 +240,21 @@ export function mountGlobe(el, id) {
   if (cfg.det) loadDetail().then(() => { if (el.isConnected && S.world && !running) render(); }).catch(() => { S.detailLoading = null; }); // 못 받으면 50m로 남김
 }
 
-// ---- 개요 화면 지구본: 해외 네 곳에서 서울로 오는 흐름. 고정 시점 ----
-const FLOWS = [['미국', ANCHORS.us], ['EU', ANCHORS.eu], ['홍콩', ANCHORS.hk], ['싱가포르', ANCHORS.sg]];
+// ---- 개요 화면 지구본: 해외 다섯 곳에서 서울로 오는 흐름. 고정 시점 ----
+const FLOWS = [['미국', [-115.87, 42.5], 'us'], // 미국 점: 워싱턴은 이 시점에서 뒷면이라 앞면 가장자리에 걸리는 아이다호 남부에 둠(직접 찍은 자리). 나라 화면 핀(ANCHORS.us)은 워싱턴 그대로
+  ['EU', ANCHORS.eu, 'eu'], ['홍콩', ANCHORS.hk, 'hk'], ['싱가포르', ANCHORS.sg, 'sg'], ['일본', [132.46, 34.39], 'jp']]; // 일본 점: 개요에서는 히로시마. 나라 화면 핀(ANCHORS.jp)은 도쿄 그대로
 const HERO_N = 90, TAIL = 9;
 const T0 = performance.now();
 let hero = null; // 지금 떠 있는 개요 지구본 하나. 다시 그려지면 이전 것을 멈춤
 
-// 북쪽이 위. 윗 테두리는 보이고, 구가 칸보다 크면 오른쪽과 아래가 잘림. 시점은 유라시아 위:
-// EU, 홍콩, 싱가포르, 한국과 미국 서쪽(알래스카)은 앞면, 워싱턴은 윗 테두리 바로 뒤라 호가 테두리를 넘어 들어옴
-const HERO_VIEW = [100, 45], HERO_ROLL = 0, HERO_M = 22;
+// 북쪽이 위. 윗 테두리는 보이고, 구가 칸보다 크면 오른쪽과 아래가 잘림. 시점은 유라시아 위(직접 돌려 맞춘 자리):
+// EU, 홍콩, 싱가포르, 일본, 한국은 앞면
+const HERO_VIEW = [119.31, 35.66], HERO_ROLL = 0, HERO_M = 22;
+// 카드가 가리면 안 되는 땅: 한국과 일본 해안을 따라 찍은 점(경도, 위도)
+const KEEP = [[126.5, 37.5], [127, 35], [129, 35.2], [129.4, 36], [128.6, 38.2], [126.5, 33.4], [126.4, 34.8], [129.9, 33.2], [130.5, 31.4], [131.6, 33.2], [132.6, 33.4], [134.6, 33.8], [131, 34.4], [132.5, 35.4], [134, 35.5], [135.5, 34.7], [136.9, 35.2], [136.6, 36.6], [137.5, 37.4], [138.2, 36.2], [139, 37.9], [139.7, 35.7], [140.9, 38.3], [140, 39.7], [141.4, 40.5], [140.7, 41], [140.3, 41.8], [141.4, 43.1], [142.4, 44.4], [141.7, 45.4], [143.2, 42.9], [144.4, 43], [145.3, 43.3], [144.3, 44]];
 function heroGeo(W, H) {
-  const R = Math.min((H - HERO_M - 26) / 1.69, W * 0.62); // 싱가포르(중심 아래 약 0.69R)와 이름표까지 보이게
-  return { R, cx: Math.max(HERO_M + R, W / 2), cy: HERO_M + R, view: HERO_VIEW };
+  const R = Math.min((H - HERO_M - 26) / 1.69, W * 0.56); // 싱가포르(중심 아래 약 0.69R)와 이름표까지 보이게
+  return { R, cx: Math.max(HERO_M + R, W * 0.45), cy: HERO_M + R, view: HERO_VIEW }; // 가운데보다 조금 왼쪽: 한국 오른쪽에 카드 자리
 }
 
 // 고정 시점이라 호의 화면 좌표는 크기가 바뀔 때만 계산하고, 매 프레임은 점과 번짐만 그림
@@ -268,14 +272,14 @@ function buildHero(inst) {
   const all = shapes(S.world.keys(), g);
   c.globalAlpha = 0.55; c.fillStyle = col.stone; c.fill(all.fill, 'nonzero'); c.globalAlpha = 1;
   c.strokeStyle = 'rgba(255,255,255,.7)'; c.lineWidth = 0.5; c.stroke(all.edge);
-  const peers = shapes([...EU_IDS, '840', '344', '702'], g); c.globalAlpha = 0.3; c.fillStyle = col.accent; c.fill(peers.fill, 'nonzero'); c.globalAlpha = 1; // 비교하는 나라(미국, EU, 홍콩, 싱가포르)는 연하게
+  const peers = shapes([...EU_IDS, '840', '344', '702', '392'], g); c.globalAlpha = 0.3; c.fillStyle = col.accent; c.fill(peers.fill, 'nonzero'); c.globalAlpha = 1; // 비교하는 나라(미국, EU, 홍콩, 싱가포르, 일본)는 연하게
   const kr = shapes(['410'], g); c.fillStyle = col.accent; c.fill(kr.fill, 'nonzero');
   sphere(); c.strokeStyle = col.line; c.lineWidth = 1; c.stroke();
 
   // 호: 지표에서 떠올라 가는 대원. 가장자리 밖으로 나간 부분은 보임
   const seoul = vec(...SEOUL), seg = P(...seoul, false), flows = [];
   c.lineCap = 'round'; c.lineJoin = 'round';
-  for (const [name, p] of FLOWS) {
+  for (const [name, p, id] of FLOWS) {
     const a = vec(...p), ang = Math.acos(Math.max(-1, Math.min(1, a[0] * seoul[0] + a[1] * seoul[1] + a[2] * seoul[2])));
     const h = 0.05 + 0.2 * Math.min(1, ang / 1.8), xs = new Float32Array(HERO_N + 1), ys = new Float32Array(HERO_N + 1), vis = new Uint8Array(HERO_N + 1);
     c.beginPath(); let down = false, first = -1;
@@ -285,19 +289,25 @@ function buildHero(inst) {
       if (vis[k]) { down ? c.lineTo(x, y) : c.moveTo(x, y); down = true; if (first < 0 && x > 14 && x < W * 0.9 && y > 16 && y < H * 0.9) first = k; } else down = false;
     }
     c.strokeStyle = col.ink; c.globalAlpha = 0.28; c.lineWidth = 1; c.stroke(); c.globalAlpha = 1;
-    flows.push({ name, xs, ys, vis, first, period: 2.6 + 2 * ang });
+    flows.push({ name, id, xs, ys, vis, first, period: 2.6 + 2 * ang });
   }
+  // 카드 자리 넘기기: 각 호의 첫 보이는 점(출발점이 뒤에 있으면 호가 화면에 처음 들어오는 자리)과 서울, 호의 보이는 점들(카드가 호를 가리지 않게). 화면 좌표는 캔버스와 같은 CSS px.
+  // onLayout이 카드를 놓은 id 목록을 돌려주면 그 곳의 캔버스 이름표는 그리지 않음
+  const pts = flows.filter(f => f.first >= 0).map(f => ({ id: f.id, name: f.name, x: f.xs[f.first], y: f.ys[f.first], dx: f.xs[Math.min(f.first + 8, HERO_N)] - f.xs[f.first] }));
+  const arcs = flows.map(f => { const o = []; for (let k = 0; k <= HERO_N; k++) if (f.vis[k]) o.push(f.xs[k], f.ys[k]); return o; });
+  const keep = KEEP.map(([lo, la]) => P(...vec(lo, la), false)).filter((q) => q[2]).map(([x, y]) => ({ x, y }));
+  const carded = new Set(inst.onLayout?.({ W, H, points: pts, seoul: { x: seg[0], y: seg[1] }, arcs, keep }) || []);
   // 이름표: 출발점이 보이면 그 자리, 뒤에 있으면 호가 화면에 처음 들어오는 자리
   c.font = `500 11px ${col.sans}`; c.textBaseline = 'middle';
   for (const f of flows) {
     if (f.first < 0) continue;
     const x = f.xs[f.first], y = f.ys[f.first], k2 = Math.min(f.first + 8, HERO_N), dx = f.xs[k2] - x, dy = f.ys[k2] - y; // 이름표는 호가 뻗는 쪽의 반대편
     c.beginPath(); c.arc(x, y, 2.5, 0, 7); c.fillStyle = col.ink; c.fill(); c.strokeStyle = '#fff'; c.lineWidth = 1.5; c.stroke();
-    tag(c, col, W, H, f.name, x + (dx > 0 ? -7 : 7), y + (dy > 0 ? -9 : 10), dx > 0 ? 'right' : 'left');
+    if (!carded.has(f.id)) tag(c, col, W, H, f.name, x + (dx > 0 ? -7 : 7), y + (dy > 0 ? -9 : 10), dx > 0 ? 'right' : 'left');
   }
   c.beginPath(); c.arc(seg[0], seg[1], 11, 0, 7); c.strokeStyle = col.accent; c.globalAlpha = 0.35; c.lineWidth = 1; c.stroke(); c.globalAlpha = 1; // 한국 둘레 고리
   c.beginPath(); c.arc(seg[0], seg[1], 3.5, 0, 7); c.fillStyle = col.accent; c.fill(); c.strokeStyle = '#fff'; c.lineWidth = 1.5; c.stroke();
-  c.font = `600 12px ${col.sans}`; tag(c, col, W, H, '한국', seg[0] + 16, seg[1] - 4, 'left', col.accent);
+  c.font = `600 12px ${col.sans}`; if (!carded.has('kr')) tag(c, col, W, H, '한국', seg[0] + 16, seg[1] - 4, 'left', col.accent);
   Object.assign(inst, { W, H, dpr, sc, flows, seoul: seg, ready: true });
 }
 
@@ -324,13 +334,13 @@ function heroFrame(inst, sec) {
   ctx.globalAlpha = 1;
 }
 
-export function mountHeroGlobe(el) {
+export function mountHeroGlobe(el, { onLayout } = {}) { // onLayout({ W, H, points, seoul, arcs, keep }) => 카드를 놓은 id 목록, 크기가 바뀔 때마다 부름
   hero?.stop();
   const canvas = document.createElement('canvas');
   canvas.className = 'globe-canvas hero-canvas'; canvas.setAttribute('role', 'img');
-  canvas.setAttribute('aria-label', '지구본: 미국, EU, 홍콩, 싱가포르에서 한국으로 이어지는 흐름');
+  canvas.setAttribute('aria-label', '지구본: 미국, EU, 홍콩, 싱가포르, 일본에서 한국으로 이어지는 흐름');
   el.textContent = ''; el.append(canvas);
-  const inst = { canvas, col: colors(), still: reduced(), ready: false };
+  const inst = { canvas, col: colors(), still: reduced(), ready: false, onLayout };
   let raf = 0, dead = false, onScreen = true;
   const stop = () => { dead = true; cancelAnimationFrame(raf); ro.disconnect(); io.disconnect(); document.removeEventListener('visibilitychange', kick); };
   const tick = now => {

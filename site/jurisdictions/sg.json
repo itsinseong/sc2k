@@ -16,10 +16,129 @@
     },
     "R02": {
       "requirement": "허용 자산 종류: 현금, 현금성 자산, 3개월 이하 정부채",
-      "allowed": ["cash", "cash_equivalent", "government_bond_3m"],
+      "allowed": [
+        "cash",
+        "cash_equivalent",
+        "government_bond_3m"
+      ],
       "article": "MAS 스테이블코인 프레임워크",
       "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-consults-on-legislative-amendments-to-implement-stablecoin-regulatory-framework",
-      "legal_status": "법 시행 전"
+      "legal_status": "법 시행 전",
+      "kinds": {
+        "bank_deposit": {
+          "verdict": "allowed",
+          "code": "cash",
+          "same_currency": true,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. MAS 2023 Response Annex A: 현금, 현금성 자산, 잔존만기 3개월 이하 채무증권이 허용된다. 은행 요구불 예금을 현금으로 읽은 일반 해석이다. 통화는 페그 통화와 일치한다.",
+          "source": [
+            "docs/research/퍼플렉시티_2차/R5_싱가포르MAS_2026입법예고.md 15, 17행"
+          ]
+        },
+        "term_deposit": {
+          "verdict": "unclear",
+          "code": null,
+          "same_currency": true,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. MAS 2023 Response Annex A: 정기예금이 현금성 자산에 드는지(만기 기준 등) 정한 규정이 아직 없다.",
+          "source": [
+            "docs/research/퍼플렉시티_2차/R5_싱가포르MAS_2026입법예고.md 15, 17행"
+          ]
+        },
+        "treasury_bill": {
+          "verdict": "allowed",
+          "code": "government_bond_3m",
+          "max_days": 90,
+          "same_currency": true,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. MAS 2023 Response Annex A: 잔존만기 3개월 이하 채무증권이 허용된다. 조건은 페그 통화 정부 또는 중앙은행 발행, 또는 AA- 이상 정부, 국제기구 성격 기관 발행이다. 국채 잔존만기 상한 90일과 같은 값이다.",
+          "source": [
+            "docs/research/퍼플렉시티_2차/R5_싱가포르MAS_2026입법예고.md 15, 17행"
+          ]
+        },
+        "treasury_note": {
+          "verdict": "allowed",
+          "code": "government_bond_3m",
+          "max_days": 90,
+          "same_currency": true,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. MAS 2023 Response Annex A: 중장기 국채도 잔존만기 3개월 이하이면 해당한다. 조건은 페그 통화 정부 또는 중앙은행 발행, 또는 AA- 이상 정부, 국제기구 성격 기관 발행이다.",
+          "source": [
+            "docs/research/퍼플렉시티_2차/R5_싱가포르MAS_2026입법예고.md 15, 17행"
+          ]
+        },
+        "non_us_government_bill": {
+          "verdict": "allowed",
+          "code": "government_bond_3m",
+          "max_days": 90,
+          "same_currency": true,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. MAS 2023 Response Annex A: 잔존만기 3개월 이하 채무증권이 허용된다. 조건은 페그 통화 정부 또는 중앙은행 발행, 또는 AA- 이상 정부, 국제기구 성격 기관 발행이다.",
+          "source": [
+            "docs/research/퍼플렉시티_2차/R5_싱가포르MAS_2026입법예고.md 15, 17행"
+          ]
+        },
+        "reverse_repo_overnight": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. 허용 목록에 레포가 나오지 않고, 레포 만기도 따로 정하지 않았다. 하루짜리 역레포가 현금성 자산에 드는지 정한 규정이 아직 없다."
+        },
+        "reverse_repo_term": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. 허용 목록에 레포가 나오지 않고, 레포 만기도 따로 정하지 않았다. 기간물 역레포가 현금성 자산에 드는지 정한 규정이 아직 없다."
+        },
+        "government_mmf": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. 허용 목록에 펀드가 나오지 않는다. 정부 MMF가 현금성 자산에 드는지 정한 규정이 아직 없다."
+        },
+        "corporate_bond": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. 채무증권 발행 주체가 정부, 중앙은행, 국제기구 성격 기관으로 한정돼 회사채는 채권 항목에서 빠진다. 다만 단기 회사채(어음 등)가 현금성 자산에 드는지 정한 규정이 아직 없다."
+        },
+        "precious_metal": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. MAS 2023 Response Annex A: 허용 항목은 현금, 현금성 자산, 단기 정부채 3종뿐이고 귀금속이 없다.",
+          "source": [
+            "docs/research/퍼플렉시티_2차/R5_싱가포르MAS_2026입법예고.md 15, 17행"
+          ]
+        },
+        "bitcoin": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. MAS 2023 Response Annex A: 허용 항목은 현금, 현금성 자산, 단기 정부채 3종뿐이고 비트코인이 없다.",
+          "source": [
+            "docs/research/퍼플렉시티_2차/R5_싱가포르MAS_2026입법예고.md 15, 17행"
+          ]
+        },
+        "secured_loan": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. MAS 2023 Response Annex A: 허용 항목은 현금, 현금성 자산, 단기 정부채 3종뿐이고 담보대출이 없다.",
+          "source": [
+            "docs/research/퍼플렉시티_2차/R5_싱가포르MAS_2026입법예고.md 15, 17행"
+          ]
+        },
+        "public_equity": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. MAS 2023 Response Annex A: 허용 항목은 현금, 현금성 자산, 단기 정부채 3종뿐이고 상장 주식이 없다.",
+          "source": [
+            "docs/research/퍼플렉시티_2차/R5_싱가포르MAS_2026입법예고.md 15, 17행"
+          ]
+        },
+        "other_investment": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "분류가 포괄적이라 3종 중 어느 것인지 정할 수 없다."
+        },
+        "cash_equivalents_unsplit": {
+          "verdict": "allowed",
+          "code": "cash_equivalent",
+          "basis": "법 시행 전이며 2026-09 현재 협의 중이다. MAS 2023 Response Annex A: 허용 항목에 현금성 자산(cash equivalent)이 이름 그대로 있다. 다만 묶음 안에 단기 정부채 외 자산이 섞였는지는 나눌 수 없다.",
+          "source": [
+            "docs/research/퍼플렉시티_2차/R5_싱가포르MAS_2026입법예고.md 15, 17행"
+          ]
+        }
+      }
     },
     "R03": {
       "requirement": "국채 잔존만기 상한 3개월",
@@ -58,7 +177,10 @@
     },
     "R08": {
       "requirement": "월별 attestation, 연간 감사",
-      "verification_types": ["attestation", "audit"],
+      "verification_types": [
+        "attestation",
+        "audit"
+      ],
       "article": "MAS 스테이블코인 프레임워크",
       "url": null,
       "legal_status": "법 시행 전"

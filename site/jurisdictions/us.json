@@ -17,7 +17,99 @@
       "requirement": "허용 자산 8종: 미국 화폐와 연준 예치금, 보험 예금기관의 수시입출 예금, 93일 이하 국채, 익일물 레포 수취 자금, 익일물 역레포, 정부 MMF, 감독기관이 승인한 연방정부 자산, 위 자산의 토큰 형태",
       "allowed": ["cash", "bank_deposit", "treasury_bill_93d", "overnight_repo", "overnight_reverse_repo", "government_mmf", "approved_federal_asset", "tokenized_reserve"],
       "article": "GENIUS Act §4(a)(1)(A)(i)~(viii)",
-      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
+      "kinds": {
+        "bank_deposit": {
+          "verdict": "allowed",
+          "code": "bank_deposit",
+          "basis": "GENIUS Act §4(a)(1)(A)(ii) 보험 예금기관의 요구불 예금이다. 조건: 요구불에 한정된다.",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "term_deposit": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "GENIUS Act §4(a)(1)(A)(ii)는 요구불 예금만 허용하고, 정기예금은 허용 자산 8종 목록에 없다.",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "treasury_bill": {
+          "verdict": "allowed",
+          "code": "treasury_bill_93d",
+          "max_days": 93,
+          "basis": "GENIUS Act §4(a)(1)(A)(iii) 잔존 또는 발행 만기 93일 이하 국채(bills, notes, bonds)이다.",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "treasury_note": {
+          "verdict": "allowed",
+          "code": "treasury_bill_93d",
+          "max_days": 93,
+          "basis": "GENIUS Act §4(a)(1)(A)(iii)는 bills뿐 아니라 notes와 bonds도 잔존 만기 93일 이하이면 허용한다. 미국 단기국채와 같은 항목으로 묶는다.",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "non_us_government_bill": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "GENIUS Act §4(a)(1)(A)(iii)는 미국 재무부 채권이고 (vii)은 감독기관이 승인한 연방정부 발행 자산이라, 외국 국채는 허용 자산 8종 목록에 없다.",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "reverse_repo_overnight": {
+          "verdict": "allowed",
+          "code": "overnight_reverse_repo",
+          "basis": "GENIUS Act §4(a)(1)(A)(v) 발행사가 매수자인 익일물 역레포이다(국채 담보, 삼자간, 청산소 또는 신용도 확인된 양자간).",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "reverse_repo_term": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "GENIUS Act §4(a)(1)(A)(iv), (v)는 익일물(overnight)만 허용한다. §4(a)(2)(C)의 93일 이하 레포는 상환 유동성용 재담보 예외이지 준비자산 항목이 아니다.",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "government_mmf": {
+          "verdict": "allowed",
+          "code": "government_mmf",
+          "basis": "GENIUS Act §4(a)(1)(A)(vi) 등록 투자회사 또는 정부 MMF이다. 조건: (i)~(v) 자산에만 투자해야 한다.",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "corporate_bond": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "허용 자산 8종 목록에 회사채가 없다(GENIUS Act §4(a)(1)(A)).",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "precious_metal": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "허용 자산 8종 목록에 귀금속이 없다(GENIUS Act §4(a)(1)(A)).",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "bitcoin": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "허용 자산 8종 목록에 비트코인이 없다(GENIUS Act §4(a)(1)(A)).",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "secured_loan": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "허용 자산 8종 목록에 담보대출이 없다(GENIUS Act §4(a)(1)(A)).",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "public_equity": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "허용 자산 8종 목록에 상장 주식이 없다(GENIUS Act §4(a)(1)(A)).",
+          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+        },
+        "other_investment": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "분류가 포괄적이라 허용 자산 8종 중 어느 것인지 정할 수 없다. 개별 자산을 확인해 위 자산 종류로 다시 나눠야 한다."
+        },
+        "cash_equivalents_unsplit": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "현금과 현금성 자산을 묶어 낸 값이라 허용 자산 8종 중 어느 항목인지(요구불 예금, 93일 이하 국채, 레포 등) 나눌 수 없다."
+        }
+      }
     },
     "R03": {
       "requirement": "국채 잔존만기 상한 93일",
@@ -67,7 +159,7 @@
       "legal_status": "협의 중"
     },
     "R10": {
-      "requirement": "공개 기한 다음 달 말 정오, 공시 전에 검사를 마치고 검사 보고서를 함께 공시(제안 단계)",
+      "requirement": "공개 기한 다음 달 말 정오, 공시 전에 검증을 마치고 검증 보고서를 함께 공시(제안 단계)",
       "deadline_days": 31,
       "unit": "calendar_days",
       "article": "OCC 제안 §15.11(e), (f), 연준 제안 §247.11(d), (e)",

@@ -34,6 +34,66 @@ test('R02 허용 자산 종류: 충족/미충족/데이터없음', () => {
   assert.equal(evaluateRule('R02', {}, jur('R02', rd)).status, STATUS.NO_DATA);
 });
 
+// ---- R02 kinds 대응표 ----
+const KINDS = {
+  bank_deposit: { verdict: 'allowed', code: 'bank_deposit', same_currency: true },
+  treasury_bill: { verdict: 'allowed', code: 'tb', max_days: 93, same_currency: true },
+  bitcoin: { verdict: 'not_allowed', code: null },
+  term_deposit: { verdict: 'unclear', code: null },
+};
+const kindsRd = { allowed: ['bank_deposit', 'tb'], kinds: KINDS };
+const h = (kind, extra = {}) => ({ kind, amount: 100, currency: 'USD', maturity_max_days: null, ...extra });
+const r02 = (holdings, token = 'USDX') => evaluateRule('R02', { token, holdings }, jur('R02', kindsRd));
+
+test('R02 대응표: 허용만 있으면 충족, settlement와 0 이하 줄은 건너뛴다', () => {
+  const r = r02([h('bank_deposit'), h('settlement', { amount: -5 }), h('bitcoin', { amount: 0 })]);
+  assert.equal(r.status, STATUS.MET);
+  assert.deepEqual(r.value.map((v) => [v.kind, v.verdict]), [['bank_deposit', 'allowed']]);
+});
+
+test('R02 대응표: 허용 밖이 하나라도 있으면 미충족', () => {
+  const r = r02([h('bank_deposit'), h('bitcoin'), h('term_deposit')]);
+  assert.equal(r.status, STATUS.UNMET);
+  assert.equal(r.value.length, 3);
+});
+
+test('R02 대응표: 해석 필요(unclear)와 표에 없는 kind는 주의', () => {
+  assert.equal(r02([h('bank_deposit'), h('term_deposit')]).status, STATUS.CAUTION);
+  assert.equal(r02([h('bank_deposit'), h('mystery_asset')]).status, STATUS.CAUTION);
+});
+
+test('R02 대응표: 만기 조건(초과는 미충족, 만기 없음은 주의)', () => {
+  assert.equal(r02([h('treasury_bill', { maturity_max_days: 90 })]).status, STATUS.MET);
+  assert.equal(r02([h('treasury_bill', { maturity_max_days: 120 })]).status, STATUS.UNMET);
+  assert.equal(r02([h('treasury_bill', { maturity_max_days: null })]).status, STATUS.CAUTION);
+});
+
+test('R02 대응표: 통화 조건(페그와 다르면 미충족, 페그를 모르면 주의)', () => {
+  assert.equal(r02([h('bank_deposit', { currency: 'EUR' })]).status, STATUS.UNMET);
+  assert.equal(r02([h('bank_deposit', { currency: 'USD' })], 'FOO').status, STATUS.CAUTION);
+});
+
+test('R02 대응표: 같은 kind 여러 줄은 합치고 가장 나쁜 판정을 쓴다', () => {
+  const r = r02([h('treasury_bill', { maturity_max_days: 10 }), h('treasury_bill', { maturity_max_days: 200 })]);
+  assert.equal(r.status, STATUS.UNMET);
+  assert.equal(r.value.length, 1);
+  assert.equal(r.value[0].amount, 200);
+});
+
+test('R02 대응표가 있고 holdings가 없으면 보고서에 없음', () => {
+  assert.equal(evaluateRule('R02', { asset_types: ['cash'] }, jur('R02', kindsRd)).status, STATUS.NO_DATA);
+});
+
+test('R03, R04: field_notes가 not_applicable이면 해당 없음, 값이 null이면 보고서에 없음', () => {
+  const na = (f) => ({ field_notes: { [f]: { state: 'not_applicable' } } });
+  assert.equal(STATUS.NOT_APPLICABLE, '해당 없음');
+  assert.equal(STATUS.NO_DATA, '보고서에 없음');
+  assert.equal(evaluateRule('R03', na('treasury_max_maturity_days'), jur('R03', { threshold_days: 93 })).status, STATUS.NOT_APPLICABLE);
+  assert.equal(evaluateRule('R04', na('repo_max_maturity_days'), jur('R04', { threshold_days: 1 })).status, STATUS.NOT_APPLICABLE);
+  const nf = { field_notes: { treasury_max_maturity_days: { state: 'not_in_report' } }, treasury_max_maturity_days: null };
+  assert.equal(evaluateRule('R03', nf, jur('R03', { threshold_days: 93 })).status, STATUS.NO_DATA);
+});
+
 test('R03 국채 잔존만기 상한: 충족/미충족/데이터없음', () => {
   const rd = { threshold_days: 93 };
   assert.equal(evaluateRule('R03', { treasury_max_maturity_days: 60 }, jur('R03', rd)).status, STATUS.MET);
@@ -209,6 +269,11 @@ test('KR-v1 R05 후보값을 바꾸면 위임 예정 -> 미충족 -> 충족으�
   assert.equal(evaluateRule('R05', report, kr, 'proposal').status, STATUS.MET); // 15% 요구, 15% 실측
 });
 
+test('은행 예금을 나누지 않은 보고서는 R05를 근사하지 않고 데이터 없음', () => {
+  const report = { fair_value: 100, components: { cash: null, other: 90, treasury: 10 }, flags: { cash_is_bank_deposit: false } };
+  assert.equal(evaluateRule('R05', report, readJurisdiction('kr-v1'), 'proposal').status, STATUS.NO_DATA);
+});
+
 test('KR-v1 R09 후보값을 바꾸면 주의 -> 충족으로 바뀐다', () => {
   const report = { as_of_time: '23:59 UTC' };
   const kr = readJurisdiction('kr-v1');
@@ -227,4 +292,16 @@ test('evaluateReport는 RULE_IDS 순서대로 15개를 낸다', () => {
     'R01', 'R02', 'R03', 'R04', 'R05', 'R06', 'R07', 'R08',
     'R09', 'R10', 'R11', 'R12', 'R13', 'R14', 'R15',
   ]);
+});
+
+test('일본(jp.json)은 보고서 전부 규칙 15개를 판정한다', () => {
+  const jp = readJurisdiction('jp');
+  assert.equal(jp.id, 'jp');
+  const { reports } = JSON.parse(fs.readFileSync(path.join(ROOT, 'site/data/reports.json'), 'utf8'));
+  assert.equal(reports.length, 264); // site/data/reports.json 실제 수
+  reports.forEach((r) => assert.equal(evaluateReport(r, jp).length, 15));
+  const by = Object.fromEntries(evaluateReport(reports[0], jp).map((v) => [v.rule, v.status]));
+  assert.equal(by.R04, STATUS.NOT_REGULATED); // 못 찾은 규칙은 값을 만들지 않고 규정 없음
+  assert.equal(by.R03, STATUS.PENDING); // 원문 단위가 월이라 일수로 바꾸지 않음
+  assert.equal(by.R07, STATUS.CAUTION); // 조건부 공표는 주의
 });

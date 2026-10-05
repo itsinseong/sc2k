@@ -3,10 +3,10 @@
 import { STATUS } from './engine.js';
 
 const RULES = ['R01','R02','R03','R04','R05','R06','R07','R08','R09','R10','R11','R12','R13','R14','R15'];
-const FOREIGN = ['us', 'eu-emt', 'eu-emt-significant', 'hk', 'sg'];
-const FALLBACK_NAME = { us: '미국', 'eu-emt': 'EU 일반', 'eu-emt-significant': 'EU 중요', hk: '홍콩', sg: '싱가포르' };
+const FOREIGN = ['us', 'eu-emt', 'eu-emt-significant', 'hk', 'sg', 'jp'];
+const FALLBACK_NAME = { us: '미국', 'eu-emt': 'EU 일반', 'eu-emt-significant': 'EU 중요', hk: '홍콩', sg: '싱가포르', jp: '일본' };
 // app.js의 TYPE_NAMES와 같은 표기
-const TYPE_NAMES = {cash:'현금',bank_deposit:'은행 예금',treasury_bill_93d:'93일 이하 국채',overnight_repo:'하루짜리 레포',government_mmf:'국채 펀드',overnight_reverse_repo:'하루짜리 역레포',approved_federal_asset:'감독기관 승인 연방정부 자산',tokenized_reserve:'토큰 형태 준비자산',cash_equivalent:'현금성 자산',government_bond_3m:'3개월 이하 국채',hqla:'고유동성 우량자산',bank_deposit_3m:'3개월 이내 은행 예금',low_risk_liquid_asset:'저위험 고유동성 자산',government_bond:'국채',other_designated:'그 밖의 지정 자산',examination:'검증 보고서',attestation:'확인 보고서',audit:'감사',quarterly_review:'분기 검토', 'reasonable assurance':'합리적 확신'};
+const TYPE_NAMES = {cash:'현금',bank_deposit:'은행 예금',treasury_bill_93d:'93일 이하 국채',overnight_repo:'하루짜리 레포',government_mmf:'국채 펀드',overnight_reverse_repo:'하루짜리 역레포',approved_federal_asset:'감독기관 승인 연방정부 자산',tokenized_reserve:'토큰 형태 준비자산',cash_equivalent:'현금성 자산',government_bond_3m:'3개월 이하 국채',hqla:'고유동성 우량자산',bank_deposit_3m:'3개월 이내 은행 예금',low_risk_liquid_asset:'저위험 고유동성 자산',government_bond:'국채',other_designated:'그 밖의 지정 자산',examination:'검증 보고서',attestation:'확인 보고서',audit:'감사',quarterly_review:'분기 검토', 'reasonable assurance':'합리적 확신',demand_deposit_same_currency:'같은 통화 요구불 예금',term_deposit_principal_protected_cancellable_anytime:'원금 보전, 수시 해약 정기예금',jgb_remaining_le_3m_jpy_only:'3개월 이내 엔화 국채',foreign_bond_remaining_le_3m_same_currency:'3개월 이내 같은 통화 외국 채권'};
 const tn = (k) => TYPE_NAMES[k] || k;
 const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const withNum = (s) => esc(s).replace(/(\d[\d.,~]*)/g, '<span class="rv-n">$1</span>');
@@ -120,11 +120,11 @@ export function ruleTable(jurisdictions, copy) {
     return { rid, cells };
   });
   const td = (c) => `<td class="rv-cell${c.shade != null ? ` rv-s${c.shade}` : ''}${c.muted ? ' rv-muted' : ''}" title="${esc(c.tip)}">${c.opt ? '<i class="rv-opt" aria-hidden="true"></i>' : ''}${withNum(c.t)}${c.star ? '<span class="rv-star">*</span>' : ''}</td>`;
-  const body = rows.map(({ rid, cells }) => `<tr><th scope="row" class="rv-rule">${esc(copy?.규칙15개?.[rid] || '')}<span class="rv-code">${rid}</span></th>${cells.slice(5).map(td).join('')}<td class="rv-gap" aria-hidden="true"></td>${cells.slice(0, 5).map(td).join('')}</tr>`).join('');
-  const head = `<thead><tr class="rv-group"><th></th><th colspan="2">한국 후보값</th><th class="rv-gap" aria-hidden="true"></th><th colspan="5">해외 규칙</th></tr><tr class="rv-cols"><th scope="col" class="rv-rule">규칙</th><th scope="col">한국 의원안</th><th scope="col">한국 제안값</th><th class="rv-gap" aria-hidden="true"></th>${FOREIGN.map((id) => `<th scope="col">${esc(names(id))}</th>`).join('')}</tr></thead>`;
-  const cols = `<colgroup><col class="rv-col-rule">${'<col>'.repeat(2)}<col class="rv-col-gap">${'<col>'.repeat(5)}</colgroup>`;
+  const body = rows.map(({ rid, cells }) => `<tr><th scope="row" class="rv-rule">${esc(copy?.규칙15개?.[rid] || '')}<span class="rv-code">${rid}</span></th>${cells.slice(FOREIGN.length).map(td).join('')}<td class="rv-gap" aria-hidden="true"></td>${cells.slice(0, FOREIGN.length).map(td).join('')}</tr>`).join('');
+  const head = `<thead><tr class="rv-group"><th></th><th colspan="2">한국 후보값</th><th class="rv-gap" aria-hidden="true"></th><th colspan="${FOREIGN.length}">해외 규칙</th></tr><tr class="rv-cols"><th scope="col" class="rv-rule">규칙</th><th scope="col">한국 의원안</th><th scope="col">한국 제안값</th><th class="rv-gap" aria-hidden="true"></th>${FOREIGN.map((id) => `<th scope="col">${esc(names(id))}</th>`).join('')}</tr></thead>`;
+  const cols = `<colgroup><col class="rv-col-rule">${'<col>'.repeat(2)}<col class="rv-col-gap">${'<col>'.repeat(FOREIGN.length)}</colgroup>`;
   const legend = `<div class="rv-legend"><span class="rv-leg-steps" aria-hidden="true"><i class="rv-s0"></i><i class="rv-s1"></i><i class="rv-s2"></i></span><span>숫자 규칙만, 진할수록 엄격</span><span><i class="rv-opt" aria-hidden="true"></i>의무 아님</span><span><span class="rv-star">*</span>숫자 없는 법안 있음</span><span>의원안 범위는 판정에 쓰는 값으로 칠함</span><span class="rv-swipe">좌우로 밀어서 보기</span></div>`;
-  return `<section class="rv-card panel" aria-labelledby="rv-table-title"><div class="panel-heading"><div><h2 id="rv-table-title">규칙별 기준값 비교</h2><p>한국 후보값 2열과 해외 5곳의 규칙값을 나란히 놓았습니다.</p></div></div><div class="rv-scroll"><table class="rv-table">${cols}${head}<tbody>${body}</tbody></table></div>${legend}</section>`;
+  return `<section class="rv-card panel" aria-labelledby="rv-table-title"><div class="panel-heading"><div><h2 id="rv-table-title">규칙별 기준값 비교</h2><p>한국 후보값 2열과 해외 ${FOREIGN.length}곳의 규칙값을 나란히 놓았습니다.</p></div></div><div class="rv-scroll"><table class="rv-table">${cols}${head}<tbody>${body}</tbody></table></div>${legend}</section>`;
 }
 
 // ---- 3. 규칙 점 그래프 ----

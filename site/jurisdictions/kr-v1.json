@@ -1,7 +1,7 @@
 {
   "id": "kr-v1",
   "name": "한국 시나리오(KR-v1)",
-  "legal_status": "계류",
+  "legal_status": "국회 심사 중",
   "version": "1.0",
   "as_of": "2026-10-04",
   "disclaimer": "한국 열은 제안이며 확정 규정이 아니다. 학부 프로젝트의 설계 산출물이고, 정부안은 국회에 제출되지 않았다.",
@@ -63,7 +63,136 @@
             "government_bond",
             "other_designated"
           ],
-          "article": "안도걸 안 제16조①3가~라"
+          "article": "안도걸 안 제16조①3가~라",
+          "kinds": {
+            "bank_deposit": {
+              "verdict": "allowed",
+              "code": "bank_deposit",
+              "same_currency": true,
+              "basis": "안도걸안 제16조①3 나목: 은행 등 대통령령으로 지정한 금융기관의 요구불 예금이다. 요구불 예금만 해당한다.",
+              "source": [
+                "docs/research/교차검증_2026-10-04/workflow_result.json 3128행 (안도걸안 제16조①3 원문)",
+                "docs/한국공시안_v1.md B4"
+              ]
+            },
+            "term_deposit": {
+              "verdict": "unclear",
+              "code": null,
+              "same_currency": true,
+              "basis": "나목은 요구불 예금만 적는다. 정기예금이 라목(대통령령 지정)에 들어가는지는 알 수 없고, 지정 내용도 아직 없다.",
+              "source": [
+                "docs/research/교차검증_2026-10-04/workflow_result.json 3128행 (안도걸안 제16조①3 원문)"
+              ]
+            },
+            "treasury_bill": {
+              "verdict": "unclear",
+              "code": null,
+              "max_days": 365,
+              "same_currency": true,
+              "basis": "다목은 국채증권, 지방채증권, 특수채증권 등 대통령령으로 지정한 자산(잔존 1년 이내 범위)이다. 국채증권이 대한민국 국채만 뜻하는지 정한 규정이 아직 없다. 통화는 제16조①1의 연동된 통화와 같은 통화로 표시된 자산이다.",
+              "source": [
+                "docs/research/교차검증_2026-10-04/workflow_result.json 3128행 (안도걸안 제16조①3 원문)",
+                "docs/research/적대검증_Codex_3차_2026-09-13.md 9번"
+              ]
+            },
+            "treasury_note": {
+              "verdict": "unclear",
+              "code": null,
+              "max_days": 365,
+              "same_currency": true,
+              "basis": "다목은 국채증권, 지방채증권, 특수채증권 등 대통령령으로 지정한 자산(잔존 1년 이내 범위)이다. 국채증권이 대한민국 국채만 뜻하는지 정한 규정이 아직 없다. 통화는 제16조①1의 연동된 통화와 같은 통화로 표시된 자산이다.",
+              "source": [
+                "docs/research/교차검증_2026-10-04/workflow_result.json 3128행 (안도걸안 제16조①3 원문)",
+                "docs/research/적대검증_Codex_3차_2026-09-13.md 9번"
+              ]
+            },
+            "non_us_government_bill": {
+              "verdict": "unclear",
+              "code": null,
+              "max_days": 365,
+              "same_currency": true,
+              "basis": "다목은 국채증권, 지방채증권, 특수채증권 등 대통령령으로 지정한 자산(잔존 1년 이내 범위)이다. 외국 국채가 여기에 들어가는지 정한 규정이 아직 없다. 통화는 제16조①1의 연동된 통화와 같은 통화로 표시된 자산이다.",
+              "source": [
+                "docs/research/교차검증_2026-10-04/workflow_result.json 3128행 (안도걸안 제16조①3 원문)",
+                "docs/research/적대검증_Codex_3차_2026-09-13.md 9번"
+              ]
+            },
+            "reverse_repo_overnight": {
+              "verdict": "unclear",
+              "code": null,
+              "basis": "허용 목록에 레포가 없고, 확인되는 한국 레포 규정이 없다. 라목 대통령령 지정에 들어가는지는 알 수 없다.",
+              "source": [
+                "kr-v1.json R04 공백 후보"
+              ]
+            },
+            "reverse_repo_term": {
+              "verdict": "unclear",
+              "code": null,
+              "basis": "허용 목록에 레포가 없고, 확인되는 한국 레포 규정이 없다. 라목 대통령령 지정에 들어가는지는 알 수 없다.",
+              "source": [
+                "kr-v1.json R04 공백 후보"
+              ]
+            },
+            "government_mmf": {
+              "verdict": "unclear",
+              "code": null,
+              "basis": "가~다목에 펀드가 없다. 정부 MMF가 라목 대통령령 지정에 들어가는지는 알 수 없다.",
+              "source": [
+                "docs/research/교차검증_2026-10-04/workflow_result.json 3128행 (안도걸안 제16조①3 원문)"
+              ]
+            },
+            "corporate_bond": {
+              "verdict": "unclear",
+              "code": null,
+              "same_currency": true,
+              "basis": "다목은 국채, 지방채, 특수채 등이다. 회사채가 대통령령 지정 자산(등)에 들어가는지는 알 수 없다.",
+              "source": [
+                "docs/research/교차검증_2026-10-04/workflow_result.json 3128행 (안도걸안 제16조①3 원문)"
+              ]
+            },
+            "precious_metal": {
+              "verdict": "not_allowed",
+              "code": null,
+              "basis": "가~다목에 귀금속이 없다. 3호 머리말이 유동성이 높은 안전 자산으로 한정해 라목 지정으로도 들어가기 어렵다.",
+              "source": [
+                "docs/research/교차검증_2026-10-04/workflow_result.json 3128행 (안도걸안 제16조①3 원문)"
+              ]
+            },
+            "bitcoin": {
+              "verdict": "not_allowed",
+              "code": null,
+              "basis": "가~다목에 비트코인이 없다. 3호 머리말이 유동성이 높은 안전 자산으로 한정해 라목 지정으로도 들어가기 어렵다.",
+              "source": [
+                "docs/research/교차검증_2026-10-04/workflow_result.json 3128행 (안도걸안 제16조①3 원문)"
+              ]
+            },
+            "secured_loan": {
+              "verdict": "not_allowed",
+              "code": null,
+              "basis": "가~다목에 담보대출이 없다. 3호 머리말이 유동성이 높은 안전 자산으로 한정해 라목 지정으로도 들어가기 어렵다.",
+              "source": [
+                "docs/research/교차검증_2026-10-04/workflow_result.json 3128행 (안도걸안 제16조①3 원문)"
+              ]
+            },
+            "public_equity": {
+              "verdict": "not_allowed",
+              "code": null,
+              "basis": "가~다목에 상장 주식이 없다. 3호 머리말이 유동성이 높은 안전 자산으로 한정해 라목 지정으로도 들어가기 어렵다.",
+              "source": [
+                "docs/research/교차검증_2026-10-04/workflow_result.json 3128행 (안도걸안 제16조①3 원문)"
+              ]
+            },
+            "other_investment": {
+              "verdict": "unclear",
+              "code": null,
+              "basis": "분류가 포괄적이라 가~라목 중 어느 것인지 정할 수 없다."
+            },
+            "cash_equivalents_unsplit": {
+              "verdict": "unclear",
+              "code": null,
+              "basis": "현금과 현금성 자산을 묶어 낸 값은 요구불 예금과 국채로 나눌 수 없다."
+            }
+          }
         },
         {
           "id": "proposal",
@@ -74,7 +203,146 @@
             "government_bond",
             "other_designated"
           ],
-          "article": "한국공시안_v1 B3~B6"
+          "article": "한국공시안_v1 B3~B6",
+          "kinds": {
+            "bank_deposit": {
+              "verdict": "allowed",
+              "code": "bank_deposit",
+              "same_currency": true,
+              "basis": "제16조①3 나목: 은행 등 대통령령으로 지정한 금융기관의 요구불 예금이다. 요구불 예금만 해당한다.",
+              "source": [
+                "docs/한국공시안_v1.md B3~B6 (제16조①3 인용)",
+                "결정 기록 D-05"
+              ]
+            },
+            "term_deposit": {
+              "verdict": "unclear",
+              "code": null,
+              "same_currency": true,
+              "basis": "나목은 요구불 예금만 적는다. 정기예금이 라목(대통령령 지정)에 들어가는지는 알 수 없고, 지정 내용도 아직 없다.",
+              "source": [
+                "docs/한국공시안_v1.md B3~B6 (제16조①3 인용)",
+                "결정 기록 D-05"
+              ]
+            },
+            "treasury_bill": {
+              "verdict": "unclear",
+              "code": null,
+              "max_days": 365,
+              "same_currency": true,
+              "basis": "다목은 국채증권, 지방채증권, 특수채증권 등 대통령령으로 지정한 자산(잔존 1년 이내 범위)이다. 국채증권이 대한민국 국채만 뜻하는지 정한 규정이 아직 없다. 통화는 제16조①1의 연동된 통화와 같은 통화로 표시된 자산이다.",
+              "source": [
+                "docs/한국공시안_v1.md B3~B6 (제16조①3 인용)",
+                "결정 기록 D-05",
+                "docs/research/적대검증_Codex_3차_2026-09-13.md 9번"
+              ]
+            },
+            "treasury_note": {
+              "verdict": "unclear",
+              "code": null,
+              "max_days": 365,
+              "same_currency": true,
+              "basis": "다목은 국채증권, 지방채증권, 특수채증권 등 대통령령으로 지정한 자산(잔존 1년 이내 범위)이다. 국채증권이 대한민국 국채만 뜻하는지 정한 규정이 아직 없다. 통화는 제16조①1의 연동된 통화와 같은 통화로 표시된 자산이다.",
+              "source": [
+                "docs/한국공시안_v1.md B3~B6 (제16조①3 인용)",
+                "결정 기록 D-05",
+                "docs/research/적대검증_Codex_3차_2026-09-13.md 9번"
+              ]
+            },
+            "non_us_government_bill": {
+              "verdict": "unclear",
+              "code": null,
+              "max_days": 365,
+              "same_currency": true,
+              "basis": "다목은 국채증권, 지방채증권, 특수채증권 등 대통령령으로 지정한 자산(잔존 1년 이내 범위)이다. 외국 국채가 여기에 들어가는지 정한 규정이 아직 없다. 통화는 제16조①1의 연동된 통화와 같은 통화로 표시된 자산이다.",
+              "source": [
+                "docs/한국공시안_v1.md B3~B6 (제16조①3 인용)",
+                "결정 기록 D-05",
+                "docs/research/적대검증_Codex_3차_2026-09-13.md 9번"
+              ]
+            },
+            "reverse_repo_overnight": {
+              "verdict": "unclear",
+              "code": null,
+              "basis": "허용 목록에 레포가 없고, 확인되는 한국 레포 규정이 없다. 라목 대통령령 지정에 들어가는지는 알 수 없다.",
+              "source": [
+                "kr-v1.json R04 공백 후보"
+              ]
+            },
+            "reverse_repo_term": {
+              "verdict": "unclear",
+              "code": null,
+              "basis": "허용 목록에 레포가 없고, 확인되는 한국 레포 규정이 없다. 라목 대통령령 지정에 들어가는지는 알 수 없다.",
+              "source": [
+                "kr-v1.json R04 공백 후보"
+              ]
+            },
+            "government_mmf": {
+              "verdict": "unclear",
+              "code": null,
+              "basis": "가~다목에 펀드가 없다. 정부 MMF가 라목 대통령령 지정에 들어가는지는 알 수 없다.",
+              "source": [
+                "docs/한국공시안_v1.md B3~B6 (제16조①3 인용)",
+                "결정 기록 D-05"
+              ]
+            },
+            "corporate_bond": {
+              "verdict": "unclear",
+              "code": null,
+              "same_currency": true,
+              "basis": "다목은 국채, 지방채, 특수채 등이다. 회사채가 대통령령 지정 자산(등)에 들어가는지는 알 수 없다.",
+              "source": [
+                "docs/한국공시안_v1.md B3~B6 (제16조①3 인용)",
+                "결정 기록 D-05"
+              ]
+            },
+            "precious_metal": {
+              "verdict": "not_allowed",
+              "code": null,
+              "basis": "가~다목에 귀금속이 없다. 3호 머리말이 유동성이 높은 안전 자산으로 한정해 라목 지정으로도 들어가기 어렵다.",
+              "source": [
+                "docs/한국공시안_v1.md B3~B6 (제16조①3 인용)",
+                "결정 기록 D-05"
+              ]
+            },
+            "bitcoin": {
+              "verdict": "not_allowed",
+              "code": null,
+              "basis": "가~다목에 비트코인이 없다. 3호 머리말이 유동성이 높은 안전 자산으로 한정해 라목 지정으로도 들어가기 어렵다.",
+              "source": [
+                "docs/한국공시안_v1.md B3~B6 (제16조①3 인용)",
+                "결정 기록 D-05"
+              ]
+            },
+            "secured_loan": {
+              "verdict": "not_allowed",
+              "code": null,
+              "basis": "가~다목에 담보대출이 없다. 3호 머리말이 유동성이 높은 안전 자산으로 한정해 라목 지정으로도 들어가기 어렵다.",
+              "source": [
+                "docs/한국공시안_v1.md B3~B6 (제16조①3 인용)",
+                "결정 기록 D-05"
+              ]
+            },
+            "public_equity": {
+              "verdict": "not_allowed",
+              "code": null,
+              "basis": "가~다목에 상장 주식이 없다. 3호 머리말이 유동성이 높은 안전 자산으로 한정해 라목 지정으로도 들어가기 어렵다.",
+              "source": [
+                "docs/한국공시안_v1.md B3~B6 (제16조①3 인용)",
+                "결정 기록 D-05"
+              ]
+            },
+            "other_investment": {
+              "verdict": "unclear",
+              "code": null,
+              "basis": "분류가 포괄적이라 가~라목 중 어느 것인지 정할 수 없다."
+            },
+            "cash_equivalents_unsplit": {
+              "verdict": "unclear",
+              "code": null,
+              "basis": "현금과 현금성 자산을 묶어 낸 값은 요구불 예금과 국채로 나눌 수 없다."
+            }
+          }
         }
       ]
     },
@@ -277,7 +545,7 @@
         {
           "bill": "2211784 안도걸",
           "value": null,
-          "note": "매월 1회 이상 공개, 기한은 금융위 고시(제16조④)"
+          "note": "매월 1회 이상 공개, 공개 방식은 금융위 고시(제16조④)"
         },
         {
           "bill": "2211777 김은혜",

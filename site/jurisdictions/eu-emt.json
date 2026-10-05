@@ -17,7 +17,105 @@
       "requirement": "허용 자산 종류: 은행예치 30% 이상 + 저위험 고유동자산",
       "allowed": ["bank_deposit", "low_risk_liquid_asset"],
       "article": "MiCA 준비자산 요건(EMD2 자금보호 준용)",
-      "url": null
+      "url": null,
+      "kinds": {
+        "bank_deposit": {
+          "verdict": "allowed",
+          "code": "bank_deposit",
+          "basis": "MiCA Art. 54(a): 수취 자금의 최소 30%를 신용기관 별도 계좌에 예치한다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 14~32행"]
+        },
+        "term_deposit": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "MiCA Art. 54(b)와 Art. 38(1)는 예금 만기를 정하지 않는다. 정기예금이 고유동성 기준에 드는지는 Art. 38(5) 고유동성 금융상품 RTS에 달렸는데, RTS가 EBA 최종초안 단계로 확정 전이라 들어가는지 정해지지 않았다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 70~74행"]
+        },
+        "treasury_bill": {
+          "verdict": "unclear",
+          "code": null,
+          "same_currency": true,
+          "basis": "MiCA Art. 54(b)와 Art. 38(1)는 안전, 저위험, 고유동성 금융상품(시장, 신용, 집중위험 최소)이라고만 적고 미국 단기국채를 명시하지 않는다. Art. 38(5) 고유동성 금융상품 RTS가 EBA 최종초안 단계로 확정 전이라 이 자산이 들어가는지 정해지지 않았다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 70~74행"]
+        },
+        "treasury_note": {
+          "verdict": "unclear",
+          "code": null,
+          "same_currency": true,
+          "basis": "MiCA Art. 54(b)와 Art. 38(1)는 안전, 저위험, 고유동성 금융상품(시장, 신용, 집중위험 최소)이라고만 적고 미국 중장기 국채를 명시하지 않는다. Art. 38(5) 고유동성 금융상품 RTS가 EBA 최종초안 단계로 확정 전이라 이 자산이 들어가는지 정해지지 않았다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 70~74행"]
+        },
+        "non_us_government_bill": {
+          "verdict": "unclear",
+          "code": null,
+          "same_currency": true,
+          "basis": "MiCA Art. 54(b)와 Art. 38(1)는 안전, 저위험, 고유동성 금융상품(시장, 신용, 집중위험 최소)이라고만 적고 외국 국채를 명시하지 않는다. Art. 38(5) 고유동성 금융상품 RTS가 EBA 최종초안 단계로 확정 전이라 이 자산이 들어가는지 정해지지 않았다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 70~74행"]
+        },
+        "reverse_repo_overnight": {
+          "verdict": "unclear",
+          "code": null,
+          "same_currency": true,
+          "basis": "MiCA Art. 54(b)와 Art. 38(1)에 하루짜리 역레포를 명시한 규정이 없다. Art. 38(5) 고유동성 금융상품 RTS가 EBA 최종초안 단계로 확정 전이라 이 자산이 들어가는지 정해지지 않았다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 70~74행"]
+        },
+        "reverse_repo_term": {
+          "verdict": "unclear",
+          "code": null,
+          "same_currency": true,
+          "basis": "MiCA Art. 54(b)와 Art. 38(1)에 기간물 역레포를 명시한 규정이 없다. Art. 38(5) 고유동성 금융상품 RTS가 EBA 최종초안 단계로 확정 전이라 이 자산이 들어가는지 정해지지 않았다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 70~74행"]
+        },
+        "government_mmf": {
+          "verdict": "unclear",
+          "code": null,
+          "same_currency": true,
+          "basis": "MiCA Art. 54(b)와 Art. 38(1)에 정부 MMF를 명시한 규정이 없다. Art. 38(5) 고유동성 금융상품 RTS가 EBA 최종초안 단계로 확정 전이라 이 자산이 들어가는지 정해지지 않았다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 70~74행"]
+        },
+        "corporate_bond": {
+          "verdict": "unclear",
+          "code": null,
+          "same_currency": true,
+          "basis": "MiCA Art. 54(b)와 Art. 38(1)의 고유동성, 최소 신용위험 기준을 회사채가 충족하는지는 Art. 38(5) 고유동성 금융상품 RTS에 달렸는데, RTS가 EBA 최종초안 단계로 확정 전이라 들어가는지 정해지지 않았다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 70~74행"]
+        },
+        "precious_metal": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "MiCA Art. 54(b)와 Art. 38(1)는 시장위험이 최소인 고유동성 금융상품만 허용한다. 귀금속은 시장가격 변동이 커서 이 기준에 맞지 않는다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 63~69행"]
+        },
+        "bitcoin": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "MiCA Art. 54(b)와 Art. 38(1)는 시장위험이 최소인 고유동성 금융상품만 허용한다. 비트코인은 시장가격 변동이 커서 이 기준에 맞지 않는다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 63~69행"]
+        },
+        "secured_loan": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "MiCA Art. 54(b)와 Art. 38(1)는 고유동성 금융상품만 허용한다. 담보대출은 금융상품으로 바로 환금되지 않아 이 기준에 맞지 않는다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 63~69행"]
+        },
+        "public_equity": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "MiCA Art. 54(b)와 Art. 38(1)는 시장위험이 최소인 고유동성 금융상품만 허용한다. 상장 주식은 시장가격 변동이 커서 이 기준에 맞지 않는다.",
+          "source": ["docs/research/퍼플렉시티_2차/R4_MiCA_EMT_준비금공시조문.md 63~69행"]
+        },
+        "other_investment": {
+          "verdict": "unclear",
+          "code": null,
+          "same_currency": true,
+          "basis": "분류가 포괄적이라 개별 자산을 확인해야 한다."
+        },
+        "cash_equivalents_unsplit": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "현금과 현금성 자산을 묶어 낸 값은 예금과 저위험 금융상품으로 나눌 수 없다."
+        }
+      }
     },
     "R03": {
       "requirement": "국채 잔존만기 상한 미규정",

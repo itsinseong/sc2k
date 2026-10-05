@@ -21,7 +21,134 @@
         "bank_deposit_3m"
       ],
       "article": "HKMA 감독지침 2.3.1",
-      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/"
+      "url": "https://www.hkma.gov.hk/eng/news-and-media/press-releases/2026/04/20260410-4/",
+      "kinds": {
+        "bank_deposit": {
+          "verdict": "allowed",
+          "code": "bank_deposit_3m",
+          "max_months": 3,
+          "same_currency": true,
+          "basis": "HKMA 감독지침 2.3.1(ii): 만기 3개월 이하 은행 예금. 요구불 예금은 만기가 없어 충족한다. 통화 일치는 감독지침 2.4.1(Schedule 2 §5(3)).",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "term_deposit": {
+          "verdict": "allowed",
+          "code": "bank_deposit_3m",
+          "max_months": 3,
+          "same_currency": true,
+          "basis": "HKMA 감독지침 2.3.1(ii): 만기 3개월 이하 은행 예금. 조건: 정기예금은 예금 기간이 3개월 이하일 때만 해당한다. 통화 일치는 감독지침 2.4.1(Schedule 2 §5(3)).",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "treasury_bill": {
+          "verdict": "allowed",
+          "code": "hqla",
+          "max_months": 12,
+          "same_currency": true,
+          "basis": "HKMA 감독지침 2.3.1(iii): 정부 발행 또는 보증 시장성 채권. 조건: 잔존만기 1년 이하, 0% 위험가중치 또는 발행국 자국 통화 표시, 고유동성. 원문 단위가 년이라 일수로 바꾸지 않았다. 통화 일치는 감독지침 2.4.1(Schedule 2 §5(3)).",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "treasury_note": {
+          "verdict": "allowed",
+          "code": "hqla",
+          "max_months": 12,
+          "same_currency": true,
+          "basis": "HKMA 감독지침 2.3.1(iii): 정부 발행 시장성 채권이면 중장기 국채도 잔존만기 1년 이하에서 허용한다. 조건은 미국 단기국채와 같다. 통화 일치는 감독지침 2.4.1(Schedule 2 §5(3)).",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "non_us_government_bill": {
+          "verdict": "allowed",
+          "code": "hqla",
+          "max_months": 12,
+          "same_currency": true,
+          "basis": "HKMA 감독지침 2.3.1(iii): 정부, 중앙은행 발행 시장성 채권. 조건: 잔존만기 1년 이하, 0% 위험가중치 또는 발행국 자국 통화 표시, 고유동성. 통화 일치는 감독지침 2.4.1(Schedule 2 §5(3)).",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "reverse_repo_overnight": {
+          "verdict": "allowed",
+          "code": "hqla",
+          "same_currency": true,
+          "basis": "HKMA 감독지침 2.3.1(iv): 거래상대방 위험이 최소인 익일물 역레포의 수취 현금. 조건: 담보가 (iii) 자산이어야 한다. 통화 일치는 감독지침 2.4.1(Schedule 2 §5(3)).",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "reverse_repo_term": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "HKMA 감독지침 2.3.1(iv)는 익일물(overnight)만 적는다. (vi)은 HKMA가 따로 인정한 자산이라 승인 전에는 허용 밖이다.",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "government_mmf": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "HKMA 감독지침 2.3.1(v): (i)~(iv)에만 투자하고 해당 발행사의 준비자산 운용만을 위해 따로 설립한 펀드만 허용한다. 일반 공모 MMF인지 전용 펀드인지 자산 종류만으로는 나눌 수 없다.",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "corporate_bond": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "HKMA 감독지침 2.3.1(iii)a: 채권 발행주체는 정부, 중앙은행, 공공기관, 국제기구, 다자개발은행이고 (iii)e는 금융기관 채무를 뺀다. 회사채는 해당 없다.",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "precious_metal": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "HKMA 감독지침 2.3.1(i)~(v) 목록에 없다. (vi)은 HKMA가 따로 인정한 자산이라 승인 전에는 허용 밖이다.",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "bitcoin": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "HKMA 감독지침 2.3.1(i)~(v) 목록에 없다. (vi)은 HKMA가 따로 인정한 자산이라 승인 전에는 허용 밖이다.",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "secured_loan": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "HKMA 감독지침 2.3.1(i)~(v) 목록에 없다. (vi)은 HKMA가 따로 인정한 자산이라 승인 전에는 허용 밖이다.",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "public_equity": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "HKMA 감독지침 2.3.1(i)~(v) 목록에 없다. (vi)은 HKMA가 따로 인정한 자산이라 승인 전에는 허용 밖이다.",
+          "source": [
+            "docs/research/_원본/규제원문/HKMA_감독지침.txt"
+          ]
+        },
+        "other_investment": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "분류가 포괄적이라 (i)~(vi) 중 어느 것인지 정할 수 없다."
+        },
+        "cash_equivalents_unsplit": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "현금과 현금성 자산을 묶어 낸 값은 현금, 3개월 이하 예금, 채권, 레포로 나눌 수 없다."
+        }
+      }
     },
     "R03": {
       "requirement": "국채 잔존만기 상한 미규정",

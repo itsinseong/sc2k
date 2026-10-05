@@ -1,0 +1,322 @@
+{
+  "id": "jp",
+  "name": "일본",
+  "legal_status": "시행 중",
+  "version": "1.0",
+  "as_of": "2026-10-05",
+  "source_note": "일본은 2023년 개정 자금결제법으로 은행, 자금이동업자, 신탁회사만 스테이블코인(전자결제수단)을 발행할 수 있다. 판정 열은 신탁형(特定信託受益権)을 따르고, 자금이동업자형은 규칙마다 alt에 보조로 적었다. 은행형은 읽은 은행법 4개 조문(第19, 20, 21, 24条)에서 별도 준비금 규정을 찾지 못했다. 신탁형 요구불 예금과 저금 50% 이상은 2026-06-01 시행이고 그 전에는 신탁재산 전부가 예금이었다. 규정 없음으로 둔 규칙은 읽은 원문 범위에서 찾지 못한 것이며 없다고 확정한 것은 아니다. R03은 원문 단위가 월이라 일수로 바꾸지 않았다. 법령은 e-Gov 2026-08-12 판. docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md.",
+  "primary_row": "신탁형",
+  "laws": {
+    "자금결제법": "421AC0000000059",
+    "자금결제법 시행령": "422CO0000000019",
+    "전자결제부령": "505M60000002048",
+    "자금이동부령": "422M60000002004",
+    "신탁업법규칙": "416M60000002107",
+    "겸영법규칙": "357M50000040016",
+    "은행법": "356AC0000000059",
+    "출자법": "329AC0000000195"
+  },
+  "rules": {
+    "R01": {
+      "requirement": "신탁재산 평가액이 상환해야 할 금액 이상이어야 함. 부족하면 다음 날부터 2영업일 안에 위탁자가 채움",
+      "comparison": "gte",
+      "threshold": 1.0,
+      "cure_business_days": 2,
+      "partial": true,
+      "article": "전자결제부령 第3条第3項第1号ハ(1), 자금결제법 第37条の2第4項",
+      "url": "https://laws.e-gov.go.jp/law/505M60000002048",
+      "alt": {
+        "requirement": "미달채무 100% 이상에 실행 비용(1억엔 이하 5%, 초과분은 1%에 500만엔)을 더해 공탁이나 신탁으로 보전",
+        "article": "자금결제법 第43条第1項, 第2項, 자금이동부령 第11条第6項",
+        "url": "https://laws.e-gov.go.jp/law/421AC0000000059"
+      }
+    },
+    "R02": {
+      "requirement": "같은 통화의 요구불 예금, 원금이 보전되고 언제든 해약할 수 있는 정기예금, 3개월 이내 엔화 국채만 허용. 외화 발행은 같은 외화 예금과 3개월 이내 같은 통화 외국 채권",
+      "allowed": [
+        "demand_deposit_same_currency",
+        "term_deposit_principal_protected_cancellable_anytime",
+        "jgb_remaining_le_3m_jpy_only",
+        "foreign_bond_remaining_le_3m_same_currency"
+      ],
+      "delegated": true,
+      "article": "자금결제법 第2条第9項, 전자결제부령 第3条第2項, 第3項",
+      "url": "https://laws.e-gov.go.jp/law/505M60000002048",
+      "alt": {
+        "requirement": "공탁은 국채, 지방채, 정부보증채, 금융청 지정 사채권(평가율 100, 90, 95, 80%). 신탁계약 방식은 예저금, 국채, 지방채, 정부보증채, 외국 채권, 지정 사채권",
+        "article": "자금결제법 第43条第3項, 第45条第3項, 자금이동부령 第12, 13, 20条",
+        "url": "https://laws.e-gov.go.jp/law/422M60000002004"
+      },
+      "kinds": {
+        "bank_deposit": {
+          "verdict": "allowed",
+          "code": "demand_deposit_same_currency",
+          "same_currency": true,
+          "basis": "전자결제부령 第3条第2項, 第3項: 언제든 인출 가능한 요구불 예금과 저금. 엔화 발행이면 엔화, 외화 발행이면 같은 외화여야 한다.",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R02 신탁형 행"
+          ]
+        },
+        "term_deposit": {
+          "verdict": "allowed",
+          "code": "term_deposit_principal_protected_cancellable_anytime",
+          "same_currency": true,
+          "basis": "전자결제부령 第3条第2項, 第3項. 조건: 원금이 보전되고 언제든 해약할 수 있는 정기예금에 한정한다. 이 성질은 자산 종류만으로 알 수 없으므로 보고서에서 확인해야 한다.",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R02 신탁형 행"
+          ]
+        },
+        "treasury_bill": {
+          "verdict": "unclear",
+          "code": null,
+          "max_months": 3,
+          "same_currency": true,
+          "basis": "잔존 3개월 이하 엔화 국채(JGB)만 허용한다. 외국 국채는 証券情報等の提供又は公表に関する内閣府令 第13条第3号(3개월 이내 외국 발행 채권, 같은 통화) 경로에 해당해야 한다. 이 조문에 해당하는지 정한 근거가 아직 없다(전자결제부령 第3条第2項, 第3項).",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R02 신탁형 행"
+          ]
+        },
+        "treasury_note": {
+          "verdict": "unclear",
+          "code": null,
+          "max_months": 3,
+          "same_currency": true,
+          "basis": "잔존 3개월 이하 엔화 국채(JGB)만 허용한다. 외국 국채는 証券情報等の提供又は公表に関する内閣府令 第13条第3号(3개월 이내 외국 발행 채권, 같은 통화) 경로에 해당해야 한다. 이 조문에 해당하는지 정한 근거가 아직 없다(전자결제부령 第3条第2項, 第3項).",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R02 신탁형 행"
+          ]
+        },
+        "non_us_government_bill": {
+          "verdict": "unclear",
+          "code": null,
+          "max_months": 3,
+          "same_currency": true,
+          "basis": "엔화 국채(JGB)가 아닌 외국 정부 단기채는 証券情報等の提供又は公表に関する内閣府令 第13条第3号(3개월 이내 외국 발행 채권, 같은 통화) 경로에 해당해야 한다. 이 조문에 해당하는지 정한 근거가 아직 없다(전자결제부령 第3条第2項, 第3項).",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R02 신탁형 행"
+          ]
+        },
+        "reverse_repo_overnight": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "허용 4종에 레포가 없고, 법, 시행령, 부령 원문에 레포 관련 용어가 나오지 않는다.",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R04 행"
+          ]
+        },
+        "reverse_repo_term": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "허용 4종에 레포가 없고, 법, 시행령, 부령 원문에 레포 관련 용어가 나오지 않는다.",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R04 행"
+          ]
+        },
+        "government_mmf": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "전자결제부령 第3条第2項, 第3項: 허용 4종(요구불 예금, 정기예금, 엔화 국채, 외국 채권)에 펀드가 없다.",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R02 신탁형 행"
+          ]
+        },
+        "corporate_bond": {
+          "verdict": "unclear",
+          "code": null,
+          "max_months": 3,
+          "same_currency": true,
+          "basis": "엔화 국채만 허용하지만 외국 발행 채권 경로가 있어 외국 회사채가 해당하는지가 쟁점이다. 해당하려면 証券情報等の提供又は公表に関する内閣府令 第13条第3号(3개월 이내 외국 발행 채권, 같은 통화) 경로에 해당해야 한다. 이 조문에 해당하는지 정한 근거가 아직 없다(전자결제부령 第3条第2項, 第3項).",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R02 신탁형 행"
+          ]
+        },
+        "precious_metal": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "전자결제부령 第3条第2項, 第3項: 허용 4종에 귀금속이 없다.",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R02 신탁형 행"
+          ]
+        },
+        "bitcoin": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "전자결제부령 第3条第2項, 第3項: 허용 4종에 비트코인이 없다.",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R02 신탁형 행"
+          ]
+        },
+        "secured_loan": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "전자결제부령 第3条第2項, 第3項: 허용 4종에 담보대출이 없다.",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R02 신탁형 행"
+          ]
+        },
+        "public_equity": {
+          "verdict": "not_allowed",
+          "code": null,
+          "basis": "전자결제부령 第3条第2項, 第3項: 허용 4종에 상장 주식이 없다.",
+          "source": [
+            "docs/research/NotebookLM_2차/c9c80e53_일본전자결제수단/검증_2026-10-05.md R02 신탁형 행"
+          ]
+        },
+        "other_investment": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "분류가 포괄적이라 허용 4종 중 어느 것인지 정할 수 없다."
+        },
+        "cash_equivalents_unsplit": {
+          "verdict": "unclear",
+          "code": null,
+          "basis": "현금과 현금성 자산을 묶어 낸 값은 요구불 예금, 정기예금, 국채로 나눌 수 없다."
+        }
+      }
+    },
+    "R03": {
+      "requirement": "국채는 취득일부터 상환일까지 3개월 이내. 원문 단위가 월이라 일수로 바꾸지 않음",
+      "threshold_days": null,
+      "max_months": 3,
+      "delegated": true,
+      "article": "전자결제부령 第3条第2項第1号",
+      "url": "https://laws.e-gov.go.jp/law/505M60000002048",
+      "alt": {
+        "requirement": "규정 없음",
+        "article": null,
+        "url": null
+      }
+    },
+    "R04": {
+      "requirement": "레포(환매조건부 매매) 규정을 찾지 못함. 허용 자산 목록에도 레포가 없음",
+      "threshold_days": null,
+      "not_regulated": true,
+      "article": "전체 원문 검색 0건",
+      "url": "https://laws.e-gov.go.jp/law/505M60000002048"
+    },
+    "R05": {
+      "requirement": "요구불 예금과 저금 비중 50% 이상. 2026-06-01 시행이고 그 전에는 신탁재산 전부가 예금",
+      "comparison": "gte",
+      "threshold": 0.5,
+      "scope": "demand_deposit_share",
+      "effective": "2026-06-01",
+      "article": "자금결제법 第2条第9項, 전자결제부령 第3条第1項, 第3項第1号ロ, 令和8年政令第172号",
+      "url": "https://laws.e-gov.go.jp/law/505M60000002048",
+      "alt": {
+        "requirement": "제3종만 해당. 예저금 관리 비율은 사업자가 신고한 값이고 하한 숫자는 없음",
+        "article": "자금결제법 第45条の2, 자금이동부령 第21条の5",
+        "url": "https://laws.e-gov.go.jp/law/421AC0000000059"
+      }
+    },
+    "R06": {
+      "requirement": "신탁재산과 발행하는 전자결제수단의 통화가 같아야 함. 엔화는 엔화 자산, 외화는 같은 통화 자산",
+      "required_currency": "same_as_peg",
+      "article": "전자결제부령 第3条第3項, 第2条第3項第1号ニ",
+      "url": "https://laws.e-gov.go.jp/law/505M60000002048",
+      "alt": {
+        "requirement": "같은 통화일 필요 없음. 외화 미달채무를 엔화로 환산",
+        "article": "자금이동부령 第11条第5項",
+        "url": "https://laws.e-gov.go.jp/law/422M60000002004"
+      }
+    },
+    "R07": {
+      "requirement": "3, 6, 9, 12월 말 기준 발행가액 총액, 특정신탁 구좌 잔액, 국채를 쓰면 채권 종류별 액면과 시가를 공표. 수익자별 보고서를 면제받는 조건이라 단독 의무는 아님",
+      "frequency": "quarterly",
+      "partial": true,
+      "article": "신탁업법규칙 第38条第10号, 겸영법규칙 第20条",
+      "url": "https://laws.e-gov.go.jp/law/416M60000002107",
+      "alt": {
+        "requirement": "공개 규정 없음. 금융청에 연 1회와 3개월 구간별 분기 1회 제출",
+        "article": "자금결제법 第53条第1項, 第2項, 자금이동부령 第35条",
+        "url": "https://laws.e-gov.go.jp/law/421AC0000000059"
+      }
+    },
+    "R08": {
+      "requirement": "감사는 없음. 은행이 발행한 잔액증명서와 신탁회사의 신탁재산액 증명서로 확인",
+      "verification_types": [],
+      "partial": true,
+      "article": "자금결제법 第37条の2第2項, 자금이동부령 第3条の4",
+      "url": "https://laws.e-gov.go.jp/law/422M60000002004",
+      "alt": {
+        "requirement": "제3종이면서 예저금으로 관리할 때만 연 1회 이상 공인회계사나 감사법인의 감사",
+        "article": "자금결제법 第45条の2第2項, 자금이동부령 第21条の5",
+        "url": "https://laws.e-gov.go.jp/law/422M60000002004"
+      }
+    },
+    "R09": {
+      "requirement": "기준일은 3개월 구간의 말일. 공표는 3, 6, 9, 12월 말",
+      "reference": "quarter_end",
+      "partial": true,
+      "article": "자금이동부령 第35条の2, 신탁업법규칙 第38条第10号",
+      "url": "https://laws.e-gov.go.jp/law/416M60000002107",
+      "alt": {
+        "requirement": "공탁 기준일은 제1종 매 영업일, 제2종과 제3종 주 단위. 보고는 분기 말일",
+        "article": "자금결제법 第43条第1項, 자금이동부령 第35条",
+        "url": "https://laws.e-gov.go.jp/law/421AC0000000059"
+      }
+    },
+    "R10": {
+      "requirement": "공개 기한 규정을 찾지 못함. 참고로 금융청 제출 기한은 연간 3개월, 분기 1개월",
+      "deadline_days": null,
+      "not_regulated": true,
+      "ref_filing": {
+        "annual_months": 3,
+        "quarterly_months": 1
+      },
+      "article": "자금이동부령 第34条, 第35条第2項",
+      "url": "https://laws.e-gov.go.jp/law/422M60000002004"
+    },
+    "R11": {
+      "requirement": "발행가액 총액만 분기마다 공표. 계산식 공개 규정은 없음",
+      "partial": true,
+      "article": "신탁업법규칙 第38条第10号, 第37条第1項第1号",
+      "url": "https://laws.e-gov.go.jp/law/416M60000002107",
+      "alt": {
+        "requirement": "공개 규정 없음",
+        "article": "자금이동부령 第11条第3項",
+        "url": "https://laws.e-gov.go.jp/law/422M60000002004"
+      }
+    },
+    "R12": {
+      "requirement": "예치 은행 공개 규정을 찾지 못함. 특정신탁회사는 보전 방식과 상대방 정보 제공 조문(第29条の2 제2호부터 제4호)에서 빠지고 구좌 종류별 잔액 공표만 있음",
+      "not_regulated": true,
+      "article": "자금이동부령 第29条の2第1項 괄호(특정신탁회사 제외)",
+      "url": "https://laws.e-gov.go.jp/law/422M60000002004",
+      "alt": {
+        "requirement": "보전 방식 구분과 계약 상대방 이름을 이용자에게 제공. 공탁은 구분만 제공",
+        "article": "자금이동부령 第29条の2第1項第2号",
+        "url": "https://laws.e-gov.go.jp/law/422M60000002004"
+      }
+    },
+    "R13": {
+      "requirement": "상환 금액은 액면과 같은 금액(상환 의무액). 기한은 지체 없이로만 적혀 일수가 없고 수수료 규정도 찾지 못함",
+      "par": true,
+      "deadline_days": null,
+      "partial": true,
+      "article": "자금결제법 第37条の2第4項, 자금이동부령 第3条の7, 第29条の3第2項第5号",
+      "url": "https://laws.e-gov.go.jp/law/421AC0000000059",
+      "alt": {
+        "requirement": "상환청구권의 내용과 절차를 사전에 설명하고 표준 이행 기간을 안내. 일수와 수수료 규정은 없음",
+        "article": "자금이동부령 第29条の3, 第29条",
+        "url": "https://laws.e-gov.go.jp/law/422M60000002004"
+      }
+    },
+    "R14": {
+      "requirement": "이자 금지 규정을 읽은 원문 범위에서 찾지 못함. 가이드라인 17 전문에 이자 문장이 없음",
+      "not_regulated": true,
+      "article": "금융청 가이드라인 17 전문 검색 0건",
+      "url": "https://www.fsa.go.jp/common/law/guide/kaisya/17.pdf",
+      "alt": {
+        "requirement": "금지 문장은 아니고 가이드라인 주석에 출자법 예금 수취 규제 우려만 적힘",
+        "article": "가이드라인 14 Ⅱ-2-2-1-1 ⑹ 注1, 출자법 第2条",
+        "url": "https://www.fsa.go.jp/common/law/guide/kaisya/14.pdf"
+      }
+    },
+    "R15": {
+      "requirement": "경영진 서명 규정을 찾지 못함. 보고서 서식(別紙様式)의 서명란은 서식 파일이 본문에 없어 확인하지 못함",
+      "not_regulated": true,
+      "article": "자금결제법 第53条, 第62条の19 검색",
+      "url": "https://laws.e-gov.go.jp/law/421AC0000000059"
+    }
+  }
+}

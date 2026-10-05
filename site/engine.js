@@ -16,7 +16,8 @@ export const STATUS = {
   MET: '충족',
   UNMET: '미충족',
   CAUTION: '주의',
-  NO_DATA: '데이터 없음',
+  NO_DATA: '보고서에 없음',
+  NOT_APPLICABLE: '해당 없음',
   PENDING: '위임 예정',
   NOT_REGULATED: '규정 없음',
   UNRESEARCHED: '조사 미완료',
@@ -120,8 +121,50 @@ function ruleCoverage(report, rd) {
   };
 }
 
+// kinds 대응표 판정. 보고서 holdings를 kind별로 묶어(settlement와 amount<=0 제외) 대응표와 맞춘다.
+// 대응표에 없는 kind는 unclear. max_days는 그 kind 줄의 maturity_max_days(null이면 unclear),
+// same_currency는 holdings currency와 페그 통화(모르면 unclear)로 본다.
+const VERDICT_RANK = { allowed: 0, unclear: 1, not_allowed: 2 };
+
+function holdingVerdict(h, def, peg) {
+  if (!def) return 'unclear';
+  let v = def.verdict;
+  if (v !== 'allowed') return v;
+  if (def.max_days != null) {
+    if (h.maturity_max_days == null) return 'unclear';
+    if (h.maturity_max_days > def.max_days) return 'not_allowed';
+  }
+  if (def.same_currency) {
+    if (!peg || !h.currency) return 'unclear';
+    if (h.currency !== peg) return 'not_allowed';
+  }
+  return v;
+}
+
+function ruleAssetKinds(report, rd) {
+  const lines = (report.holdings || []).filter((h) => h.kind !== 'settlement' && h.amount > 0);
+  if (lines.length === 0) return { status: STATUS.NO_DATA };
+  const peg = inferPegCurrency(report);
+  const byKind = new Map();
+  for (const h of lines) {
+    const def = rd.kinds[h.kind];
+    const verdict = holdingVerdict(h, def, peg);
+    const cur = byKind.get(h.kind);
+    if (!cur) byKind.set(h.kind, { kind: h.kind, verdict, code: (def && def.code) || null, amount: h.amount });
+    else {
+      cur.amount += h.amount;
+      if (VERDICT_RANK[verdict] > VERDICT_RANK[cur.verdict]) cur.verdict = verdict;
+    }
+  }
+  const value = [...byKind.values()];
+  const has = (v) => value.some((x) => x.verdict === v);
+  const status = has('not_allowed') ? STATUS.UNMET : has('unclear') ? STATUS.CAUTION : STATUS.MET;
+  return { status, value, threshold: rd.allowed || null };
+}
+
 function ruleAssetTypes(report, rd) {
-  // R02 허용 자산 종류: report.asset_types가 rd.allowed의 부분집합인지
+  // R02 허용 자산 종류. kinds 대응표가 있으면 holdings로, 없으면 asset_types가 rd.allowed의 부분집합인지로 본다.
+  if (rd.kinds && typeof rd.kinds === 'object') return ruleAssetKinds(report, rd);
   if (!Array.isArray(report.asset_types) || report.asset_types.length === 0) return { status: STATUS.NO_DATA };
   if (!Array.isArray(rd.allowed)) return { status: STATUS.NOT_REGULATED };
   const disallowed = report.asset_types.filter((t) => !rd.allowed.includes(t));
@@ -132,9 +175,15 @@ function ruleAssetTypes(report, rd) {
   };
 }
 
+function notApplicable(report, field) {
+  const n = report.field_notes && report.field_notes[field];
+  return !!n && n.state === 'not_applicable';
+}
+
 function ruleTreasuryMaturity(report, rd) {
   // R03 국채 잔존만기 상한(일)
   const observed = report.treasury_max_maturity_days;
+  if (notApplicable(report, 'treasury_max_maturity_days')) return { status: STATUS.NOT_APPLICABLE };
   if (observed == null) return { status: STATUS.NO_DATA };
   if (rd.threshold_days == null) return { status: STATUS.NOT_REGULATED };
   return {
@@ -147,6 +196,7 @@ function ruleTreasuryMaturity(report, rd) {
 function ruleRepoMaturity(report, rd) {
   // R04 레포 만기(일). overnight은 1일로 취급
   const observed = report.repo_max_maturity_days;
+  if (notApplicable(report, 'repo_max_maturity_days')) return { status: STATUS.NOT_APPLICABLE };
   if (observed == null) return { status: STATUS.NO_DATA };
   if (rd.threshold_days == null) return { status: STATUS.NOT_REGULATED };
   return {
@@ -167,7 +217,8 @@ function ruleCashRatio(report, rd) {
   if (observed == null && report.components && report.fair_value) {
     if (report.components.cash != null) {
       observed = report.components.cash / report.fair_value;
-    } else if (report.components.other != null) {
+    } else if (report.components.other != null && report.flags?.cash_is_bank_deposit !== false) {
+      // 원문이 은행 예금을 나누지 않았다고 표시된 보고서(USDG 옛 형식)는 근사하지 않고 데이터 없음
       observed = report.components.other / report.fair_value;
       approx = true;
     }
