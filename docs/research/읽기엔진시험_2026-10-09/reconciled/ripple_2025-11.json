@@ -1,0 +1,284 @@
+{
+ "month": "2025-11",
+ "status": "확정",
+ "as_of": "2025-11-28",
+ "circulation": [
+  1156148084,
+  1260898084
+ ],
+ "reserve_fair_value": [
+  1208443821,
+  1314484291
+ ],
+ "table": [
+  {
+   "label": "912797RQ2",
+   "values": [
+    174850000,
+    0
+   ],
+   "labels": {
+    "paddle": "912797RQ2",
+    "opus": "912797RQ2"
+   },
+   "maturity": "2025-11-25",
+   "days_to_maturity": -3
+  },
+  {
+   "label": "912797RR0",
+   "values": [
+    202595910,
+    246922836
+   ],
+   "labels": {
+    "paddle": "912797RR0",
+    "opus": "912797RR0"
+   },
+   "maturity": "2025-12-02",
+   "days_to_maturity": 4
+  },
+  {
+   "label": "912797RW9",
+   "values": [
+    24363156,
+    178646232
+   ],
+   "labels": {
+    "paddle": "912797RW9",
+    "opus": "912797RW9"
+   },
+   "maturity": "2025-12-09",
+   "days_to_maturity": 11
+  },
+  {
+   "label": "912797QY6",
+   "values": [
+    26454420,
+    26471115
+   ],
+   "labels": {
+    "paddle": "912797QY6",
+    "opus": "912797QY6"
+   },
+   "maturity": "2025-12-11",
+   "days_to_maturity": 13
+  },
+  {
+   "label": "912797RX7",
+   "values": [
+    27328099,
+    27345354
+   ],
+   "labels": {
+    "paddle": "912797RX7",
+    "opus": "912797RX7"
+   },
+   "maturity": "2025-12-16",
+   "days_to_maturity": 18
+  },
+  {
+   "label": "912797QZ3",
+   "values": [
+    23940720,
+    23955600
+   ],
+   "labels": {
+    "paddle": "912797QZ3",
+    "opus": "912797QZ3"
+   },
+   "maturity": "2025-12-18",
+   "days_to_maturity": 20
+  },
+  {
+   "label": "912797RY5",
+   "values": [
+    26120614,
+    46888140
+   ],
+   "labels": {
+    "paddle": "912797RY5",
+    "opus": "912797RY5"
+   },
+   "maturity": "2025-12-23",
+   "days_to_maturity": 25
+  },
+  {
+   "label": "912797NU7",
+   "values": [
+    24916250,
+    24932500
+   ],
+   "labels": {
+    "paddle": "912797NU7",
+    "opus": "912797NU7"
+   },
+   "maturity": "2025-12-26",
+   "days_to_maturity": 28
+  },
+  {
+   "label": "912797RZ2",
+   "values": [
+    26899019,
+    26915760
+   ],
+   "labels": {
+    "paddle": "912797RZ2",
+    "opus": "912797RZ2"
+   },
+   "maturity": "2025-12-30",
+   "days_to_maturity": 32
+  },
+  {
+   "label": "912797SE8",
+   "values": [
+    18268159,
+    18280270
+   ],
+   "labels": {
+    "paddle": "912797SE8",
+    "opus": "912797SE8"
+   },
+   "maturity": "2026-01-06",
+   "days_to_maturity": 39
+  },
+  {
+   "label": "912797SF5",
+   "values": [
+    18901010,
+    18914310
+   ],
+   "labels": {
+    "paddle": "912797SF5",
+    "opus": "912797SF5"
+   },
+   "maturity": "2026-01-13",
+   "days_to_maturity": 46
+  },
+  {
+   "label": "912797SG3",
+   "values": [
+    20775227,
+    20789648
+   ],
+   "labels": {
+    "paddle": "912797SG3",
+    "opus": "912797SG3"
+   },
+   "maturity": "2026-01-20",
+   "days_to_maturity": 53
+  },
+  {
+   "label": "912797RK5",
+   "values": [
+    15890880,
+    15900160
+   ],
+   "labels": {
+    "paddle": "912797RK5",
+    "opus": "912797RK5"
+   },
+   "maturity": "2026-01-29",
+   "days_to_maturity": 62
+  },
+  {
+   "label": "912797RL3",
+   "values": [
+    14887500,
+    14896950
+   ],
+   "labels": {
+    "paddle": "912797RL3",
+    "opus": "912797RL3"
+   },
+   "maturity": "2026-02-05",
+   "days_to_maturity": 69
+  },
+  {
+   "label": "912797RT6",
+   "values": [
+    22081982,
+    22098235
+   ],
+   "labels": {
+    "paddle": "912797RT6",
+    "opus": "912797RT6"
+   },
+   "maturity": "2026-02-12",
+   "days_to_maturity": 76
+  },
+  {
+   "label": "Total U.S. Treasury bills",
+   "values": [
+    668272946,
+    712957110
+   ],
+   "labels": {
+    "paddle": "Total U.S. Treasury bills",
+    "opus": "Total U.S. Treasury bills"
+   }
+  },
+  {
+   "label": "Government money-market funds",
+   "values": [
+    358916733,
+    382691606
+   ],
+   "labels": {
+    "paddle": "Government money-market funds",
+    "opus": "Government money-market funds"
+   }
+  },
+  {
+   "label": "Cash deposits held at U.S. regulated financial institutions",
+   "values": [
+    261254142,
+    218835575
+   ],
+   "labels": {
+    "paddle": "Cash deposits held at U.S. regulated financial institutions",
+    "opus": "Cash deposits held at U.S. regulated financial institutions"
+   }
+  },
+  {
+   "label": "Adjustments due to timing*",
+   "values": [
+    -80000000,
+    0
+   ],
+   "labels": {
+    "paddle": "Adjustments due to timing $ ^{{*}} $",
+    "opus": "Adjustments due to timing*"
+   }
+  },
+  {
+   "label": "Total Market Value of the Reserve",
+   "values": [
+    1208443821,
+    1314484291
+   ],
+   "labels": {
+    "paddle": "Total Market Value of the Reserve",
+    "opus": "Total Market Value of the Reserve"
+   }
+  }
+ ],
+ "components": {
+  "cash": 218835575,
+  "repo": 0,
+  "government_mmf": 382691606,
+  "treasury": 712957110,
+  "other": 0
+ },
+ "reconciliation": {
+  "components_sum": 1314484291,
+  "reserve_fair_value": 1314484291,
+  "ok": true
+ },
+ "resolved_by_checkdigit": [],
+ "check": [],
+ "readers": {
+  "paddle": "paddle/ripple_2025-11.md",
+  "opus": "claude_opus_2025-11.json",
+  "image": "docs/research/읽기엔진시험_2026-10-09/png/paddle/ripple_2025-11.png"
+ }
+}

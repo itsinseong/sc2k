@@ -1,0 +1,108 @@
+{
+ "duration_api_ms": 42999,
+ "stop_reason": "end_turn",
+ "session_id": "f0faa19d-6e65-4db9-bab7-bdfc9e78a5bf",
+ "total_cost_usd": 0.4193016,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 37620,
+  "cache_read_input_tokens": 101888,
+  "output_tokens": 4897,
+  "output_tokens_details": {
+   "thinking_tokens": 4193
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 37620,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1693,
+    "cache_read_input_tokens": 46803,
+    "cache_creation_input_tokens": 3316,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3316
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 4897,
+   "cacheReadInputTokens": 101888,
+   "cacheCreationInputTokens": 37620,
+   "webSearchRequests": 0,
+   "costUSD": 0.4193016,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 4193,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [
+  {
+   "tool_name": "Bash",
+   "tool_use_id": "toolu_01CEYh46rNDUWTcfAKabW6N1",
+   "tool_input": {
+    "command": "mkdir -p /tmp/sc2k_crop && python3 -I -c \"\nimport sys\nfrom PIL import Image\nim = Image.open(sys.argv[1])\nprint(im.size)\nim.crop((600, 490, 1520, 600)).resize((1840, 220)).save('/tmp/sc2k_crop/top.png')\n\" /Users/inseong/.cache/sc2k-ocr/ripple_2025-09_p3.png",
+    "description": "Crop and enlarge the top summary table"
+   }
+  }
+ ],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"circulation\": [729950821, 789696777], \"reserve_fair_value\": [759587365, 823429425], \"rows\": [{\"label\": \"912797QU4\", \"values\": [209145000, 0]}, {\"label\": \"912797QV2\", \"values\": [146469796, 0]}, {\"label\": \"912797QW0\", \"values\": [64316928, 0]}, {\"label\": \"912797RB5\", \"values\": [0, 293075573]}, {\"label\": \"912797RC3\", \"values\": [0, 65329480]}, {\"label\": \"912797QG5\", \"values\": [0, 21033131]}, {\"label\": \"912797RN9\", \"values\": [0, 21031323]}, {\"label\": \"912797RP4\", \"values\": [0, 28149444]}, {\"label\": \"912797RQ2\", \"values\": [0, 22561530]}, {\"label\": \"Total U.S. Treasury bills\", \"values\": [419931724, 451180481]}, {\"label\": \"Government money-market funds\", \"values\": [225702596, 249155252]}, {\"label\": \"Cash deposits held at U.S. regulated financial institutions\", \"values\": [113953045, 123093692]}, {\"label\": \"Total Market Value of the Reserve\", \"values\": [759587365, 823429425]}]}",
+ "ttft_ms": 2897,
+ "type": "result",
+ "duration_ms": 162060,
+ "uuid": "057b8741-ae70-4923-a608-ec3b32b65d1d",
+ "ttft_stream_ms": 1871,
+ "time_to_request_ms": 883,
+ "first_content_frame_ms": 1871,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

@@ -1,0 +1,108 @@
+{
+ "duration_api_ms": 81421,
+ "stop_reason": "end_turn",
+ "session_id": "b3a170c8-61fd-492a-973b-824ab7997a70",
+ "total_cost_usd": 0.5767764,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 43965,
+  "cache_read_input_tokens": 208282,
+  "output_tokens": 9168,
+  "output_tokens_details": {
+   "thinking_tokens": 7892
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 43965,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 6036,
+    "cache_read_input_tokens": 55317,
+    "cache_creation_input_tokens": 1147,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1147
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 9168,
+   "cacheReadInputTokens": 208282,
+   "cacheCreationInputTokens": 43965,
+   "webSearchRequests": 0,
+   "costUSD": 0.5767764,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 7892,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [
+  {
+   "tool_name": "Bash",
+   "tool_use_id": "toolu_012aUzqSpHZNTGnPiKrU2hjU",
+   "tool_input": {
+    "command": "cd /tmp && python3 -I -c \"\nfrom PIL import Image\nim = Image.open('/Users/inseong/.cache/sc2k-ocr/ripple_2026-02_p5.png')\nprint(im.size)\nim.crop((140, 490, 1530, 610)).resize((2780, 240), Image.LANCZOS).save('/tmp/r2602_top.png')\nim.crop((140, 760, 1540, 1200)).resize((2800, 880), Image.LANCZOS).save('/tmp/r2602_a.png')\nim.crop((140, 1190, 1540, 1680)).resize((2800, 980), Image.LANCZOS).save('/tmp/r2602_b.png')\n\"",
+    "description": "Crop and upscale the table regions for closer reading"
+   }
+  }
+ ],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 7,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"circulation\": [1538640717, 1495023851], \"reserve_fair_value\": [1610986444, 1568986016], \"rows\": [{\"label\": \"912797SS7\", \"values\": [235308194, 0]}, {\"label\": \"912797RU3\", \"values\": [30982020, 0]}, {\"label\": \"912797ST5\", \"values\": [286239790, 286526345]}, {\"label\": \"912797RV1\", \"values\": [31959040, 31990400]}, {\"label\": \"912797SY4\", \"values\": [30944510, 174760079]}, {\"label\": \"912797SB4\", \"values\": [31037800, 31068589]}, {\"label\": \"912797SZ1\", \"values\": [44288556, 44332956]}, {\"label\": \"912797PV3\", \"values\": [28223873, 28251607]}, {\"label\": \"912797TA5\", \"values\": [0, 44900550]}, {\"label\": \"912797SC2\", \"values\": [23917920, 23941680]}, {\"label\": \"912797TB3\", \"values\": [22063615, 22085322]}, {\"label\": \"912797SD0\", \"values\": [33461232, 45457728]}, {\"label\": \"912797TG2\", \"values\": [30159711, 30190314]}, {\"label\": \"912797SL2\", \"values\": [0, 31031007]}, {\"label\": \"912797TH0\", \"values\": [34813100, 34848100]}, {\"label\": \"912797TJ6\", \"values\": [0, 34823950]}, {\"label\": \"912797SN8\", \"values\": [0, 26590838]}, {\"label\": \"Total U.S. Treasury bills\", \"values\": [863399361, 890799465]}, {\"label\": \"Government money-market funds\", \"values\": [464868100, 423346203]}, {\"label\": \"Cash deposits held at U.S. regulated financial institutions\", \"values\": [282718983, 254840348]}, {\"label\": \"Total Market Value of the Reserve\", \"values\": [1610986444, 1568986016]}]}",
+ "ttft_ms": 3660,
+ "type": "result",
+ "duration_ms": 204423,
+ "uuid": "d3949507-bded-4ada-bbd4-8c9f0915851e",
+ "ttft_stream_ms": 2148,
+ "time_to_request_ms": 1330,
+ "first_content_frame_ms": 2148,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

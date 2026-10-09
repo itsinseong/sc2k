@@ -1,0 +1,541 @@
+{
+ "month": "2026-06",
+ "status": "확정",
+ "as_of": "2026-06-30",
+ "circulation": [
+  1682288477,
+  1411034124
+ ],
+ "reserve_fair_value": [
+  1776628664,
+  1512689493
+ ],
+ "table": [
+  {
+   "label": "912797TZ0",
+   "values": [
+    170050000,
+    0
+   ],
+   "labels": {
+    "paddle": "91279TZ0",
+    "opus": "912797TZ0"
+   },
+   "maturity": "2026-06-09",
+   "days_to_maturity": -21
+  },
+  {
+   "label": "912797QX8",
+   "values": [
+    203759240,
+    0
+   ],
+   "labels": {
+    "paddle": "91279QX8",
+    "opus": "912797QX8"
+   },
+   "maturity": "2026-06-11",
+   "days_to_maturity": -19
+  },
+  {
+   "label": "912797UA3",
+   "values": [
+    212850900,
+    0
+   ],
+   "labels": {
+    "paddle": "91279UA3",
+    "opus": "912797UA3"
+   },
+   "maturity": "2026-06-16",
+   "days_to_maturity": -14
+  },
+  {
+   "label": "912797TD9",
+   "values": [
+    231291650,
+    0
+   ],
+   "labels": {
+    "paddle": "91279TD9",
+    "opus": "912797TD9"
+   },
+   "maturity": "2026-06-18",
+   "days_to_maturity": -12
+  },
+  {
+   "label": "912797UB1",
+   "values": [
+    42440500,
+    0
+   ],
+   "labels": {
+    "paddle": "91279UB1",
+    "opus": "912797UB1"
+   },
+   "maturity": "2026-06-23",
+   "days_to_maturity": -7
+  },
+  {
+   "label": "912797TE7",
+   "values": [
+    39936000,
+    0
+   ],
+   "labels": {
+    "paddle": "91279TE7",
+    "opus": "912797TE7"
+   },
+   "maturity": "2026-06-25",
+   "days_to_maturity": -5
+  },
+  {
+   "label": "912797UC9",
+   "values": [
+    41212857,
+    0
+   ],
+   "labels": {
+    "paddle": "91279UC9",
+    "opus": "912797UC9"
+   },
+   "maturity": "2026-06-30",
+   "days_to_maturity": 0
+  },
+  {
+   "label": "912797TF4",
+   "values": [
+    29931000,
+    365963399
+   ],
+   "labels": {
+    "paddle": "91279TF4",
+    "opus": "912797TF4"
+   },
+   "maturity": "2026-07-02",
+   "days_to_maturity": 2
+  },
+  {
+   "label": "912797UN5",
+   "values": [
+    13561784,
+    13591840
+   ],
+   "labels": {
+    "paddle": "91279UN5",
+    "opus": "912797UN5"
+   },
+   "maturity": "2026-07-07",
+   "days_to_maturity": 7
+  },
+  {
+   "label": "912797RF6",
+   "values": [
+    40801816,
+    204259416
+   ],
+   "labels": {
+    "paddle": "91279RF6",
+    "opus": "912797RF6"
+   },
+   "maturity": "2026-07-09",
+   "days_to_maturity": 9
+  },
+  {
+   "label": "912797TN7",
+   "values": [
+    46825630,
+    46929500
+   ],
+   "labels": {
+    "paddle": "91279TN7",
+    "opus": "912797TN7"
+   },
+   "maturity": "2026-07-16",
+   "days_to_maturity": 16
+  },
+  {
+   "label": "912797TQ0",
+   "values": [
+    24971739,
+    25027461
+   ],
+   "labels": {
+    "paddle": "91279TQ0",
+    "opus": "912797TQ0"
+   },
+   "maturity": "2026-07-30",
+   "days_to_maturity": 30
+  },
+  {
+   "label": "912797RG4",
+   "values": [
+    23860320,
+    43841160
+   ],
+   "labels": {
+    "paddle": "91279RG4",
+    "opus": "912797RG4"
+   },
+   "maturity": "2026-08-06",
+   "days_to_maturity": 37
+  },
+  {
+   "label": "912797UT2",
+   "values": [
+    0,
+    43818720
+   ],
+   "labels": {
+    "paddle": "91279UT2",
+    "opus": "912797UT2"
+   },
+   "maturity": "2026-08-11",
+   "days_to_maturity": 42
+  },
+  {
+   "label": "912797UU9",
+   "values": [
+    0,
+    44433448
+   ],
+   "labels": {
+    "paddle": "91279UU9",
+    "opus": "912797UU9"
+   },
+   "maturity": "2026-08-18",
+   "days_to_maturity": 49
+  },
+  {
+   "label": "912797RS8",
+   "values": [
+    44608950,
+    44707950
+   ],
+   "labels": {
+    "paddle": "91279RS8",
+    "opus": "912797RS8"
+   },
+   "maturity": "2026-09-03",
+   "days_to_maturity": 65
+  },
+  {
+   "label": "912797UF2",
+   "values": [
+    0,
+    44676900
+   ],
+   "labels": {
+    "paddle": "91279UF2",
+    "opus": "912797UF2"
+   },
+   "maturity": "2026-09-10",
+   "days_to_maturity": 72
+  },
+  {
+   "label": "912797VC8",
+   "values": [
+    0,
+    44653500
+   ],
+   "labels": {
+    "paddle": "91279VC8",
+    "opus": "912797VC8"
+   },
+   "maturity": "2026-09-15",
+   "days_to_maturity": 77
+  },
+  {
+   "label": "912797UG0",
+   "values": [
+    0,
+    44644500
+   ],
+   "labels": {
+    "paddle": "91279UG0",
+    "opus": "912797UG0"
+   },
+   "maturity": "2026-09-17",
+   "days_to_maturity": 79
+  },
+  {
+   "label": "912797VD6",
+   "values": [
+    0,
+    43630840
+   ],
+   "labels": {
+    "paddle": "91279VD6",
+    "opus": "912797VD6"
+   },
+   "maturity": "2026-09-22",
+   "days_to_maturity": 84
+  },
+  {
+   "label": "912797UH8",
+   "values": [
+    0,
+    43618520
+   ],
+   "labels": {
+    "paddle": "91279UH8",
+    "opus": "912797UH8"
+   },
+   "maturity": "2026-09-24",
+   "days_to_maturity": 86
+  },
+  {
+   "label": "Subtotal",
+   "values": [
+    1166102386,
+    1053797154
+   ],
+   "labels": {
+    "paddle": "Subtotal",
+    "opus": "Subtotal"
+   }
+  },
+  {
+   "label": "Government money-market funds",
+   "values": [
+    328524805,
+    216762573
+   ],
+   "labels": {
+    "paddle": "Government money-market funds",
+    "opus": "Government money-market funds"
+   }
+  },
+  {
+   "label": "Cash deposits held at U.S. regulated financial institutions",
+   "values": [
+    282001473,
+    242129766
+   ],
+   "labels": {
+    "paddle": "Cash deposits held at U.S. regulated financial institutions",
+    "opus": "Cash deposits held at U.S. regulated financial institutions"
+   }
+  },
+  {
+   "label": "Total Market Value of the Reserve",
+   "values": [
+    1776628664,
+    1512689493
+   ],
+   "labels": {
+    "paddle": "Total Market Value of the Reserve",
+    "opus": "Total Market Value of the Reserve"
+   }
+  }
+ ],
+ "components": {
+  "cash": 242129766,
+  "repo": 0,
+  "government_mmf": 216762573,
+  "treasury": 1053797154,
+  "other": 0
+ },
+ "reconciliation": {
+  "components_sum": 1512689493,
+  "reserve_fair_value": 1512689493,
+  "ok": true
+ },
+ "resolved_by_checkdigit": [
+  {
+   "paddle": "91279TZ0",
+   "opus": "912797TZ0",
+   "chosen": "912797TZ0",
+   "values": [
+    170050000,
+    0
+   ]
+  },
+  {
+   "paddle": "91279QX8",
+   "opus": "912797QX8",
+   "chosen": "912797QX8",
+   "values": [
+    203759240,
+    0
+   ]
+  },
+  {
+   "paddle": "91279UA3",
+   "opus": "912797UA3",
+   "chosen": "912797UA3",
+   "values": [
+    212850900,
+    0
+   ]
+  },
+  {
+   "paddle": "91279TD9",
+   "opus": "912797TD9",
+   "chosen": "912797TD9",
+   "values": [
+    231291650,
+    0
+   ]
+  },
+  {
+   "paddle": "91279UB1",
+   "opus": "912797UB1",
+   "chosen": "912797UB1",
+   "values": [
+    42440500,
+    0
+   ]
+  },
+  {
+   "paddle": "91279TE7",
+   "opus": "912797TE7",
+   "chosen": "912797TE7",
+   "values": [
+    39936000,
+    0
+   ]
+  },
+  {
+   "paddle": "91279UC9",
+   "opus": "912797UC9",
+   "chosen": "912797UC9",
+   "values": [
+    41212857,
+    0
+   ]
+  },
+  {
+   "paddle": "91279TF4",
+   "opus": "912797TF4",
+   "chosen": "912797TF4",
+   "values": [
+    29931000,
+    365963399
+   ]
+  },
+  {
+   "paddle": "91279UN5",
+   "opus": "912797UN5",
+   "chosen": "912797UN5",
+   "values": [
+    13561784,
+    13591840
+   ]
+  },
+  {
+   "paddle": "91279RF6",
+   "opus": "912797RF6",
+   "chosen": "912797RF6",
+   "values": [
+    40801816,
+    204259416
+   ]
+  },
+  {
+   "paddle": "91279TN7",
+   "opus": "912797TN7",
+   "chosen": "912797TN7",
+   "values": [
+    46825630,
+    46929500
+   ]
+  },
+  {
+   "paddle": "91279TQ0",
+   "opus": "912797TQ0",
+   "chosen": "912797TQ0",
+   "values": [
+    24971739,
+    25027461
+   ]
+  },
+  {
+   "paddle": "91279RG4",
+   "opus": "912797RG4",
+   "chosen": "912797RG4",
+   "values": [
+    23860320,
+    43841160
+   ]
+  },
+  {
+   "paddle": "91279UT2",
+   "opus": "912797UT2",
+   "chosen": "912797UT2",
+   "values": [
+    0,
+    43818720
+   ]
+  },
+  {
+   "paddle": "91279UU9",
+   "opus": "912797UU9",
+   "chosen": "912797UU9",
+   "values": [
+    0,
+    44433448
+   ]
+  },
+  {
+   "paddle": "91279RS8",
+   "opus": "912797RS8",
+   "chosen": "912797RS8",
+   "values": [
+    44608950,
+    44707950
+   ]
+  },
+  {
+   "paddle": "91279UF2",
+   "opus": "912797UF2",
+   "chosen": "912797UF2",
+   "values": [
+    0,
+    44676900
+   ]
+  },
+  {
+   "paddle": "91279VC8",
+   "opus": "912797VC8",
+   "chosen": "912797VC8",
+   "values": [
+    0,
+    44653500
+   ]
+  },
+  {
+   "paddle": "91279UG0",
+   "opus": "912797UG0",
+   "chosen": "912797UG0",
+   "values": [
+    0,
+    44644500
+   ]
+  },
+  {
+   "paddle": "91279VD6",
+   "opus": "912797VD6",
+   "chosen": "912797VD6",
+   "values": [
+    0,
+    43630840
+   ]
+  },
+  {
+   "paddle": "91279UH8",
+   "opus": "912797UH8",
+   "chosen": "912797UH8",
+   "values": [
+    0,
+    43618520
+   ]
+  }
+ ],
+ "check": [],
+ "readers": {
+  "paddle": "paddle/ripple_2026-06.md",
+  "opus": "claude_opus_2026-06.json",
+  "image": "docs/research/읽기엔진시험_2026-10-09/png/paddle/ripple_2026-06.png"
+ }
+}

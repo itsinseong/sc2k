@@ -1,0 +1,364 @@
+{
+ "month": "2026-07",
+ "status": "확정",
+ "as_of": "2026-07-31",
+ "circulation": [
+  1589084487,
+  1463694758
+ ],
+ "reserve_fair_value": [
+  1688514590,
+  1575160913
+ ],
+ "table": [
+  {
+   "label": "912797UN5",
+   "values": [
+    13600000,
+    0
+   ],
+   "labels": {
+    "paddle": "912797UN5",
+    "opus": "912797UN5"
+   },
+   "maturity": "2026-07-07",
+   "days_to_maturity": -24
+  },
+  {
+   "label": "912797RF6",
+   "values": [
+    531118755,
+    0
+   ],
+   "labels": {
+    "paddle": "912797RF6",
+    "opus": "912797RF6"
+   },
+   "maturity": "2026-07-09",
+   "days_to_maturity": -22
+  },
+  {
+   "label": "912797TN7",
+   "values": [
+    46958640,
+    0
+   ],
+   "labels": {
+    "paddle": "912797TN7",
+    "opus": "912797TN7"
+   },
+   "maturity": "2026-07-16",
+   "days_to_maturity": -15
+  },
+  {
+   "label": "912797TQ0",
+   "values": [
+    25043274,
+    0
+   ],
+   "labels": {
+    "paddle": "912797TQ0",
+    "opus": "912797TQ0"
+   },
+   "maturity": "2026-07-30",
+   "days_to_maturity": -1
+  },
+  {
+   "label": "912797US4",
+   "values": [
+    0,
+    99990000
+   ],
+   "labels": {
+    "paddle": "912797US4",
+    "opus": "912797US4"
+   },
+   "maturity": "2026-08-04",
+   "days_to_maturity": 4
+  },
+  {
+   "label": "912797RG4",
+   "values": [
+    43868880,
+    43986800
+   ],
+   "labels": {
+    "paddle": "912797RG4",
+    "opus": "912797RG4"
+   },
+   "maturity": "2026-08-06",
+   "days_to_maturity": 6
+  },
+  {
+   "label": "912797UT2",
+   "values": [
+    43846880,
+    123900800
+   ],
+   "labels": {
+    "paddle": "912797UT2",
+    "opus": "912797UT2"
+   },
+   "maturity": "2026-08-11",
+   "days_to_maturity": 11
+  },
+  {
+   "label": "912797UU9",
+   "values": [
+    44462024,
+    118072625
+   ],
+   "labels": {
+    "paddle": "912797UU9",
+    "opus": "912797UU9"
+   },
+   "maturity": "2026-08-18",
+   "days_to_maturity": 18
+  },
+  {
+   "label": "912797TX5",
+   "values": [
+    0,
+    21163748
+   ],
+   "labels": {
+    "paddle": "912797TX5",
+    "opus": "912797TX5"
+   },
+   "maturity": "2026-08-20",
+   "days_to_maturity": 20
+  },
+  {
+   "label": "912797UV7",
+   "values": [
+    28061256,
+    97983960
+   ],
+   "labels": {
+    "paddle": "912797UV7",
+    "opus": "912797UV7"
+   },
+   "maturity": "2026-08-25",
+   "days_to_maturity": 25
+  },
+  {
+   "label": "912797TY3",
+   "values": [
+    0,
+    59856000
+   ],
+   "labels": {
+    "paddle": "912797TY3",
+    "opus": "912797TY3"
+   },
+   "maturity": "2026-08-27",
+   "days_to_maturity": 27
+  },
+  {
+   "label": "912797UW5",
+   "values": [
+    0,
+    54440568
+   ],
+   "labels": {
+    "paddle": "912797UW5",
+    "opus": "912797UW5"
+   },
+   "maturity": "2026-09-01",
+   "days_to_maturity": 32
+  },
+  {
+   "label": "912797RS8",
+   "values": [
+    44737200,
+    44860050
+   ],
+   "labels": {
+    "paddle": "912797RS8",
+    "opus": "912797RS8"
+   },
+   "maturity": "2026-09-03",
+   "days_to_maturity": 34
+  },
+  {
+   "label": "912797UF2",
+   "values": [
+    44704350,
+    44827650
+   ],
+   "labels": {
+    "paddle": "912797UF2",
+    "opus": "912797UF2"
+   },
+   "maturity": "2026-09-10",
+   "days_to_maturity": 41
+  },
+  {
+   "label": "912797VC8",
+   "values": [
+    44685450,
+    44804700
+   ],
+   "labels": {
+    "paddle": "912797VC8",
+    "opus": "912797VC8"
+   },
+   "maturity": "2026-09-15",
+   "days_to_maturity": 46
+  },
+  {
+   "label": "912797UG0",
+   "values": [
+    44672850,
+    44794800
+   ],
+   "labels": {
+    "paddle": "912797UG0",
+    "opus": "912797UG0"
+   },
+   "maturity": "2026-09-17",
+   "days_to_maturity": 48
+  },
+  {
+   "label": "912797VD6",
+   "values": [
+    43659440,
+    84565650
+   ],
+   "labels": {
+    "paddle": "912797VD6",
+    "opus": "912797VD6"
+   },
+   "maturity": "2026-09-22",
+   "days_to_maturity": 53
+  },
+  {
+   "label": "912797UH8",
+   "values": [
+    43648440,
+    43765920
+   ],
+   "labels": {
+    "paddle": "912797UH8",
+    "opus": "912797UH8"
+   },
+   "maturity": "2026-09-24",
+   "days_to_maturity": 55
+  },
+  {
+   "label": "912797VE4",
+   "values": [
+    0,
+    10537990
+   ],
+   "labels": {
+    "paddle": "912797VE4",
+    "opus": "912797VE4"
+   },
+   "maturity": "2026-09-29",
+   "days_to_maturity": 60
+  },
+  {
+   "label": "912797SA6",
+   "values": [
+    43611040,
+    43734680
+   ],
+   "labels": {
+    "paddle": "912797SA6",
+    "opus": "912797SA6"
+   },
+   "maturity": "2026-10-01",
+   "days_to_maturity": 62
+  },
+  {
+   "label": "912797UK1",
+   "values": [
+    0,
+    45408705
+   ],
+   "labels": {
+    "paddle": "912797UK1",
+    "opus": "912797UK1"
+   },
+   "maturity": "2026-10-15",
+   "days_to_maturity": 76
+  },
+  {
+   "label": "912797UL9",
+   "values": [
+    0,
+    51176880
+   ],
+   "labels": {
+    "paddle": "912797UL9",
+    "opus": "912797UL9"
+   },
+   "maturity": "2026-10-22",
+   "days_to_maturity": 83
+  },
+  {
+   "label": "Subtotal",
+   "values": [
+    1086678479,
+    1077871526
+   ],
+   "labels": {
+    "paddle": "Subtotal",
+    "opus": "Subtotal"
+   }
+  },
+  {
+   "label": "Government money-market funds",
+   "values": [
+    349943549,
+    258192967
+   ],
+   "labels": {
+    "paddle": "Government money-market funds",
+    "opus": "Government money-market funds"
+   }
+  },
+  {
+   "label": "Cash deposits held at U.S. regulated financial institutions",
+   "values": [
+    251892562,
+    239096420
+   ],
+   "labels": {
+    "paddle": "Cash deposits held at U.S. regulated financial institutions",
+    "opus": "Cash deposits held at U.S. regulated financial institutions"
+   }
+  },
+  {
+   "label": "Total Market Value of the Reserve",
+   "values": [
+    1688514590,
+    1575160913
+   ],
+   "labels": {
+    "paddle": "Total Market Value of the Reserve",
+    "opus": "Total Market Value of the Reserve"
+   }
+  }
+ ],
+ "components": {
+  "cash": 239096420,
+  "repo": 0,
+  "government_mmf": 258192967,
+  "treasury": 1077871526,
+  "other": 0
+ },
+ "reconciliation": {
+  "components_sum": 1575160913,
+  "reserve_fair_value": 1575160913,
+  "ok": true
+ },
+ "resolved_by_checkdigit": [],
+ "check": [],
+ "readers": {
+  "paddle": "paddle/ripple_2026-07.md",
+  "opus": "claude_opus_2026-07.json",
+  "image": "docs/research/읽기엔진시험_2026-10-09/png/paddle/ripple_2026-07.png"
+ }
+}

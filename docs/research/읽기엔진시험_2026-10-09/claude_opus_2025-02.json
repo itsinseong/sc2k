@@ -1,0 +1,108 @@
+{
+ "duration_api_ms": 35489,
+ "stop_reason": "end_turn",
+ "session_id": "94d7ff48-082d-47dd-84fa-fe7366c1e932",
+ "total_cost_usd": 0.3993836,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 37458,
+  "cache_read_input_tokens": 102378,
+  "output_tokens": 3961,
+  "output_tokens_details": {
+   "thinking_tokens": 3298
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 37458,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1260,
+    "cache_read_input_tokens": 47048,
+    "cache_creation_input_tokens": 2909,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 2909
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 3961,
+   "cacheReadInputTokens": 102378,
+   "cacheCreationInputTokens": 37458,
+   "webSearchRequests": 0,
+   "costUSD": 0.3993836,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 3298,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [
+  {
+   "tool_name": "Bash",
+   "tool_use_id": "toolu_0187HbHJKs3ebNZijSdxuLBj",
+   "tool_input": {
+    "command": "mkdir -p /tmp/rlusd_crop_2025-02 && cd /tmp && python3 -I -c \"\nimport sys\nfrom PIL import Image\nim = Image.open(sys.argv[1])\nprint(im.size)\nfor name, box in [('top', (140, 1200, 1540, 1380)), ('bot', (140, 1520, 1560, 1970))]:\n    c = im.crop(box)\n    c = c.resize((c.width*2, c.height*2), Image.LANCZOS)\n    c.save(f'/tmp/rlusd_crop_2025-02/{name}.png')\n\" /Users/inseong/.cache/sc2k-ocr/ripple_2025-02_p3.png",
+    "description": "Crop and upscale the two table regions for closer reading"
+   }
+  }
+ ],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"circulation\": [109666737, 132416737], \"reserve_fair_value\": [116462630, 139533257], \"rows\": [{\"label\": \"912797MJ3\", \"values\": [44519657, 0]}, {\"label\": \"912797NK9\", \"values\": [0, 51650713]}, {\"label\": \"Total U.S. Treasury bills\", \"values\": [44519657, 51650713]}, {\"label\": \"Government money-market funds\", \"values\": [44502226, 45618992]}, {\"label\": \"Cash deposits held at U.S. regulated financial institutions\", \"values\": [27430630, 42206630]}, {\"label\": \"Accrued interest and dividend income\", \"values\": [10117, 56922]}, {\"label\": \"Total Market Value of the Reserves (Note 2)\", \"values\": [116462630, 139533257]}]}",
+ "ttft_ms": 2701,
+ "type": "result",
+ "duration_ms": 154758,
+ "uuid": "b48c3846-bbd5-47de-bf52-4b521ee67444",
+ "ttft_stream_ms": 1771,
+ "time_to_request_ms": 828,
+ "first_content_frame_ms": 1771,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

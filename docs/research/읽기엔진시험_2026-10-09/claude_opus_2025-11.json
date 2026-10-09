@@ -1,0 +1,108 @@
+{
+ "duration_api_ms": 98806,
+ "stop_reason": "end_turn",
+ "session_id": "2647a665-3924-448f-b1df-beabc1e9d4cd",
+ "total_cost_usd": 0.5773126,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 43410,
+  "cache_read_input_tokens": 101743,
+  "output_tokens": 10483,
+  "output_tokens_details": {
+   "thinking_tokens": 9576
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 43410,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1369,
+    "cache_read_input_tokens": 46760,
+    "cache_creation_input_tokens": 9149,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 9149
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 10483,
+   "cacheReadInputTokens": 101743,
+   "cacheCreationInputTokens": 43410,
+   "webSearchRequests": 0,
+   "costUSD": 0.5773126,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 9576,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [
+  {
+   "tool_name": "Bash",
+   "tool_use_id": "toolu_01KvXKPamNd9mXcYAKQ8WaYo",
+   "tool_input": {
+    "command": "mkdir -p /tmp/sc2k-crops && sips -c 130 1380 --cropOffset 480 140 /Users/inseong/.cache/sc2k-ocr/ripple_2025-11_p5.png --out /tmp/sc2k-crops/p5_top.png >/dev/null && sips -g pixelWidth -g pixelHeight /tmp/sc2k-crops/p5_top.png",
+    "description": "Crop the top summary table at full resolution"
+   }
+  }
+ ],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 4,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"circulation\": [1156148084, 1260898084], \"reserve_fair_value\": [1208443821, 1314484291], \"rows\": [{\"label\": \"912797RQ2\", \"values\": [174850000, 0]}, {\"label\": \"912797RR0\", \"values\": [202595910, 246922836]}, {\"label\": \"912797RW9\", \"values\": [24363156, 178646232]}, {\"label\": \"912797QY6\", \"values\": [26454420, 26471115]}, {\"label\": \"912797RX7\", \"values\": [27328099, 27345354]}, {\"label\": \"912797QZ3\", \"values\": [23940720, 23955600]}, {\"label\": \"912797RY5\", \"values\": [26120614, 46888140]}, {\"label\": \"912797NU7\", \"values\": [24916250, 24932500]}, {\"label\": \"912797RZ2\", \"values\": [26899019, 26915760]}, {\"label\": \"912797SE8\", \"values\": [18268159, 18280270]}, {\"label\": \"912797SF5\", \"values\": [18901010, 18914310]}, {\"label\": \"912797SG3\", \"values\": [20775227, 20789648]}, {\"label\": \"912797RK5\", \"values\": [15890880, 15900160]}, {\"label\": \"912797RL3\", \"values\": [14887500, 14896950]}, {\"label\": \"912797RT6\", \"values\": [22081982, 22098235]}, {\"label\": \"Total U.S. Treasury bills\", \"values\": [668272946, 712957110]}, {\"label\": \"Government money-market funds\", \"values\": [358916733, 382691606]}, {\"label\": \"Cash deposits held at U.S. regulated financial institutions\", \"values\": [261254142, 218835575]}, {\"label\": \"Adjustments due to timing*\", \"values\": [-80000000, 0]}, {\"label\": \"Total Market Value of the Reserve\", \"values\": [1208443821, 1314484291]}]}",
+ "ttft_ms": 7845,
+ "type": "result",
+ "duration_ms": 219838,
+ "uuid": "c6730217-c3a8-4e6c-8629-f29580b51cad",
+ "ttft_stream_ms": 6631,
+ "time_to_request_ms": 2564,
+ "first_content_frame_ms": 6631,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

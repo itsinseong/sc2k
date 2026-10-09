@@ -1,0 +1,231 @@
+원화 스테이블코인 누가 찍나…진짜 전쟁은 이제부터[코인, 법 안으로③]
+-->
+//  GTM Common Page View
+setGTMEvent('page_view');
+function setCookie(cName, cValue, cDay){
+var expire = new Date();
+expire.setDate(expire.getDate() + cDay);
+cookies = cName + '=' + escape(cValue) + '; path=/ '; // 한글 깨짐을 막기위해 escape(cValue)를 합니다.
+if(typeof cDay != 'undefined') cookies += ';expires=' + expire.toGMTString() + ';';
+document.cookie = cookies;
+}
+// 쿠키 가져오기
+function getCookie(cName) {
+cName = cName + '=';
+var cookieData = document.cookie;
+var start = cookieData.indexOf(cName);
+var cValue = '';
+if(start != -1){
+start += cName.length;
+var end = cookieData.indexOf(';', start);
+if(end == -1)end = cookieData.length;
+cValue = cookieData.substring(start, end);
+}
+return unescape(cValue);
+}
+function setUrl(url){
+setCookie('page_num', 0, 1);
+setCookie('cpageindex', 1, 1);
+setCookie('cpageindex2', 1, 1);
+setCookie('cScroll', 0, 1);
+setCookie('searchType', "article", 1);
+if(url!=""){
+location.href=url;
+}
+}
+function appSetting(){
+location.href="setting://";
+}
+function outLink(link){
+//location.href= "http://outlink*"+encodeURIComponent(link);
+//alert( "http://outlink*"+link);
+location.href="http://outlink*"+encodeURIComponent(link);
+}
+function searchMove(){
+if(frm.kwd.value !=""){
+frm.submit();
+}
+}
+var is_app_pop		=	'';
+function mOutLink(link){
+if(is_app_pop == '1'){
+var is_qpos		=	link.indexOf('?');
+if(is_qpos >= 0){
+location.href=link+"&mtNewPop";
+}else{
+location.href=link+"?mtNewPop";
+}
+}else{
+location.href=link;
+}
+}
+function newOutLink(link){
+if(is_app_pop == '1'){
+location.href="http://outlink*"+link;
+}else{
+location.href=link;
+}
+}
+-->
+전체메뉴
+메인
+랭킹
+섹션
+인기
+-->
+포토
+연예
+-->
+4){
+sizeNum = 4;
+}
+if(sizeNum==0){
+$(".cont_" + id).attr("class","con_area mgt10 sml2 cont_"+id+"");
+}else if(sizeNum==1){
+$(".cont_" + id).attr("class","con_area mgt10 sml1 cont_"+id+"");
+}else if(sizeNum==2){
+$(".cont_" + id).attr("class","con_area mgt10 cont_"+id+"");
+}else if(sizeNum==3){
+$(".cont_" + id).attr("class","con_area mgt10 lag1 cont_"+id+"");
+}else if(sizeNum==4){
+$(".cont_" + id).attr("class","con_area mgt10 lag2 cont_"+id+"");
+}
+$(".txt_size_"+id+" ul li").each(function( index ){
+if(index==parseInt(sizeNum)){
+$(this).addClass("on");
+}else{
+$(this).removeClass("on");
+}
+//console.log(index+":"+pageindex);
+});
+$('.txt_size_'+id+'').fadeIn(500);
+$('.txt_size_'+id+'').fadeOut(500);
+}
+function checkMobile(){
+var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+if ( varUA.indexOf('android') > -1) {
+//안드로이드
+return "android";
+} else if ( varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 ) {
+//IOS
+return "ios";
+} else {
+//아이폰, 안드로이드 외
+return "other";
+}
+}
+function shareBtn(gisa_id){
+let ua_ar       =   checkMobile();
+let mobile      =   (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));
+let share_go    =   false;
+if(ua_ar == 'ios' && mobile){
+share_go        =   true;
+}
+if (typeof navigator.share !== "undefined" && share_go) {
+let gisa_title          =   $('#arti_title_' + gisa_id).text();
+window.navigator.share({
+title: gisa_title, // 공유될 제목
+text: '', // 공유될 설명
+url: 'https://mobile.newsis.com/view/' + gisa_id, // 공유될 URL
+});
+}else{
+layerPop_on('shareBox');
+}
+}
+//-->
+원화 스테이블코인 누가 찍나…진짜 전쟁은 이제부터[코인, 법 안으로③]
+기사등록
+2026/06/12 07:00:00
+최종수정
+2026/06/12 07:08:24
+구글에서 선호하는 매체로 추가
+가
+가
+은행만 찍을까, 민간도 허용할까…준비자산·달러 스테이블코인 규율도 핵심 쟁점
+[그래픽=뉴시스] 재판매 및 DB금지.
+[email protected]
+[서울=뉴시스]송혜리 기자 = 디지털자산기본법 논의 시작 이후 시장 관심은 원화 스테이블코인으로 집중됐다. 비트코인 현물 상장지수펀드(ETF)나 거래소 규율도 중요하지만 업계가 가장 주목하는 대목은 결국 '누가 원화 스테이블코인을 발행할 것인가'가 됐다.
+원화 스테이블코인은 단순한 가상자산이 아닌, 원화 가치에 연동돼 결제와 송금, 거래에 활용되는 디지털 화폐이기 때문이다. 제도화가 현실화될 경우 은행은 물론 핀테크와 가상자산 업계까지 새로운 결제 시장의 주도권을 놓고 경쟁에 뛰어들 수밖에 없다.
+시장 규모도 무시할 수 없는 수준으로 커졌다. 글로벌 디파이 데이터 플랫폼 디파이라마에 따르면 올해 4월 기준 글로벌 스테이블코인 시가총액은 약 3200억 달러(약 490조원)규모에 달한다. 지난해 초 2100억 달러 수준이었던 것을 감안하면 1년여 만에 50% 이상 성장한 셈이다.
+누가 발행할 것인가 못지않게 중요한 것은 '준비자산'
+스테이블코인을 둘러싼 디지털자산기본법 논의에서 뜨거운 쟁점은 발행 인가와 발행자 자격이다.
+스테이블코인은 사실상 민간이 만드는 디지털 화폐다. 아무나 발행할 수 있게 풀어놓으면 준비금이 부족하거나 부실하게 운영하는 사업자가 생겨 결국 이용자 피해로 이어질 가능성이 크다.
+이 때문에 미국과 유럽은 모두 스테이블코인 발행 자격을 제한하는 방식을 채택했다. 유럽연합(EU)은 미카(MiCA)를 통해 스테이블코인 발행자에게 역내 라이선스 취득을 의무화하고 은행과 전자화폐기관(EMI)을 중심으로 유리한 규제를 적용했다. 미국 역시 지니어스(GENIUS)법을 통해 연방 또는 주정부의 인가를 받은 기관에 한해 발행을 허용하는 제도를 마련했으며, 지난해 법안 통과 이후 현재 단계별 발효·시행 과정을 밟고 있다.
+국내에서도 일정 수준 이상의 자기자본과 내부통제 체계를 갖춘 사업자에게만 발행 자격을 부여해야 한다는 데는 이견이 크지 않다. 다만 발행 주체를 누구로 할 것인지를 놓고는 의견이 엇갈린다. 금융권과 한국은행은 통화정책과 금융안정 측면에서 은행 중심 모델에 무게를 두고 있는 반면 핀테크와 가상자산 업계는 은행에만 발행권을 부여할 경우 혁신과 경쟁이 제한될 수 있다고 주장하고 있다.
+그러나 발행 자격 못지않게 중요한 것은 준비금 관리다.
+원화 스테이블코인은 이름 그대로 원화 가치에 연동되는 디지털 자산으로, 이용자가 보유한 스테이블코인을 언제든 1원에 현금으로 바꿀 수 있어야 비로소 신뢰가 유지된다. 일례로 한 사업자가 1조원 규모의 원화 스테이블코인을 발행했다면 그에 상응하는 1조원 규모의 준비금을 보유하고 있어야 한다는 얘기다.
+이 때문에 미국과 유럽은 현금과 단기 국채 등 안전자산 중심의 준비금 보유를 의무화하고 있으며 정기 감사와 감독당국 보고 체계도 운영하고 있다. 국내 역시 원화 스테이블코인의 준비금을 현금과 국채, 한국은행 예치금 등 고유동성 자산으로 제한하는 방안이 유력하게 거론된다.
+준비금을 누가, 어떻게 보관할 것인지도 중요한 문제다. 발행사가 준비금을 직접 관리하면 이용자 돈과 회사 돈이 뒤섞일 위험이 생긴다. 이 때문에 일본은 이용자 자산을 신탁 방식으로 관리하도록 하고 있으며 유럽 역시 준비금을 별도 계좌에 보관하도록 규정하고 있다.
+발행사 망해도 내 돈 돌려받아야…'달러 스테이블코인' 규율 논의도 필요해
+이용자 권리 보호 장치 역시 핵심이다. 스테이블코인은 "언제든 1코인을 1원으로 바꿔주겠다"는 약속 위에서 작동한다. 이 약속이 지켜지지 않는 순간 스테이블코인은 이름값을 잃는다.
+이 때문에 미국과 유럽은 이용자가 언제든 액면가로 돌려받을 수 있는 상환 청구권을 법으로 명시하고 있다. 발행사가 파산하더라도 준비금은 일반 채권자가 아닌 이용자에게 먼저 돌아가도록 설계했다. 쉽게 말해, 발행사가 망해도 내 돈은 먼저 돌려받을 수 있도록 법으로 못 박은 셈이다.
+투명성 확보를 위한 공시 체계도 중요하다. 이용자는 자신이 보유한 스테이블코인이 충분한 준비금으로 뒷받침되고 있는지 확인할 수 있어야 한다. 이에 따라 미국과 유럽은 준비금 규모와 자산 구성, 외부 감사 결과 등을 정기적으로 공개하도록 요구하고 있다.
+또 다른 쟁점은 달러 스테이블코인 문제다.
+현재 국내 투자자 대부분이 실제로 쓰는 스테이블코인은 원화가 아닌 달러 기반의 USDT·USDC다. 타이거리서치에 따르면 국내 5대 가상자산 거래소의 스테이블코인 거래 규모는 지난해 57조원에 달한 것으로 집계됐다. 이에 따라 원화 스테이블코인만 규제하고 달러 스테이블코인은 손대지 않으면 규제 구멍이 생길 수밖에 없다.
+마지막으로 감독 체계를 누가 맡느냐도 남은 과제다. 스테이블코인은 단순한 투자 상품을 넘어 일상적인 결제송금은 물론 통화 시스템 자체와도 맞닿아 있다. 그만큼 감독 권한의 범위와 주체를 어떻게 설계하느냐가 법의 실효성을 좌우할 핵심 변수가 될 것으로 보인다.
+◎공감언론 뉴시스
+[email protected]
+댓글
+-->
+공유하기
+-->
+url복사
+글자크기
+아주작게
+작게
+보통
+크게
+아주크게
+원화 스테이블코인 누가 찍나…진짜 전쟁은 이제부터[코인, 법 안으로③]
+기사등록 2026/06/12 07:00:00
+최초수정 2026/06/12 07:08:24
+닫기
+이시간
+핫
+뉴스
+주병진, 200평 대저택 버린 이유…"집사람 못 구해"
+성현주 "5살에 사고 당한 아들, 3년간 의식 못찾고 떠나"
+도경완, 120억 펜트하우스 사는 줄 알았는데…
+이효리가 밝힌 이상순 카페 비하인드 "줄은 수백미터인데"
+지연수 "근육 다 찢어져"…곰탕집 퇴사
+많이 본 기사
+주병진, 200평 대저택 떠났다 "밥 먹을 때 외로워"
+성현주, 먼저 떠난 8살 아들…"1000일 동안 의식 없었다"
+지연수, 팔 부상에 곰탕집 퇴사…"근육이 다 찢어져"
+전원주, 유튜브 쉬더니 유흥주점서 포착…남성과 춤추며 미소
+회사소개
+제휴/컨텐츠 판매
+약관·정책
+고충처리
+PC화면
+제보하기
+앱 다운로드
+맨위로↑
+COPYRIGHTⓒ
+NEWSIS
+ALL RIGHTS RESERVED.
+닫힘
+-->
+실시간 뉴스
+섹션별 뉴스
+정치
+국제
+경제
+금융
+산업
+IT·바이오
+사회
+스포츠
+연예
+문화
+뉴시스Pic
+포토
+오늘의 속보
+오늘의 주요일정
+많이 본 뉴스
+수도권 뉴스
+지방뉴스
+그래픽 뉴스
+제휴 콘텐츠
+제보하기
+PC버전 바로가기

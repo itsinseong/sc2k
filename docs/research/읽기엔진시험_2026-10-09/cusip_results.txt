@@ -1,0 +1,84 @@
+Ripple RLUSD monthly reserve reports - T-bill CUSIP check of PaddleOCR-VL output
+generated 2026-10-09 20:23; script cusip_check.py; OCR values reported as read (nothing corrected)
+
+rows     CUSIP rows between the "CUSIP | Maturity Date" header row and the subtotal row
+nz       rows whose month-end value is not 0 (the T-bills actually held at month-end)
+chk      CUSIP check digit passes / rows (a code that is not 9 chars counts as a failure)
+mat      official FiscalData maturity == maturity read from the OCR row / rows (codes that are not 9 chars cannot be looked up = not matched)
+set      Y if the CUSIPs with non-zero month-end equal the reference treasury holdings of that month
+amt      month-end amount equal to reference, per CUSIP / size of the union of both CUSIP sets
+bymat    same comparison keyed by maturity date instead of CUSIP (diagnostic only)
+sum_*    sum of the CUSIP-row values == subtotal row (month-end / mid-month)
+sub=ref  OCR subtotal month-end == reference components.treasury
+maxd     max days from as_of to maturity over non-zero rows: official maturities / OCR maturities / reference value; NA = official maturities unavailable
+value rule: "$" and "<fcel>" stripped, "-" = 0, empty cells dropped; last value cell = month-end, first = mid-month
+
+month   rows nz   chk       mat       set   amt       bymat     sum_end  sum_mid  sub=ref  maxd(off/ocr/ref)
+2024-12 2    1    2/2       2/2       Y     1/1       1/1       OK       OK       OK       7/7/7 OK
+2025-01 2    1    2/2       2/2       Y     1/1       1/1       OK       OK       OK       4/4/4 OK
+2025-02 2    1    2/2       2/2       Y     1/1       1/1       OK       OK       OK       4/4/4 OK
+2025-03 2    1    2/2       2/2       Y     1/1       1/1       OK       OK       OK       1/1/1 OK
+2025-04 2    1    2/2       2/2       N     0/2       0/2       OK       OK       OK       -20/-20/1 DIFF
+2025-05 3    1    3/3       3/3       Y     1/1       1/1       OK       OK       OK       4/4/4 OK
+2025-06 1    0    1/1       1/1       Y     0/0       0/0       OK       OK       OK       None/None/None OK
+2025-07 2    1    2/2       2/2       Y     1/1       1/1       OK       OK       OK       5/5/5 OK
+2025-08 6    4    6/6       6/6       Y     4/4       4/4       OK       OK       OK       25/25/25 OK
+2025-09 9    6    9/9       9/9       Y     6/6       6/6       OK       OK       OK       56/56/56 OK
+2025-10 16   13   16/16     16/16     Y     13/13     13/13     OK       OK       OK       90/90/90 OK
+2025-11 15   14   15/15     15/15     Y     14/14     14/14     OK       OK       OK       76/76/76 OK
+2025-12 17   13   17/17     17/17     Y     13/13     13/13     OK       OK       OK       85/85/85 OK
+2026-01 18   14   18/18     18/18     Y     14/14     14/14     OK       OK       OK       55/55/55 OK
+2026-02 17   15   17/17     17/17     Y     15/15     15/15     OK       OK       OK       62/62/62 OK
+2026-03 20   15   20/20     20/20     Y     15/15     15/15     OK       OK       OK       86/86/86 OK
+2026-04 18   16   18/18     18/18     Y     16/16     16/16     OK       OK       OK       77/77/77 OK
+2026-05 16   13   16/16     16/16     Y     13/13     13/13     OK       OK       OK       69/69/69 OK
+2026-06 21   14   0/21      0/21      N     0/28      14/14     OK       OK       OK       None/86/86 NA
+2026-07 22   18   22/22     22/22     Y     18/18     18/18     OK       OK       OK       83/83/83 OK
+2026-08 26   22   26/26     26/26     Y     22/22     22/22     OK       OK       OK       88/88/88 OK
+---------------------------------------------------------------------------------------------------------------
+TOTAL   237  184  216/237   216/237   19/21 169/199   183/185   21/21    21/21    21/21    OK 19/21, NA 1, DIFF 1
+maturity column present in 21/21 months; months without any CUSIP row: none; months with no non-zero month-end CUSIP row: ['2025-06']
+official-maturity status over all rows: match 216, mismatch 0, notfound 0, multi 0, noocr 0, skip 21, apierr 0
+rows with a 9-char code: 216; of these check digit ok 216, official maturity == OCR maturity 216
+
+MISMATCHES (25 lines; one line per month+CUSIP, all problems of that row on the line; "-" = month-level)
+2025-04  912797NB9   AMT: OCR month-end 140,533,134 under a CUSIP that is not in the reference holdings; STATE: month-end value 140,533,134 but maturity 2025-04-10 is on/before as_of 2025-04-30
+2025-04  912797ND5   AMT: OCR month-end missing vs ref 140,533,134
+2025-04  -           MAXD: official-maturity based -20 (OCR-date based -20) vs ref treasury_max_maturity_days 1
+2026-06  91279TZ0    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797TZ0 (official maturity = OCR maturity) minus its char #6 (7)
+2026-06  91279QX8    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797QX8 (official maturity = OCR maturity) minus its char #6 (7)
+2026-06  91279UA3    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797UA3 (official maturity = OCR maturity) minus its char #6 (7)
+2026-06  91279TD9    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797TD9 (official maturity = OCR maturity) minus its char #6 (7)
+2026-06  91279UB1    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797UB1 (official maturity = OCR maturity) minus its char #6 (7)
+2026-06  91279TE7    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797TE7 (official maturity = OCR maturity) minus its char #6 (7)
+2026-06  91279UC9    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797UC9 (official maturity = OCR maturity) minus its char #6 (7)
+2026-06  91279TF4    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797TF4 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 365,963,399 under a CUSIP that is not in the reference holdings; ref CUSIP 912797TF4 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-07-02'])
+2026-06  91279UN5    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797UN5 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 13,591,840 under a CUSIP that is not in the reference holdings; ref CUSIP 912797UN5 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-07-07'])
+2026-06  91279RF6    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797RF6 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 204,259,416 under a CUSIP that is not in the reference holdings; ref CUSIP 912797RF6 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-07-09'])
+2026-06  91279TN7    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797TN7 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 46,929,500 under a CUSIP that is not in the reference holdings; ref CUSIP 912797TN7 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-07-16'])
+2026-06  91279TQ0    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797TQ0 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 25,027,461 under a CUSIP that is not in the reference holdings; ref CUSIP 912797TQ0 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-07-30'])
+2026-06  91279RG4    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797RG4 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 43,841,160 under a CUSIP that is not in the reference holdings; ref CUSIP 912797RG4 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-08-06'])
+2026-06  91279UT2    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797UT2 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 43,818,720 under a CUSIP that is not in the reference holdings; ref CUSIP 912797UT2 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-08-11'])
+2026-06  91279UU9    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797UU9 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 44,433,448 under a CUSIP that is not in the reference holdings; ref CUSIP 912797UU9 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-08-18'])
+2026-06  91279RS8    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797RS8 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 44,707,950 under a CUSIP that is not in the reference holdings; ref CUSIP 912797RS8 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-09-03'])
+2026-06  91279UF2    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797UF2 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 44,676,900 under a CUSIP that is not in the reference holdings; ref CUSIP 912797UF2 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-09-10'])
+2026-06  91279VC8    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797VC8 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 44,653,500 under a CUSIP that is not in the reference holdings; ref CUSIP 912797VC8 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-09-15'])
+2026-06  91279UG0    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797UG0 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 44,644,500 under a CUSIP that is not in the reference holdings; ref CUSIP 912797UG0 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-09-17'])
+2026-06  91279VD6    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797VD6 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 43,630,840 under a CUSIP that is not in the reference holdings; ref CUSIP 912797VD6 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-09-22'])
+2026-06  91279UH8    CHK: length 8 (need 9), check digit not computable; MAT: not checkable, code is not a 9-char A-Z/0-9 string (not looked up); DIAG (not counted): OCR code = official CUSIP 912797UH8 (official maturity = OCR maturity) minus its char #6 (7); AMT: OCR month-end 43,618,520 under a CUSIP that is not in the reference holdings; ref CUSIP 912797UH8 has the same maturity and the same amount (ref check digit ok, official maturity ['2026-09-24'])
+2026-06  -           MAXD: official-maturity based None (OCR-date based 86) vs ref treasury_max_maturity_days 86; official maturities unavailable for some non-zero rows
+
+LAYOUT NOTES (3 lines; rows whose value-cell count is not 2, not mismatches by themselves)
+2025-03  912797NR4   3 value cells [54217993, 0, 0] (first=mid-month, last=month-end); raw cells ['912797NR4', 'March 18, 2025', '$ 54,217,993', '$ -', '-']
+2025-04  912797NB9   3 value cells [122970480, 0, 140533134] (first=mid-month, last=month-end); raw cells ['912797NB9', 'April 10, 2025', '$ 122,970,480', '$ -', '140,533,134']
+2025-04  912797ND5   1 value cells [0] (first=mid-month, last=month-end); raw cells ['912797ND5', 'May 1, 2025', '-', '', '']
+
+NOT CHECKED / LIMITS
+- Only the OCR text is compared automatically; the script does not re-read the page images (two pages were looked at by eye, see below), so a misread that is consistent with the check digit, the official maturity and the sums would not show up.
+- Mid-month values cannot be compared with the reference (it holds month-end only); only the sum-to-subtotal check covers them.
+- Months with 8-char CUSIPs (check digit not computable, no FiscalData lookup, official-maturity max-days not computable): 2026-06 (21 rows)
+- The check digit alone cannot tell some confusions apart (e.g. T vs 1 at an even 0-based position gives the same digit sum); the FiscalData lookup of the 9-char code plus the maturity comparison is what covers that.
+
+MANUAL PAGE-IMAGE CHECKS (static text, looked at paddle/ripple_YYYY-MM.png by eye; not computed by this script)
+- 2025-04: the page prints 912797NB9 (April 10, 2025) 122,970,480 / "-" and 912797ND5 (May 1, 2025) "-" / 140,533,134. The OCR table put 140,533,134 into a third value cell of the NB9 row and left the ND5 month-end cell empty.
+- 2026-06: the page prints 9-char codes (912797TZ0, 912797QX8, ... 912797UH8, 21 rows). The OCR dropped the 6th character "7" on every row, so the 8-char codes are an OCR dropout, not a typo in the report; month-end amounts and maturity dates agree with the reference when matched by maturity date (bymat 14/14).

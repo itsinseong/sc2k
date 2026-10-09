@@ -6,3 +6,16 @@ node_modules/
 .playwright-mcp/
 .DS_Store
 data/samples/BlackRock_*
+
+# 키 파일(TypeSafe, ECOS 등)은 커밋하지 않는다
+.env*.local
+
+# 파이썬 캐시
+__pycache__/
+*.pyc
+
+# 읽기 시험 그림은 커밋하지 않는다
+docs/research/읽기엔진시험_2026-10-09/png/
+# 연구 원본: PDF는 출처 주소로 다시 받고, DefiLlama 원응답은 압축본(.json.gz)만 둔다
+docs/research/Claude웹_1차/_원문/*.pdf
+docs/research/Claude웹_1차/data/raw/*.json

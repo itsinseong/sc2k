@@ -1,0 +1,116 @@
+{
+ "duration_api_ms": 39165,
+ "stop_reason": "end_turn",
+ "session_id": "6cc73ed2-09a3-404b-a64b-09be1c427095",
+ "total_cost_usd": 0.41999759999999997,
+ "usage": {
+  "input_tokens": 8,
+  "cache_creation_input_tokens": 38498,
+  "cache_read_input_tokens": 153008,
+  "output_tokens": 4069,
+  "output_tokens_details": {
+   "thinking_tokens": 3112
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 38498,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 818,
+    "cache_read_input_tokens": 49215,
+    "cache_creation_input_tokens": 1782,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1782
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 8,
+   "outputTokens": 4069,
+   "cacheReadInputTokens": 153008,
+   "cacheCreationInputTokens": 38498,
+   "webSearchRequests": 0,
+   "costUSD": 0.41999759999999997,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 3112,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [
+  {
+   "tool_name": "Bash",
+   "tool_use_id": "toolu_01AAaEwg9p4v5ARBzWnpSQ2P",
+   "tool_input": {
+    "command": "mkdir -p /tmp/ocr_crops && cd /tmp/ocr_crops && python3 -I -c \"\nfrom PIL import Image\nim=Image.open('/Users/inseong/.cache/sc2k-ocr/ripple_2024-12_p3.png')\nprint(im.size)\nim.crop((140,1160,1560,1330)).resize((2840,340)).save('/tmp/ocr_crops/top.png')\nim.crop((140,1460,1560,1900)).resize((2840,880)).save('/tmp/ocr_crops/table.png')\n\" 2>&1 || (sips -c 170 1420 --cropOffset 1160 140 /Users/inseong/.cache/sc2k-ocr/ripple_2024-12_p3.png --out /tmp/ocr_crops/top.png && sips -c 440 1420 --cropOffset 1460 140 /Users/inseong/.cache/sc2k-ocr/ripple_2024-12_p3.png --out /tmp/ocr_crops/table.png)",
+    "description": "Crop and enlarge the table regions for closer reading"
+   }
+  },
+  {
+   "tool_name": "Bash",
+   "tool_use_id": "toolu_018e21LUVFwswYPnVq5wE7uG",
+   "tool_input": {
+    "command": "python3 -I -c \"from PIL import Image; im=Image.open('/Users/inseong/.cache/sc2k-ocr/ripple_2024-12_p3.png'); im.crop((140,1200,1560,1330)).resize((2840,260)).save('/tmp/p3_top.png')\"",
+    "description": "Crop and enlarge the supply/reserve summary lines"
+   }
+  }
+ ],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"circulation\": [72300301, 77208201], \"reserve_fair_value\": [78212154, 83214671], \"rows\": [{\"label\": \"912797MQ7\", \"values\": [27561764, 0]}, {\"label\": \"912797MW4\", \"values\": [0, 30095603]}, {\"label\": \"Total U.S. Treasury bills\", \"values\": [27561764, 30095603]}, {\"label\": \"Government money-market funds\", \"values\": [27544644, 30119460]}, {\"label\": \"Cash deposits held at U.S. regulated financial institutions\", \"values\": [23051803, 22978696]}, {\"label\": \"Accrued interest\", \"values\": [53943, 20912]}, {\"label\": \"Total Market Value of the Reserves (Note 2)\", \"values\": [78212154, 83214671]}]}",
+ "ttft_ms": 3088,
+ "type": "result",
+ "duration_ms": 273473,
+ "uuid": "b9f845e8-2422-48c6-b13d-ebc70e75bedb",
+ "ttft_stream_ms": 1943,
+ "time_to_request_ms": 829,
+ "first_content_frame_ms": 1943,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

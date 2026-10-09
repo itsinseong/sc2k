@@ -1,0 +1,116 @@
+{
+ "month": "2025-03",
+ "status": "확인 필요",
+ "as_of": "2025-03-31",
+ "circulation": [
+  134992872,
+  193692686
+ ],
+ "reserve_fair_value": [
+  142498985,
+  202959289
+ ],
+ "table": [
+  {
+   "label": "912797NT0",
+   "values": [
+    0,
+    70091588
+   ],
+   "labels": {
+    "paddle": "912797NT0",
+    "opus": "912797NT0"
+   },
+   "maturity": "2025-04-01",
+   "days_to_maturity": 1
+  },
+  {
+   "label": "Total U.S. Treasury bills",
+   "values": [
+    54217993,
+    70091588
+   ],
+   "labels": {
+    "paddle": "Total U.S. Treasury bills",
+    "opus": "Total U.S. Treasury bills"
+   }
+  },
+  {
+   "label": "Government money-market funds",
+   "values": [
+    54195420,
+    82089151
+   ],
+   "labels": {
+    "paddle": "Government money-market funds",
+    "opus": "Government money-market funds"
+   }
+  },
+  {
+   "label": "Cash deposits held at U.S. regulated financial institutions",
+   "values": [
+    34085572,
+    100778550
+   ],
+   "labels": {
+    "paddle": "Cash deposits held at U.S. regulated financial institutions",
+    "opus": "Cash deposits held at U.S. regulated financial institutions"
+   }
+  },
+  {
+   "label": "Timing differences (Note 3)",
+   "values": [
+    0,
+    -50000000
+   ],
+   "labels": {
+    "paddle": "Timing differences (Note 3)",
+    "opus": "Timing differences (Note 3)"
+   }
+  },
+  {
+   "label": "Total Market Value of the Reserves (Note 2)",
+   "values": [
+    142498985,
+    202959289
+   ],
+   "labels": {
+    "paddle": "Total Market Value of the Reserves (Note 2)",
+    "opus": "Total Market Value of the Reserves (Note 2)"
+   }
+  }
+ ],
+ "components": {
+  "cash": 100778550,
+  "repo": 0,
+  "government_mmf": 82089151,
+  "treasury": 70091588,
+  "other": -50000000
+ },
+ "reconciliation": {
+  "components_sum": 202959289,
+  "reserve_fair_value": 202959289,
+  "ok": true
+ },
+ "resolved_by_checkdigit": [],
+ "check": [
+  {
+   "name": "912797NR4",
+   "cell": "값 칸 수",
+   "paddle": [
+    54217993,
+    0,
+    0
+   ],
+   "opus": [
+    54217993,
+    0
+   ]
+  }
+ ],
+ "readers": {
+  "paddle": "paddle/ripple_2025-03.md",
+  "opus": "claude_opus_2025-03.json",
+  "image": "docs/research/읽기엔진시험_2026-10-09/png/paddle/ripple_2025-03.png"
+ }
+}

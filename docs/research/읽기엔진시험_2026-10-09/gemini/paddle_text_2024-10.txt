@@ -1,0 +1,21 @@
+Gemini dollar®
+GUSD RESERVES REPORT
+In compliance with item 3(a) of the DFS Letter, we report the following end of day amounts for the following dates:
+October 8, 2024   October 31, 2024
+GUSD issued and in circulation1   73,595,613.09   67,417,231.65
+Market value of the Reserve2:
+Cash deposits held at U.S. regulated financial institutions   74,679,214.36   68,629,770.82
+Money-market funds   -   -
+Net cash receivable (payable) due to timing and settlement differences3   (1,083,601.27)   (1,212,539.17)
+Total Reserve   73,595,613.09   67,417,231.65
+For each GUSD issued, the Company has received one corresponding U.S. dollar from its customers, which are held across (i) one or more omnibus bank accounts at depository institutions insured by the Federal Deposit Insurance Corporation, (ii) one or more money-market funds, and/or (iii) U.S. Treasury bills with maturities of three months or less. The accounts are established and segregated specifically for the U.S. dollars that correspond to the Gemini dollars issued and in circulation.
+-DocuSigned by:
+Marshall Beard
+5472046DDC0B469...
+Marshall Beard
+CEO/President
+Gemini Trust Company, LLC
+November 25, 2024
+1 Per the Etherscan.io website located at: https://etherscan.io.
+2 The Gemini dollar reserves are held and maintained as cash deposits at State Street Bank and Trust Company and BNY Mellon N.A.; and are invested in U.S. Treasury bills and money market funds held at BNY Mellon N.A., that are in turn invested only in government securities, repurchase agreements collateralized solely by government securities and/or cash, and cash. Market values are based on the fair value of assets and on a trade-date basis.
+3 Balances have been adjusted for the balance of cash receivable and payable due to timing and settlement differences, including deposits/withdrawals occurring after the bank statement cut-off time, money-market funds purchased/sold prior to the indicated dates, and U.S. Treasury securities purchased/sold before end of day and settled after those dates as well as amounts held in excess of the nominal amounts of GUSD issued and in circulation.

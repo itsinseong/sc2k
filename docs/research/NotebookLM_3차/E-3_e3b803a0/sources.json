@@ -1,0 +1,256 @@
+{
+ "notebook": "https://notebook.google.com/notebook/e3b803a0-91ed-4198-a98e-64c273448c32?authuser=1",
+ "notebook_title": "바이낸스 USD(BUSD) 발행 중단에 관한 뉴욕주 금융서비스국 소비자 공지",
+ "source_titles": [
+  "가상자산 분야 이슈리포트 - 국내 스테이블코인 관련 법률안의 주요 내용 및 시사점",
+  "가치안정형 디지털자산 발행업 등에 관한 법률안(김현정의원 등 12인) - 열려라국회",
+  "김은혜 의원, '스테이블 코인' 제도화 법 국내 첫 발의…ICO 길 열리나 - Daum",
+  "김은혜, 한국 최초 원화 스테이블 코인 제정안 대표발의 - 한국경제",
+  "원화 스테이블코인의 외환부문 영향과 정합성 제고 방향*",
+  "Are Stablecoins the Money Market Mutual Funds of the Future? - The American Finance Association",
+  "Circle Can Delay European holders USDC Redemptions Under Stress Rules | Altcoin Buzz",
+  "Circle Mint User Agreement",
+  "Circle Mint: Access & distribute USDC at scale",
+  "Circle Pricing 2026: Plans, Costs & Hidden Fees - CheckThat.ai",
+  "Circle raises fees despite rising stablecoin market competition - The Business Times",
+  "Circle_USDC_SVB_공지_2023-03_보관본.txt",
+  "Deep Research 보고서: 원화 스테이블코인 준비금 공시 기준 제언 및 주요 발행사 상환 약관 비교 연구",
+  "FAQs - Tether",
+  "Fee Schedule - Tether Gold",
+  "Meet Ripple Mint",
+  "Mint and Redeem Paxos-Issued Stablecoins",
+  "NYDFS_Paxos_BUSD_소비자공지_보관본.txt",
+  "PAX Gold Terms and Conditions - Paxos",
+  "Paxos_BUSD_발행중단_공지_2023-02-13.txt",
+  "PayPal USD (PYUSD) - Paxos",
+  "RLUSD Stablecoin User Terms - Ripple",
+  "RLUSD: The USD Stablecoin for Institutions - Ripple",
+  "Terms and Conditions - USDG EU Whitepaper - Paxos",
+  "Transparency - Ripple",
+  "UNITED STATES SECURITIES AND EXCHANGE COMMISSION",
+  "US Dollar-Backed Stablecoin Terms and Conditions - Paxos",
+  "USDC Terms - Circle",
+  "USDT: The Complete Guide to Tether Stablecoin & Its Uses - From changehero.io",
+  "What Is a Regulated Stablecoin? Key Requirements - Paxos",
+  "What Is Tether (USDT) and How Does It Work? - CoinGecko",
+  "What Is the GENIUS Act? Stablecoin Rules Explained - Paxos",
+  "What Is USDT (Tether)? Stablecoin Explained - Trustee Plus",
+  "What is USDT? Tether Explained Simply (2026) | Swaps.app"
+ ],
+ "report_links": [
+  {
+   "text": "원화 스테이블코인의 외환부문 영향과 정합성 제고 방향*, https://www.kcmi.re.kr/common/downloadw?fid=28311&fgu=002001016&fty=004003",
+   "url": "https://www.kcmi.re.kr/common/downloadw?fid=28311&fgu=002001016&fty=004003"
+  },
+  {
+   "text": "김은혜 의원, '스테이블 코인' 제도화 법 국내 첫 발의…ICO 길 열리나 - Daum, https://v.daum.net/v/uqXevuJqvr?f=p",
+   "url": "https://v.daum.net/v/uqXevuJqvr?f=p"
+  },
+  {
+   "text": "Circle Can Delay European holders USDC Redemptions Under Stress Rules | Altcoin Buzz, https://www.altcoinbuzz.io/circle-can-delay-european-holders-usdc-redemptions-under-stress-rules",
+   "url": "https://www.altcoinbuzz.io/circle-can-delay-european-holders-usdc-redemptions-under-stress-rules"
+  },
+  {
+   "text": "What Is the GENIUS Act? Stablecoin Rules Explained - Paxos, https://www.paxos.com/blog/genius-act",
+   "url": "https://www.paxos.com/blog/genius-act"
+  },
+  {
+   "text": "스테이블코인의 기업금융 인프라로서의 활용을 위한 입법적 과제*, https://www.moj.go.kr/bbs/moj/166/497660/download.do",
+   "url": "https://www.moj.go.kr/bbs/moj/166/497660/download.do"
+  },
+  {
+   "text": "PayPal USD (PYUSD) - Paxos, https://www.paxos.com/pyusd",
+   "url": "https://www.paxos.com/pyusd"
+  },
+  {
+   "text": "What Is a Regulated Stablecoin? Key Requirements - Paxos, https://www.paxos.com/blog/regulated-stablecoin",
+   "url": "https://www.paxos.com/blog/regulated-stablecoin"
+  },
+  {
+   "text": "가상자산 분야 이슈리포트 - 국내 스테이블코인 관련 법률안의 주요 내용 및 시사점, https://www.draju.com/ko/sub/newsletters.html?type=view&bsNo=6577&langNo=",
+   "url": "https://www.draju.com/ko/sub/newsletters.html?type=view&bsNo=6577&langNo="
+  },
+  {
+   "text": "가치안정형 디지털자산 발행업 등에 관한 법률안(김현정의원 등 12인) - 열려라국회, https://watch.peoplepower21.org/BillDetail/2212298",
+   "url": "https://watch.peoplepower21.org/BillDetail/2212298"
+  },
+  {
+   "text": "USDC Terms - Circle, https://www.circle.com/legal/usdc-terms",
+   "url": "https://www.circle.com/legal/usdc-terms"
+  },
+  {
+   "text": "Mint and Redeem Paxos-Issued Stablecoins, https://www.paxos.com/mint-and-redeem",
+   "url": "https://www.paxos.com/mint-and-redeem"
+  },
+  {
+   "text": "FAQs - Tether, https://tether.to/faqs/",
+   "url": "https://tether.to/faqs/"
+  },
+  {
+   "text": "Are Stablecoins the Money Market Mutual Funds of the Future? - The American Finance Association, https://afajof.org/management/viewp.php?n=128576",
+   "url": "https://afajof.org/management/viewp.php?n=128576"
+  },
+  {
+   "text": "RLUSD Stablecoin User Terms - Ripple, https://ripple.com/legal/stablecoin/",
+   "url": "https://ripple.com/legal/stablecoin/"
+  },
+  {
+   "text": "Circle Mint: Access & distribute USDC at scale, https://www.circle.com/circle-mint",
+   "url": "https://www.circle.com/circle-mint"
+  },
+  {
+   "text": "Circle Pricing 2026: Plans, Costs & Hidden Fees - CheckThat.ai, https://checkthat.ai/brands/circle/pricing",
+   "url": "https://checkthat.ai/brands/circle/pricing"
+  },
+  {
+   "text": "Circle Mint User Agreement, https://www.circle.com/legal/user-agreement",
+   "url": "https://www.circle.com/legal/user-agreement"
+  },
+  {
+   "text": "Terms and Conditions - USDG EU Whitepaper - Paxos, https://www.paxos.com/terms-and-conditions/usdg-eu-whitepaper",
+   "url": "https://www.paxos.com/terms-and-conditions/usdg-eu-whitepaper"
+  },
+  {
+   "text": "PAX Gold Terms and Conditions - Paxos, https://www.paxos.com/terms-and-conditions/pax-gold-terms-conditions",
+   "url": "https://www.paxos.com/terms-and-conditions/pax-gold-terms-conditions"
+  },
+  {
+   "text": "US Dollar-Backed Stablecoin Terms and Conditions - Paxos, https://www.paxos.com/terms-and-conditions/stablecoin-terms-conditions",
+   "url": "https://www.paxos.com/terms-and-conditions/stablecoin-terms-conditions"
+  },
+  {
+   "text": "UNITED STATES SECURITIES AND EXCHANGE COMMISSION, https://app.boardroomalpha.com/sec_feed/2026/QTR2/0002055592-26-000042/geminispacestationinc_x2026.pdf",
+   "url": "https://app.boardroomalpha.com/sec_feed/2026/QTR2/0002055592-26-000042/geminispacestationinc_x2026.pdf"
+  },
+  {
+   "text": "Transparency - Ripple, https://ripple.com/products/stablecoin/transparency/",
+   "url": "https://ripple.com/products/stablecoin/transparency/"
+  },
+  {
+   "text": "Meet Ripple Mint, https://ripple.com/insights/ripple-mint/",
+   "url": "https://ripple.com/insights/ripple-mint/"
+  },
+  {
+   "text": "RLUSD: The USD Stablecoin for Institutions - Ripple, https://ripple.com/products/stablecoin/",
+   "url": "https://ripple.com/products/stablecoin/"
+  },
+  {
+   "text": "What Is USDT (Tether)? Stablecoin Explained - Trustee Plus, https://trustee.io/academy/usdt-what-is-this-currency/",
+   "url": "https://trustee.io/academy/usdt-what-is-this-currency/"
+  },
+  {
+   "text": "Fee Schedule - Tether Gold, https://gold.tether.to/legal/feeschedule",
+   "url": "https://gold.tether.to/legal/feeschedule"
+  },
+  {
+   "text": "What Is Tether (USDT) and How Does It Work? - CoinGecko, https://www.coingecko.com/learn/what-is-tether-usdt-crypto",
+   "url": "https://www.coingecko.com/learn/what-is-tether-usdt-crypto"
+  },
+  {
+   "text": "USDT: The Complete Guide to Tether Stablecoin & Its Uses - From changehero.io, https://changehero.io/blog/tether-usdt-guide/",
+   "url": "https://changehero.io/blog/tether-usdt-guide/"
+  },
+  {
+   "text": "What is USDT? Tether Explained Simply (2026) | Swaps.app, https://www.swaps.app/blog/what-is-usdt",
+   "url": "https://www.swaps.app/blog/what-is-usdt"
+  },
+  {
+   "text": "The Private Law of Stablecoins, https://scholarship.law.unc.edu/cgi/viewcontent.cgi?article=1714&context=faculty_publications",
+   "url": "https://scholarship.law.unc.edu/cgi/viewcontent.cgi?article=1714&context=faculty_publications"
+  },
+  {
+   "text": "Circle raises fees despite rising stablecoin market competition - The Business Times, https://www.businesstimes.com.sg/companies-markets/banking-finance/circle-raises-fees-despite-rising-stablecoin-market-competition",
+   "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/circle-raises-fees-despite-rising-stablecoin-market-competition"
+  },
+  {
+   "text": "김은혜, 한국 최초 원화 스테이블 코인 제정안 대표발의 - 한국경제, https://www.hankyung.com/article/2025072862797",
+   "url": "https://www.hankyung.com/article/2025072862797"
+  }
+ ],
+ "chat_cites": [
+  {
+   "1": "Are Stablecoins the Money Market Mutual Funds of the Future? - The American Finance Association",
+   "2": "Are Stablecoins the Money Market Mutual Funds of the Future? - The American Finance Association",
+   "3": "USDC Terms - Circle",
+   "4": "US Dollar-Backed Stablecoin Terms and Conditions - Paxos",
+   "5": "RLUSD Stablecoin User Terms - Ripple",
+   "6": "원화 스테이블코인 준비금 공시 기준 제언 및 주요 발행사 상환 약관 비교 연구",
+   "7": "Circle Mint: Access & distribute USDC at scale",
+   "8": "USDC Terms - Circle",
+   "9": "USDC Terms - Circle",
+   "10": "원화 스테이블코인 준비금 공시 기준 제언 및 주요 발행사 상환 약관 비교 연구",
+   "11": "Circle Pricing 2026: Plans, Costs & Hidden Fees - CheckThat.ai",
+   "12": "Circle Pricing 2026: Plans, Costs & Hidden Fees - CheckThat.ai",
+   "13": "Circle Pricing 2026: Plans, Costs & Hidden Fees - CheckThat.ai",
+   "14": "Circle Pricing 2026: Plans, Costs & Hidden Fees - CheckThat.ai",
+   "15": "Circle raises fees despite rising stablecoin market competition - The Business Times",
+   "16": "Circle raises fees despite rising stablecoin market competition - The Business Times",
+   "17": "Circle Pricing 2026: Plans, Costs & Hidden Fees - CheckThat.ai",
+   "18": "Circle Can Delay European holders USDC Redemptions Under Stress Rules | Altcoin Buzz",
+   "19": "Circle Mint User Agreement",
+   "20": "Circle Mint User Agreement",
+   "21": "USDC Terms - Circle",
+   "22": "Circle Mint User Agreement",
+   "23": "USDC Terms - Circle",
+   "24": "Circle Can Delay European holders USDC Redemptions Under Stress Rules | Altcoin Buzz",
+   "25": "Circle Can Delay European holders USDC Redemptions Under Stress Rules | Altcoin Buzz",
+   "26": "Circle Can Delay European holders USDC Redemptions Under Stress Rules | Altcoin Buzz",
+   "27": "USDC Terms - Circle",
+   "28": "NYDFS_Paxos_BUSD_소비자공지_보관본.txt",
+   "29": "Mint and Redeem Paxos-Issued Stablecoins",
+   "30": "US Dollar-Backed Stablecoin Terms and Conditions - Paxos",
+   "31": "Terms and Conditions - USDG EU Whitepaper - Paxos",
+   "32": "Terms and Conditions - USDG EU Whitepaper - Paxos",
+   "33": "US Dollar-Backed Stablecoin Terms and Conditions - Paxos",
+   "34": "US Dollar-Backed Stablecoin Terms and Conditions - Paxos",
+   "35": "Mint and Redeem Paxos-Issued Stablecoins",
+   "36": "US Dollar-Backed Stablecoin Terms and Conditions - Paxos",
+   "37": "Terms and Conditions - USDG EU Whitepaper - Paxos",
+   "38": "PAX Gold Terms and Conditions - Paxos",
+   "39": "US Dollar-Backed Stablecoin Terms and Conditions - Paxos",
+   "40": "US Dollar-Backed Stablecoin Terms and Conditions - Paxos",
+   "41": "US Dollar-Backed Stablecoin Terms and Conditions - Paxos",
+   "42": "Fee Schedule - Tether Gold",
+   "43": "Terms and Conditions - USDG EU Whitepaper - Paxos",
+   "44": "US Dollar-Backed Stablecoin Terms and Conditions - Paxos",
+   "45": "Are Stablecoins the Money Market Mutual Funds of the Future? - The American Finance Association",
+   "46": "PAX Gold Terms and Conditions - Paxos",
+   "47": "Are Stablecoins the Money Market Mutual Funds of the Future? - The American Finance Association",
+   "48": "Meet Ripple Mint",
+   "49": "Meet Ripple Mint",
+   "50": "RLUSD Stablecoin User Terms - Ripple",
+   "51": "원화 스테이블코인 준비금 공시 기준 제언 및 주요 발행사 상환 약관 비교 연구",
+   "52": "RLUSD Stablecoin User Terms - Ripple",
+   "53": "RLUSD: The USD Stablecoin for Institutions - Ripple",
+   "54": "Circle Mint User Agreement",
+   "55": "RLUSD Stablecoin User Terms - Ripple",
+   "56": "Transparency - Ripple",
+   "57": "RLUSD Stablecoin User Terms - Ripple",
+   "58": "RLUSD Stablecoin User Terms - Ripple",
+   "59": "RLUSD Stablecoin User Terms - Ripple",
+   "60": "RLUSD Stablecoin User Terms - Ripple",
+   "61": "Meet Ripple Mint",
+   "62": "RLUSD Stablecoin User Terms - Ripple",
+   "63": "Are Stablecoins the Money Market Mutual Funds of the Future? - The American Finance Association",
+   "64": "USDT: The Complete Guide to Tether Stablecoin & Its Uses - From changehero.io",
+   "65": "Are Stablecoins the Money Market Mutual Funds of the Future? - The American Finance Association",
+   "66": "FAQs - Tether",
+   "67": "USDT: The Complete Guide to Tether Stablecoin & Its Uses - From changehero.io",
+   "68": "What Is Tether (USDT) and How Does It Work? - CoinGecko",
+   "69": "What Is Tether (USDT) and How Does It Work? - CoinGecko",
+   "70": "FAQs - Tether",
+   "71": "USDT: The Complete Guide to Tether Stablecoin & Its Uses - From changehero.io",
+   "72": "Fee Schedule - Tether Gold",
+   "73": "FAQs - Tether",
+   "74": "Fee Schedule - Tether Gold",
+   "75": "FAQs - Tether",
+   "76": "Circle Mint User Agreement",
+   "77": "Circle Pricing 2026: Plans, Costs & Hidden Fees - CheckThat.ai",
+   "78": "Circle Can Delay European holders USDC Redemptions Under Stress Rules | Altcoin Buzz",
+   "79": "Terms and Conditions - USDG EU Whitepaper - Paxos",
+   "80": "US Dollar-Backed Stablecoin Terms and Conditions - Paxos",
+   "81": "Terms and Conditions - USDG EU Whitepaper - Paxos",
+   "82": "What Is Tether (USDT) and How Does It Work? - CoinGecko"
+  }
+ ]
+}

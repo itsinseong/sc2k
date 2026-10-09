@@ -1,0 +1,827 @@
+{
+    "input_path": "/Users/inseong/.cache/sc2k-ocr/gemini/gemini_2026-03_p4.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1700,
+    "height": 2200,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header_image",
+            "block_content": "",
+            "block_bbox": [
+                516,
+                154,
+                600,
+                237
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    516.0,
+                    154.0
+                ],
+                [
+                    600.0,
+                    154.0
+                ],
+                [
+                    600.0,
+                    237.0
+                ],
+                [
+                    516.0,
+                    237.0
+                ]
+            ]
+        },
+        {
+            "block_label": "doc_title",
+            "block_content": "Gemini dollar $ ^{\\textregistered} $",
+            "block_bbox": [
+                626,
+                149,
+                1187,
+                231
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    626.0,
+                    149.0
+                ],
+                [
+                    1187.0,
+                    149.0
+                ],
+                [
+                    1187.0,
+                    231.0
+                ],
+                [
+                    626.0,
+                    231.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "GUSD RESERVES REPORT",
+            "block_bbox": [
+                628,
+                272,
+                1072,
+                316
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    628.0,
+                    272.0
+                ],
+                [
+                    1072.0,
+                    272.0
+                ],
+                [
+                    1072.0,
+                    316.0
+                ],
+                [
+                    628.0,
+                    316.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Item 2(c) under the DFS Letter explains the Company is expected to manage the liquidity risk of the Reserve in accordance with the redemption requirements discussed in paragraph 1 of the DFS Letter.",
+            "block_bbox": [
+                281,
+                347,
+                1553,
+                445
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    281.0,
+                    347.0
+                ],
+                [
+                    1553.0,
+                    347.0
+                ],
+                [
+                    1553.0,
+                    445.0
+                ],
+                [
+                    281.0,
+                    445.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In compliance with item 3(a) of the DFS Letter, we report the following end-of-day amounts for the following dates:",
+            "block_bbox": [
+                181,
+                476,
+                1553,
+                541
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    181.0,
+                    476.0
+                ],
+                [
+                    1553.0,
+                    476.0
+                ],
+                [
+                    1553.0,
+                    541.0
+                ],
+                [
+                    181.0,
+                    541.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td></td><td>March 23, 2026</td><td>March 31, 2026</td></tr><tr><td>GUSD issued and in circulation $ ^{1} $</td><td>43,345,685.08</td><td>42,948,973.97</td></tr><tr><td>Market value of the Reserve $ ^{2} $:</td><td></td><td></td></tr><tr><td>Cash deposits held at U.S. regulated financial institutions</td><td>43,857,583.57</td><td>43,571,282.42</td></tr><tr><td>Net cash receivable (payable) due to timing and settlement differences $ ^{3} $</td><td>(511,898.49)</td><td>(622,308.45)</td></tr><tr><td>Total Reserve</td><td>43,345,685.08</td><td>42,948,973.97</td></tr></table>",
+            "block_bbox": [
+                181,
+                544,
+                1516,
+                903
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    181.0,
+                    544.0
+                ],
+                [
+                    1516.0,
+                    544.0
+                ],
+                [
+                    1516.0,
+                    903.0
+                ],
+                [
+                    181.0,
+                    903.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "For each GUSD issued, the Company has received one corresponding U.S. dollar from its customers, which are held across (i) one or more omnibus bank accounts at depository institutions insured by the Federal Deposit Insurance Corporation, (ii) one or more money market funds, and/or (iii) U.S. Treasury bills with maturities of three months or less. The accounts are established and segregated specifically for the U.S. dollars that correspond to the Gemini dollars issued and in circulation.",
+            "block_bbox": [
+                143,
+                942,
+                1556,
+                1108
+            ],
+            "block_id": 6,
+            "block_order": 5,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    143.0,
+                    942.0
+                ],
+                [
+                    1556.0,
+                    942.0
+                ],
+                [
+                    1556.0,
+                    1108.0
+                ],
+                [
+                    143.0,
+                    1108.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Signed by: ___",
+            "block_bbox": [
+                169,
+                1160,
+                271,
+                1190
+            ],
+            "block_id": 7,
+            "block_order": 6,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    169.0,
+                    1160.0
+                ],
+                [
+                    271.0,
+                    1160.0
+                ],
+                [
+                    271.0,
+                    1190.0
+                ],
+                [
+                    169.0,
+                    1190.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Danijela Stojanovic\nE5290B3E33E642E",
+            "block_bbox": [
+                155,
+                1193,
+                434,
+                1264
+            ],
+            "block_id": 8,
+            "block_order": 7,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    155.0,
+                    1193.0
+                ],
+                [
+                    434.0,
+                    1193.0
+                ],
+                [
+                    434.0,
+                    1264.0
+                ],
+                [
+                    155.0,
+                    1264.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Danijela Stojanovic\nInterim Chief Financial Officer\nGemini Space Station, Inc.\nApril 30, 2026",
+            "block_bbox": [
+                143,
+                1272,
+                524,
+                1404
+            ],
+            "block_id": 9,
+            "block_order": 8,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    143.0,
+                    1272.0
+                ],
+                [
+                    524.0,
+                    1272.0
+                ],
+                [
+                    524.0,
+                    1404.0
+                ],
+                [
+                    143.0,
+                    1404.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footnote",
+            "block_content": " $ ^{1} $ Per the Etherscan.io website located at: https://etherscan.io.",
+            "block_bbox": [
+                141,
+                1653,
+                834,
+                1686
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    141.0,
+                    1653.0
+                ],
+                [
+                    834.0,
+                    1653.0
+                ],
+                [
+                    834.0,
+                    1686.0
+                ],
+                [
+                    141.0,
+                    1686.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footnote",
+            "block_content": " $ ^{2} $ The Gemini dollar reserves are held and maintained as cash deposits at State Street and Western Alliance Bank. Market values are based on the fair value of assets and on a trade-date basis.",
+            "block_bbox": [
+                142,
+                1684,
+                1555,
+                1745
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    142.0,
+                    1684.0
+                ],
+                [
+                    1555.0,
+                    1684.0
+                ],
+                [
+                    1555.0,
+                    1745.0
+                ],
+                [
+                    142.0,
+                    1745.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footnote",
+            "block_content": " $ ^{3} $ Balances have been adjusted for the balance of cash receivable and payable due to timing and settlement differences, including deposits/withdrawals occurring after the bank statement cut-off time, money market funds purchased/sold prior to the indicated dates, and U.S. Treasury securities purchased/sold before end of day and settled after those dates as well as amounts held in excess of the nominal amounts of GUSD issued and in circulation.",
+            "block_bbox": [
+                142,
+                1746,
+                1555,
+                1864
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    142.0,
+                    1746.0
+                ],
+                [
+                    1555.0,
+                    1746.0
+                ],
+                [
+                    1555.0,
+                    1864.0
+                ],
+                [
+                    142.0,
+                    1864.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.40998852252960205,
+                "coordinate": [
+                    516,
+                    154,
+                    600,
+                    237
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        516.0,
+                        154.0
+                    ],
+                    [
+                        600.0,
+                        154.0
+                    ],
+                    [
+                        600.0,
+                        237.0
+                    ],
+                    [
+                        516.0,
+                        237.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 6,
+                "label": "doc_title",
+                "score": 0.7570476531982422,
+                "coordinate": [
+                    626,
+                    149,
+                    1187,
+                    231
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        626.0,
+                        149.0
+                    ],
+                    [
+                        1187.0,
+                        149.0
+                    ],
+                    [
+                        1187.0,
+                        231.0
+                    ],
+                    [
+                        626.0,
+                        231.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.6947766542434692,
+                "coordinate": [
+                    628,
+                    272,
+                    1072,
+                    316
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        628.0,
+                        272.0
+                    ],
+                    [
+                        1072.0,
+                        272.0
+                    ],
+                    [
+                        1072.0,
+                        316.0
+                    ],
+                    [
+                        628.0,
+                        316.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9183836579322815,
+                "coordinate": [
+                    281,
+                    347,
+                    1553,
+                    445
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        281.0,
+                        347.0
+                    ],
+                    [
+                        1553.0,
+                        347.0
+                    ],
+                    [
+                        1553.0,
+                        445.0
+                    ],
+                    [
+                        281.0,
+                        445.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8633760809898376,
+                "coordinate": [
+                    181,
+                    476,
+                    1553,
+                    541
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        181.0,
+                        476.0
+                    ],
+                    [
+                        1553.0,
+                        476.0
+                    ],
+                    [
+                        1553.0,
+                        541.0
+                    ],
+                    [
+                        181.0,
+                        541.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9118192195892334,
+                "coordinate": [
+                    181,
+                    544,
+                    1516,
+                    903
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        181.0,
+                        544.0
+                    ],
+                    [
+                        1516.0,
+                        544.0
+                    ],
+                    [
+                        1516.0,
+                        903.0
+                    ],
+                    [
+                        181.0,
+                        903.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9300996661186218,
+                "coordinate": [
+                    143,
+                    942,
+                    1556,
+                    1108
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        143.0,
+                        942.0
+                    ],
+                    [
+                        1556.0,
+                        942.0
+                    ],
+                    [
+                        1556.0,
+                        1108.0
+                    ],
+                    [
+                        143.0,
+                        1108.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.5748623609542847,
+                "coordinate": [
+                    169,
+                    1160,
+                    271,
+                    1190
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        169.0,
+                        1160.0
+                    ],
+                    [
+                        271.0,
+                        1160.0
+                    ],
+                    [
+                        271.0,
+                        1190.0
+                    ],
+                    [
+                        169.0,
+                        1190.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.5683713555335999,
+                "coordinate": [
+                    155,
+                    1193,
+                    434,
+                    1264
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        155.0,
+                        1193.0
+                    ],
+                    [
+                        434.0,
+                        1193.0
+                    ],
+                    [
+                        434.0,
+                        1264.0
+                    ],
+                    [
+                        155.0,
+                        1264.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8691222667694092,
+                "coordinate": [
+                    143,
+                    1272,
+                    524,
+                    1404
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        143.0,
+                        1272.0
+                    ],
+                    [
+                        524.0,
+                        1272.0
+                    ],
+                    [
+                        524.0,
+                        1404.0
+                    ],
+                    [
+                        143.0,
+                        1404.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 10,
+                "label": "footnote",
+                "score": 0.8546012043952942,
+                "coordinate": [
+                    141,
+                    1653,
+                    834,
+                    1686
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        141.0,
+                        1653.0
+                    ],
+                    [
+                        834.0,
+                        1653.0
+                    ],
+                    [
+                        834.0,
+                        1686.0
+                    ],
+                    [
+                        141.0,
+                        1686.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 10,
+                "label": "footnote",
+                "score": 0.903749942779541,
+                "coordinate": [
+                    142,
+                    1684,
+                    1555,
+                    1745
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        142.0,
+                        1684.0
+                    ],
+                    [
+                        1555.0,
+                        1684.0
+                    ],
+                    [
+                        1555.0,
+                        1745.0
+                    ],
+                    [
+                        142.0,
+                        1745.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 10,
+                "label": "footnote",
+                "score": 0.9453346133232117,
+                "coordinate": [
+                    142,
+                    1746,
+                    1555,
+                    1864
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        142.0,
+                        1746.0
+                    ],
+                    [
+                        1555.0,
+                        1746.0
+                    ],
+                    [
+                        1555.0,
+                        1864.0
+                    ],
+                    [
+                        142.0,
+                        1864.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

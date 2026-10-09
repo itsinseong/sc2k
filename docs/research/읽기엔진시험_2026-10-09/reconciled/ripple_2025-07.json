@@ -1,0 +1,104 @@
+{
+ "month": "2025-07",
+ "status": "확정",
+ "as_of": "2025-07-31",
+ "circulation": [
+  517743524,
+  602743524
+ ],
+ "reserve_fair_value": [
+  535597086,
+  622827197
+ ],
+ "table": [
+  {
+   "label": "912797QB6",
+   "values": [
+    296228088,
+    0
+   ],
+   "labels": {
+    "paddle": "912797QB6",
+    "opus": "912797QB6"
+   },
+   "maturity": "2025-07-22",
+   "days_to_maturity": -9
+  },
+  {
+   "label": "912797QH3",
+   "values": [
+    0,
+    330519878
+   ],
+   "labels": {
+    "paddle": "912797QH3",
+    "opus": "912797QH3"
+   },
+   "maturity": "2025-08-05",
+   "days_to_maturity": 5
+  },
+  {
+   "label": "Total U.S. Treasury bills",
+   "values": [
+    296228088,
+    330519878
+   ],
+   "labels": {
+    "paddle": "Total U.S. Treasury bills",
+    "opus": "Total U.S. Treasury bills"
+   }
+  },
+  {
+   "label": "Government money-market funds",
+   "values": [
+    159095319,
+    177262232
+   ],
+   "labels": {
+    "paddle": "Government money-market funds",
+    "opus": "Government money-market funds"
+   }
+  },
+  {
+   "label": "Cash deposits held at U.S. regulated financial institutions",
+   "values": [
+    80273679,
+    115045087
+   ],
+   "labels": {
+    "paddle": "Cash deposits held at U.S. regulated financial institutions",
+    "opus": "Cash deposits held at U.S. regulated financial institutions"
+   }
+  },
+  {
+   "label": "Total Market Value of the Reserves (Note 2)",
+   "values": [
+    535597086,
+    622827197
+   ],
+   "labels": {
+    "paddle": "Total Market Value of the Reserves (Note 2)",
+    "opus": "Total Market Value of the Reserves (Note 2)"
+   }
+  }
+ ],
+ "components": {
+  "cash": 115045087,
+  "repo": 0,
+  "government_mmf": 177262232,
+  "treasury": 330519878,
+  "other": 0
+ },
+ "reconciliation": {
+  "components_sum": 622827197,
+  "reserve_fair_value": 622827197,
+  "ok": true
+ },
+ "resolved_by_checkdigit": [],
+ "check": [],
+ "readers": {
+  "paddle": "paddle/ripple_2025-07.md",
+  "opus": "claude_opus_2025-07.json",
+  "image": "docs/research/읽기엔진시험_2026-10-09/png/paddle/ripple_2025-07.png"
+ }
+}

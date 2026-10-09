@@ -1,0 +1,91 @@
+{
+ "month": "2025-06",
+ "status": "확정",
+ "as_of": "2025-06-30",
+ "circulation": [
+  388743694,
+  455243694
+ ],
+ "reserve_fair_value": [
+  402390351,
+  471227699
+ ],
+ "table": [
+  {
+   "label": "912797PR2",
+   "values": [
+    211474620,
+    0
+   ],
+   "labels": {
+    "paddle": "912797PR2",
+    "opus": "912797PR2"
+   },
+   "maturity": "2025-06-10",
+   "days_to_maturity": -20
+  },
+  {
+   "label": "Total U.S. Treasury bills",
+   "values": [
+    211474620,
+    0
+   ],
+   "labels": {
+    "paddle": "Total U.S. Treasury bills",
+    "opus": "Total U.S. Treasury bills"
+   }
+  },
+  {
+   "label": "Government money-market funds",
+   "values": [
+    113698252,
+    400580147
+   ],
+   "labels": {
+    "paddle": "Government money-market funds",
+    "opus": "Government money-market funds"
+   }
+  },
+  {
+   "label": "Cash deposits held at U.S. regulated financial institutions",
+   "values": [
+    77217479,
+    70647552
+   ],
+   "labels": {
+    "paddle": "Cash deposits held at U.S. regulated financial institutions",
+    "opus": "Cash deposits held at U.S. regulated financial institutions"
+   }
+  },
+  {
+   "label": "Total Market Value of the Reserves (Note 2)",
+   "values": [
+    402390351,
+    471227699
+   ],
+   "labels": {
+    "paddle": "Total Market Value of the Reserves (Note 2)",
+    "opus": "Total Market Value of the Reserves (Note 2)"
+   }
+  }
+ ],
+ "components": {
+  "cash": 70647552,
+  "repo": 0,
+  "government_mmf": 400580147,
+  "treasury": 0,
+  "other": 0
+ },
+ "reconciliation": {
+  "components_sum": 471227699,
+  "reserve_fair_value": 471227699,
+  "ok": true
+ },
+ "resolved_by_checkdigit": [],
+ "check": [],
+ "readers": {
+  "paddle": "paddle/ripple_2025-06.md",
+  "opus": "claude_opus_2025-06.json",
+  "image": "docs/research/읽기엔진시험_2026-10-09/png/paddle/ripple_2025-06.png"
+ }
+}

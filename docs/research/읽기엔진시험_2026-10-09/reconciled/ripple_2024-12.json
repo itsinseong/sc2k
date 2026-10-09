@@ -1,0 +1,115 @@
+{
+ "month": "2024-12",
+ "status": "확정",
+ "as_of": "2024-12-31",
+ "circulation": [
+  72300301,
+  77208201
+ ],
+ "reserve_fair_value": [
+  78212154,
+  83214671
+ ],
+ "table": [
+  {
+   "label": "912797MQ7",
+   "values": [
+    27561764,
+    0
+   ],
+   "labels": {
+    "paddle": "912797MQ7",
+    "opus": "912797MQ7"
+   },
+   "maturity": "2024-12-24",
+   "days_to_maturity": -7
+  },
+  {
+   "label": "912797MW4",
+   "values": [
+    0,
+    30095603
+   ],
+   "labels": {
+    "paddle": "912797MW4",
+    "opus": "912797MW4"
+   },
+   "maturity": "2025-01-07",
+   "days_to_maturity": 7
+  },
+  {
+   "label": "Total U.S. Treasury bills",
+   "values": [
+    27561764,
+    30095603
+   ],
+   "labels": {
+    "paddle": "Total U.S. Treasury bills",
+    "opus": "Total U.S. Treasury bills"
+   }
+  },
+  {
+   "label": "Government money-market funds",
+   "values": [
+    27544644,
+    30119460
+   ],
+   "labels": {
+    "paddle": "Government money-market funds",
+    "opus": "Government money-market funds"
+   }
+  },
+  {
+   "label": "Cash deposits held at U.S. regulated financial institutions",
+   "values": [
+    23051803,
+    22978696
+   ],
+   "labels": {
+    "paddle": "Cash deposits held at U.S. regulated financial institutions",
+    "opus": "Cash deposits held at U.S. regulated financial institutions"
+   }
+  },
+  {
+   "label": "Accrued interest",
+   "values": [
+    53943,
+    20912
+   ],
+   "labels": {
+    "paddle": "Accrued interest",
+    "opus": "Accrued interest"
+   }
+  },
+  {
+   "label": "Total Market Value of the Reserves (Note 2)",
+   "values": [
+    78212154,
+    83214671
+   ],
+   "labels": {
+    "paddle": "Total Market Value of the Reserves (Note 2)",
+    "opus": "Total Market Value of the Reserves (Note 2)"
+   }
+  }
+ ],
+ "components": {
+  "cash": 22978696,
+  "repo": 0,
+  "government_mmf": 30119460,
+  "treasury": 30095603,
+  "other": 20912
+ },
+ "reconciliation": {
+  "components_sum": 83214671,
+  "reserve_fair_value": 83214671,
+  "ok": true
+ },
+ "resolved_by_checkdigit": [],
+ "check": [],
+ "readers": {
+  "paddle": "paddle/ripple_2024-12.md",
+  "opus": "claude_opus_2024-12.json",
+  "image": "docs/research/읽기엔진시험_2026-10-09/png/paddle/ripple_2024-12.png"
+ }
+}

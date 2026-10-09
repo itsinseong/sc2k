@@ -1,0 +1,21 @@
+Gemini dollar®
+GUSD RESERVES REPORT
+Item 2(c) under the DFS Letter explains the Company is expected to manage the liquidity risk of the Reserve in accordance with the redemption requirements discussed in paragraph 1 of the DFS Letter.
+In compliance with item 3(a) of the DFS Letter, we report the following end-of-day amounts for the following dates:
+March 23, 2026   March 31, 2026
+GUSD issued and in circulation1   43,345,685.08   42,948,973.97
+Market value of the Reserve2:
+Cash deposits held at U.S. regulated financial institutions   43,857,583.57   43,571,282.42
+Net cash receivable (payable) due to timing and settlement differences3   (511,898.49)   (622,308.45)
+Total Reserve   43,345,685.08   42,948,973.97
+For each GUSD issued, the Company has received one corresponding U.S. dollar from its customers, which are held across (i) one or more omnibus bank accounts at depository institutions insured by the Federal Deposit Insurance Corporation, (ii) one or more money market funds, and/or (iii) U.S. Treasury bills with maturities of three months or less. The accounts are established and segregated specifically for the U.S. dollars that correspond to the Gemini dollars issued and in circulation.
+Signed by: ___
+Danijela Stojanovic
+E5290B3E33E642E
+Danijela Stojanovic
+Interim Chief Financial Officer
+Gemini Space Station, Inc.
+April 30, 2026
+1 Per the Etherscan.io website located at: https://etherscan.io.
+2 The Gemini dollar reserves are held and maintained as cash deposits at State Street and Western Alliance Bank. Market values are based on the fair value of assets and on a trade-date basis.
+3 Balances have been adjusted for the balance of cash receivable and payable due to timing and settlement differences, including deposits/withdrawals occurring after the bank statement cut-off time, money market funds purchased/sold prior to the indicated dates, and U.S. Treasury securities purchased/sold before end of day and settled after those dates as well as amounts held in excess of the nominal amounts of GUSD issued and in circulation.

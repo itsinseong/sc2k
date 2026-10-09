@@ -1,0 +1,144 @@
+{
+ "notebook": "https://notebook.google.com/notebook/be83021b-787b-4ccc-9eec-b9c14dc07434?authuser=1",
+ "notebook_title": "Optimal Control of Stablecoin Reserves",
+ "source_titles": [
+  "[국채의 역습④] 위태로운 美 장기금리…스테이블코인, 국채시장 '새 큰손' 될까 - 투데이신문",
+  "[디지털원화의 재설계 ②] 원화 스테이블코인 vs 예금토큰, 한은이 주목한 '은행 모델'은",
+  "디지털 시대의 화폐, 혁신과 신뢰의 조화 : 원화 스테이블코인의 주요 이슈와 대응방안",
+  "디지털 시대의 화폐, 혁신과 신뢰의 조화 : 원화 스테이블코인의 주요 이슈와 대응방안 | 국내연구자료 | KDI 경제교육·정보센터",
+  "법정통화의 변신, CBDC와 스테이블코인 | 경제로 세상 읽기 | KDI 경제교육·정보센터",
+  "한은 “스테이블코인, 은행 주도로 발행하고 준비금에 예금토큰 편입해야” - Daum",
+  "BOK이슈해설ㅣ스테이블코인의 이해와 오해 | 영상보고서(상세) | 동영상 | 멀티콘텐츠 | 한국은행 홈페이지",
+  "Deep Research 보고서: 원화 스테이블코인 준비자산 규제 및 금리 변동성에 따른 발행량·예금 비중 변화 연구 보고서",
+  "DeFi-ying the Fed? Monetary policy transmission to stablecoin deposit rates - European Central Bank",
+  "Global stablecoins in 2030: a European perspective - Federal Reserve Bank of New York",
+  "Interest-bearing stablecoins and macroeconomic stability - State Street",
+  "Leverage and Stablecoin Pegs",
+  "Stablecoin Runs and the Centralization of Arbitrage* - Columbia Business School",
+  "Stablecoins and monetary policy transmission - European Central Bank",
+  "Stablecoins and the Demand for Dollars | Richmond Fed",
+  "Stablecoins, money market funds and monetary policy - the BIS",
+  "Stablecoins: Growth Potential and Impact on Banking - Federal Reserve",
+  "The Council of Economic Advisers Effects of Stablecoin Yield Prohibition on Bank Lending - The White House",
+  "The Fed - Banks in the Age of Stablecoins: Some Possible Implications for Deposits, Credit, and Financial Intermediation - Federal Reserve",
+  "W14_Ahmed_Aldasoro_2025-08_Stablecoins_and_safe_asset_prices_ClevelandFed.pdf",
+  "W14_arXiv_2508.09429_Optimal_control_reserve.pdf",
+  "W14_BIS_WP1219_Aldasoro_MMF_monetary_policy.pdf",
+  "W14_CEA_2026-04_Effects_Stablecoin_Yield.pdf",
+  "W14_ECB_WP3174_Private_money_public_debt.pdf",
+  "W14_FED_IFDP1334_Liao_Caramichael.pdf"
+ ],
+ "report_links": [
+  {
+   "text": "Stablecoins, money market funds and monetary policy - the BIS, https://www.bis.org/publications/working-paper-1219-stablecoins-money-market-funds-and-monetary-policy.pdf",
+   "url": "https://www.bis.org/publications/working-paper-1219-stablecoins-money-market-funds-and-monetary-policy.pdf"
+  },
+  {
+   "text": "Interest-bearing stablecoins and macroeconomic stability - State Street, https://www.statestreet.com/br/en/insights/stablecoins-macroeconomic-stability",
+   "url": "https://www.statestreet.com/br/en/insights/stablecoins-macroeconomic-stability"
+  },
+  {
+   "text": "Leverage and Stablecoin Pegs, https://www.tse-fr.eu/sites/default/files/TSE/documents/conf/2024/digital_currency/paper_vardoulaki.pdf",
+   "url": "https://www.tse-fr.eu/sites/default/files/TSE/documents/conf/2024/digital_currency/paper_vardoulaki.pdf"
+  },
+  {
+   "text": "Stablecoins, money market funds and monetary policy - the BIS, https://www.bis.org/publications/working-paper-1219-stablecoins-money-market-funds-and-monetary-policy",
+   "url": "https://www.bis.org/publications/working-paper-1219-stablecoins-money-market-funds-and-monetary-policy"
+  },
+  {
+   "text": "Stablecoins and the Demand for Dollars | Richmond Fed, https://www.richmondfed.org/publications/research/economic_brief/2026/eb_26-10",
+   "url": "https://www.richmondfed.org/publications/research/economic_brief/2026/eb_26-10"
+  },
+  {
+   "text": "[국채의 역습④] 위태로운 美 장기금리…스테이블코인, 국채시장 '새 큰손' 될까 - 투데이신문, https://www.ntoday.co.kr/news/articleView.html?idxno=129320",
+   "url": "https://www.ntoday.co.kr/news/articleView.html?idxno=129320"
+  },
+  {
+   "text": "Stablecoins and monetary policy transmission - European Central Bank, https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp3199~ad552b59ec.en.pdf",
+   "url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp3199~ad552b59ec.en.pdf"
+  },
+  {
+   "text": "The Fed - Banks in the Age of Stablecoins: Some Possible Implications for Deposits, Credit, and Financial Intermediation - Federal Reserve, https://www.federalreserve.gov/econres/notes/feds-notes/banks-in-the-age-of-stablecoins-implications-for-deposits-credit-and-financial-intermediation-20251217.html",
+   "url": "https://www.federalreserve.gov/econres/notes/feds-notes/banks-in-the-age-of-stablecoins-implications-for-deposits-credit-and-financial-intermediation-20251217.html"
+  },
+  {
+   "text": "DeFi-ying the Fed? Monetary policy transmission to stablecoin deposit rates - European Central Bank, https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp3280~503ba7d4b0.en.pdf",
+   "url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp3280~503ba7d4b0.en.pdf"
+  },
+  {
+   "text": "Stablecoins: Growth Potential and Impact on Banking - Federal Reserve, https://www.federalreserve.gov/econres/ifdp/files/ifdp1334.pdf",
+   "url": "https://www.federalreserve.gov/econres/ifdp/files/ifdp1334.pdf"
+  },
+  {
+   "text": "Global stablecoins in 2030: a European perspective - Federal Reserve Bank of New York, https://www.newyorkfed.org/medialibrary/media/newsevents/events/markets/2026/2026_0709_Stablecoins_Bindseil-Meuwissen-Mondini-Rohar",
+   "url": "https://www.newyorkfed.org/medialibrary/media/newsevents/events/markets/2026/2026_0709_Stablecoins_Bindseil-Meuwissen-Mondini-Rohar"
+  },
+  {
+   "text": "Stablecoin Runs and the Centralization of Arbitrage* - Columbia Business School, https://business.columbia.edu/sites/default/files-efs/citation_file_upload/SSRN-id4398546-Stablecoin%20Runs%20and%20the%20Centralization%20of%20Arbitrage.pdf",
+   "url": "https://business.columbia.edu/sites/default/files-efs/citation_file_upload/SSRN-id4398546-Stablecoin%20Runs%20and%20the%20Centralization%20of%20Arbitrage.pdf"
+  },
+  {
+   "text": "디지털 시대의 화폐, 혁신과 신뢰의 조화 : 원화 스테이블코인의 주요 이슈와 대응방안 | 국내연구자료 | KDI 경제교육·정보센터, https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000199493",
+   "url": "https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000199493"
+  },
+  {
+   "text": "디지털 시대의 화폐, 혁신과 신뢰의 조화 : 원화 스테이블코인의 주요 이슈와 대응방안, https://nsp.nanet.go.kr/plan/subject/detail.do?nationalPlanControlNo=PLAN0000056994",
+   "url": "https://nsp.nanet.go.kr/plan/subject/detail.do?nationalPlanControlNo=PLAN0000056994"
+  },
+  {
+   "text": "한은 “스테이블코인, 은행 주도로 발행하고 준비금에 예금토큰 편입해야” - Daum, https://v.daum.net/v/20251027170540101",
+   "url": "https://v.daum.net/v/20251027170540101"
+  },
+  {
+   "text": "법정통화의 변신, CBDC와 스테이블코인 | 경제로 세상 읽기 | KDI 경제교육·정보센터, https://eiec.kdi.re.kr/material/pageoneView.do?idx=1879",
+   "url": "https://eiec.kdi.re.kr/material/pageoneView.do?idx=1879"
+  },
+  {
+   "text": "The Council of Economic Advisers Effects of Stablecoin Yield Prohibition on Bank Lending - The White House, https://www.whitehouse.gov/wp-content/uploads/2026/04/Effects-of-Stablecoin-Yield-Prohibition-on-Bank-Lending.pdf",
+   "url": "https://www.whitehouse.gov/wp-content/uploads/2026/04/Effects-of-Stablecoin-Yield-Prohibition-on-Bank-Lending.pdf"
+  },
+  {
+   "text": "BOK이슈해설ㅣ스테이블코인의 이해와 오해 | 영상보고서(상세) | 동영상 | 멀티콘텐츠 | 한국은행 홈페이지, https://www.bok.or.kr/portal/bbs/B0000168/view.do?menuNo=200058&nttId=10095130",
+   "url": "https://www.bok.or.kr/portal/bbs/B0000168/view.do?menuNo=200058&nttId=10095130"
+  },
+  {
+   "text": "[디지털원화의 재설계 ②] 원화 스테이블코인 vs 예금토큰, 한은이 주목한 '은행 모델'은, https://www.nexblock.co.kr/article/1002632",
+   "url": "https://www.nexblock.co.kr/article/1002632"
+  }
+ ],
+ "chat_cites": [
+  {
+   "1": "원화 스테이블코인 준비자산 규제 및 금리 변동성에 따른 발행량·예금 비중 변화 연구 보고서",
+   "2": "원화 스테이블코인 준비자산 규제 및 금리 변동성에 따른 발행량·예금 비중 변화 연구 보고서",
+   "3": "Stablecoins, money market funds and monetary policy - the BIS",
+   "4": "Stablecoins and monetary policy transmission - European Central Bank",
+   "5": "Stablecoins and monetary policy transmission - European Central Bank",
+   "6": "Stablecoins and monetary policy transmission - European Central Bank",
+   "7": "원화 스테이블코인 준비자산 규제 및 금리 변동성에 따른 발행량·예금 비중 변화 연구 보고서",
+   "8": "Stablecoins and monetary policy transmission - European Central Bank",
+   "9": "Stablecoins and monetary policy transmission - European Central Bank",
+   "10": "DeFi-ying the Fed? Monetary policy transmission to stablecoin deposit rates - European Central Bank",
+   "11": "DeFi-ying the Fed? Monetary policy transmission to stablecoin deposit rates - European Central Bank",
+   "12": "DeFi-ying the Fed? Monetary policy transmission to stablecoin deposit rates - European Central Bank",
+   "13": "DeFi-ying the Fed? Monetary policy transmission to stablecoin deposit rates - European Central Bank",
+   "14": "Leverage and Stablecoin Pegs",
+   "15": "Leverage and Stablecoin Pegs",
+   "16": "Leverage and Stablecoin Pegs",
+   "17": "Leverage and Stablecoin Pegs",
+   "18": "Leverage and Stablecoin Pegs",
+   "19": "Leverage and Stablecoin Pegs",
+   "20": "Stablecoin Runs and the Centralization of Arbitrage* - Columbia Business School",
+   "21": "W14_arXiv_2508.09429_Optimal_control_reserve.pdf",
+   "22": "W14_arXiv_2508.09429_Optimal_control_reserve.pdf",
+   "23": "W14_arXiv_2508.09429_Optimal_control_reserve.pdf",
+   "24": "W14_arXiv_2508.09429_Optimal_control_reserve.pdf",
+   "25": "원화 스테이블코인 준비자산 규제 및 금리 변동성에 따른 발행량·예금 비중 변화 연구 보고서",
+   "26": "원화 스테이블코인 준비자산 규제 및 금리 변동성에 따른 발행량·예금 비중 변화 연구 보고서",
+   "27": "원화 스테이블코인 준비자산 규제 및 금리 변동성에 따른 발행량·예금 비중 변화 연구 보고서",
+   "28": "Global stablecoins in 2030: a European perspective - Federal Reserve Bank of New York",
+   "29": "W14_arXiv_2508.09429_Optimal_control_reserve.pdf",
+   "30": "원화 스테이블코인 준비자산 규제 및 금리 변동성에 따른 발행량·예금 비중 변화 연구 보고서",
+   "31": "W14_Ahmed_Aldasoro_2025-08_Stablecoins_and_safe_asset_prices_ClevelandFed.pdf"
+  }
+ ]
+}

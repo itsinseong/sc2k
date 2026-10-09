@@ -1,0 +1,120 @@
+{
+ "notebook": "https://notebook.google.com/notebook/4cb88ba4-bf93-44cb-8810-9b81ed8c4efa?authuser=1",
+ "notebook_title": "Stablecoin Reserve Portfolio Optimal Control",
+ "source_titles": [
+  "국회 정무위 '법안소위 속도전' 채비, 스테이블코인 연내 입법 '3대 쟁점' 실타래 풀리나",
+  "금융위 \"한은 스테이블코인 긴급조치명령 요청권 등 실익 적어\" - 연합뉴스",
+  "스테이블코인 시대 열릴까 - KDI 경제교육",
+  "올해도 스테이블코인 입법 '난항'…금융위 vs 한은 대립 수면 위로 - 지디넷코리아",
+  "Deep Research 보고서: 원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서",
+  "ESCB response to the European Commission's targeted consultation on the Markets in Crypto-Assets Regulation (MiCAR)",
+  "From money market funds to stablecoins: lessons for central banks",
+  "House of Lords - Stablecoins: waiting for regulation - Financial Services Regulation Committee - Parliament (publications)",
+  "III. Anchoring trust in money: innovation beyond stablecoins - the BIS",
+  "Lorenzo Burlon - European Central Bank",
+  "Occasional Paper Series - Central bank digital currency and bank intermediation",
+  "Proposed regulatory regime for sterling-denominated systemic stablecoins",
+  "Stablecoin Shocks, WP/26/44, March 2026 - International Monetary Fund",
+  "Stablecoins and monetary policy transmission - European Central Bank",
+  "Stablecoins and safe asset prices - EconPapers",
+  "The Fed - Banks in the Age of Stablecoins: Some Possible Implications for Deposits, Credit, and Financial Intermediation - Federal Reserve",
+  "The role of holding limits for sterling-denominated systemic stablecoins and a potential digital pound | Bank of England",
+  "W14_Ahmed_Aldasoro_2025-08_Stablecoins_and_safe_asset_prices_ClevelandFed.pdf",
+  "W14_arXiv_2508.09429_Optimal_control_reserve.pdf",
+  "W14_BIS_WP1219_Aldasoro_MMF_monetary_policy.pdf",
+  "W14_CEA_2026-04_Effects_Stablecoin_Yield.pdf",
+  "W14_ECB_WP3174_Private_money_public_debt.pdf",
+  "W14_FED_IFDP1334_Liao_Caramichael.pdf"
+ ],
+ "report_links": [
+  {
+   "text": "올해도 스테이블코인 입법 '난항'…금융위 vs 한은 대립 수면 위로 - 지디넷코리아, https://zdnet.co.kr/view/?no=20251125143503",
+   "url": "https://zdnet.co.kr/view/?no=20251125143503"
+  },
+  {
+   "text": "스테이블코인 시대 열릴까 - KDI 경제교육, https://eiec.kdi.re.kr/userdata/nara/202508/202508.pdf",
+   "url": "https://eiec.kdi.re.kr/userdata/nara/202508/202508.pdf"
+  },
+  {
+   "text": "From money market funds to stablecoins: lessons for central banks, https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260601~38dffe5ec5.en.html",
+   "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260601~38dffe5ec5.en.html"
+  },
+  {
+   "text": "금융위 \"한은 스테이블코인 긴급조치명령 요청권 등 실익 적어\" - 연합뉴스, https://www.yna.co.kr/view/AKR20251125044900002",
+   "url": "https://www.yna.co.kr/view/AKR20251125044900002"
+  },
+  {
+   "text": "국회 정무위 '법안소위 속도전' 채비, 스테이블코인 연내 입법 '3대 쟁점' 실타래 풀리나, https://www.businesspost.co.kr/BP?command=article_view&num=442765",
+   "url": "https://www.businesspost.co.kr/BP?command=article_view&num=442765"
+  },
+  {
+   "text": "스테이블코인의 기업금융 인프라로서의 활용을 위한 입법적 과제*, https://www.moj.go.kr/bbs/moj/166/497660/download.do",
+   "url": "https://www.moj.go.kr/bbs/moj/166/497660/download.do"
+  },
+  {
+   "text": "Lorenzo Burlon - European Central Bank, https://www.ecb.europa.eu/pub/research/authors/profiles/lorenzo-burlon.en.html",
+   "url": "https://www.ecb.europa.eu/pub/research/authors/profiles/lorenzo-burlon.en.html"
+  },
+  {
+   "text": "ESCB response to the European Commission's targeted consultation on the Markets in Crypto-Assets Regulation (MiCAR), https://www.ecb.europa.eu/press/consultationresponse/pdf/ecb.conresp202609_micarreview.en.pdf?c026ff0fd6c52a4eb29d725e6fec3cbb",
+   "url": "https://www.ecb.europa.eu/press/consultationresponse/pdf/ecb.conresp202609_micarreview.en.pdf?c026ff0fd6c52a4eb29d725e6fec3cbb"
+  },
+  {
+   "text": "III. Anchoring trust in money: innovation beyond stablecoins - the BIS, https://www.bis.org/publications/aer-2026/anchoring-trust-money",
+   "url": "https://www.bis.org/publications/aer-2026/anchoring-trust-money"
+  },
+  {
+   "text": "The Fed - Banks in the Age of Stablecoins: Some Possible Implications for Deposits, Credit, and Financial Intermediation - Federal Reserve, https://www.federalreserve.gov/econres/notes/feds-notes/banks-in-the-age-of-stablecoins-implications-for-deposits-credit-and-financial-intermediation-20251217.html",
+   "url": "https://www.federalreserve.gov/econres/notes/feds-notes/banks-in-the-age-of-stablecoins-implications-for-deposits-credit-and-financial-intermediation-20251217.html"
+  },
+  {
+   "text": "The role of holding limits for sterling-denominated systemic stablecoins and a potential digital pound | Bank of England, https://www.bankofengland.co.uk/financial-stability-paper/2025/holding-limits-for-sterling-denominated-systemic-stablecoins-and-a-digital-pound",
+   "url": "https://www.bankofengland.co.uk/financial-stability-paper/2025/holding-limits-for-sterling-denominated-systemic-stablecoins-and-a-digital-pound"
+  },
+  {
+   "text": "Stablecoins and monetary policy transmission - European Central Bank, https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp3199~ad552b59ec.en.pdf",
+   "url": "https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp3199~ad552b59ec.en.pdf"
+  },
+  {
+   "text": "Occasional Paper Series - Central bank digital currency and bank intermediation, https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op293~652cf2b1aa.en.pdf",
+   "url": "https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op293~652cf2b1aa.en.pdf"
+  },
+  {
+   "text": "Proposed regulatory regime for sterling-denominated systemic stablecoins, https://www.bankofengland.co.uk/paper/2025/cp/proposed-regulatory-regime-for-sterling-denominated-systemic-stablecoins",
+   "url": "https://www.bankofengland.co.uk/paper/2025/cp/proposed-regulatory-regime-for-sterling-denominated-systemic-stablecoins"
+  },
+  {
+   "text": "House of Lords - Stablecoins: waiting for regulation - Financial Services Regulation Committee - Parliament (publications), https://publications.parliament.uk/pa/ld5902/ldselect/ldfsrc/6/607.htm",
+   "url": "https://publications.parliament.uk/pa/ld5902/ldselect/ldfsrc/6/607.htm"
+  },
+  {
+   "text": "From money market funds to stablecoins: lessons for central banks, https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260601_annex~8852850053.hu.pdf",
+   "url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260601_annex~8852850053.hu.pdf"
+  },
+  {
+   "text": "Stablecoin Shocks, WP/26/44, March 2026 - International Monetary Fund, https://www.imf.org/-/media/files/publications/wp/2026/english/wpiea2026044-source-pdf.pdf",
+   "url": "https://www.imf.org/-/media/files/publications/wp/2026/english/wpiea2026044-source-pdf.pdf"
+  },
+  {
+   "text": "Stablecoins and safe asset prices - EconPapers, https://econpapers.repec.org/RePEc:bis:biswps:1270",
+   "url": "https://econpapers.repec.org/RePEc:bis:biswps:1270"
+  }
+ ],
+ "chat_cites": [
+  {
+   "1": "원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서",
+   "2": "원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서",
+   "3": "원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서",
+   "4": "스테이블코인 시대 열릴까 - KDI 경제교육",
+   "5": "원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서",
+   "6": "원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서",
+   "7": "원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서",
+   "8": "원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서",
+   "9": "원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서",
+   "10": "원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서",
+   "11": "원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서",
+   "12": "원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서",
+   "13": "원화 스테이블코인 준비자산 공시 기준 제안 및 통화·금융 시스템 영향 분석 연구 보고서"
+  }
+ ]
+}

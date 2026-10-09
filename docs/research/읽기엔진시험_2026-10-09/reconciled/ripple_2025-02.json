@@ -1,0 +1,115 @@
+{
+ "month": "2025-02",
+ "status": "확정",
+ "as_of": "2025-02-28",
+ "circulation": [
+  109666737,
+  132416737
+ ],
+ "reserve_fair_value": [
+  116462630,
+  139533257
+ ],
+ "table": [
+  {
+   "label": "912797MJ3",
+   "values": [
+    44519657,
+    0
+   ],
+   "labels": {
+    "paddle": "912797MJ3",
+    "opus": "912797MJ3"
+   },
+   "maturity": "2025-02-06",
+   "days_to_maturity": -22
+  },
+  {
+   "label": "912797NK9",
+   "values": [
+    0,
+    51650713
+   ],
+   "labels": {
+    "paddle": "912797NK9",
+    "opus": "912797NK9"
+   },
+   "maturity": "2025-03-04",
+   "days_to_maturity": 4
+  },
+  {
+   "label": "Total U.S. Treasury bills",
+   "values": [
+    44519657,
+    51650713
+   ],
+   "labels": {
+    "paddle": "Total U.S. Treasury bills",
+    "opus": "Total U.S. Treasury bills"
+   }
+  },
+  {
+   "label": "Government money-market funds",
+   "values": [
+    44502226,
+    45618992
+   ],
+   "labels": {
+    "paddle": "Government money-market funds",
+    "opus": "Government money-market funds"
+   }
+  },
+  {
+   "label": "Cash deposits held at U.S. regulated financial institutions",
+   "values": [
+    27430630,
+    42206630
+   ],
+   "labels": {
+    "paddle": "Cash deposits held at U.S. regulated financial institutions",
+    "opus": "Cash deposits held at U.S. regulated financial institutions"
+   }
+  },
+  {
+   "label": "Accrued interest and dividend income",
+   "values": [
+    10117,
+    56922
+   ],
+   "labels": {
+    "paddle": "Accrued interest and dividend income",
+    "opus": "Accrued interest and dividend income"
+   }
+  },
+  {
+   "label": "Total Market Value of the Reserves (Note 2)",
+   "values": [
+    116462630,
+    139533257
+   ],
+   "labels": {
+    "paddle": "Total Market Value of the Reserves (Note 2)",
+    "opus": "Total Market Value of the Reserves (Note 2)"
+   }
+  }
+ ],
+ "components": {
+  "cash": 42206630,
+  "repo": 0,
+  "government_mmf": 45618992,
+  "treasury": 51650713,
+  "other": 56922
+ },
+ "reconciliation": {
+  "components_sum": 139533257,
+  "reserve_fair_value": 139533257,
+  "ok": true
+ },
+ "resolved_by_checkdigit": [],
+ "check": [],
+ "readers": {
+  "paddle": "paddle/ripple_2025-02.md",
+  "opus": "claude_opus_2025-02.json",
+  "image": "docs/research/읽기엔진시험_2026-10-09/png/paddle/ripple_2025-02.png"
+ }
+}

@@ -1,0 +1,2996 @@
+{
+ "912797MJ3": [
+  {
+   "cusip": "912797MJ3",
+   "issue_date": "2024-11-07",
+   "maturity_date": "2025-02-06",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797MJ3",
+   "issue_date": "2024-08-08",
+   "maturity_date": "2025-02-06",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797MJ3",
+   "issue_date": "2024-12-26",
+   "maturity_date": "2025-02-06",
+   "security_term": "42-Day",
+   "security_type": "Bill"
+  }
+ ],
+ "912797MQ7": [
+  {
+   "cusip": "912797MQ7",
+   "issue_date": "2024-11-26",
+   "maturity_date": "2024-12-24",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797MQ7",
+   "issue_date": "2024-08-27",
+   "maturity_date": "2024-12-24",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797MQ7",
+   "issue_date": "2024-10-29",
+   "maturity_date": "2024-12-24",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797MW4": [
+  {
+   "cusip": "912797MW4",
+   "issue_date": "2024-11-12",
+   "maturity_date": "2025-01-07",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797MW4",
+   "issue_date": "2024-12-10",
+   "maturity_date": "2025-01-07",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797MW4",
+   "issue_date": "2024-09-10",
+   "maturity_date": "2025-01-07",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797MZ7": [
+  {
+   "cusip": "912797MZ7",
+   "issue_date": "2024-12-03",
+   "maturity_date": "2025-01-28",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797MZ7",
+   "issue_date": "2024-10-01",
+   "maturity_date": "2025-01-28",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797MZ7",
+   "issue_date": "2024-12-31",
+   "maturity_date": "2025-01-28",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797NB9": [
+  {
+   "cusip": "912797NB9",
+   "issue_date": "2024-10-10",
+   "maturity_date": "2025-04-10",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NB9",
+   "issue_date": "2025-02-27",
+   "maturity_date": "2025-04-10",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NB9",
+   "issue_date": "2025-01-09",
+   "maturity_date": "2025-04-10",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797ND5": [
+  {
+   "cusip": "912797ND5",
+   "issue_date": "2024-10-31",
+   "maturity_date": "2025-05-01",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797ND5",
+   "issue_date": "2025-03-20",
+   "maturity_date": "2025-05-01",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797ND5",
+   "issue_date": "2025-01-30",
+   "maturity_date": "2025-05-01",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797NF0": [
+  {
+   "cusip": "912797NF0",
+   "issue_date": "2024-12-10",
+   "maturity_date": "2025-02-04",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NF0",
+   "issue_date": "2024-10-08",
+   "maturity_date": "2025-02-04",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NF0",
+   "issue_date": "2025-01-07",
+   "maturity_date": "2025-02-04",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797NK9": [
+  {
+   "cusip": "912797NK9",
+   "issue_date": "2025-02-04",
+   "maturity_date": "2025-03-04",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NK9",
+   "issue_date": "2024-11-05",
+   "maturity_date": "2025-03-04",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NK9",
+   "issue_date": "2025-01-07",
+   "maturity_date": "2025-03-04",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797NN3": [
+  {
+   "cusip": "912797NN3",
+   "issue_date": "2024-11-29",
+   "maturity_date": "2025-05-29",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NN3",
+   "issue_date": "2025-05-13",
+   "maturity_date": "2025-05-29",
+   "security_term": "16-Day",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NN3",
+   "issue_date": "2025-04-17",
+   "maturity_date": "2025-05-29",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NN3",
+   "issue_date": "2025-02-27",
+   "maturity_date": "2025-05-29",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797NR4": [
+  {
+   "cusip": "912797NR4",
+   "issue_date": "2024-11-19",
+   "maturity_date": "2025-03-18",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NR4",
+   "issue_date": "2025-02-18",
+   "maturity_date": "2025-03-18",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NR4",
+   "issue_date": "2025-03-06",
+   "maturity_date": "2025-03-18",
+   "security_term": "12-Day",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NR4",
+   "issue_date": "2025-01-21",
+   "maturity_date": "2025-03-18",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797NT0": [
+  {
+   "cusip": "912797NT0",
+   "issue_date": "2025-03-04",
+   "maturity_date": "2025-04-01",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NT0",
+   "issue_date": "2024-12-03",
+   "maturity_date": "2025-04-01",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NT0",
+   "issue_date": "2025-02-04",
+   "maturity_date": "2025-04-01",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797NU7": [
+  {
+   "cusip": "912797NU7",
+   "issue_date": "2024-12-26",
+   "maturity_date": "2025-12-26",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NU7",
+   "issue_date": "2025-11-13",
+   "maturity_date": "2025-12-26",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NU7",
+   "issue_date": "2025-09-25",
+   "maturity_date": "2025-12-26",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797NU7",
+   "issue_date": "2025-06-26",
+   "maturity_date": "2025-12-26",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797PD3": [
+  {
+   "cusip": "912797PD3",
+   "issue_date": "2025-07-24",
+   "maturity_date": "2026-01-22",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PD3",
+   "issue_date": "2025-12-11",
+   "maturity_date": "2026-01-22",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PD3",
+   "issue_date": "2025-10-23",
+   "maturity_date": "2026-01-22",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PD3",
+   "issue_date": "2025-01-23",
+   "maturity_date": "2026-01-22",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797PK7": [
+  {
+   "cusip": "912797PK7",
+   "issue_date": "2025-04-29",
+   "maturity_date": "2025-05-27",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PK7",
+   "issue_date": "2025-04-01",
+   "maturity_date": "2025-05-27",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PK7",
+   "issue_date": "2025-01-28",
+   "maturity_date": "2025-05-27",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797PL5": [
+  {
+   "cusip": "912797PL5",
+   "issue_date": "2025-05-06",
+   "maturity_date": "2025-06-03",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PL5",
+   "issue_date": "2025-04-08",
+   "maturity_date": "2025-06-03",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PL5",
+   "issue_date": "2025-02-04",
+   "maturity_date": "2025-06-03",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797PM3": [
+  {
+   "cusip": "912797PM3",
+   "issue_date": "2025-11-20",
+   "maturity_date": "2026-02-19",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PM3",
+   "issue_date": "2026-01-08",
+   "maturity_date": "2026-02-19",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PM3",
+   "issue_date": "2025-08-21",
+   "maturity_date": "2026-02-19",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PM3",
+   "issue_date": "2025-02-20",
+   "maturity_date": "2026-02-19",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797PP6": [
+  {
+   "cusip": "912797PP6",
+   "issue_date": "2025-07-10",
+   "maturity_date": "2025-08-21",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PP6",
+   "issue_date": "2025-05-22",
+   "maturity_date": "2025-08-21",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PP6",
+   "issue_date": "2025-02-20",
+   "maturity_date": "2025-08-21",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797PR2": [
+  {
+   "cusip": "912797PR2",
+   "issue_date": "2025-05-13",
+   "maturity_date": "2025-06-10",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PR2",
+   "issue_date": "2025-04-15",
+   "maturity_date": "2025-06-10",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PR2",
+   "issue_date": "2025-02-11",
+   "maturity_date": "2025-06-10",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797PV3": [
+  {
+   "cusip": "912797PV3",
+   "issue_date": "2025-09-18",
+   "maturity_date": "2026-03-19",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PV3",
+   "issue_date": "2025-12-18",
+   "maturity_date": "2026-03-19",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PV3",
+   "issue_date": "2026-02-05",
+   "maturity_date": "2026-03-19",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797PV3",
+   "issue_date": "2025-03-20",
+   "maturity_date": "2026-03-19",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QB6": [
+  {
+   "cusip": "912797QB6",
+   "issue_date": "2025-03-25",
+   "maturity_date": "2025-07-22",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QB6",
+   "issue_date": "2025-05-27",
+   "maturity_date": "2025-07-22",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QB6",
+   "issue_date": "2025-06-24",
+   "maturity_date": "2025-07-22",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QD2": [
+  {
+   "cusip": "912797QD2",
+   "issue_date": "2026-01-15",
+   "maturity_date": "2026-04-16",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QD2",
+   "issue_date": "2025-10-16",
+   "maturity_date": "2026-04-16",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QD2",
+   "issue_date": "2026-03-05",
+   "maturity_date": "2026-04-16",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QD2",
+   "issue_date": "2025-04-17",
+   "maturity_date": "2026-04-16",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QG5": [
+  {
+   "cusip": "912797QG5",
+   "issue_date": "2025-07-24",
+   "maturity_date": "2025-10-23",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QG5",
+   "issue_date": "2025-09-11",
+   "maturity_date": "2025-10-23",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QG5",
+   "issue_date": "2025-04-24",
+   "maturity_date": "2025-10-23",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QH3": [
+  {
+   "cusip": "912797QH3",
+   "issue_date": "2025-06-10",
+   "maturity_date": "2025-08-05",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QH3",
+   "issue_date": "2025-07-08",
+   "maturity_date": "2025-08-05",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QH3",
+   "issue_date": "2025-04-08",
+   "maturity_date": "2025-08-05",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QK6": [
+  {
+   "cusip": "912797QK6",
+   "issue_date": "2025-07-22",
+   "maturity_date": "2025-08-19",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QK6",
+   "issue_date": "2025-06-24",
+   "maturity_date": "2025-08-19",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QK6",
+   "issue_date": "2025-04-22",
+   "maturity_date": "2025-08-19",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QM2": [
+  {
+   "cusip": "912797QM2",
+   "issue_date": "2025-08-05",
+   "maturity_date": "2025-09-02",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QM2",
+   "issue_date": "2025-05-06",
+   "maturity_date": "2025-09-02",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QM2",
+   "issue_date": "2025-07-08",
+   "maturity_date": "2025-09-02",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QN0": [
+  {
+   "cusip": "912797QN0",
+   "issue_date": "2026-02-12",
+   "maturity_date": "2026-05-14",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QN0",
+   "issue_date": "2025-05-15",
+   "maturity_date": "2026-05-14",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QN0",
+   "issue_date": "2025-11-13",
+   "maturity_date": "2026-05-14",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QN0",
+   "issue_date": "2026-04-02",
+   "maturity_date": "2026-05-14",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QP5": [
+  {
+   "cusip": "912797QP5",
+   "issue_date": "2025-05-08",
+   "maturity_date": "2025-11-06",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QP5",
+   "issue_date": "2025-09-25",
+   "maturity_date": "2025-11-06",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QP5",
+   "issue_date": "2025-08-07",
+   "maturity_date": "2025-11-06",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QQ3": [
+  {
+   "cusip": "912797QQ3",
+   "issue_date": "2025-10-02",
+   "maturity_date": "2025-11-13",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QQ3",
+   "issue_date": "2025-08-14",
+   "maturity_date": "2025-11-13",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QQ3",
+   "issue_date": "2025-05-15",
+   "maturity_date": "2025-11-13",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QR1": [
+  {
+   "cusip": "912797QR1",
+   "issue_date": "2025-10-09",
+   "maturity_date": "2025-11-20",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QR1",
+   "issue_date": "2025-08-21",
+   "maturity_date": "2025-11-20",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QR1",
+   "issue_date": "2025-05-22",
+   "maturity_date": "2025-11-20",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QT7": [
+  {
+   "cusip": "912797QT7",
+   "issue_date": "2025-07-15",
+   "maturity_date": "2025-09-09",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QT7",
+   "issue_date": "2025-05-13",
+   "maturity_date": "2025-09-09",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QT7",
+   "issue_date": "2025-08-12",
+   "maturity_date": "2025-09-09",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QU4": [
+  {
+   "cusip": "912797QU4",
+   "issue_date": "2025-07-22",
+   "maturity_date": "2025-09-16",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QU4",
+   "issue_date": "2025-08-19",
+   "maturity_date": "2025-09-16",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QU4",
+   "issue_date": "2025-07-01",
+   "maturity_date": "2025-09-16",
+   "security_term": "77-Day",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QU4",
+   "issue_date": "2025-05-20",
+   "maturity_date": "2025-09-16",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QV2": [
+  {
+   "cusip": "912797QV2",
+   "issue_date": "2025-07-08",
+   "maturity_date": "2025-09-23",
+   "security_term": "77-Day",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QV2",
+   "issue_date": "2025-07-29",
+   "maturity_date": "2025-09-23",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QV2",
+   "issue_date": "2025-08-26",
+   "maturity_date": "2025-09-23",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QV2",
+   "issue_date": "2025-05-27",
+   "maturity_date": "2025-09-23",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QW0": [
+  {
+   "cusip": "912797QW0",
+   "issue_date": "2025-08-05",
+   "maturity_date": "2025-09-30",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QW0",
+   "issue_date": "2025-06-03",
+   "maturity_date": "2025-09-30",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QW0",
+   "issue_date": "2025-09-02",
+   "maturity_date": "2025-09-30",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QX8": [
+  {
+   "cusip": "912797QX8",
+   "issue_date": "2026-03-12",
+   "maturity_date": "2026-06-11",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QX8",
+   "issue_date": "2025-12-11",
+   "maturity_date": "2026-06-11",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QX8",
+   "issue_date": "2025-06-12",
+   "maturity_date": "2026-06-11",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QX8",
+   "issue_date": "2026-04-30",
+   "maturity_date": "2026-06-11",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QY6": [
+  {
+   "cusip": "912797QY6",
+   "issue_date": "2025-10-30",
+   "maturity_date": "2025-12-11",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QY6",
+   "issue_date": "2025-09-11",
+   "maturity_date": "2025-12-11",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QY6",
+   "issue_date": "2025-06-12",
+   "maturity_date": "2025-12-11",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797QZ3": [
+  {
+   "cusip": "912797QZ3",
+   "issue_date": "2025-06-20",
+   "maturity_date": "2025-12-18",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QZ3",
+   "issue_date": "2025-09-18",
+   "maturity_date": "2025-12-18",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797QZ3",
+   "issue_date": "2025-11-06",
+   "maturity_date": "2025-12-18",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RB5": [
+  {
+   "cusip": "912797RB5",
+   "issue_date": "2025-09-09",
+   "maturity_date": "2025-10-07",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RB5",
+   "issue_date": "2025-06-10",
+   "maturity_date": "2025-10-07",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RB5",
+   "issue_date": "2025-08-12",
+   "maturity_date": "2025-10-07",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RC3": [
+  {
+   "cusip": "912797RC3",
+   "issue_date": "2025-06-17",
+   "maturity_date": "2025-10-14",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RC3",
+   "issue_date": "2025-09-16",
+   "maturity_date": "2025-10-14",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RC3",
+   "issue_date": "2025-08-19",
+   "maturity_date": "2025-10-14",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RD1": [
+  {
+   "cusip": "912797RD1",
+   "issue_date": "2025-06-24",
+   "maturity_date": "2025-10-21",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RD1",
+   "issue_date": "2025-08-26",
+   "maturity_date": "2025-10-21",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RD1",
+   "issue_date": "2025-09-23",
+   "maturity_date": "2025-10-21",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RF6": [
+  {
+   "cusip": "912797RF6",
+   "issue_date": "2025-07-10",
+   "maturity_date": "2026-07-09",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RF6",
+   "issue_date": "2026-01-08",
+   "maturity_date": "2026-07-09",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RF6",
+   "issue_date": "2026-04-09",
+   "maturity_date": "2026-07-09",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RF6",
+   "issue_date": "2026-05-28",
+   "maturity_date": "2026-07-09",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RG4": [
+  {
+   "cusip": "912797RG4",
+   "issue_date": "2025-08-07",
+   "maturity_date": "2026-08-06",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RG4",
+   "issue_date": "2026-06-25",
+   "maturity_date": "2026-08-06",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RG4",
+   "issue_date": "2026-02-05",
+   "maturity_date": "2026-08-06",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RG4",
+   "issue_date": "2026-05-07",
+   "maturity_date": "2026-08-06",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RH2": [
+  {
+   "cusip": "912797RH2",
+   "issue_date": "2025-07-10",
+   "maturity_date": "2026-01-08",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RH2",
+   "issue_date": "2025-11-28",
+   "maturity_date": "2026-01-08",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RH2",
+   "issue_date": "2025-10-09",
+   "maturity_date": "2026-01-08",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RK5": [
+  {
+   "cusip": "912797RK5",
+   "issue_date": "2025-10-30",
+   "maturity_date": "2026-01-29",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RK5",
+   "issue_date": "2025-12-18",
+   "maturity_date": "2026-01-29",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RK5",
+   "issue_date": "2025-07-31",
+   "maturity_date": "2026-01-29",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RL3": [
+  {
+   "cusip": "912797RL3",
+   "issue_date": "2025-08-07",
+   "maturity_date": "2026-02-05",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RL3",
+   "issue_date": "2025-12-26",
+   "maturity_date": "2026-02-05",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RL3",
+   "issue_date": "2025-11-06",
+   "maturity_date": "2026-02-05",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RM1": [
+  {
+   "cusip": "912797RM1",
+   "issue_date": "2025-09-09",
+   "maturity_date": "2025-11-04",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RM1",
+   "issue_date": "2025-10-07",
+   "maturity_date": "2025-11-04",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RM1",
+   "issue_date": "2025-07-08",
+   "maturity_date": "2025-11-04",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RN9": [
+  {
+   "cusip": "912797RN9",
+   "issue_date": "2025-10-14",
+   "maturity_date": "2025-11-12",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RN9",
+   "issue_date": "2025-07-15",
+   "maturity_date": "2025-11-12",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RN9",
+   "issue_date": "2025-09-16",
+   "maturity_date": "2025-11-12",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RP4": [
+  {
+   "cusip": "912797RP4",
+   "issue_date": "2025-09-23",
+   "maturity_date": "2025-11-18",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RP4",
+   "issue_date": "2025-10-21",
+   "maturity_date": "2025-11-18",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RP4",
+   "issue_date": "2025-07-22",
+   "maturity_date": "2025-11-18",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RQ2": [
+  {
+   "cusip": "912797RQ2",
+   "issue_date": "2025-10-28",
+   "maturity_date": "2025-11-25",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RQ2",
+   "issue_date": "2025-09-30",
+   "maturity_date": "2025-11-25",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RQ2",
+   "issue_date": "2025-07-29",
+   "maturity_date": "2025-11-25",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RR0": [
+  {
+   "cusip": "912797RR0",
+   "issue_date": "2025-11-04",
+   "maturity_date": "2025-12-02",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RR0",
+   "issue_date": "2025-10-07",
+   "maturity_date": "2025-12-02",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RR0",
+   "issue_date": "2025-08-05",
+   "maturity_date": "2025-12-02",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RS8": [
+  {
+   "cusip": "912797RS8",
+   "issue_date": "2026-06-04",
+   "maturity_date": "2026-09-03",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RS8",
+   "issue_date": "2026-03-05",
+   "maturity_date": "2026-09-03",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RS8",
+   "issue_date": "2026-07-23",
+   "maturity_date": "2026-09-03",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RS8",
+   "issue_date": "2025-09-04",
+   "maturity_date": "2026-09-03",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RT6": [
+  {
+   "cusip": "912797RT6",
+   "issue_date": "2026-01-02",
+   "maturity_date": "2026-02-12",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RT6",
+   "issue_date": "2025-11-13",
+   "maturity_date": "2026-02-12",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RT6",
+   "issue_date": "2025-08-14",
+   "maturity_date": "2026-02-12",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RU3": [
+  {
+   "cusip": "912797RU3",
+   "issue_date": "2025-11-28",
+   "maturity_date": "2026-02-26",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RU3",
+   "issue_date": "2026-01-15",
+   "maturity_date": "2026-02-26",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RU3",
+   "issue_date": "2025-08-28",
+   "maturity_date": "2026-02-26",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RV1": [
+  {
+   "cusip": "912797RV1",
+   "issue_date": "2025-12-04",
+   "maturity_date": "2026-03-05",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RV1",
+   "issue_date": "2026-01-22",
+   "maturity_date": "2026-03-05",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RV1",
+   "issue_date": "2025-09-04",
+   "maturity_date": "2026-03-05",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RW9": [
+  {
+   "cusip": "912797RW9",
+   "issue_date": "2025-10-14",
+   "maturity_date": "2025-12-09",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RW9",
+   "issue_date": "2025-11-12",
+   "maturity_date": "2025-12-09",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RW9",
+   "issue_date": "2025-08-12",
+   "maturity_date": "2025-12-09",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RX7": [
+  {
+   "cusip": "912797RX7",
+   "issue_date": "2025-11-18",
+   "maturity_date": "2025-12-16",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RX7",
+   "issue_date": "2025-10-21",
+   "maturity_date": "2025-12-16",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RX7",
+   "issue_date": "2025-08-19",
+   "maturity_date": "2025-12-16",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RY5": [
+  {
+   "cusip": "912797RY5",
+   "issue_date": "2025-10-28",
+   "maturity_date": "2025-12-23",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RY5",
+   "issue_date": "2025-11-25",
+   "maturity_date": "2025-12-23",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RY5",
+   "issue_date": "2025-08-26",
+   "maturity_date": "2025-12-23",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797RZ2": [
+  {
+   "cusip": "912797RZ2",
+   "issue_date": "2025-12-02",
+   "maturity_date": "2025-12-30",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RZ2",
+   "issue_date": "2025-11-04",
+   "maturity_date": "2025-12-30",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797RZ2",
+   "issue_date": "2025-09-02",
+   "maturity_date": "2025-12-30",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SA6": [
+  {
+   "cusip": "912797SA6",
+   "issue_date": "2026-08-20",
+   "maturity_date": "2026-10-01",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SA6",
+   "issue_date": "2026-07-02",
+   "maturity_date": "2026-10-01",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SA6",
+   "issue_date": "2025-10-02",
+   "maturity_date": "2026-10-01",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SA6",
+   "issue_date": "2026-04-02",
+   "maturity_date": "2026-10-01",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SB4": [
+  {
+   "cusip": "912797SB4",
+   "issue_date": "2025-12-11",
+   "maturity_date": "2026-03-12",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SB4",
+   "issue_date": "2026-01-29",
+   "maturity_date": "2026-03-12",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SB4",
+   "issue_date": "2025-09-11",
+   "maturity_date": "2026-03-12",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SC2": [
+  {
+   "cusip": "912797SC2",
+   "issue_date": "2026-02-12",
+   "maturity_date": "2026-03-26",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SC2",
+   "issue_date": "2025-09-25",
+   "maturity_date": "2026-03-26",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SC2",
+   "issue_date": "2025-12-26",
+   "maturity_date": "2026-03-26",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SD0": [
+  {
+   "cusip": "912797SD0",
+   "issue_date": "2026-01-02",
+   "maturity_date": "2026-04-02",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SD0",
+   "issue_date": "2026-02-19",
+   "maturity_date": "2026-04-02",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SD0",
+   "issue_date": "2025-10-02",
+   "maturity_date": "2026-04-02",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SE8": [
+  {
+   "cusip": "912797SE8",
+   "issue_date": "2025-09-09",
+   "maturity_date": "2026-01-06",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SE8",
+   "issue_date": "2025-12-09",
+   "maturity_date": "2026-01-06",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SE8",
+   "issue_date": "2025-11-12",
+   "maturity_date": "2026-01-06",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SF5": [
+  {
+   "cusip": "912797SF5",
+   "issue_date": "2025-11-18",
+   "maturity_date": "2026-01-13",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SF5",
+   "issue_date": "2025-09-16",
+   "maturity_date": "2026-01-13",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SF5",
+   "issue_date": "2025-12-16",
+   "maturity_date": "2026-01-13",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SG3": [
+  {
+   "cusip": "912797SG3",
+   "issue_date": "2025-11-25",
+   "maturity_date": "2026-01-20",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SG3",
+   "issue_date": "2025-09-23",
+   "maturity_date": "2026-01-20",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SG3",
+   "issue_date": "2025-12-23",
+   "maturity_date": "2026-01-20",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SH1": [
+  {
+   "cusip": "912797SH1",
+   "issue_date": "2025-12-02",
+   "maturity_date": "2026-01-27",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SH1",
+   "issue_date": "2025-12-30",
+   "maturity_date": "2026-01-27",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SH1",
+   "issue_date": "2025-09-30",
+   "maturity_date": "2026-01-27",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SJ7": [
+  {
+   "cusip": "912797SJ7",
+   "issue_date": "2026-01-06",
+   "maturity_date": "2026-02-03",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SJ7",
+   "issue_date": "2025-12-09",
+   "maturity_date": "2026-02-03",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SJ7",
+   "issue_date": "2025-10-07",
+   "maturity_date": "2026-02-03",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SK4": [
+  {
+   "cusip": "912797SK4",
+   "issue_date": "2025-10-30",
+   "maturity_date": "2026-10-29",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SK4",
+   "issue_date": "2026-07-30",
+   "maturity_date": "2026-10-29",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SK4",
+   "issue_date": "2026-09-17",
+   "maturity_date": "2026-10-29",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SK4",
+   "issue_date": "2026-04-30",
+   "maturity_date": "2026-10-29",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SL2": [
+  {
+   "cusip": "912797SL2",
+   "issue_date": "2026-01-08",
+   "maturity_date": "2026-04-09",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SL2",
+   "issue_date": "2025-10-09",
+   "maturity_date": "2026-04-09",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SL2",
+   "issue_date": "2026-02-26",
+   "maturity_date": "2026-04-09",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SM0": [
+  {
+   "cusip": "912797SM0",
+   "issue_date": "2025-10-23",
+   "maturity_date": "2026-04-23",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SM0",
+   "issue_date": "2026-03-12",
+   "maturity_date": "2026-04-23",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SM0",
+   "issue_date": "2026-01-22",
+   "maturity_date": "2026-04-23",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SN8": [
+  {
+   "cusip": "912797SN8",
+   "issue_date": "2025-10-30",
+   "maturity_date": "2026-04-30",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SN8",
+   "issue_date": "2026-03-19",
+   "maturity_date": "2026-04-30",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SN8",
+   "issue_date": "2026-01-29",
+   "maturity_date": "2026-04-30",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SP3": [
+  {
+   "cusip": "912797SP3",
+   "issue_date": "2025-11-06",
+   "maturity_date": "2026-05-07",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SP3",
+   "issue_date": "2026-02-05",
+   "maturity_date": "2026-05-07",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SP3",
+   "issue_date": "2026-03-26",
+   "maturity_date": "2026-05-07",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SQ1": [
+  {
+   "cusip": "912797SQ1",
+   "issue_date": "2025-12-16",
+   "maturity_date": "2026-02-10",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SQ1",
+   "issue_date": "2026-01-13",
+   "maturity_date": "2026-02-10",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SQ1",
+   "issue_date": "2025-10-14",
+   "maturity_date": "2026-02-10",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SR9": [
+  {
+   "cusip": "912797SR9",
+   "issue_date": "2025-12-23",
+   "maturity_date": "2026-02-17",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SR9",
+   "issue_date": "2026-01-20",
+   "maturity_date": "2026-02-17",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SR9",
+   "issue_date": "2025-10-21",
+   "maturity_date": "2026-02-17",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SS7": [
+  {
+   "cusip": "912797SS7",
+   "issue_date": "2025-10-28",
+   "maturity_date": "2026-02-24",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SS7",
+   "issue_date": "2025-12-30",
+   "maturity_date": "2026-02-24",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SS7",
+   "issue_date": "2026-01-27",
+   "maturity_date": "2026-02-24",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797ST5": [
+  {
+   "cusip": "912797ST5",
+   "issue_date": "2026-01-06",
+   "maturity_date": "2026-03-03",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797ST5",
+   "issue_date": "2026-02-03",
+   "maturity_date": "2026-03-03",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797ST5",
+   "issue_date": "2025-11-04",
+   "maturity_date": "2026-03-03",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SU2": [
+  {
+   "cusip": "912797SU2",
+   "issue_date": "2026-08-27",
+   "maturity_date": "2026-11-27",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SU2",
+   "issue_date": "2026-10-15",
+   "maturity_date": "2026-11-27",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SU2",
+   "issue_date": "2025-11-28",
+   "maturity_date": "2026-11-27",
+   "security_term": "52-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SU2",
+   "issue_date": "2026-05-28",
+   "maturity_date": "2026-11-27",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SV0": [
+  {
+   "cusip": "912797SV0",
+   "issue_date": "2025-11-20",
+   "maturity_date": "2026-05-21",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SV0",
+   "issue_date": "2026-02-19",
+   "maturity_date": "2026-05-21",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SV0",
+   "issue_date": "2026-04-09",
+   "maturity_date": "2026-05-21",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SW8": [
+  {
+   "cusip": "912797SW8",
+   "issue_date": "2025-11-28",
+   "maturity_date": "2026-05-28",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SW8",
+   "issue_date": "2026-02-26",
+   "maturity_date": "2026-05-28",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SW8",
+   "issue_date": "2026-04-16",
+   "maturity_date": "2026-05-28",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SX6": [
+  {
+   "cusip": "912797SX6",
+   "issue_date": "2026-03-05",
+   "maturity_date": "2026-06-04",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SX6",
+   "issue_date": "2025-12-04",
+   "maturity_date": "2026-06-04",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SX6",
+   "issue_date": "2026-04-23",
+   "maturity_date": "2026-06-04",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SY4": [
+  {
+   "cusip": "912797SY4",
+   "issue_date": "2025-11-12",
+   "maturity_date": "2026-03-10",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SY4",
+   "issue_date": "2026-01-13",
+   "maturity_date": "2026-03-10",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SY4",
+   "issue_date": "2026-02-10",
+   "maturity_date": "2026-03-10",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797SZ1": [
+  {
+   "cusip": "912797SZ1",
+   "issue_date": "2025-11-18",
+   "maturity_date": "2026-03-17",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SZ1",
+   "issue_date": "2026-02-17",
+   "maturity_date": "2026-03-17",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797SZ1",
+   "issue_date": "2026-01-20",
+   "maturity_date": "2026-03-17",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TA5": [
+  {
+   "cusip": "912797TA5",
+   "issue_date": "2025-11-25",
+   "maturity_date": "2026-03-24",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TA5",
+   "issue_date": "2026-02-24",
+   "maturity_date": "2026-03-24",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TA5",
+   "issue_date": "2026-01-27",
+   "maturity_date": "2026-03-24",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TB3": [
+  {
+   "cusip": "912797TB3",
+   "issue_date": "2025-12-02",
+   "maturity_date": "2026-03-31",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TB3",
+   "issue_date": "2026-02-03",
+   "maturity_date": "2026-03-31",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TB3",
+   "issue_date": "2026-03-03",
+   "maturity_date": "2026-03-31",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TD9": [
+  {
+   "cusip": "912797TD9",
+   "issue_date": "2026-03-19",
+   "maturity_date": "2026-06-18",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TD9",
+   "issue_date": "2025-12-18",
+   "maturity_date": "2026-06-18",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TD9",
+   "issue_date": "2026-05-07",
+   "maturity_date": "2026-06-18",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TD9",
+   "issue_date": "2026-05-22",
+   "maturity_date": "2026-06-18",
+   "security_term": "27-Day",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TE7": [
+  {
+   "cusip": "912797TE7",
+   "issue_date": "2025-12-26",
+   "maturity_date": "2026-06-25",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TE7",
+   "issue_date": "2026-03-26",
+   "maturity_date": "2026-06-25",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TE7",
+   "issue_date": "2026-05-14",
+   "maturity_date": "2026-06-25",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TF4": [
+  {
+   "cusip": "912797TF4",
+   "issue_date": "2026-01-02",
+   "maturity_date": "2026-07-02",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TF4",
+   "issue_date": "2026-04-02",
+   "maturity_date": "2026-07-02",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TF4",
+   "issue_date": "2026-05-21",
+   "maturity_date": "2026-07-02",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TG2": [
+  {
+   "cusip": "912797TG2",
+   "issue_date": "2025-12-09",
+   "maturity_date": "2026-04-07",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TG2",
+   "issue_date": "2026-02-10",
+   "maturity_date": "2026-04-07",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TG2",
+   "issue_date": "2026-03-10",
+   "maturity_date": "2026-04-07",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TH0": [
+  {
+   "cusip": "912797TH0",
+   "issue_date": "2026-02-17",
+   "maturity_date": "2026-04-14",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TH0",
+   "issue_date": "2025-12-16",
+   "maturity_date": "2026-04-14",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TH0",
+   "issue_date": "2026-03-17",
+   "maturity_date": "2026-04-14",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TJ6": [
+  {
+   "cusip": "912797TJ6",
+   "issue_date": "2026-02-24",
+   "maturity_date": "2026-04-21",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TJ6",
+   "issue_date": "2025-12-23",
+   "maturity_date": "2026-04-21",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TJ6",
+   "issue_date": "2026-03-24",
+   "maturity_date": "2026-04-21",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TK3": [
+  {
+   "cusip": "912797TK3",
+   "issue_date": "2026-03-03",
+   "maturity_date": "2026-04-28",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TK3",
+   "issue_date": "2025-12-30",
+   "maturity_date": "2026-04-28",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TK3",
+   "issue_date": "2026-03-31",
+   "maturity_date": "2026-04-28",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TL1": [
+  {
+   "cusip": "912797TL1",
+   "issue_date": "2026-03-10",
+   "maturity_date": "2026-05-05",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TL1",
+   "issue_date": "2026-01-06",
+   "maturity_date": "2026-05-05",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TL1",
+   "issue_date": "2026-04-07",
+   "maturity_date": "2026-05-05",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TN7": [
+  {
+   "cusip": "912797TN7",
+   "issue_date": "2026-06-04",
+   "maturity_date": "2026-07-16",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TN7",
+   "issue_date": "2026-01-15",
+   "maturity_date": "2026-07-16",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TN7",
+   "issue_date": "2026-04-16",
+   "maturity_date": "2026-07-16",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TQ0": [
+  {
+   "cusip": "912797TQ0",
+   "issue_date": "2026-06-18",
+   "maturity_date": "2026-07-30",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TQ0",
+   "issue_date": "2026-01-29",
+   "maturity_date": "2026-07-30",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TQ0",
+   "issue_date": "2026-04-30",
+   "maturity_date": "2026-07-30",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TR8": [
+  {
+   "cusip": "912797TR8",
+   "issue_date": "2026-03-17",
+   "maturity_date": "2026-05-12",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TR8",
+   "issue_date": "2026-01-13",
+   "maturity_date": "2026-05-12",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TR8",
+   "issue_date": "2026-04-14",
+   "maturity_date": "2026-05-12",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TS6": [
+  {
+   "cusip": "912797TS6",
+   "issue_date": "2026-01-20",
+   "maturity_date": "2026-05-19",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TS6",
+   "issue_date": "2026-03-24",
+   "maturity_date": "2026-05-19",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TS6",
+   "issue_date": "2026-04-21",
+   "maturity_date": "2026-05-19",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TU1": [
+  {
+   "cusip": "912797TU1",
+   "issue_date": "2026-02-03",
+   "maturity_date": "2026-06-02",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TU1",
+   "issue_date": "2026-04-07",
+   "maturity_date": "2026-06-02",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TU1",
+   "issue_date": "2026-05-05",
+   "maturity_date": "2026-06-02",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TX5": [
+  {
+   "cusip": "912797TX5",
+   "issue_date": "2026-07-09",
+   "maturity_date": "2026-08-20",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TX5",
+   "issue_date": "2026-02-19",
+   "maturity_date": "2026-08-20",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TX5",
+   "issue_date": "2026-05-21",
+   "maturity_date": "2026-08-20",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TY3": [
+  {
+   "cusip": "912797TY3",
+   "issue_date": "2026-07-16",
+   "maturity_date": "2026-08-27",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TY3",
+   "issue_date": "2026-02-26",
+   "maturity_date": "2026-08-27",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TY3",
+   "issue_date": "2026-05-28",
+   "maturity_date": "2026-08-27",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797TZ0": [
+  {
+   "cusip": "912797TZ0",
+   "issue_date": "2026-02-10",
+   "maturity_date": "2026-06-09",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TZ0",
+   "issue_date": "2026-04-14",
+   "maturity_date": "2026-06-09",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797TZ0",
+   "issue_date": "2026-05-12",
+   "maturity_date": "2026-06-09",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UA3": [
+  {
+   "cusip": "912797UA3",
+   "issue_date": "2026-02-17",
+   "maturity_date": "2026-06-16",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UA3",
+   "issue_date": "2026-04-21",
+   "maturity_date": "2026-06-16",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UA3",
+   "issue_date": "2026-05-19",
+   "maturity_date": "2026-06-16",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UB1": [
+  {
+   "cusip": "912797UB1",
+   "issue_date": "2026-02-24",
+   "maturity_date": "2026-06-23",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UB1",
+   "issue_date": "2026-04-28",
+   "maturity_date": "2026-06-23",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UB1",
+   "issue_date": "2026-05-26",
+   "maturity_date": "2026-06-23",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UC9": [
+  {
+   "cusip": "912797UC9",
+   "issue_date": "2026-06-02",
+   "maturity_date": "2026-06-30",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UC9",
+   "issue_date": "2026-03-03",
+   "maturity_date": "2026-06-30",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UC9",
+   "issue_date": "2026-05-05",
+   "maturity_date": "2026-06-30",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UF2": [
+  {
+   "cusip": "912797UF2",
+   "issue_date": "2026-03-12",
+   "maturity_date": "2026-09-10",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UF2",
+   "issue_date": "2026-06-11",
+   "maturity_date": "2026-09-10",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UF2",
+   "issue_date": "2026-07-30",
+   "maturity_date": "2026-09-10",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UG0": [
+  {
+   "cusip": "912797UG0",
+   "issue_date": "2026-06-18",
+   "maturity_date": "2026-09-17",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UG0",
+   "issue_date": "2026-03-19",
+   "maturity_date": "2026-09-17",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UG0",
+   "issue_date": "2026-08-06",
+   "maturity_date": "2026-09-17",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UH8": [
+  {
+   "cusip": "912797UH8",
+   "issue_date": "2026-06-25",
+   "maturity_date": "2026-09-24",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UH8",
+   "issue_date": "2026-08-13",
+   "maturity_date": "2026-09-24",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UH8",
+   "issue_date": "2026-03-26",
+   "maturity_date": "2026-09-24",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UJ4": [
+  {
+   "cusip": "912797UJ4",
+   "issue_date": "2026-07-09",
+   "maturity_date": "2026-10-08",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UJ4",
+   "issue_date": "2026-08-27",
+   "maturity_date": "2026-10-08",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UJ4",
+   "issue_date": "2026-04-09",
+   "maturity_date": "2026-10-08",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UK1": [
+  {
+   "cusip": "912797UK1",
+   "issue_date": "2026-07-16",
+   "maturity_date": "2026-10-15",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UK1",
+   "issue_date": "2026-09-03",
+   "maturity_date": "2026-10-15",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UK1",
+   "issue_date": "2026-04-16",
+   "maturity_date": "2026-10-15",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UL9": [
+  {
+   "cusip": "912797UL9",
+   "issue_date": "2026-07-23",
+   "maturity_date": "2026-10-22",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UL9",
+   "issue_date": "2026-09-10",
+   "maturity_date": "2026-10-22",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UL9",
+   "issue_date": "2026-04-23",
+   "maturity_date": "2026-10-22",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UM7": [
+  {
+   "cusip": "912797UM7",
+   "issue_date": "2026-08-06",
+   "maturity_date": "2026-11-05",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UM7",
+   "issue_date": "2026-09-24",
+   "maturity_date": "2026-11-05",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UM7",
+   "issue_date": "2026-05-07",
+   "maturity_date": "2026-11-05",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UN5": [
+  {
+   "cusip": "912797UN5",
+   "issue_date": "2026-06-09",
+   "maturity_date": "2026-07-07",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UN5",
+   "issue_date": "2026-03-10",
+   "maturity_date": "2026-07-07",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UN5",
+   "issue_date": "2026-05-12",
+   "maturity_date": "2026-07-07",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797US4": [
+  {
+   "cusip": "912797US4",
+   "issue_date": "2026-07-07",
+   "maturity_date": "2026-08-04",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797US4",
+   "issue_date": "2026-06-09",
+   "maturity_date": "2026-08-04",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797US4",
+   "issue_date": "2026-04-07",
+   "maturity_date": "2026-08-04",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UT2": [
+  {
+   "cusip": "912797UT2",
+   "issue_date": "2026-07-14",
+   "maturity_date": "2026-08-11",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UT2",
+   "issue_date": "2026-06-16",
+   "maturity_date": "2026-08-11",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UT2",
+   "issue_date": "2026-04-14",
+   "maturity_date": "2026-08-11",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UU9": [
+  {
+   "cusip": "912797UU9",
+   "issue_date": "2026-07-21",
+   "maturity_date": "2026-08-18",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UU9",
+   "issue_date": "2026-06-23",
+   "maturity_date": "2026-08-18",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UU9",
+   "issue_date": "2026-04-21",
+   "maturity_date": "2026-08-18",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UV7": [
+  {
+   "cusip": "912797UV7",
+   "issue_date": "2026-07-28",
+   "maturity_date": "2026-08-25",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UV7",
+   "issue_date": "2026-06-30",
+   "maturity_date": "2026-08-25",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UV7",
+   "issue_date": "2026-04-28",
+   "maturity_date": "2026-08-25",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UW5": [
+  {
+   "cusip": "912797UW5",
+   "issue_date": "2026-07-07",
+   "maturity_date": "2026-09-01",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UW5",
+   "issue_date": "2026-08-04",
+   "maturity_date": "2026-09-01",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UW5",
+   "issue_date": "2026-05-05",
+   "maturity_date": "2026-09-01",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UY1": [
+  {
+   "cusip": "912797UY1",
+   "issue_date": "2026-08-13",
+   "maturity_date": "2026-11-12",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UY1",
+   "issue_date": "2026-10-01",
+   "maturity_date": "2026-11-12",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UY1",
+   "issue_date": "2026-05-14",
+   "maturity_date": "2026-11-12",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797UZ8": [
+  {
+   "cusip": "912797UZ8",
+   "issue_date": "2026-08-20",
+   "maturity_date": "2026-11-19",
+   "security_term": "13-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UZ8",
+   "issue_date": "2026-10-08",
+   "maturity_date": "2026-11-19",
+   "security_term": "6-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797UZ8",
+   "issue_date": "2026-05-21",
+   "maturity_date": "2026-11-19",
+   "security_term": "26-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797VB0": [
+  {
+   "cusip": "912797VB0",
+   "issue_date": "2026-07-14",
+   "maturity_date": "2026-09-08",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VB0",
+   "issue_date": "2026-08-11",
+   "maturity_date": "2026-09-08",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VB0",
+   "issue_date": "2026-05-12",
+   "maturity_date": "2026-09-08",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797VC8": [
+  {
+   "cusip": "912797VC8",
+   "issue_date": "2026-07-21",
+   "maturity_date": "2026-09-15",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VC8",
+   "issue_date": "2026-08-18",
+   "maturity_date": "2026-09-15",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VC8",
+   "issue_date": "2026-05-19",
+   "maturity_date": "2026-09-15",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797VD6": [
+  {
+   "cusip": "912797VD6",
+   "issue_date": "2026-07-28",
+   "maturity_date": "2026-09-22",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VD6",
+   "issue_date": "2026-08-25",
+   "maturity_date": "2026-09-22",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VD6",
+   "issue_date": "2026-05-26",
+   "maturity_date": "2026-09-22",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797VE4": [
+  {
+   "cusip": "912797VE4",
+   "issue_date": "2026-06-02",
+   "maturity_date": "2026-09-29",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VE4",
+   "issue_date": "2026-08-04",
+   "maturity_date": "2026-09-29",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VE4",
+   "issue_date": "2026-09-01",
+   "maturity_date": "2026-09-29",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797VK0": [
+  {
+   "cusip": "912797VK0",
+   "issue_date": "2026-06-09",
+   "maturity_date": "2026-10-06",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VK0",
+   "issue_date": "2026-08-11",
+   "maturity_date": "2026-10-06",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VK0",
+   "issue_date": "2026-09-08",
+   "maturity_date": "2026-10-06",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797VL8": [
+  {
+   "cusip": "912797VL8",
+   "issue_date": "2026-06-16",
+   "maturity_date": "2026-10-13",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VL8",
+   "issue_date": "2026-08-18",
+   "maturity_date": "2026-10-13",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VL8",
+   "issue_date": "2026-09-15",
+   "maturity_date": "2026-10-13",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797VP9": [
+  {
+   "cusip": "912797VP9",
+   "issue_date": "2026-07-07",
+   "maturity_date": "2026-11-03",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VP9",
+   "issue_date": "2026-09-08",
+   "maturity_date": "2026-11-03",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VP9",
+   "issue_date": "2026-10-06",
+   "maturity_date": "2026-11-03",
+   "security_term": "4-Week",
+   "security_type": "Bill"
+  }
+ ],
+ "912797VY0": [
+  {
+   "cusip": "912797VY0",
+   "issue_date": "2026-07-28",
+   "maturity_date": "2026-11-24",
+   "security_term": "17-Week",
+   "security_type": "Bill"
+  },
+  {
+   "cusip": "912797VY0",
+   "issue_date": "2026-09-29",
+   "maturity_date": "2026-11-24",
+   "security_term": "8-Week",
+   "security_type": "Bill"
+  }
+ ]
+}

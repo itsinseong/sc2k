@@ -1,0 +1,19 @@
+Consumer Notice Regarding Paxos-Issued Binance USD | Department of Financial Services
+출처 https://www.dfs.ny.gov/consumers/alerts/Paxos_and_Binance (web.archive.org 2023-03-14) (웹 보관본)
+
+Consumer Notice Regarding Paxos-Issued Binance USD
+Consumer Alert
+Notice Regarding Paxos-Issued BUSD
+Paxos Trust Company (“Paxos”) is a limited purpose trust company under the supervision of the New York State Department of Financial Services (“DFS”).
+DFS has ordered Paxos to cease minting Paxos-issued BUSD as a result of several unresolved issues related to Paxos’ oversight of its relationship with Binance in regard to Paxos-issued BUSD. In response, on February 13, 2023, Paxos
+notified customers
+of its intent to end its relationship with Binance for BUSD.
+The Department is monitoring Paxos closely to verify that the company can facilitate redemptions in an orderly fashion subject to enhanced, risk-based, compliance protocols.
+It is important to note that the Department authorized Paxos to issue BUSD on the Ethereum blockchain. The Department has not authorized Binance-Peg BUSD on any blockchain, and Binance-Peg BUSD is not issued by Paxos. There is currently no restriction on the listing or exchange in New York of existing Paxos-issued BUSD by DFS-licensed entities.
+Pursuant to DFS requirements, all stablecoins issued by DFS-regulated entities are required to be fully backed 1:1 by cash or cash equivalents. These reserves are regularly reviewed through third-party attestations and internal and external, independent reviews. Compliance with the DFS stablecoin guidance and bespoke supervisory agreements are also part of the examination process.
+Paxos is required to redeem their Paxos-issued BUSD tokens for U.S. dollars through Paxos at a 1:1 exchange rate pursuant to compliance protocols for customers in good standing.
+U.S. residents who own Paxos-issued BUSD and are not already Paxos customers in good standing can apply to be onboarded as a Paxos customer. Once a customer has gone through the onboarding and due diligence process, Paxos is required to redeem Paxos-issued BUSD for USD at a 1:1 exchange rate pursuant to compliance protocols
+Per DFS requirements, Paxos is required to conduct due diligence on every new customer. There may be a high volume of new customer and redemption requests that will require extended processing time. If you have any issues creating an account with Paxos or would like to know the status of your redemption request, please submit a support request through the Paxos Support Website, at
+help.paxos.com
+.
+Read All DFS Consumer Alerts

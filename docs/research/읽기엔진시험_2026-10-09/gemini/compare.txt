@@ -1,0 +1,91 @@
+
+######## 2024-10
+-- 두 독자 줄 대조 (paddle | claude)
+  같음  dates: ['October 8, 2024', 'October 31, 2024', 'November 25, 2024']
+  같음  footnote1: Per the Etherscan.io website located at: https://etherscan.io.
+  같음  footnote2: The Gemini dollar reserves are held and maintained as cash deposits at State Street Bank and Trust Company and BNY Mellon N.A.; and are invested in U.S. Treasury bills and money market funds held at BNY Mellon N.A., that are in turn invested only in government securities, repurchase agreements collateralized solely by government securities and/or cash, and cash. Market values are based on the fair value of assets and on a trade-date basis.
+  같음  footnote3: Balances have been adjusted for the balance of cash receivable and payable due to timing and settlement differences, including deposits/withdrawals occurring after the bank statement cut-off time, money-market funds purchased/sold prior to the indicated dates, and U.S. Treasury securities purchased/sold before end of day and settled after those dates as well as amounts held in excess of the nominal amounts of GUSD issued and in circulation.
+  같음  row:bank_deposit: [7467921436, 6862977082]
+  같음  row:circulation: [7359561309, 6741723165]
+  같음  row:government_mmf: [0, 0]
+  같음  row:settlement: [-108360127, -121253917]
+  같음  row:total: [7359561309, 6741723165]
+  같음  signature_block: ['Marshall Beard', 'CEO/President', 'Gemini Trust Company, LLC', 'November 25, 2024']
+-- 전체 줄 대조: paddle 21줄, claude 20줄, 다른 곳 1군데
+   delete: paddle ['Marshall Beard']  |  claude []
+-- paddle: parse ok=True
+   정답과 다른 값 필드 4개, 줄 번호만 다른 필드 10개
+   값 다름 field_notes.circulation_formula_disclosed.note: 얻음="유통량 줄의 각주 1이 'Per the Etherscan.io website'로 출처만 밝히고, 발행에서 소각을 빼는지나 발행사 보유분을 제외하는지 같은 산정 방식 설명은 없다. 원문 전체 검색어(일치 수): 'burn'(0), 'mint'(0), 'redeem'(0), 'total supply'(0), 'exclud'(0), 'held by the Company'(0), 'less the'(0), 'Etherscan'(2)"  정답="유통량 줄의 각주 1이 'Per the Etherscan.io website'로 출처만 밝히고, 발행에서 소각을 빼는지나 발행사 보유분을 제외하는지 같은 산정 방식 설명은 없다. 원문 전체 검색어(일치 수): 'burn'(0), 'mint'(0), 'redeem'(0), 'total supply'(0), 'exclud'(0), 'held by the Company'(0), 'less the'(0), 'Etherscan'(0)"
+   값 다름 field_notes.circulation_formula_disclosed.where: 얻음='∅'  정답=None
+   값 다름 field_notes.circulation_formula_disclosed.where.page: 얻음=4  정답='∅'
+   값 다름 field_notes.circulation_formula_disclosed.where.raw: 얻음='Per the Etherscan.io website'  정답='∅'
+   줄번호 field_notes.circulation_formula_disclosed.where.line: 19 (정답 ∅)
+   줄번호 field_notes.custodian_disclosure.where.line: 20 (정답 25)
+   줄번호 field_notes.management_certification.where.line: 16 (정답 22)
+   줄번호 holdings[0].where.line: 7 (정답 8)
+   줄번호 holdings[1].where.line: 9 (정답 11)
+   줄번호 sources.components.cash.line: 7 (정답 8)
+   줄번호 sources.components.government_mmf.line: 8 (정답 9)
+   줄번호 sources.components.other.line: 9 (정답 11)
+   줄번호 sources.components.total.line: 10 (정답 12)
+   줄번호 sources.fair_value.line: 10 (정답 12)
+-- claude: parse ok=True
+   정답과 다른 값 필드 4개, 줄 번호만 다른 필드 10개
+   값 다름 field_notes.circulation_formula_disclosed.note: 얻음="유통량 줄의 각주 1이 'Per the Etherscan.io website'로 출처만 밝히고, 발행에서 소각을 빼는지나 발행사 보유분을 제외하는지 같은 산정 방식 설명은 없다. 원문 전체 검색어(일치 수): 'burn'(0), 'mint'(0), 'redeem'(0), 'total supply'(0), 'exclud'(0), 'held by the Company'(0), 'less the'(0), 'Etherscan'(2)"  정답="유통량 줄의 각주 1이 'Per the Etherscan.io website'로 출처만 밝히고, 발행에서 소각을 빼는지나 발행사 보유분을 제외하는지 같은 산정 방식 설명은 없다. 원문 전체 검색어(일치 수): 'burn'(0), 'mint'(0), 'redeem'(0), 'total supply'(0), 'exclud'(0), 'held by the Company'(0), 'less the'(0), 'Etherscan'(0)"
+   값 다름 field_notes.circulation_formula_disclosed.where: 얻음='∅'  정답=None
+   값 다름 field_notes.circulation_formula_disclosed.where.page: 얻음=4  정답='∅'
+   값 다름 field_notes.circulation_formula_disclosed.where.raw: 얻음='Per the Etherscan.io website'  정답='∅'
+   줄번호 field_notes.circulation_formula_disclosed.where.line: 18 (정답 ∅)
+   줄번호 field_notes.custodian_disclosure.where.line: 19 (정답 25)
+   줄번호 field_notes.management_certification.where.line: 15 (정답 22)
+   줄번호 holdings[0].where.line: 7 (정답 8)
+   줄번호 holdings[1].where.line: 9 (정답 11)
+   줄번호 sources.components.cash.line: 7 (정답 8)
+   줄번호 sources.components.government_mmf.line: 8 (정답 9)
+   줄번호 sources.components.other.line: 9 (정답 11)
+   줄번호 sources.components.total.line: 10 (정답 12)
+   줄번호 sources.fair_value.line: 10 (정답 12)
+
+######## 2026-03
+-- 두 독자 줄 대조 (paddle | claude)
+  같음  dates: ['March 23, 2026', 'March 31, 2026', 'April 30, 2026']
+  같음  footnote1: Per the Etherscan.io website located at: https://etherscan.io.
+  같음  footnote2: The Gemini dollar reserves are held and maintained as cash deposits at State Street and Western Alliance Bank. Market values are based on the fair value of assets and on a trade-date basis.
+  같음  footnote3: Balances have been adjusted for the balance of cash receivable and payable due to timing and settlement differences, including deposits/withdrawals occurring after the bank statement cut-off time, money market funds purchased/sold prior to the indicated dates, and U.S. Treasury securities purchased/sold before end of day and settled after those dates as well as amounts held in excess of the nominal amounts of GUSD issued and in circulation.
+  같음  row:bank_deposit: [4385758357, 4357128242]
+  같음  row:circulation: [4334568508, 4294897397]
+  같음  row:settlement: [-51189849, -62230845]
+  같음  row:total: [4334568508, 4294897397]
+  같음  signature_block: ['Danijela Stojanovic', 'Interim Chief Financial Officer', 'Gemini Space Station, Inc.', 'April 30, 2026']
+-- 전체 줄 대조: paddle 21줄, claude 20줄, 다른 곳 1군데
+   replace: paddle ['Danijela Stojanovic', 'E5290B3E33E642E']  |  claude ['E5290B3E33F642E']
+-- paddle: parse ok=True
+   정답과 다른 값 필드 0개, 줄 번호만 다른 필드 13개
+   줄번호 field_notes.circulation_formula_disclosed.where.line: 19 (정답 27)
+   줄번호 field_notes.custodian_disclosure.where.line: 20 (정답 28)
+   줄번호 field_notes.management_certification.where.line: 16 (정답 24)
+   줄번호 field_notes.redemption_days.where.line: 3 (정답 4)
+   줄번호 holdings[0].where.line: 8 (정답 11)
+   줄번호 holdings[1].where.line: 9 (정답 13)
+   줄번호 sources.circulation.line: 6 (정답 8)
+   줄번호 sources.components.cash.line: 8 (정답 11)
+   줄번호 sources.components.other.line: 9 (정답 13)
+   줄번호 sources.components.total.line: 10 (정답 14)
+   줄번호 sources.fair_value.line: 10 (정답 14)
+   줄번호 sources.report_dates[0].line: 5 (정답 7)
+   줄번호 sources.report_dates[1].line: 5 (정답 7)
+-- claude: parse ok=True
+   정답과 다른 값 필드 0개, 줄 번호만 다른 필드 13개
+   줄번호 field_notes.circulation_formula_disclosed.where.line: 18 (정답 27)
+   줄번호 field_notes.custodian_disclosure.where.line: 19 (정답 28)
+   줄번호 field_notes.management_certification.where.line: 15 (정답 24)
+   줄번호 field_notes.redemption_days.where.line: 3 (정답 4)
+   줄번호 holdings[0].where.line: 8 (정답 11)
+   줄번호 holdings[1].where.line: 9 (정답 13)
+   줄번호 sources.circulation.line: 6 (정답 8)
+   줄번호 sources.components.cash.line: 8 (정답 11)
+   줄번호 sources.components.other.line: 9 (정답 13)
+   줄번호 sources.components.total.line: 10 (정답 14)
+   줄번호 sources.fair_value.line: 10 (정답 14)
+   줄번호 sources.report_dates[0].line: 5 (정답 7)
+   줄번호 sources.report_dates[1].line: 5 (정답 7)

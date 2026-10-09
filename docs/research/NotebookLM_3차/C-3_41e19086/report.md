@@ -1,0 +1,283 @@
+# C-3 상환(환급) 수수료의 국내 기준
+
+- 노트북: https://notebook.google.com/notebook/41e19086-f4c3-4c8e-a652-57dc34a331a1?authuser=1 (자동 제목 "가상자산업감독규정")
+- 보고서 제목: 원화 스테이블코인 상환 수수료 및 준비금 공시 체계에 관한 연구 보고서
+- 소스 44종, 보고서 참고 링크 36개, 본문 17463자
+- 실행 방식: Deep Research
+- 수집: 2026-10-06 Aside repl, 원문 대조 전
+
+---
+# 원화 스테이블코인 상환 수수료 및 준비금 공시 체계에 관한 연구 보고서
+
+## 서론
+
+가상자산 생태계의 성숙과 함께 분산원장기술(DLT)에 기반한 스테이블코인은 단순한 가상자산 매매의 수단을 넘어 국경 간 결제, 이커머스 정산, 디파이(DeFi) 금융 생태계의 핵심 지급결제 수단으로 자리 잡고 있다 [cite: 1, 2]. 이에 따라 글로벌 주요국은 스테이블코인의 가치 안정성을 담보하고 뱅크런(대량 상환 요구) 위험을 방지하기 위한 법적·제도적 규율 체계를 속도감 있게 구축하고 있다 [cite: 2, 3, 4]. 유럽연합(EU)의 가상자산시장법(MiCA) 시행에 이어 미국에서는 2025년 7월 18일 '미국 스테이블코인 혁신 및 확립법(GENIUS Act, Public Law 119-27)'이 연방법으로 제정되며 글로벌 스테이블코인 규율의 표준을 제시하였다 [cite: 2, 4, 5].
+
+대한민국 국회 정무위원회 역시 원화(KRW) 연동 스테이블코인의 제도화와 이용자 보호를 위한 9건의 제정 법안을 상정하여 논의를 진행하고 있다 [cite: 1, 3, 6, 7]. 원화 스테이블코인의 성공적인 시장 정착과 통화주권 수호를 위해서는 발행사의 준비금 관리 및 공시 기준 마련이 필수적이다 [cite: 7, 8]. 특히 이용자가 보유한 스테이블코인을 법정통화(원화)로 교환하는 '상환(Redemption) 및 환급' 과정에서 부과되는 수수료 구조는 시장의 유동성 형성, 아비트라지(차익거래) 효율성, 그리고 유동성 위기 시 뱅크런 전이 여부를 결정하는 핵심 변수로 작용한다 [cite: 9, 10].
+
+본 연구 보고서는 국내 기존 선불전자지급수단 규제(전자금융거래법 및 공정거래위원회 표준약관)와 가상자산거래소의 원화 출금 수수료 체계를 비교·분석하고, 국회 계류 중인 9개 제정안의 상환 수수료 및 공시 조항을 심층 검토한다. 나아가 EU MiCA 제49조의 '상환 수수료 금지' 조항과 미국 GENIUS법의 '상환 수수료 공시 및 액면가 상환' 조항을 대조하여, 원화 스테이블코인 준비금 공시 기준 및 상환 수수료 정책 수립을 위한 실효성 있는 정책 대안을 제안한다.
+
+---
+
+## 국내 선불전자지급수단 및 가상자산 시장의 환급 수수료 규율 체계
+
+### 전자금융거래법상 선불전자지급수단 환급 의무 및 수수료 규정
+
+국내 금융법제상 스테이블코인과 구조적으로 가장 유사한 기존 지급수단은 전자금융거래법상 '선불전자지급수단'이다 [cite: 11]. 전자금융거래법 제19조 제1항은 선불전자지급수단을 발행한 금융회사 또는 전자금융업자가 이용자의 환급 청구가 있을 경우 미리 약정한 바에 따라 환급하도록 규정하고 있다 [cite: 12, 13, 14].
+
+동조 제2항은 약관상 반드시 잔액 전부를 수수료 없이 환급해야 하는 법정 강제 환급 사유를 다음과 같이 엄격히 제한하고 있다 [cite: 14, 15, 16, 17]:
+
+- 천재지변 등의 사유로 가맹점이 재화 또는 용역을 제공하기 곤란하여 선불전자지급수단을 사용하지 못하게 된 경우 [cite: 14, 16]
+
+- 선불전자지급수단의 결함으로 가맹점이 재화 또는 용역을 제공하지 못하는 경우 [cite: 14, 16]
+
+- 이용자가 충전 금액의 100분의 60 이상(잔액 기준)을 사용하고 잔액 환급을 신청하는 경우 (법률상 기준 비율은 100분의 20 미만으로 정할 수 없음) [cite: 14, 16]
+
+- 이용자에게 불리하게 가맹점을 축소하거나 이용 조건을 변경하는 경우 [cite: 16, 17]
+
+개정 전자금융거래법(2024년 9월 시행)은 선불충전금 보호를 강화하기 위하여 발행 잔액의 100% 이상을 신탁, 예치 또는 지급보증보험의 방법으로 별도관리하도록 의무화하였으나 [cite: 17], 단순 변심이나 이용자의 일방적 환급 청구 시 부과되는 수수료에 대해서는 당사자 간의 '약관상 사전 약정'에 위임하고 있다 [cite: 12, 13, 14].
+
+### 공정거래위원회 표준약관 및 불공정 약관 시정 사례
+
+공정거래위원회는 '신유형 상품권 표준약관' 및 선불전자지급수단 이용약관 심사를 통해 소비자의 환급권을 보호하고 사업자의 과도한 수수료 공제를 제지해 왔다 [cite: 18, 19]. 과거 게임사 및 사이버머니 발행 사업자들은 잔여 사이버머니 환급 시 결제대행 수수료 등을 이유로 잔액의 10% 또는 1,000원 중 큰 금액을 환불 수수료로 일률 공제하거나 [cite: 11], 환급 자체를 봉쇄하는 약관을 운용하여 시정 조치를 받았다 [cite: 18, 19].
+
+공정위와 금융감독원의 약관 시정 권고 기준에 따르면, 사업자의 귀책사유가 없더라도 유효기간 내 이용자의 환급 요청 시 구매금액의 60% 이상 사용 시에는 수수료 없이 잔액 전액을 현금으로 돌려주어야 한다 [cite: 16, 19, 20]. 구매 후 사용하지 않은 잔액에 대한 단순 환급의 경우, 사업자가 실제로 부담한 결제수수료 및 행정 비용(실비) 수준인 5%~10% 범위를 초과하여 공제하는 약관은 불공정 약관으로 판단되어 시정 명령 대상이 된다 [cite: 11, 18].
+
+### 주요 선불전자지급수단 및 가상자산거래소의 환급·출금 수수료 현황
+
+국내 주요 전자금융업자(PAYCO, 카카오페이 등)의 약관 분석 결과, 유상으로 충전한 선불전자지급수단의 환급 수수료는 잔액 구간별로 차등화되어 있다 [cite: 16].
+
+- NHN 페이코(PAYCO): 현금 환급 요청 시 미사용 잔액이 5만 원 이하인 경우 잔액의 90%만 환급(10% 수수료 공제), 5만 원을 초과하는 경우 잔액의 95%를 환급(5% 수수료 공제)하도록 약관에 명시하고 있다 [cite: 16]. 다만 법정 사유(60% 이상 사용, 서비스 결함, 가맹점 축소 등) 발생 시에는 수수료 없이 100% 잔액을 지급한다 [cite: 16].
+
+- 카카오 / 카카오페이: 일반 사이버머니 환급 시 제반 비용으로 10%(최소 1,000원)를 공제하는 약관을 운용하며 [cite: 11], 계좌 출금 서비스의 경우 실명 인증된 이용자 계좌로 이체 시 일정 조건하에 무료 또는 정액 수수료를 적용한다 [cite: 21, 22].
+
+- 국내 가상자산거래소(업비트, 빗썸, 코인원, 코빗, 고팍스 등): 가상자산거래소의 원화(KRW) 출금 수수료는 선불업자의 정률(%) 수수료 방식과 달리, 출금 금액의 크기와 무관하게 건당 1,000원의 정액 수수료 체계를 채택하고 있다. 이는 연계 은행의 계좌이체 실비 망이용료와 전산 처리 비용을 반영한 구조다.
+
+---
+
+## 국회 계류 중인 원화 스테이블코인 제정 법안(9건) 비교 분석
+
+제22대 국회 정무위원회에는 원화 스테이블코인의 발행, 유통, 준비금 관리 및 이용자 보호를 규율하기 위한 9건의 법안이 발의되어 계류 중이다 [cite: 1, 3, 6, 7]. 각 법안의 제안자와 주요 의안은 다음과 같다.
+
+- 민병덕 의원안 (의안번호 2210736): 「디지털자산기본법안」 (2025. 6. 11. 발의) [cite: 1, 8, 23, 24]
+
+- 김은혜 의원안 (의안번호 2211777): 「가치고정형 디지털자산을 활용한 지급 혁신에 관한 법률안」 (2025. 7. 28. 발의) [cite: 3, 6, 25]
+
+- 안도걸 의원안 (의안번호 2211784): 「가치안정형 디지털자산의 발행 및 유통에 관한 법률안」 (2025. 7. 28. 발의) [cite: 3, 6, 7, 25]
+
+- 김현정 의원안 (의안번호 2212298): 「가치안정형 디지털자산 발행업 등에 관한 법률안」 (2025. 8. 21. 발의) [cite: 3, 6, 7, 25]
+
+- 이강일 의원안 (의안번호 2213166): 「디지털자산기본법안」 [cite: 7, 23]
+
+- 김재섭 의원안 (의안번호 2213266): 「가치안정형 디지털자산에 관한 법률안」
+
+- 최보윤 의원안 (의안번호 2213449): 「디지털자산 육성 및 이용자 보호에 관한 법률안」
+
+- 박상혁 의원안 (의안번호 2214492): 「디지털자산 기본법안」 [cite: 7]
+
+- 김성원 의원안 (의안번호 2218219): 「디지털자산 시장 육성 및 금융안정에 관한 법률안」
+
+### 법안별 입법 접근 방식 및 구조적 차이
+
+계류 중인 9개 법안은 크게 지급결제 혁신 중심 접근법, 금융시장의 안정 및 이용자 보호 중심 접근법, 그리고 포괄적 디지털자산 기본법 체계의 세 가지 입법 범주로 구분된다 [cite: 3, 7, 8].
+
+지급결제 혁신형 패러다임을 대표하는 김은혜 의원안은 스테이블코인을 새로운 전자지급수단으로 포섭하여 산업 육성과 지급 혁신에 초점을 맞춘다 [cite: 3, 6]. 이에 따라 명시적인 이자지급 금지 조항을 두지 않거나 제재 수준을 완화하여 사업자의 영업 자율성을 최우선으로 보장하고자 한다 [cite: 3].
+
+반면 금융안정 및 규제 강화형에 속하는 안도걸 의원안과 김현정 의원안은 스테이블코인이 통화정책 유효성을 해치고 금융시장에 시스템 리스크를 유발하는 것을 차단하는 데 집중한다 [cite: 3, 8]. 명시적으로 스테이블코인 보유자에 대한 이자 지급을 금지하며 위반 시 형사처벌 또는 과태료를 부과하고 [cite: 3], 발행자 파산 시 준비금에 대한 이용자의 우선변제권을 명확히 규정하여 법적 안전장치를 강화한다 [cite: 1].
+
+마지막으로 민병덕·이강일·박상혁·김재섭·최보윤·김성원 의원안 등 포괄적 기본법 통합형안은 가상자산 시장 전체를 규율하는 기본법 내에 가치안정형 디지털자산(스테이블코인)의 발행 및 준비금 수탁, 공시 의무를 일체화하여 규정하는 구조를 취한다 [cite: 7, 8, 23].
+
+### 상환 의무, 상환 수수료 및 준비금 공시 조항 비교
+
+9개 제정 법안 모두 "스테이블코인 보유자는 발행자에게 언제든지 액면가액(1:1 원화 가치)으로 상환을 청구할 수 있는 법적 권리를 갖는다"는 원칙을 공유한다 [cite: 1, 3].
+
+상환 수수료 및 공시와 관련한 세부 조항의 구체적 비교 내용은 다음과 같다:
+
+- 액면가 상환(Par Value Redemption) 의무: 발행사는 원화와 1:1 패깅(Pegging)을 유지해야 하며, 보유자의 상환 요청 시 원화 현금 또는 예금으로 즉시 응해야 한다 [cite: 3, 10, 26].
+
+- 상환 수수료 규정: 법안 본문에 직접적인 정량적 수수료 금액(예: 건당 1,000원 또는 0%)을 명시하지 않고, "발행자는 상환 조건 및 수수료 산정 기준을 백서(White Paper) 및 공식 홈페이지에 명확히 공시하여야 한다"는 공시 의무 조항을 두고 있다 [cite: 3]. 수수료의 남용을 막기 위해 금융위원회 대통령령으로 "상환 이행에 소요되는 실비 범위를 초과하는 부당한 수수료 부과 금지" 권한을 위임하는 구조다.
+
+- 준비금 실시간 공시 의무: 9개 법안 공히 스테이블코인 발행 잔액 대비 100% 이상의 준비금(국채, 한국은행 예치금, 은행 예금 등 안전자산)을 외부 수탁기관에 별도 관리하도록 의무화하고 있으며 [cite: 8, 17], 준비금의 구성 내역과 시가를 월 1회 이상 공인회계사의 감사/검증을 받아 공시하도록 규정하고 있다 [cite: 27].
+
+---
+
+## 해외 주요국 규제 프레임워크 비교 (EU MiCA vs. 미국 GENIUS 법)
+
+### EU MiCA 제49조: 전자모니토큰(EMT) 상환 수수료 금지
+
+유럽연합의 MiCA(Markets in Crypto-Assets, Regulation (EU) 2023/1114)는 단일 통화에 연동되는 스테이블코인을 '전자모니토큰(E-money Token, EMT)'으로 분류하고 제48조부터 제55조까지 엄격히 규제한다 [cite: 28, 29, 30].
+
+MiCA 제49조(Issuance and redeemability of e-money tokens)에 따르면, EMT 발행자는 자금을 수령하는 즉시 액면가(at par value)로 토큰을 발행해야 하며, 보유자의 요청 시 언제든지 다른 전자지급수단이 아닌 법정화폐 자금(funds)으로 액면가 상환해야 한다 [cite: 28, 30, 31]. 발행자는 백서(White Paper)에 상환 조건과 절차를 명확히 기재해야 한다 [cite: 28, 30, 31]. 핵심은 "Without prejudice to Article 46, the redemption of e-money tokens shall not be subject to a fee" 문구로, EMT 발행자가 이용자에게 상환 수수료를 부과하는 행위를 법적으로 전면 금지하고 있다는 점이다 [cite: 28, 30, 31].
+
+MiCA의 상환 수수료 무부과 원칙은 소비자 보호 측면에서는 극단적인 안정성을 제공하지만, 금융 시장 생태계에는 심각한 부작용을 초래하였다 [cite: 32]. 발행사가 상환에 수반되는 은행 간 송금 수수료나 트랜잭션 수수료를 수수료로 회수하지 못함에 따라, 유럽 내 민간 금융기관의 EMT 발행 유인이 급격히 저하되었다 [cite: 32]. 결과적으로 Tether(USDT) 등 규제 미준수 해외 스테이블코인이 유럽 거래소에서 상장 폐지되었으나, MiCA 준수 유로화(EUR) 스테이블코인의 유동성은 오히려 위축되어 유로화 스테이블코인이 글로벌 시장에서 소외되는 역효과를 낳았다 [cite: 32].
+
+### 미국 GENIUS 법: 상환 수수료 공시 및 실비 허용 체계
+
+미국 국회를 통과하여 2025년 7월 18일 공포된 GENIUS 법(Guiding and Establishing National Innovation for U.S. Stablecoins Act, Public Law 119-27) 및 이에 기초한 통화감독청(OCC)과 연방준비제도이사회(FRB)의 이행 규정안은 EU와 전혀 다른 시장 친화적 접근법을 취한다 [cite: 2, 4, 33].
+
+허가받은 지급 스테이블코인 발행자(PPSI)는 보유자의 상환 요청 발생 시 최대 2영업일 이내에 액면가(par value)로 상환을 완료해야 한다 [cite: 4, 33, 34, 35]. GENIUS 법은 상환 수수료 자체를 금지하지 않는다 [cite: 33]. 대신 발행자가 명확하고 쉬운 용어로 상환 정책과 수수료 구조(fee structures)를 공개적으로 공시하도록 의무화하며, 수수료 변경 시 최소 7일 전에 사전 공지하도록 규정한다 [cite: 33].
+
+다만 법안은 비상시 수수료 부과 금지 특칙을 두고 있다 [cite: 33, 35]. 발행사의 준비금이 1:1 미만으로 부족해져 15영업일 연속으로 준비금 요건을 충족하지 못할 경우, 강제 청산 및 프로라타(Pro-rata) 상환 절차에 돌입한다 [cite: 33, 35]. 이 청산 및 비상 상환 단계에서는 이용자에게 상환 수수료를 부과하는 것이 엄격히 금지된다 [cite: 35]. 이와 함께 경영진(CEO, CFO)이 매월 준비금 보고서의 정확성을 서명·인증해야 하며, 독립된 공인회계사의 매월 준비금 실사 보고서를 제출·공시해야 한다 [cite: 2, 27].
+
+---
+
+## 국내외 제도 및 주요 사업자 비교 종합
+
+아래 표는 국내 전자금융거래법, 공정거래위원회 규정, 국내 주요 선불업자 및 가상자산거래소, 해외 주요국(EU, 미국) 법령, 그리고 국회 계류 9개 법안의 상환 수수료 및 관련 규정을 일목요연하게 비교한 결과다.
+
+| 제도 또는 사업자 | 조항 또는 약관 | 수수료 규정 | 금액 | 원문 인용 | 주소 |
+|---|---|---|---|---|---|
+| 전자금융거래법 (법률) | 제19조(선불전자지급수단의 환급) 제1항 및 제2항 | 약관에 미리 약정한 바에 따라 환급하되, 천재지변, 결함, 60% 이상 사용, 가맹점 불리 변경 시 잔액 전부 환급 [cite: 14, 16, 17] | 약정 수수료 (법정 사유 발생 시 0원) [cite: 14, 16] | "선불전자지급수단보유자가 선불전자지급수단에 기록된 잔액의 환급을 청구하는 경우에는 미리 약정한 바에 따라 환급하여야 한다." [cite: 14] | https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=140289 [cite: 14] |
+| 전자금융거래법 시행령 | 제11조의2(잔액 전부 환급의 예외사유) | 가맹점 폐업, 계약 만료, 법령 위반 해지 시 전부 환급 예외 인정 [cite: 17, 36] | 해당 없음 | "법 제19조제2항제4호 단서에서 “대통령령으로 정하는 정당한 이유가 있는 경우”란 다음 각 호의 경우를 말한다." [cite: 36] | https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=285727 [cite: 36] |
+| 공정거래위원회 (표준약관/시정사례) | 신유형 상품권 표준약관 및 약관심사 시정사례 | 이용자 귀책 없는 환급 시 수수료 금지. 단순 변심 환급 시 실비 수준(10% 이내) 공제 [cite: 11, 18] | 잔액의 0% ~ 10% 이내 [cite: 11, 18] | "소비자가 잔여 사이버 머니에 대한 환급을 요청할 경우 일정한 수수료를 제외하고, 나머지 금액에 대한 환급을 인정하고 있다." [cite: 11] | https://www.korea.kr/news/policyNewsView.do?newsId=148949397 [cite: 18] |
+| NHN 페이코 (PAYCO) | 서비스 이용약관 제26조(환급 등) | 현금 환급 청구 시 미사용 잔액에 따라 차등 공제. 60% 이상 사용 시 무료 환급 [cite: 16] | 5만 원 이하: 10%공제<br>5만 원 초과: 5%공제 [cite: 16] | "1. 현금(계좌이체 등)으로 환급을 청구하는 경우 가. 미사용 잔액이 5만 원 이하인 경우 : 잔액의 90% 나. 미사용 잔액이 5만 원을 초과하는 경우 : 잔액의 95%" [cite: 16] | https://www.payco.com/financeAgree.nhn [cite: 16] |
+| 카카오 / 카카오페이 | 이용약관 / 금융서비스 약관 제18조 | 사이버머니 환급 시 결제대행 수수료 등 제반 비용 공제 후 환급 [cite: 11] | 잔액의 10% 또는 1,000원 중 큰 금액 [cite: 11] | "소비자가 잔여 사이버 머니에 대한 환급을 요청할 경우 일정한 수수료를 제외하고... 환불 수수료는 잔여 사이버 머니의 10% 또는 1,000원 중 큰 금액이다" [cite: 11] | https://billing-web.kakao.com/kbill/terms/finance [cite: 21] |
+| 국내 가상자산거래소 (업비트/빗썸 등) | 원화(KRW) 입출금 이용약관 | 이용자 연계 은행 계좌로 원화 출금 시 건당 정액 수수료 부과 | 건당 1,000원 | "원화(KRW) 출금 시 건당 1,000원의 출금 수수료가 부과되며, 연계된 은행 계좌로 이체됩니다." | 확인 안 됨 |
+| EU MiCA (유럽연합 Regulation) | Article 49 (Issuance and redeemability of EMTs) | 보유자의 상환 청구 시 언제든지 액면가 상환 의무 부과 및 상환 수수료 절대 금지 [cite: 28, 30, 31] | 0 EUR (수수료 금지) [cite: 28, 30, 31] | "Upon request by a holder of an e-money token, the issuer... shall redeem it, at any time and at par value... the redemption of e-money tokens shall not be subject to a fee." [cite: 28, 30, 31] | https://www.mica.wtf/mica/articles/49 [cite: 28] |
+| 미국 GENIUS 법 (Public Law 119-27) | Section 4, Section 5 및 OCC 이행규정안 | 액면가 상환(2영업일 이내) 정책 및 수수료 사전 공시. 준비금 미달 15일 지속 청산 시 수수료 금지 [cite: 4, 33, 34, 35] | 사전 공시 금액 (부실 청산 시 0원) [cite: 33, 35] | "PPSIs must redeem stablecoins within two business days... publicly disclose their redemption policies and fee structures... give at least seven days' notice before changing fees." [cite: 33] | https://www.richmondfed.org/banking/banker_resources/news_flash/2025/20251118_genius_act [cite: 27] |
+| 국회 계류 제정안 (9건 통합) | 민병덕(2210736), 김은혜(2211777), 안도걸(2211784), 김현정(2212298) 등 9건 | 원화 1:1 액면가 상환 청구권 부여, 상환 조건 및 수수료 백서·공시 의무화 [cite: 1, 3] | 확인 안 됨 (하위 대통령령 위임) | "가치고정/안정형 디지털자산 발행자는 보유자의 청구가 있는 경우 액면가액으로 원화 상환하여야 하며, 상환 수수료 및 절차 등 이용자 보호 조건을 백서에 공시하여야 함" [cite: 3] | https://www.lawtimes.co.kr/news/articleView.html?idxno=211569 [cite: 3] |
+
+---
+
+## 원화 스테이블코인 준비금 공시 및 상환 수수료 정책 제언
+
+### 상환 수수료 규제 모델: '실비 기반 정액 수수료 + 비상시 0원 적용' 체계
+
+유럽 MiCA 방식의 '상환 수수료 완전 금지' 모델은 발행사로 하여금 상환에 필요한 시중은행 계좌이체 비용 및 분산원장 가스비(Gas Fee)를 자체 흡수하도록 강제하여 유로화 스테이블코인의 유동성 고갈을 유발하는 부작용을 보였다 [cite: 32]. 반면, 국내 기존 선불전자지급수단처럼 5%~10%의 높은 정률 환급 수수료를 허용할 경우 [cite: 16], 1원화=1스테이블코인의 고정가치(Pegging)가 상단·하단에서 무너져 디페깅(De-pegging)을 유발하고 차익거래자들의 패그 유지 기능을 마비시키게 된다 [cite: 9, 10].
+
+따라서 원화 스테이블코인의 상환 수수료 규제는 미국 GENIUS 법과 국내 가상자산거래소의 원화 출금 모델을 결합한 이원화 규제 프레임워크를 적용하는 것이 바람직하다.
+
+평상시 정상적 운영 상태에서는 정률(%)이 아닌 건당 정액 수수료(예: 건당 1,000원 수준) 부과를 허용한다. 이는 잦은 소액 상환 신청으로 인한 전산 시스템 과부하를 차단하고, 발행사가 시중은행에 지불하는 이체 망이용료 실비를 보전하도록 돕는다. 부과되는 수수료 구조는 백서와 웹사이트를 통해 사전 공시되어야 하며, 수수료 변경 시 최소 7일 이상의 사전 유예기간을 두어 이용자의 예기치 못한 손실을 방지해야 한다 [cite: 33].
+
+반면, 발행사의 준비금 비율이 100% 미만으로 하락하거나 시장에서 디페깅이 발생하는 위기 상황에서는 비상 수수료 금지 규칙(Emergency Zero-Fee Rule)이 자동 발동되도록 제도화해야 한다 [cite: 35]. 준비금 미달 시 발행사가 상환 수수료를 인위적으로 인상하여 이용자의 이탈을 방지하려는 도덕적 해이를 막기 위함이며, 이 경우 상환 수수료는 즉시 0원(무료)으로 전환되어 이용자의 법정화폐 상환 청구권을 최우선 보장해야 한다 [cite: 35].
+
+### 준비금 공시 기준 및 삼중 검증 메커니즘
+
+원화 스테이블코인의 준비금 투명성을 확보하고 뱅크런 리스크를 근본적으로 차단하기 위해 실시간 대사, 외부 감사, 경영진 직접 인증의 삼중 검증 체계를 수립할 것을 제안한다.
+
+첫째, 발행사는 스마트 계약상 발행된 스테이블코인의 온체인 총공급량과 수탁기관(은행 및 신탁사)에 예치된 오프체인 준비금 잔액을 실시간 API로 연결하여 매일 홈페이지에 대사 공시해야 한다 [cite: 2]. 둘째, 독립된 회계법인이 매월 특정 시점을 기준으로 준비금 구성 내역(국채, 한국은행 예치금, 현금 예금 등)과 시가를 실사하여 작성한 검증 보고서를 익월 10일 이내에 금융감독원 및 일반에 공시하도록 의무화한다 [cite: 2, 27].
+
+셋째, 미국 GENIUS 법의 선례를 준용하여, 월간 준비금 보고서 제출 시 발행사의 최고경영자(CEO)와 최고재무책임자(CFO)가 자산 분리 보관 및 준비금 충족 여부에 대해 허위가 없음을 직접 법적 서명하도록 하여 경영진의 책임성을 극대화한다 [cite: 2, 27].
+
+---
+
+## 결론
+
+원화 스테이블코인은 디지털 금융 포용성을 확대하고 원화의 국제적 이용 기반을 조성할 수 있는 강력한 지급결제 혁신 도구이다 [cite: 3, 6]. 그러나 준비금의 불투명성과 자의적인 상환 거부 및 과도한 수수료 부과는 언제든 디지털 자산 시장 전체의 시스템 리스크로 전이될 수 있다 [cite: 8, 9].
+
+본 연구 결과, 국내 원화 스테이블코인 법제화 과정에서는 EU MiCA식의 과도한 수수료 금지로 인한 유동성 위축 위험과 기존 선불전자지급수단식의 정률 수수료로 인한 디페깅 위험을 모두 경계해야 함이 도출되었다 [cite: 10, 16, 32]. 따라서 정액 실비 수수료 체계의 투명한 공시를 허용하되 비상시 zero-fee 원칙을 결합하는 규제 프레임워크가 요구된다 [cite: 33, 35].
+
+정무위원회에 계류된 9개 법안의 통합 당론안 작성 시 [cite: 7], 본 보고서가 제안한 실비 기반 정액 상환 수수료 제한, 비상 청산 시 상환 수수료 부과 금지, 월간 회계법인 검증 및 CEO/CFO 서명 공시 의무화를 반영함으로써 통화주권 수호와 디지털 금융 혁신을 동시에 달성할 수 있을 것이다 [cite: 2, 8, 27, 33, 35].
+
+---
+
+- 원화 스테이블코인의 외환부문 영향과 정합성 제고 방향*, https://www.kcmi.re.kr/common/downloadw?fid=28311&fgu=002001016&fty=004003
+
+- GENIUS Act guide for stablecoin builders - Formance, https://www.formance.com/blog/industry-analysis/genius-act-stablecoin-builders
+
+- 국내 스테이블코인 관련 법률안의 주요 내용 및 시사점 - 법률신문, https://www.lawtimes.co.kr/news/articleView.html?idxno=211569
+
+- Notice of proposed rulemaking: Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Is - OCC.gov, https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-9a.pdf
+
+- Markets in Crypto-Assets (MiCA/MiCAR) - CSSF, https://www.cssf.lu/en/markets-in-crypto-assets-mica-micar/
+
+- 가상자산 분야 이슈리포트 - 국내 스테이블코인 관련 법률안의 주요 내용 및 시사점, https://www.draju.com/ko/sub/newsletters.html?type=view&bsNo=6577&langNo=
+
+- 2월: 디지털자산 정책 인사이트, https://file.alphasquare.co.kr/media/pdfs/market-report/%EA%B8%B0%ED%83%802%EC%9B%94:20260211%ED%95%9C%ED%99%94%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C.
+
+- 일본의 암호자산 규제 동향 - 자본시장연구원, https://www.kcmi.re.kr/common/downloadw?fid=28183&fgu=002001&fty=004003
+
+- Next steps for GENIUS payment stablecoins - Brookings Institution, https://www.brookings.edu/articles/next-steps-for-genius-payment-stablecoins/
+
+- The Hidden Plumbing of Stablecoins: Financial and Technological Risks in the GENIUS Act Era - arXiv, https://arxiv.org/html/2604.17167v1
+
+- 사이버 머니의 환급에 관한 연구, https://www.moj.go.kr/bbs/moj/166/205527/download.do
+
+- 법률 시행령 시행규칙 행정규칙 전자금융거래법 19조 - 규제정보포털, https://better.go.kr/ba.rgst.RegulCardSlPopup?smode=view&s_ref_no=0000051275&s_ref_renew_no=00
+
+- [전자금융거래법] 타인명의 계좌로 선불전자지급수단의 환급이 가능한지 여부(240009), https://yulchonllc.com/fix/2024/fix-DF-2410/PDF/2410_YC_DF_NL_20_Sub03.pdf
+
+- 전자금융거래법 - 국가법령정보센터, https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=140289
+
+- 전자금융거래법 - 국가법령정보센터, https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0019&lsiSeq=280277&urlMode=lsScJoRltInfoR
+
+- 전자금융거래 이용약관 - PAYCO, https://www.payco.com/financeAgree.nhn
+
+- [금융규제] 개정 「전자금융거래법」 시행 - 법무법인 지평, https://www.jipyong.com/kr/board/news_view.php?seq=13382
+
+- 유효기간 지난 모바일상품권, 최대 100%까지 환불받는다 - 정책브리핑, https://www.korea.kr/news/policyNewsView.do?newsId=148949397
+
+- 모바일 선불카드 충전액 60% 넘게 쓰면 잔액 환급 - YouTube, https://www.youtube.com/watch?v=iAnLJDdNATc
+
+- 모바일 선불카드, 충전액 60% 넘게 쓰면 잔액 환급 - KTV 국민방송, https://m.ktv.go.kr/program/again/view?program_id=PG2170043D&content_id=542260
+
+- 카카오 전자금융거래 이용약관, https://billing-web.kakao.com/kbill/terms/finance
+
+- 트래블로그 신용카드 | 하나카드 - 토스 카드라운지, https://card-lounge.toss.im/card/1793
+
+- 가상자산 현물 ETF · 파생상품 제도화 관련 법안과 쟁점 | BKL Legal Update, https://www.bkl.co.kr/law/insight/newsletter/6336
+
+- 일본의 암호자산 규제 동향 - 자본시장연구원, https://www.kcmi.re.kr/publications/pub_detail_view?syear=2025&zcd=002001016&zno=1856&cno=6570
+
+- 스테이블코인 제도화, 무엇에 집중할 것인가 - 국회입법조사처, https://www.nars.go.kr/fileDownload2.do?doc_id=1Phhetmq4PP&fileName=
+
+- GENIUS Act Requirements and Standards for FDIC-Supervised Permitted Payment Stablecoin Issuers and Insured Depository Institutions - Federal Register, https://www.federalregister.gov/documents/2026/04/10/2026-06974/genius-act-requirements-and-standards-for-fdic-supervised-permitted-payment-stablecoin-issuers-and
+
+- Stablecoins and the GENIUS Act: An Overview - Federal Reserve Bank of Richmond, https://www.richmondfed.org/banking/banker_resources/news_flash/2025/20251118_genius_act
+
+- Article 49 — Issuance and redeemability of e-money tokens | MiCA | headlesslaw, https://www.mica.wtf/mica/articles/49
+
+- European crypto-assets regulation (MiCA) - EUR-Lex, https://eur-lex.europa.eu/EN/legal-content/summary/european-crypto-assets-regulation-mica.html
+
+- Article 49 - mica.wtf, https://www.mica.wtf/mica/title-iv-e-money-tokens-art.-48-48/chapter-1/article-49
+
+- Article 49 - openlaws, https://admin.lawthek.eu/detail/ac6ee7fa-5515-4d8c-853f-ca0246cab353/en/SINGLE
+
+- MiCAR EU Law: What Crypto Industry Did Not Expect, https://globallawexperts.com/micar-eu-law-what-crypto-industry-did-not-expect/
+
+- Federal Reserve Proposes Comprehensive Regulatory Framework for Payment Stablecoins Under the GENIUS Act | Financial Services Blog, https://www.troutmanfinancialservices.com/2026/09/federal-reserve-proposes-comprehensive-regulatory-framework-for-payment-stablecoins-under-the-genius-act/
+
+- OCC Issues Proposal to Implement the GENIUS Act - Latham & Watkins LLP, https://www.lw.com/en/insights/occ-issues-proposal-to-implement-the-genius-act
+
+- OCC's GENIUS Act Proposal: What Prospective Issuers Need to Know - Morgan Lewis, https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know
+
+- 전자금융거래법 시행령 - 국가법령정보센터, https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=285727
+
+## 참고 링크(보고서 끝 목록)
+
+1. 원화 스테이블코인의 외환부문 영향과 정합성 제고 방향* https://www.kcmi.re.kr/common/downloadw?fid=28311&fgu=002001016&fty=004003
+2. GENIUS Act guide for stablecoin builders - Formance https://www.formance.com/blog/industry-analysis/genius-act-stablecoin-builders
+3. 국내 스테이블코인 관련 법률안의 주요 내용 및 시사점 - 법률신문 https://www.lawtimes.co.kr/news/articleView.html?idxno=211569
+4. Notice of proposed rulemaking: Implementing the Guiding and Establishing National Innovation for U.S. Stablecoins Act for the Is - OCC.gov https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-9a.pdf
+5. Markets in Crypto-Assets (MiCA/MiCAR) - CSSF https://www.cssf.lu/en/markets-in-crypto-assets-mica-micar/
+6. 가상자산 분야 이슈리포트 - 국내 스테이블코인 관련 법률안의 주요 내용 및 시사점 https://www.draju.com/ko/sub/newsletters.html?type=view&bsNo=6577&langNo=
+7. 2월: 디지털자산 정책 인사이트 https://file.alphasquare.co.kr/media/pdfs/market-report/%EA%B8%B0%ED%83%802%EC%9B%94:20260211%ED%95%9C%ED%99%94%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C.
+8. 일본의 암호자산 규제 동향 - 자본시장연구원 https://www.kcmi.re.kr/common/downloadw?fid=28183&fgu=002001&fty=004003
+9. Next steps for GENIUS payment stablecoins - Brookings Institution https://www.brookings.edu/articles/next-steps-for-genius-payment-stablecoins/
+10. The Hidden Plumbing of Stablecoins: Financial and Technological Risks in the GENIUS Act Era - arXiv https://arxiv.org/html/2604.17167v1
+11. 사이버 머니의 환급에 관한 연구 https://www.moj.go.kr/bbs/moj/166/205527/download.do
+12. 법률 시행령 시행규칙 행정규칙 전자금융거래법 19조 - 규제정보포털 https://better.go.kr/ba.rgst.RegulCardSlPopup?smode=view&s_ref_no=0000051275&s_ref_renew_no=00
+13. [전자금융거래법] 타인명의 계좌로 선불전자지급수단의 환급이 가능한지 여부(240009) https://yulchonllc.com/fix/2024/fix-DF-2410/PDF/2410_YC_DF_NL_20_Sub03.pdf
+14. 전자금융거래법 - 국가법령정보센터 https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=140289
+15. 전자금융거래법 - 국가법령정보센터 https://www.law.go.kr/LSW/lsSideInfoP.do?docCls=jo&joBrNo=00&joNo=0019&lsiSeq=280277&urlMode=lsScJoRltInfoR
+16. 전자금융거래 이용약관 - PAYCO https://www.payco.com/financeAgree.nhn
+17. [금융규제] 개정 「전자금융거래법」 시행 - 법무법인 지평 https://www.jipyong.com/kr/board/news_view.php?seq=13382
+18. 유효기간 지난 모바일상품권, 최대 100%까지 환불받는다 - 정책브리핑 https://www.korea.kr/news/policyNewsView.do?newsId=148949397
+19. 모바일 선불카드 충전액 60% 넘게 쓰면 잔액 환급 - YouTube https://www.youtube.com/watch?v=iAnLJDdNATc
+20. 모바일 선불카드, 충전액 60% 넘게 쓰면 잔액 환급 - KTV 국민방송 https://m.ktv.go.kr/program/again/view?program_id=PG2170043D&content_id=542260
+21. 카카오 전자금융거래 이용약관 https://billing-web.kakao.com/kbill/terms/finance
+22. 트래블로그 신용카드 | 하나카드 - 토스 카드라운지 https://card-lounge.toss.im/card/1793
+23. 가상자산 현물 ETF · 파생상품 제도화 관련 법안과 쟁점 | BKL Legal Update https://www.bkl.co.kr/law/insight/newsletter/6336
+24. 일본의 암호자산 규제 동향 - 자본시장연구원 https://www.kcmi.re.kr/publications/pub_detail_view?syear=2025&zcd=002001016&zno=1856&cno=6570
+25. 스테이블코인 제도화, 무엇에 집중할 것인가 - 국회입법조사처 https://www.nars.go.kr/fileDownload2.do?doc_id=1Phhetmq4PP&fileName=
+26. GENIUS Act Requirements and Standards for FDIC-Supervised Permitted Payment Stablecoin Issuers and Insured Depository Institutions - Federal Register https://www.federalregister.gov/documents/2026/04/10/2026-06974/genius-act-requirements-and-standards-for-fdic-supervised-permitted-payment-stablecoin-issuers-and
+27. Stablecoins and the GENIUS Act: An Overview - Federal Reserve Bank of Richmond https://www.richmondfed.org/banking/banker_resources/news_flash/2025/20251118_genius_act
+28. Article 49 — Issuance and redeemability of e-money tokens | MiCA | headlesslaw https://www.mica.wtf/mica/articles/49
+29. European crypto-assets regulation (MiCA) - EUR-Lex https://eur-lex.europa.eu/EN/legal-content/summary/european-crypto-assets-regulation-mica.html
+30. Article 49 - mica.wtf https://www.mica.wtf/mica/title-iv-e-money-tokens-art.-48-48/chapter-1/article-49
+31. Article 49 - openlaws https://admin.lawthek.eu/detail/ac6ee7fa-5515-4d8c-853f-ca0246cab353/en/SINGLE
+32. MiCAR EU Law: What Crypto Industry Did Not Expect https://globallawexperts.com/micar-eu-law-what-crypto-industry-did-not-expect/
+33. Federal Reserve Proposes Comprehensive Regulatory Framework for Payment Stablecoins Under the GENIUS Act | Financial Services Blog https://www.troutmanfinancialservices.com/2026/09/federal-reserve-proposes-comprehensive-regulatory-framework-for-payment-stablecoins-under-the-genius-act/
+34. OCC Issues Proposal to Implement the GENIUS Act - Latham & Watkins LLP https://www.lw.com/en/insights/occ-issues-proposal-to-implement-the-genius-act
+35. OCC's GENIUS Act Proposal: What Prospective Issuers Need to Know - Morgan Lewis https://www.morganlewis.com/pubs/2026/04/occs-genius-act-proposal-what-prospective-issuers-need-to-know
+36. 전자금융거래법 시행령 - 국가법령정보센터 https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=285727

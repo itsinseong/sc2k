@@ -1,0 +1,349 @@
+{
+ "month": "2026-03",
+ "status": "확정",
+ "as_of": "2026-03-31",
+ "circulation": [
+  1547628407,
+  1237271090
+ ],
+ "reserve_fair_value": [
+  1624685289,
+  1316184523
+ ],
+ "table": [
+  {
+   "label": "912797SZ1",
+   "values": [
+    263323665,
+    0
+   ],
+   "labels": {
+    "paddle": "912797SZ1",
+    "opus": "912797SZ1"
+   },
+   "maturity": "2026-03-17",
+   "days_to_maturity": -14
+  },
+  {
+   "label": "912797PV3",
+   "values": [
+    85499343,
+    0
+   ],
+   "labels": {
+    "paddle": "912797PV3",
+    "opus": "912797PV3"
+   },
+   "maturity": "2026-03-19",
+   "days_to_maturity": -12
+  },
+  {
+   "label": "912797TA5",
+   "values": [
+    190345695,
+    0
+   ],
+   "labels": {
+    "paddle": "912797TA5",
+    "opus": "912797TA5"
+   },
+   "maturity": "2026-03-24",
+   "days_to_maturity": -7
+  },
+  {
+   "label": "912797SC2",
+   "values": [
+    23975760,
+    0
+   ],
+   "labels": {
+    "paddle": "912797SC2",
+    "opus": "912797SC2"
+   },
+   "maturity": "2026-03-26",
+   "days_to_maturity": -5
+  },
+  {
+   "label": "912797TB3",
+   "values": [
+    22116332,
+    0
+   ],
+   "labels": {
+    "paddle": "912797TB3",
+    "opus": "912797TB3"
+   },
+   "maturity": "2026-03-31",
+   "days_to_maturity": 0
+  },
+  {
+   "label": "912797SD0",
+   "values": [
+    45521568,
+    185031495
+   ],
+   "labels": {
+    "paddle": "912797SD0",
+    "opus": "912797SD0"
+   },
+   "maturity": "2026-04-02",
+   "days_to_maturity": 2
+  },
+  {
+   "label": "912797TG2",
+   "values": [
+    46196751,
+    161103280
+   ],
+   "labels": {
+    "paddle": "912797TG2",
+    "opus": "912797TG2"
+   },
+   "maturity": "2026-04-07",
+   "days_to_maturity": 7
+  },
+  {
+   "label": "912797SL2",
+   "values": [
+    31074617,
+    176009080
+   ],
+   "labels": {
+    "paddle": "912797SL2",
+    "opus": "912797SL2"
+   },
+   "maturity": "2026-04-09",
+   "days_to_maturity": 9
+  },
+  {
+   "label": "912797TH0",
+   "values": [
+    34897450,
+    34954150
+   ],
+   "labels": {
+    "paddle": "912797TH0",
+    "opus": "912797TH0"
+   },
+   "maturity": "2026-04-14",
+   "days_to_maturity": 14
+  },
+  {
+   "label": "912797QD2",
+   "values": [
+    45656646,
+    45730842
+   ],
+   "labels": {
+    "paddle": "912797QD2",
+    "opus": "912797QD2"
+   },
+   "maturity": "2026-04-16",
+   "days_to_maturity": 16
+  },
+  {
+   "label": "912797TJ6",
+   "values": [
+    34872950,
+    49899000
+   ],
+   "labels": {
+    "paddle": "912797TJ6",
+    "opus": "912797TJ6"
+   },
+   "maturity": "2026-04-21",
+   "days_to_maturity": 21
+  },
+  {
+   "label": "912797SM0",
+   "values": [
+    34865600,
+    45099656
+   ],
+   "labels": {
+    "paddle": "912797SM0",
+    "opus": "912797SM0"
+   },
+   "maturity": "2026-04-23",
+   "days_to_maturity": 23
+  },
+  {
+   "label": "912797TK3",
+   "values": [
+    29869800,
+    29918100
+   ],
+   "labels": {
+    "paddle": "912797TK3",
+    "opus": "912797TK3"
+   },
+   "maturity": "2026-04-28",
+   "days_to_maturity": 28
+  },
+  {
+   "label": "912797SN8",
+   "values": [
+    26628555,
+    26671890
+   ],
+   "labels": {
+    "paddle": "912797SN8",
+    "opus": "912797SN8"
+   },
+   "maturity": "2026-04-30",
+   "days_to_maturity": 30
+  },
+  {
+   "label": "912797SP3",
+   "values": [
+    0,
+    39853600
+   ],
+   "labels": {
+    "paddle": "912797SP3",
+    "opus": "912797SP3"
+   },
+   "maturity": "2026-05-07",
+   "days_to_maturity": 37
+  },
+  {
+   "label": "912797TR8",
+   "values": [
+    0,
+    31867840
+   ],
+   "labels": {
+    "paddle": "912797TR8",
+    "opus": "912797TR8"
+   },
+   "maturity": "2026-05-12",
+   "days_to_maturity": 42
+  },
+  {
+   "label": "912797TS6",
+   "values": [
+    0,
+    39806000
+   ],
+   "labels": {
+    "paddle": "912797TS6",
+    "opus": "912797TS6"
+   },
+   "maturity": "2026-05-19",
+   "days_to_maturity": 49
+  },
+  {
+   "label": "912797SW8",
+   "values": [
+    0,
+    23862240
+   ],
+   "labels": {
+    "paddle": "912797SW8",
+    "opus": "912797SW8"
+   },
+   "maturity": "2026-05-28",
+   "days_to_maturity": 58
+  },
+  {
+   "label": "912797TD9",
+   "values": [
+    0,
+    21828620
+   ],
+   "labels": {
+    "paddle": "912797TD9",
+    "opus": "912797TD9"
+   },
+   "maturity": "2026-06-18",
+   "days_to_maturity": 79
+  },
+  {
+   "label": "912797TE7",
+   "values": [
+    0,
+    19830600
+   ],
+   "labels": {
+    "paddle": "912797TE7",
+    "opus": "912797TE7"
+   },
+   "maturity": "2026-06-25",
+   "days_to_maturity": 86
+  },
+  {
+   "label": "Total U.S. Treasury bills",
+   "values": [
+    914844732,
+    931466393
+   ],
+   "labels": {
+    "paddle": "Total U.S. Treasury bills",
+    "opus": "Total U.S. Treasury bills"
+   }
+  },
+  {
+   "label": "Government money-market funds",
+   "values": [
+    464839578,
+    146573715
+   ],
+   "labels": {
+    "paddle": "Government money-market funds",
+    "opus": "Government money-market funds"
+   }
+  },
+  {
+   "label": "Cash deposits held at U.S. regulated financial institutions",
+   "values": [
+    250000979,
+    248144415
+   ],
+   "labels": {
+    "paddle": "Cash deposits held at U.S. regulated financial institutions",
+    "opus": "Cash deposits held at U.S. regulated financial institutions"
+   }
+  },
+  {
+   "label": "Adjustments due to timing*",
+   "values": [
+    -5000000,
+    -10000000
+   ],
+   "labels": {
+    "paddle": "Adjustments due to timing $ ^{{*}} $",
+    "opus": "Adjustments due to timing*"
+   }
+  },
+  {
+   "label": "Total Market Value of the Reserve",
+   "values": [
+    1624685289,
+    1316184523
+   ],
+   "labels": {
+    "paddle": "Total Market Value of the Reserve",
+    "opus": "Total Market Value of the Reserve"
+   }
+  }
+ ],
+ "components": {
+  "cash": 248144415,
+  "repo": 0,
+  "government_mmf": 146573715,
+  "treasury": 931466393,
+  "other": -10000000
+ },
+ "reconciliation": {
+  "components_sum": 1316184523,
+  "reserve_fair_value": 1316184523,
+  "ok": true
+ },
+ "resolved_by_checkdigit": [],
+ "check": [],
+ "readers": {
+  "paddle": "paddle/ripple_2026-03.md",
+  "opus": "claude_opus_2026-03.json",
+  "image": "docs/research/읽기엔진시험_2026-10-09/png/paddle/ripple_2026-03.png"
+ }
+}

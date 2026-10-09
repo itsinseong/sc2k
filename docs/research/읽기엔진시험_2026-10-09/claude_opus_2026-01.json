@@ -1,0 +1,120 @@
+{
+ "duration_api_ms": 65878,
+ "stop_reason": "end_turn",
+ "session_id": "cc1500eb-b915-43ec-8869-f7dea50e4130",
+ "total_cost_usd": 0.50546,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 40121,
+  "cache_read_input_tokens": 202160,
+  "output_tokens": 7201,
+  "output_tokens_details": {
+   "thinking_tokens": 5993
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 40121,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 1919,
+    "cache_read_input_tokens": 52455,
+    "cache_creation_input_tokens": 165,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 165
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 7201,
+   "cacheReadInputTokens": 202160,
+   "cacheCreationInputTokens": 40121,
+   "webSearchRequests": 0,
+   "costUSD": 0.50546,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 5993,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [
+  {
+   "tool_name": "Bash",
+   "tool_use_id": "toolu_014vb2TWHybLoWATxoU9Evgn",
+   "tool_input": {
+    "command": "cd /tmp && python3 -I -c \"\nfrom PIL import Image\nim = Image.open('/Users/inseong/.cache/sc2k-ocr/ripple_2026-01_p5.png')\nprint(im.size)\nim.crop((140, 500, 1530, 620)).resize((2780, 240)).save('/tmp/rlusd_p5_top.png')\nim.crop((140, 800, 1500, 1250)).resize((2720, 900)).save('/tmp/rlusd_p5_a.png')\nim.crop((140, 1230, 1500, 1690)).resize((2720, 920)).save('/tmp/rlusd_p5_b.png')\n\"",
+    "description": "Crop and upscale table regions of the page image"
+   }
+  },
+  {
+   "tool_name": "mcp__plugin_claude-mem_mcp-search__get_observations",
+   "tool_use_id": "toolu_018MJ291UCieZMrWoRhiwM8U",
+   "tool_input": {
+    "ids": [
+     1635,
+     1638,
+     1639,
+     1640
+    ]
+   }
+  }
+ ],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"circulation\": [1385456204, 1357255995], \"reserve_fair_value\": [1447074824, 1422590657], \"rows\": [{\"label\": \"912797SG3\", \"values\": [131335614, 0]}, {\"label\": \"912797PD3\", \"values\": [250327156, 0]}, {\"label\": \"912797SH1\", \"values\": [29215485, 0]}, {\"label\": \"912797RK5\", \"values\": [30957220, 0]}, {\"label\": \"912797SJ7\", \"values\": [29943600, 180981900]}, {\"label\": \"912797RL3\", \"values\": [14968800, 139958000]}, {\"label\": \"912797SQ1\", \"values\": [10473015, 128746920]}, {\"label\": \"912797RT6\", \"values\": [29931858, 29984985]}, {\"label\": \"912797SR9\", \"values\": [23921760, 67712599]}, {\"label\": \"912797PM3\", \"values\": [29930478, 50114660]}, {\"label\": \"912797SS7\", \"values\": [0, 31530164]}, {\"label\": \"912797RU3\", \"values\": [30870420, 30924980]}, {\"label\": \"912797ST5\", \"values\": [29859900, 29912400]}, {\"label\": \"912797RV1\", \"values\": [0, 31900480]}, {\"label\": \"912797SY4\", \"values\": [30833530, 30887470]}, {\"label\": \"912797SB4\", \"values\": [0, 30980576]}, {\"label\": \"912797SZ1\", \"values\": [0, 31263724]}, {\"label\": \"912797SC2\", \"values\": [23834640, 23874480]}, {\"label\": \"Total U.S. Treasury bills\", \"values\": [696403476, 838773338]}, {\"label\": \"Government money-market funds\", \"values\": [533848788, 403127860]}, {\"label\": \"Cash deposits held at U.S. regulated financial institutions\", \"values\": [216822560, 180689459]}, {\"label\": \"Total Market Value of the Reserve\", \"values\": [1447074824, 1422590657]}]}",
+ "ttft_ms": 8305,
+ "type": "result",
+ "duration_ms": 308746,
+ "uuid": "f2f0bb65-1124-4d98-b5e1-e3b6355911a6",
+ "ttft_stream_ms": 7523,
+ "time_to_request_ms": 2810,
+ "first_content_frame_ms": 7523,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

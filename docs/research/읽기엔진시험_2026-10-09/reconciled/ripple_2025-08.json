@@ -1,0 +1,156 @@
+{
+ "month": "2025-08",
+ "status": "확정",
+ "as_of": "2025-08-29",
+ "circulation": [
+  666743504,
+  701950756
+ ],
+ "reserve_fair_value": [
+  690436802,
+  728158022
+ ],
+ "table": [
+  {
+   "label": "912797QK6",
+   "values": [
+    13000000,
+    0
+   ],
+   "labels": {
+    "paddle": "912797QK6",
+    "opus": "912797QK6"
+   },
+   "maturity": "2025-08-19",
+   "days_to_maturity": -10
+  },
+  {
+   "label": "912797PP6",
+   "values": [
+    355558203,
+    0
+   ],
+   "labels": {
+    "paddle": "912797PP6",
+    "opus": "912797PP6"
+   },
+   "maturity": "2025-08-21",
+   "days_to_maturity": -8
+  },
+  {
+   "label": "912797QM2",
+   "values": [
+    0,
+    120000000
+   ],
+   "labels": {
+    "paddle": "912797QM2",
+    "opus": "912797QM2"
+   },
+   "maturity": "2025-09-02",
+   "days_to_maturity": 4
+  },
+  {
+   "label": "912797QT7",
+   "values": [
+    0,
+    139883800
+   ],
+   "labels": {
+    "paddle": "912797QT7",
+    "opus": "912797QT7"
+   },
+   "maturity": "2025-09-09",
+   "days_to_maturity": 11
+  },
+  {
+   "label": "912797QU4",
+   "values": [
+    0,
+    97717519
+   ],
+   "labels": {
+    "paddle": "912797QU4",
+    "opus": "912797QU4"
+   },
+   "maturity": "2025-09-16",
+   "days_to_maturity": 18
+  },
+  {
+   "label": "912797QV2",
+   "values": [
+    0,
+    36908240
+   ],
+   "labels": {
+    "paddle": "912797QV2",
+    "opus": "912797QV2"
+   },
+   "maturity": "2025-09-23",
+   "days_to_maturity": 25
+  },
+  {
+   "label": "Total U.S. Treasury bills",
+   "values": [
+    368558203,
+    394509559
+   ],
+   "labels": {
+    "paddle": "Total U.S. Treasury bills",
+    "opus": "Total U.S. Treasury bills"
+   }
+  },
+  {
+   "label": "Government money-market funds",
+   "values": [
+    219017666,
+    225704825
+   ],
+   "labels": {
+    "paddle": "Government money-market funds",
+    "opus": "Government money-market funds"
+   }
+  },
+  {
+   "label": "Cash deposits held at U.S. regulated financial institutions",
+   "values": [
+    102860933,
+    107943638
+   ],
+   "labels": {
+    "paddle": "Cash deposits held at U.S. regulated financial institutions",
+    "opus": "Cash deposits held at U.S. regulated financial institutions"
+   }
+  },
+  {
+   "label": "Total Market Value of the Reserve",
+   "values": [
+    690436802,
+    728158022
+   ],
+   "labels": {
+    "paddle": "Total Market Value of the Reserve",
+    "opus": "Total Market Value of the Reserve"
+   }
+  }
+ ],
+ "components": {
+  "cash": 107943638,
+  "repo": 0,
+  "government_mmf": 225704825,
+  "treasury": 394509559,
+  "other": 0
+ },
+ "reconciliation": {
+  "components_sum": 728158022,
+  "reserve_fair_value": 728158022,
+  "ok": true
+ },
+ "resolved_by_checkdigit": [],
+ "check": [],
+ "readers": {
+  "paddle": "paddle/ripple_2025-08.md",
+  "opus": "claude_opus_2025-08.json",
+  "image": "docs/research/읽기엔진시험_2026-10-09/png/paddle/ripple_2025-08.png"
+ }
+}

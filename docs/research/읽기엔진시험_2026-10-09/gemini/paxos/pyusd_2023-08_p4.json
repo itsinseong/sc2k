@@ -1,0 +1,644 @@
+{
+    "input_path": "/Users/inseong/.cache/sc2k-ocr/gemini/paxos/pyusd_2023-08_p4.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1700,
+    "height": 2200,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "doc_title",
+            "block_content": "withum",
+            "block_bbox": [
+                1094,
+                101,
+                1692,
+                216
+            ],
+            "block_id": 0,
+            "block_order": 1,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    1094.0,
+                    101.0
+                ],
+                [
+                    1692.0,
+                    101.0
+                ],
+                [
+                    1692.0,
+                    216.0
+                ],
+                [
+                    1094.0,
+                    216.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In performing our risk assessment, we considered the Company's internal controls relevant to the aforementioned assertions, in order to design procedures that are appropriate in the circumstances, but not for the purpose of expressing an opinion on the effectiveness of the Company's internal control. Accordingly, we did not test the operating effectiveness of such controls and express no such opinion on such controls.",
+            "block_bbox": [
+                171,
+                292,
+                1608,
+                439
+            ],
+            "block_id": 1,
+            "block_order": 2,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    171.0,
+                    292.0
+                ],
+                [
+                    1608.0,
+                    292.0
+                ],
+                [
+                    1608.0,
+                    439.0
+                ],
+                [
+                    171.0,
+                    439.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "We believe that the evidence we obtained is sufficient and appropriate to provide a reasonable basis for our opinion.",
+            "block_bbox": [
+                170,
+                473,
+                1603,
+                508
+            ],
+            "block_id": 2,
+            "block_order": 3,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    170.0,
+                    473.0
+                ],
+                [
+                    1603.0,
+                    473.0
+                ],
+                [
+                    1603.0,
+                    508.0
+                ],
+                [
+                    170.0,
+                    508.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "We direct your attention to the accompanying notes of the Reserve Accounts Report for risks and uncertainties related to cryptocurrencies and background information provided by management. We have not audited, reviewed or performed any procedures to provide assurance with respect to these notes. Accordingly, we provide no opinion, conclusion or any other form of assurance with respect to these accompanying notes to the Reserve Accounts Report.",
+            "block_bbox": [
+                170,
+                544,
+                1607,
+                691
+            ],
+            "block_id": 3,
+            "block_order": 4,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    170.0,
+                    544.0
+                ],
+                [
+                    1607.0,
+                    544.0
+                ],
+                [
+                    1607.0,
+                    691.0
+                ],
+                [
+                    170.0,
+                    691.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "At any given time, the Company has the right to hold funds in any combination of varying financial instruments at their discretion. Those instruments generally include, but are not necessarily limited to U.S. dollars, U.S. Treasury backed Bills, Bonds, and Notes.",
+            "block_bbox": [
+                171,
+                726,
+                1606,
+                833
+            ],
+            "block_id": 4,
+            "block_order": 5,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    171.0,
+                    726.0
+                ],
+                [
+                    1606.0,
+                    726.0
+                ],
+                [
+                    1606.0,
+                    833.0
+                ],
+                [
+                    171.0,
+                    833.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The expressed examination opinion on the above assertions are limited solely to the Reserve Accounts Report at the Report Date and Time noted above. Any activity prior to or after the Report Dates and Times at 5:00 pm ET was not considered when testing the assertions described above. In addition, we have not performed any procedures or provided any level of assurance on the financial or non-financial activity of the Reserve Accounts on dates or times other than the Report Date and Time noted within this report.",
+            "block_bbox": [
+                170,
+                871,
+                1607,
+                1052
+            ],
+            "block_id": 5,
+            "block_order": 6,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    170.0,
+                    871.0
+                ],
+                [
+                    1607.0,
+                    871.0
+                ],
+                [
+                    1607.0,
+                    1052.0
+                ],
+                [
+                    170.0,
+                    1052.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In our opinion, management's assertions noted above are fairly stated as of the Report Dates and Times at 5:00 pm ET, in all material respects.",
+            "block_bbox": [
+                172,
+                1086,
+                1604,
+                1158
+            ],
+            "block_id": 6,
+            "block_order": 7,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    172.0,
+                    1086.0
+                ],
+                [
+                    1604.0,
+                    1086.0
+                ],
+                [
+                    1604.0,
+                    1158.0
+                ],
+                [
+                    172.0,
+                    1158.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Wi then Smith + Brown, PC",
+            "block_bbox": [
+                174,
+                1179,
+                713,
+                1245
+            ],
+            "block_id": 7,
+            "block_order": 8,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    174.0,
+                    1179.0
+                ],
+                [
+                    713.0,
+                    1179.0
+                ],
+                [
+                    713.0,
+                    1245.0
+                ],
+                [
+                    174.0,
+                    1245.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "September 21, 2023",
+            "block_bbox": [
+                173,
+                1266,
+                438,
+                1303
+            ],
+            "block_id": 8,
+            "block_order": 9,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    173.0,
+                    1266.0
+                ],
+                [
+                    438.0,
+                    1266.0
+                ],
+                [
+                    438.0,
+                    1303.0
+                ],
+                [
+                    173.0,
+                    1303.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "2",
+            "block_bbox": [
+                877,
+                2045,
+                901,
+                2072
+            ],
+            "block_id": 9,
+            "block_order": null,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    877.0,
+                    2045.0
+                ],
+                [
+                    900.0,
+                    2045.0
+                ],
+                [
+                    900.0,
+                    2071.0
+                ],
+                [
+                    877.0,
+                    2071.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 6,
+                "label": "doc_title",
+                "score": 0.5707900524139404,
+                "coordinate": [
+                    1094,
+                    101,
+                    1692,
+                    216
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        1094.0,
+                        101.0
+                    ],
+                    [
+                        1692.0,
+                        101.0
+                    ],
+                    [
+                        1692.0,
+                        216.0
+                    ],
+                    [
+                        1094.0,
+                        216.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.942125678062439,
+                "coordinate": [
+                    171,
+                    292,
+                    1608,
+                    439
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        171.0,
+                        292.0
+                    ],
+                    [
+                        1608.0,
+                        292.0
+                    ],
+                    [
+                        1608.0,
+                        439.0
+                    ],
+                    [
+                        171.0,
+                        439.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8399209380149841,
+                "coordinate": [
+                    170,
+                    473,
+                    1603,
+                    508
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        170.0,
+                        473.0
+                    ],
+                    [
+                        1603.0,
+                        473.0
+                    ],
+                    [
+                        1603.0,
+                        508.0
+                    ],
+                    [
+                        170.0,
+                        508.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9450334310531616,
+                "coordinate": [
+                    170,
+                    544,
+                    1607,
+                    691
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        170.0,
+                        544.0
+                    ],
+                    [
+                        1607.0,
+                        544.0
+                    ],
+                    [
+                        1607.0,
+                        691.0
+                    ],
+                    [
+                        170.0,
+                        691.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9326236844062805,
+                "coordinate": [
+                    171,
+                    726,
+                    1606,
+                    833
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        171.0,
+                        726.0
+                    ],
+                    [
+                        1606.0,
+                        726.0
+                    ],
+                    [
+                        1606.0,
+                        833.0
+                    ],
+                    [
+                        171.0,
+                        833.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9480926394462585,
+                "coordinate": [
+                    170,
+                    871,
+                    1607,
+                    1052
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        170.0,
+                        871.0
+                    ],
+                    [
+                        1607.0,
+                        871.0
+                    ],
+                    [
+                        1607.0,
+                        1052.0
+                    ],
+                    [
+                        170.0,
+                        1052.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9089690446853638,
+                "coordinate": [
+                    172,
+                    1086,
+                    1604,
+                    1158
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        172.0,
+                        1086.0
+                    ],
+                    [
+                        1604.0,
+                        1086.0
+                    ],
+                    [
+                        1604.0,
+                        1158.0
+                    ],
+                    [
+                        172.0,
+                        1158.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6556020975112915,
+                "coordinate": [
+                    174,
+                    1179,
+                    713,
+                    1245
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        174.0,
+                        1179.0
+                    ],
+                    [
+                        713.0,
+                        1179.0
+                    ],
+                    [
+                        713.0,
+                        1245.0
+                    ],
+                    [
+                        174.0,
+                        1245.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8280805349349976,
+                "coordinate": [
+                    173,
+                    1266,
+                    438,
+                    1303
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        173.0,
+                        1266.0
+                    ],
+                    [
+                        438.0,
+                        1266.0
+                    ],
+                    [
+                        438.0,
+                        1303.0
+                    ],
+                    [
+                        173.0,
+                        1303.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6968943476676941,
+                "coordinate": [
+                    877,
+                    2045,
+                    901,
+                    2072
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        877.0,
+                        2045.0
+                    ],
+                    [
+                        900.0,
+                        2045.0
+                    ],
+                    [
+                        900.0,
+                        2071.0
+                    ],
+                    [
+                        877.0,
+                        2071.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

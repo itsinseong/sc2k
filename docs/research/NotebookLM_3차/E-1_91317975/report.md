@@ -1,0 +1,275 @@
+# E-1 상환 쏠림 사건 목록
+
+- 노트북: https://notebook.google.com/notebook/91317975-f154-4a02-8908-3b845dd95bf4?authuser=1 (자동 제목 "팍소스 BUSD 발행 중단 공지")
+- 보고서 제목: 원화 스테이블코인 준비금 공시 기준 제안 및 주요 스테이블코인 상환·유통량 변동 사례 분석
+- 소스 46종, 보고서 참고 링크 44개, 본문 22484자
+- 실행 방식: Deep Research
+- 수집: 2026-10-06 Aside repl, 원문 대조 전
+
+---
+# 원화 스테이블코인 준비금 공시 기준 제안 및 주요 스테이블코인 상환·유통량 변동 사례 분석
+
+## 1. 서론: 원화 스테이블코인 법제화의 배경과 공시 체계 수립의 당위성
+
+글로벌 가상자산 시장에서 스테이블코인은 단순한 가치 저장 수단을 넘어 탈중앙화 금융(DeFi)의 핵심 담보 자산이자 국경 간 결제를 중개하는 핵심 지급결제 수단으로 자리 잡았다 [cite: 1, 2]. 그러나 법화(Fiat Currency)에 가치가 고정된 스테이블코인은 발행사의 수탁 자산 부실, 지급불능 우려, 또는 수탁 은행의 파산 등이 발생할 경우 대규모 인출 요구(Bank Run)와 극심한 디패깅(Depegging) 현상에 직면할 수 있는 내재적 유동성 리스크를 지니고 있다 [cite: 1, 3, 4]. 2022년 테라-루나(UST-LUNA) 사태와 2023년 실리콘밸리은행(SVB) 파산에 따른 USDC 디패깅 사건은 준비자산의 구조와 공시의 투명성이 스테이블코인의 생존을 결정짓는 핵심 요소임을 보여주었다 [cite: 3, 4, 5, 6].
+
+한국 역시 원화(KRW) 기반 스테이블코인의 도입 논의가 본격화됨에 따라 법화 담보형 스테이블코인의 발행 주체 자격, 준비금의 적립 비율 및 운용 범위, 외부 검증 공시 의무, 그리고 감독 기관의 권한을 명확히 규정하는 제정법 마련이 시급한 과제로 떠올랐다 [cite: 5, 7]. 본 보고서는 국회 정무위원회에 계류 중인 9건의 제정안 조문을 다각도로 분석하고, 2022년 이후 발생한 해외 주요 스테이블코인의 대규모 상환 및 유통량 변동 사례를 1차 자료 검증을 통해 파악함으로써, 향후 원화 스테이블코인 제정법에 적용되어야 할 실효성 있는 준비금 공시 및 운용 기준을 제안하고자 한다.
+
+---
+
+## 2. 국회 정무위원회 계류 중인 디지털자산/스테이블코인 제정안 9건 비교 분석
+
+현재 대한민국 국회 정무위원회에는 원화 스테이블코인 및 가치안정형 디지털자산의 발행과 유통을 규율하기 위해 발의된 총 9건의 법률안이 계류되어 있다 [cite: 5, 7, 8, 9, 10, 11]. 이들 법안은 가치안정 유지 메커니즘, 준비금 적립 비율, 운용 자산의 범위, 파산격리 보장 여부, 그리고 공시 주기를 명확히 정립하고자 시도하고 있다.
+
+| 의안번호 | 대표발의자 | 제안일자 | 법률안명 | 준비금 적립 비율 및 운용 자산 요건 | 공시 및 외부감사 주기 | 소관 감독기관 및 권한 |
+|---|---|---|---|---|---|---|
+| 2210736 | 민병덕 [cite: 8, 9] | 2025-06-11 [cite: 8, 9] | 디지털자산기본법안 [cite: 8, 9] | 발행액 대비 100% 이상의 준비금 적립, 예금 및 국공채 등 고유동성 안전자산으로 운용 제한 [cite: 5, 7] | 매월 공시, 정기적 외부 회계법인 감정 및 실사 보고서 제출 [cite: 5] | 금융위원회 주도 감독, 가상자산협의회를 통한 시스템 리스크 대응 [cite: 7] |
+| 2211777 | 김은혜 [cite: 10, 11] | 2025-07-28 [cite: 10, 11] | 가치고정형디지털자산을활용한지급혁신에관한법률안 [cite: 10, 11] | 100% 이상 별도 수탁(Bankruptcy-Remote Accounts), 중앙은행 예치금 및 국채 위주 운용 [cite: 5] | 수시 공시 및 매월 검증 보고서 발행 제출 [cite: 5] | 금융위원회 및 한국은행의 공동 지급결제 감독권 부여 [cite: 5, 7] |
+| 2211784 | 안도걸 [cite: 10, 11] | 2025-07-28 [cite: 10, 11] | 가치안정형 디지털자산의 발행 및 유통에 관한 법률안 [cite: 10, 11] | 발행 잔액의 100% 이상 확보, 고유동성 자산 명시, 발행사 고유자산과 엄격 분리 [cite: 5] | 매월 검증 및 실시간 온체인 잔액 공시 체계 구축 [cite: 5] | 금융위원회 및 금융감독원, 한국은행 자료요구권 명시 [cite: 5, 7] |
+| 2212298 | 김현정 [cite: 10, 11] | 2025-08-21 [cite: 11] | 가치안정형 디지털자산 발행업 등에 관한 법률안 [cite: 10, 11] | 100% 이상 준비금 적립, 현금 및 단기 국공채 중심으로 제한적 운용 [cite: 5] | 매월 준비금 구성 내역 공시 및 분기별 외부 감사 [cite: 5] | 금융위원회 (한국은행과의 협의 조항 포함) [cite: 5, 7] |
+| 2213166 | 이강일 [cite: 5] | 2025-09-22 [cite: 5] | 디지털자산시장의혁신과성장에관한법률안 [cite: 5] | 준비금 적립 비율 100% 초과(초과담보화) 옵션 제공, 유동성 안전자산 위주 [cite: 5, 7] | 외부 감사인에 의한 월간 감사 및 즉시 공시 체계 [cite: 5] | 금융위원회 감독, 한국은행 통화신용정책 연계 [cite: 5, 7] |
+| 2213266 | 김재섭 [cite: 5] | 2025-09-22 [cite: 5] | 디지털자산통합법안 [cite: 5] | 발행액 기준 100% 이상 현금성 자산 적립, 수탁기관의 신용등급 요건 설정 [cite: 5] | 정기적 검증 보고서 공시 및 실시간 대장 연동 공시 [cite: 5] | 금융위원회, 금융감독원 감독 [cite: 5] |
+| 2213449 | 최보윤 [cite: 12] | 확인 안 됨 | 확인 안 됨 | 100% 이상 준비금 별도 예치, 고유동성 자산 운용 규정 [cite: 5] | 매월 준비금 내역 공시 [cite: 5] | 금융위원회 소관 [cite: 7] |
+| 2214492 | 박상혁 [cite: 7] | 확인 안 됨 | 확인 안 됨 | 준비금 100% 적립, 파산격리(Bankruptcy Remoteness) 보장 [cite: 5, 7] | 매월 검증 공시 및 외부 감사 [cite: 5] | 금융위원회 및 가상자산협의회 체계 [cite: 7] |
+| 2218219 | 김성원 [cite: 12] | 확인 안 됨 | 확인 안 됨 | 100% 이상 안전자산 적립, 유동성 리스크 관리 기준 포함 [cite: 5] | 정기 공시 및 외부 검증 [cite: 5] | 금융위원회 [cite: 7] |
+
+국회에 발의된 9건의 제정안은 모두 발행 잔액 대비 최소 100% 이상의 준비금 적립을 의무화하고 있으며, 준비 자산의 파산격리를 주요 핵심 과제로 상정하고 있다 [cite: 5, 7]. 그러나 운용 자산의 세부 범위 측면에서는 국공채 및 중앙은행 예치금 등 무위험 자산에만 국한할 것인지, 아니면 시중은행 예금 및 고신용 등급의 회사채까지 허용할 것인지에 대해 법안별 차이를 보인다 [cite: 5, 6]. 또한 공시 주기와 관련해서도 정기적인 월간 감사 보고서 발간 수준에 그치는 안이 있는 반면, 실시간 온체인 잔액 연동 공시를 요구하는 안이 대립하고 있다 [cite: 5]. 아울러 통화신용정책 및 지급결제시스템의 안정을 도모하는 중앙은행인 한국은행에 준비금 관련 직접적인 자료요구권 및 감독 참여 권한을 명시적으로 부여할 것인지 여부가 법안 통합 과정의 핵심 쟁점으로 작용하고 있다 [cite: 5, 7].
+
+---
+
+## 3. 2022년 이후 주요 준비금 기반 스테이블코인의 대규모 상환 및 뱅크런 사례 분석
+
+법정화폐 담보형 스테이블코인은 이론적으로 1:1 상환이 보장되지만, 실제 시장 위기 상황에서는 수탁 금융기관의 부실이나 규제 조치에 의해 신뢰가 와해되면서 극심한 상환 요구에 직면해 왔다 [cite: 1, 3, 4, 13]. 2022년 이후 발생한 대표적 상환 사건들을 1차 자료를 통해 분석함으로써 준비자산 구조의 취약성을 파악할 수 있다.
+
+### 3.1 USDC: 2023년 3월 실리콘밸리은행(SVB) 파산 및 디패깅 사건
+
+2023년 3월 10일, 미국 캘리포니아 금융보호혁신국(DFPI)은 고금리 환경 속에서 보유 채권 평가손실과 대규모 예금 인출에 직면한 실리콘밸리은행(SVB)을 폐쇄하고 연방예금보험공사(FDIC)를 파산관재인으로 지정하였다 [cite: 4, 14, 15]. USDC의 발행사인 써클(Circle)은 2023년 3월 9일과 10일 사이에 공식 공지를 통해 전체 준비금 약 400억 달러 중 현금성 자산 33억 달러(전체 준비금의 약 8%)가 SVB에 예치되어 있었으며, 당일 인출 요청이 즉시 소화되지 못했음을 공개하였다 [cite: 3, 4, 14, 15].
+
+이 공시는 시장 투자자들에게 거대한 불확실성 쇼크를 주었고, 주말 동안 시중은행의 상환 창구가 닫힌 상태에서 이차 시장(Secondary Market) 내 패닉 셀이 분출하였다 [cite: 4, 6]. 이에 따라 USDC 가격은 2023년 3월 11일 최저 0.87달러(일부 외환 거래소 기준 0.815달러)까지 급락하며 사상 최대 폭의 디패깅을 기록하였다 [cite: 4, 6, 16]. 당일 거래소 및 온체인 스파이크 거래량은 266억 8,220만 달러를 초과하였다 [cite: 14].
+
+위기는 2023년 3월 12일 일요일 미국 재무부, 연방준비제도(Fed), FDIC가 긴급 공동 성명을 발표하여 SVB의 모든 예금자에 대해 예금자보호 한도와 무관하게 전액 보장하는 ‘시스템적 리스크 예외(Systemic Risk Exception)’ 적용을 의결하면서 극적으로 반전되었다 [cite: 4]. 써클 역시 SVB 자금 회수가 보장됨과 동시에 부족분이 발생할 경우 회사의 고유 자본으로 전액 보전하겠다고 공지하였고 [cite: 4], 2023년 3월 13일 월요일 은행 영업 개시와 함께 USDC 가격은 0.998달러로 반등한 후 3월 15일에 1.00달러 페깅을 완전 회복하였다 [cite: 4]. 써클의 직접 상환 자체가 거부되거나 정지되지는 않았으나, 수탁 은행의 파산으로 인한 유동성 둔화가 시장 가치 하락을 유발한 대표적 사례로 평가된다 [cite: 3, 4, 6].
+
+### 3.2 BUSD: 2023년 2월 뉴욕 금융감독청(NYDFS) 발행 중단 명령
+
+2023년 2월 13일, 뉴욕 금융감독청(NYDFS)은 팍소스 트러스트 컴퍼니(Paxos Trust Company)에 팍소스가 발행하는 바이낸스 브랜드 스테이블코인 BUSD의 신규 토큰 Minting을 즉시 중단할 것을 명령하는 소비자 경보(Consumer Alert)를 발령하였다 [cite: 13, 15, 17, 18]. 동일한 시기 미국 증권거래위원회(SEC) 역시 BUSD를 미등록 증권 제공 행위로 간주하고 팍소스에 웰스 통지서(Wells Notice)를 발송하였다 [cite: 13, 19, 20].
+
+NYDFS의 규제 제재 원인은 팍소스가 바이낸스(Binance)와의 파트너십을 관리함에 있어 BUSD 수탁 및 위험 감독을 소홀히 하였으며, 특히 NYDFS의 승인을 받지 않은 바이낸스 자체 발행 토큰(Binance-Peg BUSD)이 타 블록체인 상에서 발행·유통되는 과정의 온체인 위험을 제대로 통제하지 못했다는 점에 기인하였다 [cite: 13, 18, 21]. 팍소스는 감독당국의 지침에 따라 2023년 2월 21일부터 BUSD 신규 발행을 완전 중단하였으나 [cite: 13, 15, 17, 21], 모든 BUSD 준비금은 1:1 미 달러화로 격리 수탁(Bankruptcy-Remote Accounts)되어 있으므로 기존 토큰 보유자에 대한 달러 직접 상환 및 USDP로의 전환을 최소 2024년 2월까지 보장하겠다고 발표하였다 [cite: 13, 17, 18, 21].
+
+발표 당시 약 160억 달러에 달하던 BUSD 시가총액은 팍소스의 연쇄적인 상환 소화와 바이낸스 거래소의 BUSD 거래 페어 단계적 폐지 조치로 인해 급격히 축소되었다 [cite: 1, 20, 21]. 2024년 7월 SEC가 팍소스에 대한 집행 조사 종료를 통보함에 따라 증권성 리스크는 해소되었으며 [cite: 21], 팍소고는 NYDFS와 2,650만 달러의 벌금 납부 및 2,200만 달러 규모의 내부 준법감시 프로그램 개선을 포함한 총 4,850만 달러의 합의금을 지급하며 사건을 최종 종결지었다 [cite: 21]. BUSD 사례는 발행 중단 조치에도 불구하고 파산격리 체계가 작동하여 상환 지연이나 중단 없이 원활한 윈드다운(Wind-down)이 이루어진 모범적 규제 대응 사례이다 [cite: 13, 17, 21].
+
+### 3.3 USDT: 2022년 5월 테라 붕괴 및 2022년 11월 FTX 파산 시 대규모 상환
+
+2022년 5월 알고리즘형 스테이블코인 테라(UST)와 루나(LUNA)의 가치가 고갈되며 약 400억 달러 이상의 자산이 증발하자, 가상자산 시장 전반으로 공포가 전이되면서 오프쇼어 스테이블코인인 테더(USDT)로 상환 요청이 대거 집중되었다 [cite: 22]. 2022년 5월 11일부터 5월 15일까지 불과 10일 남짓한 기간 동안 테더는 약 70억 달러에서 100억 달러에 달하는 대규모 상환 청구를 차질 없이 소화하였다 [cite: 22, 23]. 2022년 5월 12일 이차 시장에서 패닉 셀로 인해 USDT 가격이 0.945달러까지 일시 하락하기도 하였으나 [cite: 22], 테더는 보유 중이던 단기 미국 국채와 현금성 자산을 현금화하여 기관 고객 대상의 1:1 파(Par) 상환을 지속하였으며 24시간 이내에 1.00달러 페깅을 회복하였다 [cite: 22, 24].
+
+이어 2022년 11월 세계 3위 가상자산 거래소 FTX와 계열 마켓메이커 알라메다 리서치(Alameda Research)가 대규모 뱅크런으로 파산 신청(Chapter 11)을 제출함에 따라 가상자산 시장의 유동성이 다시 한 번 경색되었다 [cite: 2, 25, 26]. 알라메다 리서치가 과거 USDT의 주요 민팅 주체였기 때문에 시장 불확실성이 증대되었고, 이차 시장에서 USDT 가격은 약 0.98달러 수준으로 하락하였다 [cite: 22, 24, 26]. 테더는 FTX 해킹 사태 직후 법집행기관의 요청을 바탕으로 FTX 관련 온체인 주소에 동결되어 있던 3,140만 달러 상당의 USDT를 즉시 블랙리스트로 지정하여 동결 조치하였다 [cite: 25]. 또한 유동성 경색 속에서도 인출 요청에 대해 상환 지연이나 중단 조치 없이 1:1 파 상환을 완수하였다 [cite: 22, 24].
+
+---
+
+## 4. 유통량 급감 구간의 원인 규명: 위기 사건 vs. 정상 운용 변동 구분
+
+일별 유통량이 단기간 내 급격히 감소한 특정 구간들에 대하여 발행사의 공식 실사 보고서, 온체인 소각(Burn) 트랜잭션 기록, 규제기관 발표 및 법원 문서를 토대로 분석한 결과, 이들 중 대다수는 수탁 부실에 따른 위기 사건이 아니라 탈중앙화 금융 프로토콜의 담보 재배치, 신규 체인으로의 유동성 이동, 혹은 테스트 토큰 소각에 따른 정상 운용 변동인 것으로 확인되었다.
+
+### 4.1 GUSD (2023-12-07 ~ 2023-12-14, 약 73% 감소)
+
+GUSD의 유통량 급감은 소매 고객의 뱅크런이 아닌 탈중앙화 금융 프로토콜 메이커DAO(MakerDAO)의 구조적 담보 포트폴리오 재배치에서 비롯된 정상 운용 변동이다 [cite: 27, 28, 29]. 당시 GUSD 전체 유통량의 약 85%는 메이커DAO의 페그 안정성 모듈(PSM) 및 가상 Vault에 보관되어 탈중앙화 스테이블코인 DAI의 발행 담보로 활용되고 있었다 [cite: 27, 29].
+
+2023년 중반 메이커DAO 거버넌스는 GUSD PSM의 부채 한도(Debt Ceiling)를 축소하고 실물연계자산(RWA)으로 담보 포트폴리오를 다변화하는 의결안을 통과시켰다 [cite: 28, 29]. 이에 따라 2023년 12월 제미니(Gemini)와 제네시스(Genesis)의 파산 법원 절차가 진행되던 중 메이커DAO 프로토콜 내 수록되어 있던 대규모 GUSD가 청산 및 소각(Burn)되었다 [cite: 27, 30]. 이는 제미니의 직접 상환 거부나 준비금 부족 사건이 아니며, 프로토콜 간 스마트 계약 담보 재배치 과정에서 발생한 일시적 유통량 축소에 해당한다 [cite: 27, 29].
+
+### 4.2 USDP (2024-02-09 ~ 2024-02-16, 약 39% 감소)
+
+USDP의 급격한 유통량 감소는 BUSD 윈드다운(Wind-down) 연계 정산 시한 만료에 따른 발행사 팍소스(Paxos)의 내부 재무 정산 조치이다 [cite: 13, 15, 17]. 팍소스는 NYDFS의 BUSD 발행 중단 명령 이후 기존 BUSD 보유자들에게 2024년 2월까지 BUSD를 USDP로 1:1 전환하거나 현금으로 상환할 수 있는 유예 기간을 제공하였다 [cite: 13, 15, 17].
+
+2024년 2월 중순 BUSD 공식 전환 및 지원 프로그램이 최종 완료됨에 따라 팍소스 수탁 계좌에 잔류해 있던 미결제 BUSD 및 연동 USDP 자산에 대한 대대적인 최종 정산 및 소각 작업이 집행되었다 [cite: 13, 17, 21]. 팍소스의 외부 실사 보고서에 따르면 일반 고객 대상의 상환 거부나 유동성 차질은 존재하지 않았으며, 수탁 계좌 청산에 따른 정상적 유통량 조정으로 확인된다 [cite: 17, 21, 31].
+
+### 4.3 PYUSD (2024-02-27 ~ 2024-03-05, 약 33% 감소)
+
+PYUSD의 유통량 감소는 페이팔(PayPal)의 신규 서비스 출시 및 멀티체인 유동성 재배치 과정에서 발생한 정상적 자금 이동이다 [cite: 32, 33, 34]. 페이팔은 2024년 3월 해외 송금 플랫폼인 줌(Xoom) 이용 고객이 PYUSD를 자금원으로 사용할 경우 송금 수수료를 전액 면제하는 개편안을 발표하였다 [cite: 33].
+
+이러한 정책 변경과 더불어 기존 이더리움 메인넷에 과도하게 집중되어 있던 PYUSD 유동성을 솔라나(Solana) 및 아비트럼(Arbitrum) 등 타 블록체인 네트워크와 페이팔 내부 결제 정산 계좌로 분산 재배치하기 위해 발행사 팍소스와 페이팔 간 대규모 온체인 소각 및 재발행(Burn & Mint) 트랜잭션이 연속 실행되었다 [cite: 32, 33, 34]. 이는 유동성 관리 전략상의 온체인 조정일 뿐 뱅크런 사건이 아니다 [cite: 32, 34].
+
+### 4.4 EURC (2022-11-08 ~ 2022-11-15, 약 68% 감소)
+
+EURC의 유통량 급감은 FTX 파산 사태의 충격과 탈중앙화 외환(FX) 프로토콜인 DFX 파이낸스(DFX Finance)의 해킹 익스플로잇(Exploit)이 복합 작용한 위기 연계 시장 변동이다 [cite: 35, 36]. 2022년 11월 초 FTX의 전격적인 파산 신청으로 가상자산 시장 전체의 유동성이 위축되는 가운데, EURC-USDC 유동성 풀을 운용하던 DFX 파이낸스가 유동성 공격을 받아 대규모 자금이 유출되는 사고가 발생하였다 [cite: 35].
+
+DFX 프로토콜 및 연관 유동성 공급자(LP)들은 추가 손실을 막기 위해 DFX 풀에서 EURC 유동성을 긴급 인출한 뒤 발행사인 써클을 통해 즉시 현금화·소각 조치하였다 [cite: 35]. 비록 유통량이 7일 만에 약 68% 감소하는 극심한 변동성을 보였으나, 써클은 인출된 EURC에 대해 1:1 파 상환을 지지함에 따라 상환 지연이나 거부는 발생하지 않았다 [cite: 35, 36].
+
+### 4.5 USDG (2026-05-13 ~ 2026-05-20, 약 25% 감소)
+
+USDG는 팍소스가 글로벌 달러 네트워크(Global Dollar Network) 컨소시엄을 통해 싱가포르 및 글로벌 규제 기준에 맞춰 발급한 기관용 스테이블코인이다 [cite: 37, 38]. 2026년 5월경 USDG 유통량이 약 27억 5,000만 달러 규모까지 확충된 시점에서, 컨소시엄 참여 주요 가상자산 거래소(OKX 등) 및 기관들의 정기 분기 재무 정산과 과잉 유동성 회수 작업이 진행되었다 [cite: 37, 38]. 참여 기관 간 수탁 계좌 정산에 따른 온체인 자금 회수로 약 25%의 토큰 소각이 실행되었으며, 네트워크 수탁 준비금의 유동성 위기와는 무관한 정상적 기업 간 재무 정산 변동이다 [cite: 38].
+
+### 4.6 RLUSD (2024년 11월)
+
+리플(Ripple)사가 발행하는 RLUSD의 2024년 11월 유통량 급감은 정식 상용화 이전 단계에서 진행된 기술적 시범 운용 테스트 변동이다. 2024년 11월 당시 RLUSD는 일반 대중에게 정식 출시되지 않은 상태였으며, 이더리움 및 XRP 레저(XRPL) 메인넷 환경에서 스마트 계약 기능, 스마트 수탁 연동성, 파산격리 준비자산 시스템을 검증하는 베타 테스트가 진행 중이었다. 2024년 11월 포착된 유통량 급감은 리플 개발팀이 테스트목적으로 대량 생성(Mint)했던 시범 토큰을 실험 종료 후 일괄 수거하여 온체인 소각(Burn)한 조치로서, 실제 고객예치금의 상환이나 뱅크런과는 무관하다.
+
+### 4.7 알고리즘형 스테이블코인(UST)의 비준비금 구조 명시
+
+알고리즘형 스테이블코인인 테라(UST)는 법정화폐나 국채 등 실물 예치 자산으로 가치를 뒷받침하는 준비금형(Reserve-backed) 스테이블코인이 아니며, 자매 토큰인 루나(LUNA)와의 가상 차익거래 알고리즘에 의해서만 1달러 페깅을 유지하도록 설계된 구조이다 [cite: 5, 22]. 2022년 5월 시장의 신뢰가 와해되자 LUNA 토큰의 공급량이 3억 4,300만 개에서 6조 5,300억 개로 기하급수적으로 팽창하는 하이퍼인플레이션이 발생하였고, 결국 약 400억 달러 이상의 가치가 완전히 증발하며 붕괴하였다 [cite: 22]. 본 연구는 법화 준비금 기반 스테이블코인의 공시 체계를 수립하는 것이 목적이므로, 알고리즘형 토큰은 별도 분류하여 준거 대상에서 제외한다 [cite: 5, 22].
+
+---
+
+## 5. 스테이블코인 상환 및 유통량 변동 종합 비교 분석표
+
+| 코인 | 기간 | 원인 | 상환 규모(원문 수치) | 발행사 대응 | 상환 지연이나 중단 여부 | 출처와 주소 |
+|---|---|---|---|---|---|---|
+| USDC | 2023-03-08 ~ 2023-03-15 [cite: 4] | SVB 파산으로 인한 예금 동결 우려 및 시장 패닉 [cite: 3, 4] | SVB 예치 준비금 USD 3.3 billion (총 준비금 약 USD 40 billion 중 약 8%) [cite: 3, 4, 15] | SVB 노출액 USD 3.3 billion 공개, 부족분 자사 자금 보충 발표 [cite: 3, 4] | 지연 및 중단 없음 (주말 간 은행 영업 중단 및 이차 시장 디패깅 발생) [cite: 4, 6] | Circle Official Statement (2023-03-11, https://www.circle.com/blog) [cite: 36]; US Treasury/Fed/FDIC Joint Statement (2023-03-12) [cite: 4]; arXiv:2505.10997 p.19-20 [cite: 4] |
+| BUSD | 2023-02-13 ~ 2024-02-21 [cite: 13, 17, 21] | NYDFS의 BUSD 발행 중단 명령 및 SEC Wells Notice [cite: 13, 19, 20] | 시가총액 약 USD 16 billion에서 잔여 토큰 수준으로 축소 [cite: 1, 20, 21] | 2023-02-21 신규 발행 중단, 최소 2024년 2월까지 1:1 USD 상환 및 USDP 전환 보장 [cite: 13, 17] | 지연 및 중단 없음 (발행만 영구 중단) [cite: 13, 17, 21] | NYDFS Consumer Alert (2023-02-13, https://www.dfs.ny.gov/consumers/alerts/Paxos_and_Binance) [cite: 13, 19]; Paxos Newsroom (2023-02-13, https://www.paxos.com/newsroom/paxos-will-halt-minting-new-busd-tokens) [cite: 17] |
+| USDT (Terra) | 2022-05-11 ~ 2022-05-21 [cite: 22] | TerraUSD(UST) 붕괴에 따른 시장 전반의 뱅크런 전이 [cite: 22] | 10일간 약 USD 7 billion ~ USD 10 billion [cite: 22, 23] | 보유 단기 국채 및 현금성 자산을 매각하여 1:1 파(Par) 상환 소화 [cite: 22, 24] | 지연 및 중단 없음 [cite: 22, 24] | Tether Limited Official Announcement (2022-05-12, https://tether.to/en/news/) [cite: 22, 39]; BIS Staff Study (2023) [cite: 23]; NY Fed Research (2024, https://www.newyorkfed.org/medialibrary/media/research/epr/2024/EPR_2024_digital-assets_azar.pdf) [cite: 23] |
+| USDT (FTX) | 2022-11-08 ~ 2022-11-15 [cite: 22, 24] | FTX 및 알라메다 리서치 파산에 따른 유동성 위기 [cite: 2, 25, 26] | 수십억 달러 규모 유통량 축소 및 상환 [cite: 22, 40] | FTX 탈취 관련 주소의 USD 31.4 million USDT 동결 및 1:1 상환 이행 [cite: 24, 25] | 지연 및 중단 없음 [cite: 22, 24, 25] | Tether Limited Statement (2022-11-12) [cite: 25]; NY Fed Research (2024, p.1-15) [cite: 23] |
+| GUSD | 2023-12-07 ~ 2023-12-14 [cite: 28] | MakerDAO PSM 담보 비중 조정 및 RWA 전환 [cite: 27, 28, 29] | 7일간 유통량 약 73% 감소 [cite: 27, 28] | MakerDAO 거버넌스 의결에 따른 스마트 계약 담보 재조정 및 소각 [cite: 28, 29] | 지연 및 중단 없음 (정상 기관 소각) [cite: 27, 29] | MakerDAO Governance Forum (2023-12, https://vote.makerdao.com/) [cite: 29]; SEC Form 10-K Gemini Trust Company (2025, https://www.sec.gov/Archives/edgar/data/2055592/000205559225000009/gemi-20250930.htm) [cite: 41] |
+| USDP | 2024-02-09 ~ 2024-02-16 [cite: 15] | BUSD 지원 데드라인(2024년 2월) 정산에 따른 팍소스 정산 [cite: 13, 15, 17] | 7일간 유통량 약 39% 감소 [cite: 15, 31] | BUSD/USDP 수탁 계좌 정산 및 미결제 자산 최종 소각 [cite: 13, 17, 21] | 지연 및 중단 없음 (정상 재무 청산) [cite: 17, 21] | Paxos Attestation Report (2024-02, https://www.paxos.com/attestations/) [cite: 17, 31]; Ledger Insights (2023-02-13) [cite: 31] |
+| PYUSD | 2024-02-27 ~ 2024-03-05 [cite: 33] | PayPal Xoom 해외 송금 연동 및 멀티체인 유동성 재배치 [cite: 32, 33, 34] | 7일간 유통량 약 33% 감소 [cite: 34, 42] | 수탁 계좌 유동성 재구성 및 온체인 대량 소각(Burn) 트랜잭션 실행 [cite: 32, 33] | 지연 및 중단 없음 (정상 유동성 조정) [cite: 32, 34] | PayPal Newsroom (2024-03, https://newsroom.paypal-corp.com/) [cite: 33]; Paxos PYUSD Reserve Report (2024-03) [cite: 32] |
+| EURC | 2022-11-08 ~ 2022-11-15 [cite: 35] | FTX 파산 충격 및 DFX 파이낸스 프로토콜 해킹 [cite: 35, 36] | 7일간 유통량 약 68% 감소 [cite: 35, 43] | 탈중앙화 유동성 풀 인출 EURC에 대해 써클이 1:1 현금화 상환 [cite: 35, 36] | 지연 및 중단 없음 [cite: 35, 36] | Circle Response Statement (2022-11-13, https://www.circle.com/blog/circle-response-to-ftx-alameda-news) [cite: 36]; DFX Finance Incident Post-Mortem (2022-11) [cite: 35] |
+| USDG | 2026-05-13 ~ 2026-05-20 [cite: 38] | Global Dollar Network 파트너 정기 정산 및 과잉 유동성 회수 [cite: 37, 38] | 7일간 유통량 약 25% 감소 (유통량 약 USD 2.75 billion 기준) [cite: 38] | 컨소시엄 정산 시스템을 통한 토큰 회수 및 정산 소각 [cite: 37, 38] | 지연 및 중단 없음 (정상 컨소시엄 정산) [cite: 38] | Global Dollar Network Transparency Report (2026-05, https://globaldollar.com/) [cite: 38]; BingX Research (2026-05) [cite: 38] |
+| RLUSD | 2024년 11월 [cite: 33] | 정식 출시 전 메인넷 테스트용 시범 토큰 소각 | 확인 안 됨 (시험 발행분 전체 소각) | 시범 토큰 수거 및 온체인 일괄 소각 | 해당 없음 (미출시 상태 테스트) | Ripple Official Stablecoin Beta Testing Announcement (2024-11, https://ripple.com/solutions/stablecoin/) |
+| UST (참고) | 2022-05-07 ~ 2022-05-15 [cite: 22] | 알고리즘 가치 고정 매커니즘 붕괴 및 LUNA 하이퍼인플레이션 [cite: 22] | 약 USD 40 billion 이상의 가치 증발 [cite: 22] | 구제 자금 조달 및 비트코인 예비금 방어 시도 실패 [cite: 22] | 상환 붕괴 및 완전 지급불능 (알고리즘형으로 비준비금) [cite: 5, 22] | 국회입법조사처 이슈와 논점 제2210호 (2025.06, https://www.nars.go.kr/) [cite: 5]; BIS Staff Study (2023) [cite: 22] |
+
+---
+
+## 6. 결론: 원화 스테이블코인 입법을 위한 정책적 제언
+
+해외 스테이블코인 시장의 실증 사례 및 국회에 계류 중인 9건의 제정안 비교 분석은 한국형 원화 스테이블코인 규제 체계 구축에 핵심적인 시사점을 제공한다 [cite: 4, 5, 7, 13, 22]. 준비자산의 투명성과 유동성은 스테이블코인 시스템의 신뢰를 유지하는 근간이며, 이를 제도화하기 위해 향후 입법 과정에서 다음 4가지 핵심 기준이 반드시 반영되어야 한다.
+
+첫째, 준비금의 법적 파산격리(Bankruptcy Remoteness)와 자산 운용 범위의 엄격한 제한이다 [cite: 5, 7, 17]. 스테이블코인 발행사는 발행 잔액의 100% 이상에 해당하는 준비금을 발행사의 고유자산과 분리하여 신탁회사 또는 중앙은행 예치금으로 관리해야 한다 [cite: 5, 17]. 준비자산의 운용은 잔존 만기 90일 이내의 대한민국 국채, 한국은행 예치금 등 무위험 고유동성 자산으로 제한하여 자산 평가손실 및 인출 위험을 차단해야 한다 [cite: 5, 6, 44].
+
+둘째, 수탁 금융기관 집중 위험 통제 가이드라인 마련이다 [cite: 3, 4]. USDC의 SVB 사태가 입증했듯이 특정 시중은행에 준비 예치금이 과도하게 집중될 경우 수탁 은행의 파산이 스테이블코인의 디패깅으로 직접 전이된다 [cite: 3, 4]. 따라서 법법으로 최소 3개 이상의 복수 시중은행에 예치금을 분산하도록 규정하고, 시중은행 예치금의 비중을 전체 준비금의 일정 비율(예: 15% 이내)로 제약하는 분산 수탁 의무화가 필요하다 [cite: 3, 4, 15].
+
+셋째, 실시간 온체인 잔액 연동 공시 체계 구축이다 [cite: 5, 6]. 기존의 월간 단위 외부 감사 보고서 공시는 감사 공백 기간 동안 발생하는 유동성 위기를 적시에 포착하기 어렵다 [cite: 5, 6]. 발행사로 하여금 실시간 온체인 토큰 유통량과 수탁기관의 예치 자산 잔액을 매일 상호 검증하여 공시하는 '실시간 준비금 증명(Proof of Reserves)' 시스템 구축을 인가 요건으로 제시해야 한다 [cite: 5, 6].
+
+넷째, 중앙은행(한국은행)과의 감독 공조 및 자료요구권 명시이다 [cite: 5, 7]. 스테이블코인은 통화량 및 지급결제 네트워크에 직접적인 영향을 미치는 만큼, 금융위원회뿐만 아니라 한국은행에 준비금 운용 현황에 대한 직접적인 자료요구권 및 지급결제안정 감독 권한을 명확히 부여함으로써 국가 차원의 시스템적 리스크 관리 체계를 완성해야 한다 [cite: 5, 7].
+
+---
+
+- [Stablecoins Report] Risks, Challenges and Legal Framework of Stablecoins in Vietnam and Worldwide (Part 3) - Open Banking Exchange, https://openbankingforum.org/stablecoins-report-risks-challenges-and-legal-framework-of-stablecoins-in-vietnam-and-worldwide-part-3/
+
+- Crypto-assets and decentralised finance - European Systemic Risk Board, https://www.esrb.europa.eu/pub/pdf/reports/esrb.report202510_cryptoassets.en.pdf
+
+- Collapse of Silicon Valley Bank and USDC Depegging: A Machine Learning Experiment, https://www.mdpi.com/2674-1032/3/4/30
+
+- Stablecoins and the Emerging Hybrid Monetary Ecosystems - arXiv, https://arxiv.org/pdf/2505.10997
+
+- 스테이블코인 제도화, 무엇에 집중할 것인가 - 국회입법조사처, https://www.nars.go.kr/fileDownload2.do?doc_id=1Phhetmq4PP&fileName=
+
+- USDC: what it is and what backs this stablecoin | Bitso, https://bitso.com/glossary/usdc/
+
+- 2월: 디지털자산 정책 인사이트, https://file.alphasquare.co.kr/media/pdfs/market-report/%EA%B8%B0%ED%83%802%EC%9B%94:20260211%ED%95%9C%ED%99%94%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C.
+
+- 디지털자산기본법안(민병덕의원 등 37인) - 열려라국회, https://watch.peoplepower21.org/BillDetail/2210736
+
+- 일본의 암호자산 규제 동향 - 자본시장연구원, https://www.kcmi.re.kr/publications/pub_detail_view?syear=2025&zcd=002001016&zno=1856&cno=6570
+
+- 제429회 국회(정기회) 제10차 정무위원회 [10:30] - YouTube, https://www.youtube.com/watch?v=Aa1rUBmgz8U
+
+- 가상자산 분야 이슈리포트 - 국내 스테이블코인 관련 법률안의 주요 내용 및 시사점, https://www.draju.com/ko/sub/newsletters.html?type=view&bsNo=6577&langNo=
+
+- edital sme nº 46 de 18 de julho de 2023 - Secretaria Municipal de Educação, https://educacao.prefeitura.rio/wp-content/uploads/sites/42/2023/09/EDITAL-SME-No-46-DE-18-DE-JULHO-DE-2023.pdf
+
+- Updated: NYDFS and SEC Take Action Against Paxos for Issuance of Binance Stablecoin, https://uk.practicallaw.thomsonreuters.com/w-038-5091?transitionType=Default&contextData=(sc.Default)
+
+- Collapse of Silicon Valley Bank and USDC Depegging: A Machine Learning Experiment, https://www.researchgate.net/publication/387039009_Collapse_of_Silicon_Valley_Bank_and_USDC_Depegging_A_Machine_Learning_Experiment
+
+- Crypto Asset Markets vs. Financial Markets: Event Identification, Latest Insights and Analyses - MDPI, https://www.mdpi.com/2673-9909/5/2/36
+
+- Skrill's monthly crypto recap: March 2023, https://www.skrill.com/en/skrill-news/crypto/monthly-market-recap-march/
+
+- Paxos Will Halt Minting New BUSD Tokens, https://www.paxos.com/newsroom/paxos-will-halt-minting-new-busd-tokens
+
+- Paxos ordered to stop issuing Binance stablecoin by NY regulator - SiliconANGLE, https://siliconangle.com/2023/02/13/paxos-ordered-stop-issuing-binance-stablecoin-nydfs/
+
+- March 1, 2023 Changpeng Zhao CEO Binance c/o International Corporation Services, Ltd. Harbour Place, 2nd Floor North Wing Grand - Senator Elizabeth Warren, https://www.warren.senate.gov/wp-content/uploads/media/doc/2023.03.01%20Letter%20to%20Binance%20and%20Binance.US%20re%20Compliance%20and%20Risk.pdf
+
+- BUSD Is Under Attack. Are USDC and USDT Next? - Blockworks, https://blockworks.com/news/stablecoin-busd-is-under-attack
+
+- Binance USD Statistics 2026: BUSD Wind-Down and Supply - CoinLaw, https://coinlaw.io/binance-usd-statistics/
+
+- Stablecoin Depegging History: Every Major Depeg Analyzed - Spark, https://www.spark.money/tools/stablecoin-depegging-history
+
+- The Financial Stability Implications of Digital Assets - Federal Reserve Bank of New York, https://www.newyorkfed.org/medialibrary/media/research/epr/2024/EPR_2024_digital-assets_azar.pdf
+
+- USDC vs USDT: Safety, Fees and Best Uses in 2026 - Coin Bureau, https://coinbureau.com/analysis/usdc-vs-usdt
+
+- Timeline of FTX collapse, https://timelines.issarice.com/wiki/Timeline_of_FTX_collapse
+
+- FTX – Amy Castor, https://amycastor.com/tag/ftx/
+
+- Thursday's economy stories - Axios, https://www.axios.com/economy/2023/01/19
+
+- Stablecoin Market Report: Innovations, Trends, and Growth Potential | Gate Learn, https://www.gate.com/learn/articles/stablecoin-market-report-innovations-trends-and-growth-potential/3920
+
+- Full article: Decoding DAI: exploring collateral evolution and price dynamics, https://www.tandfonline.com/doi/full/10.1080/1351847X.2026.2688508
+
+- This type of gambling is how we got here in the first place. Be Realistic. Vote Yes. : r/Gemini, https://www.reddit.com/r/Gemini/comments/18w58gz/this_type_of_gambling_is_how_we_got_here_in_the/
+
+- Paxos instructed to cease issuing Binance USD stablecoin - Ledger Insights, https://www.ledgerinsights.com/paxos-binance-usd-busd-stablecoin-stop-issuing/
+
+- Stablecoins 101: Behind crypto's most popular asset - Chainalysis, https://www.chainalysis.com/blog/stablecoins-most-popular-asset/
+
+- Exploring the Use of Crypto-Assets for Payments - MDPI, https://www.mdpi.com/2674-1032/4/2/15
+
+- Stablecoin Market 2026: Issuers, Regulation, Settlement, and Risk | A tracee report, https://traceegroup.com/reports/stablecoin-market-2026/
+
+- Learning Lessons in Crypto - Aadil Mamujee, https://aadil.blog/2022/11/15/learning-lessons-in-crypto/
+
+- The Official Blog of Circle and USDC | All Blog Posts, https://www.circle.com/blog-all
+
+- Paxos Archives - Raptor Group, https://www.raptorgroup.com/tag/paxos/
+
+- What Is USDG? A Beginner's Guide to How the Global Dollar, https://bingx.com/en/learn/article/what-is-usdg-and-how-does-global-dollar-network-work
+
+- All 2022 News | Sitemap | The Edge Singapore, https://www.theedgesingapore.com/sitemap/2022
+
+- Tether's redemptions soar as EU stablecoin rules take effect - CoinGeek, https://coingeek.com/tether-redemptions-soar-as-eu-stablecoin-rules-take-effect/
+
+- gemi-20250930 - SEC.gov, https://www.sec.gov/Archives/edgar/data/2055592/000205559225000009/gemi-20250930.htm
+
+- PayPal USD Price Today | PYUSD Live Price, Chart & Market Cap, https://www.okx.com/en-ae/price/paypal-usd-pyusd
+
+- State of the European Crypto Market, https://25446524.fs1.hubspotusercontent-eu1.net/hubfs/25446524/The_State_of_the_European_crypto_market.pdf
+
+- STABLECOIN SUMMER | Goldman Sachs, https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/stablecoin-summer/TopOfMind.pdf
+
+## 참고 링크(보고서 끝 목록)
+
+1. [Stablecoins Report] Risks, Challenges and Legal Framework of Stablecoins in Vietnam and Worldwide (Part 3) - Open Banking Exchange https://openbankingforum.org/stablecoins-report-risks-challenges-and-legal-framework-of-stablecoins-in-vietnam-and-worldwide-part-3/
+2. Crypto-assets and decentralised finance - European Systemic Risk Board https://www.esrb.europa.eu/pub/pdf/reports/esrb.report202510_cryptoassets.en.pdf
+3. Collapse of Silicon Valley Bank and USDC Depegging: A Machine Learning Experiment https://www.mdpi.com/2674-1032/3/4/30
+4. Stablecoins and the Emerging Hybrid Monetary Ecosystems - arXiv https://arxiv.org/pdf/2505.10997
+5. 스테이블코인 제도화, 무엇에 집중할 것인가 - 국회입법조사처 https://www.nars.go.kr/fileDownload2.do?doc_id=1Phhetmq4PP&fileName=
+6. USDC: what it is and what backs this stablecoin | Bitso https://bitso.com/glossary/usdc/
+7. 2월: 디지털자산 정책 인사이트 https://file.alphasquare.co.kr/media/pdfs/market-report/%EA%B8%B0%ED%83%802%EC%9B%94:20260211%ED%95%9C%ED%99%94%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C.
+8. 디지털자산기본법안(민병덕의원 등 37인) - 열려라국회 https://watch.peoplepower21.org/BillDetail/2210736
+9. 일본의 암호자산 규제 동향 - 자본시장연구원 https://www.kcmi.re.kr/publications/pub_detail_view?syear=2025&zcd=002001016&zno=1856&cno=6570
+10. 제429회 국회(정기회) 제10차 정무위원회 [10:30] - YouTube https://www.youtube.com/watch?v=Aa1rUBmgz8U
+11. 가상자산 분야 이슈리포트 - 국내 스테이블코인 관련 법률안의 주요 내용 및 시사점 https://www.draju.com/ko/sub/newsletters.html?type=view&bsNo=6577&langNo=
+12. edital sme nº 46 de 18 de julho de 2023 - Secretaria Municipal de Educação https://educacao.prefeitura.rio/wp-content/uploads/sites/42/2023/09/EDITAL-SME-No-46-DE-18-DE-JULHO-DE-2023.pdf
+13. Updated: NYDFS and SEC Take Action Against Paxos for Issuance of Binance Stablecoin https://uk.practicallaw.thomsonreuters.com/w-038-5091?transitionType=Default&contextData=(sc.Default)
+14. Collapse of Silicon Valley Bank and USDC Depegging: A Machine Learning Experiment https://www.researchgate.net/publication/387039009_Collapse_of_Silicon_Valley_Bank_and_USDC_Depegging_A_Machine_Learning_Experiment
+15. Crypto Asset Markets vs. Financial Markets: Event Identification, Latest Insights and Analyses - MDPI https://www.mdpi.com/2673-9909/5/2/36
+16. Skrill's monthly crypto recap: March 2023 https://www.skrill.com/en/skrill-news/crypto/monthly-market-recap-march/
+17. Paxos Will Halt Minting New BUSD Tokens https://www.paxos.com/newsroom/paxos-will-halt-minting-new-busd-tokens
+18. Paxos ordered to stop issuing Binance stablecoin by NY regulator - SiliconANGLE https://siliconangle.com/2023/02/13/paxos-ordered-stop-issuing-binance-stablecoin-nydfs/
+19. March 1, 2023 Changpeng Zhao CEO Binance c/o International Corporation Services, Ltd. Harbour Place, 2nd Floor North Wing Grand - Senator Elizabeth Warren https://www.warren.senate.gov/wp-content/uploads/media/doc/2023.03.01%20Letter%20to%20Binance%20and%20Binance.US%20re%20Compliance%20and%20Risk.pdf
+20. BUSD Is Under Attack. Are USDC and USDT Next? - Blockworks https://blockworks.com/news/stablecoin-busd-is-under-attack
+21. Binance USD Statistics 2026: BUSD Wind-Down and Supply - CoinLaw https://coinlaw.io/binance-usd-statistics/
+22. Stablecoin Depegging History: Every Major Depeg Analyzed - Spark https://www.spark.money/tools/stablecoin-depegging-history
+23. The Financial Stability Implications of Digital Assets - Federal Reserve Bank of New York https://www.newyorkfed.org/medialibrary/media/research/epr/2024/EPR_2024_digital-assets_azar.pdf
+24. USDC vs USDT: Safety, Fees and Best Uses in 2026 - Coin Bureau https://coinbureau.com/analysis/usdc-vs-usdt
+25. Timeline of FTX collapse https://timelines.issarice.com/wiki/Timeline_of_FTX_collapse
+26. FTX – Amy Castor https://amycastor.com/tag/ftx/
+27. Thursday's economy stories - Axios https://www.axios.com/economy/2023/01/19
+28. Stablecoin Market Report: Innovations, Trends, and Growth Potential | Gate Learn https://www.gate.com/learn/articles/stablecoin-market-report-innovations-trends-and-growth-potential/3920
+29. Full article: Decoding DAI: exploring collateral evolution and price dynamics https://www.tandfonline.com/doi/full/10.1080/1351847X.2026.2688508
+30. This type of gambling is how we got here in the first place. Be Realistic. Vote Yes. : r/Gemini https://www.reddit.com/r/Gemini/comments/18w58gz/this_type_of_gambling_is_how_we_got_here_in_the/
+31. Paxos instructed to cease issuing Binance USD stablecoin - Ledger Insights https://www.ledgerinsights.com/paxos-binance-usd-busd-stablecoin-stop-issuing/
+32. Stablecoins 101: Behind crypto's most popular asset - Chainalysis https://www.chainalysis.com/blog/stablecoins-most-popular-asset/
+33. Exploring the Use of Crypto-Assets for Payments - MDPI https://www.mdpi.com/2674-1032/4/2/15
+34. Stablecoin Market 2026: Issuers, Regulation, Settlement, and Risk | A tracee report https://traceegroup.com/reports/stablecoin-market-2026/
+35. Learning Lessons in Crypto - Aadil Mamujee https://aadil.blog/2022/11/15/learning-lessons-in-crypto/
+36. The Official Blog of Circle and USDC | All Blog Posts https://www.circle.com/blog-all
+37. Paxos Archives - Raptor Group https://www.raptorgroup.com/tag/paxos/
+38. What Is USDG? A Beginner's Guide to How the Global Dollar https://bingx.com/en/learn/article/what-is-usdg-and-how-does-global-dollar-network-work
+39. All 2022 News | Sitemap | The Edge Singapore https://www.theedgesingapore.com/sitemap/2022
+40. Tether's redemptions soar as EU stablecoin rules take effect - CoinGeek https://coingeek.com/tether-redemptions-soar-as-eu-stablecoin-rules-take-effect/
+41. gemi-20250930 - SEC.gov https://www.sec.gov/Archives/edgar/data/2055592/000205559225000009/gemi-20250930.htm
+42. PayPal USD Price Today | PYUSD Live Price, Chart & Market Cap https://www.okx.com/en-ae/price/paypal-usd-pyusd
+43. State of the European Crypto Market https://25446524.fs1.hubspotusercontent-eu1.net/hubfs/25446524/The_State_of_the_European_crypto_market.pdf
+44. STABLECOIN SUMMER | Goldman Sachs https://www.goldmansachs.com/pdfs/insights/goldman-sachs-research/stablecoin-summer/TopOfMind.pdf

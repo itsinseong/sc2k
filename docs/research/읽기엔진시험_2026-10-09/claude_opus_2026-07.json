@@ -1,0 +1,118 @@
+{
+ "duration_api_ms": 75548,
+ "stop_reason": "end_turn",
+ "session_id": "82386fd9-9d03-42cf-a7f8-e198c0989d76",
+ "total_cost_usd": 0.5173808,
+ "usage": {
+  "input_tokens": 6,
+  "cache_creation_input_tokens": 37512,
+  "cache_read_input_tokens": 100704,
+  "output_tokens": 9856,
+  "output_tokens_details": {
+   "thinking_tokens": 8640
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 37512,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 6354,
+    "cache_read_input_tokens": 46210,
+    "cache_creation_input_tokens": 3801,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 3801
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 6,
+   "outputTokens": 9856,
+   "cacheReadInputTokens": 100704,
+   "cacheCreationInputTokens": 37512,
+   "webSearchRequests": 0,
+   "costUSD": 0.5173808,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 8640,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [
+  {
+   "tool_name": "Bash",
+   "tool_use_id": "toolu_01PZXk16q8P3kdXST8vbc3AE",
+   "tool_input": {
+    "command": "ls -la /Users/inseong/.cache/sc2k-ocr | head -50; python3 -I -c \"\nL=[13600000,531118755,46958640,25043274,0,43868880,43846880,44462024,0,28061256,0,0,44737200,44704350,44685450,44672850,43659440,43648440,0,43611040,0,0]\nR=[0,0,0,0,99990000,43986800,123900800,118072625,21163748,97983960,59856000,54440568,44860050,44827650,44804700,44794800,84565650,43765920,10537990,43734680,45408705,51176880]\nprint(len(L),len(R),sum(L),sum(R),sum(L)+349943549+251892562,sum(R)+258192967+239096420)\"",
+    "description": "List working dir and check column sums of transcribed values"
+   }
+  },
+  {
+   "tool_name": "mcp__plugin_claude-mem_mcp-search__get_observations",
+   "tool_use_id": "toolu_01CfB2XKkRb6zGT3xeq7nDMe",
+   "tool_input": {
+    "ids": [
+     1638,
+     1640
+    ]
+   }
+  }
+ ],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 5,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"circulation\": [1589084487, 1463694758], \"reserve_fair_value\": [1688514590, 1575160913], \"rows\": [{\"label\": \"912797UN5\", \"values\": [13600000, 0]}, {\"label\": \"912797RF6\", \"values\": [531118755, 0]}, {\"label\": \"912797TN7\", \"values\": [46958640, 0]}, {\"label\": \"912797TQ0\", \"values\": [25043274, 0]}, {\"label\": \"912797US4\", \"values\": [0, 99990000]}, {\"label\": \"912797RG4\", \"values\": [43868880, 43986800]}, {\"label\": \"912797UT2\", \"values\": [43846880, 123900800]}, {\"label\": \"912797UU9\", \"values\": [44462024, 118072625]}, {\"label\": \"912797TX5\", \"values\": [0, 21163748]}, {\"label\": \"912797UV7\", \"values\": [28061256, 97983960]}, {\"label\": \"912797TY3\", \"values\": [0, 59856000]}, {\"label\": \"912797UW5\", \"values\": [0, 54440568]}, {\"label\": \"912797RS8\", \"values\": [44737200, 44860050]}, {\"label\": \"912797UF2\", \"values\": [44704350, 44827650]}, {\"label\": \"912797VC8\", \"values\": [44685450, 44804700]}, {\"label\": \"912797UG0\", \"values\": [44672850, 44794800]}, {\"label\": \"912797VD6\", \"values\": [43659440, 84565650]}, {\"label\": \"912797UH8\", \"values\": [43648440, 43765920]}, {\"label\": \"912797VE4\", \"values\": [0, 10537990]}, {\"label\": \"912797SA6\", \"values\": [43611040, 43734680]}, {\"label\": \"912797UK1\", \"values\": [0, 45408705]}, {\"label\": \"912797UL9\", \"values\": [0, 51176880]}, {\"label\": \"Subtotal\", \"values\": [1086678479, 1077871526]}, {\"label\": \"Government money-market funds\", \"values\": [349943549, 258192967]}, {\"label\": \"Cash deposits held at U.S. regulated financial institutions\", \"values\": [251892562, 239096420]}, {\"label\": \"Total Market Value of the Reserve\", \"values\": [1688514590, 1575160913]}]}",
+ "ttft_ms": 3411,
+ "type": "result",
+ "duration_ms": 312939,
+ "uuid": "e2759103-3401-44b1-8674-d8b3bf4d29e8",
+ "ttft_stream_ms": 2416,
+ "time_to_request_ms": 1417,
+ "first_content_frame_ms": 2416,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

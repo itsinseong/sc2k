@@ -1,0 +1,251 @@
+# G-3 연구 결과와 주의점
+
+- 노트북: https://notebook.google.com/notebook/be83021b-787b-4ccc-9eec-b9c14dc07434?authuser=1 (자동 제목 "Optimal Control of Stablecoin Reserves")
+- 보고서 제목: 원화 스테이블코인 준비자산 규제 및 금리 변동성에 따른 발행량·예금 비중 변화 연구 보고서
+- 소스 25종(소스 26개), 보고서 참고 링크 19개, 채팅 답 1건, 본문 19482자
+- 실행 방식: 채팅용 프롬프트. Deep Research 보고서 + 채팅 답 1건(질문은 프롬프트 원문)
+- 수집: 2026-10-09 Aside repl, 원문 대조 전
+
+---
+# 원화 스테이블코인 준비자산 규제 및 금리 변동성에 따른 발행량·예금 비중 변화 연구 보고서
+
+## 1. 금리 변동과 스테이블코인 발행량 및 준비자산 구성 변화에 관한 실증 연구 분석
+
+통화정책 긴축 및 중앙은행의 정책금리 인상은 스테이블코인의 총발행량(시가총액)과 준비자산 내 현금성 자산(은행 예금) 비중을 동시에 변화시키는 핵심 거시경제적 요인으로 작용한다 [cite: 1, 2, 3]. 기준금리가 상승하면 전통 금융시장의 위험프리미엄이 조정되고 가상자산 생태계 내 레버리지 투자 및 투기적 대출 수요가 감소한다 [cite: 1, 3, 4]. 스테이블코인은 디지털 자산 생태계에서 주요 정산 및 거래 수단(Medium of Exchange)으로 기능하기 때문에, 금리 인상에 따른 가상자산 시장의 위축은 스테이블코인 수요 감소와 총발행량 축소로 이어진다 [cite: 1, 3, 4].
+
+동시에 준비자산 운용 측면에서 금리 상승은 무이자 또는 저리의 은행 예금을 보유하는 데 따른 기회비용을 급격히 증가시킨다 [cite: 2, 3]. 이에 따라 스테이블코인 발행사는 수익성을 극대화하기 위해 은행 예금 비중을 낮추고, 고금리 이자 수익을 제공하는 단기 국채(Treasury Bills)나 국채 담보 역레포(Reverse Repo) 등 고유동성 안전자산으로 준비자산 포트폴리오를 재편하는 경향을 보인다 [cite: 2, 5, 6]. 다만, 갑작스러운 상환 요구(Coin-run)에 대응하기 위해 일정 수준의 현금성 자산 유지가 불가피하므로, 이 같은 자산 재배치는 상업은행의 유동성 규제 비율과 금융중개 기능에 복합적인 파급효과를 미치게 된다 [cite: 2, 7, 8].
+
+다음 표는 금리 상승 및 통화정책 충격이 스테이블코인 발행량, 준비자산 구성, 은행 대출 및 금융시장에 미치는 영향을 다룬 주요 학술 논문 및 정책 연구 결과이다 [cite: 1, 7, 9, 10].
+
+| 논문 | 자료 기간 | 결과 수치 | 방법 | 쪽 |
+|---|---|---|---|---|
+| Aldasoro et al. (2024/2025) / BIS Working Paper No. 1219 [cite: 1, 4] | 2019년 ~ 2024년 [cite: 1] | 미 연준의 긴축적 통화정책 충격(금리 인상) 발생 3개월 후 스테이블코인 시가총액 약 10%p 감소 [cite: 1] | SVAR 및 Local Projection 충격반응 회귀분석 (S&P 500, 3개월 미 국채금리, 달러 실효환율, 비트코인 가격 통제) [cite: 1] | 7, 9, 10쪽 [cite: 1] |
+| Bindseil et al. (2026) / ECB Working Paper No. 3199 [cite: 7, 11] | 2021년 ~ 2025년 [cite: 7] | 스테이블코인 노출도가 1표준편차 증가할 때 은행의 향후 24개월간 비금융 사적부문 대출 성장률 약 2.5%p 감소 [cite: 7] | Jordà(2005) Local Projection 및 Shift-share Bartik 도구변수 추정법 [cite: 7] | 9, 10, 11쪽 [cite: 7] |
+| ECB Working Paper No. 3280 (2026) [cite: 9] | 2021년 ~ 2026년 [cite: 9] | 단기 통화정책 긴축 충격 시 DeFi 예치금리와 정책금리 간 디커플링 및 역방향 이동 발생, 평균 Spread 약 100bps 형성 [cite: 9] | 통화정책 변동일 기준 Event Study 및 Local Projection 충격반응 분석 [cite: 9] | 1, 3쪽 [cite: 9] |
+| Liao & Caramichael (2022) / Fed IFDP No. 1334 [cite: 10] | 2021년 ~ 2022년 [cite: 10] | 준비자산 전액을 은행 예금으로 보유하는 Narrow Bank 모델 적용 시 소매예금의 도매예금화로 자금중개 위축 발생, LCR 유출률(5~15%)에 따른 신용 차감 유발 [cite: 8, 10] | 시나리오 기반 은행 대차대조표 수치 모형 분석 [cite: 10] | 8, 9, 10쪽 [cite: 10] |
+| Ma, Zeng, Zhang (2025) / NBER Working Paper [cite: 11, 12] | 2021년 ~ 2022년 [cite: 12] | USDT 및 USDC의 Run 위험 수치 각각 3.927%(2022년 3월), 3.336%(2021년 10월) 기록. 배당(이자) 지급률을 0%에서 4%로 올릴 경우 Run 위험 대폭 감소 [cite: 12] | Primary Market 차익거래자 구조 및 대차대조표 캘리브레이션 모형 [cite: 12] | 1, 28쪽 [cite: 12] |
+
+---
+
+## 2. 원화 스테이블코인의 현금성 자산 최저 비율 설정 시 주요 고려사항 및 주의점
+
+해외 학술 논문 및 주요 기관의 연구 결과를 바탕으로 원화(KRW) 스테이블코인의 준비자산 중 '현금성 자산(은행 예금) 최저 비율' 규제를 설계할 때 고려해야 할 핵심 리스크와 주의점은 다음과 같다 [cite: 7, 8, 13, 14, 15]. 아래 제시된 주의사항들은 소스 문헌에 기재된 원문 내용과 출처를 바탕으로 정리되었다 [cite: 7, 8, 13, 14, 15].
+
+### 가. 소매예금의 불안정한 도매예금(Wholesale Funding) 전환과 은행 LCR 악화 위험
+
+원화 스테이블코인의 준비자산 중 현금성 자산 비율을 지나치게 높게 규제할 경우, 일반 이용자의 소매 예금이 스테이블코인 발행사의 예금 계좌로 수납되어 도매 예금으로 성격이 변한다 [cite: 7, 8, 15]. 이는 상업은행의 유동성 규제 비율을 악화시키고 신용 공급 능력을 저하시키는 원인이 된다 [cite: 7, 8].
+
+- "This shift from retail to wholesale deposits worsens banks' liquidity positions because wholesale funding is treated as less stable under Basel III. Compared with retail deposits, wholesale deposits carry higher run-off rates in the Liquidity Coverage Ratio (LCR) and lower available stable funding weights in the Net Stable Funding Ratio (NSFR), reflecting their greater sensitivity to stress and shorter maturities. As a result, banks must hold more high-quality liquid assets or secure longer-term funding to satisfy regulatory liquidity requirements." (ECB Working Paper No. 3199, 9쪽) [cite: 7]
+
+- "At the bank level, we find a meaningful effect: a one-standard-deviation increase in stablecoin exposure reduces cumulative non-financial private sector loan growth over the following 24 months by approximately 2.5 percentage points" (ECB Working Paper No. 3199, 11쪽) [cite: 7]
+
+- "Let γ be the incremental 'non-deployable' fraction on recycled wholesale balances; we can assign γ=5–15% with the order-of-magnitude reflecting LCR runoff and internal FTP penalties... Data suggest wholesale funding can be two to three times more volatility than retail deposits, particularly during stress periods..." (Federal Reserve Board FEDS Notes, Section 2 및 Note 7) [cite: 8]
+
+- "스테이블코인 발행사가 준비자산을 전액 은행 예금에 투자한 경우" 소매예금이 유출되어 고변동성 도매예금으로 재편됨에 따라 은행의 자금중개 기능이 위축될 수 있다. (한국은행, 『디지털 시대의 화폐, 혁신과 신뢰의 조화: 원화 스테이블코인의 주요 이슈와 대응방안』, 91쪽 및 [그림 Ⅴ-8]) [cite: 14, 16]
+
+### 나. 준비자산 예금의 특정 은행 집중과 시스템적 뱅크런 및 디페깅 전이 리스크
+
+현금 비율 규제 충족을 위해 발행사가 소수의 특정 대형 상업은행에 예금을 집중할 경우, 해당 예치 은행의 유동성 위기가 스테이블코인의 디페깅(Depegging)과 가치 상실로 직결될 수 있다 [cite: 2, 12, 14].
+
+- "A further concentration risk arises from where stablecoin issuers place their reserves. If deposits are concentrated in a small number of banks, both the banks losing retail deposits and those gaining large issuer deposits may experience weaker liquidity positions, even if system-wide deposits are unchanged." (State Street Insights, Banking sector implications 섹션) [cite: 2]
+
+- "USDC is also exposed to default risk in the banking sector because of its concentrated deposit holdings." (Ma, Zeng, Zhang, NBER Working Paper, 28쪽) [cite: 12]
+
+- "스테이블코인은 본질적으로 법정통화와 '1대 1 가치 유지'를 약속하지만 2023년 초 USDC(써클)의 경우 실리콘밸리은행(SVB) 파산의 영향으로 한 때 0.88달러까지 떨어짐" (한국은행, 『디지털 시대의 화폐, 혁신과 신뢰의 조화: 원화 스테이블코인의 주요 이슈와 대응방안』, 65쪽 및 [참고 Ⅴ-3] 73쪽) [cite: 14]
+
+- "'1코인=1원' 약속은 발행사와 이용자 간 사적 계약일 뿐, 국가나 중앙은행이 이를 법·제도적으로 보증하지 않는다... 발행사가 상환 약속을 지키지 못할 경우, 스테이블코인 보유자는 예금자와 달리 예금자보호법에 따른 보호도 받을 수 없다." (한국은행, 『디지털 시대의 화폐, 혁신과 신뢰의 조화: 원화 스테이블코인의 주요 이슈와 대응방안』, 65쪽 및 120쪽) [cite: 14]
+
+### 다. 이자 지급 금지 규제, 수익성 격차 및 자본유출·규제 우회 위험
+
+스테이블코인에 대한 이자(Yield) 지급이 금지된 환경에서 높은 현금성 자산 비율을 강제할 경우, 전통 예금과의 수익률 격차로 인해 발행사의 수익 모델이 약화되거나 제3자를 통한 규제 우회 및 해외 자산으로의 자본 유출 위험이 증대된다 [cite: 14, 15, 17].
+
+- "The GENIUS Act, signed into law in July 2025, requires stablecoin issuers to maintain reserves backing outstanding stablecoins on at least a one-to-one basis... It also prohibits stablecoin issuers from offering any form of interest or yield to stablecoin holders, but does not explicitly prohibit affiliate or third-party arrangements that might offer interest-bearing products." (White House CEA Report, 1쪽) [cite: 17]
+
+- "스테이블코인이 이자를 제공하면 은행 예금과 직접적으로 경쟁하게 되면서 기존 자금중개 기능에 부정적 영향을 미칠 수 있어서다." (한국은행, 『디지털 시대의 화폐, 혁신과 신뢰의 조화: 원화 스테이블코인의 주요 이슈와 대응방안』, 기자간담회 발표문 및 [참고 Ⅴ-4] 74쪽) [cite: 14, 15]
+
+- "우리나라는 타 국가들과는 규제환경이 다릅니다. 자본·외환 규제 체계를 유지하면서 스테이블코인을 도입하려는 최초의 국가죠. 그래서 규제준수 능력이 검증된 은행을 중심으로 발행을 추진하여 안정성에 유의하자는 것입니다." (한국은행, 『디지털 시대의 화폐, 혁신과 신뢰의 조화: 원화 스테이블코인의 주요 이슈와 대응방안』, 백서 동영상 해설 및 64쪽) [cite: 14, 18]
+
+- "스테이블코인이 외환·자본 규제를 우회하는 통로가 될 수 있다는 우려도 나옴. 예를 들어 국내 투자자가 원화 스테이블코인을 익명 거래가 가능한 개인 지갑으로 옮긴 뒤 달러 스테이블코인 등 다른 자산으로 바꿔 해외로 옮겨도 현재 별다른 규제를 받지 않음" (한국은행, 『디지털 시대의 화폐, 혁신과 신뢰의 조화: 원화 스테이블코인의 주요 이슈와 대응방안』, 65쪽 및 [참고 Ⅴ-8] 86쪽) [cite: 14]
+
+### 라. 대규모 상환(Run) 발생 시 단기 금융시장으로의 리스크 전이
+
+현금성 자산 외에 국채나 역레포 등 고유동성 자산을 준비자산으로 보유하더라도, 24/7 계속되는 대규모 상환 요구 시 자산 강제 매각으로 인해 단기 금융시장의 금리 변동성이 극대화될 수 있다 [cite: 2].
+
+- "In this structure, heavy redemptions of stablecoins would transmit stress to short-term funding markets through forced sales of Treasuries or unwinding of repo positions." (State Street Insights, Reserve assets 섹션) [cite: 2]
+
+- "Procyclicality and liquidity: Stablecoin reserve portfolios should be restricted to truly high-quality liquid assets (HQLA) with short duration, and issuers should maintain robust liquidity buffers... Supervisors should stress-test stablecoin reserves against severe but plausible outflow scenarios (recognizing that redemptions can occur 24/7)." (State Street Insights, Procyclicality and liquidity 섹션) [cite: 2]
+
+---
+
+## 3. 원화 스테이블코인 준비자산 정책 및 거시건전성 제언
+
+실증 연구 결과를 종합해 보면 금리 상승기에는 스테이블코인 총발행량이 축소되는 거시적 수축이 일어나는 동시에 [cite: 1], 발행사가 이자 수익 확보를 위해 무이자 은행 예금 비중을 축소하려는 시장 자율적 유인이 크게 작동한다 [cite: 2, 5, 6].
+
+따라서 원화 스테이블코인의 준비자산 규제 체계를 수립할 때, 단순히 고비율의 현금 예금을 최저 기준으로 강제하는 정책은 바람직하지 않다 [cite: 7, 8, 10]. 지나치게 높은 현금 예금 비율은 소매 예금을 불안정한 도매 예금으로 바꾸어 상업은행의 LCR 유출률을 높이고 신용 공급 능력을 위축시키는 Narrow Banking 부작용을 일으킨다 [cite: 7, 8, 14]. 반대로 현금 비율이 너무 낮으면 시장 충격 시 국채 매동으로 인한 단기 금융시장 불안이 유발될 수 있다 [cite: 2].
+
+이에 따라 원화 스테이블코인의 현금성 자산 최저 비율 산정 시에는 다음과 같은 다각적 정책 설계가 요구된다 [cite: 2, 7, 13, 15].
+
+첫째, 예금과 초단기 통화안정증권 및 단기 국채(만기 90일 이하) 간의 적정 혼합 비율을 정하고, 특정 은행에 준비자산 예금이 집중되는 것을 막는 은행별 예치 한도(Concentration Limits)를 명시해야 한다 [cite: 2, 17].
+
+둘째, 은행의 LCR 부담을 완화하기 위해 은행 중심 컨소시엄 발행 구조를 도입하거나 예금토큰(Deposit Tokens)과의 공존 체계를 구축하여 금융중개 기능의 훼손을 방지해야 한다 [cite: 7, 13, 15, 19].
+
+셋째, "발행사 인가, 발행량 및 준비자산 구성과 같은 주요 사항은 유관부처 간 합의 기반의 법정 정책협의 기구를 설치하고 동 협의기구에서 논의하여 결정"함으로써 통화정책, 자본유출입 관리, 금융안정 목표가 조화롭게 달성될 수 있도록 거시건전성 제도를 정비해야 한다 [cite: 13, 15, 18].
+
+---
+
+- Stablecoins, money market funds and monetary policy - the BIS, https://www.bis.org/publications/working-paper-1219-stablecoins-money-market-funds-and-monetary-policy.pdf
+
+- Interest-bearing stablecoins and macroeconomic stability - State Street, https://www.statestreet.com/br/en/insights/stablecoins-macroeconomic-stability
+
+- Leverage and Stablecoin Pegs, https://www.tse-fr.eu/sites/default/files/TSE/documents/conf/2024/digital_currency/paper_vardoulaki.pdf
+
+- Stablecoins, money market funds and monetary policy - the BIS, https://www.bis.org/publications/working-paper-1219-stablecoins-money-market-funds-and-monetary-policy
+
+- Stablecoins and the Demand for Dollars | Richmond Fed, https://www.richmondfed.org/publications/research/economic_brief/2026/eb_26-10
+
+- [국채의 역습④] 위태로운 美 장기금리…스테이블코인, 국채시장 '새 큰손' 될까 - 투데이신문, https://www.ntoday.co.kr/news/articleView.html?idxno=129320
+
+- Stablecoins and monetary policy transmission - European Central Bank, https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp3199~ad552b59ec.en.pdf
+
+- The Fed - Banks in the Age of Stablecoins: Some Possible Implications for Deposits, Credit, and Financial Intermediation - Federal Reserve, https://www.federalreserve.gov/econres/notes/feds-notes/banks-in-the-age-of-stablecoins-implications-for-deposits-credit-and-financial-intermediation-20251217.html
+
+- DeFi-ying the Fed? Monetary policy transmission to stablecoin deposit rates - European Central Bank, https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp3280~503ba7d4b0.en.pdf
+
+- Stablecoins: Growth Potential and Impact on Banking - Federal Reserve, https://www.federalreserve.gov/econres/ifdp/files/ifdp1334.pdf
+
+- Global stablecoins in 2030: a European perspective - Federal Reserve Bank of New York, https://www.newyorkfed.org/medialibrary/media/newsevents/events/markets/2026/2026_0709_Stablecoins_Bindseil-Meuwissen-Mondini-Rohar
+
+- Stablecoin Runs and the Centralization of Arbitrage* - Columbia Business School, https://business.columbia.edu/sites/default/files-efs/citation_file_upload/SSRN-id4398546-Stablecoin%20Runs%20and%20the%20Centralization%20of%20Arbitrage.pdf
+
+- 디지털 시대의 화폐, 혁신과 신뢰의 조화 : 원화 스테이블코인의 주요 이슈와 대응방안 | 국내연구자료 | KDI 경제교육·정보센터, https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000199493
+
+- 디지털 시대의 화폐, 혁신과 신뢰의 조화 : 원화 스테이블코인의 주요 이슈와 대응방안, https://nsp.nanet.go.kr/plan/subject/detail.do?nationalPlanControlNo=PLAN0000056994
+
+- 한은 “스테이블코인, 은행 주도로 발행하고 준비금에 예금토큰 편입해야” - Daum, https://v.daum.net/v/20251027170540101
+
+- 법정통화의 변신, CBDC와 스테이블코인 | 경제로 세상 읽기 | KDI 경제교육·정보센터, https://eiec.kdi.re.kr/material/pageoneView.do?idx=1879
+
+- The Council of Economic Advisers Effects of Stablecoin Yield Prohibition on Bank Lending - The White House, https://www.whitehouse.gov/wp-content/uploads/2026/04/Effects-of-Stablecoin-Yield-Prohibition-on-Bank-Lending.pdf
+
+- BOK이슈해설ㅣ스테이블코인의 이해와 오해 | 영상보고서(상세) | 동영상 | 멀티콘텐츠 | 한국은행 홈페이지, https://www.bok.or.kr/portal/bbs/B0000168/view.do?menuNo=200058&nttId=10095130
+
+- [디지털원화의 재설계 ②] 원화 스테이블코인 vs 예금토큰, 한은이 주목한 '은행 모델'은, https://www.nexblock.co.kr/article/1002632
+
+
+## 참고 링크(보고서 끝 목록)
+
+1. Stablecoins, money market funds and monetary policy - the BIS https://www.bis.org/publications/working-paper-1219-stablecoins-money-market-funds-and-monetary-policy.pdf
+2. Interest-bearing stablecoins and macroeconomic stability - State Street https://www.statestreet.com/br/en/insights/stablecoins-macroeconomic-stability
+3. Leverage and Stablecoin Pegs https://www.tse-fr.eu/sites/default/files/TSE/documents/conf/2024/digital_currency/paper_vardoulaki.pdf
+4. Stablecoins, money market funds and monetary policy - the BIS https://www.bis.org/publications/working-paper-1219-stablecoins-money-market-funds-and-monetary-policy
+5. Stablecoins and the Demand for Dollars | Richmond Fed https://www.richmondfed.org/publications/research/economic_brief/2026/eb_26-10
+6. [국채의 역습④] 위태로운 美 장기금리…스테이블코인, 국채시장 '새 큰손' 될까 - 투데이신문 https://www.ntoday.co.kr/news/articleView.html?idxno=129320
+7. Stablecoins and monetary policy transmission - European Central Bank https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp3199~ad552b59ec.en.pdf
+8. The Fed - Banks in the Age of Stablecoins: Some Possible Implications for Deposits, Credit, and Financial Intermediation - Federal Reserve https://www.federalreserve.gov/econres/notes/feds-notes/banks-in-the-age-of-stablecoins-implications-for-deposits-credit-and-financial-intermediation-20251217.html
+9. DeFi-ying the Fed? Monetary policy transmission to stablecoin deposit rates - European Central Bank https://www.ecb.europa.eu/pub/pdf/scpwps/ecb.wp3280~503ba7d4b0.en.pdf
+10. Stablecoins: Growth Potential and Impact on Banking - Federal Reserve https://www.federalreserve.gov/econres/ifdp/files/ifdp1334.pdf
+11. Global stablecoins in 2030: a European perspective - Federal Reserve Bank of New York https://www.newyorkfed.org/medialibrary/media/newsevents/events/markets/2026/2026_0709_Stablecoins_Bindseil-Meuwissen-Mondini-Rohar
+12. Stablecoin Runs and the Centralization of Arbitrage* - Columbia Business School https://business.columbia.edu/sites/default/files-efs/citation_file_upload/SSRN-id4398546-Stablecoin%20Runs%20and%20the%20Centralization%20of%20Arbitrage.pdf
+13. 디지털 시대의 화폐, 혁신과 신뢰의 조화 : 원화 스테이블코인의 주요 이슈와 대응방안 | 국내연구자료 | KDI 경제교육·정보센터 https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000199493
+14. 디지털 시대의 화폐, 혁신과 신뢰의 조화 : 원화 스테이블코인의 주요 이슈와 대응방안 https://nsp.nanet.go.kr/plan/subject/detail.do?nationalPlanControlNo=PLAN0000056994
+15. 한은 “스테이블코인, 은행 주도로 발행하고 준비금에 예금토큰 편입해야” - Daum https://v.daum.net/v/20251027170540101
+16. 법정통화의 변신, CBDC와 스테이블코인 | 경제로 세상 읽기 | KDI 경제교육·정보센터 https://eiec.kdi.re.kr/material/pageoneView.do?idx=1879
+17. The Council of Economic Advisers Effects of Stablecoin Yield Prohibition on Bank Lending - The White House https://www.whitehouse.gov/wp-content/uploads/2026/04/Effects-of-Stablecoin-Yield-Prohibition-on-Bank-Lending.pdf
+18. BOK이슈해설ㅣ스테이블코인의 이해와 오해 | 영상보고서(상세) | 동영상 | 멀티콘텐츠 | 한국은행 홈페이지 https://www.bok.or.kr/portal/bbs/B0000168/view.do?menuNo=200058&nttId=10095130
+19. [디지털원화의 재설계 ②] 원화 스테이블코인 vs 예금토큰, 한은이 주목한 '은행 모델'은 https://www.nexblock.co.kr/article/1002632
+
+
+# 채팅 1
+
+## 질문
+
+소스 논문만 근거로 두 가지를 정리해 줘.
+
+
+
+
+
+금리가 오를 때 스테이블코인 발행량과 준비자산 중 현금(은행 예금) 비중이 어떻게 변하는지 논문별 표. 열: 논문 | 자료 기간 | 결과 수치 | 방법 | 쪽
+
+
+이 결과를 원화 스테이블코인의 현금성 자산 최저 비율을 정하는 데 쓸 때 주의할 점. 소스 문장으로만, 출처(소스 이름, 쪽)를 붙여서.
+
+## 답
+
+소스 논문을 바탕으로 금리 상승 시 스테이블코인 발행량 및 준비자산(현금·예금) 비중 변화와 이를 원화 스테이블코인의 현금성 자산 최저 비율 설정에 적용할 때의 주요 주의점을 정리한 결과는 다음과 같습니다.
+
+### 1. 금리 상승 시 스테이블코인 발행량 및 준비자산 중 현금(은행 예금) 비중 변화
+
+금리가 상승하면 무이자 예금 보유에 따른 기회비용이 급증하고 가상자산 시장 내 레버리지 투기 수요가 위축되어 스테이블코인 총발행량(시가총액)이 축소되는 한편, 발행사는 이자 수익 확보를 위해 무이자 은행 예금 비중을 낮추고 단기 국채 등 고유동성 이자부 안전자산 비중을 확대하는 경향을 보입니다 [1] [2].
+
+| 논문 | 자료 기간 | 결과 수치 | 방법 | 쪽 |
+|---|---|---|---|---|
+| Aldasoro et al. (2024/2025) (BIS Working Paper No. 1219) [2] [3] | 2019년 ~ 2024년 [2] [3] | 미 연준의 긴축적 통화정책 충격(금리 인상) 발생 3개월 후 스테이블코인 시가총액 약 10%p 감소 [2]. 무이자 은행 예금 보유 기회비용 증가로 예금 비중을 축소하고 단기 국채 등 고유동성 안전자산으로 전환 [1] [2]. | SVAR 및 Local Projection 충격반응 회귀분석 (S&P 500, 3개월 미 국채금리, 달러 실효환율, 비트코인 가격 통제) [2] | 7, 9, 10쪽 [2] |
+| Altavilla et al. (2026) (ECB Working Paper No. 3199) [2] [4] [5] | 2015년 ~ 2025년 [6] | 100bp 긴축적 통화정책 충격(금리 인상) 시 2년 후 유로지역 스테이블코인 시가총액 분기 성장률 약 3%p 감소 [4] [5]. 은행의 스테이블코인 노출도 1표준편차 증가 시 24개월간 비금융 사적부문 대출 성장률 약 2.5%p 감소 [2] [7]. | 고주파 통화정책 서프라이즈를 내부 도구변수로 활용한 Bayesian VAR (BVAR) 및 Local Projection [2] [5] [8] [9] | 9, 10, 11, 14쪽 [2] [4] [5] |
+| ECB Working Paper No. 3280 (2026) (DeFi-ying the Fed?) [2] [10] | 2021년 ~ 2026년 [2] [10] [11] | 단기 통화정책 긴축 충격 시 DeFi 예치금리와 정책금리 간 디커플링 및 역방향 이동 발생, 평균 Spread 약 100bps 형성 및 평균회귀 특성 [2] [10]. | FOMC 발표일 고주파 가격 변동 기반 Event Study, Bayesian Proxy-VAR 및 Local Projection [2] [12] [13] | 1, 3, 14쪽 [2] |
+| Gorton et al. (2022/2024) (Leverage and Stablecoin Pegs) [1] [14] [15] | 2020년 ~ 2022년 [16] | 기준금리 및 투기수요/기회비용 상승 시 Safe asset(현금/예금/국채/역레포) 비중 조정; Tether의 Safe asset 비중이 2021년 초 26%에서 2022년 말 70% 수준으로 상승 [14]. 자산 가치 안정화를 위해 토큰 공급량(발행량) 조절 [1] [17]. | Global Game 이론 모형 및 OLS/IV 회귀분석 (Major League Baseball 시청률 도구변수 활용) [18] [19] | 6, 30, 33, 37, 38쪽 [2] [14] |
+| Liao & Caramichael (2022) (Fed IFDP No. 1334) [2] | 2021년 ~ 2022년 [2] | 준비자산 전액을 은행 예금으로 보유하는 Narrow Bank 모델 적용 시 소매예금의 도매예금화로 자금중개 위축 발생, LCR 유출률(5~15%)에 따른 신용 차감 유발 [2]. 금리 상승 시 무이자 예금 기회비용 확대로 국채 전환 유인 급증 [1]. | 시나리오 기반 은행 대차대조표 수치 모형 및 수납 구조 분석 [2] | 8, 9, 10쪽 [2] |
+| Ma, Zeng, Zhang (2025) (NBER Working Paper) [2] [20] | 2021년 ~ 2022년 [2] [20] | USDT 및 USDC의 Run 위험 수치 각 3.927%(2022년 3월), 3.336%(2021년 10월) 기록 [2] [20]. 배당(이자) 지급률을 0%에서 4%로 올릴 경우 Run 위험 대폭 감소 [2]. | Primary Market 차익거래자 구조 및 대차대조표 캘리브레이션 모형 [2] | 1, 28, 52쪽 [2] [20] |
+| Hammerla (2026) (Optimal Control of Reserve Asset Portfolios) [21] [22] | 2021년 ~ 2026년 [21] [22] | 예금/현금 금리가 0%이고 3개월 국채 금리가 연 5.4%인 고금리 환경에서, 이자 수익(Carry) 극대화를 위해 평시 국채 비중을 높이고(기본 설정 현금 10%, 국채 90%), 유출 스트레스 발생 시 Soft-thresholding으로 현금을 신속 확보하는 최적 제어 제시 [22] [23]. | Hawkes Process 기반 유출입 점도프로세스, Stochastic Model Predictive Control (SMPC), Pontryagin Maximum Principle [21] [22] [24] | 1, 3, 5, 8, 20쪽 [21] [22] [23] |
+
+### 2. 원화 스테이블코인의 현금성 자산 최저 비율 설정 시 주요 고려사항 및 주의점
+
+실증 및 이론 연구 결과를 원화(KRW) 스테이블코인의 준비자산 중 '현금성 자산(은행 예금) 최저 비율' 규제 설계에 적용할 때 고려해야 할 핵심 리스크와 소스 문장 근거는 다음과 같습니다 [25].
+
+#### 가. 소매예금의 불안정한 도매예금(Wholesale Funding) 전환과 은행 LCR·신용공급 악화 위험
+
+원화 스테이블코인의 현금 예금 비율을 지나치게 높게 강제할 경우, 일반 이용자의 소매 예금이 발행사의 예금 계좌로 수납되어 도매 예금으로 재편됩니다 [7] [25]. 도매 예금은 바젤 III(Basel III) 유동성 규제상 이탈 위험이 높은 자금으로 분류되어 유동성커버리지비율(LCR)을 악화시키고 상업은행의 대출 공급 능력을 저하시킵니다 [7] [25].
+
+- "This shift from retail to wholesale deposits worsens banks' liquidity positions because wholesale funding is treated as less stable under Basel III. Compared with retail deposits, wholesale deposits carry higher run-off rates in the Liquidity Coverage Ratio (LCR) and lower available stable funding weights in the Net Stable Funding Ratio (NSFR), reflecting their greater sensitivity to stress and shorter maturities. As a result, banks must hold more high-quality liquid assets or secure longer-term funding to satisfy regulatory liquidity requirements." (출처: ECB Working Paper No. 3199, 9쪽) [7]
+
+- "At the bank level, we find a meaningful effect: a one-standard-deviation increase in stablecoin exposure reduces cumulative non-financial private sector loan growth over the following 24 months by approximately 2.5 percentage points" (출처: ECB Working Paper No. 3199, 11쪽) [7]
+
+- "Let γ be the incremental 'non-deployable' fraction on recycled wholesale balances; we can assign γ=5–15% with the order-of-magnitude reflecting LCR runoff and internal FTP penalties... Data suggest wholesale funding can be two to three times more volatility than retail deposits, particularly during stress periods..." (출처: Federal Reserve Board FEDS Notes / Fed IFDP No. 1334, Section 2 및 Note 7) [7]
+
+- "스테이블코인 발행사가 준비자산을 전액 은행 예금에 투자한 경우 소매예금이 유출되어 고변동성 도매예금으로 재편됨에 따라 은행의 자금중개 기능이 위축될 수 있다." (출처: 한국은행, 『디지털 시대의 화폐, 혁신과 신뢰의 조화: 원화 스테이블코인의 주요 이슈와 대응방안』, 91쪽) [7]
+
+#### 나. 특정 은행 예치 집중 및 뱅크런·디페깅 전이 리스크
+
+현금 비율 규제를 충족하기 위해 발행사가 소수의 특정 대형 상업은행에 예금을 집중할 경우, 해당 은행의 유동성 위기가 스테이블코인의 디페깅(Depegging)과 가치 상실로 직결됩니다 [26].
+
+- "A further concentration risk arises from where stablecoin issuers place their reserves. If deposits are concentrated in a small number of banks, both the banks losing retail deposits and those gaining large issuer deposits may experience weaker liquidity positions, even if system-wide deposits are unchanged." (출처: State Street Insights, Banking sector implications 섹션) [26]
+
+- "USDC is also exposed to default risk in the banking sector because of its concentrated deposit holdings." (출처: Ma, Zeng, Zhang, NBER Working Paper / Columbia Business School, 28쪽) [26]
+
+- "스테이블코인은 본질적으로 법정통화와 '1대 1 가치 유지'를 약속하지만 2023년 초 USDC(써클)의 경우 실리콘밸리은행(SVB) 파산의 영향으로 한 때 0.88달러까지 떨어짐" (출처: 한국은행, 『디지털 시대의 화폐, 혁신과 신뢰의 조화: 원화 스테이블코인의 주요 이슈와 대응방안』, 65쪽 및 73쪽) [26]
+
+- "'1코인=1원' 약속은 발행사와 이용자 간 사적 계약일 뿐, 국가나 중앙은행이 이를 법·제도적으로 보증하지 않는다... 발행사가 상환 약속을 지키지 못할 경우, 스테이블코인 보유자는 예금자와 달리 예금자보호법에 따른 보호도 받을 수 없다." (출처: 한국은행, 『디지털 시대의 화폐, 혁신과 신뢰의 조화: 원화 스테이블코인의 주요 이슈와 대응방안』, 65쪽 및 120쪽) [26]
+
+#### 다. 이자 지급 금지 규제, 기회비용 급증 및 자본유출·규제 우회 위험
+
+스테이블코인에 대한 이자(Yield) 지급이 금지된 환경에서 높고 경직된 현금 예금 비율을 강제할 경우, 전통 예금과의 수익률 격차로 발행사의 수익 모델이 상실되거나 이용자가 개인 지갑 및 해외 달러 스테이블코인 등으로 자금을 이동시켜 자본 유출 및 외환 규제 우회 유인이 확대됩니다 [27].
+
+- "The GENIUS Act... requires stablecoin issuers to maintain reserves backing outstanding stablecoins on at least a one-to-one basis... It also prohibits stablecoin issuers from offering any form of interest or yield to stablecoin holders, but does not explicitly prohibit affiliate or third-party arrangements that might offer interest-bearing products." (출처: White House CEA Report, 1쪽) [27]
+
+- "스테이블코인이 이자를 제공하면 은행 예금과 직접적으로 경쟁하게 되면서 기존 자금중개 기능에 부정적 영향을 미칠 수 있어서다." (출처: 한국은행, 『디지털 시대의 화폐, 혁신과 신뢰의 조화: 원화 스테이블코인의 주요 이슈와 대응방안』, 74쪽) [27]
+
+- "우리나라는 타 국가들과는 규제환경이 다릅니다. 자본·외환 규제 체계를 유지하면서 스테이블코인을 도입하려는 최초의 국가죠. 그래서 규제준수 능력이 검증된 은행을 중심으로 발행을 추진하여 안정성에 유의하자는 것입니다." (출처: 한국은행, 백서 동영상 해설 / 이슈해설, 64쪽) [27]
+
+- "스테이블코인이 외환·자본 규제를 우회하는 통로가 될 수 있다는 우려도 나옴. 예를 들어 국내 투자자가 원화 스테이블코인을 익명 거래가 가능한 개인 지갑으로 옮긴 뒤 달러 스테이블코인 등 다른 자산으로 바꿔 해외로 옮겨도 현재 별다른 규제를 받지 않음" (출처: 한국은행, 『디지털 시대의 화폐, 혁신과 신뢰의 조화: 원화 스테이블코인의 주요 이슈와 대응방안』, 65쪽 및 86쪽) [27]
+
+#### 라. 단기 국채 급매(Fire-Sale)에 따른 금융시장 변동성 리스크
+
+반대로 현금 비율이 지나치게 낮고 국채 비중이 과도할 때 대규모 상환 요구(Coin-run)가 발생하면, 발행사의 단기 국채 급매가 국채 금리 급등과 금융시장 불안을 촉발할 수 있으므로 고정 비율보다는 시장 상황에 맞춘 동적 관리가 필요합니다 [28] [29] [30].
+
+- "Estimates from instrumented local projection regressions suggest that a 2-standard deviation inflow into stablecoins lowers 3-month Treasury yields by 2-2.5 basis points within 10 days... The effects are asymmetric (stablecoin outflows raise yields by two to three times as much as inflows lower them), highlighting the fire-sale risks associated with runnable stablecoin liabilities." (출처: Ahmed & Aldasoro, Cleveland Fed / BIS Working Paper, 1쪽 및 21쪽) [28] [31]
+
+- "Cash holdings maximize liquidity and eliminate market risk but impose opportunity costs through foregone interest income, particularly pronounced in rising rate environments. Treasury securities offer attractive risk-adjusted returns... but introduce duration risk and volatility during market dislocations." (출처: Hammerla, Optimal Control of Reserve Asset Portfolios for Stablecoins, 4-5쪽) [29]
+
+💡 이 실증 분석 결과를 바탕으로 원화 스테이블코인의 준비자산 최저 예금 비율, 단기 통안채/국채 적정 혼합 비율, 그리고 은행별 예치 한도(Concentration Limits)를 포함한 종합 정책 제언 보고서를 작성해 드릴까요?
+
+## 인용 번호와 소스
+
+- 원화 스테이블코인 준비자산 규제 및 금리 변동성에 따른 발행량·예금 비중 변화 연구 보고서: [1] [2] [7] [25] [26] [27] [30]
+- Stablecoins, money market funds and monetary policy - the BIS: [3]
+- Stablecoins and monetary policy transmission - European Central Bank: [4] [5] [6] [8] [9]
+- DeFi-ying the Fed? Monetary policy transmission to stablecoin deposit rates - European Central Bank: [10] [11] [12] [13]
+- Leverage and Stablecoin Pegs: [14] [15] [16] [17] [18] [19]
+- Stablecoin Runs and the Centralization of Arbitrage* - Columbia Business School: [20]
+- W14_arXiv_2508.09429_Optimal_control_reserve.pdf: [21] [22] [23] [24] [29]
+- Global stablecoins in 2030: a European perspective - Federal Reserve Bank of New York: [28]
+- W14_Ahmed_Aldasoro_2025-08_Stablecoins_and_safe_asset_prices_ClevelandFed.pdf: [31]

@@ -1,0 +1,103 @@
+{
+ "month": "2025-04",
+ "status": "확인 필요",
+ "as_of": "2025-04-30",
+ "circulation": [
+  293692686,
+  317042712
+ ],
+ "reserve_fair_value": [
+  304731581,
+  329080840
+ ],
+ "table": [
+  {
+   "label": "Total U.S. Treasury bills",
+   "values": [
+    122970480,
+    140533134
+   ],
+   "labels": {
+    "paddle": "Total U.S. Treasury bills",
+    "opus": "Total U.S. Treasury bills"
+   }
+  },
+  {
+   "label": "Government money-market funds",
+   "values": [
+    121917319,
+    140498008
+   ],
+   "labels": {
+    "paddle": "Government money-market funds",
+    "opus": "Government money-market funds"
+   }
+  },
+  {
+   "label": "Cash deposits held at U.S. regulated financial institutions",
+   "values": [
+    59843782,
+    48049698
+   ],
+   "labels": {
+    "paddle": "Cash deposits held at U.S. regulated financial institutions",
+    "opus": "Cash deposits held at U.S. regulated financial institutions"
+   }
+  },
+  {
+   "label": "Total Market Value of the Reserves (Note 2)",
+   "values": [
+    304731581,
+    329080840
+   ],
+   "labels": {
+    "paddle": "Total Market Value of the Reserves (Note 2)",
+    "opus": "Total Market Value of the Reserves (Note 2)"
+   }
+  }
+ ],
+ "components": {
+  "cash": 48049698,
+  "repo": 0,
+  "government_mmf": 140498008,
+  "treasury": 140533134,
+  "other": 0
+ },
+ "reconciliation": {
+  "components_sum": 329080840,
+  "reserve_fair_value": 329080840,
+  "ok": true
+ },
+ "resolved_by_checkdigit": [],
+ "check": [
+  {
+   "name": "912797NB9",
+   "cell": "값 칸 수",
+   "paddle": [
+    122970480,
+    0,
+    140533134
+   ],
+   "opus": [
+    122970480,
+    0
+   ]
+  },
+  {
+   "name": "912797ND5",
+   "cell": "값 칸 수",
+   "paddle": [
+    0
+   ],
+   "opus": [
+    0,
+    140533134
+   ]
+  }
+ ],
+ "readers": {
+  "paddle": "paddle/ripple_2025-04.md",
+  "opus": "claude_opus_2025-04.json",
+  "image": "docs/research/읽기엔진시험_2026-10-09/png/paddle/ripple_2025-04.png"
+ }
+}

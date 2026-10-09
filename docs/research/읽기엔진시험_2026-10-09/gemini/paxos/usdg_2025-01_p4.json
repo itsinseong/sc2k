@@ -1,0 +1,948 @@
+{
+    "input_path": "/Users/inseong/.cache/sc2k-ocr/gemini/paxos/usdg_2025-01_p4.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1654,
+    "height": 2339,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header_image",
+            "block_content": "",
+            "block_bbox": [
+                110,
+                88,
+                598,
+                189
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    110.0,
+                    88.0
+                ],
+                [
+                    598.0,
+                    88.0
+                ],
+                [
+                    598.0,
+                    189.0
+                ],
+                [
+                    110.0,
+                    189.0
+                ]
+            ]
+        },
+        {
+            "block_label": "doc_title",
+            "block_content": "INDEPENDENT ACCOUNTANT'S REPORT (Continued)",
+            "block_bbox": [
+                426,
+                251,
+                1225,
+                290
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    426.0,
+                    251.0
+                ],
+                [
+                    1225.0,
+                    251.0
+                ],
+                [
+                    1225.0,
+                    290.0
+                ],
+                [
+                    426.0,
+                    290.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Our firm applies Singapore Standards on Quality Management and, accordingly, maintains a comprehensive system of quality control including documented policies and procedures regarding compliance with ethical requirements, professional standards and applicable legal and regulatory requirements. We have complied with the independence and other ethical requirements of the Accounting and Corporate Regulatory Authority (ACRA) Code of Professional Conduct and Ethics for Public Accountants and Accounting Entities (ACRA Code), which is founded on fundamental principles of integrity, objectivity, professional competence and due care, confidentiality and professional behaviour.",
+            "block_bbox": [
+                110,
+                360,
+                1544,
+                610
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    110.0,
+                    360.0
+                ],
+                [
+                    1544.0,
+                    360.0
+                ],
+                [
+                    1544.0,
+                    610.0
+                ],
+                [
+                    110.0,
+                    610.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The Redemption Assets Information in the accompanying Redemption Assets Report relates to the Company's USDG token, which is a cryptographic stored value token that allows financial market participants to transact in a crypto asset.",
+            "block_bbox": [
+                111,
+                638,
+                1544,
+                748
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    111.0,
+                    638.0
+                ],
+                [
+                    1544.0,
+                    638.0
+                ],
+                [
+                    1544.0,
+                    748.0
+                ],
+                [
+                    111.0,
+                    748.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Crypto assets are an evolving area of technology and market place activity. Those who choose to acquire and utilize USDG assets should inform themselves of the general risks and uncertainties associated with such assets.",
+            "block_bbox": [
+                111,
+                779,
+                1543,
+                886
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    111.0,
+                    779.0
+                ],
+                [
+                    1543.0,
+                    779.0
+                ],
+                [
+                    1543.0,
+                    886.0
+                ],
+                [
+                    111.0,
+                    886.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In our opinion, the Redemption Assets Information in the accompanying Redemption Assets Report as of January 2025 is fairly stated, based on the criteria set forth in the Redemption Assets Report, in all material respects.",
+            "block_bbox": [
+                111,
+                919,
+                1545,
+                1026
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    111.0,
+                    919.0
+                ],
+                [
+                    1545.0,
+                    919.0
+                ],
+                [
+                    1545.0,
+                    1026.0
+                ],
+                [
+                    111.0,
+                    1026.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                114,
+                1089,
+                461,
+                1171
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    114.0,
+                    1089.0
+                ],
+                [
+                    461.0,
+                    1089.0
+                ],
+                [
+                    461.0,
+                    1171.0
+                ],
+                [
+                    114.0,
+                    1171.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "ENROME LLP",
+            "block_bbox": [
+                113,
+                1185,
+                325,
+                1222
+            ],
+            "block_id": 7,
+            "block_order": 6,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    113.0,
+                    1185.0
+                ],
+                [
+                    325.0,
+                    1185.0
+                ],
+                [
+                    325.0,
+                    1222.0
+                ],
+                [
+                    113.0,
+                    1222.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Public Accountants and Chartered Accountants",
+            "block_bbox": [
+                114,
+                1223,
+                435,
+                1294
+            ],
+            "block_id": 8,
+            "block_order": 7,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    114.0,
+                    1223.0
+                ],
+                [
+                    435.0,
+                    1223.0
+                ],
+                [
+                    435.0,
+                    1294.0
+                ],
+                [
+                    114.0,
+                    1294.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Singapore, 28 February 2025",
+            "block_bbox": [
+                113,
+                1326,
+                512,
+                1367
+            ],
+            "block_id": 9,
+            "block_order": 8,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    113.0,
+                    1326.0
+                ],
+                [
+                    512.0,
+                    1326.0
+                ],
+                [
+                    512.0,
+                    1367.0
+                ],
+                [
+                    113.0,
+                    1367.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Enrome LLP",
+            "block_bbox": [
+                130,
+                2148,
+                296,
+                2178
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    130.0,
+                    2148.0
+                ],
+                [
+                    296.0,
+                    2148.0
+                ],
+                [
+                    296.0,
+                    2178.0
+                ],
+                [
+                    130.0,
+                    2178.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "143 Cecil Street, #19-03/04\nGB Building Singapore 069542",
+            "block_bbox": [
+                600,
+                2147,
+                954,
+                2202
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    600.0,
+                    2147.0
+                ],
+                [
+                    954.0,
+                    2147.0
+                ],
+                [
+                    954.0,
+                    2202.0
+                ],
+                [
+                    600.0,
+                    2202.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "admin@enrome-group.com\nwww.enrome-group.com",
+            "block_bbox": [
+                1173,
+                2149,
+                1513,
+                2202
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    1173.0,
+                    2149.0
+                ],
+                [
+                    1513.0,
+                    2149.0
+                ],
+                [
+                    1513.0,
+                    2202.0
+                ],
+                [
+                    1173.0,
+                    2202.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "2",
+            "block_bbox": [
+                808,
+                2210,
+                832,
+                2238
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    808.0,
+                    2210.0
+                ],
+                [
+                    831.0,
+                    2210.0
+                ],
+                [
+                    831.0,
+                    2237.0
+                ],
+                [
+                    808.0,
+                    2237.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 13,
+                "label": "header_image",
+                "score": 0.544313907623291,
+                "coordinate": [
+                    110,
+                    88,
+                    598,
+                    189
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        110.0,
+                        88.0
+                    ],
+                    [
+                        598.0,
+                        88.0
+                    ],
+                    [
+                        598.0,
+                        189.0
+                    ],
+                    [
+                        110.0,
+                        189.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 6,
+                "label": "doc_title",
+                "score": 0.7735549211502075,
+                "coordinate": [
+                    426,
+                    251,
+                    1225,
+                    290
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        426.0,
+                        251.0
+                    ],
+                    [
+                        1225.0,
+                        251.0
+                    ],
+                    [
+                        1225.0,
+                        290.0
+                    ],
+                    [
+                        426.0,
+                        290.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9568169116973877,
+                "coordinate": [
+                    110,
+                    360,
+                    1544,
+                    610
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        110.0,
+                        360.0
+                    ],
+                    [
+                        1544.0,
+                        360.0
+                    ],
+                    [
+                        1544.0,
+                        610.0
+                    ],
+                    [
+                        110.0,
+                        610.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9325599670410156,
+                "coordinate": [
+                    111,
+                    638,
+                    1544,
+                    748
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        111.0,
+                        638.0
+                    ],
+                    [
+                        1544.0,
+                        638.0
+                    ],
+                    [
+                        1544.0,
+                        748.0
+                    ],
+                    [
+                        111.0,
+                        748.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9254260659217834,
+                "coordinate": [
+                    111,
+                    779,
+                    1543,
+                    886
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        111.0,
+                        779.0
+                    ],
+                    [
+                        1543.0,
+                        779.0
+                    ],
+                    [
+                        1543.0,
+                        886.0
+                    ],
+                    [
+                        111.0,
+                        886.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9291008114814758,
+                "coordinate": [
+                    111,
+                    919,
+                    1545,
+                    1026
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        111.0,
+                        919.0
+                    ],
+                    [
+                        1545.0,
+                        919.0
+                    ],
+                    [
+                        1545.0,
+                        1026.0
+                    ],
+                    [
+                        111.0,
+                        1026.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.8724204301834106,
+                "coordinate": [
+                    114,
+                    1089,
+                    461,
+                    1171
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        114.0,
+                        1089.0
+                    ],
+                    [
+                        461.0,
+                        1089.0
+                    ],
+                    [
+                        461.0,
+                        1171.0
+                    ],
+                    [
+                        114.0,
+                        1171.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7572583556175232,
+                "coordinate": [
+                    113,
+                    1185,
+                    325,
+                    1222
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        113.0,
+                        1185.0
+                    ],
+                    [
+                        325.0,
+                        1185.0
+                    ],
+                    [
+                        325.0,
+                        1222.0
+                    ],
+                    [
+                        113.0,
+                        1222.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.448706716299057,
+                "coordinate": [
+                    116,
+                    1223,
+                    435,
+                    1258
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        116.0,
+                        1223.0
+                    ],
+                    [
+                        435.0,
+                        1223.0
+                    ],
+                    [
+                        435.0,
+                        1258.0
+                    ],
+                    [
+                        116.0,
+                        1258.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4430754780769348,
+                "coordinate": [
+                    114,
+                    1223,
+                    435,
+                    1294
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        114.0,
+                        1223.0
+                    ],
+                    [
+                        435.0,
+                        1223.0
+                    ],
+                    [
+                        435.0,
+                        1294.0
+                    ],
+                    [
+                        114.0,
+                        1294.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.38710588216781616,
+                "coordinate": [
+                    115,
+                    1259,
+                    430,
+                    1296
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        115.0,
+                        1259.0
+                    ],
+                    [
+                        430.0,
+                        1259.0
+                    ],
+                    [
+                        430.0,
+                        1296.0
+                    ],
+                    [
+                        115.0,
+                        1296.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8213438987731934,
+                "coordinate": [
+                    113,
+                    1326,
+                    512,
+                    1367
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        113.0,
+                        1326.0
+                    ],
+                    [
+                        512.0,
+                        1326.0
+                    ],
+                    [
+                        512.0,
+                        1367.0
+                    ],
+                    [
+                        113.0,
+                        1367.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.7962720394134521,
+                "coordinate": [
+                    130,
+                    2148,
+                    296,
+                    2178
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        130.0,
+                        2148.0
+                    ],
+                    [
+                        296.0,
+                        2148.0
+                    ],
+                    [
+                        296.0,
+                        2178.0
+                    ],
+                    [
+                        130.0,
+                        2178.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8240399360656738,
+                "coordinate": [
+                    600,
+                    2147,
+                    954,
+                    2202
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        600.0,
+                        2147.0
+                    ],
+                    [
+                        954.0,
+                        2147.0
+                    ],
+                    [
+                        954.0,
+                        2202.0
+                    ],
+                    [
+                        600.0,
+                        2202.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8618373870849609,
+                "coordinate": [
+                    1173,
+                    2149,
+                    1513,
+                    2202
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        1173.0,
+                        2149.0
+                    ],
+                    [
+                        1513.0,
+                        2149.0
+                    ],
+                    [
+                        1513.0,
+                        2202.0
+                    ],
+                    [
+                        1173.0,
+                        2202.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6779199838638306,
+                "coordinate": [
+                    808,
+                    2210,
+                    832,
+                    2238
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        808.0,
+                        2210.0
+                    ],
+                    [
+                        831.0,
+                        2210.0
+                    ],
+                    [
+                        831.0,
+                        2237.0
+                    ],
+                    [
+                        808.0,
+                        2237.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

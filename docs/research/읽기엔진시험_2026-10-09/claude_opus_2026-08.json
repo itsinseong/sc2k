@@ -1,0 +1,119 @@
+{
+ "duration_api_ms": 102094,
+ "stop_reason": "end_turn",
+ "session_id": "c123619a-9935-4ab1-84a1-9c1a676f2231",
+ "total_cost_usd": 0.6231574,
+ "usage": {
+  "input_tokens": 10,
+  "cache_creation_input_tokens": 43638,
+  "cache_read_input_tokens": 209767,
+  "output_tokens": 11603,
+  "output_tokens_details": {
+   "thinking_tokens": 10273
+  },
+  "server_tool_use": {
+   "web_search_requests": 0,
+   "web_fetch_requests": 0
+  },
+  "service_tier": "standard",
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 43638,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "inference_geo": "not_available",
+  "iterations": [
+   {
+    "input_tokens": 2,
+    "output_tokens": 2091,
+    "cache_read_input_tokens": 54611,
+    "cache_creation_input_tokens": 1526,
+    "cache_creation": {
+     "ephemeral_5m_input_tokens": 0,
+     "ephemeral_1h_input_tokens": 1526
+    },
+    "type": "message"
+   }
+  ],
+  "speed": "standard",
+  "fallback_credit": null
+ },
+ "modelUsage": {
+  "claude-opus-5-5": {
+   "inputTokens": 10,
+   "outputTokens": 11603,
+   "cacheReadInputTokens": 209767,
+   "cacheCreationInputTokens": 43638,
+   "webSearchRequests": 0,
+   "costUSD": 0.6231574,
+   "contextWindow": 1000000,
+   "maxOutputTokens": 128000,
+   "thinkingTokens": 10273,
+   "canonicalModel": "claude-opus-5-5",
+   "provider": "firstParty",
+   "costBasis": "list"
+  }
+ },
+ "permission_denials": [
+  {
+   "tool_name": "mcp__plugin_claude-mem_mcp-search__get_observations",
+   "tool_use_id": "toolu_01VWF5frKLFoY3QBZXnQLGuW",
+   "tool_input": {
+    "ids": [
+     1640,
+     1639,
+     1638
+    ]
+   }
+  },
+  {
+   "tool_name": "Bash",
+   "tool_use_id": "toolu_01PRRqUFERZY7LiCyyGaEECP",
+   "tool_input": {
+    "command": "mkdir -p /tmp/rlusd_crop && python3 -I -c \"\nimport sys\nfrom PIL import Image\nim = Image.open(sys.argv[1])\nprint(im.size)\nim.crop((140, 410, 1530, 530)).resize((2780, 240)).save('/tmp/rlusd_crop/top.png')\n\" /Users/inseong/.cache/sc2k-ocr/ripple_2026-08_p5.png",
+    "description": "Crop and enlarge the summary table region of the page"
+   }
+  }
+ ],
+ "terminal_reason": "completed",
+ "fast_mode_state": "off",
+ "fast_mode_disabled_reason": "sdk_opt_in_required",
+ "subagent_stats": {
+  "spawned": 0,
+  "requested": {
+   "background": 0,
+   "foreground": 0,
+   "unset": 0
+  },
+  "started_in_background": 0,
+  "max_depth": 0,
+  "spawned_by_subagents": 0,
+  "completed": 0,
+  "failed": 0,
+  "killed": {
+   "parent": 0,
+   "user": 0,
+   "system": 0
+  },
+  "refused": {
+   "depth_limit": 0,
+   "concurrency_limit": 0,
+   "budget": 0
+  },
+  "by_type": {}
+ },
+ "safety_stops": 0,
+ "is_error": false,
+ "num_turns": 6,
+ "subtype": "success",
+ "api_error_status": null,
+ "result": "{\"circulation\": [1763215434, 2325969308], \"reserve_fair_value\": [1877691559, 2446312864], \"rows\": [{\"label\": \"912797UU9\", \"values\": [118250000, 0]}, {\"label\": \"912797TX5\", \"values\": [21195760, 0]}, {\"label\": \"912797UV7\", \"values\": [98132242, 0]}, {\"label\": \"912797TY3\", \"values\": [59946000, 0]}, {\"label\": \"912797UW5\", \"values\": [84480714, 124900000]}, {\"label\": \"912797RS8\", \"values\": [44927550, 44991000]}, {\"label\": \"912797VB0\", \"values\": [82105566, 132187404]}, {\"label\": \"912797UF2\", \"values\": [44896050, 44959050]}, {\"label\": \"912797VC8\", \"values\": [44872650, 125372975]}, {\"label\": \"912797UG0\", \"values\": [44864100, 44927550]}, {\"label\": \"912797VD6\", \"values\": [84699100, 124733750]}, {\"label\": \"912797UH8\", \"values\": [52801780, 52876510]}, {\"label\": \"912797VE4\", \"values\": [45207050, 45269248]}, {\"label\": \"912797SA6\", \"values\": [43803321, 60812119]}, {\"label\": \"912797VK0\", \"values\": [47561478, 47628398]}, {\"label\": \"912797UJ4\", \"values\": [0, 117051150]}, {\"label\": \"912797VL8\", \"values\": [27541279, 69399593]}, {\"label\": \"912797UK1\", \"values\": [45480533, 45542295]}, {\"label\": \"912797UL9\", \"values\": [51257376, 51327552]}, {\"label\": \"912797SK4\", \"values\": [0, 65104380]}, {\"label\": \"912797VP9\", \"values\": [42163825, 42221625]}, {\"label\": \"912797UM7\", \"values\": [42650410, 70421425]}, {\"label\": \"912797UY1\", \"values\": [34689550, 49030982]}, {\"label\": \"912797UZ8\", \"values\": [0, 65705425]}, {\"label\": \"912797VY0\", \"values\": [0, 54520400]}, {\"label\": \"912797SU2\", \"values\": [0, 78087648]}, {\"label\": \"Subtotal\", \"values\": [1161526334, 1557070479]}, {\"label\": \"Government money-market funds\", \"values\": [402548322, 467625232]}, {\"label\": \"Cash deposits held at U.S. regulated financial institutions\", \"values\": [313616903, 421617153]}, {\"label\": \"Total Market Value of the Reserve\", \"values\": [1877691559, 2446312864]}]}",
+ "ttft_ms": 4870,
+ "type": "result",
+ "duration_ms": 338361,
+ "uuid": "3bb03924-4d8b-4b37-b668-37dbbec59bfd",
+ "ttft_stream_ms": 4714,
+ "time_to_request_ms": 1381,
+ "first_content_frame_ms": 4715,
+ "queued_turn_count": 0,
+ "result_index": 0
+}

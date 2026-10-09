@@ -1,0 +1,36 @@
+An Update on USDC and Silicon Valley Bank
+출처 https://www.circle.com/blog/an-update-on-usdc-and-silicon-valley-bank (web.archive.org 2023-03-22) (웹 보관본)
+
+Company Updates
+Update:
+As of March 13, 2023, the $3.3B USDC reserve deposit held at Silicon Valley Bank was made fully available and transferred to new banking partners.
+This is a time of heightened uncertainty for the USDC economy. We remain committed to clear and transparent communication.
+TL;DR
+While USDC can be used 24/7/365 on chain, issuance and redemption is constrained by the working hours of the U.S. banking system.
+USDC liquidity operations will resume as normal when banks open on Monday morning in the United States. As a practical matter, our teams are well prepared to handle significant volume, built on the strong liquidity and reserve assets discussed below.
+As a regulated payment token, USDC will remain redeemable 1 for 1 with the U.S. Dollar.
+What just happened?
+Silicon Valley Bank, a venerable and trusted partner to the US innovation economy, has just suffered a classic bank run, much like those we saw during the financial crisis in 2008.
+Few traditional banks have sufficient liquidity to withstand such a run.
+SVB suffered significant losses which led to a situation where they were forced to sell long-duration assets to meet redemption demand. The settlement period on these assets caused a short-term liquidity crunch, leading to the FDIC stepping in to administer the bank yesterday. SVB’s fate is being decided this weekend by the FDIC and it's our hope that they will find a solution that protects customers’ assets 100%.
+What is the impact on the USDC reserve?
+USDC is 100% collateralized with a combination of cash and US Treasuries.
+Specifically, USDC is currently collateralized 77% ($32.4B) with US Treasury Bills (with a three month or less maturation period), and 23% ($9.7B) with cash held at a variety of institutions, of which SVB is only one.  US Treasury Bills are the most liquid assets in the world and are direct obligations of the U.S. government. These reserves are held in custody by
+BNY Mellon
+, and active liquidity and asset management is managed by
+BlackRock
+.  Anyone can view the entire liquidity ladder down to the CUSIP number on T-Bills via the
+USDXX ticker
+.
+The remaining 23% ($9.7bn) is in cash. Last week, we took action to reduce bank risk and deposited $5.4bn with BNY Mellon, one of the largest and most stable financial institutions in the world, known for the strength of their balance sheet and as a custodian.
+$3.3bn of USDC’s cash reserves remain with SVB
+. As of Thursday, we had initiated transfers of these funds to other banking partners. Though these transfers had not yet been settled as of close of business Friday, we remain confident in the FDIC’s management of the SVB situation and stand ready to receive these funds.
+(note: As of March 13, 2023, t
+he $3.3B USDC reserve deposit held at Silicon Valley Bank was made fully available and transferred to new banking partners.)
+$1bn of the USDC reserves is held with Customers Bank as the industry looks to expand their transaction settlement options, and Circle maintains transaction and settlement accounts for USDC with Signature Bank. Both are important banks to the digital asset industry.
+USDC has zero exposure to Silvergate; we had transferred out what were limited reserves to support transaction settlement with USDC prior to bank closure.
+What do we expect with SVB and the FDIC?
+We have reason to believe that under applicable FDIC policy, transfers initiated prior to a bank entering receivership would have otherwise been processed normally. In other words, the FDIC should allow transactions to settle in the ordinary course through the end of a bank’s standard daily processing cycle until the FDIC takes control of the failed institution. We understand that the FDIC is currently determining the status of transactions initiated prior to the applicable receivership cutoff times, and it is possible that the transfers initiated on Thursday will be processed on Monday.
+Moreover, SVB has a strong franchise that is at the center of American entrepreneurship and technology industry growth. We are hopeful that the FDIC as receiver will seek a rapid purchase and assumption of a franchise as strong as SVB's to ensure all depositors are made whole.
+However, it is also possible that SVB may not return 100% and that any return might take some time, as the FDIC issues IOUs (i.e., receivership certificates) and advanced dividends to deposit holders.
+In such a case, Circle, as required by law under stored-value money transmission regulation, will stand behind USDC and cover any shortfall using corporate resources, involving external capital if necessary.

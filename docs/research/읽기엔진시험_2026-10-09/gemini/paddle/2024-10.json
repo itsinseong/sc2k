@@ -1,0 +1,705 @@
+{
+    "input_path": "/Users/inseong/.cache/sc2k-ocr/gemini/gemini_2024-10_p4.png",
+    "page_index": null,
+    "page_count": null,
+    "width": 1700,
+    "height": 2200,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "doc_title",
+            "block_content": "Gemini dollar $ ^{®} $",
+            "block_bbox": [
+                518,
+                148,
+                1187,
+                234
+            ],
+            "block_id": 0,
+            "block_order": 1,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    518.0,
+                    148.0
+                ],
+                [
+                    1187.0,
+                    148.0
+                ],
+                [
+                    1187.0,
+                    234.0
+                ],
+                [
+                    518.0,
+                    234.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "GUSD RESERVES REPORT",
+            "block_bbox": [
+                628,
+                270,
+                1073,
+                316
+            ],
+            "block_id": 1,
+            "block_order": 2,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    628.0,
+                    270.0
+                ],
+                [
+                    1073.0,
+                    270.0
+                ],
+                [
+                    1073.0,
+                    316.0
+                ],
+                [
+                    628.0,
+                    316.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In compliance with item 3(a) of the DFS Letter, we report the following end of day amounts for the following dates:",
+            "block_bbox": [
+                180,
+                347,
+                1552,
+                414
+            ],
+            "block_id": 2,
+            "block_order": 3,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    180.0,
+                    347.0
+                ],
+                [
+                    1552.0,
+                    347.0
+                ],
+                [
+                    1552.0,
+                    414.0
+                ],
+                [
+                    180.0,
+                    414.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td></td><td>October 8, 2024</td><td>October 31, 2024</td></tr><tr><td>GUSD issued and in circulation $ ^{1} $</td><td>73,595,613.09</td><td>67,417,231.65</td></tr><tr><td>Market value of the Reserve $ ^{2} $:</td><td></td><td></td></tr><tr><td>Cash deposits held at U.S. regulated financial institutions</td><td>74,679,214.36</td><td>68,629,770.82</td></tr><tr><td>Money-market funds</td><td>-</td><td>-</td></tr><tr><td>Net cash receivable (payable) due to timing and settlement differences $ ^{3} $</td><td>(1,083,601.27)</td><td>(1,212,539.17)</td></tr><tr><td>Total Reserve</td><td>73,595,613.09</td><td>67,417,231.65</td></tr></table>",
+            "block_bbox": [
+                179,
+                411,
+                1531,
+                826
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    179.0,
+                    411.0
+                ],
+                [
+                    1531.0,
+                    411.0
+                ],
+                [
+                    1531.0,
+                    826.0
+                ],
+                [
+                    179.0,
+                    826.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "For each GUSD issued, the Company has received one corresponding U.S. dollar from its customers, which are held across (i) one or more omnibus bank accounts at depository institutions insured by the Federal Deposit Insurance Corporation, (ii) one or more money-market funds, and/or (iii) U.S. Treasury bills with maturities of three months or less. The accounts are established and segregated specifically for the U.S. dollars that correspond to the Gemini dollars issued and in circulation.",
+            "block_bbox": [
+                143,
+                898,
+                1555,
+                1064
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    143.0,
+                    898.0
+                ],
+                [
+                    1555.0,
+                    898.0
+                ],
+                [
+                    1555.0,
+                    1064.0
+                ],
+                [
+                    143.0,
+                    1064.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "-DocuSigned by:",
+            "block_bbox": [
+                200,
+                1108,
+                340,
+                1137
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    200.0,
+                    1108.0
+                ],
+                [
+                    340.0,
+                    1108.0
+                ],
+                [
+                    340.0,
+                    1137.0
+                ],
+                [
+                    200.0,
+                    1137.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Marshall Beard\n5472046DDC0B469...",
+            "block_bbox": [
+                180,
+                1141,
+                429,
+                1214
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    180.0,
+                    1141.0
+                ],
+                [
+                    429.0,
+                    1141.0
+                ],
+                [
+                    429.0,
+                    1214.0
+                ],
+                [
+                    180.0,
+                    1214.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Marshall Beard\nCEO/President\nGemini Trust Company, LLC\nNovember 25, 2024",
+            "block_bbox": [
+                143,
+                1249,
+                508,
+                1382
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    143.0,
+                    1249.0
+                ],
+                [
+                    508.0,
+                    1249.0
+                ],
+                [
+                    508.0,
+                    1382.0
+                ],
+                [
+                    143.0,
+                    1382.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footnote",
+            "block_content": " $ ^{1} $ Per the Etherscan.io website located at: https://etherscan.io.",
+            "block_bbox": [
+                142,
+                1789,
+                835,
+                1823
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    142.0,
+                    1789.0
+                ],
+                [
+                    835.0,
+                    1789.0
+                ],
+                [
+                    835.0,
+                    1823.0
+                ],
+                [
+                    142.0,
+                    1823.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footnote",
+            "block_content": " $ ^{2} $ The Gemini dollar reserves are held and maintained as cash deposits at State Street Bank and Trust Company and BNY Mellon N.A.; and are invested in U.S. Treasury bills and money market funds held at BNY Mellon N.A., that are in turn invested only in government securities, repurchase agreements collateralized solely by government securities and/or cash, and cash. Market values are based on the fair value of assets and on a trade-date basis.",
+            "block_bbox": [
+                143,
+                1818,
+                1553,
+                1937
+            ],
+            "block_id": 9,
+            "block_order": null,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    143.0,
+                    1818.0
+                ],
+                [
+                    1553.0,
+                    1818.0
+                ],
+                [
+                    1553.0,
+                    1937.0
+                ],
+                [
+                    143.0,
+                    1937.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footnote",
+            "block_content": " $ ^{3} $ Balances have been adjusted for the balance of cash receivable and payable due to timing and settlement differences, including deposits/withdrawals occurring after the bank statement cut-off time, money-market funds purchased/sold prior to the indicated dates, and U.S. Treasury securities purchased/sold before end of day and settled after those dates as well as amounts held in excess of the nominal amounts of GUSD issued and in circulation.",
+            "block_bbox": [
+                141,
+                1937,
+                1552,
+                2056
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    141.0,
+                    1937.0
+                ],
+                [
+                    1552.0,
+                    1937.0
+                ],
+                [
+                    1552.0,
+                    2056.0
+                ],
+                [
+                    141.0,
+                    2056.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 6,
+                "label": "doc_title",
+                "score": 0.8516309857368469,
+                "coordinate": [
+                    518,
+                    148,
+                    1187,
+                    234
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        518.0,
+                        148.0
+                    ],
+                    [
+                        1187.0,
+                        148.0
+                    ],
+                    [
+                        1187.0,
+                        234.0
+                    ],
+                    [
+                        518.0,
+                        234.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.7672365307807922,
+                "coordinate": [
+                    628,
+                    270,
+                    1073,
+                    316
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        628.0,
+                        270.0
+                    ],
+                    [
+                        1073.0,
+                        270.0
+                    ],
+                    [
+                        1073.0,
+                        316.0
+                    ],
+                    [
+                        628.0,
+                        316.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8018248081207275,
+                "coordinate": [
+                    180,
+                    347,
+                    1552,
+                    414
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        180.0,
+                        347.0
+                    ],
+                    [
+                        1552.0,
+                        347.0
+                    ],
+                    [
+                        1552.0,
+                        414.0
+                    ],
+                    [
+                        180.0,
+                        414.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9182047247886658,
+                "coordinate": [
+                    179,
+                    411,
+                    1531,
+                    826
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        179.0,
+                        411.0
+                    ],
+                    [
+                        1531.0,
+                        411.0
+                    ],
+                    [
+                        1531.0,
+                        826.0
+                    ],
+                    [
+                        179.0,
+                        826.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9331386685371399,
+                "coordinate": [
+                    143,
+                    898,
+                    1555,
+                    1064
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        143.0,
+                        898.0
+                    ],
+                    [
+                        1555.0,
+                        898.0
+                    ],
+                    [
+                        1555.0,
+                        1064.0
+                    ],
+                    [
+                        143.0,
+                        1064.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.49386516213417053,
+                "coordinate": [
+                    200,
+                    1108,
+                    340,
+                    1137
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        200.0,
+                        1108.0
+                    ],
+                    [
+                        340.0,
+                        1108.0
+                    ],
+                    [
+                        340.0,
+                        1137.0
+                    ],
+                    [
+                        200.0,
+                        1137.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.5529005527496338,
+                "coordinate": [
+                    180,
+                    1141,
+                    429,
+                    1214
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        180.0,
+                        1141.0
+                    ],
+                    [
+                        429.0,
+                        1141.0
+                    ],
+                    [
+                        429.0,
+                        1214.0
+                    ],
+                    [
+                        180.0,
+                        1214.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8255950808525085,
+                "coordinate": [
+                    143,
+                    1249,
+                    508,
+                    1382
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        143.0,
+                        1249.0
+                    ],
+                    [
+                        508.0,
+                        1249.0
+                    ],
+                    [
+                        508.0,
+                        1382.0
+                    ],
+                    [
+                        143.0,
+                        1382.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 10,
+                "label": "footnote",
+                "score": 0.8338725566864014,
+                "coordinate": [
+                    142,
+                    1789,
+                    835,
+                    1823
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        142.0,
+                        1789.0
+                    ],
+                    [
+                        835.0,
+                        1789.0
+                    ],
+                    [
+                        835.0,
+                        1823.0
+                    ],
+                    [
+                        142.0,
+                        1823.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 10,
+                "label": "footnote",
+                "score": 0.919262707233429,
+                "coordinate": [
+                    143,
+                    1818,
+                    1553,
+                    1937
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        143.0,
+                        1818.0
+                    ],
+                    [
+                        1553.0,
+                        1818.0
+                    ],
+                    [
+                        1553.0,
+                        1937.0
+                    ],
+                    [
+                        143.0,
+                        1937.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 10,
+                "label": "footnote",
+                "score": 0.9060143232345581,
+                "coordinate": [
+                    141,
+                    1937,
+                    1552,
+                    2056
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        141.0,
+                        1937.0
+                    ],
+                    [
+                        1552.0,
+                        1937.0
+                    ],
+                    [
+                        1552.0,
+                        2056.0
+                    ],
+                    [
+                        141.0,
+                        2056.0
+                    ]
+                ]
+            }
+        ]
+    }
+}
