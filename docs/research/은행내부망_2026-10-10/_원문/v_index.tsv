@@ -1,0 +1,28 @@
+구분	출처 주소	로컬 파일(v_raw, v_txt, v_pdf 아래)	확인일 2026-10-10
+규정 본문	https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000282622	law_ebr_body	전자금융감독규정 시행 2026.7.15 고시 2026-29호
+세칙 본문	https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000108629	law_sebr_body, sebr.xml	시행세칙 시행 2026.4.20, 제2조의3
+세칙 별표7	https://www.law.go.kr/LSW/flDownload.do?flSeq=163895349	law_sebr_byeolpyo7.pdf	망분리 대체 정보보호통제
+전금법	https://www.law.go.kr/법령/전자금융거래법	law_efta_body	시행 2026.10.2, 제2조, 제21조
+금융위설치법	https://www.law.go.kr/법령/금융위원회의설치등에관한법률	law_fscact_body	제38조
+FSC 2013 가이드라인	https://www.fsc.go.kr/no010101/70834	fsc_70834	
+FSC 로드맵	https://www.fsc.go.kr/no010101/82885	fsc_82885	2024-08-13
+FSC AI 지원방안	https://www.fsc.go.kr/no010101/83594	fsc_83594	2024-12-12
+FSC 첫 지정	https://www.fsc.go.kr/no010101/83554	fsc_83554	2024-12-09
+FSC SaaS 예고	https://www.fsc.go.kr/no010101/86080	fsc_86080	2026-01-19
+FSC 모델변경 간소화	https://www.fsc.go.kr/no010101/86712	fsc_86712	2026-04-15
+FSC 1차 긴급완화	https://www.fsc.go.kr/no010101/86972	fsc_86972	2026-05-26
+FSC AI 가이드라인	https://www.fsc.go.kr/no010101/87142	fsc_87142, fsc_87142_guideline.pdf	2026-06-18, 시행 6-22
+FSC 혁신금융 31건	https://www.fsc.go.kr/no010101/87236	fsc_87236	2026-07-01
+FSC 대응요령	https://www.fsc.go.kr/no010101/87240	fsc_87240	2026-07-02
+FSC 한강 2단계	https://www.fsc.go.kr/no010101/87338	fsc_87338	2026-07-15
+FSC 2차 긴급완화	https://www.fsc.go.kr/no010101/87646	fsc_87646	2026-09-03
+FSC 상황대응반 6차	https://www.fsc.go.kr/no010101/87727	fsc_87727	2026-09-16
+FSC 전금융권 점검회의	https://www.fsc.go.kr/no010101/87876	fsc_87876	2026-10-06 배포, 회의 10-04
+FSC 보도설명 취약점	https://www.fsc.go.kr/no010102/87885	fsc_87885	2026-10-06
+FSC 혁신금융 24건	https://www.fsc.go.kr/no010101/87893	fsc_87893	2026-10-07
+FSC 스테이블 설명	https://www.fsc.go.kr/no010102/85031 , 85770 , 85999 , 87600	fsc_85031 등	2025-07-30, 2025-12-01, 2026-01-07, 2026-08-27
+BOK 한강 2단계	https://www.bok.or.kr/portal/bbs/B0000502/view.do?nttId=10097017&menuNo=201265	bok_10097017, bok_hangang2_*.pdf	2026-03-18
+FSEC 해설서	https://www.fsec.or.kr/bbs/detail?menuNo=69&bbsNo=11688	fsec_11688	2025-05-02
+FSEC 2026 전략	https://www.fsec.or.kr/bbs/detail?menuNo=69&bbsNo=11872	fsec_11872	2026-01-02
+금융권 AI 플랫폼	https://finai.kcredit.or.kr:1443/main.do	finai_main	공개 첫 화면만, 목록은 로그인 필요
+언론	각 news_* 파일	news_*	원문 열람 확인

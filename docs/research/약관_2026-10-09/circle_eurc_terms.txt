@@ -1,0 +1,664 @@
+주소: https://www.circle.com/legal/eurc-terms
+받은 날짜: 2026-10-09
+문서 제목: Circle | EURC Terms | Circle (본문 첫 제목 Legal & Privacy)
+개정일: Last Updated: December 12, 2025
+받은 방법: curl(-L, 브라우저 User-Agent)로 받은 HTML에서 글자만 뽑음. 단어와 문장은 바꾸지 않았고 블록 태그 경계 줄 바꿈과 빈칸만 정리함. scripts/jev/fetch_terms.py
+========================================
+Home
+Platform
+Back
+Digital Assets
+USDC
+The leading digital dollar
+USDC
+EURC
+The leading digital euro
+EURC
+USYC
+Not available in the US
+A tokenized money market fund
+USYC
+cirBTC
+Institutional-grade wrapped BTC
+cirBTC
+Digital Asset Services
+Mint
+Access and distribute USDC liquidity
+Mint
+StableFX
+Access 24/7 stablecoin FX
+StableFX
+Digital Asset Accounts
+Launch branded digital accounts
+Digital Asset Accounts
+Circle Payments network
+Fiat Payments
+Send fiat globally at stablecoin speed
+Fiat Payments
+Stablecoin Payments
+Build on full-stack payments infrastructure
+Stablecoin Payments
+Managed Payments
+Launch-ready stablecoin solution
+Managed Payments
+Blockchains
+Arc
+The Economic OS for the internet
+Arc
+View Partner Blockchains
+View Partner Blockchains
+Developer Services
+Circle Agent Stack
+Build AI-native applications
+Circle Agent Stack
+Wallets
+Embed secure wallets in any app
+Wallets
+Contracts
+Build and manage smart contracts
+Contracts
+CCTP
+Infrastructure for multichain digital asset management
+CCTP
+xReserve
+Launch a USDC-backed stablecoin on your blockchain
+xReserve
+Gateway
+Enable a unified USDC balance
+Gateway
+Paymaster
+Allow transaction fees in USDC
+Paymaster
+Solutions
+Back
+By Use Case
+Treasury Management
+Treasury Management
+Payments
+Payments
+Onchain FX
+Onchain FX
+Tokenized Repo
+Tokenized Repo
+Collateral Management
+Collateral Management
+Dollar Access
+Dollar Access
+Trading Services
+Trading Services
+By Industry
+Banks
+Banks
+Case studies
+Learn about how businesses use Circle
+Learn more
+Learn about how businesses use Circle
+Partners
+Back
+Partners
+Alliance Program
+Join Circle’s partner ecosystem
+Alliance Program
+Circle Partner Stablecoins
+Grow your stablecoin with Circle
+Circle Partner Stablecoins
+Member Directory
+Connect with innovative Circle partners
+Member Directory
+Developer
+Back
+Developer
+Circle for Developers
+Explore products, tools, and our community
+Circle for Developers
+Documentation
+Start building on the Circle platform
+Documentation
+resources
+API Reference
+API Reference
+Faucet
+Faucet
+Blog
+Blog
+Research
+Research
+Resources
+Back
+Company
+About Circle
+About Circle
+Careers
+Careers
+Circle Impact
+Circle Impact
+Circle Foundation
+Circle Foundation
+Circle National Trust
+Circle National Trust
+Insights
+Blog
+Blog
+Executive Insights
+Executive Insights
+Investor Relations
+Investor Relations
+Policy Hub
+Policy Hub
+Pressroom
+Pressroom
+Support
+Circle Help
+Circle Help
+Contact Us
+Contact Us
+Current
+Navigate what’s next in the new internet financial system
+Visit Current
+Navigate what’s next in the new internet financial system
+Transparency
+More
+Back
+Community
+Circle Impact
+Circle Impact
+Circle Foundation
+Circle Foundation
+Learn
+About Circle
+About Circle
+Blog
+Blog
+Executive Insights
+Executive Insights
+Investor Relations
+Investor Relations
+Policy Hub
+Policy Hub
+Pressroom
+Pressroom
+Transparency
+Transparency
+Transparency
+Support
+Circle Help
+Circle Help
+Contact Us
+Contact Us
+Join Us
+Already have an account?
+Sign in
+Sign in
+Already have an account?
+Sign in
+Sign in
+Join Us
+/
+Legal
+/
+EURC Terms
+Legal & Privacy
+View all
+Circle
+Circle Mint User Agreement
+USDC Terms
+EURC Terms
+Third-Party Bridged USDC Terms
+Wrapped Digital Assets Terms
+Digital Asset-Backed Borrowing
+USDC Risk Factors
+USDC Bridge terms
+Privacy Policy
+Sub-processor List
+Cookie Policy
+Licenses
+Commercial Entity Agreement
+E-Sign Consent
+Acceptable Use Policy
+Singapore Addendum
+Brand Use Policy
+Circle Europe
+White Paper USDCWhite Paper EURCCircle MiCA marketing communicationsEEA Terms of UseMiCA Redemption Policy
+Circle Tech
+Guarded Vaults
+Circle Hub Terms of Use
+Developer Terms
+Permissionless Product Schedule
+Arc Network Terms
+Agent Platform Terms of Use
+Legal products
+Circle Pay
+Circle Pay User Agreement - USCircle Pay User Agreement - CA & WYPrivacy PolicyE-Sign ConsentCookie PolicyLicenses
+Circle Invest
+Risk Disclousres
+Privacy policy
+Privacy policy (California residents)
+E-sign consent
+Cookie Policy
+LicensesCircle Invest User Agreement - USCircle Invest User Agreement - CA
+Circle
+Circle Mint User Agreement
+USDC Terms
+EURC Terms
+Third-Party Bridged USDC Terms
+Wrapped Digital Assets Terms
+Digital Asset-Backed Borrowing
+USDC Risk Factors
+USDC Bridge terms
+Privacy Policy
+Sub-processor List
+Cookie Policy
+Licenses
+Commercial Entity Agreement
+E-Sign Consent
+Acceptable Use Policy
+Singapore Addendum
+Brand Use Policy
+Circle Europe
+White Paper USDCWhite Paper EURCCircle MiCA marketing communicationsEEA Terms of UseCASP EMT Data ReportingObtaining Written Consent Under MiCAMiCA Redemption Policy
+Circle Tech
+Guarded Vaults
+Circle Hub Terms of Use
+Developer TermsPermissionless Product ScheduleArc Network TermsAgent Platform Terms of Use
+Legal products
+Circle Pay
+Circle Pay User Agreement - USCircle Pay User Agreement - CA & WYPrivacy PolicyE-Sign ConsentCookie PolicyLicenses
+Circle Invest
+Risk Disclosures
+Privacy policy
+Privacy policy (California residents)
+E-sign consent
+Cookie Policy
+LicensesCircle Invest User Agreement - USCircle Invest User Agreement - CA
+EURC Terms
+Last Updated:
+December 12, 2025
+To the extent that you (“you,” “your,” or “User”) have a Circle Mint account, these EURC Terms (“Terms”) augment the Circle Mint account User Agreement in respect of, and governs your use of, the Circle Mint account (as defined in the Circle Mint account User Agreement) for any transactions involving EURC Services (as defined in Section 1 below). Users with a Circle Mint account are referred to herein as “User Type A.” To the extent you do not have a Circle Mint account but hold EURC (as defined below), these Terms still apply to your holding and use of EURC (such Users are referred to herein as “User Type B”). For the avoidance of doubt, Users Type B are not customers of Circle, as Users Type B do not have a Circle Mint account.
+By obtaining and using EURC, you understand and expressly agree to these Terms, regardless of whether or not you are a customer of Circle, and you acknowledge that you have reviewed and understand each of the disclosures made in this section. Any provisions of these Terms that only apply to User Type A or User Type B will be specifically noted herein. Unless so noted, each Section of these Terms apply to both User Type A and User Type B, and any use of “you” or “your” refers to both User Type A and User Type B.
+By holding or using EURC, or using any of the EURC Services, you agree that you have read, understood and accept all of the terms and conditions contained in these Terms, as well as our Privacy Policy, Cookie Policy and E-Sign Consent, and you acknowledge and agree that you will be bound by these terms and policies.
+Section 26 of these Terms governs how these Terms may be changed over time; the date of the last update is set forth at the top of these Terms.
+1. About EURC
+EURC is a digital token issued by Circle Internet Financial Europe SAS, (“Circle Europe”) that operates on each of the blockchains listed here (collectively, as of any date of determination, the “EURC Supported Blockchains”, and each such digital token, “EURC”). Circle Internet Financial, LLC (“Circle”) is an affiliate of Circle Europe and acts as a reseller of EURC to those having a Circle Mint account. For the avoidance of doubt, these Terms only apply to EURC sold by Circle.
+EURC is fully backed by an equivalent amount of euro-denominated assets held by Circle Europe with regulated financial institutions in segregated accounts apart from Circle’s corporate funds, on behalf of, and for the benefit of, Users (the “Segregated Accounts”). This means that for every EURC issued by Circle Europe and remaining in circulation, Circle Europe will hold on behalf of Users either one euro (“EURO”) or an equivalent amount of euro-denominated assets in its Segregated Accounts (the “EURC Reserves”). EURC is not designed to intrinsically create returns for holders, increase in value, or otherwise accrue financial benefit to the EURC holder.
+2. Scope of EURC and Key Terms
+The following only applies to User Type A: As you have agreed to, and are subject to, the Circle Mint account User Agreement, Circle makes available the following EURC-related Services (as defined in the Circle Mint account User Agreement): (i) purchase EURC from Circle for euro, (ii) sell EURC to Circle from euro, and (iii) send and receive EURC to and/or from Circle Mint accounts (collectively, the “EURC Services”). Your use of the EURC Services is subject to these Terms. Any of the EURC Services can be discontinued at any time in accordance with Section 17 of these EURC Terms.
+You understand and agree that you may only purchase and sell EURC in your Circle Mint account directly with Circle to the extent that you have a Circle Mint account in good standing.
+If you choose to use Circle’s “EURC Express” service as part of the EURC Services, incoming financial institution fiat wires can be automatically settled as EURC in your Circle Mint account, and EURC sent from your Circle Mint account to another Circle-hosted deposit address can automatically initiate a fiat wire to the recipient’s financial institution fiat account.
+The following only applies to User Type B: You may not sell EURC to Circle unless and until you open a Circle Mint account. Eligibility for and requirements related to opening a Circle Mint account are set forth in the Circle Mint account User Agreement.
+The following applies to both User Type A and User Type B: Your use of EURC and EURC Services (as applicable), is subject to these Terms and Circle’s obligations hereunder are conditional on you complying with its provisions. You understand that any violation of these Terms may result in potential consequences, including the possible loss or forfeiture of euro tokenized for EURC.
+You understand and agree that sending EURC to another address automatically transfers and assigns to the owner of that address (a “Holder”), and any subsequent Holder, the right to sell EURC for euro funds so long as the Holder is eligible to, and does, register a Circle Mint account. For the avoidance of doubt, if a Holder is not eligible to register a Circle Mint account, or fails to do so, such Holder is not entitled to sell EURC to Circle.
+Each EURC is intended to maintain a value of 1 euro. In order to issue 1 EURC, a corresponding 1 euro (or an equivalent amount of euro-denominated assets) is held in the EURC Reserves by Circle Europe. Circle commits to purchase 1 EURC for 1 euro, subject to these Terms, applicable law, and any fees where applicable. You acknowledge that you are not entitled to any interest or other returns earned on the EURC Reserve. EURC does not itself generate any interest or return for holders of EURC and only represents your right to sell EURC for an equivalent amount of euro through your account with Circle.
+3. Applicable Laws and Regulations
+Your holding and use of EURC, and any use of the EURC Services, is subject to the laws, regulations, and rules of any applicable governmental or regulatory authority, including, without limitation, all applicable tax, anti-money laundering (“AML”) and counter-terrorist financing (“CTF”) provisions and sanctions. You agree to act in compliance with and be legally bound by these Terms and all applicable laws and regulations. These Terms are conditional on your continued compliance at all times with these Terms and all applicable laws and regulations.
+Applicable laws require us to prevent Restricted Persons from holding EURC or using EURC Services. A Restricted Person means any person that is the subject or target of any sanctions, including a person that is:
+named in any Sanctions-related list maintained by the U.S. Department of State; the U.S. Department of Commerce, including the Bureau of Industry and Security’s Entity List and Denied Persons List; or the U.S. Department of the Treasury, including the OFAC Specially Designated Nationals and Blocked Persons List, the Sectoral Sanctions Identifications List, and the Foreign Sanctions Evaders List; or any similar list maintained by any other relevant governmental authority;
+located, organized or resident in a country, territory or geographical region which is itself the subject or target of any territory-wide Sanctions (a “Restricted Territory”) (currently, Cuba, Iran, North Korea, and the Ukraine regions of Crimea, Donetsk, Luhansk, Kherson, and Zaporizhzhia); or
+owned or controlled by any such person or persons listed above.
+4. Eligibility; Limitations
+The following applies to both User Type A and User Type B: Circle Mint accounts, EURC Services and support for EURC are currently only available to individuals and institutions (as applicable) located in supported jurisdictions. For a complete list of currently supported jurisdictions, please see here.
+By holding or using EURC, or accessing or using the EURC Services, you further represent and warrant that:
+you are at least 18 years old, are not a Restricted Person, and are not holding EURC on behalf of a Restricted Person.
+you will not be using EURC or the EURC Services (as applicable) for any illegal activity, including, but not limited to, illegal gambling, money laundering, fraud, blackmail, extortion, ransoming data, terrorism financing, other violent activities or any prohibited market practices, including, but not limited to, those listed under Sections 20 and 21.
+You also understand that there are additional representations and warranties made by you elsewhere in (or by reference in) these Terms and that any misrepresentation by you is a violation of these Terms.
+If Circle suspects or determines that you or any of your authorized users or customers, as applicable, have violated this these Terms, including, but not limited to, attempting to transact or transacting with Blocked Addresses (as defined in Section 13) or attempting to engage or engaging in Restricted Activities or Prohibited Transactions, and you have a Circle Mint account, then Circle may be forced to terminate your Circle Mint account and you may forfeit any euro funds otherwise eligible for redemption.
+Notwithstanding the foregoing, Circle may determine not to make EURC or the EURC Services, in whole or in part, available in every market, either in its sole discretion or due to legal or regulatory requirements, depending on your location. We may also, without liability to you or any third party, refuse to let you register for a Circle Mint account.
+The following only applies to User Type A: Use of certain EURC Services in a Circle Mint account may have further eligibility requirements that will need to be verified prior to you using such EURC Services, or from time to time in order to continue your use of the EURC Services, and may be subject to additional terms and conditions.
+5. Support
+Please visit Support here or contact Support at [email protected] to report any violations of these Terms or to ask any questions regarding these Terms or the EURC Services, as applicable.
+6. AML and CTF Compliance
+Our AML and CTF procedures are guided by all applicable laws and regulations regarding AML and CTF. These standards are designed to prevent the use of the EURC Services for money laundering or terrorist financing activities. We take compliance very seriously and it is our policy to take all necessary steps to prohibit fraudulent transactions, report suspicious activities, and actively engage in the prevention of money laundering and any related acts that facilitate money laundering, terrorist financing or any other financial crimes.
+7. USA PATRIOT Act Notification
+This Section 7 applies only to User Type A and if your country of residence is the United States:
+Please also note that Section 326 of the USA PATRIOT Act of 2001 requires all financial institutions to obtain, verify, and record information that identifies each person who registers a Circle Mint account. This federal requirement applies to all new users. This information is used to assist the U.S. Government in the fight against the funding of terrorism and money laundering activities. You will be required to comply with our KYC procedures in order to redeem any EURC.
+8. EURC Support Only; Copies, Forks & Advanced Protocols Not Supported
+The following only applies to User Type A: Your Circle Mint account supports sending and receiving EURC. Subject to the terms of the Circle Mint account User Agreement, if you attempt to send any other virtual currency, token, digital currency, or similar digital assets other than EURC or Supported Digital Currencies (as defined in the Circle Mint account User Agreement) (“Other Digital Assets”) to your Circle Mint account, such Other Digital Assets may be lost forever. Please refer to your Circle Mint account User Agreement for a list of Supported Digital Currencies. If you attempt to send EURC from your Circle Mint account to a wallet or address that does not support EURC, your EURC will be lost forever. Circle bears no responsibility for any losses you might incur as a result of you sending Other Digital Assets to your Circle Mint account or you sending EURC from your Circle Mint account to a wallet or address that does not support EURC.
+The following applies to both User Type A and User Type B: As a result of the decentralized and open source nature of EURC it is possible that a party unaffiliated with Circle could create an alternative, equivalent version of EURC either on one of the EURC Supported Blockchains or on an unsupported blockchain (a “copy”) that operate independently from EURC. Similarly, it is possible that a party unaffiliated with Circle may create an asset and purport that such asset is collateralized by or otherwise incorporates EURC into its design (a “wrapper”). Circle supports only EURC and is under no obligation to support any copies of EURC or wrappers and assumes no responsibility for any value that might be lost as a result of this lack of support of copies of EURC.
+As a result of the decentralized and open source nature of the blockchains on which EURC is supported, it is possible that a party unaffiliated with Circle could create an alternative version of the blockchain (a “fork”). Note that in the event of a fork of one of the EURC Supported Blockchains, Circle may be forced to suspend all activities relating to EURC (including reselling EURC for euro, purchasing EURC for euro, or sending and receiving EURC) for an extended period of time until Circle has determined in its sole discretion that such functionality can be restored (“Downtime”). This Downtime will likely occur immediately upon a “fork”, potentially with little to no warning, and during this period of Downtime you will not be able to conduct various activities involving EURC. In the event of a fork of one of the EURC Supported Blockchains, Circle shall, in its sole discretion, determine which fork it will support, if any.
+9. EURC Supported Blockchains and Smart Contract Modifications
+EURC operates on EURC Supported Blockchains. Circle does not have any ability or obligation to prevent or mitigate attacks or resolve any other issues that might arise with any EURC Supported Blockchain. Any such attacks or delays on any EURC Supported Blockchain might materially delay or prevent you from sending or receiving EURC, and Circle shall bear no responsibility for any losses that result from such issues.
+Note that in certain circumstances, including, but not limited to, a copy or fork of a EURC Supported Blockchain or the identification of a security issue with a EURC Supported Blockchain, Circle may be forced to suspend all activities relating to EURC (including tokenizing euro for EURC, redeeming EURC for euro, or sending and receiving EURC) for an extended period of time until such Downtime is over and EURC Services can be restored. This Downtime will likely occur immediately upon a copy or fork of any EURC Supported Blockchain, potentially with little to no warning, and during this period of Downtime you will not be able to conduct various activities involving EURC.
+Circle reserves the right to migrate EURC to another blockchain or protocol in the future in its reasonable discretion. Upon Circle’s request, you agree to take any and all actions reasonably necessary to effectuate the migration of your EURC to another blockchain or protocol identified by Circle. If you fail to effectuate such migration, the EURC may not be compatible with your Circle Mint account going forward. Circle will not be responsible or liable for any damages, losses, costs, fines, penalties or expenses of whatever nature, whether or not reasonably foreseeable by the parties, which you may suffer, sustain or incur, arising out of or relating to your failure to effectuate such migration of your EURC to another blockchain or protocol identified by Circle.
+10. Privacy
+We are committed to protecting your personal information and helping you understand exactly how your personal information is being used. You should carefully read the Circle Privacy Policy, as it provides details on how your personal information is collected, stored, protected, and used.
+11. Communications
+By entering into these Terms, you agree to receive electronic communications and notifications in accordance with our E-Sign Consent Policy.
+These Terms are provided to you and communicated in English. We will also communicate with you in English for all matters related to EURC and your use of EURC Services. Where we have provided you with a translation of the English language version of these Terms, you agree that such translation is provided for your convenience only and that the English language version of these Terms govern your holding and use of EURC, and the EURC Services, as applicable.
+12. Limited License; IP Rights
+The following only applies to User Type A: We grant you a limited, non-exclusive, non-sublicensable, and non-transferable license, subject to the terms and conditions of these Terms, to access and use the EURC Services solely for approved purposes as determined by Circle. Any other use of the EURC Services is expressly prohibited. Circle and its licensors reserve all rights in the EURC Services and you agree that these Terms does not grant you any rights in or licenses to the EURC Services except for the limited license set forth above. Except as expressly authorized by Circle, you agree not to modify, reverse engineer, copy, frame, scrape, rent, lease, loan, sell, distribute, or create derivative works based on the EURC Services, in whole or in part. If you violate any portion of these Terms, your permission to access and use the EURC Services may be terminated pursuant to these Terms.
+"Circle.com", "Circle", and all logos related to the EURC Services are either trademarks, or registered marks of Circle or its licensors. Whether or not you have a Circle Mint account, you may not copy, imitate, or use them without Circle's prior written consent. All right, title, and interest in and to the Circle website, any content thereon, the EURC Services, and all technology and any content created or derived from any of the foregoing is the exclusive property of Circle and its licensors.
+13. Risk Factors & Disclosures
+The following list of risks associated with EURC and the EURC Services is not exhaustive.
+No guarantee of price stability on Third Party Platforms
+Subject to the limitations set forth in these Terms, (i) when Circle sells EURC for euro it will always do so at a rate of one euro (€1) per one (1) EURC; and (ii) when Circle purchases EURC for euro, it will always purchase such EURC at a rate of one euro (€1) per one (1) EURC, less fees where applicable.
+Circle does not guarantee that the value of one (1) EURC will always equal 1 euro (€1) on other platforms. Due to a variety of factors outside of Circle’s control, the value of EURC on third-party platforms such as cryptocurrency exchange platforms could fluctuate above or below 1 euro (€1). Although a EURC may always be sold for €1, less applicable fees (if any), Circle cannot control how third parties quote or value EURC, and Circle is not responsible for any losses or other issues that may result from fluctuations in the value of EURC.
+Third-party platforms
+EURC is based on open source software and runs on EURC Supported Blockchains. This means that third parties can elect to support EURC on their platforms without any authorization or approval by Circle or anyone else. As a result, EURC support on any third-party platform does not imply any endorsement by Circle that such third-party services are valid, legal, stable or otherwise appropriate. Circle is not responsible for any losses or other issues you might encounter using EURC on non-Circle platforms.
+You accept all consequences of sending EURC. EURC transactions are not reversible. Once you send EURC to an address, you accept the risk that you may lose access to, and any claim on, that EURC indefinitely or permanently. For example, (i) an address may have been entered incorrectly and the true owner of the address may never be discovered, (ii) you may not have (or subsequently lose) the private key associated with such address, (iii) an address may belong to an entity that will not return the EURC, or (iv) an address belongs to an entity that may return the EURC but first requires action on your part, such as verification of your identity. For the avoidance of doubt, nothing in these Terms is intended to obligate Circle to track, verify or determine the provenance of EURC balances for Users, including any form of security interests claimed thereon.
+Blocked Addresses & Forfeited Funds
+Circle reserves the right to “block” certain EURC addresses and, if such addresses are Circle custodied addresses, freeze associated EURC (temporarily or permanently) that it determines, in its sole discretion, may be associated with illegal activity or activity that otherwise violates these Terms (“Blocked Addresses”). In the event that you send EURC to a Blocked Address, or receive EURC from a Blocked Address, Circle may freeze such EURC and take steps to terminate your EURC Account. In certain circumstances, Circle may deem it necessary to report such suspected illegal activity to applicable law enforcement agencies and you may forfeit any rights associated with your EURC, including the ability to redeem EURC for euro. Circle may also be required to freeze EURC and/or surrender associated euro held in Segregated Accounts in the event it receives a legal order from a valid government authority requiring it to do so.
+Blocklisting by Circle
+EURC is issued and redeemed by Circle Europe and is subject to the Circle Stablecoin Access Denial Policy.
+Software protocols and operational challenges
+You are aware of and accept the risk of operational challenges. Circle may experience sophisticated cyber-attacks, unexpected surges in activity or other operational or technical difficulties that may cause interruptions to the EURC Services. You understand that the EURC Services may experience operational issues that lead to delays, including delays in redeeming EURC. You agree to accept the risk of transaction failure resulting from unanticipated or heightened technical difficulties, including those resulting from sophisticated attacks. You agree not to hold Circle Mint accountable for any related losses.
+Compliance
+You are responsible for complying with applicable law. You agree that Circle is not responsible for determining whether or which laws may apply to your transactions, including tax laws. You are solely responsible for reporting and paying any taxes arising from your use of EURC or the EURC Services, including any accurate reporting of the tax or legal status of EURC in your jurisdiction.
+Legal treatment of EURC transfers
+The regulatory status of EURC and blockchain technology is unclear or unsettled in many jurisdictions. It is difficult to predict how or whether regulatory agencies may apply existing regulation with respect to EURC, blockchain technology and its applications. Accordingly, it is not possible to determine whether a EURC transfer would be recognized under applicable law by a court or regulator at the U.S. state, U.S. federal, or international level.
+Legislative and regulatory changes
+Legislative and regulatory changes or actions at the U.S. state, U.S. federal, or international level may adversely affect the EURC Services, and the use, transfer, redemption and/or value of EURC.
+No deposit insurance
+EURC held in your Circle Mint account is not subject to deposit insurance protection, including, but not limited to, (i) where your country of residence is the United States, the Federal Deposit Insurance Corporation insurance or Securities Investor Protection Corporation protections; or (ii) where your country of residence is outside of the United States, the United Kingdom Financial Services Compensation Scheme or equivalent scheme in your country of residence.
+Claim on funds
+Only Users Type A can sell EURC directly to Circle. For Users Type A, your ability to sell EURC to us for 1 euro is conditional on (i) your possession of a corresponding amount of EURC associated with a registered Circle Mint account, (ii) no violation of these Terms or your Circle Mint account User Agreement, and (iii) no action, pending or otherwise, by a regulator, law enforcement or a court of competent jurisdiction that would restrict redemption.
+Sending EURC to another address automatically transfers and assigns to that Holder, and any subsequent Holder, the right to sell EURC for euro with us so long as the Holder is eligible to, and does, register a Circle Mint account (and thereby becomes a User Type A).
+Encumbrances
+Depending on the actions of the owners of EURC addresses before your receipt of EURC from another EURC address, it is possible that the transfer of EURC between EURC addresses could result in the EURC in your account becoming subject to a lien or other form of security interest before redemption.
+On-chain transactions irreversible
+When EURC is sent to a third-party EURC address, such transaction is completed on EURC Supported Blockchains. This means that such transaction is irreversible and Circle does not have the ability to reverse or recall any transaction once initiated. You bear all responsibility for any losses that might be incurred as a result of sending EURC to an incorrect or unintended EURC address.
+Affiliate Activities
+You understand and agree that individuals or entities affiliated with Circle may hold, purchase, sell, or otherwise engage in transactions using or involving EURC. You further understand and agree that such persons may engage in this activity for any reason, including but not limited to engaging in commercial transactions, promoting transaction activity that utilizes EURC, or otherwise supporting the use or adoption of EURC. This activity may involve selling EURC to other entities for provision to their end users. You understand and agree that no individual or entity, whether affiliated with Circle or otherwise, is under any obligation to engage in these activities, and they may be discontinued at any time.
+14. Third Parties
+You understand and agree that Circle does not control any products or services sold or offered by third parties using the EURC Services.
+Circle is not liable for any losses or issues that may arise from such third-party transactions, including, but not limited to, failure to comply with applicable law and regulations (including any consequences for illegal transactions that might be triggered under these Terms), the quality and delivery of such products and services, or your satisfaction with any products or services, the purchase of which is facilitated by the EURC Services. If you are not satisfied with any goods or services purchased from a third party using the EURC Services, you must handle those issues directly with the third-party seller.
+15. Fees; Authorization
+The following only applies to User Type A: Except as disclosed on the EURC Fee Schedule or as otherwise disclosed to you prior to completing a transaction in your Circle Mint account, Circle will not charge you any fees for purchasing EURC with euro, or receiving EURC. As disclosed on the EURC Fee Schedule, Circle does charge fees in connection with sending EURC on chain out of the Circle Mint account. You should always check the EURC Fee Schedule before completing a transaction in your Circle Mint account to make sure you understand exactly what fees might be incurred. You also agree to pay any other fees that may be charged by your bank in connection with sending funds to Circle or receiving funds from Circle.
+16. Currency Conversion
+The following only applies to User Type A: All purchases of EURC with euro will be credited in EURC to your Circle Mint account based on a rate of one (1) EURC per 1 euro (€1). If you wire funds to Circle to complete a purchase of EURC for euro, you should denominate your wire transfer in euro. If you transmit your wire in a currency other than euro, Circle’s banking partners will convert such funds to euro at such bank’s then applicable conversion rate and may charge additional fees for completing such currency conversion. Your Circle Mint account will then be credited with an amount of EURC equal to the amount of euro that results following such currency conversion and deduction of any fees charged for such currency conversion. Circle is not responsible for any processing delays that may result in connection with completing such currency conversion. Additionally, Circle’s banking partners may not support all non-euro currencies, and may be forced to reject or return a wire received in a non-supported currency. Note that your Circle Mint account only supports EURC amounts out to two decimal places, so all EURC amounts will be rounded down to two decimal places.
+17. Right to Change/Remove Features or Suspend/Delay Transactions
+The following only applies to User Type A: We reserve the right to (i) change, suspend, or discontinue any aspect of the EURC Services at any time, including hours of operation or availability of any feature, without notice and without liability and (ii) decline to process any purchase or sale without prior notice and may limit or suspend your use of one or more EURC Services at any time, in our sole discretion. Our rights under this paragraph are subject to our obligations under applicable law and licenses, including but not limited to our reasonable suspicion of inappropriate or illegal conduct. Suspension of your use of any of the EURC Services will not affect your rights and obligations pursuant to these Terms. We may, in our sole discretion, delay issuances or redemptions if we reasonably believe the transaction is suspicious, may involve fraud or misconduct, violates applicable laws, or violates the terms of these Terms.
+18. Transactions Irreversible
+The following only applies to User Type A: Once a transaction has been initiated, it cannot be reversed, as further described in Section 13 above. Except as set forth in these Terms, all transactions processed through the EURC Services are non-refundable. You may have additional refund or chargeback rights under your agreement with the recipient of such funds, your bank, or applicable law. You should periodically review statements from your bank, which should reflect all applicable transactions made using that payment method. You can also access the record of your transactions by logging into your Circle Mint account.
+19. Insufficient Funds
+The following only applies to User Type A: If a payment made to purchase EURC with euro is reversed by your bank or Circle’s banking partners after a purchase of EURC with euro is completed, then Circle reserves the right to (i) retroactively cancel such purchase of EURC for euro and deduct such EURC from your Circle Mint account, (ii) deduct such amounts from future EURC purchases to your Circle Mint account or otherwise received into your Circle Mint account, (iii) suspend your Circle Mint account and access to the EURC Services until resolved, (iv) if you maintain more than one Circle Mint account, set off the negative amount of EURC in one Circle Mint account by applying the amount of EURC you hold in your other Circle Mint account(s) against the negative amount, and (v) pursue legal action or any other means of recovery legally available. To secure your performance of these Terms, you grant to Circle the right to (a) block transactions involving EURC from your account, including any non-EURC account, and (b) set off any fees or other amounts owed by you against funds Circle holds on your behalf.
+In the event that Circle is forced to engage a third party to assist with the recovery of any funds owed by you to Circle, you will be charged any fees or expenses that are incurred by Circle in connection with such recovery efforts, including, but not limited to, collection fees, currency conversion fees, legal fees or convenience fees charged by third parties. You hereby explicitly agree that all communication in relation to a funds owed by you to Circle or a delinquent account will be made by electronic mail or phone. Such communication may be made by Circle or by any third party acting on its behalf, including but not limited to a third-party collection agent. Note that if Circle is forced to engage such third parties in connection with recovering amounts that you owe Circle, your credit may be negatively impacted.
+20. Restricted Activities
+In connection with your holding or use of EURC, or the EURC Services (as applicable), you hereby agree that you will not:
+violate (or assist any other party in violating) any applicable law, statute, ordinance, or regulation;
+intentionally try to defraud (or assist in the defrauding of) Circle or other Users;
+provide false, inaccurate, or misleading information;
+take any action that interferes with, intercepts, or expropriates any system, data, or information;
+partake in any transaction involving the proceeds of illegal activity;
+transmit or upload any virus, worm, or other malicious software or program;
+attempt to gain unauthorized access to other Circle Mint accounts, the Circle website, or any related networks or systems;
+use the EURC Services on behalf of any third party or otherwise act as an intermediary between Circle and any third parties;
+collect any User information from other Users, including, without limitation, email addresses;
+defame, harass, or violate the privacy or intellectual property rights of Circle or any other Users; or
+upload, display or transmit any messages, photos, videos or other media that contain illegal goods, violent, obscene or copyrighted images or materials (such activities, “Restricted Activities”).
+21. Prohibited Transactions
+Using EURC or the EURC Services for transactions related to the following is prohibited, and Circle reserves the right to monitor and, if appropriate, block or otherwise prevent transactions that relate to:
+any Restricted Persons;
+weapons of any kind in contravention of applicable laws, including but not limited to, as applicable, firearms, ammunition, knives, explosives, or related accessories;
+controlled substances, including but not limited to narcotics, prescription drugs, steroids, or related paraphernalia or accessories, unless licensed and authorized by the jurisdiction in which the User is based as well as by the jurisdiction in which the transaction takes place;
+gambling activities including but not limited to sports betting, casino games, horse racing, dog racing, games that may be classified as gambling (i.e. poker), or other activities that facilitate any of the foregoing, unless licensed and authorized by the jurisdiction in which the User is based as well as by the jurisdiction in which the transaction takes place;
+money-laundering or terrorist financing;
+any sort of Ponzi scheme, pyramid scheme, or multi-level marketing program;
+goods or services that infringe or violate any copyright, trademark, or proprietary rights under the laws of any jurisdiction;
+credit repair services, or other services that may present consumer protection risks;
+court ordered payments, structured settlements, tax payments, or tax settlements;
+any unlicensed money transmitter activity;
+layaway systems, or annuities;
+counterfeit goods, including but not limited to fake or “novelty” IDs;
+wash trading, front-running, insider trading, market manipulation or other forms of market-based fraud or deceit;
+purchasing goods of any type from “Darknet” markets, or any other service or website that acts as a marketplace for illegal goods (even though such marketplace might also sell legal goods); or
+any other matters, goods, or services that from time to time we communicate to you that are unacceptable and which, for example, may be restricted by our and your bank or payment partners (such transactions, “Prohibited Transactions”).
+In the event that Circle learns you are making any such Prohibited Transactions, Circle will consider it to be a violation of these Terms and may also suspend or terminate your Circle Mint account, which can result in the potential forfeit of any euro funds otherwise eligible for redemption.
+22. Taxes
+The following only applies to User Type A: Circle will maintain a record of your transaction history pursuant to the terms of the Circle Mint account User Agreement. This transaction history will include all transactions you complete with Circle including purchasing EURC for euro, selling EURC for euro, and transferring EURC.
+23. Indemnification; Release
+The following only applies to User Type A: Section 22 of the Circle Mint account User Agreement is hereby incorporated into these Terms by reference and shall apply in all respects to these Terms and your use of EURC Services and our products and services as contemplated herein.
+The following only applies to User Type B: You agree to indemnify and hold Circle, its affiliates, and service providers, and each of their officers, directors, agents, joint venturers, employees, and representatives harmless from any claim or demand (including attorneys’ fees and any losses, fines, fees or penalties imposed by any regulatory authority) arising out of your breach of these Terms, your violation of any law or regulation or your holding or use of EURC.
+For the purpose of this Section 23, the term “losses” means all net costs reasonably incurred by us or the other persons referred to in this Section which are the result of the matters set out in this Section 23 and which may relate to any claims, demands, causes of action, debt, cost, expense or other liability, including reasonable legal fees (without duplication).
+If you have a dispute with one or more Users or third parties, you release Circle (and its affiliates and service providers, and each of their officers, directors, agents, joint ventures, employees and representatives) from all claims, demands, and damages (actual and consequential) of every kind and nature arising out of or in any way connected with such disputes.
+24. Limitation of Liability; No Warranty
+The following only applies to User Type A: Section 23 of the Circle Mint account User Agreement is hereby incorporated into these Terms by reference and shall apply in all respects to these Terms and your use of EURC Services and our products and services as contemplated herein.
+The following only applies to User Type B: YOU EXPRESSLY UNDERSTAND AND AGREE THAT CIRCLE AND OUR AFFILIATES AND SERVICE PROVIDERS, AND THEIR RESPECTIVE OFFICERS, DIRECTORS, AGENTS, JOINT VENTURERS, EMPLOYEES, AND REPRESENTATIVES WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY DAMAGES, OR DAMAGES FOR LOSS OF PROFITS INCLUDING BUT NOT LIMITED TO, DAMAGES FOR LOSS OF GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES (EVEN IF CIRCLE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR OTHERWISE, RESULTING FROM: (I) THE USE OR THE INABILITY TO HOLD OR USE EURC; (II) THE COST OF PROCUREMENT OF SUBSTITUTE GOODS AND SERVICES RESULTING FROM ANY GOODS, DATA, INFORMATION, OR SERVICES PURCHASED OR OBTAINED OR MESSAGES RECEIVED OR TRANSACTIONS ENTERED INTO INVOLVING EURC; (III) UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR TRANSMISSIONS OR DATA; OR (IV) ANY OTHER MATTER INVOLVING EURC.
+SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES. ACCORDINGLY, SOME OF THE LIMITATIONS SET FORTH ABOVE MAY NOT APPLY TO YOU. IF YOU ARE DISSATISFIED WITH EURC, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE HOLDING AND USE OF EURC.
+EURC IS PROVIDED "AS IS" AND WITHOUT ANY REPRESENTATION OR WARRANTY, WHETHER EXPRESS, IMPLIED OR STATUTORY. CIRCLE, OUR AFFILIATES, AND OUR RESPECTIVE OFFICERS, DIRECTORS, AGENTS, JOINT VENTURERS, EMPLOYEES, AND SUPPLIERS SPECIFICALLY DISCLAIM ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT. CIRCLE MAKES NO WARRANTY THAT (I) THE EURC WILL MEET YOUR REQUIREMENTS, (II) THE EURC WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE, OR (III) THE QUALITY OF ANY PRODUCTS, SERVICES, INFORMATION, OR OTHER MATERIAL PURCHASED OR OBTAINED BY YOU WILL MEET YOUR EXPECTATIONS.
+25. Force Majeure
+Circle shall have no liability for any failure or delay resulting from any condition beyond our reasonable control, including but not limited to governmental action or acts of terrorism, earthquake, fire, flood, or other acts of God, labor conditions, power failures, equipment failures, and Internet disturbances.
+26. Amendments
+Circle may amend any portion of these Terms at any time by posting the revised version of these Terms with an updated revision date. The changes will become effective, and shall be deemed accepted by you, the first time you access or use EURC or the EURC Services after the initial posting of the revised Terms and shall apply on a going-forward basis with respect to transactions initiated after the posting date. In the event that you do not agree with any such modification, your sole and exclusive remedy is to terminate your use of the EURC Services and terminate your Circle Mint account (if any). You agree that we shall not be liable to you or any third party as a result of any losses suffered by any modification or amendment of these Terms.
+If the revised Terms includes a material change, we will provide you with prior notice via our website and/or email before the material change becomes effective. For this purpose a “material change” means a significant change other than changes that (i) are to your benefit, (ii) are required to be made to comply with applicable laws and/or regulations or as otherwise required by one of our regulators, (iii) relates to a new product or service made available to you, or (iv) otherwise clarifies an existing term.
+27. Assignment and Third-Party Holders
+You may not transfer or assign these Terms or any rights or obligations hereunder, by operation of law or otherwise and any such attempted assignment shall be void, subject to the following exception. Sending EURC to an address will automatically transfer and assign to that Holder, and any subsequent Holder, the right to redeem EURC for euro so long as the Holder is eligible to, and does, register a Circle Mint account.
+Each Holder is subject to all terms of these Terms as if a User including, but not limited to, the requirements to not transact with Blocked Addresses and not engage in Restricted Activities or Prohibited Transactions.
+We reserve the right to freely assign these Terms and the rights and obligations of these Terms to any third party at any time without notice or consent. If you object to such transfer or assignment, you may stop holding and using EURC; further if you are a User Type A, you may also stop using our EURC Services, and terminate these Terms by contacting Support at [email protected] and asking us to close your Circle Mint account.
+28. Survival
+Upon termination of these Terms (and termination of your Circle Mint account, if you are a User Type A), all rights and obligations of the parties that by their nature are continuing will survive such termination.
+29. Website; Third Party Content
+Circle strives to provide accurate and reliable information and content on the Circle website, but such information may not always be correct, complete, or up to date. Circle will update the information on the Circle website as necessary to provide you with the most up to date information, but you should always independently verify such information. The Circle website may also contain links to third-party websites, applications, events or other materials (“Third Party Content”). Such information is provided for your convenience and links or references to Third Party Content do not constitute an endorsement by Circle of any products or services. Circle shall have no liability for any losses incurred as a result of actions taken in reliance on the information contained on the Circle website or in any Third Party Content.
+30. Legal Compliance
+The EURC and EURC Services are subject to AML and CTF provisions, including Sanctions. By holding or using EURC, or using the EURC Services, you represent and warrant that your actions are not in violation of Sanctions. Without limiting the foregoing, you may not hold or use EURC, or use the EURC Services if you are a Restricted Person or intend to transact with or on behalf of any Restricted Persons.
+31. Governing Law; Venue
+The laws of the State of Delaware and applicable United States federal law, including the Federal Arbitration Action as specified herein, shall govern these Terms.
+32. Entire Agreement
+The following applies to both User Type A and User Type B: The failure of Circle to exercise or enforce any right or provision of these Terms shall not constitute a waiver of such right or provision. If any provision of these Terms shall be adjudged by any court of competent jurisdiction to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary so that these Terms shall otherwise remain in full force and effect and remain enforceable between the parties, except as specified in Section 26. Furthermore, if any portion of these Terms, whether in whole, or in part, shall be adjudged by any court of competent jurisdiction to be unenforceable or invalid against certain persons or categories of persons that are purportedly bound by these Terms, such portion of these Terms shall otherwise remain in full force and effect and remain enforceable as to any other persons bound by these terms. The headings and explanatory text are for reference purposes only and in no way define, limit, construe, or describe the scope or extent of such section. These Terms and Circle’s policies governing the holding or use of EURC, the use of the EURC Services referenced herein, the Privacy Policy, the Cookie Policy and the E-Sign Consent constitute the entire agreement between you and Circle with respect to the holding or use of EURC, and the use of the EURC Services. These Terms are not intended and shall not be construed to create any rights or remedies in any parties other than you and Circle and other Circle affiliates which each shall be a third-party beneficiary of these Terms, and no other person shall assert any rights as a third-party beneficiary hereunder.
+The following only applies to User Type A: Notwithstanding anything to the contrary set forth in these Terms or otherwise, in the event of a conflict between any term set forth herein and any term set forth in the Circle Mint account User Agreement (i) in connection with any EURC transaction, the terms of these Terms shall control, and (ii) in respect of any other Digital Currency transaction, the terms of the Circle Mint account User Agreement shall control.
+33. State-Specific Disclosures
+Note that while Circle is licensed in many states as a money transmitter, not all states in which we are licensed regulate virtual currency activity as money transmission. Additionally, certain of these states have required specific disclosures of this fact, which can be found below and/or on the Licenses page found here. Verification of the licensing status of Circle for all states that use the Nationwide Mortgage Licensing System (NMLS) may be obtained here (Company Legal Name: Circle Internet Financial, LLC; NMLS ID: 1201441). Note that this Section 33 may be continuously updated with additional state-specific disclosures as may be required by the states in which we hold licenses and the date of last update will be reflected directly above.
+For the avoidance of doubt, although a state banking department may not regulate virtual currency activity as money transmission, such state banking department may, however, regulate EURC transmission, if such state banking department deems EURC to be a form of stored value and not a type of virtual currency.
+‍
+Alaska
+Circle is licensed by the Alaska Division of Banking & Securities as a money transmitter. Please note that this license does not cover the transmission of virtual currency. If you are located in the State of Alaska and have a complaint, please first contact Circle Support by visiting the Circle Support Portal.
+If your issue is unresolved by Circle, either via the method above or by contacting its phone number, (888) 762-4966, please submit formal complaints with the state of Alaska, Division of Banking & Securities. Formal complaints must be in writing, please download the form here: https://www.commerce.alaska.gov/web/portals/3/pub/DBSGeneralComplaintFormupdated.pdf.
+Formal complaint forms may be submitted via:
+Fax: 907-465-1230
+Email: [email protected]
+Mail: Division of Banking & Securities PO Box 110807
+Juneau, AK 99811-0807
+If you have any questions regarding formal complaints, please call 907-465-2521.
+Arkansas
+If you have a complaint, please first contact Circle Support by visiting the Circle Support Portal.
+After first contacting Circle, if you still have an unresolved complaint regarding the company's money transmission activity, please direct your complaint to:
+Arkansas Securities Department
+#1 Commerce Way, Suite 402
+Little Rock, Arkansas 72202
+Phone Number: 1-501-324-926
+California
+In California, Circle Payments, LLC is licensed as a money transmitter (NMLS ID: 1415802; License Number 2549). If you have complaints with respect to any aspect of the money transmission activities conducted by this licensee, you may contact the California Department of Financial Protection and Innovation at its toll-free telephone number, 1-866-275-2677, by e-mail at [email protected], or by mail at:
+Department of Financial Protection and Innovation
+Attn: Consumer Services Office
+2101 Arena Blvd
+Sacramento, CA 95834
+Colorado
+Circle is licensed by the Colorado Division of Banking as a money transmitter. Please note that the license issued to Circle by the Colorado Division of Banking does not cover the exchange or transmission of virtual currency. The Colorado Division of Banking does not license or regulate services related to virtual currency, including, but not limited to, transmission or exchange of virtual currency which may be conducted by Circle.
+Entities other than FDIC-insured financial institutions that conduct money transmission activities in Colorado, including the sale of money orders, transfer of funds, and other instruments for the payment of money or credit are required to be licensed by the Colorado Division of Banking pursuant to the Money Transmitters Act, Title 11, Article 110, Colorado Revised Statutes.
+If you have a Question about or Problem with YOUR TRANSACTION – THE MONEY YOU SENT: You must contact the Money Transmitter who processed your transaction for assistance. The Division of Banking does not have access to this information.
+If you are a Colorado Resident and have a Complaint about THE MONEY TRANSMITTER – THE COMPANY THAT SENT YOUR MONEY: ALL complaints must be submitted in writing. Please fill out the Complaint Form provided on the Colorado Division of Banking’s website and return it and any documentation supporting the complaint via mail or email to the Division of Banking at:
+Colorado Division of Banking
+1560 Broadway, Suite 975
+Denver, Colorado 80202
+email: [email protected]
+website: www.dora.colorado.gov/dob
+Section 12-52-116, C.R.S. requires that money transmitters and money order companies post this notice in a conspicuous, well-lighted location visible to customers.
+Florida
+If you have a complaint, please first contact Circle Support by visiting the Circle Support Portal.
+For complaints directly to the Florida Office of Financial Regulation, please send correspondence to:
+Florida Office of Financial Regulation
+Division of Finance
+200 E. Gaines Street
+Tallahassee, FL 32399-0376
+Toll-Free Number: 1-800-848-3792
+NOTICE: By the Florida Office of Financial Regulation
+By granting Circle a license, the Florida Office of Financial Regulation is not endorsing the use of digital or virtual currencies.
+U.S. currency is legal tender backed by the U.S. government.
+Digital and virtual currencies are not issued or backed by the U.S. government, or related in any way to U.S. currency, and have fewer regulatory protections.
+The value of digital and virtual currencies is derived from supply and demand in the global marketplace which can rise or fall independently of any fiat (government) currency.
+Holding digital and virtual currencies carries exchange rate and other types of risk.
+Potential users of digital or virtual currencies, including but not limited to Bitcoin, should be forewarned of a possible financial loss at the time that such currencies are exchanged for fiat currency due to an unfavorable exchange rate. A favorable exchange rate at the time of exchange can result in a tax liability. Please consult your tax advisor regarding any tax consequences associated with your holding or use of digital or virtual currencies.
+Illinois
+Illinois
+If you have a complaint, please first contact Circle Support by visiting the Circle Support Portal.
+For complaints directly to the Illinois Division of Financial Institutions, please send correspondence to:
+Illinois Division of Financial Institutions
+320 West Washington Street, 3rd Floor
+Springfield, IL 62786
+Toll-Free Number: 1-888-473-4858
+Kentucky
+Circle is licensed by the Kentucky Department of Financial Institutions as a money transmitter. Please note that the license issued to Circle by the Kentucky Department of Financial Institutions does not cover the exchange or transmission of virtual currency. The Kentucky Department of Financial Institutions does not currently license or regulate services related to virtual currency including but not limited to transmission or exchange which may be conducted by Circle.
+Louisiana
+Circle is licensed by the Louisiana Office of Financial Institutions as a money transmitter. The Louisiana Office of Financial Institutions does not currently license or regulate services related to virtual currency including but not limited to transmission or exchange which may be conducted by Circle.
+Maryland
+Circle is licensed by the Maryland Department of Labor, Licensing and Regulation as a money transmitter. Please note that the license issued to Circle by the Maryland Department of Labor, Licensing and Regulation does not cover the exchange or transmission of virtual currency. The Maryland Department of Labor, Licensing and Regulation does not currently license or regulate services related to virtual currency including but not limited to transmission or exchange which may be conducted by Circle.
+The Commissioner of Financial Regulation for the State of Maryland will accept all questions or complaints from Maryland residents regarding Circle Internet Financial, LLC (License # 1201441, NMLS # 1201441), at:
+500 North Calvert Street, Suite 402
+Baltimore, MD 2120
+Toll-Free Number: 1-888-784-0136
+Verification of the licensing status of Circle Internet Financial, LLC may be obtained at https://nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/1201441.
+Minnesota
+Circle is licensed by the Minnesota Department of Commerce as a money transmitter. Please note the license issued to Circle by the Minnesota Department of Commerce does not cover the exchange or transmission of virtual currency. A transfer of fiat or virtual currency can be paid out to a recipient within a short time. After the currency is paid out, you may not be able to obtain a refund from Circle, even if the transfer was the result of fraud, except under limited circumstances.
+If you have a complaint, or wish to report fraud or suspected fraud, please first contact Circle Support by contacting its phone number, (888) 762-4966, or by visiting the Circle Support Portal
+New York
+Circle is licensed and regulated as a Money Transmitter and to conduct business involving virtual currency by the New York Department of Financial Services.
+If you have a complaint, please first contact Circle Support by contacting its phone number, (888) 762-4966, or by visiting the Circle Support Portal.
+After first contacting Circle, if you still have an unresolved complaint regarding the company's money transmission activity, please direct your complaint to:
+Consumer Assistance Unit
+NYS Department of Financial Services
+One Commerce Plaza
+Albany, NY 12257
+Toll-Free Number: 1-877-226-5697
+http://www.dfs.ny.gov/consumer/fileacomplaint.htm
+Please note the following disclosures associated with virtual currency:
+Virtual currency is not legal tender, is not backed by the government, and accounts and value balances are not subject to Federal Deposit Insurance Corporation or Securities Investor Protection Corporation protections;
+Legislative and regulatory changes or actions at the state, federal, or international level may adversely affect the use, transfer, exchange, and value of virtual currency;
+Transactions in virtual currency may be irreversible, and, accordingly, losses due to fraudulent or accidental transactions may not be recoverable;
+Some virtual currency transactions shall be deemed to be made when recorded on a public ledger, which is not necessarily the date or time that the customer initiates the transaction;
+The value of virtual currency may be derived from the continued willingness of market participants to exchange fiat currency for virtual currency, which may result in the potential for permanent and total loss of value of a particular virtual currency should the market for that virtual currency disappear;
+There is no assurance that a person who accepts a virtual currency as payment today will continue to do so in the future;
+The volatility and unpredictability of the price of virtual currency relative to fiat currency may result in significant loss over a short period of time;
+The nature of virtual currency may lead to an increased risk of fraud or cyber attack;
+The nature of virtual currency means that any technological difficulties experienced by Circle may prevent the access or use of a customer's virtual currency; and
+Any bond or trust account maintained by Circle for the benefit of its customers may not be sufficient to cover all losses incurred by customers.
+Additionally, the following further disclosures are applicable to Circle’s virtual currency customers:
+You may be liable for unauthorized virtual currency transactions occurring on your Circle Mint account. For more information regarding the circumstances under which you may be liable for unauthorized virtual currency transactions, please see Section 24 of the Circle Mint account Agreement.
+Circle does not currently support preauthorized virtual currency transfers.
+Circle may, from time to time, disclose information concerning your Circle Mint account to third parties. For more information regarding how Circle collects, uses, stores, shares and protects your information, please see the Circle Privacy Policy.
+Circle will not provide periodic account statements to you. However, your transaction history is always available on Circle. It is important for you to understand that it is your sole responsibility to review your transaction history and any notices. You also understand that for the purposes of review and acknowledgment, you agree to be deemed to have reviewed your transaction history and all notices on at least a monthly basis. Your transaction history contains all of your trading activity, including pending transactions, deposits and withdrawals, as well as your fiat currency and virtual currency balances; however, please note that nothing in your transaction history should be treated as a valuation.
+After each transaction has been placed, Circle will send you a receipt evidencing your transaction via email. Further evidence of your transactions will be available to you in your transaction history, as discussed above.
+Circle reserves the right to change these Terms at any time, with or without advance notice to you, as the case may be. For more information on amendments to these Terms, please see Section 26.
+Tennessee
+Please note that this license and the required surety bond do not cover the transmission of virtual currency. Circle is licensed by the Tennessee Department of Financial Institutions as a money transmitter. The Tennessee Department of Financial Institutions does not regulate virtual currency.
+Texas
+If you have a complaint, please first contact Circle Support by visiting the Circle Support Portal.
+After first contacting Circle, if you still have an unresolved complaint regarding the company's money transmission or currency exchange activity, please direct your complaint to:
+Texas Department of Banking
+2601 North Lamar Boulevard
+Austin, Texas 78705
+Toll-Free Number: 1-877-276-5554
+www.dob.texas.gov
+Virginia
+Circle is licensed by the Virginia State Corporation Commission as a money transmitter, but such license does not cover the transmission of virtual currency (Bitcoin).
+Washington
+Fraudulent transactions may result in the loss of your money with no recourse. If you have a complaint, please first contact Circle Internet Financial, LLC at (888) 762-4966 or visit Circle Support Portal. After first contacting Circle, if you still have an unresolved complaint regarding the company's regulated activity, please direct your complaint to:
+Washington Department of Financial Institutions
+File a complaint online, mail, or fax: https://dfi.wa.gov/file-complaint
+Call: (360) 902-8703 or 1-877-RING DFI (1-877-746-4334
+Email us: [email protected]
+In addition, please note the following disclosures associated with transactions with virtual currency:
+A schedule of fees that Circle may charge in connection with the Services may be found here.
+Virtual Currency is not legal tender, is not backed by the government, and accounts and value balances are not subject to Federal Deposit Insurance Corporation or Securities Investor Protection Corporation protections.
+Transactions in virtual currency are irrevocable, and, accordingly, losses due to fraudulent or accidental transactions may result in the loss of your money with no recourse.
+When any transaction occurs using your credentials, we will assume that you authorized such transaction, unless you notify us otherwise. If you believe you did not authorize a particular transaction or that a transaction was incorrectly carried out, you must contact us as soon as possible by email at [email protected]. It is important that you regularly check your Circle Mint account balances and your transaction history regularly to ensure you notify us as soon as possible of any unauthorized or incorrect transactions. We are not responsible for any claim for unauthorized or incorrect transactions unless you have notified us in accordance with Section 24 of the Circle Mint account User Agreement.
+The nature of virtual currency may lead to an increased risk of fraud or cyber attack and your virtual currency value may be irretrievably stolen.
+‍
+34. Singapore Terms
+The following terms apply only to Singapore customers and replace the same numbered sections above in their entirety unless otherwise stated.
+These EURC Terms and any other addendums entered into hereto (collectively, this “Agreement”) are a contract between you (“you” or a “User”) and Circle Internet Singapore Pte. Ltd. (“Circle,” “we” or “us”). To the extent that you have a Circle Mint account, these Terms augment the Circle Mint account User Agreement (as defined in the Circle Mint Account User Agreement) for any transactions involving EURC Services (as defined herein).
+4. Eligibility; Limitations
+The following applies to both User Type A and User Type B: Circle Mint accounts, EURC Services and support for EURC are currently only available to individuals and institutions (as applicable) located in supported jurisdictions. For a complete list of currently supported jurisdictions, please see here.
+By holding or using EURC, or accessing or using the EURC Services, you further represent and warrant that:
+you are at least 21 years old and are not a Restricted Person, and are not holding EURC on behalf of a Restricted Person.
+you will not be using EURC or the EURC Services (as applicable) for any illegal activity, including, but not limited to, illegal gambling, money laundering, fraud, blackmail, extortion, ransoming data, terrorism financing, other violent activities or any prohibited market practices, including, but not limited to, those listed under Sections 20 and 21.
+You also understand that there are additional representations and warranties made by you elsewhere in (or by reference in) these Terms and that any misrepresentation by you is a violation of these Terms.
+If Circle suspects or determines that you or any of your authorized users or customers, as applicable, have violated this these Terms, including, but not limited to, attempting to transact or transacting with Blocked Addresses (as defined in Section 13) or attempting to engage or engaging in Restricted Activities or Prohibited Transactions, and you have a Circle Mint account, then Circle may be forced to terminate your Circle Mint account and you may forfeit any euro funds otherwise eligible for redemption.
+Notwithstanding the foregoing, Circle may determine not to make EURC or the EURC Services, in whole or in part, available in every market, either in its sole discretion or due to legal or regulatory requirements, depending on your location. We may also, without liability to you or any third party, refuse to let you register for a Circle Mint account.
+The following only applies to User Type A: Use of certain EURC Services in a Circle Mint account may have further eligibility requirements that will need to be verified prior to you using such EURC Services, or from time to time in order to continue your use of the EURC Services, and may be subject to additional terms and conditions.
+24. Limitation of Liability; No Warranty
+The following only applies to User Type A: Section 23 of the Circle Mint Account User Agreement is hereby incorporated into these Terms by reference and shall apply in all respects to these Terms and your use of EURC Services and our products and services as contemplated herein.
+The following only applies to User Type B: YOU EXPRESSLY UNDERSTAND AND AGREE THAT CIRCLE AND OUR AFFILIATES AND SERVICE PROVIDERS, AND THEIR RESPECTIVE OFFICERS, DIRECTORS, AGENTS, JOINT VENTURERS, EMPLOYEES, AND REPRESENTATIVES WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY DAMAGES, DAMAGES FOR LOSS OF PROFITS, DAMAGES FOR LOSS OF GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES (EVEN IF CIRCLE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES), WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR OTHERWISE, RESULTING FROM: (I) THE USE OR THE INABILITY TO HOLD OR USE EURC; (II) THE COST OF PROCUREMENT OF SUBSTITUTE GOODS AND SERVICES RESULTING FROM ANY GOODS, DATA, INFORMATION, OR SERVICES PURCHASED OR OBTAINED OR MESSAGES RECEIVED OR TRANSACTIONS ENTERED INTO INVOLVING EURC; (III) UNAUTHORIZED ACCESS TO OR ALTERATION OF YOUR TRANSMISSIONS OR DATA; OR (IV) ANY OTHER MATTER INVOLVING EURC.
+SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES. ACCORDINGLY, SOME OF THE LIMITATIONS SET FORTH ABOVE MAY NOT APPLY TO YOU. IF YOU ARE DISSATISFIED WITH EURC, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE HOLDING AND USE OF EURC.
+EURC IS PROVIDED "AS IS" AND WITHOUT ANY REPRESENTATION OR WARRANTY, WHETHER EXPRESS, IMPLIED OR STATUTORY. CIRCLE, OUR AFFILIATES, AND OUR RESPECTIVE OFFICERS, DIRECTORS, AGENTS, JOINT VENTURERS, EMPLOYEES, AND SUPPLIERS SPECIFICALLY DISCLAIM ANY IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT. CIRCLE MAKES NO WARRANTY THAT (I) THE EURC WILL MEET YOUR REQUIREMENTS, (II) THE EURC WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE, OR (III) THE QUALITY OF ANY PRODUCTS, SERVICES, INFORMATION, OR OTHER MATERIAL PURCHASED OR OBTAINED BY YOU WILL MEET YOUR EXPECTATIONS.
+26. Ammendments
+Circle may amend any portion of these Terms at any time by posting the revised version of these Terms with an updated revision date. The changes will become effective, and shall be deemed accepted by you, the first time you access or use USDC or the USDC Services after the initial posting of the revised Terms and shall apply on a going-forward basis with respect to transactions initiated after the posting date. In the event that you do not agree with any such modification, you mustto terminate your use of the USDC Services and terminate your Circle Mint account (if any). You agree that we shall not be liable to you or any third party as a result of any losses suffered by any modification or amendment of these Terms.
+If the revised Terms includes a material change, we will provide you with prior notice via our website and/or email before the material change becomes effective. For this purpose a “material change” means a significant change other than changes that (i) are to your benefit, (ii) are required to be made to comply with applicable laws and/or regulations or as otherwise required by one of our regulators, (iii) relates to a new product or service made available to you, or (iv) otherwise clarifies an existing term.
+27. Assignment and Third-Party Holders
+You may not transfer or assign these Terms or any rights or obligations hereunder, by operation of law or otherwise and any such attempted assignment shall be void, subject to the following exception. Sending EURC to an address will automatically transfer and assign to that Holder, and any subsequent Holder, the right to redeem EURC for euro so long as the Holder is eligible to, and does, register a Circle Mint account.
+Each Holder is subject to all terms of these Terms as if a User including, but not limited to, the requirements to not transact with Blocked Addresses and not engage in Restricted Activities or Prohibited Transactions.
+We reserve the right to freely assign these Terms and the rights and obligations of these Terms to any third party at any time without notice or consent. You agree to, if requested by Circle, execute such assignment or novation agreement in the form prescribed by Circle and further undertake to do all things and execute all documents as may be necessary to perfect such assignment, transfer, novation or dealing. You shall inform Circle of such assignment or novation in writing as soon as reasonably practicable. If you object to such transfer or assignment, you may stop holding and using EURC; further if you are a User Type A, you may also stop using our EURC Services, and terminate these Terms by contacting Support at [email protected] and asking us to close your Circle Mint account.
+31. Governing Law; Venue
+The laws of Singapore, including the SIAC Rules as specified herein, shall govern this Agreement. Except for those disputes that shall be resolved in arbitration or in small claims court, each party agrees to submit to the personal and exclusive jurisdiction of the courts located in Boston, Massachusetts, provided that any claims or disputes shall be subject to the arbitration provisions set forth in Section 26. You agree with us that, if you are a consumer, the courts in the permitted region where you are resident will have non-exclusive jurisdiction.
+Home
+Platform
+USDC
+EURC
+USYC
+CirBTC
+CPN Fiat Payments
+CPN Stablecoin Payments
+CPN Managed Payments
+Arc
+Mint
+StableFX
+Wallets
+Contracts
+Paymaster
+CCTP
+xReserve
+Agent Stack
+Use Cases
+Payments
+Dollar Access
+Trading Services
+Case Studies
+Developer
+Developer Hub
+Documentation
+API Reference
+Sample Projects
+Testnet Faucet
+Developer Blog
+Circle Research
+Uptime Status
+Company
+About Circle
+Careers
+We’re hiring
+Alliance Program
+Circle Partner Stablecoins
+Circle Impact
+Circle Foundation
+Circle Ventures
+Investor Relations
+Brand
+USDC
+Transparency
+Supported Blockchains
+Bridged USDC Standard
+USDC.com
+Insights
+Executive Insights
+Policy Hub
+Pressroom
+Blog
+Support
+Help Center
+Contact Us
+Legal & Privacy
+Your Privacy Choices
+subscribe to the Circle newsletter
+en
+English
+Português - Brasil
+Español - Latin America
+French
+X
+Instagram
+LinkedIn
+Discord
+The Money Movement
+YouTube
+Digital assets are subject to a number of risks, including price volatility. Transacting in digital assets could result in significant losses and may not be suitable for some consumers. Digital asset markets and exchanges are not regulated with the same controls or customer protections available with other forms of financial products and are subject to an evolving regulatory environment. Digital assets do not typically have legal tender status and are not covered by deposit protection insurance. The past performance of a digital asset is not a guide to future performance, nor is it a reliable indicator of future results or performance. Additional disclosures can be found on the Legal and Privacy page.
+Circle Internet Financial, LLC (NMLS ID# 1201441). Circle Internet Financial, LLC is licensed as a Money Transmitter by the New York State Department of Financial Services and to engage in Virtual Currency Business Activity by the New York State Department of Financial Services. For information on filing complaints in Texas and Maryland, see our Legal & Privacy page.
+Circle International Bermuda Limited is licensed to conduct digital asset business by the Bermuda Monetary Authority.
+© 2026 Circle Internet Group, Inc
+Circle Technology Services, LLC (“CTS”) is a software provider and does not provide regulated financial or advisory services. You are solely responsible for services you provide to users, including obtaining any necessary licenses or approvals and otherwise complying with applicable laws. For additional details, please refer to our Circle Developer terms of service.

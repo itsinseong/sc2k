@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+        <title>금융보안원</title>
+    
+
+    <!-- jquery -->
+    <link rel="stylesheet" href="/static/assets/common/lib/jquery-ui.min.css?cbh=56d2004480ac738dcc9290efa0054b57">
+    <script src="/static/assets/common/lib/jquery-3.4.1.min.js?cbh=65eb240ec3f401a75c717d81f9c84271"></script>
+    <script src="/static/assets/common/lib/jquery-ui.min.js?cbh=a949d0e524789b2aaa153b5cdb0a5f19"></script>
+
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="/static/assets/common/lib/swiper.min.css?cbh=ac30a6a63cc8cd4f7bf6fd8046586aff">
+    <script src="/static/assets/common/lib/swiper-bundle.min.js?cbh=53c366d1e328a93df3020af2cce004fa"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/static/assets/css/ui.css?cbh=cb755f9e2c67065f9a77ecfd9e9837ed">
+
+    <!-- js -->
+    <script src="/static/assets/js/ui.js?cbh=65707292ccdbdf3672f8d51b3573b75c"></script>
+    <script src="/static/assets/js/common/header.js?v=1.1"></script>
+    <script src="/static/assets/js/common/footer.js"></script>
+    <script src="/static/assets/js/util/util.js"></script>
+
+    
+    <script src="/static/assets/js/bbs/detail.js"></script>
+
+</head>
+
+<body data-page="sub">
+<div id="wrap">
+    
+    <!-- header -->
+    
+    <input type="hidden" id="langCode" name="langCode" value="" />
+    <!-- 헤더 -->
+    
+        <header>
+            <nav>
+                <div class="topArea">
+                    <div class="left">
+                        <h1>
+                            <a href="/" title="금융보안원 홈으로 이동">
+                                <img src="/static/assets/img/common/logo.png" alt="Financial Security Institute">
+                            </a>
+                        </h1>
+                    </div>
+                    <div id="menu" class="menuArea">
+                        <ul class="dep01">
+                            <li>
+                                <a href="javascript:void(0)"><span>금융보안원 소개</span></a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>01</em>금융보안원 안내</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/123"><span>일반현황</span></a></li>
+                                            <li><a href="/bbs/120"><span>CEO 소개</span></a></li>
+                                            <li><a href="/bbs/64"><span>조직도</span></a></li>
+                                            <li><a href="/bbs/128"><span>홍보자료</span></a></li>
+                                            <li><a href="/bbs/132"><span>찾아오시는 길</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>02</em>문의하기</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/customer/qna"><span>업무별 연락처</span></a></li>
+                                            <li><a href="/customer/faq"><span>자주하는 질문(FAQ)</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><span>주요업무</span></a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>01</em>금융권 보안 위협<br> 예방&middot;탐지&middot;대응</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/101"><span>금융부문 통합보안관제</span></a></li>
+                                            <li><a href="/bbs/1028"><span>침해사고 조사&middot;분석</span></a></li>
+                                            <li><a href="/bbs/1029"><span>침해사고 대응훈련</span></a></li>
+                                            <li><a href="/bbs/1030"><span>위협 인텔리전스&middot;공급망 보안</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>02</em>선제적 사이버<br> 안전망 구축</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/1031"><span>취약점 분석&middot;평가</span></a></li>
+                                            <li><a href="/bbs/1032"><span>침투테스트(모의해킹)</span></a></li>
+                                            <li><a href="/bbs/1033"><span>디지털인증&middot;클라우드 안전성 평가</span></a></li>
+                                            <li><a href="/bbs/1034"><span>개인정보&middot;제3자 리스크 평가</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>03</em>AI&middot;디지털 금융<br>혁신 기반 조성</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/1035"><span>금융 AI 보안</span></a></li>
+                                            <li><a href="/bbs/1037"><span>디지털자산 보안</span></a></li>
+                                            <li><a href="/bbs/1039"><span>보이스피싱 정보 공유&middot;분석</span></a></li>
+                                            <li><a href="/bbs/1040"><span>금융 데이터 보안</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>04</em>금융권 자율보안<br> 강화</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/1041"><span>금융보안 수준진단</span></a></li>
+                                            <li><a href="/bbs/1042"><span>금융보안 정책&middot;기술 연구</span></a></li>
+                                            <li><a href="/bbs/1043"><span>금융보안 전문인재 양성</span></a></li>
+                                            <li><a href="/bbs/1044"><span>ISMS-P 인증</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><span>알림마당</span></a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>01</em>알림정보</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/66"><span>공지사항</span></a></li>
+                                            <li><a href="/bbs/68"><span>입찰공고</span></a></li>
+                                            <li><a href="/bbs/258"><span>채용정보</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>02</em>보도&middot;소식</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/69"><span>보도자료</span></a></li>
+                                            <li><a href="/bbs/221"><span>보안원 소식</span></a></li>
+                                            <li><a href="/bbs/253"><span>기고 및 인터뷰</span></a></li>
+                                            <li><a href="/bbs/255"><span>사회공헌활동</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><span>자료마당</span></a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>01</em>금융보안 인사이트</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/241"><span>조사&middot;연구</span></a></li>
+                                            <li><a href="/bbs/244"><span>인텔리전스 보고서</span></a></li>
+                                            <li><a href="/bbs/1011"><span>RED IRIS 리포트</span></a></li>
+                                            <li><a href="/bbs/1009"><span>취약점 정보</span></a></li>
+                                            <li><a href="/bbs/222"><span>가이드</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>02</em>업무 서식</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/301"><span>핀테크 업무신청서식</span></a></li>
+                                            <li><a href="/bbs/1025"><span>비교추천검증 업무신청서식</span></a></li>
+                                            <li><a href="/bbs/247"><span>ISMS-P 인증 관련자료</span></a></li>
+                                            <li><a href="/bbs/248"><span>전자서명인증 평가자료</span></a></li>
+                                            <li><a href="/bbs/246"><span>데이터 활용 관련자료</span></a></li>
+                                            <li><a href="/bbs/250"><span>금융보안표준</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <div class="topSch">
+                            <input type="text" id="headerSch" onkeydown="if(event.keyCode == 13) moveToSearch();"  placeholder="검색어를 입력하세요">
+                            <button type="button" class="sch" title="검색" onclick="moveToSearch();"><img src="/static/assets/img/icon/gnb_sch.png" alt=""></button>
+                        </div>
+                        <div class="topIcon">
+                            <button type="button" class="lan" title="언어선택" onclick="changeLangPage();"><img src="/static/assets/img/icon/gnb_lan.png" alt=""></button>
+                            <button type="button" class="btnOpen" title="전체메뉴 열기"><img src="/static/assets/img/icon/gnb_menu.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+    <!-- 헤더 -->
+
+    
+
+    <!--// header -->
+    
+    <form id="moveForm" method="post">
+        <input type="hidden" id="menuNo" name="menuNo" value="69" />
+        <input type="hidden" id="page" name="page" value="1" />
+        <input type="hidden" id="pageSize" name="pageSize" value="10" />
+        <input type="hidden" id="searchType" name="searchType" value="" />
+        <input type="hidden" id="searchContents" name="searchContents" value="" />
+        <input type="hidden" id="bbsNo" name="bbsNo" value="11688" />
+        <input type="hidden" id="pageType" name="pageType" value="" />
+    </form>
+    <input type="hidden" id="subTopMenuNo" name="subTopMenuNo" value="5" />
+    <input type="hidden" id="subParentMenuNo" name="subParentMenuNo" value="5" />
+
+    <main id="content">
+        <div class="container">
+            <!--
+                          * [data-banner]
+                          * intro: 금융보안원 안내 / 2
+                          * business: 주요업무 / 4
+                          * notice: 알림마당 / 5
+                          * data: 자료마당 / 6
+                          * customer: 고객센터
+                      -->
+            <div class="topBgArea"></div>
+            <section class="subTopArea" data-banner="notice">
+                <div class="wrapper">
+                    <div class="left">
+                        <h2 class="tit">알림마당</h2>
+                        <div class="depth">
+                            <a href="/" class="home" title="홈으로 이동"><i><img src="/static/assets/img/icon/depth_home.png" alt=""></i></a>
+                            <img src="/static/assets/img/icon/depth_arrow.png" alt="">
+                            <div class="formSelect">
+                                <button type="button" class="select" data-value="1" ><span>알림마당</span></button>
+                                <ul class="option" id="subOneDepth">
+                                </ul>
+                            </div>
+                            <img src="/static/assets/img/icon/depth_arrow.png" alt="">
+                            
+                                <div class="formSelect">
+                                    <button type="button" class="select" data-value="2"><span>보도자료</span></button>
+                                    <ul class="option" id="subTwoDepth_5">
+                                    </ul>
+                                </div>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="right">
+                        
+                            <div class="breadcrumb">홈 <i></i> 알림마당 <i></i> <strong id='currentMenu'>보도자료</strong></div>
+                        
+                        
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="subContent">
+                <h3 class="subPageTit">보도자료</h3>
+
+                <div class="boardDetail">
+                    <h3 class="tit">금융보안원, ｢연구·개발 목적의 망분리 예외 적용에 따른 보안 해설서｣ 발간</h3>
+                    <div class="wrapper">
+                        <div class="top">
+                            <span class="tag">기획부</span>
+                            <span class="date">2025-05-02</span>
+                        </div>
+                        
+                        
+                            
+                                <div class="attatchArea">
+                                    <ul class="text">
+                                        
+                                            <li class="txt">
+                                                <button type="button" data-action="download"
+                                                        fileNo="12972"
+                                                        filePage="board"
+                                                        onclick="downloadFile(this.getAttribute(&#39;fileNo&#39;), this.getAttribute(&#39;filePage&#39;))">
+                                                        <img src="/static/assets/img/icon/download_g.png" alt="">
+                                                        <span>[금융보안원](보도자료) 금융보안원, 연구 개발 목적의 망분리 예외 적용에 따른 보안 해설서 발간_.hwp</span>
+                                                </button>
+                                            </li>
+                                        
+                                            <li class="txt">
+                                                <button type="button" data-action="download"
+                                                        fileNo="12973"
+                                                        filePage="board"
+                                                        onclick="downloadFile(this.getAttribute(&#39;fileNo&#39;), this.getAttribute(&#39;filePage&#39;))">
+                                                        <img src="/static/assets/img/icon/download_g.png" alt="">
+                                                        <span>[금융보안원](보도자료) 금융보안원, 연구 개발 목적의 망분리 예외 적용에 따른 보안 해설서 발간_.pdf</span>
+                                                </button>
+                                            </li>
+                                        
+                                            <li class="txt">
+                                                <button type="button" data-action="download"
+                                                        fileNo="12974"
+                                                        filePage="board"
+                                                        onclick="downloadFile(this.getAttribute(&#39;fileNo&#39;), this.getAttribute(&#39;filePage&#39;))">
+                                                        <img src="/static/assets/img/icon/download_g.png" alt="">
+                                                        <span>(붙임) 연구·개발 목적의 망분리 예외 적용에 따른 보안 해설서 fn.pdf</span>
+                                                </button>
+                                            </li>
+                                        
+                                    </ul>
+                                </div>
+                            
+                        
+                        <div class="cont">
+                            <!-- pub_08 -->
+                            <div class="cmsArea">
+                                
+                                <p><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><strong><span style="font-size: 16px;"><u><span style="font-size: 16pt;">제목&nbsp;:&nbsp;</span></u><span style="line-height: 1.6;"><u><span style="font-size: 16pt;">금융보안원</span><span style="letter-spacing: 0pt; font-size: 16pt;">,&nbsp;</span></u><u><span style="letter-spacing: 0pt; font-size: 16pt;">｢</span></u><u><span style="font-size: 16pt;">연구</span></u><u><span style="letter-spacing: 0pt; font-size: 16pt;">&middot;</span></u><u><span style="font-size: 16pt;">개발 목적의 망분리 예외 적용에 따른 보안 해설서</span></u><u><span style="letter-spacing: 0pt; font-size: 16pt;">｣&nbsp;</span><span style="font-size: 16pt;">발간</span></u></span></span></strong></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><strong><span style="font-size: 14pt;"><span style="letter-spacing: 0pt; font-size: 14pt;">-&nbsp;</span><span style="letter-spacing: -1.1pt; font-size: 14pt;">금융권 망분리 규제 완화에 따른 연구･개발망의 안전한 활용을 적극</span>&nbsp;<span style="letter-spacing: -0.7pt; font-size: 14pt;">지원</span></span></strong></p><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;"><br></span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="line-height: 1.6; font-size: 14pt;"><span style="letter-spacing: 0pt; font-size: 14pt;">□&nbsp;</span><span style="letter-spacing: -0.2pt; font-size: 14pt;">금융보안원</span><span style="letter-spacing: -0.2pt; font-size: 14pt;">(</span><span style="letter-spacing: -0.2pt; font-size: 14pt;">원장 박상원</span><span style="letter-spacing: -0.2pt; font-size: 14pt;">)</span><span style="letter-spacing: -0.2pt; font-size: 14pt;">은 정부의&nbsp;</span><span style="letter-spacing: -0.2pt; font-size: 14pt;">`</span><span style="letter-spacing: -0.2pt; font-size: 14pt;">금융분야 망분리 개선 로드맵</span><span style="letter-spacing: -0.2pt; font-size: 14pt;">'</span><span style="letter-spacing: -0.2pt; font-size: 14pt;">에</span>&nbsp;따른&nbsp;<span style="letter-spacing: 0pt; font-size: 14pt;">｢</span><span style="letter-spacing: -0.1pt; font-size: 14pt;">전자금융감독규정｣ 개정으로 연구･개발 분야 망분리 예외</span>&nbsp;적용이 확대됨에 따라<span style="letter-spacing: 0pt; font-size: 14pt;">,</span></span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="line-height: 1.6; font-size: 14pt;">&nbsp; ㅇ 금융회사 등이 연구<span style="letter-spacing: 0pt; font-size: 14pt;">･</span>개발망에서 혁신적인 금융서비스를 보다 적극적으로 개발<span style="letter-spacing: 0pt; font-size: 14pt;">･</span>활용할 수 있도록 필요한 보안관리 방안 등을&nbsp;<span style="letter-spacing: 0.1pt; font-size: 14pt;">설명하는 ｢연구･개발 목적의 망분리 예외 적용에 따른 보안 해</span>설서<span style="letter-spacing: 0pt; font-size: 14pt;">｣</span>를 마련하여 배포</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="line-height: 1.6;"><span style="letter-spacing: 0pt;"><span style="font-weight: bold; font-size: 14pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [</span></span><span style="font-weight: bold; font-size: 14pt;">참고</span><span style="letter-spacing: 0pt;"><span style="font-weight: bold; font-size: 14pt;">]&nbsp;</span></span><span style="font-weight: bold; font-size: 14pt;">연구</span><span style="letter-spacing: 0pt;"><span style="font-weight: bold; font-size: 14pt;">･</span></span><span style="font-weight: bold; font-size: 14pt;">개발 분야 망분리 예외 적용 확대 주요 내용</span></span></p><br /><table style="margin: 0px; padding: 0px; font-family: 돋움, Dotum, Helvetica, 'Apple SD Gothic Neo', sans-serif; font-size: 12px; border-collapse: collapse; border-spacing: 0px; color: rgb(0, 0, 0); table-layout: fixed; border: 0.28pt solid rgb(0, 0, 0); width: 702px;"><br /><tbody><br /><tr><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 318px; border-top: 1px solid rgb(0, 0, 0); border-left: none; border-bottom: 1px solid rgb(0, 0, 0); border-right: 3px double rgb(0, 0, 0); background: rgb(242, 242, 242);"><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; text-align: center;"><span style="font-size: 14px;"><span style="height: 14.82pt;"><span style="font-weight: bold; font-size: 14pt;">구 분</span></span></span></p></td><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 180px; border-width: 1px 1px 1px 3px; border-style: solid solid solid double; border-color: rgb(0, 0, 0); background: rgb(242, 242, 242);"><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; text-align: center;"><span style="font-size: 14px;"><span style="height: 14.82pt;"><span style="font-weight: bold; font-size: 14pt;">현 행</span></span></span></p></td><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 199px; border-top: 1px solid rgb(0, 0, 0); border-left: 1px solid rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0); border-right: none; background: rgb(242, 242, 242);"><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; text-align: center;"><span style="font-size: 14px;"><span style="height: 14.82pt;"><span style="font-weight: bold; font-size: 14pt;">개 선</span></span></span></p></td><br /></tr><br /><tr><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 318px; border-top: 1px solid rgb(0, 0, 0); border-left: none; border-bottom: 1px solid rgb(0, 0, 0); border-right: 3px double rgb(0, 0, 0);"><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; text-align: center;"><span style="font-size: 14px;"><span style="height: 14.82pt; font-size: 14pt;">연구<span style="letter-spacing: 0pt; font-size: 14pt;">･</span>개발망&nbsp;<span style="letter-spacing: 0pt; font-size: 14pt;">&harr;&nbsp;</span>내부업무망 연계</span></span></p></td><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 180px; border-width: 1px 1px 1px 3px; border-style: solid solid solid double; border-color: rgb(0, 0, 0);"><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; text-align: center;"><span style="font-size: 14px;"><span style="height: 14.82pt; font-size: 14pt;">물리적 망분리</span></span></p></td><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 199px; border-top: 1px solid rgb(0, 0, 0); border-left: 1px solid rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0); border-right: none;"><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; text-align: center;"><span style="font-size: 14px;"><span style="height: 14.82pt; font-size: 14pt;">논리적 망분리</span></span></p></td><br /></tr><br /><tr><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 318px; border-top: 1px solid rgb(0, 0, 0); border-left: none; border-bottom: 1px solid rgb(0, 0, 0); border-right: 3px double rgb(0, 0, 0);"><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; text-align: center;"><span style="font-size: 14px;"><span style="height: 14.82pt; font-size: 14pt;">연구<span style="letter-spacing: 0pt; font-size: 14pt;">･</span>개발망&nbsp;<span style="letter-spacing: 0pt; font-size: 14pt;">&harr;&nbsp;</span>전산실 연계</span></span></p></td><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 180px; border-width: 1px 1px 1px 3px; border-style: solid solid solid double; border-color: rgb(0, 0, 0);"><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; text-align: center;"><span style="font-size: 14px;"><span style="height: 14.82pt; font-size: 14pt;">불가</span></span></p></td><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 199px; border-top: 1px solid rgb(0, 0, 0); border-left: 1px solid rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0); border-right: none;"><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; text-align: center;"><span style="font-size: 14px;"><span style="height: 14.82pt; font-size: 14pt;">소스코드 이동 허용</span></span></p></td><br /></tr><br /><tr><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 318px; border-top: 1px solid rgb(0, 0, 0); border-left: none; border-bottom: 1px solid rgb(0, 0, 0); border-right: 3px double rgb(0, 0, 0);"><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; text-align: center;"><span style="font-size: 14px;"><span style="height: 14.82pt; font-size: 14pt;">가명정보 활용</span></span></p></td><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 180px; border-width: 1px 1px 1px 3px; border-style: solid solid solid double; border-color: rgb(0, 0, 0);"><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; text-align: center;"><span style="font-size: 14px;"><span style="height: 14.82pt; font-size: 14pt;">불가</span></span></p></td><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 199px; border-top: 1px solid rgb(0, 0, 0); border-left: 1px solid rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0); border-right: none;"><br /><p class="0" style="margin-right: 0px; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; text-align: center;"><span style="font-size: 14px;"><span style="height: 14.82pt; font-size: 14pt;">허용</span></span></p></td><br /></tr><br /></tbody><br /></table><br /><p class="0" style="margin-right: 0px; margin-left: 22.8pt; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="line-height: 1.6;"><span style="letter-spacing: 0pt; font-size: 14pt;">□&nbsp;</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">본 해설서는 ▲연구</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">&middot;</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">개발망의 정의를 시작으로 ▲망분리 예외에 따른 주요 보안 위협 ▲연구</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">&middot;</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">개발망 구성 절차 ▲연구</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">&middot;</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">개발망 보안관리 방안에 대해 상세히 기술</span></span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="line-height: 1.6; font-size: 14pt;"><span style="letter-spacing: 0pt; font-size: 14pt;">□&nbsp;</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">연구･개발망은 프로그램을 코딩 또는 테스트하거나&nbsp;</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">AI&nbsp;</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">등 신기술을</span>&nbsp;통해 금융서비스를 자유롭게 개발할 수 있도록 금융회사 내부에 구성된 독립된 망으로<span style="letter-spacing: 0pt; font-size: 14pt;">,</span></span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="line-height: 1.6; font-size: 14pt;">&nbsp; ㅇ 이번 망분리 예외 적용으로 인터넷 등 외부통신망에 직접 연결됨에 따라<span style="letter-spacing: 0pt; font-size: 14pt;">,&nbsp;</span>소스코드 등 중요정보 유출이나 취약한 외부 소스코드 사용에 따른 금융사고 발생 또는 제<span style="letter-spacing: 0pt; font-size: 14pt;">3</span>자 서비스를 경유한 내부 업무망 침투 등의 보안 위협이 존재</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="line-height: 1.6; font-size: 14pt;"><span style="letter-spacing: 0pt; font-size: 14pt;">□&nbsp;</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">이에</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">,&nbsp;</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">본 해설서는 연구･개발망에서 요구되는 보안대책을 명확하고</span>&nbsp;구체적으로 규정함으로써<span style="letter-spacing: 0pt; font-size: 14pt;">,&nbsp;</span>금융회사가 안심하고 연구<span style="letter-spacing: 0pt; font-size: 14pt;">･</span>개발<span style="letter-spacing: -0.2pt; font-size: 14pt;">망을&nbsp;</span><span style="letter-spacing: -0.5pt; font-size: 14pt;">구축･운영할 수 있게 됨은 물론 금융권 전반에 연구･개발망</span>&nbsp;<span style="letter-spacing: -0.3pt; font-size: 14pt;">활용이&nbsp;</span>확대되도록 지원</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="line-height: 1.6; font-size: 14pt;">&nbsp; ㅇ 중요정보 유출 방지를 위해 개인신용정보<span style="letter-spacing: 0pt; font-size: 14pt;">(</span>가명정보 제외<span style="letter-spacing: 0pt; font-size: 14pt;">)&nbsp;</span>등 실&nbsp;<span style="letter-spacing: -0.2pt; font-size: 14pt;">데이터를 활용한 테스트를 금지하고</span><span style="letter-spacing: -0.2pt; font-size: 14pt;">,&nbsp;</span><span style="letter-spacing: -0.2pt; font-size: 14pt;">연구･개발망의 보안위협이</span>&nbsp;내부업무망 등으로 전이되지 않도록 망간 데이터 전송구간에&nbsp;<span style="letter-spacing: -0.1pt; font-size: 14pt;">악성코드 점검 등 강화된 보안대책을 이행하도록 명시</span></span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="line-height: 1.6; font-size: 14pt;">&nbsp; ㅇ 또한<span style="letter-spacing: 0pt; font-size: 14pt;">,&nbsp;</span>연구<span style="letter-spacing: 0pt; font-size: 14pt;">･</span>개발망에서 재택근무 수행이나 클라우드 또는 무선<span style="letter-spacing: -0.5pt; font-size: 14pt;">통신망 등을 안전하게 활용할 수 있도록 사용자 인증 등 구체적인</span>&nbsp;통제 대책도 안내</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="line-height: 1.6; font-size: 14pt;"><span style="letter-spacing: 0pt; font-size: 14pt;">□&nbsp;</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">아울러</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">,</span>&nbsp;<span style="letter-spacing: -0.4pt; font-size: 14pt;">연구･개발망 구성 시 보안성 확보를 위해&nbsp;<span style="vertical-align: super; font-size: 14pt;">&#9312;</span>보안 위협 식별</span>&nbsp;<span style="letter-spacing: -0.3pt; font-size: 14pt;">&rarr;</span>&nbsp;<span style="letter-spacing: -0.2pt; font-size: 14pt;"><span style="vertical-align: super; font-size: 14pt;">&#9313;</span>추가 보호대책 적용 &rarr;&nbsp;<span style="vertical-align: super; font-size: 14pt;">&#9314;</span>정보보호위원회 심의･의결의 과정을</span>&nbsp;거치도록 제안</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="line-height: 1.6; font-size: 14pt;"><span style="letter-spacing: 0pt; font-size: 14pt;">□&nbsp;</span><span style="letter-spacing: 0.1pt; font-size: 14pt;">금융보안원 박상원 원장은&nbsp;</span><span style="letter-spacing: 0.1pt; font-size: 14pt;">"</span><span style="letter-spacing: 0.1pt; font-size: 14pt;">금융보안원의 연구</span><span style="letter-spacing: 0.1pt; font-size: 14pt;">&middot;</span><span style="letter-spacing: 0.1pt; font-size: 14pt;">개발 목적의 망분리</span>&nbsp;<span style="letter-spacing: -0.3pt; font-size: 14pt;">관련 해설서 발간으로 금융회사에서 연구</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">&middot;</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">개발망을 보다 적극적으로 활용할 것으로 예상된다</span><span style="letter-spacing: -0.1pt; font-size: 14pt;">.</span><span style="letter-spacing: 0pt; font-size: 14pt;">&rdquo;</span>며<span style="letter-spacing: 0pt; font-size: 14pt;">,</span></span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p style="margin-right: 0px; margin-left: 0px; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="line-height: 1.6; font-size: 14pt;">&nbsp; ㅇ&nbsp;<span style="letter-spacing: -0.4pt; font-size: 14pt;">"</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">금융보안원은 금융회사가 안전하고 편리한&nbsp;</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">IT&nbsp;</span><span style="letter-spacing: -0.4pt; font-size: 14pt;">환경에서 혁신적인</span>&nbsp;<span style="letter-spacing: -0.2pt; font-size: 14pt;">금융서비스를 지속적으로 개발할 수 있도록 필요한 모든 지원을&nbsp;</span>다하겠다<span style="letter-spacing: 0pt; font-size: 14pt;">.</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">&rdquo;</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">고 밝힘</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">.&nbsp;</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">끝</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">.</span></span></p><br /><p class="0" style="margin-right: 0px; margin-left: 23.3pt; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><p class="0" style="margin-right: 0px; margin-left: 32.5pt; padding: 0px; line-height: 1.6; font-family: '맑은 고딕';"><span style="font-size: 14pt;">&nbsp;</span></p><br /><table style="margin: 0px; padding: 0px; font-family: 돋움, Dotum, Helvetica, 'Apple SD Gothic Neo', sans-serif; font-size: 12px; border-collapse: collapse; border-spacing: 0px; color: rgb(0, 0, 0); table-layout: fixed; border: 0.28pt solid rgb(0, 0, 0); width: 935px;"><br /><tbody><br /><tr><br /><td style="margin: 0px; padding: 0px; line-height: 1.5; width: 934px; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0); background: rgb(242, 242, 242); cursor: row-resize;"><br /><ul style="margin: 1em 0px; padding: 0px 0px 0px 40px; list-style: none;"><br /><li class="0" style="margin-right: 0px; margin-bottom: 5pt; margin-left: 0px; padding: 1.41pt 5.1pt; line-height: 1.6; list-style-type: disc;"><span style="font-size: 14px;"><span style="line-height: 1.6;"><span style="height: 42.76pt;"><span style="letter-spacing: -0.3pt; font-size: 14pt;">연구</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">&middot;</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">개발 목적의 망분리 예외 적용에 따른 보안 해설서」 보고서 전문은 금융보안원 홈페이지</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">(</span><a href="http://www.fsec.or.kr)/" rel="noopener noreferrer" target="_blank" style="text-decoration-line: none; color: rgb(70, 70, 70);"><span style="letter-spacing: -0.3pt; font-size: 14pt;">www.fsec.or.kr)</span></a><span style="font-size: 14pt;">&nbsp;</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">자료마당&nbsp;</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">&gt;&nbsp;</span><span style="letter-spacing: -0.3pt; font-size: 14pt;">가이드 게시판 참조</span></span></span></span></li><br /></ul></td><br /></tr><br /></tbody><br /></table><br /><p style="line-height: 1.6;"><span style="font-size: 14pt;"><br></span></p></p>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <dl class="prev" >
+                                <dt><a onclick="moveToBbsDetail(11689);"><img src="/static/assets/img/icon/board_bottom_arrow.png" alt=""><span>이전글</span></a></dt>
+                                <dd><a onclick="moveToBbsDetail(11689);"><span>2025년 제9기 금융보안 최고위과정을 시작합니다</span></a></dd>
+                            </dl>
+                            <dl class="next">
+                                <dt><a onclick="moveToBbsDetail(11684);"><img src="/static/assets/img/icon/board_bottom_arrow.png" alt=""><span>다음글</span></a></dt>
+                                <dd><a onclick="moveToBbsDetail(11684);"><span>금융보안원, 세계 최고 수준 국제학회에서 AI 기반 이상금융거래탐지 기술 연구 발표</span></a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!-- pub_05 -->
+                    <div class="ctaArea">
+                        <button type="button" class="btnCta" onclick="moveToListPage(69);"><img src="/static/assets/img/icon/list_w.png" alt=""><span>목록으로</span></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
+
+
+    <!-- 푸터 -->
+    <!-- 푸터 -->
+    
+        <footer id="footer">
+            <aside class="floating">
+                <h3 class="ir">우측 플로팅</h3>
+                <a href="/customer/qna"><button type="button" class="btn01"><i></i><span>문의하기</span></button></a>
+                <button type="button" class="btn02"><i></i><span>바로가기</span></button>
+                <!-- pub_12 -->
+                <ul class="floatMenu">
+                    <li><a href="https://edu.fsec.or.kr" target="_blank" title="새창열림"><span>금융보안교육센터</span></a></li>
+                    <li><a href="https://ngfcti.kfisac.or.kr" target="_blank" title="새창열림"><span>금융보안원FCTI</span></a></li>
+                    <li><a href="https://regtech.fsec.or.kr/main/main" target="_blank" title="새창열림"><span>레그테크 포털</span></a></li>
+                    <li><a href="https://www.findatamall.or.kr" target="_blank" title="새창열림"><span>데이터거래소</span></a></li>
+                    <li><a href="https://data.fsec.or.kr/prtl/main/main.do" target="_blank" title="새창열림"><span>데이터전문기관</span></a></li>
+                    <li><a href="https://developers.mydatakorea.org/mdtb/" target="_blank" title="새창열림"><span>마이데이터 테스트베드</span></a></li>
+                    <li><a href="https://www.mydatacert.org/" target="_blank" title="새창열림"><span>마이데이터 통합인증 중계시스템</span></a></li>
+                </ul>
+                <button type="button" class="btn03 moveTop"><i></i><span class="ir">상단이동</span></button>
+            </aside>
+            <div class="footerSitesDesktop">
+                <div class="wrapper">
+                    <h2 class="footerSitesTitle">사원기관 이용 사이트</h2>
+                    <ul class="footerSitesList">
+                        <li><a href="https://edu.fsec.or.kr" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/static/assets/img/common/footer_company01.png" width="165" height="31" alt="금융보안원 금융보안교육센터"></a></li>
+                        <li><a href="https://ngfcti.kfisac.or.kr" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/static/assets/img/common/footer_company02_pc.png" width="144" height="33" alt="금융보안원 FCTI 정보공유포털"></a></li>
+                        <li><a href="https://regtech.fsec.or.kr" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/static/assets/img/common/footer_company03.png" width="172" height="47" alt="금융보안 RegTech 포털"></a></li>
+                        <li><a href="https://data.fsec.or.kr" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/static/assets/img/common/footer_company05.png" width="135" height="27" alt="금융보안원 데이터전문기관"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top footerSitesMobile">
+                <div class="wrapper">
+                    <!-- pub_02 -->
+                    <div class="left">사원기관 이용 사이트</div>
+                    <div class="right">
+                        <div class="unitSwiper">
+                            <button type="button" class="swiper-button-prev swiperFooter-prev" title="이전"><span><img src="/static/assets/img/common/footer_swiper_btn.png" alt="이전"></span></button>
+                            <div class="swiperCont swiperFooter">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="https://edu.fsec.or.kr" target="_blank" title="새창열림"><img src="/static/assets/img/common/footer_company01.png" alt="금융보안원 금융보안교육센터"></a></div>
+                                    <div class="swiper-slide"><a href="https://ngfcti.kfisac.or.kr" target="_blank" title="새창열림"><img src="/static/assets/img/common/footer_company02_pc.png" alt="금융보안 정보공유포털"></a></div>
+                                    <div class="swiper-slide"><a href="https://regtech.fsec.or.kr" target="_blank" title="새창열림"><img src="/static/assets/img/common/footer_company03.png" alt="금융보안 RegTech 포털"></a></div>
+                                    <div class="swiper-slide"><a href="https://data.fsec.or.kr" target="_blank" title="새창열림"><img src="/static/assets/img/common/footer_company05.png" alt="금융보안원 데이터전문기관"></a></div>
+                                </div>
+                            </div>
+                            <button type="button" class="swiper-button-next swiperFooter-next" title="다음"><span><img src="/static/assets/img/common/footer_swiper_btn.png" alt="다음"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="wrapper">
+                    <div class="util">
+                        <div class="left">
+                            <ul>
+
+                            </ul>
+                        </div>
+
+                        <div class="right">
+                            <div class="formSelect type2">
+                                <!-- pub_01 *** -->
+                                <button type="button" class="select" data-value=""><span>유관기관 바로가기</span></button>
+                                <ul class="option">
+                                    <li><a href="https://www.fsc.go.kr" target="_blank" title="새창열림"><span>금융위원회</span></a></li>
+                                    <li><a href="https://www.fss.or.kr" target="_blank" title="새창열림"><span>금융감독원</span></a></li>
+                                    <li><a href="https://www.spo.go.kr" target="_blank" title="새창열림"><span>대검찰청</span></a></li>
+                                    <li><a href="https://cyberbureau.police.go.kr" target="_blank" title="새창열림"><span>경찰청사</span></a></li>
+                                    <li><a href="https://kisa.or.kr" target="_blank" title="새창열림"><span>한국인터넷진흥원</span></a></li>
+                                    <li><a href="https://fintech.or.kr" target="_blank" title="새창열림"><span>한국핀테크지원센터</span></a></li>
+                                </ul>
+                                <!-- *** pub_01 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="left">
+                            <address>
+                                <span>(우)16881 경기도 용인시 수지구 대지로 132</span>
+                                <span><strong>대표전화</strong> 02-3495-9000</span>
+                                <span><strong>팩스</strong> 02-495-9019</span>
+                            </address>
+                            <p>COPYRIGHT©2015 FINANCIAL SECURITY INSTITUTE ALL RIGHTS RESERVED</p>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li><a href="https://www.fsc.go.kr" target="_blank" title="새창열림"><img src="/static/assets/img/common/footer_img01.png" alt="금융위원회"></a></li>
+                                <li><a href="https://www.fss.or.kr" target="_blank" title="새창열림"><img src="/static/assets/img/common/footer_img02.png" alt="금융감독원"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+
+    
+    <!-- 푸터 -->
+
+</body>
+</html>

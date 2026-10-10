@@ -1,0 +1,698 @@
+주소: https://www.circle.com/legal/eea-terms
+받은 날짜: 2026-10-09
+문서 제목: Circle Europe | EEA Terms of Use | Circle (본문 첫 제목 Legal & Privacy)
+개정일: Last Updated: July 7, 2026
+받은 방법: curl(-L, 브라우저 User-Agent)로 받은 HTML에서 글자만 뽑음. 단어와 문장은 바꾸지 않았고 블록 태그 경계 줄 바꿈과 빈칸만 정리함. scripts/jev/fetch_terms.py
+========================================
+Home
+Platform
+Back
+Digital Assets
+USDC
+The leading digital dollar
+USDC
+EURC
+The leading digital euro
+EURC
+USYC
+Not available in the US
+A tokenized money market fund
+USYC
+cirBTC
+Institutional-grade wrapped BTC
+cirBTC
+Digital Asset Services
+Mint
+Access and distribute USDC liquidity
+Mint
+StableFX
+Access 24/7 stablecoin FX
+StableFX
+Digital Asset Accounts
+Launch branded digital accounts
+Digital Asset Accounts
+Circle Payments network
+Fiat Payments
+Send fiat globally at stablecoin speed
+Fiat Payments
+Stablecoin Payments
+Build on full-stack payments infrastructure
+Stablecoin Payments
+Managed Payments
+Launch-ready stablecoin solution
+Managed Payments
+Blockchains
+Arc
+The Economic OS for the internet
+Arc
+View Partner Blockchains
+View Partner Blockchains
+Developer Services
+Circle Agent Stack
+Build AI-native applications
+Circle Agent Stack
+Wallets
+Embed secure wallets in any app
+Wallets
+Contracts
+Build and manage smart contracts
+Contracts
+CCTP
+Infrastructure for multichain digital asset management
+CCTP
+xReserve
+Launch a USDC-backed stablecoin on your blockchain
+xReserve
+Gateway
+Enable a unified USDC balance
+Gateway
+Paymaster
+Allow transaction fees in USDC
+Paymaster
+Solutions
+Back
+By Use Case
+Treasury Management
+Treasury Management
+Payments
+Payments
+Onchain FX
+Onchain FX
+Tokenized Repo
+Tokenized Repo
+Collateral Management
+Collateral Management
+Dollar Access
+Dollar Access
+Trading Services
+Trading Services
+By Industry
+Banks
+Banks
+Case studies
+Learn about how businesses use Circle
+Learn more
+Learn about how businesses use Circle
+Partners
+Back
+Partners
+Alliance Program
+Join Circle’s partner ecosystem
+Alliance Program
+Circle Partner Stablecoins
+Grow your stablecoin with Circle
+Circle Partner Stablecoins
+Member Directory
+Connect with innovative Circle partners
+Member Directory
+Developer
+Back
+Developer
+Circle for Developers
+Explore products, tools, and our community
+Circle for Developers
+Documentation
+Start building on the Circle platform
+Documentation
+resources
+API Reference
+API Reference
+Faucet
+Faucet
+Blog
+Blog
+Research
+Research
+Resources
+Back
+Company
+About Circle
+About Circle
+Careers
+Careers
+Circle Impact
+Circle Impact
+Circle Foundation
+Circle Foundation
+Circle National Trust
+Circle National Trust
+Insights
+Blog
+Blog
+Executive Insights
+Executive Insights
+Investor Relations
+Investor Relations
+Policy Hub
+Policy Hub
+Pressroom
+Pressroom
+Support
+Circle Help
+Circle Help
+Contact Us
+Contact Us
+Current
+Navigate what’s next in the new internet financial system
+Visit Current
+Navigate what’s next in the new internet financial system
+Transparency
+More
+Back
+Community
+Circle Impact
+Circle Impact
+Circle Foundation
+Circle Foundation
+Learn
+About Circle
+About Circle
+Blog
+Blog
+Executive Insights
+Executive Insights
+Investor Relations
+Investor Relations
+Policy Hub
+Policy Hub
+Pressroom
+Pressroom
+Transparency
+Transparency
+Transparency
+Support
+Circle Help
+Circle Help
+Contact Us
+Contact Us
+Join Us
+Already have an account?
+Sign in
+Sign in
+Already have an account?
+Sign in
+Sign in
+Join Us
+/
+Legal
+/
+EEA Terms of Use
+Legal & Privacy
+View all
+Circle
+Circle Mint User Agreement
+USDC Terms
+EURC Terms
+Third-Party Bridged USDC Terms
+Wrapped Digital Assets Terms
+Digital Asset-Backed Borrowing
+USDC Risk Factors
+USDC Bridge terms
+Privacy Policy
+Sub-processor List
+Cookie Policy
+Licenses
+Commercial Entity Agreement
+E-Sign Consent
+Acceptable Use Policy
+Singapore Addendum
+Brand Use Policy
+Circle Europe
+White Paper USDCWhite Paper EURCCircle MiCA marketing communicationsEEA Terms of UseMiCA Redemption Policy
+Circle Tech
+Guarded Vaults
+Circle Hub Terms of Use
+Developer Terms
+Permissionless Product Schedule
+Arc Network Terms
+Agent Platform Terms of Use
+Legal products
+Circle Pay
+Circle Pay User Agreement - USCircle Pay User Agreement - CA & WYPrivacy PolicyE-Sign ConsentCookie PolicyLicenses
+Circle Invest
+Risk Disclousres
+Privacy policy
+Privacy policy (California residents)
+E-sign consent
+Cookie Policy
+LicensesCircle Invest User Agreement - USCircle Invest User Agreement - CA
+Circle
+Circle Mint User Agreement
+USDC Terms
+EURC Terms
+Third-Party Bridged USDC Terms
+Wrapped Digital Assets Terms
+Digital Asset-Backed Borrowing
+USDC Risk Factors
+USDC Bridge terms
+Privacy Policy
+Sub-processor List
+Cookie Policy
+Licenses
+Commercial Entity Agreement
+E-Sign Consent
+Acceptable Use Policy
+Singapore Addendum
+Brand Use Policy
+Circle Europe
+White Paper USDCWhite Paper EURCCircle MiCA marketing communicationsEEA Terms of UseCASP EMT Data ReportingObtaining Written Consent Under MiCAMiCA Redemption Policy
+Circle Tech
+Guarded Vaults
+Circle Hub Terms of Use
+Developer TermsPermissionless Product ScheduleArc Network TermsAgent Platform Terms of Use
+Legal products
+Circle Pay
+Circle Pay User Agreement - USCircle Pay User Agreement - CA & WYPrivacy PolicyE-Sign ConsentCookie PolicyLicenses
+Circle Invest
+Risk Disclosures
+Privacy policy
+Privacy policy (California residents)
+E-sign consent
+Cookie Policy
+LicensesCircle Invest User Agreement - USCircle Invest User Agreement - CA
+EEA Terms of Use
+Last Updated:
+July 7, 2026
+1. About Circle France
+Circle Internet Financial Europe SAS is a company incorporated under the laws of France with registration number 953 990 934 RCS Paris at the Registry of Commerce and Companies of Paris and its registered office at 4 rue de Marivaux - 75002 Paris ("Circle France", or "We"). We are authorised by the French Autorité de contrôle prudentiel et de résolution ("ACPR") as an electronic money institution under articles L.526-1 et seq. of the Monetary and Financial Code. Our ACPR register number is 17788.
+Circle France holds a Crypto-Assets Services Provider license (« CASP ») in France obtained from the AMF on April 24th, 2026 under nb. E2026-005.
+Circle France provides services on crypto-assets in compliance with article 60 of Markets in Crypto-Assets Regulation (“MiCAR”)1 including:
+Custody and administration of e-money tokens it issues (i.e. EURC2 and USDC3) on behalf of clients;
+Transfer services for e-money tokens it issues (i.e. EURC and USDC) on behalf of clients.
+2. Scope of these Terms of Use
+2.1. These Terms of Use govern the opening, use and closure of your account which will hold your USDC and/or EURC balance (hereinafter referred to as "Circle Coins", "electronic money", "e-money", “e-money tokens”,or "Account Balance") (the “Circle Mint Account”) Together with our EURC WhitePaper, USDC White Paper, Privacy Policy, Cookie Policy, Acceptable Use Policy, and E-Sign Consent Policy, and any other terms and conditions referred to in these Terms of Use and any Circle France documentation available on Circle France website (the "Website"), they constitute the applicable Terms of Use of your Circle Mint Account and acquisition of Circle Coins balance. A digital copy of the Terms of Use is provided by Circle France to you when opening your Circle Mint Account. You acknowledge and agree that you will be bound by each of these individual terms, agreements and policies. You are advised to print or download and keep a copy of these Terms of Use for future reference. You can always view the current Terms of Use on our Website.
+2.2. Circle France may offer certain services as described herein (the "Services") on the Circle Mint Account platform (the "Platform").
+2.3. For the use of additional Services, you may have to agree to additional terms and conditions as notified to you when you are ordering or using such services. Depending on the type of Services you have, additional terms and conditions may apply as communicated to you at the appropriate time.
+2.4. For the avoidance of doubt, your access to the Services is contingent on your maintenance of a Circle Mint Account and access to the Platform.
+3. Your Circle Mint Account
+3.1. Your Circle Mint Account is an electronic money account which enables you to hold Circle Coins, which are e-money tokens. Further details on Circle Coins can be found in these Terms of Use at Section 9 (About Circle Coins).
+3.2. Your Circle Mint Account is funded with Circle Coins and this represents the only available denomination at this time.
+3.3. Subject to Section 8 (Closing your Circle Mint Account) below, the Circle Coins held in your Circle Mint Account do not expire but will not earn any interest.
+3.4. You have the right to submit a request to redeem Circle Coins from your Circle Mint Account at any time, subject to the conditions set out in these Terms of Use, the applicable White Paper, the applicable Redemption Policy, and applicable law. Holders of EURC have a right of redemption at any time and at par value, in accordance with applicable law and MiCAR. Holders of USDC have a right of redemption at any time and at par value where they are located in the European Economic Area (“EEA”), in accordance with applicable law and MiCAR. For holders of USDC located outside the EEA, please refer to the specific USDC terms of Circle Internet Financial, LLC, and not to these Terms. For the avoidance of doubt, any reference to “at any time” refers to the ability to submit a redemption request and does not guarantee immediate or uninterrupted execution. Execution of redemption requests is subject to applicable law, regulatory requirements, compliance processes, and Circle France’s internal risk management frameworks, including but not limited to compliance, prudential, liquidity, and operational considerations. You may be required to confirm your identity before any redemption request is processed. Circle France may apply verification procedures, controls, delays, or limitations to redemption requests in accordance with Section 10.2 (Redemption of Circle Coins) of these Terms of Use. There is no minimum redemption amount but the Circle Coins in your Circle Mint Account must be sufficient to cover any applicable amounts owed to Circle France. Nothing in this section shall limit Circle France’s rights set forth in Section 13.1 (Insufficient Funds).
+3.5. Electronic money accounts are not bank accounts. By accepting these Terms of Use you acknowledge that the French Deposit Guarantee Scheme (FDGS) does not apply to your Circle Mint Account. In the unlikely event that we become insolvent, you may lose the electronic money held in your Circle Mint Account. However, the European Electronic Money Directive 2009/110/EC, Markets in Crypto Assets Regulation4 ("MiCAR") and French national legislation apply to us and these laws are designed to ensure the safety and liquidity of funds deposited in electronic money accounts even in insolvency situations. For further information on how we safeguard our customers’ Circle Coins balance, please visit this Website page.
+3.6. The electronic money in a Circle Mint Account belongs to the entity which is registered as the Circle Mint Account holder. No person other than the Circle Mint Account holder has any rights in relation to the Account Balance held in a Circle Mint Account.
+3.7. By registering for a Circle Mint Account on behalf of an entity, you represent and warrant that:
+3.7.1. such legal entity is duly organised and validly existing under the applicable laws of the jurisdiction of its organisation;
+3.7.2. you are duly authorised by such legal entity to act on its behalf; and
+3.7.3. such organisation (and any affiliate entity) must not have been previously suspended or removed from the Services or any other service or product offered by Circle France or its affiliate entities.
+4. Transaction Limits
+Subject to applicable laws and regulations, Circle France reserves the right to establish, modify, or remove individual or aggregate limits on transactions conducted through your Circle Mint Account, including: (a) onchain transactions, being the deposit of Circle Coins into your Circle Mint Account from an external wallet address, and the withdrawal of Circle Coins from your Circle Mint Account to an external wallet address; and (b) fiat transactions, being the issuance of Circle Coins against fiat funds received by Circle France (minting) and the redemption of Circle Coins in exchange for fiat funds disbursed by Circle France (burning). Circle France may establish such limits on the size, number, frequency, or velocity of any or all of the foregoing transactions during any specified time period. Without prejudice to the foregoing, Circle France may, in particular, apply specific redemption controls in respect of USDC during a Stress Period, as described in the CASP Client Addendum, in order to manage its EEA reserve assets in accordance with applicable law.
+5. Opening Your Circle Mint Account
+5.1. In order to use our Services you must first open a Circle Mint Account by registering your details on our Website. As part of the signup process you will need to accept these Terms of Use and our Privacy Policy, Cookie Policy, and E-Sign Consent Policy, and you must have legal capacity to accept the same. If you order additional services, you may be asked to accept additional terms and conditions.
+5.2. You may only open a Circle Mint Account if it is legal to do so in your country of residence. By opening a Circle Mint Account you represent and warrant to us that your opening of a Circle Mint Account does not violate any laws or regulations applicable to you. You shall pay us the amount of any losses we incur in connection with your breach of this section 5.
+5.3. All information you provide during the signup process or any time thereafter must be accurate and truthful. When registering your Circle Mint Account, you must provide current, complete, and accurate information for all required elements on the registration page, including your full legal name and the legal name of your organisation. You also agree to provide us, when registering a Circle Mint Account and on an ongoing basis, any additional information we request for the purposes of identity verification and the detection of money laundering ("ML"), terrorist financing ("TF"), fraud, or any other financial crime. You permit us to keep a record of such information and authorise us to make the inquiries, whether directly or through third parties, that we consider necessary or desirable to verify your identity or protect you and/or us against fraud or other financial crime, and to take action we reasonably deem necessary based on the results of such inquiries. When we carry out these inquiries, you understand, acknowledge and agree that your personal information may be disclosed to credit reference and fraud prevention or financial crime agencies and that these agencies may respond to our inquiries in full.
+5.4. When you set up a Circle Mint Account, you will be required to designate an administrator for your account ("Account Administrator"). Circle France may, in its discretion, grant access to your Circle Mint Account and some or all of the Services to other persons at your firm (e.g. your employees) (such persons, “Additional Users”). Account Administrators and Additional Users must be 18 years or older.
+5.5. Access is subject to Circle France’s review and approval, and such Additional Users’ agreement to all of the terms set out in these Terms of Use, and our Privacy Policy, Cookie Policy, and E-Sign Consent Policy. To the extent that you choose to have Additional Users have access to the Circle Mint Account, you will have to designate those Additional Users and manage their access to your account. By requesting such access, you and all Additional Users automatically agree to these Terms of Use.
+5.6. You may only add Payment Methods in order to make payments into your Circle Mint Account if you are the Account Administrator. We take any violation of this requirement very seriously and will treat any attempt to add a Payment Method of which you are not the named holder as a fraudulent act.
+5.7. Notwithstanding the foregoing, Circle France may determine not to make the Services, in whole or in part, available in every market, either in its sole discretion or due to legal or regulatory requirements, depending on your location. We may also, without liability to you or any third party, refuse to let you register for a Circle Mint Account at Circle France's sole discretion.
+5.8. We reserve the right to maintain your account registration information after you terminate your Circle Mint Account for business and regulatory compliance purposes, subject to applicable laws and regulation.
+6. Maintaining Your Circle Mint Account
+6.1. You must ensure that the information recorded on your Circle Mint Account is always accurate and up to date and we shall not be liable for any loss arising out of your failure to do so. We may ask you at any time to confirm the accuracy of your information or to provide documents or other evidence in line with section 5.3 (Opening Your Circle Mint Account) above. Failure to provide such information, if requested by Circle France, in a timely fashion may result in the suspension of your ability to use the Services (until you provide such information) or the closure of your Circle Mint Account.
+6.2. We may contact you by e-mail or in other ways described in section 31 (How We Communicate) with information or notices regarding your Circle Mint Account. It is your responsibility to regularly check the proper functioning of your email account or other methods of communication that you have registered with your Circle Mint Account and to retrieve and read messages relating to your Circle Mint Account promptly. We shall not be liable for any loss arising out of your failure to do so.
+6.3. Transactions into and out of your Circle Mint Account are displayed in your online transactions history together with the date of receipt or transmission (the debit value date), the fees charged and, where applicable, any exchange rate used. Each transaction is given a unique transaction ID and shown in the transaction history. We will not alter or amend information displayed in your online transaction history. You should quote this transaction ID when communicating with us about a particular transaction. You should check your Circle Mint Account balance and transaction history regularly. You should report any irregularities or clarify any questions you have as soon as possible by contacting Circle Support.
+6.4. When any transaction occurs using your credentials (including, but not limited to transfers), we will assume that you authorised such a transaction, unless you notify us otherwise. If you believe you did not authorise a particular transaction or that a transaction was incorrectly carried out, you must contact Circle Support as soon as possible. It is important that you regularly check your Account Balance(s) and your transaction history regularly to ensure you notify us as soon as possible of any Unauthorised or incorrect transactions (see section 17 for further details on unauthorised or incorrect transactions).
+7. Keeping Your Circle Mint Account Safe
+7.1. You are responsible for maintaining the confidentiality and security of all account names, User IDs, passwords, personal identification numbers (PINs) and other access codes that you use to access the Services. You are responsible for keeping your email address and all other account holder and User information up to date in your Circle Mint Account profile and for maintaining the confidentiality of your User information. You agree to notify Circle France immediately if you become aware of any Unauthorised use of your Circle Mint Account, the Services, or any other breach of security regarding the Services, your Circle Mint Account or the Platform. We strongly advise you to enable all security features that are available to you (such as, by way of example two-factor authentication) which offers you enhanced protection from possible malicious attacks. Circle France will not be liable for any loss or damage arising from your failure to protect your account information.
+7.2. We shall not bear any liability for any damage or interruptions caused by any computer viruses, spyware, or other malware that may affect your computer or other equipment, or any phishing, spoofing, or other attack. We recommend the regular use of a reliable virus and malware screening and prevention software. If you question the authenticity of a communication purporting to be from Circle France, you should login to your Circle Mint Account directly through the Services website or related mobile application, if any, and not by clicking links contained in emails.
+7.3. Circle France has set up Strong Customer Authentication ("SCA") within its Services as provided by the Second Payment Services Directive (PSD2) for its EEA Customers to secure accounts and sensible operations, such as Circle Coins Transfers. You should always follow SCA procedures to log into your account and realise Circle Coins Transfers. Circle France shall bear no liability or responsibility in the event you do not respect the SCA procedures available at set up of your Circle Mint Account.
+7.4. It is advisable that your Account Administrator change your account's password regularly (at least every three (3) to six (6) months) in order to reduce the risk of a security breach in relation to your Circle Mint Account. We also advise not choosing a password that is easily guessed from information someone might know or gather about you or a password that has a meaning. You must never allow any unauthorised person to have access to your Circle Mint Account or watch you accessing your Circle Mint Account. You must comply with the security procedures we tell you about from time to time.
+7.5. If you have any indication or suspicion of your Circle Mint Account, login details, password or other security feature being lost, stolen, misappropriated, used without authorisation or otherwise compromised, you are advised to change your password. You must contact Circle Support without undue delay on becoming aware of any loss, theft, misappropriation or unauthorised use of your Circle Mint Account, login details, password or other security features. Any undue delay in notifying us may not only affect the security of your Circle Mint Account but may result in you being liable for any losses as a result where your failure to notify us is intentional or grossly negligent. If you suspect that your Circle Mint Account was accessed by someone else, you should also contact the police and report the incident.
+7.6. If we think your Account is at risk of fraud or a security threat, we will use the fastest and most secure way of contacting you using the details you have provided to tell you what you need to do to help deal with that risk.
+7.7. You must take all reasonable care to ensure that your email account(s) are secure and only accessed by you, as your email address may be used to reset passwords or to communicate with you about the security of your Circle Mint Account. In case any of the e-mail addresses registered with your Circle Mint Accounts are compromised, you should without undue delay after becoming aware of this contact Circle Support and also contact your email service provider.
+7.8. You must always ensure that your login details are not stored by the browser or cached or otherwise recorded. You should never use any functionality that allows login details or passwords to be stored by the computer used to login to your Circle Mint Account.
+7.9. Additional products or services you use may have additional security requirements and you must familiarise yourself with those as notified to you.
+8. Closing your Circle Mint Account
+8.1. You may close your Circle Mint Account at any time by contacting Circle Support. Where you are required to provide advance notice of closure of your Circle Mint Account, this notice period will not exceed 1 month. There is no specific fee in connection with your closing of your Circle Mint Account.
+8.2. You may not terminate your Circle Mint Account if Circle France believes, in its sole discretion, that such closure is being performed in an effort to evade a court order or legal or regulatory investigation or to avoid paying any amounts otherwise due to Circle France.
+8.3. If your Circle Mint Account holds a balance at the time of its closure, we will ask you to withdraw your Account Balance within the first year following closure, during which time your Circle Mint Account will be accessible only for the purpose of withdrawing the remaining balance free of charge. After the closure of your Circle Mint Account occurs, you will not be able to access your Circle Mint Account for any other purpose. All withdrawals of Circle Coins will be subject to the provisions applicable to Circle Coins Transfer as set out in clause 10.4.
+8.4. You may withdraw any remaining Circle Coins from your Circle Mint Account following closure by contacting Circle Support and requesting that the Account Balance be sent to you in a manner that is reasonably acceptable for us. As set out in clause 8.3. withdrawal of funds during the first year post-closure will be free of charge. However, we reserve the right to charge a recurring annual inactivity fee for those Circle Mint Accounts with residual balances after the first anniversary of closure of the Circle Mint Account onwards. The annual inactivity fee currently in force and that will be applied will be specified in the "Fees" section of our Website and may change from time to time.
+8.5. If you want to access your transaction history after the closure of your Circle Mint Account, you will need to contact Circle Support and request the information, you may do so for a period of six years from the date of closure of your Circle Mint Account but we suggest that you redeem your remaining Circle Coins as soon as possible as they will not earn any interest while in your Circle Mint Account. Your obligations with regards to keeping your Circle Mint Account safe as set forth in section 7 (Keeping Your Circle Mint Account Safe) shall continue to apply.
+8.6. We reserve the right to carry out any necessary ML, TF, fraud or other illegal activity checks before authorising any withdrawal of your Account Balance, including in relation to returning any funds to you after you have closed your Circle Mint Account.
+8.7. We encourage you to redeem or transfer any Circle Coins out of your Circle Mint Account prior to issuing a request to terminate your Circle Mint Account. We may be unable to terminate your Circle Mint Account at your request if you maintain an Account Balance. We reserve the right to restrict or refuse to permit redemptions or transfers from your Circle Mint Account if:
+8.7.1. your Circle Mint Account has otherwise been suspended or unilaterally terminated by Circle France in accordance with these Terms of Use; or
+8.7.2. to do so would be prohibited by law or a court order or we have determined that any of your Circle Mint Account balance was obtained fraudulently.
+8.8. Upon closure or suspension of your Circle Mint Account, you authorise Circle France to cancel or suspend pending transactions.
+8.9. In the event that you or Circle France terminates these Terms of Use or you lose access to your Circle Mint Account, you remain liable for all activity conducted on or with your Circle Mint Account while it was active and for all amounts due hereunder.
+9. About Circle Coins
+9.1. Circle Coins means “EURC” or “USDC”. Please refer to the EURC and USDC White Papers for further information. The applicable White Paper sets out the risks relating to Circle France and to the relevant Circle Coin.
+9.2. EURC is an e-money token issued by Circle France that operates primarily on the Ethereum blockchain. EURC is designed, held out and used as an electronic surrogate for coins and banknotes (specifically Euro), a specific character of e-money. Additionally, EURC meets all of the conditions of the definition of e-money under French and European Union laws, and notably MiCA regulation. As such, EURC is e-money for the purposes of the Services and these Terms of Use.
+9.3. USDC is an e-money token issued by Circle France that operates primarily on the Ethereum blockchain. USDC is designed, held out and used as an electronic surrogate for coins and banknotes (specifically USD), a specific character of e-money. Additionally, USDC meets all of the conditions of the definition of e-money under French and European Union laws, and notably MiCA regulation. As such, USDC is e-money for the purposes of the Services and these Terms of Use.
+9.4. All Circle Coins are fully backed by an equivalent amount of euro-denominated or USD-denominated assets held by Circle France with European Union-based regulated financial institutions in segregated accounts separate from Circle France’s corporate funds, on behalf of, and for the benefit of, Users (the “Segregated Accounts”). This means that for every Circle France Coin issued by Circle France and remaining in circulation, Circle France will hold on behalf of Users either one euro or an equivalent amount of euro-denominated assets or one dollar or an equivalent amount of USD-denominated assets in its Segregated Accounts (the "Reserves").
+9.5. Circle Coins are not designed to create returns for holders, increase in value, or otherwise accrue financial benefit to the Circle Coins holder. You will not earn any interest by virtue of your holding Circle Coins in your Circle Mint Account. Note that from time to time, Circle France or its affiliates may offer yield generating Services, but any such Services shall be subject to additional terms and conditions that you would have to separately agree to.
+10. Services
+As you have agreed to, and are subject to, these Terms of Use, Circle France makes available the following “Circle Coins Services”, which are Services described in more detail in the following Sections. Any of the Circle Coins Services can be discontinued with two months' notice to you in accordance with these Terms of Use.
+10.1. Issuance of Circle Coins:
+10.1.1. You understand and agree that you may only tokenize euro or USD to Circle Coins and redeem Circle Coins through your Circle Mint Account directly with Circle France to the extent that you have a Circle Mint Account in good standing. Circle Coins will be tokenised in return for funds uploaded in accordance with Section 11 (Acquiring Circle Coins) below. By tokenising Circle Coins on your Circle Mint Account, you acknowledge that you are aware of, and accept, the risks relating to Circle France and to the relevant Circle Coin set out in the applicable White Paper (the USDC White Paper for USDC and the EURC White Paper for EURC).
+10.1.2. If you choose to use Circle France’s “Circle Coins Express” service as part of the Circle Coins Services, incoming financial institution fiat wires can be automatically settled as Circle Coins in your Circle Mint Account, and Circle Coins sent from your Circle Mint Account to another Circle France-hosted deposit address can automatically initiate a fiat wire to the recipient’s financial institution fiat account.
+10.2. Redemption of Circle Coins:
+10.2.1. You can request a redemption of all or part of your Account Balance on demand at par value at any time during the duration of these Terms of Use, subject to the conditions set out in these Terms of Use, including Sections 10.2.2 to 10.2.6 and, for CASP Clients, the CASP Client Addendum. To do this you must log into your Circle Mint Account and select a withdrawal method and enter the amount to be redeemed. All redemption requests will be satisfied by Circle France and/or one of its affiliates appointed by Circle France if compliant with Circle France’s redemption processes, and in any case, in accordance with applicable laws and regulations. Where the fiat payment is received by you through the involvement of a payment service provider (such as the bank where you hold a bank account), we shall not be responsible for the payment once the redeemed funds are received by your payment service provider.
+10.2.2. Your Circle Mint Account is subject to redemption limits. These limits are adjusted dynamically depending on the type of identification documentation we hold on you and on Circle France's risk assessment. You can view your redemption limits at any time in your Circle Mint Account profile. Before uploading any funds into your Circle Mint Account, you must ensure that your current redemption and transaction limits meet your requirements as we legally cannot allow you to exceed these limits.
+10.2.3. If your redemption request exceeds the current limit, we may decline your request and instead require you to send us documents verifying your identity, address, or origin of funds prior to allowing a redemption or to otherwise cooperate with us to verify your identity.
+10.2.4. You must ensure that the payment details you enter when redeeming Circle Coins are correct and complete. We will not be liable for withdrawn funds being sent to the wrong account where this is due to you providing incorrect payment details. When withdrawing to a bank account, you must ensure that the account number, sort code, IBAN and / or BIC / SWIFT are correct. If you have withdrawn funds to the wrong account, you may request that we assist you in reclaiming the funds. If Circle France does assist, Circle France will charge a recovery fee of 10% of the total returned value of assets or $500 (whichever is higher) to assist you in recovering misdirected assets. The availability of this service and the market price of assets are determined by Circle France in its sole discretion. These fees are subject to change without prior notice and any updates will be posted on Circle Website.
+10.2.5. You may not redeem Circle Coins through Circle Mint unless you hold a Circle Mint Account. Eligibility for and requirements related to opening a Circle Mint Account are set forth in Sections 3 – 8 above.
+10.2.6. Your acquisition of Circle Coins from Circle France and use of the Services (as applicable), is subject to these Terms of Use and Circle France’s obligations hereunder are conditional on you complying with the provisions of these Terms of Use. You understand that any violation of these Terms of Use may result in potential consequences, including the possible loss or forfeiture of euro tokenized for Circle Coins. For a description of the process for tokenizing of Circle Coins and redeeming Circle Coins, please see here.
+10.2.7. CASP Clients. If you are a CASP Client, the CASP Client Addendum to these Terms of Use applies to you in addition to these Terms of Use and sets out additional requirements, including your written consent under Article 48(1) of MiCAR and the stress event regime applicable to USDC redemptions. In the event of any inconsistency, the CASP Client Addendum prevails in respect of CASP Clients.
+10.3. Wallet Services: Circle France provides access to a hosted electronic money wallet(s) (“Hosted Wallet”).
+10.3.1. Your Hosted Wallet allows you to store, track, transfer, and manage your Circle Coins Balance. Circle France stores all relevant private keys, which are used to process transactions, using industry standard security procedures and controls in a combination of online and offline storage. Based on our use of our security controls, it may be necessary for us to retrieve private keys or related information from offline storage in order to facilitate certain transactions in accordance with your instructions, and you acknowledge that this may delay the initiation or crediting of such transactions.
+10.3.2. You own the Circle Coins held in your Hosted Wallet. Circle France implements standard practices and measures to ensure the prompt return of Circle Coins to you. While you may generally withdraw your Circle Coins by sending them to an external blockchain address, your ability to do so may be affected by outages or downtime of the Circle Website and Circle France’s policies. Circle France is committed to minimizing these occurrences and strives to maintain service availability, working diligently to ensure that outages and downtime are infrequent and that disruptions to the withdrawal process are resolved as quickly as possible.
+10.3.3. When using the Platform, you will have access to information regarding your balance(s), in your Hosted Wallet, individual transactions and fees. Circle France will maintain the position of each of its customers in secure databases. Circle France will record in its position register any event likely to create or modify your rights as soon as possible. The position register is accessible to you at any time in your Circle Mint Account. If necessary, the position register can be sent to you on request. You will have access to a monthly report of Circle Coins accounted for in custody in the Hosted Wallet directly in your Circle Mint Account.
+10.3.4. By accepting Circle France’s custody of your Circle Coins for the duration of such custody, you expressly authorize Circle France to dispose of your Circle Coins in order to manage the transactions you ordered. Circle France will not make any use of your Circle Coins and the rights attached thereto without your prior express consent, except for their handling in connection with a transaction you ordered and their safekeeping in connection with the Services.
+10.3.5. Circle France ensures that your Circle Coins are kept separate in the blockchain from its crypto-assets and will provide its best effort to assist you in exercising the rights attached to the Circle Coins held by Circle France on your behalf.
+10.3.6. Circle France implements best practices security measures on the Hosted Wallets. Circle France will ensure that the Hosted Wallet and the Circle Coins held on your behalf are duly protected in compliance with the technical applicable standards. Circle France uses enhanced authentication systems to verify your identity and authorize transactions on the Circle Coins held in the Hosted Wallet.
+10.3.7. Circle France applies a crypto-assets custody policy (the "Custody Policy"), which sets out the guiding principles applied by Circle France when providing custody services on the Circle Coins. In particular, the Custody Policy contains elements relating to the rules for the segregation of Circle Coins and the procedures for the return of Circle Coins. A summary of the Custody Policy is available via this link.
+10.4. Circle Coins Transfers (Inbound and Outbound)
+10.4.1. When you or a third party sends Circle Coins to a Hosted Wallet from an external wallet not hosted by Circle France (“Inbound Transfers”), the person initiating the transfer is solely responsible for executing the transaction properly, which may include, among other things, payment of sufficient network or miners’ fees in order for the transaction to be successful. Failure to pay such fees may cause an Inbound Transfer to remain in a pending state outside of Circle France’s control and we are not responsible for delays or losses incurred as a result of an error in the initiation of the transaction and have no obligation to assist in the remediation of such transactions.
+10.4.2. By initiating an Inbound Transfer, you attest that you are transacting in Circle Coins. If you select your Circle Coins address to receive Circle Coins, you attest that you are initiating an Inbound Transfer of Circle Coins alone, and not any other currency (digital or otherwise). Circle France incurs no obligation whatsoever with regard to other currencies sent to your Circle Mint Account and erroneously transmitted funds will be lost.
+10.4.3. You agree, represent, and warrant that all Inbound Transfers are not the direct or indirect proceeds of any criminal or fraudulent activity. We reserve the right to investigate the source of any funds in your account and determine, in our sole discretion, how to handle their disposition. Following our review of any funds in question and the circumstances by which you received them, we may determine that you are not the owner of such funds. If such a determination is made, we reserve the right to dispose of these funds in accordance with applicable laws and regulations and in our sole discretion, which may include, but is not limited to, returning them to the destination of their origin.
+10.4.4. When you send Circle Coins from your Hosted Wallet to an external wallet (“Outbound Transfers” and together with Inbound Transfers, “Circle Coins Transfers”), such transfers are executed at your instruction by Circle France. You should verify all transaction information prior to submitting instructions to us. Circle France shall bear no liability or responsibility in the event you enter an incorrect blockchain destination address. Subject to applicable laws and regulations, we do not guarantee the identity or value received by a recipient of an Outbound Transfer. You may also refer to the Circle Coins Transfer Policy available at this address.
+10.4.5. Circle Coins Transfers cannot be reversed once they have been broadcast to the relevant blockchain, although they may be in a pending state, and designated accordingly, while the transaction is processed by network operators. The list of the blockchains eligible to Outbound Transfers is available on the EURC and USDC White Papers. Circle France does not control any blockchain or digital currency network and makes no guarantees that an Outbound Transfer will be confirmed by an external digital currency network. Circle France may refuse to process or cancel any pending Outbound Transfers as required by law or any court or other authority to which Circle France is subject in any jurisdiction, including based on ML and TF requirements. In particular, Circle France may run some additional checks and control on the external wallet address you wish to perform an Outbound Transfer. Additionally, Circle France may require you to wait some amount of time after completion of a Circle Coins Transfer before permitting you to use further Services and/or before permitting you to engage in transactions beyond certain volume limits.
+10.4.6. In order to perform an Outbound Transfer, you must perform a transaction. To perform a transaction on the Circle Website, you are required to authorise the payment with your login details and password. We may also ask you additional security questions relating to you or your Circle Mint Account. If your Circle Mint Account is protected by additional security measures such as password tokens, you need to follow the instructions provided to you with such additional security measures.
+10.4.7. As previously mentioned, the applicable Inbound and Outbound Transfers may incur a fee in connection with blockchain transactions. You are responsible for all such fees.
+10.4.8. The maximum Outbound Transfer time will be 10 minutes, subject to blockchain processing times, unless otherwise provided in these Terms of Use, including in connection with a Stress Period applicable to USDC as described in the CASP Client Addendum. Inbound and Outbound Transfers take anywhere from a few seconds to a few hours to process, depending on the blockchain used; provided, that in all cases, Inbound and Outbound Transfers are each subject to blockchain and financial institution delays, which Circle France does not control.
+10.4.9. For the transfer of Circle Coins to be considered as definitively registered on the blockchain, the number of block confirmations required depending on the technology used are indicated within the Circle Coins Transfer Policy.
+10.4.10. The balance on your Circle Mint Account is updated with the processing status of the Circle Coins Transfer you requested. When the Circle Coins Transfer is executed, your Circle Mint Account reflects the new balance of Circle Coins (if any) held by Circle France on your behalf. If the transfer is rejected, you will be informed by Circle France as soon as possible. Circle France will provide you with the reason for the rejection or suspension of the transfer, and if applicable of the measures to be implemented to remedy the rejection or suspension of the transfer and the amount of the fees incurred for the processing of this operation.
+10.4.11. After the execution of a Circle Coins Transfer, Circle France will provide you with the following information:
+the names of the originator and the beneficiary of the Circle Coins Transfer;
+Your Circle Mint Account number;
+the beneficiary’s distributed ledger address or crypto-asset account number;
+a reference of the Circle Coins Transfer enabling you to identify each transfer of the initiated Circle Coins Transfer;
+the amount and type of Circle Coins transferred or received;
+the debit value date or the credit value date of the Circle Coins Transfer; and
+the amount of any charges, fees or commissions relating to the Circle Coins Transfer and, where applicable, a breakdown of the amounts of such charges.
+10.4.12. Finally, in the event of presumed or proven fraud or threats to the security of the Circle Coins Transfer you instructed, Circle France will inform you by any means including a notification in you Circle Mint Account, by e-mail, or by notification via Circle Website.
+10.5 FX Operations
+10.5.1. As part of its ancillary services5 under its Electronic Money Institution (EMI) license, Circle France offers fiat foreign exchange services (“FX Operations”) exclusively involving EUR and USD.
+10.5.2. FX Operations do not involve the direct conversion of fiat currencies held by the client. Instead, the FX Operation is structured as a three-step process involving:
+the redemption of e-money tokens (EURC or USDC) held by the client into fiat currency (EUR or USD, respectively);
+a foreign exchange transaction performed by Circle France in the client’s name and on the client’s behalf, whereby the redeemed fiat currency is exchanged for its countervalue in the other currency (EUR into USD or USD into EUR); and
+the immediate issuance of e-money tokens (USDC or EURC, respectively) against the fiat currency resulting from the FX transaction.
+Each FX Operation is executed based on a single instruction from the client confirming its willingness to perform this full sequence.
+10.5.3. The FX Operation is initiated by the client via the “Convert” functionality available in the Circle Mint Account interface. Before confirming the operation, the client is provided with the indicative exchange rate (EUR/USD or USD/EUR, as the case may be) applicable to the transaction and any applicable fees. By validating the operation, the client expressly authorises Circle France to proceed with the full FX Operation, and acknowledges that the operation involves three separate and consecutive steps which are executed immediately and without possibility of interruption. The client further agrees that the result of the FX Operation is the receipt of the corresponding amount of EURC or USDC, depending on the direction of the transaction.
+10.5.4. Circle France keeps a dematerialised record of each FX Operation executed. Clients may access their full FX Operation history directly via their Circle Mint Account. Upon request, Circle France will provide a digital receipt for any FX Operation performed, indicating the nature of the transaction, the currencies involved, the amounts exchanged, and the exchange rate applied.
+10.5.5. For the avoidance of doubt, the present exchange between EURC and USDC does not constitute an exchange of crypto-assets within the meaning of Article 3(20) of the MiCA Regulation. Each such exchange operation is carried out exclusively in the form of (i) the redemption of an e-money token, (ii) a fiat foreign exchange transaction under Circle France’s EMI license, and (iii) the issuance of a new e-money token.
+11. Acquiring Circle Coins
+11.1. In order to acquire Circle Coins, you must do so through the Circle Website where you are required to authorise the payment with your login details and password. We may also ask you additional security questions relating to you or your Circle Mint Account. If your Circle Mint Account is protected by additional security measures such as password tokens, you need to follow the instructions provided to you with such additional security measures.
+11.2. Payments may be subject to payment limits due to security and legal requirements. These limits are set dynamically depending on your verification status. You can view these limits at any time in your Circle Mint Account profile. You should ensure that your limits are sufficient to cover the payment you intend to make as well as any applicable fees including service fees and currency conversion fees. Sending payments is subject to fees including currency conversion fees (if applicable) depending on the type of payment you make. Please see section 24 (Fees) for details.
+11.3. Payments generally settle in approximately 10 minutes, subject to blockchain and financial institution delays, which Circle France does not control.
+11.4. Circle France may, in our sole discretion, delay any transaction if we believe that such transaction is suspicious, may involve fraud or misconduct, violates applicable laws or payment network, or violates these Terms of Use.
+11.5. Payment Methods you use to pay for Circle Coins provided by third party financial institutions (for example, the issuer of the payment card you use to upload funds or third party direct banking service providers) and are not part of our service. We do not guarantee your ability to use any particular Payment Method, and we may make changes to, or discontinue our acceptance of, any particular Payment Method at any time without following the procedure set out in section 22 (Termination and Suspension). We shall not be responsible for the upload payment until the uploaded funds are received by us.
+11.6. You may be asked to answer security questions or to complete other activities that we or the payment service provider you use to pay for Circle Coins may reasonably require to ensure proper authorisation of an upload transaction.
+11.7. If you use a Payment Method that may be subject to a right to claim funds back (a “Chargeback”) such as (but not limited to) use of a credit or debit card or direct debit, you declare that you will not exercise such Chargeback other than for unauthorised use of the Payment Method or for a breach by us of these Terms of Use which would result in you having a right to a refund of the uploaded amount. Otherwise, you may not Chargeback any transaction or allow Chargeback of any transaction for reasons for which we are not responsible. We reserve the right to charge you fees and expenses we incur in connection with such Chargeback and any action undertaken to challenge the same. We may also charge you a Chargeback fee of up to the lesser of (i) €50 and (ii) the actual amount charged to Circle France by your financial institution in connection with such Chargeback.
+11.8. For the purposes of a transaction through a Payment Method, we are an e-money issuer and will issue e-money (Circle Coins) in exchange for payment by you. We will not be acting as a payment service provider when receiving such funds.
+11.9. You must not make a payment through a Payment Method if you are not the named holder of that Payment Method. We take any violation of this requirement very seriously and will treat any attempt to use a Payment Method of which you are not the named holder as a fraudulent act. Without prejudice to claiming further damages, if we are required to return funds uploaded from a Payment Method that is not in your name, we may charge an administration fee of up to €50 per upload return.
+12. Refunds
+12.1. Once a transaction has been initiated (including, but not limited to, a transfer of Circle Coins), it cannot be reversed or refunded, except as set forth in these Terms of Use. You may have additional refund or chargeback rights under your agreement with the recipient of such funds, your financial institution, or applicable law. We will refund in the following circumstances:
+You must request such a refund within eight (8) weeks from the date the funds were debited from your Circle Mint Account. You agree to provide us with such information as is reasonably necessary to ascertain whether the conditions for a refund described in this section 12.1 (Refunds) are satisfied. Within ten (10) Business Days of receiving a request for a refund or, where applicable, of receiving any further information we requested from you, we will either refund the full amount of the payment or provide you with justification for refusing to refund the payment.
+12.2. You should periodically review statements from your financial institution and any other service that you use to transact Circle Coins, which should reflect all applicable transactions made using the related transaction method. You can also access the record of transactions in your Circle Mint Account by logging into your Circle Mint Account.
+13. Insufficient Funds
+13.1 If a payment made to tokenize euro for Circle Coins is reversed by your bank or Circle France’s banking partners after a tokenization of euro for Circle Coins is completed, then Circle France reserves the right to:
+13.1.1. retroactively cancel such tokenization of euro for Circle Coins and deduct such Circle Coins from your Circle Mint Account;
+13.1.2. deduct such amounts from future Circle Coins issuances to your Circle Mint Account or otherwise received into your Circle Mint Account;
+13.1.3. suspend your Circle Mint Account and access to the Circle Coins Services until resolved;
+13.1.4. if you maintain more than one Circle Mint Account, set off the negative amount of Circle Coins in one Circle Mint Account by applying the amount of Circle Coins you hold in your other Circle Mint Account(s) against the negative amount; and
+13.1.5. pursue legal action or any other means of recovery legally available.
+To secure your performance of these Terms of Use, you grant to Circle France the right to (a) block transactions involving Circle Coins from your Circle Mint Account and (b) set off any fees or other amounts owed by you against funds Circle France holds on your behalf.
+13.2. In the event that Circle France is forced to engage a third party to assist with the recovery of any funds owed by you to Circle France, you will be charged any fees or expenses that are incurred by Circle France in connection with such recovery efforts, including, but not limited to, collection fees, currency conversion fees, legal fees or convenience fees charged by third parties.
+13.3. You hereby explicitly agree that all communication in relation to funds owed by you to Circle France or a delinquent account will be made by electronic mail or phone. Such communication may be made by Circle France or by any third party acting on its behalf, including but not limited to a third-party collection agent. Note that if Circle France is forced to engage such third parties in connection with recovering amounts that you owe Circle France, your credit may be negatively impacted.
+14. Copies, Forks & Advanced Protocols Not Supported
+14.1. Your Circle Mint Account supports sending and receiving Circle Coins. Subject to these Terms of Use, if you attempt to send any other virtual currency, token, digital currency, or similar digital assets other than Circle Coins to your Circle Mint Account, such other digital assets may be lost forever.
+14.2. As a result of the decentralized and open source nature of Circle Coins, it is possible that a party unaffiliated with Circle France could create an alternative, equivalent version of Circle Coins either on the Ethereum blockchain or on an unsupported blockchain (a "Copy") that operate independently from Circle Coins. Similarly, it is possible that a party unaffiliated with Circle France may create an asset and purport that such asset is collateralized by or otherwise incorporates Circle Coins into its design (a "Wrapper"). Circle France supports only Circle Coins and is under no obligation to support any copies of Circle Coins or Wrappers and assumes no responsibility for any value that might be lost as a result of this lack of support of Copies of Circle Coins.
+14.3. As a result of the decentralized and open source nature of the Ethereum blockchain, it is possible that a party unaffiliated with Circle France could create an alternative version of the Ethereum blockchain (a "Fork"). Note that in the event of a Fork of the Ethereum blockchain, Circle France may be forced to suspend all activities relating to Circle Coins (including tokenizing, redemption, Inbound and / or Outbound Transfers) for an extended period of time until Circle France has determined in its sole discretion that such functionality can be restored.
+15. Prohibited Transactions
+15.1. We reserve the right, in our sole discretion, to add categories of prohibited transactions by adding such categories either to these Terms of Use or to our Acceptable Use Policy published on the Website.
+15.2. We may suspend or terminate your Circle Mint Account at any time or refuse to execute or reverse a transaction if we believe that you directly or indirectly use or have used your Circle Mint Account for or in connection with prohibited transactions (as set out further below). It is your responsibility to ensure that you do not use our services for transactions that may be considered illegal in your jurisdiction.
+15.3. You may not use our Services if you are residing in certain countries. These countries where we support Services are listed here and updated from time to time. If your country is not on this list or is subject to certain sanctions, you may not use our Services. The lists of supported and unsupported countries are not exhaustive and we may in our sole discretion decide to discontinue or restrict Services in other countries at any time and without prior notice. We reserve the right to suspend or terminate your Circle Mint Account at any time if we reasonably believe to be required to do so by law or in order to comply with recommendations issued by a relevant government authority or recognised body for the prevention of financial crime.
+15.4. It is strictly forbidden to use your Circle Mint Account for any illegal purposes including but not limited to fraud and money laundering. We will report any suspicious activity to the relevant law enforcement agency.
+15.5. If you conduct or attempt to conduct any transaction in violation of the prohibitions contained in this section 15, we reserve the right to: reverse the transaction; and / or close or suspend your Circle Mint Account; and / or report the transaction to the relevant law enforcement agency; and / or claim damages from you; and charge you an administration fee of up to €150 if we apply any of the above.
+15.6. In connection with your use of the Services, you hereby agree that you will not:
+violate (or assist any other party in violating) any applicable law, statute, ordinance, or regulation;
+intentionally try to defraud (or assist in the defrauding of) Circle France or other Circle France Users;
+provide false, inaccurate, or misleading information;
+take any action that interferes with, intercepts, or expropriates any system, data, or information;
+partake in any transaction involving the proceeds of illegal activity;
+transmit or upload any virus, worm, or other malicious software or program;
+attempt to gain unauthorised access to other Circle Mint Accounts, the Circle Website, or any related networks or systems;
+use the Services on behalf of any third party or otherwise act as an intermediary between Circle France and any third parties;
+collect any user information from other Circle France users, including, without limitation, email addresses;
+defame, harass, or violate the privacy or intellectual property rights of Circle France or any other Circle France Users; or
+upload, display or transmit any messages, photos, videos or other media that contain illegal goods, violent, obscene or copyrighted images or materials
+(such (a) – (k) activities, "Restricted Activities").
+15.7 In addition, using the Services for transactions related to the following is prohibited, and Circle France reserves the right to monitor for transactions that relate to:
+any Restricted Persons or persons or entities located in Restricted Territories (as each term is defined in this Section 15);
+weapons of any kind, including but not limited to firearms, ammunition, knives, explosives, or related accessories;
+controlled substances, including but not limited to narcotics, prescription drugs, steroids, or related paraphernalia or accessories, unless possession of and transactions involving such controlled substances are authorized by the jurisdiction in which the User is based as well as by the jurisdiction in which the transaction takes place, and provided any such transactions comply with all applicable law;
+gambling activities including but not limited to sports betting, casino games, horse racing, dog racing, games that may be classified as gambling (i.e. poker), or other activities that facilitate any of the foregoing, unless such activities are authorized by the jurisdiction in which the user is based as well as by the jurisdiction in which the transaction takes place, and provided any such activities comply with all applicable law;
+money laundering or terrorist financing;
+any sort of Ponzi scheme, pyramid scheme, or multi-level marketing program;
+goods or services that infringe or violate any copyright, trademark, or proprietary rights under the laws of any jurisdiction;
+credit repair services, or other services that may present consumer protection risks;
+court ordered payments, structured settlements, tax payments, or tax settlements;
+any unlicensed money transmitter activity;
+layaway systems, or annuities;
+counterfeit goods, including but not limited to fake or “novelty” IDs;
+wash trading, front-running, insider trading, market manipulation or other forms of market-based fraud or deceit;
+purchasing goods of any type from “Darknet” markets, or any other service or Website that acts as a marketplace for illegal goods (even though such marketplace might also sell legal goods); or
+any other matters, goods, or services that from time to time we communicate to you that are unacceptable and which, for example, may be restricted by our and your financial institution or payment partners
+(such (a) – (o) transactions, "Prohibited Transactions").
+15.8. In the event that Circle France learns you are making or attempting any Restricted Activities or Prohibited Transactions, Circle France will consider it to be a violation of these Terms of Use and may suspend or terminate your Circle Mint Account.
+16. Blocked Addresses & Forfeited Assets
+16.1. Circle France reserves the right to “block” certain third party digital currency addresses and, if such addresses are Circle France-custodied addresses, freeze associated digital currency including (for the purposes of these Terms of Use) Circle Coins (temporarily or permanently) that it determines, in its sole discretion, are associated with illegal activity or activity that otherwise violates these Terms of Use ("Blocked Addresses").
+16.2. In the event that you send Circle Coins to a Blocked Address, or receive Circle Coins from a Blocked Address, Circle France may freeze such Circle Coins balances and take steps to terminate your Circle Mint Account.
+16.3. In certain circumstances, Circle France may deem it necessary to report such suspected illegal activity to applicable law enforcement agencies and you may forfeit any rights associated with your Circle Coins. Circle France may also be forced to freeze and potentially surrender your Circle Coins in the event it receives a legal order from a valid government authority requiring it to do so.
+17. Unauthorised and Incorrect Transactions
+17.1. If an Unauthorised Transaction (as defined below) or Error (as defined below) occurs through your Circle Mint Account, and you follow the procedures set forth in this Section 17, Circle France will reimburse you for the amount of any eligible Unauthorised Transaction and any losses resulting from an Error, subject to the limitations set forth in this Section 17.
+17.2. For purposes of this Section 17, “Unauthorised Transaction” means any transaction that was initiated from your Circle Mint Account without your authorization and that does not benefit you.
+17.3. For purposes of this Section 17, an “Error” means one of the following:
+17.3.1. if your Payment Method is charged for an issuance of Circle Coins, Circle France receives the funds, but the corresponding Circle Coins does not show up in your Circle Mint Account;
+17.3.2. if you complete a redemption from Circle Coins and the funds are not properly delivered by Circle France to you;
+17.3.3. you transfer Circle Coins from your Circle Mint Account to an external address and we debit your Circle Mint Account for the relevant amount in excess of the sent amount;
+17.3.4. if you receive Circle Coins to your Circle Mint Account and we do not add the proper amount to your Circle Mint Account;
+17.3.5. if the transaction records in your Circle Mint Account do not accurately reflect your transactions; or
+17.3.6. there is some other material mathematical or computational error by Circle France in calculating issuance or redemption amounts.
+Subject to the provisions of this Section 17 and sections 18 (Notifying Circle France of an Unauthorised Transaction or Error) and 19 (Notification Process (Unauthorised Transactions)) below, in order to claim a refund for an unauthorised or incorrectly executed payment transaction on your Circle Mint Account you must notify us in accordance with Section 18 below.
+18. Notifying Circle France of an Unauthorised Transaction or Error
+18.1. You should notify us immediately if you believe that:
+18.1.1. an Unauthorised Transaction or Error has occurred;
+18.1.2. your password and / or two-factor authentication access has been compromised;
+18.1.3. a device on which you have downloaded the Circle France app or which contains an active Circle France session has been stolen or lost; or
+18.1.4. you believe there is an Error in your transaction records or account history; or
+18.1.5. you have a question regarding your transaction records or account history.
+18.2. In order for Unauthorised Transactions or Errors to be covered by Circle France, you must notify us without undue delay (and at least within 13 months) of you becoming aware of such Unauthorised Transaction or Error or the same showing up in your transaction history and/or account statement. If you do not notify us within 13 months, then you will not be covered by the protections of Sections 17 (Unauthorised and Incorrect Transactions) and 18 (Notifying Circle France of an Unauthorised Transaction or Error).
+19. Notification Process (Unauthorised Transactions)
+19.1. The fastest and most efficient way to notify us of an Unauthorised Transaction or Error is to contact Circle Support (Circle Support can be contacted via email at [email protected]). You can also notify us by sending a physical letter to Circle Internet Financial Europe SAS at 4 rue de Marivaux - 75002 Paris.
+19.2. However you choose to notify us, you must include:
+19.2.1. the name and email associated with your Circle Mint Account;
+19.2.2. a detailed description of what Unauthorised Transaction or Error you believe occurred, or what information you need in order to determine if an Unauthorised Transaction or Error occurred; and
+19.2.3. the amount of such Unauthorised Transaction or Error.
+19.3. Note that in connection with investigating and/or resolving any Unauthorised Transaction or Error, we may need to request further information from you regarding the circumstances of the Unauthorised Transaction or Error. If you do not provide such additional information, it may inhibit our ability to resolve your issue or limit your rights under these Terms of Use.
+20. Steps Circle France Will Take Following Notification
+20.1. Once you have provided us with proper notification (including delivering all of the information set forth in the subsection above and responding to any requests for further information), we will investigate the potential Unauthorised Transaction or Error. We will typically be able to complete our investigation within ten (10) days; however, it may require up to thirty (30) days if your Circle Mint Account is new (meaning your Circle Mint Account has been active for less than thirty (30) days at the time we receive your notification).
+20.2. Sometimes, we may need more time in order to complete our investigation (up to thirty (30) days, or sixty (60) days for a new account). If we need to take more than ten (10) days to investigate your claim (or thirty (30) days for new accounts), we will provisionally credit your Circle Mint Account with the amount of such Unauthorised Transaction or Error.
+20.3 Once we have completed our investigation, we will notify you of our decision within three (3) Business Days. If we determine that your claim of an Unauthorised Transaction or Error is valid and eligible, we will credit your Circle Mint Account for the amount of the Unauthorised Transaction or Error, subject to the limitations set forth below. If we have already provisionally credited your Circle Mint Account and determine that your claim of an Unauthorised Transaction or Error is valid and eligible, you will be allowed to keep such provisional credit. If we have already provisionally credited your Circle Mint Account and determined that your claim of an Unauthorised Transaction or Error is not valid and / or eligible, the amount provisionally credited will be debited from your Circle Mint Account.
+20.4. Regardless of the results of our investigation, we will send you an email explaining the basis for our decision. If you have any questions or concerns regarding our decision, you can request further information regarding the details that led to our decision.
+21. Errors We Discover
+21.1. If we discover an Error on our own that results in you receiving less than the amount of Circle Coins to which you are entitled, we will rectify it by crediting your Circle Mint Account with the relevant amount of Circle Coins (as applicable) corresponding to the difference. If we discover an Error on our own that results in you receiving more than the amount of funds to which you are entitled, we will rectify it by debiting your Circle Mint Account with Circle Coins (as applicable) corresponding to the difference.
+22. Termination and suspension
+22.1. If no transactions are conducted on a Circle Mint Account for a continuous 12 month period, we reserve the right to automatically and unilaterally close your Circle Mint Account. This clause 22 shall survive termination of the relationship between you and us. At the end of the 12 months period, the Customer will be notified upon reasonable notice before the Circle Mint Account is definitely closed.
+22.2. We may, without liability to you or any third party, suspend your Circle Mint Account, consolidate your Circle Mint Accounts if you have more than one, or terminate your Circle Mint Account or suspend your use of one or more of the Services in accordance with these Terms of Use, as determined in our sole and absolute discretion. Such actions may be taken as a result of account inactivity, failure to respond to customer support requests, failure to positively identify yourself, a court order, your violation of these Terms of Use or for other similar reasons. Circle France may also temporarily suspend access to your Circle Mint Account in the event that a technical problem causes system outage or Circle Mint Account errors until the problem is resolved. For the avoidance of doubt, in the event your Circle Mint Account is suspended or closed, you will no longer be able to access any of the Services.
+22.3. In the event that you or Circle France terminates these Terms of Use or your access to the Services, or cancels your Circle Mint Account, you remain liable for all activity conducted on or with your Circle Mint Account while it was active and for all amounts due hereunder.
+22.4. Together with a termination notice or at any time thereafter we may give you reasonable instructions on how to redeem your remaining Account Balance.
+22.5. If your Circle Mint Account is subject to a reserve, termination of your Circle Mint Account will not affect our right to hold the reserve and to make deductions therefrom for the time agreed.
+22.6. We may at any time suspend or terminate your Circle Mint Account without notice if:
+22.6.1. you breach any condition of these Terms of Use or any other condition applicable to specific services covered by separate terms and conditions;
+22.6.2. you violate or we have reason to believe that you are in violation of any law or regulation that is applicable to your use of our services; or
+22.6.3. we have reason to believe that you are in any way involved in any fraudulent activity, money laundering, terrorism financing or other criminal activity.
+22.7. We may suspend your Circle Mint Account at any time if:
+22.7.1. we reasonably believe that your Circle Mint Account has been compromised or for other security reasons; or
+22.7.2. we reasonably suspect your Circle Mint Account to have been used or is being used without your authorisation or fraudulently; and we shall notify you either prior to the suspension or, if prior notification is not possible under the circumstances, promptly after the suspension unless we are prohibited by law to notify you.
+23. Liability
+In the case of an unauthorised payment or a payment that was incorrectly executed due to an Error by us, we shall, as soon as practicable, refund the payment amount including all fees deducted therefrom. This shall not apply:
+23.1. where the unauthorised payment arises from your failure to keep the personalised security features of your Circle Mint Account safe in accordance with section 7 (Keeping Your Circle Mint Account Safe) of these Terms of Use, in which case you shall remain liable for the first EUR €50 unless section 23.1.3 (Liability) applies:
+23.1.1. if you fail to notify us without undue delay of any loss of your password or other event that could reasonably be expected to have compromised the security of your Circle Mint Account after you have gained knowledge of such event in which case you shall remain liable for losses incurred until you notify us;
+23.1.2. if the transaction was unauthorised but you have acted fraudulently or compromised the security of your Circle Mint Account with intent or gross negligence, in which case you shall be solely liable for all losses; or
+23.1.3. if you fail to dispute and bring the unauthorised or incorrectly executed transaction to our attention within thirteen (13) months from the date of the transaction.
+23.1.4. Unless you have acted fraudulently, section 23.1.1 (Liability) shall not apply to transactions made after you have notified us in accordance with section 7.4 (Keeping Your Circle Mint Account Safe), where we have failed to provide you with appropriate means for notification or we are required to use strong customer authentication but fail to do so, in which case we shall remain liable and refund any unauthorised transaction to you as soon as practicable.
+23.2. Without prejudice to the foregoing, you are asked to check the transactions history of your Circle Mint Account regularly and frequently and to contact Circle Support immediately in case you have any questions or concerns.
+23.3. In the case of any incorrect or misdirected payment, we shall take reasonable measures to assist you with tracing and recovering such payments.
+23.4. Subject to the foregoing, we shall not be liable for any disruption or impairment of our service or for disruptions or impairments of intermediary services on which we rely for the performance of our obligations hereunder, provided that such disruption or impairment is due to abnormal and unforeseeable circumstances beyond our reasonable control or the control of the intermediary affected.
+23.5. We shall not be liable for any indirect or consequential losses including but not limited to loss of profit, loss of business and loss of reputation. We shall not be liable for any losses arising from our compliance with legal and regulatory requirements.
+23.6. Nothing in these Terms of Use shall operate to exclude liability for death or personal injury due to negligence or for fraud or fraudulent misrepresentation or for any statutory liability that cannot be excluded or amended by agreement between the parties.
+23.7. Our obligation under these Terms of Use is limited to providing you with an electronic money account and related Services and we do not make any statement in relation to or endorsement of the quality, safety or legality of any goods or services provided by a Circle France customer or intermediary.
+23.8. We shall not be liable for the assessment or payment of any taxes, duties or other charges that arise from your use of the Circle Mint Account or services provided in these Terms of Use.
+23.9. You agree to defend, reimburse or compensate us and hold us and our other companies in our corporate group harmless from any claim, demand, expenses or costs (including legal fees, fines or penalties) that we incur or suffer due to or arising out of your or your agents' breach of these Terms of Use, breach of any applicable law or regulation and / or use of the services. This provision shall survive termination of the relationship between you and us.
+24. Fees
+24.1. Transaction and Services (including custody and transfer of Circle Coins) related fees can be viewed at any time in the "Fees" section of our Website. You should print or download and keep a copy of the "Fees" section together with a copy of these Terms of Use. For clarity, the "Fees" section forms part of these Terms of Use. Fees are subject to change in accordance with section 18 (Notifying Circle France of an Unauthorised Transaction or Error). Under certain circumstances we may charge additional fees as set out in sections 8.4 (Closing your Circle Mint Account), 10.2.4 (Redemption of Circle Coins), 11.7 (Acquiring Circle Coins), 11.10 (Acquiring Circle Coins), and 15.5 (Prohibited Transactions).
+24.2. Your transactions may be subject to currency conversions. If you make a payment from your Circle Mint Account denominated in one currency (for example USD) to pay for Circle Coins, the respective currency conversion rate will apply in accordance with section 25 (Conversion).
+24.3. Our Fees are either expressed as a percentage of the transaction or as a fixed amount in EUR. Where fixed fee amounts are displayed in a currency other than EUR, this is for information purposes only.
+24.4. Fees payable by you will be deducted from your Circle Mint Account balance and you hereby authorise us to do the same. Transaction fees will be charged when a transaction is executed. If your Circle Mint Account balance is insufficient to cover the fees, we may refuse to execute a payment. Reversal or chargeback fees will be deducted when incurred.
+24.5. If the deduction of fees results in a negative Circle Mint Account balance, you will be required to repay such negative balance by uploading sufficient funds into your Circle Mint Account. Failure to do so is a breach of these Terms of Use. Repayment of the negative balance is due immediately without notice. However, we reserve the right at any time to send you reminders that you need to upload funds or to take other debt collection measures including but not limited to instructing a debt collection agency or solicitors or to pursue the claim in court. We reserve the right to charge you expenses we have reasonably incurred in connection with any debt collection or enforcement efforts.
+24.6. Where Fees are levied on the setup and use of your Circle Mint Account is terminated, said charges will be payable by you proportionally up to the termination of your Circle Mint Account. Where such Fees are charged in advance, we will reimburse you proportionally.
+24.7. Where an individual payment transaction is initiated by you, we shall, at your request for the payment transaction, provide explicit information the following:
+24.7.1. the maximum execution time;
+24.7.2. the charges payable by the payer; and
+24.7.3. where applicable, a breakdown of the amounts of any charges.
+24.8. After the amount of an individual payment transaction is debited from your Circle Mint Account. After receipt of the payment order, we shall provide you, without undue delay, with all of the following information:
+24.8.1. a reference enabling you to identify each payment transaction and, where appropriate, information relating to the payee;
+24.8.2. the amount of the payment transaction in the currency in which your payment account is debited or in the currency used for the payment order;
+24.8.3. the amount of any charges for the payment transaction and, where applicable, a breakdown of the amounts of such charges;
+24.8.4. where applicable, the exchange rate used in the payment transaction by us, and the amount of the payment transaction after that currency conversion; and
+24.8.5. the debit value date or the date of receipt of the payment order.
+24.9. There may be charges or fees in connection with blockchain transactions. You are responsible for all such fees.
+24.10. You are responsible for, and agree to pay, all fees that may be charged by your financial institution in connection with sending funds to Circle France or receiving funds from Circle France. Circle France is not responsible for any charges that you incur based on delayed processing of deposits or withdrawals that might result from overdraft fees or otherwise.
+24.11. Except as disclosed on the Circle Coins Fee Schedule or as otherwise disclosed to you prior to completing a transaction in your Circle Mint Account, Circle France will not charge you any fees for issuing or receiving Circle Coins. As disclosed on the Circle Coins Fee Schedule, Circle France does charge fees in connection with sending Circle Coins on chain out of the Circle Mint Account. You should always check the Circle Coins Fee Schedule before completing a transaction in your Circle Mint Account to make sure you understand exactly what fees might be incurred. You also agree to pay any other fees that may be charged by your bank in connection with sending funds to Circle France or receiving funds from Circle France.
+24.12. By way of derogation from the burn fees mentioned in the Fee Schedule, and in application of MiCA regulation applicable to e-money tokens in the EEA, Circle France will not charge burn fees for redeeming USDC for US Dollars or EURC for Euros within the EEA. Thus, by default, all burns will be performed as basic burns (i.e., within approximately 2 business days) (the "Basic Tier").
+24.13. Should you wish to receive additional premium services, including near-instant redemption and premium customer care may elect to receive a premium tier level of service (the "Premium Tier"). Premium Tier is always optional and is a paid service in the EEA. The Fees to be paid to benefit from the Premium Tier services are available to you on our Fee Schedule and may evolve from time to time without prior notice, unless stated otherwise to you by Circle France.
+24.14. These Fees are deducted from your Circle Mint account upon an applicable burn. Should you become eligible for Premium Tier based on your volumes generated, Circle France will automatically enroll you in it without prior notice. You can also request to be enrolled voluntarily in the Program Tier. If you have requested to benefit from Premium Tier or have been automatically upgraded to Premium Tier, and wish to move back to Basic Tier, please contact [email protected].
+25. Conversion
+25.1. All tokenizations of euros or USD will be credited in Circle Coins to your Circle Mint Account based on a rate of one (1) EURC per 1 euro (€1) and one (1) USDC per 1 USD. If you wire funds to Circle France to complete a tokenization of euro/usd into Circle Coins, you should denominate your wire transfer in euro/usd. If you transmit your wire in a currency other than euro/usd, Circle France’s banking partners will convert such funds to euro/usd at such bank’s then applicable conversion rate and may charge additional fees for completing such currency conversion.
+25.2. Your Circle Mint Account will then be credited with an amount of Circle Coins equal to the amount of euro that results following such currency conversion and deduction of any fees charged for such currency conversion. Circle France is not responsible for any processing delays that may result in connection with completing such currency conversion.
+25.3. Additionally, Circle France’s banking partners may not support all non-euro/usd currencies, and may be forced to reject or return a wire received in a non-supported currency. Note that your Circle Mint Account only supports Circle Coins amounts out to two decimal places, so all Circle Coins amounts will be rounded down to two decimal places.
+26. Your Data
+26.1. You explicitly consent to us accessing, processing, and retaining any information you provide to us, for the purposes of providing the Services to you. This does not affect our respective rights and obligations under data protection legislation. You may withdraw this consent by closing your Circle Mint Account. If you withdraw consent in this way, we will cease using your data for this purpose, but may continue to process your data for other purposes where we have other lawful grounds to do so, such as where we are legally required to keep records of transactions.
+26.2. The processing of your data is governed by our Privacy Policy. By accepting these Terms of Use, you also agree to the terms of our Privacy Policy. You should print and keep a copy of the Privacy Policy together with these Terms of Use.
+26.3. These Terms of Use are provided to you and communicated in English. We will also communicate with you in English for all matters related to your use of the Services. Where we have provided you with a translation of the English language version of these Terms of Use or any information related to your Circle Mint Account, you acknowledge and agree that such translation is provided for your convenience only and that the English language version of these Terms of Use will govern your use of the Services.
+27. Changes to these Terms of Use
+27.1. Circle France may amend these Terms of Use at any time. We will post the updated version on our Website with an updated revision date. On such an update we will notify you by email, in accordance with Section 31 (How We Communicate), that an updated version of these Terms of Use is available and where it may be accessed. The updated Terms of Use shall come into effect, and apply to you, thirty (30) days after the date on which that email notice is deemed received under Section 31.3, unless you have notified us that you object to the changes before they come into effect.
+27.2. If you object to the changes, your sole and exclusive remedy is to terminate your use of the Services by giving thirty (30) days' notice and subsequently close your Circle Mint Account free of charge. In this case, the amended Terms of Use shall not come into effect with respect to you, and the then-current Terms of Use shall continue to apply, until the termination of your use of the Services takes effect. You agree that we shall not be liable to you or any third party as a result of any losses suffered by reason of any modification or amendment of these Terms of Use.
+28. Assignment
+28.1. You may not transfer or assign any rights or obligations under these Terms of Use, by operation of law or otherwise and any such attempted assignment shall be void (it being understood and agreed that this Section 28 shall not prohibit you from sending any Circle Coins / e-money from your Circle Mint Account in accordance with the terms hereof).
+28.2. We reserve the right to freely assign these Terms of Use and the rights and obligations of these Terms of Use to any third party at any time without notice or consent. If you object to such transfer or assignment, you may stop using our Services and terminate your Circle Mint Account by contacting Circle Support here or contact Circle France’s Support Team at [email protected].
+29. Change of Control
+29.1. In the event that Circle France is acquired by or merged with a third party entity, we reserve the right, in any of these circumstances, to transfer or assign the information we have collected from you as part of such merger, acquisition, sale, or other change of control.
+30. Survival - Force Majeure
+30.1. Upon termination of your Circle Mint Account for any reason, all rights and obligations of the parties that by their nature are continuing will survive such termination.
+30.2. Circle France shall have no liability for any failure or delay resulting from any condition beyond our reasonable control as defined within Article 1218 of the French Civil Code, including but not limited to governmental action or acts of terrorism, pandemics, earthquake, fire, flood, or other acts of God, labour conditions, power failures, equipment failures, and Internet disturbances.
+30.3 Sections 41.6.2 (ACPR notification), 41.7 (communication restrictions), and 41.8 (record-keeping) shall survive the termination or expiry of your Circle Mint Account agreement in respect of any Stress Event that commenced prior to such termination or expiry.
+31. How we communicate
+31.1. By agreeing with these Terms of Use, you agree to receive electronic communications and notifications in accordance with our E-Sign Consent Policy.
+31.2. These Terms of Use are provided to you and communicated in English. We will also communicate with you in English for all matters related to your use of the Services. Where we have provided you with a translation of the English language version of these Terms of Use or any information related to your Circle Mint Account, you acknowledge and agree that such translation is provided for your convenience only and that the English language version of these Terms of Use will govern your use of the Services.
+31.3. We usually contact you via email. For this purpose you must at all times maintain at least one valid email address in your Circle Mint Account profile. You are required to check for incoming messages regularly and frequently. Emails may contain links to further communication on our Website. Any communication or notice sent by email will be deemed received by you on the same day if it is received in your email inbox before 4.30 pm local time on a Business Day. If it is received in your email inbox after 4:30pm local time on a Business Day or at any other time, it will be deemed received on the next Business Day.
+31.4. Where legislation requires us to provide information to you on a durable medium, we will either send you an email (with or without attachment) or send you a notification pointing you to information on our Website in a way that enables you to retain the information in print format or other format that can be retained by you permanently for future reference. We recommend you keep copies of all communications we send or make available to you.
+31.5. You can request a copy of the current Terms of Use or any other contractual document relevant to you by contacting Circle Support. These will be provided free of charge.
+31.6. In order to view emails you need a computer with email software that can display emails in HTML format. We may also send you attachments in Adobe Systems Inc.’s Portable Document Format (PDF), for which you need Adobe’s Acrobat Reader, which can be downloaded for free at the Adobe website.
+31.7. We will never send you any emails with executable files attached or with links to any executable files. If you receive any email with such attachments, you should delete the message without clicking on the attachment. If you are unsure whether a communication is originating from us, please contact Circle Support.
+31.8. We will communicate to you in English and will always accept communications made to us in English. You can choose your preferred language from the list of supported languages in your Circle Mint Account profile and we will send you automated email notifications and communications regarding substantial changes to these Terms of Use or Circle France’s policies in your chosen language. For non-standard communication, we reserve the right to communicate with you in English. Documents or communications in any other languages are for convenience only and shall not constitute an obligation on us to conduct any further communication in that language.
+31.9. You may contact us at any time by sending a message to Circle Support here or contact Circle France’s Support Team at [email protected].
+31.10. Any complaints about us or the services we provide should be addressed to us in the first instance by contacting Circle Support. You should clearly indicate that you are wishing to make a complaint to us. This helps us to distinguish a complaint from a mere query. We send you a complaint acknowledgement by post or by email within 48 hours of receiving your complaint in accordance with our complaint procedure. You may request a copy of our complaints procedure at any time by contacting Circle Support.
+31.11. We endeavour to provide you with an answer or resolution to your complaint within the timeframes as outlined by applicable laws and regulations. Should this not be possible due to unforeseen circumstances or lack of information, we will contact you requesting further information on the complaint. In any event, we will send a final reply to the you, addressing all points raised in your complaint, at the latest within 35 Business Days of receipt of the complaint.
+32. Digital Operational Resilience
+Circle France is subject to Regulation (EU) 2022/2554 on digital operational resilience for the financial sector (“DORA”). In this context, Circle France has established and maintains a comprehensive digital operational resilience framework, including a Digital Operational Resilience Strategy approved by its Supervisory Committee, and business continuity and incident management arrangements covering the services provided through the Platform, including the issuance and management of electronic money tokens.
+This framework is designed to ensure the resilience, continuity, security and availability of Circle France’s operations and systems supporting its regulated activities, including the prevention, detection, management and recovery from ICT-related incidents. Where required under applicable regulations, Circle France notifies competent authorities of major incidents in accordance with DORA.
+Nothing in this Section shall be construed as creating any additional contractual obligation, service level commitment, warranty, or specific right for the client beyond those expressly set out in these Terms of Use.
+33. Governing Law
+33.1. Your Circle Mint Account is operated in France and these Terms of Use shall be governed by and interpreted in accordance with the laws of France.
+33.2. If any part of these Terms of Use is found by a court of competent jurisdiction to be invalid, unlawful or unenforceable then such part shall be severed from the remainder of the Terms of Use, which shall continue to be valid and enforceable to the fullest extent permitted by law.
+33.3. Your use of the Services is subject to the laws, regulations, and rules of any applicable governmental or regulatory authority, including, without limitation, all applicable tax, anti-money laundering (“AML”) and counter-terrorist financing (“CTF”) provisions.
+33.4. You unequivocally agree and understand that by registering a Circle Mint Account and using the Services in any capacity, you will act in compliance with and be legally bound by these Terms of Use and all applicable laws and regulations (including, without limitation, those stated in this Section 32, where applicable). For the avoidance of doubt, continued use of your Circle Mint Account and Circle France’s obligations to you under these Terms of Use are conditional on your continued compliance at all times with these Terms of Use and all applicable laws and regulations. Circle France’s AML and CTF procedures are guided by all applicable laws and regulations regarding AML and CTF. These standards are designed to prevent the use of any Circle Mint Account and associated Services for money laundering or terrorist financing activities. We take compliance very seriously and it is our policy to take all necessary steps to prohibit fraudulent transactions, report suspicious activities, and actively engage in the prevention of money laundering and any related acts that facilitate money laundering, terrorist financing or any other financial crimes.
+33.5. These Terms of Use will remain in force indefinitely unless terminated by either you or us in accordance with Sections 8 (Closing your Circle Mint Account), 15 (Prohibited Transactions) or 22 (Termination and Suspension) of these Terms of Use.
+34. Arbitration and Dispute Resolution
+34.1. Except for claims regarding intellectual property rights (which shall be brought exclusively in the courts of Paris, France), any dispute between you and Circle France related in any way to, or arising in any way from, our Services or these Terms of Use (“Dispute”) shall be finally submitted to the International Court of Arbitration of the International Chamber of Commerce and shall be finally settled under the Rules of Arbitration of the International Chamber of Commerce by one arbitrator appointed in accordance with the said Rules, or in accordance with rules on which we may mutually agree in writing; provided, however, that to the extent the amount in dispute is less than EUR 10,000, either you or Circle France may commence an action in a competent court located in the country of your most recent physical address to resolve the Dispute.
+34.2. Any arbitration shall take place in Paris, France. The arbitration shall be conducted in English. The arbitrator may award any relief that a court of competent jurisdiction could award, including attorneys’ fees when authorised by law. The arbitration proceedings shall be confidential; no award or procedural order made in the arbitration shall be published.
+35. No Investment Advice
+35.1. Circle France does not provide investment, tax, or legal advice, nor does Circle France broker trades on your behalf. You should consult your legal or tax professional regarding your specific situation. Circle France may provide educational information about Supported Digital Currency, as well as other Digital Currency not supported by Circle France. Information may include, but is not limited to, blog posts, articles, links to third-party content, news feeds, tutorials, and videos. The information provided on this Website or any third-party sites does not constitute investment advice, financial advice, trading advice, or any other sort of advice, and you should not treat any of the Website's content as such.
+36. Taxes
+36.1. Circle France will maintain a record of your transaction history, which you will be able to access through your Circle Mint Account for purposes of making any required tax filings or payments, but it is your responsibility to determine what, if any, taxes apply to the payments you make or receive, and to collect, report, and remit the correct tax to the appropriate tax authority. Circle France will make any tax withholdings or filings that we are required by law to make, but Circle France is not responsible for determining whether taxes apply to your transaction, or for collecting, reporting, or remitting any taxes arising from any transaction.
+37. Indemnification – Release
+37.1. You agree to indemnify and hold Circle France, its affiliates, and service providers, and each of their officers, directors, agents, joint venturers, employees, and representatives harmless from any claim or demand (including attorneys’ fees and any losses, fines, fees or penalties imposed by any regulatory authority) arising out of your breach of these Terms of Use, your violation of any law or regulation or your use of the Services.
+37.2. For the purpose of this Section 37, the term “losses” means all net costs reasonably incurred by us or the other persons referred to in this Section which are the result of the matters set out in this Section 37 and which may relate to any claims, demands, causes of action, debt, cost, expense or other liability, including reasonable legal fees (without duplication).
+37.3. If you have a dispute with one or more Users or third parties, you release Circle France (and its affiliates and service providers, and each of their officers, directors, agents, joint ventures, employees and representatives) from all claims, demands, and damages (actual and consequential) of every kind and nature arising out of or in any way connected with such disputes.
+38. Affiliate Activities
+38.1. You understand and agree that individuals or entities affiliated with Circle France may hold, purchase, sell, or otherwise engage in transactions using or involving Circle Coins. You further understand and agree that such persons may engage in this activity for any reason, including but not limited to engaging in commercial transactions, promoting transaction activity that utilises Circle Coins, or otherwise supporting the use or adoption of Circle Coins. This activity may involve selling Circle Coins to other entities for provision to their end users. You understand and agree that no individual or entity, whether affiliated with Circle France or otherwise, is under any obligation to engage in these activities, and they may be discontinued at any time.
+39. Third Party Resellers of Circle Coins
+39.1. You understand and agree that Circle France does not control any products or services sold or offered by third parties using the Circle Coins Services.
+39.2. Circle France is not liable for any losses or issues that may arise from such third-party transactions, including, but not limited to, failure to comply with applicable law and regulations (including any consequences for illegal transactions that might be triggered under these Terms), the quality and delivery of such products and services, or your satisfaction with any products or services, the purchase of which is facilitated by the Circle Coins Services. If you are not satisfied with any goods or services purchased from a third party using the Circle Coins Services, you must handle those issues directly with the third-party seller.
+40. Definitions
+Various terms in these Terms of Use have a defined meaning as follows:
+“Business Day” means any day other than a Saturday or a Sunday or a public holiday in France.
+“Circle Mint Account” means the electronic money account you open and maintain through the Circle Website.
+“Circle Support” means Circle Support or Circle France’s Support Team at [email protected].
+“Circle Website” or “Website” means the website available at www.circle.com.
+“Fees” means the charges payable by you to us for using our services.
+“Payment Method” means bank transfer and payment instruments offered by third parties including, but not limited to, wire transfers.
+“Privacy Policy” is the Circle France's policy governing the processing of personal data which is available on the Website, as may be amended from time to time.
+“Terms of Use”, means these Circle Mint Account and Circle Coins Terms of Use, published on the Website and as may be amended from time.
+"Third Party Provider" means a service provider authorised by law and allowed by you to access information or make payments for you in your Circle Mint Account.
+“CASP Client” means a client that is authorised as a crypto-asset service provider under Article 59 of MiCAR by a competent authority in a Member State of the European Economic Area, to provide one or more of the crypto-asset services listed in Article 3(1)(16) of MiCAR.
+‍
+1 Regulation (EU) 2023/1114 of the European Parliament and of the Council of 31 May 2023 on markets in crypto-assets
+2https://www.circle.com/fr/legal/mica-eurc-whitepaper
+3https://www.circle.com/fr/legal/mica-usdc-whitepaper
+4Regulation (EU) 2023/1114 of the European Parliament and of the Council of 31 May 2023 on markets in crypto-assets
+5As provided in Articles L526-2 and L522-2 I of the French Monetary and Financial Code
+‍
+‍
+Home
+Platform
+USDC
+EURC
+USYC
+CirBTC
+CPN Fiat Payments
+CPN Stablecoin Payments
+CPN Managed Payments
+Arc
+Mint
+StableFX
+Wallets
+Contracts
+Paymaster
+CCTP
+xReserve
+Agent Stack
+Use Cases
+Payments
+Dollar Access
+Trading Services
+Case Studies
+Developer
+Developer Hub
+Documentation
+API Reference
+Sample Projects
+Testnet Faucet
+Developer Blog
+Circle Research
+Uptime Status
+Company
+About Circle
+Careers
+We’re hiring
+Alliance Program
+Circle Partner Stablecoins
+Circle Impact
+Circle Foundation
+Circle Ventures
+Investor Relations
+Brand
+USDC
+Transparency
+Supported Blockchains
+Bridged USDC Standard
+USDC.com
+Insights
+Executive Insights
+Policy Hub
+Pressroom
+Blog
+Support
+Help Center
+Contact Us
+Legal & Privacy
+Your Privacy Choices
+subscribe to the Circle newsletter
+en
+English
+Português - Brasil
+Español - Latin America
+French
+X
+Instagram
+LinkedIn
+Discord
+The Money Movement
+YouTube
+Digital assets are subject to a number of risks, including price volatility. Transacting in digital assets could result in significant losses and may not be suitable for some consumers. Digital asset markets and exchanges are not regulated with the same controls or customer protections available with other forms of financial products and are subject to an evolving regulatory environment. Digital assets do not typically have legal tender status and are not covered by deposit protection insurance. The past performance of a digital asset is not a guide to future performance, nor is it a reliable indicator of future results or performance. Additional disclosures can be found on the Legal and Privacy page.
+Circle Internet Financial, LLC (NMLS ID# 1201441). Circle Internet Financial, LLC is licensed as a Money Transmitter by the New York State Department of Financial Services and to engage in Virtual Currency Business Activity by the New York State Department of Financial Services. For information on filing complaints in Texas and Maryland, see our Legal & Privacy page.
+Circle International Bermuda Limited is licensed to conduct digital asset business by the Bermuda Monetary Authority.
+© 2026 Circle Internet Group, Inc
+Circle Technology Services, LLC (“CTS”) is a software provider and does not provide regulated financial or advisory services. You are solely responsible for services you provide to users, including obtaining any necessary licenses or approvals and otherwise complying with applicable laws. For additional details, please refer to our Circle Developer terms of service.

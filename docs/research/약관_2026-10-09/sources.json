@@ -1,0 +1,231 @@
+{
+ "made": "2026-10-09",
+ "note": [
+  "WebFetch는 모델이 손본 글을 돌려줘 원문을 그대로 저장할 수 없어 curl로 HTML을 받았다.",
+  "Coinbase는 발행사가 아니지만 거래소가 주는 보상(USDC Rewards) 조항 문항을 위해 받았다.",
+  "Tether 위험 고지문(Risk Disclosure Statement, 2025-01-27, 약관에 포함된 문서)은 같은 주소의 다른 탭이라 받은 HTML 본문에 없다. 따로 저장하지 않았다.",
+  "text_file 줄 번호는 머리 6줄(주소, 받은 날짜, 문서 제목, 개정일, 받은 방법, 구분선)을 포함한다."
+ ],
+ "docs": [
+  {
+   "id": "circle_usdc_terms",
+   "company": "Circle",
+   "coins": "USDC",
+   "what": "USDC 이용약관(EEA 밖 보유자)",
+   "url": "https://www.circle.com/legal/usdc-terms",
+   "final_url": "https://www.circle.com/legal/usdc-terms",
+   "http_status": 200,
+   "how": "curl(-L, 브라우저 User-Agent)로 받은 HTML",
+   "fetched_at": "2026-10-09T22:22:52+09:00",
+   "raw_bytes": 380523,
+   "raw_sha256": "e58d1d8c8e32e83246ba81fc395d9b1daec82a3ecf34ead0fb8a06f0e7b69465",
+   "title": "Circle | USDC Terms | Circle",
+   "h1": "Legal & Privacy",
+   "revision": [
+    "Last Updated: December 12, 2025"
+   ],
+   "text_chars": 79685,
+   "text_file": "docs/research/약관_2026-10-09/circle_usdc_terms.txt",
+   "header_lines": 6,
+   "result": "받음"
+  },
+  {
+   "id": "circle_eurc_terms",
+   "company": "Circle",
+   "coins": "EURC",
+   "what": "EURC 이용약관",
+   "url": "https://www.circle.com/legal/eurc-terms",
+   "final_url": "https://www.circle.com/legal/eurc-terms",
+   "http_status": 200,
+   "how": "curl(-L, 브라우저 User-Agent)로 받은 HTML",
+   "fetched_at": "2026-10-09T22:22:52+09:00",
+   "raw_bytes": 380311,
+   "raw_sha256": "9b90473555c36f70916d8057df6eaddeafbadf95a17998525db78bfe60084c0d",
+   "title": "Circle | EURC Terms | Circle",
+   "h1": "Legal & Privacy",
+   "revision": [
+    "Last Updated: December 12, 2025"
+   ],
+   "text_chars": 79080,
+   "text_file": "docs/research/약관_2026-10-09/circle_eurc_terms.txt",
+   "header_lines": 6,
+   "result": "받음"
+  },
+  {
+   "id": "circle_eea_terms",
+   "company": "Circle France",
+   "coins": "USDC, EURC",
+   "what": "Circle France 약관(EEA 보유자)",
+   "url": "https://www.circle.com/legal/eea-terms",
+   "final_url": "https://www.circle.com/legal/eea-terms",
+   "http_status": 200,
+   "how": "curl(-L, 브라우저 User-Agent)로 받은 HTML",
+   "fetched_at": "2026-10-09T22:22:52+09:00",
+   "raw_bytes": 407490,
+   "raw_sha256": "449fe17af492e3316552d761d38d47f70086683ecfa3d5134aaf1aed4955f4b5",
+   "title": "Circle Europe | EEA Terms of Use | Circle",
+   "h1": "Legal & Privacy",
+   "revision": [
+    "Last Updated: July 7, 2026"
+   ],
+   "text_chars": 107167,
+   "text_file": "docs/research/약관_2026-10-09/circle_eea_terms.txt",
+   "header_lines": 6,
+   "result": "받음"
+  },
+  {
+   "id": "paxos_stablecoin_terms",
+   "company": "Paxos",
+   "coins": "USDP, PYUSD, USDG",
+   "what": "Paxos USD 스테이블코인 약관",
+   "url": "https://www.paxos.com/terms-and-conditions/stablecoin-terms-conditions",
+   "final_url": "https://www.paxos.com/terms-and-conditions/stablecoin-terms-conditions",
+   "http_status": 200,
+   "how": "curl(-L, 브라우저 User-Agent)로 받은 HTML",
+   "fetched_at": "2026-10-09T22:22:52+09:00",
+   "raw_bytes": 445921,
+   "raw_sha256": "aea3ef4b875160c4224a7a9bdb9629d602f128a8a1dc36bd67fd446f098dce34",
+   "title": "Paxos | Terms and Conditions - US Dollar-Backed Stablecoin Terms and Conditions",
+   "h1": null,
+   "revision": [
+    "Last Modified: June 30, 2026"
+   ],
+   "text_chars": 42023,
+   "text_file": "docs/research/약관_2026-10-09/paxos_stablecoin_terms.txt",
+   "header_lines": 6,
+   "result": "받음"
+  },
+  {
+   "id": "paxos_usdg_eu_whitepaper",
+   "company": "Paxos",
+   "coins": "USDG",
+   "what": "USDG EU 백서(MiCA)",
+   "url": "https://www.paxos.com/terms-and-conditions/usdg-eu-whitepaper",
+   "final_url": "https://www.paxos.com/terms-and-conditions/usdg-eu-whitepaper",
+   "http_status": 200,
+   "how": "curl(-L, 브라우저 User-Agent)로 받은 HTML",
+   "fetched_at": "2026-10-09T22:22:52+09:00",
+   "raw_bytes": 679697,
+   "raw_sha256": "5f13484f880693fba87caad869d1720239c0266fbd742af9f35a7dcb3254b737",
+   "title": "Paxos | Terms and Conditions - USDG EU Whitepaper",
+   "h1": null,
+   "revision": [
+    "Last updated: June 24, 2026"
+   ],
+   "text_chars": 94131,
+   "text_file": "docs/research/약관_2026-10-09/paxos_usdg_eu_whitepaper.txt",
+   "header_lines": 6,
+   "result": "받음"
+  },
+  {
+   "id": "paypal_crypto_terms",
+   "company": "PayPal",
+   "coins": "PYUSD",
+   "what": "PayPal 암호자산 약관(PYUSD 보상 프로그램 절 포함, 유통사)",
+   "url": "https://www.paypal.com/us/legalhub/paypal/cryptocurrencies-tnc",
+   "final_url": "https://www.paypal.com/us/legalhub/paypal/cryptocurrencies-tnc",
+   "http_status": 200,
+   "how": "curl(-L, 브라우저 User-Agent)로 받은 HTML",
+   "fetched_at": "2026-10-09T22:22:52+09:00",
+   "raw_bytes": 2433413,
+   "raw_sha256": "e4c763d21770ecab0797246a507fbbedf072fd2683dce85c58ac134603e7e2ac",
+   "title": "Cryptocurrency Terms and Conditions",
+   "h1": "Cryptocurrency Terms and Conditions",
+   "revision": [
+    "Last updated on May 19, 2026"
+   ],
+   "text_chars": 140152,
+   "text_file": "docs/research/약관_2026-10-09/paypal_crypto_terms.txt",
+   "header_lines": 6,
+   "result": "받음"
+  },
+  {
+   "id": "gemini_trust_user_agreement",
+   "company": "Gemini",
+   "coins": "GUSD",
+   "what": "Gemini Trust 이용약관(Gemini Dollar 절 포함)",
+   "url": "https://www.gemini.com/legal/gemini-trust-user-agreement",
+   "final_url": "https://www.gemini.com/legal/gemini-trust-user-agreement",
+   "http_status": 200,
+   "how": "curl(-L, 브라우저 User-Agent)로 받은 HTML",
+   "fetched_at": "2026-10-09T22:22:54+09:00",
+   "raw_bytes": 1188580,
+   "raw_sha256": "adc29b4a9a88e72fabedf7cd50c7d9cf000c392ca3b33f4f0d83e62e6c253636",
+   "title": "User Agreement | Gemini",
+   "h1": "Gemini Trust User Agreement",
+   "revision": [
+    "Gemini Trust User Agreement August 21, 2026"
+   ],
+   "text_chars": 206507,
+   "text_file": "docs/research/약관_2026-10-09/gemini_trust_user_agreement.txt",
+   "header_lines": 6,
+   "result": "받음"
+  },
+  {
+   "id": "ripple_rlusd_terms",
+   "company": "Ripple",
+   "coins": "RLUSD",
+   "what": "RLUSD 이용약관",
+   "url": "https://ripple.com/legal/stablecoin/",
+   "final_url": "https://ripple.com/legal/stablecoin/",
+   "http_status": 200,
+   "how": "curl(-L, 브라우저 User-Agent)로 받은 HTML",
+   "fetched_at": "2026-10-09T22:22:54+09:00",
+   "raw_bytes": 231334,
+   "raw_sha256": "88cee94429698c98ef9b8bf27882b42d875744ef8e05070c4a8d4360af3bd0ad",
+   "title": "RLUSD Stablecoin User Terms | Ripple",
+   "h1": "RLUSD User Terms",
+   "revision": [
+    "Last updated: October 3, 2024"
+   ],
+   "text_chars": 42341,
+   "text_file": "docs/research/약관_2026-10-09/ripple_rlusd_terms.txt",
+   "header_lines": 6,
+   "result": "받음"
+  },
+  {
+   "id": "tether_terms",
+   "company": "Tether",
+   "coins": "USDT",
+   "what": "Tether 약관 현행판",
+   "url": "https://tether.to/en/legal/",
+   "final_url": "https://tether.to/en/legal/",
+   "http_status": 200,
+   "how": "curl(-L, 브라우저 User-Agent)로 받은 HTML",
+   "fetched_at": "2026-10-09T22:22:54+09:00",
+   "raw_bytes": 147563,
+   "raw_sha256": "9789e907bfb55b95eda8bce45ee07be5892434ca638fa1bf9c58a888ca6d61e6",
+   "title": "Tether – Official Home of Tether",
+   "h1": "Legal",
+   "revision": [
+    "Last updated: February 26, 2026"
+   ],
+   "text_chars": 78662,
+   "text_file": "docs/research/약관_2026-10-09/tether_terms.txt",
+   "header_lines": 6,
+   "result": "받음"
+  },
+  {
+   "id": "coinbase_user_agreement",
+   "company": "Coinbase",
+   "coins": "USDC",
+   "what": "Coinbase 이용약관(USDC 보상 절, 거래소)",
+   "url": "https://www.coinbase.com/legal/user_agreement/united_states",
+   "final_url": "https://www.coinbase.com/legal/user_agreement/united_states",
+   "http_status": null,
+   "how": "curl이 403이라 Aside 브라우저 repl(openTab 뒤 page.content())로 받은 HTML",
+   "fetched_at": "2026-10-09T22:09:23+09:00",
+   "raw_bytes": 1971701,
+   "raw_sha256": "f7b38b10746cc0122b4a19fc57bef46e1bf40d4080bdf0642547f2961372808e",
+   "title": "User Agreement - Coinbase",
+   "h1": "Coinbase User Agreements",
+   "revision": [
+    "Last updated: July 22, 2026"
+   ],
+   "text_chars": 365879,
+   "text_file": "docs/research/약관_2026-10-09/coinbase_user_agreement.txt",
+   "header_lines": 6,
+   "result": "받음"
+  }
+ ]
+}

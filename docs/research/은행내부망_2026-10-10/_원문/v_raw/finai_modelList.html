@@ -1,0 +1,892 @@
+
+
+
+
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="금융권 AI 플랫폼">
+    <meta name="description" lang="ko" content="금융 전문가들이 엄선한 AI 리소스를 제공하여 국내 금융 산업에 최적화된 AI 활용을 지원합니다.">
+    <meta name="keywords" content="금융권 AI 플랫폼, AI모델, 데이터셋, AI기능테스트, 금융 특화 한글 말뭉치, 한국신용정보원">
+    <meta name="url" content="http://finai.kcredit.or.kr">
+    <!-- Open Graph data -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="금융권 AI 플랫폼">
+    <meta property="og:url" content="http://finai.kcredit.or.kr">
+    <meta property="og:description" content="금융 전문가들이 엄선한 AI 리소스를 제공하여 국내 금융 산업에 최적화된 AI 활용을 지원합니다.">
+	<!-- verification search -->
+	<meta name="google-site-verification" content="8rl7Pq2x54yDo_SEnis-QtNtbZKErXGDVnZUuvstTpY" />
+	<meta name="naver-site-verification" content="97fb88dc6c5e5cabc610108e690ae3a36b29f245" />   
+	 
+    <meta name="_csrf_parameter" content="_csrf" /><meta name="_csrf_header" content="X-XSRF-TOKEN" /><meta name="_csrf" content="8a10f360-61ea-4c2b-8324-c70f37336cb8" />
+    
+    <title>금융권 AI 플랫폼</title>
+    <meta name="viewport" content="width=1400">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/customStyle.css">
+    
+    <script src="/js/jquery-2.2.4.js"></script>
+    <script src="/js/common_base.js"></script>
+    <script src="/js/jquery/jquery-1.12.4.js"></script>
+    <script src="/js/select/select2.js"></script>
+    <script src="/js/jquery/jquery-ui.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/swiper-bundle.js"></script>
+    
+    <!-- toast UI -->
+    <link rel="stylesheet" href="/css/tui/pagination.css">
+    <link rel="stylesheet" href="/css/tui/tui-grid.css">
+    <script src="/js/tui/tui-pagination.js"></script>
+    <script src="/js/tui/tui-grid.js"></script>
+    
+    <script>
+        var contextPath = '/';
+        contextPath = contextPath.substring(0, contextPath.lastIndexOf('/'));
+        var __authInfo =JSON.parse('null'.replace(/&#034;/g, '"'));
+        var __menuid = '';
+        
+        window.onpageshow = function(event){
+            if(event.persisted || (window.performance && window.performance.navigation.type==2)){
+                window.location.reload();
+                return;
+            }
+        }
+        
+        $(function () {
+            
+    	    $('#common_alert_pop_close_btn').on('click', function() {
+    	    	//fnClosePopup();
+    	    	fnCommonClosePopup('pop_alert');
+    	    });
+    	    
+    	    
+    	    $('#common_confirm_pop_close_btn').on('click', function() {
+    	    	fnCommonClosePopup('pop_confirm');
+    	    });
+    	    
+        });
+        
+    	//팝업닫기(콜백)
+    	function fnCommonClosePopup(popLayer, callback) {
+    		
+    	    const $popup = $('.' + popLayer);
+    	    const $dim = $('.popup-dim');
+
+    	    if ($popup.hasClass('nth2')) {
+    	        $popup.removeClass('nth2');
+    	        $dim.removeClass('nth2');
+    	        $('.popup-wrap.nth1').removeClass('nth1');
+    	    }
+
+    	    $popup.hide();
+
+    	    if ($('.popup-wrap:visible').length === 0) {
+    	        $dim.hide();
+    	        $('body').removeClass('scroll-hidden');
+    	    }
+    	    if (callback) callback();
+    	    
+    	}
+
+    </script>
+    
+</head>
+
+<body>
+	<div class="skip-navi"><a href="#container">본문 바로가기</a></div>
+    <div class="wrap">
+    	<input type="hidden" id="tmp_chk_val" value="E"/>
+    	
+		<form id="___file_down_form__" name="___file_down_form__" method="post">
+		    <input type="hidden" name="_csrf" value="8a10f360-61ea-4c2b-8324-c70f37336cb8" />
+		    <input type="hidden" name="fileId" id="fileId"/>
+		    <input type="hidden" name="fileSeq" id="fileSeq"/>
+		    <input type="hidden" name="fileType" id="fileType"/>
+		       
+		    <input type="hidden" name="mainGuideFileNm" id="mainGuideFileNm"/>
+		</form>
+		
+		<form id="_session_chk_form" name="_session_chk_form" method="post">
+		    <input type="hidden" name="_csrf" value="8a10f360-61ea-4c2b-8324-c70f37336cb8" />
+		    <input type="hidden" name="boardNo"/>
+		    <input type="hidden" name="goUrl"/>
+		    <input type="hidden" name="goRol"/>
+		    <input type="hidden" name="searchCategory"/>
+		</form>
+
+        <header id="header"
+        
+        	
+        	
+        	
+        
+        >
+        
+        
+
+
+
+<script>
+
+
+function fnPageMove(url){
+	if(url == "todo"){
+		fn_commonAlertPop("알림","준비중 입니다.","");
+	}else{
+		$("#___page_move_form__").attr("action", contextPath+url);
+		$("#___page_move_form__").submit();	
+	}
+}
+
+
+function fn__setMenu(menuList){
+	var menuUlHtml = "";
+	var menuUlSubHtmlHeader = "<li><ul class=\"menu_in\">";
+	var menuUlSubHtml = "";
+	var view_yn = "";
+	var mainMode = "login";
+	var loginUserInfoMode = "";
+	
+	menuUlHtml = "";
+	menuUlHtml += "<div class=\"inner\">";
+	
+	// /mypage/usersvc/mpUserDownloadList.do
+	if(stringUtil.isEmpty(loginUserInfoMode)) {
+		menuUlHtml += "<h1 class=\"logo\"><a href=\"javascript:void(0)\" onclick=\"javascript:fnPageMove('/main.do');\">한국신용정보원 금융권 AI플랫폼</a></h1>";
+	} else {
+		menuUlHtml += "<h1 class=\"logo\"><a href=\"javascript:void(0)\" onclick=\"javascript:fnPageMove('/mypage/usersvc/mpUserDownloadList.do');\">한국신용정보원 금융권 AI플랫폼</a></h1>";
+	}
+	
+	if(mainMode == "main" && !stringUtil.isEmpty(loginUserInfoMode)) {
+		menuUlHtml += "<div class=\"navi\">";	
+	} else {
+		menuUlHtml += "<div class=\"navi\">";
+	}
+	
+	menuUlHtml += "<ul class=\"gnb\">";
+	
+	var startDepth1Count = 0;
+	var startDepth1Checked = false;
+	
+	var startDepth2Count = 0;
+	var startDepth2Checked = false;
+	
+	for(var i = 0 ; i < menuList.length ; i++){
+	    view_yn = menuList[i].viewYn;
+	    
+	    
+	    if(menuList[i].viewYn == "Y"){
+	        if(menuList[i].lv == 1){
+	        	
+	        	if(startDepth2Checked==true) {
+	        		menuUlHtml += "</ul>";
+        			
+	        		startDepth1Count=0;
+        			startDepth1Checked=false;
+        			
+        			startDepth2Count=0;
+        			startDepth2Checked=false;
+	        	}
+	        	
+	        	if(startDepth1Count == 0 && startDepth1Checked == false) {
+	        		// Depth 1단계 URL존재에 따라 메뉴 클릭 활성,비활성화
+	        		if(!stringUtil.isEmpty(menuList[i].menuUrl)) {
+	        			menuUlHtml += "<li class=\"dap1\"><a href=\"javascript:void(0)\" onclick=\"javascript:gfn_goPageMove('" + menuList[i].menuUrl + "','" + menuList[i].sessionChk + "');\">" + menuList[i].menuNm + "</a>";	
+	        		} else {
+	        			menuUlHtml += "<li class=\"dap1\"><a href=\"javascript:void(0)\">" + menuList[i].menuNm + "</a>";	        			
+	        		}
+	        			        		
+	        		startDepth1Count++;
+	        		startDepth1Checked=true;
+	        	} else {
+	        		
+	        		if(startDepth2Checked == false) {
+	        			menuUlHtml += "</li>";
+	        			startDepth1Count=0;
+	        			startDepth1Checked=false;
+	        			
+	        			// Depth 1단계 URL존재에 따라 메뉴 클릭 활성,비활성화
+	        			if(!stringUtil.isEmpty(menuList[i].menuUrl)) {
+	        				menuUlHtml += "<li class=\"dap1\"><a href=\"javascript:void(0)\" onclick=\"javascript:gfn_goPageMove('" + menuList[i].menuUrl + "','" + menuList[i].sessionChk + "');\">" + menuList[i].menuNm + "</a>";
+	        			} else {
+	        				menuUlHtml += "<li class=\"dap1\"><a href=\"javascript:void(0)\">" + menuList[i].menuNm + "</a>";
+	        			}
+	        			
+		        		startDepth1Count++;
+		        		startDepth1Checked=true;
+	        		}
+	        	}
+	            
+	        }else if(menuList[i].lv == 2){
+	        	
+	        	//2단계 메뉴 처음 시작
+	        	if(startDepth2Count == 0 && startDepth2Checked== false) {
+	        		menuUlHtml += "<ul class=\"dap2\">";
+	        		menuUlHtml += "<li><a href=\"javascript:void(0);\" onclick=\"javascript:gfn_goPageMove('" + menuList[i].menuUrl + "','" + menuList[i].sessionChk + "');\">" + menuList[i].menuNm + "</a></li>";
+	        		
+	        		startDepth2Count++;
+	        		startDepth2Checked = true;
+	        		
+	        	} else {
+	        		menuUlHtml += "<li><a href=\"javascript:void(0);\" onclick=\"javascript:gfn_goPageMove('" + menuList[i].menuUrl + "','" + menuList[i].sessionChk + "');\">" + menuList[i].menuNm + "</a></li>";
+	        	}
+	        	
+	        }
+	    }
+	}
+	
+	if(startDepth2Checked==true) {
+		menuUlHtml += "</ul>";
+		
+		startDepth1Count=0;
+		startDepth1Checked=false;
+		
+		startDepth2Count=0;
+		startDepth2Checked=false;
+	}
+	
+	menuUlHtml += "</ul>";
+	
+	/* 로그인전 로그인, 회원가입 처리 */
+	
+    
+    menuUlHtml += "<div class=\"log\" style=\"display:block;\">";
+    menuUlHtml += "<a href=\"javascript:fnPageMove('/common/loginPage.do')\" class=\"btn log-login\">로그인</a>";
+    menuUlHtml += "<a href=\"javascript:fnPageMove('/join/joinStep1.do')\" class=\"btn log-join\">회원가입</a>";
+    menuUlHtml += "</div>";
+    
+    menuUlHtml += "<div class=\"search\">";
+    menuUlHtml += "<button type=\"button\" class=\"search-btn\">검색</button>";
+    menuUlHtml += "</div>";
+	
+	
+	
+
+	menuUlHtml += "</div>";
+	menuUlHtml += "</div>";
+	
+    /* 서치 판넬(로그인전) */
+    var menuSearchUI = "";
+    menuSearchUI += "<div class=\"search-panel\">";
+    menuSearchUI += "<div class=\"panel-lap\">";
+    menuSearchUI += "<button class=\"search-close\">검색창 닫기</button>";
+    menuSearchUI += "<h2 class=\"search-title\">콘텐츠 검색</h2>";
+    menuSearchUI += "<div class=\"search-input\">";
+    menuSearchUI += "<input type=\"text\" class=\"search-text\" id=\"unifiedSearchKeyword\">";
+    menuSearchUI += "<button type=\"button\" class=\"search-btn\" id=\"searchUnifiedBtnAct\" disabled>검색</button>";
+    menuSearchUI += "</div>";
+    menuSearchUI += "</div>";
+    menuSearchUI += "</div>";
+    menuUlHtml += menuSearchUI;
+	
+	$("#header").html(menuUlHtml);
+	
+	//상단 사용자 이미지 처리
+	setTimeout(() => {
+		var loginUserImageWishData = ``;
+		var setLoginUserImageWishData = loginUserImageWishData;
+		if (loginUserImageWishData == 'data:null'){
+			setLoginUserImageWishData = '/images/ico_profile_default.png';
+		}
+		
+		const buttonUserImage = document.getElementById('userImageObjIdSpan');
+		if(buttonUserImage) {
+			const img = new Image();
+			img.className = 'btn-finaiuser-image-icon';
+			if(!stringUtil.isEmpty(loginUserImageWishData)) {
+				img.src = setLoginUserImageWishData;
+				
+			} else {
+				img.src = '/images/ico_profile_default.png';
+			}
+			
+			//이미지를 적용
+			buttonUserImage.appendChild(img);
+			
+		}
+	
+	}, 50);
+	
+	
+	var menuNavArea = document.getElementById("menuNavArea");
+	if(!stringUtil.isEmpty(menuNavArea)){
+		//AS-IS
+	    //fnSetNavi();
+	}
+	
+}
+
+
+function fn__getMenu(menuList){
+	var token = $("meta[name='_csrf']").attr("content");
+    var header = $("meta[name='_csrf_header']").attr("content");
+    
+	$.ajax({
+		type: "POST"
+		, url: contextPath+"/main/selectMenuList.do"
+		, contentType : "application/json;UTF-8"
+		, data: {}
+		, dataType: "json"
+		, async: true
+		, beforeSend: function(xmlHttpRequest) {
+			xmlHttpRequest.setRequestHeader("AJAX", "true");
+			if(!stringUtil.isEmpty(header)) {
+		        xmlHttpRequest.setRequestHeader(header, token);
+			}
+		}
+		, success: function(data, status, xhr) {
+			if($("#tmp_chk_val").val() == 'E') {
+				sessionStorage.setItem("__nonMenuList",JSON.stringify(data.list));
+			}else{
+				sessionStorage.setItem("__menuList",JSON.stringify(data.list));	
+			}
+			fn__setMenu(data.list);
+			
+		}
+		, error: function(jqXHR, textStatus, errorThrown) {
+			fnAjaxError(jqXHR);
+		}
+	});
+}
+
+
+function fnSetNavi(){
+	var navHtml = "<ul>";
+	navHtml += "<li>HOME</li>"
+	var title = "";
+	
+	var menuList = getMenuList();
+	if(menuList && !stringUtil.isEmpty(__menuid)){
+		menuListJson = JSON.parse(menuList);
+		var menuNavChk = false;
+		for(var i = 0 ; i< menuListJson.length ; i++){
+			if(menuListJson[i].menuId == __menuid){
+				var naviArr = menuListJson[i].menuNavi.split(">");
+				for(var j = 0 ; j < naviArr.length ; j++){
+					if(j == naviArr.length -1){
+						navHtml += "<li class='on'>"+naviArr[j]+"</li>";
+						title = naviArr[j];
+					}else{
+						navHtml += "<li>"+naviArr[j]+"</li>";
+					}
+				}
+				menuNavChk = true;
+				break;
+			}
+		}
+		  
+		if(menuNavChk == true){
+		    $("#menuNavArea").show();
+		}else {
+		    $("#menuNavArea").hide();
+		}
+	}else {
+	    $("#menuNavArea").hide();
+	}
+	navHtml += '</ul>';
+	$("#menuNavPath").html(navHtml);
+}
+
+
+function getMenuList(){
+	var menuList = null;
+	if($("#tmp_chk_val").val() == 'E') {
+		sessionStorage.removeItem("__menuList");
+		menuList = sessionStorage.getItem("__nonMenuList");
+	}else{
+		sessionStorage.removeItem("__nonMenuList");
+		menuList = sessionStorage.getItem("__menuList");
+	}
+	return menuList;
+}
+
+function loginAppendOn() {
+    
+}
+
+
+$(function() {		
+	var menuList = getMenuList();
+	if(menuList && JSON.parse(menuList).length > 0){
+	    
+		fn__setMenu(JSON.parse(menuList));
+	}else {
+	    
+		fn__getMenu();
+	}
+
+    
+	
+	// 콘텐츠 검색 - 조회 버튼 클릭
+	$(document).on("click", "#searchUnifiedBtnAct", function(e){
+		e.preventDefault();
+		var paramData = {
+		 	"searchType": "A"
+		 	,"searchKeyword": $("#unifiedSearchKeyword").val()
+		};
+		$.each(paramData, function(key, value) {
+	 		var $input = $('<input>', {
+	 			type: 'hidden',
+	 			name: key,
+	 			value: value,
+	 		});
+	 		document.querySelector("#___page_move_form__").insertAdjacentElement("beforeend", $input[0]);
+		});		
+	 	$("#___page_move_form__").attr("action", contextPath+"/main/mainUnifiedSearch.do");
+	 	$("#___page_move_form__").submit();
+ 	});
+	
+	 // 검색 버튼 엔터 눌렀을 때 / 내용 입력했을 때
+	$(document).on("keyup", "#unifiedSearchKeyword", function(e) {
+		var val = stringUtil.isTrim($(this).val(),"A");
+		
+		if(val.length > 0){
+			$("#searchUnifiedBtnAct").prop("disabled", false); // 버튼 비활성화
+		} else {
+			$("#searchUnifiedBtnAct").prop("disabled", true); // 버튼 활성화
+		}
+		
+		if(e.keyCode == 13){
+			$("#searchUnifiedBtnAct").click();
+		}		
+	});
+	
+});
+
+</script>
+
+
+		
+        </header>
+
+        <div id="menuNavArea" class="sub_root" style="display:none;">
+            <div id="menuNavPath" class="container clear">
+                <ul></ul>
+            </div>
+         </div>
+         
+        <div id="mainArea" class="sub-container">
+        	
+
+
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+</head>
+
+<body>
+    
+    <div class="wrap">
+    
+        
+        <section id="contents">
+        
+        <div class="container">
+            <div class="define_area">
+                <dl>
+                    <dt class="no_page_ico"></dt>
+                    <dd>
+                        <em>페이지를 찾을 수 없습니다.</em>
+                       
+                       페이지 경로가 올바르지 않거나 알 수 없는 오류가 발생했습니다.<br>
+                       잠시 후 다시 이용해 주세요
+                       
+                        <p class="mt40"></p>
+                        <div class="btnArea">
+                            <a href="/" class="btn_blue wm430">홈으로 이동</a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    
+       </section>
+       
+    </div>
+    </body>
+</html>
+        		
+        </div>
+        
+        <footer class="footer">
+
+ 
+
+
+<script>
+
+window.addEventListener('DOMContentLoaded', function() {
+});
+
+window.addEventListener('load', function() {
+	const subContainer = document.querySelector('.sub-container');
+	if(subContainer) {
+		setTimeout(function() {	
+			$(".sub-container").css({
+				"opacity" : 1, 
+				"display" : 'block',
+				"visibility" : 'visible',
+				"height" : 'auto',
+				}).animate({opacity: 1}, 10);
+		}, 50);
+	}
+	
+	const footer = document.querySelector('footer');
+	if(footer) {
+		setTimeout(function() {	
+			$("#footer").css({
+				"opacity" : 1, 
+				"display" : 'block',
+				"visibility" : 'visible',
+				"height" : 'auto',
+				}).animate({opacity: 1}, 30);
+		}, 100);
+		
+	}
+	
+});
+
+function fn__setBaseInfo(baseInfo){
+	$("#foot_addr").html(baseInfo.addr+"  "+stringUtil.nullToBlank(baseInfo.deptNm));
+	$("#foot_tel").html("대표전화 : "+baseInfo.tel);
+	$("#foot_email").html("이메일 : "+baseInfo.email);
+}
+
+function fn__getBaseInfo(){
+	var token = $("meta[name='_csrf']").attr("content");
+    var header = $("meta[name='_csrf_header']").attr("content");
+	$.ajax({
+		type: "POST"
+		, url: contextPath+"/main/selectBaseInfo.do"
+		, contentType : "application/json;UTF-8"
+		, data: {}
+		, dataType: "json"
+		, async: true
+		, beforeSend: function(xmlHttpRequest) {
+			xmlHttpRequest.setRequestHeader("AJAX", "true");
+			if(!stringUtil.isEmpty(header)) {
+		        xmlHttpRequest.setRequestHeader(header, token);
+			}
+		}
+		, success: function(data, status, xhr) {
+			sessionStorage.setItem("__baseInfo",JSON.stringify(data.info));
+			fn__setBaseInfo(data.info);
+		}
+		, error: function(jqXHR, textStatus, errorThrown) {
+			fnAjaxError(jqXHR);
+		}
+	});
+}
+
+
+function fnMoveFooter(path) {
+    $("#frm_move_footer").attr("action", contextPath+path);
+	$("#frm_move_footer").attr("target", "_blank");
+	$("#frm_move_footer").submit();
+}
+
+function fnGoPrivacy(){
+    var kcreditPage = window.open("개인정보처리방침", "privacy");
+    kcreditPage.location.href = "http://www.kcredit.or.kr/popup/privacy.do";
+}
+
+function fnGoUseTermsView(){
+	$("#___page_move_form__").attr("action", contextPath+"/policy/useTermsView.do");
+	$("#___page_move_form__").submit();
+}
+//로그아웃 
+function logout(){
+	sessionStorage.clear();
+	$("#___page_move_form__").attr("action", contextPath+"/common/logout.do");
+	$("#___page_move_form__").submit();
+}
+
+//자동로그아웃(10분) 창 열기
+function autologout_open() {
+  $('html').addClass('overflowH');
+  $('.autoLogout').show();
+//  $(".dimm").show();
+}
+
+// 자동로그아웃(10분) 창 닫기
+function autologout_close() {
+  $('html').removeClass('overflowH');
+  $('.autoLogout').hide();
+}
+
+//자동로그아웃(5분) 창 열기
+function autologout2_open() {
+  fnOpenPopup('.pop-logout'); // 팝업 열기
+}
+
+// 자동로그아웃(5분) 창 닫기
+function autologout2_close() {
+  $('html').removeClass('overflowH');
+  $('.autoLogout2').hide();
+}
+
+var __myVar;
+function fn__CountDown (num) {
+    // 카운트 다운
+    //var num = 60 * min;
+	// 기간연장팝업 추가
+    function time () {
+        __myVar = setInterval(countDownFunc, 1000);
+    }
+
+    time();
+
+    function countDownFunc () {
+        var min = num / 60;
+        min = Math.floor(min);
+        var sec = num - (60 * min);
+
+        if (sec < 10) {
+            sec = '0' + sec;
+        }
+
+        var $input = $('#logincounter').text( min + ':' + sec);
+
+        if(num == 600)//10분 팝업
+        {
+			autologout_open();
+			// 자동로그아웃 연장
+			$("#btnAutoLogin").on("click", function() {
+				num = 1800; // 30분 초기화
+				autologout_close();
+			});
+			// 닫기
+			$("#btnAutoLogout").on("click", function() {
+	            autologout_close();
+			});
+
+        }
+        else if(num == 300)//5분 팝업
+		{
+        	autologout_close();//10분팝업 닫고 5분팝업 시작
+        	fnOpenPopup('.pop-logout'); // 팝업 열기
+			// 자동로그아웃 연장
+			$("#btnAutoLogin2").on("click", function() {
+				num = 1800; // 30분 초기화
+			});
+        }        
+        else if (num == 0) {
+        	//팝업 모두 종료 후 로그아웃
+            clearInterval(__myVar); // num 이 0초  타이머 종료
+            logout();
+            $('#logincounter').text('');
+        }
+        num--;//시간초 감소
+    }
+}
+
+
+$(function() {
+
+	var baseInfo = sessionStorage.getItem("__baseInfo");
+	if(baseInfo){
+		fn__setBaseInfo(JSON.parse(baseInfo));
+	}else {
+		fn__getBaseInfo();
+	}
+
+    /*공통 confirm용 팝업 닫기*/
+    $("#common_confirm_pop_close_btn,#common_confirm_cancel_btn").click(function () {
+        $("#dimmed2").remove();
+        $("#common_confirm_pop").fadeOut(200);
+        $("#common_confirm_ok_btn").off();
+    });
+    
+	
+	 $("#other_site_link").change(function(){
+		var alink = $(this).val();
+		if(!stringUtil.isEmpty(alink)){
+		    var kcreditPage = window.open("about:blank");
+			if(alink == "link1"){
+			    
+				kcreditPage.location.href = "http://www.kcredit.or.kr";
+	 		} else if(alink == "link2"){
+	 		    
+				kcreditPage.location.href = "http://www.fsc.go.kr";
+			} else if(alink == "link3"){
+			    
+				kcreditPage.location.href = "http://www.fss.or.kr";
+			} else if(alink == "link4"){
+			    
+				kcreditPage.location.href = "http://www.pipc.go.kr";
+			}
+		}
+	});
+	 
+	$(document).off("click", "#btnAutoLogin2").on("click", "#btnAutoLogin2", function(){
+		loginAppendOn();
+	});
+	 
+	$(document).off("click", "#btnAutoLogout2").on("click", "#btnAutoLogout2", function(){
+		logout();
+	});
+	 
+ })
+</script>
+<form id="frm_move_footer" name="frm_move_footer" method="post">
+<input type="hidden" name="_csrf" value="8a10f360-61ea-4c2b-8324-c70f37336cb8" />
+</form>
+
+<form id="___page_move_form__" name="___page_move_form__" method="post">
+    <input type="hidden" name="_csrf" value="8a10f360-61ea-4c2b-8324-c70f37336cb8" />
+</form>
+
+
+ <footer id="footer" style="display:none;">
+    <div class="box1">
+        <div class="inner">
+            <div class="left">
+                <div  class="terms-link">
+                    <a href="javascript:void(0)" class="link" onclick="javascript:fnGoPrivacy()"><strong>개인정보처리방침</strong></a>
+                    <a href="javascript:void(0)" class="link" onclick="javascript:fnGoUseTermsView();">이용약관</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="family-site">
+                    <button type="button" class="site-head" onclick="familySite(this)"><span class="txt">관련사이트 바로가기</span></button>
+                    <ul class="site-list">
+                        <li><a class="button" href="https://www.kcredit.or.kr" target="_blank">한국신용정보원</a></li>
+                        <li><a class="button" href="https://www.fsc.go.kr" target="_blank">금융위원회</a></li>
+                        <li><a class="button" href="https://www.fss.or.kr" target="_blank">금융감독원</a></li>
+                        <li><a class="button" href="https://www.pipc.go.kr" target="_blank">개인정보보호위원회</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="inner">
+            <div class="left">
+            
+		        
+		        	
+		        		<a href="javascript:void(0)" onclick="javascript:fnPageMove('/main.do');" class="foot-logo"> 한국신용정보원 AI플랫폼</a>
+		        	
+		        	
+		        
+		        
+                <div class="foot-address">
+                    <span class="location" id="foot_addr">서울특별시 중구 명동11길 19(명동1가) 한국신용정보원 금융AI데이터센터 AI전략팀</span><br>
+                    <span class="tell" id="foot_tel">대표전화 : 02-3705-5982</span>
+                    <span class="email" id="foot_email">이메일 : ailp@kcredit.or.kr</span>
+                </div>
+            </div>
+            <div class="right">
+                <div class="foot-etc">
+                    <a class="item" href="https://www.kcredit.or.kr" target="_blank"><img src="/images/logo_kcredit.png" alt="한국신용정보원"></a>
+                    <a class="item" href="https://www.kftc.or.kr" target="_blank"><img src="/images/logo_kftc.png" alt="금융결제원"></a>
+                    <a class="item" href="https://www.fsec.or.kr" target="_blank"><img src="/images/logo_fsec.png" alt="금융보안원"></a>
+                </div>
+            </div>
+        </div> 
+    </div>
+</footer>
+ 
+<div class="autoLogout" id="autoLogout" style="display:none;" >
+	<div class="logoutTop">
+		<p>자동 로그아웃 안내</p>
+	</div>
+	<div class="logoutBottom">
+		<p>
+			<em>10분</em> 후 로그인 시간이 만료되어 <em>자동 로그아웃</em>됩니다.<br />
+			로그인 시간을 연장하시겠습니까?
+		</p>
+		<div class="btnWrap">
+			<button type="button" class="btnLogin" id="btnAutoLogin">로그인 연장</button>
+			<button type="button" class="btnLogout" id="btnAutoLogout">닫기</button>
+		</div>
+	</div>
+</div>        
+
+<div class="autoLogout2" id="autoLogout2" style="display:none;">
+	<div class="logoutTop">
+		<p>자동 로그아웃 안내</p>
+	</div>
+	<div class="logoutBottom">
+		<p>
+			<em>5분</em> 후 로그인 시간이 만료되어 <em>자동 로그아웃</em>됩니다.<br />
+			로그인 시간을 연장하시겠습니까?
+		</p>
+		<div class="btnWrap">
+			<button type="button" class="btnLogin2" id="btnAutoLogin2">로그인 연장</button>
+			<button type="button" class="btnLogout2" id="btnAutoLogout2">닫기</button>
+		</div>
+	</div>
+</div>            
+
+<!-- 팝업 S -->
+   <div class="popup-dim"></div>
+   <div class="popup-wrap pop-logout">
+       <div class="pop-inner">
+           <div class="pop-header">
+               <h2 class="pop-header__title">자동로그아웃 안내</h2>
+               <button type="button" class="pop-header__close" onclick="fnClosePopup(this)">닫기</button>
+           </div>
+           <div class="pop-content">
+               <p class="center">
+                   <span class="fc-blue">05:00</span> 후 로그아웃 됩니다<br>
+                   계속 이용하려면 로그인 연장 버튼을 클릭해 주세요
+               </p>
+           </div>
+           <div class="pop-footer">
+               <button type="button" class="btn-line-primary sm" id="btnAutoLogout2" onclick="fnClosePopup(this)">로그아웃</button>
+               <button type="button" class="btn-color-primary sm" id="btnAutoLogin2" onclick="fnClosePopup(this)">로그인 연장</button>
+           </div>
+       </div>
+   </div></footer> 
+    </div>
+
+<!-- loading S - 제거 -->
+<!-- <div class="loading"></div> -->
+<!-- loading E -->
+     
+<div class="popup-dim"></div>
+<!-- 공통 Alert 팝업 -->
+<div class="popup-wrap pop_alert" id="common_guide_popUp">
+    <div class="pop-inner">
+        <div class="pop-header">
+            <h2 class="pop-header__title" id="common_alert_pop_title">알림</h2>
+            <button type="button" class="pop-header__close" id="common_alert_pop_close_btn">닫기</button>
+        </div>
+        <div class="pop-content">
+            <p class="center" id="common_guide_popUp_contents">
+            </p>
+        </div>
+        <div class="pop-footer">
+            <button type="button" class="btn-color-primary sm" id="common_alert_ok_btn">확인</button>
+        </div>
+    </div>
+</div>
+
+<div class="popup-wrap pop_confirm" id="common_confirm_pop">
+    <div class="pop-inner">
+        <div class="pop-header">
+            <h2 class="pop-header__title" id="common_confirm_pop_title">알림</h2>
+            <button type="button" class="pop-header__close" id="common_confirm_pop_close_btn">닫기</button>
+        </div>
+        <div class="pop-content">
+            <p class="center" id="common_confirm_pop_contents"></p>
+        </div>
+        <div class="pop-footer">
+            <button type="button" class="btn-line-primary sm" id="common_confirm_ok_btn">취소</button>
+            <button type="button" class="btn-color-primary sm" id="common_confirm_cancel_btn">로그인</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

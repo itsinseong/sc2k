@@ -1,0 +1,832 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>우리은행, 'AI 에이전트 전용 GPU 클러스터' 구축…생성형 AI 내재화 본격화 - 전자신문</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<!--[if lt IE 9]>
+	<script src="https://img.etnews.com/2019/mobile_et/js/html5shiv.js"></script>
+	<![endif]-->
+	<meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="robots" content="all" />
+    <meta name="author" content="www.etnews.com" />
+    <meta name="copyright" content="Copyright &copy; Electronic Times Internet. All Right Reserved." />
+    <meta name="keywords" content="전자신문,전자신문인터넷,Etnews,Etnews.com,뉴스,News,속보,방송,연예,통신,SW,바이오,소재,부품,과학,전자,자동차,경제,금융,산업,정책,글로벌,리포트,동영상,우리금융,우리은행,정진완" />
+    <meta name="description" content="미래를 보는 신문 - 전자신문" />
+    <meta property="fb:app_id" content="1425291491111655" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="canonical" href="https://www.etnews.com/20260421000247" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="미래를 보는 신문 - 전자신문" />
+    <meta property="og:url" content="https://m.etnews.com/20260421000247?SNS=00002" />
+    <meta property="og:image" content="https://img.etnews.com/news/article/2026/04/17/news-p.v1.20260417.afe79e20bb6f4566a86621e1df69e7d9_P1.png" />
+	<meta property="og:image:width" content="700" />
+    <meta property="og:image:height" content="265" />
+    <meta property="og:title" content="우리은행, 'AI 에이전트 전용 GPU 클러스터' 구축…생성형 AI 내재화 본격화" />
+    <meta property="og:description" content="우리은행이 생성형 AI 기반 'AI 에이전트' 구축을 위해 그래픽처리장치(GPU) 서버 인프라를 직접 도입한다. 외부 클라우드 의존 구조에서 벗어나 AI 전략을 '내재화'로 전환하는 움직임으로 풀이된다. 전자신문 취재를 종합하면 우리은행은 GPU 기반 고성능 서버 클러" />
+    <meta property="og:category" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://m.etnews.com/20260421000247?SNS=00001" />
+    <meta name="twitter:site" content="@imetnews" />
+    <meta name="twitter:image:src" content="https://img.etnews.com/news/article/2026/04/17/news-p.v1.20260417.afe79e20bb6f4566a86621e1df69e7d9_P1.png" />
+    <meta name="twitter:title" content="우리은행, 'AI 에이전트 전용 GPU 클러스터' 구축…생성형 AI 내재화 본격화" />
+    <meta name="twitter:domain" content="etnews.com" />
+    <meta name="twitter:description" content="우리은행이 생성형 AI 기반 'AI 에이전트' 구축을 위해 그래픽처리장치(GPU) 서버 인프라를 직접 도입한다. 외부 클라우드 의존 구조에서 벗어나 AI 전략을 '내재화'로 전환하는 움직임으로 풀이된다. 전자신문 취재를 종합하면 우리은행은 GPU 기반 고성능 서버 클러" />
+    <meta name="url" content="https://m.etnews.com/20260421000247" />
+    <meta name="title" content="우리은행, 'AI 에이전트 전용 GPU 클러스터' 구축…생성형 AI 내재화 본격화" />
+    <meta name="description" content="우리은행이 생성형 AI 기반 'AI 에이전트' 구축을 위해 그래픽처리장치(GPU) 서버 인프라를 직접 도입한다. 외부 클라우드 의존 구조에서 벗어나 AI 전략을 '내재화'로 전환하는 움직임으로 풀이된다. 전자신문 취재를 종합하면 우리은행은 GPU 기반 고성능 서버 클러" />
+    <meta name="news_keywords" content="우리금융,우리은행,정진완" />
+    <meta name="DC.date.issued" content="2026-04-21" />
+	<!-- aicon  추가-->
+	<meta content="20260421000247" property="aicon:item_id">
+    <meta property="aicon:image" content="https://img.etnews.com/news/article/2026/04/17/news-p.v1.20260417.afe79e20bb6f4566a86621e1df69e7d9_T1.png" />
+	<!-- 아이템 작성자(기자명) (필수) -->
+	<meta content="" property="aicon:author">
+	<!-- 아이템 카테고리 -->
+	<meta content="경제" property="article:section"> <!-- 메인 카테고리 (필수) -->
+	<!-- 아이템 작성일(ISO 8601) (필수) -->
+	<meta content="2026-04-21T17:00:00+09:00" property="article:published_time"> <!-- 예(한국시간 오후 1:20) -->
+	<meta property="ssc:cmsid" name="ssc:cmsid" content="AKR1202604170951504388"/>
+    <link rel="shortcut icon" href="https://img.etnews.com/2019/mobile_et/images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="https://img.etnews.com/2024/etnews/css/mobile.css?1791617809" />
+    <link rel="stylesheet" type="text/css" href="https://img.etnews.com/2022/etnews/css/slick.css"/>
+	<script>var ART_CODE = "20260421000247";</script>
+  	<script type="text/javascript" src="https://img.etnews.com/2022/etnews/js/jquery-3.6.0.min.js"></script>
+  	<script type="text/javascript" src="https://img.etnews.com/2022/etnews/js/jquery.cookie.js"></script>
+ 	<script type="text/javascript" src="https://m.etnews.com/static/js/common.js?1791617809"></script>
+	<script type="text/javascript" src="/static/js/article.js?1791617809"></script>
+	<script type="text/javascript" src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<script type="text/javascript" src="https://img.etnews.com/2022/etnews/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="https://img.etnews.com/2022/etnews/js/slick.min.js"></script>
+	<script type="text/javascript" src="/static/js/taboola.js"></script>
+	<script type="text/javascript" src="//send.mci1.co.kr/delivery/js/31681456/23086333398" async></script>
+
+		<script type="text/javascript">articleCount('20260421000247', '', '');</script>
+	<script type="text/javascript">articleCount2('20260421000247', '', '', '221.155.111.24', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36', '%2F20260421000247');</script>
+	<script type="text/javascript"> $(function(){ getRelated('20260421000247'); }); </script>
+	
+	<!-- Google Tag Manager -->
+	<script id="et_tm_head">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-5KM75CQ');</script>
+	<!-- End Google Tag Manager -->
+<!-- sas -->
+<script type="text/javascript">
+  var _soa = window._soa = window._soa || [];
+  var track = 'https://uac.etnews.com';
+  (function() {
+    var u = track + "/js/";
+    _soa.push(['setTracker',track]);
+    _soa.push(['setSid','11']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'sas.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End sas -->
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript id="et_tm_body"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KM75CQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+  <header>
+    <div class="nav_head">
+      <div class="wrap">
+        <button class="fullmenu" onclick="w3_open()">
+          <img src="https://img.etnews.com/2024/etnews/images/menu_search.svg" alt="메뉴 열기">
+        </button>
+        <h1 class="logo"><a href="https://m.etnews.com" title="전자신문"><img src="https://img.etnews.com/2024/etnews/images/logo_et.svg"></a></h1>
+        <a class="user" href="https://member.etnews.com/member/login.html?return_url=https%3A%2F%2Fm.etnews.com" id="header_login" title="로그인으로 이동"><img src="https://img.etnews.com/2024/etnews/images/people.svg"></a>
+      </div>
+    </div>
+    <nav >
+      <div class="wrap" id="gnb">
+        <ul class="nav flex">
+          <li><a href="https://m.etnews.com/news/section.html?id1=04">AI·SW</a></li>
+          <li><a href="https://m.etnews.com/news/section.html?id1=10">반도체</a></li>
+          <li><a href="https://m.etnews.com/news/section.html?id1=06">전자</a></li>
+          <li><a href="https://m.etnews.com/news/section.html?id1=17">모빌리티</a></li>
+          <li><a href="https://m.etnews.com/news/section.html?id1=03">통신</a></li>
+          <li><a href="https://m.etnews.com/news/section.html?id1=02">경제</a></li>
+          <li><a href="https://m.etnews.com/news/section.html?id1=60">플랫폼·유통</a></li>
+          <li><a href="https://m.etnews.com/news/section.html?id1=20">과학</a></li>
+          <li><a href="https://m.etnews.com/news/section.html?id1=22">정치·정책</a></li>
+          <li><a href="https://m.etnews.com/news/opinion.html">오피니언</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- 사이드바 -->
+    <div class="sidebar_background" id="sidebar_wrap" onclick="w3_close()"></div>
+    <div class="sidebar" id="sidebar">
+      <div class="slidebar_header flex">
+        <strong class="logo">
+          <a href="https://m.etnews.com" title="전자신문">
+            <img src="https://img.etnews.com/2024/etnews/images/logo_et.svg"></a>
+        </strong>
+        <div class="closebtn" onclick="w3_close()">
+          <img src="https://img.etnews.com/2024/etnews/images/remove.svg" alt="닫기">
+        </div>
+      </div>
+
+      <!-- 검색 -->
+      <div class="search_wrap" role="search">
+        <form action="https://m.etnews.com/search/news.html" method="get">
+          <input type="search" onkeyup="buttonUp();" name="kwd" id="kwd" placeholder="검색어를 입력하세요">
+          <button><img src="https://img.etnews.com/2024/etnews/images/search.svg"></button>
+        </form>
+      </div>
+      <!-- //검색 -->
+      
+      <div class="fullmenu">
+        <ul>
+			<li class="title"><a href="https://news.etnews.com" target="_blank">뉴스</a></li>
+			<li><a href="https://m.etnews.com/news/section.html">속보</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=04">AI·SW</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=10">반도체</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=06">전자</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=17">모빌리티</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=03">통신</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=02">경제</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=60">플랫폼·유통</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=20">과학</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=22">정치·정책</a></li>
+			<li><a href="https://m.etnews.com/news/opinion.html">오피니언</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=12">국제</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=25">전국</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=15">스포츠</a></li>
+			<li><a href="https://m.etnews.com/news/series.html?id=1">특집</a></li>
+			<li><a href="https://m.etnews.com/news/series.html?id=3">연재</a></li>
+		</ul>
+		
+        <ul>
+			<li class="title">라이프</li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=09&amp;id2=091">연예</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=09&amp;id2=996">포토</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=09&amp;id2=096">공연전시</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=09&amp;id2=992">생활문화</a></li>
+			<li><a href="https://m.etnews.com/news/section.html?id1=09&amp;id2=093">여행·레저</a></li>
+        </ul>
+        <ul>
+          <li class="title">비주얼IT</li>
+          <li><a href="https://m.etnews.com/news/issue_analysis.html">이슈플러스</a></li>
+		  <li><a href="https://m.etnews.com/news/aistudio.html">AI 스튜디오</a></li>
+          <li><a href="https://m.etnews.com/news/etstudio.html">Hot 영상</a></li>
+          <li><a href="https://m.etnews.com/news/photonews.html">뷰포인트</a></li>
+          <li><a href="https://m.etnews.com/stats/list_stats.html" target="_blank">인포그래픽</a></li>
+        </ul>
+        <ul>
+          <li class="title">부가서비스</li>
+          <li><a href="https://conference.etnews.com/" target="_blank">Conference</a></li>
+          <li><a href="https://www.allshowtv.com/" target="_blank">allshowTV</a></li>
+          <li><a href="https://m.etnews.com/ict" target="_blank">시사용어</a></li>
+          <li><a href="https://pdf.etnews.com/" target="_blank">PDF서비스</a></li>
+        </ul>
+        <ul class="scrap_menu_ul">
+          <li class="title">서비스안내</li>
+          <li><a href="https://info.etnews.com/sub_2_1.html" target="_blank" title="새창으로">신문구독신청</a></li>
+          <li><a href="https://info.etnews.com/epaper.html" target="_blank" title="새창으로">신문보기</a></li>
+          <li><a href="https://info.etnews.com/sub_2_2.html" target="_blank">콘텐츠구매</a></li>
+          <li><a href="http://leadersedition.etnews.com/intro/info.aspx" target="_blank" title="새창으로">구)초판서비스</a></li>
+        </ul>
+        <ul>
+          <li class="title">이용안내</li>
+          <li><a href="https://info.etnews.com/sub_3_1_1.html" target="_blank">지면광고안내</a></li>
+          <li><a href="https://info.etnews.com/sub_3_2.html" target="_blank">행사문의</a></li>
+          <li><a href="https://info.etnews.com/sub_3_3.html" target="_blank">통합마케팅 상품 안내</a></li>
+          <li><a href="https://info.etnews.com/sub_3_4.html" target="_blank">이용약관</a></li>
+          <li><a href="https://info.etnews.com/sub_3_5.html" target="_blank">개인정보취급방침</a></li>
+          <li><a href="https://info.etnews.com/sub_3_6.html" target="_blank">고충처리</a></li>
+        </ul>
+        <ul>
+          <li class="title">회사소개</li>
+          <li><a href="https://info.etnews.com/sub_1_1_1.html" target="_blank">전자신문</a></li>
+          <li><a href="https://info.etnews.com/sub_1_2.html" target="_blank">전자신문인터넷</a></li>
+          <li><a href="https://info.etnews.com/sub_1_3_2.html" target="_blank">연혁</a></li>
+          <li><a href="https://info.etnews.com/sub_1_4.html" target="_blank">CI소개</a></li>
+          <li><a href="https://info.etnews.com/sub_1_5.html" target="_blank">회사위치</a></li>
+        </ul>
+		<ul>
+          <li><a href="https://en.etnews.com">English</a></li>
+        </ul>
+      </div>
+    </div>
+	<!-- //사이드바 -->	<div class="ad_view_640">
+		<iframe src="/tools/refresh_script.html?duration=30&src=%2F%2Fyellow.contentsfeed.com%2FRealMedia%2Fads%2Fadstream_jx.ads%2Fetnews.com%2FMobile%40Middle" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+	</div>
+    <!-- 기사 영역 -->
+    <article itemtype="http://schema.org/Article" class="wrap" id="article_wrap">
+      <!-- article_header -->
+      <div class="article_header" >
+        <div class="breadcrumb">
+              <a href="/news/section.html?id1=02">경제</a>		              <a href="/news/section.html?id1=02&id2=027">금융</a>				</div>
+        <h2 id="article_title_h2" itemtype="headline">우리은행, 'AI 에이전트 전용 GPU 클러스터' 구축…생성형 AI 내재화 본격화</h2>
+        <div class="timewrap">
+          <div class="time">
+            <time>발행일 : 2026-04-21 17:00</time>
+            <time>업데이트 : 2026-04-21 14:33</time>
+            <time>지면 : <a href="https://pdf.etnews.com/pdf_today.html?ymd=20260422#p3" title="2026-04-22자 PDF 보기" target="_blank">2026-04-22 <span>3면</span></a></time>
+          </div>
+		  <!-- btn_addwrap -->
+		  <div class="btn_addwrap">
+		    <a href="https://www.google.com/preferences/source?q=etnews.com" class="btn_google_add" target="_blank">
+		    <i><img src="https://img.etnews.com/2024/etnews/images/icon_google.svg"></i><span>전자신문을 선호 매체로 추가</span>
+		    </a>
+		  </div>
+		  <!-- //btn_addwrap -->
+          <!-- acc_nav -->
+          <div class="header_view">
+            <div class="wrap">
+              <h1 class="logo_scroll"><a href="https://m.etnews.com" title="전자신문"><img src="https://img.etnews.com/2024/etnews/images/logo_et.svg"></a></h1>
+              <div class="acc_nav">
+                <div class="acc_nav_btn btn_sns" onclick="snsShareBox()">
+                  <img src="https://img.etnews.com/2024/etnews/images/share.svg">
+                </div>
+
+                <!-- dropdown::SNS -->
+                <div class="dropdown" id="bt_share_sns">
+                  <strong>공유하기</strong>
+				  <button class="dropdown_close"><img src="https://img.etnews.com/2024/etnews/images/remove_thin.svg"></button>
+				  <a href="javascript:void(0)" id="kakao-link-btn" href="javascript:;"><span><img src="https://img.etnews.com/2024/etnews/images/sns_kakaotalk.svg"></span></a>
+                  <a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fm.etnews.com%2F20260421000247"title="페이스북 공유하기"><span><img src="https://img.etnews.com/2024/etnews/images/sns_facebook.svg"></span></a>
+                  <a href="http://twitter.com/share?url=https%3A%2F%2Fm.etnews.com%2F20260421000247%3FSNS%3D00001&text=%EC%9A%B0%EB%A6%AC%EC%9D%80%ED%96%89%2C+%27AI+%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8+%EC%A0%84%EC%9A%A9+GPU+%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%27+%EA%B5%AC%EC%B6%95%E2%80%A6%EC%83%9D%EC%84%B1%ED%98%95+AI+%EB%82%B4%EC%9E%AC%ED%99%94+%EB%B3%B8%EA%B2%A9%ED%99%94"  title="X 공유하기" class="share_twitter" target="_blank"><span><img src="https://img.etnews.com/2024/etnews/images/sns_x.svg"></span></a>
+                  <a href="javascript:void(0)" title="URL 복사하기" id="btn_url_copy" onclick="copy_to_clipboard('https://m.etnews.com/20260421000247'); return false;"><span><img src="https://img.etnews.com/2024/etnews/images/sns_url.svg"></span></a>
+                  <input type="hidden" name="copy_article_url" id="cp_url" value="#">
+                </div>
+                <!-- //dropdown::SNS -->
+
+                <div class="acc_nav_btn">
+                  <button class="btn_bookmark" data-id="20260421000247" title="스크랩">
+                    <img src="https://img.etnews.com/2024/etnews/images/bookmark.svg">
+                  </button>
+                </div>
+                <div class="acc_nav_btn btn_ga" onclick="font_panel()">
+                  <img src="https://img.etnews.com/2024/etnews/images/ga.svg">
+                </div>
+                <!-- dropdown::글자크기 -->
+                <div class="dropdown" id="bt_font_size">
+                  <strong>글자크기 설정</strong>
+				  <button class="dropdown_close"><img src="https://img.etnews.com/2024/etnews/images/remove_thin.svg"></button>
+                  <a href="javascript:void(0);" onclick="changeFontSize('dec');" title="글자 작게" class="fs_small">
+                    <span>가</span>
+                    <p>작게</p>
+                  </a>
+				  <a href="javascript:void(0);" onclick="changeFontSize('default');" title="글자 보통" class="fs_default">
+				    <span>가</span>
+				    <p>보통</p>
+				  </a>
+				  <a href="javascript:void(0);" onclick="changeFontSize('inc');" title="글자 크게" class="fs_big">
+                    <span>가</span>
+                    <p>크게</p>
+                  </a>
+                </div>
+                <!-- //dropdown::글자크기 -->
+              </div>
+            </div>
+		    <!-- //전체메뉴박스 -->
+		    <div class="progress-container">
+		  	  <div class="progress-bar" id="pageBar"></div>
+		    </div>
+          </div>
+          <!-- //acc_nav -->
+        </div>
+		<!-- //timewrap -->
+      </div>
+      <!-- //article_header -->
+		<div class="ad_text_viewtop">
+			<script type="text/javascript" src="https://yellow.contentsfeed.com/RealMedia/ads/adstream_jx.ads/etnews.com/Mobile@x62"></script>
+		</div>
+		<div class="pd-lr5p">
+		<iframe width="100%" height="60" src="https://ad.adinc.kr/cgi-bin/PelicanC.dll?impr?pageid=0965&out=iframe" allowTransparency = "true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
+		</div>
+	  <div class="article_body " id="articleBody" itemprop="articleBody">
+
+
+<figure class="article_image"><a href="javascript:void(0);" onClick="showZoom(this)"><img src="https://img.etnews.com/news/article/2026/04/17/news-p.v1.20260417.afe79e20bb6f4566a86621e1df69e7d9_P1.png" alt="Photo Image" style="cursor:pointer;" itemprop="image"></a><figcaption class="caption">정진완 우리은행장. [사진= 전자신문 DB]</figcaption></figure>
+<p>
+우리은행이 생성형 AI 기반 'AI 에이전트' 구축을 위해 그래픽처리장치(GPU) 서버 인프라를 직접 도입한다. 외부 클라우드 의존 구조에서 벗어나 AI 전략을 '내재화'로 전환하는 움직임으로 풀이된다.<br />
+<br />
+전자신문 취재를 종합하면 우리은행은 GPU 기반 고성능 서버 클러스터를 도입한다. 단순 AI 시스템 구축을 넘어 △대규모 언어모델(LLM) 학습 및 튜닝 △업무형 AI 에이전트 구동 △데이터 전처리를 아우르는 통합 AI 인프라 확보가 핵심이다.<br />
+<br />
+구체적으로 GPU 8장을 탑재한 고성능 워커노드 서버를 운영용 20대, 개발용 4대 등 총 24대 규모로 구성한다. 각 서버는 최대 1TB 메모리와 NVMe SSD를 장착해 대용량 데이터 처리와 고속 병렬 연산이 가능하도록 설계됐다.<br />
+<br />
+서버당 GPU 8장을 연결하는 구조를 고려하면 전체 GPU 규모는 190개 이상 수준으로 추정된다. 금융권 내부 구축 사례 중에서도 드문 '클러스터급' 인프라라는 평가다.<br />
+<br />
+생성형 AI의 학습·추론 성능이 GPU 연산 능력에 좌우된다는 점에서, GPU 확보는 AI 경쟁력으로 직결된다. 업계에서는 해당 규모 GPU 인프라 구축 비용이 수백억 원대에 이를 것으로 보고 있다.<br />
+<br />
+이와 함께 데이터 전처리 전용 서버를 별도로 분리 구축한다. AI 성능을 좌우하는 데이터 정제·가공을 내부에서 직접 수행하기 위한 구조다.<br />
+<br />
+운영 환경과 개발 환경도 물리적으로 분리한다. 실제 업무 적용과 모델 고도화를 병행하는 '지속적 학습 체계(MLOps)' 구현을 염두에 둔 설계다. 향후 기업금융 심사, 리스크 관리, 내부 업무 자동화 등 핵심 업무 영역에 AI 에이전트를 적용하기 위한 기반으로 활용될 전망이다.<br />
+<br />
+이번 투자는 정책·시장 환경 변화와 맞물린 전략적 선택으로 분석된다.<br />
+<br />
+금융당국의 생성형 AI 규제 완화로 은행권 도입 속도가 빨라지는 가운데, 금융사는 민감 정보 보호 문제로 외부 클라우드 활용에 한계를 겪어왔다. 이에 따라 내부망에서 AI를 직접 운영하는 '프라이빗 AI' 구축이 대안으로 부상하고 있다.<br />
+<br />
+시장 환경도 영향을 미쳤다. 글로벌 빅테크 AI 서비스 비용이 급증하고 GPU 수요가 폭증하면서, 일정 규모 이상에서는 자체 인프라 구축이 더 경제적이라는 판단이 확산하고 있다.<br />
+<br />
+여기에 기업금융, 리스크 관리, 내부 심사 등 핵심 업무 영역까지 AI 적용이 확대되면서 고성능 GPU 기반 인프라 수요도 급격히 증가하는 추세다.<br />
+<br />
+이번 사업을 계기로 은행권 AI 전략이 '외주형 활용'에서 '내재화'로 전환되는 흐름이 본격화할 전망이다.<br />
+<br />
+금융권 관계자는 “AI는 더 이상 외부에서 가져다 쓰는 기술이 아니라 직접 운영하는 인프라로 바뀌고 있다”고 말했다.
+</p>
+	<!-- HNS 2022.09.29 -->
+	<div  style="text-align:center;margin:0" class="ad-300x250">
+	<script src="//ad.ad4989.co.kr/cgi-bin/PelicanC.dll?impr?pageid=0Epg&out=script"></script>
+	</div><br /><p>류태웅 기자 bigheroryu@etnews.com<br /></p>
+		<!-- 뉴스룸 홍보 ET뷰 -->
+		 <span id="newsroom_etview_promotion"></span>
+		<!-- 뉴스룸 홍보 ET뷰 -->
+
+
+        <!-- 해시태그 -->
+        <div class="hashtag">
+<a href="/news/tag_list.html?id=317">우리금융</a><a href="/news/tag_list.html?id=5302">우리은행</a><a href="/news/tag_list.html?id=302787">정진완</a><a href="/news/category_list.html?id=2958" class="keyword">AI</a>		</div>
+        <!-- //해시태그 -->
+      </div>
+
+        <div class="reporter_info">
+          <ul>            <li>
+              <figure>
+                <img src="https://img.etnews.com/news/reporter/2024/07/03/cms_temp_reporter_03163901432327.png" alt="기자 이미지">
+              </figure>
+              <div class="text">
+                <strong>류태웅 기자<a href="/news/reporter_list.html?id=1544">기사 더보기<span class="more_gt"><img src="https://img.etnews.com/2024/etnews/images/gt_regular.svg"></span></a></strong>
+				<p class="related"><a href="/20261009000009">해외발 금융 해킹 18건 중 16건 '공격자 미상'…추적 한계 드러나</a></p>
+
+			  </div>
+            </li>
+          </ul>
+        </div>
+
+        <!--- 연관기사 연재/특집 -->
+        <div id="layerRelated"></div>
+        <!--- //연관기사 연재/특집 -->
+    </article>
+
+	  <div class="article-footer">
+		<!-- 광고 리스트 텍스트 줄광고 -->
+		<div class="ad_text">
+			<ul><li class="tit"><strong>놓치면 아쉬운 정보</strong><span>AD</span></li></ul>		
+		<iframe width="100%" height="328" src="https://ad.adinc.kr/cgi-bin/PelicanC.dll?impr?pageid=0966&out=iframe" allowTransparency = "true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
+		</div>	
+		<!-- 콘퍼런스 -->
+		<ul class="ad-text">
+			<li class="tit"><strong>ET Events</strong></li>
+			<li><script type="text/javascript" src="//yellow.contentsfeed.com/RealMedia/ads/adstream_jx.ads/etnews.com/detail@x60"  ></script></li>
+			<li><script type="text/javascript" src="//yellow.contentsfeed.com/RealMedia/ads/adstream_jx.ads/etnews.com/detail@x61"  ></script></li>
+			<li><script type="text/javascript" src="//yellow.contentsfeed.com/RealMedia/ads/adstream_jx.ads/etnews.com/detail@x64"  ></script></li>
+		</ul>
+		<!-- 콘퍼런스 -->
+
+      </div>
+		<div class="ad-300x250-2 ad-fullwidth2"><!-- 애드바인 230524-->
+			<iframe src="//tracker.adbinead.com/other/etnews_Mbottom.html" width="320" height="100" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" vspace="0" hspace="0" allowtransparency="true" style="margin: 0px; padding: 0px; border: currentColor; border-image: none; width: 320px !important; height: 100px; visibility: visible; position: relative; background-color: transparent;"></iframe>
+		</div>    <!-- 주요행사 -->
+    <section class="event">
+      <div class="wrap">
+        <h3><a href="https://conference.etnews.com" target="_blank">주요 행사 <span class="more_gt">&#10095;</span></a></h3>
+        <!-- slider -->
+        <div class="slider">
+          <ul class="single-item" id="event">
+
+            <li class="active">
+              <a href="https://synologysolutionday.etnews.com/" target="_blank">
+                <figure>
+                  <img src="https://img.etnews.com/photo_main/conference/2026/08/24/cms_conference_list_24100301528126.jpg" alt="주요행사 이미지">
+                </figure>
+                <div class="text">
+                  <strong>Synology Solution Day 2026</strong>
+                </div>
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="https://conference.etnews.com/conf_info.html?uid=522" target="_blank">
+                <figure>
+                  <img src="https://img.etnews.com/photo_main/conference/2026/08/26/cms_conference_list_26171635535598.jpg" alt="주요행사 이미지">
+                </figure>
+                <div class="text">
+                  <strong>모든 업무 담당자(비개발자)를 위한 온톨로지 기반 AI 지식체계 설계 1-day 워크숍</strong>
+                </div>
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="https://conference.etnews.com/conf_info.html?uid=525" target="_blank">
+                <figure>
+                  <img src="https://img.etnews.com/photo_main/conference/2026/09/15/cms_conference_list_15100436517752.jpg" alt="주요행사 이미지">
+                </figure>
+                <div class="text">
+                  <strong>AI 세컨드 브레인 만들기 1-day 워크숍 - LLM Wiki 기반 업무지식 축적·리서치·보고 자동화 과정</strong>
+                </div>
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="https://conference.etnews.com/conf_info.html?uid=512" target="_blank">
+                <figure>
+                  <img src="https://img.etnews.com/photo_main/conference/2026/08/25/cms_conference_list_25093738114706.jpg" alt="주요행사 이미지">
+                </figure>
+                <div class="text">
+                  <strong>UX 기획·DESIGN.md 설계·AI 구현 전 과정 1-day 워크숍 with Claude Code·Codex</strong>
+                </div>
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="https://www.allshowtv.com/detail.html?idx=1755" target="_blank">
+                <figure>
+                  <img src="https://img.etnews.com/photo_main/conference/2026/09/28/cms_conference_list_28095938893420.jpg" alt="주요행사 이미지">
+                </figure>
+                <div class="text">
+                  <strong>Cato AI Security: AI 시대를 위한 차세대 보안 소개</strong>
+                </div>
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="https://conference.etnews.com/conf_info.html?uid=527" target="_blank">
+                <figure>
+                  <img src="https://img.etnews.com/photo_main/conference/2026/10/02/cms_conference_list_02130757508611.jpg" alt="주요행사 이미지">
+                </figure>
+                <div class="text">
+                  <strong>Enterprise Ontology 웨비나 2026</strong>
+                </div>
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="https://aiax.etnews.com/" target="_blank">
+                <figure>
+                  <img src="https://img.etnews.com/photo_main/conference/2026/09/15/cms_conference_list_15160640933693.png" alt="주요행사 이미지">
+                </figure>
+                <div class="text">
+                  <strong>AX & 하이퍼오토메이션 코리아 2026-Fall</strong>
+                </div>
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="https://www.sek.co.kr/2026/techsummit" target="_blank">
+                <figure>
+                  <img src="https://img.etnews.com/photo_main/conference/2026/10/06/cms_conference_list_06114625763267.png" alt="주요행사 이미지">
+                </figure>
+                <div class="text">
+                  <strong>전자신문 TECH SUMMIT 2026-차세대 반도체로 가속화하는 AI 혁명</strong>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <script type="text/javascript">
+            $(document).ready(function(){ $('#event').slick({	arrows:false,dots: true, autoplay: true, infinite: true, autoplaySpeed:5000, cssEase: 'linear'});});
+          </script>
+        </div>
+        <!-- //slider -->     
+      </div>
+    </section>
+    <!-- //주요행사 -->
+		<div class="ad-300x250-2 ad-fullwidth2">
+		<ins class="adsbyaiinad" data-aiinad-inv="23086335963"></ins>
+		</div>
+		<!-- top10news -->
+		<section class="topnews">
+		  <div class="wrap">
+			<h3>경제 많이 본 뉴스</h3>
+			<ol>
+			  <li>
+				<i>1</i>
+				<a href="/20261007000457">토스뱅크 송금 오류…보유 잔액 모두 이체한 후에도 '또' 송금 가능</a>
+				<div class="acc_nav_btn">
+				  <button class="btn_bookmark" data-id="20261007000457" title="스크랩">
+					<img src="https://img.etnews.com/2024/etnews/images/bookmark.svg">
+				  </button>
+				</div>
+			  </li>
+			  <li>
+				<i>2</i>
+				<a href="/20261007000430">美 증시와 거꾸로 가는 코스피, 6800선으로 하락</a>
+				<div class="acc_nav_btn">
+				  <button class="btn_bookmark" data-id="20261007000430" title="스크랩">
+					<img src="https://img.etnews.com/2024/etnews/images/bookmark.svg">
+				  </button>
+				</div>
+			  </li>
+			  <li>
+				<i>3</i>
+				<a href="/20261007000386">삼성 DS 수억대 성과급, 내년 3월 말 자사주로 지급…'주총 변수'는 남았다</a>
+				<div class="acc_nav_btn">
+				  <button class="btn_bookmark" data-id="20261007000386" title="스크랩">
+					<img src="https://img.etnews.com/2024/etnews/images/bookmark.svg">
+				  </button>
+				</div>
+			  </li>
+			  <li>
+				<i>4</i>
+				<a href="/20261008000296">삼성전자 분기 영업이익 100조에도, 코스피는 6600선까지 밀려</a>
+				<div class="acc_nav_btn">
+				  <button class="btn_bookmark" data-id="20261008000296" title="스크랩">
+					<img src="https://img.etnews.com/2024/etnews/images/bookmark.svg">
+				  </button>
+				</div>
+			  </li>
+			  <li>
+				<i>5</i>
+				<a href="/20261007000215">[2026 국감]4평 채소가게서 온누리상품권 122억 결제…이소영 “국세청과 조사”</a>
+				<div class="acc_nav_btn">
+				  <button class="btn_bookmark" data-id="20261007000215" title="스크랩">
+					<img src="https://img.etnews.com/2024/etnews/images/bookmark.svg">
+				  </button>
+				</div>
+			  </li>
+			  <li>
+				<i>6</i>
+				<a href="/20261007000161">LG전자, 3분기 누적 영업이익 4조 첫 돌파…가전·전장 '캐시카우'가 끌었다</a>
+				<div class="acc_nav_btn">
+				  <button class="btn_bookmark" data-id="20261007000161" title="스크랩">
+					<img src="https://img.etnews.com/2024/etnews/images/bookmark.svg">
+				  </button>
+				</div>
+			  </li>
+			  <li>
+				<i>7</i>
+				<a href="/20261007000259">LG전자, 3분기 누적 영업이익 4조 첫 돌파…매출 9% 늘 때 이익 56% 뛰었다</a>
+				<div class="acc_nav_btn">
+				  <button class="btn_bookmark" data-id="20261007000259" title="스크랩">
+					<img src="https://img.etnews.com/2024/etnews/images/bookmark.svg">
+				  </button>
+				</div>
+			  </li>
+			  <li>
+				<i>8</i>
+				<a href="/20261007000250">'제판분리 5년'…한화생명 GA, 설계사 수 4만명 육박</a>
+				<div class="acc_nav_btn">
+				  <button class="btn_bookmark" data-id="20261007000250" title="스크랩">
+					<img src="https://img.etnews.com/2024/etnews/images/bookmark.svg">
+				  </button>
+				</div>
+			  </li>
+			  <li>
+				<i>9</i>
+				<a href="/20261008000093">삼성전자 '분기 영업익 100조' 한국기업 첫 돌파 …이익률 55% 찍었다</a>
+				<div class="acc_nav_btn">
+				  <button class="btn_bookmark" data-id="20261008000093" title="스크랩">
+					<img src="https://img.etnews.com/2024/etnews/images/bookmark.svg">
+				  </button>
+				</div>
+			  </li>
+			  <li>
+				<i>10</i>
+				<a href="/20261008000199">이억원 금융위원장 “AI 해킹 위협 커지는데 기본 대응 미흡”</a>
+				<div class="acc_nav_btn">
+				  <button class="btn_bookmark" data-id="20261008000199" title="스크랩">
+					<img src="https://img.etnews.com/2024/etnews/images/bookmark.svg">
+				  </button>
+				</div>
+			  </li>
+			</ol>
+		  </div>
+		</section>
+		<!-- //top10news -->
+		<center><div id='S003_etnews_mo_ap_bottom00_336x280' style="margin-bottom:40px">
+		  <script>
+			window.googletag = window.googletag || {cmd: []};
+			googletag.cmd.push(function() {                    
+			googletag.defineSlot('/21682743634,195055904/S003/etnews_mo_ap_bottom00_336x280', [336,280], 'S003_etnews_mo_ap_bottom00_336x280').addService(googletag.pubads()); 
+			googletag.enableServices();
+			googletag.display('S003_etnews_mo_ap_bottom00_336x280');
+			});
+		  </script>
+		</div></center>		<div id="taboola-mobile-below-article-thumbnails-2x2" class="wrap mgb20 "></div>
+		<script type="text/javascript">
+		  window._taboola = window._taboola || [];
+		  _taboola.push({
+			mode: 'thumbs-feed-01',
+			container: 'taboola-mobile-below-article-thumbnails-2x2',
+			placement: 'Mobile Below Article Thumbnails 2x2',
+			target_type: 'mix'
+		  });
+		</script>
+    <!--주요뉴스-->
+    <section class="textthumb">
+      <div class="wrap">
+        <h3 class="section_title">주요뉴스</h3>
+        <ul>
+          <li>
+            <div class="text">
+              <strong><a href="/20261008000291">“쿠팡이 쌀까, 무신사가 쌀까” AI 멀티 쇼핑 뜬다</a></strong>
+              <p class="summary"></p>
+            </div>
+            <figure>
+              <a href="/20261008000291">
+                <img src="https://img.etnews.com/news/article/2026/10/08/news-p.v1.20261008.15629e6277ba4e0499f9a753b2b9aa07_T1.png" alt="기사 이미지">
+              </a>
+            </figure>
+          </li>
+          <li>
+            <div class="text">
+              <strong><a href="/20261009000021">李 대통령 “한글의 힘이 대한민국 경쟁력…다음 100년 가능성 넓힐 것”</a></strong>
+              <p class="summary"></p>
+            </div>
+            <figure>
+              <a href="/20261009000021">
+                <img src="https://img.etnews.com/news/article/2026/10/06/rcv.YNA.20261006.PYH2026100605590001300_T1.jpg" alt="기사 이미지">
+              </a>
+            </figure>
+          </li>
+          <li class="article" style="padding:12px 0;text-align:center;">
+          	<!-- 이노비즈미디어 -->
+          	<script src='//img.mobon.net/js/common/HawkEyesMaker.js'></script>
+          	<script>
+          		new HawkEyes({"type":"banner","responsive":"N","platform":"M","scriptCode":"879466","frameCode":"43","width":"320","height":"100","settings":{"cntsr":"4","mChk":"100"}});
+          	</script>
+          </li>
+          <li>
+            <div class="text">
+              <strong><a href="/20261009000019">현대차, 신형 투싼 기술 공개…“안전·성능·연비 모두 잡은 패밀리 SUV”</a></strong>
+              <p class="summary"></p>
+            </div>
+            <figure>
+              <a href="/20261009000019">
+                <img src="https://img.etnews.com/news/article/2026/10/09/news-p.v1.20261009.b1c865a0f8ee424f844ca509bcdb7178_T1.jpg" alt="기사 이미지">
+              </a>
+            </figure>
+          </li>
+          <li>
+            <div class="text">
+              <strong><a href="/20261008000076">대한전선, CLV 2척으로 해저케이블 '투 트랙 시공'…'턴키 경쟁력'↑</a></strong>
+              <p class="summary"></p>
+            </div>
+            <figure>
+              <a href="/20261008000076">
+                <img src="https://img.etnews.com/news/article/2026/10/07/news-p.v1.20261007.bfec3ec7ea2b4541bb6f5bade246ad8f_T1.jpg" alt="기사 이미지">
+              </a>
+            </figure>
+          </li>
+          <li class="article" style="text-align:center;padding:12px 0;">
+          	<script src="//ad.ad4989.co.kr/cgi-bin/PelicanC.dll?impr?pageid=0F0r&out=script"></script>
+          </li>
+          <li>
+            <div class="text">
+              <strong><a href="/20261010000008">민형배 “SK그룹과 긴밀히 협력, 호남권 반도체클러스터 확실히 뒷받침”</a></strong>
+              <p class="summary"></p>
+            </div>
+            <figure>
+              <a href="/20261010000008">
+                <img src="https://img.etnews.com/news/article/2026/10/10/news-p.v1.20261010.6bcaa81b64434c3993792b32def62395_T1.jpg" alt="기사 이미지">
+              </a>
+            </figure>
+          </li>
+          <li>
+            <div class="text">
+              <strong><a href="/20261008000264">[SOOP, 토종플랫폼 20년]〈3〉오리지널 e스포츠 콘텐츠  확대…글로벌 정조준</a></strong>
+              <p class="summary"></p>
+            </div>
+            <figure>
+              <a href="/20261008000264">
+                <img src="https://img.etnews.com/news/article/2026/10/08/news-p.v1.20261008.f3fd24da5e67494590921f710c88f475_T1.jpg" alt="기사 이미지">
+              </a>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+		<!-- digitalcamp -->
+		<div class="ad-300x250-2 ad-fullwidth2"  style="height:100px">
+			<iframe src="https://ssp.digitalcamp.co.kr/com/ifr/?9YZDvfcFOJ7O2qAg|MTg" width="320" height="100" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" vspace="0" hspace="0" allowtransparency="true" style="margin: 0px; padding: 0px; border: currentColor; border-image: none; width:320px; height:100px; visibility: visible; position: relative; background-color: transparent;" allow="autoplay"></iframe>
+		</div>
+	  <!-- 브랜드 뉴스룸-->
+    <section class="newsroom">
+      <div class="wrap">
+        <h3>브랜드 뉴스룸</h3>
+        <!-- slider -->
+        <div class="slider">
+          <ul class="single-item" id="newsroom">            <li class="active">
+<a class="pr_ver3 clearfix" href="https://newsroom.etnews.com/common/tools/redirectEnc.html?WEIwOUpGUlQ5d3RNRzNMbmVza2wrYTNscm5KNFpxOG02dDl2MXNOV1VpSkhXaGdoVlBUdWt3UmFBNFRzYmhrWkpJbU1xUXlVdGRaMFRnN1FnNElFRzI3cVlZQW9tNzJuYmxKTVRtbmFmOWpORFR3YWZUTWhEMTNBY29MSm1xWC9Mb3NXUVFJMWZIYm5sM1VQRmVzUUVBZHYxWjdaZCtRVzMwejE0M0FYNFBnc1JTdzRlRWszelNTVURaaUtFZUtZZlpjWXBLVlZjL3FQMXhMTzBkZFlUZVN3Q1hKR3JrYml2cGFRSWhmV1RDY2xEMGZsOERreG81c3NGQ0xLdFBWUg" target="_blank"><span class="thumb"><img src="https://img.etnews.com/news/article/2026/08/11/news-p.v1.20260811.20fb8993932a43af86793131db188b30_T1.png" alt="뉴스룸 이미지"></span><div class="text"><span class="company">에이블스토어</span><strong>시놀로지, DiskStation neo+ 시리즈 라인업 출시</strong></div></a>
+<a class="pr_ver3 clearfix" href="https://newsroom.etnews.com/common/tools/redirectEnc.html?WEIwOUpGUlQ5d3RNRzNMbmVza2wrUVkvamZQajcrZjRsSVlvcDNzcDZNaENPRDVhUVRnSjN4dFIvd244YTd4aDJWVGdHdThKcWJXYW9yVjNmSFRuZndKOXNKZGV4TjlpYnVlMHg2dnUrd3o3NVYxR1NZU0J3RW5qMVgyY21yOG1kMDdFZXYzajlDM1dZMUFCazB1eTJucFFKZnJEVnR0cjdsd3hBSUcrUUdXRCs0d0FRcGZIUVdEYmU4TlZiOS9JU3EvOHN2UU5GTUs4VFBHbk1KQ0V3d1lFb2dpNG5qVlpSYU1UdGVWR21RST0" target="_blank"><span class="thumb"><img src="https://img.etnews.com/news/article/2026/09/28/news-p.v1.20260928.83ec37b9794a4acfb558c7d89225c807_P1.png" alt="Vishay"></span><div class="text"><span class="company">비쉐이</span><strong>비쉐이, 650V 슈퍼정션 MOSFET 파워 모듈 출시</strong></div></a>
+<a class="pr_ver3 clearfix" href="https://newsroom.etnews.com/common/tools/redirectEnc.html?WEIwOUpGUlQ5d3RNRzNMbmVza2wrWG1PcGdHcGUybUtaMHZTVWdCcDNCaHNmczA5d2ZkbzlGd0NmKzRpVzI0SkJ3WjFCTEwzb2o3RWpvR2kwT1VYM0pSWEFUTmp5SytLRkFDUmNITXBiRyt2TEltVTRGNUVNSy9lbGpGSWNEM01mREZIOE4yaExkZk9OcnVSQlZ1UWhkSVFuRk1IQU13RzZLUWZ3b2xGdTZxS3pCeENNNnFieTRNVGZnRlk0YlNrT1AwYU4zK0pZckZzUmFYU1FsalpacFZRbGZtTzQvUDQ3cFVyd3NGeFNZV3ZCTm5ta0dCS3MrUGpwSm1ZTUlQUw" target="_blank"><span class="thumb"><img src="https://img.etnews.com/news/article/2026/09/30/news-p.v1.20260930.3fb53ce408a147be8effdb7379d5df5d_T1.jpg" alt="뉴스룸 이미지"></span><div class="text"><span class="company">슈퍼솔루션</span><strong>기가 컴퓨팅, 대만에 첫 AI 팩토리 'GAIFA' 구축…AI 인프라 통합 검증 나선다</strong></div></a>
+            </li>
+            <li class="active">
+<a class="pr_ver3 clearfix" href="https://newsroom.etnews.com/common/tools/redirectEnc.html?WEIwOUpGUlQ5d3RNRzNMbmVza2wrZVJOakhvWDNWYkh3aHJBWUVLa0diLzRWR01wMXVFUHIxci9FcHFYWUxqSXcyRlJTYkZvY0w1eXhiSERqaEgxRGRQeXc4SklGK0JLbmNKRmpMNFF1N1pOMytHekFXcEsvK2FOY2RrNjBSVEw1bG9UZzdqZlpPSDRiZW9rNVJudVJnRlEvMzkvVVdWSzd1YnUvR0ZlU1VDbHJLZmVNS1N3dTdVdHVPczJKMlIzZmt6ekkralVNS2d2Wm1MeXN5SjMzQWZXWXQ1L1lNUE5QR0NRZ0MvdnRNZXVWeGZ3RGJVRHovVG1LdHVhV0VVNQ" target="_blank"><span class="thumb"><img src="https://img.etnews.com/news/article/2026/09/04/news-p.v1.20260904.87b3d337a3304f63927549203c739ed0_T1.jpg" alt="뉴스룸 이미지"></span><div class="text"><span class="company">와이즈스톤</span><strong>와이즈스톤, 딥엑스알랩 '의료정보 데이터셋'에 DQ인증 최고 등급 수여</strong></div></a>
+<a class="pr_ver3 clearfix" href="https://newsroom.etnews.com/common/tools/redirectEnc.html?WEIwOUpGUlQ5d3RNRzNMbmVza2wrVlJjZDVxWnZ3WFh0clBKU0s5eGsyZ1R3Znl1TVk4dzJ6RFN3Q3NtY1JrWVBiVW5FRFlMQW9XQlNrc3luMzZ1SW14clA0dENYY1lDcVhlRjhHaStwMmJUZ0V5VEs2bytaQk9pc2RPTCtlZzE4RjBnZFp5SUtRdTlSK3ZoVVZCeC9jVElKS0YwbnZvTDBwaEpFMjdHRXlHT3JzQzJvamt2dWdqRVpvdmtkU1JxeGlvOGhVZUVCbVhpZE1sdDNGK2ZndkRoV2R3ODM4ZjZEUGRiQ2xDTlFHbz0" target="_blank"><span class="thumb"><img src="https://img.etnews.com/news/article/2026/09/18/news-p.v1.20260918.7d46bda7d245488b8cc7bce3b4ef6fc8_T1.jpg" alt="뉴스룸 이미지"></span><div class="text"><span class="company">로옴세미컨덕터코리아</span><strong>로옴 SiC 파워 디바이스, BMW 차세대 'Neue Klasse' 전동 파워트레인에 적용</strong></div></a>
+<a class="pr_ver3 clearfix" href="https://newsroom.etnews.com/common/tools/redirectEnc.html?WEIwOUpGUlQ5d3RNRzNMbmVza2wrWFh6dHZVZmhhdkwwRjlLbk43V2t5QUVZN0REVHFKSG9Rajg1MnQ5WXVpWUE3cko1T3dIbmlNSS9YTDhTT0dnaGJjOC93TDFzRnNpUWRyRFBxckY4K05URjVUYWlWWit1NStmM0wrbEZzaVFSVlZDUms0K25jNmxPSU11d2VMc2NMQ2R5ZmpNeTFJem9GVERYeTluendyMnpBSnRKN1JvNjc4dzNuaUI2R3Q1S3JGWDhlSmVhZFh3djRQM21rS0pqd29FT1hneTVOWGRTb2hFVFV1U0JrdkxhVnRrN3lYbE5yRkZiMUNkbi9JOQ" target="_blank"><span class="thumb"><img src="https://img.etnews.com/news/article/2026/07/29/news-p.v1.20260729.86c39d27b33740b59efa6160a33c6718_T1.png" alt="뉴스룸 이미지"></span><div class="text"><span class="company">씨앤에프시스템</span><strong>씨앤에프시스템, 오웬스그룹과 공공 ERP·DX 사업 협력</strong></div></a>
+            </li>
+            <li class="active">
+<a class="pr_ver3 clearfix" href="https://newsroom.etnews.com/common/tools/redirectEnc.html?WEIwOUpGUlQ5d3RNRzNMbmVza2wrVTltOTArdmM5K0gzZDFObHNjU0paVnhEQ1MxMzJmZXNoNTNwbXNEZytzRmhDMnJIOVdFb01EN2hpS2VYUStEelFJMEdHQlROL2YrTW1TZWEwVVYzRzBleFFYY0xOOWd4alVGbFZVdnFlNXZMbWhybFQ0REs5cWlPM3EwRGNaeXBEWmk5bjMvdXgwZjhqS29Ea1BQZ2NvVmc2NnVETEN0aXVjM0xUeUdWcThNdEFGQVdZdkE5WGdqMUxCQ2VlMG9EczFHS3JoMVBnaHBlODNhNnprSm9vaz0" target="_blank"><span class="thumb"><img src="https://img.etnews.com/news/article/2026/08/21/news-p.v1.20260821.67a37cad81444ceea6d639470b1923ff_T1.jpg" alt="뉴스룸 이미지"></span><div class="text"><span class="company">노보센스</span><strong>노보센스, 이노방스 오토모티브 손잡고 '차세대 차량용 전기 구동 플랫폼 칩 솔루션' 공동 개발</strong></div></a>
+<a class="pr_ver3 clearfix" href="https://newsroom.etnews.com/common/tools/redirectEnc.html?WEIwOUpGUlQ5d3RNRzNMbmVza2wrYkFBOWkrNXhZQlQ1cmxzeE9rejFQMitnWWsrVDUyZ3ZaM09vdWpBcURCQndzdUxNMFhMeEZFaElyVGx0bHZGMkxTZi9CaVJhUVJYeCtUS1dNSk1DUVZKbmhKQzhxNVFZUXo3dUtVWWNtbGpGMEdNTzVoRk9XbUkwcHYvOWNJdFhrT2Q4aWZRWEwxaEFIdUlvQ1N6Vnd3ekFaVFQ1ZjJDalByWUlzKzM4RTBWVzQxRUgxelhRMlBkR0lHUk1QQ1g4K09rRWcvYm01T3ZLUysvMVF3dURFWEpNbkdRR0lGOWtaMFN3OTBvQXpBdg" target="_blank"><span class="thumb"><img src="https://img.etnews.com/news/article/2026/10/02/news-p.v1.20261002.28556217c327428a9f5d22af50b32044_T1.jpg" alt="뉴스룸 이미지"></span><div class="text"><span class="company">위고페어</span><strong>[김종면의 K브랜드 집중탐구]〈45〉팬덤으로 완성한 클래시 페어라이어(FAIRLIAR)</strong></div></a>
+<a class="pr_ver3 clearfix" href="https://newsroom.etnews.com/common/tools/redirectEnc.html?WEIwOUpGUlQ5d3RNRzNMbmVza2wrZHljaytWWTBSZ2ZDRGUwUnNrcjh2K0dDQ0pIODUvVTFqU3VBbkd6eGdyMFVOTk81MGtSb09aeWtXYXpYMlRuV2llblMwRGFEL1B6Q0JqVmo4YmlYMHpGWmNuNnhyeFVYR3JEd0pzUGNOZDV4VWhMb0trTjZOOE9hc01YWEszYUhSdFBIY2RWOCswcmtFVkZvYkUyYTVNMXJDNjc2YmNJdVJDOE1lOEhYVzZYL2tUYXEvczZmdWFQZUx6OEtHaHZlT2oyQWVKbTcxaStQU3ZuczFLY1VKST0" target="_blank"><span class="thumb"><img src="https://img.etnews.com/news/article/2026/10/01/news-a.v1.20261001.f1c09a61bbf1474498b57ec04a821366_T1.jpg" alt="뉴스룸 이미지"></span><div class="text"><span class="company">인아그룹</span><strong>“반도체를 넘어 자동화 확장” 인아그룹, 'SEDEX 2026' 참가</strong></div></a>
+            </li>
+            <li class="active">
+<a class="pr_ver3 clearfix" href="https://newsroom.etnews.com/common/tools/redirectEnc.html?WEIwOUpGUlQ5d3RNRzNMbmVza2wrV2I5N0ZGSWRMNlg3RGZBRFZ5V092aUE2SHBXT3V0Ykh0RE0xTTc1ampZZWwwMDJ3b3pwbFhWQTdMdGMxTEJzdEcrQUJ2alRNQWZvTVhNVFBBT3VVZ3p3RkYxVjlhMG1FNU1hQlMzMnVraXVvL3V4R1drcVhaRVBUMlR2a2ZvZmpqQ3gxVVpTSjNPYklWZ0FMMHh2NGwzKzNVZHNSQ0NZUXdWSlZhZmVjN29EN2VuVFM5T29EZ3ljSEZRTlpGMG16QTRWZUhQclZaU05VdHFqOWUrZTlvbHpUUHNHbEh2L1dIdEJ5RTZYK0hYVg" target="_blank"><span class="thumb"><img src="https://img.etnews.com/news/article/2026/10/07/news-p.v1.20261007.5f37b855556142e2b25818873dda3b28_T1.jpg" alt="뉴스룸 이미지"></span><div class="text"><span class="company">한국태양유전</span><strong>태양유전, AI PC용 메탈계 파워 인덕터 출시…직류 저항 50% 낮춰</strong></div></a>
+<a class="pr_ver3 clearfix" href="https://newsroom.etnews.com/common/tools/redirectEnc.html?WEIwOUpGUlQ5d3RNRzNMbmVza2wrWHd3R3Y4emYxRFoxK2dTR2s0SnMzM3JOMmJDbnBBRGdIVW4weVJZdzdQNGxMbmtkOWMwRTQzS052OUF3KzJnU2hleElHWndQazVpemFhY0RYamdHVmZPRUlUNVQxSngvTnlVQ08yMEtZV3dUSnQ5SWszL1Z5Wlh5REF6Z2d5bjdPRDZaTGtvSER3L1JFMnN5MHBLRVRxSUp2dHE4L2gvbStabnFyMENLZ00wWGVBNHJ0NEpna1FhTldpNlBGYnZzaG9yNUg0VkRwalVIZDZlbk1vZFRkbz0" target="_blank"><span class="thumb"><img src="https://img.etnews.com/news/article/2026/09/22/news-p.v1.20260922.a56975e6b0314b11b4c2262e7e671c81_T1.jpg" alt="뉴스룸 이미지"></span><div class="text"><span class="company">다래전략사업화센터</span><strong>다래전략사업화센터, 대덕특구 기술기업 베트남 진출 지원…투자·사업협력 기회 모색</strong></div></a>
+<a class="pr_ver3 clearfix" href="https://newsroom.etnews.com/common/tools/redirectEnc.html?WEIwOUpGUlQ5d3RNRzNMbmVza2wrWm5wUWJBSlY4RzRlSjhPbUx6TFBxTGtXTnlUMm1vQmdNcGpIU0dNZTNFRUFmTGxreksydkpndkNWcXhVMml1QTVYODJqMFNUNmNlYUdxNTBxQXFFMU4xNHBWaHJ1NWVNUXMvY0w2dkJ5SU9KLzdIYTd3dmFnTEM1ajQ5QjZ4YWNDRHVVZThQc0drVmVxSmE1QXFKL3FLRlF3b2FHUEloVmFzNGdmUWRXQzBhdExEYng5Q1dGcUhUcFBwaDB2OTNTT004dk9JTUZKT3VZZERKSWJLcmg0UT0" target="_blank"><span class="thumb"><img src="https://img.etnews.com/news/article/2026/10/07/news-p.v1.20261007.3e8060c7b52444629302b324d733c76d_T1.jpg" alt="뉴스룸 이미지"></span><div class="text"><span class="company">AIPD</span><strong>“AI가 바꾸는 IP서비스”…AI IP데이터분석사 첫 자격시험 시행, 'IP AX' 전문인력 양성 본격화</strong></div></a>
+            </li>
+          </ul>
+          <script type="text/javascript">
+            $(document).ready(function(){ $('#newsroom').slick({	arrows:false,dots: true, autoplay: true, infinite: true, autoplaySpeed:5000, cssEase: 'linear'});});
+          </script>
+        </div>
+        <!-- //slider -->
+      </div>
+    </section>
+    <!-- //브랜드뉴스룸 -->
+	  <!-- 브랜드 뉴스룸-->
+		<div class="ad-300x250 ad-fullwidth2" style="height:250px">
+		<div style="width:300px;height:250px;align-items:center">
+		<script src="https://media.adpnut.com/cgi-bin/PelicanC.dll?impr?pageid=04FD&out=script"></script>
+		</div>
+		</div><div id="imgModal" class="modal" onclick="closeZoom()">
+  <span class="close" onclick="closeZoom()">&times;</span>
+  <div class="img_wrap">
+    <img class="modal-content" id="zoom_img">
+  </div>
+</div>
+
+<div id="etnews" class="mythiell-mid-container " style='margin: 0 ; padding: 0; width:100%; text-align:center;display:none;'>
+  <div class="ad-300x250 ad-fullwidth2" id="ad_0H57">
+  <iframe width="300" height="250" src="//ad.ad4989.co.kr/cgi-bin/PelicanC.dll?impr?pageid=0H57&out=iframe" allowTransparency="true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-scripts allow-forms allow-top-navigation allow-popups allow-modals allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"></iframe>
+  </div>
+</div>
+<script>
+    $(document).ready(function(){
+        //$("#articleBody br:eq(8)").after("<br>"+$("#etnews").html()+"<br>");
+        $("#articleBody p br:eq(4)").after("<br />",$("#ad_0H57"));
+    });
+</script>
+
+  </main>
+  <!-- 푸터 영역 -->
+  <footer>
+    <div class="wrap">
+      <div class="span_wrap">
+        <span id="footer_login"><a href="https://member.etnews.com/member/login.html?return_url=https%3A%2F%2Fm.etnews.com" id="loginout">로그인</a></span>
+        <span><a href="https://info.etnews.com/sub_3_4.html">이용약관</a></span>
+        <span><a href="https://info.etnews.com/sub_3_5.html">개인정보취급방침</a></span>
+        <span><a href="https://info.etnews.com/sub_3_6.html">고충처리</a></span>
+        <span><a href="https://m.etnews.com/sitemap.html">사이트맵</a></span>
+        <span><a href="https://www.etnews.com/20260421000247?m=1">PC버전</a></span>
+      </div>
+    </div>
+    <div class="graybox">
+      <div class="wrap">
+        <p>Copyright &copy Electronic Times Internet. All Rights Reserved.</p>
+      </div>
+    </div>
+    <button type="button" class="go_top" title="맨 위로"><img src="https://img.etnews.com/2024/etnews/images/gt_light.svg"></button>
+  </footer>
+  <div id="snackbar"></div>
+	<!-- 아임플래닛 인이미지-->
+	<script>
+	(function(w,d,p,c){var r='ptag',o='script',s=function(u){var a=d.createElement(o),
+	m=d.getElementsByTagName(o)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m);};
+	w[r]=w[r]||function(){(w[r].q = w[r].q || []).push(arguments)};s(p);s(c);})
+	(window, document, '//tag.adbro.me/tags/ptag.js', '//tag.adbro.me/configs/bjn98jct.js');
+	</script>
+
+	<script type="text/javascript">
+	  window._taboola = window._taboola || [];
+	  _taboola.push({flush: true});
+	</script></body>
+</html><script type="text/javascript">
+	// 사용할 앱의 Javascript 키를 설정해 주세요.
+	//Kakao.init('a12e07a68272909d3c91d23afc28ac68');
+	Kakao.init('c1948bc0334c8622f10cd8399e428bb5');
+	//c1948bc0334c8622f10cd8399e428bb5
+
+	// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+	Kakao.Link.createDefaultButton({
+		container: '#kakao-link-btn',
+		objectType: 'feed',
+		content: {
+			title: '우리은행, \'AI 에이전트 전용 GPU 클러스터\' 구축…생성형 AI 내재화 본격화',
+			description: '',
+			  
+			imageUrl: 'https://img.etnews.com/news/article/2026/04/17/news-p.v1.20260417.afe79e20bb6f4566a86621e1df69e7d9_T1.png',
+			 
+			link: {
+				mobileWebUrl: 'https://m.etnews.com/20260421000247?SNS=00004',
+				webUrl: 'https://www.etnews.com/20260421000247?SNS=00004'
+			}
+		},
+		buttons: [
+		{
+			title: '웹으로 보기',
+			link: {
+				mobileWebUrl: 'https://m.etnews.com/20260421000247?SNS=00004',
+				webUrl: 'https://www.etnews.com/20260421000247?SNS=00004'
+			}
+		},
+	  ]
+	});
+</script>
+
+	<script type="text/javascript" class="teads" src="//a.teads.tv/page/110150/tag" async="true"></script>

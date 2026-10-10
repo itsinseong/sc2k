@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+        <title>금융보안원</title>
+    
+
+    <!-- jquery -->
+    <link rel="stylesheet" href="/static/assets/common/lib/jquery-ui.min.css?cbh=56d2004480ac738dcc9290efa0054b57">
+    <script src="/static/assets/common/lib/jquery-3.4.1.min.js?cbh=65eb240ec3f401a75c717d81f9c84271"></script>
+    <script src="/static/assets/common/lib/jquery-ui.min.js?cbh=a949d0e524789b2aaa153b5cdb0a5f19"></script>
+
+    <!-- swiper.js -->
+    <link rel="stylesheet" href="/static/assets/common/lib/swiper.min.css?cbh=ac30a6a63cc8cd4f7bf6fd8046586aff">
+    <script src="/static/assets/common/lib/swiper-bundle.min.js?cbh=53c366d1e328a93df3020af2cce004fa"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/static/assets/css/ui.css?cbh=cb755f9e2c67065f9a77ecfd9e9837ed">
+
+    <!-- js -->
+    <script src="/static/assets/js/ui.js?cbh=65707292ccdbdf3672f8d51b3573b75c"></script>
+    <script src="/static/assets/js/common/header.js?v=1.1"></script>
+    <script src="/static/assets/js/common/footer.js"></script>
+    <script src="/static/assets/js/util/util.js"></script>
+
+    
+    <script src="/static/assets/js/bbs/bbs.js"></script>
+
+</head>
+
+<body data-page="sub">
+<div id="wrap">
+    
+    <!-- header -->
+    
+    <input type="hidden" id="langCode" name="langCode" value="" />
+    <!-- 헤더 -->
+    
+        <header>
+            <nav>
+                <div class="topArea">
+                    <div class="left">
+                        <h1>
+                            <a href="/" title="금융보안원 홈으로 이동">
+                                <img src="/static/assets/img/common/logo.png" alt="Financial Security Institute">
+                            </a>
+                        </h1>
+                    </div>
+                    <div id="menu" class="menuArea">
+                        <ul class="dep01">
+                            <li>
+                                <a href="javascript:void(0)"><span>금융보안원 소개</span></a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>01</em>금융보안원 안내</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/123"><span>일반현황</span></a></li>
+                                            <li><a href="/bbs/120"><span>CEO 소개</span></a></li>
+                                            <li><a href="/bbs/64"><span>조직도</span></a></li>
+                                            <li><a href="/bbs/128"><span>홍보자료</span></a></li>
+                                            <li><a href="/bbs/132"><span>찾아오시는 길</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>02</em>문의하기</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/customer/qna"><span>업무별 연락처</span></a></li>
+                                            <li><a href="/customer/faq"><span>자주하는 질문(FAQ)</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><span>주요업무</span></a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>01</em>금융권 보안 위협<br> 예방&middot;탐지&middot;대응</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/101"><span>금융부문 통합보안관제</span></a></li>
+                                            <li><a href="/bbs/1028"><span>침해사고 조사&middot;분석</span></a></li>
+                                            <li><a href="/bbs/1029"><span>침해사고 대응훈련</span></a></li>
+                                            <li><a href="/bbs/1030"><span>위협 인텔리전스&middot;공급망 보안</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>02</em>선제적 사이버<br> 안전망 구축</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/1031"><span>취약점 분석&middot;평가</span></a></li>
+                                            <li><a href="/bbs/1032"><span>침투테스트(모의해킹)</span></a></li>
+                                            <li><a href="/bbs/1033"><span>디지털인증&middot;클라우드 안전성 평가</span></a></li>
+                                            <li><a href="/bbs/1034"><span>개인정보&middot;제3자 리스크 평가</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>03</em>AI&middot;디지털 금융<br>혁신 기반 조성</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/1035"><span>금융 AI 보안</span></a></li>
+                                            <li><a href="/bbs/1037"><span>디지털자산 보안</span></a></li>
+                                            <li><a href="/bbs/1039"><span>보이스피싱 정보 공유&middot;분석</span></a></li>
+                                            <li><a href="/bbs/1040"><span>금융 데이터 보안</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>04</em>금융권 자율보안<br> 강화</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/1041"><span>금융보안 수준진단</span></a></li>
+                                            <li><a href="/bbs/1042"><span>금융보안 정책&middot;기술 연구</span></a></li>
+                                            <li><a href="/bbs/1043"><span>금융보안 전문인재 양성</span></a></li>
+                                            <li><a href="/bbs/1044"><span>ISMS-P 인증</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><span>알림마당</span></a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>01</em>알림정보</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/66"><span>공지사항</span></a></li>
+                                            <li><a href="/bbs/68"><span>입찰공고</span></a></li>
+                                            <li><a href="/bbs/258"><span>채용정보</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>02</em>보도&middot;소식</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/69"><span>보도자료</span></a></li>
+                                            <li><a href="/bbs/221"><span>보안원 소식</span></a></li>
+                                            <li><a href="/bbs/253"><span>기고 및 인터뷰</span></a></li>
+                                            <li><a href="/bbs/255"><span>사회공헌활동</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><span>자료마당</span></a>
+                                <ul class="dep02">
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>01</em>금융보안 인사이트</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/241"><span>조사&middot;연구</span></a></li>
+                                            <li><a href="/bbs/244"><span>인텔리전스 보고서</span></a></li>
+                                            <li><a href="/bbs/1011"><span>RED IRIS 리포트</span></a></li>
+                                            <li><a href="/bbs/1009"><span>취약점 정보</span></a></li>
+                                            <li><a href="/bbs/222"><span>가이드</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><span><em>02</em>업무 서식</span></a>
+                                        <ul class="dep03">
+                                            <li><a href="/bbs/301"><span>핀테크 업무신청서식</span></a></li>
+                                            <li><a href="/bbs/1025"><span>비교추천검증 업무신청서식</span></a></li>
+                                            <li><a href="/bbs/247"><span>ISMS-P 인증 관련자료</span></a></li>
+                                            <li><a href="/bbs/248"><span>전자서명인증 평가자료</span></a></li>
+                                            <li><a href="/bbs/246"><span>데이터 활용 관련자료</span></a></li>
+                                            <li><a href="/bbs/250"><span>금융보안표준</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <div class="topSch">
+                            <input type="text" id="headerSch" onkeydown="if(event.keyCode == 13) moveToSearch();"  placeholder="검색어를 입력하세요">
+                            <button type="button" class="sch" title="검색" onclick="moveToSearch();"><img src="/static/assets/img/icon/gnb_sch.png" alt=""></button>
+                        </div>
+                        <div class="topIcon">
+                            <button type="button" class="lan" title="언어선택" onclick="changeLangPage();"><img src="/static/assets/img/icon/gnb_lan.png" alt=""></button>
+                            <button type="button" class="btnOpen" title="전체메뉴 열기"><img src="/static/assets/img/icon/gnb_menu.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+    <!-- 헤더 -->
+
+    
+
+    <!--// header -->
+    
+    <form id="moveForm" method="post">
+        <input type="hidden" id="menuNo" name="menuNo" value="69" />
+        <input type="hidden" id="page" name="page" value="1" />
+        <input type="hidden" id="pageSize" name="pageSize" value="6" />
+        <input type="hidden" id="searchType" name="searchType" value="" />
+        <input type="hidden" id="searchContents" name="searchContents" value="" />
+        <input type="hidden" id="bbsNo" name="bbsNo" value="0" />
+        <input type="hidden" id="pageType" name="pageType" value="card" />
+    </form>
+    <input type="hidden" id="subTopMenuNo" name="subTopMenuNo" value="5" />
+    <input type="hidden" id="subParentMenuNo" name="subParentMenuNo" value="5" />
+
+    <main id="content">
+        <div class="container">
+            <!--
+                          * [data-banner]
+                          * intro: 금융보안원 안내
+                          * business: 주요업무
+                          * notice: 알림마당
+                          * data: 자료마당
+                          * customer: 고객센터
+                      -->
+            <div class="topBgArea"></div>
+            <section class="subTopArea" data-banner="customer">
+                <div class="wrapper">
+                    <div class="left">
+                        <h2 class="tit">알림마당</h2>
+                        <div class="depth">
+                            <a href="/" class="home" title="홈으로 이동"><i><img src="/static/assets/img/icon/depth_home.png" alt=""></i></a>
+                            <img src="/static/assets/img/icon/depth_arrow.png" alt="">
+                            <div class="formSelect">
+                                <button type="button" class="select" data-value="1" ><span>알림마당</span></button>
+                                <ul class="option" id="subOneDepth">
+                                </ul>
+                            </div>
+                            <img src="/static/assets/img/icon/depth_arrow.png" alt="">
+                            
+                                <div class="formSelect">
+                                    <button type="button" class="select" data-value="2"><span>보도자료</span></button>
+                                    <ul class="option" id="subTwoDepth_5">
+                                    </ul>
+                                </div>
+                            
+                            
+                                
+                            
+
+                            
+                        </div>
+                    </div>
+                    <div class="right">
+                        
+                            
+                                <div class="breadcrumb">홈 <i></i> 알림마당 <i></i> <strong id='currentMenu'>보도자료</strong></div>
+                            
+                            
+                        
+                        
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="subContent">
+                
+                    
+                        <h3 class="subPageTit">보도자료</h3>
+                    
+                    
+                
+
+                
+                
+                    <div id="cont">
+
+                    </div>
+                
+            </section>
+        </div>
+    </main>
+</div>
+
+
+    <!-- 푸터 -->
+    <!-- 푸터 -->
+    
+        <footer id="footer">
+            <aside class="floating">
+                <h3 class="ir">우측 플로팅</h3>
+                <a href="/customer/qna"><button type="button" class="btn01"><i></i><span>문의하기</span></button></a>
+                <button type="button" class="btn02"><i></i><span>바로가기</span></button>
+                <!-- pub_12 -->
+                <ul class="floatMenu">
+                    <li><a href="https://edu.fsec.or.kr" target="_blank" title="새창열림"><span>금융보안교육센터</span></a></li>
+                    <li><a href="https://ngfcti.kfisac.or.kr" target="_blank" title="새창열림"><span>금융보안원FCTI</span></a></li>
+                    <li><a href="https://regtech.fsec.or.kr/main/main" target="_blank" title="새창열림"><span>레그테크 포털</span></a></li>
+                    <li><a href="https://www.findatamall.or.kr" target="_blank" title="새창열림"><span>데이터거래소</span></a></li>
+                    <li><a href="https://data.fsec.or.kr/prtl/main/main.do" target="_blank" title="새창열림"><span>데이터전문기관</span></a></li>
+                    <li><a href="https://developers.mydatakorea.org/mdtb/" target="_blank" title="새창열림"><span>마이데이터 테스트베드</span></a></li>
+                    <li><a href="https://www.mydatacert.org/" target="_blank" title="새창열림"><span>마이데이터 통합인증 중계시스템</span></a></li>
+                </ul>
+                <button type="button" class="btn03 moveTop"><i></i><span class="ir">상단이동</span></button>
+            </aside>
+            <div class="footerSitesDesktop">
+                <div class="wrapper">
+                    <h2 class="footerSitesTitle">사원기관 이용 사이트</h2>
+                    <ul class="footerSitesList">
+                        <li><a href="https://edu.fsec.or.kr" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/static/assets/img/common/footer_company01.png" width="165" height="31" alt="금융보안원 금융보안교육센터"></a></li>
+                        <li><a href="https://ngfcti.kfisac.or.kr" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/static/assets/img/common/footer_company02_pc.png" width="144" height="33" alt="금융보안원 FCTI 정보공유포털"></a></li>
+                        <li><a href="https://regtech.fsec.or.kr" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/static/assets/img/common/footer_company03.png" width="172" height="47" alt="금융보안 RegTech 포털"></a></li>
+                        <li><a href="https://data.fsec.or.kr" target="_blank" rel="noopener noreferrer" title="새창열림"><img src="/static/assets/img/common/footer_company05.png" width="135" height="27" alt="금융보안원 데이터전문기관"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top footerSitesMobile">
+                <div class="wrapper">
+                    <!-- pub_02 -->
+                    <div class="left">사원기관 이용 사이트</div>
+                    <div class="right">
+                        <div class="unitSwiper">
+                            <button type="button" class="swiper-button-prev swiperFooter-prev" title="이전"><span><img src="/static/assets/img/common/footer_swiper_btn.png" alt="이전"></span></button>
+                            <div class="swiperCont swiperFooter">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><a href="https://edu.fsec.or.kr" target="_blank" title="새창열림"><img src="/static/assets/img/common/footer_company01.png" alt="금융보안원 금융보안교육센터"></a></div>
+                                    <div class="swiper-slide"><a href="https://ngfcti.kfisac.or.kr" target="_blank" title="새창열림"><img src="/static/assets/img/common/footer_company02_pc.png" alt="금융보안 정보공유포털"></a></div>
+                                    <div class="swiper-slide"><a href="https://regtech.fsec.or.kr" target="_blank" title="새창열림"><img src="/static/assets/img/common/footer_company03.png" alt="금융보안 RegTech 포털"></a></div>
+                                    <div class="swiper-slide"><a href="https://data.fsec.or.kr" target="_blank" title="새창열림"><img src="/static/assets/img/common/footer_company05.png" alt="금융보안원 데이터전문기관"></a></div>
+                                </div>
+                            </div>
+                            <button type="button" class="swiper-button-next swiperFooter-next" title="다음"><span><img src="/static/assets/img/common/footer_swiper_btn.png" alt="다음"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="wrapper">
+                    <div class="util">
+                        <div class="left">
+                            <ul>
+
+                            </ul>
+                        </div>
+
+                        <div class="right">
+                            <div class="formSelect type2">
+                                <!-- pub_01 *** -->
+                                <button type="button" class="select" data-value=""><span>유관기관 바로가기</span></button>
+                                <ul class="option">
+                                    <li><a href="https://www.fsc.go.kr" target="_blank" title="새창열림"><span>금융위원회</span></a></li>
+                                    <li><a href="https://www.fss.or.kr" target="_blank" title="새창열림"><span>금융감독원</span></a></li>
+                                    <li><a href="https://www.spo.go.kr" target="_blank" title="새창열림"><span>대검찰청</span></a></li>
+                                    <li><a href="https://cyberbureau.police.go.kr" target="_blank" title="새창열림"><span>경찰청사</span></a></li>
+                                    <li><a href="https://kisa.or.kr" target="_blank" title="새창열림"><span>한국인터넷진흥원</span></a></li>
+                                    <li><a href="https://fintech.or.kr" target="_blank" title="새창열림"><span>한국핀테크지원센터</span></a></li>
+                                </ul>
+                                <!-- *** pub_01 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="left">
+                            <address>
+                                <span>(우)16881 경기도 용인시 수지구 대지로 132</span>
+                                <span><strong>대표전화</strong> 02-3495-9000</span>
+                                <span><strong>팩스</strong> 02-495-9019</span>
+                            </address>
+                            <p>COPYRIGHT©2015 FINANCIAL SECURITY INSTITUTE ALL RIGHTS RESERVED</p>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li><a href="https://www.fsc.go.kr" target="_blank" title="새창열림"><img src="/static/assets/img/common/footer_img01.png" alt="금융위원회"></a></li>
+                                <li><a href="https://www.fss.or.kr" target="_blank" title="새창열림"><img src="/static/assets/img/common/footer_img02.png" alt="금융감독원"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+
+    
+    <!-- 푸터 -->
+
+</body>
+</html>
