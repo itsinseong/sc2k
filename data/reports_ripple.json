@@ -216,7 +216,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -249,13 +249,13 @@
      "note": "보고 기준일 두 날(2024-12-20, 2024-12-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report December 2024'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 2,
       "raw": "Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blo"
      },
-     "note": "유통량 정의 문장이 있다: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -509,7 +509,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -542,13 +542,13 @@
      "note": "보고 기준일 두 날(2025-01-24, 2025-01-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report January 2025'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 7,
       "raw": "Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blo"
      },
-     "note": "유통량 정의 문장이 있다: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -801,7 +801,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -834,13 +834,13 @@
      "note": "보고 기준일 두 날(2025-02-05, 2025-02-28)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report February 2025'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 2,
       "raw": "Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blo"
      },
-     "note": "유통량 정의 문장이 있다: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -1093,7 +1093,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -1126,13 +1126,13 @@
      "note": "보고 기준일 두 날(2025-03-13, 2025-03-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report March 2025'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 2,
       "raw": "Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blo"
      },
-     "note": "유통량 정의 문장이 있다: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -1358,7 +1358,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -1391,13 +1391,13 @@
      "note": "보고 기준일 두 날(2025-04-08, 2025-04-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report April 2025'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 7,
       "raw": "Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blo"
      },
-     "note": "유통량 정의 문장이 있다: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -1623,7 +1623,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -1656,13 +1656,13 @@
      "note": "보고 기준일 두 날(2025-05-22, 2025-05-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report May 2025'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 2,
       "raw": "Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blo"
      },
-     "note": "유통량 정의 문장이 있다: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -1872,7 +1872,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -1900,13 +1900,13 @@
      "note": "보고 기준일 두 날(2025-06-09, 2025-06-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report June 2025'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 2,
       "raw": "Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blo"
      },
-     "note": "유통량 정의 문장이 있다: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -2132,7 +2132,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -2165,13 +2165,13 @@
      "note": "보고 기준일 두 날(2025-07-17, 2025-07-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report July 2025'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 7,
       "raw": "Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blo"
      },
-     "note": "유통량 정의 문장이 있다: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Total RLUSD outstanding is defined as the aggregate amount of RLUSD issued, outstanding and redeemable, and currently present on the XRP Ledger and Ethereum blockchain networks, at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -2442,7 +2442,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -2475,13 +2475,13 @@
      "note": "보고 기준일 두 날(2025-08-18, 2025-08-29)이 같은 달이고 보고서 하나가 한 달을 다룬다(이 보고서에는 표지 제목이 없음). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 2,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -2782,7 +2782,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -2815,13 +2815,13 @@
      "note": "보고 기준일 두 날(2025-09-15, 2025-09-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(이 보고서에는 표지 제목이 없음). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 2,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -3227,7 +3227,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -3260,13 +3260,13 @@
      "note": "보고 기준일 두 날(2025-10-10, 2025-10-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report October 2025'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -3696,7 +3696,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -3729,13 +3729,13 @@
      "note": "보고 기준일 두 날(2025-11-24, 2025-11-28)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report November 2025'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -4141,7 +4141,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -4174,13 +4174,13 @@
      "note": "보고 기준일 두 날(2025-12-17, 2025-12-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report December 2025'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -4601,7 +4601,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -4634,13 +4634,13 @@
      "note": "보고 기준일 두 날(2026-01-14, 2026-01-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report January 2026'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -5076,7 +5076,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -5109,13 +5109,13 @@
      "note": "보고 기준일 두 날(2026-02-19, 2026-02-27)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report February 2026'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -5573,7 +5573,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -5606,13 +5606,13 @@
      "note": "보고 기준일 두 날(2026-03-13, 2026-03-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report March 2026'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -6072,7 +6072,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -6105,13 +6105,13 @@
      "note": "보고 기준일 두 날(2026-04-24, 2026-04-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report April 2026'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -6539,7 +6539,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -6572,13 +6572,13 @@
      "note": "보고 기준일 두 날(2026-05-18, 2026-05-29)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report May 2026'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently present on the XRP Ledger and Ethereum blockchain networks at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -6999,7 +6999,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -7032,13 +7032,13 @@
      "note": "보고 기준일 두 날(2026-06-08, 2026-06-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report June 2026'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently on the NYDFS approved blockchain networks* at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently on the NYDFS approved blockchain networks* at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently on the NYDFS approved blockchain networks* at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -7519,7 +7519,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -7552,13 +7552,13 @@
      "note": "보고 기준일 두 날(2026-07-06, 2026-07-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserve Report July 2026'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently on the NYDFS approved blockchain networks* at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently on the NYDFS approved blockchain networks* at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently on the NYDFS approved blockchain networks* at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",
@@ -8099,7 +8099,7 @@
    "repo_max_maturity_days": null,
    "disclosure_cadence": "monthly",
    "disclosure_cadence_days": 31,
-   "circulation_formula_disclosed": true,
+   "circulation_formula_disclosed": false,
    "custodian_disclosure": false,
    "custodians": [],
    "management_certification": true,
@@ -8132,13 +8132,13 @@
      "note": "보고 기준일 두 날(2026-08-17, 2026-08-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserve Report August 2026'). 표본 21개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
-     "state": "found",
+     "state": "not_disclosed",
      "where": {
       "page": 4,
       "line": 32,
       "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently on the NYDFS approved blockchain networks* at the Report Dates."
      },
-     "note": "유통량 정의 문장이 있다: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently on the NYDFS approved blockchain networks* at the Report Dates.' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)"
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently on the NYDFS approved blockchain networks* at the Report Dates.'"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",

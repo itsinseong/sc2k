@@ -1,0 +1,300 @@
+adsh	tag	version	ddate	qtrs	uom	segments	coreg	value	footnote
+0000001961-26-000014	AccountsPayableCurrent	us-gaap/2025	20241231	0	USD			809928.0000	
+0000001961-26-000014	AccountsPayableCurrent	us-gaap/2025	20250331	0	USD			833228.0000	
+0000001961-26-000014	AccruedLiabilitiesCurrent	us-gaap/2025	20241231	0	USD			1768703.0000	
+0000001961-26-000014	AccruedLiabilitiesCurrent	us-gaap/2025	20250331	0	USD			1784333.0000	
+0000001961-26-000014	AdditionalPaidInCapital	us-gaap/2025	20241231	0	USD			42335725.0000	
+0000001961-26-000014	AdditionalPaidInCapital	us-gaap/2025	20250331	0	USD			42335725.0000	
+0000001961-26-000014	Assets	us-gaap/2025	20241231	0	USD			15130.0000	
+0000001961-26-000014	Assets	us-gaap/2025	20250331	0	USD			9959.0000	
+0000001961-26-000014	AssetsCurrent	us-gaap/2025	20241231	0	USD			15130.0000	
+0000001961-26-000014	AssetsCurrent	us-gaap/2025	20250331	0	USD			9959.0000	
+0000001961-26-000014	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	20241231	0	USD			6380.0000	
+0000001961-26-000014	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	20250331	0	USD			3396.0000	
+0000001961-26-000014	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	20231231	0	USD			244856.0000	
+0000001961-26-000014	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	20240331	0	USD			155245.0000	
+0000001961-26-000014	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	20241231	0	USD			6380.0000	
+0000001961-26-000014	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	20250331	0	USD			3396.0000	
+0000001961-26-000014	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	20240331	1	USD			-89611.0000	
+0000001961-26-000014	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	20250331	1	USD			-2984.0000	
+0000001961-26-000014	CommonStockParOrStatedValuePerShare	us-gaap/2025	20241231	0	USD			0.0010	
+0000001961-26-000014	CommonStockParOrStatedValuePerShare	us-gaap/2025	20250331	0	USD			0.0010	
+0000001961-26-000014	CommonStockSharesAuthorized	us-gaap/2025	20241231	0	shares			250000000.0000	
+0000001961-26-000014	CommonStockSharesAuthorized	us-gaap/2025	20250331	0	shares			250000000.0000	
+0000001961-26-000014	CommonStockSharesIssued	us-gaap/2025	20241231	0	shares			57112506.0000	
+0000001961-26-000014	CommonStockSharesIssued	us-gaap/2025	20250331	0	shares			57112506.0000	
+0000001961-26-000014	CommonStockSharesOutstanding	us-gaap/2025	20231231	0	shares	EquityComponents=CommonStock;		57112506.0000	
+0000001961-26-000014	CommonStockSharesOutstanding	us-gaap/2025	20240331	0	shares	EquityComponents=CommonStock;		57112506.0000	
+0000001961-26-000014	CommonStockSharesOutstanding	us-gaap/2025	20241231	0	shares			57112506.0000	
+0000001961-26-000014	CommonStockSharesOutstanding	us-gaap/2025	20241231	0	shares	EquityComponents=CommonStock;		57112506.0000	
+0000001961-26-000014	CommonStockSharesOutstanding	us-gaap/2025	20250331	0	shares			57112506.0000	
+0000001961-26-000014	CommonStockSharesOutstanding	us-gaap/2025	20250331	0	shares	EquityComponents=CommonStock;		57112506.0000	
+0000001961-26-000014	CommonStockValue	us-gaap/2025	20241231	0	USD			57113.0000	
+0000001961-26-000014	CommonStockValue	us-gaap/2025	20250331	0	USD			57113.0000	
+0000001961-26-000014	CostOfRevenue	us-gaap/2025	20240331	1	USD				
+0000001961-26-000014	CostOfRevenue	us-gaap/2025	20250331	1	USD				
+0000001961-26-000014	EarningsPerShareBasic	us-gaap/2025	20240331	1	USD			0.0000	
+0000001961-26-000014	EarningsPerShareBasic	us-gaap/2025	20250331	1	USD			0.0000	
+0000001961-26-000014	GrossProfit	us-gaap/2025	20240331	1	USD				
+0000001961-26-000014	GrossProfit	us-gaap/2025	20250331	1	USD				
+0000001961-26-000014	IncomeTaxesPaid	us-gaap/2025	20240331	1	USD				
+0000001961-26-000014	IncomeTaxesPaid	us-gaap/2025	20250331	1	USD				
+0000001961-26-000014	IncreaseDecreaseInAccountsPayableAndAccruedLiabilities	us-gaap/2025	20240331	1	USD			12251.0000	
+0000001961-26-000014	IncreaseDecreaseInAccountsPayableAndAccruedLiabilities	us-gaap/2025	20250331	1	USD			38930.0000	
+0000001961-26-000014	IncreaseDecreaseInNotesPayableRelatedPartiesCurrent	us-gaap/2025	20240331	1	USD				
+0000001961-26-000014	IncreaseDecreaseInNotesPayableRelatedPartiesCurrent	us-gaap/2025	20250331	1	USD			4500.0000	
+0000001961-26-000014	IncreaseDecreaseInOtherAccruedLiabilities	us-gaap/2025	20240331	1	USD			10000.0000	
+0000001961-26-000014	IncreaseDecreaseInOtherAccruedLiabilities	us-gaap/2025	20250331	1	USD			68000.0000	
+0000001961-26-000014	IncreaseDecreaseInPrepaidExpense	us-gaap/2025	20240331	1	USD			6000.0000	
+0000001961-26-000014	IncreaseDecreaseInPrepaidExpense	us-gaap/2025	20250331	1	USD			-2187.0000	
+0000001961-26-000014	InterestExpense	us-gaap/2025	20240331	1	USD			18738.0000	
+0000001961-26-000014	InterestExpense	us-gaap/2025	20250331	1	USD			18738.0000	
+0000001961-26-000014	InterestPaid	us-gaap/2025	20240331	1	USD				
+0000001961-26-000014	InterestPaid	us-gaap/2025	20250331	1	USD				
+0000001961-26-000014	Liabilities	us-gaap/2025	20241231	0	USD			3668675.0000	
+0000001961-26-000014	Liabilities	us-gaap/2025	20250331	0	USD			3780105.0000	
+0000001961-26-000014	LiabilitiesAndStockholdersEquity	us-gaap/2025	20241231	0	USD			15130.0000	
+0000001961-26-000014	LiabilitiesAndStockholdersEquity	us-gaap/2025	20250331	0	USD			9959.0000	
+0000001961-26-000014	LiabilitiesCurrent	us-gaap/2025	20241231	0	USD			3668675.0000	
+0000001961-26-000014	LiabilitiesCurrent	us-gaap/2025	20250331	0	USD			3780105.0000	
+0000001961-26-000014	LoansPayableCurrent	us-gaap/2025	20241231	0	USD				
+0000001961-26-000014	LoansPayableCurrent	us-gaap/2025	20250331	0	USD			4500.0000	
+0000001961-26-000014	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	20240331	1	USD				
+0000001961-26-000014	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	20250331	1	USD			4500.0000	
+0000001961-26-000014	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	20240331	1	USD			-89611.0000	
+0000001961-26-000014	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	20250331	1	USD			-7484.0000	
+0000001961-26-000014	NetIncomeLoss	us-gaap/2025	20240331	1	USD			-105862.0000	
+0000001961-26-000014	NetIncomeLoss	us-gaap/2025	20240331	1	USD	EquityComponents=AdditionalPaidInCapital;			
+0000001961-26-000014	NetIncomeLoss	us-gaap/2025	20240331	1	USD	EquityComponents=CommonStock;			
+0000001961-26-000014	NetIncomeLoss	us-gaap/2025	20240331	1	USD	EquityComponents=RetainedEarnings;		-105862.0000	
+0000001961-26-000014	NetIncomeLoss	us-gaap/2025	20240331	1	USD	EquityComponents=Warrant;			
+0000001961-26-000014	NetIncomeLoss	us-gaap/2025	20250331	1	USD			-116601.0000	
+0000001961-26-000014	NetIncomeLoss	us-gaap/2025	20250331	1	USD	EquityComponents=AdditionalPaidInCapital;			
+0000001961-26-000014	NetIncomeLoss	us-gaap/2025	20250331	1	USD	EquityComponents=CommonStock;			
+0000001961-26-000014	NetIncomeLoss	us-gaap/2025	20250331	1	USD	EquityComponents=RetainedEarnings;		-116601.0000	
+0000001961-26-000014	NetIncomeLoss	us-gaap/2025	20250331	1	USD	EquityComponents=Warrant;			
+0000001961-26-000014	NotesPayableCurrent	us-gaap/2025	20241231	0	USD			773279.0000	
+0000001961-26-000014	NotesPayableCurrent	us-gaap/2025	20250331	0	USD			773279.0000	
+0000001961-26-000014	OperatingIncomeLoss	us-gaap/2025	20240331	1	USD			-87124.0000	
+0000001961-26-000014	OperatingIncomeLoss	us-gaap/2025	20250331	1	USD			-97863.0000	
+0000001961-26-000014	OtherAccruedLiabilitiesCurrent	us-gaap/2025	20241231	0	USD			316765.0000	
+0000001961-26-000014	OtherAccruedLiabilitiesCurrent	us-gaap/2025	20250331	0	USD			384765.0000	
+0000001961-26-000014	PrepaidExpenseCurrent	us-gaap/2025	20241231	0	USD			8750.0000	
+0000001961-26-000014	PrepaidExpenseCurrent	us-gaap/2025	20250331	0	USD			6563.0000	
+0000001961-26-000014	RetainedEarningsAccumulatedDeficit	us-gaap/2025	20241231	0	USD			-47253296.0000	
+0000001961-26-000014	RetainedEarningsAccumulatedDeficit	us-gaap/2025	20250331	0	USD			-47369897.0000	
+0000001961-26-000014	Revenues	us-gaap/2025	20240331	1	USD				
+0000001961-26-000014	Revenues	us-gaap/2025	20250331	1	USD				
+0000001961-26-000014	SalariesWagesAndOfficersCompensation	us-gaap/2025	20240331	1	USD			60359.0000	
+0000001961-26-000014	SalariesWagesAndOfficersCompensation	us-gaap/2025	20250331	1	USD			60498.0000	
+0000001961-26-000014	SellingGeneralAndAdministrativeExpense	us-gaap/2025	20240331	1	USD			26765.0000	
+0000001961-26-000014	SellingGeneralAndAdministrativeExpense	us-gaap/2025	20250331	1	USD			37365.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20231231	0	USD			-3142163.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20231231	0	USD	EquityComponents=AdditionalPaidInCapital;		42335725.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20231231	0	USD	EquityComponents=CommonStock;		57113.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20231231	0	USD	EquityComponents=RetainedEarnings;		-46741914.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20231231	0	USD	EquityComponents=Warrant;		1206913.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20240331	0	USD			-3248025.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20240331	0	USD	EquityComponents=AdditionalPaidInCapital;		42335725.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20240331	0	USD	EquityComponents=CommonStock;		57113.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20240331	0	USD	EquityComponents=RetainedEarnings;		-46847776.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20240331	0	USD	EquityComponents=Warrant;		1206913.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20241231	0	USD			-3653545.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20241231	0	USD	EquityComponents=AdditionalPaidInCapital;		42335725.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20241231	0	USD	EquityComponents=CommonStock;		57113.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20241231	0	USD	EquityComponents=RetainedEarnings;		-47253294.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20241231	0	USD	EquityComponents=Warrant;		1206913.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20250331	0	USD			-3770146.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20250331	0	USD	EquityComponents=AdditionalPaidInCapital;		42335725.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20250331	0	USD	EquityComponents=CommonStock;		57113.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20250331	0	USD	EquityComponents=RetainedEarnings;		-47369897.0000	
+0000001961-26-000014	StockholdersEquity	us-gaap/2025	20250331	0	USD	EquityComponents=Warrant;		1206913.0000	
+0000001961-26-000014	WarrantsAndRightsOutstanding	us-gaap/2025	20241231	0	USD			1206913.0000	
+0000001961-26-000014	WarrantsAndRightsOutstanding	us-gaap/2025	20250331	0	USD			1206913.0000	
+0000001961-26-000014	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	20240331	1	shares			57112506.0000	
+0000001961-26-000014	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	20250331	1	shares			57112506.0000	
+0000001961-26-000025	AccountsPayableCurrent	us-gaap/2025	20241231	0	USD			809928.0000	
+0000001961-26-000025	AccountsPayableCurrent	us-gaap/2025	20250630	0	USD			835213.0000	
+0000001961-26-000025	AccruedLiabilitiesCurrent	us-gaap/2025	20241231	0	USD			1768703.0000	
+0000001961-26-000025	AccruedLiabilitiesCurrent	us-gaap/2025	20250630	0	USD			1862880.0000	
+0000001961-26-000025	AdditionalPaidInCapital	us-gaap/2025	20241231	0	USD			42335725.0000	
+0000001961-26-000025	AdditionalPaidInCapital	us-gaap/2025	20250630	0	USD			42335725.0000	
+0000001961-26-000025	Assets	us-gaap/2025	20241231	0	USD			15130.0000	
+0000001961-26-000025	Assets	us-gaap/2025	20250630	0	USD			9004.0000	
+0000001961-26-000025	AssetsCurrent	us-gaap/2025	20241231	0	USD			15130.0000	
+0000001961-26-000025	AssetsCurrent	us-gaap/2025	20250630	0	USD			9004.0000	
+0000001961-26-000025	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	20241231	0	USD			6380.0000	
+0000001961-26-000025	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	20250630	0	USD			4629.0000	
+0000001961-26-000025	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	20231231	0	USD			244856.0000	
+0000001961-26-000025	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	20240630	0	USD			84335.0000	
+0000001961-26-000025	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	20241231	0	USD			6380.0000	
+0000001961-26-000025	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	20250630	0	USD			4629.0000	
+0000001961-26-000025	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	20240630	2	USD			-160521.0000	
+0000001961-26-000025	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	20250630	2	USD			-1751.0000	
+0000001961-26-000025	CommonStockParOrStatedValuePerShare	us-gaap/2025	20241231	0	USD			0.0010	
+0000001961-26-000025	CommonStockParOrStatedValuePerShare	us-gaap/2025	20250630	0	USD			0.0010	
+0000001961-26-000025	CommonStockSharesAuthorized	us-gaap/2025	20241231	0	shares			250000000.0000	
+0000001961-26-000025	CommonStockSharesAuthorized	us-gaap/2025	20250630	0	shares			250000000.0000	
+0000001961-26-000025	CommonStockSharesIssued	us-gaap/2025	20241231	0	shares			57112506.0000	
+0000001961-26-000025	CommonStockSharesIssued	us-gaap/2025	20250630	0	shares			57112506.0000	
+0000001961-26-000025	CommonStockSharesOutstanding	us-gaap/2025	20231231	0	shares	EquityComponents=CommonStock;		57112506.0000	
+0000001961-26-000025	CommonStockSharesOutstanding	us-gaap/2025	20240331	0	shares	EquityComponents=CommonStock;		57112506.0000	
+0000001961-26-000025	CommonStockSharesOutstanding	us-gaap/2025	20240630	0	shares	EquityComponents=CommonStock;		57112506.0000	
+0000001961-26-000025	CommonStockSharesOutstanding	us-gaap/2025	20241231	0	shares			57112506.0000	
+0000001961-26-000025	CommonStockSharesOutstanding	us-gaap/2025	20241231	0	shares	EquityComponents=CommonStock;		57112506.0000	
+0000001961-26-000025	CommonStockSharesOutstanding	us-gaap/2025	20250331	0	shares	EquityComponents=CommonStock;		57112506.0000	
+0000001961-26-000025	CommonStockSharesOutstanding	us-gaap/2025	20250630	0	shares			57112506.0000	
+0000001961-26-000025	CommonStockSharesOutstanding	us-gaap/2025	20250630	0	shares	EquityComponents=CommonStock;		57112506.0000	
+0000001961-26-000025	CommonStockValue	us-gaap/2025	20241231	0	USD			57113.0000	
+0000001961-26-000025	CommonStockValue	us-gaap/2025	20250630	0	USD			57113.0000	
+0000001961-26-000025	CostOfRevenue	us-gaap/2025	20240630	1	USD				
+0000001961-26-000025	CostOfRevenue	us-gaap/2025	20240630	2	USD				
+0000001961-26-000025	CostOfRevenue	us-gaap/2025	20250630	1	USD				
+0000001961-26-000025	CostOfRevenue	us-gaap/2025	20250630	2	USD				
+0000001961-26-000025	EarningsPerShareBasic	us-gaap/2025	20240630	1	USD			0.0000	
+0000001961-26-000025	EarningsPerShareBasic	us-gaap/2025	20240630	2	USD			0.0000	
+0000001961-26-000025	EarningsPerShareBasic	us-gaap/2025	20250630	1	USD			0.0000	
+0000001961-26-000025	EarningsPerShareBasic	us-gaap/2025	20250630	2	USD			0.0000	
+0000001961-26-000025	GrossProfit	us-gaap/2025	20240630	1	USD				
+0000001961-26-000025	GrossProfit	us-gaap/2025	20240630	2	USD				
+0000001961-26-000025	GrossProfit	us-gaap/2025	20250630	1	USD				
+0000001961-26-000025	GrossProfit	us-gaap/2025	20250630	2	USD				
+0000001961-26-000025	IncomeTaxesPaid	us-gaap/2025	20240630	2	USD				
+0000001961-26-000025	IncomeTaxesPaid	us-gaap/2025	20250630	2	USD				
+0000001961-26-000025	IncreaseDecreaseInAccountsPayableAndAccruedLiabilities	us-gaap/2025	20240630	2	USD			37607.0000	
+0000001961-26-000025	IncreaseDecreaseInAccountsPayableAndAccruedLiabilities	us-gaap/2025	20250630	2	USD			119462.0000	
+0000001961-26-000025	IncreaseDecreaseInNotesPayableRelatedPartiesCurrent	us-gaap/2025	20240630	2	USD				
+0000001961-26-000025	IncreaseDecreaseInNotesPayableRelatedPartiesCurrent	us-gaap/2025	20250630	2	USD			61610.0000	
+0000001961-26-000025	IncreaseDecreaseInOtherAccruedLiabilities	us-gaap/2025	20240630	2	USD			32614.0000	
+0000001961-26-000025	IncreaseDecreaseInOtherAccruedLiabilities	us-gaap/2025	20250630	2	USD			68470.0000	
+0000001961-26-000025	IncreaseDecreaseInPrepaidExpense	us-gaap/2025	20240630	2	USD			3000.0000	
+0000001961-26-000025	IncreaseDecreaseInPrepaidExpense	us-gaap/2025	20250630	2	USD			-4375.0000	
+0000001961-26-000025	InterestExpense	us-gaap/2025	20240630	1	USD			18919.0000	
+0000001961-26-000025	InterestExpense	us-gaap/2025	20240630	2	USD			37657.0000	
+0000001961-26-000025	InterestExpense	us-gaap/2025	20250630	1	USD			19389.0000	
+0000001961-26-000025	InterestExpense	us-gaap/2025	20250630	2	USD			38127.0000	
+0000001961-26-000025	InterestPaid	us-gaap/2025	20240630	2	USD				
+0000001961-26-000025	InterestPaid	us-gaap/2025	20250630	2	USD				
+0000001961-26-000025	Liabilities	us-gaap/2025	20241231	0	USD			3668675.0000	
+0000001961-26-000025	Liabilities	us-gaap/2025	20250630	0	USD			3918217.0000	
+0000001961-26-000025	LiabilitiesAndStockholdersEquity	us-gaap/2025	20241231	0	USD			15130.0000	
+0000001961-26-000025	LiabilitiesAndStockholdersEquity	us-gaap/2025	20250630	0	USD			9004.0000	
+0000001961-26-000025	LiabilitiesCurrent	us-gaap/2025	20241231	0	USD			3668675.0000	
+0000001961-26-000025	LiabilitiesCurrent	us-gaap/2025	20250630	0	USD			3918217.0000	
+0000001961-26-000025	LoansPayableCurrent	us-gaap/2025	20241231	0	USD			0.0000	
+0000001961-26-000025	LoansPayableCurrent	us-gaap/2025	20250630	0	USD			61610.0000	
+0000001961-26-000025	MarketableSecuritiesGainLoss	us-gaap/2025	20240630	1	USD				
+0000001961-26-000025	MarketableSecuritiesGainLoss	us-gaap/2025	20240630	2	USD				
+0000001961-26-000025	MarketableSecuritiesGainLoss	us-gaap/2025	20250630	1	USD				
+0000001961-26-000025	MarketableSecuritiesGainLoss	us-gaap/2025	20250630	2	USD				
+0000001961-26-000025	MarketableSecuritiesRealizedGainLoss	us-gaap/2025	20240630	2	USD				
+0000001961-26-000025	MarketableSecuritiesRealizedGainLoss	us-gaap/2025	20250630	2	USD				
+0000001961-26-000025	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	20240630	2	USD				
+0000001961-26-000025	NetCashProvidedByUsedInFinancingActivities	us-gaap/2025	20250630	2	USD			61610.0000	
+0000001961-26-000025	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	20240630	2	USD			-160521.0000	
+0000001961-26-000025	NetCashProvidedByUsedInOperatingActivities	us-gaap/2025	20250630	2	USD			-63361.0000	
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20240331	1	USD			-105862.0000	
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20240331	1	USD	EquityComponents=AdditionalPaidInCapital;			
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20240331	1	USD	EquityComponents=CommonStock;			
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20240331	1	USD	EquityComponents=RetainedEarnings;		-105862.0000	
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20240331	1	USD	EquityComponents=Warrant;			
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20240630	1	USD			-121880.0000	
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20240630	1	USD	EquityComponents=AdditionalPaidInCapital;			
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20240630	1	USD	EquityComponents=CommonStock;			
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20240630	1	USD	EquityComponents=RetainedEarnings;		-121880.0000	
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20240630	1	USD	EquityComponents=Warrant;			
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20240630	2	USD			-227742.0000	
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20250331	1	USD			-116601.0000	
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20250331	1	USD	EquityComponents=AdditionalPaidInCapital;			
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20250331	1	USD	EquityComponents=CommonStock;			
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20250331	1	USD	EquityComponents=RetainedEarnings;		-116601.0000	
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20250331	1	USD	EquityComponents=Warrant;			
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20250630	1	USD			-139067.0000	
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20250630	1	USD	EquityComponents=AdditionalPaidInCapital;			
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20250630	1	USD	EquityComponents=CommonStock;			
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20250630	1	USD	EquityComponents=RetainedEarnings;		-139067.0000	
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20250630	1	USD	EquityComponents=Warrant;			
+0000001961-26-000025	NetIncomeLoss	us-gaap/2025	20250630	2	USD			-255668.0000	
+0000001961-26-000025	NotesPayableCurrent	us-gaap/2025	20241231	0	USD			773279.0000	
+0000001961-26-000025	NotesPayableCurrent	us-gaap/2025	20250630	0	USD			773279.0000	
+0000001961-26-000025	OperatingIncomeLoss	us-gaap/2025	20240630	1	USD			-102961.0000	
+0000001961-26-000025	OperatingIncomeLoss	us-gaap/2025	20240630	2	USD			-190085.0000	
+0000001961-26-000025	OperatingIncomeLoss	us-gaap/2025	20250630	1	USD			-119678.0000	
+0000001961-26-000025	OperatingIncomeLoss	us-gaap/2025	20250630	2	USD			-217541.0000	
+0000001961-26-000025	OtherAccruedLiabilitiesCurrent	us-gaap/2025	20241231	0	USD			316765.0000	
+0000001961-26-000025	OtherAccruedLiabilitiesCurrent	us-gaap/2025	20250630	0	USD			385235.0000	
+0000001961-26-000025	PrepaidExpenseCurrent	us-gaap/2025	20241231	0	USD			8750.0000	
+0000001961-26-000025	PrepaidExpenseCurrent	us-gaap/2025	20250630	0	USD			4375.0000	
+0000001961-26-000025	RetainedEarningsAccumulatedDeficit	us-gaap/2025	20241231	0	USD			-47253296.0000	
+0000001961-26-000025	RetainedEarningsAccumulatedDeficit	us-gaap/2025	20250630	0	USD			-47508964.0000	
+0000001961-26-000025	Revenues	us-gaap/2025	20240630	1	USD				
+0000001961-26-000025	Revenues	us-gaap/2025	20240630	2	USD				
+0000001961-26-000025	Revenues	us-gaap/2025	20250630	1	USD				
+0000001961-26-000025	Revenues	us-gaap/2025	20250630	2	USD				
+0000001961-26-000025	SalariesWagesAndOfficersCompensation	us-gaap/2025	20240630	1	USD			68939.0000	
+0000001961-26-000025	SalariesWagesAndOfficersCompensation	us-gaap/2025	20240630	2	USD			129298.0000	
+0000001961-26-000025	SalariesWagesAndOfficersCompensation	us-gaap/2025	20250630	1	USD			60501.0000	
+0000001961-26-000025	SalariesWagesAndOfficersCompensation	us-gaap/2025	20250630	2	USD			120999.0000	
+0000001961-26-000025	SellingGeneralAndAdministrativeExpense	us-gaap/2025	20240630	1	USD			34022.0000	
+0000001961-26-000025	SellingGeneralAndAdministrativeExpense	us-gaap/2025	20240630	2	USD			60787.0000	
+0000001961-26-000025	SellingGeneralAndAdministrativeExpense	us-gaap/2025	20250630	1	USD			59177.0000	
+0000001961-26-000025	SellingGeneralAndAdministrativeExpense	us-gaap/2025	20250630	2	USD			96542.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20231231	0	USD			-3142163.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20231231	0	USD	EquityComponents=AdditionalPaidInCapital;		42335725.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20231231	0	USD	EquityComponents=CommonStock;		57113.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20231231	0	USD	EquityComponents=RetainedEarnings;		-46741914.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20231231	0	USD	EquityComponents=Warrant;		1206913.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20240331	0	USD			-3248025.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20240331	0	USD	EquityComponents=AdditionalPaidInCapital;		42335725.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20240331	0	USD	EquityComponents=CommonStock;		57113.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20240331	0	USD	EquityComponents=RetainedEarnings;		-46847776.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20240331	0	USD	EquityComponents=Warrant;		1206913.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20240630	0	USD			-3369905.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20240630	0	USD	EquityComponents=AdditionalPaidInCapital;		42335725.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20240630	0	USD	EquityComponents=CommonStock;		57113.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20240630	0	USD	EquityComponents=RetainedEarnings;		-46969656.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20240630	0	USD	EquityComponents=Warrant;		1206913.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20241231	0	USD			-3653545.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20241231	0	USD	EquityComponents=AdditionalPaidInCapital;		42335725.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20241231	0	USD	EquityComponents=CommonStock;		57113.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20241231	0	USD	EquityComponents=RetainedEarnings;		-47253296.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20241231	0	USD	EquityComponents=Warrant;		1206913.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20250331	0	USD			-3770147.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20250331	0	USD	EquityComponents=AdditionalPaidInCapital;		42335725.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20250331	0	USD	EquityComponents=CommonStock;		57113.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20250331	0	USD	EquityComponents=RetainedEarnings;		-47369897.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20250331	0	USD	EquityComponents=Warrant;		1206913.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20250630	0	USD			-3909213.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20250630	0	USD	EquityComponents=AdditionalPaidInCapital;		42335725.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20250630	0	USD	EquityComponents=CommonStock;		57113.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20250630	0	USD	EquityComponents=RetainedEarnings;		-47508964.0000	
+0000001961-26-000025	StockholdersEquity	us-gaap/2025	20250630	0	USD	EquityComponents=Warrant;		1206913.0000	
+0000001961-26-000025	WarrantsAndRightsOutstanding	us-gaap/2025	20241231	0	USD			1206913.0000	
+0000001961-26-000025	WarrantsAndRightsOutstanding	us-gaap/2025	20250630	0	USD			1206913.0000	
+0000001961-26-000025	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	20240630	1	shares			57112506.0000	
+0000001961-26-000025	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	20240630	2	shares			57112506.0000	
+0000001961-26-000025	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	20250630	1	shares			57112506.0000	
+0000001961-26-000025	WeightedAverageNumberOfSharesOutstandingBasic	us-gaap/2025	20250630	2	shares			57112506.0000	
+0000001961-26-000030	AccountsPayableCurrent	us-gaap/2025	20241231	0	USD			809928.0000	
+0000001961-26-000030	AccountsPayableCurrent	us-gaap/2025	20250930	0	USD			835813.0000	
+0000001961-26-000030	AccruedLiabilitiesCurrent	us-gaap/2025	20241231	0	USD			1768703.0000	
+0000001961-26-000030	AccruedLiabilitiesCurrent	us-gaap/2025	20250930	0	USD			1821507.0000	
+0000001961-26-000030	AdditionalPaidInCapital	us-gaap/2025	20241231	0	USD			42335725.0000	
+0000001961-26-000030	AdditionalPaidInCapital	us-gaap/2025	20250930	0	USD			42335725.0000	
+0000001961-26-000030	Assets	us-gaap/2025	20241231	0	USD			15130.0000	
+0000001961-26-000030	Assets	us-gaap/2025	20250930	0	USD			6817.0000	
+0000001961-26-000030	AssetsCurrent	us-gaap/2025	20241231	0	USD			15130.0000	
+0000001961-26-000030	AssetsCurrent	us-gaap/2025	20250930	0	USD			6817.0000	
+0000001961-26-000030	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	20241231	0	USD			6380.0000	
+0000001961-26-000030	CashAndCashEquivalentsAtCarryingValue	us-gaap/2025	20250930	0	USD			4629.0000	
+0000001961-26-000030	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	20231231	0	USD			244856.0000	
+0000001961-26-000030	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	20240930	0	USD			31253.0000	
+0000001961-26-000030	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	20241231	0	USD			6380.0000	
+0000001961-26-000030	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents	us-gaap/2025	20250930	0	USD			4629.0000	
+0000001961-26-000030	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	20240930	3	USD			-213603.0000	
+0000001961-26-000030	CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect	us-gaap/2025	20250930	3	USD			-1751.0000	
+0000001961-26-000030	CommonStockParOrStatedValuePerShare	us-gaap/2025	20241231	0	USD			0.0010	
+0000001961-26-000030	CommonStockParOrStatedValuePerShare	us-gaap/2025	20250930	0	USD			0.0010	
+0000001961-26-000030	CommonStockSharesAuthorized	us-gaap/2025	20241231	0	shares			250000000.0000	
+0000001961-26-000030	CommonStockSharesAuthorized	us-gaap/2025	20250930	0	shares			250000000.0000	
+0000001961-26-000030	CommonStockSharesIssued	us-gaap/2025	20241231	0	shares			57112506.0000	

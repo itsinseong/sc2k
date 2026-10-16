@@ -1,0 +1,244 @@
+                                                                                     Crowe LLP
+                                                                                     Independent Member Crowe Global
+
+
+
+
+                       INDEPENDENT ACCOUNTANTS’ EXAMINATION REPORT
+
+
+
+To Those Charged with Governance and Management
+BitGo Technologies, LLC
+
+
+We have examined management of BitGo Technologies, LLC’s assertion in the accompanying USD1
+Reserve Report that as of April 22, 2025, and April 30, 2025, at 11:59pm Coordinated Universal Time the
+presentation and disclosure of the redeemable USD1 tokens outstanding and related information,
+redemption assets available for USD1 redeemable tokens outstanding and related information, and the
+comparison of the two are in accordance with the 2025 Criteria for the Presentation and Disclosure of
+Redeemable Tokens Outstanding and the Availability of Assets for Redemption: Specific to Asset-Backed
+Fiat-Pegged Tokens (Management’s Assertion). BitGo Technologies, LLC’s management is responsible
+for its assertion. Our responsibility is to express an opinion on management's assertion based on our
+examination.
+
+Our examination was conducted in accordance with attestation standards established by the American
+Institute of Certified Public Accountants. Those standards require that we plan and perform the examination
+to obtain reasonable assurance about whether management's assertion is fairly stated, in all material
+respects. An examination involves performing procedures to obtain evidence about management's
+assertion. The nature, timing, and extent of the procedures selected depend on our judgment, including an
+assessment of the risks of material misstatement of management's assertion, whether due to fraud or error.
+We believe that the evidence we obtained is sufficient and appropriate to provide a reasonable basis for
+our opinion.
+
+We are required to be independent and to meet our other ethical responsibilities in accordance with relevant
+ethical requirements relating to the engagement.
+
+In our opinion, Management’s Assertion is fairly stated, in all material respects.
+
+
+
+
+                                                           Crowe LLP
+
+Oakbrook Terrace, Illinois
+June 6, 2025
+
+
+
+
+                                                                                                                  1.
+BitGo Technologies, LLC (the “Company” or “BitGo”), is responsible for the completeness, accuracy and
+validity of the USD1 Reserve Report (“the Report”) as of April 22, 2025 and April 30, 2025 at 11:59pm
+Coordinated Universal Time (the “Report Dates”). USD1 is a stablecoin pegged to the value of the U.S.
+dollar. USD1 is issued and redeemed by the Company, and the USD1 brand and certain associated
+trademarks are owned and controlled by World Liberty Financial, Inc. and SC Financial Technologies,
+LLC (together, with their respective affiliates, “WLF”).1
+
+
+
+
+Management of BitGo Technologies, LLC asserts that as of April 22, 2025 and April 30, 2025 at 11:59pm
+Coordinated Universal Time that the USD1 redeemable tokens outstanding and related information (Note
+A), redemption assets available for USD1 redeemable tokens outstanding and related information (Note
+B), and the comparison of the two (Note C), are presented and disclosed in accordance with American
+Institute of Certified Public Accountants (AICPA), “2025 Criteria for the Presentation and Disclosure of
+Redeemable Tokens Outstanding and the Availability of Assets for Redemption: Specific to Asset-Backed
+Fiat-Pegged Tokens” (the AICPA Criteria).
+
+
+             1
+
+
+
+The following summarizes the total USD1 redeemable tokens outstanding, total redemption
+assets and the comparison of the two as of the Report Dates, which are disclosed in Notes
+A, B and C.
+
+
+
+                                                                      127,970,980      2,127,970,380
+
+                                                                     $127,970,980     $2,127,970,380
+
+
+
+
+1
+    Not subject to the Independent Accountant’s Examination Report
+2
+    In United States Dollars
+As of the Report Dates, the total amount of USD1 redeemable tokens outstanding are eligible for
+redemption in accordance with the contractual terms that govern USD1 issuance. The total natively
+minted tokens quantity may exceed the outstanding redeemable supply due to test tokens, time-locked
+tokens, or tokens that are access-restricted by design and are not available for redemption. As of the
+Report Dates, there are no tokens which are time-locked or access restricted. Through the date of this
+report, USD1 is issued and redeemed exclusively on the Ethereum and BNB Smart Chain networks.
+
+
+
+Redeemable tokens as of April 22, 2025
+
+                                               Blockchain         Blockchain               Total
+                                               ETH1               BNB2
+ a. Total USD1 natively minted tokens             14,491,580          113,479,480           127,971,060
+    quantity
+ b. Temporary access-restricted USD1                          -                    -                      -
+    tokens
+ c. Time-locked USD1 tokens                                  -                    -                    -
+ d. Permanent access-restricted USD1                        30                   50                   80
+    tokens3
+ e. Total USD1 redeemable tokens                   14,491,550          113,479,430          127,970,980
+    outstanding
+
+ 1
+      The smart contract is deployed at address 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d on the
+      Ethereum blockchain.
+ 2
+      The smart contract is deployed at address 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d on the BNB
+      Smart Chain.
+ 3
+      Permanently access-restricted USD1 tokens will never become redeemable, and includes test tokens.
+Redeemable tokens as of April 30, 2025
+
+                                               Blockchain         Blockchain               Total
+                                               ETH1               BNB2
+ a. Total USD1 natively minted tokens             14,491,580        2,113,478,830         2,127,970,410
+    quantity
+ b. Temporary access-restricted USD1                          -                    -                      -
+    tokens
+ c. Time-locked USD1 tokens                                  -                    -                    -
+ d. Permanent access-restricted USD1                        29                    1                   30
+    tokens3
+ e. Total USD1 redeemable tokens                   14,491,551        2,113,478,829        2,127,970,380
+    outstanding
+
+ 1
+      The smart contract is deployed at address 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d on the
+      Ethereum blockchain.
+ 2
+      The smart contract is deployed at address 0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d on the BNB
+      Smart Chain.
+ 3
+      Permanently access-restricted USD1 tokens will never become redeemable, and includes test tokens.
+In accordance with the issuer terms and conditions, redemption assets may include cash, cash
+equivalents, short-term U.S. Treasuries, reverse repo agreements fully collateralized by U.S. Treasuries
+and Government Money Market funds.
+
+Cash and cash equivalents, at par
+
+Cash and cash equivalents consist of cash on hand and investments with maturities of three months or
+less from the date of purchase. The Company’s cash is held at commercial banks, which at times may
+exceed the Federal Deposit Insurance Corporation (FDIC) limit of $250,000. As of April 22, 2025, $270 in
+cash and cash equivalents were held in a segregated qualified trust at BitGo Trust Company, Inc., for the
+benefit of USD1 stablecoin holders; funds in the segregated qualified trust are held at a U.S. bank
+regulated by the Federal Reserve, for the benefit of BitGo Trust Customers.
+
+Government Money Market funds, at net asset value
+
+Government Money Market funds, at net asset value, hold investments in cash, cash equivalents, and
+short-term debt securities. All funds are held in a segregated qualified trust at BitGo Trust Company, Inc,
+for the benefit of USD1 stablecoin holders; funds in the segregated qualified trust are held at a regulated,
+U.S. financial institution, by BitGo Trust Company, Inc.
+
+
+
+Redemption Assets as of April 22, 2025 in United States Dollars
+
+ Cash and cash equivalents, at par                                                                  $270
+ Government Money Market funds, at net asset value (CUSIP:                                   $127,970,710
+ 31607A703)
+
+ Total redemption assets available for USD1 redeemable tokens                                $127,970,980
+ outstanding
+
+
+Redemption Assets as of April 30, 2025 in United States Dollars
+
+ Cash and cash equivalents, at par                                                                     $0
+ Government Money Market funds, at net asset value (CUSIP:                                 $2,127,970,380
+ 31607A703)
+
+ Total redemption assets available for USD1 redeemable tokens                              $2,127,970,380
+ outstanding
+As of April 22, 2025
+
+                                                                                       Total
+ Redemption assets      1                                                                        $127,970,980
+ Less: Amount of redeemable USD1 tokens outstanding                                                127,970,980
+
+ Subtotal prior to timing difference                                                                          $0
+
+ Timing Differences2
+ USD1 Tokens purchased but not yet minted                                                                       -
+ USD1 Tokens redeemed but not yet paid                                                                          -
+
+ Temporary Differences3
+ Temporary access-restricted USD1 tokens                                                                        -
+ Time-locked USD1 tokens                                                                                        -
+
+ Surplus (Deficit)4                                                                                           $0
+
+ 1
+     In United States Dollars
+ 2
+   The amount of redeemable tokens outstanding includes requests for purchases and redemptions that have not
+ yet been processed due to timing differences.
+ 3
+   Consistent with the token issuer’s terms, temporary differences relate to tokens that are not redeemable at the
+ measurement point in time but may be redeemable in the future and have redemption assets backing them.
+ These tokens are not included in the redeemable token outstanding balance. (See Note A).
+ 4
+   The token issuer’s terms stipulate that for each redeemable token outstanding there is $1 available for
+ redemption.
+As of April 30, 2025
+
+                                                                                       Total
+ Redemption assets      1                                                                      $2,127,970,380
+ Less: Amount of redeemable USD1 tokens outstanding                                              2,127,970,380
+
+ Subtotal prior to timing difference                                                                          $0
+
+ Timing Differences2
+ USD1 Tokens purchased but not yet minted                                                                       -
+ USD1 Tokens redeemed but not yet paid                                                                          -
+
+ Temporary Differences3
+ Temporary access-restricted USD1 tokens                                                                        -
+ Time-locked USD1 tokens                                                                                        -
+
+ Surplus (Deficit)4                                                                                           $0
+
+ 1
+     In United States Dollars
+ 2
+   The amount of redeemable tokens outstanding includes requests for purchases and redemptions that have not
+ yet been processed due to timing differences.
+ 3
+   Consistent with the token issuer’s terms, temporary differences relate to tokens that are not redeemable at the
+ measurement point in time but may be redeemable in the future and have redemption assets backing them.
+ These tokens are not included in the redeemable token outstanding balance. (See Note A).
+ 4
+   The token issuer’s terms stipulate that for each redeemable token outstanding there is $1 available for
+ redemption.
+

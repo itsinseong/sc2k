@@ -1,0 +1,2100 @@
+<html>
+<head>
+<title>Federal Register, Volume 91 Issue 188 (Wednesday, September 30, 2026)</title>
+</head>
+<body><pre>
+[Federal Register Volume 91, Number 188 (Wednesday, September 30, 2026)]
+[Rules and Regulations]
+[Pages 61688-61703]
+From the Federal Register Online via the Government Publishing Office [<a href="http://www.gpo.gov">www.gpo.gov</a>]
+[FR Doc No: 2026-19966]
+
+
+-----------------------------------------------------------------------
+
+DEPARTMENT OF THE TREASURY
+
+12 CFR Chapter XV
+
+[TREAS-DO-2026-0562]
+RIN 1505-AC97
+
+
+Forms and Procedures for Review of State Certifications by the 
+Stablecoin Certification Review Committee
+
+AGENCY: Department of the Treasury.
+
+ACTION: Interim final rule; request for comments.
+
+-----------------------------------------------------------------------
+
+SUMMARY: The Department of the Treasury is issuing this interim final 
+rule on behalf of the Stablecoin Certification Review Committee 
+(Committee). The Committee is adopting interim procedural regulations 
+and forms to implement its responsibilities under section 4(c) of the 
+Guiding and Establishing National Innovation for U.S. Stablecoins Act 
+(GENIUS Act or the Act). The regulations set out a process to 
+facilitate the Committee's approval or denial of certifications 
+submitted by State payment stablecoin regulators under section 4(c)(4) 
+of the GENIUS Act, and prescribe the form of such certifications. This 
+interim final rule will ensure that interim forms and procedural 
+regulations are in place to facilitate submission of certifications by 
+the effective date of the GENIUS Act, and the Committee intends to 
+revise these forms and procedural regulations, as appropriate, 
+following consideration of comments.
+
+DATES: 
+    Effective date: This interim final rule is effective September 30, 
+2026; however, certifications will not be accepted until after 
+Paperwork Reduction Act approval of the information collection. 
+Treasury will post a notification on its website as to when 
+certifications will be accepted.
+    Comment date: Comments on this interim final rule must be received 
+on or before November 30, 2026.
+
+ADDRESSES: Written comments may be submitted through one of two 
+methods:
+    <bullet> Electronic Submission: Comments may be submitted 
+electronically through the Federal Government eRulemaking portal at 
+<a href="https://www.regulations.gov">https://www.regulations.gov</a>.
+    <bullet> Mail: Send to U.S. Department of the Treasury, Attention: 
+Office of General Counsel, 1500 Pennsylvania Avenue NW, Washington, DC 
+20220.
+    Given potential delays in the receipt of comments by mail, we 
+strongly encourage comments to be submitted via <a href="https://www.regulations.gov">https://www.regulations.gov</a>. All comments should be captioned with ``GENIUS Act 
+SCRC Procedures.'' Please include your name, organizational 
+affiliation, address, email address, and telephone number in your 
+comment. In general, all comments received, including attachments and 
+other supporting materials, will be part of the public record and 
+subject to public disclosure. Do not submit any information in your 
+comment or supporting materials that you consider confidential or 
+inappropriate for public disclosure.
+
+FOR FURTHER INFORMATION CONTACT: 
+    Treasury: Daniel Borman, Brendan Costello, and Carol Rodrigues, 
+Attorney-Advisors, Office of the General Counsel, Treasury, at 
+<a href="/cdn-cgi/l/email-protection#a7e8e0e4f8e0c2c9ced2d4e6c4d3e7f3d5c2c6d4d2d5de89c0c8d1"><span class="__cf_email__" data-cfemail="b9f6fefae6fedcd7d0cccaf8dacdf9edcbdcd8cacccbc097ded6cf">[email&#160;protected]</span></a> or 202-622-0480.
+    FDIC: C. Christopher Ledoux, Assistant General Counsel, Emerging 
+Technology Group, Office of the General Counsel, (202) 898-3535, 
+<a href="/cdn-cgi/l/email-protection#72111e17161d070a3214161b115c151d04"><span class="__cf_email__" data-cfemail="86e5eae3e2e9f3fec6e0e2efe5a8e1e9f0">[email&#160;protected]</span></a>, Legal Division.
+    Board: Kelley O'Mara, Assistant General Counsel, (202) 430-0911, 
+Daniel Hickman, Senior Counsel, (202) 469-1005, Benjamin Nuyens, Senior 
+Counsel, (202) 909-7574, Daniel Parks, Attorney, (771) 210-7183, Legal 
+Division; Board of Governors of the Federal Reserve System, 20th Street 
+and Constitution Avenue NW, Washington, DC 20551.
+
+SUPPLEMENTARY INFORMATION:
+
+I. Background and Authority
+
+    The Guiding and Establishing National Innovation for U.S. 
+Stablecoins Act (GENIUS Act or Act), which was enacted on July 18, 
+2025, provides a comprehensive regulatory framework for issuers of 
+``payment stablecoins.'' \1\ As defined in section 2(22) of the GENIUS 
+Act (12 U.S.C. 5901(22)), ``payment stablecoin'' means a digital asset 
+\2\ ``(i) that is, or is designed to be, used as a means of payment or 
+settlement; and (ii) the issuer of which--(I) is obligated to convert, 
+redeem, or repurchase for a fixed amount of monetary value, not 
+including a digital asset denominated in a fixed amount of monetary 
+value; and (II) represents that such issuer will maintain, or create 
+the reasonable expectation that it will maintain, a stable value 
+relative to the value of a fixed amount of monetary value[.]'' The term 
+does not include a digital asset that is (i) a national currency; (ii) 
+a deposit (as defined in 12 U.S.C. 1813), including a deposit recorded 
+using distributed ledger technology; or (iii) a security, as
+
+[[Page 61689]]
+
+defined in 15 U.S.C. 77b, 78c, or 80a-2.
+---------------------------------------------------------------------------
+
+    \1\ Public Law 119-27. 12 U.S.C. 5901 et seq.
+    \2\ The term ``digital asset'' means any digital representation 
+of value that is recorded on a cryptographically secured distributed 
+ledger. 12 U.S.C. 5901(6).
+---------------------------------------------------------------------------
+
+    Under section 3(a) of the GENIUS Act (12 U.S.C. 5902(a)), only 
+permitted payment stablecoin issuers may issue a payment stablecoin in 
+the United States, subject to certain exceptions and safe harbors.\3\ 
+The Board of Governors of the Federal Reserve System (Board), the 
+Federal Deposit Insurance Corporation (FDIC), the National Credit Union 
+Administration (NCUA), and the Office of the Comptroller of the 
+Currency (OCC) (collectively, the primary Federal payment stablecoin 
+regulators) are generally tasked with establishing processes and 
+frameworks for the licensing, regulation, examination, and supervision 
+of permitted payment stablecoin issuers.\4\
+---------------------------------------------------------------------------
+
+    \3\ See 12 U.S.C. 5916, 91 FR 53368 (Aug. 19, 2026) (Treasury).
+    \4\ See 12 U.S.C. 5901(25), 5903-5904.
+---------------------------------------------------------------------------
+
+    Under section 4(c) of the GENIUS Act (12 U.S.C. 5903(c)), State-
+qualified payment stablecoin issuers with a consolidated total 
+outstanding issuance of payment stablecoins of not more than $10 
+billion may opt for State regulation provided that (i) the State 
+payment stablecoin regulator has submitted a certification, including 
+an attestation that the State regulatory regime meets the criteria for 
+substantial similarity established by Treasury,\5\ and (ii) the 
+Stablecoin Certification Review Committee (the Committee) has approved 
+the State-level regulatory regime upon determining that it meets or 
+exceeds the standards and requirements described in section 4(a) of the 
+GENIUS Act (12 U.S.C. 5903(a)). Pursuant to section 2(27) of the GENIUS 
+Act (12 U.S.C. 5901(27)), the Secretary of the Treasury chairs the 
+Committee, which also includes the Chair of the Board (or the Vice 
+Chair for Supervision, if delegated by the Board Chair) and the 
+Chairman of the FDIC.
+---------------------------------------------------------------------------
+
+    \5\ On April 3, 2026, pursuant to section 4(c)(2) of the GENIUS 
+Act (12 U.S.C. 5903(c)(2)), Treasury published proposed broad-based 
+principles for determining whether a State-level regulatory regime 
+is substantially similar to the Federal regulatory framework. 91 FR 
+16844 (Apr. 3, 2026) (Treasury). Changes to Treasury's principles 
+between proposal and final adoption inherently will affect the 
+certifications that States submit under part 1522. The Committee has 
+endeavored to keep these interim procedural regulations and forms at 
+a sufficiently high level to generally apply regardless of the 
+substance of Treasury's principles. However, the Committee may 
+adjust part 1522 to ensure appropriate alignment with the 
+substantial similarity principles, based on the Committee's 
+determination of, among other things, how any changes to the 
+principles may affect the certification or procedures under part 
+1522. The Committee therefore encourages the public to carefully 
+review the proposed broad-based principles alongside these interim 
+procedures and forms.
+---------------------------------------------------------------------------
+
+    The GENIUS Act directs Treasury and each of the primary Federal 
+payment stablecoin regulators to promulgate regulations to carry out 
+their respective responsibilities under the Act.\6\ With respect to the 
+Committee's review of State-level regulatory regimes under section 4(c) 
+of the Act (12 U.S.C. 5903(c)), the Act requires States to submit 
+certifications to the Committee, including an attestation ``in a form 
+prescribed by the [Committee],'' \7\ and directs the Committee to 
+follow certain procedures.\8\ The Committee is issuing this rule to 
+prescribe the form of certifications and to implement the procedures 
+necessary for the Committee to carry out its statutory review 
+responsibilities under section 4(c) of the Act (12 U.S.C. 5903(c)).\9\
+---------------------------------------------------------------------------
+
+    \6\ See, e.g., 12 U.S.C. 5913.
+    \7\ Id. at section 4(c)(4)(B) (12 U.S.C. 5903(c)(4)(B)).
+    \8\ See, e.g., id. at section 4(c)(5) (12 U.S.C. 5903(c)(5)).
+    \9\ See generally Vermont Yankee Nuclear Power Corp. v. NRDC, 
+435 U.S. 519, 544 (1978) (recognizing the ``very basic tenet of 
+administrative law that agencies should be free to fashion their own 
+rules of procedure''). See also Perez v. Mortgage Banker's Ass'n, 
+575 U.S. 92, 102 (2015) (reaffirming this ``very basic tenet'' set 
+out in Vermont Yankee); FCC v. Pottsville Broadcasting Co., 309 U.S. 
+134, 138 (1940) (observing, in the context of a particular statutory 
+licensing structure, that ``[n]ecessarily . . . the subordinate 
+questions of procedure . . . when the Commission's licensing 
+authority is invoked . . . were explicitly and by implication left 
+to the Commission's own devising'').
+---------------------------------------------------------------------------
+
+    On September 19, 2025, Treasury published in the Federal Register 
+an advance notice of proposed rulemaking (ANPRM) to solicit public 
+comment on questions relating to the implementation of the GENIUS 
+Act.\10\ In drafting these procedures, the Committee considered 
+comments received on the ANPRM that were material and relevant to the 
+subjects contained herein.
+---------------------------------------------------------------------------
+
+    \10\ 90 FR 45159 (September 19, 2025) (Treasury); 90 FR 47251 
+(October 1, 2025) (extending the comment period).
+---------------------------------------------------------------------------
+
+II. Description of the Rule
+
+A. Overview of the Rule
+
+    Section 1522.1 sets forth the scope and applicability of part 1522, 
+which is intended to contain all rules issued by the Committee. Section 
+1522.2 provides definitions of certain terms used throughout the part. 
+Section 1522.3 includes a severability provision. Section 1522.4 
+reserves authority for the Committee to waive the requirements in part 
+1522 in exceptional circumstances and only to the extent consistent 
+with the Act.
+    Section 1522.10 sets out the procedures by which the Committee will 
+review State ``substantial similarity'' certifications and 
+recertifications under section 4(c) of the GENIUS Act (12 U.S.C. 
+5903(c)). Paragraph (a) addresses the manner of submission. Paragraph 
+(b) sets out the form of initial certifications, and the preamble 
+solicits comment on the effect of the one-year deadline in section 
+4(c)(4)(A) of the Act (12 U.S.C. 5903(c)(4)(A)), including the extent 
+to which the Committee may consider later-filed certifications. 
+Paragraph (c) addresses the form and timing of annual recertifications 
+and provides that approval of a State's certification shall be 
+suspended if an annual recertification is not timely filed. Paragraph 
+(d) addresses when a certification or recertification will be 
+considered submitted, and paragraph (e) sets forth the standards for 
+the Committee's determinations. Finally, paragraph (f) sets forth 
+procedures relating to denial, opportunity to cure, resubmission, and 
+appeal. Recognizing that States may need additional time for the State 
+level regulatory regime to appropriately reflect any changes to Federal 
+statutes, interpretations, regulations, or orders, it provides that the 
+cure period is two years from the date of enactment of an Act of 
+Congress or two years from the date of publication of the regulatory 
+materials.
+    Appendices A and B contain forms for the attestations to be 
+included in the initial and annual certifications.
+
+B. Scope and Applicability
+
+    Subpart A of part 1522 sets out general provisions related to the 
+Committee's rules under part 1522. Section 1522.1 sets forth the scope 
+and applicability of part 1522. Specifically, it provides that part 
+1522 is being issued to implement certain responsibilities of the 
+Committee under the GENIUS Act. It further provides that the 
+regulations issued under part 1522 are those of the Committee, 
+published by the agency of its Chair, the Department of the Treasury, 
+at the Committee's direction. Section 1522.1(b) states that subpart B 
+of part 1522 sets forth the procedures related to the Committee's 
+review of State ``substantial similarity'' certifications and 
+recertifications under section 4(c) of the GENIUS Act (12 U.S.C. 
+5903(c)). The Committee may issue additional rules under part 1522 that 
+relate to responsibilities other than those set out in section 4(c) of 
+the Act, as appropriate.
+    Question 1: Is it clear how subpart B of part 1522 relates to the 
+broad-based principles proposed by Treasury in part 1521? Should Sec.  
+1522.1, or subpart B of part 1522, more closely reference, incorporate, 
+or rely on part 1521? Alternatively, should Sec.  1522.1, or
+
+[[Page 61690]]
+
+subpart B of part 1522, more clearly distinguish the procedures in part 
+1522 from the principles set forth in part 1521? If so, how?
+
+C. Definitions
+
+    Section 1522.2(a) provides that to the extent not otherwise defined 
+in this part, the terms used in this part have the same meaning given 
+to them as in section 2 of the GENIUS Act (12 U.S.C. 5901).
+    Section 1522.2(b) provides the following definitions of terms used 
+throughout part 1522.
+    Act or GENIUS Act. The Committee defines ``Act'' or ``GENIUS Act'' 
+to mean the Guiding and Establishing National Innovation for U.S. 
+Stablecoins Act (12 U.S.C. 5901 et seq.).
+    Material change. Section 4(c)(5)(B) of the Act (12 U.S.C. 
+5903(c)(5)(B)) provides that the Committee shall only deny a 
+recertification if (i) the State-level regulatory regime has materially 
+\11\ changed from the prior certification or there has been a 
+significant change in circumstances, and (ii) the material change or 
+significant change in circumstances is such that the State-level 
+regulatory regime will not promote the safe and sound operation of 
+State qualified payment stablecoin issuers under its supervision. To 
+provide regulatory clarity and to implement these provisions of the 
+Act, the Committee believes it is beneficial to define the terms 
+``material change'' and ``significant change in circumstances.'' 
+Without defining these terms, States would lack a clear understanding 
+of the information the Committee needs to evaluate a recertification.
+---------------------------------------------------------------------------
+
+    \11\ The Act uses the terms ``material change'' and ``materially 
+changed'' interchangeably. See sections 4(c)(5)(B)(i) and (ii) (12 
+U.S.C. 5903(c)(5)(B)(i) and (ii)). For clarity and ease of 
+reference, this rule defines the term ``material change'' and uses 
+the defined term throughout.
+---------------------------------------------------------------------------
+
+    The term ``material change'' should be understood to refer to 
+changes to the State-level regulatory regime itself, consistent with 
+section 4(c)(5)(B)(ii) of the Act (12 U.S.C. 5903(c)(5)(B)(ii)). 
+Specifically, the Committee defines ``material change'' to mean any 
+legislative, regulatory, supervisory, judicial, or other similar change 
+in the relevant State that, either individually or together with other 
+such changes, has, causes, or could reasonably be expected to have or 
+cause a material effect on the State-level regulatory regime. The 
+definition further provides that such changes may include, but are not 
+limited to, changes affecting: (i) the scope of a State payment 
+stablecoin regulator's regulatory or supervisory authority, including 
+examination or reporting authorities; (ii) enforcement powers; (iii) 
+prudential standards, including those relating to reserves, redemption, 
+liquidity, capital, governance, or risk management; or (iv) the scope 
+of entities or activities subject to State payment stablecoin 
+regulation or supervision.\12\
+---------------------------------------------------------------------------
+
+    \12\ These examples are illustrative of changes that may 
+constitute material changes, but a change in one of these categories 
+is not per se a material change.
+---------------------------------------------------------------------------
+
+    As an example, if the State-level regulatory regime were to revise 
+its regulations so that provisions that were previously required at the 
+time of the initial certification became best practices instead, such a 
+revision would likely constitute a ``material change.'' Similarly, a 
+change to the State's capital or reserve asset diversification 
+requirements to make them less or more stringent would constitute a 
+``material change.''
+    Significant change in circumstances. Since the language in the Act 
+describes a ``material change'' in connection with the State-level 
+regulatory regime, the Committee defines ``significant change in 
+circumstances'' as something distinct from a change to the State-level 
+regulatory regime. Specifically, the Committee defines ``significant 
+change in circumstances'' to mean a change in circumstances, including 
+but not limited to, a change in Federal statutes, regulations, 
+interpretations, or orders; market conditions; issuer behavior; or 
+risk-related developments, that, either individually or together with 
+other such changes, significantly affects the operation, effectiveness, 
+or supervisory outcomes of a State-level regulatory regime or causes 
+the State-level regulatory regime and the Federal regulatory framework 
+to significantly diverge.\13\ Such a change would be a significant 
+change in circumstances even if the State-level regulatory regime 
+remains unchanged.
+---------------------------------------------------------------------------
+
+    \13\ These examples are illustrative of changes that may 
+constitute a significant change in circumstances, but a change in 
+one of these categories is not per se a significant change in 
+circumstances.
+---------------------------------------------------------------------------
+
+    Similarly, in accordance with Treasury's proposed part 1521, if 
+there were substantive changes to Federal law (such as Acts of Congress 
+or regulations published in the Federal Register) that affect permitted 
+payment stablecoin issuers, such changes would likely constitute a 
+significant change in circumstances. For the avoidance of doubt, a 
+significant change in circumstances does not include a change that 
+constitutes a material change to the State-level regulatory regime. 
+Congress used the terms differently, and the definitions give effect to 
+both terms by providing distinct definitions.
+    Stablecoin Certification Review Committee or Committee. The 
+Committee defines the term ``Stablecoin Certification Review 
+Committee'' or ``Committee'' to have the meaning of the term 
+``Stablecoin Certification Review Committee'' set forth in section 
+2(27) of the GENIUS Act (12 U.S.C. 5901(27)).
+    State. The Committee defines ``State'' to have the meaning of that 
+term set forth in section 2(28) of the GENIUS Act (12 U.S.C. 5901(28)).
+    State payment stablecoin regulator. The Committee defines the term 
+``State payment stablecoin regulator'' to have the meaning of that term 
+set forth in section 2(30) of the GENIUS Act (12 U.S.C. 5901(30)).
+    State-level regulatory regime. The Committee defines the term 
+``State-level regulatory regime,'' with respect to a particular State, 
+consistent with the meaning of that term in Treasury's proposed 12 CFR 
+1521.1(c). Under Treasury's proposed definition, a State-level 
+regulatory regime, with respect to a particular State, would mean: (i) 
+all statutes enacted by the State regarding payment stablecoins; (ii) 
+any regulations regarding payment stablecoins or that apply to a State 
+qualified payment stablecoin issuer issued by a State payment 
+stablecoin regulator of the State or another regulator of the State; 
+and (iii) any interpretations or guidance thereunder, only to the 
+extent they are enforceable against State qualified payment stablecoin 
+issuers.\14\
+---------------------------------------------------------------------------
+
+    \14\ 91 FR 16844, 16847.
+---------------------------------------------------------------------------
+
+    State qualified payment stablecoin issuer. The Committee defines 
+the term ``State qualified payment stablecoin issuer'' to have the 
+meaning of that term set forth in section 2(31) of the GENIUS Act (12 
+U.S.C. 5901(31)).
+    Question 2: Is the distinction between a ``material change'' and a 
+``significant change in circumstances'' sufficiently clear? If not, how 
+should the Committee clarify the distinction?
+    Question 3: Should the Committee make any changes to the definition 
+of ``material change?'' For example, should the Committee eliminate 
+legislative, regulatory, supervisory, or judicial changes from the 
+definition? Conversely, should any types of changes be added to the 
+definition of ``material change?'' Is it appropriate to consider the 
+effect of changes both individually and together with other such 
+changes? Is the standard discussing such changes that ``could 
+reasonably be expected to have or cause a material effect on the State-
+level regulatory regime''
+
+[[Page 61691]]
+
+sufficiently clear or should the Committee provide additional detail? 
+Are the categories of changes (regulatory or supervisory authority, 
+enforcement powers, prudential standards, and scope of entities or 
+activities) appropriate? Are there additional categories that the 
+Committee should expressly list as material changes?
+    Question 4: Should the Committee make any changes to the definition 
+of ``significant change in circumstances?'' Is it clear which changes 
+to Federal statutes, regulations, interpretations, or orders would 
+constitute a ``significant change in circumstances?'' Similarly, is it 
+clear what market conditions would constitute a ``significant change in 
+circumstances?'' Does the Committee need to provide additional 
+specificity on a change that ``significantly affects the operation, 
+effectiveness, or supervisory outcomes'' of a State-level regulatory 
+regime or causes the State-level regulatory regime and the Federal 
+regulatory framework to ``significantly diverge?'' Should certain 
+changes automatically constitute a ``significant change in 
+circumstances?'' Are there any additional categories of changes that 
+the Committee should include?
+    Question 5: Are the other definitions set forth in part 1522 
+sufficiently clear and appropriate? Are there any additional statutory 
+terms that should be defined in part 1522? Are there any additional 
+definitions that the Committee should incorporate from Treasury's 
+proposed 12 CFR part 1521?
+
+D. Severability
+
+    Section 1522.3 provides that the provisions of this part are 
+separate and severable from one another. If any provision, clause, or 
+phrase of this part, or the application thereof to any person, entity 
+or circumstance, is stayed or determined to be invalid, unlawful, or 
+unenforceable by a court of competent jurisdiction, such determination 
+shall not affect the validity, lawfulness, or enforceability of the 
+remaining provisions or applications of this regulation, which shall 
+remain in full force and effect to the maximum extent permitted by law.
+
+E. Reservation of Authority
+
+    Section 1522.4 provides that the Committee may, only to the extent 
+consistent with the GENIUS Act, waive any of the procedures of part 
+1522 in exceptional circumstances. For example, if there had been an 
+event outside of a State payment stablecoin regulator's control (e.g., 
+a natural disaster) that led it to file an untimely recertification, 
+the Committee could determine to waive the timing requirements provided 
+in Sec.  1522.10(c)(1).
+    Question 6: Should the Committee define ``exceptional 
+circumstances'' for purposes of Sec.  1522.4?
+
+F. Certifications Requiring Review by the Committee
+
+    Section 1522.10 implements the statutory requirement under section 
+4(c) of the Act (12 U.S.C. 5903(c)) that States seeking to regulate 
+State qualified payment stablecoin issuers must submit to the Committee 
+an initial certification that the State-level regulatory regime is 
+substantially similar to the Federal regulatory framework and annual 
+recertifications thereafter.
+    Section 1522.10(a) provides that a State payment stablecoin 
+regulator that seeks approval of an initial certification or an annual 
+recertification under section 4(c) of the Act (12 U.S.C. 5903(c)) must 
+submit to the Committee a certification, including an attestation in 
+the form prescribed by the Committee. The State payment stablecoin 
+regulator must submit the certification, including the attestation and 
+all required supporting information, electronically to the email 
+address specified from time to time on Treasury's website.
+
+G. Initial Certification
+
+Deadline to Submit Initial Certification
+    Section 4(c)(4)(A) of the Act (12 U.S.C. 5903(c)(4)(A)) requires 
+that a State payment stablecoin regulator shall submit an initial 
+certification to the Committee ``not later than one year after the 
+effective date of this Act.'' Various parties, including those who 
+commented on Treasury's ANPRM, have expressed concern that such a 
+deadline may be insufficient to allow States adequate time to develop 
+and implement a State-level regulatory regime that meets the 
+requirements for Committee approval under section 4(c) of the Act (12 
+U.S.C. 5903(c)). For example, in a letter to the Secretary of the 
+Treasury, seven United States Senators, including multiple cosponsors 
+of the GENIUS Act, argued that procedures under section 4(c) ``should 
+not operate as a one-time window that effectively bars future 
+certifications,'' \15\ stating that:
+---------------------------------------------------------------------------
+
+    \15\ Letter from Sens. Cynthia Lummis et al. to Hon. Scott 
+Bessent, Secretary of the Treasury (June 16, 2026), available at 
+<a href="https://www.lummis.senate.gov/wp-content/uploads/GENIUS-State-Implementation-Letter_-.pdf">https://www.lummis.senate.gov/wp-content/uploads/GENIUS-State-Implementation-Letter_-.pdf</a>.
+
+    Congress's intent in Section 4(c) was to ensure timely 
+establishment of a viable State pathway so that firms electing State 
+chartering would not be disadvantaged--not to restrict or limit the 
+ability of States to regulate payment stablecoin issuers. 
+Interpreting the certification timeline as a hard cutoff would 
+likely foreclose future State participation, undermining Congress's 
+intent and reducing regulatory optionality in a rapidly evolving 
+market. . . . State legislative processes vary significantly, and in 
+some cases operate on biennial cycles. A flexible, ongoing 
+certification framework is necessary to ensure that States can 
+participate meaningfully over time and that innovation and 
+competition are not constrained by timing misalignment.\16\
+---------------------------------------------------------------------------
+
+    \16\ Id.
+
+    The Committee seeks to implement section 4(c) of the Act in a way 
+that achieves the intent of Congress to encourage effective 
+participation by States in the Act's dual Federal-State regulatory 
+framework, while giving effect to the statutory text in section 
+4(c)(4)(A) (12 U.S.C. 5903(c)(4)(A)). To that end, the Committee 
+believes that, at a minimum, a State payment stablecoin regulator would 
+satisfy section 4(c)(4)(A) (12 U.S.C. 5903(c)(4)(A)) of the Act by 
+submitting any form of certification by January 18, 2028,\17\ even if 
+the certification is conditional on additional planned State 
+legislative or regulatory work or would otherwise be considered 
+incomplete under these procedures.\18\
+---------------------------------------------------------------------------
+
+    \17\ The effective date of the GENIUS Act is expected to be 
+January 18, 2027 (i.e., the date that is 18 months after the date of 
+enactment of the GENIUS Act). See section 20.
+    \18\ Appendix A includes an optional check box for a State 
+payment stablecoin regulator to indicate that the certification is 
+conditional.
+---------------------------------------------------------------------------
+
+    The Committee believes that this approach best harmonizes the clear 
+congressional intent to create a meaningful role for States in the 
+regulation of payment stablecoin issuers with Congress's choice to 
+include a specific date in section 4(c)(4)(A) of the Act (12 U.S.C. 
+5903(c)(4)(A)). In effect, this approach gives effect to the statutory 
+date by requiring States to demonstrate that they are moving 
+expeditiously, within one year, toward ensuring that their State-level 
+regulatory regimes meet or exceed the standards and requirements 
+described in section 4(a) of the Act, while also recognizing, as the 
+Act does, that more time may be required for a State to achieve this 
+goal. Indeed, the Act expressly contemplates that additional 
+legislative or regulatory work may be required following the initial 
+certification, providing that ``the State payment stablecoin regulator 
+and State-level regulatory regime [may be required] to make any changes 
+necessary to meet or exceed the standards and requirements described in 
+subsection (a)'' (12 U.S.C. 5903(c)(5)(A)(ii)).
+
+[[Page 61692]]
+
+    Finally, section 4(c)(4)(B) of the Act (12 U.S.C. 5903(c)(4)(B)), 
+expressly authorizes the Committee to prescribe the form of the initial 
+attestation. Therefore, the Committee believes it has discretion to 
+determine that the initial attestation may take a conditional and 
+flexible form for purposes of the one-year statutory timeline, while 
+requiring the attestation to be unconditional and in the form 
+prescribed by these procedures for purposes of substantive Committee 
+review and approval. Under this bifurcated approach, the certification 
+would be considered submitted for purposes of section 4(c)(4)(A) of the 
+Act and could be amended by the State payment stablecoin regulator at 
+any time, but would not be considered to be formally submitted for 
+purposes of Committee review until it has been amended to meet the 
+requirements set out in Sec.  1522.10(d)(1)(i), as described further 
+below.
+    The Committee requests comment on the effect of this approach, the 
+one-year statutory timeframe generally, and any alternative approaches.
+    Question 7: Which States would seek to submit certifications and 
+how many would be able to submit complete and unconditional 
+certifications by January 18, 2028? Is the one-year requirement an 
+appropriate amount of time for States to submit initial certifications? 
+What would be the practical effects and limitations if the Committee 
+did not consider any certifications submitted later than one year after 
+the effective date of the Act?
+    Question 8: Is the approach above, where incomplete or conditional 
+certifications satisfy the statutory timeframe under section 4(c)(4)(A) 
+of the Act (12 U.S.C. 5903(c)(4)(A)), even if not sufficient for 
+substantive Committee review and approval, appropriate? Should the 
+Committee prescribe a particular form for incomplete or conditional 
+certifications? For example, should the certifications be required to 
+be substantially complete or should they contain at a minimum specific 
+projected actions and timelines to complete the certification? Should a 
+form that merely demonstrates the State's intent to submit an initial 
+certification be sufficient? Should the form be signed or unsigned, and 
+what attestations should it include? Should a representative of each 
+State payment stablecoin regulator be required to submit separate 
+conditional certifications, or should joint letters submitted by a 
+mutual agent or organization representing various States be permitted? 
+If so, which organizations or agents should be permitted? Should the 
+Committee require that any incomplete or conditional certifications 
+must be amended within some period of time (e.g., six months, one year, 
+two years) or should the Committee permit a State payment stablecoin 
+regulator to amend and complete a conditional or incomplete 
+certification at any time? To effectuate that timeline, should the 
+Committee formally issue a denial within the meaning of section 
+4(c)(5)(A)(ii) of the Act (12 U.S.C. 5903(c)(5)(A)(ii)) and provide a 
+fixed period for resubmission?
+    Question 9: Should the Committee instead adopt any alternative 
+approaches? For example, should the Committee consider a certification 
+that was first filed after January 18, 2028, under certain conditions? 
+If so, under which conditions? Should the same procedures, and 
+timeframes apply to such late-filed certifications, including with 
+respect to timeline, resubmission, and appeals? Are there other 
+situations that would allow the Committee to deem a later-filed 
+certification as submitted prior to the one-year deadline? Should there 
+be a process whereby States could request an extension of the one-year 
+deadline? If so, what factors should the Committee consider to evaluate 
+such an extension request?
+Certification and Attestation Form
+    Section 4(c)(4)(B) of the Act (12 U.S.C. 5903(c)(4)(B)) provides 
+that the initial certification ``shall contain, in a form prescribed by 
+the [Committee], an attestation that the State-level regulatory regime 
+meets the criteria for substantial similarity.'' By providing that the 
+certification shall ``contain'' an attestation, rather than simply 
+providing for submission of an attestation, the text of the Act 
+contemplates that the certification is broader than the attestation 
+alone. The structure of the Act further demonstrates that additional 
+information must be submitted in the certification to facilitate the 
+Committee's review. The Committee is required to reach its own 
+determination of whether the State-level regulatory regime meets or 
+exceeds the standards and requirements described in section 4(a) of the 
+Act, which would necessarily require information beyond the required 
+attestation.
+    Section 1522.10(b) sets out the required contents of the initial 
+certification, including: (i) an attestation in the form of Appendix A 
+to Part 1522 signed by an authorized representative of the State 
+payment stablecoin regulator attesting that the State-level regulatory 
+regime in its State meets each of the criteria for substantial 
+similarity set forth in part 1521; (ii) a detailed narrative describing 
+how the State-level regulatory regime meets each of the criteria for 
+substantial similarity set forth in part 1521; (iii) any supporting 
+information and documentation, including, but not limited to, citations 
+to relevant statutes, regulations, and guidance applicable to payment 
+stablecoin issuers, and where necessary, copies of such statutes, 
+regulations, and guidance; and (iv) such information as the Committee 
+may deem necessary for it to render a decision on whether the State-
+level regulatory regime satisfies the criteria for approval in section 
+4(c) of the GENIUS Act (12 U.S.C. 5903(c)). The attestation form in 
+Appendix A includes a mapping of materials provided in the 
+certification designed to assist both State payment stablecoin 
+regulators in organizing the information in their certification and to 
+ensure no information is omitted, as well as the Committee in reviewing 
+the information provided.
+    The Committee is incorporating the definition of State-level 
+regulatory regime from Treasury's proposed part 1521, under which 
+guidance is included only to the extent it is enforceable against State 
+qualified payment stablecoin issuers.\19\ For each guidance document 
+that is submitted, the State payment stablecoin regulator must include 
+a discussion of whether the guidance is binding on State qualified 
+payment stablecoin issuers.
+---------------------------------------------------------------------------
+
+    \19\ 91 FR 16844, 16864.
+---------------------------------------------------------------------------
+
+    Question 10: Is the form in Appendix A sufficiently clear? Should 
+any additional requirements or clarifications be added to the form? 
+Should any other changes be made?
+    Question 11: Should the Committee provide additional detail on what 
+it expects to be included in the detailed narrative required under 
+Sec.  1522.10(b)(2)?
+    Question 12: Should the Committee provide additional guidance or 
+requirements on the scope of authorized representatives permitted to 
+sign the attestation? For example, should the attestation be required 
+to be signed by the top official at the State payment stablecoin 
+regulator or should delegation of signatory authority to lower 
+officials be permitted?
+    Question 13: Is the Committee's approach to requiring such 
+information the Committee may deem necessary for it to render a 
+decision on whether the State-level regulatory regime satisfies the 
+criteria for approval the correct approach? If not, how should the 
+Committee request additional information that may be necessary for it 
+to make its statutory determination
+
+[[Page 61693]]
+
+under section 4(c) of the Act (12 U.S.C. 5903(c))? Should the Committee 
+retain discretion to deem an application not to have been submitted if 
+it does not contain all information necessary for the Committee to make 
+a decision?
+    Question 14: To what extent should the narrative, attestations, or 
+other portions of the certification cover sections of the Act beyond 
+section 4(a)? For example, should State payment stablecoin regulators 
+be required to submit a list of persons engaged in the business of 
+providing custodial or safekeeping services and subject to the 
+supervision of the State payment stablecoin regulator or other 
+information about payment stablecoin custody?
+    Question 15: To what extent does the Committee retain authority to 
+reject a certification if the facts demonstrate that it is objectively 
+incomplete or inaccurate? For example, if the State certifies to 
+substantial similarity with the Federal custody regime under part 1521, 
+but the State factually lacks any custody regime whatsoever, should the 
+Committee reject the certification or deem a certification to not have 
+been submitted within the meaning of the Act?
+    Question 16: Is there any other supporting information that State 
+payment stablecoin regulators should be expressly required to submit 
+under Sec.  1522.10(b)?
+
+H. Recertification
+
+    Section 4(c)(4)(C) of the Act (12 U.S.C. 5903(c)(4)(C)) requires 
+that not later than a date to be determined annually by the Secretary 
+of the Treasury each year, a State payment stablecoin regulator shall 
+submit to the Committee an additional certification (i.e., a 
+recertification) that confirms the accuracy of the initial 
+certification submitted. Section 1522.10(c)(1) provides the timeframes 
+for when such recertifications must be submitted. Specifically, the 
+rule provides that recertifications shall be submitted to the Committee 
+during the calendar quarter in which the anniversary of the Committee's 
+approval of the State payment stablecoin regulator's initial 
+certification occurs. For example, if the initial certification was 
+approved in February, the annual recertification would be required to 
+be submitted between January 1 and March 31 of each subsequent year. 
+The Committee believes that this approach avoids States needing to re-
+certify less than a year after their initial certification and also 
+enables timely processing of recertifications by potentially spreading 
+them out over the year rather than receiving all submissions on one 
+fixed date.
+    Question 17: Is the timeframe for submitting recertifications 
+appropriate? Should the Committee instead adopt a uniform annual 
+deadline for all States? Should the Committee adopt semiannual 
+submission windows instead of quarterly submission windows? Should the 
+Committee assign a submission window to each State to avoid the issue 
+of receiving all of the States' recertifications at one time? Are there 
+any other alternative timing scenarios that the Committee should 
+consider?
+    Section 1522.10(c)(2) sets forth the contents of a recertification. 
+Specifically, a recertification is required to contain an attestation 
+in the form of Appendix B to Part 1522 signed by an authorized 
+representative of the State payment stablecoin regulator that confirms 
+the accuracy of the initial certification. Additionally, a 
+recertification must contain a detailed narrative describing (A) each 
+change to the State-level regulatory regime since the prior 
+certification that could potentially be considered to be a material 
+change, excluding changes that are purely nonsubstantive changes in 
+form or procedure,\20\ (B) whether such change is a material change in 
+the opinion of the State payment stablecoin regulator, and (C) whether, 
+in the opinion of the State payment stablecoin regulator, the change 
+will not promote the safe and sound operation of State qualified 
+payment stablecoin issuers under its supervision. The rule provides 
+that the States must submit all changes in the State-level regulatory 
+regime that could potentially be considered material because it is 
+possible that a State payment stablecoin regulator's assessment of what 
+constitutes a material change may differ from that of the Committee.
+---------------------------------------------------------------------------
+
+    \20\ See 91 FR 16844, 16851 (``except as provided in the Act, a 
+State-level regulatory regime may deviate from the Federal 
+regulatory framework with respect to nonsubstantive matters of form 
+or procedure while remaining substantially similar to the Federal 
+regulatory framework.'').
+---------------------------------------------------------------------------
+
+    A recertification must also contain a detailed narrative describing 
+(A) each change in circumstances that could potentially be considered 
+to be a significant change in circumstances, (B) whether such change is 
+a significant change in circumstances, in the opinion of the State 
+payment stablecoin regulator, and (C) whether, in the opinion of the 
+State payment stablecoin regulator, the change will not promote the 
+safe and sound operation of State qualified payment stablecoin issuers 
+under its supervision.
+    The rule provides that, for both material changes and significant 
+changes in circumstances, the State payment stablecoin regulator must 
+opine on whether such changes will not promote the safe and sound 
+operation of State qualified payment stablecoin issuers because this 
+will assist the Committee in making a determination of whether the 
+changes are such that the State-level regulatory regime will not 
+promote the safe and sound operation of State qualified payment 
+stablecoin issuers under its supervision.\21\ However, the Act commits 
+to the Committee's independent judgment whether the changes will not 
+promote the safe and sound operation of State qualified payment 
+stablecoin issuers. Moreover, in evaluating a material change or 
+significant change in circumstances, the Committee may consider, in 
+addition to information provided by the State payment stablecoin 
+regulator, any information made available to it from public or 
+nonpublic sources.
+---------------------------------------------------------------------------
+
+    \21\ 12 U.S.C. 5903(c)(5)(B)(ii).
+---------------------------------------------------------------------------
+
+    A recertification is also required to contain any relevant 
+supporting information and documentation, including, but not limited 
+to, citations to relevant statutes, regulations, and guidance 
+applicable to payment stablecoin issuers, and where necessary, copies 
+of such statutes, regulations, and guidance. State payment stablecoin 
+regulators are not expected to resubmit documentation provided in the 
+initial certification for which there has been no change since the 
+initial certification and which is not relevant to assessing any 
+potential material change or significant change in circumstances. For 
+each guidance document included, the State payment stablecoin regulator 
+is required to include a discussion of whether the guidance is binding 
+on State qualified payment stablecoin issuers. Finally, a 
+recertification is also required to contain such information as the 
+Committee may deem necessary for it to render a decision on whether the 
+State-level regulatory regime satisfies the criteria for approval in 
+section 4(c) of the GENIUS Act (12 U.S.C. 5903(c)).
+    Question 18: Is the attestation form provided in Appendix B to Part 
+1522 sufficiently clear? Is there anything the Committee should change 
+about the attestation form? Are the individual attestations 
+appropriate?
+    Question 19: How should the attestation form provided in Appendix B 
+best operationalize the requirement in section 4(c)(4)(C) of the Act 
+(12 U.S.C. 5903(c)(4)(C)) that the State payment stablecoin regulator 
+shall submit an
+
+[[Page 61694]]
+
+annual recertification that ``confirms the accuracy of the initial 
+certification''? For example, should the State payment stablecoin 
+regulator be required to attest that the State-level regulatory regime 
+continues to ``meet[ ] the criteria for substantial similarity 
+established [under Treasury's broad-based principles]'' (12 U.S.C. 
+5903(c)(4)(A))? Should the State payment stablecoin regulator be 
+required to attest that the State-level regulatory regime continues to 
+meet or exceed the standards and requirements described in section 4(a) 
+of the Act?
+    Question 20: Under Sec.  1522.10(c)(2)(ii), should State payment 
+stablecoin regulators be required to describe whether material changes 
+will not promote the safe and sound operation of State qualified 
+payment stablecoin issuers?
+    Question 21: Should the State payment stablecoin regulator be 
+required to describe only changes that it considers to be material 
+changes?
+    Question 22: Under Sec.  1522.10(c)(2)(iii), should State payment 
+stablecoin regulators be required to describe whether significant 
+changes in circumstances will not promote the safe and sound operation 
+of State qualified payment stablecoin issuers?
+    Question 23: Are there any other categories of documentation that 
+should be explicitly required under Sec.  1522.10(c)(2)(iv)?
+    The Act contemplates that certification and recertification are 
+prerequisites to State qualified payment stablecoin issuers operating 
+under a State-level regulatory regime but does not expressly address 
+the consequences if a recertification is not submitted in a timely 
+manner. A lack of any consequences for failing to submit a 
+recertification would render the requirement to submit an annual 
+recertification a nullity. Such an interpretation would frustrate the 
+statutory requirement that the Committee conduct annual reviews with 
+the ability to deny recertifications if there has been a material 
+change in the State-level regulatory regime such that it raises safety 
+and soundness concerns.\22\ Section 1522.10(c)(3) provides that if a 
+State payment stablecoin regulator does not submit a recertification by 
+the deadlines specified in Sec.  1522.10(c)(1), the certification 
+approval shall be deemed to be suspended. The Committee recognizes that 
+a failure of a State payment stablecoin regulator to submit a 
+recertification in a timely manner may have significant consequences 
+for State qualified payment stablecoin issuers operating in the 
+affected State as well as for market participants that rely on those 
+issuers, including that the State payment stablecoin regulator may not 
+be permitted to issue new licenses and that existing State qualified 
+payment stablecoin issuers may be required to transition to another 
+State or Federal license. Therefore, the Committee invites comment on 
+the appropriate scope and effects of such a suspension.
+---------------------------------------------------------------------------
+
+    \22\ 12 U.S.C. 5903(c)(5)(B).
+---------------------------------------------------------------------------
+
+    Question 24: What should the consequences be of a State payment 
+stablecoin regulator failing to timely submit an annual 
+recertification? Should the Committee's approval of the State's 
+certification be suspended? Are there any additional alternatives 
+regarding how the Committee should interpret and apply the suspension 
+of a certification in Sec.  1522.10(c)(3)? For example, should the 
+Committee adopt a grace period before the suspension takes place (e.g., 
+30 or 60 days), and if so, how long should the grace period be? Should 
+the Committee be required to send a notice of deficiency before a 
+suspension goes into effect? Should the Committee not suspend 
+certifications but use another mechanism to ensure submission of 
+recertifications? If so, what other mechanisms should the Committee 
+consider? How long should the Committee provide the States to cure the 
+failure to submit a timely recertification?
+    Question 25: If the Committee's approval of a State's certification 
+is suspended pending submission of a timely recertification, should the 
+State be prohibited from licensing new State qualified payment 
+stablecoin issuers until the suspension is lifted? Should there be any 
+effect on the operations of currently licensed State qualified payment 
+stablecoin issuers? For example, should there be a suspension of the 
+ability of State qualified payment stablecoin issuers to issue new 
+payment stablecoins during the period of suspension? To the extent the 
+Committee prohibits existing State qualified payment stablecoin issuers 
+from issuing new payment stablecoins following a suspension, are there 
+any exceptions the Committee should make (e.g., allowing issuance if 
+necessary to facilitate a transfer of payment stablecoins across 
+different blockchains)? Should continued issuance depend on whether the 
+State is actively working to cure the deficiency? Should there be 
+limitations on the offer and sale of affected payment stablecoins? 
+Should the Committee give State qualified payment stablecoin issuers in 
+an affected State a grace period to seek licensure in a State with an 
+approved certification or at the Federal level, and if so, how long 
+should they be given to do so? Should the Committee or Treasury grant 
+case-by-case waivers on any of the above limitations and if so, when?
+
+I. Submission of Initial Certifications and Recertifications
+
+    Section 1522.10(d)(1) describes when initial certifications and 
+recertifications will be considered to be submitted. An initial 
+certification has not been submitted until all materials required under 
+Sec.  1522.10(b) have been submitted. Similarly, a recertification has 
+not been submitted until all materials required under Sec.  
+1522.10(c)(2) have been submitted.
+    In both cases, the referenced list of materials includes such 
+information as the Committee may deem necessary for it to render a 
+decision on whether the State-level regulatory regime satisfies the 
+criteria for approval or denial in section 4(c) of the GENIUS Act (12 
+U.S.C. 5903(c)).\23\
+---------------------------------------------------------------------------
+
+    \23\ The Committee endeavors to process certifications promptly 
+and endeavors that this process not result in unnecessary delay. The 
+Committee expects to work cooperatively with State payment 
+stablecoin regulators to identify any information that is unclear in 
+any material respect or any deficiencies so that the Committee can 
+complete its review of an initial certification or recertification. 
+The Committee expects to only request such information when 
+reasonably necessary to evaluate whether the State-level regulatory 
+regime satisfies the criteria for approval under section 4(c) of the 
+Act.
+---------------------------------------------------------------------------
+
+    The Committee considered whether a certification should be 
+considered to have been submitted at the time a State payment 
+stablecoin regulator submits any package of materials to the Committee, 
+regardless of whether those materials are complete and contain 
+sufficient information for the Committee to render a decision. Doing so 
+would potentially start the 30-day clock for a Committee decision under 
+section 4(c)(5)(A) of the Act (12 U.S.C. 5903(c)(5)(A)) earlier, which 
+could provide greater certainty to a State payment stablecoin regulator 
+on the timeline for a decision on its certification. However, it would 
+also likely increase the number of formal denials that would be issued 
+by the Committee, given the 30-day requirement for approval or denial, 
+such as denials of incomplete certifications that could easily be 
+corrected. The State payment stablecoin regulator would then be 
+required to resubmit the certification within a certain period without 
+having the benefit of detailed reasoning from the Committee regarding 
+its substance and any substantive changes that would need to be made
+
+[[Page 61695]]
+
+before approval, increasing the odds of a second denial.
+    Instead, the Committee believes that it would be more efficient and 
+in the best interest of State payment stablecoin regulators that the 
+Committee refrain from making an official approval or denial of a 
+certification until such time as the State payment stablecoin regulator 
+can prepare a complete package of materials that would allow the 
+Committee sufficient information to make its determination. This 
+process will generally be consistent with longstanding practices by 
+Federal regulatory agencies. To the extent that States seek 
+clarification as to whether their certification or recertification 
+submissions are complete, States are welcome to seek feedback from the 
+Committee after submission. However, the Committee requests comment on 
+potential alternatives to this approach.
+    Accordingly, Sec.  1522.10(d)(2) provides that neither an initial 
+certification nor a recertification has been submitted within the 
+meaning of Sec.  1522.10(d)(1) if the State payment stablecoin 
+regulator has omitted any information necessary for the Committee to 
+evaluate whether the State-level regulatory regime satisfies the 
+criteria for approval in section 4(c) of the GENIUS Act (12 U.S.C. 
+5903(c)). A certification is not considered submitted if the 
+information provided was unclear in any material respect or there are 
+deficiencies that must be resolved, including through the submission of 
+additional information.
+    Section 1522.10(d)(3) provides that the Committee may request, at 
+any time, additional information that it deems necessary, in its sole 
+discretion, to complete its review under section 4(c) of the Act. 
+Section 1522.10(d)(4) provides that the Committee will notify a State 
+payment stablecoin regulator once the Committee determines that such 
+regulator has submitted an initial certification or recertification.
+    Question 26: Should the Committee, instead of determining whether a 
+certification or recertification is ``submitted'' under Sec.  
+1522.10(d), deny any initial certification or recertification within 30 
+days of submission if it is incomplete or deficient, and provide the 
+State an opportunity to cure and resubmit? Are there concerns with the 
+Committee not evaluating an initial certification or recertification, 
+and the relevant time period beginning to run, until it has been deemed 
+to be submitted? Should the Committee institute a deadline for when it 
+must consider an initial certification or recertification to be 
+submitted (e.g., a deadline based on the time elapsed since the receipt 
+of the initial materials)?
+    Question 27: Is Sec.  1522.10(d)(2) sufficiently clear? Should the 
+Committee notify a State payment stablecoin regulator within a certain 
+period if its submission is incomplete or otherwise not considered to 
+be a valid submission of a certification under part 1522?
+    Question 28: Should these procedures provide a standard timeframe 
+that will be given to a State payment stablecoin regulator to respond 
+to any Committee requests for additional information?
+    Question 29: When reviewing materials for completeness, to what 
+extent, if at all, should the Committee consider materials submitted 
+that may be relevant to Treasury's principles under part 1521 other 
+than the principles for section 4(a)? Are there any circumstances in 
+which the Committee should determine that a certification was not 
+submitted within the meaning of part 1522 based on factors outside of 
+section 4(a)? For example, if the State payment stablecoin regulator 
+certifies that its application framework is substantially similar in 
+accordance with Treasury's principles, but it is apparent that the 
+State has no application framework, should the Committee reject the 
+certification as invalid?
+    Question 30: Should the Committee add a timing component to Sec.  
+1522.10(d)(4) that requires the Committee to notify the State payment 
+stablecoin regulator within a certain amount of time? If so, what is 
+the appropriate timeline for notification?
+
+J. Committee Determinations
+
+    Section 1522.10(e)(1) provides that not later than 30 days after 
+the date on which a State payment stablecoin regulator submits an 
+initial certification or recertification in accordance with this 
+section, the Committee will approve or deny such certification.
+    Section 1522.10(e)(2) provides that the Committee shall approve an 
+initial certification submitted under paragraph (b) if the Committee 
+unanimously determines that the State-level regulatory regime meets or 
+exceeds the standards and requirements described in section 4(a) of the 
+Act (12 U.S.C. 5903(a)).
+    Section 1522.10(e)(3) provides that the Committee shall only deny 
+an annual recertification if the Committee determines that (i) there 
+has been a material change in the State-level regulatory regime or 
+there has been a significant change in circumstances since the prior 
+certification; and (ii) the material change or significant change in 
+circumstances identified is such that the State-level regulatory regime 
+will not promote the safe and sound operation of State qualified 
+payment stablecoin issuers under its supervision.
+    Section 4(c)(7) of the Act (12 U.S.C. 5903(c)(7)) provides that the 
+Committee shall take all necessary steps to endeavor that, with respect 
+to a State that, within 180 days of the date of enactment of the Act 
+(on or before January 14, 2026), has in effect a prudential regulatory 
+regime (including regulations and guidance) for the supervision of 
+digital assets or payment stablecoins, the certification process with 
+respect to that regime occurs on an expedited timeline after the 
+effective date of the Act. Consistent with this statutory provision, 
+Sec.  1522.10(e)(4) provides that the Committee will endeavor to 
+process initial certifications on an expedited timeline after the 
+effective date of the GENIUS Act with respect to a State that, within 
+180 days of the date of enactment of the GENIUS Act, had in effect a 
+prudential regulatory regime (including regulations and guidance) for 
+the supervision of digital assets or payment stablecoins. If a State 
+believes it is entitled to expedited processing under this provision, 
+the State payment stablecoin regulator should select the relevant check 
+box on the attestation in the form of Appendix A to Part 1522 and 
+should include a statement in the narrative required under Sec.  
+1522.10(b) and attach any supporting documentation, as appropriate.
+    Question 31: Should this part provide additional clarification on 
+the standard for meeting or exceeding the standards and requirements 
+described in section 4(a) of the Act, such as by cross-referencing to 
+part 1521?
+    Question 32: In considering whether a State-level regulatory regime 
+meets or exceeds the standards and requirements described in section 
+4(a), to what extent should the Committee consider other aspects of the 
+State-level regulatory regime that may indirectly bear on the 
+substantive prudential requirements set out in section 4(a) of the Act? 
+For example, should the Committee consider a State's supervisory 
+framework applicable to a prudential requirement under section 4(a) in 
+considering whether the State-level regulatory regime actually meets or 
+exceeds the standards and requirements described in section 4(a) of the 
+Act? If a State has no operational supervisory framework to monitor 
+compliance with reserve requirements under section 4(a), can the State-
+level regulatory regime nonetheless meet or exceed the standards and 
+requirements described under section 4(a), or should the Committee 
+conclude that the State-level
+
+[[Page 61696]]
+
+regulatory regime does not have any meaningful reserve requirements 
+within the meaning of section 4(a) because the reserve requirements 
+exist only on paper and not in practice?
+    Question 33: To what extent, if at all, should the Committee's 
+review of recertifications consider the ``accuracy of the initial 
+certification'' submitted by the State payment stablecoin regulator or 
+the State payment stablecoin regulator's certification that ``confirms 
+the accuracy of the initial certification'' under section 4(c)(4)(C) of 
+the Act (12 U.S.C. 5903(c)(4)(C))?
+    Question 34: What necessary steps should the Committee take to 
+endeavor that the certification process with respect to the regimes set 
+forth in section 4(c)(7) of the Act (12 U.S.C. 5903(c)(7)) occur on an 
+expedited timeline? Should the Committee provide for an interim 
+approval for some period of time after such States' certifications are 
+submitted or other similar approach? Should evaluation of such States' 
+certifications be prioritized over other States' certifications? Should 
+this expedited timeline apply to just initial certifications, or also 
+recertifications? What should the Committee consider when determining 
+whether the State has a prudential regulatory regime for the 
+supervision of digital assets or payment stablecoins in effect? Should 
+the Committee consider the regime only in the form that was effective 
+as of January 14, 2026, or also consider changes to the State-level 
+regulatory regime that occur after the 180-day period (i.e., changes to 
+the regime made after January 14, 2026), including changes made in 
+response to the GENIUS Act and Federal regulations thereunder?
+    Question 35: Should the Committee evaluate initial certifications 
+and recertifications against the standards and requirements described 
+in section 4(a) of the Act in effect at the time the Committee 
+considers the certification to be submitted under Sec.  1522.10(d) or 
+the standards and requirements in effect at the time of the Committee's 
+review? For example, if Congress amends the GENIUS Act following a 
+State's submission of a certification or recertification, should the 
+Committee take such an amendment into consideration? Are there other 
+timing considerations the Committee should address?
+
+K. Opportunity To Cure and Appeal
+
+    Section 1522.10(f) outlines the Committee's procedures related to 
+denial, resubmission, and appeal of initial certifications and 
+recertifications. Consistent with section 4(c)(5)(A)(ii) of the Act (12 
+U.S.C. 5903(c)(5)(A)(ii)), Sec.  1522.10(f)(1) provides that if the 
+Committee denies an initial certification or annual recertification, it 
+will provide the State payment stablecoin regulator with a written 
+explanation of the denial, describing the reasoned basis for the denial 
+with sufficient detail to enable the State to make any changes 
+necessary for the State-level regulatory regime to meet or exceed the 
+standards and requirements described in section 4(a) of the GENIUS Act 
+(12 U.S.C. 5903(a)). Additionally, consistent with section 4(c)(5)(C) 
+of the Act (12 U.S.C. 5903(c)(5)(C)), Sec.  1522.10(f)(2) provides that 
+for denials under Sec.  1522.10(f)(1), the Committee shall provide the 
+State payment stablecoin regulator with not less than 180 days from the 
+date on which the State payment stablecoin regulator is notified of 
+such denial to--(i) make such changes as may be necessary to ensure the 
+State-level regulatory regime meets or exceeds the standards described 
+in section 4(a) of the Act (12 U.S.C. 5903(a)) and (ii) resubmit the 
+initial certification or recertification.
+    In contrast to a failure to timely recertify, as described above, 
+the initial denial of a recertification would not have the effect of 
+suspending the State's certification or any collateral impacts on the 
+ability of the State payment stablecoin regulator to license State 
+qualified payment stablecoin issuers or of those issuers to issue new 
+payment stablecoins. The Committee reads the Act's provision of an 
+``opportunity to cure'' as providing States with a chance to remediate 
+any errors before the consequences of a denial take effect. This is 
+consistent with the structure of the Act, which provides for judicial 
+appeals only after the State payment stablecoin regulator has been 
+provided an opportunity to cure.
+    However, the Act does not expressly address the situation where a 
+State payment stablecoin regulator fails to resubmit the initial 
+certification or recertification in a timely manner. Logically, in that 
+circumstance, the State payment stablecoin regulator has either not 
+cured the deficiencies in its initial certification or recertification, 
+or at least has failed to provide the Committee with the information 
+necessary to evaluate whether it has done so. Therefore, the Committee 
+would expect to formalize its denial under Sec.  1522.10(f)(4) if the 
+cure period has elapsed without resubmission by the State payment 
+stablecoin regulator.
+    The Committee understands that there may be some significant 
+changes in circumstances that would necessitate a relatively longer 
+cure period for State payment stablecoin regulators. Specifically, for 
+Acts of Congress that pertain to permitted payment stablecoin issuers 
+or changes to the relevant regulations, interpretations, or orders as 
+provided for in Treasury's proposed 12 CFR part 1521, States may 
+require additional time to incorporate these changes into their State-
+level regulatory regime. Accordingly, Sec.  1522.10(f)(3) provides that 
+if a denial under Sec.  1522.10(f)(1) is based on a change resulting 
+from an Act of Congress or a change in a relevant Federal regulation, 
+interpretation, or order in accordance with part 1521, the 180-day 
+period in Sec.  1522.10(f)(2) shall instead be the later of: (i) the 
+180-day period or (ii) two years from the date of enactment of an Act 
+of Congress or two years from the date of publication of the 
+interpretation, regulation, or order. Because an initial denial of a 
+recertification would not result in a suspension of the State's 
+certification, this longer cure period would, in effect, provide States 
+with a transition period to appropriately reflect any changes in 
+Federal statutes or regulations, taking into account, for example, the 
+biennial legislative sessions of certain States.
+    In accordance with section 4(c)(5)(C)(ii) of the Act (12 U.S.C. 
+5903(c)(5)(C)(ii)), Sec.  1522.10(f)(4) provides that if, after a State 
+payment stablecoin regulator resubmits an initial certification or 
+annual recertification under Sec.  1522.10(f)(2)(ii), and the Committee 
+denies the initial certification or recertification, the Committee 
+shall, not later than 30 days after such determination, provide the 
+State payment stablecoin regulator with a written explanation for the 
+determination. Consistent with section 4(c)(5)(D) of the Act (12 U.S.C. 
+5903(c)(5)(D)), Sec.  1522.10(f)(5) provides that a State payment 
+stablecoin regulator in receipt of a denial under Sec.  1522.10(f)(4) 
+may appeal the denial to the United States Court of Appeals for the 
+District of Columbia Circuit.
+    Finally, Sec.  1522.10(f)(6) provides that a State payment 
+stablecoin regulator in receipt of a denial under Sec.  1522.10(f) may 
+resubmit a new certification under part 1522.
+    The Committee recognizes that the denial of an annual 
+recertification may have significant consequences for State qualified 
+payment stablecoin issuers operating in the affected State as well as 
+for market participants that rely on those issuers, including that the 
+State payment stablecoin regulator may not be permitted to issue new 
+licenses and that existing State qualified payment stablecoin issuers 
+may be required to transition to another State or Federal
+
+[[Page 61697]]
+
+license. Therefore, the Committee invites comment on the approach.
+    Question 36: Is the extension of time described in Sec.  
+1522.10(f)(3) appropriate? Should the Committee instead not allow for 
+such an extension? Is the two-year extension following an Act of 
+Congress appropriate? Instead, should it be one year or another time 
+period? Is the two-year extension following the publication of a 
+Federal interpretation, regulation, or order appropriate? Instead, 
+should it be one year or another time period? Should the extension only 
+apply to interpretations, regulations, or orders that are published in 
+the Federal Register? Is it sufficiently clear what two years from the 
+date of publication means? Should the two-year period provided under 
+Sec.  1522.10(f)(3) begin on the date the Committee notifies the State 
+payment stablecoin regulator of the denial of the certification or 
+recertification, rather than on the date of enactment of the relevant 
+Act of Congress or publication of the relevant Federal regulation, 
+interpretation, or order? Rather than setting a fixed time period of 
+two years as in Sec.  1522.10(f)(3), should the Committee evaluate the 
+specific change that led to the denial and make a facts and 
+circumstances determination regarding how long the State should have to 
+modify its State-level regulatory regime to make the relevant change?
+    Question 37: Should the State's certification be considered 
+suspended until it submits a new certification that is approved? Should 
+the State payment stablecoin regulator be prohibited from licensing any 
+new State qualified payment stablecoin issuers? What is the appropriate 
+timeline, including any grace period, for these consequences, and 
+should the effect of the denial be stayed pending any appeal? Should 
+the Committee formally notify the State payment stablecoin regulator or 
+the public once such a suspension is in effect?
+
+III. Regulatory Matters
+
+A. Administrative Procedure Act (APA)
+
+    The Committee views this rule as a rule of organization, procedure, 
+or practice within the meaning of 5 U.S.C. 553(b)(A), and, to the 
+extent that this rule interprets the Act or provides a statement of 
+Committee policy, an interpretative rule or general statement of 
+policy, respectively, within the meaning of 5 U.S.C. 553(b)(A). 
+Accordingly, notice and comment are not required under the APA.\24\ 
+Nonetheless, the Committee values public input in refining the form and 
+procedures for submission and review of State payment stablecoin 
+regulator certifications and recertifications. As noted earlier, the 
+Committee has carefully considered views from various stakeholders 
+expressed through comments submitted to other notices, including the 
+ANPRM issued by Treasury in September 2025. The Committee further 
+requests public comment on these interim procedures. The Committee 
+intends to revise these procedures, as appropriate, following full 
+consideration of comments received.
+---------------------------------------------------------------------------
+
+    \24\ In the alternative, the Committee for good cause finds that 
+notice and public procedure and a delay prior to the effectiveness 
+of this procedural rule are impracticable, unnecessary, or contrary 
+to the public interest. See 5 U.S.C. 553(b)(B) and (d)(3). In 
+particular, the GENIUS Act takes effect on January 18, 2027, at 
+which time it will generally be unlawful for persons to issue 
+payment stablecoins in the United States unless they are licensed or 
+approved as permitted payment stablecoin issuers. Many current 
+payment stablecoin issuers are licensed and regulated at the State 
+level. Therefore, failing to have procedures in place to process 
+State certifications by the effective date of the GENIUS Act could 
+impede the ability of issuers to continue normal issuance operations 
+or create significant market uncertainty, potentially causing 
+dislocation in the multi-billion-dollar stablecoin market in the 
+United States.
+---------------------------------------------------------------------------
+
+B. Regulatory Flexibility Act
+
+    In connection with certain proposed rules, the Regulatory 
+Flexibility Act (RFA) generally requires an Initial Regulatory 
+Flexibility Analysis (IRFA) describing the impact of the rule on small 
+entities, unless there is an appropriate certification that the 
+proposed rule will not have a significant economic impact on a 
+substantial number of small entities published along with a statement 
+providing the factual basis for such certification in the Federal 
+Register.\25\
+---------------------------------------------------------------------------
+
+    \25\ 5 U.S.C. 601 et seq.
+---------------------------------------------------------------------------
+
+    This interim final rule governs submission of certifications and 
+recertifications by State payment stablecoin regulators. The Committee 
+views the rule as exempt from notice and comment under 5 U.S.C. 
+553(b)(A), and therefore an IRFA is not required.\26\ However, the 
+Committee invites comment on any effects on small entities.
+---------------------------------------------------------------------------
+
+    \26\ 5 U.S.C. 603(a).
+---------------------------------------------------------------------------
+
+C. Unfunded Mandates Reform Act
+
+    The Committee has analyzed the rule under the factors in the 
+Unfunded Mandates Reform Act of 1995 (UMRA).\27\ Under this analysis, 
+the Committee considered whether the rule includes a Federal mandate 
+that may result in the expenditure by State, local, and tribal 
+governments, in the aggregate, or by the private sector, of $100 
+million or more in any one year (adjusted annually for inflation). 
+Pursuant to section 202 of the UMRA,\28\ if a rule meets this UMRA 
+threshold, the Committee would need to prepare a written statement that 
+includes, among other things, a cost-benefit analysis. This requirement 
+does not apply to regulations to the extent they incorporate 
+requirements specifically set forth in law.\29\
+---------------------------------------------------------------------------
+
+    \27\ 2 U.S.C. 1531 et seq.
+    \28\ 2 U.S.C. 1532.
+    \29\ 2 U.S.C. 1532.
+---------------------------------------------------------------------------
+
+    The Committee has determined that the rule would not result in a 
+covered unfunded mandate within the meaning of UMRA, including because 
+States are not mandated to take any actions under the rule. Instead, 
+the rule provides for procedures that States may use if they choose to 
+regulate payment stablecoins under a substantially similar State-level 
+regulatory regime. To the extent that this rule imposes costs, such 
+costs are generally attributable to the Act itself, which sets out the 
+certification process. The incremental costs resulting from the 
+specific procedures set out in this part 1522 are expected to be below 
+the UMRA threshold.
+
+D. Paperwork Reduction Act (PRA)
+
+    The Paperwork Reduction Act of 1995 (44 U.S.C. 3501-3521) states 
+that no agency may conduct or sponsor, nor is the respondent required 
+to respond to, an information collection unless it displays a currently 
+valid OMB control number. This rule contains information collections 
+within the meaning of the Paperwork Reduction Act. Treasury, on behalf 
+of the Committee, is seeking a new control number for these information 
+collection requirements and will submit them to OMB for review and 
+approval. Treasury will issue a notice on its website once 
+certifications will begin to be accepted.
+Information Collection
+    Title: Forms for Review of State Certifications by the Stablecoin 
+Certification Review Committee.
+    OMB Control No.: 1505-NEW.
+    Type of Review: Regular.
+    Affected Public: State governments.
+    Description: Twelve CFR part 1522 sets forth the Committee's 
+procedural regulations and forms to implement its responsibilities 
+under section 4(c) of the GENIUS Act. The regulations set out a process 
+to facilitate the Committee's approval or denial of certifications 
+submitted by State payment stablecoin regulators under section 4(c)(4) 
+of the GENIUS Act, and prescribe the form of such certifications.
+
+[[Page 61698]]
+
+    The information collection requirements in the rule are as follows:
+Reporting Requirements
+    Section 1522.10(b) sets forth the form of an initial certification 
+that a State payment stablecoin regulator shall submit to the 
+Committee. Section 1522.10(b)(1) provides that the initial 
+certification must include an attestation in the form of Appendix A to 
+Part 1522 signed by an authorized representative of the State payment 
+stablecoin regulator attesting that the State-level regulatory regime 
+of its State meets the criteria for substantial similarity set forth in 
+12 CFR part 1521. Section 1522.10(b)(2) provides that the initial 
+certification must also include a detailed narrative describing how the 
+State-level regulatory regime meets each of the criteria for 
+substantial similarity set forth in part 1521. Additionally, pursuant 
+to Sec.  1522.10(b)(3), the initial certification is required to 
+include any supporting information and documentation, including, but 
+not limited to, citations to relevant statutes, regulations, and 
+guidance applicable to payment stablecoin issuers, and where necessary, 
+copies of such statutes, regulations, and guidance. For each guidance 
+document that is submitted, the narrative should include a discussion 
+of whether the guidance is binding on State qualified payment 
+stablecoin issuers. Moreover, Sec.  1522.10(b)(4) requires that the 
+initial certification must include information the Committee may deem 
+necessary for it to render a decision as to whether the State-level 
+regulatory regime satisfies the criteria for approval in section 4(c) 
+of the GENIUS Act (12 U.S.C. 5903(c)).
+    State payment stablecoin regulators must also submit an annual 
+recertification to the Committee during the calendar quarter in which 
+the anniversary of the Committee's approval of the State payment 
+stablecoin regulator's initial certification occurs.\30\ Pursuant to 
+Sec.  1522.10(c)(2)(i), a recertification is required to contain an 
+attestation in the form of Appendix B to Part 1522 signed by an 
+authorized representative of the State payment stablecoin regulator 
+that confirms the accuracy of the initial certification. Additionally, 
+pursuant to Sec.  1522.10(c)(2)(ii), each recertification is required 
+to contain: (A) a detailed narrative describing each change to the 
+State-level regulatory regime since the prior certification that could 
+potentially be considered to be a material change, excluding changes 
+that are purely nonsubstantive in form or procedure; (B) whether, in 
+the opinion of the State payment stablecoin regulator, such a change is 
+a material change, and (C) whether, in the opinion of the State payment 
+stablecoin regulator, the change will not promote the safe and sound 
+operation of State qualified payment stablecoin issuers under its 
+supervision. Moreover, Sec.  1522.10(c)(2)(iii) requires that the 
+recertification contain a detailed narrative describing (A) each change 
+in circumstances that could potentially be considered to be a 
+significant change in circumstances, (B) whether, in the opinion of the 
+State payment stablecoin regulator, such change is a significant change 
+in circumstances, and (C) whether, in the opinion of the State payment 
+stablecoin regulator, the change will not promote the safe and sound 
+operation of State qualified payment stablecoin issuers under its 
+supervision. Section 1522.10(c)(2)(iv) requires that the 
+recertification also include any supporting information and 
+documentation, including, but not limited to, citations to relevant 
+statutes, regulations, and guidance applicable to payment stablecoin 
+issuers, and where necessary, copies of such statutes, regulations, and 
+guidance. For each guidance document submitted pursuant to Sec. Sec.  
+1522.10(c)(2)(ii) or (iii), the corresponding narrative is required to 
+include a discussion of whether the guidance is binding on State 
+qualified payment stablecoin issuers. Additionally, Sec.  
+1522.10(c)(2)(v) provides that the recertification must include such 
+information as the Committee may deem necessary for it to render a 
+decision on whether the State-level regulatory regime satisfies the 
+criteria for approval in section 4(c) of the GENIUS Act (12 U.S.C. 
+5903(c)).
+---------------------------------------------------------------------------
+
+    \30\ 12 U.S.C. 5903(c)(4)(C).
+---------------------------------------------------------------------------
+
+    Section 1522.10(d)(3) provides that the Committee may request, at 
+any time, additional information as it deems necessary, in its sole 
+discretion, to complete its review under section 4(c) of the Act (12 
+U.S.C. 5903(c)). The Committee expects that the estimated average hours 
+per response for Sec.  1522.10(b) and (c) include the estimated burden 
+associated with responding to requests for additional information under 
+Sec.  1522.10(d)(3).
+    Section 1522.10(f)(2) provides that if the Committee denies an 
+initial certification or annual recertification, the Committee shall 
+provide the State payment stablecoin regulator with not less than 180 
+days from the date on which the State payment stablecoin regulator is 
+notified of such denial to make such changes as may be necessary to 
+ensure the State-level regulatory regime meets or exceeds the standards 
+described in section 4(a) of the GENIUS Act (12 U.S.C. 5903(a)) as well 
+as to resubmit the initial certification or recertification. The 
+Committee expects that any associated burden with resubmitting an 
+initial certification or recertification is captured in the burden 
+estimates below for Sec. Sec.  1522.10(b) and (c).
+
+----------------------------------------------------------------------------------------------------------------
+                                                                                Estimated
+                                Estimated number  Estimated  frequency  of    average hours     Estimated annual
+                                 of respondents           response             per response       burden hours
+----------------------------------------------------------------------------------------------------------------
+Reporting Burden:
+    Section 1522.10(b).......            \31\ 56  One-time................                480             26,880
+    Section 1522.10(c).......                 56  Once Annually...........                 40              2,240
+                              ----------------------------------------------------------------------------------
+        Total Reporting        .................  ........................  .................             29,120
+         Burden.
+----------------------------------------------------------------------------------------------------------------
+
+    These collections of information will be submitted to OMB for 
+review in accordance with the PRA. Commenters are strongly encouraged 
+to submit public comments electronically. Written comments and 
+recommendations for the proposed information collection should be sent 
+to <a href="http://www.reginfo.gov/public/do/PRAMain">www.reginfo.gov/public/do/PRAMain</a> by October 30, 2026, with copies 
+to Treasury as provided in the ADDRESSES section of this notice. Find 
+this particular information collection by selecting ``Currently under 
+Review--Open for Public Comments,'' then by
+
+[[Page 61699]]
+
+using the search function. Comments are invited on:
+---------------------------------------------------------------------------
+
+    \31\ The definition of ``State'' in the GENIUS Act includes each 
+of the several states of the United States, the District of 
+Columbia, and each territory of the United States. See section 2(28) 
+of the Act (12 U.S.C. 5901(28)). The Committee conservatively 
+assumes, for purposes of this Paperwork Reduction Act analysis, that 
+all eligible States will submit certifications.
+---------------------------------------------------------------------------
+
+    (a) Whether the collection of information is necessary for the 
+proper performance of the functions of the Committee, including whether 
+the information has practical utility;
+    (b) The accuracy of the Committee's estimate of the burden of the 
+collection of information;
+    (c) Ways to enhance the quality, utility, and clarity of the 
+information to be collected; and
+    (d) Ways to minimize the burden of the collection on respondents, 
+including through the use of automated collection techniques or other 
+forms of information technology.
+
+E. Regulatory Planning and Review
+
+    OIRA has determined that this rule is a significant regulatory 
+action under Executive Order 12866 and, therefore, is subject to review 
+under Executive Order 12866. The Committee's analysis conducted in 
+connection with Executive Order 12866 is set forth below. This rule is 
+not considered an Executive Order 14192 regulatory action because it 
+imposes no more than de minimis costs.
+    Given the relative novelty of the payment stablecoin ecosystem, it 
+is challenging to precisely quantify the costs and benefits of this 
+rule. In addition, the Committee's rule seeks to apply the best 
+interpretations of the statutory text, which limits the range of 
+potential implementing approaches. The Committee believes that the 
+costs of the rule are generally limited to the PRA burden set forth 
+above and are outweighed by the benefits, including clarity and 
+efficiency benefits to States and regulated entities around the process 
+for SCRC review, but invites comments that would help quantitatively or 
+qualitatively analyze costs and benefits of the rule, as well as any 
+alternatives and their associated costs and benefits.
+1. Affected Parties
+    Parties directly affected by this rule are States seeking to 
+regulate State qualified payment stablecoin issuers under State-level 
+regulatory regimes. For the limited purpose of this analysis of costs 
+and benefits, the Committee assumes that all States will seek to 
+implement State-level regulatory regimes, though some States may choose 
+not to do so.
+    This rule does not directly affect entities other than States. 
+Entities indirectly affected by the application of the Committee's 
+review of State certifications include State qualified payment 
+stablecoin issuers, parties that seek to become State qualified payment 
+stablecoin issuers, and individuals or entities that acquire payment 
+stablecoins issued by State qualified payment stablecoin issuers. It is 
+difficult to know at this time how many State qualified payment 
+stablecoin issuers may be affected. Further, the effects of these 
+procedures will depend on the details of each State-level regulatory 
+regime, which may vary widely, given the discretion provided to States 
+under the Act and this rule.
+2. Baseline
+    The Committee has assessed the benefits and costs of the 
+regulations relative to a no-action baseline reflecting anticipated 
+behavior in the absence of the regulations. Once the Act becomes 
+effective, persons will not be able to issue payment stablecoins in the 
+United States without becoming permitted payment stablecoin issuers. 
+The offer and sale of unlicensed stablecoins to persons located in the 
+United States by digital asset service providers will also be unlawful 
+starting July 18, 2028. To provide a State-level license and regulation 
+option for payment stablecoin issuers with a consolidated total 
+outstanding issuance of not more than $10 billion, a State must certify 
+that its State-level regulatory regime is substantially similar to the 
+Federal regulatory framework and must be approved by the Stablecoin 
+Certification Review Committee on the basis that the State's regime 
+``meets or exceeds the standards and requirements described in [section 
+4(a) of the Act].''
+    If a State is unable to certify to substantial similarity, or 
+unable to achieve Stablecoin Certification Review Committee approval, 
+the Committee expects that all State qualified payment stablecoin 
+issuers in the State will be required either to (i) cease issuing 
+payment stablecoins, or (ii) obtain a Federal license and comply with 
+regulation and supervision by the primary Federal payment stablecoin 
+regulators.
+    In the absence of these procedures, the Committee expects that 
+States and market participants would face significant uncertainty over 
+how the Committee would process State certifications. Issuers that 
+have, or would otherwise desire, a State license may instead expend 
+considerable resources to obtain a Federal license. The Committee 
+expects that the attendant uncertainty would likely significantly 
+stifle payment stablecoin markets and innovation in the States.
+3. Costs
+    The direct costs of complying with the procedures are captured 
+above in the Paperwork Reduction Act section. While that section 
+conservatively assumes that all States will provide initial and annual 
+recertifications, some States may choose not to implement State-level 
+regulatory regimes, and this rule will not impose any direct costs on 
+those States.\32\ The Committee believes that only the costs of 
+preparing the certifications under these procedures should be 
+considered as direct costs of the rule. While States that choose to 
+implement State-level regulatory regimes will face implementation costs 
+including staff time to analyze the Act and regulatory and/or 
+legislative time to write statutes, regulations, or enforceable 
+guidance to conform to the Act and part 1521, the Committee believes 
+such costs are properly attributable to the Act itself and Treasury's 
+proposed broad-based principles under part 1521, rather than these 
+procedures.
+---------------------------------------------------------------------------
+
+    \32\ Any costs associated with the inability of States to 
+regulate permitted payment stablecoin issuers if they choose not to 
+implement a substantially similar State-level regulatory regime are 
+generally attributable to the Act and the State's choice not to 
+implement a State-level regulatory regime, rather than to these 
+procedures.
+---------------------------------------------------------------------------
+
+4. Benefits
+    A key benefit of this rule is the transparency it provides 
+regarding the Committee's procedures for reviewing State certifications 
+and its expectations for what would be submitted by State payment 
+stablecoin regulators. The Committee expects that this will reduce 
+potential frictions and concerns that could otherwise impede market 
+activity by payment stablecoin issuers and third parties offering 
+services to payment stablecoin providers. Therefore, the Committee 
+expects that the procedures will create a more favorable environment 
+for digital asset innovation in many States, with potential economic 
+benefits from increased innovation and payment stablecoin commercial 
+activity. Consumers and institutions engaging with payment stablecoins 
+may view State qualified payment stablecoin issuers operating under a 
+State-level regulatory regime more favorably than the status quo. In 
+turn, those States may attract payment stablecoin issuers, which may 
+contribute to more investment, jobs, and innovation. While these 
+benefits are difficult to quantify, the Committee preliminarily 
+believes that they are likely to exceed the costs described above.
+5. Discretion and Alternatives
+    Because section 4(c) of the Act outlines the core requirements and 
+procedures relating to State
+
+[[Page 61700]]
+
+certifications, the Committee's discretion to adopt alternative 
+approaches is relatively limited. In certain limited areas, the 
+Committee has exercised its discretion, such as in setting the form of 
+attestations in appendices A and B to part 1522. The Committee has not 
+identified any reasonable alternatives that it believes would 
+materially alter the benefits and costs of this rule, but requests 
+comment on any potential alternatives that could materially alter 
+benefits or costs.
+    Question 38: What are the potential costs and benefits, if any, of 
+the implementation of section 4(c) (12 U.S.C. 5903(c)) as in part 1522, 
+beyond costs and benefits imposed by the Act itself and Treasury's 
+broad-based principles in part 1521? To what extent does the Committee 
+have discretion within the boundaries of the Act to further reduce 
+costs or increase benefits?
+    Question 39: What are the benefits and costs, including for 
+implementation, compliance efficiency, and payment stablecoin market 
+participation, from the regulations providing relatively clear 
+procedures for the submission and review of State certifications?
+
+F. Executive Order 13132
+
+    Executive Order 13132 (entitled ``Federalism'') prohibits 
+publishing any rule that has federalism implications if the rule either 
+imposes substantial, direct compliance costs on State, local, and 
+Tribal governments, and is not required by statute, or preempts State 
+law, unless the consultation and funding requirements of section 6 of 
+the Executive Order are met. This rule does not have federalism 
+implications within the meaning of the Executive Order, including 
+because the rule implements statutory requirements and States are not 
+mandated to take any actions under the rule. Instead, the rule provides 
+for procedures that States may use if they choose to regulate payment 
+stablecoins under a substantially similar State-level regulatory 
+regime. Notwithstanding the above, Treasury, on behalf of the 
+Committee, has engaged in efforts to consult with affected State 
+government officials and associations in the process of developing this 
+rule, including through the ANPRM comment process. Pursuant to the 
+requirements set forth in section 8(a) of Executive Order 13132, 
+Treasury, on behalf of the Committee, certifies that it has complied 
+with the requirements of Executive Order 13132.
+
+List of Subjects in 12 CFR Part 1522
+
+    Banks, banking, Consumer protection, Digital assets, Non-bank 
+entity, Payment stablecoins, Permitted payment stablecoin issuer, State 
+and local governments, State qualified payment stablecoin issuer.
+
+Authority and Issuance
+
+0
+For the reasons stated in the preamble, the Department of the Treasury, 
+on behalf of the Stablecoin Certification Review Committee, amends 12 
+CFR chapter XV by adding subchapter C, consisting of parts 1520 through 
+1522, to read as follows:
+
+Subchapter C--Regulation of Payment Stablecoins
+
+PART 1520--[RESERVED]
+
+PART 1521--[RESERVED]
+
+PART 1522--STABLECOIN CERTIFICATION REVIEW COMMITTEE
+
+Subpart A--General Provisions
+Sec.
+1522.1 Scope and applicability.
+1522.2 Definitions.
+1522.3 Severability.
+1522.4 Reservation of authority.
+1522.5-1522.9 [Reserved]
+Subpart B--State Certifications
+1522.10 Certification forms and procedures.
+1522.11-1522.19 [Reserved]
+Appendix A to Part 1522--Attestation for an Initial Certification 
+Under Section 4(c) of the GENIUS Act
+Appendix B to Part 1522--Attestation for an Annual Recertification 
+Under Section 4(c) of the GENIUS Act
+
+    Authority:  12 U.S.C. 5901 et seq.
+
+Subpart A--General Provisions
+
+
+Sec.  1522.1   Scope and applicability.
+
+    (a) Authority and purpose. This part is issued to implement certain 
+responsibilities of the Stablecoin Certification Review Committee under 
+the Guiding and Establishing National Innovation for U.S. Stablecoins 
+Act (GENIUS Act) (12 U.S.C. 5901 et seq.). The regulations in this part 
+are of the Committee, published by the agency of its Chair, the 
+Department of the Treasury, at the direction of the Committee.
+    (b) Subpart B. Subpart B of this part sets forth procedures related 
+to the submission to the Committee and the Committee's review of State 
+payment stablecoin regulators' ``substantial similarity'' 
+certifications and recertifications under section 4(c) of the GENIUS 
+Act (12 U.S.C. 5903(c)). Appendices A and B to this part contain forms 
+for the initial and annual certifications required under section 4(c) 
+of the Act (12 U.S.C. 5903(c)).
+
+
+Sec.  1522.2   Definitions.
+
+    (a) To the extent not otherwise defined in this part, the terms 
+used in this part have the same meaning given to them as in section 2 
+of the GENIUS Act (12 U.S.C. 5901).
+    (b) For purposes of this part, the following definitions apply:
+    (1) Act or GENIUS Act means the Guiding and Establishing National 
+Innovation for U.S. Stablecoins Act (12 U.S.C. 5901 et seq.).
+    (2) Material change means any legislative, regulatory, supervisory, 
+judicial, or other similar change in the relevant State that, either 
+individually or together with other such changes, has, causes, or could 
+reasonably be expected to have or cause a material effect on the State-
+level regulatory regime. Material changes may include, but are not 
+limited to, changes affecting the scope of a State payment stablecoin 
+regulator's regulatory or supervisory authority, including examination 
+or reporting authorities; enforcement powers; prudential standards, 
+including those relating to reserves, redemption, liquidity, capital, 
+governance, or risk management; and the scope of entities or activities 
+subject to State payment stablecoin regulation or supervision.
+    (3) Significant change in circumstances means a change in 
+circumstances, including, but not limited to, a change in Federal 
+statutes, regulations, interpretations, or orders; market conditions; 
+issuer behavior; or risk-related developments, that, either 
+individually or together with other such changes, significantly affects 
+the operation, effectiveness, or supervisory outcomes of a State-level 
+regulatory regime or causes the State-level regulatory regime and the 
+Federal regulatory framework to significantly diverge; provided, that a 
+material change itself is not a significant change in circumstances.
+    (4) Stablecoin Certification Review Committee or Committee means 
+the Stablecoin Certification Review Committee as defined in section 
+2(27) of the GENIUS Act (12 U.S.C. 5901(27)).
+    (5) State has the meaning set forth in section 2(28) of the GENIUS 
+Act (12 U.S.C. 5901(28)).
+    (6) State payment stablecoin regulator has the meaning set forth in 
+section 2(30) of the GENIUS Act (12 U.S.C. 5901(30)).
+    (7) State-level regulatory regime, with respect to a particular 
+State, means:
+    (i) All statutes enacted by the State regarding payment 
+stablecoins;
+    (ii) Any regulations regarding payment stablecoins or that apply to 
+a State qualified payment stablecoin issuer issued by a State payment
+
+[[Page 61701]]
+
+stablecoin regulator of the State or another regulator of the State; 
+and
+    (iii) Any interpretations or guidance thereunder, only to the 
+extent they are enforceable against State qualified payment stablecoin 
+issuers.
+    (8) State qualified payment stablecoin issuer has the meaning set 
+forth in section 2(31) of the GENIUS Act (12 U.S.C. 5901(31)).
+
+
+Sec.  1522.3   Severability.
+
+    The provisions of this part are separate and severable from one 
+another. If any provision, clause or phrase of this part, or the 
+application thereof to any person, entity or circumstance, is stayed or 
+determined to be invalid, unlawful, or unenforceable by a court of 
+competent jurisdiction, such determination shall not affect the 
+validity, lawfulness, or enforceability of the remaining provisions or 
+applications of this part, which shall remain in full force and effect 
+to the maximum extent permitted by law.
+
+
+Sec.  1522.4   Reservation of authority.
+
+    The Committee may, to the extent consistent with the GENIUS Act, 
+waive any of the procedures in this part in exceptional circumstances.
+
+
+Sec. Sec.  1522.5-1522.9   [Reserved]
+
+Subpart B--State Certifications
+
+
+Sec.  1522.10  Certification forms and procedures.
+
+    (a) Certifications requiring approval of Stablecoin Certification 
+Review Committee. An initial certification or an annual recertification 
+under section 4(c)(4) of the GENIUS Act (12 U.S.C. 5903(c)(4)), 
+including all supporting information, must be submitted to the 
+Committee in the form and containing the information set out in this 
+part. Each certification, including all supporting information, must be 
+submitted electronically to the email address specified from time to 
+time on <a href="http://www.Treasury.gov">www.Treasury.gov</a>.
+    (b) Initial certification. An initial certification must contain--
+    (1) An attestation in the form of appendix A to this part signed by 
+an authorized representative of the State payment stablecoin regulator 
+attesting that the State-level regulatory regime of its State meets the 
+criteria for substantial similarity set forth in the principles for 
+substantial similarity established by the Department of the Treasury 
+pursuant to section 4(c) of the Act;
+    (2) A detailed narrative describing how the State-level regulatory 
+regime meets each of the criteria for substantial similarity set forth 
+in the principles for substantial similarity established by the 
+Department of the Treasury pursuant to section 4(c) of the Act;
+    (3) Any supporting information and documentation, including, but 
+not limited to, citations to relevant statutes, regulations, and 
+guidance applicable to payment stablecoin issuers, and where necessary, 
+copies of such statutes, regulations, and guidance. For each guidance 
+document that is submitted, the corresponding section of the narrative 
+under paragraph (b)(2) of this section must include a discussion of 
+whether the guidance is binding on State qualified payment stablecoin 
+issuers; and
+    (4) Such information as the Committee may deem necessary for it to 
+render a decision on whether the State-level regulatory regime 
+satisfies the criteria for approval in section 4(c) of the GENIUS Act 
+(12 U.S.C. 5903(c)).
+    (c) Annual recertification. (1) Each annual recertification shall 
+be submitted to the Committee during the calendar quarter in which the 
+anniversary of the Committee's approval of the State payment stablecoin 
+regulator's initial certification occurs (for example, if the initial 
+certification was approved in February, the annual recertification must 
+be submitted between January 1 and March 31 of each subsequent year).
+    (2) A recertification must contain--
+    (i) An attestation in the form of appendix B to this part signed by 
+an authorized representative of the State payment stablecoin regulator 
+that confirms the accuracy of the initial certification;
+    (ii) A detailed narrative describing each change to the State-level 
+regulatory regime since the prior certification that could potentially 
+be considered to be a material change, excluding changes that are 
+purely nonsubstantive in form or procedure; whether, in the opinion of 
+the State payment stablecoin regulator, such change is a material 
+change; and whether, in the opinion of the State payment stablecoin 
+regulator, the change will not promote the safe and sound operation of 
+State qualified payment stablecoin issuers under its supervision;
+    (iii) A detailed narrative describing:
+    (A) Each change in circumstances that could potentially be 
+considered to be a significant change in circumstances;
+    (B) Whether, in the opinion of the State payment stablecoin 
+regulator, such change is a significant change in circumstances; and
+    (C) Whether, in the opinion of the State payment stablecoin 
+regulator, the change will not promote the safe and sound operation of 
+State qualified payment stablecoin issuers under its supervision;
+    (iv) Any supporting information and documentation, including, but 
+not limited to, citations to relevant statutes, regulations, and 
+guidance applicable to payment stablecoin issuers, and where necessary, 
+copies of such statutes, regulations, and guidance. For each guidance 
+document that is submitted, the corresponding section of the narrative 
+under paragraph (c)(2)(ii) or (iii) of this section, as applicable, 
+must include a discussion of whether the guidance is binding on State 
+qualified payment stablecoin issuers; and
+    (v) Such information as the Committee may deem necessary for it to 
+render a decision on whether the State-level regulatory regime 
+satisfies the criteria for approval in section 4(c) of the GENIUS Act 
+(12 U.S.C. 5903(c)).
+    (3) Failure of a State payment stablecoin regulator to submit an 
+annual recertification under this section in a timely manner shall be 
+deemed to constitute a suspension of the certification approval.
+    (d) Submission of initial certifications and recertifications--(1) 
+Submission. For purposes of this section:
+    (i) An initial certification has not been submitted until all 
+materials required under paragraph (b) of this section have been 
+submitted.
+    (ii) A recertification has not been submitted until all materials 
+required under paragraph (c)(2) of this section have been submitted.
+    (2) Rule of construction. Neither an initial certification nor an 
+annual recertification shall be deemed to have been submitted within 
+the meaning of paragraph (d)(1) of this section if the State payment 
+stablecoin regulator has omitted any information necessary for the 
+Committee to evaluate whether the State-level regulatory regime 
+satisfies the criteria for approval in section 4(c) of the GENIUS Act 
+(12 U.S.C. 5903(c)).
+    (3) Additional information. The Committee may request, at any time, 
+additional information as it deems necessary, in its sole discretion, 
+to complete its review under section 4(c) of the Act (12 U.S.C. 
+5903(c)).
+    (4) Notification of submission. The Committee will notify a State 
+payment stablecoin regulator when the Committee determines that such 
+regulator has submitted an initial certification or recertification.
+    (e) Committee determinations--(1) Timing of decision. Not later 
+than 30 days after the date on which a State payment stablecoin 
+regulator submits an initial certification or recertification in 
+accordance with this section, the
+
+[[Page 61702]]
+
+Committee will approve or deny such certification.
+    (2) Determinations on initial certifications. The Committee shall 
+approve an initial certification submitted under paragraph (b) of this 
+section if the Committee unanimously determines that the State-level 
+regulatory regime meets or exceeds the standards and requirements 
+described in section 4(a) of the GENIUS Act (12 U.S.C. 5903(a)).
+    (3) Determinations on recertifications. The Committee shall only 
+deny an annual recertification submitted under paragraph (c) of this 
+section if the Committee determines that:
+    (i) There has been a material change in the State-level regulatory 
+regime or a significant change in circumstances since the prior 
+certification; and
+    (ii) The material change or significant change in circumstances 
+identified is such that the State-level regulatory regime will not 
+promote the safe and sound operation of State qualified payment 
+stablecoin issuers under its supervision.
+    (4) Expedited review. With respect to any State that, within 180 
+days of the date of enactment of the GENIUS Act, had in effect a 
+prudential regulatory regime (including regulations and guidance) for 
+the supervision of digital assets or payment stablecoins, the Committee 
+will endeavor to process initial certifications on an expedited 
+timeline after the effective date of the GENIUS Act.
+    (f) Opportunity to cure and appeal. (1) If the Committee denies an 
+initial certification or an annual recertification, it will provide the 
+State payment stablecoin regulator with a written explanation of the 
+denial, describing the reasoned basis for the denial with sufficient 
+detail to enable the State to make any changes necessary for the State-
+level regulatory regime to meet or exceed the standards and 
+requirements described in section 4(a) of the GENIUS Act.
+    (2) With respect to a denial described in paragraph (f)(1) of this 
+section, the Committee shall provide the State payment stablecoin 
+regulator with not less than 180 days from the date on which the State 
+payment stablecoin regulator is notified of such denial to--
+    (i) Make such changes as may be necessary to ensure the State-level 
+regulatory regime meets or exceeds the standards described in section 
+4(a) of the GENIUS Act; and
+    (ii) Resubmit the initial certification or recertification.
+    (3) If a denial described under paragraph (f)(1) of this section is 
+based on a change resulting from an Act of Congress or a change in a 
+relevant Federal regulation, interpretation, or order in accordance 
+with the principles for substantial similarity established by the 
+Department of the Treasury pursuant to section 4(c) of the Act, the 
+period provided under paragraph (f)(2) of this section shall be the 
+later of:
+    (i) 180 days from the date on which the State payment stablecoin 
+regulator is notified of such denial; or
+    (ii) 2 years from either the date of enactment of the Act of 
+Congress or from the date of publication of such Federal regulation, 
+interpretation, or order.
+    (4) If, after a State payment stablecoin regulator resubmits an 
+initial certification or annual recertification under paragraph 
+(f)(2)(ii) of this section, the Committee again denies the initial 
+certification or annual recertification, the Committee shall, not later 
+than 30 days after such denial, provide the State payment stablecoin 
+regulator with a written explanation for the denial.
+    (5) A State payment stablecoin regulator in receipt of a denial 
+under paragraph (f)(4) of this section may appeal the denial to the 
+United States Court of Appeals for the District of Columbia Circuit.
+    (6) A State payment stablecoin regulator in receipt of a denial 
+under this paragraph (f) may resubmit a new certification under this 
+part.
+
+
+Sec. Sec.  1522.11-1522.19  [Reserved]
+
+Appendix A to Part 1522--Attestation for an Initial Certification Under 
+Section 4(c) of the GENIUS Act
+
+    Attestation for an Initial Certification Under Section 4(c) of 
+the GENIUS Act
+State: ___
+Name of State payment stablecoin regulator: ___
+Date of attestation: ___
+[States may include a brief introduction here]
+    Reference table of requirements, narrative, and supporting 
+information:
+
+----------------------------------------------------------------------------------------------------------------
+                                                                             Corresponding       Corresponding
+      GENIUS Act section                         Topic                        section of          supporting
+                                                                               narrative          information
+----------------------------------------------------------------------------------------------------------------
+4(a)(1)(A), except as noted    Reserve assets...........................  [Section X].......  [Exhibit A].
+ below.
+4(a)(1)(A)(vii)..............  Additional reserve assets................
+4(a)(1)(B), except as noted    Redemption...............................
+ below.
+4(a)(1)(B)(i)................  Discretionary limitations on timely
+                                redemptions.
+4(a)(1)(C)...................  Monthly publication of reserves..........
+4(a)(2), except as noted       Prohibition on rehypothecation of
+ below.                         reserves.
+4(a)(2)(C)(ii)...............  Approval for rehypothecation of reserves.
+4(a)(3)(A), (C)..............  Independent accountant examination of
+                                reports.
+4(a)(3)(B)...................  Monthly CEO/CFO certification of accuracy
+                                of reserve report.
+4(a)(4)......................  Capital, liquidity, reserve asset
+                                diversification, and risk-management
+                                standards.
+4(a)(5)......................  Bank Secrecy Act/sanctions compliance
+                                program requirements.
+4(a)(6)(B)...................  Technological capability to comply with,
+                                and obligation to comply with, terms of
+                                lawful orders.
+4(a)(7)(A)...................  Limitation on permitted payment
+                                stablecoin activities.
+4(a)(7)(B)...................  Additional permitted payment stablecoin
+                                activities.
+4(a)(8)......................  Prohibition on tying.....................
+4(a)(9)......................  Prohibition on deceptive names...........
+4(a)(10).....................  Audits and reports.......................
+4(a)(11).....................  Prohibition on paying interest/yield on
+                                stablecoins.
+4(a)(12).....................  Limits on non-financial public companies
+                                (and certain foreign companies) issuing
+                                stablecoins.
+4(d).........................  Transition to Federal oversight..........
+5............................  Application and approval.................
+6............................  Supervision and enforcement..............
+10...........................  Custody..................................
+11...........................  Insolvency...............................
+----------------------------------------------------------------------------------------------------------------
+
+
+[[Page 61703]]
+
+    Primary contacts: [Names, titles, email addresses, and phone 
+numbers of at least two authorized officials of the State payment 
+stablecoin regulator]
+    Certification:
+    The undersigned hereby certifies and attests that:
+    1. The information contained in and attached to this attestation 
+form is true and correct to the best of the undersigned's knowledge;
+    2. The State-level regulatory regime for the State named above 
+meets each of the principles for substantial similarity established 
+by the Department of the Treasury pursuant to section 4(c) of the 
+Act (as codified at 12 CFR part 1521), including that it:
+    a. ___ meets or exceeds the standards and requirements under 
+section 4(a) of the Act in accordance with Treasury's principles;
+    b. ___ provides for transition to Federal oversight in 
+accordance with Treasury's principles;
+    c. ___ provides for application and licensing in accordance with 
+Treasury's principles;
+    d. ___ provides for supervision and enforcement in accordance 
+with Treasury's principles;
+    e. ___ provides for custody in accordance with Treasury's 
+principles;
+    f. ___ provides for the event of insolvency in accordance with 
+Treasury's principles; and
+    g. ___ provides additional State requirements only to the extent 
+permitted by Treasury's principles; and
+    3. The undersigned has the authority to submit this attestation 
+and make the representations herein on behalf of the State payment 
+stablecoin regulator named above.
+    ___ The above certifications and attestations are conditional on 
+additional actions that are described in the attached narrative, and 
+the State payment stablecoin regulator intends to amend this 
+attestation once those actions are completed. The undersigned 
+acknowledges on behalf of the State payment stablecoin regulator 
+that the Committee will not process this conditional attestation 
+unless and until an amended attestation has been submitted in 
+accordance with 12 CFR 1522.10.
+    ___ The undersigned believes that the State listed above 
+qualifies for expedited processing under 12 CFR 1522.10(e) and has 
+included an associated statement in the attached narrative and 
+attached any supporting documentation, as appropriate.
+
+[Signature, Name, Title]
+
+Attached:
+
+[Narrative]
+
+[Exhibits]
+
+Appendix B to Part 1522--Attestation for an Annual Recertification 
+Under Section 4(c) of the GENIUS Act
+
+Attestation for an Annual Recertification Under Section 4(c) of the 
+GENIUS Act
+
+State: ___
+
+Name of State payment stablecoin regulator: ___
+
+Date of attestation: ___
+
+    [States may include a brief introduction here]
+    Reference table of changes:
+    [List each change to the State-level regulatory regime or any 
+known significant changes in circumstances in its own row and attach 
+relevant documentation and additional narrative descriptions]
+
+----------------------------------------------------------------------------------------------------------------
+                                         Brief description of    Corresponding  section       Corresponding
+          GENIUS Act section                    change                of narrative        supporting information
+----------------------------------------------------------------------------------------------------------------
+[4(a)(1)(A)].........................  [State regulation        [Section X]............  [Exhibit A].
+                                        relating to reserve
+                                        assets was revised].
+----------------------------------------------------------------------------------------------------------------
+
+    Primary contacts: [Names, titles, email addresses, and phone 
+numbers of at least two authorized officials of the State payment 
+stablecoin regulator]
+    Certification: The undersigned hereby certifies and attests 
+that:
+    1. The information contained in and attached to this attestation 
+form is true and correct to the best of the undersigned's knowledge;
+    2. [The State payment stablecoin regulator] believes that the 
+State-level regulatory regime for [State]:
+    a. __ has not materially changed and there have been no known 
+significant changes in circumstances; or
+    b. __ has materially changed or there have been significant 
+changes in circumstances.
+    3. [State payment stablecoin regulator] confirms the continuing 
+accuracy of the initial certification submitted on __; and
+    4. The undersigned has the authority to submit this attestation 
+and make representations on behalf of [State payment stablecoin 
+regulator].
+
+[Signature, Name, Title]
+
+Attached:
+
+[Narrative]
+
+[Exhibits]
+
+Rachel Miller,
+Executive Secretary.
+[FR Doc. 2026-19966 Filed 9-29-26; 8:45 am]
+BILLING CODE 4810-AK-P
+
+
+</pre><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

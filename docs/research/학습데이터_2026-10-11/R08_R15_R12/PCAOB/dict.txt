@@ -1,0 +1,151 @@
+This document contains a list of the data elements that are available to visitors using the
+"Download the entire data set" link on the AuditorSearch website. The file available at
+this link contains data that was filed by registered accounting firms in Form AP. The file is
+updated daily.
+
+The downloadable file is written in CSV (comma separated values) format. Fields that
+contain commas or other reserved characters are delimited by quotation marks. Certain
+fields which contain the content of repeating elements from Form AP are provided in
+field/value pairs using the JSON (JavaScript Object Notation) format.
+
+Dates and times are provided based on the U.S. Eastern time zone.
+
+The data reference tab contains a list of the data elements that are included in the
+downloadable data set. The data elements are listed in the order that they appear in
+Form AP. The column labelled "CSV Column #" indicates the order in which the data
+elements appear in the CSV file. The column labelled "Excel Column" indicates the order
+in which the data elements typically appear when the file is opened in Microsoft Excel.
+
+Additional information about Form AP can be found on the Form AP resource page
+(https://pcaobus.org/Pages/form-ap-reporting-certain-audit-participants.aspx) and in the
+Staff Guidance— Form AP, Auditor Reporting of Certain Audit Participants and Related
+Voluntary Audit Report Disclosure Under AS 3101, Reports on Audited Financial
+Statement.
+CSV Column # Excel Column Column Name                               JSON Column Name   Form AP Item Form AP Item Description                                                                           Notes
+                                                                                       Identifier
+     1            A      Form Filing ID                                                N/A                                                                                                             System generated identifier of this filed Form AP
+     2            B      Latest Form AP Filing                                         N/A                                                                                                             Indicate whether this filing is the most current one if the original filing has been amended
+     3            C      Firm ID                                                       N/A                                                                                                             PCAOB assigned Firm ID of the filing firm
+     6            F      Firm Country                                                  N/A                                                                                                             Country of the filing firm's headquarters location
+    18            R      Issuer ID                                                     N/A                                                                                                             System generated issuer identifier
+    21           U       Issuer Ticker                                                 N/A                                                                                                             Ticker symbol associated with the CIK number reported in this form
+    60           BH      Original Firm Form ID                                         N/A                                                                                                             If this form is an amendment, this field contains the Form ID of the original form
+    61           BI      Amends Firm Form ID                                           N/A                                                                                                             If this form is an amendment, this field contains the Form ID of the form amended by this form (may
+                                                                                                                                                                                                       be different from the "Original Firm Form ID" if the form has been amended more than once)
+
+    62           BJ      Filing Date                                                   N/A                                                                                                             Date and time that this form was filed
+                         Part I - Identity of the Firm
+     4           D       Firm Name                                                     1.1.a         Firm legal name
+     5           E       Firm Other Name                                               1.1.b         If different than its legal name, state the name under which the Firm issued this audit
+                                                                                                     report .
+                         Part II - Amendments
+     7           G       Amendment Previous Filing                                     2.1.a         Indicate, by checking the box corresponding to this item, that this is an amendment.
+     8           H       Amendment Firm Identification                                 2.1.b         Part I - Identity of the Firm
+     9           I       Amendment Audit Report                                        2.1.b         Item 3.1, Audit Report
+    10           J       Amendment Other Firms                                         2.1.b         Item 3.2, Other Accounting Firms
+    11           K       Amendment Divided Responsibility                              2.1.b         Item 3.3, Divided Responsibility
+    12           L       Amendment Participants > 5%                                   2.1.b         Item 4.1, Other Accounting Firm (s) Individually 5% or Greater of Total Audit Hours
+    13           M       Amendment Participants < 5%                                   2.1.b         Item 4.2, Other Accounting Firm (s) Individually Less Than 5% of Total Audit Hours
+    14           N       Amendment Audit Divided                                       2.1.b         Part V, Responsibility for the Audit is Divided
+    15           O       Amendment Certified Firm                                      2.1.b         Part VI, Certification of the Firm
+    16           P       Amendment Certified Firm Info                                 2.1.b         If you check this box, use the text field below to describe the error or omission in Part VI as
+                                                                                                     previously filed and to supply the information as it should have been provided in the
+                                                                                                     previous submission. Use Part VI of this amended form only to certify the amended form,
+                                                                                                     not to supply corrections to the previous form.
+                         Part III - Audit Client and Audit Report
+     17          Q       Audit Report Type                                             3.1.a.1       Type of audit client
+     19          S       Issuer Name                                                   3.1.a.3       The name of the issuer whose financial statements were audited
+     20          T       Issuer CIK                                                    3.1.a.2a      Central Index Key (CIK) number, if any
+     22          V       Issuer CIK None                                               3.1.a.2a      Check here, if none
+     23          W       Audit Fund Series                                             3.1.a.2b      Fund Series Identifier and Fund Name, if any                                                 This column contains data in JSON format.
+ 23 - JSON       W                                                  FundSeriesID                     Series Identifier                                                                            This item is one of several JSON data elements contained in a single column of the CSV data.
+ 23 - JSON       W                                                  FundName                         Fund Name                                                                                    This item is one of several JSON data elements contained in a single column of the CSV data.
+     24          X       Audit Report Date                                             3.1.a.4       Date of the audit report (mm/dd/yyyy)
+     25          Y       Fiscal Period End Date                                        3.1.a.5       The end date of the most recent period's financial statements identified in the audit report
+                                                                                                     (mm/dd/yyyy)
+    26            Z      Engagement Partner Last Name                                  3.1.a.6       Family name (last name)
+    27           AA      Engagement Partner First Name                                 3.1.a.6       Given name (first name)
+    28           AB      Engagement Partner Middle Name                                3.1.a.6       Middle name
+    29           AC      Engagement Partner Suffix                                     3.1.a.6       Suffix
+    30           AD      Engagement Partner ID                                         3.1.a.6       Partner ID
+    31           AE      Engagement Partner Other Ids                                  3.1.a.6       Previously reported Partner ID(s)
+    32           AF      Firm Issuing Country                                          3.1.a.7       Country of the Firm Office Issuing the Audit Report
+CSV Column # Excel Column Column Name                                            JSON Column Name   Form AP Item Form AP Item Description                                                                            Notes
+                                                                                                    Identifier
+    33           AG      Firm Issuing City                                                          3.1.a.7      City of the Firm Office Issuing the Audit Report
+    34           AH      Firm Issuing State                                                         3.1.a.7        State of the Firm Office Issuing the Audit Report
+    35           AI      Is Multiple Audit Period                                                   3.1.b          Indicate, by checking the box corresponding to this item, if the most recent period and one
+                                                                                                                   or more other periods presented in the financial statements identified in Item 3.1.a.5 were
+                                                                                                                   audited during a single audit engagement.
+    36           AJ      Audit Period Information                                                   3.1.c          In the event of an affirmative response to Item 3.1.b, indicate the periods audited during
+                                                                                                                   the single audit engagement for which the individual named in Item 3.1.a.6 served as
+                                                                                                                   engagement partner (for example, as of December 31, 20XX and 20X1 and for the two years
+                                                                                                                   ended December 31, 20XX).
+    37           AK      Dual Dated                                                                 3.1.d          Indicate, by checking the box corresponding to this item, If the audit report was dual-dated
+                                                                                                                   pursuant to AS 3110, Dating of the Independent Auditor's Report.
+    38           AL      Audit Dual Date                                                            3.1.e          In the event of an affirmative response to Item 3.1.d, indicate the date of the dual-date
+                                                                                                                   information and if different from the engagement partner named in Item 3.1.a.6,
+                                                                                                                   information of the engagement partner who audited the information within the financial
+                                                                                                                   statements to which the dual-dated opinion applies in the same detail as required by Item
+                                                                                                                   3.1.a.6.
+    39           AM      Secondary Engagement Partner Last Name                                     3.1.e          Family name (last name)
+    40           AN      Secondary Engagement Partner First Name                                    3.1.e          Given name (first name)
+    41           AO      Secondary Engagement Partner Middle Name                                   3.1.e          Middle name
+    42           AP      Secondary Engagement Partner Suffix                                        3.1.e          Suffix
+    43           AQ      Secondary Engagement Partner ID                                            3.1.e          Partner ID
+    44           AR      Secondary Engagement Partner Other Ids                                     3.1.e          Previously reported Partner ID(s)
+    45           AS      Is Audit Not Divided                                                       3.2.0          Indicate, by checking the box corresponding to this item, if one of more other accounting
+                                                                                                                   firms participated in the Firm's audit . If this item is checked, complete Part IV. By checking
+                                                                                                                   this box, the Firm is stating that it is responsible for the audit s or audit procedures
+                                                                                                                   performed by the other accounting firms identified in Part IV and has supervised or
+                                                                                                                   performed procedures to assume responsibility for their work in accordance with PCAOB
+                                                                                                                   standards.
+    46           AT      Is Audit Divided                                                           3.3.0          Indicate, by checking the box corresponding to this item, if the Firm divided responsibility
+                                                                                                                   for the audit in accordance with AS 1205, Part of the Audit Performed by Other
+                                                                                                                   Independent Auditors, with one or more other public accounting firm(s). If this item is
+                                                                                                                   checked, complete Part V.
+                         Part IV - Responsibility for the Audit is Not Divided
+     47          AU      Use Range                                                                  4.0            Indicate, by checking the box, if extent of participation will be presented within ranges
+     48          AV      Audit Not Divided Percent Information                                      4.1            OTHER ACCOUNTING FIRM (S) INDIVIDUALLY 5% OR GREATER OF TOTAL AUDIT HOURS                         This column contains data in JSON format.
+ 48 - JSON       AV                                                              FirmID                            Firm ID                                                                                           This item is one of several JSON data elements contained in a single column of the CSV data.
+ 48 - JSON       AV                                                              isNoFirmID                        Check here, if no Firm ID is available                                                            This item is one of several JSON data elements contained in a single column of the CSV data.
+ 48 - JSON       AV                                                              FirmName                          Legal name                                                                                        This item is one of several JSON data elements contained in a single column of the CSV data.
+ 48 - JSON       AV                                                              FirmStatus                        Firm Status                                                                                       This item is one of several JSON data elements contained in a single column of the CSV data.
+ 48 - JSON       AV                                                              Country                           Country of headquarters' office location                                                          This item is one of several JSON data elements contained in a single column of the CSV data.
+ 48 - JSON       AV                                                              City                              City of headquarters' office location                                                             This item is one of several JSON data elements contained in a single column of the CSV data.
+ 48 - JSON       AV                                                              State                             State of headquarters' office location                                                            This item is one of several JSON data elements contained in a single column of the CSV data.
+ 48 - JSON       AV                                                              Percentage                        Percentage of participation                                                                       This item is one of several JSON data elements contained in a single column of the CSV data.
+ 48 - JSON       AV                                                              Range                             Percentage range of participation                                                                 This item is one of several JSON data elements contained in a single column of the CSV data.
+     49          AW      Number of Participants                                                     4.2.a          State the number of participants of other accounting firm (s) individually representing less
+                                                                                                                   than 5% of total audit hours
+    50           AX      Participant Percentage                                                     4.2.b          Aggregate percentage of participation
+    51           AY      Participant Range                                                          4.2.b          Aggregate percentage range of participation
+CSV Column # Excel Column Column Name                                       JSON Column Name   Form AP Item Form AP Item Description                                                                        Notes
+                                                                                               Identifier
+                         Part V - Responsibility for the Audit is Divided
+    52           AZ      Audit Divided Information                                             5.1.a         Provide the following information concerning each other public accounting firm the Firm        This column contains data in JSON format.
+                                                                                                             divided responsibility with in the audit
+ 52 - JSON       AZ                                                         FirmID                           Firm ID                                                                                        This item is one of several JSON data elements contained in a single column of the CSV data.
+ 52 - JSON       AZ                                                         isNoFirmID                       Check here, if no Firm ID is available                                                         This item is one of several JSON data elements contained in a single column of the CSV data.
+ 52 - JSON       AZ                                                         AuditorName                      Legal name of the other public accounting firm                                                 This item is one of several JSON data elements contained in a single column of the CSV data.
+ 52 - JSON       AZ                                                         FirmStatus                       Firm Status                                                                                    This item is one of several JSON data elements contained in a single column of the CSV data.
+ 52 - JSON       AZ                                                         Country                          Country of the office of the other public accounting firm that issued the other audit report   This item is one of several JSON data elements contained in a single column of the CSV data.
+ 52 - JSON       AZ                                                         City                             City of the office of the other public accounting firm that issued the other audit report      This item is one of several JSON data elements contained in a single column of the CSV data.
+ 52 - JSON       AZ                                                         State                            State of the office of the other public accounting firm that issued the other audit report     This item is one of several JSON data elements contained in a single column of the CSV data.
+ 52 - JSON       AZ                                                         Criterion                        Criterion used to describe the magnitude of the portion of the financial statements audited    This item is one of several JSON data elements contained in a single column of the CSV data.
+                                                                                                             by the other public accounting firm
+ 52 - JSON       AZ                                                         OtherCriterion                   Other Criterion, if applicable, used to describe the magnitude of the portion of the financial This item is one of several JSON data elements contained in a single column of the CSV data.
+                                                                                                             statements audited by the other public accounting firm
+ 52 - JSON       AZ                                                         DollarAmount                     Dollar Amount of the magnitude of the portion of the financial statements audited by the       This item is one of several JSON data elements contained in a single column of the CSV data.
+                                                                                                             other public accounting firm
+ 52 - JSON       AZ                                                         Percentage                       Percentage of the magnitude of the portion of the financial statements audited by the other This item is one of several JSON data elements contained in a single column of the CSV data.
+                                                                                                             public accounting firm
+                         Part VI - Certification of the Firm
+    53           BA      Signed Last Name                                                      6.1           Family name (last name) of signatory of the Form AP
+    54           BB      Signed First Name                                                     6.1           Given name (first name) of signatory of the Form AP
+    55           BC      Signed Date                                                           6.1           Date of Typed and Manual Signatures (mm/dd/yyyy)
+    56           BD      Signed Business Title                                                 6.1           Business Title of signatory of the Form AP
+    57           BE      Signed Capacity                                                       6.1           Capacity in which signed
+    58           BF      Signed Phone Number                                                   6.1           Business telephone number (incl. country and area codes)
+    59           BG      Signed Email Address                                                  6.1           Business e-mail address
+

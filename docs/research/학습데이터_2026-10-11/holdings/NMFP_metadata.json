@@ -1,0 +1,2854 @@
+{
+	"@context": "http://www.w3.org/ns/csvw",
+	"dialect": {
+		"header": true,
+		"headerRowCount": 1,
+		"delimiter": "\t"
+	},
+	"tables": [{
+			"url": "SUBMISSION.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": "ACCESSION_NUMBER",
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "FILING_DATE",
+						"titles": "FILING DATE",
+						"required": "true",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Filing date"
+					},
+					{
+						"name": "SUBMISSIONTYPE",
+						"titles": "SUBMISSION TYPE",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 20
+						},
+						"dc:description": "Submission type"
+					},
+					{
+						"name": "CIK",
+						"titles": "CIK",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Central Index Key (CIK) is assigned by the SEC to each entity that submits filing"
+					},
+					{
+						"name": "REPORTDATE",
+						"titles": "REPORT DATE",
+						"required": "true",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Date of report"
+					},
+                    {
+						"name": "REGISTRANTFULLNAME",
+						"titles": "REGISTRANT FULL NAME",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+                            "maxLength": 150
+						},
+						"dc:description": "Name of Registrant"
+					},
+					{
+						"name": "FILER_CIK",
+						"titles": "FILER CIK",
+                        "required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "CIK Number of Registrant"
+					},
+					{
+						"name": "REGISTRANTLEIID",
+						"titles": "REGISTRANT LEI ID",
+						"datatype": {
+							"base": "string",
+							"maxLength": 20
+						},
+						"dc:description": "LEI of Registrant"
+					},
+					{
+						"name": "SERIES_NAME",
+						"titles": "SERIES NAME",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Name of Series from EDGAR."
+					},
+                    {
+						"name": "NAMEOFSERIES",
+						"titles": "NAME OF SERIES",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Name of series as provided in XML submissions. Not available in legacy forms."
+					},
+                    {
+						"name": "LEIOFSERIES",
+						"titles": "LEI OF SERIESS",
+						"datatype": {
+							"base": "string",
+							"maxLength": 20
+						},
+						"dc:description": "Name of series as provided in XML submissions. Not available in legacy forms."
+					},
+                    {
+						"name": "SERIESID",
+						"titles": "SERIES ID",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "EDGAR Series Identifier"
+					},
+					{
+						"name": "TOTALSHARECLASSESINSERIES",
+						"titles": "TOTAL SHARE CLASSES IN SERIES",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 38
+						},
+						"dc:description": "Total number of share classes in the series"
+					},
+					{
+						"name": "FINALFILINGFLAG",
+						"titles": "FINAL FILING FLAG",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to identify if it is the fund's final filing on Form NMFP."
+					},
+					{
+						"name": "FUNDLIQUIDATINGFLAG",
+						"titles": "FUND LIQUIDATING FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to identify if the fund is liquidating."
+					},
+					{
+						"name": "FUNDMRGORACQRDBYOTHRFLAG",
+						"titles": "FUND ACQUIRED OR MERGED BY OTHER FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to identify if the fund is merging with, or being acquired by another fund in an N‐MFP filing."
+					},
+					{
+						"name": "FUNDACQRDORMRGDWTHANRFLAG",
+						"titles": "FUND ACQUIRED OR MERGED WITH ANOTHER FUND FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to identify if the fund has acquired or merged with another fund since the last filing in an N‐MFP filing.."
+					},
+					{
+						"name": "REGISTRANT",
+						"titles": "REGISTRANT",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Name of registrant company"
+					},
+					{
+						"name": "SIGNATUREDATE",
+						"titles": "SIGNATURE DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Date of signature"
+					},
+					{
+						"name": "SIGNATURE",
+						"titles": "SIGNATURE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Signature of officer"
+					},
+					{
+						"name": "NAMEOFSIGNINGOFFICER",
+						"titles": "NAME OF SIGNING OFFICER",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Name of signing officer"
+					},
+					{
+						"name": "TITLEOFSIGNINGOFFICER",
+						"titles": "TITLE OF SIGNING OFFICER",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Title of signing officer"
+					}
+				]
+			}
+		},
+		{
+			"url": "FUND.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "FILENUMBER", "SERIESID","FUND_TYPE"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "CIK",
+						"titles": "CIK",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Central Index Key assigned by the SEC to each entity that submits filing"
+					},
+					{
+						"name": "FILENUMBER",
+						"titles": "FILE NUMBER",
+						"datatype": {
+							"base": "string",
+							"maxLength": 17
+						},
+						"dc:description": "File number assigned by the SEC"
+					},
+					{
+						"name": "SERIESID",
+						"titles": "SERIES ID",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Identifier assigned by the SEC to each series of a registrant. The format is an “S” followed by nine digits."
+					},
+					{
+						"name": "FUND_TYPE",
+						"titles": "FUND TYPE",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 18
+						},
+						"dc:description": "Identifies whether the fund has either been “ACQUIRED or MERGED” or is the “SUCCESSOR” fund"
+					}
+				]
+			}
+		},
+		{
+			"url": "SERIESLEVELINFO.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by SEC to each EDGAR submission"
+					},
+					{
+						"name": "SECURITIESACTFILENUMBER",
+						"titles": "SECURITIES ACT FILE NUMBER",
+						"datatype": {
+							"base": "string",
+							"maxLength": 17
+						},
+						"dc:description": "Securities Act file number"
+					},
+					{
+						"name": "INDPPUBACCTNAME",
+						"titles": "INDEPENDENT PUBLIC ACCOUNTANT NAME",
+						"datatype": {
+							"base": "string",
+							"maxLength": 30
+						},
+						"dc:description": "Independent public accountant name"
+					},
+					{
+						"name": "INDPPUBACCTCITY",
+						"titles": "INDEPENDENT PUBLIC ACCOUNTANT CITY",
+						"datatype": {
+							"base": "string",
+							"maxLength": 30
+						},
+						"dc:description": "Independent public accountant city"
+					},
+					{
+						"name": "INDPPUBACCTSTATECOUNTRY",
+						"titles": "INDEPENDENT PUBLIC ACCOUNTANT STATE OR COUNTRY",
+						"datatype": {
+							"base": "string",
+							"maxLength": 2
+						},
+						"dc:description": "Independent public accountant state or country code"
+					},
+					{
+						"name": "FEEDERFUNDFLAG",
+						"titles": "FEEDER FUND FLAG",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to indicate a feeder fund"
+					},					{
+						"name": "MASTERFUNDFLAG",
+						"titles": "MASTER FUND FLAG",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to indicate a master fund, a two-tiered arrangement in which one or more funds (or registered or unregistered pooled investment vehicles) holds shares of a single fund"
+					},
+					{
+						"name": "SERIESFUNDINSUCMPNYSEPACCNTFLA",
+						"titles": "SERIES FUND INSURANCE COMPANY SEPARATE ACCOUNT FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to identify if this series is primarily used to fund insurance company separate accounts"
+					},
+					{
+						"name": "MONEYMARKETFUNDCATEGORY",
+						"titles": "MONEY MARKET FUND CATEGORY",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 300
+						},
+						"dc:description": "Category of money market fund such as Government, Prime, Single State or Other Tax Exempt"
+					},
+					{
+						"name": "FUNDEXEMPTRETAILFLAG",
+						"titles": "FUND EXEMPT RETAIL FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag if fund is an exempt retail fund. Legacy from N-MFP2."
+					},
+                    {
+						"name": "FUNDRETAILMONEYMARKETFLAG",
+						"titles": "FUND RETAIL MONEY MARKET FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to indicate a Retail Money Market Fund as defined by 17 CFR 270.2a-7(a)(21)."
+					},
+                    {
+						"name": "GOVMONEYMRKTFUNDFLAG",
+						"titles": "FUND RETAIL MONEY MARKET FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to indicate a Government Money Market Fund as defined by 17 CFR.2a-7(a)(14)."
+					},
+					{
+						"name": "AVERAGEPORTFOLIOMATURITY",
+						"titles": "AVERAGE PORTFOLIO MATURITY",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 2
+						},
+						"dc:description": "Dollar-weighted average portfolio maturity"
+					},
+					{
+						"name": "AVERAGELIFEMATURITY",
+						"titles": "AVERAGE LIFE MATURITY",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 3
+						},
+						"dc:description": "Dollar-weighted average life maturity"
+					},
+					{
+						"name": "TOTDLYLIQUIDASSETFRIDAYWEEK1",
+						"titles": "TOTAL DAILY LIQUID ASSET FRIDAY WEEK 1",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of Daily Liquid Assets as of the close of business on Friday, week 1.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS.1"
+					},
+					{
+						"name": "TOTDLYLIQUIDASSETFRIDAYWEEK2",
+						"titles": "TOTAL DAILY LIQUID ASSET FRIDAY WEEK 2",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of Daily Liquid Assets as of the close of business on Friday, week 2.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "TOTDLYLIQUIDASSETFRIDAYWEEK3",
+						"titles": "TOTAL DAILY LIQUID ASSET FRIDAY WEEK 3",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of Daily Liquid Assets as of the close of business on Friday, week 3.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "TOTDLYLIQUIDASSETFRIDAYWEEK4",
+						"titles": "TOTAL DAILY LIQUID ASSET FRIDAY WEEK 4",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of Daily Liquid Assets as of the close of business on Friday, week 4.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "TOTDLYLIQUIDASSETFRIDAYWEEK5",
+						"titles": "TOTAL DAILY LIQUID ASSET FRIDAY WEEK 5",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of Daily Liquid Assets as of the close of business on Friday, week 5.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "TOTWLYLIQUIDASSETFRIDAYWEEK1",
+						"titles": "TOTAL WEEKLY LIQUID ASSET FRIDAY WEEK 1",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of Weekly Liquid Assets as of the close of business on Friday, week 1.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "TOTWLYLIQUIDASSETFRIDAYWEEK2",
+						"titles": "TOTAL WEEKLY LIQUID ASSET FRIDAY WEEK 2",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of Weekly Liquid Assets as of the close of business on Friday, week 2.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "TOTWLYLIQUIDASSETFRIDAYWEEK3",
+						"titles": "TOTAL WEEKLY LIQUID ASSET FRIDAY WEEK 3",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of Weekly Liquid Assets as of the close of business on Friday, week 3.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "TOTWLYLIQUIDASSETFRIDAYWEEK4",
+						"titles": "TOTAL WEEKLY LIQUID ASSET FRIDAY WEEK 4",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of Weekly Liquid Assets as of the close of business on Friday, week 4.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "TOTWLYLIQUIDASSETFRIDAYWEEK5",
+						"titles": "TOTAL WEEKLY LIQUID ASSET FRIDAY WEEK 5",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of Weekly Liquid Assets as of the close of business on Friday, week 5.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "PCTDLYLIQUIDASSETFRIDAYWEEK1",
+						"titles": "PERCENTAGE DAILY LIQUID ASSET ON FRIDAY WEEK 1",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percentage of Total Assets invested in Daily Liquid Assets as of the close of business on Friday, week 1.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "PCTDLYLIQUIDASSETFRIDAYWEEK2",
+						"titles": "PERCENTAGE DAILY LIQUID ASSET ON FRIDAY WEEK 2",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percentage of Total Assets invested in Daily Liquid Assets as of the close of business on Friday, week 2.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "PCTDLYLIQUIDASSETFRIDAYWEEK3",
+						"titles": "PERCENTAGE DAILY LIQUID ASSET ON FRIDAY WEEK 3",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percentage of Total Assets invested in Daily Liquid Assets as of the close of business on Friday, week 3.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "PCTDLYLIQUIDASSETFRIDAYWEEK4",
+						"titles": "PERCENTAGE DAILY LIQUID ASSET ON FRIDAY WEEK 4",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percentage of Total Assets invested in Daily Liquid Assets as of the close of business on Friday, week 4.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "PCTDLYLIQUIDASSETFRIDAYWEEK5",
+						"titles": "PERCENTAGE DAILY LIQUID ASSET ON FRIDAY WEEK 5",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percentage of Total Assets invested in Daily Liquid Assets as of the close of business on Friday, week 5.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+										{
+						"name": "PCTWKLYLIQUIDASSETFRIDAYWEEK1",
+						"titles": "PERCENTAGE WEEKLY LIQUID ASSET ON FRIDAY WEEK 1",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percentage of Total Assets invested in Weekly Liquid Assets as of the close of business on Friday, week 1.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "PCTWKLYLIQUIDASSETFRIDAYWEEK2",
+						"titles": "PERCENTAGE WEEKLY LIQUID ASSET ON FRIDAY WEEK 2",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percentage of Total Assets invested in Weekly Liquid Assets as of the close of business on Friday, week 2.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "PCTWKLYLIQUIDASSETFRIDAYWEEK3",
+						"titles": "PERCENTAGE WEEKLY LIQUID ASSET ON  FRIDAY WEEK 3",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percentage of Total Assets invested in Weekly Liquid Assets as of the close of business on Friday, week 3.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "PCTWKLYLIQUIDASSETFRIDAYWEEK4",
+						"titles": "PERCENTAGE WEEKLY LIQUID ASSET ON  FRIDAY WEEK 4",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percentage of Total Assets invested in Weekly Liquid Assets as of the close of business on Friday, week 4.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "PCTWKLYLIQUIDASSETFRIDAYWEEK5",
+						"titles": "PERCENTAGE WEEKLY LIQUID ASSET ON FRIDAY WEEK 5",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percentage of Total Assets invested in Weekly Liquid Assets as of the close of business on Friday, week 5.  Legacy from N-MFP2.  See 5.17 LIQUIDASSETDETAILS."
+					},
+					{
+						"name": "CASH",
+						"titles": "CASH",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Cash amount"
+					},
+					{
+						"name": "TOTALVALUEPORTFOLIOSECURITIES",
+						"titles": "TOTAL VALUE OF PORTFOLIO SECURITIES",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of portfolio securities"
+					},
+					{
+						"name": "AMORTIZEDCOSTPORTFOLIOSECURITI",
+						"titles": "AMORTIZED COST OF PORTFOLIO SECURITIES",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of portfolio securities, using amortized cost"
+					},
+					{
+						"name": "TOTALVALUEOTHERASSETS",
+						"titles": "TOTAL VALUE OF OTHER ASSETS",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of other assets for the fund, to the nearest cent"
+					},
+					{
+						"name": "TOTALVALUELIABILITIES",
+						"titles": "TOTAL VALUE OF LIABILITIES",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of liabilities for the fund, to the nearest cent"
+					},
+					{
+						"name": "NETASSETOFSERIES",
+						"titles": "NET ASSET OF SERIES",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Net asset of series"
+					},
+                    {
+						"name": "NUMBEROFSHARESOUTSTANDING",
+						"titles": "NUMBER OF SHARES OUTSTANDING",
+						"datatype": {
+							"base": "number",
+							"maxLength": 16.4
+						},
+						"dc:description": "Number of shares outstanding, to the nearest hundredth"
+					},
+                    {
+						"name": "SEEKSTABLEPRICEPERSHARE",
+						"titles": "NUMBER OF SHARES OUTSTANDING",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Seek stable price per share"
+					},
+					{
+						"name": "STABLEPRICEPERSHARE",
+						"titles": "STABLE PRICE PER SHARE",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Stable price per share"
+					},
+					{
+						"name": "SEVENDAYGROSSYIELD",
+						"titles": "SEVEN DAY GROSS YIELD",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "7‐day gross yield for the series. Based on the 7 days ended on the last day of the prior month, calculate the fund’s yield by determining the net change, exclusive of capital changes and income other than investment income, in the value of a hypothetical pre‐existing account having a balance of one share at the beginning of the period and dividing the difference by the value of the account at the beginning of the base period to obtain the base period return, and then multiplying the base period return by (365/7) with the resulting yield figure carried to at least the nearest hundredth of one per cent. The 7‐day gross yield should not reflect a deduction of shareholders fees and fund operating expenses. Legacy from N-MFP2.  See 5.18 SEVENDAYGROSSYIELD."
+					},
+					{
+						"name": "NETASSETVALUEFRIDAYWEEK1",
+						"titles": "NET ASSET VALUE FRIDAY WEEK 1",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Net asset value as of the close of business on Friday, week 1. Legacy from N-MFP2.  See 5.19 DLYNETASSETVALUEPERSHARS."
+					},
+					{
+						"name": "NETASSETPERVALUEFRIDAYWEEK2",
+						"titles": "NET ASSET VALUE FRIDAY WEEK 2",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Net asset value as of the close of business on Friday, week 2. Legacy from N-MFP2.  See 5.19 DLYNETASSETVALUEPERSHARS."
+					},
+					{
+						"name": "NETASSETPERVALUEFRIDAYWEEK3",
+						"titles": "NET ASSET VALUE FRIDAY WEEK 3",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Net asset value as of the close of business on Friday, week 3. Legacy from N-MFP2.  See 5.19 DLYNETASSETVALUEPERSHARS."
+					},
+					{
+						"name": "NETASSETPERVALUEFRIDAYWEEK4",
+						"titles": "NET ASSET VALUE FRIDAY WEEK 4",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Net asset value as of the close of business on Friday, week 4. Legacy from N-MFP2.  See 5.19 DLYNETASSETVALUEPERSHARS."
+					},
+					{
+						"name": "NETASSETVALUEFRIDAYWEEK5",
+						"titles": "NET ASSET VALUEE FRIDAY WEEK 5",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Net asset value as of the close of business on Friday, week 5. Legacy from N-MFP2.  See 5.19 DLYNETASSETVALUEPERSHARS."
+					},
+                    {
+						"name": "CASHMGMTVEHICLEAFFLIATEDFUNDF",
+						"titles": "CASH MGMT VEHICLE AFFLIATED FUND FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to indicate if the fund is established as a cash management vehicle."
+					},
+                    {
+						"name": "LIQUIDITYFEEFUNDAPPLYFLAG",
+						"titles": "CASH MGMT VEHICLE AFFLIATED FUND FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to indicate if the fund applied a liquidity fee during the reporting period."
+					}
+				]
+			}
+		},
+		{
+			"url": "MASTERFEEDERFUND.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "SERIESID", "FUND_TYPE"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "CIK",
+						"titles": "CIK",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Central Index Key assigned by the SEC."
+					},
+					{
+						"name": "NAME",
+						"titles": "FUND NAME",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Fund Name."
+					},
+					{
+						"name": "FILENUMBER",
+						"titles": "FILENUMBER",
+						"datatype": {
+							"base": "string",
+							"maxLength": 17
+						},
+						"dc:description": "Securities Act file number assigned by the SEC."
+					},
+					{
+						"name": "SERIESID",
+						"titles": "SERIES ID",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Identifier assigned by the SEC to each series of a registrant. The format is an S followed by nine digits."
+					},
+					{
+						"name": "FUND_TYPE",
+						"titles": "FUND TYPE",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 6
+						},
+						"dc:description": "The type of fund which could be classified as either the “MASTER” or “FEEDER”"
+					}
+				]
+			}
+		},
+		{
+			"url": "ADVISER.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "ADVISERFILENUMBER", "ADVISERTYPE"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "ADVISERNAME",
+						"titles": "ADVISER NAME",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Name of the financial company advising that has registered with the SEC"
+					},
+					{
+						"name": "ADVISERFILENUMBER",
+						"titles": "ADVISER FILENUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 17
+						},
+						"dc:description": "Adviser's file number assigned by the SEC"
+					},
+					{
+						"name": "ADVISERTYPE",
+						"titles": "ADVISER TYPE",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Type of adviser classification, either as the primary ‘ADVISER’ or ‘SUB-ADVISER’"
+					}
+				]
+			}
+		},
+		{
+			"url": "ADMINISTRATOR.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "ADMINISTRATORNAME"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "ADMINISTRATORNAME",
+						"titles": "ADMINISTRATOR NAME",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Name of fund administrator"
+					}
+				]
+			}
+		},
+		{
+			"url": "TRANSFERAGENT.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "FILENUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by SEC to each EDGAR submission"
+					},
+					{
+						"name": "NAME",
+						"titles": "TRANSFER AGENT NAME",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Transfer agent name"
+					},
+					{
+						"name": "CIK",
+						"titles": "CIK",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Central Index Key assigned by the SEC."
+					},
+					{
+						"name": "FILENUMBER",
+						"titles": "FILENUMBER",
+						"datatype": {
+							"base": "string",
+							"maxLength": 17
+						},
+						"dc:description": "SEC file number."
+					}
+
+				]
+			}
+		},
+		{
+			"url": "SERIESSHADOWPRICE_L.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "NETVALUEPERSHAREINCLUDINGCAPIT",
+						"titles": "NET VALUE PER SHARE INCLUDING CAPITAL",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 16.2
+						},
+						"dc:description": "Net asset value per share, including value of any capital support agreement, to the nearest hundredth of a cent"
+					},
+					{
+						"name": "NETVALUEPERSHAREINCAPCALCDATE",
+						"titles": "NET VALUE PER SHARE INCLUDING CAPITAL CALCULATED DATE",
+						"required": "true",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Date as of which the net asset value per share including capital was calculated"
+					},
+					{
+						"name": "NETVALUEPERSHAREEXCLUDINGCAPIT",
+						"titles": "NET VALUE PER SHARE EXCLUDING CAPITAL",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 16.2
+						},
+						"dc:description": "Net asset value per share, excluding value of any capital support agreement, to the nearest hundredth of a cent"
+					},
+					{
+						"name": "NETVALUEPERSHAREEXCAPCALCDATE",
+						"titles": "NET VALUE PER SHARE EXCLUDING CAPITAL CALCULATED DATE",
+						"required": "true",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Date as of which the net asset value per share excluding capital was calculated"
+					}
+				]
+			}
+		},
+		{
+			"url": "CLASSLEVELINFO.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "CLASSESID"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+                    {
+						"name": "CLASS_NAME",
+						"titles": "CLASS NAME",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Class name from EDGAR."
+					},
+                    {
+						"name": "CLASSFULLNAME",
+						"titles": "CLASS FULL NAME",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Full name of class as provided in XML submissions.  Not available in legacy forms."
+					},
+					{
+						"name": "CLASSESID",
+						"titles": "CLASS ID",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "EDGAR class identifier"
+					},
+					{
+						"name": "MININITIALINVESTMENT",
+						"titles": "MINIMUM INITIAL INVESTMENT",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Minimum initial investment amount"
+					},
+					{
+						"name": "NETASSETSOFCLASS",
+						"titles": "NET ASSETS OF CLASS",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Net assets of class, to the nearest cent"
+					},
+					{
+						"name": "NUMBEROFSHARESOUTSTANDING",
+						"titles": "NUMBER OF SHARES OUTSTANDING",
+						"datatype": {
+							"base": "number",
+							"maxLength": 16.2
+						},
+						"dc:description": "Number of shares outstanding, to the nearest hundredth"
+					},
+					{
+						"name": "NETASSETPERSHAREFRIDAYWEEK1",
+						"titles": "NET ASSET VALUE PER SHARE FRIDAY WEEK 1",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Net asset value per share as of the close of business on Friday, week 1 of the month reported. Legacy from N-MFP2.  See 5.21 DLYNETASSETVALUEPERSHARC."
+					},
+					{
+						"name": "NETASSETPERSHAREFRIDAYWEEK2",
+						"titles": "NET ASSET VALUE PER SHARE FRIDAY WEEK 2",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Net asset value per share as of the close of business on Friday, week 2 of the month reported. Legacy from N-MFP2.  See 5.21 DLYNETASSETVALUEPERSHARC."
+					},
+					{
+						"name": "NETASSETPERSHAREFRIDAYWEEK3",
+						"titles": "NET ASSET VALUE PER SHARE FRIDAY WEEK 3",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Net asset value per share as of the close of business on Friday, week 3 of the month reported. Legacy from N-MFP2.  See 5.21 DLYNETASSETVALUEPERSHARC."
+					},
+					{
+						"name": "NETASSETPERSHAREFRIDAYWEEK4",
+						"titles": "NET ASSET VALUE PER SHARE FRIDAY WEEK 4",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Net asset value per share as of the close of business on Friday, week 4 of the month reported. Legacy from N-MFP2.  See 5.21 DLYNETASSETVALUEPERSHARC."
+					},
+					{
+						"name": "NETASSETPERSHAREFRIDAYWEEK5",
+						"titles": "NET ASSET VALUE PER SHARE FRIDAY WEEK 5",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Net asset value per share as of the close of business on Friday, week 5 of the month reported. Legacy from N-MFP2.  See 5.21 DLYNETASSETVALUEPERSHARC."
+					},
+					{
+						"name": "GROSSSUBSCRIPTIONFRIDAYWEEK1",
+						"titles": "GROSS SUBSCRIPTIONS FRIDAY WEEK 1",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross subscriptions for the class (including dividend reinvestments), to the nearest cent, as of end of business Friday, week 1 of the month reported. Legacy from N-MFP2.  See 5.22 DLYSHAREHOLDERFLOWREPORT."
+					},
+					{
+						"name": "GROSSREDEMPTIONFRIDAYWEEK1",
+						"titles": "GROSS REDEMPTIONS FRIDAY WEEK 1",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross redemptions for the class, to the nearest cent, as of end of business Friday, week 1 of the month reported. Legacy from N-MFP2.  See 5.22 DLYSHAREHOLDERFLOWREPORT."
+					},
+					{
+						"name": "GROSSSUBSCRIPTIONFRIDAYWEEK2",
+						"titles": "GROSS SUBSCRIPTIONS FRIDAY WEEK 2",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross subscriptions for the class (including dividend reinvestments), to the nearest cent, as of end of business Friday, week 2 of the month reported. Legacy from N-MFP2.  See 5.22 DLYSHAREHOLDERFLOWREPORT."
+					},
+					{
+						"name": "GROSSREDEMPTIONFRIDAYWEEK2",
+						"titles": "GROSS REDEMPTIONS FRIDAY WEEK 2",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross redemptions for the class, to the nearest cent, as of end of business Friday, week 2 of the month reported. Legacy from N-MFP2.  See 5.22 DLYSHAREHOLDERFLOWREPORT."
+					},
+					{
+						"name": "GROSSSUBSCRIPTIONFRIDAYWEEK3",
+						"titles": "GROSS SUBSCRIPTIONS FRIDAY WEEK 3",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross subscriptions for the class (including dividend reinvestments), to the nearest cent, as of end of business Friday, week 3 of the month reported. Legacy from N-MFP2.  See 5.22 DLYSHAREHOLDERFLOWREPORT."
+					},
+					{
+						"name": "GROSSREDEMPTIONFRIDAYWEEK3",
+						"titles": "GROSS REDEMPTIONS FRIDAY WEEK 3",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross redemptions for the class, to the nearest cent, as of end of business Friday, week 3 of the month reported. Legacy from N-MFP2.  See 5.22 DLYSHAREHOLDERFLOWREPORT."
+					},
+					{
+						"name": "GROSSSUBSCRIPTIONFRIDAYWEEK4",
+						"titles": "GROSS SUBSCRIPTIONS FRIDAY WEEK 4",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross subscriptions for the class (including dividend reinvestments), to the nearest cent, as of end of business Friday, week 4 of the month reported. Legacy from N-MFP2.  See 5.22 DLYSHAREHOLDERFLOWREPORT."
+					},
+					{
+						"name": "GROSSREDEMPTIONFRIDAYWEEK4",
+						"titles": "GROSS REDEMPTIONS FRIDAY WEEK 4",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross redemptions for the class, to the nearest cent, as of end of business Friday, week 4 of the month reported. Legacy from N-MFP2.  See 5.22 DLYSHAREHOLDERFLOWREPORT."
+					},
+					{
+						"name": "GROSSSUBSCRIPTIONFRIDAYWEEK5",
+						"titles": "GROSS SUBSCRIPTIONS FRIDAY WEEK 5",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross subscriptions for the class (including dividend reinvestments), to the nearest cent, as of end of business Friday, week 5 of the month reported. Legacy from N-MFP2.  See 5.22 DLYSHAREHOLDERFLOWREPORT."
+					},
+					{
+						"name": "GROSSREDEMPTIONFRIDAYWEEK5",
+						"titles": "GROSS REDEMPTIONS FRIDAY WEEK 5",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross redemptions for the class, to the nearest cent, as of end of business Friday, week 5 of the month reported. "
+					},
+                    {
+						"name": "TOTFORMNTHWLYGROSSSUBSCRIPTION",
+						"titles": "GROSS SUBSCRIPTIONS FOR THE MONTH",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross subscriptions for the month ended for the class (including dividend reinvestments), to the nearest cent. Legacy from N-MFP2.  See field TOTALGROSSSUBSCRIPTIONS."
+					},
+                    {
+						"name": "TOTALGROSSSUBSCRIPTIONS",
+						"titles": "TOTAL GROSS SUBSCRIPTIONS",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Monthly shareholder flows: Total gross subscriptions (including dividend reinvestments)."
+					},
+					{
+						"name": "TOTFORMNTHWLYGROSSREDEMPTION",
+						"titles": "GROSS REDEMPTIONS FOR THE MONTH",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross redemptions for the month ended for the class, to the nearest cent. Legacy from N-MFP2.  See field TOTALGROSSREDEMPTIONS."
+					},
+                    {
+						"name": "TOTALGROSSREDEMPTIONS",
+						"titles": "TOTAL GROSS REDEMPTIONS",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Monthly shareholder flows: Total gross redemptions."
+					},
+					{
+						"name": "NETASSETVALUEPERSHARE_L",
+						"titles": "NET ASSET VALUE PER SHARE",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Net asset value per share - in legacy form"
+					},
+					{
+						"name": "NETSHAREHOLDERFLOWACTIVITYFO_L",
+						"titles": "NET SHAREHOLDER FLOW ACTIVITY",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Net shareholder flow activity - in legacy form"
+					},
+					{
+						"name": "SEVENDAYNETYIELD",
+						"titles": "SEVEN DAY NET YIELD",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Seven day net yield. Legacy from N-MFP2.  See 5.23 SEVENDAYNETYIELD"
+					},
+					{
+						"name": "PERSONPAYFORFUNDFLAG",
+						"titles": "PERSON PAY FOR FUND FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag if any person paid or waived all or part of the fund’s operating expenses or management fees"
+					},
+					{
+						"name": "NAMEOFPERSONDESCEXPENSEPAY",
+						"titles": "NAME OF PERSON DESCRIPTION OF EXPENSE PAYMENT",
+						"datatype": {
+							"base": "string",
+							"maxLength": 400
+						},
+						"dc:description": "Legacy: Name of person or description of expense payment or fee waiver, or both."
+					},
+					{
+						"name": "NAMEOFPERSONDESCEXPENSEPAY_AMOUNT",
+						"titles": "NAME OF PERSON OR DESCRIPTION OF EXPENSE PAYMENT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "N-MFP3: Total amount of expense payment or fee waiver, or both (reported in dollars)."
+					},
+                    {
+						"name": "PCTSHAREHOLDERCOMPNONFINANCIA",
+						"titles": "PERCENT SHARE HOLDER COMP NON FINANCIAL CORP",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Shareholder Composition: Percentage of investors non-financial corporations."
+					},
+                    {
+						"name": "PCTSHAREHOLDERCOMPPENSIONPLAN",
+						"titles": "PERCENTAGE OF SHARE HOLDER COMPPENSION PLAN",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Shareholder Composition: Percentage of investors Pension plans."
+					},
+                    {
+						"name": "PCTSHAREHOLDERCOMPNONPROFIT",
+						"titles": "PERCENTAGE OF SHARE HOLDER COMP NON PROFIT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Shareholder Composition: Percentage of investors Non-profits."
+					},
+                    {
+						"name": "PCTSHAREHOLDERCOMPMUNICIPAL",
+						"titles": "PERCENT SHARE HOLDER COMP MUNICIPAL",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Shareholder Composition: Percentage of investors State or municipal government entities (excluding government pension plans)."
+					},
+                    {
+						"name": "PCTSHAREHOLDERCOMPREGINVESTME",
+						"titles": "PERCENT SHARE HOLDER COMP REG INVESTMENT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Shareholder Composition: Percentage of investors Registered investment companies."
+					},
+                    {
+						"name": "PCTSHAREHOLDERCOMPPRIVATEFUND",
+						"titles": "PERCENT SHARE HOLDER COMP PRIVATE FUND",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Shareholder Composition: Percentage of investors Private funds."
+					},
+                    {
+						"name": "PCTSHAREHOLDERCOMPDEPOSITORYI",
+						"titles": "PERCENT SHARE HOLDER COMP DEPOSITORY INST",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Shareholder Composition: Percentage of investors Depository institutions and other banking institutions."
+					},
+                    {
+						"name": "PCTSHAREHOLDERCOMPSOVEREIGNFU",
+						"titles": "PERCENT SHARE HOLDER COMP SOVEREIGN FUND",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Shareholder Composition: Percentage of investors Sovereign wealth funds."
+					},
+                    {
+						"name": "PCTSHAREHOLDERCOMPBROKERDEALE",
+						"titles": "PERCENT SHARE HOLDER COMP SOVEREIGN FUND",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Shareholder Composition: Percentage of investors Broker-dealers."
+					},
+                    {
+						"name": "PCTSHAREHOLDERCOMPINSURANCE",
+						"titles": "PERCENT SHARE HOLDER COMP INSURANCE",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Shareholder Composition: Percentage of investors Insurance Companies."
+					},
+                    {
+						"name": "PCTSHAREHOLDERCOMPOTHER",
+						"titles": "PERCENT SHARE HOLDER COMP OTHER",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Shareholder Composition: Percentage of investors Other."
+					},
+                    {
+						"name": "OTHERINVESTORTYPEDESCRIPTION",
+						"titles": "OTHER INVESTOR TYPE DESCRIPTION",
+						"datatype": {
+							"base": "string",
+							"maxLength": 250
+						},
+						"dc:description": "Other investor type description."
+					},
+                    {
+						"name": "SHARECANCELLATIONREPORTPERIOD",
+						"titles": "SHARE CANCELLATION REPORTING PERIOD",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag if any shares were cancelled under rule 2a-7(c)(3)."
+					}
+				]
+			}
+		},
+		{
+			"url": "NETASSETVALUEPERSHARE_L.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "CLASSESID", "TYPE"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "CLASSESID",
+						"titles": "CLASSES ID",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Fund class identifier"
+					},
+					{
+						"name": "VALUE",
+						"titles": "NET ASSET VALUE PER SHARE",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 16.4
+						},
+						"dc:description": "Net asset value per share"
+					},
+					{
+						"name": "DATEASOFWHICHVALUEWASCALCULATE",
+						"titles": "DATE AS OF WHICH VALUE WAS CALCULATED",
+						"required": "true",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Date as of which value was calculated"
+					},
+					{
+						"name": "TYPE",
+						"titles": "TYPE",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 2
+						},
+						"dc:description": "'IN' for inclusions and 'EX' for exclusions"
+					}
+				]
+			}
+		},
+		{
+			"url": "SCHPORTFOLIOSECURITIES.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "SECURITY ID"],
+						"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "SECURITY_ID",
+						"titles": "SECURITY ID",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 38
+						},
+						"dc:description": "Surrogate key for the security in a portfolio"
+					},
+					{
+						"name": "NAMEOFISSUER",
+						"titles": "NAME O FISSUER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Name of issuer"
+					},
+					{
+						"name": "TITLEOFISSUER",
+						"titles": "TITLE OF ISSUER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 200
+						},
+						"dc:description": "Title of the issue."
+					},
+                    {
+						"name": "COUPON",
+						"titles": "COUPON",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Coupon, if applicable."
+					},
+					{
+						"name": "CUSIP_NUMBER",
+						"titles": "CUSIP NUMBER",
+						"datatype": {
+							"base": "string",
+							"maxLength": 9
+						},
+						"dc:description": "9-character code that identifies a North American financial security"
+					},
+					{
+						"name": "LEI",
+						"titles": "LEI",
+						"datatype": {
+							"base": "string",
+							"maxLength": 20
+						},
+						"dc:description": "Legal Entity Identifier, a 20-alphanumeric globally unique identifier for companies and banks actively involved in the financial industry"
+					},
+					{
+						"name": "ISIN",
+						"titles": "ISIN",
+						"datatype": {
+							"base": "string",
+							"maxLength": 12
+						},
+						"dc:description": "International Securities Identification Number"
+					},
+					{
+						"name": "CIK",
+						"titles": "CIK",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Central Index Key assigned by the SEC to each entity that submits filing"
+					},
+                    {
+						"name": "RSSDID",
+						"titles": "RSSD ID",
+						"datatype": {
+							"base": "number",
+							"maxLength": 10
+						},
+						"dc:description": "RSSD ID"
+					},
+					{
+						"name": "OTHERUNIQUEID",
+						"titles": "OTHER UNIQUE ID",
+						"datatype": {
+							"base": "string",
+							"maxLength": 20
+						},
+						"dc:description": "Other unique identifier."
+					},
+					{
+						"name": "INVESTMENTCATEGORY",
+						"titles": "INVESTMENT CATEGORY",
+						"datatype": {
+							"base": "string",
+							"maxLength": 200
+						},
+						"dc:description": "Category of investment that most closely identifies the instrument."
+					},
+					{
+						"name": "BRIEFDESCRIPTION",
+						"titles": "BRIEF DESCRIPTION",
+						"datatype": {
+							"base": "string",
+							"maxLength": 250
+						},
+						"dc:description": "Description of other security instrument"
+					},
+					{
+						"name": "FUNDACQSTNUNDRLYNGSECURITYFLAG",
+						"titles": "FUND ACQUISITION UNDERLYING SECURITY FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag if the security is a repurchase agreement, then is the fund treating the acquisition of the repurchase agreement as the acquisition of the underlying securities (i.e., collateral) for purposes of portfolio diversification under rule 2a‐7."
+					},
+					{
+						"name": "REPURCHASEAGREEMENTOPENFLAG",
+						"titles": "REPURCHASE AGREEMENT OPEN FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag if the repurchase agreement is open."
+					},
+					{
+						"name": "REPURCHASEAGREEMENTCLEAREDFLA",
+						"titles": "REPURCHASE AGREEMENT CLEARED FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag if the repurchase agreement is cleared."
+					},
+					{
+						"name": "NAMEOFCCP",
+						"titles": "Name of CCP",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Name of central clearing counterparty (CCP)."
+					},
+					{
+						"name": "REPURCHASEAGREEMENTTRIPARTYFL",
+						"titles": "REPURCHASE AGREEMENT TRI PARTY FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag if the repurchase agreement settled on triparty platform."
+					},
+					{
+						"name": "SECURITYELIGIBILITYFLAG",
+						"titles": "SECURITY ELIGIBILITY FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag if the security is an Eligible Security"
+					},
+					{
+						"name": "INVESTMENTMATURITYDATEWAM",
+						"titles": "INVESTMENT MATURITY DATE WAM",
+						"required": "true",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Maturity date determined by taking into account the maturity shortening provisions of rule 2a-7(i) (i.e., the maturity date used to calculate WAM under rule 2a‐7(d)(1)(ii))."
+					},
+					{
+						"name": "INVESTMENTMATURITYDATEWAL",
+						"titles": "INVESTMENT MATURITY DATE WAL",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Maturity date determined without reference to the exceptions in rule 2a-7(i) regarding interest rate readjustments (i.e. the maturity date used to calculate WAL under rule 2a‐7(d(1)(iii))."
+					},
+					{
+						"name": "FINALLEGALINVESTMENTMATURITYDA",
+						"titles": "FINAL LEGAL INVESTMENT MATURITY DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Maturity date determined without reference to the maturity shortening provisions of rule 2a-7(i) (i.e., the ultimate legal maturity date on which, in accordance with the terms of the security without regard to any interest rate readjustment or demand feature, the principal amount must unconditionally be paid)"
+					},
+					{
+						"name": "SECURITYDEMANDFEATUREFLAG",
+						"titles": "SECURITY DEMAND FEATURE FLAG",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to identify if the security have a demand feature flag"
+					},
+					{
+						"name": "SECURITYGUARANTEEFLAG",
+						"titles": "SECURITY GUARANTEE FLAG",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to identify if the security have a guarantee"
+					},
+					{
+						"name": "SECURITYENHANCEMENTSFLAG",
+						"titles": "SECURITY ENHANCEMENTS FLAG",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to identify if the security have any enhancements, other than those identified in Items C.14 and C.15, on which the fund is relying to determine the quality, maturity or liquidity of the security"
+					},
+					{
+						"name": "YIELDOFTHESECURITYASOFREPORTIN",
+						"titles": "YIELD OF THE SECURITY AS OF REPORTING",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5
+						},
+						"dc:description": "Yield of security as of reporting date"
+					},
+					{
+						"name": "INCLUDINGVALUEOFANYSPONSORSUPP",
+						"titles": "INCLUDING VALUE OF ANY SPONSOR SUPPORT",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "The total Value of the fund's position in the security, to the nearest cent including the value of any sponsor support."
+					},
+					{
+						"name": "EXCLUDINGVALUEOFANYSPONSORSUPP",
+						"titles": "EXCLUDING VALUE OF ANY SPONSOR SUPPORT",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "The total Value of the fund's position in the security, to the nearest cent excluding the value of any sponsor support."
+					},
+					{
+						"name": "PERCENTAGEOFMONEYMARKETFUNDNET",
+						"titles": "PERCENTAGE OF MONEY MARKET FUND NET ASSETS",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "The percentage of the money market fund’s net assets invested in the security, to the nearest hundredth of a percent."
+					},
+					{
+						"name": "SECURITYCATEGORIZEDATLEVEL3FLA",
+						"titles": "SECURITY CATEGORIZED AT LEVEL 3 FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to identify if the security is categorized at level 3 in the fair value hierarchy under U.S. Generally Accepted Accounting Principles (ASC 820, Fair Value Measurement)"
+					},
+					{
+						"name": "DAILYLIQUIDASSETSECURITYFLAG",
+						"titles": "DAILY LIQUID ASSET SECURITY FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to identify if the security is a Daily Liquid Asset"
+					},
+					{
+						"name": "WEEKLYLIQUIDASSETSECURITYFLAG",
+						"titles": "WEEKLY LIQUID ASSET SECURITY FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to identify if the security is a Weekly Liquid Asset"
+					},
+					{
+						"name": "ILLIQUIDSECURITYFLAG",
+						"titles": "ILLIQUID SECURITY FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag to identify if this is an Illiquid Security."
+					},
+					{
+						"name": "EXPLANATORYNOTES",
+						"titles": "EXPLANATORY NOTES",
+						"datatype": {
+							"base": "string",
+							"maxLength": 250
+						},
+						"dc:description": "Disclosure of any other information that may be material to other disclosures related to the portfolio security"
+					},
+					{
+						"name": "RATING_L",
+						"titles": "RATING",
+						"datatype": {
+							"base": "string",
+							"maxLength": 50
+						},
+						"dc:description": "Rating - in legacy form"
+					},
+					{
+						"name": "INVESTMENTOWNEDBALANCEPRINCI_L",
+						"titles": "INVESTMENT OWNED PRINCIPAL BALANCE",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Investment owned principal balance - in legacy form"
+					},
+					{
+						"name": "AVAILABLEFORSALESECURITIESAM_L",
+						"titles": "AVAILABLE FOR SALE SECURITIES",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Available for sale securities - in legacy form"
+					}
+				]
+			}
+		},
+		{
+			"url": "COLLATERALISSUERS.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "SECURITY_ID", "NAMEOFCOLLATERALISSUER", "COLLATERALMATURITYDATE","VALUEOFCOLLATERALTOTHENEARESTC"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "SECURITY_ID",
+						"titles": "SECURITY ID",
+						"required": "true",
+						"datatype": {
+							"base": "integer",
+							"maxLength": 38
+						},
+						"dc:description": "Surrogate key for the security in a portfolio"
+					},
+					{
+						"name": "NAMEOFCOLLATERALISSUER",
+						"titles": "NAME OF COLLATERAL ISSUER",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Name of collateral issuer"
+					},
+					{
+						"name": "LEI",
+						"titles": "LEI",
+						"datatype": {
+							"base": "string",
+							"maxLength": 20
+						},
+						"dc:description": "Legal Entity Identifier, a 20-alphanumeric globally unique identifier for companies and banks actively involved in the financial industry"
+					},
+                    {
+						"name": "CUSIPMEMBER",
+						"titles": "CUSIP MEMBER",
+						"datatype": {
+							"base": "string",
+							"maxLength": 9
+						},
+						"dc:description": "9-character code assigned to stocks and registered bonds in the U.S. and Canada"
+					},
+					{
+						"name": "COLLATERALMATURITYDATE",
+						"titles": "COLLATERAL MATURITY DATE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Collateral maturity date"
+					},
+					{
+						"name": "TFROM",
+						"titles": "FROM DATE RANGE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Range of maturity dates starting from"
+					},
+					{
+						"name": "TTO",
+						"titles": "TO DATE RANGE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Range of maturity dates ending on"
+					},
+					{
+						"name": "COUPONORYIELD",
+						"titles": "COUPON OR YIELD",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Coupon or yield. Legacy from N-MFP2.  See fields COUPON and YIELD."
+					},
+                    {
+						"name": "COUPON",
+						"titles": "COUPON",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Coupon"
+					},
+                    {
+						"name": "YIELD",
+						"titles": "YIELD",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Yield"
+					},
+					{
+						"name": "PRINCIPALAMOUNTTOTHENEARESTCEN",
+						"titles": "PRINCIPAL AMOUNT TO THE NEAREST CENT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Principal amount to the nearest cent"
+					},
+					{
+						"name": "VALUEOFCOLLATERALTOTHENEARESTC",
+						"titles": "VALUE OF COLLATERAL TO THE NEAREST CENT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Value of the collateral to the nearest cent"
+					},
+					{
+						"name": "CTGRYINVESTMENTSRPRSNTSCOLLATE",
+						"titles": "CATEGORY INVESTMENTS THAT REPRESENTS THE COLLATERAL",
+						"datatype": {
+							"base": "string",
+							"maxLength": 100
+						},
+						"dc:description": "Categories of investments that most closely represents the collateral."
+					},
+					{
+						"name": "OTHERINSTRUMENTBRIEFDESC",
+						"titles": "OTHER INSTRUMENT BRIEF DESCRIPTION",
+						"datatype": {
+							"base": "string",
+							"maxLength": 250
+						},
+						"dc:description": "Brief description of Other instrument and if applicable, whether it is a collateralized debt obligation, municipal debt, whole loan, or international debt"
+					}
+				]
+			}
+		},
+		{
+			"url": "NRSRO.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "SECURITY_ID", "IDENTITY","TYPE","NAMEOFNRSRO","RATING"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "SECURITY_ID",
+						"titles": "SECURITY ID",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 38
+						},
+						"dc:description": "Surrogate key for the security"
+					},
+					{
+						"name": "IDENTITY",
+						"titles": "IDENTITY",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Identity of either the demand feature issuer, enhancement provider, guarantor, or none in the case the rating is for a security"
+					},
+					{
+						"name": "TYPE",
+						"titles": "CATEGORY TYPE",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 20
+						},
+						"dc:description": "The type is categorized either as 'SECURITY', 'DEMAND FEATURE', 'ENHANCEMENT', or 'GUARANTOR'"
+					},
+					{
+						"name": "NAMEOFNRSRO",
+						"titles": "NAME OF NRSRO AGENCY",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Name of assigning NRSRO (Nationally Recognized Statistical Ratings Organization) agency"
+					},
+					{
+						"name": "RATING",
+						"titles": "RATING",
+						"datatype": {
+							"base": "string",
+							"maxLength": 20
+						},
+						"dc:description": "Rating code assigned to either a security, a demand feature (or provider), an enhancement (or provider), or a guarantor to be considered in determining the quality or risk"
+					}
+				]
+			}
+		},
+		{
+			"url": "DEMANDFEATURE.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "SECURITY ID", "IDENTITYOFDEMANDFEATUREISSUER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "SECURITY_ID",
+						"titles": "SECURITY ID",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 38
+						},
+						"dc:description": "Surrogate key for the security"
+					},
+					{
+						"name": "IDENTITYOFDEMANDFEATUREISSUER",
+						"titles": "IDENTITY OF DEMAND FEATURE ISSUER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Identity of the demand feature issuer(s)."
+					},
+					{
+						"name": "AMOUNTPROVIDEDBYDEMANDFEATUREI",
+						"titles": "AMOUNT PROVIDED BY DEMAND FEATURE ISSUER",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "The amount (i.e., percentage) of fractional support provided by the demand feature issuer."
+					},
+					{
+						"name": "REMAININGPERIODDEMANDFEATURE",
+						"titles": "REMAINING PERIOD UNTIL PRINCIPAL AMOUNT RECOVERED THROUGH DEMAND FEATURE",
+						"datatype": {
+							"base": "number",
+							"maxLength": 3
+						},
+						"dc:description": "The period remaining until the principal amount of the security may be recovered through the demand feature"
+					},
+					{
+						"name": "DEMANDFEATURECONDITIONALFLAG",
+						"titles": "DEMAND FEATURE CONDITIONAL FLAG",
+						"datatype": {
+							"base": "string",
+							"maxLength": 1
+						},
+						"dc:description": "Y/N flag if the demand feature is conditional"
+					}
+				]
+			}
+		},
+		{
+			"url": "GUARANTOR.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "SECURITY_ID", "IDENTITYOFTHEGUARANTOR"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "SECURITY_ID",
+						"titles": "SECURITY ID",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 38
+						},
+						"dc:description": "Surrogate key for the security"
+					},
+					{
+						"name": "IDENTITYOFTHEGUARANTOR",
+						"titles": "IDENTITY OF THE GUARANTOR",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Identity of the guarantor"
+					},
+					{
+						"name": "AMOUNTPROVIDEDBYGUARANTOR",
+						"titles": "AMOUNT OF SUPPORT PROVIDED BY GUARANTOR",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "The amount (i.e., percentage) of fractional support provided by the guarantor."
+					}
+				]
+			}
+		},
+		{
+			"url": "ENHANCEMENTPROVIDER.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER", "SECURITY_ID", "IDENTITYOFENHANCEMENTPROVIDER","TYPEOFENHANCEMENT"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "SECURITY_ID",
+						"titles": "SECURITY ID",
+						"required": "true",
+						"datatype": {
+							"base": "number",
+							"maxLength": 38
+						},
+						"dc:description": "Surrogate key for the security"
+					},
+					{
+						"name": "IDENTITYOFENHANCEMENTPROVIDER",
+						"titles": "IDENTITY OF THE ENHANCEMENT PROVIDER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Identity of the enchancement provider"
+					},
+					{
+						"name": "TYPEOFENHANCEMENT",
+						"titles": "TYPE OF ENHANCEMENT",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 150
+						},
+						"dc:description": "Type of enhancement."
+					},
+					{
+						"name": "AMOUNTPROVIDEDBYENHANCEMENT",
+						"titles": "AMOUNT OF SUPPORT PROVIDED BY ENHANCEMENT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "The amount of fractional support provided by each enhancement provider"
+					}
+				]
+			}
+		},
+        {
+			"url": "LIQUIDASSETSDETAILS.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "TOTVALUEDAILYLIQUIDASSETS",
+						"titles": "TOTAL VALUE DAILY LIQUID ASSETS",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of Daily Liquid Assets to the nearest cent."
+					},
+					{
+						"name": "TOTVALUEWEEKLYLIQUIDASSETS",
+						"titles": "TOTAL VALUE WEEKLY LIQUID ASSETS",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total value of Weekly Liquid Assets (including Daily Liquid Assets) to the nearest cent."
+					},
+					{
+						"name": "PCTDAILYLIQUIDASSETS",
+						"titles": "TYPE OF ENHANCEMENT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percentage of Total Assets invested in Daily Liquid Assets."
+					},
+					{
+						"name": "PCTWEEKLYLIQUIDASSETS",
+						"titles": "PCT WEEKLY LIQUID ASSETS",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percentage of Total Assets invested in Weekly Liquid Assets (including Daily Liquid Assets)."
+					},
+                    {
+						"name": "TOTLIQUIDASSETSNEARPCTDATE",
+						"titles": "TOTAL LIQUID ASSETS NEAR PERCENT DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Liquid asset details date."
+					}
+				]
+			}
+		},
+        {
+			"url": "SEVENDAYGROSSYIELD.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "SEVENDAYGROSSYIELDVALUE",
+						"titles": "SEVEN DAY GROSS YIELD VALUE",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Seven-day gross yield value."
+					},
+					{
+						"name": "SEVENDAYGROSSYIELDDATE",
+						"titles": "SEVEN DAY GROSS YIELD DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Seven-day gross yield date."
+					}
+					
+				]
+			}
+		},
+        {
+			"url": "DLYNETASSETVALUEPERSHARS.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "DLYNETASSETVALUEPERSHARESER",
+						"titles": "DAILY NET ASSET VALUE PER SHARE SERIES",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Net asset value per share."
+					},
+					{
+						"name": "DLYNETASSETVALPERSHAREDATES",
+						"titles": "DAILY NET ASSET VALUE PER SHARE DATE SERIES",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Net asset value per share date."
+					}
+					
+				]
+			}
+		},
+        {
+			"url": "LIQUIDITYFEEREPORTINGPER.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "LIQUIDITYFEEAPPLYDATE",
+						"titles": "LIQUIDITY FEE APPLY DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+							
+						},
+						"dc:description": "Date liquidity fee was applied."
+					},
+					{
+						"name": "LIQUIDITYFEETYPEFORREPTNGPERI",
+						"titles": "LIQUIDITY FEE TYPE FOR REPORTING PERIOD",
+						"datatype": {
+							"base": "string",
+							"maxLength": 250
+						},
+						"dc:description": "Type of liquidity fee."
+					},
+					{
+						"name": "LIQUIDITYFEEAMTAPPLYTOREDEMPT",
+						"titles": "LIQUIDITY FEE AMT APPLY TO REDEMPT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Total amount of liquidity fee applied to redemptions."
+					},
+					{
+						"name": "LIQUIDITYFEEPCTSHARESREDEEMED",
+						"titles": "LIQUIDITY FEE PCT SHARES REDEEMED",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Liquidity fee as a percentage of the value of shares redeemed."
+					}
+                    
+				]
+			}
+		},
+        {
+			"url": "DLYNETASSETVALUEPERSHARC.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "CLASSESID",
+						"titles": "CLASSES ID",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Class level identifier."
+					},
+					{
+						"name": "DLYNETASSETVALUEPERSHARECLASS",
+						"titles": "DLY NET ASSET VALUE PER SHARE CLASS",
+						"datatype": {
+							"base": "number",
+							"maxLength": 8.4
+						},
+						"dc:description": "Net asset value per share."
+					},
+					{
+						"name": "DLYNETASSETVALUEPERSHAREDATEC",
+						"titles": "DAILY NET ASSET VALUE PER SHARE DATE CLASS",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Net asset value per share date."
+					}
+				]
+			}
+		},
+        {
+			"url": "DLYSHAREHOLDERFLOWREPORT.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "CLASSESID",
+						"titles": "CLASSES ID",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Class level identifier."
+					},
+					{
+						"name": "DAILYGROSSSUBSCRIPTIONS",
+						"titles": "DAILY GROSS SUBSCRIPTION",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross subscriptions (including dividend reinvestments)."
+					},
+					{
+						"name": "DAILYGROSSREDEMPTIONS",
+						"titles": "DAILY GROSS REDEMPTIONS",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Gross redemptions."
+					},
+					{
+						"name": "DAILYSHAREHOLDERFLOWDATE",
+						"titles": "DAILY SHARE HOLDER FLOW DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Shareholder flow date."
+					}
+				]
+			}
+		},
+        {
+			"url": "SEVENDAYNETYIELD.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+                    {
+						"name": "CLASSESID",
+						"titles": "CLASSES ID",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Class level identifier."
+					},
+					{
+						"name": "SEVENDAYNETYIELDVALUE",
+						"titles": "SEVEN DAY NET YIELD VALUE",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Total value of Daily Liquid Assets to the nearest cent."
+					},
+					{
+						"name": "SEVENDAYNETYIELDDATE",
+						"titles": "SEVEN DAY NET YIELD DATE",
+						"required": "true",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Seven-day net yield date."
+					}
+				]
+			}
+		},
+        {
+			"url": "BENEFICIALRECORDOWNERCAT.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "CLASSESID",
+						"titles": "CLASSES ID",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Class level identifier"
+					},
+					{
+						"name": "BENEFICIALRECORDOWNERCATETYPE",
+						"titles": "BENEFICIAL RECORD OWNER CATEGORY TYPE",
+						"datatype": {
+							"base": "string",
+							"maxLength": 200
+						},
+						"dc:description": "Type of beneficial owner or record owner."
+					},
+					{
+						"name": "OTHERINVESTORCATEGORY",
+						"titles": "OTHER INVESTOR CATEGORY",
+						"datatype": {
+							"base": "string",
+							"maxLength": 250
+						},
+						"dc:description": "Description of Other investor."
+					},
+					{
+						"name": "PCTOUTSTANDINGSHARESRECORD",
+						"titles": "PCT OUTSTANDING SHARES RECORD",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percent of shares outstanding in the Class owned of record."
+					},
+                    {
+						"name": "PCTOUTSTANDINGSHARESBENEFICIA",
+						"titles": "PCT OUTSTANDING SHARES BENEFICIA",
+						"datatype": {
+							"base": "number",
+							"maxLength": 5.4
+						},
+						"dc:description": "Percent of shares outstanding in the Class owned beneficially."
+					}
+				]
+			}
+		},
+        {
+			"url": "CANCELLEDSHARESPERBUSDAY.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+                    {
+						"name": "CLASSESID",
+						"titles": "CLASSES ID",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 10
+						},
+						"dc:description": "Class level identifier"
+					},
+					{
+						"name": "CANCELLEDSHAREDOLLARVALUE",
+						"titles": "CANCELLEDSHAREDOLLARVALUE",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Dollar value of cancelled shares."
+					},
+					{
+						"name": "CANCELLEDSHARENUMBER",
+						"titles": "CANCELLED SHARE NUMBER",
+						"datatype": {
+							"base": "number",
+							"maxLength": 16.4
+						},
+						"dc:description": "Number of shares cancelled."
+					},
+					{
+						"name": "CANCELLEDSHAREDATE",
+						"titles": "CANCELLED SHARE DATE",
+						"datatype": {
+							"base": "date (DD-MON-YYYY)"
+						},
+						"dc:description": "Share cancellation date."
+					}
+				]
+			}
+		},
+        {
+			"url": "DISPOSITIONOFPORTFOLIOSE.tsv",
+			"tableSchema": {
+				"aboutUrl": "NMFP_readme.html",
+				"primaryKey": ["ACCESSION_NUMBER"],
+				"columns": [{
+						"name": "ACCESSION_NUMBER",
+						"titles": "ACCESSION NUMBER",
+						"required": "true",
+						"datatype": {
+							"base": "string",
+							"maxLength": 25
+						},
+						"dc:description": "Unique identifier assigned by the SEC to each EDGAR submission"
+					},
+					{
+						"name": "DEPOSITIONUSTREASURYDEBTAMT",
+						"titles": "DEPOSITION US TREASURY DEBT AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "U.S. Treasury Debt"
+					},
+					{
+						"name": "GOVTAGENCYCOUPONPAYINGDEBTAMT",
+						"titles": "GOVT AGENCY COUPON PAYING DEBT AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "U.S Government Agency Debt (if categorized as coupon-paying notes)"
+					},
+					{
+						"name": "GOVTAGENONCOUPONPAYINGDEBTAMT",
+						"titles": "GOVT AGENCY NON COUPON PAYING DEBT AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "U.S Government Agency Debt (if categorized as no-coupon discount notes)"
+					},
+					{
+						"name": "NONUSSOVEREIGNSUPRANATDEBTAMT",
+						"titles": "NON US SOVEREIGN SUPRA NATIONAL DEBT AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Non-U.S. Sovereign, Sub-Sovereign, and Supra-National Debt"
+					},
+                    {
+						"name": "CERTIFICATEDEPOSITAMT",
+						"titles": "CERTIFICATE DEPOSIT AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Certificate of Deposit"
+					},
+                    {
+						"name": "NONNEGOTIABLETIMEDEPOSITAMT",
+						"titles": "NON NEGOTIABLE TIME DEPOSIT AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Non-Negotiable Time Deposit"
+					},
+                    {
+						"name": "VARIABLERATEDEMANDNOTEAMT",
+						"titles": "VARIABLE RATE DEMAND NOTE AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Variable Rate Demand Note"
+					},
+                    {
+						"name": "OTHERMUNICIPALSECURITYAMT",
+						"titles": "OTHER MUNICIPAL SECURITY AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Other Municipal Security"
+					},
+                    {
+						"name": "ASSETBACKEDCOMMERCIALPAPERAMT",
+						"titles": "ASSET BACKED COMMERCIAL PAPER AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Asset Backed Commercial Paper "
+					},
+                    {
+						"name": "OTHERASSETBACKEDSECURITIESAMT",
+						"titles": "OTHER ASSET BACKED SECURITIES AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Other Asset Backed Securities "
+					},
+                    {
+                        "name": "USTREASURYREPURCHASEAGREEMAMT",
+						"titles": "US TREASURY REPURCHASE AGREEMAMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "U.S. Treasury Repurchase Agreement (if collateralized only by U.S. Treasuries (including Strips) and cash)"
+					},
+                    {
+                        "name": "USGOVTAGENCYREPURCHASEAGREAMT",
+						"titles": "US GOVT AGENCY REPURCHASE AGREAMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "US Government Agency Repurchase Agreement (collateralized only by U.S. Government Agency securities, U.S. Treasuries, and cash)"
+					},
+                    {
+                        "name": "OTHERREPURCHASEAGREEMENTAMT",
+						"titles": "OTHER REPURCHASE AGREEMENT AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Other Repurchase Agreement  (if collateral falls outside Treasury, Government Agency, and cash)"
+					},
+                    {
+                        "name": "INSURANCECOMPANYFUNDAGREEMAMT",
+						"titles": "INSURANCE COMPANY FUND AGREEMAMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Insurance Company Funding Agreement "
+					},
+                    {
+                        "name": "INVESTMENTCOMPANYAMT",
+						"titles": "INVESTMENT COMPANY AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Investment Company"
+					},
+                    {
+                        "name": "FINANCIALCOMPANYCOMMERCIALAMT",
+						"titles": "FINANCIAL COMPANY COMMERCIAL AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Financial Company Commercial Paper"
+					},
+                    {
+                        "name": "NONFINANCIALCOMPCOMMERCIALAMT",
+						"titles": "NON FINANCIAL COMP COMMERCIAL AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Non-Financial Company Commercial Paper"
+					},
+                    {
+                        "name": "TENDEROPTIONBONDAMT",
+						"titles": "TENDER OPTION BOND AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Tender Option Bond"
+					},
+                    {
+                        "name": "OTHERINSTRUMENTAMT",
+						"titles": "OTHER INSTRUMENT AMT",
+						"datatype": {
+							"base": "number",
+							"maxLength": 14.2
+						},
+						"dc:description": "Other Instrument"
+					},
+                    {
+                        "name": "OTHERINSTRUMENTBRIEFDESCRIPTI",
+						"titles": "OTHER INSTRUMENT BRIEF DESCRIPTION",
+						"datatype": {
+							"base": "string",
+							"maxLength": 250
+						},
+						"dc:description": "Other Instrument brief description"
+					}
+				]
+			}
+		}
+	]
+}

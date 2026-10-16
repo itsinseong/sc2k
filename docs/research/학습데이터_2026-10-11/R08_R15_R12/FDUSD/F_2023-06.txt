@@ -1,0 +1,262 @@
+Reserve Accounts Report
+   With Independent
+  Accountant’s Report
+         FD121 Limited
+         June 23, 2023
+         June 30, 2023
+Reserve Accounts Report With Independent Accountant’s Report
+
+
+
+
+         Table of Contents
+         Independent Accountant’s Report                       3
+         Reserve Accounts Report                               5
+
+
+
+
+                                                               2
+Reserve Accounts Report With Independent Accountant’s Report
+
+
+
+
+                                Independent Accountant’s Report
+
+         FD121 Limited (the “Company”)
+         Room 4001, 40/F, Tower 1, Lippo Centre, 89 Queensway, Admiralty, Hong Kong
+
+         We have examined the Company’s below assertions. The Company’s management is responsible for
+         its assertions. Our responsibility is to express an opinion on management’s assertions based on our
+         examination. Management’s assertions, which are summarized in the attached report, (hereafter
+         referred to as the “Reserve Accounts Report”), which we examined are as follows:
+
+             ●   The Reserve Accounts Report refers to the total supply of First Digital USD tokens
+                 (“FDUSD”) as of June 23 and 30, 2023, each recorded at 9:00PM Eastern Time (“ET”)
+                 (9:00AM HKT) respectively (collectively, the “Report Dates and Times”). Such FDUSD,
+                 (which also represents the total circulating supply) as denoted under contract
+                 0xc5f0f7b66764f6ec8c8dff7ba683102295e16409 at 18 decimals each recorded on the Report
+                 Dates and Times are
+
+                     ○   532.52 FDUSD (being 250.00 in BSC and 282.52 in Ethereum) on June 23, 2023; and
+                     ○   1,073.80 FDUSD (being 250.00 in BSC and 823.8 in Ethereum) on June 30, 2023
+
+                 respectively, as reported by BscScan and Etherscan.
+
+             ●   The Reserve Accounts Report refers to the account held and managed by a related party,
+                 being a public trust company registered in Hong Kong and a custodian for the Company (the
+                 “Custodian”, and the account being the “Custody Account”). The USD balance is custodied
+                 in the Custody Account for the benefit of the Company. The Custodian has deposited U.S.
+                 dollars held on behalf of the Company in distinct accounts with separate institutions,
+                 including a Swiss financial institution and an affiliated Hong Kong trust company, segregated
+                 from the Custody Account (such accounts in aggregate, being the “Reserve Accounts”).
+                 The U.S. dollar (denoted as “US$”) balance in the Reserve Accounts is at least equal to or
+                 greater than US$532.52 and US$1073.80, respectively, at the Report Dates and Times. This
+                 contemplates the impact of outstanding wires, deposits in transit or other reconciling
+                 items.
+
+             ●   The Reserve Accounts Report refers to the Company’s Reserve Account holdings as of the
+                 Report Dates and Times, which includes the disclosure of the total fair value of the
+                 Company’s asset holdings by asset type.
+
+             ●   The total FDUSD supply, for which each FDUSD is assigned a redemption value, strictly
+                 pegged at 1:1 to the U.S dollar by the Company, does not exceed the balance of the
+                 Reserve Accounts reported below.
+
+         Our examination was conducted in accordance with attestation standards established by the
+         American Institute of Certified Public Accountants. Those standards require that we plan and
+         perform the examination to obtain reasonable assurance about whether management’s assertions
+         are fairly stated, in all material respects. The nature, timing, and extent of the procedures
+         selected depend on our judgment, including an assessment of the risks of material misstatement of
+         management’s assertions whether due to fraud or error.
+
+
+
+
+                                                                                                            3
+Reserve Accounts Report With Independent Accountant’s Report
+
+
+
+
+         In performing our risk assessment, we considered the Company's internal controls relevant to the
+         aforementioned assertions, in order to design procedures that are appropriate in the
+         circumstances, but not for the purpose of expressing an opinion on the effectiveness of the
+         Company's internal control. Accordingly, we did not test the operating effectiveness of such
+         controls and express no such opinion on such controls.
+
+         We believe that the evidence we obtained is sufficient and appropriate to provide a reasonable
+         basis for our opinion.
+
+         At any given time, the Company has the right to hold funds in any combination of varying financial
+         instruments at their discretion. Those instruments generally include, but are not necessarily limited
+         to U.S. dollars, U.S Treasury backed Bills and Overnight Reverse Repurchase Agreements.
+
+         The expressed examination opinion on the above assertions are limited solely to the Reserve
+         Accounts Report at the Report Date and Time noted above. Any activity prior to or after the Report
+         Dates and Times at 9:00PM ET (9:00AM HKT) was not considered when testing the assertions
+         described above. In addition, we have not performed any procedures or provided any level of
+         assurance on the financial or non-financial activity of the Reserve Accounts on dates or times other
+         than the Report Date and Time noted within this report.
+
+         In our opinion, management’s assertions noted above are fairly stated as of the Report Dates and
+         Times, in all material respects.
+
+
+
+
+         -------------------------
+
+         John D. Wallace, CPA
+         July 20, 2023
+
+
+
+
+                                                                                                            4
+Reserve Accounts Report With Independent Accountant’s Report
+
+
+
+
+                                       Reserve Accounts Report
+
+         FD121 Limited (the “Company”)
+         Room 4001, 40/F, Tower 1, Lippo Centre, 89 Queensway, Admiralty, Hong Kong
+
+         June 23 and 30, 2023 at 9:00PM ET (9:00AM HKT) (hereafter “Report Dates and Times”)
+
+         The management of the Company hereby makes the following assertions as of:
+
+
+             ● June 23, 2023 at 9:00PM ET (9:00AM HKT):
+
+          FDUSD tokens issued and in circulation (Notes 1 and 4)                                 532.52 FDUSD
+
+          U.S. dollars / amounts backed by U.S. government guaranteed debt                               532.52
+          instruments reserved for FDUSD token holders (Note 2)
+
+
+             ● June 30, 2023 at 9:00PM ET (9:00AM HKT):
+
+          FDUSD tokens issued and in circulation (Notes 1 and 4)                                1073.80 FDUSD
+
+          U.S. dollars / amounts backed by U.S. government guaranteed debt                              1,073.80
+          instruments reserved for FDUSD token holders (Note 2)
+
+
+         The Company’s total Reserve Accounts, which are greater than or equal to the total supply of
+         FDUSD, are comprised of the following asset holdings (Notes 2 and 3):
+
+
+             ● June 23 at 9:00PM ET (9:00AM HKT):
+
+          Description                                                                Fair Value as of 6/23/23 at
+                                                                                      9:00PM ET (9:00AM HKT)
+
+          US dollars                                                                           532.52
+
+                                                               Total U.S. dollars:             532.52
+
+
+
+
+                                                                                                            5
+Reserve Accounts Report With Independent Accountant’s Report
+
+
+
+
+          Collateral Held Pursuant to Overnight Reserve Repurchase                             Amount
+          Agreements
+
+          U.S. Treasury Debt                                                                      0
+
+           Total U.S. Government Guaranteed Debt Instruments Held Pursuant                        0
+                              to Overnight Reserve Repurchase Agreements:
+
+                                                          Total U.S. dollars Held:              532.52
+
+                                          Total Assets Held in Reserve Accounts:                532.52
+
+
+             ● June 30 at 9:00PM ET (9:00AM HKT):
+
+          Description                                                                 Fair Value as of 6/30/23 at
+                                                                                       9:00PM ET (9:00AM HKT)
+
+          U.S. dollars                                                                         1073.80
+
+                                                               Total U.S. dollars:             1073.80
+
+
+          Collateral Held Pursuant to Overnight Reserve Repurchase                              Amount
+          Agreements
+
+          U.S. Treasury Debt                                                                       0
+
+           Total U.S. Government Guaranteed Debt Instruments Held Pursuant                         0
+                              to Overnight Reverse Repurchase Agreements:
+
+                                                           Total U.S. dollars Held:            1073.80
+
+                                          Total Assets Held in Reserve Accounts:               1073.80
+
+
+         Notes:
+            1. The total supply of First Digital USD tokens (“FDUSD”) (which also represents the total
+                circulating supply) as denoted under contract
+                0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409 at 18 decimals, each recorded at the
+                Report Dates and Times is
+
+                     a. 532.52 FDUSD (being 250 in BSC and 282.52 in Ethereum) on June 23, 2023; and
+                     b. 1,073.80 FDUSD (being 250 in BSC and 823.8 in Ethereum) on June 30, 2023
+
+                 respectively, as reported by Binance Smart Chain and Etherscan.
+
+             2. This Reserve Accounts Report refers to the account held and managed by a related party,
+                being a public trust company registered in Hong Kong and a custodian for the Company (the
+                “Custodian”, and the account being the “Custody Account”). The USD balance is custodied
+                in the Custody Account for the benefit of the Company. The Custodian has deposited U.S.
+                dollars held on behalf of the Company in distinct accounts with separate institutions,
+
+
+
+
+                                                                                                             6
+Reserve Accounts Report With Independent Accountant’s Report
+
+
+
+
+                  including a Swiss financial institution and an affiliated Hong Kong trust company, segregated
+                  from the Custody Account (such accounts in aggregate, being the “Reserve Accounts”).
+                  The U.S. dollar balance in the Reserve Accounts is at least equal to or greater than
+                  US$532.52 and US$1073.80, respectively, at the Report Dates and Times. This contemplates
+                  the impact of outstanding wires, deposits in transit or other reconciling items.
+
+             3. This Reserve Accounts refers to the Company’s Reserve Account holdings as of the Report
+                Dates and Times, which includes the disclosure of the total fair value, calculated using the
+                publicly available pricing as of the Report Dates and Times, of the Company’s asset holdings
+                by asset type as reported above.
+
+             4. The total FDUSD supply, for which each FDUSD is assigned a redemption value of US$1.00 by
+                the Company, does not exceed the balance of the Reserve Accounts reported above.
+
+         To the best of the knowledge and belief of the undersigned, the information contained in the
+         Reserve Accounts Report as of the Report Dates and Times is accurate and complete.
+
+
+
+
+         -------------------------
+
+         Vincent Chok, CEO
+         July 20, 2023
+
+
+
+
+                                                                                                             7
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>ContractNLI | ContractNLI: A Dataset for Document-level Natural Language Inference for Contracts</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="ContractNLI" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="ContractNLI: A Dataset for Document-level Natural Language Inference for Contracts" />
+<meta property="og:description" content="ContractNLI: A Dataset for Document-level Natural Language Inference for Contracts" />
+<link rel="canonical" href="https://stanfordnlp.github.io/contract-nli/" />
+<meta property="og:url" content="https://stanfordnlp.github.io/contract-nli/" />
+<meta property="og:site_name" content="ContractNLI" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="ContractNLI" />
+<script type="application/ld+json">
+{"description":"ContractNLI: A Dataset for Document-level Natural Language Inference for Contracts","url":"https://stanfordnlp.github.io/contract-nli/","@type":"WebSite","headline":"ContractNLI","name":"ContractNLI","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/contract-nli/assets/css/style.css?v=eced6528dd3c1d14d73f9a87df8f7bdbc03126f9">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1X54MDK5G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H1X54MDK5G');
+    </script>
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/contract-nli/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">ContractNLI</h1>
+      <h2 class="project-tagline">A Dataset for Document-level Natural Language Inference for Contracts</h2>
+      <a href="#download" class="btn">Download Dataset</a>
+      <a href="https://aclanthology.org/2021.findings-emnlp.164/" class="btn">View Paper</a>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <p>ContractNLI is a dataset for document-level natural language inference (NLI) on contracts whose goal is to automate/support a time-consuming procedure of contract review.
+In this task, a system is given a set of hypotheses (such as “Some obligations of Agreement may survive termination.”) and a contract, and it is asked to classify whether each hypothesis is <em>entailed by</em>, <em>contradicting to</em> or <em>not mentioned by</em> (neutral to) the contract as well as identifying <em>evidence</em> for the decision as spans in the contract.</p>
+
+<p><img src="/contract-nli/resources/task_overview.png" alt="An overview of document-level NLI for contracts" /></p>
+
+<p>ContractNLI is the first dataset to utilize NLI for contracts and is also the largest corpus of annotated contracts (as of September 2021).
+ContractNLI is an interesting challenge to work on from a machine learning perspective (the label distribution is imbalanced and it is naturally multi-task, all the while training data being scarce) and from a linguistic perspective (linguistic characteristics of contracts, particularly negations by exceptions, make the problem difficult).</p>
+
+<p>Details of ContractNLI can be found in our <a href="https://aclanthology.org/2021.findings-emnlp.164/">paper</a> that was published in “Findings of EMNLP 2021”.
+If you have a question regarding our dataset, you can contact us by emailing koreeda@stanford.edu or by creating an issue in this repository.</p>
+
+<h2 id="dataset-specification">Dataset specification</h2>
+
+<p>More formally, the task consists of:</p>
+<ul>
+  <li><strong>Natural language inference (NLI)</strong>: Document-level three-class classification (one of <code class="language-plaintext highlighter-rouge">Entailment</code>, <code class="language-plaintext highlighter-rouge">Contradiction</code> or <code class="language-plaintext highlighter-rouge">NotMentioned</code>).</li>
+  <li><strong>Evidence identification</strong>: Multi-label binary classification over <em>span_s, where a _span</em> is a sentence or a list item within a sentence. This is only defined when NLI label is either <code class="language-plaintext highlighter-rouge">Entailment</code> or <code class="language-plaintext highlighter-rouge">Contradiction</code>. Evidence spans need not be contiguous but need to be comprehensively identified where they are redundant.</li>
+</ul>
+
+<p>We have 17 hypotheses annotated on 607 non-disclosure agreements (NDAs).
+The hypotheses are fixed throughout all the contracts including the test dataset.</p>
+
+<p>Our dataset is provided as JSON files.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"documents"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"file_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"example.pdf"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NON-DISCLOSURE AGREEMENT</span><span class="se">\n</span><span class="s2">This NON-DISCLOSURE AGREEMENT (</span><span class="se">\"</span><span class="s2">Agreement</span><span class="se">\"</span><span class="s2">) is entered into this ..."</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"document_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"search-pdf"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://examplecontract.com/example.pdf"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"spans"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">24</span><span class="p">],</span><span class="w">
+        </span><span class="p">[</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="mi">89</span><span class="p">],</span><span class="w">
+        </span><span class="err">...</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"annotation_sets"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"annotations"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"nda-1"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"choice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Entailment"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"spans"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="mi">12</span><span class="p">,</span><span class="w">
+                </span><span class="mi">13</span><span class="p">,</span><span class="w">
+                </span><span class="mi">91</span><span class="w">
+              </span><span class="p">]</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"nda-2"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"choice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NotMentioned"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"spans"</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="err">...</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"labels"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"nda-1"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"short_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Explicit identification"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"hypothesis"</span><span class="p">:</span><span class="w"> </span><span class="s2">"All Confidential Information shall be expressly identified by the Disclosing Party."</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The core information in our dataset is:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">text</code>: The full document text</li>
+  <li><code class="language-plaintext highlighter-rouge">spans</code>: List of spans as pairs of the start and end character indices.</li>
+  <li><code class="language-plaintext highlighter-rouge">annotation_sets</code>: It is provided as a list to accommodate multiple annotations per document. Since we only have a single annotation for each document, you may safely access the appropriate annotation by <code class="language-plaintext highlighter-rouge">document['annotation_sets'][0]['annotations']</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">annotations</code>: Each key represents a hypothesis key. <code class="language-plaintext highlighter-rouge">choice</code> is either <code class="language-plaintext highlighter-rouge">Entailment</code>, <code class="language-plaintext highlighter-rouge">Contradiction</code> or <code class="language-plaintext highlighter-rouge">NotMentioned</code>. <code class="language-plaintext highlighter-rouge">spans</code> is given as indices of <code class="language-plaintext highlighter-rouge">spans</code> above. <code class="language-plaintext highlighter-rouge">spans</code> is empty when <code class="language-plaintext highlighter-rouge">choice</code> is <code class="language-plaintext highlighter-rouge">NotMentioned</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">labels</code>: Each key represents a hypothesis key. <code class="language-plaintext highlighter-rouge">hypothesis</code> is the hypothesis text that should be used in NLI.</li>
+</ul>
+
+<p>The JSON file comes with supplemental information. Users may simply ignore the information if you are only interested in developing machine learning systems.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">id</code>: A unique ID throughout train, development and test datasets.</li>
+  <li><code class="language-plaintext highlighter-rouge">file_name</code>: The filename of the original document in the dataset zip file.</li>
+  <li><code class="language-plaintext highlighter-rouge">document_type</code>: One of <code class="language-plaintext highlighter-rouge">search-pdf</code> (a PDF from a search engine), <code class="language-plaintext highlighter-rouge">sec-text</code> (a text file from SEC filing) or <code class="language-plaintext highlighter-rouge">sec-html</code> (an HTML file from SEC filing).</li>
+  <li><code class="language-plaintext highlighter-rouge">url</code>: The URL that we obtained the document from.</li>
+</ul>
+
+<h2 id="baseline-system">Baseline system</h2>
+
+<p>In our paper, we introduced Span NLI BERT, a strong baseline for our task.
+It (1) makes the problem of evidence identification easier by modeling the problem as multi-label classification over spans instead of trying to predict the start and end tokens, and (b) introduces more sophisticated context segmentation to deal with long documents.
+We showed in our paper that Span NLI BERT significantly outperforms the existing models.</p>
+
+<p>You can find the implementation of Span NLI BERT in <a href="https://github.com/stanfordnlp/contract-nli-bert">another repository</a>.</p>
+
+<h2 id="license">License</h2>
+
+<p>Our dataset is released under CC BY 4.0.
+Please refer attached “<a href="/contract-nli/LICENSE">LICENSE</a>” or https://creativecommons.org/licenses/by/4.0/ for the exact terms.</p>
+
+<p>When you use our dataset in your work, please cite our paper:</p>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">koreeda-manning-2021-contractnli-dataset</span><span class="p">,</span>
+    <span class="na">title</span> <span class="p">=</span> <span class="s">"{C}ontract{NLI}: A Dataset for Document-level Natural Language Inference for Contracts"</span><span class="p">,</span>
+    <span class="na">author</span> <span class="p">=</span> <span class="s">"Koreeda, Yuta  and
+      Manning, Christopher"</span><span class="p">,</span>
+    <span class="na">booktitle</span> <span class="p">=</span> <span class="s">"Findings of the Association for Computational Linguistics: EMNLP 2021"</span><span class="p">,</span>
+    <span class="na">month</span> <span class="p">=</span> <span class="nv">nov</span><span class="p">,</span>
+    <span class="na">year</span> <span class="p">=</span> <span class="s">"2021"</span><span class="p">,</span>
+    <span class="na">address</span> <span class="p">=</span> <span class="s">"Punta Cana, Dominican Republic"</span><span class="p">,</span>
+    <span class="na">publisher</span> <span class="p">=</span> <span class="s">"Association for Computational Linguistics"</span><span class="p">,</span>
+    <span class="na">url</span> <span class="p">=</span> <span class="s">"https://aclanthology.org/2021.findings-emnlp.164"</span><span class="p">,</span>
+    <span class="na">pages</span> <span class="p">=</span> <span class="s">"1907--1919"</span><span class="p">,</span>
+    <span class="na">abstract</span> <span class="p">=</span> <span class="s">"Reviewing contracts is a time-consuming procedure that incurs large expenses to companies and social inequality to those who cannot afford it. In this work, we propose {``}document-level natural language inference (NLI) for contracts{''}, a novel, real-world application of NLI that addresses such problems. In this task, a system is given a set of hypotheses (such as {``}Some obligations of Agreement may survive termination.{''}) and a contract, and it is asked to classify whether each hypothesis is {``}entailed by{''}, {``}contradicting to{''} or {``}not mentioned by{''} (neutral to) the contract as well as identifying {``}evidence{''} for the decision as spans in the contract. We annotated and release the largest corpus to date consisting of 607 annotated contracts. We then show that existing models fail badly on our task and introduce a strong baseline, which (a) models evidence identification as multi-label classification over spans instead of trying to predict start and end tokens, and (b) employs more sophisticated context segmentation for dealing with long documents. We also show that linguistic characteristics of contracts, such as negations by exceptions, are contributing to the difficulty of this task and that there is much room for improvement."</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="download">Download</h2>
+
+<blockquote>
+  <p>Terms and Conditions of Use</p>
+
+  <p>By clicking “DOWNLOAD” below and accessing, reviewing, downloading or otherwise making use of the Hitachi America, Ltd. dataset, entitled “ContractNLI: A Dataset for Document-level Natural Language Inference for Contracts” (the “Dataset”), or any portion thereof, you are agreeing to these Terms and Conditions of Use.</p>
+
+  <p>If you do not agree to these Terms and Conditions of Use in their entirety, please do not access, review, download or otherwise make use of the Dataset.</p>
+
+  <p>The Dataset is being made available to you pursuant to, and you understand and agree that you will have the rights to access, review, download or otherwise make use of the Dataset, in accordance with the terms and conditions of the Creative Commons Attribution 4.0 International Public License.</p>
+
+  <p>THIRD PARTY WEBSITES, PLATFORMS AND NETWORKS: To the extent the Dataset contains any links to third party websites, social media platforms or other Internet-based networks, you understand and agree that Hitachi America, Ltd. does not own, operate, control or endorse such third party websites, platforms or networks.  Accordingly, these Terms and Conditions do not apply to any such third party websites, platforms or networks or govern such third parties’ collection, use, storage, disclosure, or other processing of your personal information.  Such third party websites, platforms or networks will be subject to their own terms and conditions of use and privacy policies.</p>
+
+  <p>NOTICES OF COPYRIGHT INFRINGEMENT: In the event you believe that the Dataset incorporates any of your work or materials in a way that may constitute infringement of your copyright or any other intellectual property right, Hitachi America, Ltd. will take appropriate actions in response to your notification thereof.</p>
+
+  <p>Pursuant to Title 17, United States Code, Section 512(c)(3), a notification of claimed infringement must be a written communication addressed to the designated agent as set forth below (the “Notice“), and must include substantially all of the following:</p>
+
+  <p>(a) a physical or electronic signature of the person authorized to act on behalf of the owner of the copyright interest that is alleged to have been infringed;</p>
+
+  <p>(b) a description of the copyrighted work or works that you claim have been infringed (“infringed work”) and identification of what material in such work(s) is claimed to be infringing (“infringing work”) and which you request to be removed or access to which is to be disabled;</p>
+
+  <p>(c) a description of the exact name of the infringing work that is being used in the Dataset (and the location of the infringing work, if it appears in the Dataset);</p>
+
+  <p>(d) information sufficient to permit Hitachi America, Ltd. to contact you, such as your physical address, telephone number, and email address;</p>
+
+  <p>(e) a statement by you that you have a good faith belief that the use of the material identified in your Notice in the manner complained of is not authorized by the copyright owner, its agent, or the law;</p>
+
+  <p>(f) a statement by you that the information in your Notice is accurate and, under penalty of perjury that you are the copyright owner or authorized to act on the copyright owner’s behalf.</p>
+
+  <p>To reach Hitachi America, Ltd.’s Copyright Agent for Notice of claims of copyright infringement:</p>
+
+  <p>Hitachi America, Ltd.
+2535 Augustine Drive, Third Floor
+Santa Clara, California 95054
+Attn.: Legal Dept.</p>
+
+  <p>The Copyright Agent should only be contacted if you believe that your work has been used or copied in a way that constitutes copyright infringement and such infringement is occurring on or through the Dataset. The Copyright Agent will not respond to any other inquiries.</p>
+</blockquote>
+
+<p><strong><a href="/contract-nli/resources/contract-nli.zip">DOWNLOAD</a></strong></p>
+
+<h2 id="changelog-and-release-note">Changelog and release note</h2>
+
+<ul>
+  <li>10/5/2021: Initial release</li>
+  <li>12/13/2021: Added URL to ACL Anthology</li>
+</ul>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/stanfordnlp/contract-nli">contract-nli</a> is maintained by <a href="https://github.com/stanfordnlp">stanfordnlp</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

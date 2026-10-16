@@ -1,0 +1,171 @@
+{
+ "taxonomy": "us-gaap",
+ "tag": "CashAndCashEquivalentsAtCarryingValue",
+ "ccp": "CY2025Q4I",
+ "uom": "USD",
+ "label": "Cash and Cash Equivalents, at Carrying Value",
+ "description": "Amount of currency on hand as well as demand deposits with banks or financial institutions. Includes other kinds of accounts that have the general characteristics of demand deposits. Also includes short-term, highly liquid investments that are both readily convertible to known amounts of cash and so near their maturity that they present insignificant risk of changes in value because of changes in interest rates. Excludes cash and cash equivalents within disposal group and discontinued operation.",
+ "pts": 4931,
+ "data": [
+  {
+   "accn": "0001104659-26-001420",
+   "cik": 1750,
+   "entityName": "AAR CORP",
+   "loc": "US-IL",
+   "end": "2025-11-30",
+   "val": 75600000
+  },
+  {
+   "accn": "0001628280-26-050134",
+   "cik": 1800,
+   "entityName": "ABBOTT LABORATORIES",
+   "loc": "US-IL",
+   "end": "2025-12-31",
+   "val": 8522000000
+  },
+  {
+   "accn": "0001193125-26-338211",
+   "cik": 2098,
+   "entityName": "ACME UNITED CORP",
+   "loc": "US-CT",
+   "end": "2025-12-31",
+   "val": 3596000
+  },
+  {
+   "accn": "0001437749-26-027476",
+   "cik": 2186,
+   "entityName": "BK Technologies Corp",
+   "loc": "US-FL",
+   "end": "2025-12-31",
+   "val": 22788000
+  },
+  {
+   "accn": "0000002488-26-000123",
+   "cik": 2488,
+   "entityName": "ADVANCED MICRO DEVICES, INC",
+   "loc": "US-CA",
+   "end": "2025-12-27",
+   "val": 5539000000
+  },
+  {
+   "accn": "0000002969-26-000008",
+   "cik": 2969,
+   "entityName": "AIR PRODUCTS AND CHEMICALS, INC.",
+   "loc": "US-PA",
+   "end": "2025-12-31",
+   "val": 1026400000
+  },
+  {
+   "accn": "0001193125-26-342536",
+   "cik": 3197,
+   "entityName": "CECO ENVIRONMENTAL CORP.",
+   "loc": "US-TX",
+   "end": "2025-12-31",
+   "val": 33144000
+  },
+  {
+   "accn": "0001104659-26-090003",
+   "cik": 3453,
+   "entityName": "Matson,\u00a0Inc.",
+   "loc": "US-HI",
+   "end": "2025-12-31",
+   "val": 141900000
+  },
+  {
+   "accn": "0000003499-26-000038",
+   "cik": 3499,
+   "entityName": "ALEXANDERS INC",
+   "loc": "US-NJ",
+   "end": "2025-12-31",
+   "val": 128167000
+  },
+  {
+   "accn": "0000003545-26-000012",
+   "cik": 3545,
+   "entityName": "ALICO, INC.",
+   "loc": "US-FL",
+   "end": "2025-12-31",
+   "val": 34756000
+  },
+  {
+   "accn": "0000003570-26-000028",
+   "cik": 3570,
+   "entityName": "CHENIERE ENERGY, INC.",
+   "loc": "US-TX",
+   "end": "2025-12-31",
+   "val": 1099000000
+  },
+  {
+   "accn": "0000004127-26-000008",
+   "cik": 4127,
+   "entityName": "Skyworks Solutions, Inc.",
+   "loc": "US-CA",
+   "end": "2026-01-02",
+   "val": 1550400000
+  },
+  {
+   "accn": "0000004281-26-000025",
+   "cik": 4281,
+   "entityName": "HOWMET AEROSPACE INC.",
+   "loc": "US-PA",
+   "end": "2025-12-31",
+   "val": 742000000
+  },
+  {
+   "accn": "0001193125-26-037685",
+   "cik": 4457,
+   "entityName": "U-Haul Holding Company",
+   "loc": "US-NV",
+   "end": "2025-12-31",
+   "val": 1032257000
+  },
+  {
+   "accn": "0000004904-26-000034",
+   "cik": 4904,
+   "entityName": "AMERICAN ELECTRIC POWER CO INC.",
+   "loc": "US-OH",
+   "end": "2025-12-31",
+   "val": 197000000
+  },
+  {
+   "accn": "0001628280-26-054618",
+   "cik": 4977,
+   "entityName": "Aflac Incorporated",
+   "loc": "US-GA",
+   "end": "2025-12-31",
+   "val": 6245000000
+  },
+  {
+   "accn": "0001193125-26-343321",
+   "cik": 6176,
+   "entityName": "AMPCO-PITTSBURGH CORP",
+   "loc": "US-PA",
+   "end": "2025-12-31",
+   "val": 10703000
+  },
+  {
+   "accn": "0001104659-26-027088",
+   "cik": 6207,
+   "entityName": "AMREP CORPORATION",
+   "loc": "US-PA",
+   "end": "2026-01-31",
+   "val": 49998000
+  },
+  {
+   "accn": "0000006281-26-000016",
+   "cik": 6281,
+   "entityName": "Analog Devices, Inc.",
+   "loc": "US-MA",
+   "end": "2026-01-31",
+   "val": 2905860000
+  },
+  {
+   "accn": "0000006845-26-000010",
+   "cik": 6845,
+   "entityName": "APOGEE ENTERPRISES, INC.",
+   "loc": "US-MN",
+   "end": "2025-11-29",
+   "val": 41315000
+  }
+ ]
+}

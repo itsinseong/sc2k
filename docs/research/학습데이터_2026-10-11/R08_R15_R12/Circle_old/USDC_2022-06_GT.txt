@@ -1,0 +1,141 @@
+GRANT THORNTON LLP          REPORT OF INDEPENDENT CERTIFIED PUBLIC ACCOUNTANTS
+757 Third Ave., 9th Floor
+New York, NY 10017-2013
+
+
+
+
+D     +1 212 599 0100
+F     +1 212 370 4520
+                            Board of Directors and Management
+                            Circle Internet Financial, LLC
+
+                            We have examined management of Circle Internet Financial, LLC’s assertion that the
+                            following information (hereafter, the “Reserve Account Information”) in the
+                            accompanying Reserve Account Report as of June 30, 2022 at 11:59 PM Pacific Time
+                            (“PT”) (“Report Date”) is fairly stated, based on the criteria set forth in the Reserve
+                            Account Report.
+
+                            ЭUSD Coin (“USDC”) in Circulation1 = 55,569,660,586 USDC
+                            Э The total fair value of US dollar denominated assets held in segregated accounts
+                                         are at least equal to the USDC in Circulation at the Report Date.
+
+                            Circle Internet Financial, LLC’s management is responsible for its assertion. Our
+                            responsibility is to express an opinion on the Reserve Account Information in the
+                            accompanying Reserve Account Report based on our examination.
+
+                            Our examination was conducted in accordance with attestation standards established
+                            by the American Institute of Certified Public Accountants. Those standards require
+                            that we plan and perform the examination to obtain reasonable assurance about
+                            whether the Reserve Account Information in the accompanying Reserve Account
+                            Report is fairly stated, based on the criteria set forth in the Reserve Account Report,
+                            in all material respects. An examination involves performing procedures to obtain
+                            evidence about the Reserve Account Information. The nature, timing, and extent of
+                            the procedures selected depend on our judgment, including an assessment of the
+                            risks of material misstatement of the Reserve Account Information, whether due to
+                            fraud or error. In making an assessment of the risks of material misstatement, we
+                            considered and obtained an understanding of internal control relevant to the
+                            preparation of, and the Reserve Account Information in, the accompanying Reserve
+                            Account Report in order to design procedures that are appropriate in the
+                            circumstances, but not for the purpose of expressing an opinion on the effectiveness
+                            of such internal control. Accordingly, no such opinion is expressed. We believe that
+                            the evidence we obtained is sufficient and appropriate to provide a reasonable basis
+                            for our opinion.
+
+                            The Reserve Account Information in the accompanying Reserve Account Report
+                            relates to Circle Internet Financial LLC’s USDC token, which is a cryptographic stored
+                            value token that allows financial market participants to transact in a crypto asset.
+                            Crypto assets are an evolving area of technology and marketplace activity. Individuals
+                            who acquire and utilize USDC tokens and other crypto assets are responsible for
+                            informing themselves of the general risks and uncertainties.
+
+
+
+                            1
+                                Total USDC in circulation is the total USDC supply on USDC approved blockchains less (i) tokens allowed but not issued and
+                            (ii) access denied tokens outstanding at the Report Date as reported on USDC approved public blockchains. USDC approved
+                            blockchains currently comprise the Algorand, Avalanche, Ethereum, Flow, Hedera, Solana, Stellar, and TRON blockchains and
+                            are used by Circle Internet Financial, LLC to issue and redeem USDC. USDC approved blockchains do not any other include
+                            protocols, frameworks, or derivative blockchains.
+
+
+
+
+GT.COM                      Grant Thornton LLP is the U.S. member firm of Grant Thornton International Ltd (GTIL). GTIL and each of its member firms
+                            are separate legal entities and are not a worldwide partnership.
+In our opinion, the Reserve Account Information in the accompanying Reserve
+Account Report as of June 30, 2022 is fairly stated, based on the criteria set forth in
+the Reserve Account Report, in all material respects.
+
+The Notes to the Reserve Account Report are provided for additional information.
+Such information has not been subjected to the procedures applied in our
+examination, and accordingly, we do not express an opinion or provide any assurance
+on it.
+
+
+
+
+New York, New York
+July 28, 2022
+                             
+
+
+
+
+                                                                 5HVHUYH$FFRXQW5HSRUW
+
+              &LUFOH,QWHUQHW)LQDQFLDO//& WKH³&RPSDQ\´ DVVHUWVDVRI-XQHDW303DFLILF
+              7LPH ³5HSRUW'DWH´ 
+
+
+              7RWDO86'&RLQ ³86'&´ LQFLUFXODWLRQ                                                                      86'&
+
+              7RWDOIDLUYDOXHRI86'ROODUGHQRPLQDWHGDVVHWVKHOGRQ                                                  
+              EHKDOIRI86'&KROGHUVLVDWOHDVWHTXDOWR
+
+
+
+
+              &5,7(5,$
+
+              7RWDO86'&LQFLUFXODWLRQLVWKHWRWDO86'&VXSSO\RQ86'&DSSURYHGEORFNFKDLQVOHVV L WRNHQVDOORZHGEXWQRWLVVXHG
+               DVRI5HSRUW'DWH DQG LL DFFHVVGHQLHGWRNHQVDVUHSRUWHGRQ86'&DSSURYHGEORFNFKDLQV DVRI
+              5HSRUW'DWH 
+
+              7RNHQVDOORZHGEXWQRWLVVXHGDUHUHTXLUHGGXHWRFHUWDLQLPSOHPHQWDWLRQVRI86'&RQDSSURYHGEORFNFKDLQV7KHEDODQFHRIWKHVH
+              XQFLUFXODWHGWRNHQVDUHH[FOXGHGIURPWKHGHILQLWLRQRI7RWDO86'&LQFLUFXODWLRQ
+
+              $FFHVVGHQLHGWRNHQVDUHWKHDPRXQWRI86'&WRNHQVZLWKGHQLHGDFFHVVDWWKH5HSRUW'DWHSXUVXDQWWRWKH&HQWUH$FFHVV'HQLDO
+              3ROLF\&HQWUHPDLQWDLQVWKH$FFHVV'HQLDO3ROLF\RQLWVZHEVLWH7KHDFFHVVGHQLHGWRNHQVDUHH[FOXGHGIURPWKHGHILQLWLRQRI7RWDO
+              86'&LQFLUFXODWLRQ
+
+              86'&DSSURYHGEORFNFKDLQVFXUUHQWO\FRPSULVHWKH$OJRUDQG$YDODQFKH(WKHUHXP)ORZ+HGHUD6RODQD6WHOODUDQG7521
+              EORFNFKDLQVDQGDUHXVHGE\WKH&RPSDQ\WRLVVXHDQGUHGHHP86'&86'&DSSURYHGEORFNFKDLQVGRQRWLQFOXGHDQ\RWKHU
+              SURWRFROVIUDPHZRUNVRUGHULYDWLYHEORFNFKDLQV
+
+
+              7RWDOIDLUYDOXHRI86'ROODUGHQRPLQDWHGDVVHWVLVWKHWRWDOEDODQFHVLQVHJUHJDWHGDFFRXQWVKHOGE\WKH&RPSDQ\ZLWK86
+              UHJXODWHGILQDQFLDOLQVWLWXWLRQVRQEHKDOIRIWKH86'&KROGHUVDWWKH5HSRUW'DWH
+
+              6HJUHJDWHGDFFRXQWVDUHGHILQHGE\WKH&RPSDQ\DVXQHQFXPEHUHGDFFRXQWVRIWKH&RPSDQ\ZKLFKDUHHOLJLEOHWRIXOILOOWKH
+              &RPSDQ\¶VREOLJDWLRQVXQGHUWKHVWDWXWHVDQGUHJXODWLRQVDSSOLFDEOHWRWKH&RPSDQ\DVDPRQH\WUDQVPLWWHUOLFHQVHGLQYDULRXV86
+              VWDWHVDQGWHUULWRULHV6XFKDFFRXQWVDUHKHOGDW86UHJXODWHGILQDQFLDOLQVWLWXWLRQVOLPLWHGWRFDVKDQGVKRUWGDWHG86JRYHUQPHQW
+              REOLJDWLRQVDQGDUHVHJUHJDWHGIURPRWKHUDFFRXQWVRIWKH&RPSDQ\LQFOXGLQJJHQHUDOFRUSRUDWHIXQGV
+
+
+
+
+              BBBBBBBBBBBBBBBBBBBBBBBB
+
+              7LPRWK\6LQJK
+              93$FFRXQWLQJ
+              &LUFOH,QWHUQHW)LQDQFLDO//&
+
+
+              -XO\BBBBBBBBB
+              'DWH
+
+
+              5HIHUWR&LUFOH¶V6(&ILOLQJVIRUPRUHLQIRUPDWLRQDERXWWKH&RPSDQ\WKHWHFKQLFDOIXQFWLRQDOLW\RI86'&DQGUHODWHGULVNVDQGXQFHUWDLQWLHV6XFK
+              LQIRUPDWLRQKDVQRWEHHQVXEMHFWHGWRWKHDFFRXQWDQW¶VDWWHVWDWLRQ
+

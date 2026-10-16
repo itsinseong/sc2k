@@ -1,0 +1,161 @@
+GRANT THORNTON LLP            INDEPENDENT ACCOUNTANT’S REPORT
+757 Third Avenue, 9th Floor
+New York, NY 10017
+
+
+D   +1 212 599 0100
+F   +1 212 370 4520
+                              Board of Directors and Management
+                              Circle Internet Financial, Inc.
+
+                              We have examined management of Circle Internet Financial, Inc.’s assertion that the
+                              following information (hereafter, the “Reserve Account Information”) in the accompanying
+                              Reserve Account Report as of June 30, 2020 at 11:59 PM Pacific Time (“PT”) (“Report
+                              Date and Time”) is correctly stated, based on the criteria set forth in the Reserve Account
+                              Report.
+
+                                    •      USD Coin (“USDC”) tokens issued and outstanding = 985,448,435 USDC
+                                    •      US Dollars held in custody accounts = $990,897,799
+                                    •      As of the Report Date and Time, the issued and outstanding USDC tokens do
+                                           not exceed the balance of the US Dollars held in custody accounts
+
+                              Circle Internet Financial, Inc.’s management is responsible for its assertion. Our
+                              responsibility is to express an opinion on the Reserve Account Information in the
+                              accompanying Reserve Account Report based on our examination.
+
+                              Our examination was conducted in accordance with attestation standards established by
+                              the American Institute of Certified Public Accountants. Those standards require that we
+                              plan and perform the examination to obtain reasonable assurance about whether the
+                              Reserve Account Information in the accompanying Reserve Account Report is correctly
+                              stated, based on the criteria set forth in the Reserve Account Report, in all material
+                              respects. An examination involves performing procedures to obtain evidence about the
+                              Reserve Account Information. The nature, timing, and extent of the procedures selected
+                              depend on our judgment, including an assessment of the risks of material misstatement
+                              of the Reserve Account Information, whether due to fraud or error. In making an
+                              assessment of the risks of material misstatement, we considered and obtained an
+                              understanding of internal control relevant to the preparation of, and the Reserve Account
+                              Information in, the accompanying Reserve Account Report in order to design procedures
+                              that are appropriate in the circumstances, but not for the purpose of expressing an
+                              opinion on the effectiveness of such internal control. Accordingly, no such opinion is
+                              expressed. We believe that the evidence we obtained is sufficient and appropriate to
+                              provide a reasonable basis for our opinion. The Reserve Account Information in the
+                              accompanying Reserve Account Report relates to Circle Internet Financial Inc.’s USDC
+                              token, which is a cryptographic stored value token that allows financial market
+                              participants to transact in a crypto asset. Crypto assets are an evolving area of
+                              technology and market place activity. Individuals who acquire and utilize USDC tokens
+                              and other crypto assets are responsible for informing themselves of the general risks and
+                              uncertainties.
+
+                              In our opinion, the Reserve Account Information in the accompanying Reserve Account
+                              Report as of June 30, 2020 at 11:59 PM PT is correctly stated, based on the criteria set
+                              forth in the Reserve Account Report, in all material respects.
+
+
+
+
+GT.COM                        Grant Thornton LLP is the U.S. member firm of Grant Thornton International Ltd (GTIL). GTIL and each of its member firms
+                              are separate legal entities and are not a worldwide partnership.
+The Notes to the Reserve Account Report are provided for additional information. Such
+information has not been subjected to the procedures applied in our examination, and
+accordingly, we do not express an opinion or provide any assurance on it.
+
+
+
+
+New York, New York
+July 15, 2020
+
+
+
+
+                     -2-
+DocuSign Envelope ID: 00295BC2-B48E-403F-A329-E06AB42A79CA
+
+
+
+
+                                                    Reserve Account Report
+
+            The management of Circle Internet Financial, Inc. (the “Company”) asserts that, as of June 30,
+            2020 at 11:59 PM Pacific Time (“PT”) (hereafter, “Report Date and Time”), the following
+            information is correctly stated, based on the criteria set forth below:
+
+                     USD Coin (“USDC”) tokens issued and outstanding = 985,448,435 USDC
+
+                     US Dollars held in custody accounts = $990,897,799
+
+            As of the Report Date and Time, the issued and outstanding USDC tokens do not exceed the
+            balance of the US Dollars held in custody accounts.
+
+
+            CRITERIA:
+
+            1. The USDC tokens are the amount of tokens issued and outstanding denoted under contract
+               0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48 at the Report Date and Time as
+               reported on the Ethereum public blockchain.
+
+            2. US Dollars held in custody accounts are the total balances in accounts held by the
+               Company at federally insured US depository institutions and in approved investments on
+               behalf of the USDC holders at the Report Date and Time.
+
+
+
+
+            ____________________________________
+            Timothy Singh, Global Controller
+            Circle Internet Financial, Inc.
+            Boston, Massachusetts
+
+
+            July 15, 2020_________________________
+            Date
+DocuSign Envelope ID: 00295BC2-B48E-403F-A329-E06AB42A79CA
+
+
+
+
+                                  NOTES TO THE RESERVE ACCOUNT REPORT
+                      (No Assurance Provided by the Independent Accountant on These Notes)
+
+
+            1. BACKGROUND INFORMATION PROVIDED BY CIRCLE INTERNET FINANCIAL, INC.
+            Circle Internet Financial, Inc. (the “Company”) is a Boston based global crypto finance company.
+            The Company is a registered Money Services Business with FinCEN that has money transmitter
+            licenses in 47 states and one territory (that requires licensing).
+
+            The USD Coin (“USDC”) token is a cryptographic stored value token that allows financial market
+            participants to transact in a crypto asset. USDC is an ERC-20 token, which is built on the
+            Ethereum public blockchain. The total number of USDC tokens issued and outstanding at a
+            current point in time is fully and transparently viewable through any publicly available Ethereum
+            block explorer. All USDC tokens issued and outstanding are backed by an equivalent amount of
+            US Dollars held in custody accounts. The US Dollars held in custody accounts may exceed the
+            amount of USDC tokens issued and outstanding due to the timing of the receipt of deposits from
+            customers and the issuance of new USDC tokens or the cancellation of USDC tokens prior to
+            the payment of funds to the customer. The US Dollars are managed by the Company and held
+            in segregated accounts at US federally insured depository institutions and in approved
+            investments on behalf of the USDC holders. The relationship between a USDC holder and the
+            Company is governed by the Company’s customer agreement which can be found on the
+            Company’s website at https://support.usdc.circle.com/hc/en-us/articles/360001233386.
+
+            2. DISCUSSIONS RELATED TO CRYPTO ASSETS GENERALLY
+            As of the date of this report, crypto assets remain an evolving area of technology and market
+            place activity. Those who choose to invest in crypto assets should inform themselves of the
+            general risks and uncertainties associated with such assets.
+
+            (1) Crypto assets are owned anonymously. While the public keys associated with crypto assets
+            reside on a blockchain and can be viewed publicly, the ownership of the crypto assets is
+            normally not registered and is therefore, anonymous. Ownership of crypto assets is evidenced
+            primarily by the possession of the underlying private key (i.e., passcode). The possessor of the
+            private key controls the corresponding crypto asset.
+
+            (2) Risk of irreversible transactions. Transactions for most crypto assets that occur over the
+            blockchain are generally irreversible, even if such transactions occur fraudulently or
+            accidentally.
+
+            (3) Risk of loss of asset. If a private key is lost or fraudulently used, the crypto assets may not
+            be recoverable.
+
+            (4) Regulatory uncertainty. Legislative and regulatory changes or actions at the state or federal
+            level may change or affect the use, transfer, exchange, and value of crypto assets. The effects
+            of any such changes are not determinable as of the date of this report.
+

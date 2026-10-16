@@ -355,9 +355,10 @@ def finalize_holdings(reports):
         pats = [r'Total RLUSD outstanding is defined as[^.]*\.', r'Outstanding Stablecoin Units means[^.]*\.']
         hit = next((p for p in pats if re.search(p, text)), None)
         if hit:
-            r['circulation_formula_disclosed'] = True
+            # D-06: 무엇을 더하고 빼는지 밝혀야 공개. 정의 문장만으로는 공개가 아니다.
+            r['circulation_formula_disclosed'] = False
             sen = re.sub(r'\s+', ' ', re.search(hit, text)[0])
-            notes['circulation_formula_disclosed'] = ri.note('found', ri.find(text, hit), f"유통량 정의 문장이 있다: '{sen}' (온체인 잔액 정의이며 발행에서 소각을 뺀다는 식의 계산식은 아님)")
+            notes['circulation_formula_disclosed'] = ri.note('not_disclosed', ri.find(text, hit), f"정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: '{sen}'")
         else:
             r['circulation_formula_disclosed'] = False
             notes['circulation_formula_disclosed'] = ri.note('not_disclosed', None, ri.search_note(ri.hits(text, ['Outstanding Stablecoin Units means', 'defined as', 'burn', 'mint'])))

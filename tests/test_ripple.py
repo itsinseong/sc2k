@@ -90,7 +90,7 @@ def test_rule_inputs_match_verified_values():
         assert r['repo_max_maturity_days'] is None, m
         want = ['bank_deposit', 'government_mmf'] + ([] if days is None else ['treasury_bill'])
         assert sorted(r['asset_types']) == want, m
-        assert r['circulation_formula_disclosed'] is True, m
+        assert r['circulation_formula_disclosed'] is False, m  # D-06: 정의 문장만 있음
         assert r['custodian_disclosure'] is False, m
         assert r['management_certification'] is True, m
 

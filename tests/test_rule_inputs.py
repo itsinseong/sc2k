@@ -102,7 +102,7 @@ REPO = {
 CIRC = {
     'USDC': [('2023-01', True)], 'EURC': [('2023-01', True)], 'PYUSD': [('2023-08', False), ('2025-01', True)],
     'USDP': [('2023-01', False), ('2025-01', True)], 'USDG': [('2024-10', False), ('2026-01', True)],
-    'RLUSD': [('2024-12', True)], 'GUSD': [('2023-01', False)], 'USDT': [('2023-03', True)],
+    'RLUSD': [('2024-12', False)], 'GUSD': [('2023-01', False)], 'USDT': [('2023-03', True)],
 }
 CUST = {
     'USDC': [('2023-01', True), ('2023-09', False)], 'EURC': [('2023-01', True), ('2023-09', False)],
