@@ -132,23 +132,23 @@ const DOT_RULES = ['R03', 'R05', 'R10', 'R13'];
 const L = 84, ROW = 26;
 const NICE = [1, 2, 5, 10, 20, 25, 50, 100, 200, 500];
 const plotVal = (n) => (n.k === 'gte' ? pn(n.v) : n.v);
-function plot(rid, jurisdictions, copy, W) {
+function plot(rid, jurisdictions, copy, W, focus = null) {
   const R = W - 34;
   const names = (id) => copy?.나라?.[id]?.이름 || FALLBACK_NAME[id];
   const rule = jurisdictions['kr-v1'].rules[rid];
   const pct = rid === 'R05';
   const rows = FOREIGN.map((id) => {
     const d = flat(jurisdictions[id]?.rules?.[rid]);
-    if (!d) return { label: names(id), text: '자료 없음' };
+    if (!d) return { id, label: names(id), text: '자료 없음' };
     const x = describe(rid, d);
-    if (!x.n) return { label: names(id), text: x.t };
+    if (!x.n) return { id, label: names(id), text: x.t };
     const bd = x.n.unit === 'business_days';
     const why = x.opt ? '의무 아님' : bd ? '영업일' : '';
-    return { label: names(id), dots: [{ v: plotVal(x.n), hollow: !!why, why, n: 1, tip: `${names(id)}: ${fmtNum(x.n, false)}${x.opt ? ', 의무 아님' : ''}\n${d.article || d.requirement}` }], note: x.opt ? '의무 아님' : '' };
+    return { id, label: names(id), dots: [{ v: plotVal(x.n), hollow: !!why, why, n: 1, tip: `${names(id)}: ${fmtNum(x.n, false)}${x.opt ? ', 의무 아님' : ''}\n${d.article || d.requirement}` }], note: x.opt ? '의무 아님' : '' };
   });
   // 한국 의원안 행
   const bd0 = flat(rule, 'bill'), bx = bd0 && describe(rid, bd0);
-  const krRow = { label: '한국 의원안', bold: true };
+  const krRow = { id: 'kr-v1', label: '한국 의원안', bold: true };
   if (rule.bills && bx?.n) {
     const nums = rule.bills.filter((b) => typeof b.value === 'number');
     const noNum = rule.bills.filter((b) => typeof b.value !== 'number').reduce((s, b) => s + billCount(b), 0);
@@ -197,9 +197,11 @@ function plot(rid, jurisdictions, copy, W) {
   }
   let hasBd = false, hasOpt = false;
   geo.forEach(({ r, cy, stacked }) => {
-    out.push(`<text x="0" y="${cy - (r.sub ? 4 : 0)}" dominant-baseline="central" font-size="12" ${r.bold ? 'font-weight="650" fill="var(--ink)"' : 'fill="var(--ink-2)"'}>${esc(r.label)}</text>`);
+    const on = focus ? focus.includes(r.id) : r.bold, dim = focus && !on;
+    out.push(dim ? '<g opacity=".28">' : '<g>');
+    out.push(`<text x="0" y="${cy - (r.sub ? 4 : 0)}" dominant-baseline="central" font-size="12" ${on ? 'font-weight="650" fill="var(--ink)"' : 'fill="var(--ink-2)"'}>${esc(r.label)}</text>`);
     if (r.sub) out.push(`<text x="0" y="${cy + 10}" dominant-baseline="central" font-size="11" fill="var(--muted)">${esc(r.sub)}</text>`);
-    if (r.text) { out.push(`<text x="${L + 6}" y="${cy}" dominant-baseline="central" font-size="11" fill="var(--muted)">${esc(r.text)}</text>`); return; }
+    if (r.text) { out.push(`<text x="${L + 6}" y="${cy}" dominant-baseline="central" font-size="11" fill="var(--muted)">${esc(r.text)}</text>`, '</g>'); return; }
     out.push(`<line x1="${L}" y1="${cy}" x2="${R}" y2="${cy}" stroke="var(--line)" stroke-width="1"/>`);
     if (r.band) out.push(`<rect x="${X(r.band[0])}" y="${cy - (stacked ? 16 : 9)}" width="${Math.max(X(r.band[1]) - X(r.band[0]), 1)}" height="${stacked ? 32 : 18}" fill="var(--pale)"/>`);
     r.dots.forEach((d) => {
@@ -209,6 +211,7 @@ function plot(rid, jurisdictions, copy, W) {
       if (d.n > 1) out.push(`<text x="${X(d.v) + 8}" y="${cy + dy}" dominant-baseline="central" font-size="11" fill="var(--muted)">${d.n}건</text>`);
       else if (r.note) out.push(`<text x="${X(d.v) + 8}" y="${cy + dy}" dominant-baseline="central" font-size="11" fill="var(--muted)">${esc(r.note)}</text>`);
     });
+    out.push('</g>');
   });
   const key = [
     `<span><i class="rv-key-dot"></i>${rid === 'R05' ? '의무 규정' : '일'}</span>`,
@@ -221,7 +224,9 @@ function plot(rid, jurisdictions, copy, W) {
   const aria = `${title} (${rid})${prop ? `, ${prop.text}` : ''}`;
   return `<figure class="rv-plot"><h3>${esc(title)}<small class="rv-code2">${rid}</small></h3><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(aria)}" style="width:100%;max-width:${W}px;height:auto;display:block" font-family="var(--sans)">${out.join('')}</svg><figcaption class="rv-key">${key}</figcaption></figure>`;
 }
-export const ruleDotsPlots = (jurisdictions, copy, W = 600) => DOT_RULES.map((rid) => plot(rid, jurisdictions, copy, W)).join('');
-export function ruleDots(jurisdictions, copy, W = 600) {
-  return `<section class="rv-card panel" aria-labelledby="rv-dots-title"><div class="panel-heading"><div><h2 id="rv-dots-title">숫자 규칙 분포</h2><p>점은 나라나 법안 하나의 값, 점선은 한국 제안값</p></div></div><div class="rv-dots" data-w="${W}">${ruleDotsPlots(jurisdictions, copy, W)}</div></section>`;
+export const ruleDotsPlots = (jurisdictions, copy, W = 600, focus = null) => DOT_RULES.map((rid) => plot(rid, jurisdictions, copy, W, focus)).join('');
+export function ruleDots(jurisdictions, copy, W = 600, focus = null, bare = false) {
+  const plots = `<div class="rv-dots" data-w="${W}"${focus ? ` data-focus="${focus.join(',')}"` : ''}>${ruleDotsPlots(jurisdictions, copy, W, focus)}</div>`;
+  if (bare) return plots;
+  return `<section class="rv-card panel" aria-labelledby="rv-dots-title"><div class="panel-heading"><div><h2 id="rv-dots-title">숫자 규칙 분포</h2><p>점은 나라나 법안 하나의 값, 점선은 한국 제안값</p></div></div>${plots}</section>`;
 }

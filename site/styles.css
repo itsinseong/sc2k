@@ -942,3 +942,45 @@ html{scrollbar-width:thin;scrollbar-color:var(--stone) transparent}
     .rail{border-right:2px solid var(--line);border-image:linear-gradient(to bottom,var(--ink) var(--sp),var(--line) var(--sp)) 1;animation:rail-sp linear both;animation-timeline:scroll(root)}
   }
 }
+
+/* 홈 맨 위 4단계 이동 단추 */
+.step-btn{display:inline-flex;align-items:baseline;gap:7px;padding:0;border:0;background:none;color:inherit;font:inherit;cursor:pointer;border-bottom:1px solid transparent}
+.step-btn:hover,.step-btn:focus-visible{color:var(--ink);border-bottom-color:var(--ink)}
+/* 264건 비교: 주의 칸, 비교 나라와 판정이 갈리는 칸 */
+.mx-c.ca,.tint.ca{background:color-mix(in srgb,var(--warn) 16%,#fff)}
+.mx-c.ca b{color:var(--warn-text,var(--ink))}
+.mx-c[class*=' cm']{position:relative;overflow:hidden}
+.mx-c[class*=' cm']::after{content:'';position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--pale)}
+.mx-c.cmhi::after{background:var(--ok)}.mx-c.cmca::after{background:var(--warn)}.mx-c.cmlo::after{background:var(--bad)}
+.tint.cmk{background:linear-gradient(#fff 0 60%,var(--ink-2) 60%);box-shadow:inset 0 0 0 1px var(--line)}
+/* 나라 화면: 다른 나라와 비교 */
+.cp-section{margin-top:0}
+.cp-pick{display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:6px;color:var(--muted);font-size:12px}
+.cp-base{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.cp-base b{display:inline-flex;align-items:center;gap:6px;color:var(--ink);font-size:13px;font-weight:650}
+.cp-vs{margin:0 2px 0 10px;padding-left:12px;border-left:1px solid var(--line);white-space:nowrap}
+.cp-btns{display:inline-flex;flex-wrap:wrap;gap:6px}
+.cp-pick button{display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border:1px solid var(--line);border-radius:var(--r);background:#fff;color:var(--ink-2);font:inherit;font-size:13px;white-space:nowrap;cursor:pointer}
+.cp-pick button:hover{border-color:var(--muted);color:var(--ink)}
+.cp-pick button[aria-checked=true]{border-color:var(--accent);background:var(--accent);color:#fff;font-weight:600}
+.cp-pick img,.cp-base img{width:16px;height:12px;border-radius:1px;object-fit:cover;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
+.cp-block{padding:14px 0 4px;border-top:1px solid var(--pale)}
+.cp-block h3{margin:0 0 2px;font-size:14px;font-weight:650}
+.cp-block>p{margin:0 0 10px;color:var(--muted);font-size:12px}
+.cp-grid{--cell:22px;display:grid;grid-template-columns:max-content repeat(15,var(--cell));justify-content:start;gap:4px 3px;align-items:center;margin-bottom:8px}
+.cp-name{padding-right:12px;font-size:13px;font-weight:600;white-space:nowrap}
+.cp-rid{color:var(--muted);font-size:9px;text-align:center}
+.cp-rid.df{color:var(--ink);font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.cp-section .rv-dots{margin-top:4px}
+
+/* 나라 화면 맨 위 탭(규칙, 이 나라 보고서, 다른 나라와 비교) */
+.detail-tabs.top{grid-template-columns:repeat(3,max-content);gap:0 28px;padding:0 2px;margin:0 0 16px}
+.detail-tabs.top button{min-height:44px;padding:0 2px;font-size:14px}
+
+/* 홈 칸 제목의 단계 번호(맨 위 4단계 단추와 같은 번호) */
+.step-no{display:inline-block;margin-right:8px;color:var(--accent);font-weight:600}
+.report-line .step-no{font-size:13px}
+/* 보고서를 바꾸면 판정 보고서 줄을 잠깐 강조 */
+@keyframes flash{0%{background:color-mix(in srgb,var(--ok) 22%,#fff)}100%{background:transparent}}
+.flash{animation:flash 1.6s ease-out;border-radius:4px}
+.mx-own{display:block;margin-top:1px;color:var(--accent);font-size:10px;font-style:normal;font-weight:600}

@@ -15,6 +15,7 @@ const statusText = (n) => STATUS_ORDER.map((s) => `${STATUS_NAME[s]} ${n[s] || 0
 // rows: [{country, countryName, rule, ruleName, status}] status는 met, caution, unmet, none
 // 나라와 규칙의 축 순서는 rows에 처음 나온 순서
 export function flowSvg(rows, { focus, width = 1100 } = {}) {
+  const isF = (c) => (Array.isArray(focus) ? focus.includes(c) : c === focus); // 진하게 볼 나라. 하나 또는 여럿
   const countries = uniq(rows.map((r) => r.country)), rules = uniq(rows.map((r) => r.rule));
   const nameOf = Object.fromEntries(rows.map((r) => [r.country, r.countryName]));
   // 왼쪽은 나라 이름과 국기 자리. 국기는 그 나라 막대와 같은 높이, 너비는 4:3
@@ -59,8 +60,8 @@ export function flowSvg(rows, { focus, width = 1100 } = {}) {
   };
   const label = (u) => `${u.countryName}, ${u.ruleName}: ${STATUS_NAME[u.status]}`;
   // 한국을 맨 위에 그림
-  const drawn = [...units].sort((a, b) => (a.country === focus) - (b.country === focus));
-  const ribbons = drawn.map((u) => `<g class="flow-u s-${u.status}${u.country === focus ? ' kr' : ''}" data-i="${u.i}" data-c="${esc(u.country)}" data-s="${u.status}" data-r="${esc(u.rule)}"><title>${esc(label(u))}</title><path d="${band(L + BAR, u.yL, M, u.yM)}"/><path d="${band(M + BAR, u.yM, R, u.yR)}"/></g>`).join('');
+  const drawn = [...units].sort((a, b) => isF(a.country) - isF(b.country));
+  const ribbons = drawn.map((u) => `<g class="flow-u s-${u.status}${isF(u.country) ? ' kr' : ''}" data-i="${u.i}" data-c="${esc(u.country)}" data-s="${u.status}" data-r="${esc(u.rule)}"><title>${esc(label(u))}</title><path d="${band(L + BAR, u.yL, M, u.yM)}"/><path d="${band(M + BAR, u.yM, R, u.yR)}"/></g>`).join('');
 
   const bar = (x, n, cls) => `<rect class="flow-bar ${cls}" x="${x}" y="${f(n.y)}" width="${BAR}" height="${n.h}"/>`;
   const tag = ({ k, v, x, anchor, n, cls = '', text, code, aria, big }) => {
@@ -77,7 +78,7 @@ export function flowSvg(rows, { focus, width = 1100 } = {}) {
   };
   const byC = rows.reduce((o, r) => ((o[r.country] ||= {})[r.status] = (o[r.country][r.status] || 0) + 1, o), {});
   const tags = [
-    ...countries.map((c) => ctag({ v: c, n: left[c], text: nameOf[c], big: c === focus, aria: `${nameOf[c]}: ${statusText(byC[c])}` })),
+    ...countries.map((c) => ctag({ v: c, n: left[c], text: nameOf[c], big: isF(c), aria: `${nameOf[c]}: ${statusText(byC[c])}` })),
     ...statuses.map((s) => tag({ k: 's', v: s, x: M + BAR / 2, anchor: 'middle', n: mid[s], text: `${STATUS_NAME[s]} ${mid[s].n}`, aria: `${STATUS_NAME[s]} ${mid[s].n}개` })),
     ...rules.map((r) => tag({ k: 'r', v: r, x: R + BAR + 6, anchor: 'start', n: rightNodes[r], code: r, text: ruleNameOf[r], aria: `${r} ${ruleNameOf[r]}: ${statusText(sum(rows.filter((x) => x.rule === r), 'status'))}` })),
   ].join('');
