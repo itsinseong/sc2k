@@ -177,6 +177,65 @@ function chartComposition(opt = {}) {
   return `<section class="chart-card panel" aria-labelledby="composition-title"><div class="panel-heading"><div><h2 id="composition-title"><b class="step-no num">3</b>준비금 보고서 ${reports.length}건 비교</h2><p>줄은 코인, 칸은 달입니다. 칸의 큰 숫자는 은행 예금 비중(%)이고, 한국 제안 ${lim} 이상이면 파랑, 미만이면 빨강입니다. 작은 숫자는 기준일부터 검증인 서명까지 걸린 날이고, 제안 ${dayLim ?? '자료 없음'}일을 넘으면 빨강입니다. 의원안 ${billDays ?? '자료 없음'}일 안에 서명한 보고서는 ${inBill ? `${inBill}건입니다` : '없습니다'}. 칸을 누르면 그 보고서로 판정합니다.</p></div></div><div class="mx-wrap"><div class="mx" style="--n:${months.length}">${head}${rows}</div></div><div class="chart-foot"><span class="legend"><span><i class="tint hi"></i>은행 예금 ${lim} 이상</span><span><i class="tint lo"></i>${lim} 미만</span><span><i class="tint nb"></i>은행 예금 구분 안 됨</span>${CATEGORIES.map(([key,name]) => `<span><i class="seg ${key}"></i>${name}</span>`).join('')}</span><span class="legend mx-key"><span><i class="mk pre"></i>출시 전</span><span><i class="mk excl">×</i>원문 합계 오류로 뺌</span><span><i class="mk wait">…</i>아직 게시 전</span><span><i class="mk qtr">–</i>분기 공시라 없는 달</span></span>${reports.some((x) => bankInfo(x).approx) ? '<p class="chart-note">* Circle은 은행 예금을 따로 적지 않아 기타 준비자산 비중으로 대신 계산했습니다. 국채가 섞인 달이 있습니다.</p>' : ''}</div></section>`;
 }
 const krProposal = (rid) => jurisdictions['kr-v1'].rules[rid].candidates.find((c) => c.id === 'proposal');
+// 종합 화면 3번 표: 줄은 코인, 가로는 달. 칸에 숫자를 쓰지 않고, 고른 은행 예금 기준에 못 미친 보고서를 굵은 띠로 잇는다.
+// 15%는 공시안 잠정값이라 기준을 단추로 고르게 한다(한국 의원안은 비율을 대통령령에 맡기거나 정하지 않음)
+const MX_LIMS = [[0.15, 'SC2K 공시안 잠정값'], [0.3, 'EU 일반, 미국 OCC 안'], [0.5, '일본'], [0.6, 'EU 중요']];
+const MX_SHORT = { bank:'예금', repo:'레포', fund:'펀드', treasury:'국채', other:'기타' };
+function chartReports() {
+  const lim = state.mxLim ?? krProposal('R05')?.threshold ?? 0.15, dayLim = krProposal('R10')?.deadline_days ?? 30;
+  const months = [...new Set(reports.map((r) => r.month))].sort(), n = months.length, last = months[n - 1];
+  const P = (v) => `${(v * 100).toFixed(4).replace(/\.?0+$/, '')}%`, at = (i, w = 1) => `left:${P(i / n)};width:${P(w / n)}`;
+  const limTxt = pct(lim, 0), quarterly = new Set(reports.filter((x) => x.disclosure_cadence === 'quarterly').map((x) => x.token));
+  let fails = 0, lates = 0;
+  const rows = [...new Set(reports.map((r) => r.token))].map((tok) => {
+    const se = series[tok], mine = reports.flatMap((x, i) => x.token === tok ? [i] : []), latest = reports[mine.at(-1)];
+    // 달마다 상태: pre(출시 전, 그리지 않음), pass, fail, gap(보고서 없음 또는 은행 예금을 알 수 없음)
+    const cells = months.map((m) => {
+      const i = mine.find((k) => reports[k].month === m);
+      if (i == null) {
+        const ex = excluded.find((e) => e.token === tok && e.month === m);
+        if (se && m < se.first_month) return { k:'pre' };
+        return { k:'gap', why: ex ? `원문 합계 오류로 뺌. ${ex.reason}` : se?.not_yet_published?.includes(m) ? '아직 게시 전' : quarterly.has(tok) ? '분기 공시라 보고서 없는 달' : '보고서 없음' };
+      }
+      const r = reports[i], b = bankInfo(r), d = days(r);
+      if (d != null && d > dayLim) lates++;
+      if (b.ratio == null) return { k:'gap', i, d, why:'원문이 은행 예금을 따로 적지 않아 구분 안 됨' };
+      const fail = b.ratio < lim; if (fail) fails++;
+      return { k: fail ? 'fail' : 'pass', i, d, b };
+    });
+    // 미달 묶음: 미달 보고서 사이에 보고서 없는 달만 끼면 한 묶음으로 센다(분기 공시). 통과나 구분 안 됨이 끼면 끊는다
+    const runs = []; let cur = null;
+    cells.forEach((c, j) => {
+      if (c.k === 'fail') { if (cur) { cur.end = j; cur.count++; } else cur = { start:j, end:j, count:1 }; }
+      else if (!(c.k === 'gap' && c.i == null && cur)) { if (cur) runs.push(cur); cur = null; }
+    });
+    if (cur) runs.push(cur);
+    const inRun = (j) => runs.some((r) => j > r.start && j < r.end);
+    let track = '';
+    cells.forEach((c, j) => {
+      if (c.k === 'pass') track += `<i class="rt-line" style="${at(j)}"></i>`;
+      else if (c.k === 'gap') track += `<i class="rt-gap${inRun(j) ? ' in' : ''}" style="${at(j)}"></i>`;
+    });
+    // 띠: 붙어 있는 미달 달을 한 조각으로
+    cells.forEach((c, j) => { if (c.k === 'fail' && cells[j - 1]?.k !== 'fail') { let e = j; while (cells[e + 1]?.k === 'fail') e++; track += `<i class="rt-band" style="${at(j, e - j + 1)}"></i>`; } });
+    runs.filter((r) => r.count >= 3).forEach((r) => { track += `<span class="rt-run" style="left:${P(r.start / n)}">${quarterly.has(tok) ? '분기 보고서 ' : ''}${r.count}건 연속 미달</span>`; });
+    cells.forEach((c, j) => {
+      if (c.i == null && c.k !== 'gap') return;
+      const when = `${coin(latest)} ${months[j].slice(0,4)}년 ${Number(months[j].slice(5))}월`;
+      if (c.i == null) { track += `<span class="rt-c empty" style="${at(j)}" title="${esc(`${when}: ${c.why}`)}"></span>`; return; }
+      const r = reports[c.i], sel = state.reportIndex === c.i, late = c.d != null && c.d > dayLim;
+      const t = `${label(r)}: ${c.b ? `은행 예금 ${pct(c.b.ratio,1)}${c.b.approx ? ' (대신 계산)' : ''}, 기준 ${limTxt} ${c.k === 'fail' ? '미만' : '이상'}` : c.why}, 서명까지 ${c.d ?? '자료 없음'}일${late ? `, ${dayLim}일 초과` : ''}`;
+      if (late) track += `<i class="rt-late" style="left:${P((j + 0.5) / n)}"></i>`;
+      track += `<button type="button" class="rt-c${sel ? ' selected' : ''}" style="${at(j)}" data-report="${c.i}" aria-pressed="${sel}" aria-label="${esc(t)}" title="${esc(t)}"></button>`;
+    });
+    const judgedN = cells.filter((c) => c.k === 'pass' || c.k === 'fail').length, failN = cells.filter((c) => c.k === 'fail').length, lb = bankInfo(latest);
+    const comp = mix(latest).filter((x) => x.ratio >= 0.005).map((x) => `${MX_SHORT[x.type]} ${Math.round(x.ratio * 100)}%`).join(', ');
+    return `<div class="rt-head"><strong>${esc(coin(latest))}</strong><small>${latest.month === last ? '' : `${esc(ym(latest))} 기준 `}${esc(comp)}</small></div><div class="rt-track">${track}</div><div class="rt-n num"><b>${failN}</b>/${judgedN}</div><div class="rt-n num${lb.ratio != null && lb.ratio < lim ? ' low' : ''}"><b>${lb.ratio == null ? '–' : lb.ratio >= 0.9995 ? `${Math.round(lb.ratio * 100)}%` : pct(lb.ratio, 1)}</b></div>`;
+  }).join('');
+  const axis = months.map((m) => `<span${m === last ? ' class="last"' : ''}>${m.endsWith('-01') || m === months[0] ? `<em>${m.slice(0,4)}</em>` : ''}${Number(m.slice(5))}${m === last ? '월' : ''}</span>`).join('');
+  const pills = MX_LIMS.map(([v, t]) => `<button type="button" class="rt-pill" data-mxlim="${v}" aria-pressed="${v === lim}">${pct(v,0)} ${t}</button>`).join('');
+  return `<section class="chart-card panel rt-card" aria-labelledby="composition-title"><div class="panel-heading"><div><h2 id="composition-title"><b class="step-no num">3</b>준비금 보고서 ${reports.length}건 비교</h2><div class="rt-pills" role="group" aria-label="은행 예금 기준">${pills}</div><p>한국 의원안 9건 중 2건은 은행 예금 비율을 대통령령에 맡겼고 7건은 정하지 않아, 법에 정해진 숫자는 없습니다. 위 단추로 기준을 고르면 그 기준에 못 미친 보고서가 굵은 띠로 바뀝니다. 칸을 누르면 그 보고서로 판정합니다.</p><p class="rt-sum">전체 ${reports.length}건 중 은행 예금이 ${limTxt} 미만인 보고서 <b class="num">${fails}건</b>, 서명까지 ${dayLim}일을 넘긴 보고서 <b class="num">${lates}건</b></p></div></div><div class="mx-wrap"><div class="rt-grid"><span class="rt-cap">준비금 구성(최근 달)</span><div class="rt-axis">${axis}</div><span class="rt-cap r">미달 / 판정</span><span class="rt-cap r">최근 은행 예금</span>${rows}</div></div><div class="chart-foot"><span class="legend rt-legend"><span><i class="rt-k line"></i>은행 예금 ${limTxt} 이상</span><span><i class="rt-k band"></i>${limTxt} 미만</span><span><i class="rt-k gap"></i>보고서가 없거나 은행 예금을 알 수 없는 달</span><span><i class="rt-k late"></i>서명 ${dayLim}일 초과</span></span></div></section>`;
+}
 function daysRange() {
   const v = reports.map(days).filter((x) => x != null);
   return `보고서 ${v.length}건 모두 ${Math.min(...v)}~${Math.max(...v)}일`;
@@ -286,7 +345,7 @@ function home() {
       <section class="stats panel" aria-label="선택 보고서의 주요 수치">${stat(`은행 예금 비중${cash.approx ? ' (대신 계산)' : ''}`, metricPct(cash.ratio), `한국 규칙 ${ruleName('R05')}, 제안 ${bankLim != null ? pct(bankLim,0) : '자료 없음'} 이상${cash.approx ? '<br>기타 준비자산으로 대신 계산, 국채가 섞인 달이 있음' : ''}`, 'stat-main')}${stat('서명까지 걸린 날', days(r) == null ? '자료 없음' : `${days(r)}<small>일</small>`, `한국 규칙 ${ruleName('R10')}, 제안 ${dayLim ?? '자료 없음'}일 안<br>${daysRange()}`)}${stat('커버리지', metricPct(r.coverage ?? (r.fair_value && r.circulation ? r.fair_value/r.circulation : null)), `한국 규칙 ${ruleName('R01')}<br>준비금 공정가치 / 발행잔액`)}</section>
       <section class="result panel" aria-labelledby="result-title"><div class="section-head"><div><h2 id="result-title"><b class="step-no num">2</b>한국 기준 판정 결과</h2><p>한국 후보값은 확정된 규정이 아닙니다</p></div><a class="link-more" href="#kr-v1" data-country="kr-v1">후보값 바꾸기 →</a></div><div class="result-body">${krSummary(kr)}<div class="kr-finds">${krFindings(kr)}</div></div></section>
     </div></div>
-    ${chartComposition()}
+    ${chartReports()}
     ${ruleList(kr, foreign)}
     ${flowSection()}
     <div class="home-sec"><h2>한국 기준값과 해외 기준값</h2><p>한국 제안값은 해외 기준과 국회 법안을 살펴 정했습니다. 표는 규칙마다 한국과 해외의 값을 나란히 보여 주고, 아래 그래프는 숫자 규칙 4개에서 한국 제안값이 어디에 놓이는지 보여 줍니다.</p></div>${ruleTable(jurisdictions, copy)}${ruleDots(jurisdictions, copy)}<div class="disclosure"><strong>${KR_NOTICE}</strong><br>${foreignNames()} 판정: ${FOREIGN_NOTICE}</div>${rulesDock()}</div>`;
@@ -796,6 +855,7 @@ $('#app').addEventListener('click',(e) => {
     return;
   }
   const cmpBtn = e.target.closest('[data-cmp]'); if (cmpBtn) { state.cmp = cmpBtn.dataset.cmp; const y = window.scrollY; render(); window.scrollTo({ top: y, behavior: 'instant' }); return; }
+  const mxLim = e.target.closest('[data-mxlim]'); if (mxLim) { state.mxLim = Number(mxLim.dataset.mxlim); const y = window.scrollY; render(); window.scrollTo({ top: y, behavior: 'instant' }); return; }
   const report = e.target.closest('[data-report]'); if (report) return selectReport(Number(report.dataset.report));
   const country = e.target.closest('[data-country]'); if (country) return selectJurisdiction(country.dataset.country);
   const tab = e.target.closest('[data-tab]'); if (tab) {const next = tab.dataset.tab; if (next !== state.tab) window.location.hash = `#${state.jurisdiction}${next === 'rules' ? '' : `/${next}`}`;return;}
