@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05",
+ "generated": "2026-11-21",
  "source": "Paxos PYUSD/USDP/USDG 월간 examination report(USDG 2026년은 reasonable assurance), pdftotext -layout, 글자 층 없는 쪽은 macOS Vision OCR",
  "note": "sources는 숫자별 {page, line, raw} 출처. 대사 실패 보고서는 reports에서 제외. as_of=월말 기준일(두 번째 기준일). 구성 매핑: [2025-01 이후 Exhibit B 형식] cash=Cash, government_mmf=Government money market funds, repo=Repurchase agreements, treasury=Obligations of U.S. Treasury(other 키 없음). [2023~2024년 PYUSD, USDP와 USDG 2024-10~2025-12 옛 형식, 월말 기준일 표만 읽음] treasury=Total U.S. Treasury Bills(직접 보유 단기국채), repo=Total U.S. Government Guaranteed Debt Instruments Held Pursuant to Overnight Reverse Repurchase Agreements(역레포 담보 국채 합. 줄이 비면 0), cash=Total U.S. Dollars Held(USDG는 Total Cash and Cash Equivalents를 other로, 아래 참고), government_mmf=0(행 없음), other=0(원문 줄마다 달러 반올림으로 부분 합이 총계와 1달러 어긋난 PYUSD 2023-09, 2024-01, 2024-05, USDP 2024-02는 그 차액 +-1을 other에 두고 flags.rounding_residual로 표시). 2023년 PYUSD, USDP의 유통량은 소수점 둘째 자리까지 적혀 있어 반올림한 정수(flags.circulation_decimals). 옛 형식에는 회계법인이 글자로 안 나온다: PYUSD, USDP 2023~2024-12는 로고와 서명이 이미지뿐이라 firm=null(flags.firm_signature_image), USDG 2024-10~2025-12는 Enrome LLP, 2025-01 이후 PYUSD, USDP는 KPMG LLP. USDG 2024-10~2025-12 attestation.type은 원문 제목 그대로 examination(2026년만 reasonable assurance). USDP 2024-11은 표 제목 날짜가 옛 날짜(October 31, 2024)로 남아 있어 마지막 표를 월말 표로 읽었고(flags.table_heading_date_mismatch) 표 총계가 머리표와 같음을 확인. PYUSD 2024-04는 원문 표 유통량 328,083,118과 주석 328,083,103이 서로 달라 표 값을 썼다(flags.circulation_note_mismatch). USDG 2025-09의 5~7쪽은 글자 층 인코딩이 깨져 OCR로 읽었다(flags.ocr_pages). USDG 2024-10~2025-12는 'Total Cash and Cash Equivalents' 한 줄이라(원문에 은행 예금, MMF, 레포 구분 없음) cash=null(알 수 없음)로 두고 그 줄 전체를 other에 넣었다(flags.cash_equivalents_in_other, flags.cash_is_bank_deposit=false), 은행 예금 금액은 알 수 없음. repo와 government_mmf의 0은 구분 없음(flags.repo_mmf_not_split), 2025-09 이후는 Note 5 보관처에 Dreyfus Asset Management(자산운용사)가 있어 MMF가 섞였을 수 있다(flags.cash_custodians_note5). 제외: PYUSD_Examination_2024-07 2024-07-31 표 총계 $639,945,680이 줄 합계(국채 81,453,620 + 역레포 552,487,080 + 현금 5,004,980 = $638,945,680)와 $1,000,000 어긋나고 머리표 준비자산 총액($638,945,680)과도 다르다(원문 오기).",
  "rule_inputs_note": "holdings=준비자산을 원문 줄 단위로 나눈 목록(amount 합=fair_value, 대사 실패 시 rule_input_warnings). 금액은 components와 같은 값이며 줄 이름, 만기, 쪽과 줄을 원문에서 읽어 붙임. kind 매핑: Cash 또는 Total U.S. Dollars Held=bank_deposit, Total U.S. Treasury Bills 또는 Obligations of U.S. Treasury(Treasury bills 표)=treasury_bill, Repurchase agreements 또는 Held Pursuant to Overnight Reverse Repurchase Agreements=reverse_repo_overnight, Government money market funds=government_mmf, USDG 2024-10~2025-12의 Total Cash and Cash Equivalents=cash_equivalents_unsplit, 원문 줄 합계와 총계의 반올림 차이=settlement. 옛 형식(2023~2024년 PYUSD, USDP)의 역레포 줄 아래 종목(U.S. Treasury Bonds/Debt, CUSIP, 만기일)은 역레포 담보이므로 reverse_repo_overnight 줄의 items에 담고 국채 보유로 세지 않으며 collateral_max_maturity_days로만 남김. 역레포 만기는 표 제목 또는 본문이 overnight이라 하고 만기일이 다음 영업일이므로 1. 국채 만기(treasury_max_maturity_days)는 직접 보유 Treasury bills 중 가장 늦은 만기일에서 as_of를 뺀 달력일이며 basis=direct. 보고서에 펀드 안 보유 종목을 적은 표가 없어 fund_holdings는 모두 []. USDG 2024-10~2025-12는 한 줄(cash_equivalents_unsplit) 안의 구성을 알 수 없고, 그 안에 국채나 MMF가 더 있을 수 있음. 만기 날짜는 글자 층이 없는 쪽(USDG 대부분)은 OCR로 읽고 이미지와 대조한 값. 유통량 설명 없음(false)은 옛 형식이 계약 공급량만 적었기 때문. 경영진 확인서 certifier는 서명 문단의 직함. 상환 기한과 이자 지급은 모든 보고서에 없어 null(not_in_report).",
@@ -200,7 +200,7 @@
       "line": 4,
       "raw": "August 8, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-08-08)과 월말 기준일(2023-08-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-08-08)과 월말 기준일(2023-08-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -438,7 +438,7 @@
       "line": 4,
       "raw": "September 18, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-09-18)과 월말 기준일(2023-09-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-09-18)과 월말 기준일(2023-09-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -670,7 +670,7 @@
       "line": 9,
       "raw": "October 19, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-10-19)과 월말 기준일(2023-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-10-19)과 월말 기준일(2023-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -902,7 +902,7 @@
       "line": 9,
       "raw": "November 20, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-11-20)과 월말 기준일(2023-11-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-11-20)과 월말 기준일(2023-11-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -1141,7 +1141,7 @@
       "line": 10,
       "raw": "December 27, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-12-27)과 월말 기준일(2023-12-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-12-27)과 월말 기준일(2023-12-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -1433,7 +1433,7 @@
       "line": 16,
       "raw": "January 12, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-01-12)과 월말 기준일(2024-01-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-01-12)과 월말 기준일(2024-01-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -1682,7 +1682,7 @@
       "line": 14,
       "raw": "February 5, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-02-05)과 월말 기준일(2024-02-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-02-05)과 월말 기준일(2024-02-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -1957,7 +1957,7 @@
       "line": 14,
       "raw": "March 12, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-03-12)과 월말 기준일(2024-03-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-03-12)과 월말 기준일(2024-03-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -2226,7 +2226,7 @@
       "line": 14,
       "raw": "April 22, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-04-22)과 월말 기준일(2024-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-04-22)과 월말 기준일(2024-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -2542,7 +2542,7 @@
       "line": 14,
       "raw": "May 16, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-05-16)과 월말 기준일(2024-05-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-05-16)과 월말 기준일(2024-05-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -2817,7 +2817,7 @@
       "line": 14,
       "raw": "June 4, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-06-04)과 월말 기준일(2024-06-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-06-04)과 월말 기준일(2024-06-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -3127,7 +3127,7 @@
       "line": 14,
       "raw": "August 27, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-08-27)과 월말 기준일(2024-08-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-08-27)과 월말 기준일(2024-08-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -3451,7 +3451,7 @@
       "line": 14,
       "raw": "September 18, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-09-18)과 월말 기준일(2024-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-09-18)과 월말 기준일(2024-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -3768,7 +3768,7 @@
       "line": 14,
       "raw": "October 11, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-10-11)과 월말 기준일(2024-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-10-11)과 월말 기준일(2024-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -4043,7 +4043,7 @@
       "line": 14,
       "raw": "November 25, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-11-25)과 월말 기준일(2024-11-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-11-25)과 월말 기준일(2024-11-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -4271,7 +4271,7 @@
       "line": 14,
       "raw": "December 2, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-12-02)과 월말 기준일(2024-12-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-12-02)과 월말 기준일(2024-12-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -4487,7 +4487,7 @@
       "line": 12,
       "raw": "January 21, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-01-21)과 월말 기준일(2025-01-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-01-21)과 월말 기준일(2025-01-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4707,7 +4707,7 @@
       "line": 12,
       "raw": "February 13, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-02-13)과 월말 기준일(2025-02-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-02-13)과 월말 기준일(2025-02-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4927,7 +4927,7 @@
       "line": 12,
       "raw": "March 18, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-03-18)과 월말 기준일(2025-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-03-18)과 월말 기준일(2025-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5147,7 +5147,7 @@
       "line": 12,
       "raw": "April 10, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-04-10)과 월말 기준일(2025-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-04-10)과 월말 기준일(2025-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5367,7 +5367,7 @@
       "line": 12,
       "raw": "May 8, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-05-08)과 월말 기준일(2025-05-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-05-08)과 월말 기준일(2025-05-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5587,7 +5587,7 @@
       "line": 12,
       "raw": "June 9, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-06-09)과 월말 기준일(2025-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-06-09)과 월말 기준일(2025-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5807,7 +5807,7 @@
       "line": 12,
       "raw": "July 8, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-07-08)과 월말 기준일(2025-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-07-08)과 월말 기준일(2025-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -6060,7 +6060,7 @@
       "line": 12,
       "raw": "August 7, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-08-07)과 월말 기준일(2025-08-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-08-07)과 월말 기준일(2025-08-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -6313,7 +6313,7 @@
       "line": 12,
       "raw": "September 8, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-09-08)과 월말 기준일(2025-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-09-08)과 월말 기준일(2025-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -6572,7 +6572,7 @@
       "line": 12,
       "raw": "October 10, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-10-10)과 월말 기준일(2025-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-10-10)과 월말 기준일(2025-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -6837,7 +6837,7 @@
       "line": 12,
       "raw": "November 10, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-11-10)과 월말 기준일(2025-11-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-11-10)과 월말 기준일(2025-11-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -7114,7 +7114,7 @@
       "line": 12,
       "raw": "December 17, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-12-17)과 월말 기준일(2025-12-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-12-17)과 월말 기준일(2025-12-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -7379,7 +7379,7 @@
       "line": 12,
       "raw": "January 16, 2025"
      },
-     "note": "본문 표의 첫 기준일은 2025-01-16로 적혔고 같은 보고서의 다른 쪽에는 January 16, 2026로 적혀 연도 오기이며 월말 기준일은 2026-01-30. 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "본문 표의 첫 기준일은 2025-01-16로 적혔고 같은 보고서의 다른 쪽에는 January 16, 2026로 적혀 연도 오기이며 월말 기준일은 2026-01-30. 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -7650,7 +7650,7 @@
       "line": 12,
       "raw": "February 10, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-02-10)과 월말 기준일(2026-02-27) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-02-10)과 월말 기준일(2026-02-27) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -7921,7 +7921,7 @@
       "line": 12,
       "raw": "March 10, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-03-10)과 월말 기준일(2026-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-03-10)과 월말 기준일(2026-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -8180,7 +8180,7 @@
       "line": 12,
       "raw": "April 8, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-04-08)과 월말 기준일(2026-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-04-08)과 월말 기준일(2026-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -8412,7 +8412,7 @@
       "line": 12,
       "raw": "May 11, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-05-11)과 월말 기준일(2026-05-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-05-11)과 월말 기준일(2026-05-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -8683,7 +8683,7 @@
       "line": 12,
       "raw": "June 17, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-06-17)과 월말 기준일(2026-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-06-17)과 월말 기준일(2026-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -8958,7 +8958,7 @@
       "line": 12,
       "raw": "July 21, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-07-21)과 월말 기준일(2026-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-07-21)과 월말 기준일(2026-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -9227,13 +9227,282 @@
       "line": 12,
       "raw": "August 6, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-08-06)과 월말 기준일(2026-08-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 37건이 2023-08부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-08-06)과 월말 기준일(2026-08-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
      "where": {
       "page": 5,
       "line": 14,
+      "raw": "Total PYUSD natively minted"
+     },
+     "note": "Exhibit A가 (a) 발행 토큰 총량에서 (b) 임시 상환 불가, (c) 영구 상환 불가 토큰을 빼 (d) 상환 가능 토큰 잔액을 내는 식을 표로 적음."
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": null,
+     "note": "원문 전체에서 custod, DBS, Banking Circle, Standard Chartered, Dreyfus, BNY, Citi, JPMorgan 등 기관 이름을 찾았으나 보관 은행 이름 없음. 원문에 있는 것은 이름 없는 표현뿐: Bank 1 in, FDIC, qualified custodian, commercial banks."
+    },
+    "management_certification": {
+     "state": "found",
+     "where": {
+      "page": 4,
+      "line": 21,
+      "raw": "To the best of the knowledge and belief of the undersigned"
+     },
+     "note": "경영진 주장(Management's Assertion 또는 management ... assertions)과 \"To the best of the knowledge and belief of the undersigned, the information ... is accurate and complete\" 서명 문단이 있고 서명자 직함은 Head of Treasury and Portfolio Management."
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": null,
+     "note": "business day, within N days, redemption fee, redeem 같은 말을 찾았으나 상환 기한 문장 없음. 본문은 매수와 상환 조건을 회사 약관(terms and conditions) 링크로만 가리킴."
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": {
+      "page": 3,
+      "line": 56,
+      "raw": "accrued but unswept interest"
+     },
+     "note": "interest, yield, reward를 찾았으나 토큰 보유자에게 이자를 준다는 문장 없음. 각주에 \"준비자산에 쌓인 미수 이자도 준비자산 총액에 포함, 유통량을 넘는 순수익은 Paxos가 인출할 수 있음\"이 있어 이자는 발행사가 가져간다는 취지이며 지급 값은 아님."
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Paxos_PYUSD_Examination_2026-09.pdf",
+   "issuer": "Paxos Trust Company, National Association",
+   "token": "PYUSD",
+   "report_dates": [
+    "2026-09-17",
+    "2026-09-30"
+   ],
+   "as_of": "2026-09-30",
+   "month": "2026-09",
+   "as_of_time": "17:00 ET",
+   "reserve_currency": "USD",
+   "circulation": 2747625868,
+   "fair_value": 2754709360,
+   "components": {
+    "cash": 100413388,
+    "government_mmf": 0,
+    "repo": 2155290000,
+    "treasury": 499005972
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 2754709360,
+     "got": 2754709360,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 2754709360,
+     "got": 2754709360,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 7083492,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00257804,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-10-23",
+    "firm": "KPMG LLP"
+   },
+   "flags": {
+    "scan_suspected": false
+   },
+   "sources": {
+    "report_dates": [
+     {
+      "page": 4,
+      "line": 12,
+      "raw": "September 17, 2026"
+     },
+     {
+      "page": 4,
+      "line": 12,
+      "raw": "September 30, 2026"
+     }
+    ],
+    "reserve_currency": {
+     "page": 7,
+     "line": 10,
+     "raw": "United States Dollar"
+    },
+    "circulation": {
+     "page": 4,
+     "line": 16,
+     "raw": "2,747,625,868"
+    },
+    "fair_value": {
+     "page": 4,
+     "line": 19,
+     "raw": "$2,754,709,360"
+    },
+    "components": {
+     "cash": {
+      "page": 7,
+      "line": 13,
+      "raw": "$100,413,388"
+     },
+     "government_mmf": {
+      "page": 7,
+      "line": 14,
+      "raw": "-"
+     },
+     "repo": {
+      "page": 7,
+      "line": 15,
+      "raw": "$2,155,290,000"
+     },
+     "treasury": {
+      "page": 7,
+      "line": 16,
+      "raw": "$499,005,972"
+     },
+     "total": {
+      "page": 7,
+      "line": 17,
+      "raw": "$2,754,709,360"
+     }
+    },
+    "attestation.signed": {
+     "page": 2,
+     "line": 22,
+     "raw": "October 23, 2026"
+    }
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 100413388,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash",
+     "where": {
+      "page": 7,
+      "line": 13,
+      "raw": "$100,413,388"
+     }
+    },
+    {
+     "kind": "reverse_repo_overnight",
+     "amount": 2155290000,
+     "currency": "USD",
+     "maturity_max_days": 1,
+     "maturity_listed": true,
+     "label": "Repurchase agreements, at fair value",
+     "where": {
+      "page": 7,
+      "line": 15,
+      "raw": "$2,155,290,000"
+     },
+     "items": [
+      {
+       "purchase": "2026-09-30",
+       "maturity": "2026-10-01",
+       "days": 1,
+       "amount": 954498000.0
+      },
+      {
+       "purchase": "2026-09-30",
+       "maturity": "2026-10-01",
+       "days": 1,
+       "amount": 183360000.0
+      },
+      {
+       "purchase": "2026-09-30",
+       "maturity": "2026-10-01",
+       "days": 1,
+       "amount": 1017432000.0
+      }
+     ]
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 499005972,
+     "currency": "USD",
+     "maturity_max_days": 36,
+     "maturity_listed": true,
+     "label": "Obligations of U.S. Treasury, at fair value",
+     "where": {
+      "page": 7,
+      "line": 16,
+      "raw": "$499,005,972"
+     },
+     "items": [
+      {
+       "id": "912797SA6",
+       "maturity": "2026-10-01",
+       "days": 1,
+       "amount": 249974722.0
+      },
+      {
+       "id": "912797UM7",
+       "maturity": "2026-11-05",
+       "days": 36,
+       "amount": 249031250.0
+      }
+     ],
+     "maturity_date": "2026-11-05"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit",
+    "reverse_repo_overnight",
+    "treasury_bill"
+   ],
+   "treasury_max_maturity_days": 36,
+   "treasury_maturity_basis": "direct",
+   "repo_max_maturity_days": 1,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Head of Treasury and Portfolio Management",
+   "redemption_days": null,
+   "interest_paid": null,
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "found",
+     "where": {
+      "page": 9,
+      "line": 35,
+      "raw": "11/5/2026"
+     },
+     "note": "Treasury bills 2줄 중 최장 만기 2026-11-05(912797UM7). 본문은 3개월 이하 국채만 보유한다고 적음."
+    },
+    "repo_max_maturity_days": {
+     "state": "found",
+     "where": {
+      "page": 8,
+      "line": 53,
+      "raw": "10/1/2026"
+     },
+     "note": "본문이 \"the repurchase agreements mature overnight\"이라 하고 표의 매수일=기준일, 만기일=다음 영업일(2026-10-01)"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": {
+      "page": 4,
+      "line": 12,
+      "raw": "September 17, 2026"
+     },
+     "note": "보고서 하나가 월중 기준일(2026-09-17)과 월말 기준일(2026-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). PYUSD PDF 38건이 2023-08부터 2026-09까지 빠진 달 없이 월별로 이어짐."
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": {
+      "page": 5,
+      "line": 15,
       "raw": "Total PYUSD natively minted"
      },
      "note": "Exhibit A가 (a) 발행 토큰 총량에서 (b) 임시 상환 불가, (c) 영구 상환 불가 토큰을 빼 (d) 상환 가능 토큰 잔액을 내는 식을 표로 적음."
@@ -9531,7 +9800,7 @@
       "line": 4,
       "raw": "January 24, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-01-24)과 월말 기준일(2023-01-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-01-24)과 월말 기준일(2023-01-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -9796,7 +10065,7 @@
       "line": 4,
       "raw": "February 13, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-02-13)과 월말 기준일(2023-02-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-02-13)과 월말 기준일(2023-02-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -10089,7 +10358,7 @@
       "line": 4,
       "raw": "March 24, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-03-24)과 월말 기준일(2023-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-03-24)과 월말 기준일(2023-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -10396,7 +10665,7 @@
       "line": 4,
       "raw": "April 11, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-04-11)과 월말 기준일(2023-04-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-04-11)과 월말 기준일(2023-04-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -10675,7 +10944,7 @@
       "line": 4,
       "raw": "May 19, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-05-19)과 월말 기준일(2023-05-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-05-19)과 월말 기준일(2023-05-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -10954,7 +11223,7 @@
       "line": 4,
       "raw": "June 9, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-06-09)과 월말 기준일(2023-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-06-09)과 월말 기준일(2023-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -11226,7 +11495,7 @@
       "line": 4,
       "raw": "July 11, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-07-11)과 월말 기준일(2023-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-07-11)과 월말 기준일(2023-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -11491,7 +11760,7 @@
       "line": 4,
       "raw": "August 8, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-08-08)과 월말 기준일(2023-08-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-08-08)과 월말 기준일(2023-08-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -11763,7 +12032,7 @@
       "line": 7,
       "raw": "September 18, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-09-18)과 월말 기준일(2023-09-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-09-18)과 월말 기준일(2023-09-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -12049,7 +12318,7 @@
       "line": 9,
       "raw": "October 19, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-10-19)과 월말 기준일(2023-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-10-19)과 월말 기준일(2023-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -12321,7 +12590,7 @@
       "line": 9,
       "raw": "November 20, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-11-20)과 월말 기준일(2023-11-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-11-20)과 월말 기준일(2023-11-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -12546,7 +12815,7 @@
       "line": 9,
       "raw": "December 27, 2023"
      },
-     "note": "보고서 하나가 월중 기준일(2023-12-27)과 월말 기준일(2023-12-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2023-12-27)과 월말 기준일(2023-12-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -12813,7 +13082,7 @@
       "line": 14,
       "raw": "January 12, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-01-12)과 월말 기준일(2024-01-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-01-12)과 월말 기준일(2024-01-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -13089,7 +13358,7 @@
       "line": 14,
       "raw": "February 5, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-02-05)과 월말 기준일(2024-02-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-02-05)과 월말 기준일(2024-02-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -13319,7 +13588,7 @@
       "line": 14,
       "raw": "March 12, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-03-12)과 월말 기준일(2024-03-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-03-12)과 월말 기준일(2024-03-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -13549,7 +13818,7 @@
       "line": 14,
       "raw": "April 22, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-04-22)과 월말 기준일(2024-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-04-22)과 월말 기준일(2024-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -13819,7 +14088,7 @@
       "line": 14,
       "raw": "May 16, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-05-16)과 월말 기준일(2024-05-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-05-16)과 월말 기준일(2024-05-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -14035,7 +14304,7 @@
       "line": 14,
       "raw": "June 4, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-06-04)과 월말 기준일(2024-06-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-06-04)과 월말 기준일(2024-06-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -14251,7 +14520,7 @@
       "line": 14,
       "raw": "July 26, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-07-26)과 월말 기준일(2024-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-07-26)과 월말 기준일(2024-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -14467,7 +14736,7 @@
       "line": 14,
       "raw": "August 27, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-08-27)과 월말 기준일(2024-08-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-08-27)과 월말 기준일(2024-08-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -14650,7 +14919,7 @@
       "line": 14,
       "raw": "September 18, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-09-18)과 월말 기준일(2024-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-09-18)과 월말 기준일(2024-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -14873,7 +15142,7 @@
       "line": 14,
       "raw": "October 11, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-10-11)과 월말 기준일(2024-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-10-11)과 월말 기준일(2024-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -15090,7 +15359,7 @@
       "line": 14,
       "raw": "November 25, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-11-25)과 월말 기준일(2024-11-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-11-25)과 월말 기준일(2024-11-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -15306,7 +15575,7 @@
       "line": 14,
       "raw": "December 2, 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-12-02)과 월말 기준일(2024-12-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-12-02)과 월말 기준일(2024-12-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -15522,7 +15791,7 @@
       "line": 12,
       "raw": "January 21, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-01-21)과 월말 기준일(2025-01-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-01-21)과 월말 기준일(2025-01-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -15742,7 +16011,7 @@
       "line": 12,
       "raw": "February 13, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-02-13)과 월말 기준일(2025-02-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-02-13)과 월말 기준일(2025-02-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -15962,7 +16231,7 @@
       "line": 12,
       "raw": "March 18, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-03-18)과 월말 기준일(2025-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-03-18)과 월말 기준일(2025-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -16182,7 +16451,7 @@
       "line": 12,
       "raw": "April 10, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-04-10)과 월말 기준일(2025-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-04-10)과 월말 기준일(2025-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -16402,7 +16671,7 @@
       "line": 12,
       "raw": "May 8, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-05-08)과 월말 기준일(2025-05-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-05-08)과 월말 기준일(2025-05-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -16622,7 +16891,7 @@
       "line": 12,
       "raw": "June 9, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-06-09)과 월말 기준일(2025-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-06-09)과 월말 기준일(2025-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -16842,7 +17111,7 @@
       "line": 12,
       "raw": "July 8, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-07-08)과 월말 기준일(2025-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-07-08)과 월말 기준일(2025-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -17062,7 +17331,7 @@
       "line": 12,
       "raw": "August 7, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-08-07)과 월말 기준일(2025-08-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-08-07)과 월말 기준일(2025-08-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -17282,7 +17551,7 @@
       "line": 12,
       "raw": "September 8, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-09-08)과 월말 기준일(2025-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-09-08)과 월말 기준일(2025-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -17502,7 +17771,7 @@
       "line": 12,
       "raw": "October 10, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-10-10)과 월말 기준일(2025-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-10-10)과 월말 기준일(2025-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -17722,7 +17991,7 @@
       "line": 12,
       "raw": "November 10, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-11-10)과 월말 기준일(2025-11-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-11-10)과 월말 기준일(2025-11-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -17942,7 +18211,7 @@
       "line": 12,
       "raw": "December 17, 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-12-17)과 월말 기준일(2025-12-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-12-17)과 월말 기준일(2025-12-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -18162,7 +18431,7 @@
       "line": 12,
       "raw": "January 16, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-01-16)과 월말 기준일(2026-01-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-01-16)과 월말 기준일(2026-01-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -18382,7 +18651,7 @@
       "line": 12,
       "raw": "February 10, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-02-10)과 월말 기준일(2026-02-27) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-02-10)과 월말 기준일(2026-02-27) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -18602,7 +18871,7 @@
       "line": 12,
       "raw": "March 10, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-03-10)과 월말 기준일(2026-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-03-10)과 월말 기준일(2026-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -18822,7 +19091,7 @@
       "line": 12,
       "raw": "April 8, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-04-08)과 월말 기준일(2026-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-04-08)과 월말 기준일(2026-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -19042,7 +19311,7 @@
       "line": 12,
       "raw": "May 11, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-05-11)과 월말 기준일(2026-05-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-05-11)과 월말 기준일(2026-05-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -19262,7 +19531,7 @@
       "line": 12,
       "raw": "June 17, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-06-17)과 월말 기준일(2026-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-06-17)과 월말 기준일(2026-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -19486,7 +19755,7 @@
       "line": 12,
       "raw": "July 21, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-07-21)과 월말 기준일(2026-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-07-21)과 월말 기준일(2026-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -19710,7 +19979,231 @@
       "line": 13,
       "raw": "August 6, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-08-06)과 월말 기준일(2026-08-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 44건이 2023-01부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-08-06)과 월말 기준일(2026-08-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": {
+      "page": 5,
+      "line": 15,
+      "raw": "Total USDP natively minted tokens"
+     },
+     "note": "Exhibit A가 (a) 발행 토큰 총량에서 (b) 임시 상환 불가, (c) 영구 상환 불가 토큰을 빼 (d) 상환 가능 토큰 잔액을 내는 식을 표로 적음."
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": null,
+     "note": "원문 전체에서 custod, DBS, Banking Circle, Standard Chartered, Dreyfus, BNY, Citi, JPMorgan 등 기관 이름을 찾았으나 보관 은행 이름 없음. 원문에 있는 것은 이름 없는 표현뿐: Bank 1 in, FDIC, qualified custodian, commercial banks."
+    },
+    "management_certification": {
+     "state": "found",
+     "where": {
+      "page": 4,
+      "line": 20,
+      "raw": "To the best of the knowledge and belief of the undersigned"
+     },
+     "note": "경영진 주장(Management's Assertion 또는 management ... assertions)과 \"To the best of the knowledge and belief of the undersigned, the information ... is accurate and complete\" 서명 문단이 있고 서명자 직함은 Head of Treasury and Portfolio Management."
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": null,
+     "note": "business day, within N days, redemption fee, redeem 같은 말을 찾았으나 상환 기한 문장 없음. 본문은 매수와 상환 조건을 회사 약관(terms and conditions) 링크로만 가리킴."
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": {
+      "page": 3,
+      "line": 55,
+      "raw": "accrued but unswept interest"
+     },
+     "note": "interest, yield, reward를 찾았으나 토큰 보유자에게 이자를 준다는 문장 없음. 각주에 \"준비자산에 쌓인 미수 이자도 준비자산 총액에 포함, 유통량을 넘는 순수익은 Paxos가 인출할 수 있음\"이 있어 이자는 발행사가 가져간다는 취지이며 지급 값은 아님."
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Paxos_USDP_Examination_2026-09.pdf",
+   "issuer": "Paxos Trust Company, National Association",
+   "token": "USDP",
+   "report_dates": [
+    "2026-09-17",
+    "2026-09-30"
+   ],
+   "as_of": "2026-09-30",
+   "month": "2026-09",
+   "as_of_time": "17:00 ET",
+   "reserve_currency": "USD",
+   "circulation": 26084307,
+   "fair_value": 26113649,
+   "components": {
+    "cash": 14178649,
+    "government_mmf": 0,
+    "repo": 11935000,
+    "treasury": 0
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 26113649,
+     "got": 26113649,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 26113649,
+     "got": 26113649,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 29342,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00112489,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-10-23",
+    "firm": "KPMG LLP"
+   },
+   "flags": {
+    "scan_suspected": false
+   },
+   "sources": {
+    "report_dates": [
+     {
+      "page": 4,
+      "line": 13,
+      "raw": "September 17, 2026"
+     },
+     {
+      "page": 4,
+      "line": 13,
+      "raw": "September 30, 2026"
+     }
+    ],
+    "reserve_currency": {
+     "page": 6,
+     "line": 11,
+     "raw": "United States Dollar"
+    },
+    "circulation": {
+     "page": 4,
+     "line": 15,
+     "raw": "26,084,307"
+    },
+    "fair_value": {
+     "page": 4,
+     "line": 17,
+     "raw": "$26,113,649"
+    },
+    "components": {
+     "cash": {
+      "page": 6,
+      "line": 14,
+      "raw": "$14,178,649"
+     },
+     "government_mmf": {
+      "page": 6,
+      "line": 15,
+      "raw": "-"
+     },
+     "repo": {
+      "page": 6,
+      "line": 16,
+      "raw": "$11,935,000"
+     },
+     "treasury": {
+      "page": 6,
+      "line": 17,
+      "raw": "-"
+     },
+     "total": {
+      "page": 6,
+      "line": 18,
+      "raw": "$26,113,649"
+     }
+    },
+    "attestation.signed": {
+     "page": 2,
+     "line": 22,
+     "raw": "October 23, 2026"
+    }
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 14178649,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash",
+     "where": {
+      "page": 6,
+      "line": 14,
+      "raw": "$14,178,649"
+     }
+    },
+    {
+     "kind": "reverse_repo_overnight",
+     "amount": 11935000,
+     "currency": "USD",
+     "maturity_max_days": 1,
+     "maturity_listed": true,
+     "label": "Repurchase agreements, at fair value",
+     "where": {
+      "page": 6,
+      "line": 16,
+      "raw": "$11,935,000"
+     },
+     "items": [
+      {
+       "purchase": "2026-09-30",
+       "maturity": "2026-10-01",
+       "days": 1,
+       "amount": 11935000.0
+      }
+     ]
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit",
+    "reverse_repo_overnight"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": 1,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Head of Treasury and Portfolio Management",
+   "redemption_days": null,
+   "interest_paid": null,
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": null,
+     "note": "직접 보유한 국채(treasury_bill, treasury_note) 없음, 펀드 안 국채 목록 없음."
+    },
+    "repo_max_maturity_days": {
+     "state": "found",
+     "where": {
+      "page": 7,
+      "line": 44,
+      "raw": "10/1/2026"
+     },
+     "note": "본문이 \"the repurchase agreements mature overnight\"이라 하고 표의 매수일=기준일, 만기일=다음 영업일(2026-10-01)"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": {
+      "page": 4,
+      "line": 13,
+      "raw": "September 17, 2026"
+     },
+     "note": "보고서 하나가 월중 기준일(2026-09-17)과 월말 기준일(2026-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDP PDF 45건이 2023-01부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -19950,7 +20443,7 @@
       "line": 9,
       "raw": "29 October 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-10-29)과 월말 기준일(2024-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-10-29)과 월말 기준일(2024-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -20189,7 +20682,7 @@
       "line": 14,
       "raw": "26 November 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-11-26)과 월말 기준일(2024-11-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-11-26)과 월말 기준일(2024-11-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -20293,12 +20786,12 @@
     "report_dates": [
      {
       "page": 5,
-      "line": 6,
+      "line": 9,
       "raw": "26 December 2024"
      },
      {
       "page": 5,
-      "line": 6,
+      "line": 9,
       "raw": "31 December 2024"
      }
     ],
@@ -20309,29 +20802,29 @@
     },
     "circulation": {
      "page": 5,
-     "line": 7,
+     "line": 10,
      "raw": "29,860,177"
     },
     "components": {
      "treasury": {
       "page": 5,
-      "line": 27,
+      "line": 30,
       "raw": "$8,087,803"
      },
      "cash": {
       "page": 5,
-      "line": 28,
+      "line": 31,
       "raw": "$21,962,076"
      },
      "total": {
       "page": 5,
-      "line": 29,
+      "line": 32,
       "raw": "$30,049,879"
      }
     },
     "fair_value": {
      "page": 5,
-     "line": 9,
+     "line": 12,
      "raw": "$30,049,879"
     },
     "circulation_note": {
@@ -20355,7 +20848,7 @@
      "label": "Total Cash and Cash Equivalents",
      "where": {
       "page": 5,
-      "line": 28,
+      "line": 31,
       "raw": "$21,962,076"
      }
     },
@@ -20368,7 +20861,7 @@
      "label": "Total U.S. Treasury Bills",
      "where": {
       "page": 5,
-      "line": 27,
+      "line": 30,
       "raw": "$8,087,803"
      },
      "items": [
@@ -20412,7 +20905,7 @@
      "state": "found",
      "where": {
       "page": 5,
-      "line": 26,
+      "line": 29,
       "raw": "01/14/2025"
      },
      "note": "직접 보유 단기국채 2종 중 최장 만기 2025-01-14(912797MX2). 현금과 현금성 자산 한 줄(Total Cash and Cash Equivalents)은 나뉘지 않아 그 안의 국채 만기는 알 수 없고, 값은 표에 적힌 단기국채 줄만 본 것."
@@ -20426,10 +20919,10 @@
      "state": "found",
      "where": {
       "page": 5,
-      "line": 6,
+      "line": 9,
       "raw": "26 December 2024"
      },
-     "note": "보고서 하나가 월중 기준일(2024-12-26)과 월말 기준일(2024-12-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2024-12-26)과 월말 기준일(2024-12-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -20684,7 +21177,7 @@
       "line": 9,
       "raw": "15 January 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-01-15)과 월말 기준일(2025-01-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-01-15)과 월말 기준일(2025-01-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -20891,7 +21384,7 @@
       },
       {
        "type": "Bills",
-       "id": "912797NT0",
+       "id": "912797NTO",
        "maturity": "2025-04-01",
        "days": 32,
        "amount": 11000000.0
@@ -20925,7 +21418,7 @@
       "line": 34,
       "raw": "04/01/2025"
      },
-     "note": "직접 보유 단기국채 4종 중 최장 만기 2025-04-01(912797NT0). 현금과 현금성 자산 한 줄(Total Cash and Cash Equivalents)은 나뉘지 않아 그 안의 국채 만기는 알 수 없고, 값은 표에 적힌 단기국채 줄만 본 것."
+     "note": "직접 보유 단기국채 4종 중 최장 만기 2025-04-01(912797NTO). 현금과 현금성 자산 한 줄(Total Cash and Cash Equivalents)은 나뉘지 않아 그 안의 국채 만기는 알 수 없고, 값은 표에 적힌 단기국채 줄만 본 것."
     },
     "repo_max_maturity_days": {
      "state": "not_in_report",
@@ -20939,7 +21432,7 @@
       "line": 9,
       "raw": "18 February 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-02-18)과 월말 기준일(2025-02-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-02-18)과 월말 기준일(2025-02-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -20955,7 +21448,7 @@
      "state": "found",
      "where": {
       "page": 6,
-      "line": 20,
+      "line": 21,
       "raw": "To the best of the knowledge and belief of the undersigned"
      },
      "note": "경영진 주장(Management's Assertion 또는 management ... assertions)과 \"To the best of the knowledge and belief of the undersigned, the information ... is accurate and complete\" 서명 문단이 있고 서명자 직함은 Executive Director."
@@ -21212,7 +21705,7 @@
       "line": 11,
       "raw": "14 March 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-03-14)과 월말 기준일(2025-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-03-14)과 월말 기준일(2025-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -21229,7 +21722,7 @@
      "where": {
       "page": 6,
       "line": 24,
-      "raw": "To the best of the knowledge and beliet of the undersigned"
+      "raw": "To the best of the knowledge and belief of the undersigned"
      },
      "note": "경영진 주장(Management's Assertion 또는 management ... assertions)과 \"To the best of the knowledge and belief of the undersigned, the information ... is accurate and complete\" 서명 문단이 있고 서명자 직함은 Executive Director."
     },
@@ -21355,7 +21848,7 @@
     },
     "fair_value": {
      "page": 5,
-     "line": 12,
+     "line": 11,
      "raw": "238,772,158"
     },
     "circulation_note": {
@@ -21481,7 +21974,7 @@
       "line": 9,
       "raw": "14 April 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-04-14)과 월말 기준일(2025-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-04-14)과 월말 기준일(2025-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -21497,7 +21990,7 @@
      "state": "found",
      "where": {
       "page": 6,
-      "line": 24,
+      "line": 22,
       "raw": "To the best of the knowledge and belief of the undersigned"
      },
      "note": "경영진 주장(Management's Assertion 또는 management ... assertions)과 \"To the best of the knowledge and belief of the undersigned, the information ... is accurate and complete\" 서명 문단이 있고 서명자 직함은 Executive Director."
@@ -21734,7 +22227,7 @@
       "line": 14,
       "raw": "12 May 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-05-12)과 월말 기준일(2025-05-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-05-12)과 월말 기준일(2025-05-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -21839,50 +22332,50 @@
     "report_dates": [
      {
       "page": 5,
-      "line": 9,
+      "line": 10,
       "raw": "16 June 2025"
      },
      {
       "page": 5,
-      "line": 9,
+      "line": 10,
       "raw": "30 June 2025"
      }
     ],
     "reserve_currency": {
      "page": 3,
-     "line": 21,
+     "line": 20,
      "raw": "USD 3"
     },
     "circulation": {
      "page": 5,
-     "line": 10,
+     "line": 11,
      "raw": "324,890,204"
     },
     "components": {
      "treasury": {
       "page": 5,
-      "line": 33,
+      "line": 34,
       "raw": "106,731,654"
      },
      "cash": {
       "page": 5,
-      "line": 34,
+      "line": 35,
       "raw": "218,550,302"
      },
      "total": {
       "page": 5,
-      "line": 35,
+      "line": 36,
       "raw": "325,281,956"
      }
     },
     "fair_value": {
      "page": 5,
-     "line": 13,
+     "line": 14,
      "raw": "325,281,956"
     },
     "circulation_note": {
      "page": 3,
-     "line": 21,
+     "line": 20,
      "raw": "324,890,204"
     },
     "attestation.signed": {
@@ -21901,7 +22394,7 @@
      "label": "Total Cash and Cash Equivalents",
      "where": {
       "page": 5,
-      "line": 34,
+      "line": 35,
       "raw": "218,550,302"
      }
     },
@@ -21914,7 +22407,7 @@
      "label": "Total U.S. Treasury Bills",
      "where": {
       "page": 5,
-      "line": 33,
+      "line": 34,
       "raw": "106,731,654"
      },
      "items": [
@@ -21958,7 +22451,7 @@
      "state": "found",
      "where": {
       "page": 5,
-      "line": 32,
+      "line": 33,
       "raw": "08/05/2025"
      },
      "note": "직접 보유 단기국채 2종 중 최장 만기 2025-08-05(912797QH3). 현금과 현금성 자산 한 줄(Total Cash and Cash Equivalents)은 나뉘지 않아 그 안의 국채 만기는 알 수 없고, 값은 표에 적힌 단기국채 줄만 본 것."
@@ -21972,10 +22465,10 @@
      "state": "found",
      "where": {
       "page": 5,
-      "line": 9,
+      "line": 10,
       "raw": "16 June 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-06-16)과 월말 기준일(2025-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-06-16)과 월말 기준일(2025-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -22080,50 +22573,50 @@
     "report_dates": [
      {
       "page": 5,
-      "line": 6,
+      "line": 10,
       "raw": "16 July 2025"
      },
      {
       "page": 5,
-      "line": 6,
+      "line": 10,
       "raw": "31 July 2025"
      }
     ],
     "reserve_currency": {
      "page": 3,
-     "line": 21,
+     "line": 20,
      "raw": "USD 3"
     },
     "circulation": {
      "page": 5,
-     "line": 7,
+     "line": 11,
      "raw": "313,710,454"
     },
     "components": {
      "treasury": {
       "page": 5,
-      "line": 28,
+      "line": 31,
       "raw": "106,885,750"
      },
      "cash": {
       "page": 5,
-      "line": 29,
+      "line": 32,
       "raw": "207,414,557"
      },
      "total": {
       "page": 5,
-      "line": 30,
+      "line": 33,
       "raw": "314,300,307"
      }
     },
     "fair_value": {
      "page": 5,
-     "line": 9,
+     "line": 13,
      "raw": "314,300,307"
     },
     "circulation_note": {
      "page": 3,
-     "line": 21,
+     "line": 20,
      "raw": "313,710,454"
     },
     "attestation.signed": {
@@ -22142,7 +22635,7 @@
      "label": "Total Cash and Cash Equivalents",
      "where": {
       "page": 5,
-      "line": 29,
+      "line": 32,
       "raw": "207,414,557"
      }
     },
@@ -22155,7 +22648,7 @@
      "label": "Total U.S. Treasury Bills",
      "where": {
       "page": 5,
-      "line": 28,
+      "line": 31,
       "raw": "106,885,750"
      },
      "items": [
@@ -22199,7 +22692,7 @@
      "state": "found",
      "where": {
       "page": 5,
-      "line": 27,
+      "line": 30,
       "raw": "08/14/2025"
      },
      "note": "직접 보유 단기국채 2종 중 최장 만기 2025-08-14(912797PN17). 현금과 현금성 자산 한 줄(Total Cash and Cash Equivalents)은 나뉘지 않아 그 안의 국채 만기는 알 수 없고, 값은 표에 적힌 단기국채 줄만 본 것. 같은 CUSIP 912797PN1가 이 보고서에서는 2025-08-14, 2025-08 보고서는 2025-09-25로 적혀 원문끼리 어긋남(이 보고서는 적힌 대로 읽음)."
@@ -22213,10 +22706,10 @@
      "state": "found",
      "where": {
       "page": 5,
-      "line": 6,
+      "line": 10,
       "raw": "16 July 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-07-16)과 월말 기준일(2025-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-07-16)과 월말 기준일(2025-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -22321,12 +22814,12 @@
     "report_dates": [
      {
       "page": 5,
-      "line": 8,
+      "line": 10,
       "raw": "12 August 2025"
      },
      {
       "page": 5,
-      "line": 8,
+      "line": 10,
       "raw": "29 August 2025"
      }
     ],
@@ -22337,30 +22830,35 @@
     },
     "circulation": {
      "page": 5,
-     "line": 9,
+     "line": 11,
      "raw": "553,678,623"
     },
     "components": {
      "treasury": {
       "page": 5,
-      "line": 31,
+      "line": 36,
       "raw": "106,727,754"
      },
      "cash": {
       "page": 5,
-      "line": 32,
+      "line": 37,
       "raw": "448,852,543"
      },
      "total": {
       "page": 5,
-      "line": 33,
+      "line": 38,
       "raw": "555,580,297"
      }
     },
     "fair_value": {
      "page": 5,
-     "line": 11,
+     "line": 13,
      "raw": "555,580,297"
+    },
+    "circulation_note": {
+     "page": 3,
+     "line": 21,
+     "raw": "553,678,623"
     },
     "attestation.signed": {
      "page": 4,
@@ -22378,7 +22876,7 @@
      "label": "Total Cash and Cash Equivalents",
      "where": {
       "page": 5,
-      "line": 32,
+      "line": 37,
       "raw": "448,852,543"
      }
     },
@@ -22391,7 +22889,7 @@
      "label": "Total U.S. Treasury Bills",
      "where": {
       "page": 5,
-      "line": 31,
+      "line": 36,
       "raw": "106,727,754"
      },
      "items": [
@@ -22414,7 +22912,7 @@
        "id": "912797PN17",
        "maturity": "2025-09-25",
        "days": 27,
-       "amount": 47847888.0
+       "amount": null
       }
      ],
      "maturity_date": "2025-10-02"
@@ -22442,7 +22940,7 @@
      "state": "found",
      "where": {
       "page": 5,
-      "line": 28,
+      "line": 32,
       "raw": "10/02/2025"
      },
      "note": "직접 보유 단기국채 3종 중 최장 만기 2025-10-02(912797MS31). 현금과 현금성 자산 한 줄(Total Cash and Cash Equivalents)은 나뉘지 않아 그 안의 국채 만기는 알 수 없고, 값은 표에 적힌 단기국채 줄만 본 것. 같은 CUSIP 912797PN1가 이 보고서에서는 2025-09-25, 2025-07 보고서는 2025-08-14로 적혀 원문끼리 어긋남(이 보고서는 적힌 대로 읽음)."
@@ -22456,10 +22954,10 @@
      "state": "found",
      "where": {
       "page": 5,
-      "line": 8,
+      "line": 10,
       "raw": "12 August 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-08-12)과 월말 기준일(2025-08-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-08-12)과 월말 기준일(2025-08-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -22475,7 +22973,7 @@
      "state": "found",
      "where": {
       "page": 6,
-      "line": 20,
+      "line": 22,
       "raw": "To the best of the knowledge and belief of the undersigned"
      },
      "note": "경영진 주장(Management's Assertion 또는 management ... assertions)과 \"To the best of the knowledge and belief of the undersigned, the information ... is accurate and complete\" 서명 문단이 있고 서명자 직함은 Executive Director; Head of EU."
@@ -22490,7 +22988,10 @@
      "where": null,
      "note": "interest, yield, reward를 찾았으나 토큰 보유자에게 이자를 준다는 문장 없음."
     }
-   }
+   },
+   "rule_input_warnings": [
+    "국채 종목 합 58879866.0 != 줄 합계 106727754"
+   ]
   },
   {
    "source_file": "data/samples/Paxos_USDG_Examination_2025-09.pdf",
@@ -22708,7 +23209,7 @@
       "line": 10,
       "raw": "19 September 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-09-19)과 월말 기준일(2025-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-09-19)과 월말 기준일(2025-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -22816,12 +23317,12 @@
     "report_dates": [
      {
       "page": 5,
-      "line": 9,
+      "line": 10,
       "raw": "17 October 2025"
      },
      {
       "page": 5,
-      "line": 9,
+      "line": 10,
       "raw": "31 October 2025"
      }
     ],
@@ -22832,29 +23333,29 @@
     },
     "circulation": {
      "page": 5,
-     "line": 10,
+     "line": 11,
      "raw": "1,005,923,645"
     },
     "components": {
      "treasury": {
       "page": 5,
-      "line": 31,
+      "line": 32,
       "raw": "78,847,638"
      },
      "cash": {
       "page": 5,
-      "line": 32,
+      "line": 33,
       "raw": "927,740,008"
      },
      "total": {
       "page": 5,
-      "line": 33,
+      "line": 34,
       "raw": "1,006,587,646"
      }
     },
     "fair_value": {
      "page": 5,
-     "line": 12,
+     "line": 13,
      "raw": "1,006,587,646"
     },
     "circulation_note": {
@@ -22878,7 +23379,7 @@
      "label": "Total Cash and Cash Equivalents",
      "where": {
       "page": 5,
-      "line": 32,
+      "line": 33,
       "raw": "927,740,008"
      }
     },
@@ -22891,7 +23392,7 @@
      "label": "Total U.S. Treasury Bills",
      "where": {
       "page": 5,
-      "line": 31,
+      "line": 32,
       "raw": "78,847,638"
      },
      "items": [
@@ -22940,7 +23441,7 @@
      "state": "found",
      "where": {
       "page": 5,
-      "line": 30,
+      "line": 31,
       "raw": "11/20/2025"
      },
      "note": "직접 보유 단기국채 2종 중 최장 만기 2025-11-20(912797QR12). 현금과 현금성 자산 한 줄(Total Cash and Cash Equivalents)은 나뉘지 않아 그 안의 국채 만기는 알 수 없고, 값은 표에 적힌 단기국채 줄만 본 것."
@@ -22954,10 +23455,10 @@
      "state": "found",
      "where": {
       "page": 5,
-      "line": 9,
+      "line": 10,
       "raw": "17 October 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-10-17)과 월말 기준일(2025-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-10-17)과 월말 기준일(2025-10-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -23213,7 +23714,7 @@
       "line": 15,
       "raw": "14 November 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-11-14)과 월말 기준일(2025-11-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-11-14)과 월말 기준일(2025-11-28) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -23321,12 +23822,12 @@
     "report_dates": [
      {
       "page": 5,
-      "line": 7,
+      "line": 11,
       "raw": "12 December 2025"
      },
      {
       "page": 5,
-      "line": 7,
+      "line": 11,
       "raw": "31 December 2025"
      }
     ],
@@ -23337,7 +23838,7 @@
     },
     "circulation": {
      "page": 5,
-     "line": 8,
+     "line": 12,
      "raw": "1,529,283,030"
     },
     "components": {
@@ -23359,7 +23860,7 @@
     },
     "fair_value": {
      "page": 5,
-     "line": 10,
+     "line": 14,
      "raw": "1,538,375,883"
     },
     "circulation_note": {
@@ -23473,7 +23974,7 @@
      "state": "found",
      "where": {
       "page": 5,
-      "line": 34,
+      "line": 38,
       "raw": "02/17/2026"
      },
      "note": "직접 보유 단기국채 6종 중 최장 만기 2026-02-17(912797SR93). 현금과 현금성 자산 한 줄(Total Cash and Cash Equivalents)은 나뉘지 않아 그 안의 국채 만기는 알 수 없고, 값은 표에 적힌 단기국채 줄만 본 것."
@@ -23487,10 +23988,10 @@
      "state": "found",
      "where": {
       "page": 5,
-      "line": 7,
+      "line": 11,
       "raw": "12 December 2025"
      },
-     "note": "보고서 하나가 월중 기준일(2025-12-12)과 월말 기준일(2025-12-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2025-12-12)과 월말 기준일(2025-12-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -23501,7 +24002,7 @@
      "state": "found",
      "where": {
       "page": 6,
-      "line": 27,
+      "line": 26,
       "raw": "DBS Bank Ltd., Banking Circle S.A., Standard Chartered Bank (Singapore) Limited, and Dreyfus Asset Management, a subsidiary of Bank of New York Mellon"
      },
      "note": "Note 5 \"the Company custodied Redemption Assets at ...\"에 기관 이름이 적힘: DBS Bank Ltd.; Banking Circle S.A.; Standard Chartered Bank (Singapore) Limited; Dreyfus Asset Management (a subsidiary of Bank of New York Mellon)."
@@ -23510,7 +24011,7 @@
      "state": "found",
      "where": {
       "page": 6,
-      "line": 30,
+      "line": 29,
       "raw": "To the best of the knowledge and belief of the undersigned"
      },
      "note": "경영진 주장(Management's Assertion 또는 management ... assertions)과 \"To the best of the knowledge and belief of the undersigned, the information ... is accurate and complete\" 서명 문단이 있고 서명자 직함은 Executive Director; Head of EU."
@@ -23785,7 +24286,7 @@
      "state": "not_in_report",
      "where": {
       "page": 9,
-      "line": 41,
+      "line": 40,
       "raw": "Government money market funds at net asset value hold investments in direct obligations of the Government of the United States and reverse repurchase agreements on such obligations."
      },
      "note": "직접 보유 역레포는 없음(원문 \"held no repurchase agreements\", 쪽 10). 그러나 정부 MMF가 미국 국채와 그 국채 대상 역레포를 보유한다고 적어 펀드 안에 역레포가 있고, 펀드 안 종목과 만기는 원문에 없음(MMF 표는 펀드 CUSIP 줄과 Maturity N/A뿐)."
@@ -23797,7 +24298,7 @@
       "line": 7,
       "raw": "January 16, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-01-16)과 월말 기준일(2026-01-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-01-16)과 월말 기준일(2026-01-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -23989,15 +24490,9 @@
       },
       {
        "entity": "PIE",
-       "id": "IE00B14RXK43",
+       "id": "IE0OB14RXK43",
        "maturity": "N/A",
        "amount": 1750071.0
-      },
-      {
-       "entity": "PIE",
-       "id": "IE0004WWOG99",
-       "maturity": "N/A",
-       "amount": 2250100.0
       }
      ]
     },
@@ -24018,73 +24513,73 @@
        "id": "912797ST5",
        "maturity": "2026-03-03",
        "days": 4,
-       "amount": null
+       "amount": 109938889.0
       },
       {
        "id": "912797SZ1",
        "maturity": "2026-03-17",
        "days": 18,
-       "amount": null
+       "amount": 49875000.0
       },
       {
        "id": "912797TG2",
        "maturity": "2026-04-07",
        "days": 39,
-       "amount": null
+       "amount": 64647917.0
       },
       {
        "id": "912797TJ6",
        "maturity": "2026-04-21",
        "days": 53,
-       "amount": null
+       "amount": 96285972.0
       },
       {
        "id": "912797SVO",
        "maturity": "2026-05-21",
        "days": 83,
-       "amount": null
+       "amount": 39538889.0
       },
       {
        "id": "912797ST5",
        "maturity": "2026-03-03",
        "days": 4,
-       "amount": null
+       "amount": 35980000.0
       },
       {
        "id": "912797RV1",
        "maturity": "2026-03-05",
        "days": 6,
-       "amount": null
+       "amount": 59950000.0
       },
       {
        "id": "912797SY4",
        "maturity": "2026-03-10",
        "days": 11,
-       "amount": null
+       "amount": 70891528.0
       },
       {
        "id": "912797SZ1",
        "maturity": "2026-03-17",
        "days": 18,
-       "amount": null
+       "amount": 9975000.0
       },
       {
        "id": "912797TB3",
        "maturity": "2026-03-31",
        "days": 32,
-       "amount": null
+       "amount": 49777778.0
       },
       {
-       "id": "912797SMO",
+       "id": "912797SM0",
        "maturity": "2026-04-23",
        "days": 55,
-       "amount": null
+       "amount": 37709722.0
       },
       {
        "id": "912797SP3",
        "maturity": "2026-05-07",
        "days": 69,
-       "amount": null
+       "amount": 49520833.0
       }
      ],
      "maturity_date": "2026-05-21"
@@ -24113,10 +24608,10 @@
      "state": "found",
      "where": {
       "page": 11,
-      "line": 24,
+      "line": 21,
       "raw": "5/21/2026"
      },
-     "note": "Treasury bills 12줄 중 최장 만기 2026-05-21(912797SVO). 본문은 3개월 이하 국채만 보유한다고 적음. OCR가 한 종목의 금액을 윗줄에 붙여 읽어 종목별 금액 합이 줄 합계와 맞지 않아 종목 금액은 싣지 않고 만기일만 이미지와 대조해 확인함. 정부 MMF는 펀드 CUSIP 줄만 있고 펀드 안 보유 종목과 만기가 원문에 없어(fund_holdings=[]) 직접 보유분만 본 것."
+     "note": "Treasury bills 12줄 중 최장 만기 2026-05-21(912797SVO). 본문은 3개월 이하 국채만 보유한다고 적음. 정부 MMF는 펀드 CUSIP 줄만 있고 펀드 안 보유 종목과 만기가 원문에 없어(fund_holdings=[]) 직접 보유분만 본 것."
     },
     "repo_max_maturity_days": {
      "state": "not_in_report",
@@ -24134,13 +24629,13 @@
       "line": 7,
       "raw": "February 10, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-02-10)과 월말 기준일(2026-02-27) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-02-10)과 월말 기준일(2026-02-27) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
      "where": {
       "page": 7,
-      "line": 13,
+      "line": 12,
       "raw": "natively minted"
      },
      "note": "Exhibit A가 (a) 발행 토큰 총량에서 (b) 임시 상환 불가, (c) 영구 상환 불가 토큰을 빼 (d) 상환 가능 토큰 잔액을 내는 식을 표로 적음."
@@ -24169,7 +24664,10 @@
      "where": null,
      "note": "interest, yield, reward를 찾았으나 토큰 보유자에게 이자를 준다는 문장 없음."
     }
-   }
+   },
+   "rule_input_warnings": [
+    "MMF 표 합이 줄 합계와 다름"
+   ]
   },
   {
    "source_file": "data/samples/Paxos_USDG_Examination_2026-03.pdf",
@@ -24447,7 +24945,7 @@
       "line": 14,
       "raw": "March 10, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-03-10)과 월말 기준일(2026-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-03-10)과 월말 기준일(2026-03-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -24778,7 +25276,7 @@
       "line": 14,
       "raw": "April 8, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-04-08)과 월말 기준일(2026-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-04-08)과 월말 기준일(2026-04-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -25113,13 +25611,13 @@
       "line": 9,
       "raw": "May 11, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-05-11)과 월말 기준일(2026-05-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-05-11)과 월말 기준일(2026-05-29) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
      "where": {
       "page": 7,
-      "line": 30,
+      "line": 34,
       "raw": "Total USDG natively"
      },
      "note": "Exhibit A가 (a) 발행 토큰 총량에서 (b) 임시 상환 불가, (c) 영구 상환 불가 토큰을 빼 (d) 상환 가능 토큰 잔액을 내는 식을 표로 적음."
@@ -25462,7 +25960,7 @@
       "line": 14,
       "raw": "June 17, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-06-17)과 월말 기준일(2026-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-06-17)과 월말 기준일(2026-06-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -25809,7 +26307,7 @@
       "line": 9,
       "raw": "July 21, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-07-21)과 월말 기준일(2026-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-07-21)과 월말 기준일(2026-07-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -26156,13 +26654,13 @@
       "line": 9,
       "raw": "August 6, 2026"
      },
-     "note": "보고서 하나가 월중 기준일(2026-08-06)과 월말 기준일(2026-08-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 23건이 2024-10부터 2026-08까지 빠진 달 없이 월별로 이어짐."
+     "note": "보고서 하나가 월중 기준일(2026-08-06)과 월말 기준일(2026-08-31) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "found",
      "where": {
       "page": 7,
-      "line": 9,
+      "line": 10,
       "raw": "Total USDG natively minted"
      },
      "note": "Exhibit A가 (a) 발행 토큰 총량에서 (b) 임시 상환 불가, (c) 영구 상환 불가 토큰을 빼 (d) 상환 가능 토큰 잔액을 내는 식을 표로 적음."
@@ -26177,6 +26675,343 @@
      "where": {
       "page": 6,
       "line": 26,
+      "raw": "To the best of the knowledge and belief of the undersigned"
+     },
+     "note": "경영진 주장(Management's Assertion 또는 management ... assertions)과 \"To the best of the knowledge and belief of the undersigned, the information ... is accurate and complete\" 서명 문단이 있고 서명자 직함은 Executive Director; Head of EU."
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": null,
+     "note": "business day, within N days, redemption fee, redeem 같은 말을 찾았으나 상환 기한 문장 없음. 본문은 매수와 상환 조건을 회사 약관(terms and conditions) 링크로만 가리킴."
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": null,
+     "note": "interest, yield, reward를 찾았으나 토큰 보유자에게 이자를 준다는 문장 없음."
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Paxos_USDG_Examination_2026-09.pdf",
+   "issuer": "Paxos Digital Singapore Pte. Ltd.",
+   "token": "USDG",
+   "report_dates": [
+    "2026-09-17",
+    "2026-09-30"
+   ],
+   "as_of": "2026-09-30",
+   "month": "2026-09",
+   "as_of_time": "17:00 ET",
+   "reserve_currency": "USD",
+   "circulation": 3164996248,
+   "fair_value": 3168423407,
+   "components": {
+    "cash": 78124993,
+    "government_mmf": 1678019554,
+    "repo": 0,
+    "treasury": 1412278860
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 3168423407,
+     "got": 3168423407,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 3168423407,
+     "got": 3168423407,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 3427159,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00108283,
+   "attestation": {
+    "type": "reasonable assurance",
+    "standard": "Singapore Standard on Assurance Engagements 3000 (SSAE 3000)",
+    "signed": "2026-10-23",
+    "firm": "KPMG LLP"
+   },
+   "flags": {
+    "scan_suspected": false
+   },
+   "sources": {
+    "report_dates": [
+     {
+      "page": 6,
+      "line": 14,
+      "raw": "September 17, 2026"
+     },
+     {
+      "page": 6,
+      "line": 14,
+      "raw": "September 30, 2026"
+     }
+    ],
+    "reserve_currency": {
+     "page": 9,
+     "line": 10,
+     "raw": "United States Dollar"
+    },
+    "circulation": {
+     "page": 6,
+     "line": 18,
+     "raw": "3,164,996,248"
+    },
+    "fair_value": {
+     "page": 6,
+     "line": 21,
+     "raw": "$3,168,423,407"
+    },
+    "components": {
+     "cash": {
+      "page": 9,
+      "line": 13,
+      "raw": "$78,124,993"
+     },
+     "government_mmf": {
+      "page": 9,
+      "line": 15,
+      "raw": "$1,678,019,554"
+     },
+     "repo": {
+      "page": 9,
+      "line": 17,
+      "raw": "-"
+     },
+     "treasury": {
+      "page": 9,
+      "line": 19,
+      "raw": "$1,412,278,860"
+     },
+     "total": {
+      "page": 9,
+      "line": 21,
+      "raw": "$3,168,423,407"
+     }
+    },
+    "attestation.signed": {
+     "page": 4,
+     "line": 51,
+     "raw": "23 October 2026"
+    }
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 78124993,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash",
+     "where": {
+      "page": 9,
+      "line": 13,
+      "raw": "$78,124,993"
+     }
+    },
+    {
+     "kind": "government_mmf",
+     "amount": 1678019554,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Government money market funds, at net asset value",
+     "where": {
+      "page": 9,
+      "line": 15,
+      "raw": "$1,678,019,554"
+     },
+     "items": [
+      {
+       "entity": "PDS",
+       "id": "262006208",
+       "maturity": "N/A",
+       "amount": 1670239383.0
+      },
+      {
+       "entity": "PIE",
+       "id": "IE00B14RXK43",
+       "maturity": "N/A",
+       "amount": 3895071.0
+      },
+      {
+       "entity": "PIE",
+       "id": "IE0004WWOG99",
+       "maturity": "N/A",
+       "amount": 3885100.0
+      }
+     ]
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 1412278860,
+     "currency": "USD",
+     "maturity_max_days": 36,
+     "maturity_listed": true,
+     "label": "Obligations of U.S. Treasury, at fair value",
+     "where": {
+      "page": 9,
+      "line": 19,
+      "raw": "$1,412,278,860"
+     },
+     "items": [
+      {
+       "id": "912797SA6",
+       "maturity": "2026-10-01",
+       "days": 1,
+       "amount": 39995986.0
+      },
+      {
+       "id": "912797UJ4",
+       "maturity": "2026-10-08",
+       "days": 8,
+       "amount": 79932747.0
+      },
+      {
+       "id": "912797UK1",
+       "maturity": "2026-10-15",
+       "days": 15,
+       "amount": 89858138.0
+      },
+      {
+       "id": "912797UL9",
+       "maturity": "2026-10-22",
+       "days": 22,
+       "amount": 99765944.0
+      },
+      {
+       "id": "912797VN4",
+       "maturity": "2026-10-27",
+       "days": 27,
+       "amount": 119650800.0
+      },
+      {
+       "id": "912797SK4",
+       "maturity": "2026-10-29",
+       "days": 29,
+       "amount": 204383486.0
+      },
+      {
+       "id": "912797SA6",
+       "maturity": "2026-10-01",
+       "days": 1,
+       "amount": 99989917.0
+      },
+      {
+       "id": "912797VK0",
+       "maturity": "2026-10-06",
+       "days": 6,
+       "amount": 174892292.0
+      },
+      {
+       "id": "912797UJ4",
+       "maturity": "2026-10-08",
+       "days": 8,
+       "amount": 79933511.0
+      },
+      {
+       "id": "912797UK1",
+       "maturity": "2026-10-15",
+       "days": 15,
+       "amount": 79874000.0
+      },
+      {
+       "id": "912797VM6",
+       "maturity": "2026-10-20",
+       "days": 20,
+       "amount": 79830667.0
+      },
+      {
+       "id": "912797UL9",
+       "maturity": "2026-10-22",
+       "days": 22,
+       "amount": 79814222.0
+      },
+      {
+       "id": "912797VN4",
+       "maturity": "2026-10-27",
+       "days": 27,
+       "amount": 74781750.0
+      },
+      {
+       "id": "912797UM7",
+       "maturity": "2026-11-05",
+       "days": 36,
+       "amount": 109575400.0
+      }
+     ],
+     "maturity_date": "2026-11-05"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit",
+    "government_mmf",
+    "treasury_bill"
+   ],
+   "treasury_max_maturity_days": 36,
+   "treasury_maturity_basis": "direct",
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Executive Director; Head of EU",
+   "redemption_days": null,
+   "interest_paid": null,
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "found",
+     "where": {
+      "page": 11,
+      "line": 38,
+      "raw": "11/5/2026"
+     },
+     "note": "Treasury bills 14줄 중 최장 만기 2026-11-05(912797UM7). 본문은 3개월 이하 국채만 보유한다고 적음. 정부 MMF는 펀드 CUSIP 줄만 있고 펀드 안 보유 종목과 만기가 원문에 없어(fund_holdings=[]) 직접 보유분만 본 것."
+    },
+    "repo_max_maturity_days": {
+     "state": "not_in_report",
+     "where": {
+      "page": 9,
+      "line": 55,
+      "raw": "Government money market funds at net asset value hold investments in direct obligations of the Government of the United States and reverse repurchase agreements on such obligations."
+     },
+     "note": "직접 보유 역레포는 없음(원문 \"held no repurchase agreements\", 쪽 10). 그러나 정부 MMF가 미국 국채와 그 국채 대상 역레포를 보유한다고 적어 펀드 안에 역레포가 있고, 펀드 안 종목과 만기는 원문에 없음(MMF 표는 펀드 CUSIP 줄과 Maturity N/A뿐)."
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": {
+      "page": 6,
+      "line": 14,
+      "raw": "September 17, 2026"
+     },
+     "note": "보고서 하나가 월중 기준일(2026-09-17)과 월말 기준일(2026-09-30) 두 날짜를 다루고 월마다 한 건씩 나옴(월별 연속성은 data/samples PDF 목록으로 확인). USDG PDF 24건이 2024-10부터 2026-09까지 빠진 달 없이 월별로 이어짐."
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": {
+      "page": 7,
+      "line": 15,
+      "raw": "Total USDG natively minted"
+     },
+     "note": "Exhibit A가 (a) 발행 토큰 총량에서 (b) 임시 상환 불가, (c) 영구 상환 불가 토큰을 빼 (d) 상환 가능 토큰 잔액을 내는 식을 표로 적음."
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": null,
+     "note": "원문 전체에서 custod, DBS, Banking Circle, Standard Chartered, Dreyfus, BNY, Citi, JPMorgan 등 기관 이름을 찾았으나 보관 은행 이름 없음. 원문에 있는 것은 이름 없는 표현뿐: Bank 1 in, Monetary Authority of Singapore, qualified custodian, commercial banks."
+    },
+    "management_certification": {
+     "state": "found",
+     "where": {
+      "page": 6,
+      "line": 31,
       "raw": "To the best of the knowledge and belief of the undersigned"
      },
      "note": "경영진 주장(Management's Assertion 또는 management ... assertions)과 \"To the best of the knowledge and belief of the undersigned, the information ... is accurate and complete\" 서명 문단이 있고 서명자 직함은 Executive Director; Head of EU."

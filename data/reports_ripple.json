@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05",
+ "generated": "2026-11-21",
  "source": "Ripple RLUSD(발행 법인 Standard Custody & Trust Company, LLC) 월간 examination report, 표는 macOS Vision OCR, 글은 pdftotext -layout",
  "note": "기준일은 월 중순과 월말 두 날이며 값은 월말(둘째 칸)을 쓴다. 표는 그림이라 OCR로 읽고 두 해상도 판독이 같을 때만 받는다. components 매핑: cash=Cash deposits held at U.S. regulated financial institutions, government_mmf=Government money-market funds, treasury=Total U.S. Treasury bills 또는 Subtotal(CUSIP별 줄 합계), repo=역레포 줄(RLUSD 표에는 없음, 0), other=나머지 줄(Accrued interest and dividend income, Timing differences, Adjustments due to timing 등. 음수 가능). sources.components에 키별 원문 줄(라벨, OCR 쪽 줄 번호, 원문 글)이 있다. sources는 숫자별 {page, line, raw}. 대사 실패 보고서는 reports에서 제외하고 excluded에 이유를 남긴다. 규칙 입력값(holdings, fund_holdings, asset_types, treasury_max_maturity_days, treasury_maturity_basis, repo_max_maturity_days, disclosure_cadence(_days), circulation_formula_disclosed, custodian_disclosure(custodians), management_certification(certifier), redemption_days, interest_paid, field_notes)는 표의 CUSIP 줄(종목, 만기, 월말 금액)과 나머지 줄을 OCR로 읽은 것이다. 두 해상도(200, 300dpi) 판독의 만기일과 금액이 같을 때만 받고, CUSIP 줄 월말 금액 합이 국채 합계 줄과 같아야 하며 holdings.amount 합은 fair_value와 같다(holdings_reconciliation). CUSIP 글자는 OCR가 헷갈리는 자리(0과 O, T와 1 등)가 있어 검증 숫자가 맞는 판독의 만기일별 다수결로 정했다(맞는 판독이 없으면 cusip_unverified). field_notes.state: found 원문에서 읽음, not_disclosed 공개 여부 항목이 원문에 없음, not_in_report 값이 원문에 없음, not_applicable 해당 자산 없음.",
  "excluded": [],
@@ -246,7 +246,7 @@
       "line": 18,
       "raw": "as of December 20, 2024, and as of December 31, 2024"
      },
-     "note": "보고 기준일 두 날(2024-12-20, 2024-12-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report December 2024'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2024-12-20, 2024-12-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report December 2024'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -539,7 +539,7 @@
       "line": 18,
       "raw": "as of January 24, 2025, and as of January 31, 2025"
      },
-     "note": "보고 기준일 두 날(2025-01-24, 2025-01-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report January 2025'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2025-01-24, 2025-01-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report January 2025'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -831,7 +831,7 @@
       "line": 18,
       "raw": "as of February 5, 2025, and as of February 28, 2025"
      },
-     "note": "보고 기준일 두 날(2025-02-05, 2025-02-28)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report February 2025'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2025-02-05, 2025-02-28)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report February 2025'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -1123,7 +1123,7 @@
       "line": 18,
       "raw": "as of March 13, 2025, and as of March 31, 2025"
      },
-     "note": "보고 기준일 두 날(2025-03-13, 2025-03-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report March 2025'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2025-03-13, 2025-03-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report March 2025'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -1388,7 +1388,7 @@
       "line": 19,
       "raw": "as of April 8, 2025, and as of April 30, 2025"
      },
-     "note": "보고 기준일 두 날(2025-04-08, 2025-04-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report April 2025'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2025-04-08, 2025-04-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report April 2025'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -1653,7 +1653,7 @@
       "line": 18,
       "raw": "as of May 22, 2025, and as of May 30, 2025"
      },
-     "note": "보고 기준일 두 날(2025-05-22, 2025-05-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report May 2025'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2025-05-22, 2025-05-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report May 2025'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -1897,7 +1897,7 @@
       "line": 18,
       "raw": "as of June 9, 2025, and as of June 30, 2025"
      },
-     "note": "보고 기준일 두 날(2025-06-09, 2025-06-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report June 2025'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2025-06-09, 2025-06-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report June 2025'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -2162,7 +2162,7 @@
       "line": 18,
       "raw": "as of July 17, 2025, and as of July 31, 2025"
      },
-     "note": "보고 기준일 두 날(2025-07-17, 2025-07-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report July 2025'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2025-07-17, 2025-07-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report July 2025'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -2472,7 +2472,7 @@
       "line": 8,
       "raw": "as of August 18, 2025 and August 29, 2025"
      },
-     "note": "보고 기준일 두 날(2025-08-18, 2025-08-29)이 같은 달이고 보고서 하나가 한 달을 다룬다(이 보고서에는 표지 제목이 없음). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2025-08-18, 2025-08-29)이 같은 달이고 보고서 하나가 한 달을 다룬다(이 보고서에는 표지 제목이 없음). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -2812,7 +2812,7 @@
       "line": 8,
       "raw": "as of September 15, 2025, and September 30, 2025"
      },
-     "note": "보고 기준일 두 날(2025-09-15, 2025-09-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(이 보고서에는 표지 제목이 없음). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2025-09-15, 2025-09-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(이 보고서에는 표지 제목이 없음). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -3257,7 +3257,7 @@
       "line": 8,
       "raw": "as of October 10, 2025 and October 31, 2025"
      },
-     "note": "보고 기준일 두 날(2025-10-10, 2025-10-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report October 2025'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2025-10-10, 2025-10-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report October 2025'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -3726,7 +3726,7 @@
       "line": 8,
       "raw": "as of November 24, 2025 and November 28, 2025"
      },
-     "note": "보고 기준일 두 날(2025-11-24, 2025-11-28)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report November 2025'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2025-11-24, 2025-11-28)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report November 2025'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -4171,7 +4171,7 @@
       "line": 8,
       "raw": "as of December 17, 2025 and December 31, 2025"
      },
-     "note": "보고 기준일 두 날(2025-12-17, 2025-12-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report December 2025'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2025-12-17, 2025-12-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report December 2025'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -4631,7 +4631,7 @@
       "line": 9,
       "raw": "as of January 14, 2026, and January 30, 2026"
      },
-     "note": "보고 기준일 두 날(2026-01-14, 2026-01-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report January 2026'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2026-01-14, 2026-01-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report January 2026'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -5106,7 +5106,7 @@
       "line": 20,
       "raw": "as of February 19, 2026, and February 27, 2026"
      },
-     "note": "보고 기준일 두 날(2026-02-19, 2026-02-27)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report February 2026'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2026-02-19, 2026-02-27)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report February 2026'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -5603,7 +5603,7 @@
       "line": 8,
       "raw": "as of March 13, 2026, and March 31, 2026"
      },
-     "note": "보고 기준일 두 날(2026-03-13, 2026-03-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report March 2026'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2026-03-13, 2026-03-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report March 2026'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -6102,7 +6102,7 @@
       "line": 10,
       "raw": "as of April 24, 2026, and April 30, 2026"
      },
-     "note": "보고 기준일 두 날(2026-04-24, 2026-04-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report April 2026'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2026-04-24, 2026-04-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report April 2026'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -6569,7 +6569,7 @@
       "line": 8,
       "raw": "as of May 18, 2026, and May 29, 2026"
      },
-     "note": "보고 기준일 두 날(2026-05-18, 2026-05-29)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report May 2026'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2026-05-18, 2026-05-29)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report May 2026'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -7029,7 +7029,7 @@
       "line": 8,
       "raw": "as of June 08, 2026, and June 30, 2026"
      },
-     "note": "보고 기준일 두 날(2026-06-08, 2026-06-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report June 2026'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2026-06-08, 2026-06-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserves Report June 2026'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -7549,7 +7549,7 @@
       "line": 8,
       "raw": "as of July 6, 2026, and July 31, 2026"
      },
-     "note": "보고 기준일 두 날(2026-07-06, 2026-07-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserve Report July 2026'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2026-07-06, 2026-07-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserve Report July 2026'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -8129,7 +8129,7 @@
       "line": 8,
       "raw": "as of August 17, 2026, and August 31, 2026"
      },
-     "note": "보고 기준일 두 날(2026-08-17, 2026-08-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserve Report August 2026'). 표본 21개월이 빠짐없이 이어짐."
+     "note": "보고 기준일 두 날(2026-08-17, 2026-08-31)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserve Report August 2026'). 표본 22개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -8163,6 +8163,594 @@
      "where": {
       "page": 5,
       "line": 10,
+      "raw": "redemption demands"
+     },
+     "note": "상환 기한(며칠 안에 상환)을 적은 문장이 없다. 상환은 예금 한도 설명('anticipated redemption demands')에만 나온다. 원문 전체 검색어(일치 수): 'redemption demands'(2), 'redeemable'(0), 'redeemed but not yet paid'(0), 'within N days'(0), 'T+N'(0)"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": null,
+     "note": "소유자에게 이자를 준다는 문장이 없다. 원문에 'interest' 낱말이 없다. 원문 전체 검색어(일치 수): 'interest'(0)"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Ripple_RLUSD_Examination_2026-09.pdf",
+   "token": "RLUSD",
+   "issuer": "Standard Custody & Trust Company, LLC",
+   "report_dates": [
+    "2026-09-21",
+    "2026-09-30"
+   ],
+   "as_of": "2026-09-30",
+   "month": "2026-09",
+   "as_of_time": "17:00 ET",
+   "reserve_currency": "USD",
+   "circulation": 2399995528,
+   "fair_value": 2524008274,
+   "components": {
+    "cash": 378585861,
+    "repo": 0,
+    "government_mmf": 451826457,
+    "treasury": 1693595956,
+    "other": 0
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 2524008274,
+     "got": 2524008274,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 2524008274,
+     "got": 2524008274,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 124012746,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.05167207,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-10-26",
+    "firm": null
+   },
+   "flags": {
+    "ocr_pages": [
+     5
+    ],
+    "ocr_dpi_agree": [
+     200,
+     300
+    ],
+    "column_x_threshold": 0.712,
+    "letterhead": null
+   },
+   "sources": {
+    "report_dates": [
+     {
+      "page": 3,
+      "line": 8,
+      "raw": "September 21, 2026"
+     },
+     {
+      "page": 3,
+      "line": 8,
+      "raw": "September 30, 2026"
+     }
+    ],
+    "reserve_currency": {
+     "page": 4,
+     "line": 28,
+     "raw": "U.S. dollar"
+    },
+    "circulation": {
+     "page": 5,
+     "line": 10,
+     "raw": "2,399,995,528",
+     "ocr": true
+    },
+    "fair_value": {
+     "page": 5,
+     "line": 11,
+     "raw": "$2,524,008,274",
+     "ocr": true
+    },
+    "components": {
+     "cash": [
+      {
+       "page": 5,
+       "line": 43,
+       "label": "Cash deposits held at U.S. regulated financial institutions",
+       "raw": "378,585,861"
+      }
+     ],
+     "government_mmf": [
+      {
+       "page": 5,
+       "line": 42,
+       "label": "Government money-market funds",
+       "raw": "451,826,457"
+      }
+     ],
+     "treasury": [
+      {
+       "page": 5,
+       "line": 41,
+       "label": "Subtotal",
+       "raw": "1,693,595,956"
+      }
+     ],
+     "other": [
+      {
+       "page": 5,
+       "line": 44,
+       "label": "Adjustments due to timing*",
+       "raw": "-"
+      }
+     ],
+     "total": {
+      "page": 5,
+      "line": 45,
+      "label": "Total Market Value of the Reserve $",
+      "raw": "2,524,008,274"
+     }
+    },
+    "attestation.signed": {
+     "page": 3,
+     "line": 30,
+     "raw": "October 26, 2026"
+    }
+   },
+   "holdings": [
+    {
+     "kind": "treasury_bill",
+     "amount": 61000000,
+     "currency": "USD",
+     "maturity_max_days": 1,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797SA6",
+     "where": {
+      "page": 5,
+      "line": 19,
+      "raw": "912797SA6 October 1, 2026 60,942,050 61,000,000",
+      "ocr": true
+     },
+     "maturity_date": "2026-10-01"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 113715837,
+     "currency": "USD",
+     "maturity_max_days": 6,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797VK0",
+     "where": {
+      "page": 5,
+      "line": 20,
+      "raw": "912797VK0 October 6, 2026 113,607,751 113,715,837",
+      "ocr": true
+     },
+     "maturity_date": "2026-10-06"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 117413050,
+     "currency": "USD",
+     "maturity_max_days": 8,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797UJ4",
+     "where": {
+      "page": 5,
+      "line": 21,
+      "raw": "912797UJ4 October 8, 2026 117,301,425 117,413,050",
+      "ocr": true
+     },
+     "maturity_date": "2026-10-08"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 124541631,
+     "currency": "USD",
+     "maturity_max_days": 13,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797VL8",
+     "where": {
+      "page": 5,
+      "line": 22,
+      "raw": "912797VL8 October 13, 2026 69,545,266 124,541,631",
+      "ocr": true
+     },
+     "maturity_date": "2026-10-13"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 45682290,
+     "currency": "USD",
+     "maturity_max_days": 15,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797UK1",
+     "where": {
+      "page": 5,
+      "line": 23,
+      "raw": "912797UK1 October 15, 2026 45,639,285 45,682,290",
+      "ocr": true
+     },
+     "maturity_date": "2026-10-15"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 124746250,
+     "currency": "USD",
+     "maturity_max_days": 20,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797VM6",
+     "where": {
+      "page": 5,
+      "line": 24,
+      "raw": "912797VM6 October 20, 2026 49,851,500 124,746,250",
+      "ocr": true
+     },
+     "maturity_date": "2026-10-20"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 85706725,
+     "currency": "USD",
+     "maturity_max_days": 22,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797UL9",
+     "where": {
+      "page": 5,
+      "line": 25,
+      "raw": "912797UL9 October 22, 2026 85,627,697 85,706,725",
+      "ocr": true
+     },
+     "maturity_date": "2026-10-22"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 117761710,
+     "currency": "USD",
+     "maturity_max_days": 27,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797VN4",
+     "where": {
+      "page": 5,
+      "line": 26,
+      "raw": "912797VN4 October 27, 2026 97,725,105 117,761,710",
+      "ocr": true
+     },
+     "maturity_date": "2026-10-27"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 65304155,
+     "currency": "USD",
+     "maturity_max_days": 29,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797SK4",
+     "where": {
+      "page": 5,
+      "line": 27,
+      "raw": "912797SK4 October 29, 2026 65,241,930 65,304,155",
+      "ocr": true
+     },
+     "maturity_date": "2026-10-29"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 114091235,
+     "currency": "USD",
+     "maturity_max_days": 34,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797VP9",
+     "where": {
+      "page": 5,
+      "line": 28,
+      "raw": "912797VP9 November 3, 2026 64,212,330 114,091,235",
+      "ocr": true
+     },
+     "maturity_date": "2026-11-03"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 70630580,
+     "currency": "USD",
+     "maturity_max_days": 36,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797UM7",
+     "where": {
+      "page": 5,
+      "line": 29,
+      "raw": "912797UM7 November 5, 2026 70,564,643 70,630,580",
+      "ocr": true
+     },
+     "maturity_date": "2026-11-05"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 72233682,
+     "currency": "USD",
+     "maturity_max_days": 41,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797VW4",
+     "where": {
+      "page": 5,
+      "line": 30,
+      "raw": "912797VW4 November 10, 2026 72,166,211 72,233,682",
+      "ocr": true
+     },
+     "maturity_date": "2026-11-10"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 49172266,
+     "currency": "USD",
+     "maturity_max_days": 43,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797UY1",
+     "where": {
+      "page": 5,
+      "line": 31,
+      "raw": "912797UY1 November 12, 2026 49,127,312 49,172,266",
+      "ocr": true
+     },
+     "maturity_date": "2026-11-12"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 65892913,
+     "currency": "USD",
+     "maturity_max_days": 50,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797UZ8",
+     "where": {
+      "page": 5,
+      "line": 32,
+      "raw": "912797UZ8 November 19, 2026 65,833,950 65,892,913",
+      "ocr": true
+     },
+     "maturity_date": "2026-11-19"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 109939718,
+     "currency": "USD",
+     "maturity_max_days": 55,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797VY0",
+     "where": {
+      "page": 5,
+      "line": 33,
+      "raw": "912797VYO November 24, 2026 54,623,250 109,939,718",
+      "ocr": true
+     },
+     "maturity_date": "2026-11-24",
+     "cusip_repaired_from": "912797VYO"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 78301984,
+     "currency": "USD",
+     "maturity_max_days": 58,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797SU2",
+     "where": {
+      "page": 5,
+      "line": 34,
+      "raw": "912797SU2 November 27, 2026 78,231,852 78,301,984",
+      "ocr": true
+     },
+     "maturity_date": "2026-11-27"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 48136645,
+     "currency": "USD",
+     "maturity_max_days": 64,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797VA2",
+     "where": {
+      "page": 5,
+      "line": 35,
+      "raw": "912797VA2 December 3, 2026 48,092,532 48,136,645",
+      "ocr": true
+     },
+     "maturity_date": "2026-12-03"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 68170323,
+     "currency": "USD",
+     "maturity_max_days": 71,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797VG9",
+     "where": {
+      "page": 5,
+      "line": 36,
+      "raw": "912797VG9 December 10, 2026 68,102,310 68,170,323",
+      "ocr": true
+     },
+     "maturity_date": "2026-12-10"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 70518304,
+     "currency": "USD",
+     "maturity_max_days": 78,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797VH7",
+     "where": {
+      "page": 5,
+      "line": 37,
+      "raw": "912797VH7 December 17, 2026 38,256,904 70,518,304",
+      "ocr": true
+     },
+     "maturity_date": "2026-12-17"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 72616111,
+     "currency": "USD",
+     "maturity_max_days": 85,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797TC1",
+     "where": {
+      "page": 5,
+      "line": 38,
+      "raw": "912797TC1 December 24, 2026 72,616,111",
+      "ocr": true
+     },
+     "maturity_date": "2026-12-24"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 18020548,
+     "currency": "USD",
+     "maturity_max_days": 90,
+     "maturity_listed": true,
+     "label": "U.S. Treasury bill CUSIP 912797WH6",
+     "where": {
+      "page": 5,
+      "line": 39,
+      "raw": "912797WH6 December 29, 2026 18,020,548",
+      "ocr": true
+     },
+     "maturity_date": "2026-12-29"
+    },
+    {
+     "kind": "settlement",
+     "amount": -1,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "국채 CUSIP 줄 합과 소계의 반올림 차이(원문)",
+     "where": {
+      "page": 5,
+      "line": null,
+      "raw": "CUSIP 줄 합 1,693,595,957, 소계 1,693,595,956",
+      "ocr": true
+     }
+    },
+    {
+     "kind": "bank_deposit",
+     "amount": 378585861,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash deposits held at U.S. regulated financial institutions",
+     "where": {
+      "page": 5,
+      "line": 43,
+      "raw": "378,585,861",
+      "ocr": true
+     }
+    },
+    {
+     "kind": "government_mmf",
+     "amount": 451826457,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Government money-market funds",
+     "where": {
+      "page": 5,
+      "line": 42,
+      "raw": "451,826,457",
+      "ocr": true
+     }
+    }
+   ],
+   "fund_holdings": [],
+   "holdings_reconciliation": {
+    "expected": 2524008274,
+    "got": 2524008274,
+    "diff": 0,
+    "treasury_rows_vs_total": {
+     "cusip_rows_sum": 1693595957,
+     "total_row": 1693595956,
+     "diff": 1
+    }
+   },
+   "asset_types": [
+    "bank_deposit",
+    "government_mmf",
+    "treasury_bill"
+   ],
+   "treasury_maturity_basis": "direct",
+   "treasury_max_maturity_days": 90,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": false,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Executive Officer",
+   "redemption_days": null,
+   "interest_paid": null,
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "found",
+     "where": {
+      "page": 5,
+      "line": 39,
+      "raw": "912797WH6 December 29, 2026 18,020,548",
+      "ocr": true
+     },
+     "note": "U.S. Treasury bill CUSIP 912797WH6, 만기 2026-12-29, 기준일 2026-09-30 기준 90일"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": null,
+     "note": "역레포 줄이 직접 보유분에도 펀드 안 종목 목록에도 없다. 정부 MMF 451,826,457달러가 있으나 원문은 MMF 안 종목 목록을 싣지 않아 fund_holdings는 비워 둔다."
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": {
+      "page": 3,
+      "line": 8,
+      "raw": "as of September 21, 2026, and September 30, 2026"
+     },
+     "note": "보고 기준일 두 날(2026-09-21, 2026-09-30)이 같은 달이고 보고서 하나가 한 달을 다룬다(표지 'RLUSD Reserve Report September 2026'). 표본 22개월이 빠짐없이 이어짐."
+    },
+    "circulation_formula_disclosed": {
+     "state": "not_disclosed",
+     "where": {
+      "page": 4,
+      "line": 32,
+      "raw": "Outstanding Stablecoin Units means the aggregate amount of RLUSD currently on the NYDFS approved blockchain networks* at the Report Dates."
+     },
+     "note": "정의 문장만 있고 무엇을 더하고 빼는지(발행, 상환과 소각, 동결 등)는 없다. D-06 기준으로 계산식 공개가 아님. 정의 문장: 'Outstanding Stablecoin Units means the aggregate amount of RLUSD currently on the NYDFS approved blockchain networks* at the Report Dates.'"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": {
+      "page": 4,
+      "line": 29,
+      "raw": "regulated financial institutions"
+     },
+     "note": "준비자산을 맡긴 기관을 'regulated financial institutions', 'asset custodians approved by DFS'처럼 종류로만 적고 이름은 없다(발행 법인 Standard Custody & Trust Company, LLC가 직접 쓴 이름이나 감사법인은 맡긴 기관이 아님). 이름 후보 검색(기관명 꼴 '... Bank/Securities/Advisors/Asset Management/N.A.'과 주요 은행 이름 17개, 본문과 표 OCR 모두)에서 0건. 원문 전체 검색어(일치 수): 'custodian'(1)"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": {
+      "page": 5,
+      "line": 24,
+      "raw": "Jack McDonald Chief Executive Officer"
+     },
+     "note": "쪽 2에 경영진 확인서('Management’s Assertion')가 있고 Chief Executive Officer(Standard Custody & Trust Company, LLC) 서명 블록(쪽 5)과 서명 이미지가 있다(이름 줄 위 어두운 픽셀 1469개)."
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": {
+      "page": 5,
+      "line": 9,
       "raw": "redemption demands"
      },
      "note": "상환 기한(며칠 안에 상환)을 적은 문장이 없다. 상환은 예금 한도 설명('anticipated redemption demands')에만 나온다. 원문 전체 검색어(일치 수): 'redemption demands'(2), 'redeemable'(0), 'redeemed but not yet paid'(0), 'within N days'(0), 'T+N'(0)"

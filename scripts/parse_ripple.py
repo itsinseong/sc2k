@@ -318,7 +318,12 @@ def finalize_holdings(reports):
             hs.append(h)
         comp, lines = raw['comp'], raw['reads'][0]['lines']
         cusip_sum = sum(h['amount'] for h in hs)
-        if cusip_sum != r['components']['treasury']: raise ValueError(f"{r['month']}: CUSIP 줄 합 {cusip_sum} != 국채 합계 {r['components']['treasury']}")
+        # 원문은 CUSIP 줄을 달러로 반올림해 적어 줄 합이 소계와 1달러 어긋날 수 있다(2026-09: 줄 합 1,693,595,957, 소계 956, 그림 대조 확인).
+        rounding = r['components']['treasury'] - cusip_sum
+        if abs(rounding) > 1: raise ValueError(f"{r['month']}: CUSIP 줄 합 {cusip_sum} != 국채 합계 {r['components']['treasury']}")
+        if rounding:
+            hs.append(ri.holding('settlement', rounding, '국채 CUSIP 줄 합과 소계의 반올림 차이(원문)',
+                                 {'page': page, 'line': None, 'raw': f"CUSIP 줄 합 {cusip_sum:,}, 소계 {r['components']['treasury']:,}", 'ocr': True}, as_of))
         if comp['repo']: raise ValueError(f"{r['month']}: 역레포 줄이 있음, kind를 정해야 함")
         for key, kind in (('cash', 'bank_deposit'), ('government_mmf', 'government_mmf'), ('other', 'settlement')):
             for x in comp[key]:

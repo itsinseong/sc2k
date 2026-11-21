@@ -39,6 +39,7 @@ EXPECTED = {
     ('PYUSD', '2026-06'): dict(circulation=2686586963, fair_value=2693757338, as_of='2026-06-30', signed='2026-07-24'),
     ('PYUSD', '2026-07'): dict(circulation=2689335674, fair_value=2694072163, as_of='2026-07-31', signed='2026-08-25'),
     ('PYUSD', '2026-08'): dict(circulation=2886948845, fair_value=2893935877, as_of='2026-08-31', signed='2026-09-24'),
+    ('PYUSD', '2026-09'): dict(circulation=2747625868, fair_value=2754709360, as_of='2026-09-30', signed='2026-10-23'),
     ('USDP', '2023-01'): dict(circulation=969514797, fair_value=981761482, as_of='2023-01-31', signed='2023-02-27'),
     ('USDP', '2023-02'): dict(circulation=766369357, fair_value=776277036, as_of='2023-02-28', signed='2023-03-21'),
     ('USDP', '2023-03'): dict(circulation=757552716, fair_value=768331155, as_of='2023-03-31', signed='2023-04-19'),
@@ -83,6 +84,7 @@ EXPECTED = {
     ('USDP', '2026-06'): dict(circulation=31954027, fair_value=31977534, as_of='2026-06-30', signed='2026-07-24'),
     ('USDP', '2026-07'): dict(circulation=31954027, fair_value=31975703, as_of='2026-07-31', signed='2026-08-25'),
     ('USDP', '2026-08'): dict(circulation=29168261, fair_value=29189905, as_of='2026-08-31', signed='2026-09-24'),
+    ('USDP', '2026-09'): dict(circulation=26084307, fair_value=26113649, as_of='2026-09-30', signed='2026-10-23'),
     ('USDG', '2024-10'): dict(circulation=10750140, fair_value=10757815, as_of='2024-10-31', signed='2024-11-27'),
     ('USDG', '2024-11'): dict(circulation=29386864, fair_value=29467869, as_of='2024-11-29', signed='2024-12-27'),
     ('USDG', '2024-12'): dict(circulation=29860177, fair_value=30049879, as_of='2024-12-31', signed='2025-01-28'),
@@ -106,6 +108,7 @@ EXPECTED = {
     ('USDG', '2026-06'): dict(circulation=2984505939, fair_value=2989975984, as_of='2026-06-30', signed='2026-07-24'),
     ('USDG', '2026-07'): dict(circulation=3400474143, fair_value=3404876225, as_of='2026-07-31', signed='2026-08-26'),
     ('USDG', '2026-08'): dict(circulation=3340650602, fair_value=3350462467, as_of='2026-08-31', signed='2026-09-25'),
+    ('USDG', '2026-09'): dict(circulation=3164996248, fair_value=3168423407, as_of='2026-09-30', signed='2026-10-23'),
 }
 
 
@@ -173,6 +176,7 @@ RULE_INPUTS = {
     ('PYUSD', '2025-01'): dict(treasury=None, repo=1, types=['bank_deposit', 'reverse_repo_overnight'], formula=True, custodian=False, cert=True),
     ('PYUSD', '2026-05'): dict(treasury=None, repo=1, types=['bank_deposit', 'reverse_repo_overnight'], formula=True, custodian=False, cert=True),
     ('PYUSD', '2026-08'): dict(treasury=31, repo=1, types=['bank_deposit', 'reverse_repo_overnight', 'treasury_bill'], formula=True, custodian=False, cert=True),
+    ('PYUSD', '2026-09'): dict(treasury=36, repo=1, types=['bank_deposit', 'reverse_repo_overnight', 'treasury_bill'], formula=True, custodian=False, cert=True),
     ('USDP', '2023-01'): dict(treasury=23, repo=1, types=['bank_deposit', 'reverse_repo_overnight', 'treasury_bill'], formula=False, custodian=False, cert=True),
     ('USDP', '2023-12'): dict(treasury=None, repo=1, types=['bank_deposit', 'reverse_repo_overnight'], formula=False, custodian=False, cert=True),
     ('USDP', '2024-09'): dict(treasury=None, repo=None, types=['bank_deposit'], formula=False, custodian=False, cert=True),
@@ -182,6 +186,7 @@ RULE_INPUTS = {
     ('USDG', '2025-09'): dict(treasury=30, repo=None, types=['cash_equivalents_unsplit', 'treasury_bill'], formula=False, custodian=True, cert=True),
     ('USDG', '2026-01'): dict(treasury=83, repo=None, types=['bank_deposit', 'government_mmf', 'treasury_bill'], formula=True, custodian=False, cert=True),
     ('USDG', '2026-08'): dict(treasury=31, repo=None, types=['bank_deposit', 'government_mmf', 'treasury_bill'], formula=True, custodian=False, cert=True),
+    ('USDG', '2026-09'): dict(treasury=36, repo=None, types=['bank_deposit', 'government_mmf', 'treasury_bill'], formula=True, custodian=False, cert=True),
 }
 FIELD_STATES = {'found', 'not_disclosed', 'not_in_report', 'not_applicable'}
 
@@ -205,7 +210,7 @@ def test_rule_inputs_first_and_last_month_are_covered():
         months.setdefault(tok, []).append(m)
     for tok, ms in months.items():
         for m in (min(ms), max(ms)):
-            if tok == 'USDP' and m == '2026-08':  # USDP 마지막 달은 2025-01과 값이 같아 따로 두지 않는다
+            if tok == 'USDP' and m == '2026-09':  # USDP 마지막 달은 2025-01과 값이 같아 따로 두지 않는다
                 continue
             assert (tok, m) in RULE_INPUTS, (tok, m)
 

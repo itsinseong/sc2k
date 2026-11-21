@@ -43,6 +43,8 @@ EXPECTED = {
     '2026-05': dict(circulation=40136855, fair_value=40136855, as_of='2026-05-29', signed='2026-06-29', cash=40637066),
     '2026-06': dict(circulation=39163190, fair_value=39163190, as_of='2026-06-30', signed='2026-08-27', cash=39757812),
     '2026-07': dict(circulation=38641266, fair_value=38641266, as_of='2026-07-31', signed='2026-10-02', cash=39332270),
+    '2026-08': dict(circulation=39573881, fair_value=39573881, as_of='2026-08-31', signed='2026-10-06', cash=40344766),
+    '2026-09': dict(circulation=38378754, fair_value=38378754, as_of='2026-09-30', signed='2026-10-29', cash=39246583),
 }
 
 KNOWN_FAIL = ['2023-05', '2023-09', '2024-03', '2026-04']

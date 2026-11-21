@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05",
+ "generated": "2026-11-21",
  "source": "Gemini GUSD(발행 법인 Gemini Trust Company, LLC) 월간 examination report, pdftotext -layout(글자 층 없는 쪽은 macOS Vision OCR)",
  "note": "기준일은 월 중순과 월말 두 날이며 값은 월말(둘째 칸)을 쓴다. 금액은 센트까지 나와 정수 달러로 반올림했고 합계 대사는 센트로 했다(flags.cents). components 매핑: cash=Cash deposits held at U.S. regulated financial institutions, government_mmf=Money-market funds(주석상 국채, 정부증권 담보 레포, 현금만 보유하는 펀드), treasury=Total U.S. Treasury bills(CUSIP별 줄 합계; 줄이 없는 달은 0), repo=표에 줄이 없어 0, other=Net cash receivable (payable) due to timing and settlement differences(음수 가능)에 달러 반올림 차이를 더한 값. sources.components에 키별 원문 금액 위치가 있다. sources는 숫자별 {page, line, raw}. 대사 실패 보고서는 reports에서 제외하고 excluded에 이유를 남긴다. 제외: 2023-05 표의 Total U.S. Treasury bills 284,442,090.00이 CUSIP별 줄 합계 284,422,090.00보다 20,000.00 크다(원문 오기). 줄 합계로 더하면 Total Reserve 571,710,397.95와 맞는다. / 2023-09 줄 합계(국채 232,257,614.60 + 현금 19,316,644.07 + MMF 50,409,302.73 - 정산 차액 1,151,280.64 = 300,832,280.76)가 Total Reserve 300,832,300.76보다 20.00 작다(원문 오기). / 2024-03 표의 Total U.S. Treasury bills 22,201,909.40이 CUSIP별 줄 합계 22,201,919.40보다 10.00 작다(원문 오기). 줄 합계로 더하면 Total Reserve 130,655,646.73과 맞는다. / 2026-04 현금 43,571,282.42 + 정산 차액 (725,005.09) = 42,846,277.33이 Total Reserve 40,465,459.06과 2,380,818.27 어긋난다(4월 20일 칸은 맞음, 이미지 쪽을 눈으로 대조해 OCR 오독이 아님을 확인). 규칙 입력값(holdings, fund_holdings, asset_types, treasury_max_maturity_days, treasury_maturity_basis, repo_max_maturity_days, disclosure_cadence(_days), circulation_formula_disclosed, custodian_disclosure(custodians), management_certification(certifier), redemption_days, interest_paid, field_notes)는 표 줄을 원문 그대로 읽은 것이다. holdings.amount는 달러(센트 포함)이며 합은 flags.cents.fair_value와 센트까지 같다(holdings_reconciliation). 종목별 만기는 CUSIP 줄의 Maturity Date, 값은 월말 칸이다. field_notes.state: found 원문에서 읽음, not_disclosed 공개 여부 항목이 원문에 없음, not_in_report 값이 원문에 없음, not_applicable 해당 자산 없음.",
  "excluded": [
@@ -255,7 +255,7 @@
       "line": 9,
       "raw": "during the period from January 1, 2023 to January 31, 2023"
      },
-     "note": "보고 기간이 한 달 이내(January 1, 2023부터 January 31, 2023까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(January 1, 2023부터 January 31, 2023까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -691,7 +691,7 @@
       "line": 9,
       "raw": "during the period from February 1, 2023 to February 28, 2023"
      },
-     "note": "보고 기간이 한 달 이내(February 1, 2023부터 February 28, 2023까지 28일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(February 1, 2023부터 February 28, 2023까지 28일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -1124,7 +1124,7 @@
       "line": 9,
       "raw": "during the period from March 1, 2023 to March 31, 2023"
      },
-     "note": "보고 기간이 한 달 이내(March 1, 2023부터 March 31, 2023까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(March 1, 2023부터 March 31, 2023까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -1477,7 +1477,7 @@
       "line": 9,
       "raw": "during the period from April 1, 2023 to April 30, 2023"
      },
-     "note": "보고 기간이 한 달 이내(April 1, 2023부터 April 30, 2023까지 30일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(April 1, 2023부터 April 30, 2023까지 30일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -1883,7 +1883,7 @@
       "line": 9,
       "raw": "during the period from June 12, 2023 to June 30, 2023"
      },
-     "note": "보고 기간이 한 달 이내(June 12, 2023부터 June 30, 2023까지 19일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(June 12, 2023부터 June 30, 2023까지 19일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -2247,7 +2247,7 @@
       "line": 9,
       "raw": "during the period from July 1, 2023 to July 31, 2023"
      },
-     "note": "보고 기간이 한 달 이내(July 1, 2023부터 July 31, 2023까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(July 1, 2023부터 July 31, 2023까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -2541,7 +2541,7 @@
       "line": 9,
       "raw": "during the period from August 1, 2023 to August 31, 2023"
      },
-     "note": "보고 기간이 한 달 이내(August 1, 2023부터 August 31, 2023까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(August 1, 2023부터 August 31, 2023까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -2890,7 +2890,7 @@
       "line": 9,
       "raw": "during the period from October 1, 2023 to October 31, 2023"
      },
-     "note": "보고 기간이 한 달 이내(October 1, 2023부터 October 31, 2023까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(October 1, 2023부터 October 31, 2023까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -3239,7 +3239,7 @@
       "line": 9,
       "raw": "during the period from November 1, 2023 to November 30, 2023"
      },
-     "note": "보고 기간이 한 달 이내(November 1, 2023부터 November 30, 2023까지 30일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(November 1, 2023부터 November 30, 2023까지 30일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -3560,7 +3560,7 @@
       "line": 9,
       "raw": "during the period from December 1, 2023 to December 31, 2023"
      },
-     "note": "보고 기간이 한 달 이내(December 1, 2023부터 December 31, 2023까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(December 1, 2023부터 December 31, 2023까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -3853,7 +3853,7 @@
       "line": 9,
       "raw": "during the period from January 1, 2024 to January 31, 2024"
      },
-     "note": "보고 기간이 한 달 이내(January 1, 2024부터 January 31, 2024까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(January 1, 2024부터 January 31, 2024까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -4132,7 +4132,7 @@
       "line": 9,
       "raw": "during the period from February 1, 2024 to February 29, 2024"
      },
-     "note": "보고 기간이 한 달 이내(February 1, 2024부터 February 29, 2024까지 29일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(February 1, 2024부터 February 29, 2024까지 29일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -4467,7 +4467,7 @@
       "line": 9,
       "raw": "during the period from April 1, 2024 to April 30, 2024"
      },
-     "note": "보고 기간이 한 달 이내(April 1, 2024부터 April 30, 2024까지 30일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(April 1, 2024부터 April 30, 2024까지 30일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -4788,7 +4788,7 @@
       "line": 9,
       "raw": "during the period from May 1, 2024, to May 31, 2024"
      },
-     "note": "보고 기간이 한 달 이내(May 1, 2024부터 May 31, 2024까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(May 1, 2024부터 May 31, 2024까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -5095,7 +5095,7 @@
       "line": 9,
       "raw": "during the period from June 1, 2024, to June 30, 2024"
      },
-     "note": "보고 기간이 한 달 이내(June 1, 2024부터 June 30, 2024까지 30일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(June 1, 2024부터 June 30, 2024까지 30일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -5402,7 +5402,7 @@
       "line": 9,
       "raw": "during the period from July 1, 2024, to July 31, 2024"
      },
-     "note": "보고 기간이 한 달 이내(July 1, 2024부터 July 31, 2024까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(July 1, 2024부터 July 31, 2024까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -5695,7 +5695,7 @@
       "line": 9,
       "raw": "during the period from August 1, 2024 to August 31, 2024"
      },
-     "note": "보고 기간이 한 달 이내(August 1, 2024부터 August 31, 2024까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(August 1, 2024부터 August 31, 2024까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -5943,7 +5943,7 @@
       "line": 9,
       "raw": "during the period from September 1, 2024 to September 30, 2024"
      },
-     "note": "보고 기간이 한 달 이내(September 1, 2024부터 September 30, 2024까지 30일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(September 1, 2024부터 September 30, 2024까지 30일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -6053,12 +6053,12 @@
     "report_dates": [
      {
       "page": 4,
-      "line": 4,
+      "line": 5,
       "raw": "October 8, 2024"
      },
      {
       "page": 4,
-      "line": 4,
+      "line": 5,
       "raw": "October 31, 2024"
      }
     ],
@@ -6069,23 +6069,23 @@
     },
     "circulation": {
      "page": 4,
-     "line": 5,
+     "line": 6,
      "raw": "67,417,231.65"
     },
     "fair_value": {
      "page": 4,
-     "line": 12,
+     "line": 13,
      "raw": "67,417,231.65"
     },
     "components": {
      "cash": {
       "page": 4,
-      "line": 8,
+      "line": 9,
       "raw": "68,629,770.82"
      },
      "government_mmf": {
       "page": 4,
-      "line": 9,
+      "line": 10,
       "raw": "(금액 칸 비어 있음, 0으로 봄)"
      },
      "treasury": {
@@ -6095,12 +6095,12 @@
      },
      "other": {
       "page": 4,
-      "line": 11,
+      "line": 12,
       "raw": "(1,212,539.17)"
      },
      "total": {
       "page": 4,
-      "line": 12,
+      "line": 13,
       "raw": "67,417,231.65"
      }
     },
@@ -6120,7 +6120,7 @@
      "label": "Cash deposits held at U.S. regulated financial institutions",
      "where": {
       "page": 4,
-      "line": 8,
+      "line": 9,
       "raw": "68,629,770.82",
       "ocr": true
      }
@@ -6134,7 +6134,7 @@
      "label": "Net cash receivable (payable) due to timing and settlement differences",
      "where": {
       "page": 4,
-      "line": 11,
+      "line": 12,
       "raw": "(1,212,539.17)",
       "ocr": true
      }
@@ -6182,18 +6182,22 @@
       "line": 9,
       "raw": "during the period from October 1, 2024 to October 31, 2024"
      },
-     "note": "보고 기간이 한 달 이내(October 1, 2024부터 October 31, 2024까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(October 1, 2024부터 October 31, 2024까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
-     "where": null,
-     "note": "유통량 줄의 각주 1이 'Per the Etherscan.io website'로 출처만 밝히고, 발행에서 소각을 빼는지나 발행사 보유분을 제외하는지 같은 산정 방식 설명은 없다. 원문 전체 검색어(일치 수): 'burn'(0), 'mint'(0), 'redeem'(0), 'total supply'(0), 'exclud'(0), 'held by the Company'(0), 'less the'(0), 'Etherscan'(0)"
+     "where": {
+      "page": 4,
+      "line": 26,
+      "raw": "Per the Etherscan.io website"
+     },
+     "note": "유통량 줄의 각주 1이 'Per the Etherscan.io website'로 출처만 밝히고, 발행에서 소각을 빼는지나 발행사 보유분을 제외하는지 같은 산정 방식 설명은 없다. 원문 전체 검색어(일치 수): 'burn'(0), 'mint'(0), 'redeem'(0), 'total supply'(0), 'exclud'(0), 'held by the Company'(0), 'less the'(0), 'Etherscan'(2)"
     },
     "custodian_disclosure": {
      "state": "found",
      "where": {
       "page": 4,
-      "line": 25,
+      "line": 27,
       "raw": "The Gemini dollar reserves are held and maintained"
      },
      "note": "각주 2 문장에 이름이 있다: State Street Bank and Trust Company; BNY Mellon N.A."
@@ -6202,7 +6206,7 @@
      "state": "found",
      "where": {
       "page": 4,
-      "line": 22,
+      "line": 23,
       "raw": "CEO/President, Gemini Trust Company, LLC, November 25, 2024"
      },
      "note": "Management's Assertion(쪽 3 'we assert that the Company has complied')에 CEO/President(Gemini Trust Company, LLC) 서명 블록이 있고 서명 이미지 확인(이름 줄 위 어두운 픽셀 917개)."
@@ -6411,7 +6415,7 @@
       "line": 9,
       "raw": "during the period from November 1, 2024 to November 30, 2024"
      },
-     "note": "보고 기간이 한 달 이내(November 1, 2024부터 November 30, 2024까지 30일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(November 1, 2024부터 November 30, 2024까지 30일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -6645,7 +6649,7 @@
       "line": 9,
       "raw": "during the period from December 1, 2024 to December 31, 2024"
      },
-     "note": "보고 기간이 한 달 이내(December 1, 2024부터 December 31, 2024까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(December 1, 2024부터 December 31, 2024까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -6879,7 +6883,7 @@
       "line": 9,
       "raw": "during the period from January 1, 2025 to January 31, 2025"
      },
-     "note": "보고 기간이 한 달 이내(January 1, 2025부터 January 31, 2025까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(January 1, 2025부터 January 31, 2025까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -7113,7 +7117,7 @@
       "line": 9,
       "raw": "during the period from February 1, 2025 to February 28, 2025"
      },
-     "note": "보고 기간이 한 달 이내(February 1, 2025부터 February 28, 2025까지 28일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(February 1, 2025부터 February 28, 2025까지 28일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -7347,7 +7351,7 @@
       "line": 9,
       "raw": "during the period from March 1, 2025 to March 31, 2025"
      },
-     "note": "보고 기간이 한 달 이내(March 1, 2025부터 March 31, 2025까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(March 1, 2025부터 March 31, 2025까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -7581,7 +7585,7 @@
       "line": 9,
       "raw": "during the period from April 1, 2025 to April 30, 2025"
      },
-     "note": "보고 기간이 한 달 이내(April 1, 2025부터 April 30, 2025까지 30일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(April 1, 2025부터 April 30, 2025까지 30일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -7815,7 +7819,7 @@
       "line": 9,
       "raw": "during the period from May 1, 2025 to May 30, 2025"
      },
-     "note": "보고 기간이 한 달 이내(May 1, 2025부터 May 30, 2025까지 30일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(May 1, 2025부터 May 30, 2025까지 30일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -8049,7 +8053,7 @@
       "line": 9,
       "raw": "during the period from June 1, 2025 to June 30, 2025"
      },
-     "note": "보고 기간이 한 달 이내(June 1, 2025부터 June 30, 2025까지 30일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(June 1, 2025부터 June 30, 2025까지 30일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -8283,7 +8287,7 @@
       "line": 14,
       "raw": "during the period from July 1, 2025 to July 31, 2025"
      },
-     "note": "보고 기간이 한 달 이내(July 1, 2025부터 July 31, 2025까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(July 1, 2025부터 July 31, 2025까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -8517,7 +8521,7 @@
       "line": 9,
       "raw": "during the period from August 1, 2025 to August 29, 2025"
      },
-     "note": "보고 기간이 한 달 이내(August 1, 2025부터 August 29, 2025까지 29일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(August 1, 2025부터 August 29, 2025까지 29일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -8751,7 +8755,7 @@
       "line": 9,
       "raw": "during the period from September 1, 2025 to September 30, 2025"
      },
-     "note": "보고 기간이 한 달 이내(September 1, 2025부터 September 30, 2025까지 30일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(September 1, 2025부터 September 30, 2025까지 30일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -8985,7 +8989,7 @@
       "line": 9,
       "raw": "during the period from October 1, 2025 to October 31, 2025"
      },
-     "note": "보고 기간이 한 달 이내(October 1, 2025부터 October 31, 2025까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(October 1, 2025부터 October 31, 2025까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -9219,7 +9223,7 @@
       "line": 9,
       "raw": "during the period from November 1, 2025 to November 30, 2025"
      },
-     "note": "보고 기간이 한 달 이내(November 1, 2025부터 November 30, 2025까지 30일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(November 1, 2025부터 November 30, 2025까지 30일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -9453,7 +9457,7 @@
       "line": 14,
       "raw": "during the period from December 1, 2025, to December 31, 2025"
      },
-     "note": "보고 기간이 한 달 이내(December 1, 2025부터 December 31, 2025까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(December 1, 2025부터 December 31, 2025까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -9687,7 +9691,7 @@
       "line": 9,
       "raw": "during the period from January 1, 2026, to January 31, 2026"
      },
-     "note": "보고 기간이 한 달 이내(January 1, 2026부터 January 31, 2026까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(January 1, 2026부터 January 31, 2026까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -9921,7 +9925,7 @@
       "line": 9,
       "raw": "during the period from February 1, 2026, to February 28, 2026"
      },
-     "note": "보고 기간이 한 달 이내(February 1, 2026부터 February 28, 2026까지 28일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(February 1, 2026부터 February 28, 2026까지 28일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -10025,7 +10029,8 @@
     "letterhead": "bpm.com",
     "ocr_pages": [
      4
-    ]
+    ],
+    "restored_from_backup": "2026-11-21 재파싱에서 OCR 쪽 표를 못 찾아 11/19 백업 행을 그대로 씀"
    },
    "sources": {
     "report_dates": [
@@ -10160,7 +10165,7 @@
       "line": 9,
       "raw": "during the period from March 1, 2026, to March 31, 2026"
      },
-     "note": "보고 기간이 한 달 이내(March 1, 2026부터 March 31, 2026까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(March 1, 2026부터 March 31, 2026까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -10394,7 +10399,7 @@
       "line": 9,
       "raw": "during the period from May 1, 2026 to May 31, 2026"
      },
-     "note": "보고 기간이 한 달 이내(May 1, 2026부터 May 31, 2026까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(May 1, 2026부터 May 31, 2026까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -10629,7 +10634,7 @@
       "line": 14,
       "raw": "during the period from June 1, 2026, to June 30, 2026"
      },
-     "note": "보고 기간이 한 달 이내(June 1, 2026부터 June 30, 2026까지 30일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(June 1, 2026부터 June 30, 2026까지 30일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -10864,7 +10869,7 @@
       "line": 14,
       "raw": "during the period from July 1, 2026, to July 31, 2026"
      },
-     "note": "보고 기간이 한 달 이내(July 1, 2026부터 July 31, 2026까지 31일). 표본 43개월이 빠짐없이 이어짐."
+     "note": "보고 기간이 한 달 이내(July 1, 2026부터 July 31, 2026까지 31일). 표본 45개월이 빠짐없이 이어짐."
     },
     "circulation_formula_disclosed": {
      "state": "not_disclosed",
@@ -10898,6 +10903,474 @@
      "where": {
       "page": 3,
       "line": 50,
+      "raw": "redemption requirements"
+     },
+     "note": "상환 기한 값이 없다. 'redemption requirements discussed in paragraph 1 of the DFS Letter'(항목 2(c))로 DFS 서한을 가리킬 뿐이다. 원문 전체 검색어(일치 수): 'redemption requirements'(1), 'redeem'(0), 'within N days'(0), 'T+N'(0)"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": null,
+     "note": "소유자에게 이자를 준다는 문장이 없다. 원문에 'interest' 낱말이 없다. 원문 전체 검색어(일치 수): 'interest'(0)"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Gemini_GUSD_Examination_2026-08.pdf",
+   "issuer": "Gemini Trust Company, LLC",
+   "token": "GUSD",
+   "report_dates": [
+    "2026-08-11",
+    "2026-08-31"
+   ],
+   "as_of": "2026-08-31",
+   "month": "2026-08",
+   "as_of_time": "end of day",
+   "reserve_currency": "USD",
+   "circulation": 39573881,
+   "fair_value": 39573881,
+   "components": {
+    "cash": 40344766,
+    "repo": 0,
+    "government_mmf": 0,
+    "treasury": 0,
+    "other": -770885
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 3957388100,
+     "got": 3957388100,
+     "diff": 0,
+     "unit": "cents"
+    },
+    "total_equals_fair_value": {
+     "expected": 39573881,
+     "got": 39573881,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 0,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.0,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-10-06",
+    "firm": null
+   },
+   "flags": {
+    "amounts_have_cents": true,
+    "cents": {
+     "circulation": 3957388100,
+     "fair_value": 3957388100,
+     "cash": 4034476586,
+     "government_mmf": 0,
+     "treasury": 0,
+     "other": -77088486
+    },
+    "letterhead": "bpm.com"
+   },
+   "sources": {
+    "report_dates": [
+     {
+      "page": 4,
+      "line": 6,
+      "raw": "August 11, 2026"
+     },
+     {
+      "page": 4,
+      "line": 6,
+      "raw": "August 31, 2026"
+     }
+    ],
+    "reserve_currency": {
+     "page": 3,
+     "line": 3,
+     "raw": "U.S. dollar"
+    },
+    "circulation": {
+     "page": 4,
+     "line": 8,
+     "raw": "39,573,881.00"
+    },
+    "fair_value": {
+     "page": 4,
+     "line": 18,
+     "raw": "39,573,881.00"
+    },
+    "components": {
+     "cash": {
+      "page": 4,
+      "line": 13,
+      "raw": "40,344,765.86"
+     },
+     "government_mmf": {
+      "page": null,
+      "line": null,
+      "raw": "(표에 줄 없음, 0으로 봄)"
+     },
+     "treasury": {
+      "page": null,
+      "line": null,
+      "raw": "(표에 줄 없음, 0으로 봄)"
+     },
+     "other": {
+      "page": 4,
+      "line": 16,
+      "raw": "(770,884.86)"
+     },
+     "total": {
+      "page": 4,
+      "line": 18,
+      "raw": "39,573,881.00"
+     }
+    },
+    "attestation.signed": {
+     "page": 2,
+     "line": 46,
+     "raw": "October 6, 2026"
+    }
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 40344765.86,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash deposits held at U.S. regulated financial institutions",
+     "where": {
+      "page": 4,
+      "line": 13,
+      "raw": "40,344,765.86"
+     }
+    },
+    {
+     "kind": "settlement",
+     "amount": -770884.86,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Net cash receivable (payable) due to timing and settlement differences",
+     "where": {
+      "page": 4,
+      "line": 16,
+      "raw": "(770,884.86)"
+     }
+    }
+   ],
+   "fund_holdings": [],
+   "holdings_reconciliation": {
+    "expected_cents": 3957388100,
+    "got_cents": 3957388100,
+    "diff": 0
+   },
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_maturity_basis": null,
+   "treasury_max_maturity_days": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": false,
+   "custodian_disclosure": true,
+   "custodians": [
+    "State Street",
+    "Western Alliance Bank"
+   ],
+   "management_certification": true,
+   "certifier": "Interim Chief Financial Officer",
+   "redemption_days": null,
+   "interest_paid": null,
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": null,
+     "note": "국채 줄이 직접 보유분에도 펀드 안 종목 목록에도 없다."
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": null,
+     "note": "역레포 줄이 직접 보유분에도 펀드 안 종목 목록에도 없다."
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": {
+      "page": 3,
+      "line": 9,
+      "raw": "during the period from August 1, 2026, to August 31, 2026"
+     },
+     "note": "보고 기간이 한 달 이내(August 1, 2026부터 August 31, 2026까지 31일). 표본 45개월이 빠짐없이 이어짐."
+    },
+    "circulation_formula_disclosed": {
+     "state": "not_disclosed",
+     "where": {
+      "page": 4,
+      "line": 39,
+      "raw": "Per the Etherscan.io website"
+     },
+     "note": "유통량 줄의 각주 1이 'Per the Etherscan.io website'로 출처만 밝히고, 발행에서 소각을 빼는지나 발행사 보유분을 제외하는지 같은 산정 방식 설명은 없다. 원문 전체 검색어(일치 수): 'burn'(0), 'mint'(0), 'redeem'(0), 'total supply'(0), 'exclud'(0), 'held by the Company'(0), 'less the'(0), 'Etherscan'(2)"
+    },
+    "custodian_disclosure": {
+     "state": "found",
+     "where": {
+      "page": 4,
+      "line": 41,
+      "raw": "The Gemini dollar reserves are held and maintained"
+     },
+     "note": "각주 2 문장에 이름이 있다: State Street; Western Alliance Bank"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": {
+      "page": 4,
+      "line": 31,
+      "raw": "Interim Chief Financial Officer, Gemini Space Station, Inc., October 6, 2026"
+     },
+     "note": "Management's Assertion(쪽 3 'we assert that the Company has complied')에 Interim Chief Financial Officer(Gemini Space Station, Inc.) 서명 블록이 있고 서명 이미지 확인(이름 줄 위 어두운 픽셀 574개)."
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": {
+      "page": 3,
+      "line": 45,
+      "raw": "redemption requirements"
+     },
+     "note": "상환 기한 값이 없다. 'redemption requirements discussed in paragraph 1 of the DFS Letter'(항목 2(c))로 DFS 서한을 가리킬 뿐이다. 원문 전체 검색어(일치 수): 'redemption requirements'(1), 'redeem'(0), 'within N days'(0), 'T+N'(0)"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": null,
+     "note": "소유자에게 이자를 준다는 문장이 없다. 원문에 'interest' 낱말이 없다. 원문 전체 검색어(일치 수): 'interest'(0)"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Gemini_GUSD_Examination_2026-09.pdf",
+   "issuer": "Gemini Trust Company, LLC",
+   "token": "GUSD",
+   "report_dates": [
+    "2026-09-09",
+    "2026-09-30"
+   ],
+   "as_of": "2026-09-30",
+   "month": "2026-09",
+   "as_of_time": "end of day",
+   "reserve_currency": "USD",
+   "circulation": 38378754,
+   "fair_value": 38378754,
+   "components": {
+    "cash": 39246583,
+    "repo": 0,
+    "government_mmf": 0,
+    "treasury": 0,
+    "other": -867829
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 3837875440,
+     "got": 3837875440,
+     "diff": 0,
+     "unit": "cents"
+    },
+    "total_equals_fair_value": {
+     "expected": 38378754,
+     "got": 38378754,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 0,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.0,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-10-29",
+    "firm": null
+   },
+   "flags": {
+    "amounts_have_cents": true,
+    "cents": {
+     "circulation": 3837875440,
+     "fair_value": 3837875440,
+     "cash": 3924658259,
+     "government_mmf": 0,
+     "treasury": 0,
+     "other": -86782819
+    },
+    "letterhead": "bpm.com"
+   },
+   "sources": {
+    "report_dates": [
+     {
+      "page": 4,
+      "line": 11,
+      "raw": "September 9, 2026"
+     },
+     {
+      "page": 4,
+      "line": 11,
+      "raw": "September 30, 2026"
+     }
+    ],
+    "reserve_currency": {
+     "page": 3,
+     "line": 3,
+     "raw": "U.S. dollar"
+    },
+    "circulation": {
+     "page": 4,
+     "line": 12,
+     "raw": "38,378,754.40"
+    },
+    "fair_value": {
+     "page": 4,
+     "line": 20,
+     "raw": "38,378,754.40"
+    },
+    "components": {
+     "cash": {
+      "page": 4,
+      "line": 16,
+      "raw": "39,246,582.59"
+     },
+     "government_mmf": {
+      "page": null,
+      "line": null,
+      "raw": "(표에 줄 없음, 0으로 봄)"
+     },
+     "treasury": {
+      "page": null,
+      "line": null,
+      "raw": "(표에 줄 없음, 0으로 봄)"
+     },
+     "other": {
+      "page": 4,
+      "line": 18,
+      "raw": "(867,828.19)"
+     },
+     "total": {
+      "page": 4,
+      "line": 20,
+      "raw": "38,378,754.40"
+     }
+    },
+    "attestation.signed": {
+     "page": 2,
+     "line": 46,
+     "raw": "October 29, 2026"
+    }
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 39246582.59,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash deposits held at U.S. regulated financial institutions",
+     "where": {
+      "page": 4,
+      "line": 16,
+      "raw": "39,246,582.59"
+     }
+    },
+    {
+     "kind": "settlement",
+     "amount": -867828.19,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Net cash receivable (payable) due to timing and settlement differences",
+     "where": {
+      "page": 4,
+      "line": 18,
+      "raw": "(867,828.19)"
+     }
+    }
+   ],
+   "fund_holdings": [],
+   "holdings_reconciliation": {
+    "expected_cents": 3837875440,
+    "got_cents": 3837875440,
+    "diff": 0
+   },
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_maturity_basis": null,
+   "treasury_max_maturity_days": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": false,
+   "custodian_disclosure": true,
+   "custodians": [
+    "State Street",
+    "Western Alliance Bank"
+   ],
+   "management_certification": true,
+   "certifier": "Interim Chief Financial Officer",
+   "redemption_days": null,
+   "interest_paid": null,
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": null,
+     "note": "국채 줄이 직접 보유분에도 펀드 안 종목 목록에도 없다."
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": null,
+     "note": "역레포 줄이 직접 보유분에도 펀드 안 종목 목록에도 없다."
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": {
+      "page": 3,
+      "line": 9,
+      "raw": "during the period from September 1, 2026 to September 30, 2026"
+     },
+     "note": "보고 기간이 한 달 이내(September 1, 2026부터 September 30, 2026까지 30일). 표본 45개월이 빠짐없이 이어짐."
+    },
+    "circulation_formula_disclosed": {
+     "state": "not_disclosed",
+     "where": {
+      "page": 4,
+      "line": 43,
+      "raw": "Per the Etherscan.io website"
+     },
+     "note": "유통량 줄의 각주 1이 'Per the Etherscan.io website'로 출처만 밝히고, 발행에서 소각을 빼는지나 발행사 보유분을 제외하는지 같은 산정 방식 설명은 없다. 원문 전체 검색어(일치 수): 'burn'(0), 'mint'(0), 'redeem'(0), 'total supply'(0), 'exclud'(0), 'held by the Company'(0), 'less the'(0), 'Etherscan'(2)"
+    },
+    "custodian_disclosure": {
+     "state": "found",
+     "where": {
+      "page": 4,
+      "line": 45,
+      "raw": "The Gemini dollar reserves are held and maintained"
+     },
+     "note": "각주 2 문장에 이름이 있다: State Street; Western Alliance Bank"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": {
+      "page": 4,
+      "line": 35,
+      "raw": "Interim Chief Financial Officer, Gemini Space Station, Inc., October 29, 2026"
+     },
+     "note": "Management's Assertion(쪽 3 'we assert that the Company has complied')에 Interim Chief Financial Officer(Gemini Space Station, Inc.) 서명 블록이 있고 서명 이미지 확인(이름 줄 위 어두운 픽셀 664개)."
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": {
+      "page": 3,
+      "line": 45,
       "raw": "redemption requirements"
      },
      "note": "상환 기한 값이 없다. 'redemption requirements discussed in paragraph 1 of the DFS Letter'(항목 2(c))로 DFS 서한을 가리킬 뿐이다. 원문 전체 검색어(일치 수): 'redemption requirements'(1), 'redeem'(0), 'within N days'(0), 'T+N'(0)"

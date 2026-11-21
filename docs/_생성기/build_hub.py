@@ -35,7 +35,7 @@ SVG_MOON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
 
 HEADER = f"""<header class="hub-top">
   <div class="hub-bar">
-    <a class="hub-brand" href="#idea">{LOGO}<small>미디어프로젝트 2026-2, 원화 스테이블코인 준비금 공시 판정 체계</small></a>
+    <a class="hub-brand" href="#idea">{LOGO}<small>미디어프로젝트 2026-2, 원화 스테이블코인 준비금 공시 검증 시스템</small></a>
     <div class="hub-search">
       <label>{SVG_SEARCH}<input id="gq" type="search" placeholder="전체 문서 검색 (⌘K)" autocomplete="off" aria-label="전체 검색"></label>
       <div class="hub-res" id="gres" hidden></div>

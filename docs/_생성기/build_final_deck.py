@@ -24,7 +24,7 @@ head = ref[:ref.find('</style>')].replace('<title>SC2K Reference 분석</title>'
 cover = re.search(r'<section class="slide cover">.*?</section>', ref, re.S).group(0)
 cover = cover.replace('<p class="kicker">2026-2 미디어프로젝트</p>', '<p class="kicker">2026-2 미디어프로젝트 24조</p>')
 cover = cover.replace('<h1><span class="jost">Reference</span> 분석</h1>',
-                      '<h1><span class="jost">Final</span> 프로젝트</h1><p class="sub1">원화 스테이블코인 준비금 공시 판정 체계</p>')
+                      '<h1><span class="jost">Final</span> 프로젝트</h1><p class="sub1">원화 스테이블코인 준비금 공시 검증 시스템<span>망분리 내부망 판정 모델 파인튜닝과 글 모델 시스템 프롬프트</span></p>')
 logos = re.search(r'<span class="lgm">.*?GPT-OSS-20B</span>', ref, re.S).group(0)  # Kanana, Gemma, GPT-OSS 로고 3개
 
 
@@ -255,14 +255,15 @@ slides.append(frame('eff', 3, '04', '기대효과 및 느낀점', '', f'''  <p c
 # 마지막
 slides.append('''<section class="slide end">
   <p class="jost big">SC2K</p>
-  <p class="t">원화 스테이블코인 준비금 공시 판정 체계</p>
+  <p class="t">원화 스테이블코인 준비금 공시 검증 시스템</p>
   <p class="u jost">sc2k.kr</p>
 </section>
 ''')
 
 CSS = r'''
 /* 최종 덱 */
-.cover .sub1{position:absolute;left:6cqw;top:51cqw;font-size:1.5cqw;color:#6F768C}
+.cover .sub1{position:absolute;left:6cqw;top:49.6cqw;font-size:1.5cqw;color:#6F768C}
+.cover .sub1 span{display:block;margin-top:.5cqw;font-size:1.15cqw}
 .lb{position:absolute;left:4.2cqw;top:11.2cqw;width:38cqw;display:flex;flex-direction:column;gap:1.7cqw}
 .intro3 .lb{left:60cqw;width:35.8cqw;top:11.8cqw}
 .lb .k{display:inline-block;background:var(--accent);color:#141210;font-size:1.05cqw;font-weight:650;padding:.2cqw .7cqw;border-radius:.3cqw;margin-bottom:.6cqw!important}

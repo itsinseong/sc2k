@@ -298,7 +298,7 @@ test('일본(jp.json)은 보고서 전부 규칙 15개를 판정한다', () => {
   const jp = readJurisdiction('jp');
   assert.equal(jp.id, 'jp');
   const { reports } = JSON.parse(fs.readFileSync(path.join(ROOT, 'site/data/reports.json'), 'utf8'));
-  assert.equal(reports.length, 264); // site/data/reports.json 실제 수
+  assert.equal(reports.length, 273); // site/data/reports.json 실제 수
   reports.forEach((r) => assert.equal(evaluateReport(r, jp).length, 15));
   const by = Object.fromEntries(evaluateReport(reports[0], jp).map((v) => [v.rule, v.status]));
   assert.equal(by.R04, STATUS.NOT_REGULATED); // 못 찾은 규칙은 값을 만들지 않고 규정 없음
