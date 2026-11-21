@@ -1,6 +1,20 @@
-# SC2K
+<p align="center"><a href="https://sc2k.kr"><img src=".github/readme/sc2k_banner.png" alt="SC2K 원화 스테이블코인 준비금 공시 검증 시스템" width="100%"></a></p>
 
-[![SC2K](brand/sc2k-wordmark.svg)](https://sc2k.kr)
+<p align="center">
+  <a href="https://sc2k.kr"><img src="https://img.shields.io/badge/site-sc2k.kr-1F3D6E?labelColor=0A1631" alt="sc2k.kr"></a>
+  <img src="https://img.shields.io/badge/site-JavaScript-1F3D6E?labelColor=0A1631&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+  <img src="https://img.shields.io/badge/parsers-Python%203-1F3D6E?labelColor=0A1631&logo=python&logoColor=FFD43B" alt="Python 3">
+  <img src="https://img.shields.io/badge/reports-273-1F3D6E?labelColor=0A1631" alt="reports 273">
+  <img src="https://img.shields.io/badge/data-2026--11--21-1F3D6E?labelColor=0A1631" alt="data 2026-11-21">
+</p>
+
+<p align="center">
+  <a href="https://sc2k.kr"><img src=".github/readme/btn_site.png" alt="sc2k.kr 열기" height="40"></a>&nbsp;
+  <a href="#직접-실행"><img src=".github/readme/btn_run.png" alt="직접 실행" height="40"></a>&nbsp;
+  <a href="#데이터-출처"><img src=".github/readme/btn_data.png" alt="데이터 출처" height="40"></a>
+</p>
+
+# SC2K
 
 **원화 스테이블코인 준비금 공시 검증 시스템**
 
@@ -8,16 +22,20 @@
 
 해외 스테이블코인 발행사가 매달 공개하는 준비금 검증 보고서를 읽어, 미국, EU, 홍콩, 싱가포르, 일본의 공시 기준과 한국 국회 계류 법안의 후보값으로 판정하는 웹 사이트입니다. 한국이 준비금 공시 기준을 정할 때 고를 수 있는 값을 실제 보고서에 넣어 보고, 값을 바꾸면 판정이 어떻게 달라지는지 확인할 수 있습니다.
 
-![JavaScript](https://img.shields.io/badge/site-JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Python 3](https://img.shields.io/badge/parsers-Python%203-3776AB?logo=python&logoColor=white)
-
-[공개 사이트 sc2k.kr](https://sc2k.kr)
+<p align="center"><img src=".github/readme/sc2k_stats.png" alt="보고서 273건, 코인 8개, 관할 6곳, 판정 규칙 15개" width="100%"></p>
 
 [주요 화면](#주요-화면) | [발견](#발견) | [동작 방식](#동작-방식) | [직접 실행](#직접-실행) | [데이터 출처](#데이터-출처) | [현재 제한사항](#현재-제한사항)
 
 > 판정 결과는 공개 보고서에 적힌 내용을 규칙에 넣어 계산한 것이며, 법적 판단이나 투자 권유가 아닙니다. 한국 기준은 확정된 법이 아니라 계류 법안과 SC2K 공시안의 후보값입니다.
 
 ## 주요 화면
+
+<p align="center"><img src=".github/readme/screen_home.jpg" alt="종합 판정 화면: 보고서 한 건의 은행 예금 비중, 서명까지 걸린 날, 커버리지와 한국 후보 기준 15개 판정, 해외 관할별 판정 지구본" width="100%"></p>
+
+<table><tr>
+<td width="50%"><img src=".github/readme/screen_kr.jpg" alt="한국 화면: 규칙 15개 격자, 한국 흐름 구성도, 후보값 칩"></td>
+<td width="50%"><img src=".github/readme/screen_cmp.jpg" alt="다른 나라와 비교 화면: 한국과 미국 판정 격자, 보고서 273건 월별 격자"></td>
+</tr><tr><td align="center">한국 판정과 후보값</td><td align="center">다른 나라와 비교, 273건 격자</td></tr></table>
 
 | 화면 | 할 수 있는 일 |
 | --- | --- |
