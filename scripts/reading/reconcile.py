@@ -8,9 +8,10 @@
 정답(reports_ripple.json)은 summary.txt의 점수 매기기에만 쓴다. 숫자는 읽은 그대로 두고 고치지 않는다.
 
 실행: python3 -B scripts/reading/reconcile.py [YYYY-MM ...]   (달을 안 주면 두 독자 결과가 다 있는 달 전부)
+두 번째 독자는 READER로 고른다(기본 opus, 아니면 claude_read.py와 같은 Gateway 모델 ID). opus가 아니면 reconciled_<READER>/에 쓴다.
 쓰는 곳: docs/research/읽기엔진시험_2026-10-09/reconciled/ (ripple_YYYY-MM.json, 확인목록.md, summary.txt)
 """
-import datetime as dt, json, pathlib, re, subprocess, sys
+import datetime as dt, json, os, pathlib, re, subprocess, sys
 sys.dont_write_bytecode = True                         # 기존 __pycache__를 건드리지 않는다
 W = pathlib.Path(__file__).resolve().parent
 REPO = W.parents[1]
@@ -19,7 +20,9 @@ sys.path[:0] = [str(W), str(REPO / 'scripts')]
 from paddle_rows import T, num
 from cusip_check import cusip_ok, toks, val, pdate      # cusip_ok: 검증 숫자(A=10, *=36, @=37, #=38, 홀수 자리 2배)
 from parse_ripple import classify, DATE, to_iso
-OUT = D / 'reconciled'
+READER = os.environ.get('READER', 'opus')
+NAME = {'opus': 'Claude Opus'}.get(READER, READER)    # Jira 줄에 쓰는 두 번째 독자 이름
+OUT = D / ('reconciled' if READER == 'opus' else f'reconciled_{READER}')
 CUSIP = re.compile(r'\b912\w{5,7}\b')                  # claude_read.compare와 같은 CUSIP 줄 판별
 CELL = ('중순', '월말')
 MAT = {c: sorted({x['maturity_date'] for x in v}) for c, v in json.loads((D / 'fiscaldata_cache.json').read_text()).items()}
@@ -45,7 +48,7 @@ def pad_rows(md):
 
 
 def opus(m):  # claude_read.read와 같은 방식으로 result 문자열 안 JSON을 꺼낸다(새로 읽히지는 않는다)
-    t = json.loads((D / f'claude_opus_{m}.json').read_text())['result']
+    t = json.loads((D / f'claude_{READER}_{m}.json').read_text())['result']
     return json.loads(t[t.index('{'):t.rindex('}') + 1])
 
 
@@ -127,7 +130,7 @@ def run(m):
     pad = pad_rows((D / 'paddle' / f'ripple_{m}.md').read_text())
     try: opu = opus(m)
     except (ValueError, KeyError) as e:
-        return {'month': m, 'status': '확인 필요', 'check': [{'name': '(Opus 결과)', 'why': f'Opus 결과 파일을 읽지 못했습니다 ({e})'}]}
+        return {'month': m, 'status': '확인 필요', 'check': [{'name': f'({NAME} 결과)', 'why': f'{NAME} 결과 파일을 읽지 못했습니다 ({e})'}]}
     table, resolved, check = match(pad, opu)
     pick = lambda a, b: [x if agree(x, y) else None for x, y in zip(a, b)] if len(a) == len(b) == 2 else [None, None]
     circ, total = pick(pad['circulation'], opu['circulation']), pick(pad['reserve_fair_value'], opu['reserve_fair_value'])
@@ -155,7 +158,7 @@ def run(m):
     return {'month': m, 'status': '확정' if not check and rec['ok'] else '확인 필요', 'as_of': d0 and d0.isoformat(),
             'circulation': circ, 'reserve_fair_value': total, 'table': table, 'components': comp, 'reconciliation': rec,
             'resolved_by_checkdigit': resolved, 'check': check,
-            'readers': {'paddle': f'paddle/ripple_{m}.md', 'opus': f'claude_opus_{m}.json', 'image': IMG.format(m)}}
+            'readers': {'paddle': f'paddle/ripple_{m}.md', READER: f'claude_{READER}_{m}.json', 'image': IMG.format(m)}}
 
 
 def fmt(v):
@@ -168,7 +171,7 @@ def line(m, x):  # Jira에 그대로 붙일 수 있는 한 줄
     if 'cell' in x:
         what = '값 칸 수가 둘(중순, 월말)이 아니거나 서로 다릅니다' if x['cell'] == '값 칸 수' else f'{x["cell"]} 값이 두 독자 사이에서 다릅니다'
         return (f'- [RLUSD {m}] {x["name"] or "(이름 없는 줄)"} 줄의 {what}. '
-                f'PaddleOCR-VL {fmt(x["paddle"])}, Claude Opus {fmt(x["opus"])}. 그림 {img} 에서 맞는 값을 확인해 주세요.')
+                f'PaddleOCR-VL {fmt(x["paddle"])}, {NAME} {fmt(x["opus"])}. 그림 {img} 에서 맞는 값을 확인해 주세요.')
     return f'- [RLUSD {m}] {x["name"]}: {x["why"]}. 그림 {img} 에서 확인해 주세요.'
 
 
@@ -209,7 +212,7 @@ def selftest():
 
 def main():
     selftest()
-    months = sys.argv[1:] or sorted(p.stem[7:] for p in (D / 'paddle').glob('ripple_*.md') if (D / f'claude_opus_{p.stem[7:]}.json').exists())
+    months = sys.argv[1:] or sorted(p.stem[7:] for p in (D / 'paddle').glob('ripple_*.md') if (D / f'claude_{READER}_{p.stem[7:]}.json').exists())
     ref = {r['month']: r for r in json.loads((REPO / 'data/reports_ripple.json').read_text())['reports']}
     OUT.mkdir(exist_ok=True)
     md = [f'# Ripple RLUSD 표 확인 목록 (reconcile.py, {dt.datetime.now():%Y-%m-%d %H:%M}, {len(months)}개월)', '']

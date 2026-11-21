@@ -46,6 +46,7 @@ EXPECTED = {
     '2026-06': dict(circulation=73268560097, fair_value=73344909176, as_of='2026-06-30', signed='2026-07-29', tsub=False, cash=11382256398),
     '2026-07': dict(circulation=71826453410, fair_value=71904101332, as_of='2026-07-31', signed='2026-08-27', tsub=True, cash=10607410596),
     '2026-08': dict(circulation=73320757305, fair_value=73398532613, as_of='2026-08-31', signed='2026-09-29', tsub=True, cash=9591096978),
+    '2026-09': dict(circulation=73878861314, fair_value=73956687701, as_of='2026-09-30', signed='2026-10-26', tsub=True, cash=9502194346),
 }
 
 @functools.cache
@@ -70,7 +71,7 @@ def test_all_months_parse_and_reconcile():
         assert r['fair_value'] >= r['circulation'], m
 
 def test_treasury_subtable_months():
-    """기타 준비자산 안에 국채 하위표가 있는 달은 2026-07, 2026-08이다. 나머지 달은 없다. 파서 회귀 지점."""
+    """기타 준비자산 안에 국채 하위표가 있는 달은 2026-07, 2026-08, 2026-09이다. 나머지 달은 없다. 파서 회귀 지점."""
     got = _reports()
     for m, exp in EXPECTED.items():
         assert got[m]['flags']['other_has_treasury_subtable'] is exp['tsub'], m

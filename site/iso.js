@@ -87,7 +87,7 @@ const FLAG = { us: 'us', 'eu-emt': 'eu', 'eu-emt-significant': 'eu', hk: 'hk', s
 const CUR = { us: '$', 'eu-emt': '€', 'eu-emt-significant': '€', hk: 'HK$', sg: 'S$', jp: '¥', 'kr-v1': '₩' };
 // 감독 블록이 베끼는 실제 건물(미국과 EU 일반은 감독기관 여럿의 본부 건물을 한 바닥판에 모은 묶음). 없으면 네모 상자
 const BUILDING = { 'kr-v1': 'seoul', hk: 'ifc', sg: 'mas', jp: 'fsa', 'eu-emt-significant': 'eba', us: 'us4', 'eu-emt': 'eu5' };
-const TITLE_COIN = '판정기 자료의 코인';
+const TITLE_COIN = 'SC2K 자료의 코인';
 const DRAW = { ...BUILDINGS, ...BUILDINGS2, us4: usRegulators, eu5: euNcaGroup };   // BUILDING의 값으로 찾는 그리기 함수: (cx, cy, 국기 파일) -> { el, ps }
 
 // ---- 물체 그리기 ----

@@ -1,10 +1,10 @@
 {
   "id": "us",
   "name": "미국",
-  "legal_status": "제정 후 미발효",
+  "legal_status": "제정, OCC 최종 규칙 공포(2027-01-18 시행)",
   "version": "1.0",
-  "as_of": "2026-10-04",
-  "source_note": "GENIUS Act(PLAW-119publ27, 시행 예정 2027-01-18, §20). 하위규정은 제안 단계이며 OCC, FDIC, 연준, NCUA의 최종 규정은 2026-10-04 현재 없다. OCC 제안 91 FR 10202(2026-03-02, 의견마감 2026-05-01)는 §15.11에 세부 임계치를 두고, 연준 제안 91 FR 61580(2026-09-29, 의견마감 2026-11-30)은 §247.11에 같은 취지의 공시 시점을 둔다. docs/매니페스트_v2.md §7, §2 근거.",
+  "as_of": "2026-11-19",
+  "source_note": "GENIUS Act(PLAW-119publ27, 시행 예정 2027-01-18, §20). OCC 최종 규칙 91 FR 67000(FR Doc 2026-21706, 2026-10-23 공포, 2027-01-18 시행, 12 CFR Part 15)을 R05, R09~R14에 반영(2026-11-19). OCC 감독 발행사에만 적용되고, 연준 제안 91 FR 61580(2026-09-29, 의견마감 2026-11-30)은 제안 단계, FDIC와 NCUA 최종 규칙은 2026-11-19 연방관보 검색에서 확인되지 않음. 재확인 기록 docs/research/해외기준_재확인_2026-11-19.md.",
   "rules": {
     "R01": {
       "requirement": "커버리지 = 준비자산 공정가치 / 발행잔액 ≥ 100%",
@@ -15,7 +15,16 @@
     },
     "R02": {
       "requirement": "허용 자산 8종: 미국 화폐와 연준 예치금, 보험 예금기관의 수시입출 예금, 93일 이하 국채, 익일물 레포 수취 자금, 익일물 역레포, 정부 MMF, 감독기관이 승인한 연방정부 자산, 위 자산의 토큰 형태",
-      "allowed": ["cash", "bank_deposit", "treasury_bill_93d", "overnight_repo", "overnight_reverse_repo", "government_mmf", "approved_federal_asset", "tokenized_reserve"],
+      "allowed": [
+        "cash",
+        "bank_deposit",
+        "treasury_bill_93d",
+        "overnight_repo",
+        "overnight_reverse_repo",
+        "government_mmf",
+        "approved_federal_asset",
+        "tokenized_reserve"
+      ],
       "article": "GENIUS Act §4(a)(1)(A)(i)~(viii)",
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm",
       "kinds": {
@@ -23,81 +32,107 @@
           "verdict": "allowed",
           "code": "bank_deposit",
           "basis": "GENIUS Act §4(a)(1)(A)(ii) 보험 예금기관의 요구불 예금이다. 조건: 요구불에 한정된다.",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "term_deposit": {
           "verdict": "not_allowed",
           "code": null,
           "basis": "GENIUS Act §4(a)(1)(A)(ii)는 요구불 예금만 허용하고, 정기예금은 허용 자산 8종 목록에 없다.",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "treasury_bill": {
           "verdict": "allowed",
           "code": "treasury_bill_93d",
           "max_days": 93,
           "basis": "GENIUS Act §4(a)(1)(A)(iii) 잔존 또는 발행 만기 93일 이하 국채(bills, notes, bonds)이다.",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "treasury_note": {
           "verdict": "allowed",
           "code": "treasury_bill_93d",
           "max_days": 93,
           "basis": "GENIUS Act §4(a)(1)(A)(iii)는 bills뿐 아니라 notes와 bonds도 잔존 만기 93일 이하이면 허용한다. 미국 단기국채와 같은 항목으로 묶는다.",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "non_us_government_bill": {
           "verdict": "not_allowed",
           "code": null,
           "basis": "GENIUS Act §4(a)(1)(A)(iii)는 미국 재무부 채권이고 (vii)은 감독기관이 승인한 연방정부 발행 자산이라, 외국 국채는 허용 자산 8종 목록에 없다.",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "reverse_repo_overnight": {
           "verdict": "allowed",
           "code": "overnight_reverse_repo",
           "basis": "GENIUS Act §4(a)(1)(A)(v) 발행사가 매수자인 익일물 역레포이다(국채 담보, 삼자간, 청산소 또는 신용도 확인된 양자간).",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "reverse_repo_term": {
           "verdict": "not_allowed",
           "code": null,
           "basis": "GENIUS Act §4(a)(1)(A)(iv), (v)는 익일물(overnight)만 허용한다. §4(a)(2)(C)의 93일 이하 레포는 상환 유동성용 재담보 예외이지 준비자산 항목이 아니다.",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "government_mmf": {
           "verdict": "allowed",
           "code": "government_mmf",
           "basis": "GENIUS Act §4(a)(1)(A)(vi) 등록 투자회사 또는 정부 MMF이다. 조건: (i)~(v) 자산에만 투자해야 한다.",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "corporate_bond": {
           "verdict": "not_allowed",
           "code": null,
           "basis": "허용 자산 8종 목록에 회사채가 없다(GENIUS Act §4(a)(1)(A)).",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "precious_metal": {
           "verdict": "not_allowed",
           "code": null,
           "basis": "허용 자산 8종 목록에 귀금속이 없다(GENIUS Act §4(a)(1)(A)).",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "bitcoin": {
           "verdict": "not_allowed",
           "code": null,
           "basis": "허용 자산 8종 목록에 비트코인이 없다(GENIUS Act §4(a)(1)(A)).",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "secured_loan": {
           "verdict": "not_allowed",
           "code": null,
           "basis": "허용 자산 8종 목록에 담보대출이 없다(GENIUS Act §4(a)(1)(A)).",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "public_equity": {
           "verdict": "not_allowed",
           "code": null,
           "basis": "허용 자산 8종 목록에 상장 주식이 없다(GENIUS Act §4(a)(1)(A)).",
-          "source": ["docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"]
+          "source": [
+            "docs/research/교차검증_2026-10-04/검증대장_2026-10-04.md M-03(원문 값 8종)"
+          ]
         },
         "other_investment": {
           "verdict": "unclear",
@@ -124,13 +159,13 @@
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
     },
     "R05": {
-      "requirement": "현금성(요구불예금 등) 최저 비율. OCC 제안 안전항 30% 이상",
+      "requirement": "현금성 최저 비율 5% 이상 의무: 요구불예금(언제든 인출 가능한 예금), 요구불 지분계좌, 연준 계좌 잔액. 거래 상대방 한 곳당 40% 한도 별도",
       "comparison": "gte",
-      "threshold": 0.30,
-      "mandatory": false,
-      "article": "OCC 제안 §15.11(c)(2) 안전항. 의무가 아니라 충족 시 분산 요건을 인정하는 안전항(2026-09-21 검증대장)",
-      "url": "https://www.occ.gov/news-issuances/federal-register/2026/91fr10202.pdf",
-      "legal_status": "협의 중"
+      "threshold": 0.05,
+      "mandatory": true,
+      "article": "OCC 최종 규칙 §15.11(c)(2)(i), (ii)(A) (91 FR 67000). 제안의 30% 안전항은 최종에서 5% 의무로 바뀜",
+      "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21706",
+      "legal_status": "최종(OCC 관할, 2027-01-18 시행)"
     },
     "R06": {
       "requirement": "준비자산 통화는 페그 통화(달러)와 일치",
@@ -146,50 +181,54 @@
     },
     "R08": {
       "requirement": "등록 회계법인의 월별 examination. 보증 수준은 법에 없고 연준 제안이 의견을 묻는 중. 연결 발행잔액 500억 달러 초과, SEC 보고 의무 없는 발행사는 연차 재무제표 감사(PCAOB 기준)",
-      "verification_types": ["examination"],
+      "verification_types": [
+        "examination"
+      ],
       "article": "GENIUS Act §4(a)(3)(A), §4(a)(10)",
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
     },
     "R09": {
-      "requirement": "전월 말일 정오 기준(제안 단계, 확정 아님)",
+      "requirement": "전월 말일 정오 기준",
       "time_bucket": "noon",
       "time_label": "전월 말일 정오",
-      "article": "OCC 제안 §15.11(e), 연준 제안 §247.11(d)",
-      "url": "https://www.occ.gov/news-issuances/federal-register/2026/91fr10202.pdf",
-      "legal_status": "협의 중"
+      "article": "OCC 최종 §15.11(e)(1). 연준 제안 §247.11(d)는 아직 제안 단계",
+      "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21706",
+      "legal_status": "최종(OCC 관할, 2027-01-18 시행)"
     },
     "R10": {
-      "requirement": "공개 기한 다음 달 말 정오, 공시 전에 검증을 마치고 검증 보고서를 함께 공시(제안 단계)",
+      "requirement": "매월 말일 정오까지 전월 말일 정오 기준 구성 보고서를 웹사이트에 공시",
       "deadline_days": 31,
       "unit": "calendar_days",
-      "article": "OCC 제안 §15.11(e), (f), 연준 제안 §247.11(d), (e)",
-      "url": "https://www.occ.gov/news-issuances/federal-register/2026/91fr10202.pdf",
-      "legal_status": "협의 중"
+      "article": "OCC 최종 §15.11(e)(1). 연준 제안 §247.11(d), (e)는 아직 제안 단계",
+      "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21706",
+      "legal_status": "최종(OCC 관할, 2027-01-18 시행)"
     },
     "R11": {
-      "requirement": "발행잔액 산식(총공급, 미발행, 동결, 소각대기) 공개 여부는 공개질문 단계",
-      "delegated": true,
-      "article": "OCC 하위규정 공개질문 Q88~Q96(미확정)",
-      "url": "https://www.occ.gov/news-issuances/federal-register/2026/91fr10202.pdf",
-      "legal_status": "협의 중"
+      "requirement": "발행잔액은 발행한 결제용 스테이블코인 전체의 액면 총액으로 정의(§15.2). 공시 서식에는 유통 중인 수량만 적고, 산식을 공개하라는 조문은 없음",
+      "article": "OCC 최종 §15.2, §15.11(e)(2)(i)",
+      "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21706",
+      "legal_status": "최종(OCC 관할, 2027-01-18 시행)",
+      "not_regulated": true
     },
     "R12": {
-      "requirement": "수탁기관 지리적 위치 공개는 템플릿 필수 항목, 기관 실명 공개는 미확정",
+      "requirement": "준비자산 종류별 보관 지리적 위치는 공시 서식 필수 열. 수탁기관 실명 열은 최종 서식에 없음",
       "expected": true,
-      "article": "OCC 제안 Table 1(위치 열), 실명은 Question 91 미확정",
-      "url": "https://www.occ.gov/news-issuances/federal-register/2026/91fr10202.pdf",
-      "legal_status": "협의 중"
+      "article": "OCC 최종 §15.11(e)(2)(ii), Table 1 to Paragraph (e)",
+      "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21706",
+      "legal_status": "최종(OCC 관할, 2027-01-18 시행)"
     },
     "R13": {
-      "requirement": "환매 절차 수립과 공시, 수수료 공시, 변경 7일 전 고지. 처리 기한 수치는 미규정",
-      "partial": true,
-      "article": "GENIUS Act §4(a)(1)(B)",
-      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
+      "requirement": "환매 정책에 환매 요청일 다음 2영업일 이내 처리를 명시. 수수료 공시, 변경 7일 전 고지(법 §4(a)(1)(B))",
+      "article": "OCC 최종 §15.12(c)(1), GENIUS Act §4(a)(1)(B)",
+      "url": "https://www.federalregister.gov/documents/2026/10/23/2026-21706",
+      "max_days": 2,
+      "unit": "business_days",
+      "legal_status": "최종(OCC 관할, 2027-01-18 시행)"
     },
     "R14": {
-      "requirement": "발행사 이자 지급 금지. 제안 규정 4건이 계열사나 관련 제3자와 이자 지급 약정을 맺으면 발행사의 이자 지급으로 추정",
+      "requirement": "발행사 이자, 수익 지급 금지(보유, 사용, 보관만을 이유로)",
       "expected": false,
-      "article": "GENIUS Act §4(a)(11), 제안 규정 OCC §15.10, FDIC §350.3(b)(4), NCUA §706.201, 연준 §247.10",
+      "article": "GENIUS Act §4(a)(11), OCC 최종 §15.10(c)(4). 제안 단계의 계열사 약정 이자 지급 추정 문구는 최종 규정 본문에 없음",
       "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ27/html/PLAW-119publ27.htm"
     },
     "R15": {

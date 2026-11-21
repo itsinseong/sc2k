@@ -36,8 +36,8 @@ def baselines():
     return out, len(v), len(cap), len(f)
 
 
-MODELS = [('kanana', 'Kanana 1.5 8B', '카카오', '데스크톱 RTX 2070 SUPER, fp16'),
-          ('gemma', 'Gemma 4 E4B', 'Google', 'RunPod RTX A5000, bf16'),
+MODELS = [('kanana', 'Kanana 1.5 8B', '카카오', '학습 데스크톱 RTX 2070 SUPER(fp16), 채점 데스크톱과 A6000(1문항 이내로 같음)'),
+          ('gemma', 'Gemma 4 E4B', 'Google', '학습 RunPod RTX A5000, 채점 A6000, bf16'),
           ('gptoss', 'GPT-OSS-20B', 'OpenAI', 'RunPod RTX A6000, bf16')]
 STAGE_KEYS = ['A', 'B', 'C', 'D', 'F']  # ①~⑤ 결과 폴더 이름: runs_restart/<model>-<key>/results/<model>-<key>__valid_v3.jsonl
 
@@ -243,8 +243,8 @@ def vff_pane():
 RUNS = [
     dict(model='kanana', where='데스크톱 RTX 2070 SUPER(fp16)', price=0, started=None, ended=None,
          note='데스크톱 꾸러미(kanana_restart.zip)로 돌리고, 결과 zip을 받아 runs_restart에 넣음'),
-    dict(model='gemma', where='RunPod RTX A5000(시큐어, bf16)', price=0.27, started=None, ended=None,
-         note='A5000 재고가 나면 시작'),
+    dict(model='gemma', where='RunPod RTX A5000(시큐어, CA-MTL-1, bf16)', price=0.27, started='2026-10-16 13:13', ended='2026-10-16 14:30',
+         note='Pod k8y2p19if56t70. 학습만(①②). 채점은 A6000에서 따로. 결과를 받아 지문을 대조한 뒤 지움(요금 끝)'),
     dict(model='gptoss', where='RunPod RTX A6000(시큐어, EU-SE-1, bf16)', price=0.59, started='2026-10-15 18:41', ended='2026-10-16 02:25',
          note='Pod wpzg91y8t1my9j. 결과를 받아 지문을 대조한 뒤 지움(요금 끝)'),
 ]

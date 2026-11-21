@@ -8,9 +8,22 @@ OUT = os.path.join(os.path.dirname(HERE), "StableWatch_종합.html")
 def read(name):
     return open(os.path.join(HERE, name), encoding="utf-8").read()
 
-TABS = [("idea", "아이디어 제안서"), ("prd", "PRD"), ("ref", "레퍼런스"), ("site", "판정기"), ("mas", "MAS 자문"), ("final", "최종"), ("todo", "할 일")]
+TABS = [("idea", "아이디어 제안서"), ("prd", "PRD"), ("ref", "레퍼런스"), ("site", "판정 사이트"), ("mas", "MAS 자문"), ("final", "최종"), ("todo", "할 일"), ("brand", "Brand Board")]
 bodies = {k: read(f"{k}.html") for k, _ in TABS}
 shot = base64.b64encode(open(os.path.join(HERE, "dash.jpg"), "rb").read()).decode()
+BRAND = os.path.join(os.path.dirname(os.path.dirname(HERE)), "brand")
+def svg(name, cls, label):
+    src = open(os.path.join(BRAND, name), encoding="utf-8").read()
+    vb = re.search(r'viewBox="([^"]+)"', src).group(1)
+    d = "".join(f'<path d="{x}"/>' for x in re.findall(r' d="([^"]+)"', src))
+    return f'<svg class="{cls}" viewBox="{vb}" role="img" aria-label="{label}"><title>{label}</title>{d}</svg>', vb, d
+LOGO, _, _ = svg("sc2k-wordmark.svg", "lg", "SC2K")
+SYMBOL, SYM_VB, SYM_D = svg("sc2k-symbol.svg", "sym", "SC2K")
+FAVICON = "data:image/svg+xml;base64," + base64.b64encode(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{SYM_VB}" fill="#141210">{SYM_D}</svg>'.encode()).decode()
+import subprocess
+ISO = subprocess.run(["node", os.path.join(HERE, "iso_scene.mjs")], capture_output=True, text=True, check=True).stdout
+JOST = base64.b64encode(open(os.path.join(os.path.dirname(os.path.dirname(HERE)), "site", "fonts", "JostVariable-Latin.woff2"), "rb").read()).decode()
+bodies = {k: b.replace("{{ISO}}", ISO).replace("{{LOGO}}", LOGO).replace("{{SYMBOL}}", SYMBOL) for k, b in bodies.items()}
 bodies["idea"] = bodies["idea"].replace('src="dash.jpg"', f'src="data:image/jpeg;base64,{shot}"')
 
 HEAD_JS = """try{var t=localStorage.getItem('stablewatch-theme')}catch(e){}
@@ -22,7 +35,7 @@ SVG_MOON = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
 
 HEADER = f"""<header class="hub-top">
   <div class="hub-bar">
-    <a class="hub-brand" href="#idea"><b>Stablecoin2Korea</b><small>미디어프로젝트 2026-2, 원화 스테이블코인 준비금 공시 판정기</small></a>
+    <a class="hub-brand" href="#idea">{LOGO}<small>미디어프로젝트 2026-2, 원화 스테이블코인 준비금 공시 판정 체계</small></a>
     <div class="hub-search">
       <label>{SVG_SEARCH}<input id="gq" type="search" placeholder="전체 문서 검색 (⌘K)" autocomplete="off" aria-label="전체 검색"></label>
       <div class="hub-res" id="gres" hidden></div>
@@ -41,7 +54,57 @@ body{background:var(--bg)}
 .hub-top{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
 .hub-bar{height:64px;display:flex;align-items:center;gap:24px;padding:0 clamp(24px,4vw,72px)}
 .hub-brand{display:flex;align-items:baseline;gap:12px;text-decoration:none;color:var(--ink);min-width:0}
-.hub-brand b{font-size:19px;font-weight:800;letter-spacing:-.01em}
+.hub-brand{align-items:center}
+.hub-brand .lg{height:20px;width:auto;flex:none;display:block}
+.lg,.sym{fill:currentColor;display:inline-block;width:auto}
+@font-face{font-family:"Jost";src:url(data:font/woff2;base64,{JOST}) format("woff2");font-weight:100 900}
+.bb-wrap{padding-top:40px}
+.poster{container-type:inline-size;max-width:980px;margin:0 auto;aspect-ratio:1/1.414;display:grid;grid-template-rows:34fr 27fr 48fr 18fr 7fr;background:#F6F5F4;color:#141210;border-radius:6px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.06),0 18px 50px rgba(0,0,0,.12)}
+.poster p{margin:0}
+.poster code{background:none;padding:0;color:inherit;font-family:"Jost",sans-serif;font-size:1.15cqw;opacity:.75}
+.pl{font-family:"Jost",sans-serif;font-size:1.25cqw;font-weight:500;letter-spacing:.04em;color:#736D68}
+.pt{background:#141210;color:#fff;padding:4.5cqw 5cqw 4cqw;display:flex;flex-direction:column;justify-content:space-between}
+.pt-row{display:flex;justify-content:space-between;align-items:baseline;font-family:"Jost",sans-serif;font-size:1.3cqw;letter-spacing:.06em;color:#B9B4AF}
+.pt-mark .lg{display:block;width:58%;height:auto;color:#fff}
+.pt-sub b{font-family:inherit;font-size:2.3cqw;font-weight:650;letter-spacing:-.02em;color:#fff}
+.pt-sub span{font-size:1.8cqw;font-weight:300;letter-spacing:.02em;color:#fff}
+.pi{padding:3cqw 5cqw 2.4cqw;display:flex;flex-direction:column;border-bottom:2px dashed #D9D5D1}
+.pi .bb-iso{flex:1;min-height:0;width:100%;margin:1cqw 0}
+.pi-cap{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(5,1fr);text-align:center;font-size:1.3cqw;font-weight:600;color:#4A4541}
+.pg{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:2px dashed #D9D5D1}
+.pc{position:relative;padding:3cqw 3.2cqw;display:flex;flex-direction:column;gap:1.6cqw}
+.pc+.pc{border-left:2px dashed #D9D5D1}
+.ps-big{flex:1;display:grid;place-items:center}
+.ps-big .sym{width:16cqw;height:16cqw}
+.ps-sz{display:flex;align-items:flex-end;gap:2.2cqw;font-family:"Jost",sans-serif;font-size:1cqw;color:#736D68}
+.ps-sz span{display:flex;flex-direction:column;align-items:center;gap:.6cqw}
+.ps-sz span:nth-child(1) .sym{width:64px;height:64px}.ps-sz span:nth-child(2) .sym{width:32px;height:32px}.ps-sz span:nth-child(3) .sym{width:16px;height:16px}
+.pn{font-size:1.25cqw;color:#736D68}
+.pty{line-height:.95}
+.pty b,.pty i{display:block;font-size:8.2cqw;font-weight:700;font-style:normal;letter-spacing:-.04em}
+.pty.jost i{font-family:"Jost",sans-serif;font-weight:300;letter-spacing:-.02em}
+.pty p{margin-top:.8cqw!important;font-size:1.6cqw;font-weight:700}
+.pty small{font-size:1.2cqw;color:#736D68}
+.pscale{margin-top:auto!important;display:flex;align-items:baseline;gap:1.2cqw;border-top:1px solid #D9D5D1;padding-top:1cqw;font-weight:650;line-height:1}
+.pcol{flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(3,1fr);gap:1cqw}
+.pcol div{border-radius:1cqw;padding:1.3cqw 1.4cqw;display:flex;flex-direction:column;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.pcol .tall{grid-row:span 3}
+.pcol b{font-size:1.5cqw}.pcol small{font-size:1.1cqw;opacity:.65}
+.pcol code{margin-top:auto}
+.pj{padding:2.6cqw 5cqw;display:flex;flex-direction:column;gap:1.4cqw;border-bottom:2px dashed #D9D5D1}
+.pj-cells{display:grid;grid-template-columns:repeat(15,1fr);gap:.5cqw}
+.pj-cells i{aspect-ratio:1;border-radius:.6cqw}
+.pj-key{display:flex;gap:3cqw;font-size:1.35cqw;font-weight:600}
+.pj-key span{display:flex;align-items:center;gap:.7cqw}
+.pj-key i{width:1.3cqw;height:1.3cqw;border-radius:.3cqw;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+.pj-cells i{box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+.pf{padding:0 5cqw;display:flex;justify-content:space-between;align-items:center;font-size:1.15cqw;color:#736D68}
+.pf span:first-child,.pf span:last-child{font-family:"Jost",sans-serif;letter-spacing:.03em}
+.bb-def{max-width:980px;margin:40px auto 0}
+[data-theme="dark"] .poster{box-shadow:0 0 0 1px #333}
+
+.lgh{display:flex;align-items:center;gap:.4em}
+.lgh .lg{height:.82em}
 .hub-brand small{font-size:12.5px;color:var(--ink-3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .hub-search{margin-left:auto;position:relative}
 .hub-search label{display:flex;align-items:center;gap:8px;border:1px solid var(--line2);border-radius:8px;padding:7px 12px;width:380px;background:var(--bg);color:var(--ink-3)}
@@ -178,18 +241,47 @@ document.addEventListener('keydown',function(e){if((e.metaKey||e.ctrlKey)&&e.key
 })();
 """ % ("{" + ",".join(f"{k}:'{n}'" for k, n in TABS) + "}")
 
-panels = "\n".join(f'<div class="panel" id="{k}"{"" if i == 0 else " hidden"}>\n{bodies[k]}\n</div>' for i, (k, _) in enumerate(TABS))
+# ONE=1: 동료평가용 한 페이지판(탭 없음, 할 일 탭 제외, 맨 위에 발표 덱) -> ~/HTML/미디어프로젝트_SC2K/동료평가/index.html
+ONE = os.environ.get("ONE") == "1"
+if ONE:
+    import shutil
+    OUT = os.path.expanduser("~/HTML/미디어프로젝트_SC2K/동료평가/index.html")
+    DECK = os.path.expanduser("~/HTML/미디어프로젝트_SC2K/발표/최종")
+    shutil.copytree(os.path.join(DECK, "img"), os.path.join(os.path.dirname(OUT), "deck", "img"), dirs_exist_ok=True)
+    shutil.copy(os.path.join(DECK, "SC2K_최종_발표.html"), os.path.join(os.path.dirname(OUT), "deck", "index.html"))
+    TABS = [t for t in TABS if t[0] != "todo"]
+    HEADER = re.sub(r'<nav class="hub-tabs">.*?</nav>', "", HEADER, flags=re.S)
+    ROUTER = "window.hubShow=function(){};"
+    HUB_CSS += """
+.one-top{max-width:1180px;margin:0 auto;padding:56px clamp(24px,4vw,72px) 24px}
+.one-top h1{font-size:clamp(26px,3.4vw,40px);margin:0 0 10px}
+.one-top p{color:var(--ink-2);margin:0 0 20px}
+.one-links{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.one-links a{border:1px solid var(--line2);border-radius:999px;padding:8px 16px;color:var(--ink);text-decoration:none;font-weight:600}
+.one-links a:hover{border-color:var(--ink)}
+.one-deck{width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:8px;background:#000}
+.panel+.panel{border-top:1px solid var(--line);margin-top:48px}
+"""
+    TOP = """<section class="one-top" id="top">
+  <h1>원화 스테이블코인 준비금 공시 검증 시스템</h1>
+  <p>미디어프로젝트 2026-2 최종 제출. 발표 자료, 판정기, 소스코드, 기획 문서를 이 페이지 한 장에 모았습니다.</p>
+  <div class="one-links"><a href="https://sc2k.kr">판정기 sc2k.kr</a><a href="deck/">발표 자료 전체 화면</a><a href="https://github.com/itsinseong/sc2k">소스코드 GitHub</a></div>
+  <iframe class="one-deck" src="deck/" title="SC2K 최종 발표 자료" loading="lazy"></iframe>
+</section>"""
+
+panels = ("" if not ONE else TOP + "\n") + "\n".join(f'<div class="panel" id="{k}"{"" if i == 0 or ONE else " hidden"}>\n{bodies[k]}\n</div>' for i, (k, _) in enumerate(TABS))
 
 page = f"""<!doctype html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stablecoin2Korea 기획 문서</title>
+<title>SC2K 기획 문서</title>
+<link rel="icon" href="{FAVICON}">
 <script>{HEAD_JS}</script>
 <style>
 {read("base.css")}
-{HUB_CSS}
+{HUB_CSS.replace("{JOST}", JOST)}
 </style>
 </head>
 <body>
@@ -202,6 +294,7 @@ page = f"""<!doctype html>
 </body>
 </html>
 """
+if ONE: page = page.replace("판정 체계", "공시 검증 시스템").replace("<title>SC2K 기획 문서</title>", "<title>SC2K 동료평가</title>")
 assert "·" not in page, "가운뎃점 금지"
 open(OUT, "w", encoding="utf-8").write(page)
 ids = re.findall(r'\bid="([^"]+)"', page)

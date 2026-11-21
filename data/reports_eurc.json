@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05",
+ "generated": "2026-11-19",
  "source": "Circle EURC 월간 examination report(2023년 일부는 토큰명 EUROC), pdftotext -layout",
  "note": "회계법인명은 서명 이미지라 자동 추출되지 않는다. EURC 준비자산은 은행 예금뿐이라 circle_reserve_fund, treasury는 0. 구성: cash=EURC RESERVE ASSETS의 Cash held at (U.S.) regulated financial institutions(은행 예금만, 유로), other=Cash due to/(owed by) the Company(Circle)(정산 차액). 2023년 상반기 원문은 토큰명이 EUROC(EURO Coin)이며 token은 EURC로 통일. 대사 실패 보고서는 reports에서 제외. 금액 단위는 EUR(원문 €). 규칙 입력값(F2): holdings는 은행 예금과 정산 차액뿐이라 국채, 레포는 not_applicable. 제외 보고서는 최상위 excluded에 적는다.",
  "excluded": [
@@ -120,7 +120,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-01-17, 2023-01-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-01-17, 2023-01-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -258,7 +258,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-02-09, 2023-02-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-02-09, 2023-02-28). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -395,7 +395,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-03-06, 2023-03-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-03-06, 2023-03-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -532,7 +532,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-04-14, 2023-04-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-04-14, 2023-04-28). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -669,7 +669,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-05-23, 2023-05-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-05-23, 2023-05-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -806,7 +806,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-06-02, 2023-06-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-06-02, 2023-06-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -943,7 +943,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-07-24, 2023-07-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-07-24, 2023-07-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -1080,7 +1080,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-08-07, 2023-08-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-08-07, 2023-08-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -1215,7 +1215,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-09-14, 2023-09-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-09-14, 2023-09-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -1350,7 +1350,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-11-16, 2023-11-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-11-16, 2023-11-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -1485,7 +1485,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-12-06, 2023-12-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-12-06, 2023-12-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -1620,7 +1620,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-01-11, 2024-01-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-01-11, 2024-01-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -1755,7 +1755,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-02-23, 2024-02-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-02-23, 2024-02-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -1890,7 +1890,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-03-25, 2024-03-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-03-25, 2024-03-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -2025,7 +2025,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-04-05, 2024-04-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-04-05, 2024-04-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -2160,7 +2160,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-05-07, 2024-05-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-05-07, 2024-05-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -2295,7 +2295,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-06-10, 2024-06-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-06-10, 2024-06-28). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -2430,7 +2430,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-07-18, 2024-07-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-07-18, 2024-07-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -2565,7 +2565,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-08-29, 2024-08-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-08-29, 2024-08-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -2700,7 +2700,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-09-20, 2024-09-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-09-20, 2024-09-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -2835,7 +2835,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-10-07, 2024-10-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-10-07, 2024-10-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -2970,7 +2970,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-11-27, 2024-11-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-11-27, 2024-11-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -3105,7 +3105,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-12-09, 2024-12-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-12-09, 2024-12-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -3240,7 +3240,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-01-06, 2025-01-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-01-06, 2025-01-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -3375,7 +3375,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-02-04, 2025-02-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-02-04, 2025-02-28). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -3510,7 +3510,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-03-19, 2025-03-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-03-19, 2025-03-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -3645,7 +3645,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-04-03, 2025-04-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-04-03, 2025-04-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -3780,7 +3780,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-05-27, 2025-05-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-05-27, 2025-05-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -3915,7 +3915,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-06-12, 2025-06-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-06-12, 2025-06-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4050,7 +4050,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-07-08, 2025-07-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-07-08, 2025-07-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4185,7 +4185,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-08-04, 2025-08-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-08-04, 2025-08-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4320,7 +4320,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-09-18, 2025-09-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-09-18, 2025-09-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4455,7 +4455,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-10-13, 2025-10-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-10-13, 2025-10-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4590,7 +4590,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-11-03, 2025-11-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-11-03, 2025-11-28). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4725,7 +4725,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-12-26, 2025-12-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-12-26, 2025-12-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4860,7 +4860,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-01-16, 2026-01-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-01-16, 2026-01-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4995,7 +4995,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-02-19, 2026-02-27). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-02-19, 2026-02-27). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5130,7 +5130,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-03-11, 2026-03-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-03-11, 2026-03-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5265,7 +5265,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-04-06, 2026-04-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-04-06, 2026-04-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5400,7 +5400,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-05-05, 2026-05-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-05-05, 2026-05-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5535,7 +5535,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-06-02, 2026-06-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-06-02, 2026-06-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5670,7 +5670,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-07-08, 2026-07-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-07-08, 2026-07-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5805,12 +5805,147 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-08-11, 2026-08-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-08-11, 2026-08-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
      "where": "p.2 CRITERIA A",
      "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (458,103,939 and 454,011,923 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (62,54"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.4 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_EURC_Examination_2026-09.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "EURC",
+   "report_dates": [
+    "2026-09-04",
+    "2026-09-30"
+   ],
+   "as_of": "2026-09-30",
+   "month": "2026-09",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "EUR",
+   "circulation": 412549121,
+   "fair_value": 415299735,
+   "components": {
+    "circle_reserve_fund": 0,
+    "cash": 415354210,
+    "treasury": 0,
+    "other": -54475
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 415299735,
+     "got": 415299735,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 415299735,
+     "got": 415299735,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 2750614,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00666736,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-10-26",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": false,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "bank_deposit",
+     "amount": 415354210,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -54475,
+     "currency": "EUR",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.3 'EURC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [],
+   "asset_types": [
+    "bank_deposit"
+   ],
+   "treasury_max_maturity_days": null,
+   "treasury_maturity_basis": null,
+   "repo_max_maturity_days": null,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 415299735,
+     "got": 415299735,
+     "diff": 0
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 국채 표(Cusip) 없음. 직접 보유와 펀드 안 모두 국채 없음"
+    },
+    "repo_max_maturity_days": {
+     "state": "not_applicable",
+     "where": "p.3~3 월말 구획 전체",
+     "note": "월말 구획에 역레포 줄 없음"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2026-09-04, 2026-09-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total EURC supply on EURC Approved Blockchains at the Report Dates (460,136,766 and 475,096,364 respectively) less (i) Tokens Allowed But Not Issued as reported on EURC Approved Blockchains (57,58"
     },
     "custodian_disclosure": {
      "state": "not_disclosed",

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05",
+ "generated": "2026-11-19",
  "source": "Circle USDC 월간 examination report, pdftotext -layout",
  "note": "회계법인명은 서명 이미지라 자동 추출되지 않는다. 서식 항목 D1은 수동 확인. 구성: circle_reserve_fund=TOTAL CIRCLE RESERVE FUND ASSETS(국채, 역레포, 펀드 내 현금, 정산 차액을 합친 정부 MMF, 역레포는 따로 쪼개지 않음), cash=OTHER USDC RESERVE ASSETS의 Cash held at (U.S.) regulated financial institutions(은행 예금만), treasury=OTHER 구획의 TOTAL U.S. TREASURY SECURITIES(2026-07부터, 이전은 0), other=OTHER 구획의 Cash due to/(owed by) Circle(정산 차액). 대사 실패 보고서는 reports에서 제외. issuer는 경영진 주장서 주체(2024-06까지 Circle Internet Financial, LLC, 2024-07부터 Circle Internet Group, Inc.). signed는 보고서 말미 Circle 임원 서명일(회계법인 의견서 날짜와 같다). 규칙 입력값(F2): holdings=준비자산 줄 단위 정규화(합계=fair_value), fund_holdings=서클 준비금 펀드 안 종목(합계 대사 제외), treasury_max_maturity_days, repo_max_maturity_days=월말 기준일로부터 달력일, 공시 항목은 field_notes에 state와 읽은 쪽을 적는다. 1달러 이내 반올림 오차는 holdings_reconciliation에 기록(2025-03 펀드 Cusip 합계).",
  "excluded": [],
@@ -302,7 +302,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-01-17, 2023-01-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-01-17, 2023-01-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -602,7 +602,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-02-09, 2023-02-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-02-09, 2023-02-28). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -898,7 +898,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-03-06, 2023-03-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-03-06, 2023-03-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -1192,7 +1192,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-04-14, 2023-04-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-04-14, 2023-04-28). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -1378,7 +1378,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-05-23, 2023-05-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-05-23, 2023-05-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -1609,7 +1609,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-06-02, 2023-06-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-06-02, 2023-06-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -1867,7 +1867,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-07-24, 2023-07-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-07-24, 2023-07-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -2134,7 +2134,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-08-07, 2023-08-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-08-07, 2023-08-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -2408,7 +2408,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-09-14, 2023-09-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-09-14, 2023-09-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -2664,7 +2664,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-10-05, 2023-10-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-10-05, 2023-10-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -2920,7 +2920,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-11-16, 2023-11-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-11-16, 2023-11-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -3194,7 +3194,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2023-12-06, 2023-12-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2023-12-06, 2023-12-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -3468,7 +3468,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-01-11, 2024-01-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-01-11, 2024-01-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -3760,7 +3760,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-02-23, 2024-02-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-02-23, 2024-02-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4061,7 +4061,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-03-25, 2024-03-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-03-25, 2024-03-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4353,7 +4353,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-04-05, 2024-04-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-04-05, 2024-04-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4636,7 +4636,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-05-07, 2024-05-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-05-07, 2024-05-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -4910,7 +4910,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-06-10, 2024-06-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-06-10, 2024-06-28). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5202,7 +5202,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-07-18, 2024-07-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-07-18, 2024-07-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5503,7 +5503,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-08-29, 2024-08-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-08-29, 2024-08-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -5822,7 +5822,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-09-20, 2024-09-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-09-20, 2024-09-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -6159,7 +6159,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-10-07, 2024-10-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-10-07, 2024-10-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -6487,7 +6487,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-11-27, 2024-11-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-11-27, 2024-11-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -6797,7 +6797,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2024-12-09, 2024-12-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2024-12-09, 2024-12-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -7125,7 +7125,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-01-06, 2025-01-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-01-06, 2025-01-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -7444,7 +7444,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-02-04, 2025-02-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-02-04, 2025-02-28). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -7772,7 +7772,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-03-19, 2025-03-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-03-19, 2025-03-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -8091,7 +8091,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-04-03, 2025-04-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-04-03, 2025-04-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -8410,7 +8410,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-05-27, 2025-05-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-05-27, 2025-05-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -8720,7 +8720,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-06-12, 2025-06-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-06-12, 2025-06-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -9012,7 +9012,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-07-08, 2025-07-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-07-08, 2025-07-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -9331,7 +9331,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-08-04, 2025-08-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-08-04, 2025-08-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -9632,7 +9632,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-09-18, 2025-09-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-09-18, 2025-09-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -9951,7 +9951,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-10-13, 2025-10-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-10-13, 2025-10-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -10288,7 +10288,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-11-03, 2025-11-28). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-11-03, 2025-11-28). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -10607,7 +10607,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2025-12-26, 2025-12-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2025-12-26, 2025-12-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -10917,7 +10917,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-01-16, 2026-01-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-01-16, 2026-01-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -11236,7 +11236,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-02-19, 2026-02-27). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-02-19, 2026-02-27). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -11573,7 +11573,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-03-11, 2026-03-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-03-11, 2026-03-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -11901,7 +11901,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-04-06, 2026-04-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-04-06, 2026-04-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -12220,7 +12220,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-05-05, 2026-05-29). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-05-05, 2026-05-29). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -12485,7 +12485,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-06-02, 2026-06-30). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-06-02, 2026-06-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -12841,7 +12841,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-07-08, 2026-07-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-07-08, 2026-07-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -13242,7 +13242,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
-     "note": "월 1회 보고서(기준일 2026-08-11, 2026-08-31). 표본 2023-01~2026-08 44개월이 빠짐없이 이어짐"
+     "note": "월 1회 보고서(기준일 2026-08-11, 2026-08-31). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
     },
     "circulation_formula_disclosed": {
      "state": "found",
@@ -13257,6 +13257,479 @@
     "management_certification": {
      "state": "found",
      "where": "p.5 Notes 뒤 서명 블록",
+     "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: redeem/redemption + within N days. 'issued and redeemed by Circle…'(발행, 상환 주체)만 있고 상환 기한 문장 없음"
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": "전문 검색",
+     "note": "검색어: interest/yield/reward + paid/distribute + holders. 'interest receivable or payable'은 준비금 잔액 시차 조정 설명이라 이자 지급이 아님"
+    }
+   }
+  },
+  {
+   "source_file": "data/samples/Circle_USDC_Examination_2026-09.pdf",
+   "issuer": "Circle Internet Group, Inc.",
+   "token": "USDC",
+   "report_dates": [
+    "2026-09-04",
+    "2026-09-30"
+   ],
+   "as_of": "2026-09-30",
+   "month": "2026-09",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "USD",
+   "circulation": 73878861314,
+   "fair_value": 73956687701,
+   "components": {
+    "circle_reserve_fund": 62467425775,
+    "cash": 9502194346,
+    "treasury": 1757678272,
+    "other": 229389308
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 73956687701,
+     "got": 73956687701,
+     "diff": 0
+    },
+    "other_breakdown": {
+     "expected": 11489261926,
+     "got": 11489261926,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 73956687701,
+     "got": 73956687701,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 77826387,
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.00105343,
+   "attestation": {
+    "type": "examination",
+    "standard": "AICPA attestation standards",
+    "signed": "2026-10-26",
+    "firm": null
+   },
+   "flags": {
+    "garbled_page1": false,
+    "other_has_treasury_subtable": true,
+    "scan_suspected": false
+   },
+   "holdings": [
+    {
+     "kind": "government_mmf",
+     "amount": 62467425775,
+     "currency": "USD",
+     "maturity_max_days": 92,
+     "maturity_listed": true,
+     "label": "TOTAL CIRCLE RESERVE FUND ASSETS",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 TOTAL CIRCLE RESERVE FUND ASSETS 줄(펀드 보유 종목은 fund_holdings)"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 158250000,
+     "currency": "USD",
+     "maturity_max_days": 1,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797SA6",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797SA6 줄, 만기 10/01/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 75943584,
+     "currency": "USD",
+     "maturity_max_days": 6,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VK0",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VK0 줄, 만기 10/06/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 44966799,
+     "currency": "USD",
+     "maturity_max_days": 8,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797UJ4",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797UJ4 줄, 만기 10/08/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 121846290,
+     "currency": "USD",
+     "maturity_max_days": 13,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VL8",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VL8 줄, 만기 10/13/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 74888817,
+     "currency": "USD",
+     "maturity_max_days": 15,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797UK1",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797UK1 줄, 만기 10/15/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 294405468,
+     "currency": "USD",
+     "maturity_max_days": 20,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VM6",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VM6 줄, 만기 10/20/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 34918775,
+     "currency": "USD",
+     "maturity_max_days": 27,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VN4",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VN4 줄, 만기 10/27/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 209370636,
+     "currency": "USD",
+     "maturity_max_days": 29,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797SK4",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797SK4 줄, 만기 10/29/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 996431,
+     "currency": "USD",
+     "maturity_max_days": 34,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VP9",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VP9 줄, 만기 11/03/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 81439554,
+     "currency": "USD",
+     "maturity_max_days": 36,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797UM7",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797UM7 줄, 만기 11/05/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 109520686,
+     "currency": "USD",
+     "maturity_max_days": 41,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VW4",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VW4 줄, 만기 11/10/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 99485268,
+     "currency": "USD",
+     "maturity_max_days": 48,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VX2",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VX2 줄, 만기 11/17/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 99403000,
+     "currency": "USD",
+     "maturity_max_days": 55,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VY0",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VY0 줄, 만기 11/24/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 99366303,
+     "currency": "USD",
+     "maturity_max_days": 58,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797SU2",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797SU2 줄, 만기 11/27/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 153804511,
+     "currency": "USD",
+     "maturity_max_days": 71,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VG9",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VG9 줄, 만기 12/10/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 99072150,
+     "currency": "USD",
+     "maturity_max_days": 85,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797TC1",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797TC1 줄, 만기 12/24/26"
+    },
+    {
+     "kind": "bank_deposit",
+     "amount": 9502194346,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held at regulated financial institutions",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 은행 예금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": 229389308,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle due to timing and settlement differences, net",
+     "where": "p.5 'OTHER USDC RESERVE ASSETS AS OF SEPTEMBER 30, 2026' 구획 정산 차액 줄"
+    }
+   ],
+   "fund_holdings": [
+    {
+     "kind": "treasury_bill",
+     "amount": 951900000,
+     "currency": "USD",
+     "maturity_max_days": 1,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797SA6",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797SA6 줄, 만기 10/01/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 1085432359,
+     "currency": "USD",
+     "maturity_max_days": 6,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VK0",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VK0 줄, 만기 10/06/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 412195662,
+     "currency": "USD",
+     "maturity_max_days": 8,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797UJ4",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797UJ4 줄, 만기 10/08/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 501263124,
+     "currency": "USD",
+     "maturity_max_days": 13,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VL8",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VL8 줄, 만기 10/13/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 3324564216,
+     "currency": "USD",
+     "maturity_max_days": 15,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797UK1",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797UK1 줄, 만기 10/15/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 570120864,
+     "currency": "USD",
+     "maturity_max_days": 22,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797UL9",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797UL9 줄, 만기 10/22/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 1775762097,
+     "currency": "USD",
+     "maturity_max_days": 29,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797SK4",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797SK4 줄, 만기 10/29/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 1066580085,
+     "currency": "USD",
+     "maturity_max_days": 34,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VP9",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VP9 줄, 만기 11/03/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 2101818419,
+     "currency": "USD",
+     "maturity_max_days": 36,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797UM7",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797UM7 줄, 만기 11/05/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 2729155931,
+     "currency": "USD",
+     "maturity_max_days": 41,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VW4",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VW4 줄, 만기 11/10/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 2477834757,
+     "currency": "USD",
+     "maturity_max_days": 43,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797UY1",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797UY1 줄, 만기 11/12/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 3538193556,
+     "currency": "USD",
+     "maturity_max_days": 48,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VX2",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VX2 줄, 만기 11/17/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 418745186,
+     "currency": "USD",
+     "maturity_max_days": 71,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VG9",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VG9 줄, 만기 12/10/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 3402325112,
+     "currency": "USD",
+     "maturity_max_days": 78,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VH7",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VH7 줄, 만기 12/17/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 643968975,
+     "currency": "USD",
+     "maturity_max_days": 85,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797TC1",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797TC1 줄, 만기 12/24/26"
+    },
+    {
+     "kind": "treasury_bill",
+     "amount": 361718073,
+     "currency": "USD",
+     "maturity_max_days": 92,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Securities Cusip 912797VJ3",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VJ3 줄, 만기 12/31/26"
+    },
+    {
+     "kind": "bank_deposit",
+     "amount": 1003847741,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash held in Circle Reserve Fund",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 펀드 안 현금 줄"
+    },
+    {
+     "kind": "settlement",
+     "amount": -552000382,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash due to/(owed by) Circle Reserve Fund due to timing and settlement differences, net",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 정산 차액 줄"
+    },
+    {
+     "kind": "reverse_repo_overnight",
+     "amount": 36654000000,
+     "currency": "USD",
+     "maturity_max_days": 1,
+     "maturity_listed": true,
+     "label": "U.S. Treasury Repurchase Agreements",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 레포 줄, 각주(p.6) 'involve the overnight lending of cash'"
+    }
+   ],
+   "asset_types": [
+    "bank_deposit",
+    "government_mmf",
+    "treasury_bill"
+   ],
+   "treasury_max_maturity_days": 92,
+   "treasury_maturity_basis": "both",
+   "repo_max_maturity_days": 1,
+   "disclosure_cadence": "monthly",
+   "disclosure_cadence_days": 31,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chief Accounting Officer, Circle Internet Group, Inc.",
+   "redemption_days": null,
+   "interest_paid": null,
+   "holdings_reconciliation": {
+    "holdings_sum": {
+     "expected": 73956687701,
+     "got": 73956687701,
+     "diff": 0
+    },
+    "fund_holdings_sum": {
+     "expected": 62467425775,
+     "got": 62467425775,
+     "diff": 0,
+     "in_reconciliation": false
+    }
+   },
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "found",
+     "where": "p.4 'CIRCLE RESERVE FUND ASSETS AS OF SEPTEMBER 30, 2026' 구획 912797VJ3 줄, 만기 12/31/26",
+     "note": "국채 종목별 만기(Cusip 표)에서 최장 92일. 최장 종목은 펀드 안. 국채 보유 위치: 직접 보유와 펀드 안 모두"
+    },
+    "repo_max_maturity_days": {
+     "state": "found",
+     "where": "p.4 레포 줄, 각주 p.6",
+     "note": "각주 'U.S Treasury Repurchase Agreements within the Circle Reserve Fund involve the overnight lending of cash'로 하루짜리(1일)"
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": "p.2 Management’s Assertion 표 Report Dates 두 칸(월중, 월말), data/samples 파일명",
+     "note": "월 1회 보고서(기준일 2026-09-04, 2026-09-30). 표본 2023-01~2026-09 45개월이 빠짐없이 이어짐"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": "p.2 CRITERIA A",
+     "note": "발행 토큰 총량에서 미발행 허용 토큰, 접근 제한 토큰 등을 뺀다고 정의: the total USDC supply on USDC Approved Blockchains at the Report Dates (76,612,096,896 and 75,866,964,179, respectively)1 less (i) Tokens Allowed But Not Issued as reported on USDC Approved Blockchain"
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": "전문 검색",
+     "note": "검색어: 알려진 은행명 8개(Bank of New York Mellon, Citizens Trust, Customers, New York Community, Signature, Silicon Valley, Silvergate, Cross River), '… Bank/Trust/Bancorp' 꼴, custodian, trustee, held at. 'regulated financial institutions'로 종류만 적고 이름 없음"
+    },
+    "management_certification": {
+     "state": "found",
+     "where": "p.6 Notes 뒤 서명 블록",
      "note": "Management’s Assertion 쪽 말미에 Chief Accounting Officer 서명 블록(이름, 직함, 법인, 날짜). 직함으로 경영진 서명 판정"
     },
     "redemption_days": {

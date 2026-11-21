@@ -18,6 +18,7 @@ EXPECTED = {
     '2025-12': dict(circulation=186450610920, fair_value=192877729144, as_of='2025-12-31', signed='2026-01-30', cash=33952735),
     '2026-03': dict(circulation=183438487810, fair_value=191767741495, as_of='2026-03-31', signed='2026-04-30', cash=107021630),
     '2026-06': dict(circulation=183622105630, fair_value=187751426411, as_of='2026-06-30', signed='2026-07-31', cash=40307440),
+    '2026-09': dict(circulation=183469787261, fair_value=191451091374, as_of='2026-09-30', signed='2026-10-30', cash=20427407),
 }
 
 

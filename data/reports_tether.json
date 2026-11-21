@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05",
+ "generated": "2026-11-19",
  "source": "Tether USDT 분기 연결 준비금 보고서(BDO ISAE 3000 reasonable assurance), pdftotext -layout",
  "note": "연결 준비금 보고서라 token=USDT, flags.consolidated=true. circulation=확인문 \"of which US$ X relates to digital tokens issued\" 줄(발행 토큰 부채, 총부채 아님). fair_value=확인문 총자산(2023 \"total assets amount to at least\", 2024 이후 \"Reserves for Tether tokens in circulation amount to\")이며 자산 표 Total과 같아야 한다. components: cash=Cash & Bank Deposits, treasury=U.S. Treasury Bills, repo=Overnight 및 Term Reverse Repurchase Agreements 합, government_mmf=Money Market Funds(2025-12부터 행 없음, 0), other=Non-U.S. Treasury Bills, Corporate Bonds, Precious Metals, Bitcoin(s), Public Equities(2026-03부터), Other Investments, Secured Loans 합. sources.rows는 표 행별 원문 라벨, 금액, 쪽, 줄. Subtotal은 단기 6행 합과 따로 대사. 대사 실패 보고서는 reports에서 제외하고 excluded에 이유를 남김. 규칙 입력값: holdings(표 행별 kind, 합=fair_value는 holdings_check), fund_holdings(MMF 간접 노출 미국 단기국채), asset_types, treasury_max_maturity_days, repo_max_maturity_days(원문에 종목별 만기가 없으면 null이고 field_notes에 not_in_report와 원문 문장), disclosure_cadence, circulation_formula_disclosed, custodian_disclosure, management_certification, redemption_days, interest_paid, field_notes.",
  "excluded": [],
@@ -435,7 +435,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": null,
-     "note": "기준일 간격 91일(다음 보고서와 비교, data/samples 연속 14건). 원문: None"
+     "note": "기준일 간격 91일(다음 보고서와 비교, data/samples 연속 15건). 원문: None"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -891,7 +891,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": null,
-     "note": "기준일 간격 91일(직전 보고서와 비교, data/samples 연속 14건). 원문: None"
+     "note": "기준일 간격 91일(직전 보고서와 비교, data/samples 연속 15건). 원문: None"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -1347,7 +1347,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": null,
-     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 14건). 원문: None"
+     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 15건). 원문: None"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -1803,7 +1803,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": null,
-     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 14건). 원문: None"
+     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 15건). 원문: None"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -2259,7 +2259,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": null,
-     "note": "기준일 간격 91일(직전 보고서와 비교, data/samples 연속 14건). 원문: None"
+     "note": "기준일 간격 91일(직전 보고서와 비교, data/samples 연속 15건). 원문: None"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -2715,7 +2715,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": null,
-     "note": "기준일 간격 91일(직전 보고서와 비교, data/samples 연속 14건). 원문: None"
+     "note": "기준일 간격 91일(직전 보고서와 비교, data/samples 연속 15건). 원문: None"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -3171,7 +3171,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": null,
-     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 14건). 원문: None"
+     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 15건). 원문: None"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -3627,7 +3627,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": null,
-     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 14건). 원문: None"
+     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 15건). 원문: None"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -4083,7 +4083,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": null,
-     "note": "기준일 간격 90일(직전 보고서와 비교, data/samples 연속 14건). 원문: None"
+     "note": "기준일 간격 90일(직전 보고서와 비교, data/samples 연속 15건). 원문: None"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -4539,7 +4539,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": null,
-     "note": "기준일 간격 91일(직전 보고서와 비교, data/samples 연속 14건). 원문: None"
+     "note": "기준일 간격 91일(직전 보고서와 비교, data/samples 연속 15건). 원문: None"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -4995,7 +4995,7 @@
     "disclosure_cadence": {
      "state": "found",
      "where": null,
-     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 14건). 원문: None"
+     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 15건). 원문: None"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -5389,7 +5389,7 @@
       "line": 4,
       "raw": "perform enquiries with the management on the business operation of the last quarter"
      },
-     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 14건). 원문: perform enquiries with the management on the business operation of the last quarter"
+     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 15건). 원문: perform enquiries with the management on the business operation of the last quarter"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -5804,7 +5804,7 @@
       "line": 4,
       "raw": "perform enquiries with the management on the business operation of the last quarter"
      },
-     "note": "기준일 간격 90일(직전 보고서와 비교, data/samples 연속 14건). 원문: perform enquiries with the management on the business operation of the last quarter"
+     "note": "기준일 간격 90일(직전 보고서와 비교, data/samples 연속 15건). 원문: perform enquiries with the management on the business operation of the last quarter"
     }
    },
    "disclosure_cadence": "quarterly",
@@ -6245,7 +6245,437 @@
       "line": 4,
       "raw": "perform enquiries with the management on the business operation of the last quarter"
      },
-     "note": "기준일 간격 91일(직전 보고서와 비교, data/samples 연속 14건). 원문: perform enquiries with the management on the business operation of the last quarter"
+     "note": "기준일 간격 91일(직전 보고서와 비교, data/samples 연속 15건). 원문: perform enquiries with the management on the business operation of the last quarter"
+    }
+   },
+   "disclosure_cadence": "quarterly",
+   "disclosure_cadence_days": 92
+  },
+  {
+   "source_file": "data/samples/Tether_USDT_Assurance_2026-09.pdf",
+   "issuer": "TETHER INTERNATIONAL, S.A. DE C.V.",
+   "token": "USDT",
+   "as_of": "2026-09-30",
+   "report_dates": [
+    "2026-09-30"
+   ],
+   "month": "2026-09",
+   "as_of_time": "23:59 UTC",
+   "reserve_currency": "USD",
+   "circulation": 183469787261,
+   "fair_value": 191451091374,
+   "components": {
+    "cash": 20427407,
+    "repo": 16696244243,
+    "government_mmf": 0,
+    "treasury": 122839738995,
+    "other": 51894680729
+   },
+   "reconciliation": {
+    "components_sum": {
+     "expected": 191451091374,
+     "got": 191451091374,
+     "diff": 0
+    },
+    "total_equals_fair_value": {
+     "expected": 191451091374,
+     "got": 191451091374,
+     "diff": 0
+    },
+    "subtotal": {
+     "expected": 139578392166,
+     "got": 139578392166,
+     "diff": 0
+    },
+    "covers_circulation": {
+     "surplus": 7981304113,
+     "ok": true
+    },
+    "liabilities_cover_tokens": {
+     "ok": true
+    }
+   },
+   "ok": true,
+   "coverage": 1.04350201,
+   "attestation": {
+    "type": "reasonable assurance",
+    "standard": "ISAE 3000 (Revised)",
+    "signed": "2026-10-30",
+    "firm": "BDO Advisory Services S.r.l."
+   },
+   "flags": {
+    "consolidated": true,
+    "scan_suspected": false,
+    "mmf_row_absent": true,
+    "token_note_gap": -686074,
+    "public_equities_row": true
+   },
+   "sources": {
+    "as_of": {
+     "page": 8,
+     "line": 3,
+     "raw": "30 September 2026"
+    },
+    "reserve_currency": {
+     "page": 9,
+     "line": 5,
+     "raw": "Asset Category US$"
+    },
+    "circulation": {
+     "page": 8,
+     "line": 9,
+     "raw": "183,469,787,261"
+    },
+    "total_liabilities": {
+     "page": 8,
+     "line": 8,
+     "raw": "183,496,460,904"
+    },
+    "fair_value": {
+     "page": 8,
+     "line": 6,
+     "raw": "191,451,091,374"
+    },
+    "rows": [
+     {
+      "label": "U.S. Treasury Bills 4",
+      "key": "us_treasury",
+      "page": 9,
+      "line": 11,
+      "raw": "122,839,738,995"
+     },
+     {
+      "label": "Overnight Reverse Repurchase Agreements 5",
+      "key": "overnight_repo",
+      "page": 9,
+      "line": 13,
+      "raw": "9,518,706,336"
+     },
+     {
+      "label": "Term Reverse Repurchase Agreements 6",
+      "key": "term_repo",
+      "page": 9,
+      "line": 15,
+      "raw": "7,177,537,907"
+     },
+     {
+      "label": "Non-US Treasury Bills 7",
+      "key": "non_us_treasury",
+      "page": 9,
+      "line": 17,
+      "raw": "21,981,521"
+     },
+     {
+      "label": "Cash & Bank Deposits 8",
+      "key": "cash_bank",
+      "page": 9,
+      "line": 19,
+      "raw": "20,427,407"
+     },
+     {
+      "label": "Subtotal: Cash & Cash Equivalent & Other Short-Term Deposits",
+      "key": "subtotal",
+      "page": 9,
+      "line": 21,
+      "raw": "139,578,392,166"
+     },
+     {
+      "label": "Corporate Bonds 9",
+      "key": "corporate_bonds",
+      "page": 9,
+      "line": 23,
+      "raw": "63,881,392"
+     },
+     {
+      "label": "Precious Metals 10",
+      "key": "precious_metals",
+      "page": 9,
+      "line": 25,
+      "raw": "19,084,651,736"
+     },
+     {
+      "label": "Bitcoin 11",
+      "key": "bitcoin",
+      "page": 9,
+      "line": 27,
+      "raw": "8,367,170,264"
+     },
+     {
+      "label": "Public Equities 12",
+      "key": "public_equities",
+      "page": 9,
+      "line": 29,
+      "raw": "4,177,803,686"
+     },
+     {
+      "label": "Other Investments 13",
+      "key": "other_investments",
+      "page": 9,
+      "line": 31,
+      "raw": "6,004,074,506"
+     },
+     {
+      "label": "Secured Loans 14",
+      "key": "secured_loans",
+      "page": 9,
+      "line": 33,
+      "raw": "14,175,117,624"
+     },
+     {
+      "label": "Total Assets (1+2+3+4+5+6+7)",
+      "key": "total",
+      "page": 9,
+      "line": 35,
+      "raw": "191,451,091,374"
+     }
+    ],
+    "attestation.signed": {
+     "page": 4,
+     "line": 44,
+     "raw": "30 October 2026"
+    }
+   },
+   "holdings": [
+    {
+     "kind": "treasury_bill",
+     "amount": 122839738995,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "U.S. Treasury Bills",
+     "where": {
+      "page": 9,
+      "line": 11,
+      "raw": "122,839,738,995"
+     }
+    },
+    {
+     "kind": "reverse_repo_overnight",
+     "amount": 9518706336,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Overnight Reverse Repurchase Agreements",
+     "where": {
+      "page": 9,
+      "line": 13,
+      "raw": "9,518,706,336"
+     }
+    },
+    {
+     "kind": "reverse_repo_term",
+     "amount": 7177537907,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Term Reverse Repurchase Agreements",
+     "where": {
+      "page": 9,
+      "line": 15,
+      "raw": "7,177,537,907"
+     }
+    },
+    {
+     "kind": "non_us_government_bill",
+     "amount": 21981521,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Non-U.S. Treasury Bills",
+     "where": {
+      "page": 9,
+      "line": 17,
+      "raw": "21,981,521"
+     }
+    },
+    {
+     "kind": "bank_deposit",
+     "amount": 20427407,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Cash & Bank Deposits",
+     "where": {
+      "page": 9,
+      "line": 19,
+      "raw": "20,427,407"
+     }
+    },
+    {
+     "kind": "corporate_bond",
+     "amount": 63881392,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Corporate Bonds",
+     "where": {
+      "page": 9,
+      "line": 23,
+      "raw": "63,881,392"
+     }
+    },
+    {
+     "kind": "precious_metal",
+     "amount": 19084651736,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Precious Metals",
+     "where": {
+      "page": 9,
+      "line": 25,
+      "raw": "19,084,651,736"
+     }
+    },
+    {
+     "kind": "bitcoin",
+     "amount": 8367170264,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Bitcoin",
+     "where": {
+      "page": 9,
+      "line": 27,
+      "raw": "8,367,170,264"
+     }
+    },
+    {
+     "kind": "public_equity",
+     "amount": 4177803686,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Public Equities",
+     "where": {
+      "page": 9,
+      "line": 29,
+      "raw": "4,177,803,686"
+     }
+    },
+    {
+     "kind": "other_investment",
+     "amount": 6004074506,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Other Investments",
+     "where": {
+      "page": 9,
+      "line": 31,
+      "raw": "6,004,074,506"
+     }
+    },
+    {
+     "kind": "secured_loan",
+     "amount": 14175117624,
+     "currency": "USD",
+     "maturity_max_days": null,
+     "maturity_listed": false,
+     "label": "Secured Loans",
+     "where": {
+      "page": 9,
+      "line": 33,
+      "raw": "14,175,117,624"
+     }
+    }
+   ],
+   "fund_holdings": [],
+   "holdings_check": {
+    "expected": 191451091374,
+    "got": 191451091374,
+    "diff": 0
+   },
+   "asset_types": [
+    "bank_deposit",
+    "bitcoin",
+    "corporate_bond",
+    "non_us_government_bill",
+    "other_investment",
+    "precious_metal",
+    "public_equity",
+    "reverse_repo_overnight",
+    "reverse_repo_term",
+    "secured_loan",
+    "treasury_bill"
+   ],
+   "treasury_maturity_basis": "direct",
+   "treasury_max_maturity_days": null,
+   "repo_max_maturity_days": null,
+   "circulation_formula_disclosed": true,
+   "custodian_disclosure": false,
+   "custodians": [],
+   "management_certification": true,
+   "certifier": "Chairman of the Board of Directors",
+   "redemption_days": null,
+   "interest_paid": null,
+   "field_notes": {
+    "treasury_max_maturity_days": {
+     "state": "not_in_report",
+     "where": [
+      {
+       "page": 9,
+       "line": 41,
+       "raw": "The “U.S. Treasury Bills” category comprises U.S. Treasury Bills with a weighted average maturity of less than 90 days"
+      },
+      {
+       "page": 9,
+       "line": 49,
+       "raw": "The “Non-US Treasury Bills” have a weighted average maturity of less than 360 days"
+      }
+     ],
+     "note": "종목별 만기가 원문에 없다. 범주 설명만 있고 평균 만기라 최장 만기로 쓸 수 없다. 원문: The “U.S. Treasury Bills” category comprises U.S. Treasury Bills with a weighted average maturity of less than 90 days / The “Non-US Treasury Bills” have a weighted average maturity of less than 360 days. treasury_maturity_basis는 국채를 가진 곳을 뜻한다(직접)."
+    },
+    "repo_max_maturity_days": {
+     "state": "not_in_report",
+     "where": [],
+     "note": "하루짜리 역레포 원문: None. 기간물 역레포는 만기일 없이 평균 만기만 있어 최장 만기를 알 수 없다. 원문: None"
+    },
+    "circulation_formula_disclosed": {
+     "state": "found",
+     "where": {
+      "page": 8,
+      "line": 27,
+      "raw": "comprises the amount related to the total digital tokens issued less digital tokens held by the Company but not in its treasury wallet. Digital tokens in the treasury wallet are authorized but not yet issued and are not considered liabilities."
+     },
+     "note": "유통량(발행 토큰 부채)을 발행 토큰 총액에서 발행사가 갖고 있지만 국고 지갑(treasury wallet) 밖인 토큰을 뺀 값으로 센다고 적었다. 국고 지갑 안 토큰은 승인만 되고 미발행이라 부채가 아니다. 원문: comprises the amount related to the total digital tokens issued less digital tokens held by the Company but not in its treasury wallet. Digital tokens in the treasury wallet are authorized but not yet issued and are not considered liabilities. 각주 수치: 총 발행 183,790,989,029 - 발행사 보유(국고 지갑 밖) 321,887,842 = 183,469,101,187, 확인문 유통량 183,469,787,261과 차이 -686,074."
+    },
+    "custodian_disclosure": {
+     "state": "not_disclosed",
+     "where": null,
+     "note": "원문 전체에서 'custodian'(대소문자 무시, 2회), 'bank'(4회)와 주요 은행, 수탁기관 이름 목록(41개)을 검색했다. 모두 일반 명사이거나 Tether 계열사, BDO 이름뿐이고 준비자산을 맡긴 기관 이름은 없다. 'Cash & Bank Deposits' 각주는 기관 이름 없이 'cash deposits at financial institutions'라고만 적었다."
+    },
+    "management_certification": {
+     "state": "found",
+     "where": {
+      "page": 10,
+      "line": 30,
+      "raw": "Authorized and approved by the Board of Directors on 30 October 2026 and signed on behalf of the Board of Directors by Giancarlo Devasini, as Chairman of the Board of Directors:"
+     },
+     "note": "'Management's Assertion'라는 이름의 별도 문서는 없고, 보고서 말미에 이사회 승인문과 서명(이미지)이 있다. 서명 줄은 PDF 쪽을 그림으로 열어 확인했다. 원문: Authorized and approved by the Board of Directors on 30 October 2026 and signed on behalf of the Board of Directors by Giancarlo Devasini, as Chairman of the Board of Directors:"
+    },
+    "redemption_days": {
+     "state": "not_in_report",
+     "where": {
+      "page": 3,
+      "line": 43,
+      "raw": "Tether tokens issued have been classified as refund liabilities in line with IFRS 9, which are repayable on demand"
+     },
+     "note": "상환 기한(일 수) 문장이 없다. 검색: 'redemption period/deadline/within N days'. 원문에는 Tether tokens issued have been classified as refund liabilities in line with IFRS 9, which are repayable on demand 만 있고 이는 회계 분류라 일 수가 아니다. 상환 수수료는 10 basis points."
+    },
+    "interest_paid": {
+     "state": "not_in_report",
+     "where": null,
+     "note": "원문 전체에서 'interest', 'yield', 'coupon'을 검색했으나 토큰 보유자에게 이자를 지급한다는 문장이 없다."
+    },
+    "disclosure_cadence": {
+     "state": "found",
+     "where": {
+      "page": 3,
+      "line": 4,
+      "raw": "perform enquiries with the management on the business operation of the last quarter"
+     },
+     "note": "기준일 간격 92일(직전 보고서와 비교, data/samples 연속 15건). 원문: perform enquiries with the management on the business operation of the last quarter"
     }
    },
    "disclosure_cadence": "quarterly",

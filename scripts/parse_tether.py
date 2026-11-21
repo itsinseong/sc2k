@@ -307,7 +307,7 @@ def parse(pdf):
     if r['ok']:
         r['coverage'] = round(r['fair_value'] / r['circulation'], 8)
 
-    m = re.search(r'(?:Milan|Roma),\s+(\d{1,2} [A-Za-z]+ \d{4})\s*\n+\s*(BDO[^\n]*?)\s*\n', text)
+    m = re.search(r'(?:Milan|Roma),\s+(\d{1,2} [A-Za-z]+ \d{4})\s*\n+\s*(BDO\S*(?: \S+)*)[^\n]*\n', text)  # 2026-09 has two signature columns on one line
     r['attestation'] = {
         # ISAE 3000 Revised, 'for reasonable assurance engagements'. 2023부터 2026까지 같은 문구.
         'type': 'reasonable assurance' if re.search(r'reasonable\s+assurance\s+engagement', text) else None,
