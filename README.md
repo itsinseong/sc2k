@@ -1,17 +1,17 @@
-<p align="center"><a href="https://sc2k.kr"><img src=".github/readme/sc2k_banner2.png" alt="SC2K 원화 스테이블코인 준비금 공시 검증 시스템" width="100%"></a></p>
+<p align="center"><a href="https://sc2k.kr"><img src=".github/readme/sc2k_banner3.png" alt="SC2K 원화 스테이블코인 준비금 공시 검증 시스템" width="100%"></a></p>
 
 <p align="center">
-  <a href="https://sc2k.kr"><img src="https://img.shields.io/badge/site-sc2k.kr-1F3D6E?labelColor=0A1631" alt="sc2k.kr"></a>
-  <img src="https://img.shields.io/badge/site-JavaScript-1F3D6E?labelColor=0A1631&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
-  <img src="https://img.shields.io/badge/parsers-Python%203-1F3D6E?labelColor=0A1631&logo=python&logoColor=FFD43B" alt="Python 3">
-  <img src="https://img.shields.io/badge/reports-273-1F3D6E?labelColor=0A1631" alt="reports 273">
-  <img src="https://img.shields.io/badge/data-2026--11--21-1F3D6E?labelColor=0A1631" alt="data 2026-11-21">
+  <a href="https://sc2k.kr"><img src="https://img.shields.io/badge/site-sc2k.kr-141210?labelColor=4A4541" alt="sc2k.kr"></a>
+  <img src="https://img.shields.io/badge/site-JavaScript-141210?labelColor=4A4541&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
+  <img src="https://img.shields.io/badge/parsers-Python%203-141210?labelColor=4A4541&logo=python&logoColor=FFD43B" alt="Python 3">
+  <img src="https://img.shields.io/badge/reports-273-141210?labelColor=4A4541" alt="reports 273">
+  <img src="https://img.shields.io/badge/data-2026--11--21-141210?labelColor=4A4541" alt="data 2026-11-21">
 </p>
 
 <p align="center">
-  <a href="https://sc2k.kr"><img src=".github/readme/btn_site2.png" alt="sc2k.kr 열기" height="40"></a>&nbsp;
-  <a href="#직접-실행"><img src=".github/readme/btn_run2.png" alt="직접 실행" height="40"></a>&nbsp;
-  <a href="#데이터-출처"><img src=".github/readme/btn_data2.png" alt="데이터 출처" height="40"></a>
+  <a href="https://sc2k.kr"><img src=".github/readme/btn_site3.png" alt="sc2k.kr 열기" height="40"></a>&nbsp;
+  <a href="#직접-실행"><img src=".github/readme/btn_run3.png" alt="직접 실행" height="40"></a>&nbsp;
+  <a href="#데이터-출처"><img src=".github/readme/btn_data3.png" alt="데이터 출처" height="40"></a>
 </p>
 
 # SC2K
@@ -22,7 +22,7 @@
 
 해외 스테이블코인 발행사가 매달 공개하는 준비금 검증 보고서를 읽어, 미국, EU, 홍콩, 싱가포르, 일본의 공시 기준과 한국 국회 계류 법안의 후보값으로 판정하는 웹 사이트입니다. 한국이 준비금 공시 기준을 정할 때 고를 수 있는 값을 실제 보고서에 넣어 보고, 값을 바꾸면 판정이 어떻게 달라지는지 확인할 수 있습니다.
 
-<p align="center"><img src=".github/readme/sc2k_stats2.png" alt="보고서 273건, 코인 8개, 관할 6곳, 판정 규칙 15개" width="100%"></p>
+<p align="center"><img src=".github/readme/sc2k_stats3.png" alt="보고서 273건, 코인 8개, 관할 6곳, 판정 규칙 15개" width="100%"></p>
 
 [주요 화면](#주요-화면) | [발견](#발견) | [동작 방식](#동작-방식) | [직접 실행](#직접-실행) | [데이터 출처](#데이터-출처) | [현재 제한사항](#현재-제한사항)
 
