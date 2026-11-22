@@ -282,7 +282,7 @@ button{cursor:pointer}
 .rg.met{background:var(--ok)}
 .rg.unmet{background:var(--bad)}
 .rg.caution{background:var(--warn);color:#fff}
-.rg.none{background:var(--pale);color:var(--muted);font-weight:500}
+.rg.none{background:var(--pale);color:var(--ink-2);font-weight:500}
 .small-head{margin-bottom:6px;color:var(--ink);font-size:12px;font-weight:700}
 .identity-card p{margin:0;color:var(--ink-2);font-size:14px;line-height:1.8}
 .notes{display:flex;flex-direction:column;gap:8px}
