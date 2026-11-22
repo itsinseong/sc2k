@@ -18,7 +18,7 @@ const hull = (a) => {
   return [...half(q), ...half([...q].reverse())];
 };
 
-const MUT = 'fill:var(--muted)', INK = 'fill:var(--ink)', INK2 = 'fill:var(--ink-2)', STONE = 'fill:var(--stone)';
+const MUT = 'fill:var(--muted)', INK = 'fill:var(--ink-fill)', INK2 = 'fill:var(--ink-2)', STONE = 'fill:var(--stone)';
 const PLATE = 3;                               // 바닥판 두께(px)
 const PW = 112, PD = 110;                      // 바닥판 가로(x), 세로(y)(px). 보통 블록 한 변(64.7)의 약 1.6배
 // 건물마다 [바닥 가운데 x, y(바닥판 가운데 기준 px), 배율 s(1m가 몇 px)]. 그리는 차례는 뒤(x + y가 작은 쪽)에서 앞이다. 키가 가장 큰 DNB가 맨 뒤다

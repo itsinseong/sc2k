@@ -93,10 +93,11 @@ export function flowSvg(rows, { focus, width = 1100 } = {}) {
 export function flowTotals(rows, { focus } = {}) {
   const total = sum(rows, 'status'), mine = rows.filter((r) => r.country === focus);
   const unmetBy = {}; rows.filter((r) => r.status === 'unmet').forEach((r) => { unmetBy[r.rule] = (unmetBy[r.rule] || 0) + 1; });
-  const top = Object.entries(unmetBy).sort((a, b) => b[1] - a[1])[0];
-  const name = rows.find((r) => r.rule === top?.[0])?.ruleName;
+  const ranked = Object.entries(unmetBy).sort((a, b) => b[1] - a[1]), top = ranked[0];
+  const tied = ranked.filter(([, n]) => n === top?.[1]).map(([rule]) => rule); // 같은 수의 규칙이 여럿이면 모두
+  const nameOf = (rule) => rows.find((r) => r.rule === rule)?.ruleName;
   const col = (k, v) => `<p><span>${k}</span><b class="num">${v}</b></p>`;
-  return `<div class="flow-totals">${mine.length ? col(`${esc(mine[0].countryName)} ${mine.length}건`, esc(statusText(sum(mine, 'status')))) : ''}${col(`전체 ${rows.length}건`, esc(statusText(total)))}${col('미충족이 가장 많은 규칙', top ? `${esc(top[0])} ${esc(name)}, ${top[1]}곳` : '없음')}</div>`;
+  return `<div class="flow-totals">${mine.length ? col(`${esc(mine[0].countryName)} ${mine.length}건`, esc(statusText(sum(mine, 'status')))) : ''}${col(`전체 ${rows.length}건`, esc(statusText(total)))}${col('미충족이 가장 많은 규칙', top ? `${tied.map((rule) => `${esc(rule)} ${esc(nameOf(rule))}`).join(', ')}, ${top[1]}곳${tied.length > 1 ? '씩' : ''}` : '없음')}</div>`;
 }
 
 // 나라, 판정 결과, 규칙 이름이나 선에 올리면 그 판정만 진하게 보임. 구역 하나에 이벤트를 한 번만 걸면 다시 그려도 유지됨

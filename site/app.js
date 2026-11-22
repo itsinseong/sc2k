@@ -1,13 +1,22 @@
 import { RULE_IDS, STATUS, evaluateReport, evaluateRule, resolveRuleDef, calendarDaysBetween } from './engine.js';
-import { krSummary, ruleTable, ruleDots, ruleDotsPlots } from './charts.js';
+import { ruleDots, ruleDotsPlots } from './charts.js';
 import { mountGlobe, mountHeroGlobe } from './globe.js';
 import { renderSidebar, bindSidebar } from './sidebar.js';
 import { flowSvg, flowTotals, bindFlow } from './flow.js';
 import { isoFlowSvg } from './iso.js';
+import { buildData } from './viz/data.js';
+import * as Z1 from './viz/z1.js';
+import * as Z2 from './viz/z2.js';
+import * as Z3 from './viz/z3.js';
+import * as Z4 from './viz/z4.js';
+import * as Z6 from './viz/z6.js';
+import * as Z7 from './viz/z7.js';
+import * as Z9 from './viz/z9.js';
+
 
 const ORDER = ['us', 'eu-emt', 'eu-emt-significant', 'hk', 'sg', 'jp', 'kr-v1'];
 const FOREIGN_NOTICE = '이 나라 발행사의 보고서는 아직 자료에 없어서, 다른 나라 발행사의 보고서를 이 나라 규칙에 대 본 결과입니다. 이 나라 회사의 실제 공시가 아닙니다';
-const KR_NOTICE = '한국 열은 제안값이며 확정된 규정이 아닙니다';
+const KR_NOTICE = '한국 열은 국회 의원안 값이며 확정된 규정이 아닙니다';
 const JP_NOTICE = '일본 열은 신탁형(특정신탁수익권) 규칙입니다. 자금이동업자형은 규칙을 눌렀을 때 보조로 보입니다. 규정 없음은 읽은 원문 범위에서 찾지 못했다는 뜻입니다';
 const CATEGORIES = [
   ['bank', '은행 예금'], ['repo', '하루짜리 담보 대출(레포)'],
@@ -17,7 +26,6 @@ const TYPE_NAMES = {cash:'현금',bank_deposit:'은행 예금',treasury_bill_93d
 const $ = (sel) => document.querySelector(sel);
 const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pct = (ratio, digits=2) => ratio == null ? '자료 없음' : `${(ratio * 100).toFixed(digits)}%`;
-const metricPct = (ratio, digits=2) => ratio == null ? '자료 없음' : `${pct(ratio, digits).slice(0,-1)}<small class="unit">%</small>`;
 const count = (x) => x == null ? '자료 없음' : Number(x).toLocaleString('ko-KR');
 const date = (x) => x || '자료 없음';
 const file = (path) => fetch(path).then((response) => {
@@ -26,6 +34,35 @@ const file = (path) => fetch(path).then((response) => {
 });
 const state = { reportIndex: 0, jurisdiction: null, rules: null, tab: 'rules', openRule: null, showAll: false, candidates: {}, cmp: null }; // cmp: 나라 화면에서 비교할 나라
 let reports, jurisdictions, copy, weekly, excluded = [], series = {};
+// ---- 새 차트(viz/z*.js): 구역마다 보기 2~3개, 첫 보기가 기본. 보기 단추는 state.viz[구역]에 기억 ----
+const VZ = { 1: Z1, 2: Z2, 3: Z3, 4: Z4, 6: Z6, 7: Z7, 9: Z9 };
+state.viz = {};
+const vzW = {}; // 구역별 실제 칸 폭(px). 그린 뒤 fitViz가 재서 다르면 다시 그린다
+function vizViews(n, extra = {}) {
+  try { return VZ[n].views({ data: buildData(reports, jurisdictions, state.candidates), ri: state.reportIndex, cmp: 'us', lim: krLim(), dayLim: krDayLim() ?? 30, focus: 'kr-v1', J: jurisdictions, width: vzW[n], krSplit: krSplitMap(), ...extra }) || []; }
+  catch (e) { console.error('viz', n, e); return []; }
+}
+const vzTabs = (n, items, curKey) => items.length > 1 ? `<div class="rt-pills vz-tabs" role="group" aria-label="보기">${items.map(([k, label]) => `<button type="button" class="rt-pill" data-vzview="${n}:${k}" aria-pressed="${k === curKey}">${esc(label)}</button>`).join('')}</div>` : '';
+function vizBlock(n, extra = {}) {
+  const vs = vizViews(n, extra);
+  if (!vs.length) return '';
+  const cur = vs.find((v) => v.key === state.viz[n]) || vs[0];
+  return `<div class="vz" data-vz="${n}">${vzTabs(n, vs.map((v) => [v.key, v.label]), cur.key)}<div class="vz-body">${cur.html}</div></div>`;
+}
+// 그린 뒤 칸 폭을 재서, 차트가 그 폭으로 그려지지 않았으면 그 폭으로 다시 그린다(글자 크기를 어디서나 같게)
+let vzFitting = false;
+function fitViz() {
+  if (vzFitting) return;
+  let changed = false;
+  document.querySelectorAll('#app [data-vz]').forEach((el) => {
+    const n = el.dataset.vz, body = el.querySelector('.vz-body');
+    if (!body) return;
+    const w = Math.floor(body.clientWidth) - 2; // 칸 폭과 똑같이 그리면 화면 확대율(zoom .9)의 소수점 오차로 넘쳐 가로 스크롤바가 생김
+    if (w > 0 && Math.abs(w - (vzW[n] || 0)) > 2) { vzW[n] = w; changed = true; }
+  });
+  if (changed) { vzFitting = true; const y = window.scrollY; render(); window.scrollTo({ top: y, behavior: 'instant' }); vzFitting = false; }
+}
+const vzPanel = (n, title, desc, extra) => `<section class="rl-section panel vz-section"><div class="section-head"><div><h2>${title}</h2><p>${desc}</p></div></div>${vizBlock(n, extra)}</section>`;
 
 // 보고서 이름은 '{발행사} {토큰} {YYYY}년 {M}월'. 토큰이 이미 보이는 묶음 안에서는 ym만 쓴다
 function coin(report) { return `${report.issuer_short} ${report.token}`; }
@@ -127,62 +164,16 @@ function statusLegend(counts) {
 }
 // 준비금 보고서 비교: 줄은 코인, 칸은 달. 칸에 은행 예금 비중과 서명까지 걸린 날, 줄 머리에 고른 달의 준비금 구성
 const candOf = (id, rid) => id === 'kr-v1' ? state.candidates[rid] : undefined;
-const TONE = { met:' hi', caution:' ca', unmet:' lo' };
-const toneOf = (id, rid, r) => TONE[statusClass(evaluateRule(rid, r, jurisdictions[id], candOf(id, rid)).status)] || '';
-function chartComposition(opt = {}) {
-  const own = opt.id, nm = (k) => copy.나라[k].이름;
-  const limit = krProposal('R05')?.threshold, dayLim = krProposal('R10')?.deadline_days;
-  const billDays = jurisdictions['kr-v1'].rules.R10.candidates.find((c) => c.id === 'bill')?.deadline_days;
-  const inBill = reports.filter((r) => days(r) != null && billDays != null && days(r) <= billDays).length;
-  const months = [...new Set(reports.map((r) => r.month))].sort(), pick = reports[state.reportIndex].month;
-  const at = (tok, m) => reports.findIndex((r) => r.token === tok && r.month === m);
-  const short = (ratio) => { const v = ratio * 100; return v >= 99.95 ? String(Math.round(v)) : v.toFixed(1); }; // 44칸이 한 줄에 들어가도록 100% 이상은 정수로
-  // 보고서가 없는 칸은 이유를 구별한다: 출시 전, 원문 합계 오류로 뺌, 아직 게시 전, 분기 공시라 없는 달
-  const quarterly = new Set(reports.filter((x) => x.disclosure_cadence === 'quarterly').map((x) => x.token));
-  const emptyCell = (tok, m) => {
-    const se = series[tok], ex = excluded.find((e) => e.token === tok && e.month === m), name = coin(reports.find((x) => x.token === tok)), when = `${m.slice(0,4)}년 ${Number(m.slice(5))}월`;
-    const [kind, mark, why] = se && m < se.first_month ? ['pre', '', '출시 전']
-      : ex ? ['excl', '×', `원문 합계 오류로 뺌. ${ex.reason}`]
-      : se?.not_yet_published?.includes(m) ? ['wait', '…', '아직 게시 전']
-      : ['qtr', '–', quarterly.has(tok) ? '분기마다 공시해서 이 달은 보고서 없음' : '이 달 보고서 없음'];
-    const t = `${name} ${when}: ${why}`;
-    return `<span class="mx-c empty ${kind}" role="img" aria-label="${esc(t)}" title="${esc(t)}">${mark}</span>`;
-  };
-  const cell = (i, tok, m) => {
-    if (i < 0) return emptyCell(tok, m);
-    const r = reports[i], b = bankInfo(r), d = days(r), sel = state.reportIndex === i, nb = r.flags?.cash_is_bank_deposit === false;
-    const tone = own ? toneOf(own, 'R05', r) : b.ratio == null || limit == null ? '' : b.ratio >= limit ? ' hi' : ' lo';
-    const ct = own && opt.cmp ? toneOf(opt.cmp, 'R05', r) : null, df = ct == null ? '' : ` cm${ct ? ct.trim() : '-none'}${ct !== tone ? ' df' : ''}`; // 칸 아래 띠: 비교 나라 판정
-    const over = own ? toneOf(own, 'R10', r) === ' lo' : d != null && dayLim != null && d > dayLim;
-    const t = `${label(r)}: ${nb ? '원문이 은행 예금을 따로 적지 않아 구분 안 됨' : `은행 예금 ${pct(b.ratio,1)}${b.approx ? ' (대신 계산)' : ''}`}, 서명까지 ${d ?? '자료 없음'}일`;
-    return `<button type="button" class="mx-c${tone}${df}${nb ? ' nb' : ''}${sel ? ' selected' : ''}" data-report="${i}" aria-pressed="${sel}" aria-label="${esc(t)}" title="${esc(t)}"><b class="num">${b.ratio == null ? '–' : short(b.ratio)}${b.approx ? '<sup>*</sup>' : ''}</b><small class="num${over ? ' over' : ''}">${d ?? '–'}일</small></button>`;
-  };
-  const rows = [...new Set(reports.map((r) => r.token))].map((tok) => {
-    // 줄 머리 막대는 고른 달의 구성. 그 달 보고서가 없는 코인(분기 보고서 등)은 앞의 가장 가까운 달 것을 쓰고 달을 적는다
-    const mine = reports.flatMap((x, i) => x.token === tok ? [i] : []), r = reports[mine.findLast((i) => reports[i].month <= pick) ?? mine[0]];
-    const slices = mix(r).filter((x) => x.ratio > 0);
-    const desc = `${ym(r)} 준비금 구성: ${slices.map((x) => `${CATEGORIES.find(([k]) => k === x.type)[1]} ${pct(x.ratio,1)}`).join(', ')}`;
-    const mineTag = own && r.home?.includes(own) ? '<em class="mx-own">이 나라 발행사</em>' : '';
-    return `<div class="mx-head"><strong>${esc(coin(r))}</strong>${mineTag}<span class="mx-bar" role="img" aria-label="${esc(desc)}" title="${esc(desc)}">${slices.map((x) => `<i class="seg ${x.type}" style="width:${(x.ratio*100).toFixed(2)}%"></i>`).join('')}</span>${r.month === pick ? '' : `<small>${esc(ym(r))} 기준</small>`}</div>${months.map((m) => cell(at(tok, m), tok, m)).join('')}`;
-  }).join('');
-  // 달 축: 44개월을 다 쓰면 겹치므로 1월 칸에 연도만 쓰고, 고른 달만 'N월'로 표시. 나머지 칸은 비움
-  const axis = (m) => m.endsWith('-01') ? `<span class="mx-m yr${m === pick ? ' chosen' : ''}">${m.slice(0,4)}</span>` : `<span class="mx-m${m === pick ? ' chosen' : ''}">${m === pick ? `${Number(m.slice(5))}월` : ''}</span>`;
-  const head = `<span class="mx-m mx-corner">준비금 구성(${ym(reports[state.reportIndex])})</span>${months.map(axis).join('')}`;
-  const lim = limit != null ? pct(limit,0) : '자료 없음';
-  if (own) {
-    const nDf = opt.cmp ? reports.filter((r) => toneOf(own, 'R05', r) !== toneOf(opt.cmp, 'R05', r)).length : 0;
-    const grid = `<div class="mx-wrap"><div class="mx" style="--n:${months.length}">${head}${rows}</div></div>`;
-    return `<div class="cp-block"><h3>준비금 보고서 ${reports.length}건을 ${esc(nm(own))} 기준으로</h3><p>칸의 큰 숫자는 은행 예금 비중(%)이고, 색은 ${esc(nm(own))} 규칙 '${ruleName('R05')}' 판정입니다. 작은 숫자는 서명까지 걸린 날이고, ${esc(nm(own))} 규칙 '${ruleName('R10')}'을 넘으면 빨강입니다.${opt.cmp ? ` 칸 아래 띠는 같은 보고서를 ${esc(nm(opt.cmp))} 기준으로 본 판정이고, 두 나라 판정이 갈리는 보고서는 ${nDf}건입니다.` : ''}</p>${grid}<div class="chart-foot">${statusLegend()}${opt.cmp ? `<span class="legend"><span><i class="tint cmk"></i>칸 아래 띠: ${esc(nm(opt.cmp))} 기준 판정</span></span>` : ''}</div></div>`;
-  }
-  return `<section class="chart-card panel" aria-labelledby="composition-title"><div class="panel-heading"><div><h2 id="composition-title"><b class="step-no num">3</b>준비금 보고서 ${reports.length}건 비교</h2><p>줄은 코인, 칸은 달입니다. 칸의 큰 숫자는 은행 예금 비중(%)이고, 한국 제안 ${lim} 이상이면 파랑, 미만이면 빨강입니다. 작은 숫자는 기준일부터 검증인 서명까지 걸린 날이고, 제안 ${dayLim ?? '자료 없음'}일을 넘으면 빨강입니다. 의원안 ${billDays ?? '자료 없음'}일 안에 서명한 보고서는 ${inBill ? `${inBill}건입니다` : '없습니다'}. 칸을 누르면 그 보고서로 판정합니다.</p></div></div><div class="mx-wrap"><div class="mx" style="--n:${months.length}">${head}${rows}</div></div><div class="chart-foot"><span class="legend"><span><i class="tint hi"></i>은행 예금 ${lim} 이상</span><span><i class="tint lo"></i>${lim} 미만</span><span><i class="tint nb"></i>은행 예금 구분 안 됨</span>${CATEGORIES.map(([key,name]) => `<span><i class="seg ${key}"></i>${name}</span>`).join('')}</span><span class="legend mx-key"><span><i class="mk pre"></i>출시 전</span><span><i class="mk excl">×</i>원문 합계 오류로 뺌</span><span><i class="mk wait">…</i>아직 게시 전</span><span><i class="mk qtr">–</i>분기 공시라 없는 달</span></span>${reports.some((x) => bankInfo(x).approx) ? '<p class="chart-note">* Circle은 은행 예금을 따로 적지 않아 기타 준비자산 비중으로 대신 계산했습니다. 국채가 섞인 달이 있습니다.</p>' : ''}</div></section>`;
-}
-const krProposal = (rid) => jurisdictions['kr-v1'].rules[rid].candidates.find((c) => c.id === 'proposal');
+// 차트가 쓰는 한국 기준: 고른 후보값(의원안 값, 해외 참조). 은행 예금은 3단계 단추(state.mxLim)가 먼저, 고른 후보가 위임이면 해외 값 중 가장 낮은 30%
+const krPick = (rid) => resolveRuleDef(jurisdictions['kr-v1'], rid, state.candidates[rid]) || {};
+const krLim = () => state.mxLim ?? krPick('R05').threshold ?? MX_LIMS[0][0];
+const krDayLim = () => krPick('R10').deadline_days;
 // 종합 화면 3번 표: 줄은 코인, 가로는 달. 칸에 숫자를 쓰지 않고, 고른 은행 예금 기준에 못 미친 보고서를 굵은 띠로 잇는다.
-// 15%는 공시안 잠정값이라 기준을 단추로 고르게 한다(한국 의원안은 비율을 대통령령에 맡기거나 정하지 않음)
-const MX_LIMS = [[0.15, 'SC2K 공시안 잠정값'], [0.3, 'EU 일반, 미국 OCC 안'], [0.5, '일본'], [0.6, 'EU 중요']];
+// 한국 의원안은 은행 예금 비율을 위임하거나 정하지 않아서, 해외 기준값 중에서 단추로 고르게 한다
+const MX_LIMS = [[0.3, 'EU 일반, 미국 OCC 안'], [0.5, '일본'], [0.6, 'EU 중요']];
 const MX_SHORT = { bank:'예금', repo:'레포', fund:'펀드', treasury:'국채', other:'기타' };
 function chartReports() {
-  const lim = state.mxLim ?? krProposal('R05')?.threshold ?? 0.15, dayLim = krProposal('R10')?.deadline_days ?? 30;
+  const lim = krLim(), dayLim = krDayLim() ?? 30;
   const months = [...new Set(reports.map((r) => r.month))].sort(), n = months.length, last = months[n - 1];
   const P = (v) => `${(v * 100).toFixed(4).replace(/\.?0+$/, '')}%`, at = (i, w = 1) => `left:${P(i / n)};width:${P(w / n)}`;
   const limTxt = pct(lim, 0), quarterly = new Set(reports.filter((x) => x.disclosure_cadence === 'quarterly').map((x) => x.token));
@@ -236,10 +227,6 @@ function chartReports() {
   const pills = MX_LIMS.map(([v, t]) => `<button type="button" class="rt-pill" data-mxlim="${v}" aria-pressed="${v === lim}">${pct(v,0)} ${t}</button>`).join('');
   return `<section class="chart-card panel rt-card" aria-labelledby="composition-title"><div class="panel-heading"><div><h2 id="composition-title"><b class="step-no num">3</b>준비금 보고서 ${reports.length}건 비교</h2><div class="rt-pills" role="group" aria-label="은행 예금 기준">${pills}</div><p>한국 의원안 10건 중 2건은 은행 예금 비율을 대통령령에 맡겼고, 1건(정태호 안)은 자산별 구성비율을 금융위원회 고시에 맡겼고, 7건은 정하지 않아, 법에 정해진 숫자는 없습니다. 위 단추로 기준을 고르면 그 기준에 못 미친 보고서가 굵은 띠로 바뀝니다. 칸을 누르면 그 보고서로 판정합니다.</p><p class="rt-sum">전체 ${reports.length}건 중 은행 예금이 ${limTxt} 미만인 보고서 <b class="num">${fails}건</b>, 서명까지 ${dayLim}일을 넘긴 보고서 <b class="num">${lates}건</b></p></div></div><div class="mx-wrap"><div class="rt-grid"><span class="rt-cap">준비금 구성(최근 달)</span><div class="rt-axis">${axis}</div><span class="rt-cap r">미달 / 판정</span><span class="rt-cap r">최근 은행 예금</span>${rows}</div></div><div class="chart-foot"><span class="legend rt-legend"><span><i class="rt-k line"></i>은행 예금 ${limTxt} 이상</span><span><i class="rt-k band"></i>${limTxt} 미만</span><span><i class="rt-k gap"></i>보고서가 없거나 은행 예금을 알 수 없는 달</span><span><i class="rt-k late"></i>서명 ${dayLim}일 초과</span></span></div></section>`;
 }
-function daysRange() {
-  const v = reports.map(days).filter((x) => x != null);
-  return `보고서 ${v.length}건 모두 ${Math.min(...v)}~${Math.max(...v)}일`;
-}
 const GROUPS = [
   ['준비금 규모와 구성', ['R01','R05','R02','R03','R04','R06']],
   ['공개 방식', ['R07','R10','R11','R12']],
@@ -257,45 +244,67 @@ function valueText(v) {
   if (typeof v.value === 'boolean' && DISCLOSE.includes(v.rule)) return `이 보고서는 ${v.value ? '공개함' : '공개하지 않음'}`;
   return noParen(`이 보고서 ${fmt(v.rule, v.value)}${v.approx ? ' (근사)' : ''}${v.threshold != null ? `, 기준 ${criterion(v)}` : ''}`);
 }
-const SHORT_NO = { [STATUS.NO_DATA]:'보고서에 이 항목 없음', [STATUS.NOT_APPLICABLE]:'해당 자산을 들고 있지 않아 해당 없음', [STATUS.PENDING]:'기준 위임, 아직 미정', [STATUS.UNRESEARCHED]:'근거 조사 중', [STATUS.NOT_REGULATED]:'규정 없음' };
-function krReason(v) {
-  if (v.value != null) return valueText(v);
-  if (SHORT_NO[v.status]) {
-    const limit = v.rule === 'R05' && v.status === STATUS.PENDING ? krProposal('R05')?.threshold : null;
-    return limit != null ? `${SHORT_NO[v.status]}. ${pct(limit,0)} 안은 후보값 바꾸기에서 선택` : SHORT_NO[v.status];
-  }
-  const def = resolveRuleDef(jurisdictions['kr-v1'], v.rule, state.candidates[v.rule]) || {};
-  return def.label ? noParen(`기준 ${def.label}`) : '';
+// 한국 규칙은 후보값(의원안 값마다, 해외 참조, 보도)이 범위라서, 한 보고서를 후보마다 판정해 같이 보인다
+// tone: 판정이 난 후보가 모두 같으면 그 판정, 갈리면 split. 숫자 없는 후보(위임 등)는 none
+const candFmt = (rid, x) => (rid === 'R01' || rid === 'R05') ? pct(x, Number.isInteger(Math.round(x * 10000) / 100) ? 0 : 1) : fmt(rid, x); // 후보값은 15%, 100%처럼 짧게
+const CAND_SHORT = { bill: '법안', foreign_ref: '해외 참조', press: '보도' };
+// 후보 짧은 이름: 법안 후보는 이름의 '법안 10건 중 N건'에서 건수를 따고, 숫자 기준이 없으면 괄호 첫 낱말(검토, 감사)을 붙임
+const candShort = (c) => {
+  if (!c.id.startsWith('bill')) return CAND_SHORT[c.id] || c.id;
+  const n = c.label?.match(/법안 10건 중 (\d+)건/)?.[1], kind = c.label?.match(/\((검토|감사)[:)]/)?.[1];
+  return `법안${n ? ` ${n}건` : ''}${kind ? `(${kind})` : ''}`;
+};
+const TONE_COL = { met: 'var(--ok)', unmet: 'var(--bad)', caution: 'var(--warn)', split: 'var(--warn)', none: 'var(--muted)' };
+const TONE_TXT = { met: 'var(--ok-text)', unmet: 'var(--bad-text)', caution: 'var(--warn-text)', split: 'var(--warn-text)', none: 'var(--ink)' };
+const TONE_NOTE = { met: '후보 모두 충족', unmet: '후보 모두 미충족', caution: '후보 모두 주의', split: '후보에 따라 갈림', none: '판정할 후보 없음' };
+function krCands(rid, r = reports[state.reportIndex]) {
+  const e = jurisdictions['kr-v1'].rules[rid];
+  if (!e?.candidates?.length) return null;
+  const cur = state.candidates[rid] || e.default_candidate || e.candidates[0].id;
+  const list = e.candidates.map((c) => { const v = evaluateRule(rid, r, jurisdictions['kr-v1'], c.id); return { id: c.id, short: candShort(c), status: statusClass(v.status), threshold: typeof v.threshold === 'number' ? v.threshold : null, value: v.value, cur: c.id === cur }; });
+  const set = new Set(list.map((c) => c.status).filter((s) => s !== 'none'));
+  return { rid, list, tone: !set.size ? 'none' : set.size === 1 ? [...set][0] : 'split', value: list.find((c) => typeof c.value === 'number')?.value ?? null };
+}
+// 숫자 규칙의 범위 그림: 후보 최소~최대 띠, 후보 눈금과 이름, 보고서 값 점. 숫자 후보가 없으면 빈 글
+function candStrip(k) {
+  const nums = k?.list.filter((c) => c.threshold != null);
+  if (!nums?.length || typeof k.value !== 'number') return '';
+  const vals = [...new Set(nums.map((c) => c.threshold))].sort((a, b) => a - b), lo0 = vals[0], hi0 = vals.at(-1), v = k.value, cov = k.rid === 'R01';
+  const lo = cov ? Math.min(v, lo0) - hi0 * 0.04 : 0, hi = Math.max(v, hi0) * (cov ? 1.03 : 1.15), X = (x) => Math.max(0, Math.min(100, ((x - lo) / (hi - lo)) * 100));
+  const anchor = (x) => x > 72 ? 'transform:translateX(-100%)' : x < 20 ? '' : 'transform:translateX(-50%)';
+  const ticks = vals.map((x) => { const ids = nums.filter((c) => c.threshold === x), txt = `${ids.length > 2 ? `후보 ${ids.length}건` : ids.map((c) => c.short).join(', ')} ${candFmt(k.rid, x)}`; const pick = ids.find((c) => c.cur) || ids[0]; return `<i class="r-tick" style="left:${X(x).toFixed(1)}%"></i><button type="button" class="r-lab${pick.cur ? ' cur' : ''}" data-kcand="${k.rid}:${pick.id}" aria-pressed="${pick.cur}" title="이 후보값으로 판정" style="left:${X(x).toFixed(1)}%;${anchor(X(x))}">${esc(txt)}</button>`; }).join('');
+  return `<span class="kk-rng"><i class="r-track"></i>${hi0 > lo0 ? `<i class="r-band" style="left:${X(lo0).toFixed(1)}%;width:${(X(hi0) - X(lo0)).toFixed(1)}%"></i>` : ''}${ticks}<i class="r-dot" style="left:${X(v).toFixed(1)}%;background:${TONE_COL[k.tone]}"></i></span>`;
+}
+const candNote = (k) => { const none = k.list.filter((c) => c.status === 'none').map((c) => c.short); return `${TONE_NOTE[k.tone]}${none.length && none.length < k.list.length ? `, ${none.join(', ')}은 판정 안 됨` : ''}`; };
+// 4단계 히트맵 한국 칸: 규칙마다 후보별 판정 [{ n: 이름, s: 판정 }]
+const krSplitMap = () => Object.fromEntries(RULE_IDS.map((rid) => { const k = krCands(rid); return [rid, k?.list.length > 1 ? k.list.map((c) => ({ n: `${c.short}${c.threshold != null ? ` ${candFmt(rid, c.threshold)}` : ''}`, s: c.status })) : null]; }));
+// 2단계 칸 위 숫자 셋
+function krKpi() {
+  const ms = Z1.metrics({ data: buildData(reports, jurisdictions, state.candidates), ri: state.reportIndex, lim: krLim(), dayLim: krDayLim() ?? 30 });
+  const RID = { bank: 'R05', days: 'R10', cov: 'R01' }, name = { bank: '은행 예금', days: '기준일부터 서명까지', cov: '커버리지' };
+  return `<div class="kr-kpi" role="list">${ms.map((m) => {
+    const k = krCands(RID[m.key]);
+    return `<div class="kk" role="listitem"><div class="kk-a"><span class="kk-l">${name[m.key]}</span><b class="kk-v num" style="color:${TONE_TXT[k.tone]}">${esc(m.disp)}<small>${m.v == null ? '' : m.unit}</small></b></div><div class="kk-b">${candStrip(k)}<span class="kk-n">${candNote(k)}</span></div></div>`;
+  }).join('')}</div>`;
 }
 function krFindings(kr) {
   const line = (cls, name, list) => list.length ? `<p class="kr-find"><span class="kr-find-key ${cls}">${sw(cls)}${name}</span>${list.map((v) => `${ruleName(v.rule)}${v.value != null ? `: ${esc(valueText(v))}` : ''}`).join(' / ')}</p>` : '';
   return line('unmet', '미충족', kr.filter((v) => v.status === STATUS.UNMET)) + line('caution', '주의', kr.filter((v) => v.status === STATUS.CAUTION));
 }
 const COL_LABEL = { 'eu-emt':'EU<br>일반', 'eu-emt-significant':'EU<br>중요' };
-function ruleList(kr, foreign) {
-  const cell = (cls, who, rid, v) => { const t = `${who}, ${copy.규칙15개[rid]}: ${statusLabel(v)}${statusLabel(v) !== v.status ? `, 판정 ${v.status}` : ''}`; return `<i class="hm-c ${cls}" title="${esc(t)}"><span class="sr">${esc(t)}</span></i>`; };
-  const row = (rid) => {
-    const k = kr.find((x) => x.rule === rid), cls = statusClass(k.status), why = esc(krReason(k));
-    const cells = cell(cls, '한국', rid, k) + FOREIGN_IDS.map((id) => { const x = foreign[id].find((v) => v.rule === rid); return cell(statusClass(x.status), SHORT[id], rid, x); }).join('');
-    return `<div class="hm-rule" data-hm="${rid}"><div class="hm-row"><span class="hm-name" title="${esc(ruleHelp(rid))}">${ruleName(rid)} <small>${rid}</small></span><span class="hm-cells">${cells}</span><span class="hm-why">${cls === 'none' ? `<span class="hm-none">${why}</span>` : `<b class="hm-st ${cls}">${esc(k.status)}</b> ${why}`}</span></div></div>`;
-  };
-  const link = (id, text) => `<a href="#${id}" data-country="${id}">${text}</a>`;
-  const head = (name) => `<div class="hm-row hm-head"><h3 class="hm-title">${name}</h3><span class="hm-cells">${link('kr-v1', '한국')}${FOREIGN_IDS.map((id) => link(id, COL_LABEL[id] || SHORT[id])).join('')}</span><span class="hm-why">한국 후보값 판정</span></div>`;
-  // 한 줄 배치(좁은 화면)는 준비금, 공개, 검증, 상환 순. 넓은 화면은 왼쪽 열 0, 3번째 블록, 오른쪽 열 1, 2번째 블록
-  const block = ([name, ids], i) => `<div class="hm-block" style="--o:${i}">${head(name)}${ids.map(row).join('')}</div>`;
-  const col = (idx) => `<div class="hm-col">${idx.map((i) => block(GROUPS[i], i)).join('')}</div>`;
-  return `<section class="rl-section panel" aria-labelledby="rl-title"><div class="section-head"><div><h2 id="rl-title">규칙별 판정</h2><p>한국 후보값으로 먼저 판정하고, 같은 보고서를 해외 ${FOREIGN_IDS.length}곳의 규칙에도 맞춰 봅니다. 나라 이름을 누르면 상세 화면으로 갑니다.</p><p class="rl-note">EU 일반과 EU 중요는 나라가 아니라 EU 규칙(MiCA)의 토큰 단계입니다. EU 중요는 유럽은행감독청이 이용자와 발행 규모가 커서 대형으로 지정한 토큰이고, 은행 예금 60% 이상, 6개월마다 감사처럼 규칙이 더 셉니다.</p></div>${statusLegend()}</div><div class="hm">${col([0, 3])}${col([1, 2])}</div></section>`;
-}
 // ---- 판정 흐름: 7개 나라 x 규칙 15개 = 판정 105건을 나라, 판정 결과, 규칙 세 축으로 이음 ----
 const FLOW_RULES = GROUPS.flatMap(([, ids]) => ids);
-function flowSection() {
+// 4단계 나라별 판정: 같은 판정 105건을 히트맵과 판정 수 표(기본), 흐름(생키) 두 가지로 본다. 범례는 그림마다 붙는다
+function verdictSection() {
   const rows = ['kr-v1', ...FOREIGN_IDS].flatMap((id) => {
     const by = Object.fromEntries(judged(id).map((v) => [v.rule, v]));
     return FLOW_RULES.map((rule) => ({ country: id, countryName: id === 'kr-v1' ? '한국' : SHORT[id], rule, ruleName: copy.규칙15개[rule], status: statusClass(by[rule].status) }));
   });
   const opt = { focus: 'kr-v1' };
   lastFlow = { rows, opt };
-  return `<section class="rl-section panel flow-section" aria-labelledby="flow-title"><div class="section-head"><div><h2 id="flow-title"><b class="step-no num">4</b>판정 흐름</h2><p>선 한 줄이 판정 하나입니다. 나라에서 판정 결과를 거쳐 규칙으로 이어집니다. 나라, 판정 결과, 규칙 이름에 올리면 그 판정만 진하게 보입니다.</p></div>${statusLegend()}</div><div class="flow-scroll">${flowSvg(rows, { ...opt, width: flowW })}</div>${flowTotals(rows, opt)}</section>`;
+  const k = state.viz[4] === 'flow' ? 'flow' : '02';
+  const body = k === 'flow' ? `<div class="flow-scroll">${flowSvg(rows, { ...opt, width: flowW })}</div><div class="chart-foot">${statusLegend()}</div>` : `<div class="vz-body">${vizViews(4).find((v) => v.key === k)?.html || ''}</div>`;
+  return `<section class="rl-section panel hm-sec flow-section" aria-labelledby="rl-title"><div class="section-head"><div><h2 id="rl-title"><b class="step-no num">4</b>나라별 판정</h2><p>한국 후보값으로 먼저 판정하고, 같은 보고서를 해외 ${FOREIGN_IDS.length}곳의 규칙에도 맞춰 봅니다. 나라 7곳의 규칙 ${RULE_IDS.length}개 판정 ${rows.length}건이고, 나라 이름을 누르면 상세 화면으로 갑니다.</p><p class="rl-note">EU 일반과 EU 중요는 나라가 아니라 EU 규칙(MiCA)의 토큰 단계입니다. EU 중요는 유럽은행감독청이 이용자와 발행 규모가 커서 대형으로 지정한 토큰이고, 은행 예금 60% 이상, 6개월마다 감사처럼 규칙이 더 셉니다. 판정 안 됨은 보고서에 없음, 해당 없음, 규정 없음, 위임 예정, 조사 미완료를 묶은 것입니다.</p></div></div><div class="vz" data-vz="4">${vzTabs(4, [['02', '히트맵과 표'], ['flow', '흐름']], k)}${body}</div>${flowTotals(rows, opt)}</section>`;
 }
 // ---- 개요 지구본 위 유리 카드: 선택 보고서의 판정 수를 나라 옆에 보여 줌 ----
 const tally = (id) => { const n = { met:0, caution:0, unmet:0, none:0 }; judged(id).forEach((v) => n[statusClass(v.status)]++); return n; };
@@ -304,10 +313,8 @@ const miniCounts = (n) => ['met','caution','unmet'].map((k) => `<span class="gc-
 function heroCards() {
   const one = (gid, id, name) => `<a class="gc" data-gc="${gid}" href="#${id}" data-country="${id}"><span class="gc-name">${name}</span><span class="gc-row">${miniCounts(tally(id))}</span></a>`;
   const eu = (id, name) => `<a class="gc-line" href="#${id}" data-country="${id}"><span class="gc-sub">${name}</span><span class="gc-row">${miniCounts(tally(id))}</span></a>`;
-  const k = tally('kr-v1');
   return one('us', 'us', '미국') + one('hk', 'hk', '홍콩') + one('sg', 'sg', '싱가포르') + one('jp', 'jp', '일본')
-    + `<div class="gc" data-gc="eu"><span class="gc-name">EU</span>${eu('eu-emt', '일반')}${eu('eu-emt-significant', '중요')}</div>`
-    + `<a class="gc gc-kr" data-gc="kr" href="#kr-v1" data-country="kr-v1"><span class="gc-name">한국</span><span class="gc-sub">후보값 기준</span><span class="gc-grid">${['met','caution','unmet','none'].map((c) => `<span class="gc-n">${sw(c)}${CARD_NAMES[c]} <b class="num">${k[c]}</b></span>`).join('')}</span></a>`;
+    + `<div class="gc" data-gc="eu"><span class="gc-name">EU</span>${eu('eu-emt', '일반')}${eu('eu-emt-significant', '중요')}</div>`;
 }
 // 카드를 출발점 둘레 여덟 방향 후보 중 가장 가까운 빈 자리에 놓음. 호, 서울, 다른 카드와 겹치거나 가장자리 흐린 구간으로 나가면 건너뜀. 자리가 없으면 숨김
 function placeCards(el, L) {
@@ -338,17 +345,15 @@ function placeCards(el, L) {
 function home() {
   const r = reports[state.reportIndex], cash = bankInfo(r), own = r.attestation?.firm || '이미지 서명, 이름 확인 필요';
   const kr = judged('kr-v1'), foreign = Object.fromEntries(FOREIGN_IDS.map((id) => [id, judged(id)]));
-  const bankLim = krProposal('R05')?.threshold, dayLim = krProposal('R10')?.deadline_days;
-  const stat = (name, valueHtml, note, cls = '') => `<div class="stat ${cls}"><span class="stat-label">${name}</span><strong class="stat-value num">${valueHtml}</strong><span class="stat-note">${note}</span></div>`;
-  return `<div class="home"><div class="hero"><div class="home-head"><div><h1>원화 스테이블코인 준비금 공시 검증 시스템</h1><p class="lead">발행사가 공개한 준비금 검증 보고서 한 건을 한국 후보 기준 ${RULE_IDS.length}개로 점검하고, 같은 보고서를 해외 기준에도 맞춰 봅니다.</p><ol class="steps">${[['report', '보고서 고르기'], ['kr', `한국 기준 ${RULE_IDS.length}개`], ['compare', `${reports.length}건 전체 비교`], ['flow', '해외 기준과 잇기']].map(([k, t], i) => `<li><button type="button" class="step-btn" data-jump="${k}"><b class="num">${i + 1}</b>${t}</button></li>`).join('')}</ol><p class="report-line"><b class="step-no num">1</b>판정 보고서 ${esc(label(r))} / 기준일 ${esc(r.as_of)} / 검증인 ${esc(own)} / 보고서 ${state.reportIndex+1} / ${reports.length}</p></div></div>
+  return `<div class="home"><div class="hero"><div class="home-head"><div><h1>원화 스테이블코인 준비금 공시 검증 시스템</h1><p class="lead">발행사가 공개한 준비금 검증 보고서 한 건을 한국 후보 기준 ${RULE_IDS.length}개로 점검하고, 같은 보고서를 해외 기준에도 맞춰 봅니다.</p><ol class="steps">${[['report', '보고서'], ['kr', '한국 기준'], ['compare', `${reports.length}건 비교`], ['flow', '해외 기준'], ['rules', '기준값']].map(([k, t], i) => `<li><button type="button" class="step-btn" data-jump="${k}"><b class="num">${i + 1}</b>${t}</button></li>`).join('')}</ol><p class="report-line"><b class="step-no num">1</b>판정 보고서 ${esc(label(r))} / 기준일 ${esc(r.as_of)} / 검증인 ${esc(own)} / 보고서 ${state.reportIndex+1} / ${reports.length}</p></div></div>
     <div class="hero-globe"></div><div class="hero-main">
-      <section class="stats panel" aria-label="선택 보고서의 주요 수치">${stat(`은행 예금 비중${cash.approx ? ' (대신 계산)' : ''}`, metricPct(cash.ratio), `한국 규칙 ${ruleName('R05')}, 제안 ${bankLim != null ? pct(bankLim,0) : '자료 없음'} 이상${cash.approx ? '<br>기타 준비자산으로 대신 계산, 국채가 섞인 달이 있음' : ''}`, 'stat-main')}${stat('서명까지 걸린 날', days(r) == null ? '자료 없음' : `${days(r)}<small>일</small>`, `한국 규칙 ${ruleName('R10')}, 제안 ${dayLim ?? '자료 없음'}일 안<br>${daysRange()}`)}${stat('커버리지', metricPct(r.coverage ?? (r.fair_value && r.circulation ? r.fair_value/r.circulation : null)), `한국 규칙 ${ruleName('R01')}<br>준비금 공정가치 / 발행잔액`)}</section>
-      <section class="result panel" aria-labelledby="result-title"><div class="section-head"><div><h2 id="result-title"><b class="step-no num">2</b>한국 기준 판정 결과</h2><p>한국 후보값은 확정된 규정이 아닙니다</p></div><a class="link-more" href="#kr-v1" data-country="kr-v1">후보값 바꾸기 →</a></div><div class="result-body">${krSummary(kr)}<div class="kr-finds">${krFindings(kr)}</div></div></section>
+      <section class="result panel" aria-labelledby="result-title"><div class="section-head"><div><h2 id="result-title"><b class="step-no num">2</b>한국 기준 판정 결과</h2><p>한국 후보값은 확정된 규정이 아닙니다</p></div><a class="link-more" href="#kr-v1" data-country="kr-v1">후보값 바꾸기 →</a></div>${krKpi()}<div class="result-body">${vizBlock(2, { dense: true })}<div class="kr-finds">${krFindings(kr)}</div></div></section>
     </div></div>
     ${chartReports()}
-    ${ruleList(kr, foreign)}
-    ${flowSection()}
-    <div class="home-sec"><h2>한국 기준값과 해외 기준값</h2><p>한국 제안값은 해외 기준과 국회 법안을 살펴 정했습니다. 표는 규칙마다 한국과 해외의 값을 나란히 보여 주고, 아래 그래프는 숫자 규칙 4개에서 한국 제안값이 어디에 놓이는지 보여 줍니다.</p></div>${ruleTable(jurisdictions, copy)}${ruleDots(jurisdictions, copy)}<div class="disclosure"><strong>${KR_NOTICE}</strong><br>${foreignNames()} 판정: ${FOREIGN_NOTICE}</div>${rulesDock()}</div>`;
+    ${vzPanel(3, '<b class="step-no num">3</b>기준별 미달 보고서 수', '은행 예금 기준을 해외 값인 30%, 50%, 60%로 둘 때 코인마다 기준에 못 미친 보고서 수입니다. 한국 의원안 10건에는 이 비율 숫자가 없습니다. 기준을 올리면 어느 코인이 새로 떨어지는지 봅니다.')}
+    ${verdictSection()}
+    <div class="vz-pair vz-32">${vzPanel(6, '<b class="step-no num">5</b>규칙별 기준값 비교', '한국 의원안 10건과 해외 6곳의 기준값입니다. 숫자가 없는 칸은 위임이나 미규정입니다.')}${vzPanel(7, '<b class="step-no num">5</b>숫자 규칙 분포', '기준값을 어디에 두느냐에 따라 보고서 273건 중 몇 건이 통과하는지 봅니다.')}</div>
+    <div class="disclosure"><strong>${KR_NOTICE}</strong><br>${foreignNames()} 판정: ${FOREIGN_NOTICE}</div>${rulesDock()}</div>`;
 }
 // ---- 개요 오른쪽 끝에서 나오는 규칙 설명 패널. 열고 닫는 것은 CSS(:hover, :has(:focus-visible))가 하고, 터치는 단추가 .open을 켠다 ----
 // 규칙 한 줄 그림: 지금 고른 보고서를 한국 후보값으로 판정한 결과(evaluateRule)를 작은 그림과 짧은 글로 보인다. 패널과 설명 페이지가 같이 쓴다
@@ -496,12 +501,24 @@ function candOpts(rid, name) {
 }
 function candidatePanel() {
   const rules = jurisdictions['kr-v1'].rules;
-  const rows = RULE_IDS.filter((rid) => (rules[rid]?.candidates || []).length > 1).map((rid) => `<div class="cand-row"><span class="cand-rule"><b>${rid}</b>${esc(copy.규칙15개[rid])}</span>${candOpts(rid,'kc')}</div>`).join('');
-  return `<section class="cand-panel"><div class="cand-head"><strong>한국 후보값</strong><span>후보를 바꾸면 아래 판정이 바로 바뀝니다. ${KR_NOTICE}</span></div>${rows}</section>`;
+  // 규칙 15개 모두: 후보가 둘 이상이면 고르는 단추, 하나면 고정 표시, 없으면 법안 10건에 정함이 없다고 적음
+  const rows = RULE_IDS.map((rid) => {
+    const cs = rules[rid]?.candidates || [];
+    const opts = cs.length > 1 ? candOpts(rid, 'kc') : cs.length ? `<span class="cand-opts"><span class="cand-fixed">${esc(cs[0].label)}</span></span>` : `<span class="cand-opts"><span class="cand-fixed none">법안 ${(rules[rid]?.bills || []).length || 10}건 모두 정함 없음</span></span>`;
+    return `<div class="cand-row"><span class="cand-rule"><b>${rid}</b>${esc(copy.규칙15개[rid])}</span>${opts}</div>`;
+  }).join('');
+  return `<section class="cand-panel"><div class="cand-head"><strong>한국 후보값</strong><span>규칙 ${RULE_IDS.length}개에 대한 국회 의원안 10건의 값입니다. 법안마다 값이 다른 규칙은 눌러서 바꾸면 아래 판정이 바로 바뀝니다. ${KR_NOTICE}</span></div>${rows}</section>`;
+}
+// 한국 페이지 규칙 줄 아래: 후보가 둘 이상이면 후보마다 판정. 숫자 규칙은 범위 그림도
+function krCandLine(rid) {
+  const k = krCands(rid);
+  if (!k || k.list.length < 2) return '';
+  const chips = k.list.map((c) => `<button type="button" class="kc${c.cur ? ' cur' : ''}" data-kcand="${rid}:${c.id}" aria-pressed="${c.cur}" title="${esc(c.cur ? '지금 판정에 쓰는 후보' : '이 후보값으로 판정')}">${sw(c.status)}${esc(c.short)}${c.threshold != null ? ` ${esc(candFmt(rid, c.threshold))}` : ''}</button>`).join('');
+  return `<div class="kr-cand-line"><span class="kc-note" style="color:${TONE_TXT[k.tone]}">${TONE_NOTE[k.tone]}</span>${chips}${candStrip(k)}</div>`;
 }
 function ruleItem(id,v) {
   const open = state.openRule === v.rule;
-  return `<article class="rule-item ${open ? 'open' : ''}"><button type="button" data-rule="${v.rule}" class="rule-heading" aria-expanded="${open}" aria-controls="body-${v.rule}"><span class="rule-code">${v.rule}</span><span class="rule-title">${esc(copy.규칙15개[v.rule])}</span><span class="rule-vals num">${v.value != null && typeof v.value !== 'boolean' ? `${esc(fmt(v.rule,v.value))}${v.approx ? '*' : ''}` : ''}${v.threshold != null && typeof v.threshold !== 'boolean' && v.rule !== 'R02' ? `<small>기준 ${esc(fmt(v.rule,v.threshold))}</small>` : ''}</span><span class="status ${statusClass(v.status)}" title="${esc(statusTitle(v))}">${sw(statusClass(v.status))}${esc(statusLabel(v))}</span><span class="chevron" aria-hidden="true"></span></button>${open ? `<div class="rule-body" id="body-${v.rule}">${ruleBody(id,v)}</div>` : ''}</article>`;
+  return `<article class="rule-item ${open ? 'open' : ''}"><button type="button" data-rule="${v.rule}" class="rule-heading" aria-expanded="${open}" aria-controls="body-${v.rule}"><span class="rule-code">${v.rule}</span><span class="rule-title">${esc(copy.규칙15개[v.rule])}</span><span class="rule-vals num">${v.value != null && typeof v.value !== 'boolean' ? `${esc(fmt(v.rule,v.value))}${v.approx ? '*' : ''}` : ''}${v.threshold != null && typeof v.threshold !== 'boolean' && v.rule !== 'R02' ? `<small>기준 ${esc(fmt(v.rule,v.threshold))}</small>` : ''}</span><span class="status ${statusClass(v.status)}" title="${esc(statusTitle(v))}">${sw(statusClass(v.status))}${esc(statusLabel(v))}</span><span class="chevron" aria-hidden="true"></span></button>${id === 'kr-v1' ? krCandLine(v.rule) : ''}${open ? `<div class="rule-body" id="body-${v.rule}">${ruleBody(id,v)}</div>` : ''}</article>`;
 }
 const NO_VALUE = { [STATUS.NO_DATA]:'이 보고서에는 이 규칙을 따질 항목이 없습니다.', [STATUS.NOT_APPLICABLE]:'이 보고서는 이 규칙이 다루는 자산을 들고 있지 않아 따질 대상이 없습니다.', [STATUS.NOT_REGULATED]:'이 항목에는 규정이 없습니다.', [STATUS.PENDING]:'세부 기준이 위임되어 아직 정해지지 않았습니다.', [STATUS.UNRESEARCHED]:'근거 조사가 끝나지 않았습니다.' };
 // 원문 위치, 근거, 수집값 같은 규칙별 상세. 보고서 한 건의 field_notes와 규칙 정의의 kinds에서 읽는다
@@ -627,8 +644,20 @@ function tiles(id) {
   const jur = jurisdictions[id];
   return `<div class="kpi">${TILES.map(([rid, name]) => {
     const d = resolveRuleDef(jur, rid, id === 'kr-v1' ? state.candidates[rid] : undefined) || {};
-    const v = tileValue(rid, d), tag = d.mandatory === false || d.legal_status === '협의 중' ? '제안' : '';
-    const val = v ? `<strong${typeof v[0] === 'number' ? ' class="num"' : ''}>${esc(v[0])}</strong>${v[1] ? `<small>${esc(v[1])}</small>` : ''}` : `<em>${d.delegated ? '아직 안 정함' : '정함 없음'}</em>`;
+    let v = tileValue(rid, d), tag = d.mandatory === false || d.legal_status === '협의 중' ? '협의 중' : '', note = '';
+    // 한국은 의원안 후보(법안 값마다)만으로 최소~최대를 보이고 몇 건인지 적음. 해외 참조, 보도는 한국 값이 아니라서 넣지 않음
+    const bills = id === 'kr-v1' ? (jur.rules[rid]?.candidates || []).filter((c) => c.id.startsWith('bill')) : [];
+    if (bills.length) {
+      const vs = bills.map((c) => ({ c, v: tileValue(rid, resolveRuleDef(jur, rid, c.id) || {}) })), nums = vs.filter((x) => x.v && typeof x.v[0] === 'number');
+      const cnt = bills.reduce((n, c) => n + Number(c.label?.match(/법안 10건 중 (\d+)건/)?.[1] || 0), 0);
+      tag = '의원안';
+      if (nums.length) {
+        const ns = [...new Set(nums.map((x) => x.v[0]))].sort((x, y) => x - y), sfx = new Set(nums.map((x) => x.v[1]));
+        v = [ns.length > 1 ? `${ns[0]}~${ns.at(-1)}` : ns[0], sfx.size === 1 ? nums[0].v[1] : nums[0].v[1].replace('영업일', '일')];
+        note = cnt ? `10건 중 ${cnt}건${ns.length > 1 ? `, 법안마다 다름` : ''}` : '';
+      } else if (typeof v?.[0] !== 'string') { v = null; note = ''; } else note = cnt ? `10건 중 ${cnt}건` : '';
+    }
+    const val = v ? `<strong${/^[\d.~]+$/.test(String(v[0])) ? ' class="num"' : ''}>${esc(v[0])}</strong>${v[1] ? `<small>${esc(v[1])}</small>` : ''}${note ? `<em class="kt-n">${esc(note)}</em>` : ''}` : `<em>${d.delegated ? '아직 안 정함' : '정함 없음'}</em>`;
     return `<div class="kpi-t" title="${esc([d.requirement, d.label].filter(Boolean).join(' / '))}"><span>${name}${tag ? `<i>${tag}</i>` : ''}</span><p>${val}</p></div>`;
   }).join('')}</div>`;
 }
@@ -636,13 +665,46 @@ function glance(info, id) {
   const law = (info.핵심 || []).find((x) => x.항목 === '법');
   return `${law ? `<div class="gl-law"><div class="gl-val"><strong>${esc(law.값)}</strong>${law.설명 ? `<span>${esc(law.설명)}</span>` : ''}</div>${stageSteps(id)}</div>` : ''}${tiles(id)}<p class="eli-line">${esc(info.한줄 || info.설명)}</p>`;
 }
-function cmpFlow(id, cmp) { // 두 나라만 그린 판정 흐름(30건). 칸 폭 맞춤은 fitFlow가 lastFlow로 다시 그림
-  const nm = (k) => copy.나라[k].이름;
-  const rows = [id, cmp].flatMap((k) => { const by = Object.fromEntries(judged(k).map((v) => [v.rule, v])); return FLOW_RULES.map((rule) => ({ country: k, countryName: nm(k), rule, ruleName: copy.규칙15개[rule], status: statusClass(by[rule].status) })); });
-  lastFlow = { rows, opt: { focus: [id, cmp] } };
-  return flowSvg(rows, { focus: [id, cmp], width: flowW });
-}
 // ---- 나라 화면 아래 '다른 나라와 비교': 같은 보고서를 이 나라와 고른 나라 기준으로 나란히 ----
+// 나라 화면 비교 탭의 보고서 273건: 첫 화면 3번과 같은 띠 그림. 코인마다 두 줄(위 기준 나라, 아래 비교 나라)
+// 띠는 '은행 예금 최저 비율' 미충족(옅은 띠는 주의), 선은 충족, 점선은 판정 안 됨이나 보고서 없는 달, ▼는 기준 나라 '공개 기한' 초과
+function chartVerdictBands(own, cmp) {
+  const nm = (k) => copy.나라[k].이름, months = [...new Set(reports.map((r) => r.month))].sort(), n = months.length, last = months[n - 1];
+  const P = (v) => `${(v * 100).toFixed(4).replace(/\.?0+$/, '')}%`, at = (i, w = 1) => `left:${P(i / n)};width:${P(w / n)}`;
+  const st = (id, rid, r) => statusClass(evaluateRule(rid, r, jurisdictions[id], candOf(id, rid)).status);
+  let nDiff = 0, nBoth = 0;
+  const rows = [...new Set(reports.map((r) => r.token))].map((tok) => {
+    const se = series[tok], mine = reports.flatMap((x, i) => x.token === tok ? [i] : []), latest = reports[mine.at(-1)];
+    const cells = months.map((m) => {
+      const i = mine.find((k) => reports[k].month === m);
+      if (i == null) return se && m < se.first_month ? null : { i: null };
+      const r = reports[i], a = st(own, 'R05', r), b = st(cmp, 'R05', r);
+      if (a !== 'none' && b !== 'none') { nBoth++; if (a !== b) nDiff++; } // 갈림은 두 나라 모두 판정이 났을 때만
+      return { i, a, b, late: st(own, 'R10', r) === 'unmet' };
+    });
+    let track = '';
+    const line = (key, cls) => cells.forEach((c, j) => {
+      if (!c) return;
+      const s = c.i == null ? 'none' : c[key];
+      if (s === 'met') track += `<i class="rt-line ${cls}" style="${at(j)}"></i>`;
+      else if (s === 'none') track += `<i class="rt-gap ${cls}" style="${at(j)}"></i>`;
+      else if (cells[j - 1]?.[key] !== s || cells[j - 1]?.i == null) { let e = j; while (cells[e + 1] && cells[e + 1].i != null && cells[e + 1][key] === s) e++; track += `<i class="rt-band ${cls}${s === 'caution' ? ' ca' : ''}" style="${at(j, e - j + 1)}"></i>`; }
+    });
+    line('a', 'up'); line('b', 'dn');
+    cells.forEach((c, j) => {
+      if (!c || c.i == null) return;
+      const r = reports[c.i], sel = state.reportIndex === c.i, L = { met: '충족', caution: '주의', unmet: '미충족', none: '판정 안 됨' };
+      const t = `${label(r)}: 은행 예금 ${bankInfo(r).ratio == null ? '구분 안 됨' : pct(bankInfo(r).ratio, 1)}, ${nm(own)} ${L[c.a]}, ${nm(cmp)} ${L[c.b]}, 서명까지 ${days(r) ?? '자료 없음'}일${c.late ? `, ${nm(own)} 공개 기한 넘김` : ''}`;
+      if (c.late) track += `<i class="rt-late up" style="left:${P((j + 0.5) / n)}"></i>`;
+      track += `<button type="button" class="rt-c${sel ? ' selected' : ''}" style="${at(j)}" data-report="${c.i}" aria-pressed="${sel}" aria-label="${esc(t)}" title="${esc(t)}"></button>`;
+    });
+    const cnt = (key) => cells.filter((c) => c?.[key] === 'unmet').length, judgedN = cells.filter((c) => c?.i != null).length;
+    const mineTag = latest.home?.includes(own) ? '<small>이 나라 발행사</small>' : '';
+    return `<div class="rt-head"><strong>${esc(coin(latest))}</strong>${mineTag}</div><div class="rt-track two">${track}</div><div class="rt-n num"><b>${cnt('a')}</b>/${judgedN}</div><div class="rt-n num"><b>${cnt('b')}</b>/${judgedN}</div>`;
+  }).join('');
+  const axis = months.map((m) => `<span${m === last ? ' class="last"' : ''}>${m.endsWith('-01') || m === months[0] ? `<em>${m.slice(0,4)}</em>` : ''}${Number(m.slice(5))}${m === last ? '월' : ''}</span>`).join('');
+  return `<div class="cp-block rt-card"><h3>준비금 보고서 ${reports.length}건을 ${esc(nm(own))}와 ${esc(nm(cmp))} 기준으로</h3><p>'${ruleName('R05')}' 판정입니다. 코인마다 위 줄이 ${esc(nm(own))}, 아래 줄이 ${esc(nm(cmp))}입니다. ${nBoth ? `두 나라 모두 판정이 난 보고서 ${nBoth}건 중 ${nDiff}건에서 판정이 갈립니다.` : '두 나라 중 한쪽은 이 규칙의 판정이 나오지 않아(위임, 정함 없음 등) 판정을 견줄 수 없습니다.'} 칸을 누르면 그 보고서로 판정합니다.</p><div class="mx-wrap"><div class="rt-grid"><span class="rt-cap">코인</span><div class="rt-axis">${axis}</div><span class="rt-cap r">${esc(nm(own))} 미충족</span><span class="rt-cap r">${esc(nm(cmp))} 미충족</span>${rows}</div></div><div class="chart-foot"><span class="legend rt-legend"><span><i class="rt-k line"></i>충족</span><span><i class="rt-k band"></i>미충족</span><span><i class="rt-k band ca"></i>주의</span><span><i class="rt-k gap"></i>판정 안 됨이나 보고서 없는 달</span><span><i class="rt-k late"></i>${esc(nm(own))} 공개 기한 넘김</span></span></div></div>`;
+}
 function compareSection(id) {
   const others = ORDER.filter((k) => k !== id), nm = (k) => copy.나라[k].이름;
   const cmp = others.includes(state.cmp) ? state.cmp : id === 'kr-v1' ? 'us' : 'kr-v1';
@@ -654,10 +716,9 @@ function compareSection(id) {
   const FL = { 'kr-v1': 'kr', us: 'us', 'eu-emt': 'eu', 'eu-emt-significant': 'eu', hk: 'hk', sg: 'sg', jp: 'jp' };
   const pick = `<div class="cp-pick"><span class="cp-base">기준 <b><img src="flags/${FL[id]}.svg" alt="">${esc(nm(id))}</b></span><span class="cp-vs">비교</span><span class="cp-btns" role="radiogroup" aria-label="비교할 나라">${others.map((k) => `<button type="button" role="radio" data-cmp="${k}" aria-checked="${k === cmp}"><img src="flags/${FL[k]}.svg" alt="">${esc(nm(k))}</button>`).join('')}</span></div>`;
   return `<section class="rl-section panel cp-section" aria-labelledby="cp-title"><div class="section-head"><div><h2 id="cp-title">다른 나라와 비교</h2><p>같은 보고서를 ${esc(nm(id))} 기준과 ${esc(nm(cmp))} 기준으로 나란히 봅니다.</p></div>${pick}</div>
-    <div class="cp-block"><h3>규칙 ${RULE_IDS.length}개 판정</h3><p>선택 보고서 ${esc(label(reports[state.reportIndex]))}. 판정이 갈리는 규칙은 ${nDiff}개이고, 규칙 번호를 진하게 표시했습니다.</p>${grid}<div class="chart-foot">${statusLegend()}</div></div>
-    ${chartComposition({ id, cmp })}
-    <div class="cp-block"><h3>판정 흐름</h3><p>선 한 줄이 판정 하나입니다. 두 나라의 규칙 ${RULE_IDS.length}개 판정이 판정 결과를 거쳐 규칙으로 이어집니다. 나라, 판정 결과, 규칙 이름에 올리면 그 판정만 진하게 보입니다.</p><div class="flow-scroll">${cmpFlow(id, cmp)}</div></div>
-    <div class="cp-block"><h3>숫자 규칙 분포</h3><p>${esc(nm(id))}와 ${esc(nm(cmp))}의 기준값만 진하게 보입니다. 점선은 한국 제안값입니다.</p>${ruleDots(jurisdictions, copy, 600, [id, cmp], true)}</div>${id === 'hk' ? `<div class="cp-block"><h3>주간 준비금 명세 ${weekly.주간.length}주</h3>${weeklyPane()}</div>` : ''}</section>`;
+    <div class="cp-block"><h3>두 나라 판정 비교</h3><p>선택 보고서 ${esc(label(reports[state.reportIndex]))}. 규칙마다 두 나라 판정과, 보고서 ${reports.length}건 중 판정이 갈린 수입니다.</p>${vizBlock(9, { cmp, focus: id })}</div>
+    ${chartVerdictBands(id, cmp)}
+    <div class="cp-block"><h3>숫자 규칙 분포</h3><p>${esc(nm(id))}와 ${esc(nm(cmp))}의 기준값만 진하게 보입니다.</p>${ruleDots(jurisdictions, copy, 600, [id, cmp], true)}</div>${id === 'hk' ? `<div class="cp-block"><h3>주간 준비금 명세 ${weekly.주간.length}주</h3>${weeklyPane()}</div>` : ''}</section>`;
 }
 function detail() {
   const id = state.jurisdiction, jur = jurisdictions[id], info = copy.나라[id], r = reports[state.reportIndex];
@@ -694,7 +755,7 @@ function render() {
   const kept = $('#app .mx-wrap')?.scrollLeft; // 비교 격자를 옆으로 밀어 둔 자리는 다시 그려도 유지
   $('#app').innerHTML = state.jurisdiction ? detail() : state.rules ? rulesPage() : home();
   const mxw = $('#app .mx-wrap'); if (mxw) mxw.scrollLeft = kept ?? mxw.scrollWidth; // 좁은 화면에서 처음엔 최근 달이 보이게 오른쪽 끝에서 시작
-  fitDots(); fitFlow();
+  fitDots(); fitFlow(); fitViz();
   const g = $('#app .globe'); if (g && state.jurisdiction) mountGlobe(g, state.jurisdiction);
   const hg = $('#app .hero-globe'); if (hg && !state.jurisdiction) mountHeroGlobe(hg, { onLayout: (L) => placeCards(hg, L) });
   $('#report-btn').innerHTML = `<span>${esc(coin(reports[state.reportIndex]))}</span>${esc(ym(reports[state.reportIndex]))}`; // 칸 안에 코인 이름(옅게)과 달
@@ -807,8 +868,8 @@ let hits = [], cur = 0;
 function findRule(rid) {
   if (state.rules) { window.location.hash = `#rules/${rid}`; return; } // 규칙 설명 페이지: 그 규칙으로
   if (!state.jurisdiction) { // 개요: 규칙별 판정의 그 줄로
-    const row = document.querySelector(`[data-hm="${rid}"]`);
-    if (row) { row.scrollIntoView({ block: 'center' }); row.classList.add('hit'); setTimeout(() => row.classList.remove('hit'), 1600); }
+    state.viz[4] = '02'; render(); // 규칙별 줄이 있는 히트맵 보기로
+    document.querySelector('#app .hm-sec')?.scrollIntoView({ block: 'start' });
     return;
   }
   if (state.tab !== 'rules') history.replaceState(null, '', `#${state.jurisdiction}`); // 나라 화면: 규칙 탭에서 그 규칙을 펼침
@@ -851,9 +912,11 @@ $('#app').addEventListener('click',(e) => {
   const jump = e.target.closest('[data-jump]'); if (jump) {
     const k = jump.dataset.jump;
     if (k === 'report') { window.scrollTo({ top: 0, behavior: 'smooth' }); toggleReportPop(true); return; }
-    document.querySelector({ kr: '#app .result', compare: '#app .chart-card', flow: '#app .flow-section' }[k])?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    document.querySelector({ kr: '#app .result', compare: '#app .chart-card', flow: '#app .rl-section.hm-sec', rules: '#app .vz-pair.vz-32' }[k])?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     return;
   }
+  const kcd = e.target.closest('[data-kcand]'); if (kcd) { const [rid, cid] = kcd.dataset.kcand.split(':'); state.candidates[rid] = cid; if (rid === 'R05') state.mxLim = undefined; const y = window.scrollY; render(); window.scrollTo({ top: y, behavior: 'instant' }); return; }
+  const vzv = e.target.closest('[data-vzview]'); if (vzv) { const [n, k] = vzv.dataset.vzview.split(':'); state.viz[n] = k; const y = window.scrollY; render(); window.scrollTo({ top: y, behavior: 'instant' }); return; }
   const cmpBtn = e.target.closest('[data-cmp]'); if (cmpBtn) { state.cmp = cmpBtn.dataset.cmp; const y = window.scrollY; render(); window.scrollTo({ top: y, behavior: 'instant' }); return; }
   const mxLim = e.target.closest('[data-mxlim]'); if (mxLim) { state.mxLim = Number(mxLim.dataset.mxlim); const y = window.scrollY; render(); window.scrollTo({ top: y, behavior: 'instant' }); return; }
   const report = e.target.closest('[data-report]'); if (report) return selectReport(Number(report.dataset.report));
@@ -865,6 +928,7 @@ $('#app').addEventListener('click',(e) => {
 $('#app').addEventListener('change',(e) => {
   if (e.target.matches('[data-candidate]')) {
     state.candidates[e.target.dataset.candidate] = e.target.value;
+    if (e.target.dataset.candidate === 'R05') state.mxLim = undefined;
     render();
   }
 });
@@ -881,5 +945,5 @@ document.addEventListener('keydown', (e) => { const d = e.key === 'Escape' && do
 bindSidebar($('#side'));
 bindFlow($('#app'));
 window.addEventListener('hashchange',route);
-window.addEventListener('resize',() => { fitDots(); fitFlow(); });
+window.addEventListener('resize',() => { fitDots(); fitFlow(); fitViz(); });
 init();

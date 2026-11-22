@@ -242,12 +242,11 @@ test('mandatory:false는 안전항이라 미충족 대신 주의를 낸다', () 
 
 // ---- 같은 보고서가 관할권에 따라 다른 판정을 받는다 ----
 
-test('KR-v1 R06: 법안(연동 통화와 동일)은 충족, 원화 전제 공시안은 미충족', () => {
+test('KR-v1 R06: 법안(연동 통화와 동일)은 충족', () => {
   const report = { token: 'USDC', reserve_currency: 'USD' };
   const kr = readJurisdiction('kr-v1');
   assert.equal(evaluateRule('R06', report, readJurisdiction('us')).status, STATUS.MET);
   assert.equal(evaluateRule('R06', report, kr, 'bill').status, STATUS.MET);
-  assert.equal(evaluateRule('R06', report, kr, 'proposal').status, STATUS.UNMET);
 });
 
 test('같은 보고서, 관할권 두 곳에서 R10 판정이 갈린다(미국 충족, 한국 법안 미충족)', () => {
@@ -256,7 +255,6 @@ test('같은 보고서, 관할권 두 곳에서 R10 판정이 갈린다(미국 �
   assert.equal(evaluateRule('R10', report, readJurisdiction('us')).status, STATUS.MET);
   assert.equal(evaluateRule('R10', report, readJurisdiction('hk')).status, STATUS.MET);
   assert.equal(evaluateRule('R10', report, kr, 'bill').status, STATUS.UNMET);
-  assert.equal(evaluateRule('R10', report, kr, 'proposal').status, STATUS.MET);
 });
 
 // ---- 한국 후보값을 바꾸면 판정이 바뀐다 ----
@@ -266,19 +264,27 @@ test('KR-v1 R05 후보값을 바꾸면 위임 예정 -> 미충족 -> 충족으�
   const kr = readJurisdiction('kr-v1');
   assert.equal(evaluateRule('R05', report, kr, 'bill').status, STATUS.PENDING);
   assert.equal(evaluateRule('R05', report, kr, 'foreign_ref').status, STATUS.UNMET); // 30% 요구, 15% 실측
-  assert.equal(evaluateRule('R05', report, kr, 'proposal').status, STATUS.MET); // 15% 요구, 15% 실측
+  assert.equal(evaluateRule('R05', { fair_value: 100, components: { other: 30 } }, kr, 'foreign_ref').status, STATUS.MET); // 30% 요구, 30% 실측
 });
 
 test('은행 예금을 나누지 않은 보고서는 R05를 근사하지 않고 데이터 없음', () => {
   const report = { fair_value: 100, components: { cash: null, other: 90, treasury: 10 }, flags: { cash_is_bank_deposit: false } };
-  assert.equal(evaluateRule('R05', report, readJurisdiction('kr-v1'), 'proposal').status, STATUS.NO_DATA);
+  assert.equal(evaluateRule('R05', report, readJurisdiction('kr-v1'), 'foreign_ref').status, STATUS.NO_DATA);
 });
 
-test('KR-v1 R09 후보값을 바꾸면 주의 -> 충족으로 바뀐다', () => {
-  const report = { as_of_time: '23:59 UTC' };
+test('KR-v1 R13 법안 값마다(3일, 5일, 10일) 후보를 바꾸면 미충족 -> 충족으로 바뀐다', () => {
+  const report = { redemption_days: 5 };
   const kr = readJurisdiction('kr-v1');
-  assert.equal(evaluateRule('R09', report, kr, 'bill').status, STATUS.CAUTION);
-  assert.equal(evaluateRule('R09', report, kr, 'proposal').status, STATUS.MET);
+  assert.equal(evaluateRule('R13', report, kr, 'bill').status, STATUS.UNMET);
+  assert.equal(evaluateRule('R13', report, kr, 'bill_5').status, STATUS.MET);
+  assert.equal(evaluateRule('R13', report, kr, 'bill_10').status, STATUS.MET);
+});
+
+test('KR-v1 R08 법안 검토 3건과 감사 6건 후보로 판정이 갈린다', () => {
+  const report = { attestation: { type: 'examination' } };
+  const kr = readJurisdiction('kr-v1');
+  assert.equal(evaluateRule('R08', report, kr, 'bill').status, STATUS.MET);
+  assert.equal(evaluateRule('R08', report, kr, 'bill_audit').status, STATUS.CAUTION);
 });
 
 // ---- evaluateReport는 규칙 15개를 전부 낸다 ----

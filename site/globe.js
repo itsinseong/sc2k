@@ -98,7 +98,7 @@ const dlon = (a, b) => ((b - a + 540) % 360) - 180;
 // ---- 그리기 공통 ----
 function colors() {
   const cs = getComputedStyle(document.documentElement), g = n => cs.getPropertyValue(n).trim();
-  return { ink: g('--ink'), ink2: g('--ink-2'), line: g('--line'), surface: g('--surface'), accent: g('--accent'), stone: g('--stone'), sans: g('--sans') };
+  return { ink: g('--ink'), inkFill: g('--ink-fill'), ink2: g('--ink-2'), line: g('--line'), surface: g('--surface'), accent: g('--accent'), stone: g('--stone'), sans: g('--sans') };
 }
 // 투영 P에서 ids 나라의 채움(가장자리 접기)과 경계선(보이는 변만) 경로. g = { P, vc, cap }
 function shapes(ids, g) {
@@ -170,13 +170,13 @@ function draw(inst, rot, pulse) {
   ctx.globalAlpha = 0.6; ctx.fillStyle = col.stone; ctx.fill(all.fill, 'nonzero'); ctx.globalAlpha = 1;
   ctx.strokeStyle = 'rgba(255,255,255,.7)'; ctx.lineWidth = 0.5; ctx.stroke(all.edge);
   const hl = shapes(cfg.ids, g);
-  ctx.fillStyle = col.ink; ctx.fill(hl.fill, 'nonzero'); ctx.strokeStyle = '#fff'; ctx.stroke(hl.edge);
+  ctx.fillStyle = col.inkFill; ctx.fill(hl.fill, 'nonzero'); ctx.strokeStyle = '#fff'; ctx.stroke(hl.edge);
   ctx.beginPath(); ctx.arc(cx, cy, R, 0, 7); ctx.strokeStyle = col.line; ctx.lineWidth = 1; ctx.stroke();
 
   const [x, y, z] = P(...vec(...cfg.pin), false), onBox = z && x > -8 && x < W + 8 && y > -8 && y < H + 8;
   if (onBox) {
-    ctx.beginPath(); ctx.arc(x, y, cfg.dot ? 3.5 : 2.5, 0, 7); ctx.fillStyle = cfg.dot || cfg.pin === SEOUL ? col.accent : col.ink; ctx.fill(); ctx.strokeStyle = '#fff'; ctx.lineWidth = 1.5; ctx.stroke();
-    if (cfg.dot && pulse >= 0) { const f = (pulse % 0.8) / 0.8; ctx.globalAlpha = 0.55 * (1 - f); ctx.strokeStyle = col.ink; ctx.lineWidth = 1.25; ctx.beginPath(); ctx.arc(x, y, 4 + 12 * f, 0, 7); ctx.stroke(); ctx.globalAlpha = 1; }
+    ctx.beginPath(); ctx.arc(x, y, cfg.dot ? 3.5 : 2.5, 0, 7); ctx.fillStyle = cfg.dot || cfg.pin === SEOUL ? col.accent : col.inkFill; ctx.fill(); ctx.strokeStyle = '#fff'; ctx.lineWidth = 1.5; ctx.stroke();
+    if (cfg.dot && pulse >= 0) { const f = (pulse % 0.8) / 0.8; ctx.globalAlpha = 0.55 * (1 - f); ctx.strokeStyle = col.inkFill; ctx.lineWidth = 1.25; ctx.beginPath(); ctx.arc(x, y, 4 + 12 * f, 0, 7); ctx.stroke(); ctx.globalAlpha = 1; }
     ctx.font = `500 11px ${col.sans}`; ctx.textBaseline = 'middle';
     // 홍콩, 싱가포르는 확대해서 칠한 땅이 점 옆으로 넓으니 이름표를 더 띄움
     const right = x < W * 0.6; const o = cfg.dot ? 30 : 7; tag(ctx, col, W, H, cfg.label, x + (right ? o : -o), y - (cfg.dot ? 0 : 8), right ? 'left' : 'right');
@@ -249,12 +249,12 @@ let hero = null; // 지금 떠 있는 개요 지구본 하나. 다시 그려지�
 
 // 북쪽이 위. 윗 테두리는 보이고, 구가 칸보다 크면 오른쪽과 아래가 잘림. 시점은 유라시아 위(직접 돌려 맞춘 자리):
 // EU, 홍콩, 싱가포르, 일본, 한국은 앞면
-const HERO_VIEW = [119.31, 35.66], HERO_ROLL = 0, HERO_M = 22;
+const HERO_VIEW = [119.31, 15], HERO_ROLL = 0, HERO_M = 22; // 위도를 내려 한국은 가운데 위(중심에서 약 0.38R), 싱가포르는 가운데 아래(약 0.24R)
 // 카드가 가리면 안 되는 땅: 한국과 일본 해안을 따라 찍은 점(경도, 위도)
 const KEEP = [[126.5, 37.5], [127, 35], [129, 35.2], [129.4, 36], [128.6, 38.2], [126.5, 33.4], [126.4, 34.8], [129.9, 33.2], [130.5, 31.4], [131.6, 33.2], [132.6, 33.4], [134.6, 33.8], [131, 34.4], [132.5, 35.4], [134, 35.5], [135.5, 34.7], [136.9, 35.2], [136.6, 36.6], [137.5, 37.4], [138.2, 36.2], [139, 37.9], [139.7, 35.7], [140.9, 38.3], [140, 39.7], [141.4, 40.5], [140.7, 41], [140.3, 41.8], [141.4, 43.1], [142.4, 44.4], [141.7, 45.4], [143.2, 42.9], [144.4, 43], [145.3, 43.3], [144.3, 44]];
 function heroGeo(W, H) {
-  const R = Math.min((H - HERO_M - 26) / 1.69, W * 0.56); // 싱가포르(중심 아래 약 0.69R)와 이름표까지 보이게
-  return { R, cx: Math.max(HERO_M + R, W * 0.45), cy: HERO_M + R, view: HERO_VIEW }; // 가운데보다 조금 왼쪽: 한국 오른쪽에 카드 자리
+  const R = Math.min((H * 0.86 - HERO_M) / 1.26, W * 0.62); // 윗 테두리는 다 보이고, 싱가포르(중심 아래 약 0.24R)까지 칸 안. 좌우와 아래는 잘리고 흐려짐(styles.css .hero-canvas)
+  return { R, cx: W * 0.5, cy: HERO_M + R, view: HERO_VIEW };
 }
 
 // 고정 시점이라 호의 화면 좌표는 크기가 바뀔 때만 계산하고, 매 프레임은 점과 번짐만 그림
@@ -288,7 +288,7 @@ function buildHero(inst) {
       xs[k] = x; ys[k] = y; vis[k] = z || Math.hypot(x - cx, y - cy) > R ? 1 : 0;
       if (vis[k]) { down ? c.lineTo(x, y) : c.moveTo(x, y); down = true; if (first < 0 && x > 14 && x < W * 0.9 && y > 16 && y < H * 0.9) first = k; } else down = false;
     }
-    c.strokeStyle = col.ink; c.globalAlpha = 0.28; c.lineWidth = 1; c.stroke(); c.globalAlpha = 1;
+    c.strokeStyle = col.inkFill; c.globalAlpha = 0.28; c.lineWidth = 1; c.stroke(); c.globalAlpha = 1;
     flows.push({ name, id, xs, ys, vis, first, period: 2.6 + 2 * ang });
   }
   // 카드 자리 넘기기: 각 호의 첫 보이는 점(출발점이 뒤에 있으면 호가 화면에 처음 들어오는 자리)과 서울, 호의 보이는 점들(카드가 호를 가리지 않게). 화면 좌표는 캔버스와 같은 CSS px.
@@ -297,18 +297,21 @@ function buildHero(inst) {
   const arcs = flows.map(f => { const o = []; for (let k = 0; k <= HERO_N; k++) if (f.vis[k]) o.push(f.xs[k], f.ys[k]); return o; });
   const keep = KEEP.map(([lo, la]) => P(...vec(lo, la), false)).filter((q) => q[2]).map(([x, y]) => ({ x, y }));
   const carded = new Set(inst.onLayout?.({ W, H, points: pts, seoul: { x: seg[0], y: seg[1] }, arcs, keep }) || []);
-  // 이름표: 출발점이 보이면 그 자리, 뒤에 있으면 호가 화면에 처음 들어오는 자리
+  heroMarks(c, col, W, H, flows, seg, carded);
+  Object.assign(inst, { W, H, dpr, sc, flows, seoul: seg, ready: true });
+}
+// 이름표: 출발점이 보이면 그 자리, 뒤에 있으면 호가 화면에 처음 들어오는 자리. 서울 고리와 점
+function heroMarks(c, col, W, H, flows, seg, carded) {
   c.font = `500 11px ${col.sans}`; c.textBaseline = 'middle';
   for (const f of flows) {
     if (f.first < 0) continue;
     const x = f.xs[f.first], y = f.ys[f.first], k2 = Math.min(f.first + 8, HERO_N), dx = f.xs[k2] - x, dy = f.ys[k2] - y; // 이름표는 호가 뻗는 쪽의 반대편
-    c.beginPath(); c.arc(x, y, 2.5, 0, 7); c.fillStyle = col.ink; c.fill(); c.strokeStyle = '#fff'; c.lineWidth = 1.5; c.stroke();
+    c.beginPath(); c.arc(x, y, 2.5, 0, 7); c.fillStyle = col.inkFill; c.fill(); c.strokeStyle = '#fff'; c.lineWidth = 1.5; c.stroke();
     if (!carded.has(f.id)) tag(c, col, W, H, f.name, x + (dx > 0 ? -7 : 7), y + (dy > 0 ? -9 : 10), dx > 0 ? 'right' : 'left');
   }
   c.beginPath(); c.arc(seg[0], seg[1], 11, 0, 7); c.strokeStyle = col.accent; c.globalAlpha = 0.35; c.lineWidth = 1; c.stroke(); c.globalAlpha = 1; // 한국 둘레 고리
   c.beginPath(); c.arc(seg[0], seg[1], 3.5, 0, 7); c.fillStyle = col.accent; c.fill(); c.strokeStyle = '#fff'; c.lineWidth = 1.5; c.stroke();
   c.font = `600 12px ${col.sans}`; if (!carded.has('kr')) tag(c, col, W, H, '한국', seg[0] + 16, seg[1] - 4, 'left', col.accent);
-  Object.assign(inst, { W, H, dpr, sc, flows, seoul: seg, ready: true });
 }
 
 function heroFrame(inst, sec) {
@@ -322,7 +325,7 @@ function heroFrame(inst, sec) {
       // 도착 직후 서울에서 번지는 고리
       const age = u * f.period;
       if (age < 1.5) { const m = age / 1.5; ctx.globalAlpha = 0.35 * (1 - m); ctx.strokeStyle = col.accent; ctx.lineWidth = 1.25; ctx.beginPath(); ctx.arc(seoul[0], seoul[1], 4 + 20 * m, 0, 7); ctx.stroke(); ctx.globalAlpha = 0.07 * (1 - m); ctx.fillStyle = col.accent; ctx.beginPath(); ctx.arc(seoul[0], seoul[1], 4 + 24 * m, 0, 7); ctx.fill(); }
-      ctx.fillStyle = col.ink;
+      ctx.fillStyle = col.inkFill;
       for (let j = 0; j < TAIL; j++) { // 꼬리: 뒤로 갈수록 작고 옅게
         const pos = (u - j * 0.012) * N; if (pos < 0) break;
         const k = Math.min(N - 1, Math.floor(pos)), r = pos - k;

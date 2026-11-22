@@ -12,7 +12,7 @@
 // 붙여 넣을 CSS(styles.css의 .iso-fig 규칙을 이것으로 바꾼다. .iso-ppl .iso-t의 어두운 윗면 규칙도 지운다: 발판 윗면은 다른 블록처럼 흰색이다).
 /*
 .iso-pf-l{fill:var(--ink-2)}
-.iso-pf-d{fill:var(--ink)}
+.iso-pf-d{fill:var(--ink-fill)}
 .iso-pf-s1{fill:var(--pale)}
 .iso-pf-s2{fill:var(--stone)}
 .iso-ghost .iso-pf-l,.iso-ghost .iso-pf-d{fill:var(--stone)}
