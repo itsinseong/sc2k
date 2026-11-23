@@ -12,6 +12,7 @@ import * as Z4 from './viz/z4.js';
 import * as Z6 from './viz/z6.js';
 import * as Z7 from './viz/z7.js';
 import * as Z9 from './viz/z9.js';
+const wa = (s) => { const c = s.charCodeAt(s.length - 1); return s + (c >= 0xAC00 && c <= 0xD7A3 && (c - 0xAC00) % 28 ? '과' : '와'); };  // 받침 있으면 과(한국과), 없으면 와(싱가포르와)
 
 
 const ORDER = ['us', 'eu-emt', 'eu-emt-significant', 'hk', 'sg', 'jp', 'kr-v1'];
@@ -703,7 +704,7 @@ function chartVerdictBands(own, cmp) {
     return `<div class="rt-head"><strong>${esc(coin(latest))}</strong>${mineTag}</div><div class="rt-track two">${track}</div><div class="rt-n num"><b>${cnt('a')}</b>/${judgedN}</div><div class="rt-n num"><b>${cnt('b')}</b>/${judgedN}</div>`;
   }).join('');
   const axis = months.map((m) => `<span${m === last ? ' class="last"' : ''}>${m.endsWith('-01') || m === months[0] ? `<em>${m.slice(0,4)}</em>` : ''}${Number(m.slice(5))}${m === last ? '월' : ''}</span>`).join('');
-  return `<div class="cp-block rt-card"><h3>준비금 보고서 ${reports.length}건을 ${esc(nm(own))}와 ${esc(nm(cmp))} 기준으로</h3><p>'${ruleName('R05')}' 판정입니다. 코인마다 위 줄이 ${esc(nm(own))}, 아래 줄이 ${esc(nm(cmp))}입니다. ${nBoth ? `두 나라 모두 판정이 난 보고서 ${nBoth}건 중 ${nDiff}건에서 판정이 갈립니다.` : '두 나라 중 한쪽은 이 규칙의 판정이 나오지 않아(위임, 정함 없음 등) 판정을 견줄 수 없습니다.'} 칸을 누르면 그 보고서로 판정합니다.</p><div class="mx-wrap"><div class="rt-grid"><span class="rt-cap">코인</span><div class="rt-axis">${axis}</div><span class="rt-cap r">${esc(nm(own))} 미충족</span><span class="rt-cap r">${esc(nm(cmp))} 미충족</span>${rows}</div></div><div class="chart-foot"><span class="legend rt-legend"><span><i class="rt-k line"></i>충족</span><span><i class="rt-k band"></i>미충족</span><span><i class="rt-k band ca"></i>주의</span><span><i class="rt-k gap"></i>판정 안 됨이나 보고서 없는 달</span><span><i class="rt-k late"></i>${esc(nm(own))} 공개 기한 넘김</span></span></div></div>`;
+  return `<div class="cp-block rt-card"><h3>준비금 보고서 ${reports.length}건을 ${esc(wa(nm(own)))} ${esc(nm(cmp))} 기준으로</h3><p>'${ruleName('R05')}' 판정입니다. 코인마다 위 줄이 ${esc(nm(own))}, 아래 줄이 ${esc(nm(cmp))}입니다. ${nBoth ? `두 나라 모두 판정이 난 보고서 ${nBoth}건 중 ${nDiff}건에서 판정이 갈립니다.` : '두 나라 중 한쪽은 이 규칙의 판정이 나오지 않아(위임, 정함 없음 등) 판정을 견줄 수 없습니다.'} 칸을 누르면 그 보고서로 판정합니다.</p><div class="mx-wrap"><div class="rt-grid"><span class="rt-cap">코인</span><div class="rt-axis">${axis}</div><span class="rt-cap r">${esc(nm(own))} 미충족</span><span class="rt-cap r">${esc(nm(cmp))} 미충족</span>${rows}</div></div><div class="chart-foot"><span class="legend rt-legend"><span><i class="rt-k line"></i>충족</span><span><i class="rt-k band"></i>미충족</span><span><i class="rt-k band ca"></i>주의</span><span><i class="rt-k gap"></i>판정 안 됨이나 보고서 없는 달</span><span><i class="rt-k late"></i>${esc(nm(own))} 공개 기한 넘김</span></span></div></div>`;
 }
 function compareSection(id) {
   const others = ORDER.filter((k) => k !== id), nm = (k) => copy.나라[k].이름;
@@ -718,7 +719,7 @@ function compareSection(id) {
   return `<section class="rl-section panel cp-section" aria-labelledby="cp-title"><div class="section-head"><div><h2 id="cp-title">다른 나라와 비교</h2><p>같은 보고서를 ${esc(nm(id))} 기준과 ${esc(nm(cmp))} 기준으로 나란히 봅니다.</p></div>${pick}</div>
     <div class="cp-block"><h3>두 나라 판정 비교</h3><p>선택 보고서 ${esc(label(reports[state.reportIndex]))}. 규칙마다 두 나라 판정과, 보고서 ${reports.length}건 중 판정이 갈린 수입니다.</p>${vizBlock(9, { cmp, focus: id })}</div>
     ${chartVerdictBands(id, cmp)}
-    <div class="cp-block"><h3>숫자 규칙 분포</h3><p>${esc(nm(id))}와 ${esc(nm(cmp))}의 기준값만 진하게 보입니다.</p>${ruleDots(jurisdictions, copy, 600, [id, cmp], true)}</div>${id === 'hk' ? `<div class="cp-block"><h3>주간 준비금 명세 ${weekly.주간.length}주</h3>${weeklyPane()}</div>` : ''}</section>`;
+    <div class="cp-block"><h3>숫자 규칙 분포</h3><p>${esc(wa(nm(id)))} ${esc(nm(cmp))}의 기준값만 진하게 보입니다.</p>${ruleDots(jurisdictions, copy, 600, [id, cmp], true)}</div>${id === 'hk' ? `<div class="cp-block"><h3>주간 준비금 명세 ${weekly.주간.length}주</h3>${weeklyPane()}</div>` : ''}</section>`;
 }
 function detail() {
   const id = state.jurisdiction, jur = jurisdictions[id], info = copy.나라[id], r = reports[state.reportIndex];
